@@ -1,7 +1,7 @@
 {
   "id": "manufacturing-orientation",
   "title": "Getting comfortable with manufacturing",
-  "status": "question-landscape-in-progress",
+  "status": "big-picture-question-landscape-active",
   "original_goal": "I want to get comfortable with manufacturing!",
   "question_selection": {
     "relevant_rsm": [
@@ -57,7 +57,96 @@
         "information_gain": "Identify actionable missing capabilities and economical substitutes"
       }
     ],
-    "next_collaborative_choice": "Choose an actual object or component class; use Q2 and Q3 to map alternatives and identify a realistic fabrication probe. Preserve alternative parent questions rather than inventing a fixed curriculum."
+    "next_collaborative_choice": "Clarify whether the most exciting shared question is (a) understanding possible artifacts/physical transformations, (b) maximizing individual manufacturing agency, or (c) the growth and bootstrapping of manufacturing ecosystems; multiple can remain active. Do not select an object or curriculum.",
+    "selected_big_picture_questions": [
+      {
+        "id": "Q1",
+        "verbatim": "What can humanity manufacture?",
+        "focus": "Possibility landscape and its boundaries"
+      },
+      {
+        "id": "Q2",
+        "verbatim": "How could I learn to make almost anything?",
+        "focus": "Practical agency and accessible capabilities"
+      },
+      {
+        "id": "Q5",
+        "verbatim": "How do capabilities compose and bootstrap?",
+        "focus": "Generativity, bottlenecks and capability dependencies"
+      }
+    ],
+    "user_direction": "Investigate the relationships among these parent questions, alternative formulations, and what pursuing each could reveal. Do not choose an object or reading curriculum yet.",
+    "candidate_parent": "How can we understand, navigate, acquire, and expand humanity's capacity to make physical things?",
+    "distinctions": [
+      "Feasible in physical principle vs demonstrated by human industry vs accessible to an individual",
+      "One-off artifact vs reliable repeated production",
+      "Owning a process vs accessing it through services, institutions or collaborators",
+      "Having capabilities vs knowing which compositions are possible and what dependencies block them"
+    ],
+    "alternative_formulations": [
+      {
+        "id": "Q1a",
+        "question": "What physical structures and properties can we create?",
+        "why": "Broadens beyond familiar product categories"
+      },
+      {
+        "id": "Q1b",
+        "question": "What cannot we manufacture, and which limits are fundamental versus contingent?",
+        "why": "Separates impossible from not-yet-practical"
+      },
+      {
+        "id": "Q1c",
+        "question": "How did the present manufacturing frontier arise?",
+        "why": "Exposes historical technology dependencies"
+      },
+      {
+        "id": "Q2a",
+        "question": "What capabilities would give me the greatest manufacturing reach?",
+        "why": "Optimizes generative competence rather than a tool checklist"
+      },
+      {
+        "id": "Q2b",
+        "question": "What can I accomplish through accessible external manufacturing?",
+        "why": "Distinguishes agency from owning equipment"
+      },
+      {
+        "id": "Q2c",
+        "question": "What would operational confidence on unfamiliar manufacturing tasks look like?",
+        "why": "Creates meaningful competence criteria"
+      },
+      {
+        "id": "Q5a",
+        "question": "Which initial capability sets can generate or unlock others?",
+        "why": "Studies bootstrap structure"
+      },
+      {
+        "id": "Q5b",
+        "question": "Which capabilities are bottlenecks, bridges, or multiplicative complements?",
+        "why": "Identifies leverage"
+      },
+      {
+        "id": "Q5c",
+        "question": "Under what conditions can a production system reproduce or improve its own tooling?",
+        "why": "Investigates closure, dependency and external inputs"
+      }
+    ],
+    "cross_relations": [
+      {
+        "from": "Q1",
+        "to": "Q2",
+        "relation": "Human production capabilities delimit accessible learning opportunities but do not determine which are worth acquiring"
+      },
+      {
+        "from": "Q2",
+        "to": "Q5",
+        "relation": "Capability acquisition can increase ability to acquire or create further capabilities"
+      },
+      {
+        "from": "Q5",
+        "to": "Q1",
+        "relation": "Bootstrapping and composition can expand the frontier of actually manufacturable outcomes"
+      }
+    ]
   },
   "proposed_root_question": "How can we understand and acquire the capabilities needed to manufacture an increasingly broad variety of physical things?",
   "nodes": [
@@ -222,7 +311,7 @@
       ]
     }
   ],
-  "next_decision": "Collaboratively select a tangible manufactured object and investigate Q2 (alternative processes) against Q3 (what would prevent us from making it).",
+  "next_decision": "Clarify whether the most exciting shared question is (a) understanding possible artifacts/physical transformations, (b) maximizing individual manufacturing agency, or (c) the growth and bootstrapping of manufacturing ecosystems; multiple can remain active. Do not select an object or curriculum.",
   "saved_at": "2026-11-18",
   "reading_route": [
     {
