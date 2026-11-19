@@ -2019,5 +2019,111 @@
     "OS-Q14",
     "OS-Q15"
   ],
-  "next_collaborative_step": "Explore the user's meaning of 'build an OS' using the purpose, possibility and reuse questions. Do not force a choice, automatically descend into kernel chapters, or open investigations before a question needs evidence."
+  "next_collaborative_step": "Use question-to-chapter navigation for OSTEP as a reference, not ask the user to rediscover general OS knowledge or specify an OS-building purpose.",
+  "reference_guide_path": "reference_guide.json",
+  "reference_guide_readme_path": "REFERENCE_GUIDE.md",
+  "navigation_routes": [
+    {
+      "route_id": "start",
+      "question_node_ids": [
+        "OS-Q01",
+        "OS-Q03"
+      ]
+    },
+    {
+      "route_id": "boot",
+      "question_node_ids": [
+        "OS-Q04",
+        "OS-Q04a"
+      ]
+    },
+    {
+      "route_id": "process",
+      "question_node_ids": [
+        "OS-Q05",
+        "OS-Q05a"
+      ]
+    },
+    {
+      "route_id": "schedule",
+      "question_node_ids": [
+        "OS-Q06",
+        "OS-Q06a"
+      ]
+    },
+    {
+      "route_id": "vm-basics",
+      "question_node_ids": [
+        "OS-Q07",
+        "OS-Q07a"
+      ]
+    },
+    {
+      "route_id": "vm-paging",
+      "question_node_ids": [
+        "OS-Q07",
+        "OS-Q07a"
+      ]
+    },
+    {
+      "route_id": "vm-pressure",
+      "question_node_ids": [
+        "OS-Q07"
+      ]
+    },
+    {
+      "route_id": "threads",
+      "question_node_ids": [
+        "OS-Q06b"
+      ]
+    },
+    {
+      "route_id": "sync",
+      "question_node_ids": [
+        "OS-Q06b"
+      ]
+    },
+    {
+      "route_id": "events",
+      "question_node_ids": [
+        "OS-Q06b",
+        "OS-Q11"
+      ]
+    },
+    {
+      "route_id": "device",
+      "question_node_ids": [
+        "OS-Q08",
+        "OS-Q08a"
+      ]
+    },
+    {
+      "route_id": "files",
+      "question_node_ids": [
+        "OS-Q09"
+      ]
+    },
+    {
+      "route_id": "crashes",
+      "question_node_ids": [
+        "OS-Q09",
+        "OS-Q09a",
+        "OS-Q12a"
+      ]
+    },
+    {
+      "route_id": "network",
+      "question_node_ids": [
+        "OS-Q11",
+        "OS-Q11a"
+      ]
+    },
+    {
+      "route_id": "review",
+      "question_node_ids": [
+        "OS-Q01",
+        "OS-Q13"
+      ]
+    }
+  ]
 }
