@@ -88,3 +88,23 @@ The question tree starts from **“I want to build an OS!”** and keeps the chi
 **Candidate C references vs established certificates:** A chapter range says where we expect to find clarity. It is not an established conclusion or a certificate that the claim is true. Once we investigate a question, specific passages, findings, limitations and observed behavior can form a certificate.
 
 Structured source of truth: [`reference_guide.json`](reference_guide.json); question tree: [`question_tree.json`](question_tree.json).
+
+
+## Hardware and bare-metal cross-references
+
+These are **additional ways into the existing OS question tree**. Keep OSTEP for OS concepts; use the architecture texts to see what the processor actually provides, and *Making Embedded Systems* to compare software running without an OS. References are prospective reading leads, not established certificates.
+
+| When I ask… | Book and chapter/section | Printed pages |
+|---|---|---|
+| What do I actually need an OS for? | MES: Ch. 1 — Introduction; MES: Ch. 6 — Managing the Flow of Activity; COD-RV: §1.3–1.4 — Below Your Program; Under the Covers; COD-ARM: §1.3–1.4 — Below Your Program; Under the Covers | MES chapter (range unverified); MES chapter (range unverified); COD-RV 13–24; COD-ARM 13–23 |
+| How do I bring up hardware and get my program working? | MES: Ch. 3 — Getting Your Hands on the Hardware; COD-RV: §2.12 — Translating and Starting a Program; COD-ARM: §2.12 — Translating and Starting a Program | MES chapter (range unverified); COD-RV 131–139; COD-ARM 128–136 |
+| How does a processor hand control to my OS when something happens? | COD-RV: §4.10 — Exceptions; COD-ARM: §4.9 — Exceptions; MES: Ch. 5 — Interrupts; MES: Ch. 6 — Managing the Flow of Activity | COD-RV 333–339; COD-ARM 336–341; MES chapter (range unverified); MES chapter (range unverified) |
+| How do I talk to a device and know when it needs attention? | MES: Ch. 4 — Inputs, Outputs, and Timers; MES: Ch. 5 — Interrupts; MES: Ch. 7 — Communicating with Peripherals; MES: Ch. 8 — Putting Together a System | MES chapter (range unverified); MES chapter (range unverified); MES chapter (range unverified); MES chapter (range unverified) |
+| What does the processor do when my OS gives a program virtual memory? | COD-RV: §5.7 — Virtual Memory; COD-ARM: §5.7 — Virtual Memory | COD-RV 440–463; COD-ARM 441–464 |
+| If two cores have caches, how do they see each other's changes? | COD-RV: §5.10 — Cache Coherence; COD-ARM: §5.10 — Cache Coherence | COD-RV 475–478; COD-ARM 477–480 |
+| What if my processor doesn't have enough memory, time, or power? | MES: Ch. 11 — Doing More with Less; MES: Ch. 13 — Reducing Power Consumption | MES chapter (range unverified); MES chapter (range unverified) |
+| Why does my system hang, and how do I find out where? | MES: Ch. 9 — Getting into Trouble; MES: Ch. 3 — Getting Your Hands on the Hardware | MES chapter (range unverified); MES chapter (range unverified) |
+
+[Making Embedded Systems](https://drive.google.com/file/d/1hU4l-fAivhO7f3b8ZZK58JOPTKysXzhl/view?usp=drivesdk) · [RISC-V architecture book](https://drive.google.com/file/d/1oLtJEtoD_edhxRXXp9NqBg0eqwdHDpjP/view?usp=drivesdk) · [ARM architecture book](https://drive.google.com/file/d/11keBAs8ZzIym0p4V_QEUfNtgjGH_91EA/view?usp=drivesdk)
+
+**Boundary:** The processor books' program-start sections are not a replacement for a firmware/bootloader manual. The embedded book deliberately focuses on bare-metal software, not OS kernel implementation.
