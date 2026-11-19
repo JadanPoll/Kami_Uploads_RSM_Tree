@@ -992,5 +992,380 @@
     "Older OSTEP text is a conceptual source, not implementation documentation for a current kernel.",
     "Questions may map to overlapping routes. Chapters are stored once and referenced by their numbers."
   ],
-  "updated": "2026-11-19"
+  "updated": "2026-11-19",
+  "related_sources": [
+    {
+      "id": "MES",
+      "title": "Making Embedded Systems: Design Patterns for Great Software",
+      "edition": "2nd edition (2024)",
+      "url": "https://drive.google.com/file/d/1hU4l-fAivhO7f3b8ZZK58JOPTKysXzhl/view?usp=drivesdk",
+      "perspective": "bare-metal engineering",
+      "page_scheme": "Complete chapter titles verified in book; printed page ranges not yet verified",
+      "note": "Author explicitly focuses on bare-metal embedded systems rather than OS-specific implementation."
+    },
+    {
+      "id": "COD-RV",
+      "title": "Computer Organization and Design: The Hardware/Software Interface — RISC-V Edition",
+      "edition": "2nd edition",
+      "url": "https://drive.google.com/file/d/1oLtJEtoD_edhxRXXp9NqBg0eqwdHDpjP/view?usp=drivesdk",
+      "perspective": "hardware mechanisms",
+      "page_scheme": "Printed page ranges inclusive based on the inspected table of contents; section boundaries from next section"
+    },
+    {
+      "id": "COD-ARM",
+      "title": "Computer Organization and Design: The Hardware/Software Interface — ARM Edition",
+      "url": "https://drive.google.com/file/d/11keBAs8ZzIym0p4V_QEUfNtgjGH_91EA/view?usp=drivesdk",
+      "perspective": "hardware mechanisms",
+      "page_scheme": "Printed page ranges inclusive based on the inspected table of contents; section boundaries from next section"
+    }
+  ],
+  "cross_source_routes": [
+    {
+      "id": "bare-metal",
+      "question": "What do I actually need an OS for?",
+      "node_ids": [
+        "OS-Q01",
+        "OS-Q01a",
+        "OS-Q10a",
+        "OS-Q14a"
+      ],
+      "references": [
+        {
+          "source_id": "MES",
+          "section": "Ch. 1 — Introduction",
+          "pages": {
+            "kind": "chapter_only",
+            "start": null,
+            "end": null
+          },
+          "role": "Contrast bare-metal programs with systems that provide OS abstractions",
+          "status": "chapter_verified_pages_unverified"
+        },
+        {
+          "source_id": "MES",
+          "section": "Ch. 6 — Managing the Flow of Activity",
+          "pages": {
+            "kind": "chapter_only",
+            "start": null,
+            "end": null
+          },
+          "role": "Compare a main loop/state machine with an OS scheduler",
+          "status": "chapter_verified_pages_unverified"
+        },
+        {
+          "source_id": "COD-RV",
+          "section": "§1.3–1.4 — Below Your Program; Under the Covers",
+          "pages": {
+            "kind": "printed",
+            "start": 13,
+            "end": 24
+          },
+          "role": "Hardware/software layers",
+          "status": "toc_verified"
+        },
+        {
+          "source_id": "COD-ARM",
+          "section": "§1.3–1.4 — Below Your Program; Under the Covers",
+          "pages": {
+            "kind": "printed",
+            "start": 13,
+            "end": 23
+          },
+          "role": "Hardware/software layers",
+          "status": "toc_verified"
+        }
+      ]
+    },
+    {
+      "id": "board-bringup",
+      "question": "How do I bring up hardware and get my program working?",
+      "node_ids": [
+        "OS-Q04",
+        "OS-Q04a",
+        "OS-Q12"
+      ],
+      "references": [
+        {
+          "source_id": "MES",
+          "section": "Ch. 3 — Getting Your Hands on the Hardware",
+          "pages": {
+            "kind": "chapter_only",
+            "start": null,
+            "end": null
+          },
+          "role": "Board bring-up and debugging on real hardware",
+          "status": "chapter_verified_pages_unverified"
+        },
+        {
+          "source_id": "COD-RV",
+          "section": "§2.12 — Translating and Starting a Program",
+          "pages": {
+            "kind": "printed",
+            "start": 131,
+            "end": 139
+          },
+          "role": "Linking and loading program execution; not a full firmware/bootloader guide",
+          "status": "toc_verified"
+        },
+        {
+          "source_id": "COD-ARM",
+          "section": "§2.12 — Translating and Starting a Program",
+          "pages": {
+            "kind": "printed",
+            "start": 128,
+            "end": 136
+          },
+          "role": "Program translation/startup; not a full firmware/bootloader guide",
+          "status": "toc_verified"
+        }
+      ]
+    },
+    {
+      "id": "exceptions",
+      "question": "How does a processor hand control to my OS when something happens?",
+      "node_ids": [
+        "OS-Q05a",
+        "OS-Q06a",
+        "OS-Q08a",
+        "OS-Q10"
+      ],
+      "references": [
+        {
+          "source_id": "COD-RV",
+          "section": "§4.10 — Exceptions",
+          "pages": {
+            "kind": "printed",
+            "start": 333,
+            "end": 339
+          },
+          "role": "Hardware exception-handling concepts",
+          "status": "toc_verified"
+        },
+        {
+          "source_id": "COD-ARM",
+          "section": "§4.9 — Exceptions",
+          "pages": {
+            "kind": "printed",
+            "start": 336,
+            "end": 341
+          },
+          "role": "ARM architecture perspective on exceptions",
+          "status": "toc_verified"
+        },
+        {
+          "source_id": "MES",
+          "section": "Ch. 5 — Interrupts",
+          "pages": {
+            "kind": "chapter_only",
+            "start": null,
+            "end": null
+          },
+          "role": "Interrupt-based embedded software",
+          "status": "chapter_verified_pages_unverified"
+        },
+        {
+          "source_id": "MES",
+          "section": "Ch. 6 — Managing the Flow of Activity",
+          "pages": {
+            "kind": "chapter_only",
+            "start": null,
+            "end": null
+          },
+          "role": "Relate interrupt handling to the main loop",
+          "status": "chapter_verified_pages_unverified"
+        }
+      ]
+    },
+    {
+      "id": "devices",
+      "question": "How do I talk to a device and know when it needs attention?",
+      "node_ids": [
+        "OS-Q08",
+        "OS-Q08a"
+      ],
+      "references": [
+        {
+          "source_id": "MES",
+          "section": "Ch. 4 — Inputs, Outputs, and Timers",
+          "pages": {
+            "kind": "chapter_only",
+            "start": null,
+            "end": null
+          },
+          "role": "I/O and time",
+          "status": "chapter_verified_pages_unverified"
+        },
+        {
+          "source_id": "MES",
+          "section": "Ch. 5 — Interrupts",
+          "pages": {
+            "kind": "chapter_only",
+            "start": null,
+            "end": null
+          },
+          "role": "Handling asynchronous events",
+          "status": "chapter_verified_pages_unverified"
+        },
+        {
+          "source_id": "MES",
+          "section": "Ch. 7 — Communicating with Peripherals",
+          "pages": {
+            "kind": "chapter_only",
+            "start": null,
+            "end": null
+          },
+          "role": "UART, SPI, I2C, USB and related interfaces",
+          "status": "chapter_verified_pages_unverified"
+        },
+        {
+          "source_id": "MES",
+          "section": "Ch. 8 — Putting Together a System",
+          "pages": {
+            "kind": "chapter_only",
+            "start": null,
+            "end": null
+          },
+          "role": "Device integration, buffers and bandwidth",
+          "status": "chapter_verified_pages_unverified"
+        }
+      ]
+    },
+    {
+      "id": "hardware-vm",
+      "question": "What does the processor do when my OS gives a program virtual memory?",
+      "node_ids": [
+        "OS-Q07",
+        "OS-Q07a"
+      ],
+      "references": [
+        {
+          "source_id": "COD-RV",
+          "section": "§5.7 — Virtual Memory",
+          "pages": {
+            "kind": "printed",
+            "start": 440,
+            "end": 463
+          },
+          "role": "Hardware-facing memory translation",
+          "status": "toc_verified"
+        },
+        {
+          "source_id": "COD-ARM",
+          "section": "§5.7 — Virtual Memory",
+          "pages": {
+            "kind": "printed",
+            "start": 441,
+            "end": 464
+          },
+          "role": "Comparison with ARM memory mechanisms",
+          "status": "toc_verified"
+        }
+      ]
+    },
+    {
+      "id": "cache-coherence",
+      "question": "If two cores have caches, how do they see each other's changes?",
+      "node_ids": [
+        "OS-Q06",
+        "OS-Q06b",
+        "OS-Q07"
+      ],
+      "references": [
+        {
+          "source_id": "COD-RV",
+          "section": "§5.10 — Cache Coherence",
+          "pages": {
+            "kind": "printed",
+            "start": 475,
+            "end": 478
+          },
+          "role": "Memory hierarchy and multi-core coherence",
+          "status": "toc_verified"
+        },
+        {
+          "source_id": "COD-ARM",
+          "section": "§5.10 — Cache Coherence",
+          "pages": {
+            "kind": "printed",
+            "start": 477,
+            "end": 480
+          },
+          "role": "Architecture comparison",
+          "status": "toc_verified"
+        }
+      ]
+    },
+    {
+      "id": "resource-limits",
+      "question": "What if my processor doesn't have enough memory, time, or power?",
+      "node_ids": [
+        "OS-Q07",
+        "OS-Q12",
+        "OS-Q14a"
+      ],
+      "references": [
+        {
+          "source_id": "MES",
+          "section": "Ch. 11 — Doing More with Less",
+          "pages": {
+            "kind": "chapter_only",
+            "start": null,
+            "end": null
+          },
+          "role": "Memory, program space and CPU constraints",
+          "status": "chapter_verified_pages_unverified"
+        },
+        {
+          "source_id": "MES",
+          "section": "Ch. 13 — Reducing Power Consumption",
+          "pages": {
+            "kind": "chapter_only",
+            "start": null,
+            "end": null
+          },
+          "role": "Power and resource choices",
+          "status": "chapter_verified_pages_unverified"
+        }
+      ]
+    },
+    {
+      "id": "debugging",
+      "question": "Why does my system hang, and how do I find out where?",
+      "node_ids": [
+        "OS-Q12",
+        "OS-Q12a"
+      ],
+      "references": [
+        {
+          "source_id": "MES",
+          "section": "Ch. 9 — Getting into Trouble",
+          "pages": {
+            "kind": "chapter_only",
+            "start": null,
+            "end": null
+          },
+          "role": "Embedded debugging, faults and failure diagnosis",
+          "status": "chapter_verified_pages_unverified"
+        },
+        {
+          "source_id": "MES",
+          "section": "Ch. 3 — Getting Your Hands on the Hardware",
+          "pages": {
+            "kind": "chapter_only",
+            "start": null,
+            "end": null
+          },
+          "role": "First hardware bring-up and debugging",
+          "status": "chapter_verified_pages_unverified"
+        }
+      ]
+    }
+  ],
+  "quick_reference_contract": {
+    "primary": "OSTEP chapter lookup (routes and chapter_catalog preserved)",
+    "additional": "Cross-source route links to relevant hardware or bare-metal sources, never replaces the OSTEP conceptual reference",
+    "page_numbering": "Printed page ranges are source-specific; MES chapters linked without unverified page boundaries",
+    "citation_status": "Candidate evidence references only, not established RSM Certificates",
+    "note": "Chapter/section navigation from inspected tables of contents; exact text claims require reading the cited pages"
+  }
 }
