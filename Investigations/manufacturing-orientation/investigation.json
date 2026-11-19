@@ -1,0 +1,146 @@
+{
+  "id": "manufacturing-orientation",
+  "title": "Getting comfortable with manufacturing",
+  "status": "question-landscape-in-progress",
+  "original_goal": "I want to get comfortable with manufacturing!",
+  "question_selection": {
+    "relevant_rsm": [
+      "RSM-02.08",
+      "RSM-02.09",
+      "RSM-02.11",
+      "RSM-02.12",
+      "RSM-05.01",
+      "RSM-08.10"
+    ],
+    "note": "The first task is to collaboratively choose meaningful questions, not to presume a single manufacturing curriculum.",
+    "candidate_parent_purposes": [
+      {
+        "id": "P1",
+        "purpose": "Understand the landscape of processes and what each makes possible",
+        "distinguishing_probe": "Can I recognize plausible production methods for unfamiliar objects?"
+      },
+      {
+        "id": "P2",
+        "purpose": "Develop practical ability to design and make functioning things",
+        "distinguishing_probe": "Can I go from requirements and drawings to a working part or assembly?"
+      },
+      {
+        "id": "P3",
+        "purpose": "Understand manufacturing as an industrial production system",
+        "distinguishing_probe": "Can I reason about yield, tolerances, tooling, quality, throughput, supply chain, and economics?"
+      },
+      {
+        "id": "P4",
+        "purpose": "Understand the physics and limitations of material transformation",
+        "distinguishing_probe": "Can I explain why a process works, where it fails, and what could extend its limits?"
+      }
+    ]
+  },
+  "proposed_root_question": "What should I understand and be able to do to feel comfortable navigating manufacturing?",
+  "nodes": [
+    {
+      "id": "MFG-ROOT",
+      "parent_id": null,
+      "question": "What should I understand and be able to do to feel comfortable navigating manufacturing?",
+      "status": "open"
+    },
+    {
+      "id": "MFG-PROCESSES",
+      "parent_id": "MFG-ROOT",
+      "question": "What families of manufacturing processes exist, and which geometries, materials, scales, and constraints favor each?",
+      "status": "candidate"
+    },
+    {
+      "id": "MFG-DESIGN",
+      "parent_id": "MFG-ROOT",
+      "question": "How does the intended fabrication process change the design of a part or assembly?",
+      "status": "candidate"
+    },
+    {
+      "id": "MFG-EXECUTION",
+      "parent_id": "MFG-ROOT",
+      "question": "What is required to produce and inspect a useful object, not merely model it?",
+      "status": "candidate"
+    },
+    {
+      "id": "MFG-SCALE",
+      "parent_id": "MFG-ROOT",
+      "question": "How do cost, tooling, tolerances, yield, throughput, and production volume change the optimal process?",
+      "status": "candidate"
+    }
+  ],
+  "sources": [
+    {
+      "id": "BOOK-MFG-PROCESSES",
+      "title": "Manufacturing Processes for Design Professionals",
+      "url": "https://drive.google.com/file/d/1rGG9kMJndaCZcaaEpNGG9OJimjLTJm-1/view?usp=drivesdk",
+      "role": "Broad overview of process families",
+      "toc_status": "not yet verified",
+      "linked_nodes": [
+        "MFG-PROCESSES",
+        "MFG-SCALE"
+      ]
+    },
+    {
+      "id": "BOOK-FFF",
+      "title": "Functional Design for 3D Printing: Designing Printed Things for Everyday Use (3rd revised edition)",
+      "author": "Clifford Smyth",
+      "url": "https://drive.google.com/file/d/1aNSU5Shxl3JlKSQXEmp5jm8Cu5-EmThV/view?usp=drivesdk",
+      "role": "Concrete manufacturing-for-design examples",
+      "toc_status": "verified",
+      "verified_chapters": [
+        {
+          "heading": "Chapter I: The Medium",
+          "printed_page": 10
+        },
+        {
+          "heading": "Chapter II: Designing for FFM",
+          "printed_page": 40
+        },
+        {
+          "heading": "Chapter III: Design for Strength",
+          "printed_page": 76
+        },
+        {
+          "heading": "Chapter V: Designing for Fit",
+          "printed_page": 116
+        },
+        {
+          "heading": "Chapter VI: Fastening and Joinery",
+          "printed_page": 124
+        }
+      ],
+      "linked_nodes": [
+        "MFG-DESIGN",
+        "MFG-EXECUTION"
+      ]
+    },
+    {
+      "id": "BOOK-SHIGLEY",
+      "title": "Shigley's Mechanical Engineering Design (2024 release)",
+      "url": "https://drive.google.com/file/d/1hWdX7Ea0928zOmgc2jKXj0NbeOvjn8iG/view?usp=drivesdk",
+      "role": "Materials, mechanical failure, dimensions and tolerances",
+      "toc_status": "verified",
+      "verified_chapters": [
+        {
+          "heading": "Chapter 1: Introduction to Mechanical Engineering Design",
+          "printed_page": 3
+        },
+        {
+          "heading": "Chapter 2: Materials",
+          "printed_page": 39
+        },
+        {
+          "heading": "Chapter 20: Geometric Dimensioning and Tolerancing",
+          "printed_page": 995
+        }
+      ],
+      "linked_nodes": [
+        "MFG-DESIGN",
+        "MFG-SCALE"
+      ]
+    }
+  ],
+  "next_decision": "Collaboratively choose which parent purposes and alternative questions matter. Revise branches and make a first targeted reading assignment; do not treat candidate nodes as a fixed curriculum.",
+  "saved_at": "2026-11-18"
+}
