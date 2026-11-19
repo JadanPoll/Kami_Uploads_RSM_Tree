@@ -1,0 +1,15 @@
+{
+  "primary_library": {
+    "name": "Binding, Scaffolding and Logical Gases — primary research-book library",
+    "url": "https://drive.google.com/drive/folders/1OZPRVZkyrVQeNi8GVekEK-FO3bsubw1f",
+    "priority": "Search this first for relevant books in many investigations, then search FKEN's other libraries and external sources as appropriate.",
+    "recorded_from_user": "for a lot of investigations this would be the more critical library resource"
+  },
+  "reading_workspace": {
+    "name": "Kami",
+    "rationale": "Fast highlighting and annotation with persistence on the source book itself",
+    "userscript": "https://github.com/JadanPoll/Learning_Visualizations_Taxonomy/blob/main/Kami_Wikipedia.user.js",
+    "navigation_policy": "Provide stable links to the actual book and verified chapter/page references. Use direct Kami document/page URLs only after the URL mechanism and document identity are verified; a Google Drive file ID alone is not a confirmed Kami document ID."
+  },
+  "reference_library": "https://github.com/JadanPoll/FKEN_Ecosystem/blob/main/Library/Google_Drive.json"
+}
