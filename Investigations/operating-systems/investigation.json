@@ -1,7 +1,7 @@
 {
   "id": "operating-systems",
   "title": "Operating Systems — Question Landscapes and Investigation Trees",
-  "status": "source-indexed-investigation-not-yet-certified",
+  "status": "question-tree-established-investigations-not-yet-undertaken",
   "question": "What should an operating system make possible, what guarantees does it owe, and how are those guarantees realized?",
   "source_library": "https://drive.google.com/drive/folders/1cIv2hj5vmrohtneuPG9uALVkDHLqWVGC",
   "source_preference": "Google Drive/Kami first; preserve the user's annotations in PDFs and link evidence rather than copying files",
@@ -607,7 +607,10 @@
   ],
   "notes": [
     "OSTEP and TLPI are the primary conceptual/interface sources; LKD is a 2010 snapshot, not a current-Linux implementation oracle.",
-    "Do not force a fixed reading order: select nodes by the next consequential question and use their cited ranges."
+    "Do not force a fixed reading order: select nodes by the next consequential question and use their cited ranges.",
+    "The canonical proposed questions and candidate source ranges are now in question_tree.json. The existing nodes in this file are an earlier mixed representation retained for backward compatibility, NOT completed investigations.",
+    "For new investigation work, create a separate actual investigation record only after beginning evidence examination and model/hypothesis work. Candidate references attached to questions are not established certificates."
   ],
-  "updated": "2026-11-19"
+  "updated": "2026-11-19",
+  "question_tree_path": "question_tree.json"
 }
