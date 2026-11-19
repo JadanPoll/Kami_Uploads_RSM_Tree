@@ -1,7 +1,7 @@
 {
   "id": "operating-systems",
   "kind": "question_tree",
-  "version": 4,
+  "version": 5,
   "status": "provisional",
   "root": "OS-00",
   "title": "I want to build an OS! — question tree",
@@ -33,6 +33,30 @@
       "authors": "Robert Love",
       "edition": "third edition (2010)",
       "url": "https://drive.google.com/file/d/11yI22zgg2Rka_Nj2Kbv2UW7bMqe5sua0/view?usp=drivesdk"
+    },
+    {
+      "id": "MES",
+      "title": "Making Embedded Systems: Design Patterns for Great Software",
+      "edition": "2nd edition (2024)",
+      "url": "https://drive.google.com/file/d/1hU4l-fAivhO7f3b8ZZK58JOPTKysXzhl/view?usp=drivesdk",
+      "perspective": "bare-metal engineering",
+      "page_scheme": "Complete chapter titles verified in book; printed page ranges not yet verified",
+      "note": "Author explicitly focuses on bare-metal embedded systems rather than OS-specific implementation."
+    },
+    {
+      "id": "COD-RV",
+      "title": "Computer Organization and Design: The Hardware/Software Interface — RISC-V Edition",
+      "edition": "2nd edition",
+      "url": "https://drive.google.com/file/d/1oLtJEtoD_edhxRXXp9NqBg0eqwdHDpjP/view?usp=drivesdk",
+      "perspective": "hardware mechanisms",
+      "page_scheme": "Printed page ranges inclusive based on the inspected table of contents; section boundaries from next section"
+    },
+    {
+      "id": "COD-ARM",
+      "title": "Computer Organization and Design: The Hardware/Software Interface — ARM Edition",
+      "url": "https://drive.google.com/file/d/11keBAs8ZzIym0p4V_QEUfNtgjGH_91EA/view?usp=drivesdk",
+      "perspective": "hardware mechanisms",
+      "page_scheme": "Printed page ranges inclusive based on the inspected table of contents; section boundaries from next section"
     }
   ],
   "nodes": [
@@ -2123,6 +2147,72 @@
       "question_node_ids": [
         "OS-Q01",
         "OS-Q13"
+      ]
+    }
+  ],
+  "cross_source_reference_guide": "reference_guide.json#cross_source_routes",
+  "question_reference_routes": [
+    {
+      "route_id": "bare-metal",
+      "node_ids": [
+        "OS-Q01",
+        "OS-Q01a",
+        "OS-Q10a",
+        "OS-Q14a"
+      ]
+    },
+    {
+      "route_id": "board-bringup",
+      "node_ids": [
+        "OS-Q04",
+        "OS-Q04a",
+        "OS-Q12"
+      ]
+    },
+    {
+      "route_id": "exceptions",
+      "node_ids": [
+        "OS-Q05a",
+        "OS-Q06a",
+        "OS-Q08a",
+        "OS-Q10"
+      ]
+    },
+    {
+      "route_id": "devices",
+      "node_ids": [
+        "OS-Q08",
+        "OS-Q08a"
+      ]
+    },
+    {
+      "route_id": "hardware-vm",
+      "node_ids": [
+        "OS-Q07",
+        "OS-Q07a"
+      ]
+    },
+    {
+      "route_id": "cache-coherence",
+      "node_ids": [
+        "OS-Q06",
+        "OS-Q06b",
+        "OS-Q07"
+      ]
+    },
+    {
+      "route_id": "resource-limits",
+      "node_ids": [
+        "OS-Q07",
+        "OS-Q12",
+        "OS-Q14a"
+      ]
+    },
+    {
+      "route_id": "debugging",
+      "node_ids": [
+        "OS-Q12",
+        "OS-Q12a"
       ]
     }
   ]
