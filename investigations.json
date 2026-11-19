@@ -7,6 +7,13 @@
       "path": "Investigations/manufacturing-orientation/investigation.json",
       "status": "big-picture-question-landscape-active",
       "updated": "2026-11-18"
+    },
+    {
+      "id": "operating-systems",
+      "title": "Operating Systems — question landscapes and investigation trees",
+      "path": "Investigations/operating-systems/investigation.json",
+      "status": "source-indexed-investigation-not-yet-certified",
+      "updated": "2026-11-19"
     }
   ]
 }
