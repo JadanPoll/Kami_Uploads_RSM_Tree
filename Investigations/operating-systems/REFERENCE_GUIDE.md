@@ -79,7 +79,6 @@ Use this when you know what you want to inspect and need the chapter. **Page num
 | 48 | Distributed Systems | 605–620 |
 | 49 | Sun’s Network File System (NFS) | 621–638 |
 | 50 | The Andrew File System (AFS) | 639–652 |
-| 51 | Summary Dialogue on Distribution | 653–652 |
 | 51 | Summary Dialogue on Distribution | 653–654 |
 
 ## How this relates to the question tree
