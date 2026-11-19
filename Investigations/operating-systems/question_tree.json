@@ -1,9 +1,18 @@
 {
   "id": "operating-systems",
   "kind": "question_tree",
+  "version": 3,
   "status": "provisional",
-  "purpose": "Develop and navigate consequential operating-systems questions before performing individual investigations",
   "root": "OS-00",
+  "title": "I want to build an OS! — question tree",
+  "original_curiosity": "I want to build an OS!",
+  "parent_purpose_questions": [
+    "Do I mainly want to learn how computers work by building one?",
+    "Do I want a usable system I can keep improving?",
+    "Do I want to make a different kind of computer or OS experience?",
+    "Do I want to gain the ability to build and modify OS components?",
+    "Might building a whole OS be a route toward a larger purpose rather than the goal itself?"
+  ],
   "sources": [
     {
       "id": "OSTEP",
@@ -30,57 +39,19 @@
     {
       "id": "OS-00",
       "parent_id": null,
-      "question": "How can operating systems make computation usable, shareable, safe, persistent, and composable?",
-      "why": "Unifies purposes without assuming today's kernel structures are logically necessary",
+      "question": "I want to build an OS!",
+      "why_ask": "What do I actually want to make, and what would count as an OS?",
       "status": "candidate",
-      "candidate_answers": [],
-      "child_questions": [],
-      "candidate_references": [
-        {
-          "source_id": "OSTEP",
-          "section": "Ch. 2 — Introduction to Operating Systems",
-          "pages": {
-            "kind": "printed",
-            "start": 3,
-            "end": 20
-          },
-          "role": "Source's motivating OS abstractions",
-          "verification": "chapter/title and boundary checked against this PDF's contents"
-        }
-      ],
+      "candidate_references": [],
       "investigation_id": null,
-      "established_certificate_id": null,
-      "alternative_questions": [
-        "What would be left if we removed every OS service except those essential to run one program?",
-        "Is an OS best understood as a resource manager, an abstraction provider, a protection mechanism, or a platform for composing programs?"
-      ],
-      "answer_branches": [
-        {
-          "id": "OS-00-A1",
-          "possible_answer": "Different machines require different OS boundaries",
-          "next_question": "What changes when there is one program, one trusted operator, or no persistent storage?",
-          "status": "unverified_possibility"
-        },
-        {
-          "id": "OS-00-A2",
-          "possible_answer": "A small set of functions is common across many systems",
-          "next_question": "Which functions are essential, and which could be moved into libraries or applications?",
-          "status": "unverified_possibility"
-        }
-      ],
-      "why_this_question_matters": "Clarifies what we mean by OS before treating familiar Linux mechanisms as inevitable"
+      "established_certificate_id": null
     },
     {
-      "id": "OS-01",
+      "id": "OS-Q01",
       "parent_id": "OS-00",
-      "question": "What is an OS fundamentally for, and which functions are necessary versus historically contingent?",
-      "why": "Distinguish a functional contract from a particular monolithic implementation",
+      "question": "What even is an OS?",
+      "why_ask": "Do I need to write a kernel, or would something else satisfy the reason I want to build one?",
       "status": "candidate",
-      "candidate_answers": [
-        "Resource abstraction, sharing and isolation could be the central services",
-        "The meaningful boundary of an OS may depend on the computing environment"
-      ],
-      "child_questions": [],
       "candidate_references": [
         {
           "source_id": "OSTEP",
@@ -106,50 +77,124 @@
         }
       ],
       "investigation_id": null,
-      "established_certificate_id": null,
-      "alternative_questions": [
-        "Could a useful computer have no conventional operating system at all?",
-        "When does a library, hypervisor, runtime, or distributed control plane begin to behave like an OS?"
-      ],
-      "answer_branches": [
-        {
-          "id": "OS-01-A1",
-          "possible_answer": "Yes, an OS is essential in every useful setting",
-          "next_question": "What functionality is impossible without one, rather than merely inconvenient?",
-          "status": "unverified_possibility"
-        },
-        {
-          "id": "OS-01-A2",
-          "possible_answer": "No, some useful settings can be bare metal",
-          "next_question": "What new problems appear when more programs, devices or users are added?",
-          "status": "unverified_possibility"
-        },
-        {
-          "id": "OS-01-A3",
-          "possible_answer": "It depends on the system's purposes",
-          "next_question": "Which pressures make abstraction, isolation, sharing or persistence worthwhile?",
-          "status": "unverified_possibility"
-        }
-      ],
-      "why_this_question_matters": "Prevents the field's historical architecture from being mistaken for its necessary purpose"
+      "established_certificate_id": null
     },
     {
-      "id": "OS-02",
+      "id": "OS-Q02",
       "parent_id": "OS-00",
-      "question": "How can multiple programs safely and efficiently share computation?",
-      "why": "Separates mechanism from policies and hardware supports",
+      "question": "Can I really make one myself?",
+      "why_ask": "What can one person realistically build, and what would I have to borrow from existing work?",
       "status": "candidate",
-      "candidate_answers": [],
-      "child_questions": [
+      "candidate_references": [
         {
-          "id": "OS-02a",
-          "question": "How is execution isolated and controlled?"
+          "source_id": "OSTEP",
+          "section": "Ch. 2 — Introduction to Operating Systems",
+          "pages": {
+            "kind": "printed",
+            "start": 3,
+            "end": 20
+          },
+          "role": "Starting statement of OS purposes",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
         },
         {
-          "id": "OS-02b",
-          "question": "What should determine who runs next?"
+          "source_id": "LKD",
+          "section": "Ch. 1 — Introduction to the Linux Kernel",
+          "pages": {
+            "kind": "printed",
+            "start": 1,
+            "end": 10
+          },
+          "role": "Concrete kernel's perspective",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
         }
       ],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "OS-Q03",
+      "parent_id": "OS-00",
+      "question": "What should it actually do?",
+      "why_ask": "Would it be enough to run a program, or do I want several programs, files, devices, a screen, or a usable computer?",
+      "status": "candidate",
+      "candidate_references": [
+        {
+          "source_id": "OSTEP",
+          "section": "Ch. 2 — Introduction to Operating Systems",
+          "pages": {
+            "kind": "printed",
+            "start": 3,
+            "end": 20
+          },
+          "role": "Source's motivating OS abstractions",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        }
+      ],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "OS-Q04",
+      "parent_id": "OS-00",
+      "question": "How does a computer start running my OS?",
+      "why_ask": "What runs first, who loads my code, and when does my program become the thing in control?",
+      "status": "candidate",
+      "candidate_references": [
+        {
+          "source_id": "OSTEP",
+          "section": "Ch. 6 — Limited Direct Execution",
+          "pages": {
+            "kind": "printed",
+            "start": 49,
+            "end": 64
+          },
+          "role": "Isolation and privilege transitions",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        },
+        {
+          "source_id": "TLPI",
+          "section": "Ch. 3 — System Programming Concepts",
+          "pages": {
+            "kind": "printed",
+            "start": 43,
+            "end": 68
+          },
+          "role": "Program-to-system concepts",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        },
+        {
+          "source_id": "LKD",
+          "section": "Ch. 5 — System Calls",
+          "pages": {
+            "kind": "printed",
+            "start": 69,
+            "end": 84
+          },
+          "role": "Kernel system call implementation",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        },
+        {
+          "source_id": "TLPI",
+          "section": "Ch. 38 — Writing Secure Privileged Programs",
+          "pages": {
+            "kind": "printed",
+            "start": 783,
+            "end": 796
+          },
+          "role": "Security implications",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        }
+      ],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "OS-Q05",
+      "parent_id": "OS-00",
+      "question": "How do I get it to run programs?",
+      "why_ask": "What counts as a program, and what must the OS do to start, pause, resume, and stop one?",
+      "status": "candidate",
       "candidate_references": [
         {
           "source_id": "OSTEP",
@@ -208,56 +253,80 @@
         }
       ],
       "investigation_id": null,
-      "established_certificate_id": null,
-      "alternative_questions": [
-        "Could several programs share a machine without preemption?",
-        "Should the system optimize throughput, response time, fairness, predictability, or a mixture?"
-      ],
-      "answer_branches": [
-        {
-          "id": "OS-02-A1",
-          "possible_answer": "Yes, cooperative sharing can be sufficient",
-          "next_question": "What guarantees must programs provide, and what happens when one fails to yield?",
-          "status": "unverified_possibility"
-        },
-        {
-          "id": "OS-02-A2",
-          "possible_answer": "No, untrusted programs require an independent way to regain control",
-          "next_question": "What hardware or trusted mechanism makes preemption possible?",
-          "status": "unverified_possibility"
-        },
-        {
-          "id": "OS-02-A3",
-          "possible_answer": "Yes, but the correct schedule depends on workload",
-          "next_question": "Which measurements would distinguish workloads for which one policy is preferable?",
-          "status": "unverified_possibility"
-        },
-        {
-          "id": "OS-02-A4",
-          "possible_answer": "No, unless we relax isolation or responsiveness",
-          "next_question": "Which sacrificed property matters to the parent purpose, and can another mechanism restore it?",
-          "status": "unverified_possibility"
-        }
-      ],
-      "why_this_question_matters": "Exposes the contract between execution control, policy and actual workloads"
+      "established_certificate_id": null
     },
     {
-      "id": "OS-03",
+      "id": "OS-Q06",
       "parent_id": "OS-00",
-      "question": "How can programs have isolated, flexible views of memory?",
-      "why": "Connect software abstraction to address translation, allocation, caching and resource limits",
+      "question": "What if two programs want to run at once?",
+      "why_ask": "Can they take turns without corrupting one another, and who decides?",
       "status": "candidate",
-      "candidate_answers": [],
-      "child_questions": [
+      "candidate_references": [
         {
-          "id": "OS-03a",
-          "question": "What is an address space, and what guarantees should it provide?"
+          "source_id": "OSTEP",
+          "section": "Ch. 4 — The Abstraction: The Process",
+          "pages": {
+            "kind": "printed",
+            "start": 25,
+            "end": 36
+          },
+          "role": "Process model",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
         },
         {
-          "id": "OS-03b",
-          "question": "What happens when physical memory is insufficient?"
+          "source_id": "OSTEP",
+          "section": "Ch. 6 — Mechanism: Limited Direct Execution",
+          "pages": {
+            "kind": "printed",
+            "start": 49,
+            "end": 64
+          },
+          "role": "Mechanism, privilege transitions and control",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        },
+        {
+          "source_id": "OSTEP",
+          "section": "Chs. 7–10 — Scheduling, MLFQ, proportional share, multiprocessor scheduling",
+          "pages": {
+            "kind": "printed",
+            "start": 65,
+            "end": 116
+          },
+          "role": "Competing scheduling policies and their costs",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        },
+        {
+          "source_id": "LKD",
+          "section": "Ch. 3 — Process Management",
+          "pages": {
+            "kind": "printed",
+            "start": 23,
+            "end": 40
+          },
+          "role": "Linux implementation perspective",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        },
+        {
+          "source_id": "LKD",
+          "section": "Ch. 4 — Process Scheduling",
+          "pages": {
+            "kind": "printed",
+            "start": 41,
+            "end": 68
+          },
+          "role": "Linux scheduling example",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
         }
       ],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "OS-Q07",
+      "parent_id": "OS-00",
+      "question": "How does a program get memory?",
+      "why_ask": "Why can't programs simply use whatever memory addresses they like?",
+      "status": "candidate",
       "candidate_references": [
         {
           "source_id": "OSTEP",
@@ -305,253 +374,14 @@
         }
       ],
       "investigation_id": null,
-      "established_certificate_id": null,
-      "alternative_questions": [
-        "Could useful isolation be provided without virtual addresses?",
-        "What really happens when a program accesses memory that is not resident?",
-        "Does making each program think it owns memory necessarily improve usability?"
-      ],
-      "answer_branches": [
-        {
-          "id": "OS-03-A1",
-          "possible_answer": "Yes, per-process virtual address spaces solve several problems at once",
-          "next_question": "Which benefits arise from protection, relocation, sharing, or demand paging separately?",
-          "status": "unverified_possibility"
-        },
-        {
-          "id": "OS-03-A2",
-          "possible_answer": "Yes, but translation and caching have costs",
-          "next_question": "Which workloads make TLB behavior or page-table overhead significant?",
-          "status": "unverified_possibility"
-        },
-        {
-          "id": "OS-03-A3",
-          "possible_answer": "No, virtual memory is not necessary in all environments",
-          "next_question": "What can a physically addressed embedded system accomplish, and what does it give up?",
-          "status": "unverified_possibility"
-        },
-        {
-          "id": "OS-03-A4",
-          "possible_answer": "No, unless faults and memory pressure are managed",
-          "next_question": "Which policies and data structures ensure a useful abstraction under contention?",
-          "status": "unverified_possibility"
-        }
-      ],
-      "why_this_question_matters": "Separates a software illusion from hardware support and policy decisions"
+      "established_certificate_id": null
     },
     {
-      "id": "OS-04",
+      "id": "OS-Q08",
       "parent_id": "OS-00",
-      "question": "How can concurrent activities coordinate without violating correctness or losing progress?",
-      "why": "Separates mutual exclusion, ordering, liveness and alternative concurrency structures",
+      "question": "How does my OS talk to a keyboard, screen, or disk?",
+      "why_ask": "What makes hardware events visible to software, and what does a driver actually do?",
       "status": "candidate",
-      "candidate_answers": [],
-      "child_questions": [
-        {
-          "id": "OS-04a",
-          "question": "Which shared-state assumptions produce races and why?"
-        },
-        {
-          "id": "OS-04b",
-          "question": "When are locks, condition variables, semaphores or event loops appropriate?"
-        }
-      ],
-      "candidate_references": [
-        {
-          "source_id": "OSTEP",
-          "section": "Chs. 26–28 — Concurrency, thread API, locks",
-          "pages": {
-            "kind": "printed",
-            "start": 287,
-            "end": 336
-          },
-          "role": "Shared-state and exclusion mechanism",
-          "verification": "chapter/title and boundary checked against this PDF's contents"
-        },
-        {
-          "source_id": "OSTEP",
-          "section": "Chs. 29–33 — Concurrent structures, condition variables, semaphores, bugs, events",
-          "pages": {
-            "kind": "printed",
-            "start": 337,
-            "end": 412
-          },
-          "role": "Different synchronization mechanisms and failure patterns",
-          "verification": "chapter/title and boundary checked against this PDF's contents"
-        },
-        {
-          "source_id": "TLPI",
-          "section": "Chs. 29–31 — Threads, thread synchronization and thread safety",
-          "pages": {
-            "kind": "printed",
-            "start": 617,
-            "end": 670
-          },
-          "role": "Program-facing threads",
-          "verification": "chapter/title and boundary checked against this PDF's contents"
-        },
-        {
-          "source_id": "LKD",
-          "section": "Chs. 9–10 — Kernel Synchronization and Methods",
-          "pages": {
-            "kind": "printed",
-            "start": 161,
-            "end": 206
-          },
-          "role": "Kernel synchronization tradeoffs",
-          "verification": "chapter/title and boundary checked against this PDF's contents"
-        }
-      ],
-      "investigation_id": null,
-      "established_certificate_id": null,
-      "alternative_questions": [
-        "Can we avoid shared mutable state rather than synchronize every access?",
-        "Is absence of data races enough to establish that concurrent software works?",
-        "When does adding parallelism make the system slower or less reliable?"
-      ],
-      "answer_branches": [
-        {
-          "id": "OS-04-A1",
-          "possible_answer": "Yes, mutual exclusion prevents certain races",
-          "next_question": "What failures remain possible despite correct locking: deadlock, starvation, missed wakeups?",
-          "status": "unverified_possibility"
-        },
-        {
-          "id": "OS-04-A2",
-          "possible_answer": "Yes, but correctness requires progress and ordering guarantees too",
-          "next_question": "How would we distinguish safety, liveness and performance experimentally?",
-          "status": "unverified_possibility"
-        },
-        {
-          "id": "OS-04-A3",
-          "possible_answer": "No, locks alone are insufficient for some patterns",
-          "next_question": "Would message passing, immutability or ownership make the requirement simpler?",
-          "status": "unverified_possibility"
-        },
-        {
-          "id": "OS-04-A4",
-          "possible_answer": "No, unless the underlying memory-order assumptions hold",
-          "next_question": "What guarantees must the compiler, processor and synchronization primitive provide?",
-          "status": "unverified_possibility"
-        }
-      ],
-      "why_this_question_matters": "Avoids turning concurrency study into a catalogue of synchronization primitives"
-    },
-    {
-      "id": "OS-05",
-      "parent_id": "OS-00",
-      "question": "How can information survive failures while remaining efficiently accessible and trustworthy?",
-      "why": "Investigate the gap between abstraction of a file and physical devices, caches, write order and crashes",
-      "status": "candidate",
-      "candidate_answers": [],
-      "child_questions": [
-        {
-          "id": "OS-05a",
-          "question": "What does storing a file require beneath the interface?"
-        },
-        {
-          "id": "OS-05b",
-          "question": "What guarantees survive power loss and partial writes?"
-        }
-      ],
-      "candidate_references": [
-        {
-          "source_id": "OSTEP",
-          "section": "Chs. 39–40 — Files, directories and filesystem implementation",
-          "pages": {
-            "kind": "printed",
-            "start": 467,
-            "end": 510
-          },
-          "role": "Public interface and storage structure",
-          "verification": "chapter/title and boundary checked against this PDF's contents"
-        },
-        {
-          "source_id": "OSTEP",
-          "section": "Chs. 41–43 — FFS, crash consistency and journaling, log-structured filesystems",
-          "pages": {
-            "kind": "printed",
-            "start": 511,
-            "end": 562
-          },
-          "role": "Locality, crash and design tradeoffs",
-          "verification": "chapter/title and boundary checked against this PDF's contents"
-        },
-        {
-          "source_id": "TLPI",
-          "section": "Chs. 4–5 — File I/O",
-          "pages": {
-            "kind": "printed",
-            "start": 69,
-            "end": 112
-          },
-          "role": "Interface contract",
-          "verification": "chapter/title and boundary checked against this PDF's contents"
-        },
-        {
-          "source_id": "LKD",
-          "section": "Chs. 13–14 — Virtual Filesystem and Block I/O Layer",
-          "pages": {
-            "kind": "printed",
-            "start": 261,
-            "end": 304
-          },
-          "role": "Kernel interfaces and requests",
-          "verification": "chapter/title and boundary checked against this PDF's contents"
-        }
-      ],
-      "investigation_id": null,
-      "established_certificate_id": null,
-      "alternative_questions": [
-        "What does a successful write actually promise?",
-        "Can a filesystem be both fast and crash safe without special assumptions?",
-        "What does it mean for data to be 'stored' if there are multiple caches?"
-      ],
-      "answer_branches": [
-        {
-          "id": "OS-05-A1",
-          "possible_answer": "Yes, a successful write means the data is durable",
-          "next_question": "What contractual or physical conditions would need to be true for this to hold?",
-          "status": "unverified_possibility"
-        },
-        {
-          "id": "OS-05-A2",
-          "possible_answer": "Yes, but success may only mean acceptance into a cache",
-          "next_question": "Which additional operations establish durability, and where can failure still intervene?",
-          "status": "unverified_possibility"
-        },
-        {
-          "id": "OS-05-A3",
-          "possible_answer": "No, a write can be lost or partially applied after a crash",
-          "next_question": "Which failure point and ordering assumption causes the problem?",
-          "status": "unverified_possibility"
-        },
-        {
-          "id": "OS-05-A4",
-          "possible_answer": "No, unless the system uses a consistency protocol",
-          "next_question": "Which approaches—journaling, copy-on-write, checksums or sync—solve which failure modes?",
-          "status": "unverified_possibility"
-        }
-      ],
-      "why_this_question_matters": "Directly tests whether application assumptions match the actual storage contract"
-    },
-    {
-      "id": "OS-06",
-      "parent_id": "OS-00",
-      "question": "How does software safely coordinate devices, events and physical resources?",
-      "why": "Connects OS behavior to external asynchronous reality and device models",
-      "status": "candidate",
-      "candidate_answers": [],
-      "child_questions": [
-        {
-          "id": "OS-06a",
-          "question": "How are device events communicated to software?"
-        },
-        {
-          "id": "OS-06b",
-          "question": "Which I/O work should execute synchronously, asynchronously or deferred?"
-        }
-      ],
       "candidate_references": [
         {
           "source_id": "OSTEP",
@@ -599,57 +429,69 @@
         }
       ],
       "investigation_id": null,
-      "established_certificate_id": null,
-      "alternative_questions": [
-        "How can a CPU know something happened without constantly asking?",
-        "Should device work be completed during an interrupt?",
-        "What if a device is fast in the common case but stalls indefinitely?"
-      ],
-      "answer_branches": [
-        {
-          "id": "OS-06-A1",
-          "possible_answer": "Yes, polling is sufficient in some systems",
-          "next_question": "When is polling cheaper, simpler or more predictable than interrupts?",
-          "status": "unverified_possibility"
-        },
-        {
-          "id": "OS-06-A2",
-          "possible_answer": "Yes, but interrupts require constraints on handler work",
-          "next_question": "What must be deferred, and which information must be captured immediately?",
-          "status": "unverified_possibility"
-        },
-        {
-          "id": "OS-06-A3",
-          "possible_answer": "No, synchronous I/O cannot meet all latency and concurrency needs",
-          "next_question": "Which asynchronous interfaces or batching mechanisms change that?",
-          "status": "unverified_possibility"
-        },
-        {
-          "id": "OS-06-A4",
-          "possible_answer": "No, unless device failure is contained",
-          "next_question": "How do timeouts, error paths and driver isolation affect overall reliability?",
-          "status": "unverified_possibility"
-        }
-      ],
-      "why_this_question_matters": "Connects abstract OS models to asynchronous events and real hardware behavior"
+      "established_certificate_id": null
     },
     {
-      "id": "OS-07",
+      "id": "OS-Q09",
       "parent_id": "OS-00",
-      "question": "Where should privilege, isolation and responsibility boundaries lie?",
-      "why": "Contrast public APIs and protected mechanisms, and reveal which boundaries are design choices",
+      "question": "How do I keep a file after turning the computer off?",
+      "why_ask": "What has to happen between writing bytes and those bytes surviving a restart?",
       "status": "candidate",
-      "candidate_answers": [],
-      "child_questions": [
+      "candidate_references": [
         {
-          "id": "OS-07a",
-          "question": "What guarantees separate application execution from trusted kernel work?"
+          "source_id": "OSTEP",
+          "section": "Chs. 39–40 — Files, directories and filesystem implementation",
+          "pages": {
+            "kind": "printed",
+            "start": 467,
+            "end": 510
+          },
+          "role": "Public interface and storage structure",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
         },
         {
-          "id": "OS-07b",
-          "question": "Which policies must be privileged and which can be moved outside the kernel?"
+          "source_id": "OSTEP",
+          "section": "Chs. 41–43 — FFS, crash consistency and journaling, log-structured filesystems",
+          "pages": {
+            "kind": "printed",
+            "start": 511,
+            "end": 562
+          },
+          "role": "Locality, crash and design tradeoffs",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        },
+        {
+          "source_id": "TLPI",
+          "section": "Chs. 4–5 — File I/O",
+          "pages": {
+            "kind": "printed",
+            "start": 69,
+            "end": 112
+          },
+          "role": "Interface contract",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        },
+        {
+          "source_id": "LKD",
+          "section": "Chs. 13–14 — Virtual Filesystem and Block I/O Layer",
+          "pages": {
+            "kind": "printed",
+            "start": 261,
+            "end": 304
+          },
+          "role": "Kernel interfaces and requests",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
         }
       ],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "OS-Q10",
+      "parent_id": "OS-00",
+      "question": "How do I stop a bad program from breaking everything?",
+      "why_ask": "What can hardware enforce, and what must my OS check?",
+      "status": "candidate",
       "candidate_references": [
         {
           "source_id": "OSTEP",
@@ -697,57 +539,14 @@
         }
       ],
       "investigation_id": null,
-      "established_certificate_id": null,
-      "alternative_questions": [
-        "What truly requires privilege, rather than merely trusted code?",
-        "Could most OS services run outside the kernel?",
-        "What is the minimum mechanism that must remain trusted?"
-      ],
-      "answer_branches": [
-        {
-          "id": "OS-07-A1",
-          "possible_answer": "Yes, a small privileged core can support many services",
-          "next_question": "How does communication overhead change the architecture's usefulness?",
-          "status": "unverified_possibility"
-        },
-        {
-          "id": "OS-07-A2",
-          "possible_answer": "Yes, but moving services outside the kernel changes failure and security properties",
-          "next_question": "Which boundaries become easier or harder to enforce?",
-          "status": "unverified_possibility"
-        },
-        {
-          "id": "OS-07-A3",
-          "possible_answer": "No, some services require privileged execution or special hardware",
-          "next_question": "Which operations specifically need privilege, and which only need mediated access?",
-          "status": "unverified_possibility"
-        },
-        {
-          "id": "OS-07-A4",
-          "possible_answer": "No, unless we change the hardware or threat model",
-          "next_question": "What would virtualization, capability hardware or a trusted runtime make possible?",
-          "status": "unverified_possibility"
-        }
-      ],
-      "why_this_question_matters": "Opens architectural alternatives instead of assuming the monolithic kernel is the only design"
+      "established_certificate_id": null
     },
     {
-      "id": "OS-08",
+      "id": "OS-Q11",
       "parent_id": "OS-00",
-      "question": "How do OS abstractions compose into larger cooperating and distributed systems?",
-      "why": "Connect local capabilities, IPC, networking and remote resources",
+      "question": "Could I build the OS differently?",
+      "why_ask": "What could be removed, reused, pushed into a program, or handled by another machine?",
       "status": "candidate",
-      "candidate_answers": [],
-      "child_questions": [
-        {
-          "id": "OS-08a",
-          "question": "What communication and coordination mechanisms can connect isolated processes?"
-        },
-        {
-          "id": "OS-08b",
-          "question": "What changes when the system crosses machine and failure boundaries?"
-        }
-      ],
       "candidate_references": [
         {
           "source_id": "TLPI",
@@ -795,95 +594,945 @@
         }
       ],
       "investigation_id": null,
-      "established_certificate_id": null,
-      "alternative_questions": [
-        "How far can ordinary process interfaces be extended across machines?",
-        "Can a distributed program behave as if all processes shared one reliable computer?",
-        "What changes when a remote component is temporarily unreachable but not known dead?"
-      ],
-      "answer_branches": [
+      "established_certificate_id": null
+    },
+    {
+      "id": "OS-Q12",
+      "parent_id": "OS-00",
+      "question": "How would I know it really works?",
+      "why_ask": "Can it survive a representative session, failure and restart—not just print hello once?",
+      "status": "candidate",
+      "candidate_references": [
         {
-          "id": "OS-08-A1",
-          "possible_answer": "Yes, local abstractions can be extended across machines",
-          "next_question": "Which guarantees survive added latency and independent failures?",
-          "status": "unverified_possibility"
+          "source_id": "OSTEP",
+          "section": "Ch. 36 — I/O Devices",
+          "pages": {
+            "kind": "printed",
+            "start": 419,
+            "end": 432
+          },
+          "role": "Device interaction model",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
         },
         {
-          "id": "OS-08-A2",
-          "possible_answer": "Yes, but transparency hides failure and consistency tradeoffs",
-          "next_question": "When should an application know that a resource is remote?",
-          "status": "unverified_possibility"
-        },
-        {
-          "id": "OS-08-A3",
-          "possible_answer": "No, remote failure cannot always be distinguished from delay",
-          "next_question": "What does that uncertainty require of retries and state changes?",
-          "status": "unverified_possibility"
-        },
-        {
-          "id": "OS-08-A4",
-          "possible_answer": "No, unless an application relaxes availability or consistency requirements",
-          "next_question": "Which requirements are essential to the parent goal, and which are accidental?",
-          "status": "unverified_possibility"
+          "source_id": "OSTEP",
+          "section": "Chs. 39–40 — Files, directories and filesystem implementation",
+          "pages": {
+            "kind": "printed",
+            "start": 467,
+            "end": 510
+          },
+          "role": "Public interface and storage structure",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
         }
       ],
-      "why_this_question_matters": "Exposes where composability across a machine boundary stops being free"
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "OS-Q01a",
+      "parent_id": "OS-Q01",
+      "question": "Why do computers need an OS at all?",
+      "why_ask": "What can a program do on bare hardware, and where does that approach become awkward?",
+      "status": "candidate",
+      "candidate_references": [
+        {
+          "source_id": "OSTEP",
+          "section": "Ch. 2 — Introduction to Operating Systems",
+          "pages": {
+            "kind": "printed",
+            "start": 3,
+            "end": 20
+          },
+          "role": "Starting statement of OS purposes",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        },
+        {
+          "source_id": "LKD",
+          "section": "Ch. 1 — Introduction to the Linux Kernel",
+          "pages": {
+            "kind": "printed",
+            "start": 1,
+            "end": 10
+          },
+          "role": "Concrete kernel's perspective",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        }
+      ],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "OS-Q01b",
+      "parent_id": "OS-Q01",
+      "question": "What makes my OS different from an ordinary program?",
+      "why_ask": "Is the difference privilege, controlling resources, supplying useful services, or something else?",
+      "status": "candidate",
+      "candidate_references": [
+        {
+          "source_id": "OSTEP",
+          "section": "Ch. 6 — Limited Direct Execution",
+          "pages": {
+            "kind": "printed",
+            "start": 49,
+            "end": 64
+          },
+          "role": "Isolation and privilege transitions",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        },
+        {
+          "source_id": "TLPI",
+          "section": "Ch. 3 — System Programming Concepts",
+          "pages": {
+            "kind": "printed",
+            "start": 43,
+            "end": 68
+          },
+          "role": "Program-to-system concepts",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        },
+        {
+          "source_id": "LKD",
+          "section": "Ch. 5 — System Calls",
+          "pages": {
+            "kind": "printed",
+            "start": 69,
+            "end": 84
+          },
+          "role": "Kernel system call implementation",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        },
+        {
+          "source_id": "TLPI",
+          "section": "Ch. 38 — Writing Secure Privileged Programs",
+          "pages": {
+            "kind": "printed",
+            "start": 783,
+            "end": 796
+          },
+          "role": "Security implications",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        }
+      ],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "OS-Q02a",
+      "parent_id": "OS-Q02",
+      "question": "Do I have to make everything from scratch?",
+      "why_ask": "What would I learn from using an existing bootloader, libraries, or kernel?",
+      "status": "candidate",
+      "candidate_references": [
+        {
+          "source_id": "OSTEP",
+          "section": "Ch. 2 — Introduction to Operating Systems",
+          "pages": {
+            "kind": "printed",
+            "start": 3,
+            "end": 20
+          },
+          "role": "Starting statement of OS purposes",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        },
+        {
+          "source_id": "LKD",
+          "section": "Ch. 1 — Introduction to the Linux Kernel",
+          "pages": {
+            "kind": "printed",
+            "start": 1,
+            "end": 10
+          },
+          "role": "Concrete kernel's perspective",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        }
+      ],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "OS-Q03a",
+      "parent_id": "OS-Q03",
+      "question": "What is the smallest OS I would be happy to call mine?",
+      "why_ask": "Does it only need to run a program or does the experience matter more?",
+      "status": "candidate",
+      "candidate_references": [
+        {
+          "source_id": "OSTEP",
+          "section": "Ch. 2 — Introduction to Operating Systems",
+          "pages": {
+            "kind": "printed",
+            "start": 3,
+            "end": 20
+          },
+          "role": "Source's motivating OS abstractions",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        }
+      ],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "OS-Q04a",
+      "parent_id": "OS-Q04",
+      "question": "What is running before my OS starts?",
+      "why_ask": "How does control pass from firmware and boot code to my own code?",
+      "status": "candidate",
+      "candidate_references": [
+        {
+          "source_id": "OSTEP",
+          "section": "Ch. 6 — Limited Direct Execution",
+          "pages": {
+            "kind": "printed",
+            "start": 49,
+            "end": 64
+          },
+          "role": "Isolation and privilege transitions",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        },
+        {
+          "source_id": "TLPI",
+          "section": "Ch. 3 — System Programming Concepts",
+          "pages": {
+            "kind": "printed",
+            "start": 43,
+            "end": 68
+          },
+          "role": "Program-to-system concepts",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        },
+        {
+          "source_id": "LKD",
+          "section": "Ch. 5 — System Calls",
+          "pages": {
+            "kind": "printed",
+            "start": 69,
+            "end": 84
+          },
+          "role": "Kernel system call implementation",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        },
+        {
+          "source_id": "TLPI",
+          "section": "Ch. 38 — Writing Secure Privileged Programs",
+          "pages": {
+            "kind": "printed",
+            "start": 783,
+            "end": 796
+          },
+          "role": "Security implications",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        }
+      ],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "OS-Q05a",
+      "parent_id": "OS-Q05",
+      "question": "What happens when a program asks the OS to do something?",
+      "why_ask": "Why doesn't the program just access the hardware directly?",
+      "status": "candidate",
+      "candidate_references": [
+        {
+          "source_id": "OSTEP",
+          "section": "Ch. 6 — Limited Direct Execution",
+          "pages": {
+            "kind": "printed",
+            "start": 49,
+            "end": 64
+          },
+          "role": "Isolation and privilege transitions",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        },
+        {
+          "source_id": "TLPI",
+          "section": "Ch. 3 — System Programming Concepts",
+          "pages": {
+            "kind": "printed",
+            "start": 43,
+            "end": 68
+          },
+          "role": "Program-to-system concepts",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        },
+        {
+          "source_id": "LKD",
+          "section": "Ch. 5 — System Calls",
+          "pages": {
+            "kind": "printed",
+            "start": 69,
+            "end": 84
+          },
+          "role": "Kernel system call implementation",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        },
+        {
+          "source_id": "TLPI",
+          "section": "Ch. 38 — Writing Secure Privileged Programs",
+          "pages": {
+            "kind": "printed",
+            "start": 783,
+            "end": 796
+          },
+          "role": "Security implications",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        }
+      ],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "OS-Q06a",
+      "parent_id": "OS-Q06",
+      "question": "What if one program never gives the CPU back?",
+      "why_ask": "How would the OS regain control without trusting the program?",
+      "status": "candidate",
+      "candidate_references": [
+        {
+          "source_id": "OSTEP",
+          "section": "Ch. 4 — The Abstraction: The Process",
+          "pages": {
+            "kind": "printed",
+            "start": 25,
+            "end": 36
+          },
+          "role": "Process model",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        },
+        {
+          "source_id": "OSTEP",
+          "section": "Ch. 6 — Mechanism: Limited Direct Execution",
+          "pages": {
+            "kind": "printed",
+            "start": 49,
+            "end": 64
+          },
+          "role": "Mechanism, privilege transitions and control",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        },
+        {
+          "source_id": "OSTEP",
+          "section": "Chs. 7–10 — Scheduling, MLFQ, proportional share, multiprocessor scheduling",
+          "pages": {
+            "kind": "printed",
+            "start": 65,
+            "end": 116
+          },
+          "role": "Competing scheduling policies and their costs",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        },
+        {
+          "source_id": "LKD",
+          "section": "Ch. 3 — Process Management",
+          "pages": {
+            "kind": "printed",
+            "start": 23,
+            "end": 40
+          },
+          "role": "Linux implementation perspective",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        },
+        {
+          "source_id": "LKD",
+          "section": "Ch. 4 — Process Scheduling",
+          "pages": {
+            "kind": "printed",
+            "start": 41,
+            "end": 68
+          },
+          "role": "Linux scheduling example",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        }
+      ],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "OS-Q06b",
+      "parent_id": "OS-Q06",
+      "question": "Can two programs change the same thing safely?",
+      "why_ask": "When do shared data and timing turn into bugs?",
+      "status": "candidate",
+      "candidate_references": [
+        {
+          "source_id": "OSTEP",
+          "section": "Chs. 26–28 — Concurrency, thread API, locks",
+          "pages": {
+            "kind": "printed",
+            "start": 287,
+            "end": 336
+          },
+          "role": "Shared-state and exclusion mechanism",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        },
+        {
+          "source_id": "OSTEP",
+          "section": "Chs. 29–33 — Concurrent structures, condition variables, semaphores, bugs, events",
+          "pages": {
+            "kind": "printed",
+            "start": 337,
+            "end": 412
+          },
+          "role": "Different synchronization mechanisms and failure patterns",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        },
+        {
+          "source_id": "TLPI",
+          "section": "Chs. 29–31 — Threads, thread synchronization and thread safety",
+          "pages": {
+            "kind": "printed",
+            "start": 617,
+            "end": 670
+          },
+          "role": "Program-facing threads",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        },
+        {
+          "source_id": "LKD",
+          "section": "Chs. 9–10 — Kernel Synchronization and Methods",
+          "pages": {
+            "kind": "printed",
+            "start": 161,
+            "end": 206
+          },
+          "role": "Kernel synchronization tradeoffs",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        }
+      ],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "OS-Q07a",
+      "parent_id": "OS-Q07",
+      "question": "Can two programs use the same address without colliding?",
+      "why_ask": "What would have to translate or isolate those addresses?",
+      "status": "candidate",
+      "candidate_references": [
+        {
+          "source_id": "OSTEP",
+          "section": "Chs. 13–15 — Address spaces, memory API, address translation",
+          "pages": {
+            "kind": "printed",
+            "start": 121,
+            "end": 154
+          },
+          "role": "Model and mechanism",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        },
+        {
+          "source_id": "OSTEP",
+          "section": "Chs. 18–23 — Paging, TLBs, multi-level tables, swapping and VM policy",
+          "pages": {
+            "kind": "printed",
+            "start": 185,
+            "end": 278
+          },
+          "role": "Alternative mechanisms and boundary cases",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        },
+        {
+          "source_id": "TLPI",
+          "section": "Chs. 49–50 — Memory Mappings and Virtual Memory Operations",
+          "pages": {
+            "kind": "printed",
+            "start": 1017,
+            "end": 1056
+          },
+          "role": "Program-facing interfaces",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        },
+        {
+          "source_id": "LKD",
+          "section": "Ch. 15 — The Process Address Space",
+          "pages": {
+            "kind": "printed",
+            "start": 305,
+            "end": 322
+          },
+          "role": "Kernel-level representation",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        }
+      ],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "OS-Q08a",
+      "parent_id": "OS-Q08",
+      "question": "What if a device needs attention while something else is running?",
+      "why_ask": "Can the OS notice without constantly checking?",
+      "status": "candidate",
+      "candidate_references": [
+        {
+          "source_id": "OSTEP",
+          "section": "Ch. 36 — I/O Devices",
+          "pages": {
+            "kind": "printed",
+            "start": 419,
+            "end": 432
+          },
+          "role": "Device interaction model",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        },
+        {
+          "source_id": "OSTEP",
+          "section": "Chs. 37–38 — Hard disks and RAID",
+          "pages": {
+            "kind": "printed",
+            "start": 433,
+            "end": 466
+          },
+          "role": "Consequences of actual devices",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        },
+        {
+          "source_id": "LKD",
+          "section": "Chs. 7–8 — Interrupts and Deferred Work",
+          "pages": {
+            "kind": "printed",
+            "start": 113,
+            "end": 160
+          },
+          "role": "Interrupt processing mechanisms",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        },
+        {
+          "source_id": "LKD",
+          "section": "Ch. 17 — Devices and Modules",
+          "pages": {
+            "kind": "printed",
+            "start": 337,
+            "end": 362
+          },
+          "role": "Device model and modularity",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        }
+      ],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "OS-Q09a",
+      "parent_id": "OS-Q09",
+      "question": "If my write succeeds, is my file safe?",
+      "why_ask": "What if the computer loses power the very next moment?",
+      "status": "candidate",
+      "candidate_references": [
+        {
+          "source_id": "OSTEP",
+          "section": "Chs. 39–40 — Files, directories and filesystem implementation",
+          "pages": {
+            "kind": "printed",
+            "start": 467,
+            "end": 510
+          },
+          "role": "Public interface and storage structure",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        },
+        {
+          "source_id": "OSTEP",
+          "section": "Chs. 41–43 — FFS, crash consistency and journaling, log-structured filesystems",
+          "pages": {
+            "kind": "printed",
+            "start": 511,
+            "end": 562
+          },
+          "role": "Locality, crash and design tradeoffs",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        },
+        {
+          "source_id": "TLPI",
+          "section": "Chs. 4–5 — File I/O",
+          "pages": {
+            "kind": "printed",
+            "start": 69,
+            "end": 112
+          },
+          "role": "Interface contract",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        },
+        {
+          "source_id": "LKD",
+          "section": "Chs. 13–14 — Virtual Filesystem and Block I/O Layer",
+          "pages": {
+            "kind": "printed",
+            "start": 261,
+            "end": 304
+          },
+          "role": "Kernel interfaces and requests",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        }
+      ],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "OS-Q10a",
+      "parent_id": "OS-Q10",
+      "question": "Could I have an OS without a protected kernel?",
+      "why_ask": "Would it still satisfy my expectations about safety?",
+      "status": "candidate",
+      "candidate_references": [
+        {
+          "source_id": "OSTEP",
+          "section": "Ch. 6 — Limited Direct Execution",
+          "pages": {
+            "kind": "printed",
+            "start": 49,
+            "end": 64
+          },
+          "role": "Isolation and privilege transitions",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        },
+        {
+          "source_id": "TLPI",
+          "section": "Ch. 3 — System Programming Concepts",
+          "pages": {
+            "kind": "printed",
+            "start": 43,
+            "end": 68
+          },
+          "role": "Program-to-system concepts",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        },
+        {
+          "source_id": "LKD",
+          "section": "Ch. 5 — System Calls",
+          "pages": {
+            "kind": "printed",
+            "start": 69,
+            "end": 84
+          },
+          "role": "Kernel system call implementation",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        },
+        {
+          "source_id": "TLPI",
+          "section": "Ch. 38 — Writing Secure Privileged Programs",
+          "pages": {
+            "kind": "printed",
+            "start": 783,
+            "end": 796
+          },
+          "role": "Security implications",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        }
+      ],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "OS-Q11a",
+      "parent_id": "OS-Q11",
+      "question": "Can I use another computer to do part of the work?",
+      "why_ask": "Where does the OS end if storage, computation or applications are remote?",
+      "status": "candidate",
+      "candidate_references": [
+        {
+          "source_id": "TLPI",
+          "section": "Chs. 43–44 — IPC Overview, Pipes and FIFOs",
+          "pages": {
+            "kind": "printed",
+            "start": 877,
+            "end": 920
+          },
+          "role": "Basic local IPC",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        },
+        {
+          "source_id": "TLPI",
+          "section": "Chs. 56–57 — Sockets Introduction and UNIX Domain",
+          "pages": {
+            "kind": "printed",
+            "start": 1149,
+            "end": 1178
+          },
+          "role": "Local socket communication",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        },
+        {
+          "source_id": "TLPI",
+          "section": "Chs. 58–60 — TCP/IP, Internet sockets, Server Design",
+          "pages": {
+            "kind": "printed",
+            "start": 1179,
+            "end": 1252
+          },
+          "role": "Network-facing programming contracts",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        },
+        {
+          "source_id": "OSTEP",
+          "section": "Chs. 48–50 — Distributed systems, NFS, AFS",
+          "pages": {
+            "kind": "printed",
+            "start": 605,
+            "end": 652
+          },
+          "role": "Distributed OS problems",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        }
+      ],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "OS-Q12a",
+      "parent_id": "OS-Q12",
+      "question": "What could fool me into thinking the OS works?",
+      "why_ask": "What happens after an hour, a device error, many launches, or an unexpected shutdown?",
+      "status": "candidate",
+      "candidate_references": [
+        {
+          "source_id": "OSTEP",
+          "section": "Chs. 39–40 — Files, directories and filesystem implementation",
+          "pages": {
+            "kind": "printed",
+            "start": 467,
+            "end": 510
+          },
+          "role": "Public interface and storage structure",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        },
+        {
+          "source_id": "OSTEP",
+          "section": "Ch. 36 — I/O Devices",
+          "pages": {
+            "kind": "printed",
+            "start": 419,
+            "end": 432
+          },
+          "role": "Device interaction model",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        }
+      ],
+      "investigation_id": null,
+      "established_certificate_id": null
     }
   ],
-  "relationships": [
+  "answer_branches": [
     {
-      "from": "OS-02",
-      "to": "OS-04",
-      "type": "enables_and_constrains",
-      "why": "Scheduling makes interleaving and coordination questions concrete"
+      "question_id": "OS-Q01",
+      "possible_answers": [
+        {
+          "answer": "Maybe I don't need a conventional OS at all.",
+          "follow_up": "What am I actually trying to control or learn, and can a bare-metal program do it?",
+          "epistemic_status": "unverified possibility"
+        },
+        {
+          "answer": "Yes, I need an OS, but perhaps not a new kernel.",
+          "follow_up": "What would an existing kernel plus my own user-facing system let me accomplish?",
+          "epistemic_status": "unverified possibility"
+        },
+        {
+          "answer": "Yes, I specifically want to build the kernel.",
+          "follow_up": "Which services would justify writing that part myself?",
+          "epistemic_status": "unverified possibility"
+        }
+      ]
     },
     {
-      "from": "OS-03",
-      "to": "OS-05",
-      "type": "shares_mechanisms",
-      "why": "Caching and memory-mapped files link memory and persistence"
+      "question_id": "OS-Q02",
+      "possible_answers": [
+        {
+          "answer": "Yes, I could build a tiny one.",
+          "follow_up": "What would count as a convincing first working version?",
+          "epistemic_status": "unverified possibility"
+        },
+        {
+          "answer": "Yes, but not a modern general-purpose replacement by myself.",
+          "follow_up": "Which features create the largest gap, and could I borrow or omit them?",
+          "epistemic_status": "unverified possibility"
+        },
+        {
+          "answer": "No, not with my current tools or environment.",
+          "follow_up": "What is actually missing: machine access, debugging, knowledge, or time?",
+          "epistemic_status": "unverified possibility"
+        },
+        {
+          "answer": "No, unless I use existing components.",
+          "follow_up": "Would using them still satisfy my original purpose?",
+          "epistemic_status": "unverified possibility"
+        }
+      ]
     },
     {
-      "from": "OS-05",
-      "to": "OS-06",
-      "type": "depends_on",
-      "why": "Persistence depends on the behavior of storage devices and I/O"
+      "question_id": "OS-Q03",
+      "possible_answers": [
+        {
+          "answer": "Yes, booting and running one program might already count.",
+          "follow_up": "What else would make it useful rather than merely demonstrable?",
+          "epistemic_status": "unverified possibility"
+        },
+        {
+          "answer": "Yes, but I want something I could actually keep using.",
+          "follow_up": "What features does a normal session require, and which can be deferred?",
+          "epistemic_status": "unverified possibility"
+        },
+        {
+          "answer": "No, an OS without protected processes or persistent files isn't the OS I mean.",
+          "follow_up": "Which of those features is really essential to my goal?",
+          "epistemic_status": "unverified possibility"
+        }
+      ]
     },
     {
-      "from": "OS-07",
-      "to": "OS-02",
-      "type": "supports",
-      "why": "Privilege boundaries underpin controlled execution"
+      "question_id": "OS-Q06a",
+      "possible_answers": [
+        {
+          "answer": "Yes, programs can cooperatively return control.",
+          "follow_up": "What happens if one loops forever?",
+          "epistemic_status": "unverified possibility"
+        },
+        {
+          "answer": "Yes, but only if I trust every program.",
+          "follow_up": "Do I want to support arbitrary or faulty programs?",
+          "epistemic_status": "unverified possibility"
+        },
+        {
+          "answer": "No, I must be able to interrupt them.",
+          "follow_up": "What timer and privilege mechanisms could accomplish that?",
+          "epistemic_status": "unverified possibility"
+        },
+        {
+          "answer": "No, unless I limit what a program is allowed to do.",
+          "follow_up": "Would those limits still let me run the programs I care about?",
+          "epistemic_status": "unverified possibility"
+        }
+      ]
     },
     {
-      "from": "OS-08",
-      "to": "OS-04",
-      "type": "generalizes",
-      "why": "Coordination across machines adds independent failures to concurrency"
+      "question_id": "OS-Q07a",
+      "possible_answers": [
+        {
+          "answer": "Yes, hardware could translate addresses.",
+          "follow_up": "What does the OS have to configure and what does the hardware guarantee?",
+          "epistemic_status": "unverified possibility"
+        },
+        {
+          "answer": "Yes, but translation has costs.",
+          "follow_up": "When does protection justify those costs?",
+          "epistemic_status": "unverified possibility"
+        },
+        {
+          "answer": "No, not without suitable memory protection.",
+          "follow_up": "What kinds of useful systems can still be built without it?",
+          "epistemic_status": "unverified possibility"
+        }
+      ]
+    },
+    {
+      "question_id": "OS-Q09a",
+      "possible_answers": [
+        {
+          "answer": "Yes, a successful write implies durability.",
+          "follow_up": "What exact software and hardware guarantees would have to be true?",
+          "epistemic_status": "unverified possibility"
+        },
+        {
+          "answer": "Yes, but only after another operation or barrier.",
+          "follow_up": "What does that operation guarantee, and where can it fail?",
+          "epistemic_status": "unverified possibility"
+        },
+        {
+          "answer": "No, it might only be cached.",
+          "follow_up": "How can I distinguish accepted data from persisted data?",
+          "epistemic_status": "unverified possibility"
+        },
+        {
+          "answer": "No, unless I change the storage design.",
+          "follow_up": "Would journaling, copy-on-write or another scheme meet the actual need?",
+          "epistemic_status": "unverified possibility"
+        }
+      ]
+    },
+    {
+      "question_id": "OS-Q10a",
+      "possible_answers": [
+        {
+          "answer": "Yes, I can make a useful system with little or no isolation.",
+          "follow_up": "Who is trusted to run on it, and what is the failure cost?",
+          "epistemic_status": "unverified possibility"
+        },
+        {
+          "answer": "Yes, but only in a constrained environment.",
+          "follow_up": "Which constraints matter when the environment changes?",
+          "epistemic_status": "unverified possibility"
+        },
+        {
+          "answer": "No, I need a protected boundary.",
+          "follow_up": "What is the minimum trusted mechanism?",
+          "epistemic_status": "unverified possibility"
+        },
+        {
+          "answer": "No, unless hardware or a runtime enforces equivalent guarantees.",
+          "follow_up": "Which guarantees would be equivalent and which would still be missing?",
+          "epistemic_status": "unverified possibility"
+        }
+      ]
+    },
+    {
+      "question_id": "OS-Q12",
+      "possible_answers": [
+        {
+          "answer": "Yes, a tiny smoke test passes.",
+          "follow_up": "What important behavior did the test not exercise?",
+          "epistemic_status": "unverified possibility"
+        },
+        {
+          "answer": "Yes, but only until I add concurrency or devices.",
+          "follow_up": "Which interface breaks first and why?",
+          "epistemic_status": "unverified possibility"
+        },
+        {
+          "answer": "No, the system hangs or loses state.",
+          "follow_up": "Can I tell whether the failure is in the boot path, scheduler, memory, device or storage path?",
+          "epistemic_status": "unverified possibility"
+        },
+        {
+          "answer": "No, unless I reuse a known working component.",
+          "follow_up": "Does that component solve the original obstruction or only hide it?",
+          "epistemic_status": "unverified possibility"
+        }
+      ]
     }
   ],
-  "reference_semantics": {
-    "candidate_references": "Literature and page ranges suggested to bring clarity to a question, not evidence of a finding; page kind is printed book page",
-    "certificate": "A record of what was established by investigating, including evidence, assumptions and limitations, per RSM-01.04",
-    "source_linking": "Reference one source identity per book and attach page ranges at question nodes; notes and Kami highlights can later anchor established certificates"
-  },
-  "rsm_clauses": [
-    "RSM-01.03",
-    "RSM-01.04",
-    "RSM-02.08",
-    "RSM-02.11",
-    "RSM-02.12",
-    "RSM-05.01"
+  "connections": [
+    {
+      "from": "OS-Q05",
+      "to": "OS-Q10",
+      "relationship": "shared question",
+      "why": "Running arbitrary programs introduces trust and privilege questions"
+    },
+    {
+      "from": "OS-Q06",
+      "to": "OS-Q07",
+      "relationship": "shared mechanism",
+      "why": "Concurrent programs interact through address spaces and shared state"
+    },
+    {
+      "from": "OS-Q09",
+      "to": "OS-Q12",
+      "relationship": "verification",
+      "why": "A restart is often where mistaken persistence assumptions become visible"
+    },
+    {
+      "from": "OS-Q11",
+      "to": "OS-Q01",
+      "relationship": "reconsider purpose",
+      "why": "Alternative architectures can change what 'building an OS' means"
+    },
+    {
+      "from": "OS-Q04",
+      "to": "OS-Q08",
+      "relationship": "depends on hardware",
+      "why": "Boot and device interaction both depend on the target machine's contracts"
+    }
   ],
-  "updated": "2026-11-19",
-  "version": 2,
-  "title": "Operating Systems — question and possible-answer landscapes",
-  "question_tree_method": {
-    "question_direction": "Navigate parent purposes, constituents, neighboring, inverse and competing formulations",
-    "answer_direction": "For a candidate question, imagine useful yes / yes-but / no / no-unless / conditional answers and investigate what each would imply",
-    "branching_rule": "Do not enumerate branches mechanically. Keep only answers that change the interpretation, future question, or choice of evidence.",
-    "certificate_rule": "candidate_references are expected-to-help reading routes; an established Certificate (C) is generated only after an investigation establishes a result",
-    "style": "Use the clear, curious, concrete language of RSM, avoid mechanical taxonomies and empty generic questions"
-  },
-  "next_step": "Explore and revise these question possibilities with the human; follow a meaningful branch through its existing chapter ranges, without making the whole tree a fixed syllabus"
+  "source_reference_policy": "Candidate reference ranges are reading leads indexed by printed book pages, not established Certificates (C). Exact evidentiary citations and conclusions belong in investigation records after reading.",
+  "guidance": "Speak like a curious human. Start from the user's actual ambition. Ask deceptively simple questions; consider plausible yes / yes-but / no / no-unless branches only when they change what to investigate. Do not substitute an artificial syllabus or technical headings for the question tree. Follow RSM-01.03, RSM-02.08–02.12, RSM-08.10.",
+  "previous_tree_note": "The earlier abstract OS-01..OS-08 topic-centered tree remains in Git history before this revision; this is a deliberate re-rooting, not a renaming.",
+  "updated": "2026-11-19"
 }
