@@ -564,7 +564,7 @@
             "pages": {
               "kind": "printed",
               "start": 605,
-              "end": 653
+              "end": 652
             },
             "role": "Distributed OS problems",
             "verification": "chapter/title and boundary checked against this PDF's contents"
@@ -607,8 +607,7 @@
   ],
   "notes": [
     "OSTEP and TLPI are the primary conceptual/interface sources; LKD is a 2010 snapshot, not a current-Linux implementation oracle.",
-    "Do not force a fixed reading order: select nodes by the next consequential question and use their cited ranges.",
-    "Page ranges are inclusive, bounded by next chapter start in the observed contents. The distributed-system range 605–653 is bounded by book's next available sequence; page endpoint remains provisional and should be checked before deep linking."
+    "Do not force a fixed reading order: select nodes by the next consequential question and use their cited ranges."
   ],
   "updated": "2026-11-19"
 }
