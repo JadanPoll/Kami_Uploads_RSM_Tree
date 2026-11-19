@@ -34,39 +34,66 @@
         "purpose": "Understand the physics and limitations of material transformation",
         "distinguishing_probe": "Can I explain why a process works, where it fails, and what could extend its limits?"
       }
-    ]
+    ],
+    "selected_parent_purpose_ids": [
+      "P1",
+      "P2"
+    ],
+    "selected_by_user": "Explore the whole manufacturing landscape; Learn to actually make things",
+    "entry_questions": [
+      {
+        "id": "Q1",
+        "question": "How was this object manufactured?",
+        "information_gain": "Learn process recognition and industrial inference"
+      },
+      {
+        "id": "Q2",
+        "question": "How many different ways could we manufacture this object?",
+        "information_gain": "Map process alternatives and discriminating constraints"
+      },
+      {
+        "id": "Q3",
+        "question": "What would prevent us from manufacturing this object ourselves?",
+        "information_gain": "Identify actionable missing capabilities and economical substitutes"
+      }
+    ],
+    "next_collaborative_choice": "Choose an actual object or component class; use Q2 and Q3 to map alternatives and identify a realistic fabrication probe. Preserve alternative parent questions rather than inventing a fixed curriculum."
   },
-  "proposed_root_question": "What should I understand and be able to do to feel comfortable navigating manufacturing?",
+  "proposed_root_question": "How can we understand and acquire the capabilities needed to manufacture an increasingly broad variety of physical things?",
   "nodes": [
     {
       "id": "MFG-ROOT",
       "parent_id": null,
-      "question": "What should I understand and be able to do to feel comfortable navigating manufacturing?",
-      "status": "open"
+      "question": "How can we understand and acquire the capabilities needed to manufacture an increasingly broad variety of physical things?",
+      "status": "active"
     },
     {
-      "id": "MFG-PROCESSES",
+      "id": "MFG-TRANSFORM",
       "parent_id": "MFG-ROOT",
-      "question": "What families of manufacturing processes exist, and which geometries, materials, scales, and constraints favor each?",
-      "status": "candidate"
+      "question": "What transformations can we perform on matter, and what materials, geometries, scales and properties can each process produce?",
+      "status": "provisional",
+      "why": "Build transferable literacy across manufacturing mechanisms"
     },
     {
-      "id": "MFG-DESIGN",
+      "id": "MFG-REALIZE",
       "parent_id": "MFG-ROOT",
-      "question": "How does the intended fabrication process change the design of a part or assembly?",
-      "status": "candidate"
+      "question": "What is required to realize a physical object, from design through fabrication and inspection?",
+      "status": "provisional",
+      "why": "Translate process literacy into practical making capability"
     },
     {
-      "id": "MFG-EXECUTION",
+      "id": "MFG-FEASIBILITY",
       "parent_id": "MFG-ROOT",
-      "question": "What is required to produce and inspect a useful object, not merely model it?",
-      "status": "candidate"
+      "question": "What determines whether a part can be made reliably to specification and at acceptable cost?",
+      "status": "provisional",
+      "why": "Expose hidden constraints behind apparently simple parts"
     },
     {
-      "id": "MFG-SCALE",
+      "id": "MFG-EXPAND",
       "parent_id": "MFG-ROOT",
-      "question": "How do cost, tooling, tolerances, yield, throughput, and production volume change the optimal process?",
-      "status": "candidate"
+      "question": "What becomes possible when we change materials, tools, design, process combinations or production arrangements?",
+      "status": "provisional",
+      "why": "Explore the possibility frontier rather than memorize existing processes"
     }
   ],
   "sources": [
@@ -75,10 +102,64 @@
       "title": "Manufacturing Processes for Design Professionals",
       "url": "https://drive.google.com/file/d/1rGG9kMJndaCZcaaEpNGG9OJimjLTJm-1/view?usp=drivesdk",
       "role": "Broad overview of process families",
-      "toc_status": "not yet verified",
+      "toc_status": "verified by inspecting PDF contents, but no embedded PDF outline",
       "linked_nodes": [
-        "MFG-PROCESSES",
-        "MFG-SCALE"
+        "MFG-TRANSFORM",
+        "MFG-FEASIBILITY",
+        "MFG-EXPAND"
+      ],
+      "verified_sections": [
+        {
+          "heading": "Part One: Forming Technology",
+          "page_status": "verified heading"
+        },
+        {
+          "heading": "Part Two: Cutting Technology",
+          "page_status": "verified heading"
+        },
+        {
+          "heading": "Part Three: Joining Technology",
+          "page_status": "verified heading"
+        },
+        {
+          "heading": "Part Four: Finishing Technology",
+          "page_status": "verified heading"
+        },
+        {
+          "heading": "Part Five: Materials",
+          "page_status": "verified heading"
+        },
+        {
+          "heading": "Injection Molding",
+          "pdf_pages": [
+            58,
+            59
+          ],
+          "page_status": "confirmed readable pages"
+        },
+        {
+          "heading": "Sand Casting",
+          "pdf_pages": [
+            127,
+            128
+          ],
+          "page_status": "confirmed readable pages"
+        },
+        {
+          "heading": "Stereolithography",
+          "pdf_pages": [
+            239,
+            240
+          ],
+          "page_status": "confirmed readable pages"
+        },
+        {
+          "heading": "Water Jet Cutting",
+          "pdf_pages": [
+            279
+          ],
+          "page_status": "confirmed readable page"
+        }
       ]
     },
     {
@@ -111,8 +192,8 @@
         }
       ],
       "linked_nodes": [
-        "MFG-DESIGN",
-        "MFG-EXECUTION"
+        "MFG-REALIZE",
+        "MFG-FEASIBILITY"
       ]
     },
     {
@@ -136,11 +217,43 @@
         }
       ],
       "linked_nodes": [
-        "MFG-DESIGN",
-        "MFG-SCALE"
+        "MFG-REALIZE",
+        "MFG-FEASIBILITY"
       ]
     }
   ],
-  "next_decision": "Collaboratively choose which parent purposes and alternative questions matter. Revise branches and make a first targeted reading assignment; do not treat candidate nodes as a fixed curriculum.",
-  "saved_at": "2026-11-18"
+  "next_decision": "Collaboratively select a tangible manufactured object and investigate Q2 (alternative processes) against Q3 (what would prevent us from making it).",
+  "saved_at": "2026-11-18",
+  "reading_route": [
+    {
+      "source_id": "BOOK-MFG-PROCESSES",
+      "sections": [
+        "How to use this book",
+        "Part One: Forming Technology — Injection Molding",
+        "Part Two: Cutting Technology — Water Jet Cutting",
+        "Part One: Forming Technology — Sand Casting",
+        "Part One: Forming Technology — Layered Manufacturing"
+      ],
+      "purpose": "Compare dissimilar processes by materials, geometry, setup, precision, economics and capabilities",
+      "note": "Sample contrasting processes rather than reading the whole book sequentially; printed page ranges will be established as the investigation narrows."
+    },
+    {
+      "source_id": "BOOK-FFF",
+      "sections": [
+        "Chapter I: The Medium (printed p.10)",
+        "Chapter II: Designing for FFM (printed p.40)",
+        "Chapter III: Design for Strength (printed p.76)"
+      ],
+      "purpose": "Connect process mechanisms to making a functional object; compare orientation/anisotropy/support/strength"
+    },
+    {
+      "source_id": "BOOK-SHIGLEY",
+      "sections": [
+        "Chapter 1: Introduction to Mechanical Engineering Design (printed p.3)",
+        "Chapter 2: Materials (printed p.39)"
+      ],
+      "purpose": "Use selectively for quantified materials and design constraints, not as first cover-to-cover reading"
+    }
+  ],
+  "updated_at": "2026-11-18"
 }
