@@ -1,0 +1,1003 @@
+{
+  "id": "ostep-quick-reference",
+  "title": "I want to build an OS! — OSTEP question-to-chapter navigation",
+  "book": {
+    "source_id": "OSTEP",
+    "title": "Operating Systems: Three Easy Pieces",
+    "edition": "Version 1.00 (2018)",
+    "url": "https://drive.google.com/file/d/1jyZtuBGG6C9WdbX6gT7ACTp5OQcICsDt/view?usp=drivesdk",
+    "page_scheme": "Printed pages from table of contents, inclusive; PDF page positions not verified"
+  },
+  "purpose": "Quickly traverse practical OS questions to full chapter/page ranges; not a beginner syllabus",
+  "chapter_catalog": [
+    {
+      "chapter": 1,
+      "title": "A Dialogue on the Book",
+      "start": 1,
+      "end": 2,
+      "source_id": "OSTEP"
+    },
+    {
+      "chapter": 2,
+      "title": "Introduction to Operating Systems",
+      "start": 3,
+      "end": 22,
+      "source_id": "OSTEP"
+    },
+    {
+      "chapter": 3,
+      "title": "A Dialogue on Virtualization",
+      "start": 23,
+      "end": 24,
+      "source_id": "OSTEP"
+    },
+    {
+      "chapter": 4,
+      "title": "The Abstraction: The Process",
+      "start": 25,
+      "end": 36,
+      "source_id": "OSTEP"
+    },
+    {
+      "chapter": 5,
+      "title": "Interlude: Process API",
+      "start": 37,
+      "end": 48,
+      "source_id": "OSTEP"
+    },
+    {
+      "chapter": 6,
+      "title": "Mechanism: Limited Direct Execution",
+      "start": 49,
+      "end": 64,
+      "source_id": "OSTEP"
+    },
+    {
+      "chapter": 7,
+      "title": "Scheduling: Introduction",
+      "start": 65,
+      "end": 76,
+      "source_id": "OSTEP"
+    },
+    {
+      "chapter": 8,
+      "title": "Scheduling: The Multi-Level Feedback Queue",
+      "start": 77,
+      "end": 88,
+      "source_id": "OSTEP"
+    },
+    {
+      "chapter": 9,
+      "title": "Scheduling: Proportional Share",
+      "start": 89,
+      "end": 102,
+      "source_id": "OSTEP"
+    },
+    {
+      "chapter": 10,
+      "title": "Multiprocessor Scheduling (Advanced)",
+      "start": 103,
+      "end": 116,
+      "source_id": "OSTEP"
+    },
+    {
+      "chapter": 11,
+      "title": "Summary Dialogue on CPU Virtualization",
+      "start": 117,
+      "end": 118,
+      "source_id": "OSTEP"
+    },
+    {
+      "chapter": 12,
+      "title": "A Dialogue on Memory Virtualization",
+      "start": 119,
+      "end": 120,
+      "source_id": "OSTEP"
+    },
+    {
+      "chapter": 13,
+      "title": "The Abstraction: Address Spaces",
+      "start": 121,
+      "end": 130,
+      "source_id": "OSTEP"
+    },
+    {
+      "chapter": 14,
+      "title": "Interlude: Memory API",
+      "start": 131,
+      "end": 140,
+      "source_id": "OSTEP"
+    },
+    {
+      "chapter": 15,
+      "title": "Mechanism: Address Translation",
+      "start": 141,
+      "end": 154,
+      "source_id": "OSTEP"
+    },
+    {
+      "chapter": 16,
+      "title": "Segmentation",
+      "start": 155,
+      "end": 166,
+      "source_id": "OSTEP"
+    },
+    {
+      "chapter": 17,
+      "title": "Free-Space Management",
+      "start": 167,
+      "end": 184,
+      "source_id": "OSTEP"
+    },
+    {
+      "chapter": 18,
+      "title": "Paging: Introduction",
+      "start": 185,
+      "end": 198,
+      "source_id": "OSTEP"
+    },
+    {
+      "chapter": 19,
+      "title": "Paging: Faster Translations (TLBs)",
+      "start": 199,
+      "end": 214,
+      "source_id": "OSTEP"
+    },
+    {
+      "chapter": 20,
+      "title": "Paging: Smaller Tables",
+      "start": 215,
+      "end": 230,
+      "source_id": "OSTEP"
+    },
+    {
+      "chapter": 21,
+      "title": "Beyond Physical Memory: Mechanisms",
+      "start": 231,
+      "end": 242,
+      "source_id": "OSTEP"
+    },
+    {
+      "chapter": 22,
+      "title": "Beyond Physical Memory: Policies",
+      "start": 243,
+      "end": 260,
+      "source_id": "OSTEP"
+    },
+    {
+      "chapter": 23,
+      "title": "Complete Virtual Memory Systems",
+      "start": 261,
+      "end": 278,
+      "source_id": "OSTEP"
+    },
+    {
+      "chapter": 24,
+      "title": "Summary Dialogue on Memory Virtualization",
+      "start": 279,
+      "end": 284,
+      "source_id": "OSTEP"
+    },
+    {
+      "chapter": 25,
+      "title": "A Dialogue on Concurrency",
+      "start": 285,
+      "end": 286,
+      "source_id": "OSTEP"
+    },
+    {
+      "chapter": 26,
+      "title": "Concurrency: An Introduction",
+      "start": 287,
+      "end": 302,
+      "source_id": "OSTEP"
+    },
+    {
+      "chapter": 27,
+      "title": "Interlude: Thread API",
+      "start": 303,
+      "end": 314,
+      "source_id": "OSTEP"
+    },
+    {
+      "chapter": 28,
+      "title": "Locks",
+      "start": 315,
+      "end": 336,
+      "source_id": "OSTEP"
+    },
+    {
+      "chapter": 29,
+      "title": "Lock-based Concurrent Data Structures",
+      "start": 337,
+      "end": 350,
+      "source_id": "OSTEP"
+    },
+    {
+      "chapter": 30,
+      "title": "Condition Variables",
+      "start": 351,
+      "end": 366,
+      "source_id": "OSTEP"
+    },
+    {
+      "chapter": 31,
+      "title": "Semaphores",
+      "start": 367,
+      "end": 384,
+      "source_id": "OSTEP"
+    },
+    {
+      "chapter": 32,
+      "title": "Common Concurrency Problems",
+      "start": 385,
+      "end": 400,
+      "source_id": "OSTEP"
+    },
+    {
+      "chapter": 33,
+      "title": "Event-based Concurrency (Advanced)",
+      "start": 401,
+      "end": 412,
+      "source_id": "OSTEP"
+    },
+    {
+      "chapter": 34,
+      "title": "Summary Dialogue on Concurrency",
+      "start": 413,
+      "end": 416,
+      "source_id": "OSTEP"
+    },
+    {
+      "chapter": 35,
+      "title": "A Dialogue on Persistence",
+      "start": 417,
+      "end": 418,
+      "source_id": "OSTEP"
+    },
+    {
+      "chapter": 36,
+      "title": "I/O Devices",
+      "start": 419,
+      "end": 432,
+      "source_id": "OSTEP"
+    },
+    {
+      "chapter": 37,
+      "title": "Hard Disk Drives",
+      "start": 433,
+      "end": 448,
+      "source_id": "OSTEP"
+    },
+    {
+      "chapter": 38,
+      "title": "Redundant Arrays of Inexpensive Disks (RAIDs)",
+      "start": 449,
+      "end": 466,
+      "source_id": "OSTEP"
+    },
+    {
+      "chapter": 39,
+      "title": "Interlude: Files and Directories",
+      "start": 467,
+      "end": 492,
+      "source_id": "OSTEP"
+    },
+    {
+      "chapter": 40,
+      "title": "File System Implementation",
+      "start": 493,
+      "end": 510,
+      "source_id": "OSTEP"
+    },
+    {
+      "chapter": 41,
+      "title": "Locality and The Fast File System",
+      "start": 511,
+      "end": 524,
+      "source_id": "OSTEP"
+    },
+    {
+      "chapter": 42,
+      "title": "Crash Consistency: FSCK and Journaling",
+      "start": 525,
+      "end": 546,
+      "source_id": "OSTEP"
+    },
+    {
+      "chapter": 43,
+      "title": "Log-structured File Systems",
+      "start": 547,
+      "end": 562,
+      "source_id": "OSTEP"
+    },
+    {
+      "chapter": 44,
+      "title": "Flash-based SSDs",
+      "start": 563,
+      "end": 586,
+      "source_id": "OSTEP"
+    },
+    {
+      "chapter": 45,
+      "title": "Data Integrity and Protection",
+      "start": 587,
+      "end": 600,
+      "source_id": "OSTEP"
+    },
+    {
+      "chapter": 46,
+      "title": "Summary Dialogue on Persistence",
+      "start": 601,
+      "end": 602,
+      "source_id": "OSTEP"
+    },
+    {
+      "chapter": 47,
+      "title": "A Dialogue on Distribution",
+      "start": 603,
+      "end": 604,
+      "source_id": "OSTEP"
+    },
+    {
+      "chapter": 48,
+      "title": "Distributed Systems",
+      "start": 605,
+      "end": 620,
+      "source_id": "OSTEP"
+    },
+    {
+      "chapter": 49,
+      "title": "Sun’s Network File System (NFS)",
+      "start": 621,
+      "end": 638,
+      "source_id": "OSTEP"
+    },
+    {
+      "chapter": 50,
+      "title": "The Andrew File System (AFS)",
+      "start": 639,
+      "end": 652,
+      "source_id": "OSTEP"
+    },
+    {
+      "chapter": 51,
+      "title": "Summary Dialogue on Distribution",
+      "start": 653,
+      "end": 652,
+      "source_id": "OSTEP"
+    },
+    {
+      "chapter": 51,
+      "title": "Summary Dialogue on Distribution",
+      "start": 653,
+      "end": 654,
+      "source_id": "OSTEP"
+    }
+  ],
+  "routes": [
+    {
+      "id": "start",
+      "question": "What is the OS supposed to do?",
+      "why": "Get oriented without assuming a particular architecture",
+      "question_node_ids": [
+        "OS-Q01",
+        "OS-Q03"
+      ],
+      "chapter_numbers": [
+        2
+      ],
+      "references": [
+        {
+          "chapter": 2,
+          "title": "Introduction to Operating Systems",
+          "start": 3,
+          "end": 22,
+          "page_scheme": "printed"
+        }
+      ]
+    },
+    {
+      "id": "boot",
+      "question": "How does my code first take control of the machine?",
+      "why": "Distinguish bootstrapping from the process execution model",
+      "question_node_ids": [
+        "OS-Q04",
+        "OS-Q04a"
+      ],
+      "chapter_numbers": [
+        4,
+        6
+      ],
+      "references": [
+        {
+          "chapter": 4,
+          "title": "The Abstraction: The Process",
+          "start": 25,
+          "end": 36,
+          "page_scheme": "printed"
+        },
+        {
+          "chapter": 6,
+          "title": "Mechanism: Limited Direct Execution",
+          "start": 49,
+          "end": 64,
+          "page_scheme": "printed"
+        }
+      ]
+    },
+    {
+      "id": "process",
+      "question": "How does a program start, run and stop?",
+      "why": "Process abstraction, process API and controlled execution",
+      "question_node_ids": [
+        "OS-Q05",
+        "OS-Q05a"
+      ],
+      "chapter_numbers": [
+        4,
+        5,
+        6
+      ],
+      "references": [
+        {
+          "chapter": 4,
+          "title": "The Abstraction: The Process",
+          "start": 25,
+          "end": 36,
+          "page_scheme": "printed"
+        },
+        {
+          "chapter": 5,
+          "title": "Interlude: Process API",
+          "start": 37,
+          "end": 48,
+          "page_scheme": "printed"
+        },
+        {
+          "chapter": 6,
+          "title": "Mechanism: Limited Direct Execution",
+          "start": 49,
+          "end": 64,
+          "page_scheme": "printed"
+        }
+      ]
+    },
+    {
+      "id": "schedule",
+      "question": "How do I decide what runs next?",
+      "why": "Single- and multi-processor scheduling, including workload tradeoffs",
+      "question_node_ids": [
+        "OS-Q06",
+        "OS-Q06a"
+      ],
+      "chapter_numbers": [
+        7,
+        8,
+        9,
+        10
+      ],
+      "references": [
+        {
+          "chapter": 7,
+          "title": "Scheduling: Introduction",
+          "start": 65,
+          "end": 76,
+          "page_scheme": "printed"
+        },
+        {
+          "chapter": 8,
+          "title": "Scheduling: The Multi-Level Feedback Queue",
+          "start": 77,
+          "end": 88,
+          "page_scheme": "printed"
+        },
+        {
+          "chapter": 9,
+          "title": "Scheduling: Proportional Share",
+          "start": 89,
+          "end": 102,
+          "page_scheme": "printed"
+        },
+        {
+          "chapter": 10,
+          "title": "Multiprocessor Scheduling (Advanced)",
+          "start": 103,
+          "end": 116,
+          "page_scheme": "printed"
+        }
+      ]
+    },
+    {
+      "id": "vm-basics",
+      "question": "How does an address in a program reach memory?",
+      "why": "Address-space model, translation and segmentation",
+      "question_node_ids": [
+        "OS-Q07",
+        "OS-Q07a"
+      ],
+      "chapter_numbers": [
+        13,
+        14,
+        15,
+        16
+      ],
+      "references": [
+        {
+          "chapter": 13,
+          "title": "The Abstraction: Address Spaces",
+          "start": 121,
+          "end": 130,
+          "page_scheme": "printed"
+        },
+        {
+          "chapter": 14,
+          "title": "Interlude: Memory API",
+          "start": 131,
+          "end": 140,
+          "page_scheme": "printed"
+        },
+        {
+          "chapter": 15,
+          "title": "Mechanism: Address Translation",
+          "start": 141,
+          "end": 154,
+          "page_scheme": "printed"
+        },
+        {
+          "chapter": 16,
+          "title": "Segmentation",
+          "start": 155,
+          "end": 166,
+          "page_scheme": "printed"
+        }
+      ]
+    },
+    {
+      "id": "vm-paging",
+      "question": "How do pages, page tables and free space work?",
+      "why": "Allocation, page tables, translation caches and table size",
+      "question_node_ids": [
+        "OS-Q07",
+        "OS-Q07a"
+      ],
+      "chapter_numbers": [
+        17,
+        18,
+        19,
+        20
+      ],
+      "references": [
+        {
+          "chapter": 17,
+          "title": "Free-Space Management",
+          "start": 167,
+          "end": 184,
+          "page_scheme": "printed"
+        },
+        {
+          "chapter": 18,
+          "title": "Paging: Introduction",
+          "start": 185,
+          "end": 198,
+          "page_scheme": "printed"
+        },
+        {
+          "chapter": 19,
+          "title": "Paging: Faster Translations (TLBs)",
+          "start": 199,
+          "end": 214,
+          "page_scheme": "printed"
+        },
+        {
+          "chapter": 20,
+          "title": "Paging: Smaller Tables",
+          "start": 215,
+          "end": 230,
+          "page_scheme": "printed"
+        }
+      ]
+    },
+    {
+      "id": "vm-pressure",
+      "question": "What happens when RAM isn't enough?",
+      "why": "Replacement, swapping and complete VM designs",
+      "question_node_ids": [
+        "OS-Q07"
+      ],
+      "chapter_numbers": [
+        21,
+        22,
+        23
+      ],
+      "references": [
+        {
+          "chapter": 21,
+          "title": "Beyond Physical Memory: Mechanisms",
+          "start": 231,
+          "end": 242,
+          "page_scheme": "printed"
+        },
+        {
+          "chapter": 22,
+          "title": "Beyond Physical Memory: Policies",
+          "start": 243,
+          "end": 260,
+          "page_scheme": "printed"
+        },
+        {
+          "chapter": 23,
+          "title": "Complete Virtual Memory Systems",
+          "start": 261,
+          "end": 278,
+          "page_scheme": "printed"
+        }
+      ]
+    },
+    {
+      "id": "threads",
+      "question": "Why do threads interfere with each other?",
+      "why": "Thread APIs, races, locks and concurrent data structures",
+      "question_node_ids": [
+        "OS-Q06b"
+      ],
+      "chapter_numbers": [
+        26,
+        27,
+        28,
+        29
+      ],
+      "references": [
+        {
+          "chapter": 26,
+          "title": "Concurrency: An Introduction",
+          "start": 287,
+          "end": 302,
+          "page_scheme": "printed"
+        },
+        {
+          "chapter": 27,
+          "title": "Interlude: Thread API",
+          "start": 303,
+          "end": 314,
+          "page_scheme": "printed"
+        },
+        {
+          "chapter": 28,
+          "title": "Locks",
+          "start": 315,
+          "end": 336,
+          "page_scheme": "printed"
+        },
+        {
+          "chapter": 29,
+          "title": "Lock-based Concurrent Data Structures",
+          "start": 337,
+          "end": 350,
+          "page_scheme": "printed"
+        }
+      ]
+    },
+    {
+      "id": "sync",
+      "question": "How should threads wait, wake and cooperate?",
+      "why": "Condition variables, semaphores and common bugs",
+      "question_node_ids": [
+        "OS-Q06b"
+      ],
+      "chapter_numbers": [
+        30,
+        31,
+        32
+      ],
+      "references": [
+        {
+          "chapter": 30,
+          "title": "Condition Variables",
+          "start": 351,
+          "end": 366,
+          "page_scheme": "printed"
+        },
+        {
+          "chapter": 31,
+          "title": "Semaphores",
+          "start": 367,
+          "end": 384,
+          "page_scheme": "printed"
+        },
+        {
+          "chapter": 32,
+          "title": "Common Concurrency Problems",
+          "start": 385,
+          "end": 400,
+          "page_scheme": "printed"
+        }
+      ]
+    },
+    {
+      "id": "events",
+      "question": "Could I do this without a thread for every task?",
+      "why": "Event-based concurrency",
+      "question_node_ids": [
+        "OS-Q06b",
+        "OS-Q11"
+      ],
+      "chapter_numbers": [
+        33
+      ],
+      "references": [
+        {
+          "chapter": 33,
+          "title": "Event-based Concurrency (Advanced)",
+          "start": 401,
+          "end": 412,
+          "page_scheme": "printed"
+        }
+      ]
+    },
+    {
+      "id": "device",
+      "question": "How does my OS talk to a device?",
+      "why": "I/O and disk models",
+      "question_node_ids": [
+        "OS-Q08",
+        "OS-Q08a"
+      ],
+      "chapter_numbers": [
+        36,
+        37,
+        38
+      ],
+      "references": [
+        {
+          "chapter": 36,
+          "title": "I/O Devices",
+          "start": 419,
+          "end": 432,
+          "page_scheme": "printed"
+        },
+        {
+          "chapter": 37,
+          "title": "Hard Disk Drives",
+          "start": 433,
+          "end": 448,
+          "page_scheme": "printed"
+        },
+        {
+          "chapter": 38,
+          "title": "Redundant Arrays of Inexpensive Disks (RAIDs)",
+          "start": 449,
+          "end": 466,
+          "page_scheme": "printed"
+        }
+      ]
+    },
+    {
+      "id": "files",
+      "question": "How are files and directories represented?",
+      "why": "File API, filesystem structures and locality",
+      "question_node_ids": [
+        "OS-Q09"
+      ],
+      "chapter_numbers": [
+        39,
+        40,
+        41
+      ],
+      "references": [
+        {
+          "chapter": 39,
+          "title": "Interlude: Files and Directories",
+          "start": 467,
+          "end": 492,
+          "page_scheme": "printed"
+        },
+        {
+          "chapter": 40,
+          "title": "File System Implementation",
+          "start": 493,
+          "end": 510,
+          "page_scheme": "printed"
+        },
+        {
+          "chapter": 41,
+          "title": "Locality and The Fast File System",
+          "start": 511,
+          "end": 524,
+          "page_scheme": "printed"
+        }
+      ]
+    },
+    {
+      "id": "crashes",
+      "question": "What happens if the machine crashes while writing?",
+      "why": "Journaling, log structuring, SSDs, integrity and protection",
+      "question_node_ids": [
+        "OS-Q09",
+        "OS-Q09a",
+        "OS-Q12a"
+      ],
+      "chapter_numbers": [
+        42,
+        43,
+        44,
+        45
+      ],
+      "references": [
+        {
+          "chapter": 42,
+          "title": "Crash Consistency: FSCK and Journaling",
+          "start": 525,
+          "end": 546,
+          "page_scheme": "printed"
+        },
+        {
+          "chapter": 43,
+          "title": "Log-structured File Systems",
+          "start": 547,
+          "end": 562,
+          "page_scheme": "printed"
+        },
+        {
+          "chapter": 44,
+          "title": "Flash-based SSDs",
+          "start": 563,
+          "end": 586,
+          "page_scheme": "printed"
+        },
+        {
+          "chapter": 45,
+          "title": "Data Integrity and Protection",
+          "start": 587,
+          "end": 600,
+          "page_scheme": "printed"
+        }
+      ]
+    },
+    {
+      "id": "network",
+      "question": "Could my OS use a different machine?",
+      "why": "Remote communication, distributed and network filesystems",
+      "question_node_ids": [
+        "OS-Q11",
+        "OS-Q11a"
+      ],
+      "chapter_numbers": [
+        48,
+        49,
+        50
+      ],
+      "references": [
+        {
+          "chapter": 48,
+          "title": "Distributed Systems",
+          "start": 605,
+          "end": 620,
+          "page_scheme": "printed"
+        },
+        {
+          "chapter": 49,
+          "title": "Sun’s Network File System (NFS)",
+          "start": 621,
+          "end": 638,
+          "page_scheme": "printed"
+        },
+        {
+          "chapter": 50,
+          "title": "The Andrew File System (AFS)",
+          "start": 639,
+          "end": 652,
+          "page_scheme": "printed"
+        }
+      ]
+    },
+    {
+      "id": "review",
+      "question": "Where are the short conceptual reviews?",
+      "why": "Dialogue chapters and summaries",
+      "question_node_ids": [
+        "OS-Q01",
+        "OS-Q13"
+      ],
+      "chapter_numbers": [
+        1,
+        3,
+        11,
+        12,
+        24,
+        25,
+        34,
+        35,
+        46,
+        47,
+        51
+      ],
+      "references": [
+        {
+          "chapter": 1,
+          "title": "A Dialogue on the Book",
+          "start": 1,
+          "end": 2,
+          "page_scheme": "printed"
+        },
+        {
+          "chapter": 3,
+          "title": "A Dialogue on Virtualization",
+          "start": 23,
+          "end": 24,
+          "page_scheme": "printed"
+        },
+        {
+          "chapter": 11,
+          "title": "Summary Dialogue on CPU Virtualization",
+          "start": 117,
+          "end": 118,
+          "page_scheme": "printed"
+        },
+        {
+          "chapter": 12,
+          "title": "A Dialogue on Memory Virtualization",
+          "start": 119,
+          "end": 120,
+          "page_scheme": "printed"
+        },
+        {
+          "chapter": 24,
+          "title": "Summary Dialogue on Memory Virtualization",
+          "start": 279,
+          "end": 284,
+          "page_scheme": "printed"
+        },
+        {
+          "chapter": 25,
+          "title": "A Dialogue on Concurrency",
+          "start": 285,
+          "end": 286,
+          "page_scheme": "printed"
+        },
+        {
+          "chapter": 34,
+          "title": "Summary Dialogue on Concurrency",
+          "start": 413,
+          "end": 416,
+          "page_scheme": "printed"
+        },
+        {
+          "chapter": 35,
+          "title": "A Dialogue on Persistence",
+          "start": 417,
+          "end": 418,
+          "page_scheme": "printed"
+        },
+        {
+          "chapter": 46,
+          "title": "Summary Dialogue on Persistence",
+          "start": 601,
+          "end": 602,
+          "page_scheme": "printed"
+        },
+        {
+          "chapter": 47,
+          "title": "A Dialogue on Distribution",
+          "start": 603,
+          "end": 604,
+          "page_scheme": "printed"
+        },
+        {
+          "chapter": 51,
+          "title": "Summary Dialogue on Distribution",
+          "start": 653,
+          "end": 652,
+          "page_scheme": "printed"
+        }
+      ]
+    }
+  ],
+  "semantics": "These are reading leads (candidate C references), not claims or established RSM Certificates. A later investigated finding can cite specific passages and contain a Certificate.",
+  "limits": [
+    "OSTEP's book starts OS execution at the process abstraction; its chapters 4/6 do not constitute a full firmware/bootloader how-to.",
+    "Older OSTEP text is a conceptual source, not implementation documentation for a current kernel.",
+    "Questions may map to overlapping routes. Chapters are stored once and referenced by their numbers."
+  ],
+  "updated": "2026-11-19"
+}
