@@ -1,4 +1,12 @@
 {
   "version": 1,
-  "investigations": []
+  "investigations": [
+    {
+      "id": "manufacturing-orientation",
+      "title": "Getting comfortable with manufacturing",
+      "path": "Investigations/manufacturing-orientation/investigation.json",
+      "status": "question-landscape-in-progress",
+      "updated": "2026-11-18"
+    }
+  ]
 }
