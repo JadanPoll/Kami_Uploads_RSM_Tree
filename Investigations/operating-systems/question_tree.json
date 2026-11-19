@@ -1,7 +1,7 @@
 {
   "id": "operating-systems",
   "kind": "question_tree",
-  "version": 5,
+  "version": 6,
   "status": "provisional",
   "root": "OS-00",
   "title": "I want to build an OS! — question tree",
@@ -20,19 +20,6 @@
       "authors": "Remzi H. Arpaci-Dusseau; Andrea C. Arpaci-Dusseau",
       "edition": "version 1.00 (2018)",
       "url": "https://drive.google.com/file/d/1jyZtuBGG6C9WdbX6gT7ACTp5OQcICsDt/view?usp=drivesdk"
-    },
-    {
-      "id": "TLPI",
-      "title": "The Linux Programming Interface",
-      "authors": "Michael Kerrisk",
-      "url": "https://drive.google.com/file/d/1fT4Nqq2d5-UnQxZpnDioEar0C5N0Sd8l/view?usp=drivesdk"
-    },
-    {
-      "id": "LKD",
-      "title": "Linux Kernel Development",
-      "authors": "Robert Love",
-      "edition": "third edition (2010)",
-      "url": "https://drive.google.com/file/d/11yI22zgg2Rka_Nj2Kbv2UW7bMqe5sua0/view?usp=drivesdk"
     },
     {
       "id": "MES",
@@ -57,6 +44,24 @@
       "url": "https://drive.google.com/file/d/11keBAs8ZzIym0p4V_QEUfNtgjGH_91EA/view?usp=drivesdk",
       "perspective": "hardware mechanisms",
       "page_scheme": "Printed page ranges inclusive based on the inspected table of contents; section boundaries from next section"
+    },
+    {
+      "id": "TLPI",
+      "title": "The Linux Programming Interface",
+      "authors": "Michael Kerrisk",
+      "url": "https://drive.google.com/file/d/1fT4Nqq2d5-UnQxZpnDioEar0C5N0Sd8l/view?usp=drivesdk",
+      "perspective": "user-space interface",
+      "page_scheme": "Printed chapter boundaries inspected from PDF contents"
+    },
+    {
+      "id": "LKD",
+      "title": "Linux Kernel Development",
+      "authors": "Robert Love",
+      "edition": "third edition (2010)",
+      "url": "https://drive.google.com/file/d/11yI22zgg2Rka_Nj2Kbv2UW7bMqe5sua0/view?usp=drivesdk",
+      "perspective": "historical Linux kernel design",
+      "page_scheme": "Printed chapter boundaries inspected from PDF contents",
+      "note": "Historical 2010 Linux mechanisms, not authoritative current Linux API/implementation guidance"
     }
   ],
   "nodes": [
@@ -2215,5 +2220,11 @@
         "OS-Q12a"
       ]
     }
-  ]
+  ],
+  "all_six_sources_integrated": true,
+  "reference_guide_navigation": {
+    "question_tree_node_to_route": "navigation_routes and question_reference_routes",
+    "route_to_sources": "reference_guide.json routes[].references (OSTEP), routes[].cross_book_references (TLPI/LKD), cross_source_routes (embedded and architecture)",
+    "source_to_chapter": "reference_guide.json chapter_catalog (OSTEP) and source_catalogs (TLPI/LKD)"
+  }
 }
