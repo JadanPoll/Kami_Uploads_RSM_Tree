@@ -108,3 +108,124 @@ These are **additional ways into the existing OS question tree**. Keep OSTEP for
 [Making Embedded Systems](https://drive.google.com/file/d/1hU4l-fAivhO7f3b8ZZK58JOPTKysXzhl/view?usp=drivesdk) · [RISC-V architecture book](https://drive.google.com/file/d/1oLtJEtoD_edhxRXXp9NqBg0eqwdHDpjP/view?usp=drivesdk) · [ARM architecture book](https://drive.google.com/file/d/11keBAs8ZzIym0p4V_QEUfNtgjGH_91EA/view?usp=drivesdk)
 
 **Boundary:** The processor books' program-start sections are not a replacement for a firmware/bootloader manual. The embedded book deliberately focuses on bare-metal software, not OS kernel implementation.
+
+## Linux programming and kernel references
+
+OSTEP is not the whole OS library. For each question below, use [The Linux Programming Interface](https://drive.google.com/file/d/1fT4Nqq2d5-UnQxZpnDioEar0C5N0Sd8l/view?usp=drivesdk) (TLPI) to examine **what applications can ask the OS to do**, and [Linux Kernel Development](https://drive.google.com/file/d/11yI22zgg2Rka_Nj2Kbv2UW7bMqe5sua0/view?usp=drivesdk) (LKD) to examine **how a 2010-era Linux kernel implemented related mechanisms**.
+
+**All ranges use printed book page numbers, inclusive.** These are lookup references, not established RSM certificates.
+
+| What do I want to look up? | TLPI chapters and pages | LKD chapters and pages |
+|---|---|---|
+| What is the OS supposed to do? | Ch. 2 (21–42), Ch. 3 (43–68) | Ch. 1 (1–10), Ch. 2 (11–22) |
+| How does my code first take control of the machine? | Ch. 27 (563–590), Ch. 28 (591–616) | Ch. 2 (11–22), Ch. 5 (69–84) |
+| How does a program start, run and stop? | Ch. 6 (113–138), Ch. 24 (513–530), Ch. 25 (531–540), Ch. 26 (541–562), Ch. 27 (563–590), Ch. 28 (591–616) | Ch. 3 (23–40), Ch. 5 (69–84) |
+| How do I decide what runs next? | Ch. 23 (479–512), Ch. 35 (733–752) | Ch. 4 (41–68), Ch. 11 (207–230) |
+| How does an address in a program reach memory? | Ch. 7 (139–152), Ch. 49 (1017–1044), Ch. 50 (1045–1056) | Ch. 15 (305–322) |
+| How do pages, page tables and free space work? | Ch. 49 (1017–1044), Ch. 50 (1045–1056) | Ch. 12 (231–260), Ch. 15 (305–322) |
+| What happens when RAM isn't enough? | Ch. 7 (139–152), Ch. 49 (1017–1044), Ch. 50 (1045–1056) | Ch. 12 (231–260), Ch. 16 (323–336) |
+| Why do threads interfere with each other? | Ch. 29 (617–630), Ch. 30 (631–654), Ch. 31 (655–670) | Ch. 9 (161–174), Ch. 10 (175–206) |
+| How should threads wait, wake and cooperate? | Ch. 30 (631–654), Ch. 31 (655–670), Ch. 43 (877–888), Ch. 47 (965–996), Ch. 53 (1089–1106), Ch. 55 (1117–1148) | Ch. 9 (161–174), Ch. 10 (175–206) |
+| Could I do this without a thread for every task? | Ch. 20 (387–420), Ch. 21 (421–446), Ch. 22 (447–478), Ch. 63 (1325–1374) | Ch. 7 (113–132), Ch. 8 (133–160) |
+| How does my OS talk to a device? | Ch. 3 (43–68), Ch. 4 (69–88), Ch. 23 (479–512), Ch. 63 (1325–1374) | Ch. 7 (113–132), Ch. 8 (133–160), Ch. 14 (289–304), Ch. 17 (337–362) |
+| How are files and directories represented? | Ch. 4 (69–88), Ch. 5 (89–112), Ch. 14 (251–278), Ch. 18 (339–374) | Ch. 13 (261–288), Ch. 14 (289–304) |
+| What happens if the machine crashes while writing? | Ch. 4 (69–88), Ch. 5 (89–112), Ch. 13 (233–250), Ch. 14 (251–278) | Ch. 14 (289–304), Ch. 16 (323–336) |
+| Could my OS use a different machine? | Ch. 43 (877–888), Ch. 44 (889–920), Ch. 56 (1149–1164), Ch. 57 (1165–1178), Ch. 58 (1179–1196), Ch. 59 (1197–1238), Ch. 60 (1239–1252) | — |
+
+### Complete chapter catalogs
+
+**TLPI — all 64 chapters**
+
+| Ch. | Chapter title | Printed pages |
+|---:|---|---:|
+| 1 | History and Standards | 1–20 |
+| 2 | Fundamental Concepts | 21–42 |
+| 3 | System Programming Concepts | 43–68 |
+| 4 | File I/O: The Universal I/O Model | 69–88 |
+| 5 | File I/O: Further Details | 89–112 |
+| 6 | Processes | 113–138 |
+| 7 | Memory Allocation | 139–152 |
+| 8 | Users and Groups | 153–166 |
+| 9 | Process Credentials | 167–184 |
+| 10 | Time | 185–210 |
+| 11 | System Limits and Options | 211–222 |
+| 12 | System and Process Information | 223–232 |
+| 13 | File I/O Buffering | 233–250 |
+| 14 | File Systems | 251–278 |
+| 15 | File Attributes | 279–310 |
+| 16 | Extended Attributes | 311–318 |
+| 17 | Access Control Lists | 319–338 |
+| 18 | Directories and Links | 339–374 |
+| 19 | Monitoring File Events | 375–386 |
+| 20 | Signals: Fundamental Concepts | 387–420 |
+| 21 | Signals: Signal Handlers | 421–446 |
+| 22 | Signals: Advanced Features | 447–478 |
+| 23 | Timers and Sleeping | 479–512 |
+| 24 | Process Creation | 513–530 |
+| 25 | Process Termination | 531–540 |
+| 26 | Monitoring Child Processes | 541–562 |
+| 27 | Program Execution | 563–590 |
+| 28 | Process Creation and Program Execution in More Detail | 591–616 |
+| 29 | Threads: Introduction | 617–630 |
+| 30 | Threads: Thread Synchronization | 631–654 |
+| 31 | Threads: Thread Safety and Per-Thread Storage | 655–670 |
+| 32 | Threads: Thread Cancellation | 671–680 |
+| 33 | Threads: Further Details | 681–698 |
+| 34 | Process Groups, Sessions, and Job Control | 699–732 |
+| 35 | Process Priorities and Scheduling | 733–752 |
+| 36 | Process Resources | 753–766 |
+| 37 | Daemons | 767–782 |
+| 38 | Writing Secure Privileged Programs | 783–796 |
+| 39 | Capabilities | 797–816 |
+| 40 | Login Accounting | 817–832 |
+| 41 | Fundamentals of Shared Libraries | 833–858 |
+| 42 | Advanced Features of Shared Libraries | 859–876 |
+| 43 | Interprocess Communication Overview | 877–888 |
+| 44 | Pipes and FIFOs | 889–920 |
+| 45 | Introduction to System V IPC | 921–936 |
+| 46 | System V Message Queues | 937–964 |
+| 47 | System V Semaphores | 965–996 |
+| 48 | System V Shared Memory | 997–1016 |
+| 49 | Memory Mappings | 1017–1044 |
+| 50 | Virtual Memory Operations | 1045–1056 |
+| 51 | Introduction to POSIX IPC | 1057–1062 |
+| 52 | POSIX Message Queues | 1063–1088 |
+| 53 | POSIX Semaphores | 1089–1106 |
+| 54 | POSIX Shared Memory | 1107–1116 |
+| 55 | File Locking | 1117–1148 |
+| 56 | Sockets: Introduction | 1149–1164 |
+| 57 | Sockets: UNIX Domain | 1165–1178 |
+| 58 | Sockets: Fundamentals of TCP/IP Networks | 1179–1196 |
+| 59 | Sockets: Internet Domains | 1197–1238 |
+| 60 | Sockets: Server Design | 1239–1252 |
+| 61 | Sockets: Advanced Topics | 1253–1288 |
+| 62 | Terminals | 1289–1324 |
+| 63 | Alternative I/O Models | 1325–1374 |
+| 64 | Pseudoterminals | 1375–1400 |
+
+**Linux Kernel Development — all 20 chapters**
+
+| Ch. | Chapter title | Printed pages |
+|---:|---|---:|
+| 1 | Introduction to the Linux Kernel | 1–10 |
+| 2 | Getting Started with the Kernel | 11–22 |
+| 3 | Process Management | 23–40 |
+| 4 | Process Scheduling | 41–68 |
+| 5 | System Calls | 69–84 |
+| 6 | Kernel Data Structures | 85–112 |
+| 7 | Interrupts and Interrupt Handlers | 113–132 |
+| 8 | Bottom Halves and Deferring Work | 133–160 |
+| 9 | An Introduction to Kernel Synchronization | 161–174 |
+| 10 | Kernel Synchronization Methods | 175–206 |
+| 11 | Timers and Time Management | 207–230 |
+| 12 | Memory Management | 231–260 |
+| 13 | The Virtual Filesystem | 261–288 |
+| 14 | The Block I/O Layer | 289–304 |
+| 15 | The Process Address Space | 305–322 |
+| 16 | The Page Cache and Page Writeback | 323–336 |
+| 17 | Devices and Modules | 337–362 |
+| 18 | Debugging | 363–378 |
+| 19 | Portability | 379–394 |
+| 20 | Patches, Hacking, and the Community | 395–406 |
+
+**Important:** LKD's 2010 implementation details are historical; use current Linux source/documentation for exact present-day interfaces. TLPI's system-call descriptions and OSTEP's design concepts have different roles. *Making Embedded Systems* chapters currently have verified titles but unverified printed page boundaries.
