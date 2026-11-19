@@ -1,7 +1,7 @@
 {
   "id": "operating-systems",
   "kind": "question_tree",
-  "version": 3,
+  "version": 4,
   "status": "provisional",
   "root": "OS-00",
   "title": "I want to build an OS! — question tree",
@@ -1310,6 +1310,391 @@
       ],
       "investigation_id": null,
       "established_certificate_id": null
+    },
+    {
+      "id": "OS-Q13",
+      "parent_id": "OS-00",
+      "question": "Why do I want to build an OS?",
+      "why_ask": "Maybe I care about learning how computers work, making something I can use, inventing a different computing experience, or gaining the ability to modify operating systems.",
+      "status": "candidate",
+      "candidate_references": [
+        {
+          "source_id": "OSTEP",
+          "section": "Ch. 2 — Introduction to Operating Systems",
+          "pages": {
+            "kind": "printed",
+            "start": 3,
+            "end": 20
+          },
+          "role": "Starting statement of OS purposes",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        },
+        {
+          "source_id": "LKD",
+          "section": "Ch. 1 — Introduction to the Linux Kernel",
+          "pages": {
+            "kind": "printed",
+            "start": 1,
+            "end": 10
+          },
+          "role": "Concrete kernel's perspective",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        }
+      ],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "OS-Q13a",
+      "parent_id": "OS-Q13",
+      "question": "Do I want to understand computers by building one?",
+      "why_ask": "Would building the simplest possible version teach me what I care about, or should I explore a larger working system?",
+      "status": "candidate",
+      "candidate_references": [
+        {
+          "source_id": "OSTEP",
+          "section": "Ch. 2 — Introduction to Operating Systems",
+          "pages": {
+            "kind": "printed",
+            "start": 3,
+            "end": 20
+          },
+          "role": "Starting statement of OS purposes",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        },
+        {
+          "source_id": "LKD",
+          "section": "Ch. 1 — Introduction to the Linux Kernel",
+          "pages": {
+            "kind": "printed",
+            "start": 1,
+            "end": 10
+          },
+          "role": "Concrete kernel's perspective",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        }
+      ],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "OS-Q13b",
+      "parent_id": "OS-Q13",
+      "question": "Do I want an OS I can actually keep using?",
+      "why_ask": "What should I be able to do with it a week or month after the first demo?",
+      "status": "candidate",
+      "candidate_references": [
+        {
+          "source_id": "OSTEP",
+          "section": "Ch. 2 — Introduction to Operating Systems",
+          "pages": {
+            "kind": "printed",
+            "start": 3,
+            "end": 20
+          },
+          "role": "Source's motivating OS abstractions",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        }
+      ],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "OS-Q13c",
+      "parent_id": "OS-Q13",
+      "question": "Do I want computers to work differently?",
+      "why_ask": "Would I need a new kernel for that, or could I start with a different user interface or application model?",
+      "status": "candidate",
+      "candidate_references": [
+        {
+          "source_id": "TLPI",
+          "section": "Chs. 43–44 — IPC Overview, Pipes and FIFOs",
+          "pages": {
+            "kind": "printed",
+            "start": 877,
+            "end": 920
+          },
+          "role": "Basic local IPC",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        },
+        {
+          "source_id": "TLPI",
+          "section": "Chs. 56–57 — Sockets Introduction and UNIX Domain",
+          "pages": {
+            "kind": "printed",
+            "start": 1149,
+            "end": 1178
+          },
+          "role": "Local socket communication",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        },
+        {
+          "source_id": "TLPI",
+          "section": "Chs. 58–60 — TCP/IP, Internet sockets, Server Design",
+          "pages": {
+            "kind": "printed",
+            "start": 1179,
+            "end": 1252
+          },
+          "role": "Network-facing programming contracts",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        },
+        {
+          "source_id": "OSTEP",
+          "section": "Chs. 48–50 — Distributed systems, NFS, AFS",
+          "pages": {
+            "kind": "printed",
+            "start": 605,
+            "end": 652
+          },
+          "role": "Distributed OS problems",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        }
+      ],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "OS-Q14",
+      "parent_id": "OS-00",
+      "question": "What kinds of OS could I build?",
+      "why_ask": "Could something with one program, a console, a robot, or several machines be a useful OS, even if it looks nothing like a desktop PC?",
+      "status": "candidate",
+      "candidate_references": [
+        {
+          "source_id": "OSTEP",
+          "section": "Ch. 2 — Introduction to Operating Systems",
+          "pages": {
+            "kind": "printed",
+            "start": 3,
+            "end": 20
+          },
+          "role": "Starting statement of OS purposes",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        },
+        {
+          "source_id": "LKD",
+          "section": "Ch. 1 — Introduction to the Linux Kernel",
+          "pages": {
+            "kind": "printed",
+            "start": 1,
+            "end": 10
+          },
+          "role": "Concrete kernel's perspective",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        }
+      ],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "OS-Q14a",
+      "parent_id": "OS-Q14",
+      "question": "Could I make an OS just for one particular device?",
+      "why_ask": "Which parts of a general-purpose OS would I no longer need, and which would remain essential?",
+      "status": "candidate",
+      "candidate_references": [
+        {
+          "source_id": "OSTEP",
+          "section": "Ch. 36 — I/O Devices",
+          "pages": {
+            "kind": "printed",
+            "start": 419,
+            "end": 432
+          },
+          "role": "Device interaction model",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        },
+        {
+          "source_id": "OSTEP",
+          "section": "Chs. 37–38 — Hard disks and RAID",
+          "pages": {
+            "kind": "printed",
+            "start": 433,
+            "end": 466
+          },
+          "role": "Consequences of actual devices",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        },
+        {
+          "source_id": "LKD",
+          "section": "Chs. 7–8 — Interrupts and Deferred Work",
+          "pages": {
+            "kind": "printed",
+            "start": 113,
+            "end": 160
+          },
+          "role": "Interrupt processing mechanisms",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        },
+        {
+          "source_id": "LKD",
+          "section": "Ch. 17 — Devices and Modules",
+          "pages": {
+            "kind": "printed",
+            "start": 337,
+            "end": 362
+          },
+          "role": "Device model and modularity",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        }
+      ],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "OS-Q14b",
+      "parent_id": "OS-Q14",
+      "question": "Could my OS run partly on other computers?",
+      "why_ask": "Could I treat remote applications, storage or computation as part of the experience, and what happens when a connection fails?",
+      "status": "candidate",
+      "candidate_references": [
+        {
+          "source_id": "TLPI",
+          "section": "Chs. 43–44 — IPC Overview, Pipes and FIFOs",
+          "pages": {
+            "kind": "printed",
+            "start": 877,
+            "end": 920
+          },
+          "role": "Basic local IPC",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        },
+        {
+          "source_id": "TLPI",
+          "section": "Chs. 56–57 — Sockets Introduction and UNIX Domain",
+          "pages": {
+            "kind": "printed",
+            "start": 1149,
+            "end": 1178
+          },
+          "role": "Local socket communication",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        },
+        {
+          "source_id": "TLPI",
+          "section": "Chs. 58–60 — TCP/IP, Internet sockets, Server Design",
+          "pages": {
+            "kind": "printed",
+            "start": 1179,
+            "end": 1252
+          },
+          "role": "Network-facing programming contracts",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        },
+        {
+          "source_id": "OSTEP",
+          "section": "Chs. 48–50 — Distributed systems, NFS, AFS",
+          "pages": {
+            "kind": "printed",
+            "start": 605,
+            "end": 652
+          },
+          "role": "Distributed OS problems",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        }
+      ],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "OS-Q15",
+      "parent_id": "OS-00",
+      "question": "Which parts do I have to write myself?",
+      "why_ask": "If I borrow a bootloader, drivers, a kernel or even an existing user interface, when does the work still satisfy my original curiosity?",
+      "status": "candidate",
+      "candidate_references": [
+        {
+          "source_id": "OSTEP",
+          "section": "Ch. 2 — Introduction to Operating Systems",
+          "pages": {
+            "kind": "printed",
+            "start": 3,
+            "end": 20
+          },
+          "role": "Starting statement of OS purposes",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        },
+        {
+          "source_id": "LKD",
+          "section": "Ch. 1 — Introduction to the Linux Kernel",
+          "pages": {
+            "kind": "printed",
+            "start": 1,
+            "end": 10
+          },
+          "role": "Concrete kernel's perspective",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        }
+      ],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "OS-Q15a",
+      "parent_id": "OS-Q15",
+      "question": "Would writing everything from scratch really teach me more?",
+      "why_ask": "What would I learn by implementing a piece myself compared with reading, changing or extending a working implementation?",
+      "status": "candidate",
+      "candidate_references": [
+        {
+          "source_id": "OSTEP",
+          "section": "Ch. 2 — Introduction to Operating Systems",
+          "pages": {
+            "kind": "printed",
+            "start": 3,
+            "end": 20
+          },
+          "role": "Starting statement of OS purposes",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        },
+        {
+          "source_id": "LKD",
+          "section": "Ch. 1 — Introduction to the Linux Kernel",
+          "pages": {
+            "kind": "printed",
+            "start": 1,
+            "end": 10
+          },
+          "role": "Concrete kernel's perspective",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        }
+      ],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "OS-Q15b",
+      "parent_id": "OS-Q15",
+      "question": "Which parts should I understand even if I don't write them?",
+      "why_ask": "What hidden dependencies might keep me from confidently modifying or debugging the system?",
+      "status": "candidate",
+      "candidate_references": [
+        {
+          "source_id": "OSTEP",
+          "section": "Ch. 36 — I/O Devices",
+          "pages": {
+            "kind": "printed",
+            "start": 419,
+            "end": 432
+          },
+          "role": "Device interaction model",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        },
+        {
+          "source_id": "OSTEP",
+          "section": "Chs. 39–40 — Files, directories and filesystem implementation",
+          "pages": {
+            "kind": "printed",
+            "start": 467,
+            "end": 510
+          },
+          "role": "Public interface and storage structure",
+          "verification": "chapter/title and boundary checked against this PDF's contents"
+        }
+      ],
+      "investigation_id": null,
+      "established_certificate_id": null
     }
   ],
   "answer_branches": [
@@ -1497,6 +1882,76 @@
           "epistemic_status": "unverified possibility"
         }
       ]
+    },
+    {
+      "question_id": "OS-Q13",
+      "possible_answers": [
+        {
+          "answer": "I mainly want to understand computers.",
+          "follow_up": "What would I need to build myself to gain that understanding, and what would only distract me?",
+          "epistemic_status": "unverified possibility"
+        },
+        {
+          "answer": "I want a system I can use.",
+          "follow_up": "Which requirements matter after the first successful boot?",
+          "epistemic_status": "unverified possibility"
+        },
+        {
+          "answer": "I want to explore a different OS idea.",
+          "follow_up": "Which existing pieces can I reuse without losing what makes the idea different?",
+          "epistemic_status": "unverified possibility"
+        },
+        {
+          "answer": "I'm not sure yet.",
+          "follow_up": "What kinds of OS and example experiences would help me discover which purpose I actually care about?",
+          "epistemic_status": "unverified possibility"
+        }
+      ]
+    },
+    {
+      "question_id": "OS-Q14",
+      "possible_answers": [
+        {
+          "answer": "Yes, an OS can be quite small.",
+          "follow_up": "What must it do before I would distinguish it from a standalone program?",
+          "epistemic_status": "unverified possibility"
+        },
+        {
+          "answer": "Yes, but a specialized OS makes different tradeoffs.",
+          "follow_up": "What can we safely leave out in a console or robot that a desktop would need?",
+          "epistemic_status": "unverified possibility"
+        },
+        {
+          "answer": "No, I only count a full general-purpose environment.",
+          "follow_up": "Why is that the criterion, and would building a smaller system still serve my learning goal?",
+          "epistemic_status": "unverified possibility"
+        }
+      ]
+    },
+    {
+      "question_id": "OS-Q15",
+      "possible_answers": [
+        {
+          "answer": "Yes, I need to write the important parts myself.",
+          "follow_up": "Which parts would teach me something I can't learn as effectively by modifying an existing implementation?",
+          "epistemic_status": "unverified possibility"
+        },
+        {
+          "answer": "Yes, but using a bootloader or drivers is acceptable.",
+          "follow_up": "What functional ownership would still make this 'my OS'?",
+          "epistemic_status": "unverified possibility"
+        },
+        {
+          "answer": "No, I can make a new OS experience from existing pieces.",
+          "follow_up": "What, exactly, must be different to accomplish what I care about?",
+          "epistemic_status": "unverified possibility"
+        },
+        {
+          "answer": "No, unless I define what 'build' means for this project.",
+          "follow_up": "Would 'build a kernel,' 'design a computing environment,' or 'gain OS engineering competence' be a better description?",
+          "epistemic_status": "unverified possibility"
+        }
+      ]
     }
   ],
   "connections": [
@@ -1529,10 +1984,40 @@
       "to": "OS-Q08",
       "relationship": "depends on hardware",
       "why": "Boot and device interaction both depend on the target machine's contracts"
+    },
+    {
+      "from": "OS-Q13",
+      "to": "OS-Q03",
+      "relationship": "purpose changes requirements",
+      "why": "What counts as a useful OS depends on why the user wants one"
+    },
+    {
+      "from": "OS-Q13c",
+      "to": "OS-Q15",
+      "relationship": "alternative route",
+      "why": "A different user experience may not require a new kernel"
+    },
+    {
+      "from": "OS-Q14a",
+      "to": "OS-Q10",
+      "relationship": "conditions change requirements",
+      "why": "A device with trusted programs may need different protection guarantees"
+    },
+    {
+      "from": "OS-Q15",
+      "to": "OS-Q02",
+      "relationship": "reframes feasibility",
+      "why": "What one person can build depends strongly on which components are reused"
     }
   ],
   "source_reference_policy": "Candidate reference ranges are reading leads indexed by printed book pages, not established Certificates (C). Exact evidentiary citations and conclusions belong in investigation records after reading.",
   "guidance": "Speak like a curious human. Start from the user's actual ambition. Ask deceptively simple questions; consider plausible yes / yes-but / no / no-unless branches only when they change what to investigate. Do not substitute an artificial syllabus or technical headings for the question tree. Follow RSM-01.03, RSM-02.08–02.12, RSM-08.10.",
   "previous_tree_note": "The earlier abstract OS-01..OS-08 topic-centered tree remains in Git history before this revision; this is a deliberate re-rooting, not a renaming.",
-  "updated": "2026-11-19"
+  "updated": "2026-11-19",
+  "focus_branch_ids": [
+    "OS-Q13",
+    "OS-Q14",
+    "OS-Q15"
+  ],
+  "next_collaborative_step": "Explore the user's meaning of 'build an OS' using the purpose, possibility and reuse questions. Do not force a choice, automatically descend into kernel chapters, or open investigations before a question needs evidence."
 }
