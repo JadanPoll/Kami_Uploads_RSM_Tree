@@ -1,0 +1,614 @@
+{
+  "id": "operating-systems",
+  "title": "Operating Systems — Question Landscapes and Investigation Trees",
+  "status": "source-indexed-investigation-not-yet-certified",
+  "question": "What should an operating system make possible, what guarantees does it owe, and how are those guarantees realized?",
+  "source_library": "https://drive.google.com/drive/folders/1cIv2hj5vmrohtneuPG9uALVkDHLqWVGC",
+  "source_preference": "Google Drive/Kami first; preserve the user's annotations in PDFs and link evidence rather than copying files",
+  "method": [
+    "RSM-01.01",
+    "RSM-01.03",
+    "RSM-01.04",
+    "RSM-02.08",
+    "RSM-02.12",
+    "RSM-05.01",
+    "RSM-05.03"
+  ],
+  "certificate_contract": "A node's certificate.references is the evidence location to consult, not a validated conclusion. status=pending_investigation until observations/interpretations/uncertainties and result are recorded. All page positions are printed book page numbers from inspected tables of contents, not verified PDF offsets or Kami deep links.",
+  "sources": [
+    {
+      "id": "OSTEP",
+      "title": "Operating Systems: Three Easy Pieces",
+      "authors": "Remzi H. Arpaci-Dusseau; Andrea C. Arpaci-Dusseau",
+      "edition": "version 1.00 (2018)",
+      "url": "https://drive.google.com/file/d/1jyZtuBGG6C9WdbX6gT7ACTp5OQcICsDt/view?usp=drivesdk"
+    },
+    {
+      "id": "TLPI",
+      "title": "The Linux Programming Interface",
+      "authors": "Michael Kerrisk",
+      "url": "https://drive.google.com/file/d/1fT4Nqq2d5-UnQxZpnDioEar0C5N0Sd8l/view?usp=drivesdk"
+    },
+    {
+      "id": "LKD",
+      "title": "Linux Kernel Development",
+      "authors": "Robert Love",
+      "edition": "third edition (2010)",
+      "url": "https://drive.google.com/file/d/11yI22zgg2Rka_Nj2Kbv2UW7bMqe5sua0/view?usp=drivesdk"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "OS-00",
+      "parent_id": null,
+      "question": "How can operating systems make computation usable, shareable, safe, persistent, and composable?",
+      "status": "open",
+      "why": "Unifies purposes without assuming today's kernel structures are logically necessary",
+      "certificate": {
+        "status": "pending_investigation",
+        "references": [
+          {
+            "source_id": "OSTEP",
+            "section": "Ch. 2 — Introduction to Operating Systems",
+            "pages": {
+              "kind": "printed",
+              "start": 3,
+              "end": 20
+            },
+            "role": "Source's motivating OS abstractions",
+            "verification": "chapter/title and boundary checked against this PDF's contents"
+          }
+        ]
+      }
+    },
+    {
+      "id": "OS-01",
+      "parent_id": "OS-00",
+      "question": "What is an OS fundamentally for, and which functions are necessary versus historically contingent?",
+      "why": "Distinguish a functional contract from a particular monolithic implementation",
+      "status": "open",
+      "candidate_answers": [
+        "Resource abstraction, sharing and isolation could be the central services",
+        "The meaningful boundary of an OS may depend on the computing environment"
+      ],
+      "certificate": {
+        "status": "pending_investigation",
+        "references": [
+          {
+            "source_id": "OSTEP",
+            "section": "Ch. 2 — Introduction to Operating Systems",
+            "pages": {
+              "kind": "printed",
+              "start": 3,
+              "end": 20
+            },
+            "role": "Starting statement of OS purposes",
+            "verification": "chapter/title and boundary checked against this PDF's contents"
+          },
+          {
+            "source_id": "LKD",
+            "section": "Ch. 1 — Introduction to the Linux Kernel",
+            "pages": {
+              "kind": "printed",
+              "start": 1,
+              "end": 10
+            },
+            "role": "Concrete kernel's perspective",
+            "verification": "chapter/title and boundary checked against this PDF's contents"
+          }
+        ]
+      }
+    },
+    {
+      "id": "OS-02",
+      "parent_id": "OS-00",
+      "question": "How can multiple programs safely and efficiently share computation?",
+      "why": "Separates mechanism from policies and hardware supports",
+      "status": "open",
+      "subquestions": [
+        {
+          "id": "OS-02a",
+          "question": "How is execution isolated and controlled?"
+        },
+        {
+          "id": "OS-02b",
+          "question": "What should determine who runs next?"
+        }
+      ],
+      "certificate": {
+        "status": "pending_investigation",
+        "references": [
+          {
+            "source_id": "OSTEP",
+            "section": "Ch. 4 — The Abstraction: The Process",
+            "pages": {
+              "kind": "printed",
+              "start": 25,
+              "end": 36
+            },
+            "role": "Process model",
+            "verification": "chapter/title and boundary checked against this PDF's contents"
+          },
+          {
+            "source_id": "OSTEP",
+            "section": "Ch. 6 — Mechanism: Limited Direct Execution",
+            "pages": {
+              "kind": "printed",
+              "start": 49,
+              "end": 64
+            },
+            "role": "Mechanism, privilege transitions and control",
+            "verification": "chapter/title and boundary checked against this PDF's contents"
+          },
+          {
+            "source_id": "OSTEP",
+            "section": "Chs. 7–10 — Scheduling, MLFQ, proportional share, multiprocessor scheduling",
+            "pages": {
+              "kind": "printed",
+              "start": 65,
+              "end": 116
+            },
+            "role": "Competing scheduling policies and their costs",
+            "verification": "chapter/title and boundary checked against this PDF's contents"
+          },
+          {
+            "source_id": "LKD",
+            "section": "Ch. 3 — Process Management",
+            "pages": {
+              "kind": "printed",
+              "start": 23,
+              "end": 40
+            },
+            "role": "Linux implementation perspective",
+            "verification": "chapter/title and boundary checked against this PDF's contents"
+          },
+          {
+            "source_id": "LKD",
+            "section": "Ch. 4 — Process Scheduling",
+            "pages": {
+              "kind": "printed",
+              "start": 41,
+              "end": 68
+            },
+            "role": "Linux scheduling example",
+            "verification": "chapter/title and boundary checked against this PDF's contents"
+          }
+        ]
+      }
+    },
+    {
+      "id": "OS-03",
+      "parent_id": "OS-00",
+      "question": "How can programs have isolated, flexible views of memory?",
+      "why": "Connect software abstraction to address translation, allocation, caching and resource limits",
+      "status": "open",
+      "subquestions": [
+        {
+          "id": "OS-03a",
+          "question": "What is an address space, and what guarantees should it provide?"
+        },
+        {
+          "id": "OS-03b",
+          "question": "What happens when physical memory is insufficient?"
+        }
+      ],
+      "certificate": {
+        "status": "pending_investigation",
+        "references": [
+          {
+            "source_id": "OSTEP",
+            "section": "Chs. 13–15 — Address spaces, memory API, address translation",
+            "pages": {
+              "kind": "printed",
+              "start": 121,
+              "end": 154
+            },
+            "role": "Model and mechanism",
+            "verification": "chapter/title and boundary checked against this PDF's contents"
+          },
+          {
+            "source_id": "OSTEP",
+            "section": "Chs. 18–23 — Paging, TLBs, multi-level tables, swapping and VM policy",
+            "pages": {
+              "kind": "printed",
+              "start": 185,
+              "end": 278
+            },
+            "role": "Alternative mechanisms and boundary cases",
+            "verification": "chapter/title and boundary checked against this PDF's contents"
+          },
+          {
+            "source_id": "TLPI",
+            "section": "Chs. 49–50 — Memory Mappings and Virtual Memory Operations",
+            "pages": {
+              "kind": "printed",
+              "start": 1017,
+              "end": 1056
+            },
+            "role": "Program-facing interfaces",
+            "verification": "chapter/title and boundary checked against this PDF's contents"
+          },
+          {
+            "source_id": "LKD",
+            "section": "Ch. 15 — The Process Address Space",
+            "pages": {
+              "kind": "printed",
+              "start": 305,
+              "end": 322
+            },
+            "role": "Kernel-level representation",
+            "verification": "chapter/title and boundary checked against this PDF's contents"
+          }
+        ]
+      }
+    },
+    {
+      "id": "OS-04",
+      "parent_id": "OS-00",
+      "question": "How can concurrent activities coordinate without violating correctness or losing progress?",
+      "why": "Separates mutual exclusion, ordering, liveness and alternative concurrency structures",
+      "status": "open",
+      "subquestions": [
+        {
+          "id": "OS-04a",
+          "question": "Which shared-state assumptions produce races and why?"
+        },
+        {
+          "id": "OS-04b",
+          "question": "When are locks, condition variables, semaphores or event loops appropriate?"
+        }
+      ],
+      "certificate": {
+        "status": "pending_investigation",
+        "references": [
+          {
+            "source_id": "OSTEP",
+            "section": "Chs. 26–28 — Concurrency, thread API, locks",
+            "pages": {
+              "kind": "printed",
+              "start": 287,
+              "end": 336
+            },
+            "role": "Shared-state and exclusion mechanism",
+            "verification": "chapter/title and boundary checked against this PDF's contents"
+          },
+          {
+            "source_id": "OSTEP",
+            "section": "Chs. 29–33 — Concurrent structures, condition variables, semaphores, bugs, events",
+            "pages": {
+              "kind": "printed",
+              "start": 337,
+              "end": 412
+            },
+            "role": "Different synchronization mechanisms and failure patterns",
+            "verification": "chapter/title and boundary checked against this PDF's contents"
+          },
+          {
+            "source_id": "TLPI",
+            "section": "Chs. 29–31 — Threads, thread synchronization and thread safety",
+            "pages": {
+              "kind": "printed",
+              "start": 617,
+              "end": 670
+            },
+            "role": "Program-facing threads",
+            "verification": "chapter/title and boundary checked against this PDF's contents"
+          },
+          {
+            "source_id": "LKD",
+            "section": "Chs. 9–10 — Kernel Synchronization and Methods",
+            "pages": {
+              "kind": "printed",
+              "start": 161,
+              "end": 206
+            },
+            "role": "Kernel synchronization tradeoffs",
+            "verification": "chapter/title and boundary checked against this PDF's contents"
+          }
+        ]
+      }
+    },
+    {
+      "id": "OS-05",
+      "parent_id": "OS-00",
+      "question": "How can information survive failures while remaining efficiently accessible and trustworthy?",
+      "why": "Investigate the gap between abstraction of a file and physical devices, caches, write order and crashes",
+      "status": "open",
+      "subquestions": [
+        {
+          "id": "OS-05a",
+          "question": "What does storing a file require beneath the interface?"
+        },
+        {
+          "id": "OS-05b",
+          "question": "What guarantees survive power loss and partial writes?"
+        }
+      ],
+      "certificate": {
+        "status": "pending_investigation",
+        "references": [
+          {
+            "source_id": "OSTEP",
+            "section": "Chs. 39–40 — Files, directories and filesystem implementation",
+            "pages": {
+              "kind": "printed",
+              "start": 467,
+              "end": 510
+            },
+            "role": "Public interface and storage structure",
+            "verification": "chapter/title and boundary checked against this PDF's contents"
+          },
+          {
+            "source_id": "OSTEP",
+            "section": "Chs. 41–43 — FFS, crash consistency and journaling, log-structured filesystems",
+            "pages": {
+              "kind": "printed",
+              "start": 511,
+              "end": 562
+            },
+            "role": "Locality, crash and design tradeoffs",
+            "verification": "chapter/title and boundary checked against this PDF's contents"
+          },
+          {
+            "source_id": "TLPI",
+            "section": "Chs. 4–5 — File I/O",
+            "pages": {
+              "kind": "printed",
+              "start": 69,
+              "end": 112
+            },
+            "role": "Interface contract",
+            "verification": "chapter/title and boundary checked against this PDF's contents"
+          },
+          {
+            "source_id": "LKD",
+            "section": "Chs. 13–14 — Virtual Filesystem and Block I/O Layer",
+            "pages": {
+              "kind": "printed",
+              "start": 261,
+              "end": 304
+            },
+            "role": "Kernel interfaces and requests",
+            "verification": "chapter/title and boundary checked against this PDF's contents"
+          }
+        ]
+      }
+    },
+    {
+      "id": "OS-06",
+      "parent_id": "OS-00",
+      "question": "How does software safely coordinate devices, events and physical resources?",
+      "why": "Connects OS behavior to external asynchronous reality and device models",
+      "status": "open",
+      "subquestions": [
+        {
+          "id": "OS-06a",
+          "question": "How are device events communicated to software?"
+        },
+        {
+          "id": "OS-06b",
+          "question": "Which I/O work should execute synchronously, asynchronously or deferred?"
+        }
+      ],
+      "certificate": {
+        "status": "pending_investigation",
+        "references": [
+          {
+            "source_id": "OSTEP",
+            "section": "Ch. 36 — I/O Devices",
+            "pages": {
+              "kind": "printed",
+              "start": 419,
+              "end": 432
+            },
+            "role": "Device interaction model",
+            "verification": "chapter/title and boundary checked against this PDF's contents"
+          },
+          {
+            "source_id": "OSTEP",
+            "section": "Chs. 37–38 — Hard disks and RAID",
+            "pages": {
+              "kind": "printed",
+              "start": 433,
+              "end": 466
+            },
+            "role": "Consequences of actual devices",
+            "verification": "chapter/title and boundary checked against this PDF's contents"
+          },
+          {
+            "source_id": "LKD",
+            "section": "Chs. 7–8 — Interrupts and Deferred Work",
+            "pages": {
+              "kind": "printed",
+              "start": 113,
+              "end": 160
+            },
+            "role": "Interrupt processing mechanisms",
+            "verification": "chapter/title and boundary checked against this PDF's contents"
+          },
+          {
+            "source_id": "LKD",
+            "section": "Ch. 17 — Devices and Modules",
+            "pages": {
+              "kind": "printed",
+              "start": 337,
+              "end": 362
+            },
+            "role": "Device model and modularity",
+            "verification": "chapter/title and boundary checked against this PDF's contents"
+          }
+        ]
+      }
+    },
+    {
+      "id": "OS-07",
+      "parent_id": "OS-00",
+      "question": "Where should privilege, isolation and responsibility boundaries lie?",
+      "why": "Contrast public APIs and protected mechanisms, and reveal which boundaries are design choices",
+      "status": "open",
+      "subquestions": [
+        {
+          "id": "OS-07a",
+          "question": "What guarantees separate application execution from trusted kernel work?"
+        },
+        {
+          "id": "OS-07b",
+          "question": "Which policies must be privileged and which can be moved outside the kernel?"
+        }
+      ],
+      "certificate": {
+        "status": "pending_investigation",
+        "references": [
+          {
+            "source_id": "OSTEP",
+            "section": "Ch. 6 — Limited Direct Execution",
+            "pages": {
+              "kind": "printed",
+              "start": 49,
+              "end": 64
+            },
+            "role": "Isolation and privilege transitions",
+            "verification": "chapter/title and boundary checked against this PDF's contents"
+          },
+          {
+            "source_id": "TLPI",
+            "section": "Ch. 3 — System Programming Concepts",
+            "pages": {
+              "kind": "printed",
+              "start": 43,
+              "end": 68
+            },
+            "role": "Program-to-system concepts",
+            "verification": "chapter/title and boundary checked against this PDF's contents"
+          },
+          {
+            "source_id": "LKD",
+            "section": "Ch. 5 — System Calls",
+            "pages": {
+              "kind": "printed",
+              "start": 69,
+              "end": 84
+            },
+            "role": "Kernel system call implementation",
+            "verification": "chapter/title and boundary checked against this PDF's contents"
+          },
+          {
+            "source_id": "TLPI",
+            "section": "Ch. 38 — Writing Secure Privileged Programs",
+            "pages": {
+              "kind": "printed",
+              "start": 783,
+              "end": 796
+            },
+            "role": "Security implications",
+            "verification": "chapter/title and boundary checked against this PDF's contents"
+          }
+        ]
+      }
+    },
+    {
+      "id": "OS-08",
+      "parent_id": "OS-00",
+      "question": "How do OS abstractions compose into larger cooperating and distributed systems?",
+      "why": "Connect local capabilities, IPC, networking and remote resources",
+      "status": "open",
+      "subquestions": [
+        {
+          "id": "OS-08a",
+          "question": "What communication and coordination mechanisms can connect isolated processes?"
+        },
+        {
+          "id": "OS-08b",
+          "question": "What changes when the system crosses machine and failure boundaries?"
+        }
+      ],
+      "certificate": {
+        "status": "pending_investigation",
+        "references": [
+          {
+            "source_id": "TLPI",
+            "section": "Chs. 43–44 — IPC Overview, Pipes and FIFOs",
+            "pages": {
+              "kind": "printed",
+              "start": 877,
+              "end": 920
+            },
+            "role": "Basic local IPC",
+            "verification": "chapter/title and boundary checked against this PDF's contents"
+          },
+          {
+            "source_id": "TLPI",
+            "section": "Chs. 56–57 — Sockets Introduction and UNIX Domain",
+            "pages": {
+              "kind": "printed",
+              "start": 1149,
+              "end": 1178
+            },
+            "role": "Local socket communication",
+            "verification": "chapter/title and boundary checked against this PDF's contents"
+          },
+          {
+            "source_id": "TLPI",
+            "section": "Chs. 58–60 — TCP/IP, Internet sockets, Server Design",
+            "pages": {
+              "kind": "printed",
+              "start": 1179,
+              "end": 1252
+            },
+            "role": "Network-facing programming contracts",
+            "verification": "chapter/title and boundary checked against this PDF's contents"
+          },
+          {
+            "source_id": "OSTEP",
+            "section": "Chs. 48–50 — Distributed systems, NFS, AFS",
+            "pages": {
+              "kind": "printed",
+              "start": 605,
+              "end": 653
+            },
+            "role": "Distributed OS problems",
+            "verification": "chapter/title and boundary checked against this PDF's contents"
+          }
+        ]
+      }
+    }
+  ],
+  "relations": [
+    {
+      "from": "OS-02",
+      "to": "OS-04",
+      "type": "enables_and_constrains",
+      "why": "Scheduling makes interleaving and coordination questions concrete"
+    },
+    {
+      "from": "OS-03",
+      "to": "OS-05",
+      "type": "shares_mechanisms",
+      "why": "Caching and memory-mapped files link memory and persistence"
+    },
+    {
+      "from": "OS-05",
+      "to": "OS-06",
+      "type": "depends_on",
+      "why": "Persistence depends on the behavior of storage devices and I/O"
+    },
+    {
+      "from": "OS-07",
+      "to": "OS-02",
+      "type": "supports",
+      "why": "Privilege boundaries underpin controlled execution"
+    },
+    {
+      "from": "OS-08",
+      "to": "OS-04",
+      "type": "generalizes",
+      "why": "Coordination across machines adds independent failures to concurrency"
+    }
+  ],
+  "notes": [
+    "OSTEP and TLPI are the primary conceptual/interface sources; LKD is a 2010 snapshot, not a current-Linux implementation oracle.",
+    "Do not force a fixed reading order: select nodes by the next consequential question and use their cited ranges.",
+    "Page ranges are inclusive, bounded by next chapter start in the observed contents. The distributed-system range 605–653 is bounded by book's next available sequence; page endpoint remains provisional and should be checked before deep linking."
+  ],
+  "updated": "2026-11-19"
+}
