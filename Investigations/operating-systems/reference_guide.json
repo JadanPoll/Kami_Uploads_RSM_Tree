@@ -388,6 +388,56 @@
           "end": 22,
           "page_scheme": "printed"
         }
+      ],
+      "cross_book_references": [
+        {
+          "source_id": "TLPI",
+          "chapter": 2,
+          "title": "Fundamental Concepts",
+          "pages": {
+            "kind": "printed",
+            "start": 21,
+            "end": 42
+          },
+          "role": "What are the services the kernel exposes, and what does a kernel actually contain?",
+          "verification": "chapter_boundaries_toc_checked"
+        },
+        {
+          "source_id": "TLPI",
+          "chapter": 3,
+          "title": "System Programming Concepts",
+          "pages": {
+            "kind": "printed",
+            "start": 43,
+            "end": 68
+          },
+          "role": "What are the services the kernel exposes, and what does a kernel actually contain?",
+          "verification": "chapter_boundaries_toc_checked"
+        },
+        {
+          "source_id": "LKD",
+          "chapter": 1,
+          "title": "Introduction to the Linux Kernel",
+          "pages": {
+            "kind": "printed",
+            "start": 1,
+            "end": 10
+          },
+          "role": "What are the services the kernel exposes, and what does a kernel actually contain?",
+          "verification": "chapter_boundaries_toc_checked"
+        },
+        {
+          "source_id": "LKD",
+          "chapter": 2,
+          "title": "Getting Started with the Kernel",
+          "pages": {
+            "kind": "printed",
+            "start": 11,
+            "end": 22
+          },
+          "role": "What are the services the kernel exposes, and what does a kernel actually contain?",
+          "verification": "chapter_boundaries_toc_checked"
+        }
       ]
     },
     {
@@ -416,6 +466,56 @@
           "start": 49,
           "end": 64,
           "page_scheme": "printed"
+        }
+      ],
+      "cross_book_references": [
+        {
+          "source_id": "TLPI",
+          "chapter": 27,
+          "title": "Program Execution",
+          "pages": {
+            "kind": "printed",
+            "start": 563,
+            "end": 590
+          },
+          "role": "Program loading and kernel setup are not the same as firmware/bootloader details",
+          "verification": "chapter_boundaries_toc_checked"
+        },
+        {
+          "source_id": "TLPI",
+          "chapter": 28,
+          "title": "Process Creation and Program Execution in More Detail",
+          "pages": {
+            "kind": "printed",
+            "start": 591,
+            "end": 616
+          },
+          "role": "Program loading and kernel setup are not the same as firmware/bootloader details",
+          "verification": "chapter_boundaries_toc_checked"
+        },
+        {
+          "source_id": "LKD",
+          "chapter": 2,
+          "title": "Getting Started with the Kernel",
+          "pages": {
+            "kind": "printed",
+            "start": 11,
+            "end": 22
+          },
+          "role": "Program loading and kernel setup are not the same as firmware/bootloader details",
+          "verification": "chapter_boundaries_toc_checked"
+        },
+        {
+          "source_id": "LKD",
+          "chapter": 5,
+          "title": "System Calls",
+          "pages": {
+            "kind": "printed",
+            "start": 69,
+            "end": 84
+          },
+          "role": "Program loading and kernel setup are not the same as firmware/bootloader details",
+          "verification": "chapter_boundaries_toc_checked"
         }
       ]
     },
@@ -453,6 +553,104 @@
           "start": 49,
           "end": 64,
           "page_scheme": "printed"
+        }
+      ],
+      "cross_book_references": [
+        {
+          "source_id": "TLPI",
+          "chapter": 6,
+          "title": "Processes",
+          "pages": {
+            "kind": "printed",
+            "start": 113,
+            "end": 138
+          },
+          "role": "Distinguish fork/exec behavior, process management and kernel task structures",
+          "verification": "chapter_boundaries_toc_checked"
+        },
+        {
+          "source_id": "TLPI",
+          "chapter": 24,
+          "title": "Process Creation",
+          "pages": {
+            "kind": "printed",
+            "start": 513,
+            "end": 530
+          },
+          "role": "Distinguish fork/exec behavior, process management and kernel task structures",
+          "verification": "chapter_boundaries_toc_checked"
+        },
+        {
+          "source_id": "TLPI",
+          "chapter": 25,
+          "title": "Process Termination",
+          "pages": {
+            "kind": "printed",
+            "start": 531,
+            "end": 540
+          },
+          "role": "Distinguish fork/exec behavior, process management and kernel task structures",
+          "verification": "chapter_boundaries_toc_checked"
+        },
+        {
+          "source_id": "TLPI",
+          "chapter": 26,
+          "title": "Monitoring Child Processes",
+          "pages": {
+            "kind": "printed",
+            "start": 541,
+            "end": 562
+          },
+          "role": "Distinguish fork/exec behavior, process management and kernel task structures",
+          "verification": "chapter_boundaries_toc_checked"
+        },
+        {
+          "source_id": "TLPI",
+          "chapter": 27,
+          "title": "Program Execution",
+          "pages": {
+            "kind": "printed",
+            "start": 563,
+            "end": 590
+          },
+          "role": "Distinguish fork/exec behavior, process management and kernel task structures",
+          "verification": "chapter_boundaries_toc_checked"
+        },
+        {
+          "source_id": "TLPI",
+          "chapter": 28,
+          "title": "Process Creation and Program Execution in More Detail",
+          "pages": {
+            "kind": "printed",
+            "start": 591,
+            "end": 616
+          },
+          "role": "Distinguish fork/exec behavior, process management and kernel task structures",
+          "verification": "chapter_boundaries_toc_checked"
+        },
+        {
+          "source_id": "LKD",
+          "chapter": 3,
+          "title": "Process Management",
+          "pages": {
+            "kind": "printed",
+            "start": 23,
+            "end": 40
+          },
+          "role": "Distinguish fork/exec behavior, process management and kernel task structures",
+          "verification": "chapter_boundaries_toc_checked"
+        },
+        {
+          "source_id": "LKD",
+          "chapter": 5,
+          "title": "System Calls",
+          "pages": {
+            "kind": "printed",
+            "start": 69,
+            "end": 84
+          },
+          "role": "Distinguish fork/exec behavior, process management and kernel task structures",
+          "verification": "chapter_boundaries_toc_checked"
         }
       ]
     },
@@ -499,6 +697,56 @@
           "end": 116,
           "page_scheme": "printed"
         }
+      ],
+      "cross_book_references": [
+        {
+          "source_id": "TLPI",
+          "chapter": 23,
+          "title": "Timers and Sleeping",
+          "pages": {
+            "kind": "printed",
+            "start": 479,
+            "end": 512
+          },
+          "role": "Compare scheduling controls visible to programs with the scheduler's kernel implementation",
+          "verification": "chapter_boundaries_toc_checked"
+        },
+        {
+          "source_id": "TLPI",
+          "chapter": 35,
+          "title": "Process Priorities and Scheduling",
+          "pages": {
+            "kind": "printed",
+            "start": 733,
+            "end": 752
+          },
+          "role": "Compare scheduling controls visible to programs with the scheduler's kernel implementation",
+          "verification": "chapter_boundaries_toc_checked"
+        },
+        {
+          "source_id": "LKD",
+          "chapter": 4,
+          "title": "Process Scheduling",
+          "pages": {
+            "kind": "printed",
+            "start": 41,
+            "end": 68
+          },
+          "role": "Compare scheduling controls visible to programs with the scheduler's kernel implementation",
+          "verification": "chapter_boundaries_toc_checked"
+        },
+        {
+          "source_id": "LKD",
+          "chapter": 11,
+          "title": "Timers and Time Management",
+          "pages": {
+            "kind": "printed",
+            "start": 207,
+            "end": 230
+          },
+          "role": "Compare scheduling controls visible to programs with the scheduler's kernel implementation",
+          "verification": "chapter_boundaries_toc_checked"
+        }
       ]
     },
     {
@@ -543,6 +791,56 @@
           "start": 155,
           "end": 166,
           "page_scheme": "printed"
+        }
+      ],
+      "cross_book_references": [
+        {
+          "source_id": "TLPI",
+          "chapter": 7,
+          "title": "Memory Allocation",
+          "pages": {
+            "kind": "printed",
+            "start": 139,
+            "end": 152
+          },
+          "role": "Compare mappings accessible to applications with the kernel's address-space structures",
+          "verification": "chapter_boundaries_toc_checked"
+        },
+        {
+          "source_id": "TLPI",
+          "chapter": 49,
+          "title": "Memory Mappings",
+          "pages": {
+            "kind": "printed",
+            "start": 1017,
+            "end": 1044
+          },
+          "role": "Compare mappings accessible to applications with the kernel's address-space structures",
+          "verification": "chapter_boundaries_toc_checked"
+        },
+        {
+          "source_id": "TLPI",
+          "chapter": 50,
+          "title": "Virtual Memory Operations",
+          "pages": {
+            "kind": "printed",
+            "start": 1045,
+            "end": 1056
+          },
+          "role": "Compare mappings accessible to applications with the kernel's address-space structures",
+          "verification": "chapter_boundaries_toc_checked"
+        },
+        {
+          "source_id": "LKD",
+          "chapter": 15,
+          "title": "The Process Address Space",
+          "pages": {
+            "kind": "printed",
+            "start": 305,
+            "end": 322
+          },
+          "role": "Compare mappings accessible to applications with the kernel's address-space structures",
+          "verification": "chapter_boundaries_toc_checked"
         }
       ]
     },
@@ -589,6 +887,56 @@
           "end": 230,
           "page_scheme": "printed"
         }
+      ],
+      "cross_book_references": [
+        {
+          "source_id": "TLPI",
+          "chapter": 49,
+          "title": "Memory Mappings",
+          "pages": {
+            "kind": "printed",
+            "start": 1017,
+            "end": 1044
+          },
+          "role": "Distinguish a memory mapping interface from kernel page allocation and address-space management",
+          "verification": "chapter_boundaries_toc_checked"
+        },
+        {
+          "source_id": "TLPI",
+          "chapter": 50,
+          "title": "Virtual Memory Operations",
+          "pages": {
+            "kind": "printed",
+            "start": 1045,
+            "end": 1056
+          },
+          "role": "Distinguish a memory mapping interface from kernel page allocation and address-space management",
+          "verification": "chapter_boundaries_toc_checked"
+        },
+        {
+          "source_id": "LKD",
+          "chapter": 12,
+          "title": "Memory Management",
+          "pages": {
+            "kind": "printed",
+            "start": 231,
+            "end": 260
+          },
+          "role": "Distinguish a memory mapping interface from kernel page allocation and address-space management",
+          "verification": "chapter_boundaries_toc_checked"
+        },
+        {
+          "source_id": "LKD",
+          "chapter": 15,
+          "title": "The Process Address Space",
+          "pages": {
+            "kind": "printed",
+            "start": 305,
+            "end": 322
+          },
+          "role": "Distinguish a memory mapping interface from kernel page allocation and address-space management",
+          "verification": "chapter_boundaries_toc_checked"
+        }
       ]
     },
     {
@@ -624,6 +972,68 @@
           "start": 261,
           "end": 278,
           "page_scheme": "printed"
+        }
+      ],
+      "cross_book_references": [
+        {
+          "source_id": "TLPI",
+          "chapter": 7,
+          "title": "Memory Allocation",
+          "pages": {
+            "kind": "printed",
+            "start": 139,
+            "end": 152
+          },
+          "role": "Compare memory-usage APIs with allocation and page cache behavior",
+          "verification": "chapter_boundaries_toc_checked"
+        },
+        {
+          "source_id": "TLPI",
+          "chapter": 49,
+          "title": "Memory Mappings",
+          "pages": {
+            "kind": "printed",
+            "start": 1017,
+            "end": 1044
+          },
+          "role": "Compare memory-usage APIs with allocation and page cache behavior",
+          "verification": "chapter_boundaries_toc_checked"
+        },
+        {
+          "source_id": "TLPI",
+          "chapter": 50,
+          "title": "Virtual Memory Operations",
+          "pages": {
+            "kind": "printed",
+            "start": 1045,
+            "end": 1056
+          },
+          "role": "Compare memory-usage APIs with allocation and page cache behavior",
+          "verification": "chapter_boundaries_toc_checked"
+        },
+        {
+          "source_id": "LKD",
+          "chapter": 12,
+          "title": "Memory Management",
+          "pages": {
+            "kind": "printed",
+            "start": 231,
+            "end": 260
+          },
+          "role": "Compare memory-usage APIs with allocation and page cache behavior",
+          "verification": "chapter_boundaries_toc_checked"
+        },
+        {
+          "source_id": "LKD",
+          "chapter": 16,
+          "title": "The Page Cache and Page Writeback",
+          "pages": {
+            "kind": "printed",
+            "start": 323,
+            "end": 336
+          },
+          "role": "Compare memory-usage APIs with allocation and page cache behavior",
+          "verification": "chapter_boundaries_toc_checked"
         }
       ]
     },
@@ -669,6 +1079,68 @@
           "end": 350,
           "page_scheme": "printed"
         }
+      ],
+      "cross_book_references": [
+        {
+          "source_id": "TLPI",
+          "chapter": 29,
+          "title": "Threads: Introduction",
+          "pages": {
+            "kind": "printed",
+            "start": 617,
+            "end": 630
+          },
+          "role": "Compare thread primitives with kernel locking and synchronization mechanisms",
+          "verification": "chapter_boundaries_toc_checked"
+        },
+        {
+          "source_id": "TLPI",
+          "chapter": 30,
+          "title": "Threads: Thread Synchronization",
+          "pages": {
+            "kind": "printed",
+            "start": 631,
+            "end": 654
+          },
+          "role": "Compare thread primitives with kernel locking and synchronization mechanisms",
+          "verification": "chapter_boundaries_toc_checked"
+        },
+        {
+          "source_id": "TLPI",
+          "chapter": 31,
+          "title": "Threads: Thread Safety and Per-Thread Storage",
+          "pages": {
+            "kind": "printed",
+            "start": 655,
+            "end": 670
+          },
+          "role": "Compare thread primitives with kernel locking and synchronization mechanisms",
+          "verification": "chapter_boundaries_toc_checked"
+        },
+        {
+          "source_id": "LKD",
+          "chapter": 9,
+          "title": "An Introduction to Kernel Synchronization",
+          "pages": {
+            "kind": "printed",
+            "start": 161,
+            "end": 174
+          },
+          "role": "Compare thread primitives with kernel locking and synchronization mechanisms",
+          "verification": "chapter_boundaries_toc_checked"
+        },
+        {
+          "source_id": "LKD",
+          "chapter": 10,
+          "title": "Kernel Synchronization Methods",
+          "pages": {
+            "kind": "printed",
+            "start": 175,
+            "end": 206
+          },
+          "role": "Compare thread primitives with kernel locking and synchronization mechanisms",
+          "verification": "chapter_boundaries_toc_checked"
+        }
       ]
     },
     {
@@ -705,6 +1177,104 @@
           "end": 400,
           "page_scheme": "printed"
         }
+      ],
+      "cross_book_references": [
+        {
+          "source_id": "TLPI",
+          "chapter": 30,
+          "title": "Threads: Thread Synchronization",
+          "pages": {
+            "kind": "printed",
+            "start": 631,
+            "end": 654
+          },
+          "role": "Compare thread/process coordination APIs with kernel-side synchronization",
+          "verification": "chapter_boundaries_toc_checked"
+        },
+        {
+          "source_id": "TLPI",
+          "chapter": 31,
+          "title": "Threads: Thread Safety and Per-Thread Storage",
+          "pages": {
+            "kind": "printed",
+            "start": 655,
+            "end": 670
+          },
+          "role": "Compare thread/process coordination APIs with kernel-side synchronization",
+          "verification": "chapter_boundaries_toc_checked"
+        },
+        {
+          "source_id": "TLPI",
+          "chapter": 43,
+          "title": "Interprocess Communication Overview",
+          "pages": {
+            "kind": "printed",
+            "start": 877,
+            "end": 888
+          },
+          "role": "Compare thread/process coordination APIs with kernel-side synchronization",
+          "verification": "chapter_boundaries_toc_checked"
+        },
+        {
+          "source_id": "TLPI",
+          "chapter": 47,
+          "title": "System V Semaphores",
+          "pages": {
+            "kind": "printed",
+            "start": 965,
+            "end": 996
+          },
+          "role": "Compare thread/process coordination APIs with kernel-side synchronization",
+          "verification": "chapter_boundaries_toc_checked"
+        },
+        {
+          "source_id": "TLPI",
+          "chapter": 53,
+          "title": "POSIX Semaphores",
+          "pages": {
+            "kind": "printed",
+            "start": 1089,
+            "end": 1106
+          },
+          "role": "Compare thread/process coordination APIs with kernel-side synchronization",
+          "verification": "chapter_boundaries_toc_checked"
+        },
+        {
+          "source_id": "TLPI",
+          "chapter": 55,
+          "title": "File Locking",
+          "pages": {
+            "kind": "printed",
+            "start": 1117,
+            "end": 1148
+          },
+          "role": "Compare thread/process coordination APIs with kernel-side synchronization",
+          "verification": "chapter_boundaries_toc_checked"
+        },
+        {
+          "source_id": "LKD",
+          "chapter": 9,
+          "title": "An Introduction to Kernel Synchronization",
+          "pages": {
+            "kind": "printed",
+            "start": 161,
+            "end": 174
+          },
+          "role": "Compare thread/process coordination APIs with kernel-side synchronization",
+          "verification": "chapter_boundaries_toc_checked"
+        },
+        {
+          "source_id": "LKD",
+          "chapter": 10,
+          "title": "Kernel Synchronization Methods",
+          "pages": {
+            "kind": "printed",
+            "start": 175,
+            "end": 206
+          },
+          "role": "Compare thread/process coordination APIs with kernel-side synchronization",
+          "verification": "chapter_boundaries_toc_checked"
+        }
       ]
     },
     {
@@ -725,6 +1295,80 @@
           "start": 401,
           "end": 412,
           "page_scheme": "printed"
+        }
+      ],
+      "cross_book_references": [
+        {
+          "source_id": "TLPI",
+          "chapter": 20,
+          "title": "Signals: Fundamental Concepts",
+          "pages": {
+            "kind": "printed",
+            "start": 387,
+            "end": 420
+          },
+          "role": "Compare signals and readiness I/O with kernel interrupt and deferred-work mechanisms",
+          "verification": "chapter_boundaries_toc_checked"
+        },
+        {
+          "source_id": "TLPI",
+          "chapter": 21,
+          "title": "Signals: Signal Handlers",
+          "pages": {
+            "kind": "printed",
+            "start": 421,
+            "end": 446
+          },
+          "role": "Compare signals and readiness I/O with kernel interrupt and deferred-work mechanisms",
+          "verification": "chapter_boundaries_toc_checked"
+        },
+        {
+          "source_id": "TLPI",
+          "chapter": 22,
+          "title": "Signals: Advanced Features",
+          "pages": {
+            "kind": "printed",
+            "start": 447,
+            "end": 478
+          },
+          "role": "Compare signals and readiness I/O with kernel interrupt and deferred-work mechanisms",
+          "verification": "chapter_boundaries_toc_checked"
+        },
+        {
+          "source_id": "TLPI",
+          "chapter": 63,
+          "title": "Alternative I/O Models",
+          "pages": {
+            "kind": "printed",
+            "start": 1325,
+            "end": 1374
+          },
+          "role": "Compare signals and readiness I/O with kernel interrupt and deferred-work mechanisms",
+          "verification": "chapter_boundaries_toc_checked"
+        },
+        {
+          "source_id": "LKD",
+          "chapter": 7,
+          "title": "Interrupts and Interrupt Handlers",
+          "pages": {
+            "kind": "printed",
+            "start": 113,
+            "end": 132
+          },
+          "role": "Compare signals and readiness I/O with kernel interrupt and deferred-work mechanisms",
+          "verification": "chapter_boundaries_toc_checked"
+        },
+        {
+          "source_id": "LKD",
+          "chapter": 8,
+          "title": "Bottom Halves and Deferring Work",
+          "pages": {
+            "kind": "printed",
+            "start": 133,
+            "end": 160
+          },
+          "role": "Compare signals and readiness I/O with kernel interrupt and deferred-work mechanisms",
+          "verification": "chapter_boundaries_toc_checked"
         }
       ]
     },
@@ -763,6 +1407,104 @@
           "end": 466,
           "page_scheme": "printed"
         }
+      ],
+      "cross_book_references": [
+        {
+          "source_id": "TLPI",
+          "chapter": 3,
+          "title": "System Programming Concepts",
+          "pages": {
+            "kind": "printed",
+            "start": 43,
+            "end": 68
+          },
+          "role": "Compare user-space device access with interrupts, block I/O and modules",
+          "verification": "chapter_boundaries_toc_checked"
+        },
+        {
+          "source_id": "TLPI",
+          "chapter": 4,
+          "title": "File I/O: The Universal I/O Model",
+          "pages": {
+            "kind": "printed",
+            "start": 69,
+            "end": 88
+          },
+          "role": "Compare user-space device access with interrupts, block I/O and modules",
+          "verification": "chapter_boundaries_toc_checked"
+        },
+        {
+          "source_id": "TLPI",
+          "chapter": 23,
+          "title": "Timers and Sleeping",
+          "pages": {
+            "kind": "printed",
+            "start": 479,
+            "end": 512
+          },
+          "role": "Compare user-space device access with interrupts, block I/O and modules",
+          "verification": "chapter_boundaries_toc_checked"
+        },
+        {
+          "source_id": "TLPI",
+          "chapter": 63,
+          "title": "Alternative I/O Models",
+          "pages": {
+            "kind": "printed",
+            "start": 1325,
+            "end": 1374
+          },
+          "role": "Compare user-space device access with interrupts, block I/O and modules",
+          "verification": "chapter_boundaries_toc_checked"
+        },
+        {
+          "source_id": "LKD",
+          "chapter": 7,
+          "title": "Interrupts and Interrupt Handlers",
+          "pages": {
+            "kind": "printed",
+            "start": 113,
+            "end": 132
+          },
+          "role": "Compare user-space device access with interrupts, block I/O and modules",
+          "verification": "chapter_boundaries_toc_checked"
+        },
+        {
+          "source_id": "LKD",
+          "chapter": 8,
+          "title": "Bottom Halves and Deferring Work",
+          "pages": {
+            "kind": "printed",
+            "start": 133,
+            "end": 160
+          },
+          "role": "Compare user-space device access with interrupts, block I/O and modules",
+          "verification": "chapter_boundaries_toc_checked"
+        },
+        {
+          "source_id": "LKD",
+          "chapter": 14,
+          "title": "The Block I/O Layer",
+          "pages": {
+            "kind": "printed",
+            "start": 289,
+            "end": 304
+          },
+          "role": "Compare user-space device access with interrupts, block I/O and modules",
+          "verification": "chapter_boundaries_toc_checked"
+        },
+        {
+          "source_id": "LKD",
+          "chapter": 17,
+          "title": "Devices and Modules",
+          "pages": {
+            "kind": "printed",
+            "start": 337,
+            "end": 362
+          },
+          "role": "Compare user-space device access with interrupts, block I/O and modules",
+          "verification": "chapter_boundaries_toc_checked"
+        }
       ]
     },
     {
@@ -798,6 +1540,80 @@
           "start": 511,
           "end": 524,
           "page_scheme": "printed"
+        }
+      ],
+      "cross_book_references": [
+        {
+          "source_id": "TLPI",
+          "chapter": 4,
+          "title": "File I/O: The Universal I/O Model",
+          "pages": {
+            "kind": "printed",
+            "start": 69,
+            "end": 88
+          },
+          "role": "Compare filesystem interfaces with the VFS and block I/O structures",
+          "verification": "chapter_boundaries_toc_checked"
+        },
+        {
+          "source_id": "TLPI",
+          "chapter": 5,
+          "title": "File I/O: Further Details",
+          "pages": {
+            "kind": "printed",
+            "start": 89,
+            "end": 112
+          },
+          "role": "Compare filesystem interfaces with the VFS and block I/O structures",
+          "verification": "chapter_boundaries_toc_checked"
+        },
+        {
+          "source_id": "TLPI",
+          "chapter": 14,
+          "title": "File Systems",
+          "pages": {
+            "kind": "printed",
+            "start": 251,
+            "end": 278
+          },
+          "role": "Compare filesystem interfaces with the VFS and block I/O structures",
+          "verification": "chapter_boundaries_toc_checked"
+        },
+        {
+          "source_id": "TLPI",
+          "chapter": 18,
+          "title": "Directories and Links",
+          "pages": {
+            "kind": "printed",
+            "start": 339,
+            "end": 374
+          },
+          "role": "Compare filesystem interfaces with the VFS and block I/O structures",
+          "verification": "chapter_boundaries_toc_checked"
+        },
+        {
+          "source_id": "LKD",
+          "chapter": 13,
+          "title": "The Virtual Filesystem",
+          "pages": {
+            "kind": "printed",
+            "start": 261,
+            "end": 288
+          },
+          "role": "Compare filesystem interfaces with the VFS and block I/O structures",
+          "verification": "chapter_boundaries_toc_checked"
+        },
+        {
+          "source_id": "LKD",
+          "chapter": 14,
+          "title": "The Block I/O Layer",
+          "pages": {
+            "kind": "printed",
+            "start": 289,
+            "end": 304
+          },
+          "role": "Compare filesystem interfaces with the VFS and block I/O structures",
+          "verification": "chapter_boundaries_toc_checked"
         }
       ]
     },
@@ -845,6 +1661,80 @@
           "end": 600,
           "page_scheme": "printed"
         }
+      ],
+      "cross_book_references": [
+        {
+          "source_id": "TLPI",
+          "chapter": 4,
+          "title": "File I/O: The Universal I/O Model",
+          "pages": {
+            "kind": "printed",
+            "start": 69,
+            "end": 88
+          },
+          "role": "File APIs and buffering are NOT by themselves a full crash consistency guarantee",
+          "verification": "chapter_boundaries_toc_checked"
+        },
+        {
+          "source_id": "TLPI",
+          "chapter": 5,
+          "title": "File I/O: Further Details",
+          "pages": {
+            "kind": "printed",
+            "start": 89,
+            "end": 112
+          },
+          "role": "File APIs and buffering are NOT by themselves a full crash consistency guarantee",
+          "verification": "chapter_boundaries_toc_checked"
+        },
+        {
+          "source_id": "TLPI",
+          "chapter": 13,
+          "title": "File I/O Buffering",
+          "pages": {
+            "kind": "printed",
+            "start": 233,
+            "end": 250
+          },
+          "role": "File APIs and buffering are NOT by themselves a full crash consistency guarantee",
+          "verification": "chapter_boundaries_toc_checked"
+        },
+        {
+          "source_id": "TLPI",
+          "chapter": 14,
+          "title": "File Systems",
+          "pages": {
+            "kind": "printed",
+            "start": 251,
+            "end": 278
+          },
+          "role": "File APIs and buffering are NOT by themselves a full crash consistency guarantee",
+          "verification": "chapter_boundaries_toc_checked"
+        },
+        {
+          "source_id": "LKD",
+          "chapter": 14,
+          "title": "The Block I/O Layer",
+          "pages": {
+            "kind": "printed",
+            "start": 289,
+            "end": 304
+          },
+          "role": "File APIs and buffering are NOT by themselves a full crash consistency guarantee",
+          "verification": "chapter_boundaries_toc_checked"
+        },
+        {
+          "source_id": "LKD",
+          "chapter": 16,
+          "title": "The Page Cache and Page Writeback",
+          "pages": {
+            "kind": "printed",
+            "start": 323,
+            "end": 336
+          },
+          "role": "File APIs and buffering are NOT by themselves a full crash consistency guarantee",
+          "verification": "chapter_boundaries_toc_checked"
+        }
       ]
     },
     {
@@ -881,6 +1771,92 @@
           "start": 639,
           "end": 652,
           "page_scheme": "printed"
+        }
+      ],
+      "cross_book_references": [
+        {
+          "source_id": "TLPI",
+          "chapter": 43,
+          "title": "Interprocess Communication Overview",
+          "pages": {
+            "kind": "printed",
+            "start": 877,
+            "end": 888
+          },
+          "role": "TLPI describes communication interfaces; LKD does not supply corresponding distributed-systems chapters",
+          "verification": "chapter_boundaries_toc_checked"
+        },
+        {
+          "source_id": "TLPI",
+          "chapter": 44,
+          "title": "Pipes and FIFOs",
+          "pages": {
+            "kind": "printed",
+            "start": 889,
+            "end": 920
+          },
+          "role": "TLPI describes communication interfaces; LKD does not supply corresponding distributed-systems chapters",
+          "verification": "chapter_boundaries_toc_checked"
+        },
+        {
+          "source_id": "TLPI",
+          "chapter": 56,
+          "title": "Sockets: Introduction",
+          "pages": {
+            "kind": "printed",
+            "start": 1149,
+            "end": 1164
+          },
+          "role": "TLPI describes communication interfaces; LKD does not supply corresponding distributed-systems chapters",
+          "verification": "chapter_boundaries_toc_checked"
+        },
+        {
+          "source_id": "TLPI",
+          "chapter": 57,
+          "title": "Sockets: UNIX Domain",
+          "pages": {
+            "kind": "printed",
+            "start": 1165,
+            "end": 1178
+          },
+          "role": "TLPI describes communication interfaces; LKD does not supply corresponding distributed-systems chapters",
+          "verification": "chapter_boundaries_toc_checked"
+        },
+        {
+          "source_id": "TLPI",
+          "chapter": 58,
+          "title": "Sockets: Fundamentals of TCP/IP Networks",
+          "pages": {
+            "kind": "printed",
+            "start": 1179,
+            "end": 1196
+          },
+          "role": "TLPI describes communication interfaces; LKD does not supply corresponding distributed-systems chapters",
+          "verification": "chapter_boundaries_toc_checked"
+        },
+        {
+          "source_id": "TLPI",
+          "chapter": 59,
+          "title": "Sockets: Internet Domains",
+          "pages": {
+            "kind": "printed",
+            "start": 1197,
+            "end": 1238
+          },
+          "role": "TLPI describes communication interfaces; LKD does not supply corresponding distributed-systems chapters",
+          "verification": "chapter_boundaries_toc_checked"
+        },
+        {
+          "source_id": "TLPI",
+          "chapter": 60,
+          "title": "Sockets: Server Design",
+          "pages": {
+            "kind": "printed",
+            "start": 1239,
+            "end": 1252
+          },
+          "role": "TLPI describes communication interfaces; LKD does not supply corresponding distributed-systems chapters",
+          "verification": "chapter_boundaries_toc_checked"
         }
       ]
     },
@@ -983,6 +1959,92 @@
           "end": 652,
           "page_scheme": "printed"
         }
+      ],
+      "cross_book_references": [
+        {
+          "source_id": "TLPI",
+          "chapter": 1,
+          "title": "History and Standards",
+          "pages": {
+            "kind": "printed",
+            "start": 1,
+            "end": 20
+          },
+          "role": "Compare history, fundamental concepts and kernel engineering background",
+          "verification": "chapter_boundaries_toc_checked"
+        },
+        {
+          "source_id": "TLPI",
+          "chapter": 2,
+          "title": "Fundamental Concepts",
+          "pages": {
+            "kind": "printed",
+            "start": 21,
+            "end": 42
+          },
+          "role": "Compare history, fundamental concepts and kernel engineering background",
+          "verification": "chapter_boundaries_toc_checked"
+        },
+        {
+          "source_id": "TLPI",
+          "chapter": 3,
+          "title": "System Programming Concepts",
+          "pages": {
+            "kind": "printed",
+            "start": 43,
+            "end": 68
+          },
+          "role": "Compare history, fundamental concepts and kernel engineering background",
+          "verification": "chapter_boundaries_toc_checked"
+        },
+        {
+          "source_id": "LKD",
+          "chapter": 1,
+          "title": "Introduction to the Linux Kernel",
+          "pages": {
+            "kind": "printed",
+            "start": 1,
+            "end": 10
+          },
+          "role": "Compare history, fundamental concepts and kernel engineering background",
+          "verification": "chapter_boundaries_toc_checked"
+        },
+        {
+          "source_id": "LKD",
+          "chapter": 18,
+          "title": "Debugging",
+          "pages": {
+            "kind": "printed",
+            "start": 363,
+            "end": 378
+          },
+          "role": "Compare history, fundamental concepts and kernel engineering background",
+          "verification": "chapter_boundaries_toc_checked"
+        },
+        {
+          "source_id": "LKD",
+          "chapter": 19,
+          "title": "Portability",
+          "pages": {
+            "kind": "printed",
+            "start": 379,
+            "end": 394
+          },
+          "role": "Compare history, fundamental concepts and kernel engineering background",
+          "verification": "chapter_boundaries_toc_checked"
+        },
+        {
+          "source_id": "LKD",
+          "chapter": 20,
+          "title": "Patches, Hacking, and the Community",
+          "pages": {
+            "kind": "printed",
+            "start": 395,
+            "end": 406
+          },
+          "role": "Compare history, fundamental concepts and kernel engineering background",
+          "verification": "chapter_boundaries_toc_checked"
+        }
       ]
     }
   ],
@@ -1017,6 +2079,24 @@
       "url": "https://drive.google.com/file/d/11keBAs8ZzIym0p4V_QEUfNtgjGH_91EA/view?usp=drivesdk",
       "perspective": "hardware mechanisms",
       "page_scheme": "Printed page ranges inclusive based on the inspected table of contents; section boundaries from next section"
+    },
+    {
+      "id": "TLPI",
+      "title": "The Linux Programming Interface",
+      "authors": "Michael Kerrisk",
+      "url": "https://drive.google.com/file/d/1fT4Nqq2d5-UnQxZpnDioEar0C5N0Sd8l/view?usp=drivesdk",
+      "perspective": "user-space interface",
+      "page_scheme": "Printed chapter boundaries inspected from PDF contents"
+    },
+    {
+      "id": "LKD",
+      "title": "Linux Kernel Development",
+      "authors": "Robert Love",
+      "edition": "third edition (2010)",
+      "url": "https://drive.google.com/file/d/11yI22zgg2Rka_Nj2Kbv2UW7bMqe5sua0/view?usp=drivesdk",
+      "perspective": "historical Linux kernel design",
+      "page_scheme": "Printed chapter boundaries inspected from PDF contents",
+      "note": "Historical 2010 Linux mechanisms, not authoritative current Linux API/implementation guidance"
     }
   ],
   "cross_source_routes": [
@@ -1367,5 +2447,783 @@
     "page_numbering": "Printed page ranges are source-specific; MES chapters linked without unverified page boundaries",
     "citation_status": "Candidate evidence references only, not established RSM Certificates",
     "note": "Chapter/section navigation from inspected tables of contents; exact text claims require reading the cited pages"
+  },
+  "source_catalogs": {
+    "TLPI": [
+      {
+        "chapter": 1,
+        "title": "History and Standards",
+        "start": 1,
+        "end": 20,
+        "source_id": "TLPI",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 2,
+        "title": "Fundamental Concepts",
+        "start": 21,
+        "end": 42,
+        "source_id": "TLPI",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 3,
+        "title": "System Programming Concepts",
+        "start": 43,
+        "end": 68,
+        "source_id": "TLPI",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 4,
+        "title": "File I/O: The Universal I/O Model",
+        "start": 69,
+        "end": 88,
+        "source_id": "TLPI",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 5,
+        "title": "File I/O: Further Details",
+        "start": 89,
+        "end": 112,
+        "source_id": "TLPI",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 6,
+        "title": "Processes",
+        "start": 113,
+        "end": 138,
+        "source_id": "TLPI",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 7,
+        "title": "Memory Allocation",
+        "start": 139,
+        "end": 152,
+        "source_id": "TLPI",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 8,
+        "title": "Users and Groups",
+        "start": 153,
+        "end": 166,
+        "source_id": "TLPI",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 9,
+        "title": "Process Credentials",
+        "start": 167,
+        "end": 184,
+        "source_id": "TLPI",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 10,
+        "title": "Time",
+        "start": 185,
+        "end": 210,
+        "source_id": "TLPI",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 11,
+        "title": "System Limits and Options",
+        "start": 211,
+        "end": 222,
+        "source_id": "TLPI",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 12,
+        "title": "System and Process Information",
+        "start": 223,
+        "end": 232,
+        "source_id": "TLPI",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 13,
+        "title": "File I/O Buffering",
+        "start": 233,
+        "end": 250,
+        "source_id": "TLPI",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 14,
+        "title": "File Systems",
+        "start": 251,
+        "end": 278,
+        "source_id": "TLPI",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 15,
+        "title": "File Attributes",
+        "start": 279,
+        "end": 310,
+        "source_id": "TLPI",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 16,
+        "title": "Extended Attributes",
+        "start": 311,
+        "end": 318,
+        "source_id": "TLPI",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 17,
+        "title": "Access Control Lists",
+        "start": 319,
+        "end": 338,
+        "source_id": "TLPI",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 18,
+        "title": "Directories and Links",
+        "start": 339,
+        "end": 374,
+        "source_id": "TLPI",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 19,
+        "title": "Monitoring File Events",
+        "start": 375,
+        "end": 386,
+        "source_id": "TLPI",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 20,
+        "title": "Signals: Fundamental Concepts",
+        "start": 387,
+        "end": 420,
+        "source_id": "TLPI",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 21,
+        "title": "Signals: Signal Handlers",
+        "start": 421,
+        "end": 446,
+        "source_id": "TLPI",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 22,
+        "title": "Signals: Advanced Features",
+        "start": 447,
+        "end": 478,
+        "source_id": "TLPI",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 23,
+        "title": "Timers and Sleeping",
+        "start": 479,
+        "end": 512,
+        "source_id": "TLPI",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 24,
+        "title": "Process Creation",
+        "start": 513,
+        "end": 530,
+        "source_id": "TLPI",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 25,
+        "title": "Process Termination",
+        "start": 531,
+        "end": 540,
+        "source_id": "TLPI",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 26,
+        "title": "Monitoring Child Processes",
+        "start": 541,
+        "end": 562,
+        "source_id": "TLPI",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 27,
+        "title": "Program Execution",
+        "start": 563,
+        "end": 590,
+        "source_id": "TLPI",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 28,
+        "title": "Process Creation and Program Execution in More Detail",
+        "start": 591,
+        "end": 616,
+        "source_id": "TLPI",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 29,
+        "title": "Threads: Introduction",
+        "start": 617,
+        "end": 630,
+        "source_id": "TLPI",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 30,
+        "title": "Threads: Thread Synchronization",
+        "start": 631,
+        "end": 654,
+        "source_id": "TLPI",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 31,
+        "title": "Threads: Thread Safety and Per-Thread Storage",
+        "start": 655,
+        "end": 670,
+        "source_id": "TLPI",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 32,
+        "title": "Threads: Thread Cancellation",
+        "start": 671,
+        "end": 680,
+        "source_id": "TLPI",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 33,
+        "title": "Threads: Further Details",
+        "start": 681,
+        "end": 698,
+        "source_id": "TLPI",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 34,
+        "title": "Process Groups, Sessions, and Job Control",
+        "start": 699,
+        "end": 732,
+        "source_id": "TLPI",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 35,
+        "title": "Process Priorities and Scheduling",
+        "start": 733,
+        "end": 752,
+        "source_id": "TLPI",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 36,
+        "title": "Process Resources",
+        "start": 753,
+        "end": 766,
+        "source_id": "TLPI",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 37,
+        "title": "Daemons",
+        "start": 767,
+        "end": 782,
+        "source_id": "TLPI",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 38,
+        "title": "Writing Secure Privileged Programs",
+        "start": 783,
+        "end": 796,
+        "source_id": "TLPI",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 39,
+        "title": "Capabilities",
+        "start": 797,
+        "end": 816,
+        "source_id": "TLPI",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 40,
+        "title": "Login Accounting",
+        "start": 817,
+        "end": 832,
+        "source_id": "TLPI",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 41,
+        "title": "Fundamentals of Shared Libraries",
+        "start": 833,
+        "end": 858,
+        "source_id": "TLPI",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 42,
+        "title": "Advanced Features of Shared Libraries",
+        "start": 859,
+        "end": 876,
+        "source_id": "TLPI",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 43,
+        "title": "Interprocess Communication Overview",
+        "start": 877,
+        "end": 888,
+        "source_id": "TLPI",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 44,
+        "title": "Pipes and FIFOs",
+        "start": 889,
+        "end": 920,
+        "source_id": "TLPI",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 45,
+        "title": "Introduction to System V IPC",
+        "start": 921,
+        "end": 936,
+        "source_id": "TLPI",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 46,
+        "title": "System V Message Queues",
+        "start": 937,
+        "end": 964,
+        "source_id": "TLPI",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 47,
+        "title": "System V Semaphores",
+        "start": 965,
+        "end": 996,
+        "source_id": "TLPI",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 48,
+        "title": "System V Shared Memory",
+        "start": 997,
+        "end": 1016,
+        "source_id": "TLPI",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 49,
+        "title": "Memory Mappings",
+        "start": 1017,
+        "end": 1044,
+        "source_id": "TLPI",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 50,
+        "title": "Virtual Memory Operations",
+        "start": 1045,
+        "end": 1056,
+        "source_id": "TLPI",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 51,
+        "title": "Introduction to POSIX IPC",
+        "start": 1057,
+        "end": 1062,
+        "source_id": "TLPI",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 52,
+        "title": "POSIX Message Queues",
+        "start": 1063,
+        "end": 1088,
+        "source_id": "TLPI",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 53,
+        "title": "POSIX Semaphores",
+        "start": 1089,
+        "end": 1106,
+        "source_id": "TLPI",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 54,
+        "title": "POSIX Shared Memory",
+        "start": 1107,
+        "end": 1116,
+        "source_id": "TLPI",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 55,
+        "title": "File Locking",
+        "start": 1117,
+        "end": 1148,
+        "source_id": "TLPI",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 56,
+        "title": "Sockets: Introduction",
+        "start": 1149,
+        "end": 1164,
+        "source_id": "TLPI",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 57,
+        "title": "Sockets: UNIX Domain",
+        "start": 1165,
+        "end": 1178,
+        "source_id": "TLPI",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 58,
+        "title": "Sockets: Fundamentals of TCP/IP Networks",
+        "start": 1179,
+        "end": 1196,
+        "source_id": "TLPI",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 59,
+        "title": "Sockets: Internet Domains",
+        "start": 1197,
+        "end": 1238,
+        "source_id": "TLPI",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 60,
+        "title": "Sockets: Server Design",
+        "start": 1239,
+        "end": 1252,
+        "source_id": "TLPI",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 61,
+        "title": "Sockets: Advanced Topics",
+        "start": 1253,
+        "end": 1288,
+        "source_id": "TLPI",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 62,
+        "title": "Terminals",
+        "start": 1289,
+        "end": 1324,
+        "source_id": "TLPI",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 63,
+        "title": "Alternative I/O Models",
+        "start": 1325,
+        "end": 1374,
+        "source_id": "TLPI",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 64,
+        "title": "Pseudoterminals",
+        "start": 1375,
+        "end": 1400,
+        "source_id": "TLPI",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      }
+    ],
+    "LKD": [
+      {
+        "chapter": 1,
+        "title": "Introduction to the Linux Kernel",
+        "start": 1,
+        "end": 10,
+        "source_id": "LKD",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 2,
+        "title": "Getting Started with the Kernel",
+        "start": 11,
+        "end": 22,
+        "source_id": "LKD",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 3,
+        "title": "Process Management",
+        "start": 23,
+        "end": 40,
+        "source_id": "LKD",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 4,
+        "title": "Process Scheduling",
+        "start": 41,
+        "end": 68,
+        "source_id": "LKD",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 5,
+        "title": "System Calls",
+        "start": 69,
+        "end": 84,
+        "source_id": "LKD",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 6,
+        "title": "Kernel Data Structures",
+        "start": 85,
+        "end": 112,
+        "source_id": "LKD",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 7,
+        "title": "Interrupts and Interrupt Handlers",
+        "start": 113,
+        "end": 132,
+        "source_id": "LKD",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 8,
+        "title": "Bottom Halves and Deferring Work",
+        "start": 133,
+        "end": 160,
+        "source_id": "LKD",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 9,
+        "title": "An Introduction to Kernel Synchronization",
+        "start": 161,
+        "end": 174,
+        "source_id": "LKD",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 10,
+        "title": "Kernel Synchronization Methods",
+        "start": 175,
+        "end": 206,
+        "source_id": "LKD",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 11,
+        "title": "Timers and Time Management",
+        "start": 207,
+        "end": 230,
+        "source_id": "LKD",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 12,
+        "title": "Memory Management",
+        "start": 231,
+        "end": 260,
+        "source_id": "LKD",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 13,
+        "title": "The Virtual Filesystem",
+        "start": 261,
+        "end": 288,
+        "source_id": "LKD",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 14,
+        "title": "The Block I/O Layer",
+        "start": 289,
+        "end": 304,
+        "source_id": "LKD",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 15,
+        "title": "The Process Address Space",
+        "start": 305,
+        "end": 322,
+        "source_id": "LKD",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 16,
+        "title": "The Page Cache and Page Writeback",
+        "start": 323,
+        "end": 336,
+        "source_id": "LKD",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 17,
+        "title": "Devices and Modules",
+        "start": 337,
+        "end": 362,
+        "source_id": "LKD",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 18,
+        "title": "Debugging",
+        "start": 363,
+        "end": 378,
+        "source_id": "LKD",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 19,
+        "title": "Portability",
+        "start": 379,
+        "end": 394,
+        "source_id": "LKD",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      },
+      {
+        "chapter": 20,
+        "title": "Patches, Hacking, and the Community",
+        "start": 395,
+        "end": 406,
+        "source_id": "LKD",
+        "page_scheme": "printed",
+        "verification": "toc_start_and_next_boundary"
+      }
+    ]
+  },
+  "cross_book_reference_design": {
+    "role_order": [
+      "OS behavior (OSTEP)",
+      "User-space system calls (TLPI)",
+      "Kernel structures (LKD)",
+      "Hardware mechanism (COD-RV or COD-ARM)",
+      "Bare-metal engineering (MES)"
+    ],
+    "source_independence": "Every source has its own canonical chapter index and ranges; one question may link to multiple sources without copying catalog entries",
+    "limitations": [
+      "LKD is the third edition from 2010; Linux kernel structures and procedures may have changed",
+      "TLPI provides API/contracts and is not a kernel implementation manual",
+      "OSTEP is a conceptual OS book; processor startup/firmware details need platform-specific sources",
+      "Some references support adjacent context, not a full answer to the question"
+    ]
   }
 }
