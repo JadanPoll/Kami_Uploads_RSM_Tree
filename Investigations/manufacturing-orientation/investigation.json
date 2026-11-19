@@ -311,38 +311,68 @@
       ]
     }
   ],
-  "next_decision": "Clarify whether the most exciting shared question is (a) understanding possible artifacts/physical transformations, (b) maximizing individual manufacturing agency, or (c) the growth and bootstrapping of manufacturing ecosystems; multiple can remain active. Do not select an object or curriculum.",
+  "next_decision": "Complete targeted chapter/page-range reading and discuss discoveries relevant to Q1, Q2 and Q5.",
   "saved_at": "2026-11-18",
   "reading_route": [
     {
       "source_id": "BOOK-MFG-PROCESSES",
-      "sections": [
-        "How to use this book",
-        "Part One: Forming Technology — Injection Molding",
-        "Part Two: Cutting Technology — Water Jet Cutting",
-        "Part One: Forming Technology — Sand Casting",
-        "Part One: Forming Technology — Layered Manufacturing"
+      "assignment": "Compare four complete process case-study sections",
+      "page_numbering": "1-based PDF page position",
+      "ranges": [
+        {
+          "section": "Injection Molding",
+          "start": 57,
+          "end": 62
+        },
+        {
+          "section": "Sand Casting",
+          "start": 127,
+          "end": 130
+        },
+        {
+          "section": "Rapid Prototyping (including stereolithography/laser sintering)",
+          "start": 239,
+          "end": 242
+        },
+        {
+          "section": "Water Jet Cutting",
+          "start": 279,
+          "end": 282
+        }
       ],
-      "purpose": "Compare dissimilar processes by materials, geometry, setup, precision, economics and capabilities",
-      "note": "Sample contrasting processes rather than reading the whole book sequentially; printed page ranges will be established as the investigation narrows."
+      "purpose": "Distinguish forming, material behavior, layer-based production and cutting capabilities. Read complete bounded sections rather than isolated pages."
     },
     {
       "source_id": "BOOK-FFF",
-      "sections": [
-        "Chapter I: The Medium (printed p.10)",
-        "Chapter II: Designing for FFM (printed p.40)",
-        "Chapter III: Design for Strength (printed p.76)"
+      "assignment": "Chapter I: The Medium",
+      "page_numbering": "printed book page",
+      "ranges": [
+        {
+          "section": "Chapter I: The Medium",
+          "start": 10,
+          "end": 39
+        }
       ],
-      "purpose": "Connect process mechanisms to making a functional object; compare orientation/anisotropy/support/strength"
+      "purpose": "Understand the medium's constraints including anisotropy and structural properties."
     },
     {
-      "source_id": "BOOK-SHIGLEY",
-      "sections": [
-        "Chapter 1: Introduction to Mechanical Engineering Design (printed p.3)",
-        "Chapter 2: Materials (printed p.39)"
+      "source_id": "BOOK-FFF",
+      "assignment": "Optional follow-on: Chapter II: Designing for FFM",
+      "page_numbering": "printed book page",
+      "ranges": [
+        {
+          "section": "Chapter II: Designing for FFM",
+          "start": 40,
+          "end": 75
+        }
       ],
-      "purpose": "Use selectively for quantified materials and design constraints, not as first cover-to-cover reading"
+      "purpose": "How print orientation, supports and process limitations change design."
     }
   ],
-  "updated_at": "2026-11-18"
+  "updated_at": "2026-11-18",
+  "reading_preferences": {
+    "unit": "Entire chapters when practical; otherwise explicit meaningful start–end page ranges",
+    "navigation": "Always distinguish printed page numbers from PDF page positions for Kami navigation",
+    "source_of_truth": "Inspect actual edition's table of contents and document pages; never assign lone page starts as homework"
+  }
 }
