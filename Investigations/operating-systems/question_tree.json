@@ -49,7 +49,26 @@
         }
       ],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "alternative_questions": [
+        "What would be left if we removed every OS service except those essential to run one program?",
+        "Is an OS best understood as a resource manager, an abstraction provider, a protection mechanism, or a platform for composing programs?"
+      ],
+      "answer_branches": [
+        {
+          "id": "OS-00-A1",
+          "possible_answer": "Different machines require different OS boundaries",
+          "next_question": "What changes when there is one program, one trusted operator, or no persistent storage?",
+          "status": "unverified_possibility"
+        },
+        {
+          "id": "OS-00-A2",
+          "possible_answer": "A small set of functions is common across many systems",
+          "next_question": "Which functions are essential, and which could be moved into libraries or applications?",
+          "status": "unverified_possibility"
+        }
+      ],
+      "why_this_question_matters": "Clarifies what we mean by OS before treating familiar Linux mechanisms as inevitable"
     },
     {
       "id": "OS-01",
@@ -87,7 +106,32 @@
         }
       ],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "alternative_questions": [
+        "Could a useful computer have no conventional operating system at all?",
+        "When does a library, hypervisor, runtime, or distributed control plane begin to behave like an OS?"
+      ],
+      "answer_branches": [
+        {
+          "id": "OS-01-A1",
+          "possible_answer": "Yes, an OS is essential in every useful setting",
+          "next_question": "What functionality is impossible without one, rather than merely inconvenient?",
+          "status": "unverified_possibility"
+        },
+        {
+          "id": "OS-01-A2",
+          "possible_answer": "No, some useful settings can be bare metal",
+          "next_question": "What new problems appear when more programs, devices or users are added?",
+          "status": "unverified_possibility"
+        },
+        {
+          "id": "OS-01-A3",
+          "possible_answer": "It depends on the system's purposes",
+          "next_question": "Which pressures make abstraction, isolation, sharing or persistence worthwhile?",
+          "status": "unverified_possibility"
+        }
+      ],
+      "why_this_question_matters": "Prevents the field's historical architecture from being mistaken for its necessary purpose"
     },
     {
       "id": "OS-02",
@@ -164,7 +208,38 @@
         }
       ],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "alternative_questions": [
+        "Could several programs share a machine without preemption?",
+        "Should the system optimize throughput, response time, fairness, predictability, or a mixture?"
+      ],
+      "answer_branches": [
+        {
+          "id": "OS-02-A1",
+          "possible_answer": "Yes, cooperative sharing can be sufficient",
+          "next_question": "What guarantees must programs provide, and what happens when one fails to yield?",
+          "status": "unverified_possibility"
+        },
+        {
+          "id": "OS-02-A2",
+          "possible_answer": "No, untrusted programs require an independent way to regain control",
+          "next_question": "What hardware or trusted mechanism makes preemption possible?",
+          "status": "unverified_possibility"
+        },
+        {
+          "id": "OS-02-A3",
+          "possible_answer": "Yes, but the correct schedule depends on workload",
+          "next_question": "Which measurements would distinguish workloads for which one policy is preferable?",
+          "status": "unverified_possibility"
+        },
+        {
+          "id": "OS-02-A4",
+          "possible_answer": "No, unless we relax isolation or responsiveness",
+          "next_question": "Which sacrificed property matters to the parent purpose, and can another mechanism restore it?",
+          "status": "unverified_possibility"
+        }
+      ],
+      "why_this_question_matters": "Exposes the contract between execution control, policy and actual workloads"
     },
     {
       "id": "OS-03",
@@ -230,7 +305,39 @@
         }
       ],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "alternative_questions": [
+        "Could useful isolation be provided without virtual addresses?",
+        "What really happens when a program accesses memory that is not resident?",
+        "Does making each program think it owns memory necessarily improve usability?"
+      ],
+      "answer_branches": [
+        {
+          "id": "OS-03-A1",
+          "possible_answer": "Yes, per-process virtual address spaces solve several problems at once",
+          "next_question": "Which benefits arise from protection, relocation, sharing, or demand paging separately?",
+          "status": "unverified_possibility"
+        },
+        {
+          "id": "OS-03-A2",
+          "possible_answer": "Yes, but translation and caching have costs",
+          "next_question": "Which workloads make TLB behavior or page-table overhead significant?",
+          "status": "unverified_possibility"
+        },
+        {
+          "id": "OS-03-A3",
+          "possible_answer": "No, virtual memory is not necessary in all environments",
+          "next_question": "What can a physically addressed embedded system accomplish, and what does it give up?",
+          "status": "unverified_possibility"
+        },
+        {
+          "id": "OS-03-A4",
+          "possible_answer": "No, unless faults and memory pressure are managed",
+          "next_question": "Which policies and data structures ensure a useful abstraction under contention?",
+          "status": "unverified_possibility"
+        }
+      ],
+      "why_this_question_matters": "Separates a software illusion from hardware support and policy decisions"
     },
     {
       "id": "OS-04",
@@ -296,7 +403,39 @@
         }
       ],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "alternative_questions": [
+        "Can we avoid shared mutable state rather than synchronize every access?",
+        "Is absence of data races enough to establish that concurrent software works?",
+        "When does adding parallelism make the system slower or less reliable?"
+      ],
+      "answer_branches": [
+        {
+          "id": "OS-04-A1",
+          "possible_answer": "Yes, mutual exclusion prevents certain races",
+          "next_question": "What failures remain possible despite correct locking: deadlock, starvation, missed wakeups?",
+          "status": "unverified_possibility"
+        },
+        {
+          "id": "OS-04-A2",
+          "possible_answer": "Yes, but correctness requires progress and ordering guarantees too",
+          "next_question": "How would we distinguish safety, liveness and performance experimentally?",
+          "status": "unverified_possibility"
+        },
+        {
+          "id": "OS-04-A3",
+          "possible_answer": "No, locks alone are insufficient for some patterns",
+          "next_question": "Would message passing, immutability or ownership make the requirement simpler?",
+          "status": "unverified_possibility"
+        },
+        {
+          "id": "OS-04-A4",
+          "possible_answer": "No, unless the underlying memory-order assumptions hold",
+          "next_question": "What guarantees must the compiler, processor and synchronization primitive provide?",
+          "status": "unverified_possibility"
+        }
+      ],
+      "why_this_question_matters": "Avoids turning concurrency study into a catalogue of synchronization primitives"
     },
     {
       "id": "OS-05",
@@ -362,7 +501,39 @@
         }
       ],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "alternative_questions": [
+        "What does a successful write actually promise?",
+        "Can a filesystem be both fast and crash safe without special assumptions?",
+        "What does it mean for data to be 'stored' if there are multiple caches?"
+      ],
+      "answer_branches": [
+        {
+          "id": "OS-05-A1",
+          "possible_answer": "Yes, a successful write means the data is durable",
+          "next_question": "What contractual or physical conditions would need to be true for this to hold?",
+          "status": "unverified_possibility"
+        },
+        {
+          "id": "OS-05-A2",
+          "possible_answer": "Yes, but success may only mean acceptance into a cache",
+          "next_question": "Which additional operations establish durability, and where can failure still intervene?",
+          "status": "unverified_possibility"
+        },
+        {
+          "id": "OS-05-A3",
+          "possible_answer": "No, a write can be lost or partially applied after a crash",
+          "next_question": "Which failure point and ordering assumption causes the problem?",
+          "status": "unverified_possibility"
+        },
+        {
+          "id": "OS-05-A4",
+          "possible_answer": "No, unless the system uses a consistency protocol",
+          "next_question": "Which approaches—journaling, copy-on-write, checksums or sync—solve which failure modes?",
+          "status": "unverified_possibility"
+        }
+      ],
+      "why_this_question_matters": "Directly tests whether application assumptions match the actual storage contract"
     },
     {
       "id": "OS-06",
@@ -428,7 +599,39 @@
         }
       ],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "alternative_questions": [
+        "How can a CPU know something happened without constantly asking?",
+        "Should device work be completed during an interrupt?",
+        "What if a device is fast in the common case but stalls indefinitely?"
+      ],
+      "answer_branches": [
+        {
+          "id": "OS-06-A1",
+          "possible_answer": "Yes, polling is sufficient in some systems",
+          "next_question": "When is polling cheaper, simpler or more predictable than interrupts?",
+          "status": "unverified_possibility"
+        },
+        {
+          "id": "OS-06-A2",
+          "possible_answer": "Yes, but interrupts require constraints on handler work",
+          "next_question": "What must be deferred, and which information must be captured immediately?",
+          "status": "unverified_possibility"
+        },
+        {
+          "id": "OS-06-A3",
+          "possible_answer": "No, synchronous I/O cannot meet all latency and concurrency needs",
+          "next_question": "Which asynchronous interfaces or batching mechanisms change that?",
+          "status": "unverified_possibility"
+        },
+        {
+          "id": "OS-06-A4",
+          "possible_answer": "No, unless device failure is contained",
+          "next_question": "How do timeouts, error paths and driver isolation affect overall reliability?",
+          "status": "unverified_possibility"
+        }
+      ],
+      "why_this_question_matters": "Connects abstract OS models to asynchronous events and real hardware behavior"
     },
     {
       "id": "OS-07",
@@ -494,7 +697,39 @@
         }
       ],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "alternative_questions": [
+        "What truly requires privilege, rather than merely trusted code?",
+        "Could most OS services run outside the kernel?",
+        "What is the minimum mechanism that must remain trusted?"
+      ],
+      "answer_branches": [
+        {
+          "id": "OS-07-A1",
+          "possible_answer": "Yes, a small privileged core can support many services",
+          "next_question": "How does communication overhead change the architecture's usefulness?",
+          "status": "unverified_possibility"
+        },
+        {
+          "id": "OS-07-A2",
+          "possible_answer": "Yes, but moving services outside the kernel changes failure and security properties",
+          "next_question": "Which boundaries become easier or harder to enforce?",
+          "status": "unverified_possibility"
+        },
+        {
+          "id": "OS-07-A3",
+          "possible_answer": "No, some services require privileged execution or special hardware",
+          "next_question": "Which operations specifically need privilege, and which only need mediated access?",
+          "status": "unverified_possibility"
+        },
+        {
+          "id": "OS-07-A4",
+          "possible_answer": "No, unless we change the hardware or threat model",
+          "next_question": "What would virtualization, capability hardware or a trusted runtime make possible?",
+          "status": "unverified_possibility"
+        }
+      ],
+      "why_this_question_matters": "Opens architectural alternatives instead of assuming the monolithic kernel is the only design"
     },
     {
       "id": "OS-08",
@@ -560,7 +795,39 @@
         }
       ],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "alternative_questions": [
+        "How far can ordinary process interfaces be extended across machines?",
+        "Can a distributed program behave as if all processes shared one reliable computer?",
+        "What changes when a remote component is temporarily unreachable but not known dead?"
+      ],
+      "answer_branches": [
+        {
+          "id": "OS-08-A1",
+          "possible_answer": "Yes, local abstractions can be extended across machines",
+          "next_question": "Which guarantees survive added latency and independent failures?",
+          "status": "unverified_possibility"
+        },
+        {
+          "id": "OS-08-A2",
+          "possible_answer": "Yes, but transparency hides failure and consistency tradeoffs",
+          "next_question": "When should an application know that a resource is remote?",
+          "status": "unverified_possibility"
+        },
+        {
+          "id": "OS-08-A3",
+          "possible_answer": "No, remote failure cannot always be distinguished from delay",
+          "next_question": "What does that uncertainty require of retries and state changes?",
+          "status": "unverified_possibility"
+        },
+        {
+          "id": "OS-08-A4",
+          "possible_answer": "No, unless an application relaxes availability or consistency requirements",
+          "next_question": "Which requirements are essential to the parent goal, and which are accidental?",
+          "status": "unverified_possibility"
+        }
+      ],
+      "why_this_question_matters": "Exposes where composability across a machine boundary stops being free"
     }
   ],
   "relationships": [
@@ -608,5 +875,15 @@
     "RSM-02.12",
     "RSM-05.01"
   ],
-  "updated": "2026-11-19"
+  "updated": "2026-11-19",
+  "version": 2,
+  "title": "Operating Systems — question and possible-answer landscapes",
+  "question_tree_method": {
+    "question_direction": "Navigate parent purposes, constituents, neighboring, inverse and competing formulations",
+    "answer_direction": "For a candidate question, imagine useful yes / yes-but / no / no-unless / conditional answers and investigate what each would imply",
+    "branching_rule": "Do not enumerate branches mechanically. Keep only answers that change the interpretation, future question, or choice of evidence.",
+    "certificate_rule": "candidate_references are expected-to-help reading routes; an established Certificate (C) is generated only after an investigation establishes a result",
+    "style": "Use the clear, curious, concrete language of RSM, avoid mechanical taxonomies and empty generic questions"
+  },
+  "next_step": "Explore and revise these question possibilities with the human; follow a meaningful branch through its existing chapter ranges, without making the whole tree a fixed syllabus"
 }
