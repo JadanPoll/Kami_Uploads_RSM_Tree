@@ -4,6 +4,10 @@ A persistent home for investigations across ChatGPT conversations. Start with a 
 
 The repository follows the [Richer Scientific Method (RSM)](https://github.com/JadanPoll/Learning_Visualizations_Taxonomy/blob/main/Navigationals/The_Richer_Scientific_Method.md). It is an **investigation navigator**, not a second PDF library or a collection of AI-generated summaries.
 
+## Open the visual navigator
+
+[**Explore these investigations visually**](https://raw.githack.com/JadanPoll/Learning_Visualizations_Taxonomy/main/RSM_Tree_Viewer.html) — choose a question, follow related branches, and open book references. The viewer uses this repository's [`rsm-view.json`](rsm-view.json) mapping without changing the source records. It can also load other public GitHub repositories with their own maps.
+
 ## Where things belong
 
 - **Here:** Questions, branches, alternative explanations, sources mapped to those branches, findings, unresolved questions, and reasons to revisit earlier conclusions.
