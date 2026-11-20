@@ -1,0 +1,56 @@
+{
+  "mapping_version": "0.1",
+  "name": "RSM question and investigation trees",
+  "views": [
+    {
+      "id": "os-questions",
+      "title": "Operating systems — questions",
+      "file": "Investigations/operating-systems/question_tree.json",
+      "reference_file": "Investigations/operating-systems/reference_guide.json",
+      "projection": {
+        "shape": "flat",
+        "records": "nodes",
+        "fields": {
+          "id": "id",
+          "label": "question",
+          "parent": "parent_id",
+          "description": "why_ask"
+        },
+        "relations": "connections"
+      }
+    },
+    {
+      "id": "os-investigation",
+      "title": "Operating systems — investigation",
+      "file": "Investigations/operating-systems/investigation.json",
+      "reference_file": "Investigations/operating-systems/reference_guide.json",
+      "projection": {
+        "shape": "flat",
+        "records": "nodes",
+        "fields": {
+          "id": "id",
+          "label": "question",
+          "parent": "parent_id",
+          "description": "why"
+        },
+        "relations": "relations"
+      }
+    },
+    {
+      "id": "manufacturing-investigation",
+      "title": "Manufacturing — investigation",
+      "file": "Investigations/manufacturing-orientation/investigation.json",
+      "projection": {
+        "shape": "flat",
+        "records": "nodes",
+        "fields": {
+          "id": "id",
+          "label": "question",
+          "parent": "parent_id",
+          "description": "why"
+        },
+        "relations": "relations"
+      }
+    }
+  ]
+}
