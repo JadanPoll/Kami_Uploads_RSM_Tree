@@ -1,0 +1,543 @@
+{
+  "id": "human-ai-symbiosis",
+  "kind": "question_tree",
+  "version": 1,
+  "status": "provisional",
+  "root": "HAI-00",
+  "title": "What can people and AI accomplish together? — question tree",
+  "original_curiosity": "Understand the full landscape of human–AI intellectual collaboration, from everyday use to extraordinary research, and develop the constituent capabilities.",
+  "parent_purpose": "Increase independent human capacity to investigate, build, discover and verify ambitious things with AI.",
+  "framing": "Achievements and transferable collaboration capabilities are distinct axes. Relative percentile labels are only metaphors unless grounded in representative population data.",
+  "nodes": [
+    {
+      "id": "HAI-00",
+      "parent_id": null,
+      "question": "What can people and AI accomplish together, and how could I get exceptionally good at it?",
+      "why_ask": "Start with the curiosity, not a purported ranking or a prescribed workflow.",
+      "status": "candidate",
+      "candidate_references": [],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "HAI-Q01",
+      "parent_id": "HAI-00",
+      "question": "What are people actually accomplishing with AI?",
+      "why_ask": "Discover the possibility landscape without equating publicity with evidence.",
+      "status": "candidate",
+      "candidate_references": [
+        {
+          "source_id": "ALPOGE",
+          "role": "Suggested first-hand resource; interpretation and limitations to investigate"
+        },
+        {
+          "source_id": "ALPHAEVOLVE",
+          "role": "Suggested first-hand resource; interpretation and limitations to investigate"
+        },
+        {
+          "source_id": "METR",
+          "role": "Suggested first-hand resource; interpretation and limitations to investigate"
+        }
+      ],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "HAI-Q01A",
+      "parent_id": "HAI-Q01",
+      "question": "What makes an achievement extraordinary?",
+      "why_ask": "Separate novelty, scale, difficulty, societal significance, independence and verified correctness.",
+      "status": "candidate",
+      "candidate_references": [],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "HAI-Q01B",
+      "parent_id": "HAI-Q01",
+      "question": "What was actually demonstrated, and who checked it?",
+      "why_ask": "Separate claims, reproducible artifacts, independently verified outcomes and causal attribution.",
+      "status": "candidate",
+      "candidate_references": [
+        {
+          "source_id": "ALPOGE",
+          "role": "Suggested first-hand resource; interpretation and limitations to investigate"
+        },
+        {
+          "source_id": "QUANTA",
+          "role": "Suggested first-hand resource; interpretation and limitations to investigate"
+        },
+        {
+          "source_id": "ALPHAEVOLVE",
+          "role": "Suggested first-hand resource; interpretation and limitations to investigate"
+        }
+      ],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "HAI-Q01C",
+      "parent_id": "HAI-Q01",
+      "question": "Where are the quiet examples that never become headlines?",
+      "why_ask": "Look for routine industrial successes, failed deployments, and unpublicized workflows.",
+      "status": "candidate",
+      "candidate_references": [
+        {
+          "source_id": "METR",
+          "role": "Suggested first-hand resource; interpretation and limitations to investigate"
+        }
+      ],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "HAI-Q02",
+      "parent_id": "HAI-00",
+      "question": "Why can some people get so much further than others?",
+      "why_ask": "Investigate possible causes rather than assuming they possess special prompts.",
+      "status": "candidate",
+      "candidate_references": [
+        {
+          "source_id": "ALPOGE",
+          "role": "Suggested first-hand resource; interpretation and limitations to investigate"
+        },
+        {
+          "source_id": "ALPHAEVOLVE",
+          "role": "Suggested first-hand resource; interpretation and limitations to investigate"
+        }
+      ],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "HAI-Q02A",
+      "parent_id": "HAI-Q02",
+      "question": "Did they ask a better question or recognize a more useful representation?",
+      "why_ask": "Problem selection, analogies and intermediate representations may dominate output technique.",
+      "status": "candidate",
+      "candidate_references": [
+        {
+          "source_id": "ALPOGE",
+          "role": "Suggested first-hand resource; interpretation and limitations to investigate"
+        }
+      ],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "HAI-Q02B",
+      "parent_id": "HAI-Q02",
+      "question": "How much did they already know about the subject?",
+      "why_ask": "A top expert may direct and reject possibilities that are invisible to a novice.",
+      "status": "candidate",
+      "candidate_references": [
+        {
+          "source_id": "ALPOGE",
+          "role": "Suggested first-hand resource; interpretation and limitations to investigate"
+        }
+      ],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "HAI-Q02C",
+      "parent_id": "HAI-Q02",
+      "question": "What did they let the AI do, and what did they keep for themselves?",
+      "why_ask": "Discover the actual division of labor and its changes during the task.",
+      "status": "candidate",
+      "candidate_references": [
+        {
+          "source_id": "ALPOGE",
+          "role": "Suggested first-hand resource; interpretation and limitations to investigate"
+        },
+        {
+          "source_id": "ALPHAEVOLVE",
+          "role": "Suggested first-hand resource; interpretation and limitations to investigate"
+        }
+      ],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "HAI-Q02D",
+      "parent_id": "HAI-Q02",
+      "question": "Was the advantage in prompting, tools, search, memory, compute, or verification?",
+      "why_ask": "Distinguish portable procedures from specialized infrastructure.",
+      "status": "candidate",
+      "candidate_references": [
+        {
+          "source_id": "ALPHAEVOLVE",
+          "role": "Suggested first-hand resource; interpretation and limitations to investigate"
+        }
+      ],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "HAI-Q03",
+      "parent_id": "HAI-00",
+      "question": "What could I learn to do that transfers across difficult projects?",
+      "why_ask": "Prioritize capabilities with reach, not a checklist of platform tricks.",
+      "status": "candidate",
+      "candidate_references": [],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "HAI-Q03A",
+      "parent_id": "HAI-Q03",
+      "question": "Can I recognize and ask questions that matter before solving them?",
+      "why_ask": "Test problem framing and question-navigation independently of answer generation.",
+      "status": "candidate",
+      "candidate_references": [],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "HAI-Q03B",
+      "parent_id": "HAI-Q03",
+      "question": "Can I turn a large ambition into parts an AI can actually work on?",
+      "why_ask": "Test contracts, boundaries, alternative mechanisms and recoverability.",
+      "status": "candidate",
+      "candidate_references": [],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "HAI-Q03C",
+      "parent_id": "HAI-Q03",
+      "question": "Can I tell whether the work is correct without merely trusting the AI?",
+      "why_ask": "Look for executable checks, first-hand sources, adversarial examples and integration evidence.",
+      "status": "candidate",
+      "candidate_references": [
+        {
+          "source_id": "METR",
+          "role": "Suggested first-hand resource; interpretation and limitations to investigate"
+        }
+      ],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "HAI-Q03D",
+      "parent_id": "HAI-Q03",
+      "question": "Can I learn from one project in a way that improves the next?",
+      "why_ask": "Test reusable knowledge, tacit skill, tools and durable investigation records.",
+      "status": "candidate",
+      "candidate_references": [],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "HAI-Q04",
+      "parent_id": "HAI-00",
+      "question": "What happens when we combine multiple capabilities?",
+      "why_ask": "Investigate whether feedback, search, tools and people compose rather than merely add complexity.",
+      "status": "candidate",
+      "candidate_references": [
+        {
+          "source_id": "ALPHAEVOLVE",
+          "role": "Suggested first-hand resource; interpretation and limitations to investigate"
+        }
+      ],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "HAI-Q04A",
+      "parent_id": "HAI-Q04",
+      "question": "When does an evaluator make searching much more powerful?",
+      "why_ask": "Compare open-ended generation with generation followed by objective selection.",
+      "status": "candidate",
+      "candidate_references": [
+        {
+          "source_id": "ALPHAEVOLVE",
+          "role": "Suggested first-hand resource; interpretation and limitations to investigate"
+        }
+      ],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "HAI-Q04B",
+      "parent_id": "HAI-Q04",
+      "question": "When does more parallel AI work help, and when does it create coordination overhead?",
+      "why_ask": "Investigate interfaces, independence and quality control.",
+      "status": "candidate",
+      "candidate_references": [],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "HAI-Q04C",
+      "parent_id": "HAI-Q04",
+      "question": "Can an AI help improve how we investigate, not just answer the current question?",
+      "why_ask": "Explore self-revision of representations, tests, and question selection.",
+      "status": "candidate",
+      "candidate_references": [],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "HAI-Q05",
+      "parent_id": "HAI-00",
+      "question": "How would we know that AI actually made us better?",
+      "why_ask": "Avoid equating speed, subjective fluency or volume of output with capability.",
+      "status": "candidate",
+      "candidate_references": [
+        {
+          "source_id": "METR",
+          "role": "Suggested first-hand resource; interpretation and limitations to investigate"
+        }
+      ],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "HAI-Q05A",
+      "parent_id": "HAI-Q05",
+      "question": "Could I do the same work more reliably without AI?",
+      "why_ask": "Make counterfactual comparisons across representative tasks.",
+      "status": "candidate",
+      "candidate_references": [
+        {
+          "source_id": "METR",
+          "role": "Suggested first-hand resource; interpretation and limitations to investigate"
+        }
+      ],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "HAI-Q05B",
+      "parent_id": "HAI-Q05",
+      "question": "Am I getting better at the task, or only better at operating a particular tool?",
+      "why_ask": "Test competence after tool removal and transfer to new contexts.",
+      "status": "candidate",
+      "candidate_references": [],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "HAI-Q05C",
+      "parent_id": "HAI-Q05",
+      "question": "Which outcomes matter: time, novelty, accuracy, understanding, cost, or reuse?",
+      "why_ask": "Do not compress incomparable dimensions into a single fake percentile.",
+      "status": "candidate",
+      "candidate_references": [],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "HAI-Q06",
+      "parent_id": "HAI-00",
+      "question": "What would it take to go beyond the best examples we can currently find?",
+      "why_ask": "Seek new compositions, bottleneck removals, and better questions.",
+      "status": "candidate",
+      "candidate_references": [],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "HAI-Q06A",
+      "parent_id": "HAI-Q06",
+      "question": "What are the present obstructions: knowledge, verification, autonomy, tools, or cost?",
+      "why_ask": "Determine what new capability would most expand the reachable set.",
+      "status": "candidate",
+      "candidate_references": [],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "HAI-Q06B",
+      "parent_id": "HAI-Q06",
+      "question": "Could the best next step be to invent a better test or discover a different problem?",
+      "why_ask": "Treat the investigation itself as a system we can improve.",
+      "status": "candidate",
+      "candidate_references": [],
+      "investigation_id": null,
+      "established_certificate_id": null
+    }
+  ],
+  "answer_branches": [
+    {
+      "question_id": "HAI-Q02",
+      "possible_answers": [
+        {
+          "answer": "Mostly unusual expertise.",
+          "follow_up": "Which parts are tacit, and which can we gain through real projects or external collaborators?",
+          "epistemic_status": "unverified possibility"
+        },
+        {
+          "answer": "Mostly the way the task was framed.",
+          "follow_up": "Can the same task be solved better by changing the question or representation?",
+          "epistemic_status": "unverified possibility"
+        },
+        {
+          "answer": "Mostly computational orchestration and evaluators.",
+          "follow_up": "Can we build a cheaper, smaller working approximation?",
+          "epistemic_status": "unverified possibility"
+        },
+        {
+          "answer": "It depends on the kind of problem.",
+          "follow_up": "Which variables predict the most useful division of labor?",
+          "epistemic_status": "unverified possibility"
+        }
+      ]
+    },
+    {
+      "question_id": "HAI-Q03",
+      "possible_answers": [
+        {
+          "answer": "Yes, much of the workflow transfers.",
+          "follow_up": "Which small set of competencies recreates its advantage on a different task?",
+          "epistemic_status": "unverified possibility"
+        },
+        {
+          "answer": "Yes, but only with expertise or infrastructure.",
+          "follow_up": "What is the irreducible prerequisite and what can be borrowed?",
+          "epistemic_status": "unverified possibility"
+        },
+        {
+          "answer": "No, the apparent advantage is task-specific.",
+          "follow_up": "What does that tell us about the boundary of general-purpose collaboration?",
+          "epistemic_status": "unverified possibility"
+        },
+        {
+          "answer": "No, unless we also improve our verification machinery.",
+          "follow_up": "Which tests or evidence sources would make ambitious delegation safe?",
+          "epistemic_status": "unverified possibility"
+        }
+      ]
+    },
+    {
+      "question_id": "HAI-Q04B",
+      "possible_answers": [
+        {
+          "answer": "Yes, parallel work gives independent exploration.",
+          "follow_up": "How do independent contracts and integration checks preserve the benefit?",
+          "epistemic_status": "unverified possibility"
+        },
+        {
+          "answer": "Yes, but coordination consumes the gains.",
+          "follow_up": "Where is the crossover from useful parallelism to duplicate or conflicting work?",
+          "epistemic_status": "unverified possibility"
+        },
+        {
+          "answer": "No, a single directed loop works better.",
+          "follow_up": "Which dependency or information-sharing requirement prevents parallelism?",
+          "epistemic_status": "unverified possibility"
+        },
+        {
+          "answer": "Only when results can be checked cheaply.",
+          "follow_up": "Can we change the representation to make independent work certifiable?",
+          "epistemic_status": "unverified possibility"
+        }
+      ]
+    },
+    {
+      "question_id": "HAI-Q05A",
+      "possible_answers": [
+        {
+          "answer": "Yes, the AI workflow is measurably better.",
+          "follow_up": "Is improvement robust across task types, quality standards, and future model changes?",
+          "epistemic_status": "unverified possibility"
+        },
+        {
+          "answer": "Yes, but the work is less reliable or harder to maintain.",
+          "follow_up": "What did the speedup sacrifice, and can the tradeoff be corrected?",
+          "epistemic_status": "unverified possibility"
+        },
+        {
+          "answer": "No, the assisted path is slower.",
+          "follow_up": "Does the loss come from errors, overchecking, coordination, or selecting the wrong work?",
+          "epistemic_status": "unverified possibility"
+        },
+        {
+          "answer": "We cannot tell with the current evidence.",
+          "follow_up": "What paired task, baseline, or observation would best discriminate the alternatives?",
+          "epistemic_status": "unverified possibility"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "ALPOGE",
+      "title": "Levent Alpöge, November 20, 2026: personal announcement and timeline of Claude-assisted claimed proof",
+      "url": "https://alpo.ge/remark.pdf",
+      "kind": "first-hand account",
+      "status": "claim, not independently established proof"
+    },
+    {
+      "id": "QUANTA",
+      "title": "Quanta Magazine, November 20–21, 2026: coverage and scrutiny of claimed Riemann proof",
+      "url": "https://www.quantamagazine.org/updates/transformation/",
+      "kind": "science journalism",
+      "status": "external reporting, evolving"
+    },
+    {
+      "id": "ALPHAEVOLVE",
+      "title": "Google DeepMind, AlphaEvolve: A Gemini-powered coding agent for designing advanced algorithms (2025)",
+      "url": "https://deepmind.google/blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms/",
+      "kind": "primary system account",
+      "status": "reported deployed/evaluated results; evaluate external replication separately"
+    },
+    {
+      "id": "METR",
+      "title": "METR, We Are Changing our Developer Productivity Experiment Design (2026)",
+      "url": "https://metr.org/blog/2026-02-24-uplift-update/",
+      "kind": "researcher methodological update",
+      "status": "2025 RCT shows 19% task time increase; later estimate subject to selection bias"
+    },
+    {
+      "id": "STANFORD",
+      "title": "Stanford Report, From biology to astrophysics, AI expands the boundaries of discovery (2026)",
+      "url": "https://news.stanford.edu/stories/2026/07/ai-expands-the-boundaries-of-discovery",
+      "kind": "research summary",
+      "status": "compare ideation quality and practical feasibility"
+    }
+  ],
+  "connections": [
+    {
+      "from": "HAI-Q01B",
+      "to": "HAI-Q05",
+      "relationship": "validity",
+      "why": "A claimed result and measured increase in capability are different things"
+    },
+    {
+      "from": "HAI-Q02B",
+      "to": "HAI-Q03",
+      "relationship": "transfer",
+      "why": "Expertise may be the prerequisite rather than a replaceable prompt"
+    },
+    {
+      "from": "HAI-Q02D",
+      "to": "HAI-Q04",
+      "relationship": "composition",
+      "why": "Tool and evaluator architecture can multiply model ability"
+    },
+    {
+      "from": "HAI-Q04A",
+      "to": "HAI-Q05",
+      "relationship": "measurement",
+      "why": "The evaluator defines which improvements are detectable"
+    },
+    {
+      "from": "HAI-Q03D",
+      "to": "HAI-Q06",
+      "relationship": "bootstrap",
+      "why": "Improved investigative capability can accelerate acquisition of further capabilities"
+    }
+  ],
+  "possible_perspectives": [
+    "Achievement: what was produced and how strongly was it verified",
+    "Practice: what the human and AI each did",
+    "Transfer: what a nonexpert or another expert could reproduce",
+    "Economics: time, cost, attention and reliability",
+    "Generativity: which capabilities improve the next investigation"
+  ],
+  "selection_rule": "Expand branches only where plausible answers would change what to learn, compare or build; never manufacture an exhaustive tier ladder.",
+  "guidance": "Use ordinary, curious questions first (RSM-01.03). Branch into possible answers and their consequences (RSM-02.08). Keep candidate evidence separate from established conclusions (RSM-01.04). Distinguish question trees from investigation trees (RSM-05).",
+  "updated": "2026-11-21"
+}
