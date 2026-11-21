@@ -51,6 +51,37 @@
         },
         "relations": "relations"
       }
+    },
+    {
+      "id": "human-ai-questions",
+      "title": "Human–AI collaboration — questions",
+      "file": "Investigations/human-ai-symbiosis/question_tree.json",
+      "projection": {
+        "shape": "flat",
+        "records": "nodes",
+        "fields": {
+          "id": "id",
+          "label": "question",
+          "parent": "parent_id",
+          "description": "why_ask"
+        },
+        "relations": "connections"
+      }
+    },
+    {
+      "id": "human-ai-investigation",
+      "title": "Human–AI collaboration — investigation",
+      "file": "Investigations/human-ai-symbiosis/investigation.json",
+      "projection": {
+        "shape": "flat",
+        "records": "nodes",
+        "fields": {
+          "id": "id",
+          "label": "question",
+          "parent": "parent_id",
+          "description": "status"
+        }
+      }
     }
   ]
 }
