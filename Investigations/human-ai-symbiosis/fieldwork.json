@@ -964,5 +964,110 @@
       "value": "Learn expert steering and mathematical verification without mythologizing headline"
     }
   ],
-  "updated": "2026-11-21"
+  "updated": "2026-11-21",
+  "mechanism_comparison": {
+    "id": "CMP-CARLINI-CLAX",
+    "question": "What actually determines whether more independent agents help on a difficult engineering problem?",
+    "cases": [
+      "FW-CARLINI",
+      "FW-CLAX"
+    ],
+    "status": "observed contrast, not controlled causal conclusion",
+    "rsm_trajectory": [
+      {
+        "stage": "M — Model",
+        "detail": "A task is a dependency graph; parallelism helps where tasks and evaluations can be decoupled, while strongly coupled errors require causal tracing."
+      },
+      {
+        "stage": "B — competing beliefs",
+        "detail": "Hypothesis A: number of agents is decisive; B: task factorization and evaluator make agents productive; C: domain knowledge is the chief limitation; D: resources dominate."
+      },
+      {
+        "stage": "Q — consequential question",
+        "detail": "Would one excellent agent with a robust oracle outperform many poorly coordinated agents on a coupled task?"
+      },
+      {
+        "stage": "C — source-based finding",
+        "detail": "Carlini directly reports 16 agents converging on the same kernel problem and introducing GCC-assisted file-level bisection; Mishra-Sharma explicitly favors sequential causal diagnosis for his tightly coupled solver. This supports, but does not prove, the dependence-structure explanation."
+      }
+    ],
+    "carlini_observed_trace": [
+      {
+        "step": 1,
+        "what": "Set an ambitious compiler functional target and significant structural requirements.",
+        "who": "human",
+        "evidence": "S-CARLINI 'Stress testing limits'"
+      },
+      {
+        "step": 2,
+        "what": "Run agents in persistent loops, isolated Docker workspaces, Git clones and task-file locks; work is pulled and merged.",
+        "who": "human-designed harness and model-executed workflow",
+        "evidence": "S-CARLINI 'Enabling long-running Claudes'; 'Running Claude in parallel'"
+      },
+      {
+        "step": 3,
+        "what": "Design compiler tests, quality gates, concise structured errors, random/quick test subsamples and accumulated progress records.",
+        "who": "human engineer, with agent feedback",
+        "evidence": "S-CARLINI 'Write extremely high-quality tests'; 'Put yourself in Claude's shoes'"
+      },
+      {
+        "step": 4,
+        "what": "All agents hit the same monolithic Linux kernel compilation failure; changes collided rather than adding useful parallel work.",
+        "who": "observed agents/harness failure",
+        "evidence": "S-CARLINI 'Make parallelism easy'"
+      },
+      {
+        "step": 5,
+        "what": "Use GCC to compile controlled subsets of kernel files, narrowing failing combinations and allowing different agents to work on different offending files.",
+        "who": "human-designed oracle plus agents",
+        "evidence": "S-CARLINI 'Make parallelism easy'"
+      },
+      {
+        "step": 6,
+        "what": "Compiler reportedly built Linux and other projects, but used GCC for 16-bit x86 bootstrapping and assembler/linker; output efficiency and Rust quality remained weaker than mature alternatives.",
+        "who": "published result and explicit limits",
+        "evidence": "S-CARLINI 'Evaluation'"
+      }
+    ],
+    "mishra_sharma_observed_trace": [
+      {
+        "step": 1,
+        "what": "Set requirements: fully differentiable JAX cosmological solver and initially 0.1% desired accuracy relative to CLASS.",
+        "who": "human project definition",
+        "evidence": "S-CLAX 'Draft a plan'"
+      },
+      {
+        "step": 2,
+        "what": "Use a CLAUDE.md plan and a CHANGELOG.md log of progress, failed attempts, accuracy and limits.",
+        "who": "human and agent jointly maintained representation",
+        "evidence": "S-CLAX 'Memory across sessions'"
+      },
+      {
+        "step": 3,
+        "what": "Compare numerical outputs against CLASS, commit recoverable units and keep a persistent compute process.",
+        "who": "human-designed validation loop executed by model",
+        "evidence": "S-CLAX 'The test oracle'; 'Git as coordination'; 'Execution loop'"
+      },
+      {
+        "step": 4,
+        "what": "Use predominantly sequential, causal diagnosis; coupled solver stages make unstructured independent parallel tasks less effective.",
+        "who": "architectural judgment by human investigator",
+        "evidence": "S-CLAX 'The premise'"
+      },
+      {
+        "step": 5,
+        "what": "Reach sub-percent agreement on some outputs; gaps in parameter coverage and science-domain conventions limit full reliability.",
+        "who": "observed reported result and shortcomings",
+        "evidence": "S-CLAX 'The result'"
+      }
+    ],
+    "competing_explanations": [
+      "An oracle is the enabling capability, whether parallel or sequential.",
+      "Task coupling explains the effective organizational structure.",
+      "Agent quality, cost and initial domain experience drive more of the difference than organization.",
+      "The two projects are too different to support a causal explanation without further tests."
+    ],
+    "cheapest_discriminating_probe": "Take an existing real systems-code issue containing multiple independent failures and a different issue with one tightly coupled end-to-end failure. Hold model and quality requirements constant; compare one agent with multiple agents using the same time/compute budget, then repeat with an oracle that partitions failures. Record successful fixes, regression rate, engineer intervention and integration time.",
+    "certificate_status": "source-bounded contrast; not a confirmed cross-domain rule"
+  }
 }
