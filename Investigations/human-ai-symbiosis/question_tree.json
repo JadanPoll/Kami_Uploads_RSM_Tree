@@ -1,27 +1,114 @@
 {
   "id": "human-ai-symbiosis",
   "kind": "question_tree",
-  "version": 1,
+  "version": 2,
   "status": "provisional",
   "root": "HAI-00",
-  "title": "What can people and AI accomplish together? — question tree",
-  "original_curiosity": "Understand the full landscape of human–AI intellectual collaboration, from everyday use to extraordinary research, and develop the constituent capabilities.",
-  "parent_purpose": "Increase independent human capacity to investigate, build, discover and verify ambitious things with AI.",
-  "framing": "Achievements and transferable collaboration capabilities are distinct axes. Relative percentile labels are only metaphors unless grounded in representative population data.",
+  "title": "How do people use AI, from everyday help to seemingly alien intellectual capability?",
+  "original_curiosity": "I want to investigate the landscape of human–AI intellectual symbiosis, from ordinary users through the 90th, 99th, 99.9th percentiles, and eventually what we might call alien-level intelligence or capability.",
+  "parent_purpose": "Understand the whole human–AI symbiosis distribution and expand my ability to learn, investigate and engineer with AI, without mystifying exceptional practitioners.",
+  "framing": "Retain the ordinary / 90th / 99th / 99.9th / frontier-alien strata as provisional sampling targets. These are not empirically ranked populations: measured percentiles require a cohort, outcome, observation procedure, and calibration data. Treat achievements, transferable competence, resources, and different domain specialties separately.",
   "nodes": [
     {
       "id": "HAI-00",
       "parent_id": null,
-      "question": "What can people and AI accomplish together, and how could I get exceptionally good at it?",
-      "why_ask": "Start with the curiosity, not a purported ranking or a prescribed workflow.",
+      "question": "How do people use AI, from ordinary help to seemingly alien-level intellectual work?",
+      "why_ask": "Map the population, demystify extraordinary cases, understand my own practice, and discover reproducible capabilities.",
       "status": "candidate",
       "candidate_references": [],
       "investigation_id": null,
       "established_certificate_id": null
     },
     {
-      "id": "HAI-Q01",
+      "id": "HAI-Q07",
       "parent_id": "HAI-00",
+      "question": "What does ordinary AI use actually look like?",
+      "why_ask": "We cannot understand exceptional users without understanding the baseline.",
+      "status": "candidate",
+      "candidate_references": [
+        {
+          "source_id": "OPENAI_SIGNALS",
+          "role": "Candidate empirical or first-hand source, to be inspected before drawing conclusions"
+        },
+        {
+          "source_id": "ANTH_ECON",
+          "role": "Candidate empirical or first-hand source, to be inspected before drawing conclusions"
+        }
+      ],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "HAI-Q07A",
+      "parent_id": "HAI-Q07",
+      "question": "What are everyday users asking AI to do, and why?",
+      "why_ask": "Distinguish answering questions, drafting, personal support, study, simple production and specialized use.",
+      "status": "candidate",
+      "candidate_references": [
+        {
+          "source_id": "OPENAI_SIGNALS",
+          "role": "Candidate empirical or first-hand source, to be inspected before drawing conclusions"
+        }
+      ],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "HAI-Q07B",
+      "parent_id": "HAI-Q07",
+      "question": "What can an ordinary person do well with AI already?",
+      "why_ask": "Look for successful, reliable capabilities rather than treating everyday use as inferior.",
+      "status": "candidate",
+      "candidate_references": [
+        {
+          "source_id": "ANTH_ECON",
+          "role": "Candidate empirical or first-hand source, to be inspected before drawing conclusions"
+        }
+      ],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "HAI-Q07C",
+      "parent_id": "HAI-Q07",
+      "question": "Where does ordinary AI use fail or stop being useful?",
+      "why_ask": "Study recurring hallucinations, low-context questions, unverified results and abandonment rather than guessing limitations.",
+      "status": "candidate",
+      "candidate_references": [
+        {
+          "source_id": "ANTH_ECON",
+          "role": "Candidate empirical or first-hand source, to be inspected before drawing conclusions"
+        }
+      ],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "HAI-Q08",
+      "parent_id": "HAI-00",
+      "question": "What changes as we move from ordinary users toward the 90th, 99th, and 99.9th percentiles?",
+      "why_ask": "The requested distribution is itself a central research subject, not a footnote.",
+      "status": "candidate",
+      "candidate_references": [
+        {
+          "source_id": "OPENAI_SIGNALS",
+          "role": "Candidate empirical or first-hand source, to be inspected before drawing conclusions"
+        },
+        {
+          "source_id": "ANTH_ECON",
+          "role": "Candidate empirical or first-hand source, to be inspected before drawing conclusions"
+        },
+        {
+          "source_id": "METR",
+          "role": "Candidate empirical or first-hand source, to be inspected before drawing conclusions"
+        }
+      ],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "HAI-Q01",
+      "parent_id": "HAI-Q08",
       "question": "What are people actually accomplishing with AI?",
       "why_ask": "Discover the possibility landscape without equating publicity with evidence.",
       "status": "candidate",
@@ -92,7 +179,7 @@
     },
     {
       "id": "HAI-Q02",
-      "parent_id": "HAI-00",
+      "parent_id": "HAI-Q08",
       "question": "Why can some people get so much further than others?",
       "why_ask": "Investigate possible causes rather than assuming they possess special prompts.",
       "status": "candidate",
@@ -178,8 +265,145 @@
       "established_certificate_id": null
     },
     {
-      "id": "HAI-Q03",
+      "id": "HAI-Q05",
+      "parent_id": "HAI-Q08",
+      "question": "How would we know that AI actually made us better?",
+      "why_ask": "Avoid equating speed, subjective fluency or volume of output with capability.",
+      "status": "candidate",
+      "candidate_references": [
+        {
+          "source_id": "METR",
+          "role": "Suggested first-hand resource; interpretation and limitations to investigate"
+        }
+      ],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "HAI-Q05A",
+      "parent_id": "HAI-Q05",
+      "question": "Could I do the same work more reliably without AI?",
+      "why_ask": "Make counterfactual comparisons across representative tasks.",
+      "status": "candidate",
+      "candidate_references": [
+        {
+          "source_id": "METR",
+          "role": "Suggested first-hand resource; interpretation and limitations to investigate"
+        }
+      ],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "HAI-Q05B",
+      "parent_id": "HAI-Q05",
+      "question": "Am I getting better at the task, or only better at operating a particular tool?",
+      "why_ask": "Test competence after tool removal and transfer to new contexts.",
+      "status": "candidate",
+      "candidate_references": [],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "HAI-Q05C",
+      "parent_id": "HAI-Q05",
+      "question": "Which outcomes matter: time, novelty, accuracy, understanding, cost, or reuse?",
+      "why_ask": "Do not compress incomparable dimensions into a single fake percentile.",
+      "status": "candidate",
+      "candidate_references": [
+        {
+          "source_id": "STANFORD",
+          "role": "Compare novelty and feasibility in AI-supported scientific idea generation; study summary, not a universal claim"
+        }
+      ],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "HAI-Q08A",
+      "parent_id": "HAI-Q08",
+      "question": "How would we tell a 90th-percentile user from a typical user?",
+      "why_ask": "Candidate explanations: more consequential tasks, better iteration, stronger subject understanding, better selection and verification.",
+      "status": "candidate",
+      "candidate_references": [],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "HAI-Q08B",
+      "parent_id": "HAI-Q08",
+      "question": "What distinguishes a 99th-percentile practitioner from a 90th-percentile one?",
+      "why_ask": "Look for reusable systems, cross-tool orchestration, problem selection, artifact quality and durable repeatable outcomes.",
+      "status": "candidate",
+      "candidate_references": [],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "HAI-Q08C",
+      "parent_id": "HAI-Q08",
+      "question": "What distinguishes the 99.9th percentile, if that is even a meaningful single class?",
+      "why_ask": "Study whether rare achievements trace to skills, institutions, prior expertise, budgets or unique combinations.",
+      "status": "candidate",
+      "candidate_references": [],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "HAI-Q08D",
+      "parent_id": "HAI-Q08",
+      "question": "What population and measurements make these percentiles real?",
+      "why_ask": "Separate usage intensity, skill in one domain, verified output quality and transferable general ability.",
+      "status": "candidate",
+      "candidate_references": [
+        {
+          "source_id": "OPENAI_SIGNALS",
+          "role": "Candidate empirical or first-hand source, to be inspected before drawing conclusions"
+        },
+        {
+          "source_id": "ANTH_ECON",
+          "role": "Candidate empirical or first-hand source, to be inspected before drawing conclusions"
+        },
+        {
+          "source_id": "METR",
+          "role": "Candidate empirical or first-hand source, to be inspected before drawing conclusions"
+        }
+      ],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "HAI-Q12",
+      "parent_id": "HAI-Q08",
+      "question": "Where can we actually find and observe these people and their methods?",
+      "why_ask": "Use communities, public task traces, studies, reproducible work, engineering repositories, practitioner interviews and failures—not hype alone.",
+      "status": "candidate",
+      "candidate_references": [
+        {
+          "source_id": "OPENAI_SIGNALS",
+          "role": "Candidate empirical or first-hand source, to be inspected before drawing conclusions"
+        },
+        {
+          "source_id": "ANTH_ECON",
+          "role": "Candidate empirical or first-hand source, to be inspected before drawing conclusions"
+        }
+      ],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "HAI-Q09",
       "parent_id": "HAI-00",
+      "question": "How do people like me actually use AI, and where could our methods go further?",
+      "why_ask": "Study real long-running projects, research, engineering and tool-building as a population rather than an isolated anecdote.",
+      "status": "candidate",
+      "candidate_references": [],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "HAI-Q03",
+      "parent_id": "HAI-Q09",
       "question": "What could I learn to do that transfers across difficult projects?",
       "why_ask": "Prioritize capabilities with reach, not a checklist of platform tricks.",
       "status": "candidate",
@@ -227,6 +451,115 @@
       "parent_id": "HAI-Q03",
       "question": "Can I learn from one project in a way that improves the next?",
       "why_ask": "Test reusable knowledge, tacit skill, tools and durable investigation records.",
+      "status": "candidate",
+      "candidate_references": [],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "HAI-Q09A",
+      "parent_id": "HAI-Q09",
+      "question": "What can we learn from my own ChatGPT-assisted engineering work?",
+      "why_ask": "Trace end-to-end successes, broken assumptions, costly errors, integrations and user-visible results across a real project.",
+      "status": "candidate",
+      "candidate_references": [
+        {
+          "source_id": "KNOWLEDGE_VIEWER",
+          "role": "Candidate empirical or first-hand source, to be inspected before drawing conclusions"
+        }
+      ],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "HAI-Q09B",
+      "parent_id": "HAI-Q09",
+      "question": "Which capabilities have become reusable across my projects?",
+      "why_ask": "Investigate research navigation, tool use, specification, diagnosis, cross-chat persistence and integration.",
+      "status": "candidate",
+      "candidate_references": [],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "HAI-Q09C",
+      "parent_id": "HAI-Q09",
+      "question": "What are the costs and failure modes of my current way of collaborating with AI?",
+      "why_ask": "Analyze genuine wrong-repository edits, validation gaps, interaction mistakes, accumulated context and recovery work.",
+      "status": "candidate",
+      "candidate_references": [
+        {
+          "source_id": "KNOWLEDGE_VIEWER",
+          "role": "Candidate empirical or first-hand source, to be inspected before drawing conclusions"
+        }
+      ],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "HAI-Q10",
+      "parent_id": "HAI-00",
+      "question": "What did an 'untouchable legend' actually do, step by step?",
+      "why_ask": "Require a mechanism-level account and cheap reproducibility probes before attributing outcomes to inaccessible brilliance.",
+      "status": "candidate",
+      "candidate_references": [
+        {
+          "source_id": "ALPOGE",
+          "role": "Candidate empirical or first-hand source, to be inspected before drawing conclusions"
+        },
+        {
+          "source_id": "ALPHAEVOLVE",
+          "role": "Candidate empirical or first-hand source, to be inspected before drawing conclusions"
+        }
+      ],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "HAI-Q10A",
+      "parent_id": "HAI-Q10",
+      "question": "Which decisions did the human make and which did the AI make?",
+      "why_ask": "Reconstruct the sequence of problem selection, choices, prompts, critical feedback, tests and handoffs.",
+      "status": "candidate",
+      "candidate_references": [
+        {
+          "source_id": "ALPOGE",
+          "role": "Candidate empirical or first-hand source, to be inspected before drawing conclusions"
+        }
+      ],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "HAI-Q10B",
+      "parent_id": "HAI-Q10",
+      "question": "Which parts can someone else reproduce with ordinary tools?",
+      "why_ask": "Separate the minimum working mechanism from an institutional-scale workflow.",
+      "status": "candidate",
+      "candidate_references": [
+        {
+          "source_id": "ALPHAEVOLVE",
+          "role": "Candidate empirical or first-hand source, to be inspected before drawing conclusions"
+        }
+      ],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "HAI-Q10C",
+      "parent_id": "HAI-Q10",
+      "question": "What would still require years of study or unusual resources?",
+      "why_ask": "Demystification is compatible with difficult prerequisites and honest limits.",
+      "status": "candidate",
+      "candidate_references": [],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "HAI-Q10D",
+      "parent_id": "HAI-Q10",
+      "question": "Could a simpler or different mechanism reproduce the essential result?",
+      "why_ask": "Search for an economical substitute and test a discriminating comparison instead of copying celebrity workflows.",
       "status": "candidate",
       "candidate_references": [],
       "investigation_id": null,
@@ -283,61 +616,6 @@
       "established_certificate_id": null
     },
     {
-      "id": "HAI-Q05",
-      "parent_id": "HAI-00",
-      "question": "How would we know that AI actually made us better?",
-      "why_ask": "Avoid equating speed, subjective fluency or volume of output with capability.",
-      "status": "candidate",
-      "candidate_references": [
-        {
-          "source_id": "METR",
-          "role": "Suggested first-hand resource; interpretation and limitations to investigate"
-        }
-      ],
-      "investigation_id": null,
-      "established_certificate_id": null
-    },
-    {
-      "id": "HAI-Q05A",
-      "parent_id": "HAI-Q05",
-      "question": "Could I do the same work more reliably without AI?",
-      "why_ask": "Make counterfactual comparisons across representative tasks.",
-      "status": "candidate",
-      "candidate_references": [
-        {
-          "source_id": "METR",
-          "role": "Suggested first-hand resource; interpretation and limitations to investigate"
-        }
-      ],
-      "investigation_id": null,
-      "established_certificate_id": null
-    },
-    {
-      "id": "HAI-Q05B",
-      "parent_id": "HAI-Q05",
-      "question": "Am I getting better at the task, or only better at operating a particular tool?",
-      "why_ask": "Test competence after tool removal and transfer to new contexts.",
-      "status": "candidate",
-      "candidate_references": [],
-      "investigation_id": null,
-      "established_certificate_id": null
-    },
-    {
-      "id": "HAI-Q05C",
-      "parent_id": "HAI-Q05",
-      "question": "Which outcomes matter: time, novelty, accuracy, understanding, cost, or reuse?",
-      "why_ask": "Do not compress incomparable dimensions into a single fake percentile.",
-      "status": "candidate",
-      "candidate_references": [
-        {
-          "source_id": "STANFORD",
-          "role": "Compare novelty and feasibility in AI-supported scientific idea generation; study summary, not a universal claim"
-        }
-      ],
-      "investigation_id": null,
-      "established_certificate_id": null
-    },
-    {
       "id": "HAI-Q06",
       "parent_id": "HAI-00",
       "question": "What would it take to go beyond the best examples we can currently find?",
@@ -362,6 +640,36 @@
       "parent_id": "HAI-Q06",
       "question": "Could the best next step be to invent a better test or discover a different problem?",
       "why_ask": "Treat the investigation itself as a system we can improve.",
+      "status": "candidate",
+      "candidate_references": [],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "HAI-Q11",
+      "parent_id": "HAI-Q06",
+      "question": "What could 'alien-level' capability mean without becoming mythology?",
+      "why_ask": "Investigate qualitatively different intelligence, agency, discovery and bootstrap mechanisms without pretending such users have been measured.",
+      "status": "candidate",
+      "candidate_references": [],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "HAI-Q11A",
+      "parent_id": "HAI-Q11",
+      "question": "Could the leap come from better questions, better tools, or entirely new representations?",
+      "why_ask": "Compare improvements in knowledge, action, verification and self-improving research loops.",
+      "status": "candidate",
+      "candidate_references": [],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "HAI-Q11B",
+      "parent_id": "HAI-Q11",
+      "question": "How would we know we've crossed a qualitative frontier?",
+      "why_ask": "Require a family of reproducible, novel, consequential tasks rather than one dramatic story.",
       "status": "candidate",
       "candidate_references": [],
       "investigation_id": null,
@@ -468,6 +776,81 @@
           "epistemic_status": "unverified possibility"
         }
       ]
+    },
+    {
+      "question_id": "HAI-Q08",
+      "possible_answers": [
+        {
+          "answer": "Yes, tiers reflect a general transferable collaboration capability.",
+          "follow_up": "Can we measure the same ability across unrelated tasks while controlling for resources?",
+          "epistemic_status": "unverified possibility"
+        },
+        {
+          "answer": "Yes, but only within domains and resource conditions.",
+          "follow_up": "Which profiles describe expertise more accurately than a single rank?",
+          "epistemic_status": "unverified possibility"
+        },
+        {
+          "answer": "No, what looks like tiering is mostly task choice or visibility.",
+          "follow_up": "Can matched outcomes and representative samples distinguish actual capability from publicity?",
+          "epistemic_status": "unverified possibility"
+        },
+        {
+          "answer": "No, unless we define a population and performance measure.",
+          "follow_up": "Which practical cohort and task family would yield meaningful percentiles?",
+          "epistemic_status": "unverified possibility"
+        }
+      ]
+    },
+    {
+      "question_id": "HAI-Q10",
+      "possible_answers": [
+        {
+          "answer": "Yes, the essential mechanism can be reproduced.",
+          "follow_up": "What is the smallest accessible demonstration, and can a newcomer generalize it?",
+          "epistemic_status": "unverified possibility"
+        },
+        {
+          "answer": "Yes, but the full result requires deep expertise or resources.",
+          "follow_up": "Which parts transfer immediately, and which prerequisites must be acquired?",
+          "epistemic_status": "unverified possibility"
+        },
+        {
+          "answer": "No, the available evidence does not reveal the operative mechanism.",
+          "follow_up": "Which missing logs, artifacts or interviews would discriminate competing explanations?",
+          "epistemic_status": "unverified possibility"
+        },
+        {
+          "answer": "No, unless we replace a specialized dependency with a cheaper alternative.",
+          "follow_up": "Can another mechanism deliver the same function under realistic constraints?",
+          "epistemic_status": "unverified possibility"
+        }
+      ]
+    },
+    {
+      "question_id": "HAI-Q09",
+      "possible_answers": [
+        {
+          "answer": "Yes, my current workflows already embody useful transferable capabilities.",
+          "follow_up": "Which ones can survive a different project, model or month-long interruption?",
+          "epistemic_status": "unverified possibility"
+        },
+        {
+          "answer": "Yes, but failures and integration overhead cancel some gains.",
+          "follow_up": "Which procedural or tool changes would remove the largest measured cost?",
+          "epistemic_status": "unverified possibility"
+        },
+        {
+          "answer": "No, results depend mainly on special contextual advantages.",
+          "follow_up": "Which constraints and tacit skills are hidden by my current success cases?",
+          "epistemic_status": "unverified possibility"
+        },
+        {
+          "answer": "We cannot judge without an actual task trace.",
+          "follow_up": "Which existing project has the clearest intent → action → artifact → verification → failure history?",
+          "epistemic_status": "unverified possibility"
+        }
+      ]
     }
   ],
   "sources": [
@@ -505,6 +888,27 @@
       "url": "https://news.stanford.edu/stories/2026/07/ai-expands-the-boundaries-of-discovery",
       "kind": "research summary",
       "status": "compare ideation quality and practical feasibility"
+    },
+    {
+      "id": "OPENAI_SIGNALS",
+      "title": "OpenAI Signals v3.0 individual ChatGPT use data, September 2026",
+      "url": "https://openai.com/signals/data/",
+      "kind": "privacy-preserving aggregate usage analysis",
+      "status": "Describes usage frequencies/types, not verified user-level intellectual performance. Excludes enterprise and Codex."
+    },
+    {
+      "id": "ANTH_ECON",
+      "title": "Anthropic Economic Index: Economic primitives, January 2026",
+      "url": "https://www.anthropic.com/research/anthropic-economic-index-january-2026-report",
+      "kind": "aggregate Claude.ai and API transcript study",
+      "status": "Measures tasks, collaboration type and AI success estimates in product-specific samples, not population-wide percentiles."
+    },
+    {
+      "id": "KNOWLEDGE_VIEWER",
+      "title": "Knowledge Tree Navigator and RSM collaboration artifacts",
+      "url": "https://github.com/JadanPoll/Learning_Visualizations_Taxonomy/blob/main/RSM_Tree_Viewer.html",
+      "kind": "first-person engineering artifact",
+      "status": "A case for tracing real collaborative work, including earlier reported 404 and wrong-repository changes; not a percentile benchmark."
     }
   ],
   "connections": [
@@ -537,6 +941,36 @@
       "to": "HAI-Q06",
       "relationship": "bootstrap",
       "why": "Improved investigative capability can accelerate acquisition of further capabilities"
+    },
+    {
+      "from": "HAI-Q07",
+      "to": "HAI-Q08",
+      "relationship": "population baseline",
+      "why": "Need to measure ordinary behavior before claiming to distinguish percentiles"
+    },
+    {
+      "from": "HAI-Q09",
+      "to": "HAI-Q08",
+      "relationship": "within-population case",
+      "why": "Our own work is an inspectable sample, not a known rank"
+    },
+    {
+      "from": "HAI-Q10",
+      "to": "HAI-Q03",
+      "relationship": "demystification-to-acquisition",
+      "why": "Factor observed extraordinary work into learnable capabilities and prerequisites"
+    },
+    {
+      "from": "HAI-Q08D",
+      "to": "HAI-Q05C",
+      "relationship": "operationalization",
+      "why": "Tier labels only become empirical after choosing task, outcome and cohort"
+    },
+    {
+      "from": "HAI-Q10B",
+      "to": "HAI-Q04",
+      "relationship": "reconstruction",
+      "why": "Test whether the claimed advantage comes from composing known mechanisms"
     }
   ],
   "possible_perspectives": [
@@ -547,6 +981,62 @@
     "Generativity: which capabilities improve the next investigation"
   ],
   "selection_rule": "Expand branches only where plausible answers would change what to learn, compare or build; never manufacture an exhaustive tier ladder.",
-  "guidance": "Use ordinary, curious questions first (RSM-01.03). Branch into possible answers and their consequences (RSM-02.08). Keep candidate evidence separate from established conclusions (RSM-01.04). Distinguish question trees from investigation trees (RSM-05).",
-  "updated": "2026-11-21"
+  "guidance": "Use ordinary, curious questions first (RSM-01.03). Branch into possible answers and their consequences (RSM-02.08). Keep candidate evidence separate from established conclusions (RSM-01.04). Distinguish question trees from investigation trees (RSM-05). Explicitly cover ordinary AI use, plausible 90th/99th/99.9th percentile strata, first-person engineering workflows, frontier cases, and their social ecosystems. Demystify exceptional cases through concrete action traces, resources, failures and achievable reconstructions; do not conflate publicity, credentials, prompts and general capability.",
+  "updated": "2026-11-21",
+  "original_prompt": "I want to investigate the landscape of human–AI intellectual symbiosis, from ordinary users through the 90th, 99th, 99.9th percentiles, and eventually what we might call alien-level intelligence or capability. I'm interested in how the most capable people use AI to accomplish extraordinary intellectual and engineering work. For example, consider Levent Alpöge's reported use of Claude in pursuing a proof of the Riemann hypothesis. Following RSM and FKEN, let's develop a rich question landscape and investigation tree. I want to discover the people, techniques, workflows, projects, tools, communities, and constituent capabilities that distinguish these levels. Importantly, don't just admire extraordinary outcomes or reduce everything to prompting. Investigate how the capabilities compose, what makes them effective, and how we could progressively reproduce, acquire, and surpass them. The investigations should completely demystify what they did and soften the idea of the 'untouchable legend', while studying average users, percentile tiers, and people using AI in ways similar to mine.",
+  "sampling_design": {
+    "tier_labels": [
+      "ordinary / population baseline",
+      "90th percentile hypothesis",
+      "99th percentile hypothesis",
+      "99.9th percentile hypothesis",
+      "frontier / alien-level speculative category"
+    ],
+    "calibration_rule": "Do not assign actual percentile ranks to people or workflows based on a few anecdotes. Define a reference population, a task family, a measure of independently verified performance or capability and a representative sample first.",
+    "sampling_axes": [
+      "domain and technical background",
+      "task difficulty and novelty",
+      "human and model contributions",
+      "iteration and delegation style",
+      "tools, compute and collaborators",
+      "verification and observed outcome",
+      "time, cost, reliability, maintenance",
+      "accessibility for novice, skilled individual, specialist or institution"
+    ],
+    "sampling_targets": [
+      "casual consumer",
+      "student and self-directed learner",
+      "working professional",
+      "independent investigator and engineer",
+      "expert practitioner and researcher",
+      "collaborative team and institutional lab",
+      "unusual cross-domain practitioner",
+      "frontier case with documented artifacts"
+    ],
+    "biases_to_watch": [
+      "publicity/survivorship bias",
+      "unequal resources",
+      "selection and nonresponse bias",
+      "self-reported productivity",
+      "task difficulty and outcome conflation",
+      "model generation confounded with human expertise",
+      "apparently simple prompts hiding extensive preparation"
+    ]
+  },
+  "demystification_contract": {
+    "purpose": "Replace reverence for an outcome or person with inspectable mechanisms, evidence and reproducible capabilities. Preserve real differences in expertise and resources.",
+    "case_questions": [
+      "What problem did this person actually choose, and why?",
+      "What was already known or prepared before AI entered?",
+      "Exactly what did the human ask, decide, reject, test, revise and contribute?",
+      "What did the model produce and what could it do without the human?",
+      "Which tools, references, infrastructure, collaborators and prior expertise were essential?",
+      "How many failed approaches, retries and intermediate steps occurred?",
+      "What was observed, checked and independently reproduced?",
+      "What would the simplest lower-resource reconstruction look like?",
+      "Which capability can a capable beginner learn, which requires deliberate practice and which requires deep domain expertise?",
+      "What remains unexplained or currently inaccessible, and what evidence would resolve it?"
+    ],
+    "anti_myth_rule": "Do not replace a legend with a simplistic 'anyone can do it' story. Distinguish replicable method, expertise, unusually favorable problem selection, institution-scale resources and unexplained residuals."
+  }
 }
