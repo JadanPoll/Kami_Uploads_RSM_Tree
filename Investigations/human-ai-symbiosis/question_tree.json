@@ -119,6 +119,10 @@
         {
           "source_id": "ALPOGE",
           "role": "Suggested first-hand resource; interpretation and limitations to investigate"
+        },
+        {
+          "source_id": "STANFORD",
+          "role": "Compare novelty and feasibility in AI-supported scientific idea generation; study summary, not a universal claim"
         }
       ],
       "investigation_id": null,
@@ -324,7 +328,12 @@
       "question": "Which outcomes matter: time, novelty, accuracy, understanding, cost, or reuse?",
       "why_ask": "Do not compress incomparable dimensions into a single fake percentile.",
       "status": "candidate",
-      "candidate_references": [],
+      "candidate_references": [
+        {
+          "source_id": "STANFORD",
+          "role": "Compare novelty and feasibility in AI-supported scientific idea generation; study summary, not a universal claim"
+        }
+      ],
       "investigation_id": null,
       "established_certificate_id": null
     },
