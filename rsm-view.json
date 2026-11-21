@@ -82,6 +82,21 @@
           "description": "status"
         }
       }
+    },
+    {
+      "id": "human-ai-fieldwork",
+      "title": "Human–AI collaboration — people & working examples",
+      "file": "Investigations/human-ai-symbiosis/fieldwork.json",
+      "projection": {
+        "shape": "flat",
+        "records": "nodes",
+        "fields": {
+          "id": "id",
+          "label": "question",
+          "parent": "parent_id",
+          "description": "why_ask"
+        }
+      }
     }
   ]
 }
