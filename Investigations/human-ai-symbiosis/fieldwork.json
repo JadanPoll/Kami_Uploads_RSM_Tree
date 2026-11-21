@@ -1,0 +1,968 @@
+{
+  "id": "human-ai-symbiosis-fieldwork",
+  "kind": "case_landscape",
+  "version": 1,
+  "status": "first comparative survey; not a representative percentile sample",
+  "root": "FW-ROOT",
+  "title": "Human–AI symbiosis — people, workflows, projects and counterexamples",
+  "parent_question_tree": "Investigations/human-ai-symbiosis/question_tree.json",
+  "method_trace": [
+    {
+      "decision": "Use groups by observable work situations, not prestige rankings",
+      "rsm_clause": "RSM-02.09; RSM-03.01",
+      "why": "Preserve parent curiosity and avoid inventing percentile membership"
+    },
+    {
+      "decision": "Attach source identity, bounded observation and open questions to each case",
+      "rsm_clause": "RSM-01.02; RSM-01.04; RSM-04.08–04.09",
+      "why": "Do not confuse a report, a hypothesis and an established outcome"
+    },
+    {
+      "decision": "Choose first-hand traces, real tools and counterexamples",
+      "rsm_clause": "RSM-02.04; RSM-02.08",
+      "why": "Find working mechanisms and questions whose different answers change what we do"
+    },
+    {
+      "decision": "Separate questions from investigation and case records",
+      "rsm_clause": "RSM-05.01–05.03",
+      "why": "One case may inform many questions and not every question needs investigation"
+    },
+    {
+      "decision": "Stop surveying when enough contrasts have emerged to design discriminating probes",
+      "rsm_clause": "RSM-04.07",
+      "why": "Do not build an exhaustive celebrity directory"
+    },
+    {
+      "decision": "Record communities and tools as gas elements and possible scaffolding paths",
+      "fken_clause": "FKEN-05; FKEN-07; FKEN-10; FKEN-13; FKEN-15",
+      "why": "Recognition is not competence; cases must expose practical capabilities and reuse routes"
+    }
+  ],
+  "notes": [
+    "The 90th, 99th and 99.9th percentiles are user-requested hypotheses, not observed tiers. We have not measured a representative population of AI users.",
+    "Case inclusion is purposefully heterogeneous. A named entrepreneur, research study, AI team, and user case are not comparable units without defining a task and measure.",
+    "Mechanisms are proposed explanations. We should not promote them to established conclusions without comparative evidence.",
+    "An exceptional result should be demystified through concrete artifacts and reconstructions, without denying genuine expertise or resource limits."
+  ],
+  "nodes": [
+    {
+      "id": "FW-ROOT",
+      "parent_id": null,
+      "title": "How do people actually collaborate with AI?",
+      "type": "root",
+      "description": "A deliberately mixed sampling landscape: ordinary use, real work, engineering, scientific research and counterexamples."
+    },
+    {
+      "id": "FW-A",
+      "parent_id": "FW-ROOT",
+      "title": "Everyday use, learning and independent work",
+      "type": "group",
+      "description": "Representative behaviors and situated practices; do not reduce ordinary users to stereotypical low ability."
+    },
+    {
+      "id": "FW-B",
+      "parent_id": "FW-ROOT",
+      "title": "Working engineers and builders",
+      "type": "group",
+      "description": "End-to-end workflow traces and personally owned projects, with real quality constraints."
+    },
+    {
+      "id": "FW-C",
+      "parent_id": "FW-ROOT",
+      "title": "Long-running and frontier research",
+      "type": "group",
+      "description": "Large-scale agent systems, research simulations and mathematical claims with distinct verification standards."
+    },
+    {
+      "id": "FW-D",
+      "parent_id": "FW-ROOT",
+      "title": "Counterexamples and alternative collaboration models",
+      "type": "group",
+      "description": "Cases that could disconfirm simplistic ideas of scale, autonomy or expertise."
+    },
+    {
+      "id": "FW-OPENAI",
+      "parent_id": "FW-A",
+      "title": "What do most individual ChatGPT conversations actually do?",
+      "actor": "Consumer ChatGPT population",
+      "kind": "large-scale aggregate observation",
+      "tier_assignment": "unassigned",
+      "evidence_status": "documented bounded example",
+      "observed": "OpenAI Signals categorizes individual ChatGPT chats across work and non-work purposes; most message data are not direct observations of outcomes.",
+      "mechanisms_to_investigate": [
+        "task classification",
+        "asking versus doing versus expressing",
+        "difference between usage frequency and competence"
+      ],
+      "unresolved_questions": [
+        "Does the dataset miss complex API or engineering use?",
+        "What would distinguish a successful use from a merely frequent one?"
+      ],
+      "minimum_reconstruction_probe": "Take one real task from each observed use family and measure accuracy, cost, and transfer, not just number of messages.",
+      "source_ids": [
+        "S-OPENAI"
+      ],
+      "linked_question_ids": [
+        "HAI-Q07A",
+        "HAI-Q08D"
+      ],
+      "resource_or_outcome_limitations": [
+        "Excludes enterprise and Codex; not a random sample of all AI users."
+      ],
+      "fken_tower_target": {
+        "gas": "Recognize the example, its domain and what it might reveal",
+        "scaffolding": "Reconstruct the workflow and its important constraints",
+        "tacit": "Demonstrate the transferable capability on an unfamiliar realistic task"
+      },
+      "question": "What do most individual ChatGPT conversations actually do?",
+      "why_ask": "OpenAI Signals categorizes individual ChatGPT chats across work and non-work purposes; most message data are not direct observations of outcomes."
+    },
+    {
+      "id": "FW-CLAUDE",
+      "parent_id": "FW-A",
+      "title": "How much AI use is collaboration rather than delegation?",
+      "actor": "Claude.ai and API users",
+      "kind": "aggregate observational research",
+      "tier_assignment": "unassigned",
+      "evidence_status": "documented bounded example",
+      "observed": "Anthropic classifies November 2025 Claude.ai conversations as 52% augmentation and 45% automation; task iteration was a major contributor to augmentation.",
+      "mechanisms_to_investigate": [
+        "directive task delegation",
+        "task iteration",
+        "learning interaction",
+        "task and platform selection"
+      ],
+      "unresolved_questions": [
+        "Are classifications stable across platforms and years?",
+        "Are iterative conversations more successful, or simply different tasks?"
+      ],
+      "minimum_reconstruction_probe": "Compare a matched set of learning and output tasks under directive versus iterative interaction with fixed quality criteria.",
+      "source_ids": [
+        "S-ANTHROPIC"
+      ],
+      "linked_question_ids": [
+        "HAI-Q07A",
+        "HAI-Q08D"
+      ],
+      "resource_or_outcome_limitations": [
+        "Platform-specific, model-classified interaction types; not causally linked to better outcomes."
+      ],
+      "fken_tower_target": {
+        "gas": "Recognize the example, its domain and what it might reveal",
+        "scaffolding": "Reconstruct the workflow and its important constraints",
+        "tacit": "Demonstrate the transferable capability on an unfamiliar realistic task"
+      },
+      "question": "How much AI use is collaboration rather than delegation?",
+      "why_ask": "Anthropic classifies November 2025 Claude.ai conversations as 52% augmentation and 45% automation; task iteration was a major contributor to augmentation."
+    },
+    {
+      "id": "FW-SMALLBUS",
+      "parent_id": "FW-A",
+      "title": "How do ordinary businesses use AI to handle many small tasks?",
+      "actor": "Small-business respondents",
+      "kind": "survey observations",
+      "tier_assignment": "unassigned",
+      "evidence_status": "documented bounded example",
+      "observed": "The San Francisco Fed documents a wide range: email, grant writing, market research, operations and pricing, as well as some owners who develop client-facing AI software.",
+      "mechanisms_to_investigate": [
+        "task recognition in familiar context",
+        "substitution of time-consuming small jobs",
+        "adoption constraints"
+      ],
+      "unresolved_questions": [
+        "What is successful adoption versus experimentation?",
+        "Do privacy or operational errors outweigh the savings?"
+      ],
+      "minimum_reconstruction_probe": "Take one real administrative task and compare baseline versus AI-assisted output, independent checking, and time spent.",
+      "source_ids": [
+        "S-SFFED"
+      ],
+      "linked_question_ids": [
+        "HAI-Q07A",
+        "HAI-Q07B"
+      ],
+      "resource_or_outcome_limitations": [
+        "Qualitative respondent examples are not percentile or causality evidence."
+      ],
+      "fken_tower_target": {
+        "gas": "Recognize the example, its domain and what it might reveal",
+        "scaffolding": "Reconstruct the workflow and its important constraints",
+        "tacit": "Demonstrate the transferable capability on an unfamiliar realistic task"
+      },
+      "question": "How do ordinary businesses use AI to handle many small tasks?",
+      "why_ask": "The San Francisco Fed documents a wide range: email, grant writing, market research, operations and pricing, as well as some owners who develop client-facing AI software."
+    },
+    {
+      "id": "FW-ANDY",
+      "parent_id": "FW-A",
+      "title": "How did a pizza-shop owner become able to build useful operational software?",
+      "actor": "Andy Brown (Andy's Pizza)",
+      "kind": "named practitioner, secondary interview",
+      "tier_assignment": "unassigned",
+      "evidence_status": "named reported case, no inspected source code",
+      "observed": "Reported use of Claude and YouTube tutorials to make a voice-driven inventory application in English and Spanish, alongside operational apps for kitchen, orders and scheduling.",
+      "mechanisms_to_investigate": [
+        "local problem knowledge",
+        "app specification from operational pain",
+        "learning tools while building",
+        "human-in-the-loop operations"
+      ],
+      "unresolved_questions": [
+        "What technical skill and time investment did he already have?",
+        "How are bugs, staff training, failures and maintenance handled?"
+      ],
+      "minimum_reconstruction_probe": "Build one tiny workflow for a real organization with real user feedback; assess adoption and repair costs one week later.",
+      "source_ids": [
+        "S-HBS"
+      ],
+      "linked_question_ids": [
+        "HAI-Q07B",
+        "HAI-Q09B"
+      ],
+      "resource_or_outcome_limitations": [
+        "Business article documents the reported use, not independent productivity or code quality metrics."
+      ],
+      "fken_tower_target": {
+        "gas": "Recognize the example, its domain and what it might reveal",
+        "scaffolding": "Reconstruct the workflow and its important constraints",
+        "tacit": "Demonstrate the transferable capability on an unfamiliar realistic task"
+      },
+      "question": "How did a pizza-shop owner become able to build useful operational software?",
+      "why_ask": "Reported use of Claude and YouTube tutorials to make a voice-driven inventory application in English and Spanish, alongside operational apps for kitchen, orders and scheduling."
+    },
+    {
+      "id": "FW-STUDENTS",
+      "parent_id": "FW-A",
+      "title": "When does AI tutoring help students learn rather than merely give answers?",
+      "actor": "Students in Harvard physics-course study",
+      "kind": "randomized educational study",
+      "tier_assignment": "unassigned",
+      "evidence_status": "documented bounded example",
+      "observed": "Published 2025 trial studied a custom AI tutor versus in-class active learning, with higher measured learning gains for the AI-tutor arm.",
+      "mechanisms_to_investigate": [
+        "structured tutoring",
+        "feedback and personalization",
+        "testing actual learning"
+      ],
+      "unresolved_questions": [
+        "Which tutor design elements mattered?",
+        "Does performance persist when the AI is removed and the topic changes?"
+      ],
+      "minimum_reconstruction_probe": "Use the same short physics concept with unguided ChatGPT versus a structured tutor, and assess a novel no-AI problem afterward.",
+      "source_ids": [
+        "S-PHYSICS"
+      ],
+      "linked_question_ids": [
+        "HAI-Q07B",
+        "HAI-Q05B"
+      ],
+      "resource_or_outcome_limitations": [
+        "Intervention-specific results with course population; not a general effect of any ChatGPT conversation."
+      ],
+      "fken_tower_target": {
+        "gas": "Recognize the example, its domain and what it might reveal",
+        "scaffolding": "Reconstruct the workflow and its important constraints",
+        "tacit": "Demonstrate the transferable capability on an unfamiliar realistic task"
+      },
+      "question": "When does AI tutoring help students learn rather than merely give answers?",
+      "why_ask": "Published 2025 trial studied a custom AI tutor versus in-class active learning, with higher measured learning gains for the AI-tutor arm."
+    },
+    {
+      "id": "FW-SIMON",
+      "parent_id": "FW-B",
+      "title": "How does Simon Willison go from an idea to a demonstrably working tool?",
+      "actor": "Simon Willison",
+      "kind": "first-person workflow and public tool artifacts",
+      "tier_assignment": "unassigned",
+      "evidence_status": "documented bounded example",
+      "observed": "Author documents iteration on small tools, context feeding, executable tests, and visual demonstration artifacts via Showboat/Rodney.",
+      "mechanisms_to_investigate": [
+        "runnable feedback loops",
+        "several concrete examples as context",
+        "modular small tools",
+        "visual artifacts instead of claims"
+      ],
+      "unresolved_questions": [
+        "How much of the speed comes from the model versus existing software expertise?",
+        "How often do demos fail to represent true execution?"
+      ],
+      "minimum_reconstruction_probe": "Build and demonstrate a small single-file tool with screenshots, command outputs, and one realistic user flow; verify the artifacts were generated by actual commands.",
+      "source_ids": [
+        "S-SIMON",
+        "S-SHOWBOAT"
+      ],
+      "linked_question_ids": [
+        "HAI-Q03B",
+        "HAI-Q03C",
+        "HAI-Q09B"
+      ],
+      "resource_or_outcome_limitations": [
+        "First-person documentation is not controlled comparison.",
+        "Some demo artifacts can be manipulated or misreported; author documents this failure mode."
+      ],
+      "fken_tower_target": {
+        "gas": "Recognize the example, its domain and what it might reveal",
+        "scaffolding": "Reconstruct the workflow and its important constraints",
+        "tacit": "Demonstrate the transferable capability on an unfamiliar realistic task"
+      },
+      "question": "How does Simon Willison go from an idea to a demonstrably working tool?",
+      "why_ask": "Author documents iteration on small tools, context feeding, executable tests, and visual demonstration artifacts via Showboat/Rodney."
+    },
+    {
+      "id": "FW-ARMIN",
+      "parent_id": "FW-B",
+      "title": "Why might an expert reject apparently more autonomous coding?",
+      "actor": "Armin Ronacher",
+      "kind": "first-person expert engineering critique",
+      "tier_assignment": "unassigned",
+      "evidence_status": "documented bounded example",
+      "observed": "Ronacher reports that long autonomous coding loops can increase complexity and weaken understanding despite producing substantial output.",
+      "mechanisms_to_investigate": [
+        "engineering taste",
+        "stable invariants",
+        "language/tool choice",
+        "maintainability and ownership"
+      ],
+      "unresolved_questions": [
+        "Which effects are personal preference versus measurable quality defects?",
+        "Can bounded loops preserve understanding?"
+      ],
+      "minimum_reconstruction_probe": "Compare agent-produced code with/without human checkpoints against a previously unfamiliar maintenance task; measure explainability and repairs.",
+      "source_ids": [
+        "S-ARMIN"
+      ],
+      "linked_question_ids": [
+        "HAI-Q02B",
+        "HAI-Q05B",
+        "HAI-Q09C"
+      ],
+      "resource_or_outcome_limitations": [
+        "Opinion and personal workflow observation, not statistically measured generality."
+      ],
+      "fken_tower_target": {
+        "gas": "Recognize the example, its domain and what it might reveal",
+        "scaffolding": "Reconstruct the workflow and its important constraints",
+        "tacit": "Demonstrate the transferable capability on an unfamiliar realistic task"
+      },
+      "question": "Why might an expert reject apparently more autonomous coding?",
+      "why_ask": "Ronacher reports that long autonomous coding loops can increase complexity and weaken understanding despite producing substantial output."
+    },
+    {
+      "id": "FW-OWN",
+      "parent_id": "FW-B",
+      "title": "What have our own ChatGPT-plus-GitHub projects actually taught us?",
+      "actor": "User-directed RSM/Knowledge Tree Navigator development",
+      "kind": "longitudinal first-person case",
+      "tier_assignment": "unassigned",
+      "evidence_status": "documented bounded example",
+      "observed": "Real viewer and question-tree workflows include source-linked research, repository edits, usability revisions, a GitHub API 404 and a mistaken-repository edit subsequently reverted.",
+      "mechanisms_to_investigate": [
+        "human-goal continuity",
+        "repo-aware execution",
+        "recorded decisions",
+        "verifiable code changes",
+        "recovering from assistant mistakes"
+      ],
+      "unresolved_questions": [
+        "How much development time was saved and lost?",
+        "Which repeated source, tool and interface mistakes would transfer across projects?"
+      ],
+      "minimum_reconstruction_probe": "Extract one complete issue-to-fix trace from commit history and reports, then compare against a fresh issue with a short reusable intervention.",
+      "source_ids": [
+        "S-USER"
+      ],
+      "linked_question_ids": [
+        "HAI-Q09A",
+        "HAI-Q09C"
+      ],
+      "resource_or_outcome_limitations": [
+        "Known artifacts and conversation reports; task time and counterfactual benefit unmeasured.",
+        "Do not assert an objective percentile."
+      ],
+      "fken_tower_target": {
+        "gas": "Recognize the example, its domain and what it might reveal",
+        "scaffolding": "Reconstruct the workflow and its important constraints",
+        "tacit": "Demonstrate the transferable capability on an unfamiliar realistic task"
+      },
+      "question": "What have our own ChatGPT-plus-GitHub projects actually taught us?",
+      "why_ask": "Real viewer and question-tree workflows include source-linked research, repository edits, usability revisions, a GitHub API 404 and a mistaken-repository edit subsequently reverted."
+    },
+    {
+      "id": "FW-CARLINI",
+      "parent_id": "FW-C",
+      "title": "Why did 16 parallel agents manage to build a large C compiler?",
+      "actor": "Nicholas Carlini and Anthropic agent team",
+      "kind": "first-person research experiment with published code",
+      "tier_assignment": "unassigned",
+      "evidence_status": "documented bounded example",
+      "observed": "Report documents nearly 2,000 Claude Code sessions and roughly $20,000 in API costs producing ~100,000 lines of Rust compiler code capable of compiling Linux 6.9 across architectures.",
+      "mechanisms_to_investigate": [
+        "agent task claiming and separation",
+        "persistent execution loop",
+        "compiler test harness",
+        "real-world software compilation as integration test"
+      ],
+      "unresolved_questions": [
+        "What were the human researcher's most consequential interventions?",
+        "Would one agent with the same compute do almost as well?",
+        "What functionality still fails?"
+      ],
+      "minimum_reconstruction_probe": "Reproduce one compiler subcomponent or integration check with and without task parallelism; compare real correctness and coordination costs.",
+      "source_ids": [
+        "S-CARLINI"
+      ],
+      "linked_question_ids": [
+        "HAI-Q10A",
+        "HAI-Q10B",
+        "HAI-Q04B"
+      ],
+      "resource_or_outcome_limitations": [
+        "Research demo with unusual compute budget; not a general coding benchmark."
+      ],
+      "fken_tower_target": {
+        "gas": "Recognize the example, its domain and what it might reveal",
+        "scaffolding": "Reconstruct the workflow and its important constraints",
+        "tacit": "Demonstrate the transferable capability on an unfamiliar realistic task"
+      },
+      "question": "Why did 16 parallel agents manage to build a large C compiler?",
+      "why_ask": "Report documents nearly 2,000 Claude Code sessions and roughly $20,000 in API costs producing ~100,000 lines of Rust compiler code capable of compiling Linux 6.9 across architectures."
+    },
+    {
+      "id": "FW-CLAX",
+      "parent_id": "FW-C",
+      "title": "How did a researcher outside the specialty build a cosmology solver with AI?",
+      "actor": "Siddharth Mishra-Sharma",
+      "kind": "first-person scientific-computing report with public code and log",
+      "tier_assignment": "unassigned",
+      "evidence_status": "documented bounded example",
+      "observed": "JAX cosmological Boltzmann solver project used CLAUDE.md, CHANGELOG.md, Git, a CLASS reference implementation, and repeated numerical comparisons; not production-grade across all regimes.",
+      "mechanisms_to_investigate": [
+        "task decomposition by numerical dependency",
+        "scientific test oracle",
+        "progress notes across context windows",
+        "failed-attempt preservation",
+        "sequential correction rather than naïve parallelism"
+      ],
+      "unresolved_questions": [
+        "Which errors required actual cosmology expertise?",
+        "Did AI-created tests fail to capture important parameter regimes?",
+        "What remains outside feature-parity?"
+      ],
+      "minimum_reconstruction_probe": "Take a small differential-equation solver with a known reference, require accuracy over a parameter range, and record errors and failed correction attempts.",
+      "source_ids": [
+        "S-CLAX"
+      ],
+      "linked_question_ids": [
+        "HAI-Q10B",
+        "HAI-Q04B",
+        "HAI-Q03D"
+      ],
+      "resource_or_outcome_limitations": [
+        "Author identifies incomplete numerical accuracy and test coverage gaps."
+      ],
+      "fken_tower_target": {
+        "gas": "Recognize the example, its domain and what it might reveal",
+        "scaffolding": "Reconstruct the workflow and its important constraints",
+        "tacit": "Demonstrate the transferable capability on an unfamiliar realistic task"
+      },
+      "question": "How did a researcher outside the specialty build a cosmology solver with AI?",
+      "why_ask": "JAX cosmological Boltzmann solver project used CLAUDE.md, CHANGELOG.md, Git, a CLASS reference implementation, and repeated numerical comparisons; not production-grade across all regimes."
+    },
+    {
+      "id": "FW-ALPHA",
+      "parent_id": "FW-C",
+      "title": "How does AlphaEvolve turn LLM ideas into validated algorithm improvements?",
+      "actor": "Google DeepMind AlphaEvolve team",
+      "kind": "primary system report",
+      "tier_assignment": "unassigned",
+      "evidence_status": "documented bounded example",
+      "observed": "A mix of LLM-generated programs, automated evaluators, stored candidates and evolutionary selection; DeepMind reports algorithm improvements deployed in its infrastructure.",
+      "mechanisms_to_investigate": [
+        "generate–evaluate–select loop",
+        "surrogate objective fidelity",
+        "candidate archive",
+        "broad exploration versus depth"
+      ],
+      "unresolved_questions": [
+        "How robust is objective scoring outside easily evaluated code tasks?",
+        "How much of the benefit comes from compute and engineer-designed evaluators?",
+        "What are the published independent replications?"
+      ],
+      "minimum_reconstruction_probe": "Implement a tiny evolutionary code search over an explicit executable objective, compare against direct single-pass and a conventional search baseline.",
+      "source_ids": [
+        "S-ALPHAEVOLVE"
+      ],
+      "linked_question_ids": [
+        "HAI-Q04A",
+        "HAI-Q02D",
+        "HAI-Q06A"
+      ],
+      "resource_or_outcome_limitations": [
+        "System report and deployment claims from developer organization; not a measured human user percentile."
+      ],
+      "fken_tower_target": {
+        "gas": "Recognize the example, its domain and what it might reveal",
+        "scaffolding": "Reconstruct the workflow and its important constraints",
+        "tacit": "Demonstrate the transferable capability on an unfamiliar realistic task"
+      },
+      "question": "How does AlphaEvolve turn LLM ideas into validated algorithm improvements?",
+      "why_ask": "A mix of LLM-generated programs, automated evaluators, stored candidates and evolutionary selection; DeepMind reports algorithm improvements deployed in its infrastructure."
+    },
+    {
+      "id": "FW-ALPOGE",
+      "parent_id": "FW-C",
+      "title": "What did Alpöge and Claude actually do, and what can be checked?",
+      "actor": "Levent Alpöge and Claude",
+      "kind": "current mathematical claim with open verification",
+      "tier_assignment": "unassigned",
+      "evidence_status": "claimed exceptional outcome, not certified",
+      "observed": "November 20, 2026 announcement of claimed Riemann hypothesis and GRH proof with Lean formalization; mathematical correctness and full independent checking remain unresolved.",
+      "mechanisms_to_investigate": [
+        "expert mathematical problem selection",
+        "intermediate lemmas and analogies",
+        "formalization workflow",
+        "independent theorem-statement equivalence checks"
+      ],
+      "unresolved_questions": [
+        "Can external mathematicians independently replay the formal project?",
+        "What did the human direct at each stage?",
+        "Which parts depend on specialist intuition rather than general AI capability?"
+      ],
+      "minimum_reconstruction_probe": "Use a small established theorem in Lean to study human-directed conjectures, AI proof suggestions, theorem-statement review and independent replay.",
+      "source_ids": [
+        "S-ALPOGE"
+      ],
+      "linked_question_ids": [
+        "HAI-Q10A",
+        "HAI-Q10C",
+        "HAI-Q01B"
+      ],
+      "resource_or_outcome_limitations": [
+        "Do not call RH solved until independently validated.",
+        "Public announcement is not a full transcript of actions."
+      ],
+      "fken_tower_target": {
+        "gas": "Recognize the example, its domain and what it might reveal",
+        "scaffolding": "Reconstruct the workflow and its important constraints",
+        "tacit": "Demonstrate the transferable capability on an unfamiliar realistic task"
+      },
+      "question": "What did Alpöge and Claude actually do, and what can be checked?",
+      "why_ask": "November 20, 2026 announcement of claimed Riemann hypothesis and GRH proof with Lean formalization; mathematical correctness and full independent checking remain unresolved."
+    },
+    {
+      "id": "FW-METR",
+      "parent_id": "FW-D",
+      "title": "Why did experts sometimes become slower when AI was available?",
+      "actor": "16 experienced open-source developers in METR study",
+      "kind": "randomized field experiment",
+      "tier_assignment": "unassigned",
+      "evidence_status": "documented bounded example",
+      "observed": "Across 246 real issues in developers' familiar codebases, allowing early-2025 AI tools increased observed completion time by 19%; developer expectations were for speedup.",
+      "mechanisms_to_investigate": [
+        "tool/context switching",
+        "review burden",
+        "local codebase tacit knowledge",
+        "mismatch between task and model"
+      ],
+      "unresolved_questions": [
+        "Which exact mechanism accounts for slowdown?",
+        "Would the result generalize to novices or newer agents?"
+      ],
+      "minimum_reconstruction_probe": "On a real repository, select paired tasks with comparable complexity and record end-to-end time, rework and correctness under assistance versus no assistance.",
+      "source_ids": [
+        "S-METR"
+      ],
+      "linked_question_ids": [
+        "HAI-Q05A",
+        "HAI-Q08D"
+      ],
+      "resource_or_outcome_limitations": [
+        "Bounded cohort/tasks/models/time; does not show all developers or modern tools are slower."
+      ],
+      "fken_tower_target": {
+        "gas": "Recognize the example, its domain and what it might reveal",
+        "scaffolding": "Reconstruct the workflow and its important constraints",
+        "tacit": "Demonstrate the transferable capability on an unfamiliar realistic task"
+      },
+      "question": "Why did experts sometimes become slower when AI was available?",
+      "why_ask": "Across 246 real issues in developers' familiar codebases, allowing early-2025 AI tools increased observed completion time by 19%; developer expectations were for speedup."
+    },
+    {
+      "id": "FW-MOLLICK",
+      "parent_id": "FW-D",
+      "title": "Should agents do everything, or know when to involve humans?",
+      "actor": "Ethan and Lilach Mollick",
+      "kind": "proposed collaboration architecture and thought experiment",
+      "tier_assignment": "unassigned",
+      "evidence_status": "proposal, not established outcome",
+      "observed": "Propose 'Twilight Factory' in which agents proactively seek human approval, expertise and judgment rather than maximizing unattended autonomy.",
+      "mechanisms_to_investigate": [
+        "human agency",
+        "escalation policies",
+        "agent uncertainty and delegation boundaries"
+      ],
+      "unresolved_questions": [
+        "Which escalation rules actually improve real performance?",
+        "How do we prevent risky unapproved actions?"
+      ],
+      "minimum_reconstruction_probe": "On a simulated but representative work task, compare unattended agent with human-escalating agent under predefined approval and quality checks.",
+      "source_ids": [
+        "S-MOLLICK"
+      ],
+      "linked_question_ids": [
+        "HAI-Q04C",
+        "HAI-Q05C"
+      ],
+      "resource_or_outcome_limitations": [
+        "Do not cite as an empirical demonstration of superior productivity."
+      ],
+      "fken_tower_target": {
+        "gas": "Recognize the example, its domain and what it might reveal",
+        "scaffolding": "Reconstruct the workflow and its important constraints",
+        "tacit": "Demonstrate the transferable capability on an unfamiliar realistic task"
+      },
+      "question": "Should agents do everything, or know when to involve humans?",
+      "why_ask": "Propose 'Twilight Factory' in which agents proactively seek human approval, expertise and judgment rather than maximizing unattended autonomy."
+    }
+  ],
+  "sources": [
+    {
+      "id": "S-OPENAI",
+      "title": "OpenAI Signals individual ChatGPT data (September 2026)",
+      "url": "https://openai.com/signals/data/",
+      "kind": "population observational dataset",
+      "scope": "Individual plan chats; excludes enterprise and Codex; describes messages rather than independent verified outcomes."
+    },
+    {
+      "id": "S-ANTHROPIC",
+      "title": "Anthropic Economic Index: Economic primitives (January 2026)",
+      "url": "https://www.anthropic.com/research/anthropic-economic-index-january-2026-report",
+      "kind": "population observational dataset",
+      "scope": "Claude.ai and API conversation samples from November 2025; measures interaction categories/task characteristics, not user ranks."
+    },
+    {
+      "id": "S-SFFED",
+      "title": "Federal Reserve Bank of San Francisco: Early Findings on Small Business Use of AI (March 2026)",
+      "url": "https://www.frbsf.org/research-and-insights/publications/community-development-articles/2026/03/ai-and-small-businesses/",
+      "kind": "small-business survey analysis",
+      "scope": "2024 Small Business Credit Survey respondent examples, nonrandom selected quotes."
+    },
+    {
+      "id": "S-HBS",
+      "title": "Harvard Business School: How small business is adopting AI (September 2026)",
+      "url": "https://www.hbs.edu/bigs/small-business-adopting-ai",
+      "kind": "reported interview and case",
+      "scope": "Andy Brown’s reported deployed restaurant software; no published independent impact evaluation in the inspected article."
+    },
+    {
+      "id": "S-PHYSICS",
+      "title": "Kestin et al.: AI tutoring outperforms in-class active learning (Scientific Reports, 2025)",
+      "url": "https://www.nature.com/articles/s41598-025-97652-6",
+      "kind": "randomized education study",
+      "scope": "N=194 students in a Harvard physics course; outcome is learning gains for the specified tutoring intervention, not general AI proficiency."
+    },
+    {
+      "id": "S-SIMON",
+      "title": "Simon Willison: Here's how I use LLMs to help me write code (2025)",
+      "url": "https://simonwillison.net/2025/mar/11/using-llms-for-code/",
+      "kind": "first-person workflow",
+      "scope": "Concrete use of context, alternatives, runnable code and human judgment; self-report with public demonstration artifacts."
+    },
+    {
+      "id": "S-SHOWBOAT",
+      "title": "Simon Willison: Introducing Showboat and Rodney (February 2026)",
+      "url": "https://simonwillison.net/2026/Feb/10/showboat-and-rodney/",
+      "kind": "first-person implementation and tool trace",
+      "scope": "Public demonstration artifacts and tools; author reports some cases where agents manipulated demo text directly."
+    },
+    {
+      "id": "S-ARMIN",
+      "title": "Armin Ronacher: The Coming Loop (June 2026)",
+      "url": "https://lucumr.pocoo.org/2026/6/23/the-coming-loop/",
+      "kind": "first-person workflow criticism",
+      "scope": "Reports successful and problematic aspects of autonomous loops; no generalized quantitative estimate."
+    },
+    {
+      "id": "S-USER",
+      "title": "Knowledge Tree Navigator & RSM tree repositories, source and commit history",
+      "url": "https://github.com/JadanPoll/Kami_Uploads_RSM_Tree",
+      "kind": "longitudinal user project",
+      "scope": "Traceable goals, artifacts and GitHub commits; productivity and percentile placement have not been measured."
+    },
+    {
+      "id": "S-METR",
+      "title": "METR: Early-2025 AI effects on experienced open-source developers (July 2025)",
+      "url": "https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/",
+      "kind": "randomized field experiment",
+      "scope": "16 experienced developers and 246 tasks in repositories they knew; early-2025 tools, 19% longer completion with AI allowed."
+    },
+    {
+      "id": "S-CARLINI",
+      "title": "Nicholas Carlini: Building a C compiler with a team of parallel Claudes (February 2026)",
+      "url": "https://www.anthropic.com/research/building-c-compiler",
+      "kind": "first-person engineering report with code",
+      "scope": "16 agents, almost 2,000 sessions, about $20K API cost, compiler artifact; broad generality and marginal value of agents unmeasured."
+    },
+    {
+      "id": "S-CLAX",
+      "title": "Siddharth Mishra-Sharma: Long-running Claude for scientific computing (March 2026)",
+      "url": "https://www.anthropic.com/research/long-running-claude",
+      "kind": "first-person scientific-computing report with code",
+      "scope": "JAX cosmological Boltzmann solver checked against CLASS; sub-percent results in some regimes but not production-grade everywhere."
+    },
+    {
+      "id": "S-ALPHAEVOLVE",
+      "title": "Google DeepMind: AlphaEvolve (May 2025)",
+      "url": "https://deepmind.google/blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms/",
+      "kind": "team system report",
+      "scope": "Language models propose code; executable scoring and evolution select candidates; deployment claims from developer organization."
+    },
+    {
+      "id": "S-ALPOGE",
+      "title": "Levent Alpöge: Riemann hypothesis proof claim (Nov. 20, 2026)",
+      "url": "https://alpo.ge/remark.pdf",
+      "kind": "first-person claim awaiting independent mathematical validation",
+      "scope": "Proof and Lean formalization claimed; event and claimed scope reported, but correctness and full causal workflow remain unresolved."
+    },
+    {
+      "id": "S-MOLLICK",
+      "title": "Ethan Mollick: Agency and Agents (August 2026)",
+      "url": "https://www.oneusefulthing.org/p/agency-and-agents",
+      "kind": "practitioner analysis and proposed human-agent work model",
+      "scope": "Twilight Factory is a proposed interaction pattern, not a measured general productivity finding."
+    }
+  ],
+  "projects": [
+    {
+      "id": "P-SHOWBOAT",
+      "name": "Showboat",
+      "url": "https://github.com/simonw/showboat",
+      "role": "Inspectable executable demonstration documents",
+      "case_ids": [
+        "FW-SIMON"
+      ]
+    },
+    {
+      "id": "P-RODNEY",
+      "name": "Rodney",
+      "url": "https://github.com/simonw/rodney",
+      "role": "CLI browser automation to operate and observe real app flows",
+      "case_ids": [
+        "FW-SIMON"
+      ]
+    },
+    {
+      "id": "P-TOOLS",
+      "name": "Simon's one-file tools",
+      "url": "https://github.com/simonw/tools",
+      "role": "Accumulated HTML tools and traceable versions",
+      "case_ids": [
+        "FW-SIMON"
+      ]
+    },
+    {
+      "id": "P-MINI-SWE",
+      "name": "mini-swe-agent",
+      "url": "https://github.com/SWE-agent/mini-swe-agent",
+      "role": "Minimal open agent loop to study instead of inventing an agent harness",
+      "case_ids": [
+        "FW-CARLINI",
+        "FW-OWN"
+      ]
+    },
+    {
+      "id": "P-DSPY",
+      "name": "DSPy",
+      "url": "https://github.com/stanfordnlp/dspy",
+      "role": "Declarative LM programs with evaluator-driven optimization",
+      "case_ids": [
+        "FW-ALPHA"
+      ]
+    },
+    {
+      "id": "P-CLAX",
+      "name": "clax",
+      "url": "https://github.com/smsharma/clax",
+      "role": "Scientific compute project including source, commits and progress log",
+      "case_ids": [
+        "FW-CLAX"
+      ]
+    },
+    {
+      "id": "P-CC",
+      "name": "Claude C compiler",
+      "url": "https://github.com/anthropics/claudes-c-compiler",
+      "role": "Inspect compiled artifacts, implementation limits and tests",
+      "case_ids": [
+        "FW-CARLINI"
+      ]
+    },
+    {
+      "id": "P-OSTREE",
+      "name": "RSM Knowledge Tree Navigator",
+      "url": "https://github.com/JadanPoll/Learning_Visualizations_Taxonomy/blob/main/RSM_Tree_Viewer.html",
+      "role": "First-person longitudinal AI-assisted engineering case",
+      "case_ids": [
+        "FW-OWN"
+      ]
+    }
+  ],
+  "communities": [
+    {
+      "id": "COM-LATENT",
+      "name": "Latent Space community",
+      "url": "https://latent.space/p/community/",
+      "relevance": "Practitioner interviews, tools, agent engineering and builder community; useful for finding actual workflows rather than merely demos"
+    },
+    {
+      "id": "COM-AIE",
+      "name": "AI Engineer World's Fair talk archive",
+      "url": "https://ai.engineer/worldsfair/2026",
+      "relevance": "Recorded practitioner and implementer sessions on evaluations, context engineering, sandboxes, tools and workflows"
+    },
+    {
+      "id": "COM-HF",
+      "name": "Hugging Face Discord",
+      "url": "https://huggingface.co/discord-community",
+      "relevance": "Applied open-source ML ecosystem and working projects; observe practitioner discussion and implementation issues"
+    },
+    {
+      "id": "COM-LEAN",
+      "name": "Lean community and mathlib Zulip",
+      "url": "https://leanprover-community.github.io/contribute/index.html",
+      "relevance": "Mathematical formalization, expert review, and source of counterexamples to confident AI-generated proofs"
+    },
+    {
+      "id": "COM-SWE",
+      "name": "mini-swe-agent issues and contributor community",
+      "url": "https://github.com/SWE-agent/mini-swe-agent/issues",
+      "relevance": "Real agent failures, maintenance friction and low-cost implementation machinery"
+    },
+    {
+      "id": "COM-DSPY",
+      "name": "DSPy open-source ecosystem",
+      "url": "https://github.com/stanfordnlp/dspy",
+      "relevance": "Metric-driven LM programs and optimizer discussions"
+    },
+    {
+      "id": "COM-METR",
+      "name": "METR research",
+      "url": "https://metr.org/",
+      "relevance": "Measured productivity and task-horizon methods that constrain claims of exceptional AI effectiveness"
+    }
+  ],
+  "causal_hypotheses": [
+    {
+      "id": "H-1",
+      "question": "Are better outcomes explained mainly by domain expertise?",
+      "plausible_mechanism": "Experts can identify the right problem, cheaply reject nonsense and supply missing assumptions.",
+      "disconfirming_evidence": "Novices using an economical workflow achieve comparable novel outcomes on the same task family.",
+      "cases": [
+        "FW-SIMON",
+        "FW-ARMIN",
+        "FW-ALPOGE",
+        "FW-CLAX"
+      ]
+    },
+    {
+      "id": "H-2",
+      "question": "Does an executable evaluator explain more than prompt quality?",
+      "plausible_mechanism": "A test oracle turns uncertain output into an iterative search process.",
+      "disconfirming_evidence": "Adding realistic tests/evaluators does not improve final quality after equalizing attempts, human time and compute.",
+      "cases": [
+        "FW-SIMON",
+        "FW-ALPHA",
+        "FW-CLAX",
+        "FW-CARLINI"
+      ]
+    },
+    {
+      "id": "H-3",
+      "question": "Does autonomy buy capability or mostly scale and hidden work?",
+      "plausible_mechanism": "Agents progress while humans are absent, but risk building wrong things or expensive review debt.",
+      "disconfirming_evidence": "Comparable finished tasks show stable efficiency and quality gains independent of pre-existing infrastructure.",
+      "cases": [
+        "FW-CARLINI",
+        "FW-CLAX",
+        "FW-METR",
+        "FW-ARMIN",
+        "FW-MOLLICK"
+      ]
+    },
+    {
+      "id": "H-4",
+      "question": "Is ordinary high-leverage use often task selection rather than sophisticated orchestration?",
+      "plausible_mechanism": "Knowledge of local work identifies consequential low-cost opportunities.",
+      "disconfirming_evidence": "Operational benefits vanish after including repairs and human acceptance.",
+      "cases": [
+        "FW-SMALLBUS",
+        "FW-ANDY",
+        "FW-STUDENTS"
+      ]
+    },
+    {
+      "id": "H-5",
+      "question": "Do AI collaborations leave transferable human competence?",
+      "plausible_mechanism": "Debugging, explanation, experiments and revisitable artifacts create learning.",
+      "disconfirming_evidence": "No-AI transfer tasks and one-month maintenance require just as much assistance as before.",
+      "cases": [
+        "FW-OWN",
+        "FW-STUDENTS",
+        "FW-CLAX"
+      ]
+    }
+  ],
+  "candidate_investigation_routes": [
+    {
+      "id": "PATH-1",
+      "title": "Inspect a genuine ordinary practice",
+      "cases": [
+        "FW-ANDY",
+        "FW-SMALLBUS",
+        "FW-STUDENTS"
+      ],
+      "probe": "Find one operational or learning outcome with a real user/test rather than a generic time-saved estimate",
+      "value": "Grounds agency outside software research"
+    },
+    {
+      "id": "PATH-2",
+      "title": "Demystify a documented builder",
+      "cases": [
+        "FW-SIMON",
+        "FW-OWN"
+      ],
+      "probe": "Choose one produced artifact and reconstruct all revisions, real demonstrations, failures and maintenance",
+      "value": "High personal transfer; artifacts already accessible"
+    },
+    {
+      "id": "PATH-3",
+      "title": "Compare concurrency versus dependency",
+      "cases": [
+        "FW-CARLINI",
+        "FW-CLAX"
+      ],
+      "probe": "Identify tasks independent enough to split, and errors requiring end-to-end sequential diagnosis",
+      "value": "Decisive architecture question for future Logical Cloud agents"
+    },
+    {
+      "id": "PATH-4",
+      "title": "Make a small evaluator-driven research machine",
+      "cases": [
+        "FW-ALPHA",
+        "FW-METR"
+      ],
+      "probe": "Compare direct answer, iterative human correction, and search with objective tests on a meaningful constrained task",
+      "value": "Low-cost reconstruction of generative feedback"
+    },
+    {
+      "id": "PATH-5",
+      "title": "Audit an extraordinary mathematics claim",
+      "cases": [
+        "FW-ALPOGE"
+      ],
+      "probe": "Independent Lean statement review and reproducible small lemma workflow, not reprove RH",
+      "value": "Learn expert steering and mathematical verification without mythologizing headline"
+    }
+  ],
+  "updated": "2026-11-21"
+}
