@@ -14,6 +14,13 @@
       "path": "Investigations/operating-systems/investigation.json",
       "status": "source-indexed-investigation-not-yet-certified",
       "updated": "2026-11-19"
+    },
+    {
+      "id": "human-ai-symbiosis",
+      "title": "Human–AI intellectual collaboration — capabilities and achievements",
+      "path": "Investigations/human-ai-symbiosis/investigation.json",
+      "status": "question-landscape-active",
+      "updated": "2026-11-21"
     }
   ]
 }
