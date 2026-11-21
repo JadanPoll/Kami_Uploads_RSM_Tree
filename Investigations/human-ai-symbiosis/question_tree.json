@@ -13,7 +13,7 @@
       "id": "HAI-00",
       "parent_id": null,
       "question": "How do people use AI, from ordinary help to seemingly alien-level intellectual work?",
-      "why_ask": "Map the population, demystify extraordinary cases, understand my own practice, and discover reproducible capabilities.",
+      "why_ask": "How people use AI for everyday tasks, learning, engineering, research, and work that might otherwise be out of reach.",
       "status": "candidate",
       "candidate_references": [],
       "investigation_id": null,
@@ -23,7 +23,7 @@
       "id": "HAI-Q07",
       "parent_id": "HAI-00",
       "question": "What does ordinary AI use actually look like?",
-      "why_ask": "We cannot understand exceptional users without understanding the baseline.",
+      "why_ask": "Consider asking for an explanation, troubleshooting a device, planning a project, studying for an exam, or managing daily work.",
       "status": "candidate",
       "candidate_references": [
         {
@@ -42,7 +42,7 @@
       "id": "HAI-Q07A",
       "parent_id": "HAI-Q07",
       "question": "What are everyday users asking AI to do, and why?",
-      "why_ask": "Distinguish answering questions, drafting, personal support, study, simple production and specialized use.",
+      "why_ask": "Writing, searching, learning, coding, decision support, personal organization, and problem-solving may involve very different kinds of collaboration.",
       "status": "candidate",
       "candidate_references": [
         {
@@ -57,7 +57,7 @@
       "id": "HAI-Q07B",
       "parent_id": "HAI-Q07",
       "question": "What can an ordinary person do well with AI already?",
-      "why_ask": "Look for successful, reliable capabilities rather than treating everyday use as inferior.",
+      "why_ask": "A beginner may create useful software, learn a difficult concept, or complete paperwork that previously required outside help.",
       "status": "candidate",
       "candidate_references": [
         {
@@ -72,7 +72,7 @@
       "id": "HAI-Q07C",
       "parent_id": "HAI-Q07",
       "question": "Where does ordinary AI use fail or stop being useful?",
-      "why_ask": "Study recurring hallucinations, low-context questions, unverified results and abandonment rather than guessing limitations.",
+      "why_ask": "Answers can sound convincing while being wrong; tasks may fail when important context, reliable tools, or a way to check the result is missing.",
       "status": "candidate",
       "candidate_references": [
         {
@@ -87,7 +87,7 @@
       "id": "HAI-Q08",
       "parent_id": "HAI-00",
       "question": "What changes as we move from ordinary users toward the 90th, 99th, and 99.9th percentiles?",
-      "why_ask": "The requested distribution is itself a central research subject, not a footnote.",
+      "why_ask": "People differ in the difficulty of their projects, their subject knowledge, the tools they use, and how reliably they turn AI output into working results.",
       "status": "candidate",
       "candidate_references": [
         {
@@ -110,7 +110,7 @@
       "id": "HAI-Q01",
       "parent_id": "HAI-Q08",
       "question": "What are people actually accomplishing with AI?",
-      "why_ask": "Discover the possibility landscape without equating publicity with evidence.",
+      "why_ask": "Examples range from ordinary assistance and small business software to research code, automated experiments, and ambitious mathematical work.",
       "status": "candidate",
       "candidate_references": [
         {
@@ -133,7 +133,7 @@
       "id": "HAI-Q01A",
       "parent_id": "HAI-Q01",
       "question": "What makes an achievement extraordinary?",
-      "why_ask": "Separate novelty, scale, difficulty, societal significance, independence and verified correctness.",
+      "why_ask": "A project may be impressive because it solves a novel problem, works at unusual scale, survives demanding tests, or changes what others can build.",
       "status": "candidate",
       "candidate_references": [],
       "investigation_id": null,
@@ -143,7 +143,7 @@
       "id": "HAI-Q01B",
       "parent_id": "HAI-Q01",
       "question": "What was actually demonstrated, and who checked it?",
-      "why_ask": "Separate claims, reproducible artifacts, independently verified outcomes and causal attribution.",
+      "why_ask": "A working demonstration, a published paper, a source repository, and independent reproduction offer different kinds of evidence.",
       "status": "candidate",
       "candidate_references": [
         {
@@ -166,7 +166,7 @@
       "id": "HAI-Q01C",
       "parent_id": "HAI-Q01",
       "question": "Where are the quiet examples that never become headlines?",
-      "why_ask": "Look for routine industrial successes, failed deployments, and unpublicized workflows.",
+      "why_ask": "Internal tools, small business workflows, scientific scripts, and abandoned experiments may never receive public attention.",
       "status": "candidate",
       "candidate_references": [
         {
@@ -181,7 +181,7 @@
       "id": "HAI-Q02",
       "parent_id": "HAI-Q08",
       "question": "Why can some people get so much further than others?",
-      "why_ask": "Investigate possible causes rather than assuming they possess special prompts.",
+      "why_ask": "Two users may work with the same model yet get very different results because they choose different problems, know different things, and check their results differently.",
       "status": "candidate",
       "candidate_references": [
         {
@@ -200,7 +200,7 @@
       "id": "HAI-Q02A",
       "parent_id": "HAI-Q02",
       "question": "Did they ask a better question or recognize a more useful representation?",
-      "why_ask": "Problem selection, analogies and intermediate representations may dominate output technique.",
+      "why_ask": "Choosing a tractable formulation can turn an impossible-looking problem into a sequence of solvable ones.",
       "status": "candidate",
       "candidate_references": [
         {
@@ -219,7 +219,7 @@
       "id": "HAI-Q02B",
       "parent_id": "HAI-Q02",
       "question": "How much did they already know about the subject?",
-      "why_ask": "A top expert may direct and reject possibilities that are invisible to a novice.",
+      "why_ask": "Specialists recognize hidden assumptions, useful analogies, and subtle errors that a newcomer may overlook.",
       "status": "candidate",
       "candidate_references": [
         {
@@ -234,7 +234,7 @@
       "id": "HAI-Q02C",
       "parent_id": "HAI-Q02",
       "question": "What did they let the AI do, and what did they keep for themselves?",
-      "why_ask": "Discover the actual division of labor and its changes during the task.",
+      "why_ask": "The human might select a goal and judge progress while the AI searches alternatives, writes code, or investigates details. The division can change during a project.",
       "status": "candidate",
       "candidate_references": [
         {
@@ -253,7 +253,7 @@
       "id": "HAI-Q02D",
       "parent_id": "HAI-Q02",
       "question": "Was the advantage in prompting, tools, search, memory, compute, or verification?",
-      "why_ask": "Distinguish portable procedures from specialized infrastructure.",
+      "why_ask": "A well-phrased question, an executable test, a repository, a simulator, and a team of agents contribute different kinds of leverage.",
       "status": "candidate",
       "candidate_references": [
         {
@@ -268,7 +268,7 @@
       "id": "HAI-Q05",
       "parent_id": "HAI-Q08",
       "question": "How would we know that AI actually made us better?",
-      "why_ask": "Avoid equating speed, subjective fluency or volume of output with capability.",
+      "why_ask": "Finishing sooner, understanding more, producing better work, and learning a transferable skill are different outcomes.",
       "status": "candidate",
       "candidate_references": [
         {
@@ -283,7 +283,7 @@
       "id": "HAI-Q05A",
       "parent_id": "HAI-Q05",
       "question": "Could I do the same work more reliably without AI?",
-      "why_ask": "Make counterfactual comparisons across representative tasks.",
+      "why_ask": "AI can reduce drafting effort but add review, correction, integration, or debugging work.",
       "status": "candidate",
       "candidate_references": [
         {
@@ -298,7 +298,7 @@
       "id": "HAI-Q05B",
       "parent_id": "HAI-Q05",
       "question": "Am I getting better at the task, or only better at operating a particular tool?",
-      "why_ask": "Test competence after tool removal and transfer to new contexts.",
+      "why_ask": "A learner might finish a task with AI yet struggle to solve a related problem independently.",
       "status": "candidate",
       "candidate_references": [],
       "investigation_id": null,
@@ -308,7 +308,7 @@
       "id": "HAI-Q05C",
       "parent_id": "HAI-Q05",
       "question": "Which outcomes matter: time, novelty, accuracy, understanding, cost, or reuse?",
-      "why_ask": "Do not compress incomparable dimensions into a single fake percentile.",
+      "why_ask": "A fast result is not necessarily a correct one; a costly experiment may still generate valuable new understanding.",
       "status": "candidate",
       "candidate_references": [
         {
@@ -323,7 +323,7 @@
       "id": "HAI-Q08A",
       "parent_id": "HAI-Q08",
       "question": "How would we tell a 90th-percentile user from a typical user?",
-      "why_ask": "Candidate explanations: more consequential tasks, better iteration, stronger subject understanding, better selection and verification.",
+      "why_ask": "Compare someone who occasionally asks for answers with someone who repeatedly completes meaningful projects with AI assistance.",
       "status": "candidate",
       "candidate_references": [],
       "investigation_id": null,
@@ -333,7 +333,7 @@
       "id": "HAI-Q08B",
       "parent_id": "HAI-Q08",
       "question": "What distinguishes a 99th-percentile practitioner from a 90th-percentile one?",
-      "why_ask": "Look for reusable systems, cross-tool orchestration, problem selection, artifact quality and durable repeatable outcomes.",
+      "why_ask": "Reusable tools, careful evaluation, long-running project management, and integration across systems may matter more than the sophistication of a single prompt.",
       "status": "candidate",
       "candidate_references": [],
       "investigation_id": null,
@@ -343,7 +343,7 @@
       "id": "HAI-Q08C",
       "parent_id": "HAI-Q08",
       "question": "What distinguishes the 99.9th percentile, if that is even a meaningful single class?",
-      "why_ask": "Study whether rare achievements trace to skills, institutions, prior expertise, budgets or unique combinations.",
+      "why_ask": "Rare achievements may depend on deep expertise, expensive infrastructure, unusual persistence, strong collaborators, or an effective combination of them.",
       "status": "candidate",
       "candidate_references": [],
       "investigation_id": null,
@@ -353,7 +353,7 @@
       "id": "HAI-Q08D",
       "parent_id": "HAI-Q08",
       "question": "What population and measurements make these percentiles real?",
-      "why_ask": "Separate usage intensity, skill in one domain, verified output quality and transferable general ability.",
+      "why_ask": "The percentile depends on whom we compare, what tasks they perform, and whether we measure speed, quality, learning, originality, or reliability.",
       "status": "candidate",
       "candidate_references": [
         {
@@ -376,7 +376,7 @@
       "id": "HAI-Q12",
       "parent_id": "HAI-Q08",
       "question": "Where can we actually find and observe these people and their methods?",
-      "why_ask": "Use communities, public task traces, studies, reproducible work, engineering repositories, practitioner interviews and failures—not hype alone.",
+      "why_ask": "Useful traces appear in public repositories, research reports, developer journals, talks, issue discussions, and accounts of failed attempts.",
       "status": "candidate",
       "candidate_references": [
         {
@@ -395,7 +395,7 @@
       "id": "HAI-Q09",
       "parent_id": "HAI-00",
       "question": "How do people like me actually use AI, and where could our methods go further?",
-      "why_ask": "Study real long-running projects, research, engineering and tool-building as a population rather than an isolated anecdote.",
+      "why_ask": "Long-running research and engineering projects reveal both the leverage gained from AI and the costs of coordinating, correcting, and integrating its work.",
       "status": "candidate",
       "candidate_references": [],
       "investigation_id": null,
@@ -405,7 +405,7 @@
       "id": "HAI-Q03",
       "parent_id": "HAI-Q09",
       "question": "What could I learn to do that transfers across difficult projects?",
-      "why_ask": "Prioritize capabilities with reach, not a checklist of platform tricks.",
+      "why_ask": "A capability learned in one engineering or research project becomes especially valuable when it also helps on unfamiliar problems.",
       "status": "candidate",
       "candidate_references": [],
       "investigation_id": null,
@@ -415,7 +415,7 @@
       "id": "HAI-Q03A",
       "parent_id": "HAI-Q03",
       "question": "Can I recognize and ask questions that matter before solving them?",
-      "why_ask": "Test problem framing and question-navigation independently of answer generation.",
+      "why_ask": "The most useful question may change once you understand the larger purpose, the constraints, or what previous attempts discovered.",
       "status": "candidate",
       "candidate_references": [],
       "investigation_id": null,
@@ -425,7 +425,7 @@
       "id": "HAI-Q03B",
       "parent_id": "HAI-Q03",
       "question": "Can I turn a large ambition into parts an AI can actually work on?",
-      "why_ask": "Test contracts, boundaries, alternative mechanisms and recoverability.",
+      "why_ask": "Subsystems, interfaces, acceptance criteria, and recoverable intermediate artifacts can make ambitious work easier to distribute.",
       "status": "candidate",
       "candidate_references": [],
       "investigation_id": null,
@@ -435,7 +435,7 @@
       "id": "HAI-Q03C",
       "parent_id": "HAI-Q03",
       "question": "Can I tell whether the work is correct without merely trusting the AI?",
-      "why_ask": "Look for executable checks, first-hand sources, adversarial examples and integration evidence.",
+      "why_ask": "Executable tests, measurements, reference implementations, proof assistants, and independent review provide different ways to check results.",
       "status": "candidate",
       "candidate_references": [
         {
@@ -450,7 +450,7 @@
       "id": "HAI-Q03D",
       "parent_id": "HAI-Q03",
       "question": "Can I learn from one project in a way that improves the next?",
-      "why_ask": "Test reusable knowledge, tacit skill, tools and durable investigation records.",
+      "why_ask": "Reusable tools, working examples, written failures, and acquired intuition can reduce how much must be rediscovered in the next project.",
       "status": "candidate",
       "candidate_references": [],
       "investigation_id": null,
@@ -460,7 +460,7 @@
       "id": "HAI-Q09A",
       "parent_id": "HAI-Q09",
       "question": "What can we learn from my own ChatGPT-assisted engineering work?",
-      "why_ask": "Trace end-to-end successes, broken assumptions, costly errors, integrations and user-visible results across a real project.",
+      "why_ask": "The Knowledge Tree Navigator, FPGA tools, and other projects provide real artifacts, commits, corrections, and user-facing outcomes to examine.",
       "status": "candidate",
       "candidate_references": [
         {
@@ -475,7 +475,7 @@
       "id": "HAI-Q09B",
       "parent_id": "HAI-Q09",
       "question": "Which capabilities have become reusable across my projects?",
-      "why_ask": "Investigate research navigation, tool use, specification, diagnosis, cross-chat persistence and integration.",
+      "why_ask": "Examples include moving between research and implementation, inspecting source code, coordinating repositories, and preserving decisions across sessions.",
       "status": "candidate",
       "candidate_references": [],
       "investigation_id": null,
@@ -485,7 +485,7 @@
       "id": "HAI-Q09C",
       "parent_id": "HAI-Q09",
       "question": "What are the costs and failure modes of my current way of collaborating with AI?",
-      "why_ask": "Analyze genuine wrong-repository edits, validation gaps, interaction mistakes, accumulated context and recovery work.",
+      "why_ask": "Failures include unnecessary revisions, lost context, wrong-target edits, unverified assumptions, and awkward interfaces that require repeated explanation.",
       "status": "candidate",
       "candidate_references": [
         {
@@ -500,7 +500,7 @@
       "id": "HAI-Q10",
       "parent_id": "HAI-00",
       "question": "What did an 'untouchable legend' actually do, step by step?",
-      "why_ask": "Require a mechanism-level account and cheap reproducibility probes before attributing outcomes to inaccessible brilliance.",
+      "why_ask": "An impressive finished artifact conceals the decisions, failed attempts, prior knowledge, tools, and corrections that produced it.",
       "status": "candidate",
       "candidate_references": [
         {
@@ -519,7 +519,7 @@
       "id": "HAI-Q10A",
       "parent_id": "HAI-Q10",
       "question": "Which decisions did the human make and which did the AI make?",
-      "why_ask": "Reconstruct the sequence of problem selection, choices, prompts, critical feedback, tests and handoffs.",
+      "why_ask": "Reconstruct the actual sequence of choices, experiments, generated material, rejections, and confirmations.",
       "status": "candidate",
       "candidate_references": [
         {
@@ -534,7 +534,7 @@
       "id": "HAI-Q10B",
       "parent_id": "HAI-Q10",
       "question": "Which parts can someone else reproduce with ordinary tools?",
-      "why_ask": "Separate the minimum working mechanism from an institutional-scale workflow.",
+      "why_ask": "The core technique may fit into a small public example even when the original project used extensive compute or specialized equipment.",
       "status": "candidate",
       "candidate_references": [
         {
@@ -549,7 +549,7 @@
       "id": "HAI-Q10C",
       "parent_id": "HAI-Q10",
       "question": "What would still require years of study or unusual resources?",
-      "why_ask": "Demystification is compatible with difficult prerequisites and honest limits.",
+      "why_ask": "Some steps may require substantial mathematical, scientific, or engineering expertise that cannot be replaced by a clever prompt.",
       "status": "candidate",
       "candidate_references": [],
       "investigation_id": null,
@@ -559,7 +559,7 @@
       "id": "HAI-Q10D",
       "parent_id": "HAI-Q10",
       "question": "Could a simpler or different mechanism reproduce the essential result?",
-      "why_ask": "Search for an economical substitute and test a discriminating comparison instead of copying celebrity workflows.",
+      "why_ask": "A different tool, smaller task, cheaper evaluator, or alternative algorithm may reproduce the essential mechanism.",
       "status": "candidate",
       "candidate_references": [],
       "investigation_id": null,
@@ -569,7 +569,7 @@
       "id": "HAI-Q04",
       "parent_id": "HAI-00",
       "question": "What happens when we combine multiple capabilities?",
-      "why_ask": "Investigate whether feedback, search, tools and people compose rather than merely add complexity.",
+      "why_ask": "Combining AI generation with search, tools, experiments, and human judgment may enable work no single component could accomplish alone.",
       "status": "candidate",
       "candidate_references": [
         {
@@ -584,7 +584,7 @@
       "id": "HAI-Q04A",
       "parent_id": "HAI-Q04",
       "question": "When does an evaluator make searching much more powerful?",
-      "why_ask": "Compare open-ended generation with generation followed by objective selection.",
+      "why_ask": "A compiler test suite, simulator, or numerical benchmark can help select stronger candidates from many generated possibilities.",
       "status": "candidate",
       "candidate_references": [
         {
@@ -599,7 +599,7 @@
       "id": "HAI-Q04B",
       "parent_id": "HAI-Q04",
       "question": "When does more parallel AI work help, and when does it create coordination overhead?",
-      "why_ask": "Investigate interfaces, independence and quality control.",
+      "why_ask": "Independent tasks can be divided among agents; tightly coupled tasks can incur conflicts, duplicated effort, and difficult integration.",
       "status": "candidate",
       "candidate_references": [],
       "investigation_id": null,
@@ -609,7 +609,7 @@
       "id": "HAI-Q04C",
       "parent_id": "HAI-Q04",
       "question": "Can an AI help improve how we investigate, not just answer the current question?",
-      "why_ask": "Explore self-revision of representations, tests, and question selection.",
+      "why_ask": "An AI collaborator might help propose new experiments, improve tests, reorganize evidence, or identify a better question to pursue.",
       "status": "candidate",
       "candidate_references": [],
       "investigation_id": null,
@@ -619,7 +619,7 @@
       "id": "HAI-Q06",
       "parent_id": "HAI-00",
       "question": "What would it take to go beyond the best examples we can currently find?",
-      "why_ask": "Seek new compositions, bottleneck removals, and better questions.",
+      "why_ask": "Future progress may come from new tool combinations, stronger evaluation, improved coordination, better scientific questions, or technologies not yet available.",
       "status": "candidate",
       "candidate_references": [],
       "investigation_id": null,
@@ -629,7 +629,7 @@
       "id": "HAI-Q06A",
       "parent_id": "HAI-Q06",
       "question": "What are the present obstructions: knowledge, verification, autonomy, tools, or cost?",
-      "why_ask": "Determine what new capability would most expand the reachable set.",
+      "why_ask": "The limiting factor might be missing knowledge, unreliable feedback, high compute costs, poor integration, or inability to formulate the problem.",
       "status": "candidate",
       "candidate_references": [],
       "investigation_id": null,
@@ -639,7 +639,7 @@
       "id": "HAI-Q06B",
       "parent_id": "HAI-Q06",
       "question": "Could the best next step be to invent a better test or discover a different problem?",
-      "why_ask": "Treat the investigation itself as a system we can improve.",
+      "why_ask": "A new measurement or reformulation can open approaches that were invisible under the original question.",
       "status": "candidate",
       "candidate_references": [],
       "investigation_id": null,
@@ -649,7 +649,7 @@
       "id": "HAI-Q11",
       "parent_id": "HAI-Q06",
       "question": "What could 'alien-level' capability mean without becoming mythology?",
-      "why_ask": "Investigate qualitatively different intelligence, agency, discovery and bootstrap mechanisms without pretending such users have been measured.",
+      "why_ask": "A qualitative leap might involve discovering new scientific principles, creating more effective investigation systems, or reliably solving unfamiliar complex tasks.",
       "status": "candidate",
       "candidate_references": [],
       "investigation_id": null,
@@ -659,7 +659,7 @@
       "id": "HAI-Q11A",
       "parent_id": "HAI-Q11",
       "question": "Could the leap come from better questions, better tools, or entirely new representations?",
-      "why_ask": "Compare improvements in knowledge, action, verification and self-improving research loops.",
+      "why_ask": "Better representations can change the problem itself; better tools can change which experiments and solutions are feasible.",
       "status": "candidate",
       "candidate_references": [],
       "investigation_id": null,
@@ -669,7 +669,7 @@
       "id": "HAI-Q11B",
       "parent_id": "HAI-Q11",
       "question": "How would we know we've crossed a qualitative frontier?",
-      "why_ask": "Require a family of reproducible, novel, consequential tasks rather than one dramatic story.",
+      "why_ask": "One spectacular result may be less informative than repeated success across difficult, unfamiliar problems with independently checkable outcomes.",
       "status": "candidate",
       "candidate_references": [],
       "investigation_id": null,
@@ -1038,5 +1038,6 @@
       "What remains unexplained or currently inaccessible, and what evidence would resolve it?"
     ],
     "anti_myth_rule": "Do not replace a legend with a simplistic 'anyone can do it' story. Distinguish replicable method, expertise, unusually favorable problem selection, institution-scale resources and unexplained residuals."
-  }
+  },
+  "presentation_note": "The why_ask field is reader-facing subject context, not instructions to the assistant, editor, or investigator. Procedural priorities, source skepticism, evidence certification rules, and editorial direction are recorded in investigation metadata instead."
 }
