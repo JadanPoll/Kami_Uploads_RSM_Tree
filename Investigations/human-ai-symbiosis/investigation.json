@@ -1,8 +1,8 @@
 {
   "id": "human-ai-symbiosis",
-  "title": "Human–AI intellectual collaboration: achievements, transferable capabilities, and generative combinations",
-  "status": "question-landscape-active; examples preliminarily researched",
-  "question": "How can I recognize, acquire and compose the capabilities behind extraordinary human–AI achievements?",
+  "title": "Human–AI intellectual symbiosis from ordinary use through exceptional and speculative frontier capability",
+  "status": "question-landscape-reframed-for-entire-population; empirical tiers not yet calibrated",
+  "question": "How do ordinary people, effective practitioners, specialists, and rare human–AI collaborators differ; what explains their results; and how could we demystify, learn and surpass their capabilities?",
   "question_tree_path": "Investigations/human-ai-symbiosis/question_tree.json",
   "models": [
     {
@@ -14,6 +14,21 @@
       "id": "HAI-M02",
       "name": "Capability composition",
       "statement": "Problem selection, domain expertise, interaction, tools, evaluators, coordination and revision may interact; their contribution varies by task."
+    },
+    {
+      "id": "HAI-M03",
+      "name": "Distribution and conditional ranks",
+      "statement": "Ordinary, 90th, 99th, and 99.9th strata are explicit research targets; they are not factual ranks without a reference population, task distribution and outcome measurements."
+    },
+    {
+      "id": "HAI-M04",
+      "name": "Legend-to-mechanism reduction",
+      "statement": "An impressive achievement should be explained via a causal workflow, artifacts, prior expertise, resource constraints, failures, simpler reconstructions and transfer tests; unexplained residuals stay explicit."
+    },
+    {
+      "id": "HAI-M05",
+      "name": "Within-person and across-person transfer",
+      "statement": "A working method in one tool, project or domain need not transfer to others; practical capability requires repeated success beyond the original example."
     }
   ],
   "nodes": [
@@ -56,6 +71,47 @@
       "parent_id": "HAI-I00",
       "question": "Which capabilities transfer to a novel, realistic project, independent of specific model or platform?",
       "status": "not investigated"
+    },
+    {
+      "id": "HAI-I05",
+      "parent_id": "HAI-I00",
+      "question": "What do representative ordinary AI users actually do, and what results do they get?",
+      "status": "aggregate data identified; performance percentiles unresolved",
+      "source_ids": [
+        "OPENAI_SIGNALS",
+        "ANTH_ECON"
+      ]
+    },
+    {
+      "id": "HAI-I06",
+      "parent_id": "HAI-I00",
+      "question": "What evidence can distinguish ordinary, 90th, 99th and 99.9th percentile collaboration within a defined cohort?",
+      "status": "unresolved: define measures, comparison groups and sampling"
+    },
+    {
+      "id": "HAI-I07",
+      "parent_id": "HAI-I00",
+      "question": "What can our documented ChatGPT and GitHub work reveal about reusable capabilities and recurring failures?",
+      "status": "candidate first-person case; not benchmarked",
+      "source_ids": [
+        "KNOWLEDGE_VIEWER"
+      ]
+    },
+    {
+      "id": "HAI-I08",
+      "parent_id": "HAI-I00",
+      "question": "Can an apparently extraordinary practitioner be explained by an auditable action trace and lower-resource reproduction?",
+      "status": "source-driven case-study protocol specified; not yet reconstructed",
+      "source_ids": [
+        "ALPOGE",
+        "ALPHAEVOLVE"
+      ]
+    },
+    {
+      "id": "HAI-I09",
+      "parent_id": "HAI-I00",
+      "question": "What people, communities, projects and working systems connect these capability strata?",
+      "status": "candidate ecosystem survey, not yet populated"
     }
   ],
   "evidence_notes": [
@@ -76,6 +132,18 @@
       "observation": "METR reports early-2025 experienced open-source developers took 19% longer when AI tools were available; a later study had substantial selection and measurement limitations.",
       "basis": "METR",
       "interpretation": "Productivity depends on tasks, tools, practitioner context and measurement; cannot be inferred from tool use alone."
+    },
+    {
+      "node_id": "HAI-I05",
+      "observation": "OpenAI Signals v3.0 describes sampled individual ChatGPT use through September 2026, excluding enterprise and Codex. Anthropic's January 2026 Economic Index classifies Claude usage by task, interaction and estimated success; it reports November 2025 augmentation at 52% and automated use at 45% on Claude.ai.",
+      "basis": "OPENAI_SIGNALS; ANTH_ECON",
+      "interpretation": "These anchor usage landscapes, but do not assign intellectual capability percentiles, nor establish that collaboration causes better outcomes."
+    },
+    {
+      "node_id": "HAI-I07",
+      "observation": "The existing Knowledge Tree Navigator collaboration shows source-linked design, repository commits, bug reports (including trailing-slash API 404), a mistaken edit to Discord-Wiki and subsequent recovery.",
+      "basis": "KNOWLEDGE_VIEWER plus prior conversation export",
+      "interpretation": "A concrete workflow for analyzing human–AI symbiosis end-to-end; determine benefits and costs from the actual artifacts before any tier attribution."
     }
   ],
   "candidate_probes": [
@@ -93,6 +161,21 @@
       "question_id": "HAI-Q03D",
       "experiment": "Return after a week to a new task in the same family and attempt to reuse saved problem representations, decision records and tests without replaying the entire chat.",
       "discriminates": "Whether collaboration leaves transferable capability and durable working knowledge."
+    },
+    {
+      "question_id": "HAI-Q08D",
+      "experiment": "Construct comparable task sets and evidence records for everyday, independent technical, expert specialist and institutional users. Observe actual outcomes and resource costs, not message frequency alone.",
+      "discriminates": "Whether broad user capability strata persist after controlling for task, expertise and access."
+    },
+    {
+      "question_id": "HAI-Q09A",
+      "experiment": "Analyze the real Knowledge Tree Viewer development: identify parent purpose, each requested change, code alteration, test evidence, 404 regression, mistaken-target change, reversal, and time/rework.",
+      "discriminates": "Which aspects of this user's collaboration are generative versus friction or hidden overhead."
+    },
+    {
+      "question_id": "HAI-Q10B",
+      "experiment": "From a published high-achievement case, reconstruct the minimal mechanism using ordinary tools on a smaller but representative problem; compare against a simpler baseline.",
+      "discriminates": "Whether the admired result depends on an accessible technique, niche expertise, expensive compute, or their composition."
     }
   ],
   "sources": [
@@ -130,9 +213,103 @@
       "url": "https://news.stanford.edu/stories/2026/07/ai-expands-the-boundaries-of-discovery",
       "kind": "research summary",
       "status": "compare ideation quality and practical feasibility"
+    },
+    {
+      "id": "OPENAI_SIGNALS",
+      "title": "OpenAI Signals v3.0 individual ChatGPT use data, September 2026",
+      "url": "https://openai.com/signals/data/",
+      "kind": "privacy-preserving aggregate usage analysis",
+      "status": "Describes usage frequencies/types, not verified user-level intellectual performance. Excludes enterprise and Codex."
+    },
+    {
+      "id": "ANTH_ECON",
+      "title": "Anthropic Economic Index: Economic primitives, January 2026",
+      "url": "https://www.anthropic.com/research/anthropic-economic-index-january-2026-report",
+      "kind": "aggregate Claude.ai and API transcript study",
+      "status": "Measures tasks, collaboration type and AI success estimates in product-specific samples, not population-wide percentiles."
+    },
+    {
+      "id": "KNOWLEDGE_VIEWER",
+      "title": "Knowledge Tree Navigator and RSM collaboration artifacts",
+      "url": "https://github.com/JadanPoll/Learning_Visualizations_Taxonomy/blob/main/RSM_Tree_Viewer.html",
+      "kind": "first-person engineering artifact",
+      "status": "A case for tracing real collaborative work, including earlier reported 404 and wrong-repository changes; not a percentile benchmark."
     }
   ],
   "established_certificates": [],
-  "next_question": "Which portable human–AI collaboration capability should be tested first against a representative task, rather than inferred from an extraordinary story?",
-  "updated": "2026-11-21"
+  "next_question": "What are ordinary, advanced and exceptional users actually doing? Begin by comparing baseline usage datasets against real end-to-end project traces (including our own), then reconstruct a frontier case without mystifying it.",
+  "updated": "2026-11-21",
+  "population_sampling": {
+    "tier_labels": [
+      "ordinary / population baseline",
+      "90th percentile hypothesis",
+      "99th percentile hypothesis",
+      "99.9th percentile hypothesis",
+      "frontier / alien-level speculative category"
+    ],
+    "calibration_rule": "Do not assign actual percentile ranks to people or workflows based on a few anecdotes. Define a reference population, a task family, a measure of independently verified performance or capability and a representative sample first.",
+    "sampling_axes": [
+      "domain and technical background",
+      "task difficulty and novelty",
+      "human and model contributions",
+      "iteration and delegation style",
+      "tools, compute and collaborators",
+      "verification and observed outcome",
+      "time, cost, reliability, maintenance",
+      "accessibility for novice, skilled individual, specialist or institution"
+    ],
+    "sampling_targets": [
+      "casual consumer",
+      "student and self-directed learner",
+      "working professional",
+      "independent investigator and engineer",
+      "expert practitioner and researcher",
+      "collaborative team and institutional lab",
+      "unusual cross-domain practitioner",
+      "frontier case with documented artifacts"
+    ],
+    "biases_to_watch": [
+      "publicity/survivorship bias",
+      "unequal resources",
+      "selection and nonresponse bias",
+      "self-reported productivity",
+      "task difficulty and outcome conflation",
+      "model generation confounded with human expertise",
+      "apparently simple prompts hiding extensive preparation"
+    ]
+  },
+  "demystification_contract": {
+    "purpose": "Replace reverence for an outcome or person with inspectable mechanisms, evidence and reproducible capabilities. Preserve real differences in expertise and resources.",
+    "case_questions": [
+      "What problem did this person actually choose, and why?",
+      "What was already known or prepared before AI entered?",
+      "Exactly what did the human ask, decide, reject, test, revise and contribute?",
+      "What did the model produce and what could it do without the human?",
+      "Which tools, references, infrastructure, collaborators and prior expertise were essential?",
+      "How many failed approaches, retries and intermediate steps occurred?",
+      "What was observed, checked and independently reproduced?",
+      "What would the simplest lower-resource reconstruction look like?",
+      "Which capability can a capable beginner learn, which requires deliberate practice and which requires deep domain expertise?",
+      "What remains unexplained or currently inaccessible, and what evidence would resolve it?"
+    ],
+    "anti_myth_rule": "Do not replace a legend with a simplistic 'anyone can do it' story. Distinguish replicable method, expertise, unusually favorable problem selection, institution-scale resources and unexplained residuals."
+  },
+  "case_study_contract": {
+    "starting_question": "If we remove the person's name and reputation, what did they actually do?",
+    "fields": [
+      "claim and independent outcome evidence",
+      "task definition and pre-existing knowledge",
+      "full action trace when available",
+      "human contributions",
+      "AI contributions",
+      "external tools and resources",
+      "failure/retry history",
+      "hypotheses for why it worked",
+      "simplest replication",
+      "time/cost/skill requirements",
+      "transfer to other domains",
+      "remaining unexplained factors"
+    ],
+    "completion_rule": "A case is not demystified merely by a fluent summary or an impressive resulting artifact. Require checkable mechanisms and a feasible independent competence probe; preserve unavailable evidence."
+  }
 }
