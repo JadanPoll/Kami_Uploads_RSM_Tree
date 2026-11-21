@@ -112,6 +112,44 @@
       "parent_id": "HAI-I00",
       "question": "What people, communities, projects and working systems connect these capability strata?",
       "status": "candidate ecosystem survey, not yet populated"
+    },
+    {
+      "id": "HAI-I10",
+      "parent_id": "HAI-I00",
+      "question": "How do everyday, independent professional and research agent workflows differ when we examine real task traces?",
+      "status": "fieldwork sample available: 14 case records; not measured percentile distribution",
+      "fieldwork_case_ids": [
+        "FW-OPENAI",
+        "FW-CLAUDE",
+        "FW-SMALLBUS",
+        "FW-ANDY",
+        "FW-STUDENTS",
+        "FW-SIMON",
+        "FW-ARMIN",
+        "FW-OWN",
+        "FW-CARLINI",
+        "FW-CLAX",
+        "FW-ALPHA",
+        "FW-ALPOGE",
+        "FW-METR",
+        "FW-MOLLICK"
+      ]
+    },
+    {
+      "id": "HAI-I11",
+      "parent_id": "HAI-I00",
+      "question": "What explains when agent parallelism works or fails versus sequential causal debugging?",
+      "status": "two published contrast cases available; no head-to-head controlled comparison",
+      "fieldwork_case_ids": [
+        "FW-CARLINI",
+        "FW-CLAX"
+      ]
+    },
+    {
+      "id": "HAI-I12",
+      "parent_id": "HAI-I00",
+      "question": "Which public projects, communities and source artifacts provide affordable competence-building opportunities?",
+      "status": "initial eight projects and seven communities indexed; no engagement/reconstruction yet"
     }
   ],
   "evidence_notes": [
@@ -144,6 +182,24 @@
       "observation": "The existing Knowledge Tree Navigator collaboration shows source-linked design, repository commits, bug reports (including trailing-slash API 404), a mistaken edit to Discord-Wiki and subsequent recovery.",
       "basis": "KNOWLEDGE_VIEWER plus prior conversation export",
       "interpretation": "A concrete workflow for analyzing human–AI symbiosis end-to-end; determine benefits and costs from the actual artifacts before any tier attribution."
+    },
+    {
+      "node_id": "HAI-I10",
+      "observation": "OpenAI Signals and Anthropic Economic Index characterize ordinary use and interaction categories; SF Fed records business-use narratives; HBS reports owner Andy Brown built operational apps; Harvard controlled study evaluates a tailored AI tutor.",
+      "basis": "fieldwork.json cases FW-OPENAI, FW-CLAUDE, FW-SMALLBUS, FW-ANDY, FW-STUDENTS",
+      "interpretation": "AI use spans many environments and knowledge levels. Aggregate message distributions and isolated stories cannot establish population percentiles or general superiority."
+    },
+    {
+      "node_id": "HAI-I11",
+      "observation": "Carlini chose parallel agents for separable compiler tasks and invested heavily in evaluators; Mishra-Sharma's coupled numerical solver was better suited to mostly sequential debugging against CLASS.",
+      "basis": "fieldwork.json cases FW-CARLINI and FW-CLAX",
+      "interpretation": "Hypothesis: coupling among tasks and quality of the evaluator, not number of agents, govern effective orchestration. This contrast is not itself a controlled test."
+    },
+    {
+      "node_id": "HAI-I12",
+      "observation": "Found working primary artifacts: Showboat/Rodney, mini-swe-agent, DSPy, Claude C compiler, clax. Communities include Hugging Face, Latent Space, Lean and AI engineering talks.",
+      "basis": "fieldwork.json projects and communities",
+      "interpretation": "These are candidate FKEN gas resources and practical scaffolding, not proof of acquired tacit competence."
     }
   ],
   "candidate_probes": [
@@ -237,7 +293,7 @@
     }
   ],
   "established_certificates": [],
-  "next_question": "What are ordinary, advanced and exceptional users actually doing? Begin by comparing baseline usage datasets against real end-to-end project traces (including our own), then reconstruct a frontier case without mystifying it.",
+  "next_question": "Investigate how two existing exceptional but different AI collaborations work (Carlini parallel compiler versus Mishra-Sharma coupled numerical solver), then relate their mechanisms to ordinary and independent workflows; acquire evidence before assigning percentile ranks.",
   "updated": "2026-11-21",
   "population_sampling": {
     "tier_labels": [
@@ -311,5 +367,24 @@
       "remaining unexplained factors"
     ],
     "completion_rule": "A case is not demystified merely by a fluent summary or an impressive resulting artifact. Require checkable mechanisms and a feasible independent competence probe; preserve unavailable evidence."
+  },
+  "fieldwork_path": "Investigations/human-ai-symbiosis/fieldwork.json",
+  "fieldwork_status": "14 source-linked cases covering everyday work and learning, working engineers, scientific systems, frontier claims and counterexamples; empirical percentile assignment unresolved",
+  "method_revision": {
+    "rsm": [
+      "RSM-02.04",
+      "RSM-02.08",
+      "RSM-04.07",
+      "RSM-05.01–05.03"
+    ],
+    "fken": [
+      "FKEN-05",
+      "FKEN-07",
+      "FKEN-10",
+      "FKEN-13",
+      "FKEN-15"
+    ],
+    "what_changed": "First comparative investigation through documentary samples, not speculative ranking. Each case records observed workflow, competing mechanism hypotheses, remaining uncertainty and cheap reconstruction probes.",
+    "relevance": "Cases inform multiple questions without turning the question tree into a celebrity list."
   }
 }
