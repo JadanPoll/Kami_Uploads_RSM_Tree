@@ -1,0 +1,138 @@
+{
+  "id": "human-ai-symbiosis",
+  "title": "Human–AI intellectual collaboration: achievements, transferable capabilities, and generative combinations",
+  "status": "question-landscape-active; examples preliminarily researched",
+  "question": "How can I recognize, acquire and compose the capabilities behind extraordinary human–AI achievements?",
+  "question_tree_path": "Investigations/human-ai-symbiosis/question_tree.json",
+  "models": [
+    {
+      "id": "HAI-M01",
+      "name": "Two independent axes",
+      "statement": "Observed achievement and transferable collaboration competence should not be inferred from one another."
+    },
+    {
+      "id": "HAI-M02",
+      "name": "Capability composition",
+      "statement": "Problem selection, domain expertise, interaction, tools, evaluators, coordination and revision may interact; their contribution varies by task."
+    }
+  ],
+  "nodes": [
+    {
+      "id": "HAI-I00",
+      "parent_id": null,
+      "question": "What accounts for observed differences in human–AI accomplishments?",
+      "status": "open"
+    },
+    {
+      "id": "HAI-I01",
+      "parent_id": "HAI-I00",
+      "question": "How did Alpöge and Claude divide problem finding, analogy, derivation and formal verification?",
+      "status": "source-account-read; independent proof validation unresolved",
+      "source_ids": [
+        "ALPOGE",
+        "QUANTA"
+      ]
+    },
+    {
+      "id": "HAI-I02",
+      "parent_id": "HAI-I00",
+      "question": "How much does AlphaEvolve gain from objective evaluation and evolutionary search?",
+      "status": "published primary system report consulted; mechanism comparison untested",
+      "source_ids": [
+        "ALPHAEVOLVE"
+      ]
+    },
+    {
+      "id": "HAI-I03",
+      "parent_id": "HAI-I00",
+      "question": "When do AI assistants slow skilled practitioners, and which conditions reverse that effect?",
+      "status": "empirical result exists for a bounded population, tasks and tool generation",
+      "source_ids": [
+        "METR"
+      ]
+    },
+    {
+      "id": "HAI-I04",
+      "parent_id": "HAI-I00",
+      "question": "Which capabilities transfer to a novel, realistic project, independent of specific model or platform?",
+      "status": "not investigated"
+    }
+  ],
+  "evidence_notes": [
+    {
+      "node_id": "HAI-I01",
+      "observation": "Alpöge's original announcement describes his role in selecting analogies and mathematical directions, and Claude contributing unexpected further steps. The proof claim was being examined at publication.",
+      "basis": "ALPOGE",
+      "interpretation": "Promising example of expert steering with extensive AI exploration; effectiveness and correctness not established merely by the announcement."
+    },
+    {
+      "node_id": "HAI-I02",
+      "observation": "DeepMind describes model-generated code, automated execution/scoring, and evolutionary selection; reports production deployment of several algorithmic improvements.",
+      "basis": "ALPHAEVOLVE",
+      "interpretation": "A plausible demonstration that model generation and reliable evaluators form a useful compound capability."
+    },
+    {
+      "node_id": "HAI-I03",
+      "observation": "METR reports early-2025 experienced open-source developers took 19% longer when AI tools were available; a later study had substantial selection and measurement limitations.",
+      "basis": "METR",
+      "interpretation": "Productivity depends on tasks, tools, practitioner context and measurement; cannot be inferred from tool use alone."
+    }
+  ],
+  "candidate_probes": [
+    {
+      "question_id": "HAI-Q05A",
+      "experiment": "On a representative existing repository issue, compare an unassisted baseline with assisted work on a matched, similarly complex task. Count integration, debugging, verification and rework, not just text generation.",
+      "discriminates": "Whether AI improves real task completion under fixed quality requirements."
+    },
+    {
+      "question_id": "HAI-Q04A",
+      "experiment": "Have one model generate candidate solutions for a measurable programming problem; then compare no evaluation, hand review, and executable evaluator with iteration.",
+      "discriminates": "Whether evaluator-driven search is a useful source of improvement instead of merely increasing generated volume."
+    },
+    {
+      "question_id": "HAI-Q03D",
+      "experiment": "Return after a week to a new task in the same family and attempt to reuse saved problem representations, decision records and tests without replaying the entire chat.",
+      "discriminates": "Whether collaboration leaves transferable capability and durable working knowledge."
+    }
+  ],
+  "sources": [
+    {
+      "id": "ALPOGE",
+      "title": "Levent Alpöge, November 20, 2026: personal announcement and timeline of Claude-assisted claimed proof",
+      "url": "https://alpo.ge/remark.pdf",
+      "kind": "first-hand account",
+      "status": "claim, not independently established proof"
+    },
+    {
+      "id": "QUANTA",
+      "title": "Quanta Magazine, November 20–21, 2026: coverage and scrutiny of claimed Riemann proof",
+      "url": "https://www.quantamagazine.org/updates/transformation/",
+      "kind": "science journalism",
+      "status": "external reporting, evolving"
+    },
+    {
+      "id": "ALPHAEVOLVE",
+      "title": "Google DeepMind, AlphaEvolve: A Gemini-powered coding agent for designing advanced algorithms (2025)",
+      "url": "https://deepmind.google/blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms/",
+      "kind": "primary system account",
+      "status": "reported deployed/evaluated results; evaluate external replication separately"
+    },
+    {
+      "id": "METR",
+      "title": "METR, We Are Changing our Developer Productivity Experiment Design (2026)",
+      "url": "https://metr.org/blog/2026-02-24-uplift-update/",
+      "kind": "researcher methodological update",
+      "status": "2025 RCT shows 19% task time increase; later estimate subject to selection bias"
+    },
+    {
+      "id": "STANFORD",
+      "title": "Stanford Report, From biology to astrophysics, AI expands the boundaries of discovery (2026)",
+      "url": "https://news.stanford.edu/stories/2026/07/ai-expands-the-boundaries-of-discovery",
+      "kind": "research summary",
+      "status": "compare ideation quality and practical feasibility"
+    }
+  ],
+  "established_certificates": [],
+  "next_question": "Which portable human–AI collaboration capability should be tested first against a representative task, rather than inferred from an extraordinary story?",
+  "updated": "2026-11-21"
+}
