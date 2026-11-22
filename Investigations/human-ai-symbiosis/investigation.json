@@ -73,13 +73,42 @@
       ],
       "fieldwork_case_ids": [
         "FW-METR"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "Model output speed versus user productivity",
+          "mechanism": "Completing a draft quickly can still make the professional task slower through context transfer, review, corrections, integrations and new failure modes.",
+          "discriminating_observation": "Measure elapsed time and accepted correctness from task selection through completion; compare to work without assistance."
+        },
+        {
+          "contrast": "Average effect versus task and cohort dependence",
+          "mechanism": "A measured result on experienced maintainers, familiar repositories and a particular tool generation does not identify the effect for novices, different projects or later systems.",
+          "discriminating_observation": "What changes if task type, developer familiarity and agent implementation are held or varied separately?"
+        }
       ]
     },
     {
       "id": "HAI-I04",
       "parent_id": "HAI-I00",
       "question": "Which capabilities transfer to a novel, realistic project, independent of specific model or platform?",
-      "status": "not investigated"
+      "status": "not investigated",
+      "technical_distinctions": [
+        {
+          "contrast": "Assisted completion versus acquired skill",
+          "mechanism": "A user may succeed while the AI supplies uninternalized steps; transfer requires competent performance on a new representative task.",
+          "discriminating_observation": "Can the person diagnose a different failure without recycling the same answer?"
+        },
+        {
+          "contrast": "Evaluator feedback versus genuine objective",
+          "mechanism": "A compiler, test suite or leaderboard measures only what its checks observe; optimizing against a narrow oracle can produce a formally passing but practically unusable system.",
+          "discriminating_observation": "Which realistic user flow or failure would expose the oracle's blind spot?"
+        },
+        {
+          "contrast": "Reversible delegation versus high-stakes autonomy",
+          "mechanism": "Delegation is economical when outcomes are inspectable and changes reversible. Irreversible or poorly specified work calls for human choice before action.",
+          "discriminating_observation": "Which exact decision requires explicit human approval?"
+        }
+      ]
     },
     {
       "id": "HAI-I05",
@@ -93,13 +122,37 @@
       "fieldwork_case_ids": [
         "FW-OPENAI",
         "FW-CLAUDE"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "Activity categories versus validated outcomes",
+          "mechanism": "A population-level count of question types or task descriptions describes usage, not the quality of independently finished work.",
+          "discriminating_observation": "Can the sample connect each use to a measured result rather than only to the request?"
+        },
+        {
+          "contrast": "Consumer convenience versus durable work capability",
+          "mechanism": "Useful drafting, learning and planning are real functions but have different evidence requirements from producing maintained software or new scientific knowledge.",
+          "discriminating_observation": "What would verify persistence, accuracy or learned competence for the specific use case?"
+        }
       ]
     },
     {
       "id": "HAI-I06",
       "parent_id": "HAI-I00",
       "question": "What evidence can distinguish ordinary, 90th, 99th and 99.9th percentile collaboration within a defined cohort?",
-      "status": "unresolved: define measures, comparison groups and sampling"
+      "status": "unresolved: define measures, comparison groups and sampling",
+      "technical_distinctions": [
+        {
+          "contrast": "Anecdotal exceptional case versus calibrated percentile",
+          "mechanism": "A 99th-percentile label requires a reference cohort, task distribution, performance statistic and sampling process; selected public examples supply none automatically.",
+          "discriminating_observation": "What population and independently graded task would make the rank meaningful?"
+        },
+        {
+          "contrast": "Ability versus resources",
+          "mechanism": "Specialist judgment, compute budget, access to tools, collaborators and prior artifacts can independently change outcomes.",
+          "discriminating_observation": "Does the ranking change when time, money and existing expertise are controlled?"
+        }
+      ]
     },
     {
       "id": "HAI-I07",
@@ -111,6 +164,23 @@
       ],
       "fieldwork_case_ids": [
         "FW-OWN"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "Chat context versus project state",
+          "mechanism": "Conversation text is an interaction trace; the working source, functional contract, source evidence, issue history and decisions have different update and recovery needs.",
+          "discriminating_observation": "Can a new session continue from a clean checkout without relying on an inaccessible earlier conversation?"
+        },
+        {
+          "contrast": "Passing local check versus useful repeatable outcome",
+          "mechanism": "Synthetic tests may confirm a function while missing integration failures, unclear controls, restoration after restart or future usability.",
+          "discriminating_observation": "Can an unfamiliar person complete a representative task and recover after a plausible failure?"
+        },
+        {
+          "contrast": "Uncontrolled retries versus causal repair",
+          "mechanism": "Repeated large rewrites obscure the first consequential break and increase recovery cost. Versioned changes and observed failures preserve a path back.",
+          "discriminating_observation": "Can the first violating change or missing contract be isolated from an inspectable baseline?"
+        }
       ]
     },
     {
@@ -125,6 +195,23 @@
       "fieldwork_case_ids": [
         "FW-CARLINI",
         "FW-ALPOGE"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "Result artifact versus complete causal history",
+          "mechanism": "The final code or announcement omits the human's problem framing, rejected branches, prior domain knowledge, external tools, experimental failures and validation effort.",
+          "discriminating_observation": "What do public commits, logs and firsthand timelines reveal, and what remains inaccessible?"
+        },
+        {
+          "contrast": "Formal verification versus statement selection",
+          "mechanism": "A proof assistant can verify derivation relative to the stated theorem but not automatically that it is the intended scientific claim.",
+          "discriminating_observation": "Does the checked statement actually represent the claim being reported?"
+        },
+        {
+          "contrast": "Exact imitation versus mechanism reproduction",
+          "mechanism": "A high-resource experiment can teach a transferable mechanism through a smaller case whose success conditions and limits remain honest.",
+          "discriminating_observation": "What minimum implementation would discriminate the mechanism from an alternative explanation?"
+        }
       ]
     },
     {
@@ -153,6 +240,18 @@
         "FW-ALPOGE",
         "FW-METR",
         "FW-MOLLICK"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "Anecdote versus auditable action trace",
+          "mechanism": "An interview summary may be informative but does not reconstruct order, timing, failures, tool use or who made consequential interventions.",
+          "discriminating_observation": "Which behavior is directly observable in public artifacts, and which was inferred?"
+        },
+        {
+          "contrast": "Same model versus different collaboration structures",
+          "mechanism": "An identical model can serve as search assistant, author, evaluator user or delegating agent; the governing workflow changes what can be achieved.",
+          "discriminating_observation": "Which independently observable step differentiates the workflows?"
+        }
       ]
     },
     {
@@ -163,6 +262,23 @@
       "fieldwork_case_ids": [
         "FW-CARLINI",
         "FW-CLAX"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "Parallel capacity versus coordination cost",
+          "mechanism": "Independent agent work can explore more candidates but must pay for synchronization, merge conflicts, repeated debugging and shared-resource contention.",
+          "discriminating_observation": "Do additional agents increase accepted correct results per unit total compute and human time?"
+        },
+        {
+          "contrast": "Coupled causal debugging versus independent exploration",
+          "mechanism": "When changes affect one another and obscure the causal trace, a single hypothesis-driven sequence may outperform a broad parallel search.",
+          "discriminating_observation": "Which dependency prevents two tasks from being validated without each other's intermediate state?"
+        },
+        {
+          "contrast": "Success metric versus oracle gaming",
+          "mechanism": "An automated evaluator can enable iteration yet reward solutions that exploit its blind spots; cross-check with representative reality is needed.",
+          "discriminating_observation": "Which incorrect result would still pass the current evaluator?"
+        }
       ]
     },
     {
@@ -174,6 +290,18 @@
         "FW-SIMON",
         "FW-CLAX",
         "FW-CARLINI"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "Reading an impressive example versus acquiring competence",
+          "mechanism": "Useful resources should provide a recoverable implementation, specific tool, worked experiment or bounded case with known prerequisites.",
+          "discriminating_observation": "What unfamiliar task could the reader attempt after studying the source?"
+        },
+        {
+          "contrast": "Public artifact versus reproducible environment",
+          "mechanism": "Source code alone may omit credentials, compute, datasets, hardware, undocumented setup and obsolete dependencies.",
+          "discriminating_observation": "What is the cheapest defensible reproduction and which requirement remains irreducible?"
+        }
       ]
     }
   ],
@@ -412,5 +540,154 @@
     "what_changed": "First comparative investigation through documentary samples, not speculative ranking. Each case records observed workflow, competing mechanism hypotheses, remaining uncertainty and cheap reconstruction probes.",
     "relevance": "Cases inform multiple questions without turning the question tree into a celebrity list."
   },
-  "fieldwork_link_rule": "fieldwork_case_ids point to source-backed records in fieldwork_path; follow them for mechanism explanations, action traces, limitations and original sources. Case links are not completed proof certificates."
+  "fieldwork_link_rule": "fieldwork_case_ids point to source-backed records in fieldwork_path; follow them for mechanism explanations, action traces, limitations and original sources. Case links are not completed proof certificates.",
+  "landscape_views": [
+    {
+      "id": "daily-use",
+      "title": "What is actually useful or unreliable about everyday AI help?",
+      "short_label": "Everyday use",
+      "root_id": "HAI-I00",
+      "node_ids": [
+        "HAI-I00",
+        "HAI-I03",
+        "HAI-I04",
+        "HAI-I05",
+        "HAI-I10"
+      ],
+      "parent_overrides": {
+        "HAI-I03": "HAI-I00",
+        "HAI-I04": "HAI-I00",
+        "HAI-I05": "HAI-I00",
+        "HAI-I10": "HAI-I00"
+      },
+      "entry_ids": [
+        "HAI-CURI-confidence",
+        "HAI-CURI-failed-code",
+        "HAI-CURI-learn",
+        "HAI-CURI-beginner"
+      ],
+      "rationale": "Purpose-dependent subset of shared technical questions and independently recorded fieldwork; not a separately authored investigation."
+    },
+    {
+      "id": "durable-work",
+      "title": "How can AI collaborations build and maintain useful work?",
+      "short_label": "Durable projects",
+      "root_id": "HAI-I00",
+      "node_ids": [
+        "HAI-I00",
+        "HAI-I03",
+        "HAI-I04",
+        "HAI-I07",
+        "HAI-I10",
+        "HAI-I11",
+        "HAI-I12"
+      ],
+      "parent_overrides": {
+        "HAI-I03": "HAI-I00",
+        "HAI-I04": "HAI-I00",
+        "HAI-I07": "HAI-I00",
+        "HAI-I10": "HAI-I00",
+        "HAI-I11": "HAI-I00",
+        "HAI-I12": "HAI-I00"
+      },
+      "entry_ids": [
+        "HAI-CURI-maintain",
+        "HAI-CURI-handoff",
+        "HAI-CURI-failed-edits"
+      ],
+      "rationale": "Purpose-dependent subset of shared technical questions and independently recorded fieldwork; not a separately authored investigation."
+    },
+    {
+      "id": "agency-and-evaluation",
+      "title": "How should judgment, evaluators and multiple agents compose?",
+      "short_label": "Coordination",
+      "root_id": "HAI-I00",
+      "node_ids": [
+        "HAI-I00",
+        "HAI-I02",
+        "HAI-I03",
+        "HAI-I04",
+        "HAI-I07",
+        "HAI-I11"
+      ],
+      "parent_overrides": {
+        "HAI-I02": "HAI-I00",
+        "HAI-I03": "HAI-I00",
+        "HAI-I04": "HAI-I00",
+        "HAI-I07": "HAI-I00",
+        "HAI-I11": "HAI-I00"
+      },
+      "entry_ids": [
+        "HAI-CURI-approval",
+        "HAI-CURI-many-agents",
+        "HAI-CURI-new-tests"
+      ],
+      "rationale": "Purpose-dependent subset of shared technical questions and independently recorded fieldwork; not a separately authored investigation."
+    },
+    {
+      "id": "exceptional-workflows",
+      "title": "What mechanisms explain apparently extraordinary collaboration?",
+      "short_label": "Demystification",
+      "root_id": "HAI-I00",
+      "node_ids": [
+        "HAI-I00",
+        "HAI-I01",
+        "HAI-I02",
+        "HAI-I08",
+        "HAI-I09",
+        "HAI-I10",
+        "HAI-I11",
+        "HAI-I12"
+      ],
+      "parent_overrides": {
+        "HAI-I01": "HAI-I00",
+        "HAI-I02": "HAI-I00",
+        "HAI-I08": "HAI-I00",
+        "HAI-I09": "HAI-I00",
+        "HAI-I10": "HAI-I00",
+        "HAI-I11": "HAI-I00",
+        "HAI-I12": "HAI-I00"
+      },
+      "entry_ids": [
+        "HAI-CURI-human",
+        "HAI-CURI-legend",
+        "HAI-CURI-verify",
+        "HAI-CURI-cheaper"
+      ],
+      "rationale": "Purpose-dependent subset of shared technical questions and independently recorded fieldwork; not a separately authored investigation."
+    },
+    {
+      "id": "population-and-transfer",
+      "title": "How can we compare populations and build transferable competence?",
+      "short_label": "Transfer",
+      "root_id": "HAI-I00",
+      "node_ids": [
+        "HAI-I00",
+        "HAI-I03",
+        "HAI-I04",
+        "HAI-I05",
+        "HAI-I06",
+        "HAI-I08",
+        "HAI-I10"
+      ],
+      "parent_overrides": {
+        "HAI-I03": "HAI-I00",
+        "HAI-I04": "HAI-I00",
+        "HAI-I05": "HAI-I00",
+        "HAI-I06": "HAI-I00",
+        "HAI-I08": "HAI-I00",
+        "HAI-I10": "HAI-I00"
+      },
+      "entry_ids": [
+        "HAI-CURI-unequal",
+        "HAI-CURI-learn",
+        "HAI-CURI-speed"
+      ],
+      "rationale": "Purpose-dependent subset of shared technical questions and independently recorded fieldwork; not a separately authored investigation."
+    }
+  ],
+  "curiosity_atlas_path": "question_tree.json",
+  "navigation_bridge_path": "question_tree.json#navigation_bridges",
+  "canonical_case_path": "fieldwork.json",
+  "projection_contract": "A curiosity or question set activates the same technical questions with links to independently grounded fieldwork. Observed outcomes, mechanisms, uncertainties and speculation remain distinguishable."
 }
