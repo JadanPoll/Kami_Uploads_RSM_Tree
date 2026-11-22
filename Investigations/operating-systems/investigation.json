@@ -91,7 +91,14 @@
             "verification": "chapter/title and boundary checked against this PDF's contents"
           }
         ]
-      }
+      },
+      "term_ids": [
+        "os-t-0001",
+        "os-t-0002",
+        "os-t-0005",
+        "os-t-0007",
+        "os-t-0199"
+      ]
     },
     {
       "id": "OS-01",
@@ -141,6 +148,14 @@
           "mechanism": "A single program can run directly on hardware. Scheduling, isolation, durable naming and third-party application support become valuable when multiple independently failing activities must coexist.",
           "discriminating_observation": "Which requirements appear only when the second independent task or device is introduced?"
         }
+      ],
+      "term_ids": [
+        "os-t-0001",
+        "os-t-0002",
+        "os-t-0005",
+        "os-t-0042",
+        "os-t-0043",
+        "os-t-0039"
       ]
     },
     {
@@ -235,6 +250,16 @@
           "mechanism": "CPU use may reflect productive execution, busy waiting, lock contention or repeated retries.",
           "discriminating_observation": "Can the workload demonstrate completed work per second rather than only CPU occupancy?"
         }
+      ],
+      "term_ids": [
+        "os-t-0007",
+        "os-t-0008",
+        "os-t-0014",
+        "os-t-0013",
+        "os-t-0017",
+        "os-t-0022",
+        "os-t-0019",
+        "os-t-0199"
       ]
     },
     {
@@ -318,6 +343,16 @@
           "mechanism": "Read-only mappings, shared memory and copy-on-write change which writes are visible across processes; the correct mechanism depends on ownership and synchronization.",
           "discriminating_observation": "Which specific write should be observable by another process, and when?"
         }
+      ],
+      "term_ids": [
+        "os-t-0078",
+        "os-t-0012",
+        "os-t-0083",
+        "os-t-0086",
+        "os-t-0085",
+        "os-t-0089",
+        "os-t-0095",
+        "os-t-0199"
       ]
     },
     {
@@ -401,6 +436,19 @@
           "mechanism": "A lock protects shared-state invariants; message passing transfers responsibility through a protocol. Neither automatically guarantees liveness or correct ordering.",
           "discriminating_observation": "What ownership model eliminates the disputed shared mutation?"
         }
+      ],
+      "term_ids": [
+        "os-t-0046",
+        "os-t-0054",
+        "os-t-0050",
+        "os-t-0057",
+        "os-t-0058",
+        "os-t-0019",
+        "os-t-0060",
+        "os-t-0025",
+        "os-t-0026",
+        "os-t-0049",
+        "os-t-0199"
       ]
     },
     {
@@ -484,6 +532,16 @@
           "mechanism": "Restarting a service does not imply preserved work; useful recovery needs durable checkpoints, idempotent operations or reconstruction from a log.",
           "discriminating_observation": "After restart, which application-level invariant is still true?"
         }
+      ],
+      "term_ids": [
+        "os-t-0105",
+        "os-t-0119",
+        "os-t-0118",
+        "os-t-0114",
+        "os-t-0116",
+        "os-t-0113",
+        "os-t-0121",
+        "os-t-0199"
       ]
     },
     {
@@ -567,6 +625,14 @@
           "mechanism": "For controllers and robots, worst-case response time and safe fallback can matter more than aggregate operations per second.",
           "discriminating_observation": "Can the system guarantee its actuator remains safe when its scheduling deadline is missed?"
         }
+      ],
+      "term_ids": [
+        "os-t-0124",
+        "os-t-0028",
+        "os-t-0029",
+        "os-t-0077",
+        "os-t-0126",
+        "os-t-0128"
       ]
     },
     {
@@ -650,6 +716,14 @@
           "mechanism": "Preventing a component from corrupting peers is distinct from restoring correct application state and making future requests succeed.",
           "discriminating_observation": "Can the failed component be restarted without violating another component's invariants?"
         }
+      ],
+      "term_ids": [
+        "os-t-0142",
+        "os-t-0143",
+        "os-t-0144",
+        "os-t-0139",
+        "os-t-0140",
+        "os-t-0137"
       ]
     },
     {
@@ -733,6 +807,15 @@
           "mechanism": "Multiple devices can present one interface without sharing a synchronous view of storage, identity or time; partial failures cannot be treated as local function calls.",
           "discriminating_observation": "Which data must agree immediately, which can converge later, and what occurs during network partition?"
         }
+      ],
+      "term_ids": [
+        "os-t-0153",
+        "os-t-0156",
+        "os-t-0160",
+        "os-t-0162",
+        "os-t-0159",
+        "os-t-0167",
+        "os-t-0064"
       ]
     }
   ],
@@ -797,7 +880,25 @@
         "OS-CURI-robot",
         "OS-CURI-boot"
       ],
-      "rationale": "This is a reusable scope over the same canonical OS technical questions, not a separately authored tree."
+      "rationale": "This is a reusable scope over the same canonical OS technical questions, not a separately authored tree.",
+      "term_ids": [
+        "os-t-0199",
+        "os-t-0001",
+        "os-t-0002",
+        "os-t-0005",
+        "os-t-0042",
+        "os-t-0043",
+        "os-t-0039",
+        "os-t-0124",
+        "os-t-0028",
+        "os-t-0029",
+        "os-t-0077",
+        "os-t-0126",
+        "os-t-0128",
+        "os-t-0142",
+        "os-t-0143",
+        "os-t-0144"
+      ]
     },
     {
       "id": "programs-and-resources",
@@ -823,7 +924,25 @@
         "OS-CURI-same-address",
         "OS-CURI-permission"
       ],
-      "rationale": "This is a reusable scope over the same canonical OS technical questions, not a separately authored tree."
+      "rationale": "This is a reusable scope over the same canonical OS technical questions, not a separately authored tree.",
+      "term_ids": [
+        "os-t-0199",
+        "os-t-0007",
+        "os-t-0008",
+        "os-t-0014",
+        "os-t-0013",
+        "os-t-0017",
+        "os-t-0022",
+        "os-t-0019",
+        "os-t-0078",
+        "os-t-0012",
+        "os-t-0083",
+        "os-t-0086",
+        "os-t-0085",
+        "os-t-0089",
+        "os-t-0095",
+        "os-t-0046"
+      ]
     },
     {
       "id": "failures-and-recovery",
@@ -853,7 +972,25 @@
         "OS-CURI-remote",
         "OS-CURI-restart"
       ],
-      "rationale": "This is a reusable scope over the same canonical OS technical questions, not a separately authored tree."
+      "rationale": "This is a reusable scope over the same canonical OS technical questions, not a separately authored tree.",
+      "term_ids": [
+        "os-t-0199",
+        "os-t-0007",
+        "os-t-0008",
+        "os-t-0014",
+        "os-t-0013",
+        "os-t-0017",
+        "os-t-0022",
+        "os-t-0019",
+        "os-t-0046",
+        "os-t-0054",
+        "os-t-0050",
+        "os-t-0057",
+        "os-t-0058",
+        "os-t-0060",
+        "os-t-0025",
+        "os-t-0026"
+      ]
     },
     {
       "id": "connected-computers",
@@ -878,7 +1015,25 @@
         "OS-CURI-distributed",
         "OS-CURI-restart"
       ],
-      "rationale": "This is a reusable scope over the same canonical OS technical questions, not a separately authored tree."
+      "rationale": "This is a reusable scope over the same canonical OS technical questions, not a separately authored tree.",
+      "term_ids": [
+        "os-t-0007",
+        "os-t-0008",
+        "os-t-0014",
+        "os-t-0013",
+        "os-t-0017",
+        "os-t-0022",
+        "os-t-0019",
+        "os-t-0199",
+        "os-t-0105",
+        "os-t-0119",
+        "os-t-0118",
+        "os-t-0114",
+        "os-t-0116",
+        "os-t-0113",
+        "os-t-0121",
+        "os-t-0142"
+      ]
     }
   ],
   "kind": "canonical_research_corpus",
@@ -927,6 +1082,24 @@
         "related_question_ids": [
           "OS-Q17",
           "OS-Q06a"
+        ],
+        "term_ids": [
+          "os-t-0007",
+          "os-t-0010",
+          "os-t-0025",
+          "os-t-0026",
+          "os-t-0002",
+          "os-t-0009",
+          "os-t-0018",
+          "os-t-0199",
+          "os-t-0008",
+          "os-t-0014",
+          "os-t-0013",
+          "os-t-0017",
+          "os-t-0022",
+          "os-t-0028",
+          "os-t-0082",
+          "os-t-0078"
         ]
       },
       {
@@ -944,6 +1117,24 @@
         ],
         "related_question_ids": [
           "OS-Q17"
+        ],
+        "term_ids": [
+          "os-t-0022",
+          "os-t-0026",
+          "os-t-0002",
+          "os-t-0009",
+          "os-t-0010",
+          "os-t-0018",
+          "os-t-0199",
+          "os-t-0007",
+          "os-t-0008",
+          "os-t-0014",
+          "os-t-0013",
+          "os-t-0017",
+          "os-t-0028",
+          "os-t-0082",
+          "os-t-0078",
+          "os-t-0115"
         ]
       },
       {
@@ -963,6 +1154,24 @@
         "related_question_ids": [
           "OS-Q18",
           "OS-Q07"
+        ],
+        "term_ids": [
+          "os-t-0007",
+          "os-t-0012",
+          "os-t-0090",
+          "os-t-0093",
+          "os-t-0080",
+          "os-t-0082",
+          "os-t-0078",
+          "os-t-0083",
+          "os-t-0086",
+          "os-t-0085",
+          "os-t-0089",
+          "os-t-0095",
+          "os-t-0199",
+          "os-t-0092",
+          "os-t-0008",
+          "os-t-0026"
         ]
       },
       {
@@ -979,6 +1188,21 @@
         ],
         "related_question_ids": [
           "OS-Q07a"
+        ],
+        "term_ids": [
+          "os-t-0007",
+          "os-t-0078",
+          "os-t-0199",
+          "os-t-0012",
+          "os-t-0080",
+          "os-t-0082",
+          "os-t-0083",
+          "os-t-0086",
+          "os-t-0085",
+          "os-t-0089",
+          "os-t-0095",
+          "os-t-0092",
+          "os-t-0008"
         ]
       },
       {
@@ -997,6 +1221,24 @@
         "related_question_ids": [
           "OS-Q21",
           "OS-Q10"
+        ],
+        "term_ids": [
+          "os-t-0140",
+          "os-t-0143",
+          "os-t-0199",
+          "os-t-0007",
+          "os-t-0082",
+          "os-t-0124",
+          "os-t-0232",
+          "os-t-0078",
+          "os-t-0012",
+          "os-t-0083",
+          "os-t-0086",
+          "os-t-0085",
+          "os-t-0089",
+          "os-t-0139",
+          "os-t-0141",
+          "os-t-0142"
         ]
       },
       {
@@ -1016,6 +1258,24 @@
         "related_question_ids": [
           "OS-Q08",
           "OS-Q08a"
+        ],
+        "term_ids": [
+          "os-t-0028",
+          "os-t-0131",
+          "os-t-0232",
+          "os-t-0026",
+          "os-t-0002",
+          "os-t-0009",
+          "os-t-0010",
+          "os-t-0018",
+          "os-t-0199",
+          "os-t-0007",
+          "os-t-0008",
+          "os-t-0014",
+          "os-t-0013",
+          "os-t-0017",
+          "os-t-0022",
+          "os-t-0082"
         ]
       },
       {
@@ -1033,6 +1293,20 @@
         ],
         "related_question_ids": [
           "OS-Q09a"
+        ],
+        "term_ids": [
+          "os-t-0101",
+          "os-t-0118",
+          "os-t-0119",
+          "os-t-0199",
+          "os-t-0277",
+          "os-t-0105",
+          "os-t-0114",
+          "os-t-0116",
+          "os-t-0113",
+          "os-t-0121",
+          "os-t-0142",
+          "os-t-0143"
         ]
       },
       {
@@ -1052,6 +1326,24 @@
         "related_question_ids": [
           "OS-Q20",
           "OS-Q12"
+        ],
+        "term_ids": [
+          "os-t-0026",
+          "os-t-0114",
+          "os-t-0101",
+          "os-t-0105",
+          "os-t-0119",
+          "os-t-0118",
+          "os-t-0116",
+          "os-t-0113",
+          "os-t-0121",
+          "os-t-0199",
+          "os-t-0277",
+          "os-t-0142",
+          "os-t-0143",
+          "os-t-0007",
+          "os-t-0157",
+          "os-t-0174"
         ]
       },
       {
@@ -1070,6 +1362,24 @@
         ],
         "related_question_ids": [
           "OS-Q16"
+        ],
+        "term_ids": [
+          "os-t-0007",
+          "os-t-0154",
+          "os-t-0199",
+          "os-t-0157",
+          "os-t-0174",
+          "os-t-0008",
+          "os-t-0014",
+          "os-t-0013",
+          "os-t-0017",
+          "os-t-0022",
+          "os-t-0019",
+          "os-t-0153",
+          "os-t-0105",
+          "os-t-0119",
+          "os-t-0118",
+          "os-t-0141"
         ]
       },
       {
@@ -1089,6 +1399,24 @@
         "related_question_ids": [
           "OS-Q16",
           "OS-Q09"
+        ],
+        "term_ids": [
+          "os-t-0007",
+          "os-t-0157",
+          "os-t-0214",
+          "os-t-0174",
+          "os-t-0008",
+          "os-t-0014",
+          "os-t-0013",
+          "os-t-0017",
+          "os-t-0022",
+          "os-t-0019",
+          "os-t-0199",
+          "os-t-0153",
+          "os-t-0105",
+          "os-t-0119",
+          "os-t-0118",
+          "os-t-0101"
         ]
       },
       {
@@ -1108,6 +1436,24 @@
         "related_question_ids": [
           "OS-Q04",
           "OS-Q04a"
+        ],
+        "term_ids": [
+          "os-t-0037",
+          "os-t-0039",
+          "os-t-0040",
+          "os-t-0002",
+          "os-t-0199",
+          "os-t-0001",
+          "os-t-0005",
+          "os-t-0042",
+          "os-t-0043",
+          "os-t-0142",
+          "os-t-0143",
+          "os-t-0144",
+          "os-t-0139",
+          "os-t-0024",
+          "os-t-0007",
+          "os-t-0008"
         ]
       },
       {
@@ -1126,6 +1472,23 @@
         "related_question_ids": [
           "OS-Q19",
           "OS-Q13c"
+        ],
+        "term_ids": [
+          "os-t-0002",
+          "os-t-0199",
+          "os-t-0001",
+          "os-t-0005",
+          "os-t-0042",
+          "os-t-0043",
+          "os-t-0039",
+          "os-t-0142",
+          "os-t-0143",
+          "os-t-0144",
+          "os-t-0139",
+          "os-t-0024",
+          "os-t-0007",
+          "os-t-0008",
+          "os-t-0014"
         ]
       },
       {
@@ -1145,6 +1508,24 @@
         "related_question_ids": [
           "OS-Q02",
           "OS-Q15"
+        ],
+        "term_ids": [
+          "os-t-0001",
+          "os-t-0002",
+          "os-t-0037",
+          "os-t-0199",
+          "os-t-0005",
+          "os-t-0042",
+          "os-t-0043",
+          "os-t-0039",
+          "os-t-0142",
+          "os-t-0143",
+          "os-t-0144",
+          "os-t-0139",
+          "os-t-0024",
+          "os-t-0007",
+          "os-t-0008",
+          "os-t-0014"
         ]
       },
       {
@@ -1163,6 +1544,24 @@
         "related_question_ids": [
           "OS-Q11a",
           "OS-Q14b"
+        ],
+        "term_ids": [
+          "os-t-0001",
+          "os-t-0141",
+          "os-t-0199",
+          "os-t-0155",
+          "os-t-0153",
+          "os-t-0156",
+          "os-t-0160",
+          "os-t-0162",
+          "os-t-0159",
+          "os-t-0167",
+          "os-t-0064",
+          "os-t-0007",
+          "os-t-0008",
+          "os-t-0170",
+          "os-t-0046",
+          "os-t-0054"
         ]
       },
       {
@@ -1182,6 +1581,24 @@
         "related_question_ids": [
           "OS-Q14a",
           "OS-Q12"
+        ],
+        "term_ids": [
+          "os-t-0023",
+          "os-t-0045",
+          "os-t-0199",
+          "os-t-0215",
+          "os-t-0026",
+          "os-t-0002",
+          "os-t-0009",
+          "os-t-0010",
+          "os-t-0018",
+          "os-t-0007",
+          "os-t-0008",
+          "os-t-0014",
+          "os-t-0013",
+          "os-t-0017",
+          "os-t-0022",
+          "os-t-0028"
         ]
       }
     ]
@@ -1203,6 +1620,19 @@
           "candidate_source_ids": [
             "OSTEP",
             "LKD"
+          ],
+          "term_ids": [
+            "os-t-0002",
+            "os-t-0009",
+            "os-t-0010",
+            "os-t-0018",
+            "os-t-0199",
+            "os-t-0007",
+            "os-t-0008",
+            "os-t-0014",
+            "os-t-0013",
+            "os-t-0017",
+            "os-t-0022"
           ]
         },
         {
@@ -1217,8 +1647,38 @@
           "candidate_source_ids": [
             "OSTEP",
             "LKD"
+          ],
+          "term_ids": [
+            "os-t-0028",
+            "os-t-0082",
+            "os-t-0078",
+            "os-t-0012",
+            "os-t-0083",
+            "os-t-0086",
+            "os-t-0085",
+            "os-t-0089",
+            "os-t-0095",
+            "os-t-0199",
+            "os-t-0124"
           ]
         }
+      ],
+      "term_ids": [
+        "os-t-0026",
+        "os-t-0002",
+        "os-t-0009",
+        "os-t-0010",
+        "os-t-0018",
+        "os-t-0199",
+        "os-t-0007",
+        "os-t-0008",
+        "os-t-0014",
+        "os-t-0013",
+        "os-t-0017",
+        "os-t-0022",
+        "os-t-0028",
+        "os-t-0082",
+        "os-t-0078"
       ]
     },
     {
@@ -1236,6 +1696,19 @@
           ],
           "candidate_source_ids": [
             "OSTEP"
+          ],
+          "term_ids": [
+            "os-t-0007",
+            "os-t-0080",
+            "os-t-0082",
+            "os-t-0078",
+            "os-t-0012",
+            "os-t-0083",
+            "os-t-0086",
+            "os-t-0085",
+            "os-t-0089",
+            "os-t-0095",
+            "os-t-0199"
           ]
         },
         {
@@ -1250,8 +1723,36 @@
           "candidate_source_ids": [
             "OSTEP",
             "LKD"
+          ],
+          "term_ids": [
+            "os-t-0007",
+            "os-t-0092",
+            "os-t-0078",
+            "os-t-0012",
+            "os-t-0083",
+            "os-t-0086",
+            "os-t-0085",
+            "os-t-0089",
+            "os-t-0095",
+            "os-t-0199",
+            "os-t-0008"
           ]
         }
+      ],
+      "term_ids": [
+        "os-t-0012",
+        "os-t-0007",
+        "os-t-0080",
+        "os-t-0082",
+        "os-t-0078",
+        "os-t-0083",
+        "os-t-0086",
+        "os-t-0085",
+        "os-t-0089",
+        "os-t-0095",
+        "os-t-0199",
+        "os-t-0092",
+        "os-t-0008"
       ]
     },
     {
@@ -1269,6 +1770,17 @@
           "candidate_source_ids": [
             "OSTEP",
             "TLPI"
+          ],
+          "term_ids": [
+            "os-t-0101",
+            "os-t-0105",
+            "os-t-0119",
+            "os-t-0118",
+            "os-t-0114",
+            "os-t-0116",
+            "os-t-0113",
+            "os-t-0121",
+            "os-t-0199"
           ]
         },
         {
@@ -1283,8 +1795,35 @@
           "candidate_source_ids": [
             "OSTEP",
             "LKD"
+          ],
+          "term_ids": [
+            "os-t-0114",
+            "os-t-0277",
+            "os-t-0105",
+            "os-t-0119",
+            "os-t-0118",
+            "os-t-0116",
+            "os-t-0113",
+            "os-t-0121",
+            "os-t-0199",
+            "os-t-0142",
+            "os-t-0143"
           ]
         }
+      ],
+      "term_ids": [
+        "os-t-0101",
+        "os-t-0105",
+        "os-t-0119",
+        "os-t-0118",
+        "os-t-0114",
+        "os-t-0116",
+        "os-t-0113",
+        "os-t-0121",
+        "os-t-0199",
+        "os-t-0277",
+        "os-t-0142",
+        "os-t-0143"
       ]
     },
     {
@@ -1303,6 +1842,19 @@
           "candidate_source_ids": [
             "TLPI",
             "OSTEP"
+          ],
+          "term_ids": [
+            "os-t-0007",
+            "os-t-0157",
+            "os-t-0174",
+            "os-t-0008",
+            "os-t-0014",
+            "os-t-0013",
+            "os-t-0017",
+            "os-t-0022",
+            "os-t-0019",
+            "os-t-0199",
+            "os-t-0153"
           ]
         },
         {
@@ -1318,8 +1870,37 @@
           "candidate_source_ids": [
             "TLPI",
             "OSTEP"
+          ],
+          "term_ids": [
+            "os-t-0007",
+            "os-t-0008",
+            "os-t-0014",
+            "os-t-0013",
+            "os-t-0017",
+            "os-t-0022",
+            "os-t-0019",
+            "os-t-0199",
+            "os-t-0105",
+            "os-t-0119",
+            "os-t-0118"
           ]
         }
+      ],
+      "term_ids": [
+        "os-t-0007",
+        "os-t-0157",
+        "os-t-0174",
+        "os-t-0008",
+        "os-t-0014",
+        "os-t-0013",
+        "os-t-0017",
+        "os-t-0022",
+        "os-t-0019",
+        "os-t-0199",
+        "os-t-0153",
+        "os-t-0105",
+        "os-t-0119",
+        "os-t-0118"
       ]
     },
     {
@@ -1340,6 +1921,19 @@
             "OSTEP",
             "TLPI",
             "LKD"
+          ],
+          "term_ids": [
+            "os-t-0007",
+            "os-t-0082",
+            "os-t-0124",
+            "os-t-0143",
+            "os-t-0232",
+            "os-t-0078",
+            "os-t-0012",
+            "os-t-0083",
+            "os-t-0086",
+            "os-t-0085",
+            "os-t-0089"
           ]
         },
         {
@@ -1353,8 +1947,38 @@
           ],
           "candidate_source_ids": [
             "TLPI"
+          ],
+          "term_ids": [
+            "os-t-0139",
+            "os-t-0141",
+            "os-t-0142",
+            "os-t-0143",
+            "os-t-0144",
+            "os-t-0140",
+            "os-t-0137",
+            "os-t-0153",
+            "os-t-0156",
+            "os-t-0160",
+            "os-t-0162"
           ]
         }
+      ],
+      "term_ids": [
+        "os-t-0007",
+        "os-t-0082",
+        "os-t-0124",
+        "os-t-0143",
+        "os-t-0232",
+        "os-t-0078",
+        "os-t-0012",
+        "os-t-0083",
+        "os-t-0086",
+        "os-t-0085",
+        "os-t-0089",
+        "os-t-0139",
+        "os-t-0141",
+        "os-t-0142",
+        "os-t-0144"
       ]
     },
     {
@@ -1374,6 +1998,19 @@
           "candidate_source_ids": [
             "OSTEP",
             "TLPI"
+          ],
+          "term_ids": [
+            "os-t-0002",
+            "os-t-0199",
+            "os-t-0001",
+            "os-t-0005",
+            "os-t-0042",
+            "os-t-0043",
+            "os-t-0039",
+            "os-t-0142",
+            "os-t-0143",
+            "os-t-0144",
+            "os-t-0139"
           ]
         },
         {
@@ -1391,8 +2028,38 @@
             "MES",
             "COD-RV",
             "COD-ARM"
+          ],
+          "term_ids": [
+            "os-t-0024",
+            "os-t-0001",
+            "os-t-0002",
+            "os-t-0005",
+            "os-t-0042",
+            "os-t-0043",
+            "os-t-0039",
+            "os-t-0007",
+            "os-t-0008",
+            "os-t-0014",
+            "os-t-0013"
           ]
         }
+      ],
+      "term_ids": [
+        "os-t-0002",
+        "os-t-0199",
+        "os-t-0001",
+        "os-t-0005",
+        "os-t-0042",
+        "os-t-0043",
+        "os-t-0039",
+        "os-t-0142",
+        "os-t-0143",
+        "os-t-0144",
+        "os-t-0139",
+        "os-t-0024",
+        "os-t-0007",
+        "os-t-0008",
+        "os-t-0014"
       ]
     },
     {
@@ -1411,6 +2078,19 @@
           "candidate_source_ids": [
             "OSTEP",
             "LKD"
+          ],
+          "term_ids": [
+            "os-t-0115",
+            "os-t-0046",
+            "os-t-0054",
+            "os-t-0050",
+            "os-t-0057",
+            "os-t-0058",
+            "os-t-0019",
+            "os-t-0060",
+            "os-t-0025",
+            "os-t-0026",
+            "os-t-0049"
           ]
         },
         {
@@ -1425,8 +2105,36 @@
           "candidate_source_ids": [
             "OSTEP",
             "LKD"
+          ],
+          "term_ids": [
+            "os-t-0018",
+            "os-t-0057",
+            "os-t-0058",
+            "os-t-0182",
+            "os-t-0046",
+            "os-t-0054",
+            "os-t-0050",
+            "os-t-0019",
+            "os-t-0060",
+            "os-t-0025",
+            "os-t-0026"
           ]
         }
+      ],
+      "term_ids": [
+        "os-t-0115",
+        "os-t-0046",
+        "os-t-0054",
+        "os-t-0050",
+        "os-t-0057",
+        "os-t-0058",
+        "os-t-0019",
+        "os-t-0060",
+        "os-t-0025",
+        "os-t-0026",
+        "os-t-0049",
+        "os-t-0018",
+        "os-t-0182"
       ]
     },
     {
@@ -1446,6 +2154,19 @@
           "candidate_source_ids": [
             "TLPI",
             "OSTEP"
+          ],
+          "term_ids": [
+            "os-t-0141",
+            "os-t-0155",
+            "os-t-0153",
+            "os-t-0156",
+            "os-t-0160",
+            "os-t-0162",
+            "os-t-0159",
+            "os-t-0167",
+            "os-t-0064",
+            "os-t-0007",
+            "os-t-0008"
           ]
         },
         {
@@ -1461,8 +2182,38 @@
           "candidate_source_ids": [
             "OSTEP",
             "TLPI"
+          ],
+          "term_ids": [
+            "os-t-0160",
+            "os-t-0170",
+            "os-t-0153",
+            "os-t-0156",
+            "os-t-0162",
+            "os-t-0159",
+            "os-t-0167",
+            "os-t-0064",
+            "os-t-0046",
+            "os-t-0054",
+            "os-t-0050"
           ]
         }
+      ],
+      "term_ids": [
+        "os-t-0141",
+        "os-t-0155",
+        "os-t-0153",
+        "os-t-0156",
+        "os-t-0160",
+        "os-t-0162",
+        "os-t-0159",
+        "os-t-0167",
+        "os-t-0064",
+        "os-t-0007",
+        "os-t-0008",
+        "os-t-0170",
+        "os-t-0046",
+        "os-t-0054",
+        "os-t-0050"
       ]
     }
   ],
@@ -1475,7 +2226,8 @@
       "status": "candidate",
       "candidate_references": [],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "term_ids": []
     },
     {
       "id": "OS-Q01",
@@ -1508,7 +2260,10 @@
         }
       ],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "term_ids": [
+        "os-t-0002"
+      ]
     },
     {
       "id": "OS-Q02",
@@ -1541,7 +2296,10 @@
         }
       ],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "term_ids": [
+        "os-t-0199"
+      ]
     },
     {
       "id": "OS-Q03",
@@ -1563,7 +2321,10 @@
         }
       ],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "term_ids": [
+        "os-t-0010"
+      ]
     },
     {
       "id": "OS-Q04",
@@ -1618,7 +2379,10 @@
         }
       ],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "term_ids": [
+        "os-t-0010"
+      ]
     },
     {
       "id": "OS-Q05",
@@ -1684,7 +2448,10 @@
         }
       ],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "term_ids": [
+        "os-t-0010"
+      ]
     },
     {
       "id": "OS-Q06",
@@ -1750,7 +2517,10 @@
         }
       ],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "term_ids": [
+        "os-t-0199"
+      ]
     },
     {
       "id": "OS-Q07",
@@ -1805,7 +2575,11 @@
         }
       ],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "term_ids": [
+        "os-t-0010",
+        "os-t-0199"
+      ]
     },
     {
       "id": "OS-Q08",
@@ -1860,7 +2634,10 @@
         }
       ],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "term_ids": [
+        "os-t-0232"
+      ]
     },
     {
       "id": "OS-Q09",
@@ -1915,7 +2692,8 @@
         }
       ],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "term_ids": []
     },
     {
       "id": "OS-Q10",
@@ -1970,7 +2748,11 @@
         }
       ],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "term_ids": [
+        "os-t-0010",
+        "os-t-0199"
+      ]
     },
     {
       "id": "OS-Q11",
@@ -2025,7 +2807,10 @@
         }
       ],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "term_ids": [
+        "os-t-0010"
+      ]
     },
     {
       "id": "OS-Q12",
@@ -2058,7 +2843,10 @@
         }
       ],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "term_ids": [
+        "os-t-0199"
+      ]
     },
     {
       "id": "OS-Q01a",
@@ -2091,7 +2879,11 @@
         }
       ],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "term_ids": [
+        "os-t-0010",
+        "os-t-0199"
+      ]
     },
     {
       "id": "OS-Q01b",
@@ -2146,7 +2938,10 @@
         }
       ],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "term_ids": [
+        "os-t-0010"
+      ]
     },
     {
       "id": "OS-Q02a",
@@ -2179,7 +2974,11 @@
         }
       ],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "term_ids": [
+        "os-t-0002",
+        "os-t-0037"
+      ]
     },
     {
       "id": "OS-Q03a",
@@ -2201,7 +3000,10 @@
         }
       ],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "term_ids": [
+        "os-t-0010"
+      ]
     },
     {
       "id": "OS-Q04a",
@@ -2256,7 +3058,10 @@
         }
       ],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "term_ids": [
+        "os-t-0039"
+      ]
     },
     {
       "id": "OS-Q05a",
@@ -2311,7 +3116,10 @@
         }
       ],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "term_ids": [
+        "os-t-0010"
+      ]
     },
     {
       "id": "OS-Q06a",
@@ -2377,7 +3185,10 @@
         }
       ],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "term_ids": [
+        "os-t-0010"
+      ]
     },
     {
       "id": "OS-Q06b",
@@ -2432,7 +3243,11 @@
         }
       ],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "term_ids": [
+        "os-t-0199",
+        "os-t-0277"
+      ]
     },
     {
       "id": "OS-Q07a",
@@ -2487,7 +3302,10 @@
         }
       ],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "term_ids": [
+        "os-t-0199"
+      ]
     },
     {
       "id": "OS-Q08a",
@@ -2542,7 +3360,10 @@
         }
       ],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "term_ids": [
+        "os-t-0199"
+      ]
     },
     {
       "id": "OS-Q09a",
@@ -2597,7 +3418,8 @@
         }
       ],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "term_ids": []
     },
     {
       "id": "OS-Q10a",
@@ -2652,7 +3474,10 @@
         }
       ],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "term_ids": [
+        "os-t-0002"
+      ]
     },
     {
       "id": "OS-Q11a",
@@ -2707,7 +3532,10 @@
         }
       ],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "term_ids": [
+        "os-t-0199"
+      ]
     },
     {
       "id": "OS-Q12a",
@@ -2740,7 +3568,8 @@
         }
       ],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "term_ids": []
     },
     {
       "id": "OS-Q13",
@@ -2773,7 +3602,10 @@
         }
       ],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "term_ids": [
+        "os-t-0199"
+      ]
     },
     {
       "id": "OS-Q13a",
@@ -2806,7 +3638,8 @@
         }
       ],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "term_ids": []
     },
     {
       "id": "OS-Q13b",
@@ -2828,7 +3661,10 @@
         }
       ],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "term_ids": [
+        "os-t-0199"
+      ]
     },
     {
       "id": "OS-Q13c",
@@ -2883,7 +3719,10 @@
         }
       ],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "term_ids": [
+        "os-t-0002"
+      ]
     },
     {
       "id": "OS-Q14",
@@ -2916,7 +3755,10 @@
         }
       ],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "term_ids": [
+        "os-t-0010"
+      ]
     },
     {
       "id": "OS-Q14a",
@@ -2971,7 +3813,8 @@
         }
       ],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "term_ids": []
     },
     {
       "id": "OS-Q14b",
@@ -3026,7 +3869,8 @@
         }
       ],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "term_ids": []
     },
     {
       "id": "OS-Q15",
@@ -3059,7 +3903,11 @@
         }
       ],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "term_ids": [
+        "os-t-0002",
+        "os-t-0037"
+      ]
     },
     {
       "id": "OS-Q15a",
@@ -3092,7 +3940,8 @@
         }
       ],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "term_ids": []
     },
     {
       "id": "OS-Q15b",
@@ -3125,7 +3974,8 @@
         }
       ],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "term_ids": []
     },
     {
       "id": "OS-Q16",
@@ -3146,7 +3996,11 @@
         "OS-08"
       ],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "term_ids": [
+        "os-t-0007",
+        "os-t-0157"
+      ]
     },
     {
       "id": "OS-Q17",
@@ -3168,7 +4022,13 @@
         "OS-06"
       ],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "term_ids": [
+        "os-t-0009",
+        "os-t-0026",
+        "os-t-0028",
+        "os-t-0199"
+      ]
     },
     {
       "id": "OS-Q18",
@@ -3187,7 +4047,12 @@
         "OS-07"
       ],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "term_ids": [
+        "os-t-0010",
+        "os-t-0093",
+        "os-t-0199"
+      ]
     },
     {
       "id": "OS-Q19",
@@ -3208,7 +4073,11 @@
         "OS-08"
       ],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "term_ids": [
+        "os-t-0002",
+        "os-t-0199"
+      ]
     },
     {
       "id": "OS-Q20",
@@ -3229,7 +4098,11 @@
         "OS-08"
       ],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "term_ids": [
+        "os-t-0147",
+        "os-t-0199"
+      ]
     },
     {
       "id": "OS-Q21",
@@ -3250,7 +4123,12 @@
         "OS-08"
       ],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "term_ids": [
+        "os-t-0007",
+        "os-t-0140",
+        "os-t-0199"
+      ]
     }
   ],
   "question_connections": [
@@ -9574,5 +10452,7 @@
         "OS-08"
       ]
     }
-  ]
+  ],
+  "glossary_path": "glossary.json",
+  "glossary_schema": "1.0"
 }
