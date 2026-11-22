@@ -519,33 +519,15 @@
       "id": "mfg-t-0071",
       "label": "fused filament fabrication",
       "aliases": [
-        "fused deposition modeling"
+        "fused deposition modeling",
+        "FFM",
+        "FFF",
+        "FDM"
       ],
       "category": "Manufacturing processes",
       "related_ids": [
         "mfg-t-0114"
       ]
-    },
-    {
-      "id": "mfg-t-0072",
-      "label": "FFM",
-      "aliases": [],
-      "category": "Manufacturing processes",
-      "related_ids": []
-    },
-    {
-      "id": "mfg-t-0073",
-      "label": "FFF",
-      "aliases": [],
-      "category": "Manufacturing processes",
-      "related_ids": []
-    },
-    {
-      "id": "mfg-t-0074",
-      "label": "FDM",
-      "aliases": [],
-      "category": "Manufacturing processes",
-      "related_ids": []
     },
     {
       "id": "mfg-t-0075",
@@ -747,28 +729,18 @@
     {
       "id": "mfg-t-0102",
       "label": "stereolithography",
-      "aliases": [],
+      "aliases": [
+        "SLA"
+      ],
       "category": "Manufacturing processes",
       "related_ids": []
     },
     {
       "id": "mfg-t-0103",
       "label": "selective laser sintering",
-      "aliases": [],
-      "category": "Manufacturing processes",
-      "related_ids": []
-    },
-    {
-      "id": "mfg-t-0104",
-      "label": "SLA",
-      "aliases": [],
-      "category": "Manufacturing processes",
-      "related_ids": []
-    },
-    {
-      "id": "mfg-t-0105",
-      "label": "SLS",
-      "aliases": [],
+      "aliases": [
+        "SLS"
+      ],
       "category": "Manufacturing processes",
       "related_ids": []
     },
@@ -942,15 +914,9 @@
       "id": "mfg-t-0129",
       "label": "geometric dimensioning and tolerancing",
       "aliases": [
-        "GD and T"
+        "GD and T",
+        "GD&T"
       ],
-      "category": "Print design and assembly",
-      "related_ids": []
-    },
-    {
-      "id": "mfg-t-0130",
-      "label": "GD&T",
-      "aliases": [],
       "category": "Print design and assembly",
       "related_ids": []
     },
@@ -1006,16 +972,11 @@
       "related_ids": []
     },
     {
-      "id": "mfg-t-0138",
-      "label": "CAD",
-      "aliases": [],
-      "category": "Print design and assembly",
-      "related_ids": []
-    },
-    {
       "id": "mfg-t-0139",
       "label": "computer-aided design",
-      "aliases": [],
+      "aliases": [
+        "CAD"
+      ],
       "category": "Print design and assembly",
       "related_ids": []
     },
@@ -2275,5 +2236,14 @@
       "category": "FKEN vocabulary",
       "related_ids": []
     }
-  ]
+  ],
+  "redirects": {
+    "mfg-t-0072": "mfg-t-0071",
+    "mfg-t-0073": "mfg-t-0071",
+    "mfg-t-0074": "mfg-t-0071",
+    "mfg-t-0138": "mfg-t-0139",
+    "mfg-t-0130": "mfg-t-0129",
+    "mfg-t-0104": "mfg-t-0102",
+    "mfg-t-0105": "mfg-t-0103"
+  }
 }
