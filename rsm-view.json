@@ -56,6 +56,17 @@
       "projection": {
         "shape": "curiosities"
       }
+    },
+    {
+      "id": "electronics-curiosities",
+      "title": "Electronics engineering — Explore circuits, power and signal integrity",
+      "short_title": "Electronics engineering",
+      "shared_reader_id": "electronics-engineering",
+      "file": "Investigations/electronics-engineering/investigation.json",
+      "glossary_file": "Investigations/electronics-engineering/glossary.json",
+      "projection": {
+        "shape": "curiosities"
+      }
     }
   ]
 }
