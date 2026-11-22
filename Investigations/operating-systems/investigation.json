@@ -768,10 +768,7 @@
     }
   ],
   "notes": [
-    "OSTEP and TLPI are the primary conceptual/interface sources; LKD is a 2010 snapshot, not a current-Linux implementation oracle.",
-    "Do not force a fixed reading order: select nodes by the next consequential question and use their cited ranges.",
-    "The canonical proposed questions and candidate source ranges are now in question_tree.json. The existing nodes in this file are an earlier mixed representation retained for backward compatibility, NOT completed investigations.",
-    "For new investigation work, create a separate actual investigation record only after beginning evidence examination and model/hypothesis work. Candidate references attached to questions are not established certificates."
+    "OSTEP and TLPI are the primary conceptual/interface sources; LKD is a 2010 snapshot, not a current-Linux implementation oracle."
   ],
   "updated": "2026-11-21",
   "landscape_views": [
@@ -883,7 +880,6 @@
       "rationale": "This is a reusable scope over the same canonical OS technical questions, not a separately authored tree."
     }
   ],
-  "projection_contract": "Select an individual curiosity or a named question set; follow its conditional technical targets into the same investigation nodes. Evidence certificates remain pending until observed or source-verified.",
   "kind": "canonical_research_corpus",
   "original_curiosity": "I want to build an OS!",
   "parent_purpose_questions": [
@@ -1187,15 +1183,12 @@
           "OS-Q12"
         ]
       }
-    ],
-    "technical_corpus": "investigation.json",
-    "entry_policy": "Entry formulations are discovery surfaces; bridge choices explain consequential differences. They are not separate copies of technical investigations."
+    ]
   },
   "navigation_bridges": [
     {
       "id": "OS-BRG-runtime",
       "question": "Which part of the system is still making progress?",
-      "target_path": "investigation.json",
       "choices": [
         {
           "label": "A program is blocked, spinning, or starved",
@@ -1230,7 +1223,6 @@
     {
       "id": "OS-BRG-memory",
       "question": "Which resource or address-space contract failed?",
-      "target_path": "investigation.json",
       "choices": [
         {
           "label": "Addresses appear identical across processes",
@@ -1264,7 +1256,6 @@
     {
       "id": "OS-BRG-durability",
       "question": "What exactly was made durable?",
-      "target_path": "investigation.json",
       "choices": [
         {
           "label": "A write returned but the machine lost power",
@@ -1298,7 +1289,6 @@
     {
       "id": "OS-BRG-lifetime",
       "question": "What survived the event?",
-      "target_path": "investigation.json",
       "choices": [
         {
           "label": "Closing a window or disconnecting a client",
@@ -1334,7 +1324,6 @@
     {
       "id": "OS-BRG-boundary",
       "question": "Where is the actual trust or ownership boundary?",
-      "target_path": "investigation.json",
       "choices": [
         {
           "label": "An app cannot access memory or a device",
@@ -1370,7 +1359,6 @@
     {
       "id": "OS-BRG-platform",
       "question": "Which computing experience do I actually need to own?",
-      "target_path": "investigation.json",
       "choices": [
         {
           "label": "I want a new interface or application environment",
@@ -1409,7 +1397,6 @@
     {
       "id": "OS-BRG-coordination",
       "question": "What actually prevents concurrent work from finishing?",
-      "target_path": "investigation.json",
       "choices": [
         {
           "label": "Tasks interleave and corrupt shared state",
@@ -1444,7 +1431,6 @@
     {
       "id": "OS-BRG-distribution",
       "question": "Where is shared state actually located?",
-      "target_path": "investigation.json",
       "choices": [
         {
           "label": "Two machines share a user experience",
