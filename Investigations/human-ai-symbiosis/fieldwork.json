@@ -115,7 +115,9 @@
         "tacit": "Demonstrate the transferable capability on an unfamiliar realistic task"
       },
       "question": "What do most individual ChatGPT conversations actually do?",
-      "why_ask": "OpenAI Signals categorizes individual ChatGPT chats across work and non-work purposes; most message data are not direct observations of outcomes."
+      "why_ask": "OpenAI Signals categorizes individual ChatGPT chats across work and non-work purposes; most message data are not direct observations of outcomes.",
+      "mechanism_explanation": "A message taxonomy measures what people ask of AI, not what they accomplish. A difficult research dialogue and a failed attempt can share the same usage label; outcome claims require task-level artifacts and independent success criteria.",
+      "transferable_insight": "Distinguish the population's distribution of activities from the distribution of verified capability. Neither the number nor the category of messages assigns a user a skill percentile."
     },
     {
       "id": "FW-CLAUDE",
@@ -153,7 +155,9 @@
         "tacit": "Demonstrate the transferable capability on an unfamiliar realistic task"
       },
       "question": "How much AI use is collaboration rather than delegation?",
-      "why_ask": "Anthropic classifies November 2025 Claude.ai conversations as 52% augmentation and 45% automation; task iteration was a major contributor to augmentation."
+      "why_ask": "Anthropic classifies November 2025 Claude.ai conversations as 52% augmentation and 45% automation; task iteration was a major contributor to augmentation.",
+      "mechanism_explanation": "Augmentation and automation classify the interaction pattern: iterative collaboration versus more directive delegation. The 52% and 45% figures describe classified Claude.ai conversations in the reported sample, not comparative quality, task completion, or user ability.",
+      "transferable_insight": "Use the categories to ask what control and feedback the human retains, then examine comparable task outcomes before favoring either interaction style."
     },
     {
       "id": "FW-SMALLBUS",
@@ -190,7 +194,9 @@
         "tacit": "Demonstrate the transferable capability on an unfamiliar realistic task"
       },
       "question": "How do ordinary businesses use AI to handle many small tasks?",
-      "why_ask": "The San Francisco Fed documents a wide range: email, grant writing, market research, operations and pricing, as well as some owners who develop client-facing AI software."
+      "why_ask": "The San Francisco Fed documents a wide range: email, grant writing, market research, operations and pricing, as well as some owners who develop client-facing AI software.",
+      "mechanism_explanation": "Owners can spot neglected but costly operational tasks because they encounter the failures personally. Writing a grant or adjusting a price is less impressive than an autonomous research agent, but its value depends on whether the result survives actual business review.",
+      "transferable_insight": "The opportunity-selection skill is often domain knowledge: choose a repeated, locally consequential task and include verification, repair, and adoption costs when evaluating automation."
     },
     {
       "id": "FW-ANDY",
@@ -228,7 +234,9 @@
         "tacit": "Demonstrate the transferable capability on an unfamiliar realistic task"
       },
       "question": "How did a pizza-shop owner become able to build useful operational software?",
-      "why_ask": "Reported use of Claude and YouTube tutorials to make a voice-driven inventory application in English and Spanish, alongside operational apps for kitchen, orders and scheduling."
+      "why_ask": "Reported use of Claude and YouTube tutorials to make a voice-driven inventory application in English and Spanish, alongside operational apps for kitchen, orders and scheduling.",
+      "mechanism_explanation": "The reported inventory tool turns a specific restaurant bottleneck into a voice-driven bilingual interface. Operational knowledge supplies requirements that a generic code-generation prompt would lack; the article does not reveal the complete development/debugging trace.",
+      "transferable_insight": "A low-cost transferable approach is to build around a real user workflow and test it with the people who perform that work. The unresolved variable is maintenance and actual use, not merely whether code can be generated."
     },
     {
       "id": "FW-STUDENTS",
@@ -265,7 +273,9 @@
         "tacit": "Demonstrate the transferable capability on an unfamiliar realistic task"
       },
       "question": "When does AI tutoring help students learn rather than merely give answers?",
-      "why_ask": "Published 2025 trial studied a custom AI tutor versus in-class active learning, with higher measured learning gains for the AI-tutor arm."
+      "why_ask": "Published 2025 trial studied a custom AI tutor versus in-class active learning, with higher measured learning gains for the AI-tutor arm.",
+      "mechanism_explanation": "The result concerns a designed tutoring intervention, not unrestricted ChatGPT. The tested learning outcome is more informative than students' satisfaction or the amount of generated explanation; tutor structure and feedback remain possible causal contributors.",
+      "transferable_insight": "Assess retained learning with a novel question attempted without the tutor. A fluent AI-assisted answer is not evidence that the student acquired the underlying competence."
     },
     {
       "id": "FW-SIMON",
@@ -306,7 +316,9 @@
         "tacit": "Demonstrate the transferable capability on an unfamiliar realistic task"
       },
       "question": "How does Simon Willison go from an idea to a demonstrably working tool?",
-      "why_ask": "Author documents iteration on small tools, context feeding, executable tests, and visual demonstration artifacts via Showboat/Rodney."
+      "why_ask": "Author documents iteration on small tools, context feeding, executable tests, and visual demonstration artifacts via Showboat/Rodney.",
+      "mechanism_explanation": "The documented workflow links short-lived generated tools to executable observations and visual demonstration artifacts. Showboat/Rodney can record commands and browser state, creating a path from a claimed implementation to something another person can inspect.",
+      "transferable_insight": "Keep the artifact, the command that produced it, and a representative user flow together. A screenshot alone is weaker than a reproducible execution trace; a generated demo can still misrepresent the real system."
     },
     {
       "id": "FW-ARMIN",
@@ -345,7 +357,9 @@
         "tacit": "Demonstrate the transferable capability on an unfamiliar realistic task"
       },
       "question": "Why might an expert reject apparently more autonomous coding?",
-      "why_ask": "Ronacher reports that long autonomous coding loops can increase complexity and weaken understanding despite producing substantial output."
+      "why_ask": "Ronacher reports that long autonomous coding loops can increase complexity and weaken understanding despite producing substantial output.",
+      "mechanism_explanation": "A long autonomous loop can increase completed output while decreasing the maintainer's understanding of invariants, coupling, and design intent. The hidden cost emerges when modifications must be explained or repaired after the generation session.",
+      "transferable_insight": "Compare maintainability after a week, not just generated line count or initial completion time. This is a first-person engineering critique, not a controlled estimate of typical losses."
     },
     {
       "id": "FW-OWN",
@@ -385,7 +399,9 @@
         "tacit": "Demonstrate the transferable capability on an unfamiliar realistic task"
       },
       "question": "What have our own ChatGPT-plus-GitHub projects actually taught us?",
-      "why_ask": "Real viewer and question-tree workflows include source-linked research, repository edits, usability revisions, a GitHub API 404 and a mistaken-repository edit subsequently reverted."
+      "why_ask": "Real viewer and question-tree workflows include source-linked research, repository edits, usability revisions, a GitHub API 404 and a mistaken-repository edit subsequently reverted.",
+      "mechanism_explanation": "The navigation project provides a direct example of whole-system inefficiency: repeated interface redesign, wrong-target edits, and debugging overhead can consume benefits from fast code generation. GitHub commits and reports make the sequence inspectable, but no counterfactual time saving has been measured.",
+      "transferable_insight": "An agent's effectiveness includes choosing the correct repository, preserving working behavior, capturing user-visible failure signals, and recovering accurately. A passing isolated edit cannot substitute for a usable end-to-end interaction."
     },
     {
       "id": "FW-CARLINI",
@@ -407,7 +423,7 @@
         "Would one agent with the same compute do almost as well?",
         "What functionality still fails?"
       ],
-      "minimum_reconstruction_probe": "Reproduce one compiler subcomponent or integration check with and without task parallelism; compare real correctness and coordination costs.",
+      "minimum_reconstruction_probe": "Take an existing real systems-code issue containing multiple independent failures and a different issue with one tightly coupled end-to-end failure. Hold model and quality requirements constant; compare one agent with multiple agents using the same time/compute budget, then repeat with an oracle that partitions failures. Record successful fixes, regression rate, engineer intervention and integration time.",
       "source_ids": [
         "S-CARLINI"
       ],
@@ -425,7 +441,52 @@
         "tacit": "Demonstrate the transferable capability on an unfamiliar realistic task"
       },
       "question": "Why did 16 parallel agents manage to build a large C compiler?",
-      "why_ask": "Report documents nearly 2,000 Claude Code sessions and roughly $20,000 in API costs producing ~100,000 lines of Rust compiler code capable of compiling Linux 6.9 across architectures."
+      "why_ask": "Report documents nearly 2,000 Claude Code sessions and roughly $20,000 in API costs producing ~100,000 lines of Rust compiler code capable of compiling Linux 6.9 across architectures.",
+      "mechanism_explanation": "Separate Docker/Git workspaces and task locks reduced collisions over individual files, but did not create independent problems by themselves. When agents converged on one Linux kernel failure, GCC-assisted compilation of controlled file subsets exposed smaller failures that workers could address separately. The evaluator helped restructure the task rather than merely score an answer.",
+      "transferable_insight": "Parallelism pays when failure isolation produces independently solvable and independently checkable tasks. Compiler correctness comes from real compilation and execution evidence, while reported build success still leaves bootstrapping, optimization, code quality, and resource efficiency unresolved.",
+      "observed_trace": [
+        {
+          "step": 1,
+          "what": "Set an ambitious compiler functional target and significant structural requirements.",
+          "who": "human",
+          "evidence": "S-CARLINI 'Stress testing limits'"
+        },
+        {
+          "step": 2,
+          "what": "Run agents in persistent loops, isolated Docker workspaces, Git clones and task-file locks; work is pulled and merged.",
+          "who": "human-designed harness and model-executed workflow",
+          "evidence": "S-CARLINI 'Enabling long-running Claudes'; 'Running Claude in parallel'"
+        },
+        {
+          "step": 3,
+          "what": "Design compiler tests, quality gates, concise structured errors, random/quick test subsamples and accumulated progress records.",
+          "who": "human engineer, with agent feedback",
+          "evidence": "S-CARLINI 'Write extremely high-quality tests'; 'Put yourself in Claude's shoes'"
+        },
+        {
+          "step": 4,
+          "what": "All agents hit the same monolithic Linux kernel compilation failure; changes collided rather than adding useful parallel work.",
+          "who": "observed agents/harness failure",
+          "evidence": "S-CARLINI 'Make parallelism easy'"
+        },
+        {
+          "step": 5,
+          "what": "Use GCC to compile controlled subsets of kernel files, narrowing failing combinations and allowing different agents to work on different offending files.",
+          "who": "human-designed oracle plus agents",
+          "evidence": "S-CARLINI 'Make parallelism easy'"
+        },
+        {
+          "step": 6,
+          "what": "Compiler reportedly built Linux and other projects, but used GCC for 16-bit x86 bootstrapping and assembler/linker; output efficiency and Rust quality remained weaker than mature alternatives.",
+          "who": "published result and explicit limits",
+          "evidence": "S-CARLINI 'Evaluation'"
+        }
+      ],
+      "comparison_id": "CMP-CARLINI-CLAX",
+      "compare_with": [
+        "FW-CLAX"
+      ],
+      "failure_to_intervention": "Sixteen workers encountered the same monolithic kernel-compilation obstruction; GCC-based file-subset isolation transformed it into several distinguishable failures."
     },
     {
       "id": "FW-CLAX",
@@ -466,7 +527,46 @@
         "tacit": "Demonstrate the transferable capability on an unfamiliar realistic task"
       },
       "question": "How did a researcher outside the specialty build a cosmology solver with AI?",
-      "why_ask": "JAX cosmological Boltzmann solver project used CLAUDE.md, CHANGELOG.md, Git, a CLASS reference implementation, and repeated numerical comparisons; not production-grade across all regimes."
+      "why_ask": "JAX cosmological Boltzmann solver project used CLAUDE.md, CHANGELOG.md, Git, a CLASS reference implementation, and repeated numerical comparisons; not production-grade across all regimes.",
+      "mechanism_explanation": "A dependency-coupled cosmological solver requires error localization across numerical stages; independent agents can multiply inconsistent partial fixes. The author preserved a plan and failures in CLAUDE.md/CHANGELOG.md, then compared numerical output against CLASS to guide predominantly sequential diagnosis.",
+      "transferable_insight": "External numerical oracles can make an unfamiliar scientific task approachable, but agreement on some outputs does not imply scientific validity across the parameter space. The oracle's coverage and a human's ability to reason about coupled errors remain constraints.",
+      "observed_trace": [
+        {
+          "step": 1,
+          "what": "Set requirements: fully differentiable JAX cosmological solver and initially 0.1% desired accuracy relative to CLASS.",
+          "who": "human project definition",
+          "evidence": "S-CLAX 'Draft a plan'"
+        },
+        {
+          "step": 2,
+          "what": "Use a CLAUDE.md plan and a CHANGELOG.md log of progress, failed attempts, accuracy and limits.",
+          "who": "human and agent jointly maintained representation",
+          "evidence": "S-CLAX 'Memory across sessions'"
+        },
+        {
+          "step": 3,
+          "what": "Compare numerical outputs against CLASS, commit recoverable units and keep a persistent compute process.",
+          "who": "human-designed validation loop executed by model",
+          "evidence": "S-CLAX 'The test oracle'; 'Git as coordination'; 'Execution loop'"
+        },
+        {
+          "step": 4,
+          "what": "Use predominantly sequential, causal diagnosis; coupled solver stages make unstructured independent parallel tasks less effective.",
+          "who": "architectural judgment by human investigator",
+          "evidence": "S-CLAX 'The premise'"
+        },
+        {
+          "step": 5,
+          "what": "Reach sub-percent agreement on some outputs; gaps in parameter coverage and science-domain conventions limit full reliability.",
+          "who": "observed reported result and shortcomings",
+          "evidence": "S-CLAX 'The result'"
+        }
+      ],
+      "comparison_id": "CMP-CARLINI-CLAX",
+      "compare_with": [
+        "FW-CARLINI"
+      ],
+      "failure_to_intervention": "Coupled numerical stages favored sequential diagnosis against CLASS over unstructured independent parallel changes."
     },
     {
       "id": "FW-ALPHA",
@@ -506,7 +606,9 @@
         "tacit": "Demonstrate the transferable capability on an unfamiliar realistic task"
       },
       "question": "How does AlphaEvolve turn LLM ideas into validated algorithm improvements?",
-      "why_ask": "A mix of LLM-generated programs, automated evaluators, stored candidates and evolutionary selection; DeepMind reports algorithm improvements deployed in its infrastructure."
+      "why_ask": "A mix of LLM-generated programs, automated evaluators, stored candidates and evolutionary selection; DeepMind reports algorithm improvements deployed in its infrastructure.",
+      "mechanism_explanation": "Generated programs become useful candidates only when an executable evaluator can rank them and selection retains or mutates promising variants. Candidate archives permit iterative search, but improvements are bounded by what the scoring function measures.",
+      "transferable_insight": "Before scaling evolutionary agents, determine whether the objective corresponds to the real engineering outcome and compare against conventional search. This is a developer-reported system, not a measured percentile of human AI practitioners."
     },
     {
       "id": "FW-ALPOGE",
@@ -547,7 +649,9 @@
         "tacit": "Demonstrate the transferable capability on an unfamiliar realistic task"
       },
       "question": "What did Alpöge and Claude actually do, and what can be checked?",
-      "why_ask": "November 20, 2026 announcement of claimed Riemann hypothesis and GRH proof with Lean formalization; mathematical correctness and full independent checking remain unresolved."
+      "why_ask": "November 20, 2026 announcement of claimed Riemann hypothesis and GRH proof with Lean formalization; mathematical correctness and full independent checking remain unresolved.",
+      "mechanism_explanation": "The public account attributes mathematical direction and analogy selection to a specialist and some unexpected intermediate steps to Claude. Formal proof claims need both replay of the proof artifact and confirmation that the formalized theorem matches the intended mathematical statement.",
+      "transferable_insight": "Formal verification can catch derivation errors while leaving specification mismatch as a separate failure mode. The announcement alone cannot establish the mathematical claim or quantify which parts generalize to nonexperts."
     },
     {
       "id": "FW-METR",
@@ -585,7 +689,9 @@
         "tacit": "Demonstrate the transferable capability on an unfamiliar realistic task"
       },
       "question": "Why did experts sometimes become slower when AI was available?",
-      "why_ask": "Across 246 real issues in developers' familiar codebases, allowing early-2025 AI tools increased observed completion time by 19%; developer expectations were for speedup."
+      "why_ask": "Across 246 real issues in developers' familiar codebases, allowing early-2025 AI tools increased observed completion time by 19%; developer expectations were for speedup.",
+      "mechanism_explanation": "In the published early-2025 task setting, developers experienced overhead from using and reviewing AI help despite expecting speedups. The observed 19% slower completion is an end-to-end result; the precise contribution of individual causes has not been isolated.",
+      "transferable_insight": "Measure time from problem understanding through accepted, correct integration—not model output speed. Familiarity with a codebase may make reviewing plausible generated changes more expensive than solving the issue directly."
     },
     {
       "id": "FW-MOLLICK",
@@ -622,7 +728,9 @@
         "tacit": "Demonstrate the transferable capability on an unfamiliar realistic task"
       },
       "question": "Should agents do everything, or know when to involve humans?",
-      "why_ask": "Propose 'Twilight Factory' in which agents proactively seek human approval, expertise and judgment rather than maximizing unattended autonomy."
+      "why_ask": "Propose 'Twilight Factory' in which agents proactively seek human approval, expertise and judgment rather than maximizing unattended autonomy.",
+      "mechanism_explanation": "The 'Twilight Factory' proposal changes the agent's goal from operating without humans to deciding when human approval, expertise, or judgment is required. This is an organizational design hypothesis, not evidence of measured superiority.",
+      "transferable_insight": "Escalation should be treated as a control policy that can be evaluated on consequential decisions, missed interventions, and review cost; more autonomous action is not necessarily more useful."
     }
   ],
   "sources": [
@@ -1069,5 +1177,21 @@
     ],
     "cheapest_discriminating_probe": "Take an existing real systems-code issue containing multiple independent failures and a different issue with one tightly coupled end-to-end failure. Hold model and quality requirements constant; compare one agent with multiple agents using the same time/compute budget, then repeat with an oracle that partitions failures. Record successful fixes, regression rate, engineer intervention and integration time.",
     "certificate_status": "source-bounded contrast; not a confirmed cross-domain rule"
+  },
+  "case_presentation": {
+    "purpose": "Surface observed mechanisms and consequential decisions, not just topic labels.",
+    "fields": [
+      "observed",
+      "failure_to_intervention",
+      "mechanism_explanation",
+      "observed_trace",
+      "transferable_insight",
+      "unresolved_questions",
+      "minimum_reconstruction_probe",
+      "resource_or_outcome_limitations",
+      "source_ids"
+    ],
+    "evidence_rule": "Observed traces are source-bounded. Missing decisions and unobserved failures remain explicitly unknown. Comparison records are hypotheses, not established causal estimates.",
+    "comparison_rule": "Render mechanism_comparison once as linked research shared by the participating cases; do not duplicate the long comparison in each case."
   }
 }
