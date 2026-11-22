@@ -1,0 +1,2349 @@
+{
+  "schema_version": "1.0",
+  "domain_id": "operating-systems",
+  "title": "Operating systems — curiosity, technical investigations, and book navigation — technical vocabulary",
+  "id_policy": "Assign IDs once. Preserve them across renames, sorting, additions and merges; never recompute IDs from display labels. Use aliases for alternative spellings; separate distinct senses even when their words match.",
+  "related_ids_semantics": "Explicitly related concepts, NOT synonyms or automatically equivalent search results.",
+  "source_vocabularies": [
+    "https://github.com/JadanPoll/FKEN_Ecosystem/blob/main/Glossaries/Embedded_Systems.json",
+    "https://github.com/JadanPoll/FKEN_Ecosystem/blob/main/Glossaries/RISC_V.json"
+  ],
+  "terms": [
+    {
+      "id": "os-t-0001",
+      "label": "operating system",
+      "aliases": [],
+      "category": "OS purpose and execution",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0002",
+      "label": "kernel",
+      "aliases": [],
+      "category": "OS purpose and execution",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0003",
+      "label": "kernel mode",
+      "aliases": [],
+      "category": "OS purpose and execution",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0004",
+      "label": "user mode",
+      "aliases": [],
+      "category": "OS purpose and execution",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0005",
+      "label": "system call",
+      "aliases": [],
+      "category": "OS purpose and execution",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0006",
+      "label": "system call interface",
+      "aliases": [],
+      "category": "OS purpose and execution",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0007",
+      "label": "process",
+      "aliases": [],
+      "category": "OS purpose and execution",
+      "related_ids": [
+        "os-t-0008"
+      ]
+    },
+    {
+      "id": "os-t-0008",
+      "label": "thread",
+      "aliases": [],
+      "category": "OS purpose and execution",
+      "related_ids": [
+        "os-t-0007"
+      ]
+    },
+    {
+      "id": "os-t-0009",
+      "label": "task",
+      "aliases": [],
+      "category": "OS purpose and execution",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0010",
+      "label": "program",
+      "aliases": [],
+      "category": "OS purpose and execution",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0011",
+      "label": "binary",
+      "aliases": [],
+      "category": "OS purpose and execution",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0012",
+      "label": "address space",
+      "aliases": [],
+      "category": "OS purpose and execution",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0013",
+      "label": "preemption",
+      "aliases": [],
+      "category": "OS purpose and execution",
+      "related_ids": [
+        "os-t-0014"
+      ]
+    },
+    {
+      "id": "os-t-0014",
+      "label": "scheduler",
+      "aliases": [],
+      "category": "OS purpose and execution",
+      "related_ids": [
+        "os-t-0013"
+      ]
+    },
+    {
+      "id": "os-t-0015",
+      "label": "time slice",
+      "aliases": [],
+      "category": "OS purpose and execution",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0016",
+      "label": "time sharing",
+      "aliases": [],
+      "category": "OS purpose and execution",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0017",
+      "label": "context switch",
+      "aliases": [],
+      "category": "OS purpose and execution",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0018",
+      "label": "fairness",
+      "aliases": [],
+      "category": "OS purpose and execution",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0019",
+      "label": "starvation",
+      "aliases": [],
+      "category": "OS purpose and execution",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0020",
+      "label": "priority inversion",
+      "aliases": [],
+      "category": "OS purpose and execution",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0021",
+      "label": "busy waiting",
+      "aliases": [],
+      "category": "OS purpose and execution",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0022",
+      "label": "CPU utilization",
+      "aliases": [],
+      "category": "OS purpose and execution",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0023",
+      "label": "throughput",
+      "aliases": [],
+      "category": "OS purpose and execution",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0024",
+      "label": "latency",
+      "aliases": [],
+      "category": "OS purpose and execution",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0025",
+      "label": "liveness",
+      "aliases": [],
+      "category": "OS purpose and execution",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0026",
+      "label": "progress",
+      "aliases": [],
+      "category": "OS purpose and execution",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0027",
+      "label": "wait queue",
+      "aliases": [],
+      "category": "OS purpose and execution",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0028",
+      "label": "interrupt",
+      "aliases": [],
+      "category": "OS purpose and execution",
+      "related_ids": [
+        "os-t-0190",
+        "os-t-0289"
+      ]
+    },
+    {
+      "id": "os-t-0029",
+      "label": "interrupt handler",
+      "aliases": [],
+      "category": "OS purpose and execution",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0030",
+      "label": "timer interrupt",
+      "aliases": [],
+      "category": "OS purpose and execution",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0031",
+      "label": "real-time operating system",
+      "aliases": [],
+      "category": "OS purpose and execution",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0032",
+      "label": "soft real-time",
+      "aliases": [],
+      "category": "OS purpose and execution",
+      "related_ids": [
+        "os-t-0033"
+      ]
+    },
+    {
+      "id": "os-t-0033",
+      "label": "hard real-time",
+      "aliases": [],
+      "category": "OS purpose and execution",
+      "related_ids": [
+        "os-t-0032"
+      ]
+    },
+    {
+      "id": "os-t-0034",
+      "label": "deadline",
+      "aliases": [],
+      "category": "OS purpose and execution",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0035",
+      "label": "worst-case execution time",
+      "aliases": [],
+      "category": "OS purpose and execution",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0036",
+      "label": "privileged instruction",
+      "aliases": [],
+      "category": "OS purpose and execution",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0037",
+      "label": "bootloader",
+      "aliases": [],
+      "category": "OS purpose and execution",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0038",
+      "label": "boot sequence",
+      "aliases": [],
+      "category": "OS purpose and execution",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0039",
+      "label": "firmware",
+      "aliases": [],
+      "category": "OS purpose and execution",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0040",
+      "label": "bare metal",
+      "aliases": [],
+      "category": "OS purpose and execution",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0041",
+      "label": "embedded system",
+      "aliases": [],
+      "category": "OS purpose and execution",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0042",
+      "label": "microkernel",
+      "aliases": [],
+      "category": "OS purpose and execution",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0043",
+      "label": "monolithic kernel",
+      "aliases": [],
+      "category": "OS purpose and execution",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0044",
+      "label": "service supervisor",
+      "aliases": [],
+      "category": "OS purpose and execution",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0045",
+      "label": "watchdog",
+      "aliases": [],
+      "category": "OS purpose and execution",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0046",
+      "label": "concurrency",
+      "aliases": [],
+      "category": "Concurrency and IPC",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0047",
+      "label": "parallelism",
+      "aliases": [],
+      "category": "Concurrency and IPC",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0048",
+      "label": "multicore",
+      "aliases": [],
+      "category": "Concurrency and IPC",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0049",
+      "label": "mutual exclusion",
+      "aliases": [],
+      "category": "Concurrency and IPC",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0050",
+      "label": "mutex",
+      "aliases": [],
+      "category": "Concurrency and IPC",
+      "related_ids": [
+        "os-t-0051",
+        "os-t-0073"
+      ]
+    },
+    {
+      "id": "os-t-0051",
+      "label": "semaphore",
+      "aliases": [],
+      "category": "Concurrency and IPC",
+      "related_ids": [
+        "os-t-0050",
+        "os-t-0073"
+      ]
+    },
+    {
+      "id": "os-t-0052",
+      "label": "condition variable",
+      "aliases": [],
+      "category": "Concurrency and IPC",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0053",
+      "label": "barrier",
+      "aliases": [],
+      "category": "Concurrency and IPC",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0054",
+      "label": "critical section",
+      "aliases": [],
+      "category": "Concurrency and IPC",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0055",
+      "label": "race condition",
+      "aliases": [],
+      "category": "Concurrency and IPC",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0056",
+      "label": "data race",
+      "aliases": [],
+      "category": "Concurrency and IPC",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0057",
+      "label": "deadlock",
+      "aliases": [],
+      "category": "Concurrency and IPC",
+      "related_ids": [
+        "os-t-0058"
+      ]
+    },
+    {
+      "id": "os-t-0058",
+      "label": "livelock",
+      "aliases": [],
+      "category": "Concurrency and IPC",
+      "related_ids": [
+        "os-t-0057"
+      ]
+    },
+    {
+      "id": "os-t-0059",
+      "label": "atomic operation",
+      "aliases": [],
+      "category": "Concurrency and IPC",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0060",
+      "label": "memory ordering",
+      "aliases": [],
+      "category": "Concurrency and IPC",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0061",
+      "label": "lock-free",
+      "aliases": [],
+      "category": "Concurrency and IPC",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0062",
+      "label": "message passing",
+      "aliases": [],
+      "category": "Concurrency and IPC",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0063",
+      "label": "inter-process communication",
+      "aliases": [],
+      "category": "Concurrency and IPC",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0064",
+      "label": "IPC",
+      "aliases": [],
+      "category": "Concurrency and IPC",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0065",
+      "label": "pipe",
+      "aliases": [],
+      "category": "Concurrency and IPC",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0066",
+      "label": "socket",
+      "aliases": [],
+      "category": "Concurrency and IPC",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0067",
+      "label": "shared memory",
+      "aliases": [],
+      "category": "Concurrency and IPC",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0068",
+      "label": "thread safety",
+      "aliases": [],
+      "category": "Concurrency and IPC",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0069",
+      "label": "linearizability",
+      "aliases": [],
+      "category": "Concurrency and IPC",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0070",
+      "label": "transaction",
+      "aliases": [],
+      "category": "Concurrency and IPC",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0071",
+      "label": "priority scheduling",
+      "aliases": [],
+      "category": "Concurrency and IPC",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0072",
+      "label": "producer-consumer",
+      "aliases": [],
+      "category": "Concurrency and IPC",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0073",
+      "label": "queue",
+      "aliases": [],
+      "category": "Concurrency and IPC",
+      "related_ids": [
+        "os-t-0050",
+        "os-t-0051"
+      ]
+    },
+    {
+      "id": "os-t-0074",
+      "label": "event loop",
+      "aliases": [],
+      "category": "Concurrency and IPC",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0075",
+      "label": "polling",
+      "aliases": [],
+      "category": "Concurrency and IPC",
+      "related_ids": [
+        "os-t-0191",
+        "os-t-0077",
+        "os-t-0076"
+      ]
+    },
+    {
+      "id": "os-t-0076",
+      "label": "interrupt-driven I/O",
+      "aliases": [],
+      "category": "Concurrency and IPC",
+      "related_ids": [
+        "os-t-0075"
+      ]
+    },
+    {
+      "id": "os-t-0077",
+      "label": "DMA",
+      "aliases": [],
+      "category": "Concurrency and IPC",
+      "related_ids": [
+        "os-t-0075",
+        "os-t-0191"
+      ]
+    },
+    {
+      "id": "os-t-0078",
+      "label": "virtual memory",
+      "aliases": [
+        "VM"
+      ],
+      "category": "Memory and storage",
+      "related_ids": [
+        "os-t-0083",
+        "os-t-0085"
+      ]
+    },
+    {
+      "id": "os-t-0079",
+      "label": "physical memory",
+      "aliases": [],
+      "category": "Memory and storage",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0080",
+      "label": "virtual address",
+      "aliases": [],
+      "category": "Memory and storage",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0081",
+      "label": "physical address",
+      "aliases": [],
+      "category": "Memory and storage",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0082",
+      "label": "page",
+      "aliases": [],
+      "category": "Memory and storage",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0083",
+      "label": "page table",
+      "aliases": [],
+      "category": "Memory and storage",
+      "related_ids": [
+        "os-t-0078"
+      ]
+    },
+    {
+      "id": "os-t-0084",
+      "label": "page fault",
+      "aliases": [],
+      "category": "Memory and storage",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0085",
+      "label": "TLB",
+      "aliases": [],
+      "category": "Memory and storage",
+      "related_ids": [
+        "os-t-0078"
+      ]
+    },
+    {
+      "id": "os-t-0086",
+      "label": "MMU",
+      "aliases": [],
+      "category": "Memory and storage",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0087",
+      "label": "memory mapping",
+      "aliases": [],
+      "category": "Memory and storage",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0088",
+      "label": "memory protection",
+      "aliases": [],
+      "category": "Memory and storage",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0089",
+      "label": "copy-on-write",
+      "aliases": [],
+      "category": "Memory and storage",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0090",
+      "label": "swap",
+      "aliases": [],
+      "category": "Memory and storage",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0091",
+      "label": "working set",
+      "aliases": [],
+      "category": "Memory and storage",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0092",
+      "label": "resident memory",
+      "aliases": [],
+      "category": "Memory and storage",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0093",
+      "label": "out of memory",
+      "aliases": [
+        "OOM"
+      ],
+      "category": "Memory and storage",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0094",
+      "label": "OOM killer",
+      "aliases": [],
+      "category": "Memory and storage",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0095",
+      "label": "memory reclamation",
+      "aliases": [],
+      "category": "Memory and storage",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0096",
+      "label": "thrashing",
+      "aliases": [],
+      "category": "Memory and storage",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0097",
+      "label": "fragmentation",
+      "aliases": [],
+      "category": "Memory and storage",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0098",
+      "label": "heap",
+      "aliases": [],
+      "category": "Memory and storage",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0099",
+      "label": "stack",
+      "aliases": [],
+      "category": "Memory and storage",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0100",
+      "label": "allocator",
+      "aliases": [],
+      "category": "Memory and storage",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0101",
+      "label": "cache",
+      "aliases": [],
+      "category": "Memory and storage",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0102",
+      "label": "cache coherence",
+      "aliases": [],
+      "category": "Memory and storage",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0103",
+      "label": "buffer cache",
+      "aliases": [],
+      "category": "Memory and storage",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0104",
+      "label": "page cache",
+      "aliases": [],
+      "category": "Memory and storage",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0105",
+      "label": "filesystem",
+      "aliases": [],
+      "category": "Memory and storage",
+      "related_ids": [
+        "os-t-0114"
+      ]
+    },
+    {
+      "id": "os-t-0106",
+      "label": "file descriptor",
+      "aliases": [],
+      "category": "Memory and storage",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0107",
+      "label": "inode",
+      "aliases": [],
+      "category": "Memory and storage",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0108",
+      "label": "directory",
+      "aliases": [],
+      "category": "Memory and storage",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0109",
+      "label": "path",
+      "aliases": [],
+      "category": "Memory and storage",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0110",
+      "label": "mount point",
+      "aliases": [],
+      "category": "Memory and storage",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0111",
+      "label": "block device",
+      "aliases": [],
+      "category": "Memory and storage",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0112",
+      "label": "sector",
+      "aliases": [],
+      "category": "Memory and storage",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0113",
+      "label": "filesystem journal",
+      "aliases": [
+        "journal"
+      ],
+      "category": "Memory and storage",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0114",
+      "label": "crash consistency",
+      "aliases": [
+        "crash-consistent"
+      ],
+      "category": "Memory and storage",
+      "related_ids": [
+        "os-t-0105",
+        "os-t-0119"
+      ]
+    },
+    {
+      "id": "os-t-0115",
+      "label": "atomicity",
+      "aliases": [],
+      "category": "Memory and storage",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0116",
+      "label": "fsync",
+      "aliases": [],
+      "category": "Memory and storage",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0117",
+      "label": "writeback",
+      "aliases": [],
+      "category": "Memory and storage",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0118",
+      "label": "write cache",
+      "aliases": [],
+      "category": "Memory and storage",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0119",
+      "label": "durability",
+      "aliases": [],
+      "category": "Memory and storage",
+      "related_ids": [
+        "os-t-0114"
+      ]
+    },
+    {
+      "id": "os-t-0120",
+      "label": "checkpoint",
+      "aliases": [],
+      "category": "Memory and storage",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0121",
+      "label": "recovery log",
+      "aliases": [],
+      "category": "Memory and storage",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0122",
+      "label": "SSD",
+      "aliases": [],
+      "category": "Memory and storage",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0123",
+      "label": "flash translation layer",
+      "aliases": [],
+      "category": "Memory and storage",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0124",
+      "label": "device driver",
+      "aliases": [],
+      "category": "Devices and security",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0125",
+      "label": "GPIO",
+      "aliases": [],
+      "category": "Devices and security",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0126",
+      "label": "memory-mapped I/O",
+      "aliases": [
+        "MMIO"
+      ],
+      "category": "Devices and security",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0127",
+      "label": "interrupt controller",
+      "aliases": [],
+      "category": "Devices and security",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0128",
+      "label": "UART",
+      "aliases": [],
+      "category": "Devices and security",
+      "related_ids": [
+        "os-t-0129",
+        "os-t-0130",
+        "os-t-0199"
+      ]
+    },
+    {
+      "id": "os-t-0129",
+      "label": "SPI",
+      "aliases": [],
+      "category": "Devices and security",
+      "related_ids": [
+        "os-t-0128",
+        "os-t-0130",
+        "os-t-0199"
+      ]
+    },
+    {
+      "id": "os-t-0130",
+      "label": "I2C",
+      "aliases": [],
+      "category": "Devices and security",
+      "related_ids": [
+        "os-t-0128",
+        "os-t-0129",
+        "os-t-0199"
+      ]
+    },
+    {
+      "id": "os-t-0131",
+      "label": "USB",
+      "aliases": [],
+      "category": "Devices and security",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0132",
+      "label": "device tree",
+      "aliases": [],
+      "category": "Devices and security",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0133",
+      "label": "device register",
+      "aliases": [],
+      "category": "Devices and security",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0134",
+      "label": "user permission",
+      "aliases": [],
+      "category": "Devices and security",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0135",
+      "label": "access control list",
+      "aliases": [],
+      "category": "Devices and security",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0136",
+      "label": "ACL",
+      "aliases": [],
+      "category": "Devices and security",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0137",
+      "label": "capability-based security",
+      "aliases": [],
+      "category": "Devices and security",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0138",
+      "label": "credential",
+      "aliases": [],
+      "category": "Devices and security",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0139",
+      "label": "authentication",
+      "aliases": [],
+      "category": "Devices and security",
+      "related_ids": [
+        "os-t-0140"
+      ]
+    },
+    {
+      "id": "os-t-0140",
+      "label": "authorization",
+      "aliases": [],
+      "category": "Devices and security",
+      "related_ids": [
+        "os-t-0139"
+      ]
+    },
+    {
+      "id": "os-t-0141",
+      "label": "identity",
+      "aliases": [],
+      "category": "Devices and security",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0142",
+      "label": "privilege separation",
+      "aliases": [],
+      "category": "Devices and security",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0143",
+      "label": "sandbox",
+      "aliases": [],
+      "category": "Devices and security",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0144",
+      "label": "system isolation",
+      "aliases": [],
+      "category": "Devices and security",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0145",
+      "label": "trusted computing base",
+      "aliases": [],
+      "category": "Devices and security",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0146",
+      "label": "attack surface",
+      "aliases": [],
+      "category": "Devices and security",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0147",
+      "label": "fault containment",
+      "aliases": [],
+      "category": "Devices and security",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0148",
+      "label": "fault isolation",
+      "aliases": [],
+      "category": "Devices and security",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0149",
+      "label": "security boundary",
+      "aliases": [],
+      "category": "Devices and security",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0150",
+      "label": "virtual machine",
+      "aliases": [],
+      "category": "Devices and security",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0151",
+      "label": "hypervisor",
+      "aliases": [],
+      "category": "Devices and security",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0152",
+      "label": "device emulation",
+      "aliases": [],
+      "category": "Devices and security",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0153",
+      "label": "distributed system",
+      "aliases": [],
+      "category": "Distributed systems and sessions",
+      "related_ids": [
+        "os-t-0160"
+      ]
+    },
+    {
+      "id": "os-t-0154",
+      "label": "remote desktop",
+      "aliases": [],
+      "category": "Distributed systems and sessions",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0155",
+      "label": "remote execution",
+      "aliases": [],
+      "category": "Distributed systems and sessions",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0156",
+      "label": "remote session",
+      "aliases": [],
+      "category": "Distributed systems and sessions",
+      "related_ids": [
+        "os-t-0173"
+      ]
+    },
+    {
+      "id": "os-t-0157",
+      "label": "login session",
+      "aliases": [],
+      "category": "Distributed systems and sessions",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0158",
+      "label": "client-server",
+      "aliases": [],
+      "category": "Distributed systems and sessions",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0159",
+      "label": "network partition",
+      "aliases": [],
+      "category": "Distributed systems and sessions",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0160",
+      "label": "partial failure",
+      "aliases": [],
+      "category": "Distributed systems and sessions",
+      "related_ids": [
+        "os-t-0153",
+        "os-t-0162"
+      ]
+    },
+    {
+      "id": "os-t-0161",
+      "label": "timeout",
+      "aliases": [],
+      "category": "Distributed systems and sessions",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0162",
+      "label": "idempotency",
+      "aliases": [],
+      "category": "Distributed systems and sessions",
+      "related_ids": [
+        "os-t-0160"
+      ]
+    },
+    {
+      "id": "os-t-0163",
+      "label": "exactly-once semantics",
+      "aliases": [
+        "exactly once"
+      ],
+      "category": "Distributed systems and sessions",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0164",
+      "label": "at-least-once delivery",
+      "aliases": [],
+      "category": "Distributed systems and sessions",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0165",
+      "label": "eventual consistency",
+      "aliases": [],
+      "category": "Distributed systems and sessions",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0166",
+      "label": "strong consistency",
+      "aliases": [],
+      "category": "Distributed systems and sessions",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0167",
+      "label": "consensus",
+      "aliases": [],
+      "category": "Distributed systems and sessions",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0168",
+      "label": "leader election",
+      "aliases": [],
+      "category": "Distributed systems and sessions",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0169",
+      "label": "replication",
+      "aliases": [],
+      "category": "Distributed systems and sessions",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0170",
+      "label": "distributed coordination",
+      "aliases": [],
+      "category": "Distributed systems and sessions",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0171",
+      "label": "network latency",
+      "aliases": [],
+      "category": "Distributed systems and sessions",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0172",
+      "label": "reconnect",
+      "aliases": [],
+      "category": "Distributed systems and sessions",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0173",
+      "label": "session persistence",
+      "aliases": [],
+      "category": "Distributed systems and sessions",
+      "related_ids": [
+        "os-t-0156"
+      ]
+    },
+    {
+      "id": "os-t-0174",
+      "label": "process lifetime",
+      "aliases": [],
+      "category": "Distributed systems and sessions",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0175",
+      "label": "connection lifetime",
+      "aliases": [],
+      "category": "Distributed systems and sessions",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0176",
+      "label": "state ownership",
+      "aliases": [],
+      "category": "Distributed systems and sessions",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0177",
+      "label": "remote procedure call",
+      "aliases": [],
+      "category": "Distributed systems and sessions",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0178",
+      "label": "RPC",
+      "aliases": [],
+      "category": "Distributed systems and sessions",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0179",
+      "label": "distributed storage",
+      "aliases": [],
+      "category": "Distributed systems and sessions",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0180",
+      "label": "cluster",
+      "aliases": [],
+      "category": "Distributed systems and sessions",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0181",
+      "label": "load balancing",
+      "aliases": [],
+      "category": "Distributed systems and sessions",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0182",
+      "label": "retry",
+      "aliases": [],
+      "category": "Distributed systems and sessions",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0183",
+      "label": "duplicate request",
+      "aliases": [],
+      "category": "Distributed systems and sessions",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0184",
+      "label": "microcontroller",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "os-t-0185",
+        "os-t-0186"
+      ]
+    },
+    {
+      "id": "os-t-0185",
+      "label": "microprocessor",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "os-t-0184",
+        "os-t-0186"
+      ]
+    },
+    {
+      "id": "os-t-0186",
+      "label": "SoC",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "os-t-0184",
+        "os-t-0185"
+      ]
+    },
+    {
+      "id": "os-t-0187",
+      "label": "startup code",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0188",
+      "label": "vector table",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0189",
+      "label": "ISR",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0190",
+      "label": "exception",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "os-t-0028",
+        "os-t-0289"
+      ]
+    },
+    {
+      "id": "os-t-0191",
+      "label": "interrupt-driven",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "os-t-0075",
+        "os-t-0077"
+      ]
+    },
+    {
+      "id": "os-t-0192",
+      "label": "register",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0193",
+      "label": "peripheral",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0194",
+      "label": "timer",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0195",
+      "label": "RTC",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0196",
+      "label": "ADC",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0197",
+      "label": "DAC",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0198",
+      "label": "PWM",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0199",
+      "label": "CAN",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "os-t-0128",
+        "os-t-0129",
+        "os-t-0130"
+      ]
+    },
+    {
+      "id": "os-t-0200",
+      "label": "JTAG",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "os-t-0201"
+      ]
+    },
+    {
+      "id": "os-t-0201",
+      "label": "SWD",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "os-t-0200"
+      ]
+    },
+    {
+      "id": "os-t-0202",
+      "label": "clock",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0203",
+      "label": "clock tree",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0204",
+      "label": "PLL",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0205",
+      "label": "reset",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0206",
+      "label": "brownout",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0207",
+      "label": "debouncing",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0208",
+      "label": "pull-up",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0209",
+      "label": "pull-down",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0210",
+      "label": "open-drain",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0211",
+      "label": "tri-state",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0212",
+      "label": "endianness",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0213",
+      "label": "alignment",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0214",
+      "label": "volatile",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0215",
+      "label": "real-time",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0216",
+      "label": "jitter",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0217",
+      "label": "RTOS",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0218",
+      "label": "event flag",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0219",
+      "label": "static allocation",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0220",
+      "label": "dynamic allocation",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0221",
+      "label": "flash",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "os-t-0222",
+        "os-t-0223"
+      ]
+    },
+    {
+      "id": "os-t-0222",
+      "label": "SRAM",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "os-t-0221",
+        "os-t-0223"
+      ]
+    },
+    {
+      "id": "os-t-0223",
+      "label": "EEPROM",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "os-t-0221",
+        "os-t-0222"
+      ]
+    },
+    {
+      "id": "os-t-0224",
+      "label": "memory protection unit",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0225",
+      "label": "TCM",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0226",
+      "label": "linker script",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0227",
+      "label": "cross compiler",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0228",
+      "label": "toolchain",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0229",
+      "label": "ABI",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0230",
+      "label": "HAL",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "os-t-0231",
+        "os-t-0232"
+      ]
+    },
+    {
+      "id": "os-t-0231",
+      "label": "BSP",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "os-t-0230",
+        "os-t-0232"
+      ]
+    },
+    {
+      "id": "os-t-0232",
+      "label": "driver",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "os-t-0230",
+        "os-t-0231"
+      ]
+    },
+    {
+      "id": "os-t-0233",
+      "label": "power budget",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0234",
+      "label": "sleep mode",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0235",
+      "label": "deep sleep",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0236",
+      "label": "wake source",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0237",
+      "label": "low-power mode",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0238",
+      "label": "current draw",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0239",
+      "label": "power domain",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0240",
+      "label": "logic analyzer",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0241",
+      "label": "oscilloscope",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0242",
+      "label": "serial console",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0243",
+      "label": "hardware-in-the-loop",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0244",
+      "label": "in-circuit debugging",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0245",
+      "label": "in-circuit programming",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0246",
+      "label": "boot time",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0247",
+      "label": "fault handler",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0248",
+      "label": "assertion",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0249",
+      "label": "brownout reset",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0250",
+      "label": "RISC-V",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0251",
+      "label": "ISA",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0252",
+      "label": "RV32I",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "os-t-0253"
+      ]
+    },
+    {
+      "id": "os-t-0253",
+      "label": "RV64I",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "os-t-0252"
+      ]
+    },
+    {
+      "id": "os-t-0254",
+      "label": "ISA extension",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0255",
+      "label": "instruction encoding",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0256",
+      "label": "immediate",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0257",
+      "label": "sign extension",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0258",
+      "label": "signed comparison",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "os-t-0259"
+      ]
+    },
+    {
+      "id": "os-t-0259",
+      "label": "unsigned comparison",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "os-t-0258"
+      ]
+    },
+    {
+      "id": "os-t-0260",
+      "label": "PC",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "os-t-0261",
+        "os-t-0262"
+      ]
+    },
+    {
+      "id": "os-t-0261",
+      "label": "ra",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "os-t-0260",
+        "os-t-0262"
+      ]
+    },
+    {
+      "id": "os-t-0262",
+      "label": "sp",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "os-t-0260",
+        "os-t-0261"
+      ]
+    },
+    {
+      "id": "os-t-0263",
+      "label": "a0–a7",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "os-t-0264",
+        "os-t-0265"
+      ]
+    },
+    {
+      "id": "os-t-0264",
+      "label": "t0–t6",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "os-t-0263",
+        "os-t-0265"
+      ]
+    },
+    {
+      "id": "os-t-0265",
+      "label": "s0–s11",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "os-t-0263",
+        "os-t-0264"
+      ]
+    },
+    {
+      "id": "os-t-0266",
+      "label": "jal",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "os-t-0267",
+        "os-t-0268"
+      ]
+    },
+    {
+      "id": "os-t-0267",
+      "label": "jalr",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "os-t-0266",
+        "os-t-0268"
+      ]
+    },
+    {
+      "id": "os-t-0268",
+      "label": "ret",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "os-t-0266",
+        "os-t-0267"
+      ]
+    },
+    {
+      "id": "os-t-0269",
+      "label": "load/store",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0270",
+      "label": "byte",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "os-t-0271",
+        "os-t-0272",
+        "os-t-0273"
+      ]
+    },
+    {
+      "id": "os-t-0271",
+      "label": "halfword",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "os-t-0270",
+        "os-t-0272",
+        "os-t-0273"
+      ]
+    },
+    {
+      "id": "os-t-0272",
+      "label": "word",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "os-t-0270",
+        "os-t-0271",
+        "os-t-0273"
+      ]
+    },
+    {
+      "id": "os-t-0273",
+      "label": "doubleword",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "os-t-0270",
+        "os-t-0271",
+        "os-t-0272"
+      ]
+    },
+    {
+      "id": "os-t-0274",
+      "label": "pseudo-instruction",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "os-t-0275"
+      ]
+    },
+    {
+      "id": "os-t-0275",
+      "label": "machine instruction",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "os-t-0274"
+      ]
+    },
+    {
+      "id": "os-t-0276",
+      "label": ".text",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "os-t-0277",
+        "os-t-0278"
+      ]
+    },
+    {
+      "id": "os-t-0277",
+      "label": ".data",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "os-t-0276",
+        "os-t-0278"
+      ]
+    },
+    {
+      "id": "os-t-0278",
+      "label": ".bss",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "os-t-0276",
+        "os-t-0277"
+      ]
+    },
+    {
+      "id": "os-t-0279",
+      "label": "ELF",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0280",
+      "label": "assembler",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0281",
+      "label": "linker",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0282",
+      "label": "pointer",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0283",
+      "label": "structure field offset",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0284",
+      "label": "stack frame",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0285",
+      "label": "stack alignment",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0286",
+      "label": "caller-saved",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "os-t-0287"
+      ]
+    },
+    {
+      "id": "os-t-0287",
+      "label": "callee-saved",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "os-t-0286"
+      ]
+    },
+    {
+      "id": "os-t-0288",
+      "label": "peripheral register",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0289",
+      "label": "trap",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "os-t-0028",
+        "os-t-0190"
+      ]
+    },
+    {
+      "id": "os-t-0290",
+      "label": "mstatus",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "os-t-0291",
+        "os-t-0292",
+        "os-t-0293"
+      ]
+    },
+    {
+      "id": "os-t-0291",
+      "label": "mtvec",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "os-t-0290",
+        "os-t-0292",
+        "os-t-0293"
+      ]
+    },
+    {
+      "id": "os-t-0292",
+      "label": "mepc",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "os-t-0290",
+        "os-t-0291",
+        "os-t-0293"
+      ]
+    },
+    {
+      "id": "os-t-0293",
+      "label": "mcause",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "os-t-0290",
+        "os-t-0291",
+        "os-t-0292"
+      ]
+    },
+    {
+      "id": "os-t-0294",
+      "label": "CSR",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0295",
+      "label": "mret",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0296",
+      "label": "privilege mode",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0297",
+      "label": "instruction-set simulator",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "os-t-0298"
+      ]
+    },
+    {
+      "id": "os-t-0298",
+      "label": "RTL simulation",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "os-t-0297"
+      ]
+    },
+    {
+      "id": "os-t-0299",
+      "label": "QEMU",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0300",
+      "label": "Spike",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0301",
+      "label": "translation lookaside buffer",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "os-t-0302",
+      "label": "memory management unit",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    }
+  ]
+}
