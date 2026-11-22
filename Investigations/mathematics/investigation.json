@@ -6517,7 +6517,1188 @@
     "entries": [],
     "purpose": "Ordinary curiosity and ambitious research questions; no generated filler to force glossary coverage."
   },
-  "navigation_bridges": [],
+  "navigation_bridges": [
+    {
+      "id": "STRUCTURE",
+      "question": "What mathematical structure must a transformation preserve?",
+      "choices": [
+        {
+          "label": "These objects look alike",
+          "technical_title": "These objects look alike",
+          "distinguishing_question": "Are we comparing cardinality, operation laws or topology?",
+          "why": "Equality of counts does not imply structural equivalence.",
+          "targets": [
+            "MATH-MAPS",
+            "MATH-SETS"
+          ],
+          "section_targets": [
+            {
+              "source_id": "HALMOS-LIN",
+              "ref": "9",
+              "level": "toc_only",
+              "why": "9: Isomorphism · printed p. 14"
+            },
+            {
+              "source_id": "ARTIN",
+              "ref": "2.6",
+              "level": "toc_only",
+              "why": "2.6: Isomorphisms"
+            },
+            {
+              "source_id": "HALMOS-SET",
+              "ref": "1",
+              "level": "toc_only",
+              "why": "1: The Axiom of Extension · printed p. 1"
+            },
+            {
+              "source_id": "HALMOS-SET",
+              "ref": "2",
+              "level": "toc_only",
+              "why": "2: The Axiom of Specification · printed p. 4"
+            }
+          ],
+          "term_ids": [
+            "math-t-0762",
+            "math-t-0366",
+            "math-t-0745",
+            "math-t-0764",
+            "math-t-0001",
+            "math-t-0007",
+            "math-t-0011"
+          ]
+        },
+        {
+          "label": "The problem contains symmetries",
+          "technical_title": "The problem contains symmetries",
+          "distinguishing_question": "Which group action and orbit quotient is valid?",
+          "why": "The action, not appearance, defines equivalent configurations.",
+          "targets": [
+            "MATH-GROUP",
+            "MATH-SYMMETRY"
+          ],
+          "section_targets": [
+            {
+              "source_id": "ARTIN",
+              "ref": "2",
+              "level": "toc_only",
+              "why": "2: Groups"
+            },
+            {
+              "source_id": "ARTIN",
+              "ref": "7",
+              "level": "toc_only",
+              "why": "7: More Group Theory"
+            },
+            {
+              "source_id": "ARTIN",
+              "ref": "6",
+              "level": "toc_only",
+              "why": "6: Symmetry"
+            },
+            {
+              "source_id": "ARTIN",
+              "ref": "7.1",
+              "level": "toc_only",
+              "why": "7.1: Cayley's Theorem"
+            }
+          ],
+          "term_ids": [
+            "math-t-0110",
+            "math-t-0129",
+            "math-t-0127",
+            "math-t-0150",
+            "math-t-0120",
+            "math-t-0121",
+            "math-t-0122"
+          ]
+        },
+        {
+          "label": "An unfamiliar number system factors strangely",
+          "technical_title": "An unfamiliar number system factors strangely",
+          "distinguishing_question": "Which ring/ideal/extension property survives?",
+          "why": "Prime elements and prime ideals are different objects.",
+          "targets": [
+            "MATH-RINGS",
+            "MATH-GALOIS"
+          ],
+          "section_targets": [
+            {
+              "source_id": "ARTIN",
+              "ref": "11",
+              "level": "toc_only",
+              "why": "11: Rings"
+            },
+            {
+              "source_id": "ARTIN",
+              "ref": "12",
+              "level": "toc_only",
+              "why": "12: Factoring"
+            },
+            {
+              "source_id": "ARTIN",
+              "ref": "15",
+              "level": "toc_only",
+              "why": "15: Fields"
+            },
+            {
+              "source_id": "ARTIN",
+              "ref": "16",
+              "level": "inspected",
+              "why": "16: Galois Theory"
+            }
+          ],
+          "term_ids": [
+            "math-t-0159",
+            "math-t-0164",
+            "math-t-0173",
+            "math-t-0167",
+            "math-t-0188",
+            "math-t-0194",
+            "math-t-0197"
+          ]
+        }
+      ],
+      "term_ids": [
+        "math-t-0762",
+        "math-t-0366",
+        "math-t-0745",
+        "math-t-0764",
+        "math-t-0001",
+        "math-t-0007",
+        "math-t-0011",
+        "math-t-0032",
+        "math-t-0110",
+        "math-t-0129"
+      ]
+    },
+    {
+      "id": "PROOF",
+      "question": "Where does the mathematical argument require an additional hypothesis?",
+      "choices": [
+        {
+          "label": "It seems obvious something exists",
+          "technical_title": "It seems obvious something exists",
+          "distinguishing_question": "Is it constructive, choice-dependent or contractive?",
+          "why": "Maximality proofs need not provide a feasible algorithm.",
+          "targets": [
+            "MATH-CHOICE",
+            "MATH-FIXED"
+          ],
+          "section_targets": [
+            {
+              "source_id": "HALMOS-SET",
+              "ref": "15",
+              "level": "inspected",
+              "why": "15: The Axiom of Choice · printed p. 49"
+            },
+            {
+              "source_id": "HALMOS-SET",
+              "ref": "18",
+              "level": "inspected",
+              "why": "18: Transfinite Recursion · printed p. 58"
+            },
+            {
+              "source_id": "KREYSZIG",
+              "ref": "5.1",
+              "level": "inspected",
+              "why": "5.1: Banach Fixed Point Theorem · printed p. 299"
+            },
+            {
+              "source_id": "RUDIN",
+              "ref": "9",
+              "level": "toc_only",
+              "why": "9: Functions of Several Variables · printed p. 190"
+            }
+          ],
+          "term_ids": [
+            "math-t-0034",
+            "math-t-0035",
+            "math-t-0037",
+            "math-t-0518",
+            "math-t-0442",
+            "math-t-0376"
+          ]
+        },
+        {
+          "label": "I switched a limit with another operation",
+          "technical_title": "I switched a limit with another operation",
+          "distinguishing_question": "Was convergence uniform, dominated or monotone?",
+          "why": "Pointwise convergence is not generally sufficient.",
+          "targets": [
+            "MATH-LIMITS",
+            "MATH-INTEGRAL"
+          ],
+          "section_targets": [
+            {
+              "source_id": "RUDIN",
+              "ref": "7",
+              "level": "inspected",
+              "why": "7: Sequences and Series of Functions · printed p. 132"
+            },
+            {
+              "source_id": "ROYDEN",
+              "ref": "4",
+              "level": "inspected",
+              "why": "4: Lebesgue Integration · printed p. 62"
+            },
+            {
+              "source_id": "ROYDEN",
+              "ref": "4",
+              "level": "inspected",
+              "why": "4: Lebesgue Integration · printed p. 62"
+            },
+            {
+              "source_id": "RUDIN",
+              "ref": "7",
+              "level": "inspected",
+              "why": "7: Sequences and Series of Functions · printed p. 132"
+            }
+          ],
+          "term_ids": [
+            "math-t-0424",
+            "math-t-0423",
+            "math-t-0449",
+            "math-t-0466",
+            "math-t-0470",
+            "math-t-0468"
+          ]
+        },
+        {
+          "label": "I assumed a continuous map or bounded space was well behaved",
+          "technical_title": "I assumed a continuous map or bounded space was well behaved",
+          "distinguishing_question": "Check compactness and inverse continuity conditions",
+          "why": "Closed-and-bounded is not a universal compactness criterion.",
+          "targets": [
+            "MATH-TOPOLOGY",
+            "MATH-COMPACT",
+            "MATH-MAPS"
+          ],
+          "section_targets": [
+            {
+              "source_id": "MUNKRES",
+              "ref": "2",
+              "level": "toc_only",
+              "why": "2: Topological Spaces and Continuous Functions · printed p. 73"
+            },
+            {
+              "source_id": "MUNKRES",
+              "ref": "3",
+              "level": "toc_only",
+              "why": "3: Connectedness and Compactness · printed p. 145"
+            },
+            {
+              "source_id": "MUNKRES",
+              "ref": "3",
+              "level": "toc_only",
+              "why": "3: Connectedness and Compactness · printed p. 145"
+            },
+            {
+              "source_id": "KREYSZIG",
+              "ref": "2.5",
+              "level": "toc_only",
+              "why": "2.5: Compactness and Finite Dimension · printed p. 77"
+            }
+          ],
+          "term_ids": [
+            "math-t-0355",
+            "math-t-0365",
+            "math-t-0366",
+            "math-t-0379",
+            "math-t-0381",
+            "math-t-0498",
+            "math-t-0762"
+          ]
+        }
+      ],
+      "term_ids": [
+        "math-t-0034",
+        "math-t-0035",
+        "math-t-0037",
+        "math-t-0518",
+        "math-t-0442",
+        "math-t-0376",
+        "math-t-0424",
+        "math-t-0423",
+        "math-t-0449",
+        "math-t-0466"
+      ]
+    },
+    {
+      "id": "LINEAR",
+      "question": "What information is preserved by a linear representation?",
+      "choices": [
+        {
+          "label": "Changing coordinates gives a new matrix",
+          "technical_title": "Changing coordinates gives a new matrix",
+          "distinguishing_question": "Separate the underlying map from its basis-dependent entries",
+          "why": "Rank and nullity remain invariant.",
+          "targets": [
+            "MATH-VECTOR"
+          ],
+          "section_targets": [
+            {
+              "source_id": "HALMOS-LIN",
+              "ref": "50",
+              "level": "inspected",
+              "why": "50: Rank and nullity · printed p. 90"
+            },
+            {
+              "source_id": "ARTIN",
+              "ref": "3",
+              "level": "toc_only",
+              "why": "3: Vector Spaces"
+            }
+          ],
+          "term_ids": [
+            "math-t-0055",
+            "math-t-0064",
+            "math-t-0066",
+            "math-t-0072"
+          ]
+        },
+        {
+          "label": "I cannot diagonalize the transformation",
+          "technical_title": "I cannot diagonalize the transformation",
+          "distinguishing_question": "Check Jordan structure, normality or self-adjointness",
+          "why": "Eigenvectors need not span.",
+          "targets": [
+            "MATH-SPECTRAL"
+          ],
+          "section_targets": [
+            {
+              "source_id": "HALMOS-LIN",
+              "ref": "79",
+              "level": "inspected",
+              "why": "79: Spec\u0002tral theorem · printed p. 155"
+            },
+            {
+              "source_id": "ARTIN",
+              "ref": "4.7",
+              "level": "toc_only",
+              "why": "4.7: Jordan Form"
+            }
+          ],
+          "term_ids": [
+            "math-t-0100",
+            "math-t-0088",
+            "math-t-0096",
+            "math-t-0521"
+          ]
+        },
+        {
+          "label": "A linear functional or operator behaves strangely",
+          "technical_title": "A linear functional or operator behaves strangely",
+          "distinguishing_question": "Check its norm, domain and infinite-dimensional topology",
+          "why": "Not all linear maps are bounded.",
+          "targets": [
+            "MATH-FUNCTIONS",
+            "MATH-OPERATOR"
+          ],
+          "section_targets": [
+            {
+              "source_id": "ROYDEN",
+              "ref": "7",
+              "level": "toc_only",
+              "why": "7: The Lp Spaces: Completeness and Approximation"
+            },
+            {
+              "source_id": "ROYDEN",
+              "ref": "8",
+              "level": "toc_only",
+              "why": "8: The Lp Spaces: Duality, Weak Convergence, and Minimization"
+            },
+            {
+              "source_id": "KREYSZIG",
+              "ref": "4.2",
+              "level": "inspected",
+              "why": "4.2: Hahn-Banach Theorem · printed p. 213"
+            },
+            {
+              "source_id": "KREYSZIG",
+              "ref": "10",
+              "level": "toc_only",
+              "why": "10: Unbounded Linear Operators in Hilbert Space finer §10.1 unverified, showing chapter 10"
+            }
+          ],
+          "term_ids": [
+            "math-t-0482",
+            "math-t-0499",
+            "math-t-0509",
+            "math-t-0513",
+            "math-t-0530",
+            "math-t-0521"
+          ]
+        }
+      ],
+      "term_ids": [
+        "math-t-0055",
+        "math-t-0064",
+        "math-t-0066",
+        "math-t-0072",
+        "math-t-0100",
+        "math-t-0088",
+        "math-t-0096",
+        "math-t-0521",
+        "math-t-0482",
+        "math-t-0499"
+      ]
+    },
+    {
+      "id": "DISCRETE",
+      "question": "How can combinatorial scale be compressed into manageable operators?",
+      "choices": [
+        {
+          "label": "I need to count overlapping constrained cases",
+          "technical_title": "I need to count overlapping constrained cases",
+          "distinguishing_question": "Use correct labeling and inclusion-exclusion",
+          "why": "Different distinguishability creates different counts.",
+          "targets": [
+            "MATH-COUNT",
+            "MATH-ORDER"
+          ],
+          "section_targets": [
+            {
+              "source_id": "STANLEY",
+              "ref": "1.9",
+              "level": "toc_only",
+              "why": "1.9: The Twelvefold Way · printed p. 71"
+            },
+            {
+              "source_id": "STANLEY",
+              "ref": "2.1",
+              "level": "toc_only",
+              "why": "2.1: Inclusion-Exclusion · printed p. 195"
+            },
+            {
+              "source_id": "STANLEY",
+              "ref": "3.1",
+              "level": "toc_only",
+              "why": "3.1: Basic Concepts · printed p. 241"
+            },
+            {
+              "source_id": "STANLEY",
+              "ref": "3.3",
+              "level": "toc_only",
+              "why": "3.3: Lattices · printed p. 248"
+            }
+          ],
+          "term_ids": [
+            "math-t-0245",
+            "math-t-0265",
+            "math-t-0259",
+            "math-t-0049",
+            "math-t-0273",
+            "math-t-0276"
+          ]
+        },
+        {
+          "label": "I only know cumulative divisor/subset totals",
+          "technical_title": "I only know cumulative divisor/subset totals",
+          "distinguishing_question": "Invert using the correct Möbius function",
+          "why": "Poset order determines the inverse.",
+          "targets": [
+            "MATH-MOBIUS"
+          ],
+          "section_targets": [
+            {
+              "source_id": "STANLEY",
+              "ref": "3.6",
+              "level": "toc_only",
+              "why": "3.6: Incidence Algebras · printed p. 261"
+            },
+            {
+              "source_id": "STANLEY",
+              "ref": "3.7",
+              "level": "inspected",
+              "why": "3.7: The Möbius Inversion Formula · printed p. 264"
+            }
+          ],
+          "term_ids": [
+            "math-t-0275",
+            "math-t-0276",
+            "math-t-0049"
+          ]
+        },
+        {
+          "label": "A finite-state rule generates many strings",
+          "technical_title": "A finite-state rule generates many strings",
+          "distinguishing_question": "Encode allowed transitions into matrix powers",
+          "why": "The automaton state must preserve the restrictions.",
+          "targets": [
+            "MATH-GENFUN"
+          ],
+          "section_targets": [
+            {
+              "source_id": "STANLEY",
+              "ref": "4.7",
+              "level": "inspected",
+              "why": "4.7: The Transfer-Matrix Method · printed p. 500"
+            },
+            {
+              "source_id": "STANLEY",
+              "ref": "4.1",
+              "level": "toc_only",
+              "why": "4.1: Rational Power Series in One Variable · printed p. 464"
+            }
+          ],
+          "term_ids": [
+            "math-t-0283",
+            "math-t-0290",
+            "math-t-0287"
+          ]
+        },
+        {
+          "label": "A network cannot sustain sufficient throughput",
+          "technical_title": "A network cannot sustain sufficient throughput",
+          "distinguishing_question": "Look for a graph cut, matching or structural obstruction",
+          "why": "Many apparent routes can share one bottleneck.",
+          "targets": [
+            "MATH-GRAPH",
+            "MATH-FLOW",
+            "MATH-MINORS"
+          ],
+          "section_targets": [
+            {
+              "source_id": "DIESTEL",
+              "ref": "1",
+              "level": "toc_only",
+              "why": "1: The Basics · printed p. 1"
+            },
+            {
+              "source_id": "DIESTEL",
+              "ref": "2",
+              "level": "toc_only",
+              "why": "2: Matching, Covering and Packing · printed p. 37"
+            },
+            {
+              "source_id": "DIESTEL",
+              "ref": "3.3",
+              "level": "toc_only",
+              "why": "3.3: Menger’s theorem* · printed p. 71"
+            },
+            {
+              "source_id": "DIESTEL",
+              "ref": "6",
+              "level": "toc_only",
+              "why": "6: Flows · printed p. 155"
+            }
+          ],
+          "term_ids": [
+            "math-t-0296",
+            "math-t-0306",
+            "math-t-0319",
+            "math-t-0328",
+            "math-t-0330",
+            "math-t-0329",
+            "math-t-0325"
+          ]
+        }
+      ],
+      "term_ids": [
+        "math-t-0245",
+        "math-t-0265",
+        "math-t-0259",
+        "math-t-0049",
+        "math-t-0273",
+        "math-t-0276",
+        "math-t-0275",
+        "math-t-0283",
+        "math-t-0290",
+        "math-t-0287"
+      ]
+    },
+    {
+      "id": "CONTINUOUS",
+      "question": "Which limit, norm or completeness assumption matters?",
+      "choices": [
+        {
+          "label": "An integral and pointwise limit disagree",
+          "technical_title": "An integral and pointwise limit disagree",
+          "distinguishing_question": "Inspect domination, monotonicity and uniformity",
+          "why": "No unrestricted interchange theorem exists.",
+          "targets": [
+            "MATH-LIMITS",
+            "MATH-INTEGRAL"
+          ],
+          "section_targets": [
+            {
+              "source_id": "RUDIN",
+              "ref": "7",
+              "level": "inspected",
+              "why": "7: Sequences and Series of Functions · printed p. 132"
+            },
+            {
+              "source_id": "ROYDEN",
+              "ref": "4",
+              "level": "inspected",
+              "why": "4: Lebesgue Integration · printed p. 62"
+            },
+            {
+              "source_id": "ROYDEN",
+              "ref": "4",
+              "level": "inspected",
+              "why": "4: Lebesgue Integration · printed p. 62"
+            },
+            {
+              "source_id": "RUDIN",
+              "ref": "7",
+              "level": "inspected",
+              "why": "7: Sequences and Series of Functions · printed p. 132"
+            }
+          ],
+          "term_ids": [
+            "math-t-0424",
+            "math-t-0423",
+            "math-t-0449",
+            "math-t-0466",
+            "math-t-0470",
+            "math-t-0468"
+          ]
+        },
+        {
+          "label": "Iterates approach a value outside the domain",
+          "technical_title": "Iterates approach a value outside the domain",
+          "distinguishing_question": "Check completeness and contraction conditions",
+          "why": "Small successive differences are insufficient.",
+          "targets": [
+            "MATH-COMPLETE",
+            "MATH-FIXED"
+          ],
+          "section_targets": [
+            {
+              "source_id": "RUDIN",
+              "ref": "3",
+              "level": "toc_only",
+              "why": "3: Numerical Sequences and Series · printed p. 43"
+            },
+            {
+              "source_id": "KREYSZIG",
+              "ref": "1.4",
+              "level": "toc_only",
+              "why": "1.4: Convergence, Cauchy Sequence, Completeness · printed p. 25"
+            },
+            {
+              "source_id": "KREYSZIG",
+              "ref": "5.1",
+              "level": "inspected",
+              "why": "5.1: Banach Fixed Point Theorem · printed p. 299"
+            },
+            {
+              "source_id": "RUDIN",
+              "ref": "9",
+              "level": "toc_only",
+              "why": "9: Functions of Several Variables · printed p. 190"
+            }
+          ],
+          "term_ids": [
+            "math-t-0375",
+            "math-t-0376",
+            "math-t-0498",
+            "math-t-0518",
+            "math-t-0442"
+          ]
+        },
+        {
+          "label": "Functions converge in one sense but not another",
+          "technical_title": "Functions converge in one sense but not another",
+          "distinguishing_question": "Compare almost-everywhere, weak and norm convergence",
+          "why": "Topologies define different convergence notions.",
+          "targets": [
+            "MATH-FUNCTIONS",
+            "MATH-OPERATOR"
+          ],
+          "section_targets": [
+            {
+              "source_id": "ROYDEN",
+              "ref": "7",
+              "level": "toc_only",
+              "why": "7: The Lp Spaces: Completeness and Approximation"
+            },
+            {
+              "source_id": "ROYDEN",
+              "ref": "8",
+              "level": "toc_only",
+              "why": "8: The Lp Spaces: Duality, Weak Convergence, and Minimization"
+            },
+            {
+              "source_id": "KREYSZIG",
+              "ref": "4.2",
+              "level": "inspected",
+              "why": "4.2: Hahn-Banach Theorem · printed p. 213"
+            },
+            {
+              "source_id": "KREYSZIG",
+              "ref": "10",
+              "level": "toc_only",
+              "why": "10: Unbounded Linear Operators in Hilbert Space finer §10.1 unverified, showing chapter 10"
+            }
+          ],
+          "term_ids": [
+            "math-t-0482",
+            "math-t-0499",
+            "math-t-0509",
+            "math-t-0513",
+            "math-t-0530",
+            "math-t-0521"
+          ]
+        }
+      ],
+      "term_ids": [
+        "math-t-0424",
+        "math-t-0423",
+        "math-t-0449",
+        "math-t-0466",
+        "math-t-0470",
+        "math-t-0468",
+        "math-t-0375",
+        "math-t-0376",
+        "math-t-0498",
+        "math-t-0518"
+      ]
+    },
+    {
+      "id": "SPACE",
+      "question": "What global geometric structure is invisible locally?",
+      "choices": [
+        {
+          "label": "Two spaces seem locally similar but differ globally",
+          "technical_title": "Two spaces seem locally similar but differ globally",
+          "distinguishing_question": "Use homeomorphism and loop invariants",
+          "why": "A local chart does not classify global holes.",
+          "targets": [
+            "MATH-TOPOLOGY",
+            "MATH-LOOPS"
+          ],
+          "section_targets": [
+            {
+              "source_id": "MUNKRES",
+              "ref": "2",
+              "level": "toc_only",
+              "why": "2: Topological Spaces and Continuous Functions · printed p. 73"
+            },
+            {
+              "source_id": "MUNKRES",
+              "ref": "3",
+              "level": "toc_only",
+              "why": "3: Connectedness and Compactness · printed p. 145"
+            },
+            {
+              "source_id": "MUNKRES",
+              "ref": "9",
+              "level": "inspected",
+              "why": "9: The Fundamental Group · printed p. 317"
+            },
+            {
+              "source_id": "MUNKRES",
+              "ref": "11",
+              "level": "toc_only",
+              "why": "11: The Seifert-van Kampen Theorem · printed p. 403"
+            }
+          ],
+          "term_ids": [
+            "math-t-0355",
+            "math-t-0365",
+            "math-t-0366",
+            "math-t-0401",
+            "math-t-0399",
+            "math-t-0402"
+          ]
+        },
+        {
+          "label": "A curved surface has surprising lengths or total curvature",
+          "technical_title": "A curved surface has surprising lengths or total curvature",
+          "distinguishing_question": "Use intrinsic metric and Gauss–Bonnet assumptions",
+          "why": "Local geodesicity is not global minimality.",
+          "targets": [
+            "MATH-CURVATURE",
+            "MATH-GEODESIC"
+          ],
+          "section_targets": [
+            {
+              "source_id": "DOCARMO",
+              "ref": "2-5",
+              "level": "toc_only",
+              "why": "2-5: The First Fundamental Form; Area · printed p. 94"
+            },
+            {
+              "source_id": "DOCARMO",
+              "ref": "4-5",
+              "level": "inspected",
+              "why": "4-5: The Gauss-Bonnet Theorem and Its Applications · printed p. 267"
+            },
+            {
+              "source_id": "DOCARMO",
+              "ref": "4-4",
+              "level": "toc_only",
+              "why": "4-4: Parallel Transport. Geodesics. · printed p. 241"
+            },
+            {
+              "source_id": "DOCARMO",
+              "ref": "5-3",
+              "level": "toc_only",
+              "why": "5-3: Complete Surfaces. Theorem of Hopf-Rinow · printed p. 331"
+            }
+          ],
+          "term_ids": [
+            "math-t-0606",
+            "math-t-0613",
+            "math-t-0626",
+            "math-t-0622",
+            "math-t-0620",
+            "math-t-0625"
+          ]
+        },
+        {
+          "label": "Complex differentiability restricts possible maps",
+          "technical_title": "Complex differentiability restricts possible maps",
+          "distinguishing_question": "Use Cauchy formula and valid residue contours",
+          "why": "Analyticity and contour topology matter.",
+          "targets": [
+            "MATH-HOLO",
+            "MATH-RESIDUES"
+          ],
+          "section_targets": [
+            {
+              "source_id": "AHLFORS",
+              "ref": "2",
+              "level": "toc_only",
+              "why": "2: Complex Functions"
+            },
+            {
+              "source_id": "AHLFORS",
+              "ref": "4",
+              "level": "inspected",
+              "why": "4: Complex Integration"
+            },
+            {
+              "source_id": "AHLFORS",
+              "ref": "4",
+              "level": "inspected",
+              "why": "4: Complex Integration"
+            },
+            {
+              "source_id": "AHLFORS",
+              "ref": "5",
+              "level": "toc_only",
+              "why": "5: Series and Product Developments · printed p. 175"
+            }
+          ],
+          "term_ids": [
+            "math-t-0545",
+            "math-t-0556",
+            "math-t-0547",
+            "math-t-0567",
+            "math-t-0565",
+            "math-t-0563"
+          ]
+        }
+      ],
+      "term_ids": [
+        "math-t-0355",
+        "math-t-0365",
+        "math-t-0366",
+        "math-t-0401",
+        "math-t-0399",
+        "math-t-0402",
+        "math-t-0606",
+        "math-t-0613",
+        "math-t-0626",
+        "math-t-0622"
+      ]
+    },
+    {
+      "id": "RANDOM",
+      "question": "Which statement follows from a probability model versus actual data?",
+      "choices": [
+        {
+          "label": "The outcome sequence has dependence",
+          "technical_title": "The outcome sequence has dependence",
+          "distinguishing_question": "Distinguish independent trials, random walks and Markov transitions",
+          "why": "Markov is not independent increments.",
+          "targets": [
+            "MATH-PROB",
+            "MATH-STOCHASTIC"
+          ],
+          "section_targets": [
+            {
+              "source_id": "FELLER",
+              "ref": "I",
+              "level": "toc_only",
+              "why": "I: The Sample Space"
+            },
+            {
+              "source_id": "FELLER",
+              "ref": "V",
+              "level": "toc_only",
+              "why": "V: Conditional Probability and Stochastic Independence · printed p. 114"
+            },
+            {
+              "source_id": "FELLER",
+              "ref": "III",
+              "level": "toc_only",
+              "why": "III: Fluctuations in Coin Tossing and Random Walks · printed p. 67"
+            },
+            {
+              "source_id": "FELLER",
+              "ref": "XIII",
+              "level": "toc_only",
+              "why": "XIII: Recurrent Events; Renewal Theory · printed p. 303"
+            }
+          ],
+          "term_ids": [
+            "math-t-0635",
+            "math-t-0643",
+            "math-t-0642",
+            "math-t-0669",
+            "math-t-0679",
+            "math-t-0677",
+            "math-t-0676"
+          ]
+        },
+        {
+          "label": "I want a useful parameter estimate",
+          "technical_title": "I want a useful parameter estimate",
+          "distinguishing_question": "Check likelihood, sufficiency and risk",
+          "why": "One good-looking estimate cannot establish low risk.",
+          "targets": [
+            "MATH-STAT",
+            "MATH-ESTIMATE"
+          ],
+          "section_targets": [
+            {
+              "source_id": "CASELLA",
+              "ref": "6",
+              "level": "toc_only",
+              "why": "6: Principles of Data Reduction · printed p. 271"
+            },
+            {
+              "source_id": "CASELLA",
+              "ref": "7",
+              "level": "toc_only",
+              "why": "7: Point Estimation · printed p. 311"
+            },
+            {
+              "source_id": "CASELLA",
+              "ref": "7",
+              "level": "inspected",
+              "why": "7: Point Estimation · printed p. 311"
+            },
+            {
+              "source_id": "CASELLA",
+              "ref": "6",
+              "level": "toc_only",
+              "why": "6: Principles of Data Reduction · printed p. 271"
+            }
+          ],
+          "term_ids": [
+            "math-t-0690",
+            "math-t-0695",
+            "math-t-0698",
+            "math-t-0696",
+            "math-t-0703",
+            "math-t-0708"
+          ]
+        },
+        {
+          "label": "A statistical test was significant",
+          "technical_title": "A statistical test was significant",
+          "distinguishing_question": "Compare p-value, power, coverage and posterior claims",
+          "why": "P(data|null) is not P(null|data).",
+          "targets": [
+            "MATH-TEST"
+          ],
+          "section_targets": [
+            {
+              "source_id": "CASELLA",
+              "ref": "8",
+              "level": "toc_only",
+              "why": "8: Hypothesis Testing · printed p. 373"
+            },
+            {
+              "source_id": "CASELLA",
+              "ref": "9",
+              "level": "toc_only",
+              "why": "9: Interval Estimation · printed p. 417"
+            }
+          ],
+          "term_ids": [
+            "math-t-0725",
+            "math-t-0721",
+            "math-t-0718",
+            "math-t-0729"
+          ]
+        }
+      ],
+      "term_ids": [
+        "math-t-0635",
+        "math-t-0643",
+        "math-t-0642",
+        "math-t-0669",
+        "math-t-0679",
+        "math-t-0677",
+        "math-t-0676",
+        "math-t-0690",
+        "math-t-0695",
+        "math-t-0698"
+      ]
+    },
+    {
+      "id": "TRANSFER",
+      "question": "Which operations can be transported between mathematical domains?",
+      "choices": [
+        {
+          "label": "Several fields use quotient or inverse terminology",
+          "technical_title": "Several fields use quotient or inverse terminology",
+          "distinguishing_question": "Identify the compatibility conditions in both settings",
+          "why": "Names do not certify transferable laws.",
+          "targets": [
+            "MATH-MAPS",
+            "MATH-GROUP",
+            "MATH-RINGS"
+          ],
+          "section_targets": [
+            {
+              "source_id": "HALMOS-LIN",
+              "ref": "9",
+              "level": "toc_only",
+              "why": "9: Isomorphism · printed p. 14"
+            },
+            {
+              "source_id": "ARTIN",
+              "ref": "2.6",
+              "level": "toc_only",
+              "why": "2.6: Isomorphisms"
+            },
+            {
+              "source_id": "ARTIN",
+              "ref": "2",
+              "level": "toc_only",
+              "why": "2: Groups"
+            },
+            {
+              "source_id": "ARTIN",
+              "ref": "7",
+              "level": "toc_only",
+              "why": "7: More Group Theory"
+            }
+          ],
+          "term_ids": [
+            "math-t-0762",
+            "math-t-0366",
+            "math-t-0745",
+            "math-t-0764",
+            "math-t-0110",
+            "math-t-0129",
+            "math-t-0127"
+          ]
+        },
+        {
+          "label": "I need to encode counts using algebra",
+          "technical_title": "I need to encode counts using algebra",
+          "distinguishing_question": "Distinguish incidence inversion, series and linear maps",
+          "why": "Check that the representation retains needed semantics.",
+          "targets": [
+            "MATH-MOBIUS",
+            "MATH-GENFUN",
+            "MATH-VECTOR"
+          ],
+          "section_targets": [
+            {
+              "source_id": "STANLEY",
+              "ref": "3.6",
+              "level": "toc_only",
+              "why": "3.6: Incidence Algebras · printed p. 261"
+            },
+            {
+              "source_id": "STANLEY",
+              "ref": "3.7",
+              "level": "inspected",
+              "why": "3.7: The Möbius Inversion Formula · printed p. 264"
+            },
+            {
+              "source_id": "STANLEY",
+              "ref": "4.7",
+              "level": "inspected",
+              "why": "4.7: The Transfer-Matrix Method · printed p. 500"
+            },
+            {
+              "source_id": "STANLEY",
+              "ref": "4.1",
+              "level": "toc_only",
+              "why": "4.1: Rational Power Series in One Variable · printed p. 464"
+            }
+          ],
+          "term_ids": [
+            "math-t-0275",
+            "math-t-0276",
+            "math-t-0049",
+            "math-t-0283",
+            "math-t-0290",
+            "math-t-0287",
+            "math-t-0055"
+          ]
+        },
+        {
+          "label": "I need local facts to yield global conclusions",
+          "technical_title": "I need local facts to yield global conclusions",
+          "distinguishing_question": "Check topology, curvature and compactness hypotheses",
+          "why": "Local-to-global reasoning requires global premises.",
+          "targets": [
+            "MATH-LOOPS",
+            "MATH-CURVATURE",
+            "MATH-COMPACT"
+          ],
+          "section_targets": [
+            {
+              "source_id": "MUNKRES",
+              "ref": "9",
+              "level": "inspected",
+              "why": "9: The Fundamental Group · printed p. 317"
+            },
+            {
+              "source_id": "MUNKRES",
+              "ref": "11",
+              "level": "toc_only",
+              "why": "11: The Seifert-van Kampen Theorem · printed p. 403"
+            },
+            {
+              "source_id": "DOCARMO",
+              "ref": "2-5",
+              "level": "toc_only",
+              "why": "2-5: The First Fundamental Form; Area · printed p. 94"
+            },
+            {
+              "source_id": "DOCARMO",
+              "ref": "4-5",
+              "level": "inspected",
+              "why": "4-5: The Gauss-Bonnet Theorem and Its Applications · printed p. 267"
+            }
+          ],
+          "term_ids": [
+            "math-t-0401",
+            "math-t-0399",
+            "math-t-0402",
+            "math-t-0606",
+            "math-t-0613",
+            "math-t-0626",
+            "math-t-0379"
+          ]
+        }
+      ],
+      "term_ids": [
+        "math-t-0762",
+        "math-t-0366",
+        "math-t-0745",
+        "math-t-0764",
+        "math-t-0110",
+        "math-t-0129",
+        "math-t-0127",
+        "math-t-0150",
+        "math-t-0159",
+        "math-t-0164"
+      ]
+    }
+  ],
   "landscape_views": [],
   "nodes": [
     {
