@@ -3,37 +3,13 @@
   "name": "RSM question and investigation trees",
   "views": [
     {
-      "id": "os-questions",
-      "title": "Operating systems — questions",
+      "id": "os-curiosities",
+      "title": "Operating systems — Explore questions and investigations",
+      "short_title": "Operating systems",
+      "shared_reader_id": "operating-systems",
       "file": "Investigations/operating-systems/investigation.json",
-      "reference_file": "Investigations/operating-systems/investigation.json",
       "projection": {
-        "shape": "flat",
-        "records": "question_nodes",
-        "fields": {
-          "id": "id",
-          "label": "question",
-          "parent": "parent_id",
-          "description": "why_ask"
-        },
-        "relations": "question_connections"
-      }
-    },
-    {
-      "id": "os-investigation",
-      "title": "Operating systems — investigation",
-      "file": "Investigations/operating-systems/investigation.json",
-      "reference_file": "Investigations/operating-systems/investigation.json",
-      "projection": {
-        "shape": "flat",
-        "records": "nodes",
-        "fields": {
-          "id": "id",
-          "label": "question",
-          "parent": "parent_id",
-          "description": "why"
-        },
-        "relations": "relations"
+        "shape": "curiosities"
       }
     },
     {
@@ -47,49 +23,13 @@
       }
     },
     {
-      "id": "human-ai-questions",
-      "title": "Human–AI collaboration — questions",
+      "id": "human-ai-curiosities",
+      "title": "Human–AI collaboration — Explore questions and working examples",
+      "short_title": "Human–AI collaboration",
+      "shared_reader_id": "human-ai-symbiosis",
       "file": "Investigations/human-ai-symbiosis/investigation.json",
       "projection": {
-        "shape": "flat",
-        "records": "question_nodes",
-        "fields": {
-          "id": "id",
-          "label": "question",
-          "parent": "parent_id",
-          "description": "why_ask"
-        },
-        "relations": "question_connections"
-      }
-    },
-    {
-      "id": "human-ai-investigation",
-      "title": "Human–AI collaboration — investigation",
-      "file": "Investigations/human-ai-symbiosis/investigation.json",
-      "projection": {
-        "shape": "flat",
-        "records": "nodes",
-        "fields": {
-          "id": "id",
-          "label": "question",
-          "parent": "parent_id",
-          "description": "status"
-        }
-      }
-    },
-    {
-      "id": "human-ai-fieldwork",
-      "title": "Human–AI collaboration — people & working examples",
-      "file": "Investigations/human-ai-symbiosis/investigation.json",
-      "projection": {
-        "shape": "flat",
-        "records": "fieldwork_nodes",
-        "fields": {
-          "id": "id",
-          "label": "question",
-          "parent": "parent_id",
-          "description": "why_ask"
-        }
+        "shape": "curiosities"
       }
     }
   ]
