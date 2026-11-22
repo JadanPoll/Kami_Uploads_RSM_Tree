@@ -28,11 +28,12 @@
     {
       "id": "MES",
       "title": "Making Embedded Systems: Design Patterns for Great Software",
-      "edition": "2nd edition (2024)",
+      "edition": "2nd edition (March 2024)",
       "url": "https://drive.google.com/file/d/1hU4l-fAivhO7f3b8ZZK58JOPTKysXzhl/view?usp=drivesdk",
       "perspective": "bare-metal engineering",
-      "page_scheme": "Complete chapter titles verified in book; printed page ranges not yet verified",
-      "note": "Author explicitly focuses on bare-metal embedded systems rather than OS-specific implementation."
+      "page_scheme": "Chapter titles and descriptions checked in this PDF; printed starting pages not established",
+      "note": "Author explicitly focuses on bare-metal embedded systems rather than OS-specific implementation.",
+      "authors": "Elecia White"
     },
     {
       "id": "COD-RV",
@@ -7161,6 +7162,2106 @@
         "page_scheme": "printed",
         "verification": "toc_start_and_next_boundary"
       }
+    ],
+    "MES": [
+      {
+        "source_id": "MES",
+        "chapter": 1,
+        "title": "Introduction",
+        "start": null,
+        "page_scheme": "printed page boundary unverified",
+        "verification": "chapter_title_and_role_inspected_in_2024_pdf_preface",
+        "use_when": "Bound the resource, timing and hardware interaction requirements before deciding whether an OS is necessary"
+      },
+      {
+        "source_id": "MES",
+        "chapter": 2,
+        "title": "Creating a System Architecture",
+        "start": null,
+        "page_scheme": "printed page boundary unverified",
+        "verification": "chapter_title_and_role_inspected_in_2024_pdf_preface",
+        "use_when": "Decompose requirements, data flows, module responsibilities and state before implementing drivers"
+      },
+      {
+        "source_id": "MES",
+        "chapter": 3,
+        "title": "Getting Your Hands on the Hardware",
+        "start": null,
+        "page_scheme": "printed page boundary unverified",
+        "verification": "chapter_title_and_role_inspected_in_2024_pdf_preface",
+        "use_when": "Bring up boards, inspect schematics and debug physical/software integration"
+      },
+      {
+        "source_id": "MES",
+        "chapter": 4,
+        "title": "Inputs, Outputs, and Timers",
+        "start": null,
+        "page_scheme": "printed page boundary unverified",
+        "verification": "chapter_title_and_role_inspected_in_2024_pdf_preface",
+        "use_when": "Implement concrete I/O, timers, observable hardware events and small diagnostics"
+      },
+      {
+        "source_id": "MES",
+        "chapter": 5,
+        "title": "Interrupts",
+        "start": null,
+        "page_scheme": "printed page boundary unverified",
+        "verification": "chapter_title_and_role_inspected_in_2024_pdf_preface",
+        "use_when": "Trace IRQ-to-ISR path, context, latency, nested priorities and short interrupt work"
+      },
+      {
+        "source_id": "MES",
+        "chapter": 6,
+        "title": "Managing the Flow of Activity",
+        "start": null,
+        "page_scheme": "printed page boundary unverified",
+        "verification": "chapter_title_and_role_inspected_in_2024_pdf_preface",
+        "use_when": "Compare cooperative main loop, event processing, finite-state machines and interrupt-driven execution"
+      },
+      {
+        "source_id": "MES",
+        "chapter": 7,
+        "title": "Communicating with Peripherals",
+        "start": null,
+        "page_scheme": "printed page boundary unverified",
+        "verification": "chapter_title_and_role_inspected_in_2024_pdf_preface",
+        "use_when": "Select UART/SPI/I2C/USB interfaces and understand framing, communication ownership and timing"
+      },
+      {
+        "source_id": "MES",
+        "chapter": 8,
+        "title": "Putting Together a System",
+        "start": null,
+        "page_scheme": "printed page boundary unverified",
+        "verification": "chapter_title_and_role_inspected_in_2024_pdf_preface",
+        "use_when": "Integrate LCD/ADC/flash/sensors with buffers, bandwidth and pipelines"
+      },
+      {
+        "source_id": "MES",
+        "chapter": 9,
+        "title": "Getting into Trouble",
+        "start": null,
+        "page_scheme": "printed page boundary unverified",
+        "verification": "chapter_title_and_role_inspected_in_2024_pdf_preface",
+        "use_when": "Trace hard faults, linker maps, stack corruption, reset and hardware-versus-code failure"
+      },
+      {
+        "source_id": "MES",
+        "chapter": 10,
+        "title": "Building Connected Devices",
+        "start": null,
+        "page_scheme": "printed page boundary unverified",
+        "verification": "chapter_title_and_role_inspected_in_2024_pdf_preface",
+        "use_when": "Handle connected-device lifecycle, updates, remote visibility, monitoring and security"
+      },
+      {
+        "source_id": "MES",
+        "chapter": 11,
+        "title": "Doing More with Less",
+        "start": null,
+        "page_scheme": "printed page boundary unverified",
+        "verification": "chapter_title_and_role_inspected_in_2024_pdf_preface",
+        "use_when": "Inspect RAM/flash/CPU budget, memory layout and measurement-driven optimization"
+      },
+      {
+        "source_id": "MES",
+        "chapter": 12,
+        "title": "Math",
+        "start": null,
+        "page_scheme": "printed page boundary unverified",
+        "verification": "chapter_title_and_role_inspected_in_2024_pdf_preface",
+        "use_when": "Reason about arithmetic representation, fixed point, floating point and numeric limitations"
+      },
+      {
+        "source_id": "MES",
+        "chapter": 13,
+        "title": "Reducing Power Consumption",
+        "start": null,
+        "page_scheme": "printed page boundary unverified",
+        "verification": "chapter_title_and_role_inspected_in_2024_pdf_preface",
+        "use_when": "Trade sleep/wakeup, latency, energy and always-on requirements"
+      },
+      {
+        "source_id": "MES",
+        "chapter": 14,
+        "title": "Motors and Movement",
+        "start": null,
+        "page_scheme": "printed page boundary unverified",
+        "verification": "chapter_title_and_role_inspected_in_2024_pdf_preface",
+        "use_when": "Connect firmware timing and control loops to motors, sensing and physical movement"
+      }
+    ],
+    "COD-RV": [
+      {
+        "source_id": "COD-RV",
+        "chapter": 1,
+        "title": "Computer Abstractions and Technology",
+        "start": 2,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 1,
+        "title": "Introduction",
+        "start": 3,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "1.1"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 1,
+        "title": "Seven Great Ideas in Computer Architecture",
+        "start": 10,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "1.2"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 1,
+        "title": "Below Your Program",
+        "start": 13,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "1.3"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 1,
+        "title": "Under the Covers",
+        "start": 16,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "1.4"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 1,
+        "title": "Technologies for Building Processors and Memory",
+        "start": 25,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "1.5"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 1,
+        "title": "Performance",
+        "start": 29,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "1.6"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 1,
+        "title": "The Power Wall",
+        "start": 40,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "1.7"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 1,
+        "title": "The Sea Change: The Switch from Uniprocessors to Multiprocessors",
+        "start": 43,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "1.8"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 1,
+        "title": "Real Stuff: Benchmarking the Intel Core i7",
+        "start": 46,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "1.9"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 1,
+        "title": "Going Faster: Matrix Multiply in Python",
+        "start": 49,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "1.10"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 1,
+        "title": "Fallacies and Pitfalls",
+        "start": 50,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "1.11"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 1,
+        "title": "Concluding Remarks",
+        "start": 53,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "1.12"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 1,
+        "title": "Historical Perspective and Further Reading",
+        "start": 55,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "1.13"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 1,
+        "title": "Self-Study",
+        "start": 55,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "1.14"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 1,
+        "title": "Exercises",
+        "start": 59,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "1.15"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 2,
+        "title": "Instructions: Language of the Computer",
+        "start": 66,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 2,
+        "title": "Introduction",
+        "start": 68,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "2.1"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 2,
+        "title": "Operations of the Computer Hardware",
+        "start": 69,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "2.2"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 2,
+        "title": "Operands of the Computer Hardware",
+        "start": 73,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "2.3"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 2,
+        "title": "Signed and Unsigned Numbers",
+        "start": 80,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "2.4"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 2,
+        "title": "Representing Instructions in the Computer",
+        "start": 87,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "2.5"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 2,
+        "title": "Logical Operations",
+        "start": 95,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "2.6"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 2,
+        "title": "Instructions for Making Decisions",
+        "start": 98,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "2.7"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 2,
+        "title": "Supporting Procedures in Computer Hardware",
+        "start": 104,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "2.8"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 2,
+        "title": "Communicating with People",
+        "start": 114,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "2.9"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 2,
+        "title": "RISC-V Addressing for Wide Immediates and Addresses",
+        "start": 120,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "2.10"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 2,
+        "title": "Parallelism and Instructions: Synchronization",
+        "start": 128,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "2.11"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 2,
+        "title": "Translating and Starting a Program",
+        "start": 131,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "2.12"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 2,
+        "title": "A C Sort Example to Put it All Together 140Contents vii 2.14 Arrays versus Pointers",
+        "start": 148,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "2.13"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 2,
+        "title": "Advanced Material: Compiling C and Interpreting Java",
+        "start": 151,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "2.15"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 2,
+        "title": "Real Stuff: MIPS Instructions",
+        "start": 152,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "2.16"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 2,
+        "title": "Real Stuff: ARMv7 (32-bit) Instructions",
+        "start": 153,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "2.17"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 2,
+        "title": "Real Stuff: ARMv8 (64-bit) Instructions",
+        "start": 157,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "2.18"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 2,
+        "title": "Real Stuff: x86 Instructions",
+        "start": 158,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "2.19"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 2,
+        "title": "Real Stuff: The Rest of the RISC-V Instruction Set",
+        "start": 167,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "2.20"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 2,
+        "title": "Going Faster: Matrix Multiply in C",
+        "start": 168,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "2.21"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 2,
+        "title": "Fallacies and Pitfalls",
+        "start": 170,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "2.22"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 2,
+        "title": "Concluding Remarks",
+        "start": 172,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "2.23"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 2,
+        "title": "Historical Perspective and Further Reading",
+        "start": 174,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "2.24"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 2,
+        "title": "Self-Study",
+        "start": 175,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "2.25"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 2,
+        "title": "Exercises",
+        "start": 178,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "2.26"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 3,
+        "title": "Arithmetic for Computers",
+        "start": 188,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 3,
+        "title": "Introduction",
+        "start": 190,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "3.1"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 3,
+        "title": "Addition and Subtraction",
+        "start": 190,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "3.2"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 3,
+        "title": "Multiplication",
+        "start": 193,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "3.3"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 3,
+        "title": "Division",
+        "start": 199,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "3.4"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 3,
+        "title": "Floating Point",
+        "start": 208,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "3.5"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 3,
+        "title": "Parallelism and Computer Arithmetic: Subword Parallelism",
+        "start": 233,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "3.6"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 3,
+        "title": "Real Stuff: Streaming SIMD Extensions and Advanced Vector Extensions in x86",
+        "start": 234,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "3.7"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 3,
+        "title": "Going Faster: Subword Parallelism and Matrix Multiply",
+        "start": 236,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "3.8"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 3,
+        "title": "Fallacies and Pitfalls",
+        "start": 238,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "3.9"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 3,
+        "title": "Concluding Remarks",
+        "start": 241,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "3.10"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 3,
+        "title": "Historical Perspective and Further Reading",
+        "start": 242,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "3.11"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 3,
+        "title": "Self-Study",
+        "start": 242,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "3.12"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 3,
+        "title": "Exercises",
+        "start": 246,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "3.13"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 4,
+        "title": "The Processor",
+        "start": 252,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 4,
+        "title": "Introduction",
+        "start": 254,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "4.1"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 4,
+        "title": "Logic Design Conventions",
+        "start": 258,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "4.2"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 4,
+        "title": "Building a Datapath",
+        "start": 261,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "4.3"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 4,
+        "title": "A Simple Implementation Scheme",
+        "start": 269,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "4.4"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 4,
+        "title": "Multicyle Implementation",
+        "start": 282,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "4.5"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 4,
+        "title": "An Overview of Pipelining",
+        "start": 283,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "4.6"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 4,
+        "title": "Pipelined Datapath and Control",
+        "start": 296,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "4.7"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 4,
+        "title": "Data Hazards: Forwarding versus Stalling",
+        "start": 313,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "4.8"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 4,
+        "title": "Control Hazards",
+        "start": 325,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "4.9"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 4,
+        "title": "Exceptions",
+        "start": 333,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "4.10"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 4,
+        "title": "Parallelism via Instructions",
+        "start": 340,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "4.11"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 4,
+        "title": "Putting it All Together: The Intel Core i7 6700 and ARM Cortex-A53",
+        "start": 354,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "4.12"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 4,
+        "title": "Going Faster: Instruction-Level Parallelism and Matrix Multiply",
+        "start": 363,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "4.13"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 4,
+        "title": "Advanced Topic: An Introduction to Digital Design Using a Hardware Design Language to Describe and Model a Pipeline and More Pipelining Illustrations",
+        "start": 365,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "4.14"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 4,
+        "title": "Fallacies and Pitfalls",
+        "start": 365,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "4.15"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 4,
+        "title": "Concluding Remarks",
+        "start": 367,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "4.16"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 4,
+        "title": "Historical Perspective and Further Reading",
+        "start": 368,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "4.17"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 4,
+        "title": "Self-Study",
+        "start": 368,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "4.18"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 4,
+        "title": "Exercises",
+        "start": 369,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "4.19"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 5,
+        "title": "Large and Fast: Exploiting Memory Hierarchy",
+        "start": 386,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 5,
+        "title": "Introduction",
+        "start": 388,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "5.1"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 5,
+        "title": "Memory Technologies",
+        "start": 392,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "5.2"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 5,
+        "title": "The Basics of Caches",
+        "start": 398,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "5.3"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 5,
+        "title": "Measuring and Improving Cache Performance",
+        "start": 412,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "5.4"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 5,
+        "title": "Dependable Memory Hierarchy",
+        "start": 431,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "5.5"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 5,
+        "title": "Virtual Machines",
+        "start": 436,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "5.6"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 5,
+        "title": "Virtual Memory",
+        "start": 440,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "5.7"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 5,
+        "title": "A Common Framework for Memory Hierarchy",
+        "start": 464,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "5.8"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 5,
+        "title": "Using a Finite-State Machine to Control a Simple Cache",
+        "start": 470,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "5.9"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 5,
+        "title": "Parallelism and Memory Hierarchy: Cache Coherence",
+        "start": 475,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "5.10"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 5,
+        "title": "Parallelism and Memory Hierarchy: Redundant Arrays of Inexpensive Disks",
+        "start": 479,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "5.11"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 5,
+        "title": "Advanced Material: Implementing Cache Controllers",
+        "start": 480,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "5.12"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 5,
+        "title": "Real Stuff: The ARM Cortex-A8 and Intel Core i7 Memory Hierarchies",
+        "start": 480,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "5.13"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 5,
+        "title": "Real Stuff: The Rest of the RISC-V System and Special Instructions",
+        "start": 486,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "5.14"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 5,
+        "title": "Going Faster: Cache Blocking and Matrix Multiply",
+        "start": 488,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "5.15"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 5,
+        "title": "Fallacies and Pitfalls",
+        "start": 489,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "5.16"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 5,
+        "title": "Concluding Remarks",
+        "start": 494,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "5.17"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 5,
+        "title": "Historical Perspective and Further Reading",
+        "start": 495,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "5.18"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 5,
+        "title": "Self-Study",
+        "start": 495,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "5.19"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 5,
+        "title": "Exercises",
+        "start": 499,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "5.20"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 6,
+        "title": "Parallel Processors from Client to Cloud",
+        "start": 518,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 6,
+        "title": "Introduction",
+        "start": 520,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "6.1"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 6,
+        "title": "The Difficulty of Creating Parallel Processing Programs",
+        "start": 522,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "6.2"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 6,
+        "title": "SISD, MIMD, SIMD, SPMD, and Vector",
+        "start": 527,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "6.3"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 6,
+        "title": "Hardware Multithreading",
+        "start": 534,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "6.4"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 6,
+        "title": "Multicore and Other Shared Memory Multiprocessors",
+        "start": 537,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "6.5"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 6,
+        "title": "Introduction to Graphics Processing Units",
+        "start": 542,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "6.6"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 6,
+        "title": "Domain-Specific Architectures",
+        "start": 549,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "6.7"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 6,
+        "title": "Clusters, Warehouse Scale Computers, and Other Message-Passing Multiprocessors 552Contents ix 6.9 Introduction to Multiprocessor Network Topologies",
+        "start": 557,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "6.8"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 6,
+        "title": "Communicating to the Outside World: Cluster Networking",
+        "start": 561,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "6.10"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 6,
+        "title": "Multiprocessor Benchmarks and Performance Models",
+        "start": 561,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "6.11"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 6,
+        "title": "Real Stuff: Benchmarking the Google TPUv3 Supercomputer and an NVIDIA Volta GPU Cluster",
+        "start": 572,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "6.12"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 6,
+        "title": "Going Faster: Multiple Processors and Matrix Multiply",
+        "start": 580,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "6.13"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 6,
+        "title": "Fallacies and Pitfalls",
+        "start": 583,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "6.14"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 6,
+        "title": "Concluding Remarks",
+        "start": 585,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "6.15"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 6,
+        "title": "Historical Perspective and Further Reading",
+        "start": 587,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "6.16"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 6,
+        "title": "Self-Study",
+        "start": 588,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "6.17"
+      },
+      {
+        "source_id": "COD-RV",
+        "chapter": 6,
+        "title": "Exercises",
+        "start": 590,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "6.18"
+      }
+    ],
+    "COD-ARM": [
+      {
+        "source_id": "COD-ARM",
+        "chapter": 1,
+        "title": "Computer Abstractions and Technology",
+        "start": 2,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 1,
+        "title": "Introduction",
+        "start": 3,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "1.1"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 1,
+        "title": "Eight Great Ideas in Computer Architecture",
+        "start": 11,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "1.2"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 1,
+        "title": "Below Your Program",
+        "start": 13,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "1.3"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 1,
+        "title": "Under the Covers",
+        "start": 16,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "1.4"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 1,
+        "title": "Technologies for Building Processors and Memory",
+        "start": 24,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "1.5"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 1,
+        "title": "Performance",
+        "start": 28,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "1.6"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 1,
+        "title": "The Power Wall",
+        "start": 40,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "1.7"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 1,
+        "title": "The Sea Change: The Switch from Uniprocessors to Multiprocessors",
+        "start": 43,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "1.8"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 1,
+        "title": "Real Stuff: Benchmarking the Intel Core i7",
+        "start": 46,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "1.9"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 1,
+        "title": "Fallacies and Pitfalls",
+        "start": 49,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "1.10"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 1,
+        "title": "Concluding Remarks",
+        "start": 52,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "1.11"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 1,
+        "title": "Historical Perspective and Further Reading",
+        "start": 54,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "1.12"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 1,
+        "title": "Exercises",
+        "start": 54,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "1.13"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 2,
+        "title": "Instructions: Language of the Computer",
+        "start": 60,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 2,
+        "title": "Introduction",
+        "start": 62,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "2.1"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 2,
+        "title": "Operations of the Computer Hardware",
+        "start": 63,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "2.2"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 2,
+        "title": "Operands of the Computer Hardware",
+        "start": 67,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "2.3"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 2,
+        "title": "Signed and Unsigned Numbers",
+        "start": 75,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "2.4"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 2,
+        "title": "Representing Instructions in the Computer",
+        "start": 82,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "2.5"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 2,
+        "title": "Logical Operations",
+        "start": 90,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "2.6"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 2,
+        "title": "Instructions for Making Decisions",
+        "start": 93,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "2.7"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 2,
+        "title": "Supporting Procedures in Computer Hardware",
+        "start": 100,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "2.8"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 2,
+        "title": "Communicating with People",
+        "start": 110,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "2.9"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 2,
+        "title": "LEGv8 Addressing for Wide Immediates and Addresses",
+        "start": 115,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "2.10"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 2,
+        "title": "Parallelism and Instructions: Synchronization",
+        "start": 125,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "2.11"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 2,
+        "title": "Translating and Starting a Program",
+        "start": 128,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "2.12"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 2,
+        "title": "A C Sort Example to Put it All Together",
+        "start": 137,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "2.13"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 2,
+        "title": "Arrays versus Pointers",
+        "start": 146,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "2.14"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 2,
+        "title": "Advanced Material: Compiling C and Interpreting Java",
+        "start": 150,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "2.15"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 2,
+        "title": "Real Stuff: MIPS Instructions",
+        "start": 150,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "2.16"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 2,
+        "title": "Real Stuff: ARMv7 (32-bit) Instructions",
+        "start": 152,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "2.17"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 2,
+        "title": "Real Stuff: x86 Instructions",
+        "start": 154,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "2.18"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 2,
+        "title": "Real Stuff: The Rest of the ARMv8 Instruction Set",
+        "start": 163,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "2.19"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 2,
+        "title": "Fallacies and Pitfalls",
+        "start": 169,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "2.20"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 2,
+        "title": "Concluding Remarks",
+        "start": 171,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "2.21"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 2,
+        "title": "Historical Perspective and Further Reading",
+        "start": 173,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "2.22"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 2,
+        "title": "Exercises",
+        "start": 174,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "2.23"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 3,
+        "title": "Arithmetic for Computers",
+        "start": 186,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 3,
+        "title": "Introduction",
+        "start": 188,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "3.1"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 3,
+        "title": "Addition and Subtraction",
+        "start": 188,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "3.2"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 3,
+        "title": "Multiplication",
+        "start": 191,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "3.3"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 3,
+        "title": "Division",
+        "start": 197,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "3.4"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 3,
+        "title": "Floating Point",
+        "start": 205,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "3.5"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 3,
+        "title": "Parallelism and Computer Arithmetic: Subword Parallelism",
+        "start": 230,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "3.6"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 3,
+        "title": "Real Stuff: Streaming SIMD Extensions and Advanced Vector Extensions in x86",
+        "start": 232,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "3.7"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 3,
+        "title": "Real Stuff: The Rest of the ARMv8 Arithmetic Instructions",
+        "start": 234,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "3.8"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 3,
+        "title": "Going Faster: Subword Parallelism and Matrix Multiply",
+        "start": 238,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "3.9"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 3,
+        "title": "Fallacies and Pitfalls",
+        "start": 242,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "3.10"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 3,
+        "title": "Concluding Remarks",
+        "start": 245,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "3.11"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 3,
+        "title": "Historical Perspective and Further Reading",
+        "start": 248,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "3.12"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 3,
+        "title": "Exercises",
+        "start": 249,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "3.13"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 4,
+        "title": "The Processor",
+        "start": 254,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 4,
+        "title": "Introduction",
+        "start": 256,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "4.1"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 4,
+        "title": "Logic Design Conventions",
+        "start": 260,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "4.2"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 4,
+        "title": "Building a Datapath",
+        "start": 263,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "4.3"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 4,
+        "title": "A Simple Implementation Scheme",
+        "start": 271,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "4.4"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 4,
+        "title": "An Overview of Pipelining",
+        "start": 283,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "4.5"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 4,
+        "title": "Pipelined Datapath and Control",
+        "start": 297,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "4.6"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 4,
+        "title": "Data Hazards: Forwarding versus Stalling",
+        "start": 316,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "4.7"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 4,
+        "title": "Control Hazards",
+        "start": 328,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "4.8"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 4,
+        "title": "Exceptions",
+        "start": 336,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "4.9"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 4,
+        "title": "Parallelism via Instructions",
+        "start": 342,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "4.10"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 4,
+        "title": "Real Stuff: The ARM Cortex-A53 and Intel Core i7 Pipelines",
+        "start": 355,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "4.11"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 4,
+        "title": "Going Faster: Instruction-Level Parallelism and Matrix Multiply",
+        "start": 363,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "4.12"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 4,
+        "title": "Advanced Topic: An Introduction to Digital Design Using a Hardware Design Language to Describe and Model a Pipeline and More Pipelining Illustrations 366Contents xi 4.14 Fallacies and Pitfalls",
+        "start": 366,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "4.13"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 4,
+        "title": "Concluding Remarks",
+        "start": 367,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "4.15"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 4,
+        "title": "Historical Perspective and Further Reading",
+        "start": 368,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "4.16"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 4,
+        "title": "Exercises",
+        "start": 368,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "4.17"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 5,
+        "title": "Large and Fast: Exploiting Memory Hierarchy",
+        "start": 386,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 5,
+        "title": "Introduction",
+        "start": 388,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "5.1"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 5,
+        "title": "Memory Technologies",
+        "start": 392,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "5.2"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 5,
+        "title": "The Basics of Caches",
+        "start": 397,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "5.3"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 5,
+        "title": "Measuring and Improving Cache Performance",
+        "start": 412,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "5.4"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 5,
+        "title": "Dependable Memory Hierarchy",
+        "start": 432,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "5.5"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 5,
+        "title": "Virtual Machines",
+        "start": 438,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "5.6"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 5,
+        "title": "Virtual Memory",
+        "start": 441,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "5.7"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 5,
+        "title": "A Common Framework for Memory Hierarchy",
+        "start": 465,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "5.8"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 5,
+        "title": "Using a Finite-State Machine to Control a Simple Cache",
+        "start": 472,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "5.9"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 5,
+        "title": "Parallelism and Memory Hierarchy: Cache Coherence",
+        "start": 477,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "5.10"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 5,
+        "title": "Parallelism and Memory Hierarchy: Redundant Arrays of Inexpensive Disks",
+        "start": 481,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "5.11"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 5,
+        "title": "Advanced Material: Implementing Cache Controllers",
+        "start": 482,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "5.12"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 5,
+        "title": "Real Stuff: The ARM Cortex-A53 and Intel Core i7 Memory Hierarchies",
+        "start": 482,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "5.13"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 5,
+        "title": "Real Stuff: The Rest of the ARMv8 System and Special Instructions",
+        "start": 487,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "5.14"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 5,
+        "title": "Going Faster: Cache Blocking and Matrix Multiply",
+        "start": 488,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "5.15"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 5,
+        "title": "Fallacies and Pitfalls",
+        "start": 491,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "5.16"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 5,
+        "title": "Concluding Remarks",
+        "start": 496,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "5.17"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 5,
+        "title": "Historical Perspective and Further Reading",
+        "start": 497,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "5.18"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 5,
+        "title": "Exercises",
+        "start": 497,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "5.19"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 6,
+        "title": "Parallel Processors from Client to Cloud",
+        "start": 514,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 6,
+        "title": "Introduction",
+        "start": 516,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "6.1"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 6,
+        "title": "The Difficulty of Creating Parallel Processing Programs",
+        "start": 518,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "6.2"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 6,
+        "title": "SISD, MIMD, SIMD, SPMD, and Vector",
+        "start": 523,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "6.3"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 6,
+        "title": "Hardware Multithreading",
+        "start": 530,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "6.4"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 6,
+        "title": "Multicore and Other Shared Memory Multiprocessors",
+        "start": 533,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "6.5"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 6,
+        "title": "Introduction to Graphics Processing Units",
+        "start": 538,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "6.6"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 6,
+        "title": "Clusters, Warehouse Scale Computers, and Other Message-Passing Multiprocessors",
+        "start": 545,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "6.7"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 6,
+        "title": "Introduction to Multiprocessor Network Topologies",
+        "start": 550,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "6.8"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 6,
+        "title": "Communicating to the Outside World: Cluster Networking",
+        "start": 553,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "6.9"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 6,
+        "title": "Multiprocessor Benchmarks and Performance Models",
+        "start": 554,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "6.10"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 6,
+        "title": "Real Stuff: Benchmarking and Rooflines of the Intel Core i7 960 and the NVIDIA Tesla GPU 564xii Contents 6.12 Going Faster: Multiple Processors and Matrix Multiply",
+        "start": 569,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "6.11"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 6,
+        "title": "Fallacies and Pitfalls",
+        "start": 572,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "6.13"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 6,
+        "title": "Concluding Remarks",
+        "start": 574,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "6.14"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 6,
+        "title": "Historical Perspective and Further Reading",
+        "start": 577,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "6.15"
+      },
+      {
+        "source_id": "COD-ARM",
+        "chapter": 6,
+        "title": "Exercises",
+        "start": 577,
+        "page_scheme": "printed",
+        "verification": "table_of_contents_inspected_in_connected_pdf",
+        "section": "6.16"
+      }
     ]
   },
   "quick_reference_contract": {
@@ -7196,5 +9297,282 @@
       "Older OSTEP text is a conceptual source, not implementation documentation for a current kernel.",
       "Questions may map to overlapping routes. Chapters are stored once and referenced by their numbers."
     ]
-  }
+  },
+  "related_source_folders": [
+    {
+      "url": "https://drive.google.com/drive/folders/1Yfk9GlplruQzpIsPq7ks3fmMYNz7lFvS",
+      "label": "Embedded systems and computer architecture",
+      "source_ids": [
+        "MES",
+        "COD-RV",
+        "COD-ARM"
+      ],
+      "role": "Direct Drive shelf for the three hardware/bare-metal complements to OS abstraction, interface, and implementation texts"
+    }
+  ],
+  "source_inspected_observations": [
+    {
+      "id": "OS-SRC-MES-PREFACE",
+      "source_id": "MES",
+      "location": "Preface > About This Book / Organization of This Book",
+      "status": "text_inspected_page_not_established",
+      "observation": "The author describes the book as bare-metal firmware engineering, explicitly distinguishing it from an embedded-OS manual. The preface organizes the book as fourteen capability chapters, including architecture, hardware bring-up, interrupts, activity control, peripherals, debugging, connected devices, optimization, numeric techniques, power and motors.",
+      "consequence": "Read it to understand which tasks software performs without a kernel and which OS facilities may or may not earn their overhead."
+    },
+    {
+      "id": "OS-SRC-MES-INTERRUPTS",
+      "source_id": "MES",
+      "location": "Chapter 5 — Interrupts; interrupt latency versus system latency",
+      "status": "text_inspected_page_not_established",
+      "observation": "The book distinguishes the processor's time from IRQ arrival to ISR start from a worst-case system response bound affected by periods when interrupts are disabled. Interrupt handling and saved context consume cycles, and long handlers increase latency.",
+      "consequence": "An interrupt handler existing does not establish a real-time response guarantee; identify worst-case blocking and execution delays."
+    },
+    {
+      "id": "OS-SRC-ARM-LEGv8",
+      "source_id": "COD-ARM",
+      "location": "Preface and Chapter 2, instruction set terminology (LEGv8 versus ARMv8)",
+      "status": "text_inspected_page_not_established",
+      "observation": "The authors introduce LEGv8 as a deliberately restricted pedagogical subset based on ARMv8 and explicitly distinguish its instruction set from real ARMv8.",
+      "consequence": "Do not implement or debug real ARM exception/translation behavior from LEGv8 exercises alone; consult the actual architecture reference and target processor manuals."
+    },
+    {
+      "id": "OS-SRC-RV-PRIV",
+      "source_id": "COD-RV",
+      "location": "Further Reading > Chapter 5; references to The RISC-V Instruction Set Manual Volume II: Privileged Architecture",
+      "status": "text_inspected_page_not_established",
+      "observation": "The architecture book itself directs readers to the privileged architecture manual for layered privilege modes, translation and protection details beyond the introductory Chapter 5 presentation.",
+      "consequence": "Use the architecture book to understand the physical contract, but use privileged ISA specifications for an implementable supervisor trap or page-table design."
+    }
+  ],
+  "cross_book_factors": [
+    {
+      "id": "bare-metal-or-kernel",
+      "question": "Which OS functions genuinely need a privileged kernel?",
+      "mechanism": "A superloop, finite-state machine, IRQ handlers and peripheral drivers can run directly on hardware; adding multiple independently untrusted programs changes isolation, resource arbitration and recovery requirements.",
+      "source_routes": [
+        {
+          "id": "MES",
+          "sections": [
+            "Ch. 2",
+            "Ch. 5",
+            "Ch. 6",
+            "Ch. 8"
+          ]
+        },
+        {
+          "id": "OSTEP",
+          "sections": [
+            "Ch. 2",
+            "Ch. 4",
+            "Ch. 6"
+          ]
+        },
+        {
+          "id": "LKD",
+          "sections": [
+            "Ch. 3",
+            "Ch. 5"
+          ]
+        }
+      ],
+      "discriminator": "Try satisfying the actual device requirement bare-metal; identify the first unmet contract that justifies a scheduler, protection domain, or service boundary.",
+      "technical_node_ids": [
+        "OS-01",
+        "OS-02",
+        "OS-06",
+        "OS-07"
+      ]
+    },
+    {
+      "id": "interrupt-to-event",
+      "question": "How does a physical event become safe software action?",
+      "mechanism": "Hardware raises an event, the processor takes an exception/interrupt path, low-level code saves state and acknowledges it, and deferred work or a main loop completes the operation under timing and concurrency constraints.",
+      "source_routes": [
+        {
+          "id": "MES",
+          "sections": [
+            "Ch. 4",
+            "Ch. 5",
+            "Ch. 6"
+          ]
+        },
+        {
+          "id": "COD-RV",
+          "sections": [
+            "§4.10"
+          ]
+        },
+        {
+          "id": "COD-ARM",
+          "sections": [
+            "§4.9"
+          ]
+        },
+        {
+          "id": "OSTEP",
+          "sections": [
+            "Ch. 36"
+          ]
+        },
+        {
+          "id": "LKD",
+          "sections": [
+            "Ch. 7",
+            "Ch. 8"
+          ]
+        }
+      ],
+      "discriminator": "Measure worst-case IRQ-to-useful-response latency, including masking, handler time and deferred work; compare polling and interrupts.",
+      "technical_node_ids": [
+        "OS-04",
+        "OS-06"
+      ]
+    },
+    {
+      "id": "memory-stack",
+      "question": "What lies beneath a process address and a memory fault?",
+      "mechanism": "The instruction set produces virtual addresses; translations and permissions affect access; caches and coherence determine performance/visibility, while the OS supplies mappings, allocation, page-fault and reclaim policies.",
+      "source_routes": [
+        {
+          "id": "COD-RV",
+          "sections": [
+            "§5.3",
+            "§5.7",
+            "§5.10"
+          ]
+        },
+        {
+          "id": "COD-ARM",
+          "sections": [
+            "§5.3",
+            "§5.7",
+            "§5.10"
+          ]
+        },
+        {
+          "id": "OSTEP",
+          "sections": [
+            "Chs. 13–23"
+          ]
+        },
+        {
+          "id": "LKD",
+          "sections": [
+            "Ch. 12",
+            "Ch. 15",
+            "Ch. 16"
+          ]
+        }
+      ],
+      "discriminator": "Differentiate translation/permission faults, physical memory pressure, cache misses and shared-memory ordering with their own measurements.",
+      "technical_node_ids": [
+        "OS-03",
+        "OS-07"
+      ]
+    },
+    {
+      "id": "build-to-first-instruction",
+      "question": "What turns source code into control of a real device?",
+      "mechanism": "Compiler, assembler and linker produce an executable image; the processor executes instructions through an implementation, but firmware reset/boot handoff and board-specific peripheral setup remain platform contracts.",
+      "source_routes": [
+        {
+          "id": "COD-RV",
+          "sections": [
+            "§2.12",
+            "§4.3–4.10"
+          ]
+        },
+        {
+          "id": "COD-ARM",
+          "sections": [
+            "§2.12",
+            "§4.3–4.9"
+          ]
+        },
+        {
+          "id": "MES",
+          "sections": [
+            "Ch. 3",
+            "Ch. 9"
+          ]
+        }
+      ],
+      "discriminator": "Separate a hosted program startup example from reset vector, linker mapping, initialization, trap vector and actual bootloader responsibility.",
+      "technical_node_ids": [
+        "OS-01",
+        "OS-06",
+        "OS-07"
+      ]
+    },
+    {
+      "id": "shared-work-and-cache",
+      "question": "How do multiple cores share memory without silently corrupting progress?",
+      "mechanism": "ISA synchronization primitives, memory hierarchy/cache coherence and OS thread synchronization solve different pieces of the shared-memory problem. Coherence does not automatically provide atomicity for an application invariant.",
+      "source_routes": [
+        {
+          "id": "COD-RV",
+          "sections": [
+            "§2.11",
+            "§5.10"
+          ]
+        },
+        {
+          "id": "COD-ARM",
+          "sections": [
+            "§2.11",
+            "§5.10"
+          ]
+        },
+        {
+          "id": "OSTEP",
+          "sections": [
+            "Chs. 26–33"
+          ]
+        },
+        {
+          "id": "TLPI",
+          "sections": [
+            "Chs. 29–31"
+          ]
+        }
+      ],
+      "discriminator": "Construct a concurrent operation with well-defined ownership and measure whether the invariant survives interleavings and stalls.",
+      "technical_node_ids": [
+        "OS-02",
+        "OS-04"
+      ]
+    },
+    {
+      "id": "firmware-over-time",
+      "question": "What makes a useful physical computer persist beyond a successful demo?",
+      "mechanism": "The device must bound memory, power, response times, peripheral errors, firmware update and recovery procedures; the OS may simplify services but does not by itself prove a safe physical session.",
+      "source_routes": [
+        {
+          "id": "MES",
+          "sections": [
+            "Ch. 8",
+            "Ch. 9",
+            "Ch. 10",
+            "Ch. 11",
+            "Ch. 13",
+            "Ch. 14"
+          ]
+        },
+        {
+          "id": "OSTEP",
+          "sections": [
+            "Ch. 42",
+            "Ch. 48"
+          ]
+        }
+      ],
+      "discriminator": "Exercise representative faults, resets, power limits and updates; check that controlled hardware reaches safe states and correctly recovers.",
+      "technical_node_ids": [
+        "OS-04",
+        "OS-05",
+        "OS-06",
+        "OS-08"
+      ]
+    }
+  ]
 }
