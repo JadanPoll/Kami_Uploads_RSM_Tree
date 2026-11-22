@@ -67,6 +67,17 @@
       "projection": {
         "shape": "curiosities"
       }
+    },
+    {
+      "id": "robotics-curiosities",
+      "title": "Robotics — Explore mechanisms, uncertainty and embodied autonomy",
+      "short_title": "Robotics",
+      "shared_reader_id": "robotics",
+      "file": "Investigations/robotics/investigation.json",
+      "glossary_file": "Investigations/robotics/glossary.json",
+      "projection": {
+        "shape": "curiosities"
+      }
     }
   ]
 }
