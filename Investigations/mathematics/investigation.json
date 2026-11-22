@@ -3,7 +3,7 @@
   "kind": "canonical_research_corpus",
   "title": "Mathematics — generative structures, transformations, invariants, limits and inference",
   "updated": "2026-11-22",
-  "status": "fourteen books indexed, selected actual mechanism passages inspected, technical factorization active; user navigation and competence not certified",
+  "status": "14 source books indexed, 39 canonical mechanisms, 46 authentic questions, 9 landscapes, 12 compositions, 832 independent terms; navigation and theorem reproduction not user-certified",
   "question": "What small set of mathematical constructions, structures, transformations and tests generates broad families of questions, theorems and real applications?",
   "purpose": "Navigate from authentic naive questions or ambitious mathematical/engineering goals through a composable mathematical capability landscape to source-backed distinctions and reusable books.",
   "source_folder": "https://drive.google.com/drive/folders/1Qx_V7FAz2EhbmCAijHMr18swPu5GLyZr",
@@ -8408,7 +8408,413 @@
       ]
     }
   ],
-  "landscape_views": [],
+  "landscape_views": [
+    {
+      "id": "objects",
+      "title": "Which mathematical objects can we construct?",
+      "short_label": "Objects",
+      "rationale": "Start from sets and equivalences; add structures and existence contracts",
+      "root_id": "MATH-ROOT",
+      "node_ids": [
+        "MATH-ROOT",
+        "MATH-SETS",
+        "MATH-CHOICE",
+        "MATH-MAPS",
+        "MATH-ORDER",
+        "MATH-GROUP",
+        "MATH-RINGS",
+        "MATH-VECTOR"
+      ],
+      "parent_overrides": {
+        "MATH-SETS": "MATH-ROOT",
+        "MATH-CHOICE": "MATH-ROOT",
+        "MATH-MAPS": "MATH-ROOT",
+        "MATH-ORDER": "MATH-ROOT",
+        "MATH-GROUP": "MATH-ROOT",
+        "MATH-RINGS": "MATH-ROOT",
+        "MATH-VECTOR": "MATH-ROOT"
+      },
+      "family_ids": [
+        "foundations",
+        "structures"
+      ],
+      "term_ids": [
+        "math-t-0001",
+        "math-t-0745",
+        "math-t-0744",
+        "math-t-0786",
+        "math-t-0007",
+        "math-t-0011",
+        "math-t-0032",
+        "math-t-0034",
+        "math-t-0035",
+        "math-t-0037",
+        "math-t-0762",
+        "math-t-0366"
+      ]
+    },
+    {
+      "id": "transform",
+      "title": "Which transformations preserve useful information?",
+      "short_label": "Transform",
+      "rationale": "Symmetry, linear maps, quotients and spectra",
+      "root_id": "MATH-ROOT",
+      "node_ids": [
+        "MATH-ROOT",
+        "MATH-MAPS",
+        "MATH-VECTOR",
+        "MATH-SPECTRAL",
+        "MATH-GROUP",
+        "MATH-SYMMETRY",
+        "MATH-RINGS",
+        "MATH-GALOIS"
+      ],
+      "parent_overrides": {
+        "MATH-MAPS": "MATH-ROOT",
+        "MATH-VECTOR": "MATH-ROOT",
+        "MATH-SPECTRAL": "MATH-ROOT",
+        "MATH-GROUP": "MATH-ROOT",
+        "MATH-SYMMETRY": "MATH-ROOT",
+        "MATH-RINGS": "MATH-ROOT",
+        "MATH-GALOIS": "MATH-ROOT"
+      },
+      "family_ids": [
+        "structures",
+        "transfer"
+      ],
+      "term_ids": [
+        "math-t-0001",
+        "math-t-0745",
+        "math-t-0744",
+        "math-t-0786",
+        "math-t-0762",
+        "math-t-0366",
+        "math-t-0764",
+        "math-t-0055",
+        "math-t-0064",
+        "math-t-0066",
+        "math-t-0072",
+        "math-t-0100"
+      ]
+    },
+    {
+      "id": "discrete",
+      "title": "How do massive finite possibilities become tractable?",
+      "short_label": "Discrete",
+      "rationale": "Enumeration, generating functions, graph obstructions and arithmetic",
+      "root_id": "MATH-ROOT",
+      "node_ids": [
+        "MATH-ROOT",
+        "MATH-COUNT",
+        "MATH-MOBIUS",
+        "MATH-GENFUN",
+        "MATH-ORDER",
+        "MATH-GRAPH",
+        "MATH-FLOW",
+        "MATH-MINORS",
+        "MATH-ARITH",
+        "MATH-RATIONAL"
+      ],
+      "parent_overrides": {
+        "MATH-COUNT": "MATH-ROOT",
+        "MATH-MOBIUS": "MATH-ROOT",
+        "MATH-GENFUN": "MATH-ROOT",
+        "MATH-ORDER": "MATH-ROOT",
+        "MATH-GRAPH": "MATH-ROOT",
+        "MATH-FLOW": "MATH-ROOT",
+        "MATH-MINORS": "MATH-ROOT",
+        "MATH-ARITH": "MATH-ROOT",
+        "MATH-RATIONAL": "MATH-ROOT"
+      },
+      "family_ids": [
+        "discrete"
+      ],
+      "term_ids": [
+        "math-t-0001",
+        "math-t-0745",
+        "math-t-0744",
+        "math-t-0786",
+        "math-t-0245",
+        "math-t-0265",
+        "math-t-0259",
+        "math-t-0275",
+        "math-t-0276",
+        "math-t-0049",
+        "math-t-0283",
+        "math-t-0290"
+      ]
+    },
+    {
+      "id": "limits",
+      "title": "When do approximations and limits justify conclusions?",
+      "short_label": "Limits",
+      "rationale": "Uniform convergence, completeness, Lebesgue integration and operators",
+      "root_id": "MATH-ROOT",
+      "node_ids": [
+        "MATH-ROOT",
+        "MATH-LIMITS",
+        "MATH-COMPLETE",
+        "MATH-MEASURE",
+        "MATH-INTEGRAL",
+        "MATH-FUNCTIONS",
+        "MATH-OPERATOR",
+        "MATH-FIXED"
+      ],
+      "parent_overrides": {
+        "MATH-LIMITS": "MATH-ROOT",
+        "MATH-COMPLETE": "MATH-ROOT",
+        "MATH-MEASURE": "MATH-ROOT",
+        "MATH-INTEGRAL": "MATH-ROOT",
+        "MATH-FUNCTIONS": "MATH-ROOT",
+        "MATH-OPERATOR": "MATH-ROOT",
+        "MATH-FIXED": "MATH-ROOT"
+      },
+      "family_ids": [
+        "continuous"
+      ],
+      "term_ids": [
+        "math-t-0001",
+        "math-t-0745",
+        "math-t-0744",
+        "math-t-0786",
+        "math-t-0424",
+        "math-t-0423",
+        "math-t-0449",
+        "math-t-0375",
+        "math-t-0376",
+        "math-t-0498",
+        "math-t-0453",
+        "math-t-0459"
+      ]
+    },
+    {
+      "id": "shape",
+      "title": "How does local geometry relate to global topology?",
+      "short_label": "Shape",
+      "rationale": "Holes, compactness, intrinsic curvature, analytic rigidity",
+      "root_id": "MATH-ROOT",
+      "node_ids": [
+        "MATH-ROOT",
+        "MATH-TOPOLOGY",
+        "MATH-COMPACT",
+        "MATH-LOOPS",
+        "MATH-CURVATURE",
+        "MATH-GEODESIC",
+        "MATH-HOLO",
+        "MATH-RESIDUES"
+      ],
+      "parent_overrides": {
+        "MATH-TOPOLOGY": "MATH-ROOT",
+        "MATH-COMPACT": "MATH-ROOT",
+        "MATH-LOOPS": "MATH-ROOT",
+        "MATH-CURVATURE": "MATH-ROOT",
+        "MATH-GEODESIC": "MATH-ROOT",
+        "MATH-HOLO": "MATH-ROOT",
+        "MATH-RESIDUES": "MATH-ROOT"
+      },
+      "family_ids": [
+        "space"
+      ],
+      "term_ids": [
+        "math-t-0001",
+        "math-t-0745",
+        "math-t-0744",
+        "math-t-0786",
+        "math-t-0355",
+        "math-t-0365",
+        "math-t-0366",
+        "math-t-0379",
+        "math-t-0381",
+        "math-t-0498",
+        "math-t-0401",
+        "math-t-0399"
+      ]
+    },
+    {
+      "id": "uncertainty",
+      "title": "What do randomness and data let us claim?",
+      "short_label": "Uncertainty",
+      "rationale": "Probability laws, stochastic dynamics, estimator risks and tests",
+      "root_id": "MATH-ROOT",
+      "node_ids": [
+        "MATH-ROOT",
+        "MATH-MEASURE",
+        "MATH-PROB",
+        "MATH-STOCHASTIC",
+        "MATH-STAT",
+        "MATH-ESTIMATE",
+        "MATH-TEST"
+      ],
+      "parent_overrides": {
+        "MATH-MEASURE": "MATH-ROOT",
+        "MATH-PROB": "MATH-ROOT",
+        "MATH-STOCHASTIC": "MATH-ROOT",
+        "MATH-STAT": "MATH-ROOT",
+        "MATH-ESTIMATE": "MATH-ROOT",
+        "MATH-TEST": "MATH-ROOT"
+      },
+      "family_ids": [
+        "random"
+      ],
+      "term_ids": [
+        "math-t-0001",
+        "math-t-0745",
+        "math-t-0744",
+        "math-t-0786",
+        "math-t-0453",
+        "math-t-0459",
+        "math-t-0463",
+        "math-t-0635",
+        "math-t-0643",
+        "math-t-0642",
+        "math-t-0669",
+        "math-t-0679"
+      ]
+    },
+    {
+      "id": "transfer",
+      "title": "Which generative mathematical operations recur across subjects?",
+      "short_label": "Transfer",
+      "rationale": "Quotient, symmetry, inversion, limits, fixed points and spectral decompositions",
+      "root_id": "MATH-ROOT",
+      "node_ids": [
+        "MATH-ROOT",
+        "MATH-CROSS",
+        "MATH-MAPS",
+        "MATH-GROUP",
+        "MATH-VECTOR",
+        "MATH-MOBIUS",
+        "MATH-GENFUN",
+        "MATH-COMPACT",
+        "MATH-FIXED",
+        "MATH-GALOIS"
+      ],
+      "parent_overrides": {
+        "MATH-CROSS": "MATH-ROOT",
+        "MATH-MAPS": "MATH-ROOT",
+        "MATH-GROUP": "MATH-ROOT",
+        "MATH-VECTOR": "MATH-ROOT",
+        "MATH-MOBIUS": "MATH-ROOT",
+        "MATH-GENFUN": "MATH-ROOT",
+        "MATH-COMPACT": "MATH-ROOT",
+        "MATH-FIXED": "MATH-ROOT",
+        "MATH-GALOIS": "MATH-ROOT"
+      },
+      "family_ids": [
+        "transfer"
+      ],
+      "term_ids": [
+        "math-t-0001",
+        "math-t-0745",
+        "math-t-0744",
+        "math-t-0786",
+        "math-t-0752",
+        "math-t-0749",
+        "math-t-0753",
+        "math-t-0762",
+        "math-t-0366",
+        "math-t-0764",
+        "math-t-0110",
+        "math-t-0129"
+      ]
+    },
+    {
+      "id": "diagnosis",
+      "title": "Which missing hypothesis makes the proof fail?",
+      "short_label": "Diagnosis",
+      "rationale": "Find invalid equivalences, limit swaps, domains and statistical claims",
+      "root_id": "MATH-ROOT",
+      "node_ids": [
+        "MATH-ROOT",
+        "MATH-SETS",
+        "MATH-MAPS",
+        "MATH-GALOIS",
+        "MATH-LIMITS",
+        "MATH-INTEGRAL",
+        "MATH-COMPLETE",
+        "MATH-COMPACT",
+        "MATH-TEST",
+        "MATH-OPERATOR"
+      ],
+      "parent_overrides": {
+        "MATH-SETS": "MATH-ROOT",
+        "MATH-MAPS": "MATH-ROOT",
+        "MATH-GALOIS": "MATH-ROOT",
+        "MATH-LIMITS": "MATH-ROOT",
+        "MATH-INTEGRAL": "MATH-ROOT",
+        "MATH-COMPLETE": "MATH-ROOT",
+        "MATH-COMPACT": "MATH-ROOT",
+        "MATH-TEST": "MATH-ROOT",
+        "MATH-OPERATOR": "MATH-ROOT"
+      },
+      "family_ids": [
+        "prove"
+      ],
+      "term_ids": [
+        "math-t-0001",
+        "math-t-0745",
+        "math-t-0744",
+        "math-t-0786",
+        "math-t-0007",
+        "math-t-0011",
+        "math-t-0032",
+        "math-t-0762",
+        "math-t-0366",
+        "math-t-0764",
+        "math-t-0188",
+        "math-t-0194"
+      ]
+    },
+    {
+      "id": "applications",
+      "title": "Which components generate useful algorithms or engineering tools?",
+      "short_label": "Applications",
+      "rationale": "Representations, counting, network certificates, fixed points and inference",
+      "root_id": "MATH-ROOT",
+      "node_ids": [
+        "MATH-ROOT",
+        "MATH-VECTOR",
+        "MATH-SPECTRAL",
+        "MATH-COUNT",
+        "MATH-GENFUN",
+        "MATH-FLOW",
+        "MATH-FIXED",
+        "MATH-CURVATURE",
+        "MATH-PROB",
+        "MATH-ESTIMATE"
+      ],
+      "parent_overrides": {
+        "MATH-VECTOR": "MATH-ROOT",
+        "MATH-SPECTRAL": "MATH-ROOT",
+        "MATH-COUNT": "MATH-ROOT",
+        "MATH-GENFUN": "MATH-ROOT",
+        "MATH-FLOW": "MATH-ROOT",
+        "MATH-FIXED": "MATH-ROOT",
+        "MATH-CURVATURE": "MATH-ROOT",
+        "MATH-PROB": "MATH-ROOT",
+        "MATH-ESTIMATE": "MATH-ROOT"
+      },
+      "family_ids": [
+        "structures",
+        "discrete",
+        "random"
+      ],
+      "term_ids": [
+        "math-t-0001",
+        "math-t-0745",
+        "math-t-0744",
+        "math-t-0786",
+        "math-t-0055",
+        "math-t-0064",
+        "math-t-0066",
+        "math-t-0072",
+        "math-t-0100",
+        "math-t-0088",
+        "math-t-0096",
+        "math-t-0521"
+      ]
+    }
+  ],
   "nodes": [
     {
       "id": "MATH-ROOT",
@@ -10636,7 +11042,170 @@
       "why": "compact topological objects differ from compact linear operators"
     }
   ],
-  "cross_book_factors": [],
+  "cross_book_factors": [
+    {
+      "id": "structure-carrier",
+      "function": "Give one carrier set different laws and see what becomes possible",
+      "operator_chain": "Halmos set operations → Artin/Halmos algebraic structures → Munkres topology → Royden measurable spaces",
+      "critical_contract": "Carrier, added structure, preserving map, invariant",
+      "discriminator": "Use one set with two topologies and measure how continuity changes",
+      "node_ids": [
+        "MATH-SETS",
+        "MATH-MAPS",
+        "MATH-VECTOR",
+        "MATH-GROUP",
+        "MATH-TOPOLOGY",
+        "MATH-MEASURE"
+      ]
+    },
+    {
+      "id": "quotient",
+      "function": "Collapse equivalent representations while preserving laws",
+      "operator_chain": "Halmos equivalence classes → Artin normal quotient and ring quotient → Munkres quotient topology",
+      "critical_contract": "Compatibility of identification with the operation or topology",
+      "discriminator": "Attempt quotient group multiplication using a nonnormal subgroup",
+      "node_ids": [
+        "MATH-SETS",
+        "MATH-MAPS",
+        "MATH-GROUP",
+        "MATH-RINGS",
+        "MATH-TOPOLOGY"
+      ]
+    },
+    {
+      "id": "orbits",
+      "function": "Use symmetry to avoid double-counting identical configurations",
+      "operator_chain": "Artin group actions → Stanley labeled/unlabeled counting → Diestel graph symmetries",
+      "critical_contract": "Allowed symmetry group, orbit, stabilizer and labeling",
+      "discriminator": "Count bead necklaces under rotation and then reflection",
+      "node_ids": [
+        "MATH-GROUP",
+        "MATH-SYMMETRY",
+        "MATH-COUNT",
+        "MATH-GRAPH"
+      ]
+    },
+    {
+      "id": "mobius",
+      "function": "Invert aggregate counts on structured hierarchies",
+      "operator_chain": "Stanley posets/§3.7 Möbius inversion → Hardy divisor sums and arithmetic functions",
+      "critical_contract": "Locally finite poset and appropriate incidence convolution",
+      "discriminator": "Recover primitive periodic strings from total periodic counts",
+      "node_ids": [
+        "MATH-ORDER",
+        "MATH-MOBIUS",
+        "MATH-ARITH",
+        "MATH-COUNT"
+      ]
+    },
+    {
+      "id": "transfer-matrix",
+      "function": "Turn local rules into global sequence counts",
+      "operator_chain": "Diestel graph walks → Stanley §4.7 finite-state transfer matrix → Feller generating functions",
+      "critical_contract": "States, transitions and coefficient meaning",
+      "discriminator": "Count forbidden-substring words by enumeration and matrix powers",
+      "node_ids": [
+        "MATH-GRAPH",
+        "MATH-GENFUN",
+        "MATH-COUNT",
+        "MATH-STOCHASTIC"
+      ]
+    },
+    {
+      "id": "spectra",
+      "function": "Recognize where finite matrix decomposition stops working",
+      "operator_chain": "Halmos eigen/spectral modes → Artin Jordan form → Kreyszig/Royden operator domains and spectra",
+      "critical_contract": "Normality, boundedness, eigenbasis, operator domain",
+      "discriminator": "Compare defective Jordan matrix to differentiation in an Lp domain",
+      "node_ids": [
+        "MATH-VECTOR",
+        "MATH-SPECTRAL",
+        "MATH-FUNCTIONS",
+        "MATH-OPERATOR"
+      ]
+    },
+    {
+      "id": "limit-exchange",
+      "function": "Know exactly when limits commute with operations",
+      "operator_chain": "Rudin Ch 7 → Royden Lebesgue convergence → Kreyszig completeness",
+      "critical_contract": "Uniformity, monotonicity, domination and closed limits",
+      "discriminator": "Exhibit pointwise-zero spike with nonzero integral",
+      "node_ids": [
+        "MATH-LIMITS",
+        "MATH-MEASURE",
+        "MATH-INTEGRAL",
+        "MATH-COMPLETE"
+      ]
+    },
+    {
+      "id": "local-global",
+      "function": "Connect local geometric invariants with global consequences",
+      "operator_chain": "Munkres loops/coverings → do Carmo Gauss–Bonnet/geodesics → Ahlfors conformal maps",
+      "critical_contract": "Topology, orientation, boundary, analyticity and smoothness",
+      "discriminator": "Compare total curvature and loops on a sphere and torus",
+      "node_ids": [
+        "MATH-TOPOLOGY",
+        "MATH-LOOPS",
+        "MATH-CURVATURE",
+        "MATH-GEODESIC",
+        "MATH-HOLO"
+      ]
+    },
+    {
+      "id": "existence",
+      "function": "Differentiate computable, nonconstructive and impossible solutions",
+      "operator_chain": "Halmos choice/Zorn → Kreyszig Hahn–Banach and contractions → Artin algebraic impossibility",
+      "critical_contract": "Choice axioms, contraction constants, field degrees",
+      "discriminator": "Identify which proof actually yields an algorithm",
+      "node_ids": [
+        "MATH-CHOICE",
+        "MATH-FIXED",
+        "MATH-GALOIS",
+        "MATH-OPERATOR"
+      ]
+    },
+    {
+      "id": "uncertainty",
+      "function": "Build inference from probabilistic models without confusing the two",
+      "operator_chain": "Royden normalized measure → Feller random processes → Casella/Berger likelihood, sufficiency and tests",
+      "critical_contract": "Sample law, independence, risk, power and interval coverage",
+      "discriminator": "Simulate dependent samples and check nominal false-positive rates",
+      "node_ids": [
+        "MATH-MEASURE",
+        "MATH-PROB",
+        "MATH-STOCHASTIC",
+        "MATH-STAT",
+        "MATH-ESTIMATE",
+        "MATH-TEST"
+      ]
+    },
+    {
+      "id": "arithmetic",
+      "function": "Transport integer questions into algebraic and analytic settings",
+      "operator_chain": "Hardy congruences/arithmetical functions → Artin ideals/Galois → Ahlfors analytic techniques",
+      "critical_contract": "Ring, prime notion, field extension and convergence domain",
+      "discriminator": "Contrast modular obstruction and ideal-factorization failure",
+      "node_ids": [
+        "MATH-ARITH",
+        "MATH-RINGS",
+        "MATH-GALOIS",
+        "MATH-HOLO"
+      ]
+    },
+    {
+      "id": "graph-certificates",
+      "function": "Replace exhaustive path search with structural obstructions",
+      "operator_chain": "Diestel matching, flow, cuts and minors → Stanley enumerative alternatives",
+      "critical_contract": "Edge/vertex capacity, disjointness and permissible minor operations",
+      "discriminator": "Construct many routes through a single small cut",
+      "node_ids": [
+        "MATH-GRAPH",
+        "MATH-FLOW",
+        "MATH-MINORS",
+        "MATH-COUNT"
+      ]
+    }
+  ],
   "source_coverage": {
     "ARTIN": {
       "chapter_units": 16,
@@ -10727,5 +11296,135 @@
     "Different mathematics books overlap in vocabulary without sharing assumptions: a common label is not a proof of identical structure.",
     "A chapter or subsection detected from OCR does not certify its page offset or a correct theorem application.",
     "The actual edition, preface or printing can change page positions; Rudin's retypeset document explicitly changes pagination."
+  ],
+  "mathematical_objects_and_structures": [
+    {
+      "carrier": "Set",
+      "structure": "membership, relations, functions",
+      "maps": "functions and bijections",
+      "question": "Which constructions are admissible?"
+    },
+    {
+      "carrier": "Vector space",
+      "structure": "addition and scalar multiplication",
+      "maps": "linear transformations",
+      "question": "Which basis-free invariants survive?"
+    },
+    {
+      "carrier": "Group",
+      "structure": "reversible composition",
+      "maps": "homomorphisms and equivariant actions",
+      "question": "What symmetries and quotients exist?"
+    },
+    {
+      "carrier": "Ring or field",
+      "structure": "addition, multiplication and ideals",
+      "maps": "ring or field homomorphisms",
+      "question": "What factoring and extension properties hold?"
+    },
+    {
+      "carrier": "Topological/metric space",
+      "structure": "open sets or distances",
+      "maps": "continuous maps, homeomorphisms, isometries",
+      "question": "Which neighborhoods, limits and holes survive?"
+    },
+    {
+      "carrier": "Measurable/probability space",
+      "structure": "sigma-algebra, countably additive measure",
+      "maps": "measurable or distribution-preserving maps",
+      "question": "What is measurable or uncertain?"
+    },
+    {
+      "carrier": "Graph or poset",
+      "structure": "adjacency or order relation",
+      "maps": "graph isomorphisms or order-preserving maps",
+      "question": "Which global constraints follow from local relations?"
+    }
+  ],
+  "source_inspection_notes": [
+    {
+      "source_id": "ARTIN",
+      "source_region": "Chapter 16 geometric constructibility and Galois",
+      "observation": "Field extension degrees obstruct some ruler-and-compass constructions.",
+      "status": "selected_passage_examined_not_reproduced"
+    },
+    {
+      "source_id": "HALMOS-LIN",
+      "source_region": "§50 rank and nullity; §79 spectral theorem",
+      "observation": "Rank and nullity concern linear maps; spectral conclusions depend on operator assumptions.",
+      "status": "selected_passage_examined_not_reproduced"
+    },
+    {
+      "source_id": "MUNKRES",
+      "source_region": "Chapter 9 fundamental group",
+      "observation": "The text distinguishes constructing a homeomorphism from detecting failure with invariants.",
+      "status": "selected_passage_examined_not_reproduced"
+    },
+    {
+      "source_id": "CASELLA",
+      "source_region": "Chapters 6–7 sufficiency/Rao–Blackwell",
+      "observation": "Sufficiency and conditioning are model-relative routes to estimator improvement.",
+      "status": "selected_passage_examined_not_reproduced"
+    },
+    {
+      "source_id": "FELLER",
+      "source_region": "Markov-chain and random-walk text",
+      "observation": "Temporal dependence demands transition and recurrence structure rather than blindly independent trials.",
+      "status": "selected_passage_examined_not_reproduced"
+    },
+    {
+      "source_id": "AHLFORS",
+      "source_region": "Chapter 4 Cauchy formula and residues",
+      "observation": "Contour integration reconstructs holomorphic values; residues encode isolated singular contributions.",
+      "status": "selected_passage_examined_not_reproduced"
+    },
+    {
+      "source_id": "ROYDEN",
+      "source_region": "Chapter 4 convergence of Lebesgue integrals",
+      "observation": "Monotone and dominated convergence provide conditional exchange guarantees.",
+      "status": "selected_passage_examined_not_reproduced"
+    },
+    {
+      "source_id": "HALMOS-SET",
+      "source_region": "§15 choice; §18 transfinite recursion",
+      "observation": "Choice and well-ordering support existential reasoning and generalized recursion.",
+      "status": "selected_passage_examined_not_reproduced"
+    },
+    {
+      "source_id": "HARDY",
+      "source_region": "Chapter X continued fractions",
+      "observation": "Continued fractions encode systematic rational approximation.",
+      "status": "selected_passage_examined_not_reproduced"
+    },
+    {
+      "source_id": "DOCARMO",
+      "source_region": "Chapter 4 Gauss–Bonnet discussion",
+      "observation": "Local curvature can constrain global surface topology.",
+      "status": "selected_passage_examined_not_reproduced"
+    },
+    {
+      "source_id": "KREYSZIG",
+      "source_region": "§4.2 Hahn–Banach and §5.1 Banach fixed point",
+      "observation": "Extension of functionals differs from contraction-based constructive existence.",
+      "status": "selected_passage_examined_not_reproduced"
+    },
+    {
+      "source_id": "RUDIN",
+      "source_region": "Chapter 7 uniform convergence",
+      "observation": "A pointwise-vanishing sequence can have integrals that fail to converge accordingly.",
+      "status": "selected_passage_examined_not_reproduced"
+    },
+    {
+      "source_id": "DIESTEL",
+      "source_region": "Chapter 12 graph minors and treewidth",
+      "observation": "Excluded minor structures relate to graph width and decomposition.",
+      "status": "selected_passage_examined_not_reproduced"
+    },
+    {
+      "source_id": "STANLEY",
+      "source_region": "§4.7 transfer-matrix method",
+      "observation": "State transitions and linear-algebra powers encode combinatorial path counts.",
+      "status": "selected_passage_examined_not_reproduced"
+    }
   ]
 }
