@@ -17,6 +17,21 @@ An *investigation* is the purposeful exploration of one question **or a set of q
 
 The technical explanations remain detailed and source-specific even when the entry question is childlike. The five larger sets—**Possibilities**, **Make it**, **Mechanisms**, **Production**, and **Bootstrap**—remain available through the same entry browser, not a separate manufacturing menu.
 
+## Search by curiosity or technical vocabulary
+
+Each investigation also has a [**separate, lightweight concept glossary**](GLOSSARY_SCHEMA.md): stable term IDs, synonyms and explicit relationships without copied technical explanations. A curiosity, technical study, question set, bridge or fieldwork case can reference the same concept by `term_ids`, so searching for **metastability** can find “Why can two individually working circuits fail when connected?” without forcing the word into the beginner-friendly question.
+
+The Knowledge Atlas viewer loads only the selected domain's glossary. In the question browser, choose **Questions** for ranked concept-aware search or **Vocabulary** to browse unfamiliar terms, aliases, related concepts, and linked research. Selected technical records also expose concept chips. The viewer still works with ordinary text when a glossary is absent.
+
+| Domain | Vocabulary index |
+| --- | --- |
+| Manufacturing | [glossary.json](Investigations/manufacturing-orientation/glossary.json) |
+| Operating systems | [glossary.json](Investigations/operating-systems/glossary.json) |
+| Human–AI collaboration | [glossary.json](Investigations/human-ai-symbiosis/glossary.json) |
+| FPGA and VLSI | [glossary.json](Investigations/digital-hardware-design/glossary.json) |
+
+**Research remains canonical in `investigation.json`.** Vocabulary changes need not duplicate its mechanisms or books. IDs are permanent: change a label or add aliases without changing identity, and keep redirects when combining true synonyms. A related concept does not mean the same mechanism.
+
 ## Canonical domain data, without redundant JSONs
 
 Each domain has **one canonical research JSON** (and multiple possible scoped views):
