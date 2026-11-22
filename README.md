@@ -14,7 +14,17 @@ The repository follows the [Richer Scientific Method (RSM)](https://github.com/J
 - **[FKEN Ecosystem](https://github.com/JadanPoll/FKEN_Ecosystem):** Broad domain and resource landscapes, reusable knowledge, projects, and skills. Link relevant records instead of copying them.
 - **Google Drive / Kami:** Original books and annotated PDFs. Link to actual files; do not commit copyrighted books or duplicate uploads solely to populate this repository.
 
-## Manufacturing: one research corpus, five question-conditioned views
+## Manufacturing: a curiosity encyclopedia above dense technical investigations
+
+[**Browse manufacturing curiosities**](https://raw.githack.com/JadanPoll/Learning_Visualizations_Taxonomy/main/RSM_Tree_Viewer.html?repo=https%3A%2F%2Fgithub.com%2FJadanPoll%2FKami_Uploads_RSM_Tree&view=manufacturing-curiosities). This is the human-facing entrance: **24 recognizable questions in five scrollable families**, searchable using everyday wording and aliases. Click one to generate a **technical map**: competing mechanisms or manufacturing alternatives, discriminating conditions, canonical researched studies and precise book locators. Example: a repeatedly bent **metal paper clip** leads to cyclic metal failure and mechanical analysis; a **printed plastic clip** activates interlayer bonding, flexure geometry and fatigue. The two questions should not share an automatically assumed diagnosis.
+
+The entry questions stay approachable. **Only the entry questions need to be childlike.** Technical branches are intentionally dense and may lead to more precise engineering studies, calculations or experiments. The technical tree is a *question-conditioned projection of shared evidence*, not a saved second article for each curiosity. The selected question can be shared as a URL with `?curiosity=MFG-CURI-paperclip`.
+
+The source-of-truth file is [`Investigations/manufacturing-orientation/investigation.json`](Investigations/manufacturing-orientation/investigation.json): `curiosity_atlas` contains the question index, `navigation_bridges` contains alternative mechanisms and the distinctions that matter, and the canonical `nodes`/`sources` contain research and provenance. Existing source-inspected studies remain stable across entries and views; `MFG-ISSUE-*` legacy nodes remain for old saved notes but are hidden from current technical maps.
+
+### Technical navigation
+
+
 
 [Open the manufacturing atlas](https://raw.githack.com/JadanPoll/Learning_Visualizations_Taxonomy/main/RSM_Tree_Viewer.html?repo=https%3A%2F%2Fgithub.com%2FJadanPoll%2FKami_Uploads_RSM_Tree&view=manufacturing-investigation). The selector above the map offers **Possibilities**, **Make it**, **Mechanisms**, **Production**, and **Bootstrap**, as well as the complete research tree.
 
@@ -40,7 +50,7 @@ Candidate blind-navigation prompts for the five-book manufacturing corpus (the r
 
 For each case, have a reader navigate **without seeing the audit key**. Record whether the cited passage was reached; whether the explanation warranted its relevance; useful candidates versus distracting ones; wrong turns, backtracking and interaction cost; and whether source location was recoverable. Compare with the book TOC and ordinary search. Repeat in reverse from independently selected meaningful book sections; do not treat every indexed chapter as equally consequential.
 
-**Repair completed (November 21, 2026):** Five goal-conditioned views share a canonical research corpus with ten ordinary-language starting situations, 27 conditional navigation paths, 65 chapter-level routes tied to intermediate questions, and ten source-inspected technical studies. The viewer's **Problems** control opens the starting situations and each branch exposes discriminating conditions and direct book locators. Structural link checks found no orphaned case or section references. **This is still not demonstrated human discoverability:** no independent novice sessions, browser integration tests, or exhaustive passage-level study have been performed. See the [manufacturing navigation audit](Investigations/manufacturing-orientation/navigation_audit.md) for independently administered blind-navigation tasks, reverse passage checks, failure categories and explicit test limitations.
+**Current implementation (November 21, 2026):** 24 curiosity entries, 12 reusable conditional bridge families, five technical goal views, ten source-inspected technical studies and 65 chapter-level routes. Across the 24 activated trees, the same shared bridges appear as 80 *question-conditioned* technical branches and 110 source references; these counts are **not** unique scientific findings. Structural integration checks for the actual projection code pass across every entry and technical view; 17 sample everyday-language searches pass. **Unfamiliar-reader navigation has not been measured, and the book contents are not exhaustively understood or passage-indexed.** See [navigation_audit.md](Investigations/manufacturing-orientation/navigation_audit.md) for the empirical tasks, evidence limitations and stopping conditions.
 
 ## Using the tree
 
