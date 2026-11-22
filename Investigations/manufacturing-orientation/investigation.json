@@ -2783,7 +2783,8 @@
               "why": "Strength under stress: printed p. 76, chapter locator",
               "level": "toc_only"
             }
-          ]
+          ],
+          "technical_title": "Interlayer adhesion and anisotropic failure"
         },
         {
           "label": "The bendable tab stretches too far",
@@ -2805,7 +2806,8 @@
               "why": "Snap-fits and latching, printed p. 141, passage examined",
               "level": "inspected"
             }
-          ]
+          ],
+          "technical_title": "Flexure geometry and strain concentration"
         },
         {
           "label": "It fails after many cycles, not on the first bend",
@@ -2821,7 +2823,8 @@
               "why": "Repeated-loading fatigue, beginning p. 297; chapter not analyzed",
               "level": "toc_only"
             }
-          ]
+          ],
+          "technical_title": "Cyclic loading and fatigue life"
         }
       ]
     },
@@ -2843,7 +2846,8 @@
               "why": "Mating clearance and slicer correction, starting p. 116, examined",
               "level": "inspected"
             }
-          ]
+          ],
+          "technical_title": "Dimensional deviation and process compensation"
         },
         {
           "label": "Each part looks close, but the assembly jams",
@@ -2859,7 +2863,8 @@
               "why": "GD&T and datum references, starting p. 995, examined",
               "level": "inspected"
             }
-          ]
+          ],
+          "technical_title": "Geometric tolerancing of mating interfaces"
         },
         {
           "label": "I can redesign the joint rather than tighten precision",
@@ -2881,7 +2886,8 @@
               "why": "Nonpermanent joints, starting p. 433; candidate reading",
               "level": "toc_only"
             }
-          ]
+          ],
+          "technical_title": "Joint redesign and tolerance accommodation"
         }
       ]
     },
@@ -2903,7 +2909,8 @@
               "why": "Geneva mechanism variants, pp. 192–197, examined",
               "level": "inspected"
             }
-          ]
+          ],
+          "technical_title": "Intermittent kinematic indexing and dwell"
         },
         {
           "label": "I need to vary the timing or acceleration",
@@ -2919,7 +2926,8 @@
               "why": "Modified Geneva drives and cam control, printed p. 196, examined",
               "level": "inspected"
             }
-          ]
+          ],
+          "technical_title": "Motion-law design and acceleration control"
         },
         {
           "label": "I need very precise motion in selected directions",
@@ -2935,7 +2943,8 @@
               "why": "FACT constraint synthesis, pp. 82–89, examined",
               "level": "inspected"
             }
-          ]
+          ],
+          "technical_title": "Constraint topology for precise guidance"
         }
       ]
     },
@@ -2963,7 +2972,8 @@
               "why": "Slicer and settings, printed p. 154, not yet analyzed",
               "level": "toc_only"
             }
-          ]
+          ],
+          "technical_title": "Revision economics and digitally defined geometry"
         },
         {
           "label": "I need thousands of repeatable copies",
@@ -2979,7 +2989,8 @@
               "why": "Injection molding, PDF pp. 57–59, examined",
               "level": "inspected"
             }
-          ]
+          ],
+          "technical_title": "Reusable tooling, cycle time and amortization"
         },
         {
           "label": "My quantity is small or my part is large or complex",
@@ -3002,7 +3013,8 @@
               "why": "Waterjet cutting, PDF pp. 279–281, examined",
               "level": "inspected"
             }
-          ]
+          ],
+          "technical_title": "Low-volume alternatives and secondary operations"
         }
       ]
     },
@@ -3024,7 +3036,8 @@
               "why": "Waterjet process example, PDF pp. 279–281, examined",
               "level": "inspected"
             }
-          ]
+          ],
+          "technical_title": "2D cutting plus part decomposition"
         },
         {
           "label": "I need a bespoke 3D part with changes",
@@ -3047,7 +3060,8 @@
               "why": "Additive rapid prototyping, PDF pp. 239–241, examined",
               "level": "inspected"
             }
-          ]
+          ],
+          "technical_title": "Digital fabrication as a service"
         },
         {
           "label": "The shape must be molded, cast, or assembled",
@@ -3070,7 +3084,8 @@
               "why": "Geometric tolerancing, p. 995 onwards, examined",
               "level": "inspected"
             }
-          ]
+          ],
+          "technical_title": "Casting, assembly and verification contracts"
         }
       ]
     },
@@ -3092,7 +3107,8 @@
               "why": "Rigid-body replacement synthesis, pp. 111–120, examined",
               "level": "inspected"
             }
-          ]
+          ],
+          "technical_title": "Compliant kinematic substitution for pin joints"
         },
         {
           "label": "The hinge needs a very specific allowed direction",
@@ -3108,7 +3124,8 @@
               "why": "FACT synthesis, pp. 82–89, examined",
               "level": "inspected"
             }
-          ]
+          ],
+          "technical_title": "Degrees of freedom and off-axis constraints"
         },
         {
           "label": "It will flex many times or carry significant weight",
@@ -3130,7 +3147,8 @@
               "why": "Fatigue failure, printed p. 297, candidate reading",
               "level": "toc_only"
             }
-          ]
+          ],
+          "technical_title": "Strain, load capacity and fatigue design"
         }
       ]
     },
@@ -3152,7 +3170,8 @@
               "why": "Freedom and constraint topology, pp. 82–89, examined",
               "level": "inspected"
             }
-          ]
+          ],
+          "technical_title": "Parasitic degrees of freedom and insufficient constraints"
         },
         {
           "label": "There is clearance or misalignment at a joint",
@@ -3174,7 +3193,8 @@
               "why": "Nonpermanent joints, chapter locator p. 433",
               "level": "toc_only"
             }
-          ]
+          ],
+          "technical_title": "Clearance, datum error and joint alignment"
         },
         {
           "label": "It returns differently after load reverses",
@@ -3197,7 +3217,8 @@
               "why": "Pseudo-rigid body approximations, printed p. 55, candidate reading",
               "level": "toc_only"
             }
-          ]
+          ],
+          "technical_title": "Backlash, hysteresis and elastic recovery"
         }
       ]
     },
@@ -3219,7 +3240,8 @@
               "why": "Waterjet cutting, PDF pp. 279–281, examined",
               "level": "inspected"
             }
-          ]
+          ],
+          "technical_title": "Cold erosion versus heat-affected material removal"
         },
         {
           "label": "The part distorts from force, supports, or finishing",
@@ -3235,7 +3257,8 @@
               "why": "Waterjet workholding and finishing example, PDF pp. 279–281, examined",
               "level": "inspected"
             }
-          ]
+          ],
+          "technical_title": "Cutting forces, fixturing and secondary finishing"
         }
       ]
     },
@@ -3264,7 +3287,8 @@
               "why": "Sand casting and expendable mold, PDF pp. 127–129, examined",
               "level": "inspected"
             }
-          ]
+          ],
+          "technical_title": "Tool-release constraints and sacrificial supports"
         },
         {
           "label": "I can split the object and join it later",
@@ -3287,7 +3311,8 @@
               "why": "Fastening and joinery, printed p. 124, candidate reading",
               "level": "toc_only"
             }
-          ]
+          ],
+          "technical_title": "Topology decomposition, joining and fit"
         }
       ]
     },
@@ -3309,7 +3334,8 @@
               "why": "Mechanical advantage and work, pp. 2–8, examined",
               "level": "inspected"
             }
-          ]
+          ],
+          "technical_title": "Work-conserving force/displacement transformation"
         },
         {
           "label": "I need both travel and force at the same time",
@@ -3325,6 +3351,123 @@
               "why": "Power transmission case, beginning p. 953, candidate reading",
               "level": "toc_only"
             }
+          ],
+          "technical_title": "Power constraints and actuator sizing"
+        }
+      ]
+    },
+    {
+      "id": "METAL",
+      "entry_node_id": null,
+      "choices": [
+        {
+          "technical_title": "Cyclic plastic bending and fatigue crack propagation",
+          "label": "It snaps after I bend it back and forth",
+          "distinguishing_question": "Is the break at the bend, and does it take many cycles?",
+          "why": "Repeated bending of a metal wire can initiate and propagate a crack; the exact mechanism and lifetime depend on stress/strain amplitude, geometry and material. This is not the same as failure along printed plastic layers.",
+          "targets": [],
+          "section_targets": [
+            {
+              "source_id": "BOOK-SHIGLEY",
+              "ref": "6",
+              "why": "Fatigue failure from variable loading, printed chapter starts p. 297; substantive section not yet inspected",
+              "level": "toc_only"
+            }
+          ]
+        },
+        {
+          "technical_title": "Single-load fracture and stress concentration",
+          "label": "It snaps the first time or near a nick",
+          "distinguishing_question": "Is the break at an especially sharp bend, notch or flaw?",
+          "why": "If it fails in one event, inspect local geometry and the strength under the actual load; do not mislabel every fracture as high-cycle fatigue.",
+          "targets": [],
+          "section_targets": [
+            {
+              "source_id": "BOOK-SHIGLEY",
+              "ref": "3",
+              "why": "Load and stress analysis, printed p. 91; candidate reading",
+              "level": "toc_only"
+            },
+            {
+              "source_id": "BOOK-SHIGLEY",
+              "ref": "5",
+              "why": "Static-load failure, printed p. 253; candidate reading",
+              "level": "toc_only"
+            }
+          ]
+        },
+        {
+          "technical_title": "Strength versus stiffness under deliberate flexure",
+          "label": "I want a bendable design that survives",
+          "distinguishing_question": "Does it need to deflect without breaking while carrying a load?",
+          "why": "A flexible mechanism may be strong without being stiff. Structural geometry and allowable strain must be distinguished from material strength.",
+          "targets": [
+            "MFG-FUNC-COMPLIANT"
+          ],
+          "section_targets": [
+            {
+              "source_id": "BOOK-COMPLIANT",
+              "ref": "1",
+              "why": "Stiffness versus strength, pp. 8–11; inspected",
+              "level": "inspected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SUPPORT",
+      "entry_node_id": null,
+      "choices": [
+        {
+          "technical_title": "Overhang geometry and temporary support generation",
+          "label": "The plastic droops where there is nothing underneath",
+          "distinguishing_question": "Does the nozzle deposit material with insufficient support from earlier layers?",
+          "why": "Changing orientation, using designed supports or redesigning the overhang changes whether filament can be placed reliably.",
+          "targets": [
+            "MFG-FFM-ORIENT"
+          ],
+          "section_targets": [
+            {
+              "source_id": "BOOK-FFF",
+              "ref": "II",
+              "why": "Overhangs and support structures, printed chapter II pp. 50–61, selected material inspected",
+              "level": "inspected"
+            }
+          ]
+        },
+        {
+          "technical_title": "Unsupported bridging and cooling during deposition",
+          "label": "It sags when it prints across a gap",
+          "distinguishing_question": "How far must the strand span before it can touch the next support?",
+          "why": "Bridging is not equivalent to an overhang: the deposited filament spans unsupported space and can sag depending on distance, material, temperature and cooling.",
+          "targets": [
+            "MFG-FFM-ORIENT"
+          ],
+          "section_targets": [
+            {
+              "source_id": "BOOK-FFF",
+              "ref": "II",
+              "why": "Bridging and overhanging structures, selected pages in chapter II; candidate targeted reading",
+              "level": "toc_only"
+            }
+          ]
+        },
+        {
+          "technical_title": "Bed-contact geometry and adhesion stability",
+          "label": "The whole print tips over or detaches",
+          "distinguishing_question": "Is there enough stable bed contact and a suitable initial layer?",
+          "why": "A tall or narrow build can fail despite viable upper geometry if its first-layer contact and support are insufficient; this is a process-stability problem rather than a strength calculation alone.",
+          "targets": [
+            "MFG-FFM-ORIENT"
+          ],
+          "section_targets": [
+            {
+              "source_id": "BOOK-FFF",
+              "ref": "II",
+              "why": "Bed adhesion and orientation, printed pp. 46–53, selected sections inspected",
+              "level": "inspected"
+            }
           ]
         }
       ]
@@ -3336,6 +3479,364 @@
     "rendering": "Offer each bridge as a separate conditional path with discriminating question, explanation, verified locator and optional canonical study links. Never hide useful source locations only in a global root catalog.",
     "reverse_check": "Every source section tagged to a view should have at least one actionable entry question or a stated unindexed gap; TOC-only associations cannot be mistaken for inspected evidence.",
     "decision": "When a practical route fails, improve the minimum useful entry or link, rather than adding another universal hierarchy.",
-    "chapter_routing": "Each chapter is attached to specific existing question nodes via entry_node_ids and a plain-language use_when. The section remains TOC-only until source study is recorded. View tags are derived from these paths, not from a broad topic-label guess."
+    "chapter_routing": "Each chapter is attached to specific existing question nodes via entry_node_ids and a plain-language use_when. The section remains TOC-only until source study is recorded. View tags are derived from these paths, not from a broad topic-label guess.",
+    "curiosity_entry_separation": "Curiosity entries are a scalable lookup layer, not canonical technical studies. Choose one to generate a dense mechanism tree from the existing navigation bridges, canonical node IDs, and source anchors. Do not preserve a full copied technical tree for each natural-language formulation."
+  },
+  "curiosity_atlas": {
+    "version": "0.1",
+    "title": "Questions you might actually ask",
+    "purpose": "Childlike, ordinary-language entry surface; each selection activates a dense, source-bounded technical projection from shared canonical research, never a duplicate book summary.",
+    "families": [
+      {
+        "id": "breakage",
+        "label": "Why things break or bend",
+        "description": "Repeated bending, snapped clips, hinges and load-bearing parts"
+      },
+      {
+        "id": "fit",
+        "label": "Why things don't fit or move correctly",
+        "description": "Jammed assemblies, wobbling machines and geometric variation"
+      },
+      {
+        "id": "motion",
+        "label": "How things move and transfer force",
+        "description": "Levers, indexing, gears and controlled motion"
+      },
+      {
+        "id": "shapes",
+        "label": "How things are actually made",
+        "description": "Hollow shapes, overhangs, cutting and process constraints"
+      },
+      {
+        "id": "reach",
+        "label": "Making more, with fewer resources",
+        "description": "Tooling cost, production quantities and working without owning machines"
+      }
+    ],
+    "entries": [
+      {
+        "id": "MFG-CURI-paperclip",
+        "question": "Why does my metal paper clip keep snapping when I bend it?",
+        "family_id": "breakage",
+        "bridge_ids": [
+          "METAL"
+        ],
+        "aliases": [
+          "wire bent back and forth",
+          "Why does metal break after lots of bends?",
+          "paperclip fatigue"
+        ],
+        "context": "A repeatedly bent metal wire—not a 3D-printed plastic latch."
+      },
+      {
+        "id": "MFG-CURI-printed-clip",
+        "question": "Why does my 3D-printed clip keep breaking?",
+        "family_id": "breakage",
+        "bridge_ids": [
+          "SNAP"
+        ],
+        "aliases": [
+          "printed tab snaps",
+          "3D printed latch cracks after opening",
+          "plastic printed clip breaks"
+        ],
+        "context": "A printed polymer part; distinguish the break relative to its layers and flexure geometry."
+      },
+      {
+        "id": "MFG-CURI-bend-strong",
+        "question": "How can something be bendy but still strong?",
+        "family_id": "breakage",
+        "bridge_ids": [
+          "FLEX",
+          "METAL"
+        ],
+        "aliases": [
+          "Why does a flexible part not break?",
+          "strong yet flexible hinge"
+        ],
+        "context": "Intentional deformation is not automatically a failure; stiffness, strength and endurance differ."
+      },
+      {
+        "id": "MFG-CURI-pinless-hinge",
+        "question": "Can I make a hinge without screws or pins?",
+        "family_id": "breakage",
+        "bridge_ids": [
+          "FLEX"
+        ],
+        "aliases": [
+          "one piece hinge",
+          "no joints clamp",
+          "flexure hinge"
+        ],
+        "context": "A jointless or partly compliant mechanism can replace some rigid joints."
+      },
+      {
+        "id": "MFG-CURI-repeated-spring",
+        "question": "Why might a spring or flexible part break after thousands of uses?",
+        "family_id": "breakage",
+        "bridge_ids": [
+          "FLEX",
+          "METAL"
+        ],
+        "aliases": [
+          "fatigue failure spring",
+          "cycles until it snaps"
+        ],
+        "context": "Repeated loading and lifetime rather than merely one-time breaking force."
+      },
+      {
+        "id": "MFG-CURI-cad-fit",
+        "question": "Why won't two parts fit together when they fit in my computer?",
+        "family_id": "fit",
+        "bridge_ids": [
+          "FIT"
+        ],
+        "aliases": [
+          "CAD says parts fit but they jam",
+          "assembly tolerance"
+        ],
+        "context": "A real assembly differs from an ideal nominal CAD model."
+      },
+      {
+        "id": "MFG-CURI-holes-small",
+        "question": "Why do holes in my 3D prints come out too small?",
+        "family_id": "fit",
+        "bridge_ids": [
+          "FIT"
+        ],
+        "aliases": [
+          "printed holes don't fit",
+          "overextrusion holes"
+        ],
+        "context": "Dimensional variation and printer/slicer compensation."
+      },
+      {
+        "id": "MFG-CURI-wobble",
+        "question": "Why does my machine wobble instead of moving smoothly?",
+        "family_id": "fit",
+        "bridge_ids": [
+          "WOBBLE"
+        ],
+        "aliases": [
+          "mechanism has play",
+          "loose moving joint"
+        ],
+        "context": "Unwanted motion may arise from joint clearance or constraints."
+      },
+      {
+        "id": "MFG-CURI-return-drift",
+        "question": "Why doesn't my mechanism return to exactly the same place?",
+        "family_id": "fit",
+        "bridge_ids": [
+          "WOBBLE"
+        ],
+        "aliases": [
+          "repeatability problem",
+          "backlash",
+          "return position varies"
+        ],
+        "context": "Consider backlash, hysteresis, geometric tolerances and forbidden motion."
+      },
+      {
+        "id": "MFG-CURI-identical",
+        "question": "Why is it hard to make two copies of something exactly alike?",
+        "family_id": "fit",
+        "bridge_ids": [
+          "FIT",
+          "QUANTITY"
+        ],
+        "aliases": [
+          "identical parts",
+          "manufacturing repeatability"
+        ],
+        "context": "Repeatability is about the distribution of real outcomes, not nominal geometry."
+      },
+      {
+        "id": "MFG-CURI-one-step",
+        "question": "How can a wheel move one step, stop, and then move again?",
+        "family_id": "motion",
+        "bridge_ids": [
+          "STEP"
+        ],
+        "aliases": [
+          "step then pause",
+          "indexing wheel"
+        ],
+        "context": "Intermittent motion and dwell must be distinguished from simple continuous rotation."
+      },
+      {
+        "id": "MFG-CURI-heavy-load",
+        "question": "How can a tiny push lift something really heavy?",
+        "family_id": "motion",
+        "bridge_ids": [
+          "FORCE"
+        ],
+        "aliases": [
+          "levers give more force",
+          "small motor heavy lift"
+        ],
+        "context": "Trade force against travel and account for losses."
+      },
+      {
+        "id": "MFG-CURI-machine-pause",
+        "question": "How can a factory machine pause without stopping its motor?",
+        "family_id": "motion",
+        "bridge_ids": [
+          "STEP"
+        ],
+        "aliases": [
+          "motion dwell",
+          "rotating shaft intermittent movement"
+        ],
+        "context": "Intermittent output can come from continuously driven mechanism geometry."
+      },
+      {
+        "id": "MFG-CURI-smooth-direction",
+        "question": "How can I make something move only in the direction I want?",
+        "family_id": "motion",
+        "bridge_ids": [
+          "WOBBLE",
+          "FLEX"
+        ],
+        "aliases": [
+          "guided motion",
+          "prevent side motion"
+        ],
+        "context": "Choose allowed and forbidden degrees of freedom before picking physical guidance."
+      },
+      {
+        "id": "MFG-CURI-gears-power",
+        "question": "Why can't gears make something both faster and stronger for free?",
+        "family_id": "motion",
+        "bridge_ids": [
+          "FORCE"
+        ],
+        "aliases": [
+          "torque speed tradeoff",
+          "gearing output force"
+        ],
+        "context": "Input work and power constrain simultaneous gains in output torque and speed."
+      },
+      {
+        "id": "MFG-CURI-hollow-shape",
+        "question": "How do people make parts that are hollow inside?",
+        "family_id": "shapes",
+        "bridge_ids": [
+          "CAVITY"
+        ],
+        "aliases": [
+          "internal cavity",
+          "hollow metal casting"
+        ],
+        "context": "Consider access to interior surfaces and how supports or molds are removed."
+      },
+      {
+        "id": "MFG-CURI-no-heat",
+        "question": "How can I cut something without burning or melting its edges?",
+        "family_id": "shapes",
+        "bridge_ids": [
+          "HEAT"
+        ],
+        "aliases": [
+          "cold cutting",
+          "avoid heat affected cutting"
+        ],
+        "context": "Material removal and its side-effects depend on the process physics."
+      },
+      {
+        "id": "MFG-CURI-print-air",
+        "question": "Why can't a 3D printer just print plastic into empty air?",
+        "family_id": "shapes",
+        "bridge_ids": [
+          "SUPPORT"
+        ],
+        "aliases": [
+          "3d print needs support",
+          "overhangs printing"
+        ],
+        "context": "Ask how new material is supported before it solidifies."
+      },
+      {
+        "id": "MFG-CURI-sagging",
+        "question": "Why does my 3D print sag over an empty gap?",
+        "family_id": "shapes",
+        "bridge_ids": [
+          "SUPPORT"
+        ],
+        "aliases": [
+          "bridging plastic droops",
+          "drooping overhang"
+        ],
+        "context": "Bridging, cooling and span geometry are relevant."
+      },
+      {
+        "id": "MFG-CURI-tipping",
+        "question": "Why does my tall 3D print fall over while printing?",
+        "family_id": "shapes",
+        "bridge_ids": [
+          "SUPPORT"
+        ],
+        "aliases": [
+          "bed adhesion",
+          "failed tall print"
+        ],
+        "context": "Bed contact, adhesion and slender geometry can dominate print success."
+      },
+      {
+        "id": "MFG-CURI-one-or-many",
+        "question": "Should I make ten things the same way as ten thousand?",
+        "family_id": "reach",
+        "bridge_ids": [
+          "QUANTITY"
+        ],
+        "aliases": [
+          "mass production",
+          "one-off versus high volume"
+        ],
+        "context": "Fixed tooling, revisions and per-unit work change preferred processes."
+      },
+      {
+        "id": "MFG-CURI-no-shop",
+        "question": "Can I make a real device without owning a machine shop?",
+        "family_id": "reach",
+        "bridge_ids": [
+          "OUTSOURCE"
+        ],
+        "aliases": [
+          "outsource fabrication",
+          "no workshop"
+        ],
+        "context": "Manufacturing agency can involve external services plus specification and inspection."
+      },
+      {
+        "id": "MFG-CURI-factory-molds",
+        "question": "Why do factories spend so much on molds?",
+        "family_id": "reach",
+        "bridge_ids": [
+          "QUANTITY"
+        ],
+        "aliases": [
+          "tooling costs",
+          "injection molding economics"
+        ],
+        "context": "Reusable physical tooling can exchange upfront investment for cheap repetitive cycles."
+      },
+      {
+        "id": "MFG-CURI-change-design",
+        "question": "Why is changing a product design expensive after making a mold?",
+        "family_id": "reach",
+        "bridge_ids": [
+          "QUANTITY"
+        ],
+        "aliases": [
+          "mold revision cost",
+          "changing tooling"
+        ],
+        "context": "Changing digitally described geometry and reworking a fixed tool are economically different."
+      }
+    ],
+    "lookup_contract": "Entries are intentionally easy to recognize; scientific/engineering precision belongs in the activated mechanism tree. Aliases aid retrieval and are not separately cloned questions.",
+    "boundaries": "The source-backed corpus is five books with ten already-inspected studies. Entry questions are navigation prompts, not verified diagnoses. Technical projections preserve TOC-only versus inspected source status.",
+    "next_expansion": "Expand from real questions that reveal missing retrieval paths. Do not inflate the index with near-identical paraphrases to simulate coverage."
   }
 }
