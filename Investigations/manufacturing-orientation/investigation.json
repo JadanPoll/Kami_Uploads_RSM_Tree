@@ -1259,6 +1259,13 @@
       "canonical_items": "Research observations, studies, case nodes and source anchors are recorded once with stable IDs.",
       "multiple_views": "Different big-picture purposes activate overlapping canonical items with different parent relationships. A view is an inquiry-specific path, not a claim of unique natural classification.",
       "boundary": "No attempt is made to turn every TOC entry into a separate question; a new item earns its place when it changes an alternative, a failure mode, a source path or a practical capability."
+    },
+    "chapter_navigation": {
+      "indexed_source_count": 5,
+      "indexed_sections": 65,
+      "role": "Retrieval map, not 65 independently verified scientific or engineering findings.",
+      "grounding": "Chapter titles and printed starting pages for the four numbered books were read from the books' tables of contents. Manufacturing Processes uses verified major part titles without claimed part start pages.",
+      "interpretation": "One chapter can be relevant to several questions; navigation tags do not imply that its contents have all been researched."
     }
   },
   "landscape_views": [
@@ -1481,5 +1488,716 @@
     "source_status": "A question and a source section are different kinds of objects; candidate reading remains candidate reading.",
     "selection_rule": "Choose the view according to the current big-picture goal; retain navigable cross-links rather than duplicating source records.",
     "asymptotic_goal": "Index every consequential capability, constraint, mechanism and source encounter that helps answer a real question; do not materialize a node for every book heading."
-  }
+  },
+  "book_landscaplets": [
+    {
+      "source_id": "BOOK-MFG-PROCESSES",
+      "source_navigation_status": "Table-of-contents sections indexed for retrieval; only individually cited studies count as inspected technical evidence.",
+      "page_scheme": "major part titles verified, start pages not established",
+      "sections": [
+        {
+          "ref": "Part 1",
+          "title": "Forming technology",
+          "printed_page_start": null,
+          "views": [
+            "possibilities",
+            "production",
+            "bootstrap"
+          ],
+          "case_ids": [
+            "MFG-PROC-INJECTION",
+            "MFG-PROC-SAND"
+          ]
+        },
+        {
+          "ref": "Part 2",
+          "title": "Cutting technology",
+          "printed_page_start": null,
+          "views": [
+            "possibilities",
+            "make",
+            "bootstrap"
+          ],
+          "case_ids": [
+            "MFG-PROC-WATERJET"
+          ]
+        },
+        {
+          "ref": "Part 3",
+          "title": "Joining technology",
+          "printed_page_start": null,
+          "views": [
+            "make",
+            "production",
+            "mechanisms"
+          ],
+          "case_ids": []
+        },
+        {
+          "ref": "Part 4",
+          "title": "Finishing technology",
+          "printed_page_start": null,
+          "views": [
+            "make",
+            "production"
+          ],
+          "case_ids": []
+        },
+        {
+          "ref": "Part 5",
+          "title": "Materials",
+          "printed_page_start": null,
+          "views": [
+            "possibilities",
+            "make",
+            "production"
+          ],
+          "case_ids": []
+        }
+      ]
+    },
+    {
+      "source_id": "BOOK-FFF",
+      "source_navigation_status": "Table-of-contents sections indexed for retrieval; only individually cited studies count as inspected technical evidence.",
+      "page_scheme": "printed book page",
+      "sections": [
+        {
+          "ref": "I",
+          "title": "The Medium",
+          "printed_page_start": 10,
+          "views": [
+            "possibilities",
+            "make",
+            "mechanisms"
+          ],
+          "case_ids": [
+            "MFG-FFM-ORIENT"
+          ]
+        },
+        {
+          "ref": "II",
+          "title": "Designing for FFM",
+          "printed_page_start": 40,
+          "views": [
+            "make",
+            "mechanisms"
+          ],
+          "case_ids": [
+            "MFG-FFM-ORIENT"
+          ]
+        },
+        {
+          "ref": "III",
+          "title": "Design for Strength",
+          "printed_page_start": 76,
+          "views": [
+            "make",
+            "mechanisms",
+            "production"
+          ],
+          "case_ids": []
+        },
+        {
+          "ref": "IV",
+          "title": "Design Paradigms",
+          "printed_page_start": 106,
+          "views": [
+            "make",
+            "mechanisms"
+          ],
+          "case_ids": []
+        },
+        {
+          "ref": "V",
+          "title": "Designing for Fit",
+          "printed_page_start": 116,
+          "views": [
+            "make",
+            "production",
+            "mechanisms"
+          ],
+          "case_ids": [
+            "MFG-TOLERANCE"
+          ]
+        },
+        {
+          "ref": "VI",
+          "title": "Fastening and Joinery",
+          "printed_page_start": 124,
+          "views": [
+            "make",
+            "production",
+            "mechanisms"
+          ],
+          "case_ids": []
+        },
+        {
+          "ref": "VII",
+          "title": "Functional Elements and Engineered Features",
+          "printed_page_start": 136,
+          "views": [
+            "mechanisms",
+            "make"
+          ],
+          "case_ids": []
+        },
+        {
+          "ref": "VIII",
+          "title": "Understanding the Slicer",
+          "printed_page_start": 154,
+          "views": [
+            "make",
+            "bootstrap",
+            "production"
+          ],
+          "case_ids": []
+        }
+      ]
+    },
+    {
+      "source_id": "BOOK-SHIGLEY",
+      "source_navigation_status": "Table-of-contents sections indexed for retrieval; only individually cited studies count as inspected technical evidence.",
+      "page_scheme": "printed book page",
+      "sections": [
+        {
+          "ref": "1",
+          "title": "Introduction to Mechanical Engineering Design",
+          "printed_page_start": 3,
+          "views": [
+            "make",
+            "production"
+          ],
+          "case_ids": []
+        },
+        {
+          "ref": "2",
+          "title": "Materials",
+          "printed_page_start": 39,
+          "views": [
+            "possibilities",
+            "make"
+          ],
+          "case_ids": []
+        },
+        {
+          "ref": "3",
+          "title": "Load and Stress Analysis",
+          "printed_page_start": 91,
+          "views": [
+            "make",
+            "mechanisms"
+          ],
+          "case_ids": []
+        },
+        {
+          "ref": "4",
+          "title": "Deflection and Stiffness",
+          "printed_page_start": 179,
+          "views": [
+            "make",
+            "mechanisms"
+          ],
+          "case_ids": []
+        },
+        {
+          "ref": "5",
+          "title": "Failures Resulting from Static Loading",
+          "printed_page_start": 253,
+          "views": [
+            "make",
+            "production"
+          ],
+          "case_ids": []
+        },
+        {
+          "ref": "6",
+          "title": "Fatigue Failure Resulting from Variable Loading",
+          "printed_page_start": 297,
+          "views": [
+            "mechanisms",
+            "production"
+          ],
+          "case_ids": []
+        },
+        {
+          "ref": "7",
+          "title": "Shafts and Shaft Components",
+          "printed_page_start": 385,
+          "views": [
+            "mechanisms",
+            "production"
+          ],
+          "case_ids": []
+        },
+        {
+          "ref": "8",
+          "title": "Screws, Fasteners, and the Design of Nonpermanent Joints",
+          "printed_page_start": 433,
+          "views": [
+            "make",
+            "production"
+          ],
+          "case_ids": []
+        },
+        {
+          "ref": "9",
+          "title": "Welding, Bonding, and the Design of Permanent Joints",
+          "printed_page_start": 497,
+          "views": [
+            "make",
+            "production"
+          ],
+          "case_ids": []
+        },
+        {
+          "ref": "10",
+          "title": "Mechanical Springs",
+          "printed_page_start": 537,
+          "views": [
+            "mechanisms",
+            "make"
+          ],
+          "case_ids": []
+        },
+        {
+          "ref": "11",
+          "title": "Rolling-Contact Bearings",
+          "printed_page_start": 589,
+          "views": [
+            "mechanisms",
+            "production"
+          ],
+          "case_ids": []
+        },
+        {
+          "ref": "12",
+          "title": "Lubrication and Journal Bearings",
+          "printed_page_start": 637,
+          "views": [
+            "mechanisms",
+            "production"
+          ],
+          "case_ids": []
+        },
+        {
+          "ref": "13",
+          "title": "Gears—General",
+          "printed_page_start": 697,
+          "views": [
+            "mechanisms"
+          ],
+          "case_ids": []
+        },
+        {
+          "ref": "14",
+          "title": "Spur and Helical Gears",
+          "printed_page_start": 757,
+          "views": [
+            "mechanisms",
+            "production"
+          ],
+          "case_ids": []
+        },
+        {
+          "ref": "15",
+          "title": "Bevel and Worm Gears",
+          "printed_page_start": 809,
+          "views": [
+            "mechanisms",
+            "production"
+          ],
+          "case_ids": []
+        },
+        {
+          "ref": "16",
+          "title": "Clutches, Brakes, Couplings, and Flywheels",
+          "printed_page_start": 847,
+          "views": [
+            "mechanisms",
+            "production"
+          ],
+          "case_ids": []
+        },
+        {
+          "ref": "17",
+          "title": "Flexible Mechanical Elements",
+          "printed_page_start": 899,
+          "views": [
+            "mechanisms"
+          ],
+          "case_ids": []
+        },
+        {
+          "ref": "18",
+          "title": "Power Transmission Case Study",
+          "printed_page_start": 953,
+          "views": [
+            "mechanisms",
+            "make",
+            "production"
+          ],
+          "case_ids": []
+        },
+        {
+          "ref": "19",
+          "title": "Finite-Element Analysis",
+          "printed_page_start": 973,
+          "views": [
+            "make",
+            "mechanisms"
+          ],
+          "case_ids": []
+        },
+        {
+          "ref": "20",
+          "title": "Geometric Dimensioning and Tolerancing",
+          "printed_page_start": 995,
+          "views": [
+            "make",
+            "production"
+          ],
+          "case_ids": [
+            "MFG-TOLERANCE"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "BOOK-COMPLIANT",
+      "source_navigation_status": "Table-of-contents sections indexed for retrieval; only individually cited studies count as inspected technical evidence.",
+      "page_scheme": "printed book page",
+      "sections": [
+        {
+          "ref": "1",
+          "title": "Introduction to Compliant Mechanisms",
+          "printed_page_start": 3,
+          "views": [
+            "mechanisms",
+            "possibilities"
+          ],
+          "case_ids": [
+            "MFG-FUNC-COMPLIANT"
+          ]
+        },
+        {
+          "ref": "2",
+          "title": "Using the Handbook to Design Devices",
+          "printed_page_start": 15,
+          "views": [
+            "mechanisms",
+            "make"
+          ],
+          "case_ids": []
+        },
+        {
+          "ref": "3",
+          "title": "Analysis of Flexure Mechanisms in the Intermediate Displacement Range",
+          "printed_page_start": 29,
+          "views": [
+            "mechanisms",
+            "make"
+          ],
+          "case_ids": []
+        },
+        {
+          "ref": "4",
+          "title": "Modeling of Large Deflection Members",
+          "printed_page_start": 45,
+          "views": [
+            "mechanisms",
+            "make"
+          ],
+          "case_ids": []
+        },
+        {
+          "ref": "5",
+          "title": "Using Pseudo-Rigid Body Models",
+          "printed_page_start": 55,
+          "views": [
+            "mechanisms",
+            "make"
+          ],
+          "case_ids": []
+        },
+        {
+          "ref": "6",
+          "title": "Synthesis through Freedom and Constraint Topologies",
+          "printed_page_start": 79,
+          "views": [
+            "mechanisms",
+            "possibilities"
+          ],
+          "case_ids": [
+            "MFG-FUNC-DOF"
+          ]
+        },
+        {
+          "ref": "7",
+          "title": "Synthesis through Topology Optimization",
+          "printed_page_start": 93,
+          "views": [
+            "mechanisms",
+            "possibilities"
+          ],
+          "case_ids": []
+        },
+        {
+          "ref": "8",
+          "title": "Synthesis through Rigid-Body Replacement",
+          "printed_page_start": 109,
+          "views": [
+            "mechanisms",
+            "make"
+          ],
+          "case_ids": [
+            "MFG-FUNC-COMPLIANT"
+          ]
+        },
+        {
+          "ref": "9",
+          "title": "Synthesis through Use of Building Blocks",
+          "printed_page_start": 123,
+          "views": [
+            "mechanisms",
+            "bootstrap"
+          ],
+          "case_ids": []
+        },
+        {
+          "ref": "10",
+          "title": "Library Organization",
+          "printed_page_start": 149,
+          "views": [
+            "mechanisms",
+            "possibilities"
+          ],
+          "case_ids": []
+        },
+        {
+          "ref": "11",
+          "title": "Elements of Mechanisms",
+          "printed_page_start": 155,
+          "views": [
+            "mechanisms",
+            "bootstrap"
+          ],
+          "case_ids": []
+        },
+        {
+          "ref": "12",
+          "title": "Mechanisms",
+          "printed_page_start": 193,
+          "views": [
+            "mechanisms",
+            "bootstrap"
+          ],
+          "case_ids": []
+        },
+        {
+          "ref": "13",
+          "title": "Example Application",
+          "printed_page_start": 277,
+          "views": [
+            "make",
+            "mechanisms"
+          ],
+          "case_ids": []
+        }
+      ]
+    },
+    {
+      "source_id": "BOOK-MECHANISMS",
+      "source_navigation_status": "Table-of-contents sections indexed for retrieval; only individually cited studies count as inspected technical evidence.",
+      "page_scheme": "printed book page",
+      "sections": [
+        {
+          "ref": "1",
+          "title": "Basics of Mechanisms",
+          "printed_page_start": 1,
+          "views": [
+            "mechanisms"
+          ],
+          "case_ids": [
+            "MFG-FUNC-RIGID"
+          ]
+        },
+        {
+          "ref": "2",
+          "title": "Motion Control Systems",
+          "printed_page_start": 21,
+          "views": [
+            "mechanisms"
+          ],
+          "case_ids": []
+        },
+        {
+          "ref": "3",
+          "title": "Stationary and Mobile Robots",
+          "printed_page_start": 49,
+          "views": [
+            "mechanisms",
+            "make"
+          ],
+          "case_ids": []
+        },
+        {
+          "ref": "4",
+          "title": "Mechanisms for Renewable Power Generation",
+          "printed_page_start": 73,
+          "views": [
+            "possibilities",
+            "bootstrap"
+          ],
+          "case_ids": []
+        },
+        {
+          "ref": "5",
+          "title": "Linkages: Drives and Mechanisms",
+          "printed_page_start": 89,
+          "views": [
+            "mechanisms"
+          ],
+          "case_ids": []
+        },
+        {
+          "ref": "6",
+          "title": "Gears: Devices, Drives, and Mechanisms",
+          "printed_page_start": 131,
+          "views": [
+            "mechanisms"
+          ],
+          "case_ids": []
+        },
+        {
+          "ref": "7",
+          "title": "Cam, Geneva, and Ratchet Drives and Mechanisms",
+          "printed_page_start": 179,
+          "views": [
+            "mechanisms"
+          ],
+          "case_ids": [
+            "MFG-FUNC-INDEX"
+          ]
+        },
+        {
+          "ref": "8",
+          "title": "Clutches and Brakes",
+          "printed_page_start": 211,
+          "views": [
+            "mechanisms",
+            "production"
+          ],
+          "case_ids": []
+        },
+        {
+          "ref": "9",
+          "title": "Latching, Fastening, and Clamping Devices and Mechanisms",
+          "printed_page_start": 237,
+          "views": [
+            "make",
+            "mechanisms"
+          ],
+          "case_ids": []
+        },
+        {
+          "ref": "10",
+          "title": "Chain and Belt Devices and Mechanisms",
+          "printed_page_start": 261,
+          "views": [
+            "mechanisms",
+            "production"
+          ],
+          "case_ids": []
+        },
+        {
+          "ref": "11",
+          "title": "Spring and Screw Devices and Mechanisms",
+          "printed_page_start": 279,
+          "views": [
+            "mechanisms",
+            "make"
+          ],
+          "case_ids": []
+        },
+        {
+          "ref": "12",
+          "title": "Shaft Couplings and Connections",
+          "printed_page_start": 301,
+          "views": [
+            "mechanisms",
+            "production"
+          ],
+          "case_ids": []
+        },
+        {
+          "ref": "13",
+          "title": "Motion-Specific Devices, Mechanisms, and Machines",
+          "printed_page_start": 323,
+          "views": [
+            "mechanisms"
+          ],
+          "case_ids": []
+        },
+        {
+          "ref": "14",
+          "title": "Packaging, Conveying, Handling, and Safety Mechanisms and Machines",
+          "printed_page_start": 381,
+          "views": [
+            "production"
+          ],
+          "case_ids": []
+        },
+        {
+          "ref": "15",
+          "title": "Torque, Speed, Tension, and Limit Control Systems",
+          "printed_page_start": 419,
+          "views": [
+            "production",
+            "mechanisms"
+          ],
+          "case_ids": []
+        },
+        {
+          "ref": "16",
+          "title": "Instruments and Controls: Pneumatic, Hydraulic, Electric, and Electronic",
+          "printed_page_start": 447,
+          "views": [
+            "production",
+            "bootstrap"
+          ],
+          "case_ids": []
+        },
+        {
+          "ref": "17",
+          "title": "3D Digital Prototypes and Simulation",
+          "printed_page_start": 477,
+          "views": [
+            "make",
+            "bootstrap"
+          ],
+          "case_ids": []
+        },
+        {
+          "ref": "18",
+          "title": "Rapid Prototyping",
+          "printed_page_start": 487,
+          "views": [
+            "make",
+            "possibilities"
+          ],
+          "case_ids": []
+        },
+        {
+          "ref": "19",
+          "title": "New Directions in Mechanical Engineering",
+          "printed_page_start": 501,
+          "views": [
+            "possibilities",
+            "bootstrap"
+          ],
+          "case_ids": []
+        }
+      ]
+    }
+  ]
 }
