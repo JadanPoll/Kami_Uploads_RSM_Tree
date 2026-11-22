@@ -37,6 +37,16 @@
       }
     },
     {
+      "id": "manufacturing-curiosities",
+      "title": "Manufacturing — Curiosity encyclopedia",
+      "short_title": "Curiosities",
+      "shared_reader_id": "manufacturing",
+      "file": "Investigations/manufacturing-orientation/investigation.json",
+      "projection": {
+        "shape": "curiosities"
+      }
+    },
+    {
       "id": "manufacturing-investigation",
       "title": "Manufacturing — investigation",
       "file": "Investigations/manufacturing-orientation/investigation.json",
