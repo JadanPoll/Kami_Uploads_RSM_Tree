@@ -1,0 +1,3170 @@
+{
+  "id": "neuromorphic-engineering",
+  "kind": "canonical_research_corpus",
+  "title": "Neuromorphic engineering — analog circuits, silicon sensing and event-based systems",
+  "status": "two-book-source-indexed; selective passages examined; engineering demonstrations not reproduced",
+  "updated": "2026-11-21",
+  "source_folder": "https://drive.google.com/drive/folders/1dF3VIEePbbg3LdDMDs3WTO2QEjaF-S0a",
+  "question": "Which neural and physical mechanisms make alternative computation possible, and when can they earn their physical and systems cost?",
+  "purpose": "An expandable, source-grounded, curiosity-first investigation; glossary breadth is independent of current question coverage.",
+  "glossary_path": "glossary.json",
+  "glossary_schema": "1.0",
+  "sources": [
+    {
+      "id": "MEAD-1989",
+      "title": "Analog VLSI and Neural Systems",
+      "author": "Carver Mead",
+      "edition": "Addison-Wesley, 1989",
+      "url": "https://drive.google.com/file/d/1EoxZXhmCF_aiJCdQBhu8E2VUiw6xvY_Q/view?usp=drivesdk",
+      "role": "From transistor physics and analog computation primitives to biological models and silicon sensory systems",
+      "page_scheme": "Printed book pages from scanned TOC; no verified direct PDF-page offsets",
+      "limitations": "Analog circuit ideas are foundational but process-specific transistor values and performance claims are historical; this PDF's OCR has occasional corrupted headings."
+    },
+    {
+      "id": "LIU-2015",
+      "title": "Event-Based Neuromorphic Systems",
+      "editors": [
+        "Shih-Chii Liu",
+        "Tobi Delbruck",
+        "Giacomo Indiveri",
+        "Adrian Whatley",
+        "Rodney Douglas"
+      ],
+      "edition": "Wiley, 2015",
+      "url": "https://drive.google.com/file/d/1chsw9TCVW_qVTCvunYcIMSHWOdy99V43/view?usp=drivesdk",
+      "role": "Sensor, spiking-neuron/synapse, AER communication, configurable circuits, multichip hardware and software composition",
+      "page_scheme": "Printed pages in electronically extractable table of contents; not verified PDF position",
+      "limitations": "Implementations and performance examples represent the cited designs, not a currently verified vendor interface or modern production benchmark."
+    }
+  ],
+  "book_landscaplets": [
+    {
+      "source_id": "MEAD-1989",
+      "page_scheme": "Printed page starts from the 1989 scanned book's contents; NOT verified PDF offsets",
+      "source_navigation_status": "All 16 chapter titles and 4 appendices transcribed from TOC, 16 high-value subheadings indexed; selected paragraphs examined, remainder TOC leads.",
+      "sections": [
+        {
+          "ref": "1",
+          "title": "Introduction",
+          "printed_page_start": 3,
+          "part": "I · Basics",
+          "use_when": "I · Basics · Introduction",
+          "entry_node_ids": "The physical-computation thesis and neural alternatives",
+          "case_ids": "The physical-computation thesis and neural alternatives",
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "2",
+          "title": "Eclectronics",
+          "printed_page_start": 11,
+          "part": "I · Basics",
+          "use_when": "I · Basics · Eclectronics",
+          "entry_node_ids": "Energy, capacitance, conductance and active devices",
+          "case_ids": "Energy, capacitance, conductance and active devices",
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "3",
+          "title": "Transistor Physics",
+          "printed_page_start": 27,
+          "part": "I · Basics",
+          "use_when": "I · Basics · Transistor Physics",
+          "entry_node_ids": "Subthreshold MOS current, current mirrors and device-level effects",
+          "case_ids": "Subthreshold MOS current, current mirrors and device-level effects",
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "4",
+          "title": "Neurons",
+          "printed_page_start": 43,
+          "part": "I · Basics",
+          "use_when": "I · Basics · Neurons",
+          "entry_node_ids": "Membrane, ionic channels, spike and synapse fundamentals",
+          "case_ids": "Membrane, ionic channels, spike and synapse fundamentals",
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "5",
+          "title": "Transconductance Amplifier",
+          "printed_page_start": 67,
+          "part": "II · Static functions",
+          "use_when": "II · Static functions · Transconductance Amplifier",
+          "entry_node_ids": "Differential pairs, gm amplifiers and mismatch",
+          "case_ids": "Differential pairs, gm amplifiers and mismatch",
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "6",
+          "title": "Elementary Arithmetic Functions",
+          "printed_page_start": 83,
+          "part": "II · Static functions",
+          "use_when": "II · Static functions · Elementary Arithmetic Functions",
+          "entry_node_ids": "Analog addition, subtraction, multiplication and exponential functions",
+          "case_ids": "Analog addition, subtraction, multiplication and exponential functions",
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "7",
+          "title": "Aggregating Signals",
+          "printed_page_start": 101,
+          "part": "II · Static functions",
+          "use_when": "II · Static functions · Aggregating Signals",
+          "entry_node_ids": "Resistive networks, dendrites and spatial signal aggregation",
+          "case_ids": "Resistive networks, dendrites and spatial signal aggregation",
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "8",
+          "title": "Time-Varying Signals",
+          "printed_page_start": 127,
+          "part": "III · Dynamic functions",
+          "use_when": "III · Dynamic functions · Time-Varying Signals",
+          "entry_node_ids": "RC systems, impulse/frequency response and transfer functions",
+          "case_ids": "RC systems, impulse/frequency response and transfer functions",
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "9",
+          "title": "Follower-Integrator Circuit",
+          "printed_page_start": 147,
+          "part": "III · Dynamic functions",
+          "use_when": "III · Dynamic functions · Follower-Integrator Circuit",
+          "entry_node_ids": "Continuous-time integration, delays and stability",
+          "case_ids": "Continuous-time integration, delays and stability",
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "10",
+          "title": "Differentiators",
+          "printed_page_start": 163,
+          "part": "III · Dynamic functions",
+          "use_when": "III · Dynamic functions · Differentiators",
+          "entry_node_ids": "Transient responses, offsets, hysteresis and noise filtering",
+          "case_ids": "Transient responses, offsets, hysteresis and noise filtering",
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "11",
+          "title": "Second-Order Section",
+          "printed_page_start": 179,
+          "part": "III · Dynamic functions",
+          "use_when": "III · Dynamic functions · Second-Order Section",
+          "entry_node_ids": "Second-order responses and stability constraints",
+          "case_ids": "Second-order responses and stability constraints",
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "12",
+          "title": "Axons",
+          "printed_page_start": 193,
+          "part": "III · Dynamic functions",
+          "use_when": "III · Dynamic functions · Axons",
+          "entry_node_ids": "Axon-hillock, pulse and self-resetting neuron implementations",
+          "case_ids": "Axon-hillock, pulse and self-resetting neuron implementations",
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "13",
+          "title": "SeeHear",
+          "printed_page_start": 207,
+          "part": "IV · System examples",
+          "use_when": "IV · System examples · SeeHear",
+          "entry_node_ids": "Visual-to-auditory device architecture and implementation",
+          "case_ids": "Visual-to-auditory device architecture and implementation",
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "14",
+          "title": "Optical Motion Sensor",
+          "printed_page_start": 229,
+          "part": "IV · System examples",
+          "use_when": "IV · System examples · Optical Motion Sensor",
+          "entry_node_ids": "Analog motion constraints and least-squares/gradiant mechanisms",
+          "case_ids": "Analog motion constraints and least-squares/gradiant mechanisms",
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "15",
+          "title": "Silicon Retina",
+          "printed_page_start": 257,
+          "part": "IV · System examples",
+          "use_when": "IV · System examples · Silicon Retina",
+          "entry_node_ids": "Photoreceptor, horizontal layer, synaptic computation",
+          "case_ids": "Photoreceptor, horizontal layer, synaptic computation",
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "16",
+          "title": "Electronic Cochlea",
+          "printed_page_start": 279,
+          "part": "IV · System examples",
+          "use_when": "IV · System examples · Electronic Cochlea",
+          "entry_node_ids": "Basilar-membrane delay, nonlinear auditory filtering and gain",
+          "case_ids": "Basilar-membrane delay, nonlinear auditory filtering and gain",
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "A",
+          "title": "CMOS Fabrication",
+          "printed_page_start": 305,
+          "use_when": "Silicon-gate CMOS, yield and geometric constraints",
+          "entry_node_ids": [],
+          "case_ids": [],
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "B",
+          "title": "Fine Points of Transistor Physics",
+          "printed_page_start": 319,
+          "use_when": "Electrostatics, subthreshold operation and generalized MOS model",
+          "entry_node_ids": [],
+          "case_ids": [],
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "C",
+          "title": "Resistive Networks",
+          "printed_page_start": 339,
+          "use_when": "Continuous/discrete resistor networks, shunting inhibition and branches",
+          "entry_node_ids": [],
+          "case_ids": [],
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "D",
+          "title": "Complexity in Neural Systems",
+          "printed_page_start": 353,
+          "use_when": "Analog and entropy factors as historical complexity arguments",
+          "entry_node_ids": [],
+          "case_ids": [],
+          "locator_status": "table_of_contents_inspected"
+        }
+      ],
+      "subsections": [
+        {
+          "chapter": "3",
+          "title": "MOS Transistors",
+          "printed_page_start": 33,
+          "entry_node_ids": [
+            "NMR-PHYS"
+          ],
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "chapter": "3",
+          "title": "Circuit Properties of Transistors",
+          "printed_page_start": 36,
+          "entry_node_ids": [
+            "NMR-PHYS"
+          ],
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "chapter": "3",
+          "title": "Current Mirrors",
+          "printed_page_start": 39,
+          "entry_node_ids": [
+            "NMR-MIRROR"
+          ],
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "chapter": "5",
+          "title": "Transistor Mismatch",
+          "printed_page_start": 72,
+          "entry_node_ids": [
+            "NMR-MIRROR"
+          ],
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "chapter": "6",
+          "title": "Exponentials and Logarithms",
+          "printed_page_start": 97,
+          "entry_node_ids": [
+            "NMR-ANALOG"
+          ],
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "chapter": "7",
+          "title": "The Horizontal Resistor (HRes) Circuit",
+          "printed_page_start": 116,
+          "entry_node_ids": [
+            "NMR-AGGREGATE"
+          ],
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "chapter": "8",
+          "title": "The Resistor-Capacitor (RC) Circuit",
+          "printed_page_start": 129,
+          "entry_node_ids": [
+            "NMR-DYNAMICS"
+          ],
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "chapter": "9",
+          "title": "Follower-Integrator Delay Line",
+          "printed_page_start": 152,
+          "entry_node_ids": [
+            "NMR-DYNAMICS"
+          ],
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "chapter": "10",
+          "title": "Hysteretic Differentiator",
+          "printed_page_start": 173,
+          "entry_node_ids": [
+            "NMR-DYNAMICS"
+          ],
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "chapter": "11",
+          "title": "Stability Limit",
+          "printed_page_start": 187,
+          "entry_node_ids": [
+            "NMR-DYNAMICS"
+          ],
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "chapter": "12",
+          "title": "The Axon-Hillock Circuit",
+          "printed_page_start": 194,
+          "entry_node_ids": [
+            "NMR-SPIKE"
+          ],
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "chapter": "12",
+          "title": "Self-Resetting Neuron",
+          "printed_page_start": 198,
+          "entry_node_ids": [
+            "NMR-SPIKE"
+          ],
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "chapter": "14",
+          "title": "Solution of Simultaneous Constraints",
+          "printed_page_start": 233,
+          "entry_node_ids": [
+            "NMR-MOTION"
+          ],
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "chapter": "15",
+          "title": "Photoreceptor Circuit",
+          "printed_page_start": 260,
+          "entry_node_ids": [
+            "NMR-RETINA"
+          ],
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "chapter": "16",
+          "title": "Silicon Cochlea",
+          "printed_page_start": 289,
+          "entry_node_ids": [
+            "NMR-COCHLEA"
+          ],
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "chapter": "16",
+          "title": "Transistor Parameter Variation",
+          "printed_page_start": 294,
+          "entry_node_ids": [
+            "NMR-COCHLEA"
+          ],
+          "locator_status": "table_of_contents_inspected"
+        }
+      ]
+    },
+    {
+      "source_id": "LIU-2015",
+      "page_scheme": "Printed page starts from Wiley 2015 book's TOC; not PDF offsets",
+      "source_navigation_status": "All 17 chapter starts and 35 useful subsection starts indexed; selected mechanism passages actually examined.",
+      "sections": [
+        {
+          "ref": "1",
+          "title": "Introduction",
+          "printed_page_start": 1,
+          "use_when": "Origins and scope of event-based systems",
+          "entry_node_ids": [
+            "NMR-ROOT"
+          ],
+          "case_ids": [
+            "NMR-ROOT"
+          ],
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "2",
+          "title": "Communication",
+          "printed_page_start": 9,
+          "use_when": "AER encoding, arbitration, routing and transport tradeoffs",
+          "entry_node_ids": [
+            "NMR-AER",
+            "NMR-QUEUES"
+          ],
+          "case_ids": [
+            "NMR-AER",
+            "NMR-QUEUES"
+          ],
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "3",
+          "title": "Silicon Retinas",
+          "printed_page_start": 37,
+          "use_when": "DVS/ATIS, analog front-end, event image sensing and sensor specifications",
+          "entry_node_ids": [
+            "NMR-RETINA"
+          ],
+          "case_ids": [
+            "NMR-RETINA"
+          ],
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "4",
+          "title": "Silicon Cochleas",
+          "printed_page_start": 71,
+          "use_when": "Cascaded filters, active cochlea and spike-based auditory models",
+          "entry_node_ids": [
+            "NMR-COCHLEA"
+          ],
+          "case_ids": [
+            "NMR-COCHLEA"
+          ],
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "5",
+          "title": "Locomotion Motor Control",
+          "printed_page_start": 91,
+          "use_when": "Central pattern generators, neuroprostheses and walking robots",
+          "entry_node_ids": [
+            "NMR-LOCOMOTION"
+          ],
+          "case_ids": [
+            "NMR-LOCOMOTION"
+          ],
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "6",
+          "title": "Learning in Neuromorphic Systems",
+          "printed_page_start": 119,
+          "use_when": "Memory maintenance, synapse models and attractor circuits",
+          "entry_node_ids": [
+            "NMR-LEARNING"
+          ],
+          "case_ids": [
+            "NMR-LEARNING"
+          ],
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "7",
+          "title": "Silicon Neurons",
+          "printed_page_start": 155,
+          "use_when": "Conductance dynamics, threshold, refractory and integrate-and-fire circuits",
+          "entry_node_ids": [
+            "NMR-SPIKE"
+          ],
+          "case_ids": [
+            "NMR-SPIKE"
+          ],
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "8",
+          "title": "Silicon Synapses",
+          "printed_page_start": 185,
+          "use_when": "Conductance and plasticity implementations",
+          "entry_node_ids": [
+            "NMR-LEARNING"
+          ],
+          "case_ids": [
+            "NMR-LEARNING"
+          ],
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "9",
+          "title": "Silicon Cochlea Building Blocks",
+          "printed_page_start": 219,
+          "use_when": "Transconductors, tau cells, filters and hair-cell models",
+          "entry_node_ids": [
+            "NMR-COCHLEA"
+          ],
+          "case_ids": [
+            "NMR-COCHLEA"
+          ],
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "10",
+          "title": "Programmable and Configurable Analog Neuromorphic ICs",
+          "printed_page_start": 237,
+          "use_when": "Floating-gate programming, computing in memory and analog arrays",
+          "entry_node_ids": [
+            "NMR-CONFIG"
+          ],
+          "case_ids": [
+            "NMR-CONFIG"
+          ],
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "11",
+          "title": "Bias Generator Circuits",
+          "printed_page_start": 261,
+          "use_when": "Current reference, splitters, startup, bias tuning and power control",
+          "entry_node_ids": [
+            "NMR-BIAS"
+          ],
+          "case_ids": [
+            "NMR-BIAS"
+          ],
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "12",
+          "title": "On-Chip AER Communication Circuits",
+          "printed_page_start": 285,
+          "use_when": "Transmit arbiters, receivers, handshake and decoders",
+          "entry_node_ids": [
+            "NMR-AER"
+          ],
+          "case_ids": [
+            "NMR-AER"
+          ],
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "13",
+          "title": "Hardware Infrastructure",
+          "printed_page_start": 305,
+          "use_when": "Event monitoring, mapping, interfaces, FPGA and multichip systems",
+          "entry_node_ids": [
+            "NMR-INTEGRATION"
+          ],
+          "case_ids": [
+            "NMR-INTEGRATION"
+          ],
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "14",
+          "title": "Software Infrastructure",
+          "printed_page_start": 349,
+          "use_when": "NeuroML, event streams, jAER and Python/PyNN",
+          "entry_node_ids": [
+            "NMR-INTEGRATION"
+          ],
+          "case_ids": [
+            "NMR-INTEGRATION"
+          ],
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "15",
+          "title": "Algorithmic Processing of Event Streams",
+          "printed_page_start": 365,
+          "use_when": "Noise filters, feature/event tracking and auditory event processing",
+          "entry_node_ids": [
+            "NMR-ALGORITHMS"
+          ],
+          "case_ids": [
+            "NMR-ALGORITHMS"
+          ],
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "16",
+          "title": "Towards Large-Scale Neuromorphic Systems",
+          "printed_page_start": 381,
+          "use_when": "Hierarchical event routing, Neurogrid and larger systems",
+          "entry_node_ids": [
+            "NMR-SCALE"
+          ],
+          "case_ids": [
+            "NMR-SCALE"
+          ],
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "17",
+          "title": "The Brain as Potential Technology",
+          "printed_page_start": 393,
+          "use_when": "Biological principles and neuromorphic cognition",
+          "entry_node_ids": [
+            "NMR-ROOT"
+          ],
+          "case_ids": [
+            "NMR-ROOT"
+          ],
+          "locator_status": "table_of_contents_inspected"
+        }
+      ],
+      "subsections": [
+        {
+          "chapter": "2",
+          "title": "Address-Event Representation",
+          "printed_page_start": 12,
+          "entry_node_ids": [
+            "NMR-AER"
+          ],
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "chapter": "2",
+          "title": "Arbitration Mechanisms",
+          "printed_page_start": 13,
+          "entry_node_ids": [
+            "NMR-QUEUES"
+          ],
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "chapter": "2",
+          "title": "Routing",
+          "printed_page_start": 19,
+          "entry_node_ids": [
+            "NMR-AER"
+          ],
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "chapter": "2",
+          "title": "Queueing versus Dropping Spikes",
+          "printed_page_start": 24,
+          "entry_node_ids": [
+            "NMR-QUEUES"
+          ],
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "chapter": "2",
+          "title": "Predicting Throughput Requirements",
+          "printed_page_start": 25,
+          "entry_node_ids": [
+            "NMR-QUEUES"
+          ],
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "chapter": "3",
+          "title": "Asynchronous Event-Based Pixel Output Versus Synchronous Frames",
+          "printed_page_start": 40,
+          "entry_node_ids": [
+            "NMR-RETINA"
+          ],
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "chapter": "3",
+          "title": "Dynamic Vision Sensor",
+          "printed_page_start": 41,
+          "entry_node_ids": [
+            "NMR-RETINA"
+          ],
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "chapter": "3",
+          "title": "DVS Background Activity",
+          "printed_page_start": 62,
+          "entry_node_ids": [
+            "NMR-RETINA"
+          ],
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "chapter": "3",
+          "title": "DVS Latency and Jitter",
+          "printed_page_start": 63,
+          "entry_node_ids": [
+            "NMR-RETINA"
+          ],
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "chapter": "4",
+          "title": "Spike-Based Cochleas",
+          "printed_page_start": 83,
+          "entry_node_ids": [
+            "NMR-COCHLEA"
+          ],
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "chapter": "5",
+          "title": "Basic CPG Construction",
+          "printed_page_start": 100,
+          "entry_node_ids": [
+            "NMR-LOCOMOTION"
+          ],
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "chapter": "5",
+          "title": "Walking Robots",
+          "printed_page_start": 111,
+          "entry_node_ids": [
+            "NMR-LOCOMOTION"
+          ],
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "chapter": "6",
+          "title": "Problem of Memory Maintenance: Quantitative Analysis",
+          "printed_page_start": 122,
+          "entry_node_ids": [
+            "NMR-LEARNING"
+          ],
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "chapter": "6",
+          "title": "Attractor States in a Neuromorphic Chip",
+          "printed_page_start": 143,
+          "entry_node_ids": [
+            "NMR-LEARNING"
+          ],
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "chapter": "6",
+          "title": "Learning Visual Stimuli in Real Time",
+          "printed_page_start": 145,
+          "entry_node_ids": [
+            "NMR-LEARNING"
+          ],
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "chapter": "7",
+          "title": "Spiking Thresholds and Refractory Periods",
+          "printed_page_start": 161,
+          "entry_node_ids": [
+            "NMR-SPIKE"
+          ],
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "chapter": "7",
+          "title": "Compact I&F Circuits for Event-Based Systems",
+          "printed_page_start": 169,
+          "entry_node_ids": [
+            "NMR-SPIKE"
+          ],
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "chapter": "8",
+          "title": "Short-Term Plasticity",
+          "printed_page_start": 201,
+          "entry_node_ids": [
+            "NMR-LEARNING"
+          ],
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "chapter": "8",
+          "title": "Long-Term Plasticity",
+          "printed_page_start": 203,
+          "entry_node_ids": [
+            "NMR-LEARNING"
+          ],
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "chapter": "9",
+          "title": "Translinear Loop",
+          "printed_page_start": 227,
+          "entry_node_ids": [
+            "NMR-COCHLEA"
+          ],
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "chapter": "10",
+          "title": "Modifying Floating-Gate Charge",
+          "printed_page_start": 242,
+          "entry_node_ids": [
+            "NMR-CONFIG"
+          ],
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "chapter": "10",
+          "title": "Analog Computing in Memory",
+          "printed_page_start": 249,
+          "entry_node_ids": [
+            "NMR-CONFIG"
+          ],
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "chapter": "11",
+          "title": "Master Bias Startup and Power Control",
+          "printed_page_start": 266,
+          "entry_node_ids": [
+            "NMR-BIAS"
+          ],
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "chapter": "11",
+          "title": "Current Splitters",
+          "printed_page_start": 267,
+          "entry_node_ids": [
+            "NMR-BIAS"
+          ],
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "chapter": "12",
+          "title": "Arbiter",
+          "printed_page_start": 290,
+          "entry_node_ids": [
+            "NMR-AER"
+          ],
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "chapter": "12",
+          "title": "Decoder",
+          "printed_page_start": 299,
+          "entry_node_ids": [
+            "NMR-AER"
+          ],
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "chapter": "13",
+          "title": "Monitoring AER Events",
+          "printed_page_start": 307,
+          "entry_node_ids": [
+            "NMR-INTEGRATION"
+          ],
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "chapter": "13",
+          "title": "Mapping AER Events",
+          "printed_page_start": 313,
+          "entry_node_ids": [
+            "NMR-INTEGRATION"
+          ],
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "chapter": "13",
+          "title": "FPGAs",
+          "printed_page_start": 340,
+          "entry_node_ids": [
+            "NMR-INTEGRATION"
+          ],
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "chapter": "14",
+          "title": "Bandwidth and Latency",
+          "printed_page_start": 353,
+          "entry_node_ids": [
+            "NMR-INTEGRATION"
+          ],
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "chapter": "14",
+          "title": "jAER",
+          "printed_page_start": 359,
+          "entry_node_ids": [
+            "NMR-INTEGRATION"
+          ],
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "chapter": "14",
+          "title": "Python and PyNN",
+          "printed_page_start": 360,
+          "entry_node_ids": [
+            "NMR-INTEGRATION"
+          ],
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "chapter": "15",
+          "title": "Noise Reduction Filters",
+          "printed_page_start": 370,
+          "entry_node_ids": [
+            "NMR-ALGORITHMS"
+          ],
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "chapter": "15",
+          "title": "Visual Trackers",
+          "printed_page_start": 374,
+          "entry_node_ids": [
+            "NMR-ALGORITHMS"
+          ],
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "chapter": "16",
+          "title": "Hierarchical AER",
+          "printed_page_start": 384,
+          "entry_node_ids": [
+            "NMR-SCALE"
+          ],
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "chapter": "16",
+          "title": "Neurogrid",
+          "printed_page_start": 386,
+          "entry_node_ids": [
+            "NMR-SCALE"
+          ],
+          "locator_status": "table_of_contents_inspected"
+        }
+      ]
+    }
+  ],
+  "curiosity_atlas": {
+    "purpose": "Explore what brain-inspired physical circuits and sparse event systems can actually do. Everyday questions are entrances to the shared mechanisms, not substitutes for rigorous explanation.",
+    "families": [
+      {
+        "id": "physical",
+        "label": "Why computation emerges from physical circuits",
+        "description": "Transistors, analog arithmetic, time constants and network dynamics"
+      },
+      {
+        "id": "sensing",
+        "label": "How silicon perceives the world",
+        "description": "Motion, light, sound and event-based sensory representations"
+      },
+      {
+        "id": "spikes",
+        "label": "Neurons, events and communication",
+        "description": "Spiking circuits, shared buses, latency and queueing"
+      },
+      {
+        "id": "learning",
+        "label": "Memory, learning and adaptability",
+        "description": "Synapses, attractors, forgetting and tunable analog circuits"
+      },
+      {
+        "id": "systems",
+        "label": "Building and comparing working systems",
+        "description": "Hardware, software, control, scaling and operational evidence"
+      }
+    ],
+    "entries": [
+      {
+        "id": "NMR-CURI-why-analog",
+        "question": "Why might a transistor do a calculation without executing instructions?",
+        "family_id": "physical",
+        "aliases": [
+          "analog computer",
+          "subthreshold transistor"
+        ],
+        "bridge_ids": [
+          "PHYS"
+        ],
+        "context": "Select between physical explanations, communication constraints and actual task evidence; the connected book sections may be inspected or TOC-only.",
+        "term_ids": [
+          "nmr-t-0057",
+          "nmr-t-0102"
+        ]
+      },
+      {
+        "id": "NMR-CURI-why-small-current",
+        "question": "Why do tiny currents matter in brain-inspired chips?",
+        "family_id": "physical",
+        "aliases": [
+          "low power neuromorphic circuits"
+        ],
+        "bridge_ids": [
+          "PHYS"
+        ],
+        "context": "Select between physical explanations, communication constraints and actual task evidence; the connected book sections may be inspected or TOC-only.",
+        "term_ids": [
+          "nmr-t-0057",
+          "nmr-t-0087"
+        ]
+      },
+      {
+        "id": "NMR-CURI-copy-current",
+        "question": "How does one circuit copy a tiny electrical current into another?",
+        "family_id": "physical",
+        "aliases": [
+          "current mirroring"
+        ],
+        "bridge_ids": [
+          "PHYS"
+        ],
+        "context": "Select between physical explanations, communication constraints and actual task evidence; the connected book sections may be inspected or TOC-only.",
+        "term_ids": [
+          "nmr-t-0067"
+        ]
+      },
+      {
+        "id": "NMR-CURI-calculator-circuit",
+        "question": "Can multiplication be done with a circuit instead of a program?",
+        "family_id": "physical",
+        "aliases": [
+          "analog multiply",
+          "physical arithmetic"
+        ],
+        "bridge_ids": [
+          "PHYS"
+        ],
+        "context": "Select between physical explanations, communication constraints and actual task evidence; the connected book sections may be inspected or TOC-only.",
+        "term_ids": [
+          "nmr-t-0105"
+        ]
+      },
+      {
+        "id": "NMR-CURI-analog-memory",
+        "question": "Can a circuit remember a value just by holding charge?",
+        "family_id": "physical",
+        "aliases": [
+          "RC memory",
+          "charge integration"
+        ],
+        "bridge_ids": [
+          "DYNAMICS"
+        ],
+        "context": "Select between physical explanations, communication constraints and actual task evidence; the connected book sections may be inspected or TOC-only.",
+        "term_ids": [
+          "nmr-t-0074",
+          "nmr-t-0077"
+        ]
+      },
+      {
+        "id": "NMR-CURI-neurons-fire",
+        "question": "How does a silicon neuron decide when to fire?",
+        "family_id": "spikes",
+        "aliases": [
+          "silicon neuron spike",
+          "integrate and fire"
+        ],
+        "bridge_ids": [
+          "SPIKES"
+        ],
+        "context": "Select between physical explanations, communication constraints and actual task evidence; the connected book sections may be inspected or TOC-only.",
+        "term_ids": [
+          "nmr-t-0146",
+          "nmr-t-0024"
+        ]
+      },
+      {
+        "id": "NMR-CURI-not-brain",
+        "question": "Is copying a neuron's shape enough to reproduce its intelligence?",
+        "family_id": "spikes",
+        "aliases": [
+          "bio inspiration versus computation"
+        ],
+        "bridge_ids": [
+          "VALIDATE"
+        ],
+        "context": "Select between physical explanations, communication constraints and actual task evidence; the connected book sections may be inspected or TOC-only.",
+        "term_ids": [
+          "nmr-t-0002",
+          "nmr-t-0103"
+        ]
+      },
+      {
+        "id": "NMR-CURI-send-spikes",
+        "question": "How can thousands of electronic neurons talk over the same wires?",
+        "family_id": "spikes",
+        "aliases": [
+          "address event communication"
+        ],
+        "bridge_ids": [
+          "COMM"
+        ],
+        "context": "Select between physical explanations, communication constraints and actual task evidence; the connected book sections may be inspected or TOC-only.",
+        "term_ids": [
+          "nmr-t-0187",
+          "nmr-t-0197"
+        ]
+      },
+      {
+        "id": "NMR-CURI-too-many",
+        "question": "What happens if thousands of pixels or neurons fire at once?",
+        "family_id": "spikes",
+        "aliases": [
+          "event bus overload",
+          "neuromorphic traffic"
+        ],
+        "bridge_ids": [
+          "COMM"
+        ],
+        "context": "Select between physical explanations, communication constraints and actual task evidence; the connected book sections may be inspected or TOC-only.",
+        "term_ids": [
+          "nmr-t-0206",
+          "nmr-t-0207"
+        ]
+      },
+      {
+        "id": "NMR-CURI-spike-timing",
+        "question": "Why can two spikes carry different information even if they use the same wire?",
+        "family_id": "spikes",
+        "aliases": [
+          "event timing",
+          "spike timestamp"
+        ],
+        "bridge_ids": [
+          "COMM"
+        ],
+        "context": "Select between physical explanations, communication constraints and actual task evidence; the connected book sections may be inspected or TOC-only.",
+        "term_ids": [
+          "nmr-t-0195"
+        ]
+      },
+      {
+        "id": "NMR-CURI-no-frames",
+        "question": "Why would a camera report almost nothing when nothing moves?",
+        "family_id": "sensing",
+        "aliases": [
+          "DVS",
+          "event camera static scene"
+        ],
+        "bridge_ids": [
+          "RETINA"
+        ],
+        "context": "Select between physical explanations, communication constraints and actual task evidence; the connected book sections may be inspected or TOC-only.",
+        "term_ids": [
+          "nmr-t-0232",
+          "nmr-t-0246"
+        ]
+      },
+      {
+        "id": "NMR-CURI-dvs-noise",
+        "question": "Why does an event camera sometimes report motion in a still scene?",
+        "family_id": "sensing",
+        "aliases": [
+          "DVS background events"
+        ],
+        "bridge_ids": [
+          "RETINA"
+        ],
+        "context": "Select between physical explanations, communication constraints and actual task evidence; the connected book sections may be inspected or TOC-only.",
+        "term_ids": [
+          "nmr-t-0256",
+          "nmr-t-0257"
+        ]
+      },
+      {
+        "id": "NMR-CURI-frame-vs-event",
+        "question": "Could event cameras replace ordinary video cameras?",
+        "family_id": "sensing",
+        "aliases": [
+          "frame camera vs DVS"
+        ],
+        "bridge_ids": [
+          "RETINA",
+          "VALIDATE"
+        ],
+        "context": "Select between physical explanations, communication constraints and actual task evidence; the connected book sections may be inspected or TOC-only.",
+        "term_ids": [
+          "nmr-t-0237",
+          "nmr-t-0238"
+        ]
+      },
+      {
+        "id": "NMR-CURI-cochlea",
+        "question": "How could a chip separate sounds into different frequencies?",
+        "family_id": "sensing",
+        "aliases": [
+          "silicon cochlea filter"
+        ],
+        "bridge_ids": [
+          "COCHLEA"
+        ],
+        "context": "Select between physical explanations, communication constraints and actual task evidence; the connected book sections may be inspected or TOC-only.",
+        "term_ids": [
+          "nmr-t-0274",
+          "nmr-t-0276"
+        ]
+      },
+      {
+        "id": "NMR-CURI-visual-motion",
+        "question": "How could a few connected circuits figure out which way something moves?",
+        "family_id": "sensing",
+        "aliases": [
+          "analog optical flow"
+        ],
+        "bridge_ids": [
+          "RETINA",
+          "DYNAMICS"
+        ],
+        "context": "Select between physical explanations, communication constraints and actual task evidence; the connected book sections may be inspected or TOC-only.",
+        "term_ids": [
+          "nmr-t-0248",
+          "nmr-t-0249"
+        ]
+      },
+      {
+        "id": "NMR-CURI-forget",
+        "question": "Why does learning something new sometimes erase an older memory?",
+        "family_id": "learning",
+        "aliases": [
+          "bounded synapse",
+          "catastrophic forgetting"
+        ],
+        "bridge_ids": [
+          "LEARNING"
+        ],
+        "context": "Select between physical explanations, communication constraints and actual task evidence; the connected book sections may be inspected or TOC-only.",
+        "term_ids": [
+          "nmr-t-0171",
+          "nmr-t-0169"
+        ]
+      },
+      {
+        "id": "NMR-CURI-plasticity",
+        "question": "Can an electronic synapse become stronger because it is used?",
+        "family_id": "learning",
+        "aliases": [
+          "silicon synaptic plasticity"
+        ],
+        "bridge_ids": [
+          "LEARNING"
+        ],
+        "context": "Select between physical explanations, communication constraints and actual task evidence; the connected book sections may be inspected or TOC-only.",
+        "term_ids": [
+          "nmr-t-0158",
+          "nmr-t-0157"
+        ]
+      },
+      {
+        "id": "NMR-CURI-attractor",
+        "question": "Why can a neural network keep remembering a pattern after the input disappears?",
+        "family_id": "learning",
+        "aliases": [
+          "attractor memory"
+        ],
+        "bridge_ids": [
+          "LEARNING"
+        ],
+        "context": "Select between physical explanations, communication constraints and actual task evidence; the connected book sections may be inspected or TOC-only.",
+        "term_ids": [
+          "nmr-t-0167",
+          "nmr-t-0166"
+        ]
+      },
+      {
+        "id": "NMR-CURI-program-analog",
+        "question": "Can an analog neural circuit be programmed like digital hardware?",
+        "family_id": "learning",
+        "aliases": [
+          "programmable analog",
+          "floating gate"
+        ],
+        "bridge_ids": [
+          "CONFIG"
+        ],
+        "context": "Select between physical explanations, communication constraints and actual task evidence; the connected book sections may be inspected or TOC-only.",
+        "term_ids": [
+          "nmr-t-0097",
+          "nmr-t-0101"
+        ]
+      },
+      {
+        "id": "NMR-CURI-bias",
+        "question": "Why do analog neural chips need carefully adjusted bias currents?",
+        "family_id": "learning",
+        "aliases": [
+          "analog bias calibration"
+        ],
+        "bridge_ids": [
+          "CONFIG"
+        ],
+        "context": "Select between physical explanations, communication constraints and actual task evidence; the connected book sections may be inspected or TOC-only.",
+        "term_ids": [
+          "nmr-t-0085",
+          "nmr-t-0082"
+        ]
+      },
+      {
+        "id": "NMR-CURI-movement",
+        "question": "Could an electronic neural circuit help a robot walk?",
+        "family_id": "systems",
+        "aliases": [
+          "CPG robot"
+        ],
+        "bridge_ids": [
+          "LOCOMOTION"
+        ],
+        "context": "Select between physical explanations, communication constraints and actual task evidence; the connected book sections may be inspected or TOC-only.",
+        "term_ids": [
+          "nmr-t-0048",
+          "nmr-t-0290"
+        ]
+      },
+      {
+        "id": "NMR-CURI-software",
+        "question": "How does a computer receive and analyze millions of sensor events?",
+        "family_id": "systems",
+        "aliases": [
+          "jAER",
+          "event stream software"
+        ],
+        "bridge_ids": [
+          "INTEGRATION"
+        ],
+        "context": "Select between physical explanations, communication constraints and actual task evidence; the connected book sections may be inspected or TOC-only.",
+        "term_ids": [
+          "nmr-t-0345",
+          "nmr-t-0195"
+        ]
+      },
+      {
+        "id": "NMR-CURI-fpga",
+        "question": "Where does an FPGA fit between a neuromorphic chip and a computer?",
+        "family_id": "systems",
+        "aliases": [
+          "FPGA event bridge"
+        ],
+        "bridge_ids": [
+          "INTEGRATION",
+          "COMM"
+        ],
+        "context": "Select between physical explanations, communication constraints and actual task evidence; the connected book sections may be inspected or TOC-only.",
+        "term_ids": [
+          "nmr-t-0325",
+          "nmr-t-0187"
+        ]
+      },
+      {
+        "id": "NMR-CURI-scaling",
+        "question": "Can we compose small neuromorphic chips into a larger computing system?",
+        "family_id": "systems",
+        "aliases": [
+          "Neurogrid",
+          "hierarchical AER"
+        ],
+        "bridge_ids": [
+          "SCALE",
+          "COMM"
+        ],
+        "context": "Select between physical explanations, communication constraints and actual task evidence; the connected book sections may be inspected or TOC-only.",
+        "term_ids": [
+          "nmr-t-0224",
+          "nmr-t-0329"
+        ]
+      },
+      {
+        "id": "NMR-CURI-better",
+        "question": "When is neuromorphic hardware actually better than ordinary computers?",
+        "family_id": "systems",
+        "aliases": [
+          "neuromorphic energy",
+          "efficient event computing"
+        ],
+        "bridge_ids": [
+          "VALIDATE"
+        ],
+        "context": "Select between physical explanations, communication constraints and actual task evidence; the connected book sections may be inspected or TOC-only.",
+        "term_ids": [
+          "nmr-t-0413",
+          "nmr-t-0411"
+        ]
+      },
+      {
+        "id": "NMR-CURI-real-proof",
+        "question": "What evidence would show a neuromorphic demo works outside its author's lab?",
+        "family_id": "systems",
+        "aliases": [
+          "reproduce a neuromorphic experiment"
+        ],
+        "bridge_ids": [
+          "VALIDATE"
+        ],
+        "context": "Select between physical explanations, communication constraints and actual task evidence; the connected book sections may be inspected or TOC-only.",
+        "term_ids": [
+          "nmr-t-0376",
+          "nmr-t-0375"
+        ]
+      },
+      {
+        "id": "NMR-CURI-what-can-build",
+        "question": "What could I build using event cameras, tiny circuits, and a computer?",
+        "family_id": "systems",
+        "aliases": [
+          "neuromorphic projects",
+          "robotics demo"
+        ],
+        "bridge_ids": [
+          "INTEGRATION",
+          "RETINA",
+          "LOCOMOTION"
+        ],
+        "context": "Select between physical explanations, communication constraints and actual task evidence; the connected book sections may be inspected or TOC-only.",
+        "term_ids": [
+          "nmr-t-0237",
+          "nmr-t-0295"
+        ]
+      },
+      {
+        "id": "NMR-CURI-zero-events",
+        "question": "If event-based data is sparse, why can the system still be busy?",
+        "family_id": "systems",
+        "aliases": [
+          "event overhead"
+        ],
+        "bridge_ids": [
+          "COMM",
+          "VALIDATE"
+        ],
+        "context": "Select between physical explanations, communication constraints and actual task evidence; the connected book sections may be inspected or TOC-only.",
+        "term_ids": [
+          "nmr-t-0217",
+          "nmr-t-0212"
+        ]
+      }
+    ],
+    "entry_policy": "Search through stable concept IDs and natural questions. The glossary has independent breadth and may contain terms with no mapped question; never force every vocabulary term into technical nodes."
+  },
+  "navigation_bridges": [
+    {
+      "id": "PHYS",
+      "question": "PHYS",
+      "choices": [
+        {
+          "label": "Circuit behavior follows semiconductor physics",
+          "technical_title": "Subthreshold, current mirrors and analog current-mode arithmetic",
+          "distinguishing_question": "Which transistor range, bias and precision constraints make the physical nonlinearity useful?",
+          "why": "Investigate the proposed mechanism against the stated discriminating condition; source at printed p. 33 is supported by an examined passage, not a confirmed diagnosis.",
+          "targets": [
+            "NMR-PHYS",
+            "NMR-MIRROR",
+            "NMR-ANALOG"
+          ],
+          "term_ids": [
+            "nmr-t-0057",
+            "nmr-t-0067"
+          ],
+          "section_targets": [
+            {
+              "source_id": "MEAD-1989",
+              "ref": "3",
+              "level": "inspected",
+              "why": "Subthreshold, current mirrors and analog current-mode arithmetic; printed p. 33"
+            }
+          ]
+        },
+        {
+          "label": "Useful computation follows a time constant or network equilibrium",
+          "technical_title": "RC integration and resistive spatial coupling",
+          "distinguishing_question": "Does state evolve continuously through circuit dynamics rather than through explicit instruction steps?",
+          "why": "Investigate the proposed mechanism against the stated discriminating condition; source at printed p. 101 is supported by an examined passage, not a confirmed diagnosis.",
+          "targets": [
+            "NMR-DYNAMICS",
+            "NMR-AGGREGATE"
+          ],
+          "term_ids": [
+            "nmr-t-0077",
+            "nmr-t-0114"
+          ],
+          "section_targets": [
+            {
+              "source_id": "MEAD-1989",
+              "ref": "7",
+              "level": "inspected",
+              "why": "RC integration and resistive spatial coupling; printed p. 101"
+            }
+          ]
+        }
+      ],
+      "term_ids": [
+        "nmr-t-0057",
+        "nmr-t-0067",
+        "nmr-t-0077",
+        "nmr-t-0114"
+      ]
+    },
+    {
+      "id": "DYNAMICS",
+      "question": "DYNAMICS",
+      "choices": [
+        {
+          "label": "History appears as stored charge",
+          "technical_title": "Continuous-time integrators and filters",
+          "distinguishing_question": "Is temporal persistence caused by capacitance, feedback, leak or a deliberately clocked state?",
+          "why": "Investigate the proposed mechanism against the stated discriminating condition; source at printed p. 147 is a table-of-contents retrieval lead, not a confirmed diagnosis.",
+          "targets": [
+            "NMR-DYNAMICS"
+          ],
+          "term_ids": [
+            "nmr-t-0125"
+          ],
+          "section_targets": [
+            {
+              "source_id": "MEAD-1989",
+              "ref": "9",
+              "level": "toc_only",
+              "why": "Continuous-time integrators and filters; printed p. 147"
+            }
+          ]
+        },
+        {
+          "label": "Many coupled elements exhibit collective behavior",
+          "technical_title": "Local resistive interactions versus serial computation",
+          "distinguishing_question": "Does each cell depend only on neighbors, and can the network produce the desired global result?",
+          "why": "Investigate the proposed mechanism against the stated discriminating condition; source at printed p. 116 is supported by an examined passage, not a confirmed diagnosis.",
+          "targets": [
+            "NMR-AGGREGATE"
+          ],
+          "term_ids": [
+            "nmr-t-0114"
+          ],
+          "section_targets": [
+            {
+              "source_id": "MEAD-1989",
+              "ref": "7",
+              "level": "inspected",
+              "why": "Local resistive interactions versus serial computation; printed p. 116"
+            }
+          ]
+        }
+      ],
+      "term_ids": [
+        "nmr-t-0125",
+        "nmr-t-0114"
+      ]
+    },
+    {
+      "id": "SPIKES",
+      "question": "SPIKES",
+      "choices": [
+        {
+          "label": "A neuron-like cell emits electrical pulses",
+          "technical_title": "Threshold, integration, refractory and self-reset",
+          "distinguishing_question": "Does the cell integrate input, cross threshold and recover as a function of circuit parameters?",
+          "why": "Investigate the proposed mechanism against the stated discriminating condition; source at printed p. 161 is supported by an examined passage, not a confirmed diagnosis.",
+          "targets": [
+            "NMR-SPIKE"
+          ],
+          "term_ids": [
+            "nmr-t-0146",
+            "nmr-t-0025"
+          ],
+          "section_targets": [
+            {
+              "source_id": "LIU-2015",
+              "ref": "7",
+              "level": "inspected",
+              "why": "Threshold, integration, refractory and self-reset; printed p. 161"
+            }
+          ]
+        },
+        {
+          "label": "A spiking model is claimed to reproduce biological behavior",
+          "technical_title": "Behavioral abstraction versus biophysical correspondence",
+          "distinguishing_question": "Which firing patterns, time constants and perturbations match the biological target?",
+          "why": "Investigate the proposed mechanism against the stated discriminating condition; source at printed p. 43 is a table-of-contents retrieval lead, not a confirmed diagnosis.",
+          "targets": [
+            "NMR-SPIKE",
+            "NMR-VALIDATE"
+          ],
+          "term_ids": [
+            "nmr-t-0022",
+            "nmr-t-0002"
+          ],
+          "section_targets": [
+            {
+              "source_id": "MEAD-1989",
+              "ref": "4",
+              "level": "toc_only",
+              "why": "Behavioral abstraction versus biophysical correspondence; printed p. 43"
+            }
+          ]
+        }
+      ],
+      "term_ids": [
+        "nmr-t-0146",
+        "nmr-t-0025",
+        "nmr-t-0022",
+        "nmr-t-0002"
+      ]
+    },
+    {
+      "id": "COMM",
+      "question": "COMM",
+      "choices": [
+        {
+          "label": "Many event sources share one channel",
+          "technical_title": "AER addressing, arbitration and routing",
+          "distinguishing_question": "What identifies the source, and what happens when two events contend for access?",
+          "why": "Investigate the proposed mechanism against the stated discriminating condition; source at printed p. 12 is supported by an examined passage, not a confirmed diagnosis.",
+          "targets": [
+            "NMR-AER",
+            "NMR-QUEUES"
+          ],
+          "term_ids": [
+            "nmr-t-0187",
+            "nmr-t-0197"
+          ],
+          "section_targets": [
+            {
+              "source_id": "LIU-2015",
+              "ref": "2",
+              "level": "inspected",
+              "why": "AER addressing, arbitration and routing; printed p. 12"
+            }
+          ]
+        },
+        {
+          "label": "Events accumulate faster than a channel can serve them",
+          "technical_title": "Queue-versus-drop tradeoff in temporal fidelity",
+          "distinguishing_question": "Which matters more to the task: retaining each event or preserving the newest event's timing?",
+          "why": "Investigate the proposed mechanism against the stated discriminating condition; source at printed p. 24 is supported by an examined passage, not a confirmed diagnosis.",
+          "targets": [
+            "NMR-QUEUES",
+            "NMR-VALIDATE"
+          ],
+          "term_ids": [
+            "nmr-t-0206",
+            "nmr-t-0207"
+          ],
+          "section_targets": [
+            {
+              "source_id": "LIU-2015",
+              "ref": "2",
+              "level": "inspected",
+              "why": "Queue-versus-drop tradeoff in temporal fidelity; printed p. 24"
+            }
+          ]
+        }
+      ],
+      "term_ids": [
+        "nmr-t-0187",
+        "nmr-t-0197",
+        "nmr-t-0206",
+        "nmr-t-0207"
+      ]
+    },
+    {
+      "id": "RETINA",
+      "question": "RETINA",
+      "choices": [
+        {
+          "label": "Changes in light provoke sparse events",
+          "technical_title": "DVS temporal contrast rather than synchronous frames",
+          "distinguishing_question": "Does the sensor represent brightness level or primarily brightness changes?",
+          "why": "Investigate the proposed mechanism against the stated discriminating condition; source at printed p. 40 is supported by an examined passage, not a confirmed diagnosis.",
+          "targets": [
+            "NMR-RETINA"
+          ],
+          "term_ids": [
+            "nmr-t-0232",
+            "nmr-t-0246"
+          ],
+          "section_targets": [
+            {
+              "source_id": "LIU-2015",
+              "ref": "3",
+              "level": "inspected",
+              "why": "DVS temporal contrast rather than synchronous frames; printed p. 40"
+            }
+          ]
+        },
+        {
+          "label": "A motion detector has unwanted activity",
+          "technical_title": "Leakage/background noise versus true scene events",
+          "distinguishing_question": "Does activity persist in constant illumination and change with threshold or temperature?",
+          "why": "Investigate the proposed mechanism against the stated discriminating condition; source at printed p. 62 is supported by an examined passage, not a confirmed diagnosis.",
+          "targets": [
+            "NMR-RETINA",
+            "NMR-ALGORITHMS"
+          ],
+          "term_ids": [
+            "nmr-t-0256",
+            "nmr-t-0346"
+          ],
+          "section_targets": [
+            {
+              "source_id": "LIU-2015",
+              "ref": "3",
+              "level": "inspected",
+              "why": "Leakage/background noise versus true scene events; printed p. 62"
+            }
+          ]
+        }
+      ],
+      "term_ids": [
+        "nmr-t-0232",
+        "nmr-t-0246",
+        "nmr-t-0256",
+        "nmr-t-0346"
+      ]
+    },
+    {
+      "id": "COCHLEA",
+      "question": "COCHLEA",
+      "choices": [
+        {
+          "label": "Sound is separated along many physical frequency channels",
+          "technical_title": "Cascaded resonators and filterbank",
+          "distinguishing_question": "What is the impulse/frequency response of each stage and its nonlinear gain control?",
+          "why": "Investigate the proposed mechanism against the stated discriminating condition; source at printed p. 279 is a table-of-contents retrieval lead, not a confirmed diagnosis.",
+          "targets": [
+            "NMR-COCHLEA",
+            "NMR-DYNAMICS"
+          ],
+          "term_ids": [
+            "nmr-t-0274",
+            "nmr-t-0276"
+          ],
+          "section_targets": [
+            {
+              "source_id": "MEAD-1989",
+              "ref": "16",
+              "level": "toc_only",
+              "why": "Cascaded resonators and filterbank; printed p. 279"
+            }
+          ]
+        },
+        {
+          "label": "Auditory events are created from filtered analog waves",
+          "technical_title": "Analog filtering versus spike-based encoding",
+          "distinguishing_question": "Which acoustic features survive the conversion to spikes and at what latency?",
+          "why": "Investigate the proposed mechanism against the stated discriminating condition; source at printed p. 83 is a table-of-contents retrieval lead, not a confirmed diagnosis.",
+          "targets": [
+            "NMR-COCHLEA",
+            "NMR-VALIDATE"
+          ],
+          "term_ids": [
+            "nmr-t-0281"
+          ],
+          "section_targets": [
+            {
+              "source_id": "LIU-2015",
+              "ref": "4",
+              "level": "toc_only",
+              "why": "Analog filtering versus spike-based encoding; printed p. 83"
+            }
+          ]
+        }
+      ],
+      "term_ids": [
+        "nmr-t-0274",
+        "nmr-t-0276",
+        "nmr-t-0281"
+      ]
+    },
+    {
+      "id": "LEARNING",
+      "question": "LEARNING",
+      "choices": [
+        {
+          "label": "Learning changes finite physical synapses",
+          "technical_title": "Bounded weights and overwrite/retention tradeoffs",
+          "distinguishing_question": "Does performance persist after subsequent learning, and which state was actually retained?",
+          "why": "Investigate the proposed mechanism against the stated discriminating condition; source at printed p. 122 is supported by an examined passage, not a confirmed diagnosis.",
+          "targets": [
+            "NMR-LEARNING"
+          ],
+          "term_ids": [
+            "nmr-t-0171",
+            "nmr-t-0169"
+          ],
+          "section_targets": [
+            {
+              "source_id": "LIU-2015",
+              "ref": "6",
+              "level": "inspected",
+              "why": "Bounded weights and overwrite/retention tradeoffs; printed p. 122"
+            }
+          ]
+        },
+        {
+          "label": "Network dynamics recall a stable pattern",
+          "technical_title": "Attractor state versus permanent synaptic learning",
+          "distinguishing_question": "Is the recalled pattern stored in changing weights or sustained by network dynamics?",
+          "why": "Investigate the proposed mechanism against the stated discriminating condition; source at printed p. 143 is supported by an examined passage, not a confirmed diagnosis.",
+          "targets": [
+            "NMR-LEARNING"
+          ],
+          "term_ids": [
+            "nmr-t-0167",
+            "nmr-t-0166"
+          ],
+          "section_targets": [
+            {
+              "source_id": "LIU-2015",
+              "ref": "6",
+              "level": "inspected",
+              "why": "Attractor state versus permanent synaptic learning; printed p. 143"
+            }
+          ]
+        }
+      ],
+      "term_ids": [
+        "nmr-t-0171",
+        "nmr-t-0169",
+        "nmr-t-0167",
+        "nmr-t-0166"
+      ]
+    },
+    {
+      "id": "CONFIG",
+      "question": "CONFIG",
+      "choices": [
+        {
+          "label": "An analog circuit is tuned or programmed after fabrication",
+          "technical_title": "Floating-gate parameters and analog bias networks",
+          "distinguishing_question": "Can the system persist a precisely calibrated circuit value despite noise, drift and process variation?",
+          "why": "Investigate the proposed mechanism against the stated discriminating condition; source at printed p. 238 is a table-of-contents retrieval lead, not a confirmed diagnosis.",
+          "targets": [
+            "NMR-CONFIG",
+            "NMR-BIAS"
+          ],
+          "term_ids": [
+            "nmr-t-0097",
+            "nmr-t-0085"
+          ],
+          "section_targets": [
+            {
+              "source_id": "LIU-2015",
+              "ref": "10",
+              "level": "toc_only",
+              "why": "Floating-gate parameters and analog bias networks; printed p. 238"
+            }
+          ]
+        },
+        {
+          "label": "Device performance varies from chip to chip",
+          "technical_title": "Transistor mismatch and adjustable operating points",
+          "distinguishing_question": "Which specification fails from device variation and which bias knob corrects it?",
+          "why": "Investigate the proposed mechanism against the stated discriminating condition; source at printed p. 267 is a table-of-contents retrieval lead, not a confirmed diagnosis.",
+          "targets": [
+            "NMR-BIAS",
+            "NMR-MIRROR"
+          ],
+          "term_ids": [
+            "nmr-t-0082",
+            "nmr-t-0069"
+          ],
+          "section_targets": [
+            {
+              "source_id": "LIU-2015",
+              "ref": "11",
+              "level": "toc_only",
+              "why": "Transistor mismatch and adjustable operating points; printed p. 267"
+            }
+          ]
+        }
+      ],
+      "term_ids": [
+        "nmr-t-0097",
+        "nmr-t-0085",
+        "nmr-t-0082",
+        "nmr-t-0069"
+      ]
+    },
+    {
+      "id": "INTEGRATION",
+      "question": "INTEGRATION",
+      "choices": [
+        {
+          "label": "Sparse sensor events must reach software",
+          "technical_title": "Transport, timestamping, FPGA links and event filters",
+          "distinguishing_question": "Do we preserve capture-time information, or does the application require reaction-time guarantees?",
+          "why": "Investigate the proposed mechanism against the stated discriminating condition; source at printed p. 353 is supported by an examined passage, not a confirmed diagnosis.",
+          "targets": [
+            "NMR-INTEGRATION",
+            "NMR-ALGORITHMS"
+          ],
+          "term_ids": [
+            "nmr-t-0195",
+            "nmr-t-0345"
+          ],
+          "section_targets": [
+            {
+              "source_id": "LIU-2015",
+              "ref": "14",
+              "level": "inspected",
+              "why": "Transport, timestamping, FPGA links and event filters; printed p. 353"
+            }
+          ]
+        },
+        {
+          "label": "Sensor events feed an embodied device",
+          "technical_title": "Central pattern generation, closed-loop control and safe state",
+          "distinguishing_question": "Which feedback delays and real-world disturbances affect the complete control loop?",
+          "why": "Investigate the proposed mechanism against the stated discriminating condition; source at printed p. 100 is a table-of-contents retrieval lead, not a confirmed diagnosis.",
+          "targets": [
+            "NMR-LOCOMOTION",
+            "NMR-VALIDATE"
+          ],
+          "term_ids": [
+            "nmr-t-0048",
+            "nmr-t-0297"
+          ],
+          "section_targets": [
+            {
+              "source_id": "LIU-2015",
+              "ref": "5",
+              "level": "toc_only",
+              "why": "Central pattern generation, closed-loop control and safe state; printed p. 100"
+            }
+          ]
+        }
+      ],
+      "term_ids": [
+        "nmr-t-0195",
+        "nmr-t-0345",
+        "nmr-t-0048",
+        "nmr-t-0297"
+      ]
+    },
+    {
+      "id": "LOCOMOTION",
+      "question": "LOCOMOTION",
+      "choices": [
+        {
+          "label": "Rhythmic commands are generated by local dynamics",
+          "technical_title": "CPG versus centralized timed commands",
+          "distinguishing_question": "Does oscillator coupling remain stable under changes in load, gait and sensory feedback?",
+          "why": "Investigate the proposed mechanism against the stated discriminating condition; source at printed p. 100 is a table-of-contents retrieval lead, not a confirmed diagnosis.",
+          "targets": [
+            "NMR-LOCOMOTION"
+          ],
+          "term_ids": [
+            "nmr-t-0048",
+            "nmr-t-0290"
+          ],
+          "section_targets": [
+            {
+              "source_id": "LIU-2015",
+              "ref": "5",
+              "level": "toc_only",
+              "why": "CPG versus centralized timed commands; printed p. 100"
+            }
+          ]
+        },
+        {
+          "label": "Neuromorphic control is claimed to improve robot behavior",
+          "technical_title": "Closed-loop physical task evaluation",
+          "distinguishing_question": "Can the same robot and task be compared against a tuned conventional controller?",
+          "why": "Investigate the proposed mechanism against the stated discriminating condition; source at printed p. 111 is a table-of-contents retrieval lead, not a confirmed diagnosis.",
+          "targets": [
+            "NMR-LOCOMOTION",
+            "NMR-VALIDATE"
+          ],
+          "term_ids": [
+            "nmr-t-0295",
+            "nmr-t-0297"
+          ],
+          "section_targets": [
+            {
+              "source_id": "LIU-2015",
+              "ref": "5",
+              "level": "toc_only",
+              "why": "Closed-loop physical task evaluation; printed p. 111"
+            }
+          ]
+        }
+      ],
+      "term_ids": [
+        "nmr-t-0048",
+        "nmr-t-0290",
+        "nmr-t-0295",
+        "nmr-t-0297"
+      ]
+    },
+    {
+      "id": "SCALE",
+      "question": "SCALE",
+      "choices": [
+        {
+          "label": "More chips require shared event routing",
+          "technical_title": "Hierarchical AER and interchip traffic",
+          "distinguishing_question": "How does required bandwidth change with activity, topology and multicasting?",
+          "why": "Investigate the proposed mechanism against the stated discriminating condition; source at printed p. 384 is a table-of-contents retrieval lead, not a confirmed diagnosis.",
+          "targets": [
+            "NMR-SCALE",
+            "NMR-AER",
+            "NMR-QUEUES"
+          ],
+          "term_ids": [
+            "nmr-t-0224",
+            "nmr-t-0329"
+          ],
+          "section_targets": [
+            {
+              "source_id": "LIU-2015",
+              "ref": "16",
+              "level": "toc_only",
+              "why": "Hierarchical AER and interchip traffic; printed p. 384"
+            }
+          ]
+        },
+        {
+          "label": "A larger system is assumed to be smarter",
+          "technical_title": "Capability and task success versus neuron count",
+          "distinguishing_question": "What measurable new behavior arises from the extra circuitry after including infrastructure cost?",
+          "why": "Investigate the proposed mechanism against the stated discriminating condition; source at printed p. 386 is a table-of-contents retrieval lead, not a confirmed diagnosis.",
+          "targets": [
+            "NMR-SCALE",
+            "NMR-VALIDATE"
+          ],
+          "term_ids": [
+            "nmr-t-0411",
+            "nmr-t-0376"
+          ],
+          "section_targets": [
+            {
+              "source_id": "LIU-2015",
+              "ref": "16",
+              "level": "toc_only",
+              "why": "Capability and task success versus neuron count; printed p. 386"
+            }
+          ]
+        }
+      ],
+      "term_ids": [
+        "nmr-t-0224",
+        "nmr-t-0329",
+        "nmr-t-0411",
+        "nmr-t-0376"
+      ]
+    },
+    {
+      "id": "VALIDATE",
+      "question": "VALIDATE",
+      "choices": [
+        {
+          "label": "Neurons and events appear power efficient",
+          "technical_title": "Whole-system energy and latency accounting",
+          "distinguishing_question": "Does the comparison include camera, AER link, host, conversions and output, not just the neuron core?",
+          "why": "Investigate the proposed mechanism against the stated discriminating condition; source at printed p. 353 is supported by an examined passage, not a confirmed diagnosis.",
+          "targets": [
+            "NMR-VALIDATE",
+            "NMR-INTEGRATION"
+          ],
+          "term_ids": [
+            "nmr-t-0413",
+            "nmr-t-0367"
+          ],
+          "section_targets": [
+            {
+              "source_id": "LIU-2015",
+              "ref": "14",
+              "level": "inspected",
+              "why": "Whole-system energy and latency accounting; printed p. 353"
+            }
+          ]
+        },
+        {
+          "label": "Extraordinary claims use historical or controlled demonstrations",
+          "technical_title": "Reproduction and matched task baselines",
+          "distinguishing_question": "Can a documented target-specific setup reproduce outcomes and identify when it fails?",
+          "why": "Investigate the proposed mechanism against the stated discriminating condition; source at printed p. 207 is a table-of-contents retrieval lead, not a confirmed diagnosis.",
+          "targets": [
+            "NMR-VALIDATE"
+          ],
+          "term_ids": [
+            "nmr-t-0375",
+            "nmr-t-0411"
+          ],
+          "section_targets": [
+            {
+              "source_id": "MEAD-1989",
+              "ref": "13",
+              "level": "toc_only",
+              "why": "Reproduction and matched task baselines; printed p. 207"
+            }
+          ]
+        }
+      ],
+      "term_ids": [
+        "nmr-t-0413",
+        "nmr-t-0367",
+        "nmr-t-0375",
+        "nmr-t-0411"
+      ]
+    }
+  ],
+  "landscape_views": [
+    {
+      "id": "physical-computation",
+      "title": "What can real semiconductor physics compute?",
+      "short_label": "Physics",
+      "rationale": "A larger investigation projecting existing canonical mechanisms with condition-specific source routes, not a copied research tree.",
+      "root_id": "NMR-ROOT",
+      "node_ids": [
+        "NMR-ROOT",
+        "NMR-PHYS",
+        "NMR-MIRROR",
+        "NMR-ANALOG",
+        "NMR-AGGREGATE",
+        "NMR-DYNAMICS",
+        "NMR-SPIKE"
+      ],
+      "parent_overrides": {
+        "NMR-PHYS": "NMR-ROOT",
+        "NMR-MIRROR": "NMR-ROOT",
+        "NMR-ANALOG": "NMR-ROOT",
+        "NMR-AGGREGATE": "NMR-ROOT",
+        "NMR-DYNAMICS": "NMR-ROOT",
+        "NMR-SPIKE": "NMR-ROOT"
+      },
+      "family_ids": [
+        "physical",
+        "spikes"
+      ],
+      "term_ids": [
+        "nmr-t-0057",
+        "nmr-t-0104"
+      ]
+    },
+    {
+      "id": "silicon-senses",
+      "title": "How can silicon sense light, sound, space and movement?",
+      "short_label": "Sensing",
+      "rationale": "A larger investigation projecting existing canonical mechanisms with condition-specific source routes, not a copied research tree.",
+      "root_id": "NMR-ROOT",
+      "node_ids": [
+        "NMR-ROOT",
+        "NMR-RETINA",
+        "NMR-COCHLEA",
+        "NMR-MOTION",
+        "NMR-DYNAMICS",
+        "NMR-ALGORITHMS"
+      ],
+      "parent_overrides": {
+        "NMR-RETINA": "NMR-ROOT",
+        "NMR-COCHLEA": "NMR-ROOT",
+        "NMR-MOTION": "NMR-ROOT",
+        "NMR-DYNAMICS": "NMR-ROOT",
+        "NMR-ALGORITHMS": "NMR-ROOT"
+      },
+      "family_ids": [
+        "sensing"
+      ],
+      "term_ids": [
+        "nmr-t-0231",
+        "nmr-t-0274"
+      ]
+    },
+    {
+      "id": "spiking-and-learning",
+      "title": "How do events, synapses and networks exchange or retain information?",
+      "short_label": "Networks",
+      "rationale": "A larger investigation projecting existing canonical mechanisms with condition-specific source routes, not a copied research tree.",
+      "root_id": "NMR-ROOT",
+      "node_ids": [
+        "NMR-ROOT",
+        "NMR-SPIKE",
+        "NMR-AER",
+        "NMR-QUEUES",
+        "NMR-LEARNING",
+        "NMR-CONFIG",
+        "NMR-BIAS"
+      ],
+      "parent_overrides": {
+        "NMR-SPIKE": "NMR-ROOT",
+        "NMR-AER": "NMR-ROOT",
+        "NMR-QUEUES": "NMR-ROOT",
+        "NMR-LEARNING": "NMR-ROOT",
+        "NMR-CONFIG": "NMR-ROOT",
+        "NMR-BIAS": "NMR-ROOT"
+      },
+      "family_ids": [
+        "spikes",
+        "learning"
+      ],
+      "term_ids": [
+        "nmr-t-0187",
+        "nmr-t-0147"
+      ]
+    },
+    {
+      "id": "integrate-devices",
+      "title": "How can we build useful sensors and robots from these components?",
+      "short_label": "Build",
+      "rationale": "A larger investigation projecting existing canonical mechanisms with condition-specific source routes, not a copied research tree.",
+      "root_id": "NMR-ROOT",
+      "node_ids": [
+        "NMR-ROOT",
+        "NMR-INTEGRATION",
+        "NMR-ALGORITHMS",
+        "NMR-RETINA",
+        "NMR-LOCOMOTION",
+        "NMR-AER",
+        "NMR-VALIDATE"
+      ],
+      "parent_overrides": {
+        "NMR-INTEGRATION": "NMR-ROOT",
+        "NMR-ALGORITHMS": "NMR-ROOT",
+        "NMR-RETINA": "NMR-ROOT",
+        "NMR-LOCOMOTION": "NMR-ROOT",
+        "NMR-AER": "NMR-ROOT",
+        "NMR-VALIDATE": "NMR-ROOT"
+      },
+      "family_ids": [
+        "systems",
+        "sensing"
+      ],
+      "term_ids": [
+        "nmr-t-0345",
+        "nmr-t-0295"
+      ]
+    },
+    {
+      "id": "scale-and-validate",
+      "title": "Which neuromorphic claims survive whole-system comparisons?",
+      "short_label": "Evaluate",
+      "rationale": "A larger investigation projecting existing canonical mechanisms with condition-specific source routes, not a copied research tree.",
+      "root_id": "NMR-ROOT",
+      "node_ids": [
+        "NMR-ROOT",
+        "NMR-SCALE",
+        "NMR-QUEUES",
+        "NMR-INTEGRATION",
+        "NMR-VALIDATE",
+        "NMR-LEARNING",
+        "NMR-BIAS"
+      ],
+      "parent_overrides": {
+        "NMR-SCALE": "NMR-ROOT",
+        "NMR-QUEUES": "NMR-ROOT",
+        "NMR-INTEGRATION": "NMR-ROOT",
+        "NMR-VALIDATE": "NMR-ROOT",
+        "NMR-LEARNING": "NMR-ROOT",
+        "NMR-BIAS": "NMR-ROOT"
+      },
+      "family_ids": [
+        "systems",
+        "learning"
+      ],
+      "term_ids": [
+        "nmr-t-0411",
+        "nmr-t-0367"
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "NMR-ROOT",
+      "parent_id": null,
+      "kind": "major_question",
+      "question": "What can we compute by exploiting neural dynamics and physical circuits rather than treating computation only as digital instructions?",
+      "why": "This is a family of mechanisms and systems, not a claim that every brain-like device outperforms conventional computing.",
+      "mechanism_explanation": "Neuromorphic design explores physical time constants, local nonlinearities, sparse events, plastic couplings, and sensory structures; evaluate whole-device usefulness rather than neuron counts.",
+      "status": "active_question",
+      "evidence_status": "active_question",
+      "source_sections": [],
+      "term_ids": [
+        "nmr-t-0103",
+        "nmr-t-0104",
+        "nmr-t-0102"
+      ],
+      "technical_distinctions": [],
+      "unresolved_questions": [
+        "The chapter locator is a reading lead; a worked experiment or cited implementation has not yet been independently reproduced."
+      ]
+    },
+    {
+      "id": "NMR-PHYS",
+      "parent_id": "NMR-ROOT",
+      "kind": "design_study",
+      "question": "Why can a transistor's weak-inversion current be useful for computation?",
+      "why": "Transistor current versus voltage contains physical nonlinearities that can directly implement functions.",
+      "mechanism_explanation": "Mead's Ch. 3 analyzes MOS operation below threshold: low currents and an approximately exponential current-voltage relation can implement tunable analog behavior, at the cost of sensitivity to device conditions and mismatch.",
+      "status": "source_section_inspected",
+      "evidence_status": "source_section_inspected",
+      "source_sections": [
+        {
+          "source_id": "MEAD-1989",
+          "section": "Ch. 3 · Subthreshold Operation",
+          "pages": "Printed p. 33",
+          "page_scheme": "printed",
+          "locator_level": "inspected"
+        }
+      ],
+      "term_ids": [
+        "nmr-t-0057",
+        "nmr-t-0061",
+        "nmr-t-0063",
+        "nmr-t-0082"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "Exponential physics versus digital switching",
+          "mechanism": "Below-threshold MOS current responds approximately exponentially to gate-control voltage, making nonlinear functions available through device behavior.",
+          "discriminating_observation": "Compare current over a voltage sweep and check mismatch, bias and thermal dependence."
+        }
+      ],
+      "unresolved_questions": [
+        "Under what operating conditions, physical variations, or source-specific hardware design does this mechanism break down?"
+      ]
+    },
+    {
+      "id": "NMR-MIRROR",
+      "parent_id": "NMR-ROOT",
+      "kind": "design_study",
+      "question": "How can a tiny analog current be copied, summed or biased across a circuit?",
+      "why": "A current mirror reproduces or scales a current under device assumptions; it is not a logic gate.",
+      "mechanism_explanation": "Mead explains diode-connected MOS devices and current mirrors as foundational analog current sources/sinks. Output accuracy is constrained by matching, voltage headroom and operating regime; it is not guaranteed by the symbol alone.",
+      "status": "source_section_inspected",
+      "evidence_status": "source_section_inspected",
+      "source_sections": [
+        {
+          "source_id": "MEAD-1989",
+          "section": "Ch. 3 · Current Mirrors",
+          "pages": "Printed p. 39",
+          "page_scheme": "printed",
+          "locator_level": "inspected"
+        },
+        {
+          "source_id": "MEAD-1989",
+          "section": "Ch. 5 · Transistor Mismatch",
+          "pages": "Printed p. 72",
+          "page_scheme": "printed",
+          "locator_level": "toc_only"
+        }
+      ],
+      "term_ids": [
+        "nmr-t-0067",
+        "nmr-t-0084",
+        "nmr-t-0082"
+      ],
+      "technical_distinctions": [],
+      "unresolved_questions": [
+        "Under what operating conditions, physical variations, or source-specific hardware design does this mechanism break down?"
+      ]
+    },
+    {
+      "id": "NMR-ANALOG",
+      "parent_id": "NMR-ROOT",
+      "kind": "technical_question",
+      "question": "How can addition, multiplication or nonlinear functions emerge from circuit physics?",
+      "why": "Analog representations let sums of currents or transistor nonlinearities perform arithmetic without iterated binary instructions.",
+      "mechanism_explanation": "Mead Ch. 6 covers elementary current/voltage arithmetic, four-quadrant multiplication and exponentials/logarithms. Its presence in the TOC is a design lead; operating accuracy and modern implementation remain unverified.",
+      "status": "candidate",
+      "evidence_status": "candidate",
+      "source_sections": [
+        {
+          "source_id": "MEAD-1989",
+          "section": "Ch. 6 · Arithmetic functions and nonlinear operations",
+          "pages": "Printed p. 83",
+          "page_scheme": "printed",
+          "locator_level": "toc_only"
+        }
+      ],
+      "term_ids": [
+        "nmr-t-0102",
+        "nmr-t-0108",
+        "nmr-t-0105"
+      ],
+      "technical_distinctions": [],
+      "unresolved_questions": [
+        "The chapter locator is a reading lead; a worked experiment or cited implementation has not yet been independently reproduced."
+      ]
+    },
+    {
+      "id": "NMR-AGGREGATE",
+      "parent_id": "NMR-ROOT",
+      "kind": "design_study",
+      "question": "Why can a network of locally coupled elements smooth or segment a signal?",
+      "why": "A resistive grid computes across space through local connectivity and an equilibrium response.",
+      "mechanism_explanation": "Mead Ch. 7 discusses locally coupled signal aggregation; its HRes example implements an electronically controlled resistive connection rather than requiring a fixed physical resistor. The network's computation emerges from coupled elements, not a serial pass through pixels.",
+      "status": "source_section_inspected",
+      "evidence_status": "source_section_inspected",
+      "source_sections": [
+        {
+          "source_id": "MEAD-1989",
+          "section": "Ch. 7 · Horizontal Resistor (HRes) Circuit",
+          "pages": "Printed p. 116",
+          "page_scheme": "printed",
+          "locator_level": "inspected"
+        }
+      ],
+      "term_ids": [
+        "nmr-t-0114",
+        "nmr-t-0116",
+        "nmr-t-0119"
+      ],
+      "technical_distinctions": [],
+      "unresolved_questions": [
+        "Under what operating conditions, physical variations, or source-specific hardware design does this mechanism break down?"
+      ]
+    },
+    {
+      "id": "NMR-DYNAMICS",
+      "parent_id": "NMR-ROOT",
+      "kind": "technical_question",
+      "question": "Can a circuit remember recent history simply through its physical time constant?",
+      "why": "RC dynamics encode temporal history and implement integration, differentiation, filtering and delays.",
+      "mechanism_explanation": "Mead Chs. 8–11 develop time-varying circuits, integrator/follower stages, differentiators and second-order sections; transfer functions relate input and output over time. The book's chapter map supplies candidates rather than a tested modern analog design.",
+      "status": "candidate",
+      "evidence_status": "candidate",
+      "source_sections": [
+        {
+          "source_id": "MEAD-1989",
+          "section": "Ch. 8 · RC/time-varying systems",
+          "pages": "Printed p. 127",
+          "page_scheme": "printed",
+          "locator_level": "toc_only"
+        },
+        {
+          "source_id": "MEAD-1989",
+          "section": "Ch. 9 · Follower-Integrator",
+          "pages": "Printed p. 147",
+          "page_scheme": "printed",
+          "locator_level": "toc_only"
+        },
+        {
+          "source_id": "MEAD-1989",
+          "section": "Ch. 11 · Second-Order Section",
+          "pages": "Printed p. 179",
+          "page_scheme": "printed",
+          "locator_level": "toc_only"
+        }
+      ],
+      "term_ids": [
+        "nmr-t-0077",
+        "nmr-t-0125",
+        "nmr-t-0130"
+      ],
+      "technical_distinctions": [],
+      "unresolved_questions": [
+        "The chapter locator is a reading lead; a worked experiment or cited implementation has not yet been independently reproduced."
+      ]
+    },
+    {
+      "id": "NMR-SPIKE",
+      "parent_id": "NMR-ROOT",
+      "kind": "design_study",
+      "question": "How does an analog state turn into a discrete electrical spike?",
+      "why": "Accumulate input until a threshold, trigger regenerative feedback, then reset/refractory behavior.",
+      "mechanism_explanation": "Mead Ch. 12 describes an axon-hillock circuit that integrates injected current to produce events, including leak-dependent threshold effects. The 2015 Ch. 7 discusses explicit silicon threshold and refractory circuits; both contain actual device mechanisms.",
+      "status": "source_section_inspected",
+      "evidence_status": "source_section_inspected",
+      "source_sections": [
+        {
+          "source_id": "MEAD-1989",
+          "section": "Ch. 12 · The Axon-Hillock Circuit",
+          "pages": "Printed p. 194",
+          "page_scheme": "printed",
+          "locator_level": "inspected"
+        },
+        {
+          "source_id": "LIU-2015",
+          "section": "Ch. 7 · Spiking Thresholds and Refractory Periods",
+          "pages": "Printed p. 161",
+          "page_scheme": "printed",
+          "locator_level": "inspected"
+        }
+      ],
+      "term_ids": [
+        "nmr-t-0148",
+        "nmr-t-0146",
+        "nmr-t-0024",
+        "nmr-t-0025"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "Threshold-and-reset circuit versus arbitrary pulses",
+          "mechanism": "A silicon neuron integrates input current until a switching threshold and then resets or becomes refractory; pulse recurrence depends on membrane leak and input.",
+          "discriminating_observation": "Sweep injected current and measure firing threshold, rate, reset timing and refractory response."
+        }
+      ],
+      "unresolved_questions": [
+        "Under what operating conditions, physical variations, or source-specific hardware design does this mechanism break down?"
+      ]
+    },
+    {
+      "id": "NMR-AER",
+      "parent_id": "NMR-ROOT",
+      "kind": "design_study",
+      "question": "How can thousands of silicon neurons communicate without a wire for every connection?",
+      "why": "An address-event channel communicates event identities and sometimes timestamps through a shared link.",
+      "mechanism_explanation": "The 2015 book Ch. 2 lays out address-event representations, arbitered access, routing, decoders and scaling concerns. An address representing a firing source is not the same as transferring a full continuous analog waveform.",
+      "status": "source_section_inspected",
+      "evidence_status": "source_section_inspected",
+      "source_sections": [
+        {
+          "source_id": "LIU-2015",
+          "section": "Ch. 2 · Address-Event Representation",
+          "pages": "Printed p. 12",
+          "page_scheme": "printed",
+          "locator_level": "inspected"
+        },
+        {
+          "source_id": "LIU-2015",
+          "section": "Ch. 12 · On-Chip AER Communication Circuits",
+          "pages": "Printed p. 285",
+          "page_scheme": "printed",
+          "locator_level": "toc_only"
+        }
+      ],
+      "term_ids": [
+        "nmr-t-0187",
+        "nmr-t-0197",
+        "nmr-t-0199",
+        "nmr-t-0202"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "Event identity versus full waveform",
+          "mechanism": "Address-event representation transports which source fired and optionally when; it does not automatically encode amplitude or continuous-time state.",
+          "discriminating_observation": "Determine what address, timestamp and protocol bits are actually transmitted and what the receiver can reconstruct."
+        }
+      ],
+      "unresolved_questions": [
+        "Under what operating conditions, physical variations, or source-specific hardware design does this mechanism break down?"
+      ]
+    },
+    {
+      "id": "NMR-QUEUES",
+      "parent_id": "NMR-ROOT",
+      "kind": "design_study",
+      "question": "What happens when too many neurons or pixels fire simultaneously?",
+      "why": "Shared channel arbitration trades lost events against latency and timing distortion.",
+      "mechanism_explanation": "In the 2015 Ch. 2 §2.3.3, queueing events preserves spikes while distorting their delivery times; dropping events preserves newer timing at the cost of fidelity. The throughput/latency tradeoff changes with offered load and service-time distribution.",
+      "status": "source_section_inspected",
+      "evidence_status": "source_section_inspected",
+      "source_sections": [
+        {
+          "source_id": "LIU-2015",
+          "section": "Ch. 2 · Queueing versus Dropping Spikes",
+          "pages": "Printed p. 24",
+          "page_scheme": "printed",
+          "locator_level": "inspected"
+        },
+        {
+          "source_id": "LIU-2015",
+          "section": "Ch. 2 · Predicting Throughput Requirements",
+          "pages": "Printed p. 25",
+          "page_scheme": "printed",
+          "locator_level": "toc_only"
+        }
+      ],
+      "term_ids": [
+        "nmr-t-0206",
+        "nmr-t-0207",
+        "nmr-t-0209",
+        "nmr-t-0211"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "Preserving spikes versus preserving time",
+          "mechanism": "Queueing prevents event loss but delays delivery; dropping spikes may keep recent timing responsive while removing evidence.",
+          "discriminating_observation": "Increase offered load and measure dropped-event rate, timestamp fidelity, latency and task outcome."
+        }
+      ],
+      "unresolved_questions": [
+        "Under what operating conditions, physical variations, or source-specific hardware design does this mechanism break down?"
+      ]
+    },
+    {
+      "id": "NMR-RETINA",
+      "parent_id": "NMR-ROOT",
+      "kind": "design_study",
+      "question": "Why might a camera report changes instead of sending full images?",
+      "why": "Event-based sensors emit activity related to changing light rather than a fixed global sequence of full frames.",
+      "mechanism_explanation": "The 2015 Ch. 3 compares asynchronous event-based pixels with frame readouts, discusses DVS implementations, and explicitly notes leakage-generated background events unrelated to the scene. Such a sensor is not noise-free or a universal replacement for intensity frames.",
+      "status": "source_section_inspected",
+      "evidence_status": "source_section_inspected",
+      "source_sections": [
+        {
+          "source_id": "LIU-2015",
+          "section": "Ch. 3 · Event-Based Pixels Versus Synchronous Frames",
+          "pages": "Printed p. 40",
+          "page_scheme": "printed",
+          "locator_level": "inspected"
+        },
+        {
+          "source_id": "LIU-2015",
+          "section": "Ch. 3 · DVS Background Activity",
+          "pages": "Printed p. 62",
+          "page_scheme": "printed",
+          "locator_level": "inspected"
+        },
+        {
+          "source_id": "MEAD-1989",
+          "section": "Ch. 15 · Silicon Retina",
+          "pages": "Printed p. 257",
+          "page_scheme": "printed",
+          "locator_level": "toc_only"
+        }
+      ],
+      "term_ids": [
+        "nmr-t-0232",
+        "nmr-t-0246",
+        "nmr-t-0256",
+        "nmr-t-0237"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "Sparse change detection versus a complete frame",
+          "mechanism": "A DVS can be quiet in a static scene because it chiefly responds to brightness changes, but sensor leakage and scene noise generate background events.",
+          "discriminating_observation": "Hold a stationary scene, vary brightness, and distinguish leak-generated from scene-generated events."
+        }
+      ],
+      "unresolved_questions": [
+        "Under what operating conditions, physical variations, or source-specific hardware design does this mechanism break down?"
+      ]
+    },
+    {
+      "id": "NMR-COCHLEA",
+      "parent_id": "NMR-ROOT",
+      "kind": "technical_question",
+      "question": "Can silicon perform hearing-like filtering through its own dynamics?",
+      "why": "Coupled filters and resonators map sound into frequency- and time-structured responses.",
+      "mechanism_explanation": "Mead's Ch. 16 and 2015 Chs. 4/9 organize electronic cochlear designs around traveling waves, delay lines, bandpass sections and gain control. The source map establishes mechanisms to examine, not current auditory sensor fidelity.",
+      "status": "candidate",
+      "evidence_status": "candidate",
+      "source_sections": [
+        {
+          "source_id": "MEAD-1989",
+          "section": "Ch. 16 · Electronic Cochlea",
+          "pages": "Printed p. 279",
+          "page_scheme": "printed",
+          "locator_level": "toc_only"
+        },
+        {
+          "source_id": "LIU-2015",
+          "section": "Ch. 4 · Silicon Cochleas",
+          "pages": "Printed p. 71",
+          "page_scheme": "printed",
+          "locator_level": "toc_only"
+        },
+        {
+          "source_id": "LIU-2015",
+          "section": "Ch. 9 · Silicon Cochlea Building Blocks",
+          "pages": "Printed p. 219",
+          "page_scheme": "printed",
+          "locator_level": "toc_only"
+        }
+      ],
+      "term_ids": [
+        "nmr-t-0274",
+        "nmr-t-0276",
+        "nmr-t-0277"
+      ],
+      "technical_distinctions": [],
+      "unresolved_questions": [
+        "The chapter locator is a reading lead; a worked experiment or cited implementation has not yet been independently reproduced."
+      ]
+    },
+    {
+      "id": "NMR-MOTION",
+      "parent_id": "NMR-ROOT",
+      "kind": "technical_question",
+      "question": "Can local motion signals be combined into an estimate of visual velocity?",
+      "why": "Individual sensors often constrain only part of motion; networks may combine constraints to infer a motion field.",
+      "mechanism_explanation": "Mead Ch. 14 includes analog optical-motion computation, constraint solving and least-squares/gradient-descent solutions. Exact range, noise robustness and reconstructability require examining the worked circuit and measurements.",
+      "status": "candidate",
+      "evidence_status": "candidate",
+      "source_sections": [
+        {
+          "source_id": "MEAD-1989",
+          "section": "Ch. 14 · Optical Motion Sensor",
+          "pages": "Printed p. 229",
+          "page_scheme": "printed",
+          "locator_level": "toc_only"
+        }
+      ],
+      "term_ids": [
+        "nmr-t-0250",
+        "nmr-t-0249",
+        "nmr-t-0248"
+      ],
+      "technical_distinctions": [],
+      "unresolved_questions": [
+        "The chapter locator is a reading lead; a worked experiment or cited implementation has not yet been independently reproduced."
+      ]
+    },
+    {
+      "id": "NMR-LEARNING",
+      "parent_id": "NMR-ROOT",
+      "kind": "design_study",
+      "question": "How can a chip remember and learn when each synapse has only limited physical states?",
+      "why": "Finite synaptic range makes updating and retaining old information competing objectives.",
+      "mechanism_explanation": "The 2015 Ch. 6 §6.2.2 demonstrates the mathematical issue: bounded, bistable weights can lose earlier states on modification. The same chapter presents attractor circuits and on-chip visual learning as distinct memory/retrieval mechanisms, not one universal learning rule.",
+      "status": "source_section_inspected",
+      "evidence_status": "source_section_inspected",
+      "source_sections": [
+        {
+          "source_id": "LIU-2015",
+          "section": "Ch. 6 · The Problem of Memory Maintenance: Quantitative Analysis",
+          "pages": "Printed p. 122",
+          "page_scheme": "printed",
+          "locator_level": "inspected"
+        },
+        {
+          "source_id": "LIU-2015",
+          "section": "Ch. 6 · Learning Visual Stimuli in Real Time",
+          "pages": "Printed p. 145",
+          "page_scheme": "printed",
+          "locator_level": "inspected"
+        },
+        {
+          "source_id": "LIU-2015",
+          "section": "Ch. 8 · Silicon Synapses",
+          "pages": "Printed p. 185",
+          "page_scheme": "printed",
+          "locator_level": "toc_only"
+        }
+      ],
+      "term_ids": [
+        "nmr-t-0171",
+        "nmr-t-0169",
+        "nmr-t-0167",
+        "nmr-t-0176"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "Working memory versus lasting synaptic storage",
+          "mechanism": "Finite-state synapses can overwrite earlier information even if attractor dynamics give robust transient recall.",
+          "discriminating_observation": "Compare retrieval after new learning and verify weight retention separately from network activation."
+        }
+      ],
+      "unresolved_questions": [
+        "Under what operating conditions, physical variations, or source-specific hardware design does this mechanism break down?"
+      ]
+    },
+    {
+      "id": "NMR-CONFIG",
+      "parent_id": "NMR-ROOT",
+      "kind": "technical_question",
+      "question": "How could an analog neural circuit be programmed after fabrication?",
+      "why": "Floating-gate charge and programmable biasing can persistently modify analog parameters.",
+      "mechanism_explanation": "The 2015 Ch. 10 lists floating-gate charge changes, precision programming, field-programmable analog arrays and analog in-memory computation. Whether a given device holds calibration or supports real learning requires examining its implementation.",
+      "status": "candidate",
+      "evidence_status": "candidate",
+      "source_sections": [
+        {
+          "source_id": "LIU-2015",
+          "section": "Ch. 10 · Floating-Gate Circuit Basics",
+          "pages": "Printed p. 238",
+          "page_scheme": "printed",
+          "locator_level": "toc_only"
+        },
+        {
+          "source_id": "LIU-2015",
+          "section": "Ch. 10 · Modifying Floating-Gate Charge",
+          "pages": "Printed p. 242",
+          "page_scheme": "printed",
+          "locator_level": "toc_only"
+        }
+      ],
+      "term_ids": [
+        "nmr-t-0097",
+        "nmr-t-0101",
+        "nmr-t-0306"
+      ],
+      "technical_distinctions": [],
+      "unresolved_questions": [
+        "The chapter locator is a reading lead; a worked experiment or cited implementation has not yet been independently reproduced."
+      ]
+    },
+    {
+      "id": "NMR-BIAS",
+      "parent_id": "NMR-ROOT",
+      "kind": "technical_question",
+      "question": "How do thousands of analog circuit blocks receive stable, tunable operating conditions?",
+      "why": "Current reference, splitting, feedback and bias startup set operating points across arrays.",
+      "mechanism_explanation": "The 2015 Ch. 11 covers master bias, startup, fine current splitting and monitoring. Since analog functions often depend exponentially on bias, stability and process variation may overwhelm an idealized model.",
+      "status": "candidate",
+      "evidence_status": "candidate",
+      "source_sections": [
+        {
+          "source_id": "LIU-2015",
+          "section": "Ch. 11 · Current Splitters",
+          "pages": "Printed p. 267",
+          "page_scheme": "printed",
+          "locator_level": "toc_only"
+        },
+        {
+          "source_id": "LIU-2015",
+          "section": "Ch. 11 · Master Bias Startup and Power Control",
+          "pages": "Printed p. 266",
+          "page_scheme": "printed",
+          "locator_level": "toc_only"
+        }
+      ],
+      "term_ids": [
+        "nmr-t-0085",
+        "nmr-t-0069",
+        "nmr-t-0086"
+      ],
+      "technical_distinctions": [],
+      "unresolved_questions": [
+        "The chapter locator is a reading lead; a worked experiment or cited implementation has not yet been independently reproduced."
+      ]
+    },
+    {
+      "id": "NMR-INTEGRATION",
+      "parent_id": "NMR-ROOT",
+      "kind": "design_study",
+      "question": "How do event-based sensors become a practical recorded, programmable system?",
+      "why": "Hardware routing, time stamping, FPGA interfaces and software stream processing form separate contracts.",
+      "mechanism_explanation": "The 2015 Ch. 14 §14.4.3 distinguishes capture fidelity from online reaction latency: hardware time stamps can preserve event intervals for offline analysis even when later software processing is slow, whereas closed-loop systems still require low end-to-end latency.",
+      "status": "source_section_inspected",
+      "evidence_status": "source_section_inspected",
+      "source_sections": [
+        {
+          "source_id": "LIU-2015",
+          "section": "Ch. 14 · Bandwidth and Latency",
+          "pages": "Printed p. 353",
+          "page_scheme": "printed",
+          "locator_level": "inspected"
+        },
+        {
+          "source_id": "LIU-2015",
+          "section": "Ch. 13 · FPGAs",
+          "pages": "Printed p. 340",
+          "page_scheme": "printed",
+          "locator_level": "toc_only"
+        },
+        {
+          "source_id": "LIU-2015",
+          "section": "Ch. 14 · jAER",
+          "pages": "Printed p. 359",
+          "page_scheme": "printed",
+          "locator_level": "toc_only"
+        }
+      ],
+      "term_ids": [
+        "nmr-t-0345",
+        "nmr-t-0195",
+        "nmr-t-0212"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "Recorded time versus reaction time",
+          "mechanism": "Hardware-timestamped events can preserve relative timing through delayed offline processing, but feedback systems cannot disregard added pipeline latency.",
+          "discriminating_observation": "Compare recorded event timestamps to actual closed-loop sensor-to-actuator latency."
+        }
+      ],
+      "unresolved_questions": [
+        "Under what operating conditions, physical variations, or source-specific hardware design does this mechanism break down?"
+      ]
+    },
+    {
+      "id": "NMR-ALGORITHMS",
+      "parent_id": "NMR-ROOT",
+      "kind": "technical_question",
+      "question": "What can algorithms compute directly on event streams?",
+      "why": "Temporal and address structure make sparse event filters, feature detectors and trackers possible.",
+      "mechanism_explanation": "The 2015 Ch. 15 maps event noise reduction, timestamp maps, labeling, visual tracking and event-based audio processing; a meaningful implementation must preserve the event timing and errors needed by its task.",
+      "status": "candidate",
+      "evidence_status": "candidate",
+      "source_sections": [
+        {
+          "source_id": "LIU-2015",
+          "section": "Ch. 15 · Noise Reduction Filters",
+          "pages": "Printed p. 370",
+          "page_scheme": "printed",
+          "locator_level": "toc_only"
+        },
+        {
+          "source_id": "LIU-2015",
+          "section": "Ch. 15 · Visual Trackers",
+          "pages": "Printed p. 374",
+          "page_scheme": "printed",
+          "locator_level": "toc_only"
+        }
+      ],
+      "term_ids": [
+        "nmr-t-0345",
+        "nmr-t-0346",
+        "nmr-t-0252"
+      ],
+      "technical_distinctions": [],
+      "unresolved_questions": [
+        "The chapter locator is a reading lead; a worked experiment or cited implementation has not yet been independently reproduced."
+      ]
+    },
+    {
+      "id": "NMR-LOCOMOTION",
+      "parent_id": "NMR-ROOT",
+      "kind": "technical_question",
+      "question": "How can repeated movement emerge from a small neural-style controller?",
+      "why": "Central pattern generators can create rhythmic coordination without commanding each actuation instant independently.",
+      "mechanism_explanation": "The 2015 Ch. 5 describes basic CPG construction and robotics/neuroprosthesis examples. Its hardware or biological generality requires explicit sensing, body dynamics and measured stability.",
+      "status": "candidate",
+      "evidence_status": "candidate",
+      "source_sections": [
+        {
+          "source_id": "LIU-2015",
+          "section": "Ch. 5 · Basic CPG Construction",
+          "pages": "Printed p. 100",
+          "page_scheme": "printed",
+          "locator_level": "toc_only"
+        },
+        {
+          "source_id": "LIU-2015",
+          "section": "Ch. 5 · Walking Robots",
+          "pages": "Printed p. 111",
+          "page_scheme": "printed",
+          "locator_level": "toc_only"
+        }
+      ],
+      "term_ids": [
+        "nmr-t-0048",
+        "nmr-t-0290",
+        "nmr-t-0297"
+      ],
+      "technical_distinctions": [],
+      "unresolved_questions": [
+        "The chapter locator is a reading lead; a worked experiment or cited implementation has not yet been independently reproduced."
+      ]
+    },
+    {
+      "id": "NMR-SCALE",
+      "parent_id": "NMR-ROOT",
+      "kind": "technical_question",
+      "question": "What stops a few neuromorphic circuits from becoming a useful large system?",
+      "why": "Communication and calibration may scale more quickly than individual neuron or event resources.",
+      "mechanism_explanation": "The 2015 Ch. 16 describes hierarchical AER, Neurogrid and large system examples. Evaluate event traffic, bias tuning, routability, sensor integration and actual task utility rather than extrapolating only a neuron count.",
+      "status": "candidate",
+      "evidence_status": "candidate",
+      "source_sections": [
+        {
+          "source_id": "LIU-2015",
+          "section": "Ch. 16 · Hierarchical AER",
+          "pages": "Printed p. 384",
+          "page_scheme": "printed",
+          "locator_level": "toc_only"
+        },
+        {
+          "source_id": "LIU-2015",
+          "section": "Ch. 16 · Neurogrid",
+          "pages": "Printed p. 386",
+          "page_scheme": "printed",
+          "locator_level": "toc_only"
+        }
+      ],
+      "term_ids": [
+        "nmr-t-0224",
+        "nmr-t-0330",
+        "nmr-t-0199",
+        "nmr-t-0329"
+      ],
+      "technical_distinctions": [],
+      "unresolved_questions": [
+        "The chapter locator is a reading lead; a worked experiment or cited implementation has not yet been independently reproduced."
+      ]
+    },
+    {
+      "id": "NMR-VALIDATE",
+      "parent_id": "NMR-ROOT",
+      "kind": "technical_question",
+      "question": "How would we know a neuromorphic device is actually more useful than a conventional implementation?",
+      "why": "A correct demonstration may trade power, latency and event loss rather than improve all three.",
+      "mechanism_explanation": "Compare representative end-to-end sensor→event transport→algorithm→actuator or output workflows against frame-based/digital baselines. This is an experiment proposal arising from the two books, not a certified comparative result.",
+      "status": "active_question",
+      "evidence_status": "active_question",
+      "source_sections": [
+        {
+          "source_id": "LIU-2015",
+          "section": "Ch. 2 · AER Design Trade-offs",
+          "pages": "Printed p. 27",
+          "page_scheme": "printed",
+          "locator_level": "toc_only"
+        },
+        {
+          "source_id": "LIU-2015",
+          "section": "Ch. 14 · Bandwidth and Latency",
+          "pages": "Printed p. 353",
+          "page_scheme": "printed",
+          "locator_level": "toc_only"
+        },
+        {
+          "source_id": "LIU-2015",
+          "section": "Ch. 15 · Event Algorithms",
+          "pages": "Printed p. 365",
+          "page_scheme": "printed",
+          "locator_level": "toc_only"
+        }
+      ],
+      "term_ids": [
+        "nmr-t-0367",
+        "nmr-t-0411",
+        "nmr-t-0413",
+        "nmr-t-0376"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "Internal chip efficiency versus whole-system usefulness",
+          "mechanism": "A low-energy neuron circuit can be outweighed by event buses, host processing, conversion and sensing overhead.",
+          "discriminating_observation": "Measure power, response time and task correctness at matched workload boundaries against a conventional baseline."
+        }
+      ],
+      "unresolved_questions": [
+        "The chapter locator is a reading lead; a worked experiment or cited implementation has not yet been independently reproduced."
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "from": "NMR-PHYS",
+      "to": "NMR-MIRROR",
+      "relationship": "implements",
+      "why": "Subthreshold MOS operation and current matching enable analog bias distribution"
+    },
+    {
+      "from": "NMR-PHYS",
+      "to": "NMR-ANALOG",
+      "relationship": "implements",
+      "why": "Physical current and voltage operations form nonlinear arithmetic primitives"
+    },
+    {
+      "from": "NMR-AGGREGATE",
+      "to": "NMR-RETINA",
+      "relationship": "implements",
+      "why": "Local resistive coupling can provide lateral sensory aggregation"
+    },
+    {
+      "from": "NMR-DYNAMICS",
+      "to": "NMR-COCHLEA",
+      "relationship": "implements",
+      "why": "Filter time constants and cascades shape auditory response"
+    },
+    {
+      "from": "NMR-SPIKE",
+      "to": "NMR-AER",
+      "relationship": "requires_interface",
+      "why": "Neuron-generated events must be encoded and transmitted between elements"
+    },
+    {
+      "from": "NMR-AER",
+      "to": "NMR-QUEUES",
+      "relationship": "constrained_by",
+      "why": "Shared event routing may introduce queue delays or event drops"
+    },
+    {
+      "from": "NMR-RETINA",
+      "to": "NMR-AER",
+      "relationship": "uses",
+      "why": "Event pixels rely on event transport and addressing"
+    },
+    {
+      "from": "NMR-LEARNING",
+      "to": "NMR-CONFIG",
+      "relationship": "distinguishes",
+      "why": "Synaptic learning is not identical to static analog parameter calibration"
+    },
+    {
+      "from": "NMR-INTEGRATION",
+      "to": "NMR-ALGORITHMS",
+      "relationship": "composes",
+      "why": "Stream software and sensor hardware share timing and event correctness contracts"
+    },
+    {
+      "from": "NMR-SCALE",
+      "to": "NMR-QUEUES",
+      "relationship": "constrained_by",
+      "why": "Event traffic/routing burden grows with array activity"
+    },
+    {
+      "from": "NMR-VALIDATE",
+      "to": "NMR-INTEGRATION",
+      "relationship": "measures",
+      "why": "Comparisons should include full system boundary, not just neuromorphic core"
+    }
+  ],
+  "cross_book_factors": [
+    {
+      "id": "analog-to-spike",
+      "function": "Convert an analog physical signal into sparse events",
+      "operator_chain": "Mead Ch. 3 subthreshold MOS / Ch. 12 axon hillock → Liu Ch. 7 threshold/refractory → Liu Ch. 2 AER",
+      "critical_contract": "Input dynamic range and leak; spike timing and identity; output bandwidth and latency",
+      "discriminator": "Current sweep to spike timings and event transport under load",
+      "node_ids": [
+        "NMR-PHYS",
+        "NMR-SPIKE",
+        "NMR-AER",
+        "NMR-QUEUES"
+      ]
+    },
+    {
+      "id": "physical-retina-to-tracker",
+      "function": "Turn changes in light into usable motion events",
+      "operator_chain": "Mead Chs. 7, 14–15 analog spatial computation → Liu Ch. 3 DVS/ATIS → Liu Ch. 15 event filtering/tracking",
+      "critical_contract": "Scene statistics, background activity, timestamps, downstream motion error",
+      "discriminator": "Stationary versus moving scene and false-event rate at equal task latency",
+      "node_ids": [
+        "NMR-AGGREGATE",
+        "NMR-RETINA",
+        "NMR-MOTION",
+        "NMR-ALGORITHMS"
+      ]
+    },
+    {
+      "id": "analog-memory",
+      "function": "Build networks with configurable and learned responses",
+      "operator_chain": "Mead Ch. 5 amplifier/mismatch and Ch. 7 network → Liu Ch. 6 memory retention → Ch. 8 plastic synapses → Ch. 10 floating-gate tuning",
+      "critical_contract": "Stable state versus transient attractor activity, bounded weights, drift and learning interference",
+      "discriminator": "Recall before/after additional learning, voltage/bias drift and calibration",
+      "node_ids": [
+        "NMR-MIRROR",
+        "NMR-LEARNING",
+        "NMR-CONFIG",
+        "NMR-BIAS"
+      ]
+    },
+    {
+      "id": "cochlea-to-robot",
+      "function": "Connect analog continuous-time sensing to an embodied event-based actuator",
+      "operator_chain": "Mead Chs. 9, 11, 16 filters → Liu Ch. 4 spike cochlea → Liu Ch. 5 central pattern generator → Ch. 14 software",
+      "critical_contract": "Bandwidth, sensor response, delays, actuator safety and closed-loop stability",
+      "discriminator": "Compare real controlled device response to simpler digital filtered control",
+      "node_ids": [
+        "NMR-COCHLEA",
+        "NMR-LOCOMOTION",
+        "NMR-INTEGRATION",
+        "NMR-VALIDATE"
+      ]
+    },
+    {
+      "id": "scale-communications",
+      "function": "Compose neuromorphic arrays into systems",
+      "operator_chain": "Liu Ch. 2 arbiters and queueing → Ch. 12 AER circuits → Chs. 13–14 hardware/software infrastructure → Ch. 16 hierarchical routing",
+      "critical_contract": "AER saturation, event loss, timestamp fidelity, host and I/O energy",
+      "discriminator": "Measure latency, drop rate, energy and task quality while increasing simultaneous activity",
+      "node_ids": [
+        "NMR-AER",
+        "NMR-QUEUES",
+        "NMR-SCALE",
+        "NMR-INTEGRATION",
+        "NMR-VALIDATE"
+      ]
+    }
+  ],
+  "source_coverage": {
+    "MEAD-1989": "16 chapters, 4 appendices and 16 selected subheadings indexed from scanned printed contents; passages on subthreshold operation, current mirrors, HRes spatial coupling and axon-hillock examined. Many other sections remain TOC leads.",
+    "LIU-2015": "17 chapters and 35 selected subsection starts indexed from electronic TOC; inspected passages on queue-versus-drop, sensor leakage/background events, bounded synapse retention, silicon refractory circuits and hardware timestamps versus online latency. Many chapter-level routes remain only leads."
+  },
+  "research_boundaries": [
+    "Historical source data is not a modern neuromorphic performance benchmark. Process-era analog numbers and vendor hardware assumptions require current independent checks.",
+    "Event sensing does not automatically reconstruct ordinary video or intensity; it measures a different representation with its own noise and timing properties.",
+    "Thresholded spikes are not equivalent to biological intelligence, and neuron count is not an operational competence measure.",
+    "An adjacent glossary term marked candidate is a discovery prompt, not evidence of presence in the two book excerpts or a completed investigation.",
+    "Book TOC printed pages are not verified PDF viewer positions, and a TOC route is not the same as an inspected technical passage."
+  ]
+}
