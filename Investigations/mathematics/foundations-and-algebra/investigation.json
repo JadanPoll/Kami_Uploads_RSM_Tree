@@ -1,0 +1,2108 @@
+{
+  "id": "mathematics/foundations-and-algebra",
+  "kind": "mathematics_research_family",
+  "title": "Mathematics — Foundations and algebra",
+  "updated": "2026-11-22",
+  "parent_atlas": "../investigation.json",
+  "scope": "Definitions, mappings, linear structure, symmetry and algebraic obstructions.",
+  "sources": [
+    {
+      "id": "ARTIN",
+      "title": "Algebra",
+      "authors": [
+        "Michael Artin"
+      ],
+      "edition": "Edition in connected PDF; exact imprint/year to confirm from title pages",
+      "role": "Linear algebra, symmetry groups, representation theory, rings, arithmetic and Galois theory",
+      "url": "https://drive.google.com/file/d/1r6Y76kY6T36HiBRPEV4IzFj8u24VQqtQ/view",
+      "source_folder": "https://drive.google.com/drive/folders/1Qx_V7FAz2EhbmCAijHMr18swPu5GLyZr",
+      "limitations": [
+        "Printed page and PDF index must not be conflated; scanned and retypeset editions vary.",
+        "A TOC title is a retrieval lead, not a read proof or successful calculation."
+      ]
+    },
+    {
+      "id": "HALMOS-LIN",
+      "title": "Finite-Dimensional Vector Spaces",
+      "authors": [
+        "Paul R. Halmos"
+      ],
+      "edition": "Springer reprint, PDF OCR degraded; original work in sections not modern chapters",
+      "role": "Basis-free linear maps, duality, tensors, spectra, orthogonality and finite-dimensional analysis",
+      "url": "https://drive.google.com/file/d/1eFyex_8kmj5ZYSSQlpfQN8i-KGjPoxry/view",
+      "source_folder": "https://drive.google.com/drive/folders/1Qx_V7FAz2EhbmCAijHMr18swPu5GLyZr",
+      "limitations": [
+        "Printed page and PDF index must not be conflated; scanned and retypeset editions vary.",
+        "A TOC title is a retrieval lead, not a read proof or successful calculation."
+      ]
+    },
+    {
+      "id": "HALMOS-SET",
+      "title": "Naive Set Theory",
+      "authors": [
+        "Paul R. Halmos"
+      ],
+      "edition": "Van Nostrand Reinhold edition as connected PDF",
+      "role": "Axiomatic set operations, relations/functions, choice, ordinals, cardinals and recursion",
+      "url": "https://drive.google.com/file/d/1Rai3_jSkyOeFnqDncR2f62Bs2va0a5ZM/view",
+      "source_folder": "https://drive.google.com/drive/folders/1Qx_V7FAz2EhbmCAijHMr18swPu5GLyZr",
+      "limitations": [
+        "Printed page and PDF index must not be conflated; scanned and retypeset editions vary.",
+        "A TOC title is a retrieval lead, not a read proof or successful calculation."
+      ]
+    }
+  ],
+  "book_landscaplets": [
+    {
+      "source_id": "ARTIN",
+      "page_scheme": "Printed page numbers from connected source's contents when reliably recoverable, never assumed equal to PDF viewer page index",
+      "source_navigation_status": "All main units captured; section extraction varies with scan/OCR quality. Missing printed-page anchors remain unverified, not fabricated.",
+      "sections": [
+        {
+          "ref": "1",
+          "title": "Matrices",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset"
+        },
+        {
+          "ref": "2",
+          "title": "Groups",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset"
+        },
+        {
+          "ref": "3",
+          "title": "Vector Spaces",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset"
+        },
+        {
+          "ref": "4",
+          "title": "Linear Operators",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset"
+        },
+        {
+          "ref": "5",
+          "title": "Applications of Linear Operators",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset"
+        },
+        {
+          "ref": "6",
+          "title": "Symmetry",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset"
+        },
+        {
+          "ref": "7",
+          "title": "More Group Theory",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset"
+        },
+        {
+          "ref": "8",
+          "title": "Bilinear Forms",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset"
+        },
+        {
+          "ref": "9",
+          "title": "Linear Groups",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset"
+        },
+        {
+          "ref": "10",
+          "title": "Group Representations",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset"
+        },
+        {
+          "ref": "11",
+          "title": "Rings",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset"
+        },
+        {
+          "ref": "12",
+          "title": "Factoring",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset"
+        },
+        {
+          "ref": "13",
+          "title": "Quadratic Number Fields",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset"
+        },
+        {
+          "ref": "14",
+          "title": "Linear Algebra in a Ring",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset"
+        },
+        {
+          "ref": "15",
+          "title": "Fields",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset"
+        },
+        {
+          "ref": "16",
+          "title": "Galois Theory",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset"
+        }
+      ],
+      "subsections": [
+        {
+          "ref": "1.1",
+          "title": "The Basic Operations",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "1.2",
+          "title": "Row Reduction",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "1.3",
+          "title": "The Matrix Transpose",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "1.4",
+          "title": "Determinants",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "1.5",
+          "title": "Permutations",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "1.6",
+          "title": "Other Formulas for the Determinant",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "2.1",
+          "title": "Laws of Composition",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "2.2",
+          "title": "Groups and Subgroups",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "2.3",
+          "title": "Subgroups of the Additive Group of Integers",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "2.4",
+          "title": "Cyclic Groups",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "2.5",
+          "title": "Homomorphisms",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "2.6",
+          "title": "Isomorphisms",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "2.7",
+          "title": "Equivalence Relations and Partitions",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "2.8",
+          "title": "Cosets",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "2.9",
+          "title": "Modular Arithmetic",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "2.10",
+          "title": "The Correspondence Theorem",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "2.11",
+          "title": "Product Groups",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "2.12",
+          "title": "Quotient Groups",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "3.1",
+          "title": "Subspaces of !Rn",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "3.2",
+          "title": "Fields",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "3.3",
+          "title": "Vector Spaces .",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "3.4",
+          "title": "Bases and Dimension",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "3.5",
+          "title": "Computing with Bases",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "3.6",
+          "title": "Direct Sums",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "3.7",
+          "title": "Infinite-Dimensional Spaces",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "4.1",
+          "title": "The Dimension Formula",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "4.2",
+          "title": "The Matrix of a Linear Transformation",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "4.3",
+          "title": "Linear Operators",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "4.4",
+          "title": "Eigenvectors",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "4.5",
+          "title": "The Characteristic Polynomial",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "4.6",
+          "title": "Triangular and Diagonal Forms",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "4.7",
+          "title": "Jordan Form",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "5.1",
+          "title": "Orthogonal Matrices and Rotations",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "5.2",
+          "title": "Using Continuity",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "5.3",
+          "title": "Systems of Differential Equations",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "5.4",
+          "title": "The Matrix Exponential",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "6.1",
+          "title": "Symmetry of Plane Figures",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "6.2",
+          "title": "Isometries",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "6.3",
+          "title": "Isometries of the Plane .",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "6.4",
+          "title": "Finite Groups of Orthogonal Operators on the Plane",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "6.5",
+          "title": "Discrete Groups of Isometries",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "6.6",
+          "title": "Plane Crystallographic Groups",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "6.7",
+          "title": "Abstract Symmetry: Group Operations",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "6.8",
+          "title": "The Operation on Cosets",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "6.9",
+          "title": "The Counting Formula",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "6.10",
+          "title": "Operations on Subsets",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "6.11",
+          "title": "Permutation Representations",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "6.12",
+          "title": "Finite Subgroups of the Rotation Group",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "7.1",
+          "title": "Cayley's Theorem",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "7.2",
+          "title": "The Class Equation",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "7.4",
+          "title": "The Class Equation of the Icosahedral Group",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "7.6",
+          "title": "Normalizers",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "7.7",
+          "title": "The Sylow Theorems",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "7.8",
+          "title": "Groups of Order",
+          "locator_status": "ocr_page_candidate_verify_before_use",
+          "printed_page_start": 12
+        },
+        {
+          "ref": "7.9",
+          "title": "The Free Group",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "7.10",
+          "title": "Generators and Relations",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "7.11",
+          "title": "The Todd-Coxeter Algorithm",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "8.1",
+          "title": "Bilinear Forms",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "8.2",
+          "title": "Symmetric Forms",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "8.4",
+          "title": "Orthogonality",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "8.5",
+          "title": "Euclidean Spaces and Hermitian Spaces",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "8.6",
+          "title": "The Spectral Theorem",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "8.7",
+          "title": "Conics and Quadrics",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "8.8",
+          "title": "Skew-Symmetric Forms",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "8.9",
+          "title": "Summary",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "9.1",
+          "title": "The Classical Groups",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "9.2",
+          "title": "Interlude: Spheres",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "9.3",
+          "title": "The Special Unitary Group SU2",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "9.4",
+          "title": "The Rotation Group S03",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "9.5",
+          "title": "One-Parameter Groups",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "9.6",
+          "title": "The Lie Algebra",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "9.7",
+          "title": "Translation in a Group",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "9.8",
+          "title": "Normal Subgroups of SL2",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "10.1",
+          "title": "Definitions",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "10.2",
+          "title": "Irreducible Representations",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "10.3",
+          "title": "Unitary Representations .",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "10.4",
+          "title": "Characters",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "10.5",
+          "title": "One-Dimensional Characters",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "10.6",
+          "title": "The Regular Representation",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "10.7",
+          "title": "Schur's Lemma",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "10.8",
+          "title": "Proof of the Orthogonality Relations",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "10.9",
+          "title": "Representations of SU2",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "11.1",
+          "title": "Definition of a Ring",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "11.2",
+          "title": "Polynomial Rings",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "11.3",
+          "title": "Homomorphisms and Ideals",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "11.4",
+          "title": "Quotient Rings . .",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "11.5",
+          "title": "Adjoining Elements",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "11.6",
+          "title": "Product Rings .",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "11.7",
+          "title": "Fractions",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "11.8",
+          "title": "Maximal Ideals . .",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "11.9",
+          "title": "Algebraic Geometry",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "12.1",
+          "title": "Factoring Integers",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "12.2",
+          "title": "Unique Factorization Domains",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "12.3",
+          "title": "Gauss's Lemma",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "12.4",
+          "title": "Factoring Integer Polynomials",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "12.5",
+          "title": "Gauss Primes",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "13.1",
+          "title": "Algebraic Integers",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "13.2",
+          "title": "Factoring Algebraiclntegers",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "13.5",
+          "title": "Factoring Ideals",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "13.6",
+          "title": "Prime Ideals and Prime Integers",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "13.7",
+          "title": "Ideal Classes",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "13.8",
+          "title": "Computing the Class Group",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "13.9",
+          "title": "Real Quadratic Fields",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "13.10",
+          "title": "About Lattices",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "14.1",
+          "title": "Modules",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "14.2",
+          "title": "Free Modules",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "14.3",
+          "title": "Identities",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "14.4",
+          "title": "Diagonalizing Integer Matrices",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "14.5",
+          "title": "Generators and Relations",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "14.6",
+          "title": "Noetherian Rings",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "14.7",
+          "title": "Structure of Abelian Groups",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "14.8",
+          "title": "Application to Linear Operators",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "14.9",
+          "title": "Polynomial Rings in Several Variables",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "15.1",
+          "title": "Examples of Fields",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "15.2",
+          "title": "Algebraic and Transcendental Elements",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "15.3",
+          "title": "The Degree of a Field Extension",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "15.4",
+          "title": "Finding the Irreducible Polynomial",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "15.5",
+          "title": "Ruler and Compass Constructions",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "15.6",
+          "title": "Adjoining Roots",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "15.7",
+          "title": "Finite Fields",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "15.8",
+          "title": "Primitive Elements",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "15.9",
+          "title": "Function Fields",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "15.10",
+          "title": "The Fundamental Theorem of Algebra",
+          "locator_status": "toc_title_only_page_unverified"
+        },
+        {
+          "ref": "16.1",
+          "title": "Symmetric Functions",
+          "locator_status": "ocr_page_candidate_verify_before_use",
+          "printed_page_start": 477
+        },
+        {
+          "ref": "16.2",
+          "title": "The Discriminant",
+          "locator_status": "ocr_page_candidate_verify_before_use",
+          "printed_page_start": 481
+        },
+        {
+          "ref": "16.3",
+          "title": "Splitting Fields",
+          "locator_status": "ocr_page_candidate_verify_before_use",
+          "printed_page_start": 483
+        },
+        {
+          "ref": "16.4",
+          "title": "Isomorphisms of Field Extensions",
+          "locator_status": "ocr_page_candidate_verify_before_use",
+          "printed_page_start": 484
+        },
+        {
+          "ref": "16.5",
+          "title": "Fixed Fields",
+          "locator_status": "ocr_page_candidate_verify_before_use",
+          "printed_page_start": 486
+        },
+        {
+          "ref": "16.6",
+          "title": "Galois Extensions",
+          "locator_status": "ocr_page_candidate_verify_before_use",
+          "printed_page_start": 488
+        },
+        {
+          "ref": "16.7",
+          "title": "The Main Theorem",
+          "locator_status": "ocr_page_candidate_verify_before_use",
+          "printed_page_start": 489
+        },
+        {
+          "ref": "16.8",
+          "title": "Cubic Equations",
+          "locator_status": "ocr_page_candidate_verify_before_use",
+          "printed_page_start": 492
+        },
+        {
+          "ref": "16.9",
+          "title": "Quartic Equations",
+          "locator_status": "ocr_page_candidate_verify_before_use",
+          "printed_page_start": 493
+        },
+        {
+          "ref": "16.10",
+          "title": "Roots of Unity",
+          "locator_status": "ocr_page_candidate_verify_before_use",
+          "printed_page_start": 497
+        },
+        {
+          "ref": "16.11",
+          "title": "Kummer Extensions",
+          "locator_status": "ocr_page_candidate_verify_before_use",
+          "printed_page_start": 500
+        },
+        {
+          "ref": "16.12",
+          "title": "Quintic Equations",
+          "locator_status": "ocr_page_candidate_verify_before_use",
+          "printed_page_start": 502
+        }
+      ],
+      "source_filename": "02_Abstract_Algebra.pdf"
+    },
+    {
+      "source_id": "HALMOS-LIN",
+      "page_scheme": "Printed page numbers from connected source's contents when reliably recoverable, never assumed equal to PDF viewer page index",
+      "source_navigation_status": "All main units captured; section extraction varies with scan/OCR quality. Missing printed-page anchors remain unverified, not fabricated.",
+      "sections": [
+        {
+          "ref": "I",
+          "title": "Spaces",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 1
+        },
+        {
+          "ref": "II",
+          "title": "Transformations",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 55
+        },
+        {
+          "ref": "III",
+          "title": "Orthogonality",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 118
+        },
+        {
+          "ref": "IV",
+          "title": "Analysis",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 175
+        }
+      ],
+      "subsections": [
+        {
+          "ref": "1",
+          "title": "Fields",
+          "printed_page_start": 1,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "2",
+          "title": "Vector spaces",
+          "printed_page_start": 3,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "3",
+          "title": "Examples",
+          "printed_page_start": 4,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "4",
+          "title": "Comments",
+          "printed_page_start": 5,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "5",
+          "title": "Linear dependence",
+          "printed_page_start": 7,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "6",
+          "title": "Linear combinations",
+          "printed_page_start": 9,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "7",
+          "title": "Bases",
+          "printed_page_start": 10,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "8",
+          "title": "Dimension",
+          "printed_page_start": 13,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "9",
+          "title": "Isomorphism",
+          "printed_page_start": 14,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "10",
+          "title": "Subspaces",
+          "printed_page_start": 16,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "11",
+          "title": "Cal\u0002cullus of subspaces",
+          "printed_page_start": 17,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "13",
+          "title": "Dua spaces",
+          "printed_page_start": 20,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "14",
+          "title": "Brackets",
+          "printed_page_start": 21,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "15",
+          "title": "Dual bases",
+          "printed_page_start": 23,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "17",
+          "title": "Annihilators",
+          "printed_page_start": 26,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "18",
+          "title": "Direct sums",
+          "printed_page_start": 28,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "19",
+          "title": "Dimension of direct sum",
+          "printed_page_start": 30,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "20",
+          "title": "Dual of a direct sum",
+          "printed_page_start": 31,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "22",
+          "title": "Dimension of a quotient space",
+          "printed_page_start": 34,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "23",
+          "title": "Bilinear forms",
+          "printed_page_start": 35,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "24",
+          "title": "Tensor products",
+          "printed_page_start": 38,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "25",
+          "title": "Product bases",
+          "printed_page_start": 40,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "26",
+          "title": "Permutations",
+          "printed_page_start": 41,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "27",
+          "title": "Cycles",
+          "printed_page_start": 44,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "28",
+          "title": "Parity",
+          "printed_page_start": 46,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "29",
+          "title": "Multilinear forms",
+          "printed_page_start": 48,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "30",
+          "title": "Alternating forms",
+          "printed_page_start": 50,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "31",
+          "title": "Alternating forms of maximal degree",
+          "printed_page_start": 52,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "32",
+          "title": "Linear transformations",
+          "printed_page_start": 55,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "33",
+          "title": "Transformations as vectors",
+          "printed_page_start": 56,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "34",
+          "title": "Products",
+          "printed_page_start": 58,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "35",
+          "title": "Polynomials",
+          "printed_page_start": 59,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "36",
+          "title": "Inverses",
+          "printed_page_start": 61,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "37",
+          "title": "Mat- rices",
+          "printed_page_start": 64,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "38",
+          "title": "Matrices of transformations",
+          "printed_page_start": 67,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "39",
+          "title": "Invariance",
+          "printed_page_start": 71,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "40",
+          "title": "Reducibility",
+          "printed_page_start": 72,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "41",
+          "title": "Projections",
+          "printed_page_start": 73,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "43",
+          "title": "Projections anc invariance",
+          "printed_page_start": 76,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "44",
+          "title": "Adjoints",
+          "printed_page_start": 78,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "45",
+          "title": "Adjoints of projections",
+          "printed_page_start": 80,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "46",
+          "title": "Change of basis",
+          "printed_page_start": 82,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "47",
+          "title": "Similar- ity",
+          "printed_page_start": 84,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "48",
+          "title": "Quotient transformations",
+          "printed_page_start": 87,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "49",
+          "title": "Range anc nul\u0002space",
+          "printed_page_start": 88,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "50",
+          "title": "Rank and nullity",
+          "printed_page_start": 90,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "51",
+          "title": "Transformations of rank one",
+          "printed_page_start": 92,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "52",
+          "title": "Tensor products of transformations",
+          "printed_page_start": 95,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "53",
+          "title": "Determi\u0002nants",
+          "printed_page_start": 98,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "54",
+          "title": "Proper values",
+          "printed_page_start": 102,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "55",
+          "title": "Multiplicity",
+          "printed_page_start": 104,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "56",
+          "title": "Tri- angular form",
+          "printed_page_start": 106,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "57",
+          "title": "Nilpotence",
+          "printed_page_start": 109,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "58",
+          "title": "Jordan form",
+          "printed_page_start": 112,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "59",
+          "title": "Tnner products",
+          "printed_page_start": 118,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "60",
+          "title": "Complex inner products",
+          "printed_page_start": 120,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "61",
+          "title": "Inner product spaces",
+          "printed_page_start": 121,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "63",
+          "title": "Completeness",
+          "printed_page_start": 124,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "64",
+          "title": "Schwarz'e inequality",
+          "printed_page_start": 125,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "65",
+          "title": "Complete orthonormal sets",
+          "printed_page_start": 127,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "66",
+          "title": "Projection theorem",
+          "printed_page_start": 129,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "68",
+          "title": "Paren\u0002theses versus brackets",
+          "printed_page_start": 131,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "70",
+          "title": "Self-adjoint transformations",
+          "printed_page_start": 135,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "71",
+          "title": "Polarization",
+          "printed_page_start": 138,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "72",
+          "title": "Positive transformations",
+          "printed_page_start": 139,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "73",
+          "title": "Isometries",
+          "printed_page_start": 142,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "74",
+          "title": "Change of orthonormal basis",
+          "printed_page_start": 144,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "75",
+          "title": "Perpendicular projections",
+          "printed_page_start": 146,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "76",
+          "title": "Combinations of perpendicular projections",
+          "printed_page_start": 148,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "77",
+          "title": "Com\u0002plexification",
+          "printed_page_start": 150,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "78",
+          "title": "Characterization of spectra",
+          "printed_page_start": 153,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "79",
+          "title": "Spec\u0002tral theorem",
+          "printed_page_start": 155,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "80",
+          "title": "Normal transformations",
+          "printed_page_start": 159,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "81",
+          "title": "Orthogonal transformations",
+          "printed_page_start": 162,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "83",
+          "title": "Polar decomposition",
+          "printed_page_start": 169,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "84",
+          "title": "Commutativity",
+          "printed_page_start": 171,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "85",
+          "title": "Self\u0002adjoint transformations of rank one",
+          "printed_page_start": 172,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "86",
+          "title": "Convergence of vectors",
+          "printed_page_start": 175,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "87",
+          "title": "Norm",
+          "printed_page_start": 176,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "88",
+          "title": "Expressions for the norm",
+          "printed_page_start": 178,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "89",
+          "title": "Bounds of a self-adjoint transformation",
+          "printed_page_start": 179,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "90",
+          "title": "Minimax principle",
+          "printed_page_start": 181,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "91",
+          "title": "Convergence of linear transforma\u0002tions",
+          "printed_page_start": 182,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "92",
+          "title": "Ergodic theorem",
+          "printed_page_start": 184,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        },
+        {
+          "ref": "93",
+          "title": "Power series",
+          "printed_page_start": 186,
+          "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
+        }
+      ],
+      "source_filename": "01_Linear_Algebra_Finite-Dimensional Vector Spaces.pdf"
+    },
+    {
+      "source_id": "HALMOS-SET",
+      "page_scheme": "Printed page numbers from connected source's contents when reliably recoverable, never assumed equal to PDF viewer page index",
+      "source_navigation_status": "All main units captured; section extraction varies with scan/OCR quality. Missing printed-page anchors remain unverified, not fabricated.",
+      "sections": [
+        {
+          "ref": "1",
+          "title": "The Axiom of Extension",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 1
+        },
+        {
+          "ref": "2",
+          "title": "The Axiom of Specification",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 4
+        },
+        {
+          "ref": "3",
+          "title": "Unordered Pairs",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 7
+        },
+        {
+          "ref": "4",
+          "title": "Unions and Intersections",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 10
+        },
+        {
+          "ref": "5",
+          "title": "Complements and Powers",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 14
+        },
+        {
+          "ref": "6",
+          "title": "Ordered Pairs",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 18
+        },
+        {
+          "ref": "7",
+          "title": "Relations",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 22
+        },
+        {
+          "ref": "8",
+          "title": "Functions",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 25
+        },
+        {
+          "ref": "9",
+          "title": "Families",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 28
+        },
+        {
+          "ref": "10",
+          "title": "Inverses and Composites",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 31
+        },
+        {
+          "ref": "11",
+          "title": "Numbers",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 34
+        },
+        {
+          "ref": "12",
+          "title": "The Peano Axioms",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 38
+        },
+        {
+          "ref": "13",
+          "title": "Arithmetic",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 41
+        },
+        {
+          "ref": "14",
+          "title": "Order",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 45
+        },
+        {
+          "ref": "15",
+          "title": "The Axiom of Choice",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 49
+        },
+        {
+          "ref": "16",
+          "title": "Zorn's Lemma",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 52
+        },
+        {
+          "ref": "17",
+          "title": "Well Ordering",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 55
+        },
+        {
+          "ref": "18",
+          "title": "Transfinite Recursion",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 58
+        },
+        {
+          "ref": "19",
+          "title": "Ordinal Numbers",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 61
+        },
+        {
+          "ref": "20",
+          "title": "Sets of Ordinal Numbers",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 64
+        },
+        {
+          "ref": "21",
+          "title": "Ordinal Arithmetic",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 67
+        },
+        {
+          "ref": "22",
+          "title": "The Schroeder–Bernstein Theorem",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 71
+        },
+        {
+          "ref": "23",
+          "title": "Countable Sets",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 74
+        },
+        {
+          "ref": "24",
+          "title": "Cardinal Arithmetic",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 77
+        },
+        {
+          "ref": "25",
+          "title": "Cardinal Numbers",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 81
+        }
+      ],
+      "subsections": [],
+      "source_filename": "12_Set_Theory_Naive Set Theory.pdf"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "MATH-SETS",
+      "parent_id": "MATH-ROOT",
+      "kind": "technical_investigation",
+      "question": "Why doesn't every describable collection qualify as a legitimate set?",
+      "why": "The permission to define a predicate is not permission to collect all satisfying objects into a set.",
+      "mechanism_explanation": "Set constructions are constrained by foundational axioms. Relations, products, functions and equivalence classes create new objects; unrestricted self-referential comprehension leads to contradiction.",
+      "status": "research_active",
+      "evidence_status": "table_of_contents_lead",
+      "source_sections": [
+        {
+          "source_id": "HALMOS-SET",
+          "ref": "1",
+          "section": "1: The Axiom of Extension",
+          "pages": "Printed p. 1",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "1: The Axiom of Extension · printed p. 1"
+        },
+        {
+          "source_id": "HALMOS-SET",
+          "ref": "2",
+          "section": "2: The Axiom of Specification",
+          "pages": "Printed p. 4",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "2: The Axiom of Specification · printed p. 4"
+        },
+        {
+          "source_id": "MUNKRES",
+          "ref": "1",
+          "section": "1: Set Theory and Logic",
+          "pages": "Printed p. 1",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "1: Set Theory and Logic · printed p. 1"
+        }
+      ],
+      "term_ids": [
+        "math-t-0001",
+        "math-t-0007",
+        "math-t-0011",
+        "math-t-0032"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "The permission to define a predicate is not permission to collect all satisfying objects into a set.",
+          "mechanism": "Set constructions are constrained by foundational axioms. Relations, products, functions and equivalence classes create new objects; unrestricted self-referential comprehension leads to contradiction.",
+          "discriminating_observation": "Attempt Russell's paradox, then identify which restricted construction blocks it."
+        }
+      ]
+    },
+    {
+      "id": "MATH-CHOICE",
+      "parent_id": "MATH-SETS",
+      "kind": "technical_investigation",
+      "question": "Can existence be proven without producing a computable example?",
+      "why": "An existential proof by choice need not be an algorithm with a feasible runtime.",
+      "mechanism_explanation": "Choice, well-ordering, Zorn maximality and transfinite recursion support existential arguments. Halmos explicitly distinguishes these foundations; functional-analysis extension theorems use related ideas.",
+      "status": "research_active",
+      "evidence_status": "source_section_inspected",
+      "source_sections": [
+        {
+          "source_id": "HALMOS-SET",
+          "ref": "15",
+          "section": "15: The Axiom of Choice",
+          "pages": "Printed p. 49",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "inspected",
+          "locator_level": "source_section_inspected",
+          "why": "15: The Axiom of Choice · printed p. 49"
+        },
+        {
+          "source_id": "HALMOS-SET",
+          "ref": "18",
+          "section": "18: Transfinite Recursion",
+          "pages": "Printed p. 58",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "inspected",
+          "locator_level": "source_section_inspected",
+          "why": "18: Transfinite Recursion · printed p. 58"
+        },
+        {
+          "source_id": "KREYSZIG",
+          "ref": "4.1",
+          "section": "4.1: Zorn's Lemma",
+          "pages": "Printed p. 210",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "4.1: Zorn's Lemma · printed p. 210"
+        }
+      ],
+      "term_ids": [
+        "math-t-0034",
+        "math-t-0035",
+        "math-t-0037"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "An existential proof by choice need not be an algorithm with a feasible runtime.",
+          "mechanism": "Choice, well-ordering, Zorn maximality and transfinite recursion support existential arguments. Halmos explicitly distinguishes these foundations; functional-analysis extension theorems use related ideas.",
+          "discriminating_observation": "Identify the first choice/maximal step in a proof, then compare it with finite search."
+        }
+      ]
+    },
+    {
+      "id": "MATH-MAPS",
+      "parent_id": "MATH-SETS",
+      "kind": "technical_investigation",
+      "question": "When are two differently described mathematical objects really the same?",
+      "why": "A continuous bijection need not have a continuous inverse; shared size is not shared structure.",
+      "mechanism_explanation": "Bijections preserve cardinality; linear and group isomorphisms preserve algebraic operations; homeomorphisms preserve topology. Each equality-up-to-structure has different invariants.",
+      "status": "research_active",
+      "evidence_status": "table_of_contents_lead",
+      "source_sections": [
+        {
+          "source_id": "HALMOS-LIN",
+          "ref": "9",
+          "section": "9: Isomorphism",
+          "pages": "Printed p. 14",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "9: Isomorphism · printed p. 14"
+        },
+        {
+          "source_id": "ARTIN",
+          "ref": "2.6",
+          "section": "2.6: Isomorphisms",
+          "pages": "Printed start unverified",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "2.6: Isomorphisms"
+        },
+        {
+          "source_id": "MUNKRES",
+          "ref": "2",
+          "section": "2: Topological Spaces and Continuous Functions",
+          "pages": "Printed p. 73",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "2: Topological Spaces and Continuous Functions · printed p. 73"
+        }
+      ],
+      "term_ids": [
+        "math-t-0762",
+        "math-t-0366",
+        "math-t-0745",
+        "math-t-0764"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "A continuous bijection need not have a continuous inverse; shared size is not shared structure.",
+          "mechanism": "Bijections preserve cardinality; linear and group isomorphisms preserve algebraic operations; homeomorphisms preserve topology. Each equality-up-to-structure has different invariants.",
+          "discriminating_observation": "Produce a continuous bijection with discontinuous inverse."
+        }
+      ]
+    },
+    {
+      "id": "MATH-VECTOR",
+      "parent_id": "MATH-ROOT",
+      "kind": "technical_investigation",
+      "question": "Why does changing coordinates not change the underlying linear map?",
+      "why": "A matrix and its represented transformation must not be conflated; invertible basis changes preserve rank.",
+      "mechanism_explanation": "Vector spaces support basis-free addition and scaling; a matrix is a representation after choosing bases. Kernel, rank and nullity constrain linear maps independently of coordinate systems.",
+      "status": "research_active",
+      "evidence_status": "source_section_inspected",
+      "source_sections": [
+        {
+          "source_id": "HALMOS-LIN",
+          "ref": "50",
+          "section": "50: Rank and nullity",
+          "pages": "Printed p. 90",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "inspected",
+          "locator_level": "source_section_inspected",
+          "why": "50: Rank and nullity · printed p. 90"
+        },
+        {
+          "source_id": "ARTIN",
+          "ref": "3",
+          "section": "3: Vector Spaces",
+          "pages": "Printed start unverified",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "3: Vector Spaces"
+        },
+        {
+          "source_id": "ARTIN",
+          "ref": "4",
+          "section": "4: Linear Operators",
+          "pages": "Printed start unverified",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "4: Linear Operators"
+        }
+      ],
+      "term_ids": [
+        "math-t-0055",
+        "math-t-0064",
+        "math-t-0066",
+        "math-t-0072"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "A matrix and its represented transformation must not be conflated; invertible basis changes preserve rank.",
+          "mechanism": "Vector spaces support basis-free addition and scaling; a matrix is a representation after choosing bases. Kernel, rank and nullity constrain linear maps independently of coordinate systems.",
+          "discriminating_observation": "Represent the same linear map in two bases and verify invariant rank/nullity."
+        }
+      ]
+    },
+    {
+      "id": "MATH-SPECTRAL",
+      "parent_id": "MATH-VECTOR",
+      "kind": "technical_investigation",
+      "question": "When can a transformation be separated into independent modes?",
+      "why": "Diagonalizability is not automatic for a general matrix, let alone an unbounded function operator.",
+      "mechanism_explanation": "Eigenvectors and invariant subspaces expose stable directions. Spectral theorems need normality or self-adjointness; Jordan structure and infinite-dimensional continuous spectra expose limitations.",
+      "status": "research_active",
+      "evidence_status": "source_section_inspected",
+      "source_sections": [
+        {
+          "source_id": "HALMOS-LIN",
+          "ref": "79",
+          "section": "79: Spec\u0002tral theorem",
+          "pages": "Printed p. 155",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "inspected",
+          "locator_level": "source_section_inspected",
+          "why": "79: Spec\u0002tral theorem · printed p. 155"
+        },
+        {
+          "source_id": "ARTIN",
+          "ref": "4.7",
+          "section": "4.7: Jordan Form",
+          "pages": "Printed start unverified",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "4.7: Jordan Form"
+        },
+        {
+          "source_id": "KREYSZIG",
+          "ref": "9",
+          "section": "9: Spectral Theory of Bounded Self-Adjoint Linear Operators finer §9.1 unverified, showing chapter 9",
+          "pages": "Printed start unverified",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "9: Spectral Theory of Bounded Self-Adjoint Linear Operators finer §9.1 unverified, showing chapter 9"
+        }
+      ],
+      "term_ids": [
+        "math-t-0100",
+        "math-t-0088",
+        "math-t-0096",
+        "math-t-0521"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "Diagonalizability is not automatic for a general matrix, let alone an unbounded function operator.",
+          "mechanism": "Eigenvectors and invariant subspaces expose stable directions. Spectral theorems need normality or self-adjointness; Jordan structure and infinite-dimensional continuous spectra expose limitations.",
+          "discriminating_observation": "Compare a Jordan block with a symmetric matrix of the same size."
+        }
+      ]
+    },
+    {
+      "id": "MATH-GROUP",
+      "parent_id": "MATH-ROOT",
+      "kind": "technical_investigation",
+      "question": "How do reversible transformations form reusable algebraic structure?",
+      "why": "Quotients by arbitrary nonnormal subgroups do not inherit well-defined group multiplication.",
+      "mechanism_explanation": "A group is composition with identity and inverses. Homomorphisms preserve operation; cosets/normal subgroups permit quotients, and representations turn transformations into matrices.",
+      "status": "research_active",
+      "evidence_status": "table_of_contents_lead",
+      "source_sections": [
+        {
+          "source_id": "ARTIN",
+          "ref": "2",
+          "section": "2: Groups",
+          "pages": "Printed start unverified",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "2: Groups"
+        },
+        {
+          "source_id": "ARTIN",
+          "ref": "7",
+          "section": "7: More Group Theory",
+          "pages": "Printed start unverified",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "7: More Group Theory"
+        },
+        {
+          "source_id": "ARTIN",
+          "ref": "10",
+          "section": "10: Group Representations",
+          "pages": "Printed start unverified",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "10: Group Representations"
+        }
+      ],
+      "term_ids": [
+        "math-t-0110",
+        "math-t-0129",
+        "math-t-0127",
+        "math-t-0150"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "Quotients by arbitrary nonnormal subgroups do not inherit well-defined group multiplication.",
+          "mechanism": "A group is composition with identity and inverses. Homomorphisms preserve operation; cosets/normal subgroups permit quotients, and representations turn transformations into matrices.",
+          "discriminating_observation": "Test invertibility and normality in permutation subgroups."
+        }
+      ]
+    },
+    {
+      "id": "MATH-SYMMETRY",
+      "parent_id": "MATH-GROUP",
+      "kind": "technical_investigation",
+      "question": "How can symmetry reduce counting and computation?",
+      "why": "The counted equivalence depends on whether reflections, rotations or relabelings belong to the action.",
+      "mechanism_explanation": "A group action partitions objects into orbits with stabilizers. Representation characters encode transformation behavior; equivalent configurations may be counted once rather than repeatedly.",
+      "status": "research_active",
+      "evidence_status": "table_of_contents_lead",
+      "source_sections": [
+        {
+          "source_id": "ARTIN",
+          "ref": "6",
+          "section": "6: Symmetry",
+          "pages": "Printed start unverified",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "6: Symmetry"
+        },
+        {
+          "source_id": "ARTIN",
+          "ref": "7.1",
+          "section": "7.1: Cayley's Theorem",
+          "pages": "Printed start unverified",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "7.1: Cayley's Theorem"
+        },
+        {
+          "source_id": "STANLEY",
+          "ref": "1",
+          "section": "1: What Is Enumerative Combinatorics?",
+          "pages": "Printed p. 1",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "1: What Is Enumerative Combinatorics? · printed p. 1"
+        }
+      ],
+      "term_ids": [
+        "math-t-0120",
+        "math-t-0121",
+        "math-t-0122",
+        "math-t-0150"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "The counted equivalence depends on whether reflections, rotations or relabelings belong to the action.",
+          "mechanism": "A group action partitions objects into orbits with stabilizers. Representation characters encode transformation behavior; equivalent configurations may be counted once rather than repeatedly.",
+          "discriminating_observation": "Count colorings of a ring under rotations, then under all dihedral symmetries."
+        }
+      ]
+    },
+    {
+      "id": "MATH-RINGS",
+      "parent_id": "MATH-ROOT",
+      "kind": "technical_investigation",
+      "question": "Why might factorization stop being unique when the number system changes?",
+      "why": "Prime elements, irreducibles and prime ideals are different notions unless additional hypotheses hold.",
+      "mechanism_explanation": "Ring multiplication supports ideals, quotient rings and varying notions of primality. Quadratic integer domains can lose unique factorization of elements while ideals recover a structured replacement.",
+      "status": "research_active",
+      "evidence_status": "table_of_contents_lead",
+      "source_sections": [
+        {
+          "source_id": "ARTIN",
+          "ref": "11",
+          "section": "11: Rings",
+          "pages": "Printed start unverified",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "11: Rings"
+        },
+        {
+          "source_id": "ARTIN",
+          "ref": "12",
+          "section": "12: Factoring",
+          "pages": "Printed start unverified",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "12: Factoring"
+        },
+        {
+          "source_id": "ARTIN",
+          "ref": "13",
+          "section": "13: Quadratic Number Fields",
+          "pages": "Printed start unverified",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "13: Quadratic Number Fields"
+        }
+      ],
+      "term_ids": [
+        "math-t-0159",
+        "math-t-0164",
+        "math-t-0173",
+        "math-t-0167"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "Prime elements, irreducibles and prime ideals are different notions unless additional hypotheses hold.",
+          "mechanism": "Ring multiplication supports ideals, quotient rings and varying notions of primality. Quadratic integer domains can lose unique factorization of elements while ideals recover a structured replacement.",
+          "discriminating_observation": "Compare factorization of elements and ideals in a non-UFD."
+        }
+      ]
+    },
+    {
+      "id": "MATH-GALOIS",
+      "parent_id": "MATH-RINGS",
+      "kind": "technical_investigation",
+      "question": "How can algebra prove a classical construction cannot be performed?",
+      "why": "Failure to discover a radical expression is not proof of impossibility; allowed operations must be fixed.",
+      "mechanism_explanation": "Field extensions and automorphism groups encode algebraic relations among roots. Artin uses degree restrictions to distinguish constructible lengths from impossible ruler-and-compass requests.",
+      "status": "research_active",
+      "evidence_status": "source_section_inspected",
+      "source_sections": [
+        {
+          "source_id": "ARTIN",
+          "ref": "15",
+          "section": "15: Fields",
+          "pages": "Printed start unverified",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "15: Fields"
+        },
+        {
+          "source_id": "ARTIN",
+          "ref": "16",
+          "section": "16: Galois Theory",
+          "pages": "Printed start unverified",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "inspected",
+          "locator_level": "source_section_inspected",
+          "why": "16: Galois Theory"
+        }
+      ],
+      "term_ids": [
+        "math-t-0188",
+        "math-t-0194",
+        "math-t-0197"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "Failure to discover a radical expression is not proof of impossibility; allowed operations must be fixed.",
+          "mechanism": "Field extensions and automorphism groups encode algebraic relations among roots. Artin uses degree restrictions to distinguish constructible lengths from impossible ruler-and-compass requests.",
+          "discriminating_observation": "Explain why a field-extension degree condition restricts a proposed construction."
+        }
+      ]
+    }
+  ],
+  "source_coverage": {
+    "ARTIN": {
+      "chapter_units": 16,
+      "section_locators": 135,
+      "chapters_with_printed_page": 0,
+      "evidence": "Table of contents indexed; section OCR candidate vs verified title/page states explicitly identified"
+    },
+    "HALMOS-LIN": {
+      "chapter_units": 4,
+      "section_locators": 85,
+      "chapters_with_printed_page": 4,
+      "evidence": "Table of contents indexed; section OCR candidate vs verified title/page states explicitly identified"
+    },
+    "HALMOS-SET": {
+      "chapter_units": 25,
+      "section_locators": 0,
+      "chapters_with_printed_page": 25,
+      "evidence": "Table of contents indexed; section OCR candidate vs verified title/page states explicitly identified"
+    }
+  },
+  "source_inspection_notes": [
+    {
+      "source_id": "ARTIN",
+      "source_region": "Chapter 16 geometric constructibility and Galois",
+      "observation": "Field extension degrees obstruct some ruler-and-compass constructions.",
+      "status": "selected_passage_examined_not_reproduced"
+    },
+    {
+      "source_id": "HALMOS-LIN",
+      "source_region": "§50 rank and nullity; §79 spectral theorem",
+      "observation": "Rank and nullity concern linear maps; spectral conclusions depend on operator assumptions.",
+      "status": "selected_passage_examined_not_reproduced"
+    },
+    {
+      "source_id": "HALMOS-SET",
+      "source_region": "§15 choice; §18 transfinite recursion",
+      "observation": "Choice and well-ordering support existential reasoning and generalized recursion.",
+      "status": "selected_passage_examined_not_reproduced"
+    }
+  ]
+}

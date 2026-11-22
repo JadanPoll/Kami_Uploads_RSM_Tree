@@ -46,7 +46,7 @@ The Knowledge Atlas viewer loads only the selected domain's glossary. In the que
 
 ## Canonical domain data, without redundant JSONs
 
-Each domain has **one canonical research JSON** (and multiple possible scoped views):
+Most domains have **one canonical research JSON** (and multiple possible scoped views); mathematics composes five family-owned files into a unified atlas:
 
 | Domain | Canonical research file | Contains |
 | --- | --- | --- |
@@ -105,4 +105,4 @@ The [Richer Scientific Method](https://github.com/JadanPoll/Learning_Visualizati
 The objective is a navigator worth returning to after a month: **ask what you actually care about, encounter the relevant depth, and recover the evidence without rediscovering the organization**.
 
 
-**Mathematics collection:** [canonical investigation](Investigations/mathematics/investigation.json), [independent 832-concept glossary](Investigations/mathematics/glossary.json), and [persistent fourteen-book reference guide](Investigations/mathematics/REFERENCE_GUIDE.md). The collection indexes 185 major units and 836 finer source locators; its 39 technical studies, 46 curiosity entrances, nine larger sets and twelve cross-book operator compositions are views of one evidence corpus, not duplicate trees.
+**Mathematics collection:** [unified investigation](Investigations/mathematics/investigation.json), [five canonical research families](Investigations/mathematics/REFERENCE_GUIDE.md#research-families--canonical-ownership), [139 active vocabulary concepts](Investigations/mathematics/glossary.json), [693 optional unlinked vocabulary candidates](Investigations/mathematics/vocabulary_candidates.json), and [fourteen-book navigator](Investigations/mathematics/REFERENCE_GUIDE.md). The five families own 14 book catalogs and 37 studies; the atlas owns two shared studies, 46 curiosities, nine question landscapes and twelve cross-book compositions. The viewer assembles the actual files, without duplicate root records.

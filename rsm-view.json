@@ -89,6 +89,51 @@
       "projection": {
         "shape": "curiosities"
       }
+    },
+    {
+      "id": "mathematics-foundations-and-algebra",
+      "title": "Mathematics — Foundations and algebra",
+      "short_title": "Foundations and algebra",
+      "file": "Investigations/mathematics/foundations-and-algebra/investigation.json",
+      "projection": {
+        "shape": "flat"
+      }
+    },
+    {
+      "id": "mathematics-analysis-and-dynamics",
+      "title": "Mathematics — Analysis and dynamics",
+      "short_title": "Analysis and dynamics",
+      "file": "Investigations/mathematics/analysis-and-dynamics/investigation.json",
+      "projection": {
+        "shape": "flat"
+      }
+    },
+    {
+      "id": "mathematics-geometry-and-topology",
+      "title": "Mathematics — Geometry and topology",
+      "short_title": "Geometry and topology",
+      "file": "Investigations/mathematics/geometry-and-topology/investigation.json",
+      "projection": {
+        "shape": "flat"
+      }
+    },
+    {
+      "id": "mathematics-probability-and-statistics",
+      "title": "Mathematics — Probability and statistics",
+      "short_title": "Probability and statistics",
+      "file": "Investigations/mathematics/probability-and-statistics/investigation.json",
+      "projection": {
+        "shape": "flat"
+      }
+    },
+    {
+      "id": "mathematics-discrete-mathematics",
+      "title": "Mathematics — Discrete mathematics",
+      "short_title": "Discrete mathematics",
+      "file": "Investigations/mathematics/discrete-mathematics/investigation.json",
+      "projection": {
+        "shape": "flat"
+      }
     }
   ]
 }

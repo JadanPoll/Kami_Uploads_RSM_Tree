@@ -1,0 +1,1883 @@
+{
+  "id": "mathematics/analysis-and-dynamics",
+  "kind": "mathematics_research_family",
+  "title": "Mathematics — Analysis and dynamics",
+  "updated": "2026-11-22",
+  "parent_atlas": "../investigation.json",
+  "scope": "Limits, integration, function spaces and operators; future home for differential equations and dynamical systems.",
+  "sources": [
+    {
+      "id": "AHLFORS",
+      "title": "Complex Analysis: An Introduction to the Theory of Analytic Functions of One Complex Variable",
+      "authors": [
+        "Lars V. Ahlfors"
+      ],
+      "edition": "Third Edition",
+      "role": "Holomorphic maps, contour integration, residues, conformal maps, elliptic functions and analytic continuation",
+      "url": "https://drive.google.com/file/d/1WNsPRVM8YucXXZCYWLjtLx891LHIqoCg/view",
+      "source_folder": "https://drive.google.com/drive/folders/1Qx_V7FAz2EhbmCAijHMr18swPu5GLyZr",
+      "limitations": [
+        "Printed page and PDF index must not be conflated; scanned and retypeset editions vary.",
+        "A TOC title is a retrieval lead, not a read proof or successful calculation."
+      ]
+    },
+    {
+      "id": "ROYDEN",
+      "title": "Real Analysis",
+      "authors": [
+        "Halsey L. Royden",
+        "Patrick M. Fitzpatrick"
+      ],
+      "edition": "Fifth Edition",
+      "role": "Lebesgue measure/integration, Lp, abstract measure, Banach spaces, general topology and invariant measures",
+      "url": "https://drive.google.com/file/d/13FxsPLoAJIm3LY5hNlfGP6rfdqwNsZ4W/view",
+      "source_folder": "https://drive.google.com/drive/folders/1Qx_V7FAz2EhbmCAijHMr18swPu5GLyZr",
+      "limitations": [
+        "Printed page and PDF index must not be conflated; scanned and retypeset editions vary.",
+        "A TOC title is a retrieval lead, not a read proof or successful calculation."
+      ]
+    },
+    {
+      "id": "KREYSZIG",
+      "title": "Introductory Functional Analysis with Applications",
+      "authors": [
+        "Erwin Kreyszig"
+      ],
+      "edition": "John Wiley & Sons, 1978",
+      "role": "Metric, Banach and Hilbert spaces, operator theory, approximation, fixed-point arguments and spectral methods",
+      "url": "https://drive.google.com/file/d/1ArZFwHZVVMRxn64aPispU6hE21jL1Mu3/view",
+      "source_folder": "https://drive.google.com/drive/folders/1Qx_V7FAz2EhbmCAijHMr18swPu5GLyZr",
+      "limitations": [
+        "Printed page and PDF index must not be conflated; scanned and retypeset editions vary.",
+        "A TOC title is a retrieval lead, not a read proof or successful calculation."
+      ]
+    },
+    {
+      "id": "RUDIN",
+      "title": "Principles of Mathematical Analysis",
+      "authors": [
+        "Walter Rudin"
+      ],
+      "edition": "Rudin text retypeset by a third party; PDF foreword explicitly notes changed page numbering (filename '5ed' not reliable edition evidence)",
+      "role": "Limits, metric topology, continuity, differentiation, integration, series, uniform convergence and several variables",
+      "url": "https://drive.google.com/file/d/1al-Lk0C8wHshwF3JTd4iB-glNI1hp-ny/view",
+      "source_folder": "https://drive.google.com/drive/folders/1Qx_V7FAz2EhbmCAijHMr18swPu5GLyZr",
+      "limitations": [
+        "Printed page and PDF index must not be conflated; scanned and retypeset editions vary.",
+        "A TOC title is a retrieval lead, not a read proof or successful calculation."
+      ]
+    }
+  ],
+  "book_landscaplets": [
+    {
+      "source_id": "AHLFORS",
+      "page_scheme": "Printed page numbers from connected source's contents when reliably recoverable, never assumed equal to PDF viewer page index",
+      "source_navigation_status": "All main units captured; section extraction varies with scan/OCR quality. Missing printed-page anchors remain unverified, not fabricated.",
+      "sections": [
+        {
+          "ref": "1",
+          "title": "Complex Numbers",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 1
+        },
+        {
+          "ref": "2",
+          "title": "Complex Functions",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset"
+        },
+        {
+          "ref": "3",
+          "title": "Analytic Functions as Mappings",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset"
+        },
+        {
+          "ref": "4",
+          "title": "Complex Integration",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset"
+        },
+        {
+          "ref": "5",
+          "title": "Series and Product Developments",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 175
+        },
+        {
+          "ref": "6",
+          "title": "Conformal Mapping; Dirichlet's Problem",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset"
+        },
+        {
+          "ref": "7",
+          "title": "Elliptic Functions",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset"
+        },
+        {
+          "ref": "8",
+          "title": "Global Analytic Functions",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset"
+        }
+      ],
+      "subsections": [],
+      "source_filename": "09_Complex_Analysis_An Introduction to the Theory of Analytic Functions of One Complex Variable_3rd.pdf"
+    },
+    {
+      "source_id": "ROYDEN",
+      "page_scheme": "Printed page numbers from connected source's contents when reliably recoverable, never assumed equal to PDF viewer page index",
+      "source_navigation_status": "All main units captured; section extraction varies with scan/OCR quality. Missing printed-page anchors remain unverified, not fabricated.",
+      "sections": [
+        {
+          "ref": "1",
+          "title": "The Real Numbers: Sets, Sequences, and Functions",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 7
+        },
+        {
+          "ref": "2",
+          "title": "Lebesgue Measure",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 29
+        },
+        {
+          "ref": "3",
+          "title": "Lebesgue Measurable Functions",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 51
+        },
+        {
+          "ref": "4",
+          "title": "Lebesgue Integration",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 62
+        },
+        {
+          "ref": "5",
+          "title": "Lebesgue Integration: Further Topics",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 81
+        },
+        {
+          "ref": "6",
+          "title": "Differentiation and Integration",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 92
+        },
+        {
+          "ref": "7",
+          "title": "The Lp Spaces: Completeness and Approximation",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset"
+        },
+        {
+          "ref": "8",
+          "title": "The Lp Spaces: Duality, Weak Convergence, and Minimization",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset"
+        },
+        {
+          "ref": "9",
+          "title": "General Measure Spaces: Their Properties and Construction",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 159
+        },
+        {
+          "ref": "10",
+          "title": "Particular Measures",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 174
+        },
+        {
+          "ref": "11",
+          "title": "Integration over General Measure Spaces",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 201
+        },
+        {
+          "ref": "12",
+          "title": "General Lp Spaces: Completeness, Convolution, and Duality",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset"
+        },
+        {
+          "ref": "13",
+          "title": "Metric Spaces: General Properties",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 263
+        },
+        {
+          "ref": "14",
+          "title": "Metric Spaces: Three Fundamental Theorems and Applications",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 285
+        },
+        {
+          "ref": "15",
+          "title": "Topological Spaces: General Properties",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 305
+        },
+        {
+          "ref": "16",
+          "title": "Topological Spaces: Three Fundamental Theorems",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 323
+        },
+        {
+          "ref": "17",
+          "title": "Continuous Linear Operators Between Banach Spaces",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 337
+        },
+        {
+          "ref": "18",
+          "title": "Duality for Normed Linear Spaces",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 355
+        },
+        {
+          "ref": "19",
+          "title": "Compactness Regained: The Weak Topology",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 382
+        },
+        {
+          "ref": "20",
+          "title": "Continuous Linear Operators on Hilbert Spaces",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 392
+        },
+        {
+          "ref": "21",
+          "title": "Measure and Topology",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 423
+        },
+        {
+          "ref": "22",
+          "title": "Invariant Measures",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 452
+        }
+      ],
+      "subsections": [
+        {
+          "ref": "1.1",
+          "title": "The Field, Positivity, and Completeness Axioms",
+          "printed_page_start": 7,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "1.2",
+          "title": "The Natural and Rational Numbers",
+          "printed_page_start": 11,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "1.3",
+          "title": "Countable and Uncountable Sets",
+          "printed_page_start": 13,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "1.4",
+          "title": "Open Sets, Closed Sets, and Borel Sets of Real Numbers",
+          "printed_page_start": 16,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "1.5",
+          "title": "Sequences of Real Numbers",
+          "printed_page_start": 20,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "1.6",
+          "title": "Continuous Real-Valued Functions of a Real Variable",
+          "printed_page_start": 25,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "2.1",
+          "title": "Introduction",
+          "printed_page_start": 29,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "2.2",
+          "title": "Outer-Measure",
+          "printed_page_start": 31,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "2.3",
+          "title": "The σ-Algebra of Lebesgue Measurable Sets",
+          "printed_page_start": 34,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "2.4",
+          "title": "Finer Properties of Measurable Sets",
+          "printed_page_start": 39,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "2.6",
+          "title": "Vitali’s Example of a Non-measurable Set",
+          "printed_page_start": 45,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "2.7",
+          "title": "The Cantor Set and the Cantor-Lebesgue Function",
+          "printed_page_start": 46,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "3.1",
+          "title": "Sums, Products, and Compositions",
+          "printed_page_start": 51,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "3.2",
+          "title": "Sequential Pointwise Limits and Simple Approximation",
+          "printed_page_start": 55,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "3.3",
+          "title": "Littlewood’s Three Principles, Egoroff’s Theorem, and Lusin’s Theorem",
+          "printed_page_start": 59,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "4.1",
+          "title": "Comments on the Riemann Integral",
+          "printed_page_start": 62,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "4.2",
+          "title": "The Integral of a Bounded, Finitely Supported, Measurable Function",
+          "printed_page_start": 64,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "4.3",
+          "title": "The Integral of a Non-Negative Measurable Function",
+          "printed_page_start": 70,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "4.4",
+          "title": "The General Lebesgue Integral",
+          "printed_page_start": 74,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "4.5",
+          "title": "Countable Additivity and Continuity of Integration",
+          "printed_page_start": 78,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "5.1",
+          "title": "Uniform Integrability and Tightness: The Vitali Convergence Theorems",
+          "printed_page_start": 81,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "5.2",
+          "title": "Convergence in the Mean and in Measure: A Theorem of Riesz",
+          "printed_page_start": 85,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "5.3",
+          "title": "Characterizations of Riemann and Lebesgue Integrability",
+          "printed_page_start": 88,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "6.1",
+          "title": "Continuity of Monotone Functions",
+          "printed_page_start": 92,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "6.2",
+          "title": "Differentiability of Monotone Functions: Lebesgue’s Theorem",
+          "printed_page_start": 94,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "6.3",
+          "title": "Functions of Bounded Variation: Jordan’s Theorem",
+          "printed_page_start": 99,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "6.4",
+          "title": "Absolutely Continuous Functions",
+          "printed_page_start": 103,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "6.5",
+          "title": "Integrating Derivatives: Differentiating Indefinite Integrals",
+          "printed_page_start": 107,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "6.6",
+          "title": "Measurability: Images of Sets, Compositions of Functions",
+          "printed_page_start": 114,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "6.7",
+          "title": "Convex Functions",
+          "printed_page_start": 118,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "7.1",
+          "title": "Normed Linear Spaces",
+          "printed_page_start": 123,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "7.2",
+          "title": "The Inequalities of Young, H¨older, and Minkowski",
+          "printed_page_start": 125,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "7.4",
+          "title": "Approximation and Separability",
+          "printed_page_start": 134,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "8.1",
+          "title": "Bounded Linear Functionals on a Normed Linear Space",
+          "printed_page_start": 137,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "8.4",
+          "title": "The Minimization of Convex Functionals",
+          "printed_page_start": 150,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "9.1",
+          "title": "Measurable Sets and Measure Spaces",
+          "printed_page_start": 159,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "9.2",
+          "title": "Measures Induced by an Outer-Measure",
+          "printed_page_start": 164,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "9.3",
+          "title": "The Carath´eodory-Hahn Theorem",
+          "printed_page_start": 168,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "10.1",
+          "title": "Lebesgue Measure on Euclidean Space",
+          "printed_page_start": 174,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "10.2",
+          "title": "Lebesgue Measurability and Measure of Images of Mappings",
+          "printed_page_start": 182,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "10.3",
+          "title": "Borel Measures on Rn and Regularity",
+          "printed_page_start": 190,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "10.4",
+          "title": "Carath´eodory Outer-Measures and Hausdorff Measures",
+          "printed_page_start": 193,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "10.5",
+          "title": "Signed Measures: The Hahn and Jordan Decompositions",
+          "printed_page_start": 197,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "11.4",
+          "title": "The Radon-Nikodym Theorem",
+          "printed_page_start": 219,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "11.5",
+          "title": "Product Measures: The Tonelli and Fubini Theorems",
+          "printed_page_start": 225,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "12.2",
+          "title": "Convolution, Smooth Approximation, and a Smooth Urysohn’s Lemma",
+          "printed_page_start": 243,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "12.5",
+          "title": "The Kantorovitch Representation Theorem for the Dual of L∞(X, µ)",
+          "printed_page_start": 257,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "13.1",
+          "title": "Examples of Metric Spaces",
+          "printed_page_start": 263,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "13.2",
+          "title": "Open Sets, Closed Sets, and Convergent Sequences",
+          "printed_page_start": 265,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "13.3",
+          "title": "Continuous Mappings Between Metric Spaces",
+          "printed_page_start": 269,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "13.4",
+          "title": "Complete Metric Spaces",
+          "printed_page_start": 271,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "13.5",
+          "title": "Compact Metric Spaces",
+          "printed_page_start": 274,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "13.6",
+          "title": "Separable Metric Spaces Ulam’s Regularity Theorem",
+          "printed_page_start": 280,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "14.1",
+          "title": "The Arzel`a-Ascoli Theorem",
+          "printed_page_start": 285,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "14.2",
+          "title": "The Banach Contraction Principle and Picard’s Theorem",
+          "printed_page_start": 289,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "14.3",
+          "title": "The Baire Category Theorem",
+          "printed_page_start": 295,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "15.1",
+          "title": "Open Sets, Closed Sets, Bases, and Subbases",
+          "printed_page_start": 305,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "15.2",
+          "title": "The Separation Properties",
+          "printed_page_start": 309,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "15.3",
+          "title": "Countability and Separability",
+          "printed_page_start": 311,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "15.4",
+          "title": "Continuous Mappings, Weak Topologies, and Metrizability",
+          "printed_page_start": 313,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "15.5",
+          "title": "Compact Topological Spaces",
+          "printed_page_start": 317,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "15.6",
+          "title": "Connected Topological Spaces",
+          "printed_page_start": 320,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "16.1",
+          "title": "Urysohn’s Lemma and the Tietze Extension Theorem",
+          "printed_page_start": 323,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "16.2",
+          "title": "The Tychonoff Product Theorem",
+          "printed_page_start": 327,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "17.1",
+          "title": "Normed Linear Spaces",
+          "printed_page_start": 337,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "17.2",
+          "title": "Linear Operators",
+          "printed_page_start": 340,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "17.3",
+          "title": "Compactness Lost: Infinite Dimensional Normed Linear Spaces",
+          "printed_page_start": 343,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "17.4",
+          "title": "The Open Mapping and Closed Graph Theorems",
+          "printed_page_start": 347,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "17.5",
+          "title": "The Uniform Boundedness Principle",
+          "printed_page_start": 353,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "18.1",
+          "title": "Linear Functionals, Bounded Linear Functionals, and Weak Topologies",
+          "printed_page_start": 355,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "18.2",
+          "title": "The Hahn-Banach Theorem",
+          "printed_page_start": 361,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "18.3",
+          "title": "Reflexive Banach Spaces and Weak Sequential Convergence",
+          "printed_page_start": 367,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "18.4",
+          "title": "Locally Convex Topological Vector Spaces",
+          "printed_page_start": 370,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "18.5",
+          "title": "The Separation of Convex Sets and Mazur’s Theorem",
+          "printed_page_start": 375,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "18.6",
+          "title": "The Krein-Milman Theorem",
+          "printed_page_start": 379,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "19.1",
+          "title": "Alaoglu’s Extension of Helly’s Theorem",
+          "printed_page_start": 382,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "19.2",
+          "title": "Reflexivity and Weak Compactness: Kakutani’s Theorem",
+          "printed_page_start": 384,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "19.4",
+          "title": "Metrizability of Weak Topologies",
+          "printed_page_start": 389,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "20.1",
+          "title": "The Inner-Product and Orthogonality",
+          "printed_page_start": 393,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "20.2",
+          "title": "Separability, Bessel’s Inequality, and Orthonormal Bases",
+          "printed_page_start": 397,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "20.3",
+          "title": "The Dual Space and Weak Sequential Compactness",
+          "printed_page_start": 399,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "20.4",
+          "title": "Symmetric Operators",
+          "printed_page_start": 404,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "20.5",
+          "title": "Compact Operators",
+          "printed_page_start": 409,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "20.6",
+          "title": "The Hilbert-Schmidt Theorem",
+          "printed_page_start": 411,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "21.1",
+          "title": "Locally Compact Topological Spaces",
+          "printed_page_start": 424,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "21.2",
+          "title": "Separating Sets and Extending Functions",
+          "printed_page_start": 428,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "21.3",
+          "title": "The Construction of Radon Measures",
+          "printed_page_start": 430,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "22.1",
+          "title": "Topological Groups: The General Linear Group",
+          "printed_page_start": 452,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "22.2",
+          "title": "Kakutani’s Fixed-Point Theorem",
+          "printed_page_start": 455,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "22.3",
+          "title": "Invariant Borel Measures on Compact Groups: von Neumann’s Theorem",
+          "printed_page_start": 460,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "22.4",
+          "title": "Measure Preserving Transformations and Ergodicity",
+          "printed_page_start": 463,
+          "locator_status": "table_of_contents_inspected"
+        }
+      ],
+      "source_filename": "14_Measure_Theory_REAL_ANALYSIS.pdf"
+    },
+    {
+      "source_id": "KREYSZIG",
+      "page_scheme": "Printed page numbers from connected source's contents when reliably recoverable, never assumed equal to PDF viewer page index",
+      "source_navigation_status": "All main units captured; section extraction varies with scan/OCR quality. Missing printed-page anchors remain unverified, not fabricated.",
+      "sections": [
+        {
+          "ref": "1",
+          "title": "Metric Spaces",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset"
+        },
+        {
+          "ref": "2",
+          "title": "Normed Spaces; Banach Spaces",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 49
+        },
+        {
+          "ref": "3",
+          "title": "Inner Product Spaces; Hilbert Spaces",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 127
+        },
+        {
+          "ref": "4",
+          "title": "Fundamental Theorems for Normed and Banach Spaces",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset"
+        },
+        {
+          "ref": "5",
+          "title": "Further Applications: Banach Fixed Point Theorem",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset"
+        },
+        {
+          "ref": "6",
+          "title": "Further Applications: Approximation Theory",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset"
+        },
+        {
+          "ref": "7",
+          "title": "Spectral Theory of Linear Operators",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset"
+        },
+        {
+          "ref": "8",
+          "title": "Compact Linear Operators on Normed Spaces",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset"
+        },
+        {
+          "ref": "9",
+          "title": "Spectral Theory of Bounded Self-Adjoint Linear Operators",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset"
+        },
+        {
+          "ref": "10",
+          "title": "Unbounded Linear Operators in Hilbert Space",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset"
+        },
+        {
+          "ref": "11",
+          "title": "Unbounded Linear Operators in Quantum Mechanics",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset"
+        }
+      ],
+      "subsections": [
+        {
+          "ref": "1.1",
+          "title": "Metric Space",
+          "printed_page_start": 2,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "1.2",
+          "title": "Further Examples of Metric Spaces",
+          "printed_page_start": 9,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "1.3",
+          "title": "Open Set, Closed Set, Neighborhood",
+          "printed_page_start": 17,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "1.4",
+          "title": "Convergence, Cauchy Sequence, Completeness",
+          "printed_page_start": 25,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "1.5",
+          "title": "Examples. Completeness Proofs",
+          "printed_page_start": 32,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "1.6",
+          "title": "Completion of Metric Spaces",
+          "printed_page_start": 41,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "2.1",
+          "title": "Vector Space",
+          "printed_page_start": 50,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "2.2",
+          "title": "Normed Space. Banach Space",
+          "printed_page_start": 58,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "2.3",
+          "title": "Further Properties of Normed Spaces",
+          "printed_page_start": 67,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "2.4",
+          "title": "Finite Dimensional Normed Spaces and Subspaces",
+          "printed_page_start": 72,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "2.5",
+          "title": "Compactness and Finite Dimension",
+          "printed_page_start": 77,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "2.6",
+          "title": "Linear Operators",
+          "printed_page_start": 82,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "2.7",
+          "title": "Bounded and Continuous Linear Operators",
+          "printed_page_start": 91,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "2.8",
+          "title": "Linear Functionals",
+          "printed_page_start": 103,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "2.9",
+          "title": "Linear Operators and Functionals on Finite Dimen\u0002sional Spaces",
+          "printed_page_start": 111,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "2.10",
+          "title": "Normed Spaces of Operators. Dual Space",
+          "printed_page_start": 117,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "3.1",
+          "title": "Inner Product Space. Hilbert Space",
+          "printed_page_start": 128,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "3.2",
+          "title": "Further Properties of Inner Product Spaces",
+          "printed_page_start": 136,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "3.3",
+          "title": "Orthogonal Complements and Direct Sums",
+          "printed_page_start": 142,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "3.4",
+          "title": "Orthonormal Sets and Sequences",
+          "printed_page_start": 151,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "3.5",
+          "title": "Series Related to Orthonormal Sequences and Sets",
+          "printed_page_start": 160,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "3.6",
+          "title": "Total Orthonormal Sets and Sequences",
+          "printed_page_start": 167,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "3.7",
+          "title": "Legendre, Hermite and Laguerre Polynomials",
+          "printed_page_start": 175,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "3.8",
+          "title": "Representation of Functionals on Hilbert Spaces",
+          "printed_page_start": 188,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "3.9",
+          "title": "Hilbert-Adjoint Operator",
+          "printed_page_start": 195,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "4.1",
+          "title": "Zorn's Lemma",
+          "printed_page_start": 210,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "4.2",
+          "title": "Hahn-Banach Theorem",
+          "printed_page_start": 213,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "4.5",
+          "title": "Adjoint Operator",
+          "printed_page_start": 231,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "4.6",
+          "title": "Reflexive Spaces",
+          "printed_page_start": 239,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "4.7",
+          "title": "Category Theorem. Uniform Boundedness Theorem",
+          "printed_page_start": 246,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "4.8",
+          "title": "Strong and Weak Convergence",
+          "printed_page_start": 256,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "4.10",
+          "title": "Application to Summability of Sequences",
+          "printed_page_start": 269,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "4.11",
+          "title": "Numerical Integration and Weak* Convergence",
+          "printed_page_start": 276,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "4.12",
+          "title": "Open Mapping Theorem",
+          "printed_page_start": 285,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "4.13",
+          "title": "Closed Linear Operators. Closed Graph Theorem",
+          "printed_page_start": 291,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "5.1",
+          "title": "Banach Fixed Point Theorem",
+          "printed_page_start": 299,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "5.2",
+          "title": "Application of Banach's Theorem to Linear Equations",
+          "printed_page_start": 307,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "6.1",
+          "title": "Approximation in Normed Spaces",
+          "printed_page_start": 327,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "6.2",
+          "title": "Uniqueness, Strict Convexity",
+          "printed_page_start": 330,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "6.3",
+          "title": "Uniform Approximation",
+          "printed_page_start": 336,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "6.4",
+          "title": "Chebyshev Polynomials",
+          "printed_page_start": 345,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "6.5",
+          "title": "Approximation in Hilbert Space",
+          "printed_page_start": 352,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "6.6",
+          "title": "Splines",
+          "printed_page_start": 356,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "7.1",
+          "title": "Spectral Theory in Finite Dimensional Normed Spaces",
+          "printed_page_start": 364,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "7.3",
+          "title": "Spectral Properties of Bounded Linear Operators",
+          "printed_page_start": 374,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "7.4",
+          "title": "Further Properties of Resolvent and Spectrum",
+          "printed_page_start": 379,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "7.5",
+          "title": "Use of Complex Analysis in Spectral Theory",
+          "printed_page_start": 386,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "7.6",
+          "title": "Banach Algebras",
+          "printed_page_start": 394,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "7.7",
+          "title": "Further Properties of Banach Algebras",
+          "printed_page_start": 398,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "8.1",
+          "title": "Compact Linear Operators on Normed Spaces",
+          "printed_page_start": 405,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "8.2",
+          "title": "Further Properties of Compact Linear Operators",
+          "printed_page_start": 412,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "8.6",
+          "title": "Further Theorems of Fredholm Type",
+          "printed_page_start": 442,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "8.7",
+          "title": "Fredholm Alternative",
+          "printed_page_start": 451,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "9.3",
+          "title": "Positive Operators",
+          "printed_page_start": 469,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "9.4",
+          "title": "Square Roots of a Positive Operator",
+          "printed_page_start": 476,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "9.5",
+          "title": "Projection Operators",
+          "printed_page_start": 480,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "9.6",
+          "title": "Further Properties of Projections",
+          "printed_page_start": 486,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "9.7",
+          "title": "Spectral Family",
+          "printed_page_start": 492,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "10.3",
+          "title": "Closed Linear Operators and Cldsures",
+          "printed_page_start": 535,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "10.4",
+          "title": "Spectral Properties of Self-Adjoint Linear Operators",
+          "printed_page_start": 541,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "10.5",
+          "title": "Spectral Representation of Unitary Operators",
+          "printed_page_start": 546,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "11.1",
+          "title": "Basic Ideas. States, Observables, Position Operator",
+          "printed_page_start": 572,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "11.3",
+          "title": "Time-Independent Schrodinger Equation",
+          "printed_page_start": 583,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "11.4",
+          "title": "Hamilton Operator",
+          "printed_page_start": 590,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "11.5",
+          "title": "Time-Dependent Schrodinger Equation",
+          "printed_page_start": 598,
+          "locator_status": "table_of_contents_inspected"
+        }
+      ],
+      "source_filename": "08_Functional_Analysis_Introductory functional analysis with applications.pdf"
+    },
+    {
+      "source_id": "RUDIN",
+      "page_scheme": "Printed page numbers from connected source's contents when reliably recoverable, never assumed equal to PDF viewer page index",
+      "source_navigation_status": "All main units captured; section extraction varies with scan/OCR quality. Missing printed-page anchors remain unverified, not fabricated.",
+      "sections": [
+        {
+          "ref": "1",
+          "title": "The Real and Complex Number Systems",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 1
+        },
+        {
+          "ref": "2",
+          "title": "Basic Topology",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 22
+        },
+        {
+          "ref": "3",
+          "title": "Numerical Sequences and Series",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 43
+        },
+        {
+          "ref": "4",
+          "title": "Continuity",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 76
+        },
+        {
+          "ref": "5",
+          "title": "Differentiation",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 94
+        },
+        {
+          "ref": "6",
+          "title": "The Riemann–Stieltjes Integral",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 110
+        },
+        {
+          "ref": "7",
+          "title": "Sequences and Series of Functions",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 132
+        },
+        {
+          "ref": "8",
+          "title": "Some Special Functions",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 159
+        },
+        {
+          "ref": "9",
+          "title": "Functions of Several Variables",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 190
+        },
+        {
+          "ref": "10",
+          "title": "Integration of Differential Forms",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 230
+        },
+        {
+          "ref": "11",
+          "title": "The Lebesgue Theory",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 282
+        }
+      ],
+      "subsections": [],
+      "source_filename": "07_Real_Analysis_Principles of Mathematical Analysis_5ed.pdf"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "MATH-LIMITS",
+      "parent_id": "MATH-ROOT",
+      "kind": "technical_investigation",
+      "question": "When does exchanging a limit with an operation give a wrong answer?",
+      "why": "Pointwise convergence alone does not permit interchange of integration and limit.",
+      "mechanism_explanation": "Pointwise convergence uses input-dependent thresholds, while uniform convergence controls every point simultaneously. Integration, differentiation and summation require suitable convergence hypotheses; Rudin gives explicit contrary examples.",
+      "status": "research_active",
+      "evidence_status": "source_section_inspected",
+      "source_sections": [
+        {
+          "source_id": "RUDIN",
+          "ref": "7",
+          "section": "7: Sequences and Series of Functions",
+          "pages": "Printed p. 132",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "inspected",
+          "locator_level": "source_section_inspected",
+          "why": "7: Sequences and Series of Functions · printed p. 132"
+        },
+        {
+          "source_id": "ROYDEN",
+          "ref": "4",
+          "section": "4: Lebesgue Integration",
+          "pages": "Printed p. 62",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "inspected",
+          "locator_level": "source_section_inspected",
+          "why": "4: Lebesgue Integration · printed p. 62"
+        }
+      ],
+      "term_ids": [
+        "math-t-0424",
+        "math-t-0423",
+        "math-t-0449"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "Pointwise convergence alone does not permit interchange of integration and limit.",
+          "mechanism": "Pointwise convergence uses input-dependent thresholds, while uniform convergence controls every point simultaneously. Integration, differentiation and summation require suitable convergence hypotheses; Rudin gives explicit contrary examples.",
+          "discriminating_observation": "Calculate integrals of a spiky pointwise-vanishing function sequence."
+        }
+      ]
+    },
+    {
+      "id": "MATH-COMPLETE",
+      "parent_id": "MATH-LIMITS",
+      "kind": "technical_investigation",
+      "question": "Why can successive approximations approach something outside the claimed space?",
+      "why": "Small differences do not establish that a limit belongs to a noncomplete domain.",
+      "mechanism_explanation": "Completeness is the property that Cauchy sequences converge within the space. Banach and Hilbert spaces retain limits needed for operator and fixed-point arguments.",
+      "status": "research_active",
+      "evidence_status": "table_of_contents_lead",
+      "source_sections": [
+        {
+          "source_id": "RUDIN",
+          "ref": "3",
+          "section": "3: Numerical Sequences and Series",
+          "pages": "Printed p. 43",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "3: Numerical Sequences and Series · printed p. 43"
+        },
+        {
+          "source_id": "KREYSZIG",
+          "ref": "1.4",
+          "section": "1.4: Convergence, Cauchy Sequence, Completeness",
+          "pages": "Printed p. 25",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "1.4: Convergence, Cauchy Sequence, Completeness · printed p. 25"
+        },
+        {
+          "source_id": "MUNKRES",
+          "ref": "7",
+          "section": "7: Complete Metric Spaces and Function Spaces",
+          "pages": "Printed p. 261",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "7: Complete Metric Spaces and Function Spaces · printed p. 261"
+        }
+      ],
+      "term_ids": [
+        "math-t-0375",
+        "math-t-0376",
+        "math-t-0498"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "Small differences do not establish that a limit belongs to a noncomplete domain.",
+          "mechanism": "Completeness is the property that Cauchy sequences converge within the space. Banach and Hilbert spaces retain limits needed for operator and fixed-point arguments.",
+          "discriminating_observation": "Take rational approximations to sqrt(2), contrasting Q with R."
+        }
+      ]
+    },
+    {
+      "id": "MATH-MEASURE",
+      "parent_id": "MATH-ROOT",
+      "kind": "technical_investigation",
+      "question": "Which collections can consistently be assigned size or probability?",
+      "why": "A definable collection does not automatically possess a countably additive measure.",
+      "mechanism_explanation": "Sigma-algebras encode permitted measurable events; countably additive measures assign size. Lebesgue's theory includes non-measurable set counterexamples showing a boundary to unrestricted intuitive volume.",
+      "status": "research_active",
+      "evidence_status": "source_section_inspected",
+      "source_sections": [
+        {
+          "source_id": "ROYDEN",
+          "ref": "2.2",
+          "section": "2.2: Outer-Measure",
+          "pages": "Printed p. 31",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "2.2: Outer-Measure · printed p. 31"
+        },
+        {
+          "source_id": "ROYDEN",
+          "ref": "2.6",
+          "section": "2.6: Vitali’s Example of a Non-measurable Set",
+          "pages": "Printed p. 45",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "inspected",
+          "locator_level": "source_section_inspected",
+          "why": "2.6: Vitali’s Example of a Non-measurable Set · printed p. 45"
+        },
+        {
+          "source_id": "HALMOS-SET",
+          "ref": "15",
+          "section": "15: The Axiom of Choice",
+          "pages": "Printed p. 49",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "15: The Axiom of Choice · printed p. 49"
+        }
+      ],
+      "term_ids": [
+        "math-t-0453",
+        "math-t-0459",
+        "math-t-0463"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "A definable collection does not automatically possess a countably additive measure.",
+          "mechanism": "Sigma-algebras encode permitted measurable events; countably additive measures assign size. Lebesgue's theory includes non-measurable set counterexamples showing a boundary to unrestricted intuitive volume.",
+          "discriminating_observation": "Compare length, counting measure and probability on the same measurable carrier."
+        }
+      ]
+    },
+    {
+      "id": "MATH-INTEGRAL",
+      "parent_id": "MATH-MEASURE",
+      "kind": "technical_investigation",
+      "question": "Why does Lebesgue integration allow some limit exchanges that Riemann reasoning cannot justify?",
+      "why": "A function spike can converge at each point while its integral behaves differently.",
+      "mechanism_explanation": "Monotone and dominated convergence use explicit hypotheses to move limits through integrals; measurable simple approximations build the integral from below.",
+      "status": "research_active",
+      "evidence_status": "source_section_inspected",
+      "source_sections": [
+        {
+          "source_id": "ROYDEN",
+          "ref": "4",
+          "section": "4: Lebesgue Integration",
+          "pages": "Printed p. 62",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "inspected",
+          "locator_level": "source_section_inspected",
+          "why": "4: Lebesgue Integration · printed p. 62"
+        },
+        {
+          "source_id": "RUDIN",
+          "ref": "7",
+          "section": "7: Sequences and Series of Functions",
+          "pages": "Printed p. 132",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "inspected",
+          "locator_level": "source_section_inspected",
+          "why": "7: Sequences and Series of Functions · printed p. 132"
+        }
+      ],
+      "term_ids": [
+        "math-t-0466",
+        "math-t-0470",
+        "math-t-0468"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "A function spike can converge at each point while its integral behaves differently.",
+          "mechanism": "Monotone and dominated convergence use explicit hypotheses to move limits through integrals; measurable simple approximations build the integral from below.",
+          "discriminating_observation": "Find a pointwise-convergent family that lacks a common integrable dominating function."
+        }
+      ]
+    },
+    {
+      "id": "MATH-FUNCTIONS",
+      "parent_id": "MATH-MEASURE",
+      "kind": "technical_investigation",
+      "question": "What happens if we treat functions themselves as points?",
+      "why": "Pointwise function equality is not the same as equality almost everywhere; weak convergence does not imply norm convergence.",
+      "mechanism_explanation": "Lp norms and Hilbert inner products give geometry to function classes; weak and strong convergence describe distinct observational limits. Functions differing almost everywhere may represent one Lp element.",
+      "status": "research_active",
+      "evidence_status": "table_of_contents_lead",
+      "source_sections": [
+        {
+          "source_id": "ROYDEN",
+          "ref": "7",
+          "section": "7: The Lp Spaces: Completeness and Approximation",
+          "pages": "Printed start unverified",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "7: The Lp Spaces: Completeness and Approximation"
+        },
+        {
+          "source_id": "ROYDEN",
+          "ref": "8",
+          "section": "8: The Lp Spaces: Duality, Weak Convergence, and Minimization",
+          "pages": "Printed start unverified",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "8: The Lp Spaces: Duality, Weak Convergence, and Minimization"
+        },
+        {
+          "source_id": "KREYSZIG",
+          "ref": "3",
+          "section": "3: Inner Product Spaces; Hilbert Spaces",
+          "pages": "Printed p. 127",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "3: Inner Product Spaces; Hilbert Spaces · printed p. 127"
+        }
+      ],
+      "term_ids": [
+        "math-t-0482",
+        "math-t-0499",
+        "math-t-0509"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "Pointwise function equality is not the same as equality almost everywhere; weak convergence does not imply norm convergence.",
+          "mechanism": "Lp norms and Hilbert inner products give geometry to function classes; weak and strong convergence describe distinct observational limits. Functions differing almost everywhere may represent one Lp element.",
+          "discriminating_observation": "Construct a norm-one orthonormal sequence weakly convergent to zero."
+        }
+      ]
+    },
+    {
+      "id": "MATH-OPERATOR",
+      "parent_id": "MATH-FUNCTIONS",
+      "kind": "technical_investigation",
+      "question": "Why are infinite-dimensional transformations not just enormous matrices?",
+      "why": "An operator may not be defined on all inputs; boundedness, dense domains and self-adjointness are substantive.",
+      "mechanism_explanation": "Hahn–Banach and bounded/closed graph theorems analyze linear functionals and operators. Unbounded operators have domains and spectra whose analysis requires more than finite-dimensional eigenvector intuition.",
+      "status": "research_active",
+      "evidence_status": "source_section_inspected",
+      "source_sections": [
+        {
+          "source_id": "KREYSZIG",
+          "ref": "4.2",
+          "section": "4.2: Hahn-Banach Theorem",
+          "pages": "Printed p. 213",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "inspected",
+          "locator_level": "source_section_inspected",
+          "why": "4.2: Hahn-Banach Theorem · printed p. 213"
+        },
+        {
+          "source_id": "KREYSZIG",
+          "ref": "10",
+          "section": "10: Unbounded Linear Operators in Hilbert Space finer §10.1 unverified, showing chapter 10",
+          "pages": "Printed start unverified",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "10: Unbounded Linear Operators in Hilbert Space finer §10.1 unverified, showing chapter 10"
+        },
+        {
+          "source_id": "ROYDEN",
+          "ref": "17",
+          "section": "17: Continuous Linear Operators Between Banach Spaces",
+          "pages": "Printed p. 337",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "17: Continuous Linear Operators Between Banach Spaces · printed p. 337"
+        }
+      ],
+      "term_ids": [
+        "math-t-0513",
+        "math-t-0530",
+        "math-t-0521"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "An operator may not be defined on all inputs; boundedness, dense domains and self-adjointness are substantive.",
+          "mechanism": "Hahn–Banach and bounded/closed graph theorems analyze linear functionals and operators. Unbounded operators have domains and spectra whose analysis requires more than finite-dimensional eigenvector intuition.",
+          "discriminating_observation": "Show why differentiation fails to be bounded on a naive L2 normed domain."
+        }
+      ]
+    },
+    {
+      "id": "MATH-FIXED",
+      "parent_id": "MATH-OPERATOR",
+      "kind": "technical_investigation",
+      "question": "When does repeated iteration certify that a unique solution exists?",
+      "why": "Continuous maps need not contract or have uniquely attracting fixed points.",
+      "mechanism_explanation": "Banach's contraction theorem couples a complete metric space with an invariant contraction to guarantee a unique fixed point and convergent iteration.",
+      "status": "research_active",
+      "evidence_status": "source_section_inspected",
+      "source_sections": [
+        {
+          "source_id": "KREYSZIG",
+          "ref": "5.1",
+          "section": "5.1: Banach Fixed Point Theorem",
+          "pages": "Printed p. 299",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "inspected",
+          "locator_level": "source_section_inspected",
+          "why": "5.1: Banach Fixed Point Theorem · printed p. 299"
+        },
+        {
+          "source_id": "RUDIN",
+          "ref": "9",
+          "section": "9: Functions of Several Variables",
+          "pages": "Printed p. 190",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "9: Functions of Several Variables · printed p. 190"
+        }
+      ],
+      "term_ids": [
+        "math-t-0518",
+        "math-t-0442",
+        "math-t-0376"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "Continuous maps need not contract or have uniquely attracting fixed points.",
+          "mechanism": "Banach's contraction theorem couples a complete metric space with an invariant contraction to guarantee a unique fixed point and convergent iteration.",
+          "discriminating_observation": "Compare x→x/2 with a noncontracting iteration."
+        }
+      ]
+    },
+    {
+      "id": "MATH-HOLO",
+      "parent_id": "MATH-ROOT",
+      "kind": "technical_investigation",
+      "question": "Why is complex differentiability so restrictive?",
+      "why": "A function can be real differentiable in two variables but not holomorphic.",
+      "mechanism_explanation": "Holomorphicity links the Cauchy–Riemann equations, contour integrals and analytic rigidity; Cauchy's formula recovers interior values from boundary data.",
+      "status": "research_active",
+      "evidence_status": "source_section_inspected",
+      "source_sections": [
+        {
+          "source_id": "AHLFORS",
+          "ref": "2",
+          "section": "2: Complex Functions",
+          "pages": "Printed start unverified",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "2: Complex Functions"
+        },
+        {
+          "source_id": "AHLFORS",
+          "ref": "4",
+          "section": "4: Complex Integration",
+          "pages": "Printed start unverified",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "inspected",
+          "locator_level": "source_section_inspected",
+          "why": "4: Complex Integration"
+        }
+      ],
+      "term_ids": [
+        "math-t-0545",
+        "math-t-0556",
+        "math-t-0547"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "A function can be real differentiable in two variables but not holomorphic.",
+          "mechanism": "Holomorphicity links the Cauchy–Riemann equations, contour integrals and analytic rigidity; Cauchy's formula recovers interior values from boundary data.",
+          "discriminating_observation": "Contrast z² and complex conjugation under Cauchy–Riemann."
+        }
+      ]
+    },
+    {
+      "id": "MATH-RESIDUES",
+      "parent_id": "MATH-HOLO",
+      "kind": "technical_investigation",
+      "question": "How can a contour around singularities compute a difficult real integral?",
+      "why": "The residue theorem does not justify an arbitrary real-to-complex contour with poles on its boundary.",
+      "mechanism_explanation": "Laurent coefficients and residues turn closed-contour integrals into local singular contributions, subject to decay, branch and region assumptions.",
+      "status": "research_active",
+      "evidence_status": "source_section_inspected",
+      "source_sections": [
+        {
+          "source_id": "AHLFORS",
+          "ref": "4",
+          "section": "4: Complex Integration",
+          "pages": "Printed start unverified",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "inspected",
+          "locator_level": "source_section_inspected",
+          "why": "4: Complex Integration"
+        },
+        {
+          "source_id": "AHLFORS",
+          "ref": "5",
+          "section": "5: Series and Product Developments",
+          "pages": "Printed p. 175",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "5: Series and Product Developments · printed p. 175"
+        }
+      ],
+      "term_ids": [
+        "math-t-0567",
+        "math-t-0565",
+        "math-t-0563"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "The residue theorem does not justify an arbitrary real-to-complex contour with poles on its boundary.",
+          "mechanism": "Laurent coefficients and residues turn closed-contour integrals into local singular contributions, subject to decay, branch and region assumptions.",
+          "discriminating_observation": "Compare a rational integral with and without an admissible decaying semicircular contour."
+        }
+      ]
+    }
+  ],
+  "source_coverage": {
+    "AHLFORS": {
+      "chapter_units": 8,
+      "section_locators": 0,
+      "chapters_with_printed_page": 2,
+      "evidence": "Table of contents indexed; section OCR candidate vs verified title/page states explicitly identified"
+    },
+    "ROYDEN": {
+      "chapter_units": 22,
+      "section_locators": 91,
+      "chapters_with_printed_page": 19,
+      "evidence": "Table of contents indexed; section OCR candidate vs verified title/page states explicitly identified"
+    },
+    "KREYSZIG": {
+      "chapter_units": 11,
+      "section_locators": 65,
+      "chapters_with_printed_page": 2,
+      "evidence": "Table of contents indexed; section OCR candidate vs verified title/page states explicitly identified"
+    },
+    "RUDIN": {
+      "chapter_units": 11,
+      "section_locators": 0,
+      "chapters_with_printed_page": 11,
+      "evidence": "Table of contents indexed; section OCR candidate vs verified title/page states explicitly identified"
+    }
+  },
+  "source_inspection_notes": [
+    {
+      "source_id": "AHLFORS",
+      "source_region": "Chapter 4 Cauchy formula and residues",
+      "observation": "Contour integration reconstructs holomorphic values; residues encode isolated singular contributions.",
+      "status": "selected_passage_examined_not_reproduced"
+    },
+    {
+      "source_id": "ROYDEN",
+      "source_region": "Chapter 4 convergence of Lebesgue integrals",
+      "observation": "Monotone and dominated convergence provide conditional exchange guarantees.",
+      "status": "selected_passage_examined_not_reproduced"
+    },
+    {
+      "source_id": "KREYSZIG",
+      "source_region": "§4.2 Hahn–Banach and §5.1 Banach fixed point",
+      "observation": "Extension of functionals differs from contraction-based constructive existence.",
+      "status": "selected_passage_examined_not_reproduced"
+    },
+    {
+      "source_id": "RUDIN",
+      "source_region": "Chapter 7 uniform convergence",
+      "observation": "A pointwise-vanishing sequence can have integrals that fail to converge accordingly.",
+      "status": "selected_passage_examined_not_reproduced"
+    }
+  ]
+}

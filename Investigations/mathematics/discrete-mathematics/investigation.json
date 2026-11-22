@@ -1,0 +1,2499 @@
+{
+  "id": "mathematics/discrete-mathematics",
+  "kind": "mathematics_research_family",
+  "title": "Mathematics — Discrete mathematics",
+  "updated": "2026-11-22",
+  "parent_atlas": "../investigation.json",
+  "scope": "Arithmetic, posets, counting, graphs and finite certificates.",
+  "sources": [
+    {
+      "id": "HARDY",
+      "title": "An Introduction to the Theory of Numbers",
+      "authors": [
+        "G. H. Hardy",
+        "E. M. Wright"
+      ],
+      "edition": "Sixth Edition, revised by D. R. Heath-Brown and J. H. Silverman",
+      "role": "Prime distribution, congruences, Diophantine equations, multiplicative functions, partitions and elliptic curves",
+      "url": "https://drive.google.com/file/d/1-IfqhSU9Ro7oppMhY4ta0dBWpd7gU509/view",
+      "source_folder": "https://drive.google.com/drive/folders/1Qx_V7FAz2EhbmCAijHMr18swPu5GLyZr",
+      "limitations": [
+        "Printed page and PDF index must not be conflated; scanned and retypeset editions vary.",
+        "A TOC title is a retrieval lead, not a read proof or successful calculation."
+      ]
+    },
+    {
+      "id": "DIESTEL",
+      "title": "Graph Theory",
+      "authors": [
+        "Reinhard Diestel"
+      ],
+      "edition": "Sixth Edition as stated on title page; check source edition when citing theorem labels",
+      "role": "Connectivity, matching, flow, planar graphs, coloring, extremal and random graphs, minors and treewidth",
+      "url": "https://drive.google.com/file/d/1OaIGUFGzOcHMyUGanaP1G98izbHWYETC/view",
+      "source_folder": "https://drive.google.com/drive/folders/1Qx_V7FAz2EhbmCAijHMr18swPu5GLyZr",
+      "limitations": [
+        "Printed page and PDF index must not be conflated; scanned and retypeset editions vary.",
+        "A TOC title is a retrieval lead, not a read proof or successful calculation."
+      ]
+    },
+    {
+      "id": "STANLEY",
+      "title": "Enumerative Combinatorics, Volume 1",
+      "authors": [
+        "Richard P. Stanley"
+      ],
+      "edition": "Second Edition",
+      "role": "Counting operators, inclusion-exclusion, posets and Möbius inversion, rational generating functions and transfer matrices",
+      "url": "https://drive.google.com/file/d/1-Virg2U0k4ZDVtbYH7PlRAkLvHhC9yR3/view",
+      "source_folder": "https://drive.google.com/drive/folders/1Qx_V7FAz2EhbmCAijHMr18swPu5GLyZr",
+      "limitations": [
+        "Printed page and PDF index must not be conflated; scanned and retypeset editions vary.",
+        "A TOC title is a retrieval lead, not a read proof or successful calculation."
+      ]
+    }
+  ],
+  "book_landscaplets": [
+    {
+      "source_id": "HARDY",
+      "page_scheme": "Printed page numbers from connected source's contents when reliably recoverable, never assumed equal to PDF viewer page index",
+      "source_navigation_status": "All main units captured; section extraction varies with scan/OCR quality. Missing printed-page anchors remain unverified, not fabricated.",
+      "sections": [
+        {
+          "ref": "I",
+          "title": "The Series of Primes (1)",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset"
+        },
+        {
+          "ref": "II",
+          "title": "The Series of Primes (2)",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset"
+        },
+        {
+          "ref": "III",
+          "title": "Farey Series and a Theorem of Minkowski",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset"
+        },
+        {
+          "ref": "IV",
+          "title": "Irrational Numbers",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 45
+        },
+        {
+          "ref": "V",
+          "title": "Congruences and Residues",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 57
+        },
+        {
+          "ref": "VI",
+          "title": "Fermat's Theorem and Its Consequences",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset"
+        },
+        {
+          "ref": "VII",
+          "title": "General Properties of Congruences",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 103
+        },
+        {
+          "ref": "VIII",
+          "title": "Congruences to Composite Moduli",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset"
+        },
+        {
+          "ref": "IX",
+          "title": "The Representation of Numbers by Decimals",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset"
+        },
+        {
+          "ref": "X",
+          "title": "Continued Fractions",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset"
+        },
+        {
+          "ref": "XI",
+          "title": "Approximation of Irrationals by Rationals",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 198
+        },
+        {
+          "ref": "XII",
+          "title": "The Fundamental Theorem of Arithmetic in Quadratic Fields",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset"
+        },
+        {
+          "ref": "XIII",
+          "title": "Some Diophantine Equations",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 245
+        },
+        {
+          "ref": "XIV",
+          "title": "Quadratic Fields (1)",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 264
+        },
+        {
+          "ref": "XV",
+          "title": "Quadratic Fields (2)",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 283
+        },
+        {
+          "ref": "XVI",
+          "title": "The Arithmetical Functions",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 302
+        },
+        {
+          "ref": "XVII",
+          "title": "Generating Functions of Arithmetical Functions",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 318
+        },
+        {
+          "ref": "XVIII",
+          "title": "The Order of Magnitude of Arithmetical Functions",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 342
+        },
+        {
+          "ref": "XIX",
+          "title": "Partitions",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 361
+        },
+        {
+          "ref": "XX",
+          "title": "Representation by Two or Four Squares",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset"
+        },
+        {
+          "ref": "XXI",
+          "title": "Representation by Cubes and Higher Powers",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset"
+        },
+        {
+          "ref": "XXII",
+          "title": "The Series of Primes (3)",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset"
+        },
+        {
+          "ref": "XXIII",
+          "title": "The Series of Primes (4)",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset"
+        },
+        {
+          "ref": "XXIV",
+          "title": "Geometry of Numbers",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 523
+        },
+        {
+          "ref": "XXV",
+          "title": "Elliptic Curves",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 549
+        }
+      ],
+      "subsections": [
+        {
+          "ref": "4.1",
+          "title": "Some generalities",
+          "printed_page_start": 45,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "4.2",
+          "title": "Numbers known to be irrational",
+          "printed_page_start": 46,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "4.3",
+          "title": "The theorem of Pythagoras and its generalizations",
+          "printed_page_start": 47,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "4.4",
+          "title": "The use of the fundamental theorem in the proofs of Theorems 43-45",
+          "printed_page_start": 49,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "4.5",
+          "title": "A historical digression",
+          "printed_page_start": 50,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "4.6",
+          "title": "Geometrical proof of the irrationality of /5",
+          "printed_page_start": 52,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "4.7",
+          "title": "Some more irrational numbers",
+          "printed_page_start": 53,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "5.1",
+          "title": "Highest common divisor and least common multiple",
+          "printed_page_start": 57,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "5.2",
+          "title": "Congruences and classes of residues",
+          "printed_page_start": 58,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "5.3",
+          "title": "Elementary properties of congruences",
+          "printed_page_start": 60,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "5.4",
+          "title": "Linear congruences",
+          "printed_page_start": 60,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "5.5",
+          "title": "Euler's function ¢(m)",
+          "printed_page_start": 63,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "5.6",
+          "title": "Applications of Theorems 59 and 61 to trigonometrical sums",
+          "printed_page_start": 65,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "5.7",
+          "title": "A general principle",
+          "printed_page_start": 70,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "5.8",
+          "title": "Construction of the regular polygon of 17 sides 71 VI. FERMAT'S THEOREM AND ITS CONSEQUENCES",
+          "printed_page_start": 78,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "6.1",
+          "title": "Fermat's theorem",
+          "printed_page_start": 78,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "6.2",
+          "title": "Some properties of binomial coefficients",
+          "printed_page_start": 79,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "6.3",
+          "title": "A second proof of Theorem 72 81 6.4. Proof of Theorem 22",
+          "printed_page_start": 82,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "6.5",
+          "title": "Quadratic residues",
+          "printed_page_start": 83,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "6.6",
+          "title": "Special cases of Theorem 79: Wilson's theorem",
+          "printed_page_start": 85,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "6.7",
+          "title": "Elementary properties of quadratic residues and non-residues",
+          "printed_page_start": 87,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "6.8",
+          "title": "The order of a (mod m)",
+          "printed_page_start": 88,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "6.9",
+          "title": "The converse of Fermat's theorem",
+          "printed_page_start": 89,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "6.10",
+          "title": "Divisibility of 2p- 1 - 1 by p2",
+          "printed_page_start": 91,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "6.11",
+          "title": "Gauss's lemma and the quadratic character of 2",
+          "printed_page_start": 92,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "6.12",
+          "title": "The law of reciprocity",
+          "printed_page_start": 95,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "6.13",
+          "title": "Proof of the law of reciprocity",
+          "printed_page_start": 97,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "6.14",
+          "title": "Tests for primality",
+          "printed_page_start": 98,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "6.15",
+          "title": "Factors of Mersenne numbers; a theorem of Euler",
+          "printed_page_start": 100,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "7.1",
+          "title": "Roots of congruences",
+          "printed_page_start": 103,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "7.2",
+          "title": "Integral polynomials and identical congruences",
+          "printed_page_start": 103,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "7.3",
+          "title": "Divisibility of polynomials (mod m)",
+          "printed_page_start": 105,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "7.4",
+          "title": "Roots of congruences to a prime modulus",
+          "printed_page_start": 106,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "10.10",
+          "title": "A lemma",
+          "printed_page_start": 180,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "10.11",
+          "title": "Equivalent numbers",
+          "printed_page_start": 181,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "10.12",
+          "title": "Periodic continued fractions",
+          "printed_page_start": 184,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "10.13",
+          "title": "Some special quadratic surds",
+          "printed_page_start": 187,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "10.14",
+          "title": "The series of Fibonacci and Lucas",
+          "printed_page_start": 190,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "10.15",
+          "title": "Approximation by convergents",
+          "printed_page_start": 194,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "11.1",
+          "title": "Statement of the problem",
+          "printed_page_start": 198,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "11.2",
+          "title": "Generalities concerning the problem",
+          "printed_page_start": 199,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "11.3",
+          "title": "An argument of Dirichlet",
+          "printed_page_start": 201,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "11.4",
+          "title": "Orders of approximation",
+          "printed_page_start": 202,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "11.5",
+          "title": "Algebraic and transcendental numbers",
+          "printed_page_start": 203,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "11.6",
+          "title": "The existence of transcendental numbers",
+          "printed_page_start": 205,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "11.7",
+          "title": "Liouville's theorem and the construction of transcendental numbers",
+          "printed_page_start": 206,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "11.8",
+          "title": "The measure of the closest approximations to an arbitrary irrational",
+          "printed_page_start": 208,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "11.9",
+          "title": "Another theorem concerning the convergents to a continued fraction",
+          "printed_page_start": 210,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "11.10",
+          "title": "Continued fractions with bounded quotients",
+          "printed_page_start": 212,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "11.11",
+          "title": "Further theorems concerning approximation",
+          "printed_page_start": 216,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "11.12",
+          "title": "Simultaneous approximation",
+          "printed_page_start": 217,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "11.13",
+          "title": "The transcendence of a",
+          "printed_page_start": 218,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "11.14",
+          "title": "The transcendence of 7r",
+          "printed_page_start": 223,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "12.1",
+          "title": "Algebraic numbers and integers",
+          "printed_page_start": 229,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "12.2",
+          "title": "The rational integers, the Gaussian integers, and the integers of k(p)",
+          "printed_page_start": 230,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "12.3",
+          "title": "Euclid's algorithm",
+          "printed_page_start": 231,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "12.4",
+          "title": "Application of Euclid's algorithm to the fundamental theorem in k(1)",
+          "printed_page_start": 232,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "12.5",
+          "title": "Historical remarks on Euclid's algorithm and the fundamental theorem",
+          "printed_page_start": 234,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "12.6",
+          "title": "Properties of the Gaussian integers",
+          "printed_page_start": 235,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "12.7",
+          "title": "Primes in k(i)",
+          "printed_page_start": 236,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "12.8",
+          "title": "The fundamental theorem of arithmetic in k(i)",
+          "printed_page_start": 238,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "12.9",
+          "title": "The integers of k(p)",
+          "printed_page_start": 241,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "13.1",
+          "title": "Fermat's last theorem",
+          "printed_page_start": 245,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "13.2",
+          "title": "The equation x2 + y2 = z2",
+          "printed_page_start": 245,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "13.3",
+          "title": "The equation x4 +y4 = z4",
+          "printed_page_start": 247,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "13.5",
+          "title": "The equation x3+y3=3z3",
+          "printed_page_start": 253,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "13.6",
+          "title": "The expression of a rational as a sum of rational cubes",
+          "printed_page_start": 254,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "13.7",
+          "title": "The equation x3+y3+z3=13",
+          "printed_page_start": 257,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "14.1",
+          "title": "Algebraic fields",
+          "printed_page_start": 264,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "14.2",
+          "title": "Algebraic numbers and integers; primitive polynomials",
+          "printed_page_start": 265,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "14.3",
+          "title": "The general quadratic field k(./m)",
+          "printed_page_start": 267,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "14.4",
+          "title": "Unities and primes",
+          "printed_page_start": 268,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "14.5",
+          "title": "The unities of k(J2)",
+          "printed_page_start": 270,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "14.6",
+          "title": "Fields in which the fundamental theorem is false",
+          "printed_page_start": 273,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "14.7",
+          "title": "Complex Euclidean fields",
+          "printed_page_start": 274,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "14.8",
+          "title": "Real Euclidean fields",
+          "printed_page_start": 276,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "14.9",
+          "title": "Real Euclidean fields (continued)",
+          "printed_page_start": 279,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "15.1",
+          "title": "The primes of k(i)",
+          "printed_page_start": 283,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "15.2",
+          "title": "Fermat's theorem in k(i)",
+          "printed_page_start": 285,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "15.3",
+          "title": "The primes of k(p)",
+          "printed_page_start": 286,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "15.4",
+          "title": "The primes of k(J2) and k(,15)",
+          "printed_page_start": 287,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "15.5",
+          "title": "Lucas's test for the primality of the Mersenne number M4n+3",
+          "printed_page_start": 290,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "15.6",
+          "title": "General remarks on the arithmetic of quadratic fields",
+          "printed_page_start": 293,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "15.7",
+          "title": "Ideals in a quadratic field",
+          "printed_page_start": 295,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "15.8",
+          "title": "Other fields",
+          "printed_page_start": 299,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "16.2",
+          "title": "A further proof of Theorem",
+          "printed_page_start": 63,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "17.1",
+          "title": "The generation of arithmetical functions by means of Dirichlet series",
+          "printed_page_start": 318,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "17.2",
+          "title": "The zeta function",
+          "printed_page_start": 320,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "17.3",
+          "title": "The behaviour of c(s) when s -+ 1",
+          "printed_page_start": 321,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "17.5",
+          "title": "The generating functions of some special arithmetical functions",
+          "printed_page_start": 326,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "17.6",
+          "title": "The analytical interpretation of the Mobius formula",
+          "printed_page_start": 328,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "17.7",
+          "title": "The function A(n)",
+          "printed_page_start": 331,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "17.8",
+          "title": "Further examples of generating functions",
+          "printed_page_start": 334,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "17.9",
+          "title": "The generating function of r(n)",
+          "printed_page_start": 337,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "17.10",
+          "title": "Generating functions of other types",
+          "printed_page_start": 338,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "18.1",
+          "title": "The order of d(n)",
+          "printed_page_start": 342,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "18.2",
+          "title": "The average order of d(n)",
+          "printed_page_start": 347,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "18.3",
+          "title": "The order of a (n)",
+          "printed_page_start": 350,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "18.4",
+          "title": "The order of 0(n)",
+          "printed_page_start": 352,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "18.5",
+          "title": "The average order of 0(n)",
+          "printed_page_start": 353,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "18.6",
+          "title": "The number of squarefree numbers",
+          "printed_page_start": 355,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "18.7",
+          "title": "The order of r(n)",
+          "printed_page_start": 356,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "19.1",
+          "title": "The general problem of additive arithmetic",
+          "printed_page_start": 361,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "19.2",
+          "title": "Partitions of numbers",
+          "printed_page_start": 361,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "19.3",
+          "title": "The generating function ofp(n)",
+          "printed_page_start": 362,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "19.4",
+          "title": "Other generating functions",
+          "printed_page_start": 365,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "19.5",
+          "title": "Two theorems of Euler",
+          "printed_page_start": 366,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "19.6",
+          "title": "Further algebraical identities",
+          "printed_page_start": 369,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "19.7",
+          "title": "Another formula for F(x)",
+          "printed_page_start": 371,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "19.8",
+          "title": "A theorem of Jacobi",
+          "printed_page_start": 372,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "19.9",
+          "title": "Special cases of Jacobi's identity",
+          "printed_page_start": 375,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "19.10",
+          "title": "Applications of Theorem 353",
+          "printed_page_start": 378,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "19.11",
+          "title": "Elementary proof of Theorem 358",
+          "printed_page_start": 379,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "19.12",
+          "title": "Congruence properties of p(n)",
+          "printed_page_start": 380,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "19.13",
+          "title": "The Rogers-Ramanujan identities",
+          "printed_page_start": 383,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "19.14",
+          "title": "Proof of Theorems 362 and 363",
+          "printed_page_start": 386,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "19.15",
+          "title": "Ramanujan's continued fraction",
+          "printed_page_start": 389,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "20.1",
+          "title": "Waring's problem: the numbers g(k) and G(k)",
+          "printed_page_start": 393,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "20.2",
+          "title": "Squares",
+          "printed_page_start": 395,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "20.3",
+          "title": "Second proof of Theorem 366",
+          "printed_page_start": 395,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "20.4",
+          "title": "Third and fourth proofs of Theorem 366",
+          "printed_page_start": 397,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "20.5",
+          "title": "The four-square theorem",
+          "printed_page_start": 399,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "20.6",
+          "title": "Quaternions",
+          "printed_page_start": 401,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "20.9",
+          "title": "Prime quaternions and the proof of Theorem",
+          "printed_page_start": 370,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "20.11",
+          "title": "Lemmas for the third proof of Theorem",
+          "printed_page_start": 369,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "22.17",
+          "title": "Proof of Theorem",
+          "printed_page_start": 335,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "23.1",
+          "title": "Kronecker's theorem in one dimension",
+          "printed_page_start": 501,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "23.2",
+          "title": "Proofs of the one-dimensional theorem",
+          "printed_page_start": 502,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "23.3",
+          "title": "The problem of the reflected ray",
+          "printed_page_start": 505,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "23.4",
+          "title": "Statement of the general theorem",
+          "printed_page_start": 508,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "23.5",
+          "title": "The two forms of the theorem",
+          "printed_page_start": 510,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "23.6",
+          "title": "An illustration",
+          "printed_page_start": 512,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "23.7",
+          "title": "Lettenmeyer's proof of the theorem",
+          "printed_page_start": 512,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "23.8",
+          "title": "Estermann's proof of the theorem",
+          "printed_page_start": 514,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "23.9",
+          "title": "Bohr's proof of the theorem",
+          "printed_page_start": 517,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "23.10",
+          "title": "Uniform distribution",
+          "printed_page_start": 520,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "24.1",
+          "title": "Introduction and restatement of the fundamental theorem",
+          "printed_page_start": 523,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "24.2",
+          "title": "Simple applications",
+          "printed_page_start": 524,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "24.3",
+          "title": "Arithmetical proof of Theorem 448",
+          "printed_page_start": 527,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "24.4",
+          "title": "Best possible inequalities",
+          "printed_page_start": 529,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "24.5",
+          "title": "The best possible inequality for i 2 + 172",
+          "printed_page_start": 530,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "24.6",
+          "title": "The best possible inequality for I:; I",
+          "printed_page_start": 532,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "24.7",
+          "title": "A theorem concerning non-homogeneous forms",
+          "printed_page_start": 534,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "24.8",
+          "title": "Arithmetical proof of Theorem 455",
+          "printed_page_start": 536,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "24.9",
+          "title": "Tchebotaref's theorem",
+          "printed_page_start": 537,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "24.10",
+          "title": "A converse of Minkowski's Theorem 446",
+          "printed_page_start": 540,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "25.1",
+          "title": "The congruent number problem",
+          "printed_page_start": 549,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "25.2",
+          "title": "The addition law on an elliptic curve",
+          "printed_page_start": 550,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "25.3",
+          "title": "Other equations that define elliptic curves",
+          "printed_page_start": 556,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "25.4",
+          "title": "Points of finite order",
+          "printed_page_start": 559,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "25.5",
+          "title": "The group of rational points",
+          "printed_page_start": 564,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "25.6",
+          "title": "The group of points modul p.",
+          "printed_page_start": 573,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "25.7",
+          "title": "Integer points on elliptic curves",
+          "printed_page_start": 574,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "25.8",
+          "title": "The L-series of an elliptic curve",
+          "printed_page_start": 578,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "25.9",
+          "title": "Points of finite order and modular curves",
+          "printed_page_start": 582,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "25.10",
+          "title": "Elliptic curves and Fermat's last theorem",
+          "printed_page_start": 586,
+          "locator_status": "table_of_contents_inspected"
+        }
+      ],
+      "source_filename": "11_Number_Theory_An Introduction to the Theory of Numbers, Sixth Edition.pdf"
+    },
+    {
+      "source_id": "DIESTEL",
+      "page_scheme": "Printed page numbers from connected source's contents when reliably recoverable, never assumed equal to PDF viewer page index",
+      "source_navigation_status": "All main units captured; section extraction varies with scan/OCR quality. Missing printed-page anchors remain unverified, not fabricated.",
+      "sections": [
+        {
+          "ref": "1",
+          "title": "The Basics",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 1
+        },
+        {
+          "ref": "2",
+          "title": "Matching, Covering and Packing",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 37
+        },
+        {
+          "ref": "3",
+          "title": "Connectivity",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 63
+        },
+        {
+          "ref": "4",
+          "title": "Planar Graphs",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 93
+        },
+        {
+          "ref": "5",
+          "title": "Colouring",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 123
+        },
+        {
+          "ref": "6",
+          "title": "Flows",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 155
+        },
+        {
+          "ref": "7",
+          "title": "Extremal Graph Theory",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 179
+        },
+        {
+          "ref": "8",
+          "title": "Infinite Graphs",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 227
+        },
+        {
+          "ref": "9",
+          "title": "Ramsey Theory for Graphs",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 303
+        },
+        {
+          "ref": "10",
+          "title": "Hamilton Cycles",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 323
+        },
+        {
+          "ref": "11",
+          "title": "Random Graphs",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 339
+        },
+        {
+          "ref": "12",
+          "title": "Graph Minors",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 363
+        }
+      ],
+      "subsections": [
+        {
+          "ref": "1.1",
+          "title": "Graphs*",
+          "printed_page_start": 2,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "1.2",
+          "title": "The degree of a vertex*",
+          "printed_page_start": 5,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "1.3",
+          "title": "Paths and cycles*",
+          "printed_page_start": 6,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "1.4",
+          "title": "Connectivity*",
+          "printed_page_start": 10,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "1.5",
+          "title": "Trees and forests*",
+          "printed_page_start": 13,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "1.6",
+          "title": "Bipartite graphs*",
+          "printed_page_start": 17,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "1.7",
+          "title": "Contraction and minors*",
+          "printed_page_start": 18,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "1.8",
+          "title": "Euler tours*",
+          "printed_page_start": 21,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "1.9",
+          "title": "Some linear algebra",
+          "printed_page_start": 23,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "1.10",
+          "title": "Other notions of graphs",
+          "printed_page_start": 27,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "2.1",
+          "title": "Matching in bipartite graphs*",
+          "printed_page_start": 38,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "2.2",
+          "title": "Matching in general graphs(⇤)",
+          "printed_page_start": 43,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "2.3",
+          "title": "The Erd˝os-P´osa theorem",
+          "printed_page_start": 47,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "2.4",
+          "title": "Tree packing and arboricity",
+          "printed_page_start": 50,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "2.5",
+          "title": "Path covers",
+          "printed_page_start": 54,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "3.1",
+          "title": "2-Connected graphs and subgraphs*",
+          "printed_page_start": 63,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "3.2",
+          "title": "The structure of 3-connected graphs(⇤)",
+          "printed_page_start": 66,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "3.3",
+          "title": "Menger’s theorem*",
+          "printed_page_start": 71,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "3.4",
+          "title": "A-paths and Mader’s theorem",
+          "printed_page_start": 76,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "3.5",
+          "title": "Linking pairs of vertices(⇤)",
+          "printed_page_start": 79,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "4.1",
+          "title": "Topological prerequisites*",
+          "printed_page_start": 94,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "4.2",
+          "title": "Plane graphs*",
+          "printed_page_start": 96,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "4.3",
+          "title": "Drawings",
+          "printed_page_start": 102,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "4.4",
+          "title": "Planar graphs: Kuratowski’s theorem*",
+          "printed_page_start": 106,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "4.5",
+          "title": "Algebraic planarity criteria",
+          "printed_page_start": 111,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "4.6",
+          "title": "Plane duality",
+          "printed_page_start": 114,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "5.1",
+          "title": "Colouring maps and planar graphs*",
+          "printed_page_start": 124,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "5.2",
+          "title": "Colouring vertices*",
+          "printed_page_start": 126,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "5.3",
+          "title": "Colouring edges*",
+          "printed_page_start": 131,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "5.4",
+          "title": "List colouring",
+          "printed_page_start": 134,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "5.5",
+          "title": "Perfect graphs",
+          "printed_page_start": 139,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "5.6",
+          "title": "-bounded graph properties",
+          "printed_page_start": 146,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "6.1",
+          "title": "Circulations(⇤)",
+          "printed_page_start": 156,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "6.2",
+          "title": "Flows in networks*",
+          "printed_page_start": 158,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "6.3",
+          "title": "Group-valued flows",
+          "printed_page_start": 161,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "6.4",
+          "title": "k-Flows for small k",
+          "printed_page_start": 165,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "6.5",
+          "title": "Flow-colouring duality",
+          "printed_page_start": 167,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "6.6",
+          "title": "Tutte’s flow conjectures",
+          "printed_page_start": 171,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "7.1",
+          "title": "Subgraphs*",
+          "printed_page_start": 180,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "7.2",
+          "title": "Minors(⇤)",
+          "printed_page_start": 185,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "7.3",
+          "title": "Hadwiger’s conjecture*",
+          "printed_page_start": 189,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "7.4",
+          "title": "Szemer´edi’s regularity lemma",
+          "printed_page_start": 192,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "7.5",
+          "title": "Applying the regularity lemma",
+          "printed_page_start": 200,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "7.6",
+          "title": "Two regularity tools",
+          "printed_page_start": 206,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "7.7",
+          "title": "Szemer´edi’s theorem",
+          "printed_page_start": 216,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "8.1",
+          "title": "Basic notions, facts and techniques*",
+          "printed_page_start": 228,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "8.2",
+          "title": "Paths, trees, and ends(⇤)",
+          "printed_page_start": 237,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "8.3",
+          "title": "Homogeneous and universal graphs*",
+          "printed_page_start": 246,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "8.4",
+          "title": "Connectivity and matching",
+          "printed_page_start": 249,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "8.5",
+          "title": "Recursive structures",
+          "printed_page_start": 260,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "8.6",
+          "title": "Graphs with ends: the complete picture",
+          "printed_page_start": 263,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "8.7",
+          "title": "The topological cycle space",
+          "printed_page_start": 272,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "8.8",
+          "title": "Infinite graphs as limits of finite ones",
+          "printed_page_start": 277,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "9.1",
+          "title": "Ramsey’s original theorems*",
+          "printed_page_start": 304,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "9.2",
+          "title": "Ramsey numbers(⇤)",
+          "printed_page_start": 307,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "9.3",
+          "title": "Induced Ramsey theorems",
+          "printed_page_start": 310,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "9.4",
+          "title": "Ramsey properties and connectivity(⇤)",
+          "printed_page_start": 316,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "10.1",
+          "title": "Sucient conditions*",
+          "printed_page_start": 323,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "10.2",
+          "title": "Hamilton cycles and degree sequences",
+          "printed_page_start": 327,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "10.3",
+          "title": "Hamilton cycles in the square of a graph",
+          "printed_page_start": 330,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "11.1",
+          "title": "The notion of a random graph*",
+          "printed_page_start": 340,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "11.2",
+          "title": "The probabilistic method*",
+          "printed_page_start": 345,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "11.3",
+          "title": "Properties of almost all graphs*",
+          "printed_page_start": 348,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "11.4",
+          "title": "Threshold functions and second moments",
+          "printed_page_start": 351,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "12.1",
+          "title": "Well-quasi-ordering(⇤)",
+          "printed_page_start": 364,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "12.2",
+          "title": "The graph minor theorem for trees",
+          "printed_page_start": 365,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "12.3",
+          "title": "Tree-decompositions(⇤)",
+          "printed_page_start": 367,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "12.4",
+          "title": "Tree-width(⇤)",
+          "printed_page_start": 371,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "12.5",
+          "title": "Tangles",
+          "printed_page_start": 376,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "12.6",
+          "title": "Tree-decompositions and forbidden minors",
+          "printed_page_start": 391,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "12.7",
+          "title": "The graph minor theorem(⇤)",
+          "printed_page_start": 396,
+          "locator_status": "table_of_contents_inspected"
+        }
+      ],
+      "source_filename": "06_Graph_Theory_Graph Theory_6ed.pdf"
+    },
+    {
+      "source_id": "STANLEY",
+      "page_scheme": "Printed page numbers from connected source's contents when reliably recoverable, never assumed equal to PDF viewer page index",
+      "source_navigation_status": "All main units captured; section extraction varies with scan/OCR quality. Missing printed-page anchors remain unverified, not fabricated.",
+      "sections": [
+        {
+          "ref": "1",
+          "title": "What Is Enumerative Combinatorics?",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 1
+        },
+        {
+          "ref": "2",
+          "title": "Sieve Methods",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 195
+        },
+        {
+          "ref": "3",
+          "title": "Partially Ordered Sets",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 241
+        },
+        {
+          "ref": "4",
+          "title": "Rational Generating Functions",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 464
+        }
+      ],
+      "subsections": [
+        {
+          "ref": "1.1",
+          "title": "How to Count",
+          "printed_page_start": 1,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "1.2",
+          "title": "Sets and Multisets",
+          "printed_page_start": 15,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "1.3",
+          "title": "Cycles and Inversions",
+          "printed_page_start": 22,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "1.4",
+          "title": "Descents",
+          "printed_page_start": 31,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "1.5",
+          "title": "Geometric Representations of Permutations",
+          "printed_page_start": 41,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "1.7",
+          "title": "Permutations of Multisets",
+          "printed_page_start": 54,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "1.8",
+          "title": "Partition Identities",
+          "printed_page_start": 61,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "1.9",
+          "title": "The Twelvefold Way",
+          "printed_page_start": 71,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "1.10",
+          "title": "Two q-Analogues of Permutations",
+          "printed_page_start": 80,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "2.1",
+          "title": "Inclusion-Exclusion",
+          "printed_page_start": 195,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "2.2",
+          "title": "Examples and Special Cases",
+          "printed_page_start": 198,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "2.3",
+          "title": "Permutations with Restricted Position",
+          "printed_page_start": 202,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "2.4",
+          "title": "Ferrers Boards",
+          "printed_page_start": 207,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "2.5",
+          "title": "V -Partitions and Unimodal Sequences",
+          "printed_page_start": 209,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "2.6",
+          "title": "Involutions",
+          "printed_page_start": 212,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "2.7",
+          "title": "Determinants",
+          "printed_page_start": 215,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "3.1",
+          "title": "Basic Concepts",
+          "printed_page_start": 241,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "3.2",
+          "title": "New Posets from Old",
+          "printed_page_start": 246,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "3.3",
+          "title": "Lattices",
+          "printed_page_start": 248,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "3.4",
+          "title": "Distributive Lattices",
+          "printed_page_start": 252,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "3.5",
+          "title": "Chains in Distributive Lattices",
+          "printed_page_start": 256,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "3.6",
+          "title": "Incidence Algebras",
+          "printed_page_start": 261,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "3.7",
+          "title": "The Möbius Inversion Formula",
+          "printed_page_start": 264,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "3.8",
+          "title": "Techniques for Computing Möbius Functions",
+          "printed_page_start": 266,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "3.9",
+          "title": "Lattices and Their Möbius Functions",
+          "printed_page_start": 274,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "3.10",
+          "title": "The Möbius Function of a Semimodular Lattice",
+          "printed_page_start": 277,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "3.11",
+          "title": "Hyperplane Arrangements",
+          "printed_page_start": 280,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "3.12",
+          "title": "Zeta Polynomials",
+          "printed_page_start": 291,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "3.13",
+          "title": "Rank Selection",
+          "printed_page_start": 293,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "3.14",
+          "title": "R-Labelings",
+          "printed_page_start": 295,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "3.15",
+          "title": "(P,ω)-Partitions",
+          "printed_page_start": 298,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "3.16",
+          "title": "Eulerian Posets",
+          "printed_page_start": 310,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "3.17",
+          "title": "The cd-Index of an Eulerian Poset",
+          "printed_page_start": 315,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "3.18",
+          "title": "Binomial Posets and Generating Functions",
+          "printed_page_start": 320,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "3.19",
+          "title": "An Application to Permutation Enumeration",
+          "printed_page_start": 327,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "3.20",
+          "title": "Promotion and Evacuation",
+          "printed_page_start": 330,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "3.21",
+          "title": "Differential Posets",
+          "printed_page_start": 334,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "4.1",
+          "title": "Rational Power Series in One Variable",
+          "printed_page_start": 464,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "4.2",
+          "title": "Further Ramifications",
+          "printed_page_start": 467,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "4.3",
+          "title": "Polynomials",
+          "printed_page_start": 471,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "4.4",
+          "title": "Quasipolynomials",
+          "printed_page_start": 474,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "4.5",
+          "title": "Linear Homogeneous Diophantine Equations",
+          "printed_page_start": 475,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "4.6",
+          "title": "Applications",
+          "printed_page_start": 488,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "4.7",
+          "title": "The Transfer-Matrix Method",
+          "printed_page_start": 500,
+          "locator_status": "table_of_contents_inspected"
+        }
+      ],
+      "source_filename": "05_Combinatorics_Enumerative combinatorics, vol. 1.pdf"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "MATH-ORDER",
+      "parent_id": "MATH-SETS",
+      "kind": "technical_investigation",
+      "question": "How can partial comparison generate lattice and inversion structures?",
+      "why": "A directed relation becomes an order only with specified reflexivity, antisymmetry and transitivity.",
+      "mechanism_explanation": "Partial orders need not compare every pair; their intervals and incidence algebras permit cumulative aggregation and Möbius inversion. Maximal elements are distinct from greatest elements.",
+      "status": "research_active",
+      "evidence_status": "table_of_contents_lead",
+      "source_sections": [
+        {
+          "source_id": "STANLEY",
+          "ref": "3.1",
+          "section": "3.1: Basic Concepts",
+          "pages": "Printed p. 241",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "3.1: Basic Concepts · printed p. 241"
+        },
+        {
+          "source_id": "STANLEY",
+          "ref": "3.3",
+          "section": "3.3: Lattices",
+          "pages": "Printed p. 248",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "3.3: Lattices · printed p. 248"
+        },
+        {
+          "source_id": "HALMOS-SET",
+          "ref": "14",
+          "section": "14: Order",
+          "pages": "Printed p. 45",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "14: Order · printed p. 45"
+        }
+      ],
+      "term_ids": [
+        "math-t-0049",
+        "math-t-0273",
+        "math-t-0276"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "A directed relation becomes an order only with specified reflexivity, antisymmetry and transitivity.",
+          "mechanism": "Partial orders need not compare every pair; their intervals and incidence algebras permit cumulative aggregation and Möbius inversion. Maximal elements are distinct from greatest elements.",
+          "discriminating_observation": "Use the divisors of twelve as a poset and compute greatest lower bounds."
+        }
+      ]
+    },
+    {
+      "id": "MATH-ARITH",
+      "parent_id": "MATH-ROOT",
+      "kind": "technical_investigation",
+      "question": "What can modular arithmetic reveal without searching every integer?",
+      "why": "Satisfying several residue constraints need not solve the original Diophantine equation.",
+      "mechanism_explanation": "Divisibility, congruences, prime distribution and multiplicative arithmetic functions compress number-theoretic problems. Congruence obstructions are powerful negative certificates, not sufficient positive witnesses.",
+      "status": "research_active",
+      "evidence_status": "table_of_contents_lead",
+      "source_sections": [
+        {
+          "source_id": "HARDY",
+          "ref": "V",
+          "section": "V: Congruences and Residues",
+          "pages": "Printed p. 57",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "V: Congruences and Residues · printed p. 57"
+        },
+        {
+          "source_id": "HARDY",
+          "ref": "XVI",
+          "section": "XVI: The Arithmetical Functions",
+          "pages": "Printed p. 302",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "XVI: The Arithmetical Functions · printed p. 302"
+        },
+        {
+          "source_id": "HARDY",
+          "ref": "XXIV",
+          "section": "XXIV: Geometry of Numbers",
+          "pages": "Printed p. 523",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "XXIV: Geometry of Numbers · printed p. 523"
+        }
+      ],
+      "term_ids": [
+        "math-t-0209",
+        "math-t-0204",
+        "math-t-0211",
+        "math-t-0233"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "Satisfying several residue constraints need not solve the original Diophantine equation.",
+          "mechanism": "Divisibility, congruences, prime distribution and multiplicative arithmetic functions compress number-theoretic problems. Congruence obstructions are powerful negative certificates, not sufficient positive witnesses.",
+          "discriminating_observation": "Rule out a Diophantine solution modulo a small prime and contrast a modularly feasible non-solution."
+        }
+      ]
+    },
+    {
+      "id": "MATH-RATIONAL",
+      "parent_id": "MATH-ARITH",
+      "kind": "technical_investigation",
+      "question": "Why do certain fractions approximate irrational values unusually well?",
+      "why": "Truncating decimal digits is not generally optimal for a fixed denominator budget.",
+      "mechanism_explanation": "Continued fractions and Farey sequences expose rational approximation under denominator constraints; geometry of numbers relates this to lattices.",
+      "status": "research_active",
+      "evidence_status": "source_section_inspected",
+      "source_sections": [
+        {
+          "source_id": "HARDY",
+          "ref": "III",
+          "section": "III: Farey Series and a Theorem of Minkowski",
+          "pages": "Printed start unverified",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "III: Farey Series and a Theorem of Minkowski"
+        },
+        {
+          "source_id": "HARDY",
+          "ref": "X",
+          "section": "X: Continued Fractions",
+          "pages": "Printed start unverified",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "inspected",
+          "locator_level": "source_section_inspected",
+          "why": "X: Continued Fractions"
+        },
+        {
+          "source_id": "HARDY",
+          "ref": "XI",
+          "section": "XI: Approximation of Irrationals by Rationals",
+          "pages": "Printed p. 198",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "XI: Approximation of Irrationals by Rationals · printed p. 198"
+        }
+      ],
+      "term_ids": [
+        "math-t-0223",
+        "math-t-0224",
+        "math-t-0225"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "Truncating decimal digits is not generally optimal for a fixed denominator budget.",
+          "mechanism": "Continued fractions and Farey sequences expose rational approximation under denominator constraints; geometry of numbers relates this to lattices.",
+          "discriminating_observation": "Compare continued-fraction convergents and decimals for sqrt(2)."
+        }
+      ]
+    },
+    {
+      "id": "MATH-COUNT",
+      "parent_id": "MATH-ROOT",
+      "kind": "technical_investigation",
+      "question": "How can we count astronomically many objects without enumerating them?",
+      "why": "Labeled boxes and unlabeled boxes can have radically different counts.",
+      "mechanism_explanation": "Bijections, inclusion–exclusion, the twelvefold way and recurrences encode combinatorial classes. Labeling, order and repetition are part of the question's contract.",
+      "status": "research_active",
+      "evidence_status": "table_of_contents_lead",
+      "source_sections": [
+        {
+          "source_id": "STANLEY",
+          "ref": "1.9",
+          "section": "1.9: The Twelvefold Way",
+          "pages": "Printed p. 71",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "1.9: The Twelvefold Way · printed p. 71"
+        },
+        {
+          "source_id": "STANLEY",
+          "ref": "2.1",
+          "section": "2.1: Inclusion-Exclusion",
+          "pages": "Printed p. 195",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "2.1: Inclusion-Exclusion · printed p. 195"
+        },
+        {
+          "source_id": "FELLER",
+          "ref": "II",
+          "section": "II: Elements of Combinatorial Analysis",
+          "pages": "Printed start unverified",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "II: Elements of Combinatorial Analysis"
+        }
+      ],
+      "term_ids": [
+        "math-t-0245",
+        "math-t-0265",
+        "math-t-0259"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "Labeled boxes and unlabeled boxes can have radically different counts.",
+          "mechanism": "Bijections, inclusion–exclusion, the twelvefold way and recurrences encode combinatorial classes. Labeling, order and repetition are part of the question's contract.",
+          "discriminating_observation": "Count ball-in-box assignments with labels and restrictions changed one at a time."
+        }
+      ]
+    },
+    {
+      "id": "MATH-MOBIUS",
+      "parent_id": "MATH-COUNT",
+      "kind": "technical_investigation",
+      "question": "How can totals over subsets or divisors be inverted?",
+      "why": "It is not ordinary numerical reciprocal inversion; it depends on a locally finite ordering.",
+      "mechanism_explanation": "An incidence algebra provides convolution over comparable pairs; Möbius inversion recovers local contributions from cumulative values. Divisor inversion is one special poset.",
+      "status": "research_active",
+      "evidence_status": "source_section_inspected",
+      "source_sections": [
+        {
+          "source_id": "STANLEY",
+          "ref": "3.6",
+          "section": "3.6: Incidence Algebras",
+          "pages": "Printed p. 261",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "3.6: Incidence Algebras · printed p. 261"
+        },
+        {
+          "source_id": "STANLEY",
+          "ref": "3.7",
+          "section": "3.7: The Möbius Inversion Formula",
+          "pages": "Printed p. 264",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "inspected",
+          "locator_level": "source_section_inspected",
+          "why": "3.7: The Möbius Inversion Formula · printed p. 264"
+        },
+        {
+          "source_id": "HARDY",
+          "ref": "XVI",
+          "section": "XVI: The Arithmetical Functions",
+          "pages": "Printed p. 302",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "XVI: The Arithmetical Functions · printed p. 302"
+        }
+      ],
+      "term_ids": [
+        "math-t-0275",
+        "math-t-0276",
+        "math-t-0049"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "It is not ordinary numerical reciprocal inversion; it depends on a locally finite ordering.",
+          "mechanism": "An incidence algebra provides convolution over comparable pairs; Möbius inversion recovers local contributions from cumulative values. Divisor inversion is one special poset.",
+          "discriminating_observation": "Invert cumulative counts over subsets, then over integer divisors."
+        }
+      ]
+    },
+    {
+      "id": "MATH-GENFUN",
+      "parent_id": "MATH-COUNT",
+      "kind": "technical_investigation",
+      "question": "Can matrix powers count every string accepted by an automaton?",
+      "why": "An encoding only counts intended objects if states/transitions preserve the relevant restrictions.",
+      "mechanism_explanation": "Generating functions encode counts as coefficients. Stanley's transfer-matrix method encodes allowed finite-state transitions as directed paths, counted through matrix powers; formal power series need not analytically converge.",
+      "status": "research_active",
+      "evidence_status": "source_section_inspected",
+      "source_sections": [
+        {
+          "source_id": "STANLEY",
+          "ref": "4.7",
+          "section": "4.7: The Transfer-Matrix Method",
+          "pages": "Printed p. 500",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "inspected",
+          "locator_level": "source_section_inspected",
+          "why": "4.7: The Transfer-Matrix Method · printed p. 500"
+        },
+        {
+          "source_id": "STANLEY",
+          "ref": "4.1",
+          "section": "4.1: Rational Power Series in One Variable",
+          "pages": "Printed p. 464",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "4.1: Rational Power Series in One Variable · printed p. 464"
+        },
+        {
+          "source_id": "FELLER",
+          "ref": "XI",
+          "section": "XI: Integral-Valued Variables; Generating Functions",
+          "pages": "Printed p. 264",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "XI: Integral-Valued Variables; Generating Functions · printed p. 264"
+        }
+      ],
+      "term_ids": [
+        "math-t-0283",
+        "math-t-0290",
+        "math-t-0287"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "An encoding only counts intended objects if states/transitions preserve the relevant restrictions.",
+          "mechanism": "Generating functions encode counts as coefficients. Stanley's transfer-matrix method encodes allowed finite-state transitions as directed paths, counted through matrix powers; formal power series need not analytically converge.",
+          "discriminating_observation": "Count short binary strings avoiding a forbidden pattern by both enumeration and a transition matrix."
+        }
+      ]
+    },
+    {
+      "id": "MATH-GRAPH",
+      "parent_id": "MATH-ROOT",
+      "kind": "technical_investigation",
+      "question": "How do many local relationships create global connectivity and constraints?",
+      "why": "A shortest path does not prove high capacity or multiple independent routes.",
+      "mechanism_explanation": "Paths, matchings, flows, colorings and minor structure solve different global questions about one graph. Choosing the correct edge semantics is a necessary modeling step.",
+      "status": "research_active",
+      "evidence_status": "table_of_contents_lead",
+      "source_sections": [
+        {
+          "source_id": "DIESTEL",
+          "ref": "1",
+          "section": "1: The Basics",
+          "pages": "Printed p. 1",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "1: The Basics · printed p. 1"
+        },
+        {
+          "source_id": "DIESTEL",
+          "ref": "2",
+          "section": "2: Matching, Covering and Packing",
+          "pages": "Printed p. 37",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "2: Matching, Covering and Packing · printed p. 37"
+        },
+        {
+          "source_id": "DIESTEL",
+          "ref": "3",
+          "section": "3: Connectivity",
+          "pages": "Printed p. 63",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "3: Connectivity · printed p. 63"
+        }
+      ],
+      "term_ids": [
+        "math-t-0296",
+        "math-t-0306",
+        "math-t-0319",
+        "math-t-0328"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "A shortest path does not prove high capacity or multiple independent routes.",
+          "mechanism": "Paths, matchings, flows, colorings and minor structure solve different global questions about one graph. Choosing the correct edge semantics is a necessary modeling step.",
+          "discriminating_observation": "Reinterpret the same edges as capacity, conflict and communication links."
+        }
+      ]
+    },
+    {
+      "id": "MATH-FLOW",
+      "parent_id": "MATH-GRAPH",
+      "kind": "technical_investigation",
+      "question": "How can a small bottleneck certify a global network limitation?",
+      "why": "Many drawn paths can reuse one capacity-limiting edge or vertex.",
+      "mechanism_explanation": "Flow capacity and cut size connect via max-flow/min-cut duality; Menger-style statements relate disjoint paths to separators under appropriate graph semantics.",
+      "status": "research_active",
+      "evidence_status": "table_of_contents_lead",
+      "source_sections": [
+        {
+          "source_id": "DIESTEL",
+          "ref": "3.3",
+          "section": "3.3: Menger’s theorem*",
+          "pages": "Printed p. 71",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "3.3: Menger’s theorem* · printed p. 71"
+        },
+        {
+          "source_id": "DIESTEL",
+          "ref": "6",
+          "section": "6: Flows",
+          "pages": "Printed p. 155",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "6: Flows · printed p. 155"
+        }
+      ],
+      "term_ids": [
+        "math-t-0330",
+        "math-t-0329",
+        "math-t-0325"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "Many drawn paths can reuse one capacity-limiting edge or vertex.",
+          "mechanism": "Flow capacity and cut size connect via max-flow/min-cut duality; Menger-style statements relate disjoint paths to separators under appropriate graph semantics.",
+          "discriminating_observation": "Construct a network with many walks but a cut of capacity two."
+        }
+      ]
+    },
+    {
+      "id": "MATH-MINORS",
+      "parent_id": "MATH-GRAPH",
+      "kind": "technical_investigation",
+      "question": "Why are some huge graphs tractable while smaller dense graphs aren't?",
+      "why": "Sparse edges alone do not guarantee low treewidth; minor and induced subgraph are different operations.",
+      "mechanism_explanation": "Graph minors and tree decompositions identify global structure captured by bounded-width local interfaces. Forbidden minors constrain possible graph families.",
+      "status": "research_active",
+      "evidence_status": "table_of_contents_lead",
+      "source_sections": [
+        {
+          "source_id": "DIESTEL",
+          "ref": "12.6",
+          "section": "12.6: Tree-decompositions and forbidden minors",
+          "pages": "Printed p. 391",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "12.6: Tree-decompositions and forbidden minors · printed p. 391"
+        },
+        {
+          "source_id": "DIESTEL",
+          "ref": "12.7",
+          "section": "12.7: The graph minor theorem(⇤)",
+          "pages": "Printed p. 396",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "12.7: The graph minor theorem(⇤) · printed p. 396"
+        }
+      ],
+      "term_ids": [
+        "math-t-0345",
+        "math-t-0348",
+        "math-t-0347"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "Sparse edges alone do not guarantee low treewidth; minor and induced subgraph are different operations.",
+          "mechanism": "Graph minors and tree decompositions identify global structure captured by bounded-width local interfaces. Forbidden minors constrain possible graph families.",
+          "discriminating_observation": "Compare dynamic programming on a long path and a clique."
+        }
+      ]
+    }
+  ],
+  "source_coverage": {
+    "HARDY": {
+      "chapter_units": 25,
+      "section_locators": 156,
+      "chapters_with_printed_page": 13,
+      "evidence": "Table of contents indexed; section OCR candidate vs verified title/page states explicitly identified"
+    },
+    "DIESTEL": {
+      "chapter_units": 12,
+      "section_locators": 71,
+      "chapters_with_printed_page": 12,
+      "evidence": "Table of contents indexed; section OCR candidate vs verified title/page states explicitly identified"
+    },
+    "STANLEY": {
+      "chapter_units": 4,
+      "section_locators": 44,
+      "chapters_with_printed_page": 4,
+      "evidence": "Table of contents indexed; section OCR candidate vs verified title/page states explicitly identified"
+    }
+  },
+  "source_inspection_notes": [
+    {
+      "source_id": "HARDY",
+      "source_region": "Chapter X continued fractions",
+      "observation": "Continued fractions encode systematic rational approximation.",
+      "status": "selected_passage_examined_not_reproduced"
+    },
+    {
+      "source_id": "DIESTEL",
+      "source_region": "Chapter 12 graph minors and treewidth",
+      "observation": "Excluded minor structures relate to graph width and decomposition.",
+      "status": "selected_passage_examined_not_reproduced"
+    },
+    {
+      "source_id": "STANLEY",
+      "source_region": "§4.7 transfer-matrix method",
+      "observation": "State transitions and linear-algebra powers encode combinatorial path counts.",
+      "status": "selected_passage_examined_not_reproduced"
+    }
+  ]
+}

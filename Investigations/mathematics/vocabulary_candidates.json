@@ -1,0 +1,5805 @@
+{
+  "kind": "noncanonical_vocabulary_candidates",
+  "domain_id": "mathematics",
+  "as_of": "2026-11-22",
+  "purpose": "Independent but currently unlinked terms from the old broad glossary. Not loaded by default. Reuse permanent IDs if promoted into active research; no obligation to curate all candidates.",
+  "terms": [
+    {
+      "id": "math-t-0002",
+      "label": "element",
+      "aliases": [
+        "member"
+      ],
+      "category": "Logic, proof and set foundations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0003",
+      "label": "subset",
+      "aliases": [],
+      "category": "Logic, proof and set foundations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0001"
+      ]
+    },
+    {
+      "id": "math-t-0004",
+      "label": "power set",
+      "aliases": [],
+      "category": "Logic, proof and set foundations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0001"
+      ]
+    },
+    {
+      "id": "math-t-0005",
+      "label": "ordered pair",
+      "aliases": [],
+      "category": "Logic, proof and set foundations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0006",
+      "label": "Cartesian product",
+      "aliases": [],
+      "category": "Logic, proof and set foundations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0009",
+      "label": "equivalence class",
+      "aliases": [],
+      "category": "Logic, proof and set foundations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0010",
+      "label": "partition of a set",
+      "aliases": [],
+      "category": "Logic, proof and set foundations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0012",
+      "label": "domain",
+      "aliases": [],
+      "category": "Logic, proof and set foundations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0013",
+      "label": "codomain",
+      "aliases": [],
+      "category": "Logic, proof and set foundations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0014",
+      "label": "image of a function",
+      "aliases": [],
+      "category": "Logic, proof and set foundations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0015",
+      "label": "preimage",
+      "aliases": [],
+      "category": "Logic, proof and set foundations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0016",
+      "label": "injective function",
+      "aliases": [
+        "injection"
+      ],
+      "category": "Logic, proof and set foundations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0017",
+      "label": "surjective function",
+      "aliases": [
+        "surjection"
+      ],
+      "category": "Logic, proof and set foundations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0018",
+      "label": "bijective function",
+      "aliases": [
+        "bijection"
+      ],
+      "category": "Logic, proof and set foundations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0019",
+      "label": "function composition",
+      "aliases": [],
+      "category": "Logic, proof and set foundations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0011"
+      ]
+    },
+    {
+      "id": "math-t-0020",
+      "label": "identity map",
+      "aliases": [],
+      "category": "Logic, proof and set foundations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0022",
+      "label": "logical implication",
+      "aliases": [],
+      "category": "Logic, proof and set foundations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0023",
+      "label": "logical equivalence",
+      "aliases": [],
+      "category": "Logic, proof and set foundations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0024",
+      "label": "universal quantifier",
+      "aliases": [],
+      "category": "Logic, proof and set foundations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0025",
+      "label": "existential quantifier",
+      "aliases": [],
+      "category": "Logic, proof and set foundations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0027",
+      "label": "proof by contradiction",
+      "aliases": [],
+      "category": "Logic, proof and set foundations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0028",
+      "label": "proof by contraposition",
+      "aliases": [],
+      "category": "Logic, proof and set foundations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0029",
+      "label": "mathematical induction",
+      "aliases": [],
+      "category": "Logic, proof and set foundations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0784"
+      ]
+    },
+    {
+      "id": "math-t-0030",
+      "label": "strong induction",
+      "aliases": [],
+      "category": "Logic, proof and set foundations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0031",
+      "label": "well-ordering principle",
+      "aliases": [],
+      "category": "Logic, proof and set foundations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0036",
+      "label": "well-ordering theorem",
+      "aliases": [],
+      "category": "Logic, proof and set foundations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0037"
+      ]
+    },
+    {
+      "id": "math-t-0038",
+      "label": "ordinal number",
+      "aliases": [],
+      "category": "Logic, proof and set foundations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0039",
+      "label": "cardinal number",
+      "aliases": [],
+      "category": "Logic, proof and set foundations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0040",
+      "label": "countability",
+      "aliases": [],
+      "category": "Logic, proof and set foundations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0041",
+      "label": "uncountability",
+      "aliases": [],
+      "category": "Logic, proof and set foundations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0042",
+      "label": "Cantor diagonal argument",
+      "aliases": [],
+      "category": "Logic, proof and set foundations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0043",
+      "label": "Schroeder-Bernstein theorem",
+      "aliases": [],
+      "category": "Logic, proof and set foundations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0044",
+      "label": "finite set",
+      "aliases": [],
+      "category": "Logic, proof and set foundations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0045",
+      "label": "infinite set",
+      "aliases": [],
+      "category": "Logic, proof and set foundations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0046",
+      "label": "uncountable set",
+      "aliases": [],
+      "category": "Logic, proof and set foundations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0047",
+      "label": "Peano axioms",
+      "aliases": [],
+      "category": "Logic, proof and set foundations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0048",
+      "label": "ordered set",
+      "aliases": [],
+      "category": "Logic, proof and set foundations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0050",
+      "label": "maximal element",
+      "aliases": [],
+      "category": "Logic, proof and set foundations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0051",
+      "label": "minimal element",
+      "aliases": [],
+      "category": "Logic, proof and set foundations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0052",
+      "label": "least upper bound",
+      "aliases": [
+        "supremum"
+      ],
+      "category": "Logic, proof and set foundations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0053",
+      "label": "greatest lower bound",
+      "aliases": [
+        "infimum"
+      ],
+      "category": "Logic, proof and set foundations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0054",
+      "label": "field",
+      "aliases": [],
+      "category": "Linear spaces and transformations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0056",
+      "label": "subspace",
+      "aliases": [],
+      "category": "Linear spaces and transformations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0057",
+      "label": "linear independence",
+      "aliases": [],
+      "category": "Linear spaces and transformations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0058",
+      "label": "span",
+      "aliases": [],
+      "category": "Linear spaces and transformations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0059",
+      "label": "basis",
+      "aliases": [],
+      "category": "Linear spaces and transformations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0055",
+        "math-t-0060"
+      ]
+    },
+    {
+      "id": "math-t-0060",
+      "label": "dimension",
+      "aliases": [],
+      "category": "Linear spaces and transformations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0059"
+      ]
+    },
+    {
+      "id": "math-t-0061",
+      "label": "finite-dimensional space",
+      "aliases": [],
+      "category": "Linear spaces and transformations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0062",
+      "label": "infinite-dimensional space",
+      "aliases": [],
+      "category": "Linear spaces and transformations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0063",
+      "label": "linear combination",
+      "aliases": [],
+      "category": "Linear spaces and transformations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0065",
+      "label": "matrix representation",
+      "aliases": [],
+      "category": "Linear spaces and transformations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0064",
+        "math-t-0819"
+      ]
+    },
+    {
+      "id": "math-t-0067",
+      "label": "similarity transformation",
+      "aliases": [],
+      "category": "Linear spaces and transformations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0068",
+      "label": "kernel",
+      "aliases": [
+        "null space"
+      ],
+      "category": "Linear spaces and transformations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0064"
+      ]
+    },
+    {
+      "id": "math-t-0069",
+      "label": "image",
+      "aliases": [
+        "range"
+      ],
+      "category": "Linear spaces and transformations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0070",
+      "label": "rank",
+      "aliases": [],
+      "category": "Linear spaces and transformations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0071",
+      "label": "nullity",
+      "aliases": [],
+      "category": "Linear spaces and transformations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0073",
+      "label": "quotient vector space",
+      "aliases": [],
+      "category": "Linear spaces and transformations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0074",
+      "label": "direct sum",
+      "aliases": [],
+      "category": "Linear spaces and transformations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0077",
+      "label": "annihilator",
+      "aliases": [],
+      "category": "Linear spaces and transformations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0078",
+      "label": "tensor product",
+      "aliases": [],
+      "category": "Linear spaces and transformations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0079",
+      "label": "bilinear form",
+      "aliases": [],
+      "category": "Linear spaces and transformations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0080",
+      "label": "multilinear form",
+      "aliases": [],
+      "category": "Linear spaces and transformations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0081",
+      "label": "alternating form",
+      "aliases": [],
+      "category": "Linear spaces and transformations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0082",
+      "label": "determinant",
+      "aliases": [],
+      "category": "Linear spaces and transformations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0083",
+      "label": "eigenvalue",
+      "aliases": [
+        "proper value"
+      ],
+      "category": "Linear spaces and transformations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0064"
+      ]
+    },
+    {
+      "id": "math-t-0084",
+      "label": "eigenvector",
+      "aliases": [],
+      "category": "Linear spaces and transformations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0085",
+      "label": "characteristic polynomial",
+      "aliases": [],
+      "category": "Linear spaces and transformations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0086",
+      "label": "minimal polynomial",
+      "aliases": [],
+      "category": "Linear spaces and transformations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0087",
+      "label": "diagonalization",
+      "aliases": [],
+      "category": "Linear spaces and transformations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0089",
+      "label": "invariant subspace",
+      "aliases": [],
+      "category": "Linear spaces and transformations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0090",
+      "label": "projection",
+      "aliases": [],
+      "category": "Linear spaces and transformations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0091",
+      "label": "orthogonal projection",
+      "aliases": [],
+      "category": "Linear spaces and transformations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0092"
+      ]
+    },
+    {
+      "id": "math-t-0092",
+      "label": "inner product",
+      "aliases": [],
+      "category": "Linear spaces and transformations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0091"
+      ]
+    },
+    {
+      "id": "math-t-0093",
+      "label": "norm",
+      "aliases": [],
+      "category": "Linear spaces and transformations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0094",
+      "label": "orthonormal basis",
+      "aliases": [],
+      "category": "Linear spaces and transformations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0100"
+      ]
+    },
+    {
+      "id": "math-t-0095",
+      "label": "adjoint operator",
+      "aliases": [],
+      "category": "Linear spaces and transformations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0098",
+      "label": "unitary operator",
+      "aliases": [],
+      "category": "Linear spaces and transformations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0099",
+      "label": "orthogonal operator",
+      "aliases": [],
+      "category": "Linear spaces and transformations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0101",
+      "label": "singular value decomposition",
+      "aliases": [
+        "SVD"
+      ],
+      "category": "Linear spaces and transformations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0102",
+      "label": "polar decomposition",
+      "aliases": [],
+      "category": "Linear spaces and transformations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0103",
+      "label": "matrix exponential",
+      "aliases": [],
+      "category": "Linear spaces and transformations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0146"
+      ]
+    },
+    {
+      "id": "math-t-0104",
+      "label": "matrix logarithm",
+      "aliases": [],
+      "category": "Linear spaces and transformations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0105",
+      "label": "quadratic form",
+      "aliases": [],
+      "category": "Linear spaces and transformations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0106",
+      "label": "positive-definite matrix",
+      "aliases": [],
+      "category": "Linear spaces and transformations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0107",
+      "label": "binary operation",
+      "aliases": [],
+      "category": "Groups, symmetries and representations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0108",
+      "label": "monoid",
+      "aliases": [],
+      "category": "Groups, symmetries and representations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0109",
+      "label": "semigroup",
+      "aliases": [],
+      "category": "Groups, symmetries and representations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0111",
+      "label": "abelian group",
+      "aliases": [],
+      "category": "Groups, symmetries and representations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0112",
+      "label": "nonabelian group",
+      "aliases": [],
+      "category": "Groups, symmetries and representations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0113",
+      "label": "subgroup",
+      "aliases": [],
+      "category": "Groups, symmetries and representations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0110"
+      ]
+    },
+    {
+      "id": "math-t-0114",
+      "label": "cyclic group",
+      "aliases": [],
+      "category": "Groups, symmetries and representations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0115",
+      "label": "generator",
+      "aliases": [],
+      "category": "Groups, symmetries and representations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0116",
+      "label": "group presentation",
+      "aliases": [],
+      "category": "Groups, symmetries and representations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0117",
+      "label": "permutation group",
+      "aliases": [],
+      "category": "Groups, symmetries and representations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0118",
+      "label": "symmetric group",
+      "aliases": [],
+      "category": "Groups, symmetries and representations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0119",
+      "label": "alternating group",
+      "aliases": [],
+      "category": "Groups, symmetries and representations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0123",
+      "label": "orbit-stabilizer theorem",
+      "aliases": [],
+      "category": "Groups, symmetries and representations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0124",
+      "label": "coset",
+      "aliases": [],
+      "category": "Groups, symmetries and representations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0125",
+      "label": "left coset",
+      "aliases": [],
+      "category": "Groups, symmetries and representations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0126",
+      "label": "right coset",
+      "aliases": [],
+      "category": "Groups, symmetries and representations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0128",
+      "label": "quotient group",
+      "aliases": [],
+      "category": "Groups, symmetries and representations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0110",
+        "math-t-0127"
+      ]
+    },
+    {
+      "id": "math-t-0130",
+      "label": "group isomorphism",
+      "aliases": [],
+      "category": "Groups, symmetries and representations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0131",
+      "label": "isomorphism theorem",
+      "aliases": [],
+      "category": "Groups, symmetries and representations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0132",
+      "label": "automorphism",
+      "aliases": [],
+      "category": "Groups, symmetries and representations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0133",
+      "label": "conjugacy class",
+      "aliases": [],
+      "category": "Groups, symmetries and representations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0134",
+      "label": "center of a group",
+      "aliases": [],
+      "category": "Groups, symmetries and representations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0135",
+      "label": "centralizer",
+      "aliases": [],
+      "category": "Groups, symmetries and representations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0136",
+      "label": "normalizer",
+      "aliases": [],
+      "category": "Groups, symmetries and representations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0137",
+      "label": "class equation",
+      "aliases": [],
+      "category": "Groups, symmetries and representations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0138",
+      "label": "Sylow theorem",
+      "aliases": [],
+      "category": "Groups, symmetries and representations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0139",
+      "label": "free group",
+      "aliases": [],
+      "category": "Groups, symmetries and representations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0140",
+      "label": "Todd-Coxeter algorithm",
+      "aliases": [],
+      "category": "Groups, symmetries and representations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0141",
+      "label": "matrix group",
+      "aliases": [],
+      "category": "Groups, symmetries and representations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0142",
+      "label": "linear group",
+      "aliases": [],
+      "category": "Groups, symmetries and representations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0143",
+      "label": "orthogonal group",
+      "aliases": [],
+      "category": "Groups, symmetries and representations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0144",
+      "label": "rotation group",
+      "aliases": [
+        "SO(3)"
+      ],
+      "category": "Groups, symmetries and representations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0145",
+      "label": "special unitary group",
+      "aliases": [
+        "SU(2)"
+      ],
+      "category": "Groups, symmetries and representations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0146",
+      "label": "Lie group",
+      "aliases": [],
+      "category": "Groups, symmetries and representations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0103",
+        "math-t-0147"
+      ]
+    },
+    {
+      "id": "math-t-0147",
+      "label": "Lie algebra",
+      "aliases": [],
+      "category": "Groups, symmetries and representations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0146"
+      ]
+    },
+    {
+      "id": "math-t-0148",
+      "label": "one-parameter subgroup",
+      "aliases": [],
+      "category": "Groups, symmetries and representations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0149",
+      "label": "exponential map",
+      "aliases": [],
+      "category": "Groups, symmetries and representations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0151",
+      "label": "irreducible representation",
+      "aliases": [],
+      "category": "Groups, symmetries and representations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0152",
+      "label": "unitary representation",
+      "aliases": [],
+      "category": "Groups, symmetries and representations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0153",
+      "label": "character of a representation",
+      "aliases": [],
+      "category": "Groups, symmetries and representations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0150"
+      ]
+    },
+    {
+      "id": "math-t-0154",
+      "label": "regular representation",
+      "aliases": [],
+      "category": "Groups, symmetries and representations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0155",
+      "label": "Schur's lemma",
+      "aliases": [],
+      "category": "Groups, symmetries and representations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0156",
+      "label": "character orthogonality",
+      "aliases": [],
+      "category": "Groups, symmetries and representations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0157",
+      "label": "symmetry group",
+      "aliases": [],
+      "category": "Groups, symmetries and representations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0158",
+      "label": "crystallographic group",
+      "aliases": [],
+      "category": "Groups, symmetries and representations",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0160",
+      "label": "commutative ring",
+      "aliases": [],
+      "category": "Rings, fields and algebraic number systems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0161",
+      "label": "integral domain",
+      "aliases": [],
+      "category": "Rings, fields and algebraic number systems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0162",
+      "label": "unit",
+      "aliases": [],
+      "category": "Rings, fields and algebraic number systems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0163",
+      "label": "zero divisor",
+      "aliases": [],
+      "category": "Rings, fields and algebraic number systems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0165",
+      "label": "principal ideal",
+      "aliases": [],
+      "category": "Rings, fields and algebraic number systems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0166",
+      "label": "maximal ideal",
+      "aliases": [],
+      "category": "Rings, fields and algebraic number systems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0164"
+      ]
+    },
+    {
+      "id": "math-t-0168",
+      "label": "quotient ring",
+      "aliases": [],
+      "category": "Rings, fields and algebraic number systems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0159"
+      ]
+    },
+    {
+      "id": "math-t-0169",
+      "label": "ring homomorphism",
+      "aliases": [],
+      "category": "Rings, fields and algebraic number systems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0170",
+      "label": "polynomial ring",
+      "aliases": [],
+      "category": "Rings, fields and algebraic number systems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0159"
+      ]
+    },
+    {
+      "id": "math-t-0171",
+      "label": "irreducible polynomial",
+      "aliases": [],
+      "category": "Rings, fields and algebraic number systems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0172",
+      "label": "polynomial factorization",
+      "aliases": [],
+      "category": "Rings, fields and algebraic number systems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0174",
+      "label": "principal ideal domain",
+      "aliases": [
+        "PID"
+      ],
+      "category": "Rings, fields and algebraic number systems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0173"
+      ]
+    },
+    {
+      "id": "math-t-0175",
+      "label": "Euclidean domain",
+      "aliases": [],
+      "category": "Rings, fields and algebraic number systems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0176",
+      "label": "Gauss's lemma",
+      "aliases": [],
+      "category": "Rings, fields and algebraic number systems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0177",
+      "label": "Gaussian integer",
+      "aliases": [],
+      "category": "Rings, fields and algebraic number systems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0178",
+      "label": "algebraic integer",
+      "aliases": [],
+      "category": "Rings, fields and algebraic number systems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0179",
+      "label": "number field",
+      "aliases": [],
+      "category": "Rings, fields and algebraic number systems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0180",
+      "label": "quadratic number field",
+      "aliases": [],
+      "category": "Rings, fields and algebraic number systems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0181",
+      "label": "ideal class group",
+      "aliases": [],
+      "category": "Rings, fields and algebraic number systems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0182",
+      "label": "class number",
+      "aliases": [],
+      "category": "Rings, fields and algebraic number systems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0183",
+      "label": "module",
+      "aliases": [],
+      "category": "Rings, fields and algebraic number systems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0159"
+      ]
+    },
+    {
+      "id": "math-t-0184",
+      "label": "free module",
+      "aliases": [],
+      "category": "Rings, fields and algebraic number systems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0185",
+      "label": "Noetherian ring",
+      "aliases": [],
+      "category": "Rings, fields and algebraic number systems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0186",
+      "label": "Smith normal form",
+      "aliases": [],
+      "category": "Rings, fields and algebraic number systems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0187",
+      "label": "finitely generated abelian group",
+      "aliases": [],
+      "category": "Rings, fields and algebraic number systems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0189",
+      "label": "algebraic extension",
+      "aliases": [],
+      "category": "Rings, fields and algebraic number systems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0190",
+      "label": "transcendental extension",
+      "aliases": [],
+      "category": "Rings, fields and algebraic number systems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0191",
+      "label": "splitting field",
+      "aliases": [],
+      "category": "Rings, fields and algebraic number systems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0192",
+      "label": "algebraic closure",
+      "aliases": [],
+      "category": "Rings, fields and algebraic number systems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0193",
+      "label": "Galois extension",
+      "aliases": [],
+      "category": "Rings, fields and algebraic number systems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0195",
+      "label": "fundamental theorem of Galois theory",
+      "aliases": [],
+      "category": "Rings, fields and algebraic number systems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0196",
+      "label": "separable extension",
+      "aliases": [],
+      "category": "Rings, fields and algebraic number systems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0198",
+      "label": "finite field",
+      "aliases": [],
+      "category": "Rings, fields and algebraic number systems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0199",
+      "label": "divisibility",
+      "aliases": [],
+      "category": "Arithmetic and number theory",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0200",
+      "label": "greatest common divisor",
+      "aliases": [
+        "GCD"
+      ],
+      "category": "Arithmetic and number theory",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0202"
+      ]
+    },
+    {
+      "id": "math-t-0201",
+      "label": "least common multiple",
+      "aliases": [
+        "LCM"
+      ],
+      "category": "Arithmetic and number theory",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0202",
+      "label": "Euclidean algorithm",
+      "aliases": [],
+      "category": "Arithmetic and number theory",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0200"
+      ]
+    },
+    {
+      "id": "math-t-0203",
+      "label": "Bezout identity",
+      "aliases": [],
+      "category": "Arithmetic and number theory",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0205",
+      "label": "composite number",
+      "aliases": [],
+      "category": "Arithmetic and number theory",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0206",
+      "label": "fundamental theorem of arithmetic",
+      "aliases": [],
+      "category": "Arithmetic and number theory",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0208",
+      "label": "modular arithmetic",
+      "aliases": [],
+      "category": "Arithmetic and number theory",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0211"
+      ]
+    },
+    {
+      "id": "math-t-0210",
+      "label": "residue class",
+      "aliases": [],
+      "category": "Arithmetic and number theory",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0212",
+      "label": "Fermat's little theorem",
+      "aliases": [],
+      "category": "Arithmetic and number theory",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0213",
+      "label": "Euler's theorem",
+      "aliases": [],
+      "category": "Arithmetic and number theory",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0214",
+      "label": "Euler totient function",
+      "aliases": [],
+      "category": "Arithmetic and number theory",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0215",
+      "label": "multiplicative order",
+      "aliases": [],
+      "category": "Arithmetic and number theory",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0216",
+      "label": "quadratic residue",
+      "aliases": [],
+      "category": "Arithmetic and number theory",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0219"
+      ]
+    },
+    {
+      "id": "math-t-0217",
+      "label": "Legendre symbol",
+      "aliases": [],
+      "category": "Arithmetic and number theory",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0218",
+      "label": "Jacobi symbol",
+      "aliases": [],
+      "category": "Arithmetic and number theory",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0219",
+      "label": "quadratic reciprocity",
+      "aliases": [],
+      "category": "Arithmetic and number theory",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0216"
+      ]
+    },
+    {
+      "id": "math-t-0220",
+      "label": "primitive root",
+      "aliases": [],
+      "category": "Arithmetic and number theory",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0221",
+      "label": "Diophantine equation",
+      "aliases": [],
+      "category": "Arithmetic and number theory",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0222",
+      "label": "Pell equation",
+      "aliases": [],
+      "category": "Arithmetic and number theory",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0226",
+      "label": "irrationality",
+      "aliases": [],
+      "category": "Arithmetic and number theory",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0227",
+      "label": "transcendence",
+      "aliases": [],
+      "category": "Arithmetic and number theory",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0228",
+      "label": "Dirichlet's theorem on primes",
+      "aliases": [],
+      "category": "Arithmetic and number theory",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0229",
+      "label": "Minkowski theorem",
+      "aliases": [],
+      "category": "Arithmetic and number theory",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0230",
+      "label": "geometry of numbers",
+      "aliases": [],
+      "category": "Arithmetic and number theory",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0231"
+      ]
+    },
+    {
+      "id": "math-t-0231",
+      "label": "lattice point",
+      "aliases": [],
+      "category": "Arithmetic and number theory",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0230"
+      ]
+    },
+    {
+      "id": "math-t-0232",
+      "label": "Dirichlet series",
+      "aliases": [],
+      "category": "Arithmetic and number theory",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0234",
+      "label": "multiplicative function",
+      "aliases": [],
+      "category": "Arithmetic and number theory",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0235",
+      "label": "Mobius function",
+      "aliases": [],
+      "category": "Arithmetic and number theory",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0236",
+      "label": "divisor function",
+      "aliases": [],
+      "category": "Arithmetic and number theory",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0237",
+      "label": "Riemann zeta function",
+      "aliases": [],
+      "category": "Arithmetic and number theory",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0238",
+      "label": "partition function",
+      "aliases": [],
+      "category": "Arithmetic and number theory",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0239",
+      "label": "sum of two squares theorem",
+      "aliases": [],
+      "category": "Arithmetic and number theory",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0240",
+      "label": "Waring's problem",
+      "aliases": [],
+      "category": "Arithmetic and number theory",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0241",
+      "label": "elliptic curve",
+      "aliases": [],
+      "category": "Arithmetic and number theory",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0242"
+      ]
+    },
+    {
+      "id": "math-t-0242",
+      "label": "group law on elliptic curves",
+      "aliases": [],
+      "category": "Arithmetic and number theory",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0241"
+      ]
+    },
+    {
+      "id": "math-t-0243",
+      "label": "integer factorization",
+      "aliases": [],
+      "category": "Arithmetic and number theory",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0244",
+      "label": "primality testing",
+      "aliases": [],
+      "category": "Arithmetic and number theory",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0246",
+      "label": "multiplication principle",
+      "aliases": [],
+      "category": "Enumeration, posets and generating functions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0247",
+      "label": "permutation",
+      "aliases": [],
+      "category": "Enumeration, posets and generating functions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0253"
+      ]
+    },
+    {
+      "id": "math-t-0248",
+      "label": "combination",
+      "aliases": [],
+      "category": "Enumeration, posets and generating functions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0249",
+      "label": "binomial coefficient",
+      "aliases": [],
+      "category": "Enumeration, posets and generating functions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0250",
+      "label": "multinomial coefficient",
+      "aliases": [],
+      "category": "Enumeration, posets and generating functions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0251",
+      "label": "factorial",
+      "aliases": [],
+      "category": "Enumeration, posets and generating functions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0253",
+      "label": "Stirling number",
+      "aliases": [],
+      "category": "Enumeration, posets and generating functions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0247"
+      ]
+    },
+    {
+      "id": "math-t-0254",
+      "label": "Bell number",
+      "aliases": [],
+      "category": "Enumeration, posets and generating functions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0255",
+      "label": "Eulerian number",
+      "aliases": [],
+      "category": "Enumeration, posets and generating functions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0256",
+      "label": "Catalan number",
+      "aliases": [],
+      "category": "Enumeration, posets and generating functions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0257",
+      "label": "partition of an integer",
+      "aliases": [],
+      "category": "Enumeration, posets and generating functions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0258",
+      "label": "integer composition",
+      "aliases": [],
+      "category": "Enumeration, posets and generating functions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0260",
+      "label": "sieve method",
+      "aliases": [],
+      "category": "Enumeration, posets and generating functions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0261",
+      "label": "derangement",
+      "aliases": [],
+      "category": "Enumeration, posets and generating functions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0262",
+      "label": "rook polynomial",
+      "aliases": [],
+      "category": "Enumeration, posets and generating functions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0263",
+      "label": "Ferrers diagram",
+      "aliases": [],
+      "category": "Enumeration, posets and generating functions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0264",
+      "label": "Young diagram",
+      "aliases": [],
+      "category": "Enumeration, posets and generating functions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0266",
+      "label": "cycle index",
+      "aliases": [],
+      "category": "Enumeration, posets and generating functions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0267",
+      "label": "P-partition",
+      "aliases": [],
+      "category": "Enumeration, posets and generating functions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0268",
+      "label": "descent statistic",
+      "aliases": [],
+      "category": "Enumeration, posets and generating functions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0269",
+      "label": "inversion statistic",
+      "aliases": [],
+      "category": "Enumeration, posets and generating functions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0270",
+      "label": "q-analogue",
+      "aliases": [],
+      "category": "Enumeration, posets and generating functions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0271",
+      "label": "involution",
+      "aliases": [],
+      "category": "Enumeration, posets and generating functions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0272",
+      "label": "lattice of partitions",
+      "aliases": [],
+      "category": "Enumeration, posets and generating functions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0274",
+      "label": "ranked poset",
+      "aliases": [],
+      "category": "Enumeration, posets and generating functions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0277",
+      "label": "zeta function of a poset",
+      "aliases": [],
+      "category": "Enumeration, posets and generating functions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0278",
+      "label": "order ideal",
+      "aliases": [],
+      "category": "Enumeration, posets and generating functions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0279",
+      "label": "chain",
+      "aliases": [],
+      "category": "Enumeration, posets and generating functions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0280",
+      "label": "antichain",
+      "aliases": [],
+      "category": "Enumeration, posets and generating functions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0281",
+      "label": "Dilworth's theorem",
+      "aliases": [],
+      "category": "Enumeration, posets and generating functions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0282",
+      "label": "rational generating function",
+      "aliases": [],
+      "category": "Enumeration, posets and generating functions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0289"
+      ]
+    },
+    {
+      "id": "math-t-0284",
+      "label": "exponential generating function",
+      "aliases": [
+        "EGF"
+      ],
+      "category": "Enumeration, posets and generating functions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0285",
+      "label": "formal power series",
+      "aliases": [],
+      "category": "Enumeration, posets and generating functions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0286",
+      "label": "generating-function composition",
+      "aliases": [],
+      "category": "Enumeration, posets and generating functions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0288",
+      "label": "recurrence relation",
+      "aliases": [],
+      "category": "Enumeration, posets and generating functions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0289",
+      "label": "linear recurrence",
+      "aliases": [],
+      "category": "Enumeration, posets and generating functions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0282"
+      ]
+    },
+    {
+      "id": "math-t-0291",
+      "label": "quasipolynomial",
+      "aliases": [],
+      "category": "Enumeration, posets and generating functions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0292",
+      "label": "hyperplane arrangement",
+      "aliases": [],
+      "category": "Enumeration, posets and generating functions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0293",
+      "label": "Ehrhart polynomial",
+      "aliases": [],
+      "category": "Enumeration, posets and generating functions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0294",
+      "label": "symmetric function",
+      "aliases": [],
+      "category": "Enumeration, posets and generating functions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0295",
+      "label": "combinatorial species",
+      "aliases": [],
+      "category": "Enumeration, posets and generating functions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0297",
+      "label": "vertex",
+      "aliases": [],
+      "category": "Graph structures, connectivity and optimization",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0298",
+      "label": "edge",
+      "aliases": [],
+      "category": "Graph structures, connectivity and optimization",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0299",
+      "label": "directed graph",
+      "aliases": [],
+      "category": "Graph structures, connectivity and optimization",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0300",
+      "label": "undirected graph",
+      "aliases": [],
+      "category": "Graph structures, connectivity and optimization",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0301",
+      "label": "multigraph",
+      "aliases": [],
+      "category": "Graph structures, connectivity and optimization",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0302",
+      "label": "simple graph",
+      "aliases": [],
+      "category": "Graph structures, connectivity and optimization",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0303",
+      "label": "adjacency matrix",
+      "aliases": [],
+      "category": "Graph structures, connectivity and optimization",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0296"
+      ]
+    },
+    {
+      "id": "math-t-0304",
+      "label": "incidence matrix",
+      "aliases": [],
+      "category": "Graph structures, connectivity and optimization",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0305",
+      "label": "degree of a vertex",
+      "aliases": [],
+      "category": "Graph structures, connectivity and optimization",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0307",
+      "label": "cycle",
+      "aliases": [],
+      "category": "Graph structures, connectivity and optimization",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0308",
+      "label": "walk",
+      "aliases": [],
+      "category": "Graph structures, connectivity and optimization",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0309",
+      "label": "connected graph",
+      "aliases": [],
+      "category": "Graph structures, connectivity and optimization",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0310",
+      "label": "connected component",
+      "aliases": [],
+      "category": "Graph structures, connectivity and optimization",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0311",
+      "label": "tree",
+      "aliases": [],
+      "category": "Graph structures, connectivity and optimization",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0296"
+      ]
+    },
+    {
+      "id": "math-t-0312",
+      "label": "forest",
+      "aliases": [],
+      "category": "Graph structures, connectivity and optimization",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0313",
+      "label": "spanning tree",
+      "aliases": [],
+      "category": "Graph structures, connectivity and optimization",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0314",
+      "label": "depth-first search",
+      "aliases": [
+        "DFS"
+      ],
+      "category": "Graph structures, connectivity and optimization",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0315",
+      "label": "breadth-first search",
+      "aliases": [
+        "BFS"
+      ],
+      "category": "Graph structures, connectivity and optimization",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0316",
+      "label": "Euler tour",
+      "aliases": [],
+      "category": "Graph structures, connectivity and optimization",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0317",
+      "label": "Hamilton cycle",
+      "aliases": [],
+      "category": "Graph structures, connectivity and optimization",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0318",
+      "label": "bipartite graph",
+      "aliases": [],
+      "category": "Graph structures, connectivity and optimization",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0320",
+      "label": "perfect matching",
+      "aliases": [],
+      "category": "Graph structures, connectivity and optimization",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0321",
+      "label": "Hall's marriage theorem",
+      "aliases": [],
+      "category": "Graph structures, connectivity and optimization",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0322",
+      "label": "vertex cover",
+      "aliases": [],
+      "category": "Graph structures, connectivity and optimization",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0323",
+      "label": "edge cover",
+      "aliases": [],
+      "category": "Graph structures, connectivity and optimization",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0324",
+      "label": "graph packing",
+      "aliases": [],
+      "category": "Graph structures, connectivity and optimization",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0327",
+      "label": "edge connectivity",
+      "aliases": [],
+      "category": "Graph structures, connectivity and optimization",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0331",
+      "label": "flow conservation",
+      "aliases": [],
+      "category": "Graph structures, connectivity and optimization",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0332",
+      "label": "planar graph",
+      "aliases": [],
+      "category": "Graph structures, connectivity and optimization",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0296"
+      ]
+    },
+    {
+      "id": "math-t-0333",
+      "label": "Euler's formula for planar graphs",
+      "aliases": [],
+      "category": "Graph structures, connectivity and optimization",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0334",
+      "label": "graph embedding",
+      "aliases": [],
+      "category": "Graph structures, connectivity and optimization",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0335",
+      "label": "graph coloring",
+      "aliases": [],
+      "category": "Graph structures, connectivity and optimization",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0336",
+      "label": "chromatic number",
+      "aliases": [],
+      "category": "Graph structures, connectivity and optimization",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0337",
+      "label": "chromatic polynomial",
+      "aliases": [],
+      "category": "Graph structures, connectivity and optimization",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0338",
+      "label": "clique",
+      "aliases": [],
+      "category": "Graph structures, connectivity and optimization",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0339",
+      "label": "independent set",
+      "aliases": [],
+      "category": "Graph structures, connectivity and optimization",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0340",
+      "label": "extremal graph theory",
+      "aliases": [],
+      "category": "Graph structures, connectivity and optimization",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0341",
+      "label": "Turán theorem",
+      "aliases": [],
+      "category": "Graph structures, connectivity and optimization",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0342",
+      "label": "Ramsey theory",
+      "aliases": [],
+      "category": "Graph structures, connectivity and optimization",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0343",
+      "label": "random graph",
+      "aliases": [],
+      "category": "Graph structures, connectivity and optimization",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0296"
+      ]
+    },
+    {
+      "id": "math-t-0344",
+      "label": "Erdos-Renyi random graph",
+      "aliases": [],
+      "category": "Graph structures, connectivity and optimization",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0346",
+      "label": "graph contraction",
+      "aliases": [],
+      "category": "Graph structures, connectivity and optimization",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0349",
+      "label": "graph separator",
+      "aliases": [],
+      "category": "Graph structures, connectivity and optimization",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0350",
+      "label": "nowhere-zero flow",
+      "aliases": [],
+      "category": "Graph structures, connectivity and optimization",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0351",
+      "label": "infinite graph",
+      "aliases": [],
+      "category": "Graph structures, connectivity and optimization",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0352",
+      "label": "network",
+      "aliases": [],
+      "category": "Graph structures, connectivity and optimization",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0353",
+      "label": "expander graph",
+      "aliases": [],
+      "category": "Graph structures, connectivity and optimization",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0354",
+      "label": "spectral graph theory",
+      "aliases": [],
+      "category": "Graph structures, connectivity and optimization",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0100"
+      ]
+    },
+    {
+      "id": "math-t-0356",
+      "label": "topology",
+      "aliases": [],
+      "category": "Topology and qualitative invariants",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0357",
+      "label": "open set",
+      "aliases": [],
+      "category": "Topology and qualitative invariants",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0355"
+      ]
+    },
+    {
+      "id": "math-t-0358",
+      "label": "closed set",
+      "aliases": [],
+      "category": "Topology and qualitative invariants",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0359",
+      "label": "interior",
+      "aliases": [],
+      "category": "Topology and qualitative invariants",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0360",
+      "label": "closure",
+      "aliases": [],
+      "category": "Topology and qualitative invariants",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0361",
+      "label": "boundary",
+      "aliases": [],
+      "category": "Topology and qualitative invariants",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0362",
+      "label": "neighborhood",
+      "aliases": [],
+      "category": "Topology and qualitative invariants",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0363",
+      "label": "basis for a topology",
+      "aliases": [],
+      "category": "Topology and qualitative invariants",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0364",
+      "label": "subbasis",
+      "aliases": [],
+      "category": "Topology and qualitative invariants",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0367",
+      "label": "topological invariant",
+      "aliases": [],
+      "category": "Topology and qualitative invariants",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0368",
+      "label": "product topology",
+      "aliases": [],
+      "category": "Topology and qualitative invariants",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0369",
+      "label": "subspace topology",
+      "aliases": [],
+      "category": "Topology and qualitative invariants",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0371",
+      "label": "metric space",
+      "aliases": [],
+      "category": "Topology and qualitative invariants",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0376"
+      ]
+    },
+    {
+      "id": "math-t-0372",
+      "label": "metric",
+      "aliases": [],
+      "category": "Topology and qualitative invariants",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0373",
+      "label": "pseudometric",
+      "aliases": [],
+      "category": "Topology and qualitative invariants",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0374",
+      "label": "convergent sequence",
+      "aliases": [],
+      "category": "Topology and qualitative invariants",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0377",
+      "label": "dense subset",
+      "aliases": [],
+      "category": "Topology and qualitative invariants",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0378",
+      "label": "separable space",
+      "aliases": [],
+      "category": "Topology and qualitative invariants",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0380",
+      "label": "sequential compactness",
+      "aliases": [],
+      "category": "Topology and qualitative invariants",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0382",
+      "label": "connectedness",
+      "aliases": [],
+      "category": "Topology and qualitative invariants",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0383"
+      ]
+    },
+    {
+      "id": "math-t-0383",
+      "label": "path connectedness",
+      "aliases": [],
+      "category": "Topology and qualitative invariants",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0382"
+      ]
+    },
+    {
+      "id": "math-t-0384",
+      "label": "local connectedness",
+      "aliases": [],
+      "category": "Topology and qualitative invariants",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0385",
+      "label": "Hausdorff space",
+      "aliases": [],
+      "category": "Topology and qualitative invariants",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0386",
+      "label": "separation axiom",
+      "aliases": [],
+      "category": "Topology and qualitative invariants",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0387",
+      "label": "countability axiom",
+      "aliases": [],
+      "category": "Topology and qualitative invariants",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0388",
+      "label": "first countable space",
+      "aliases": [],
+      "category": "Topology and qualitative invariants",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0389",
+      "label": "second countable space",
+      "aliases": [],
+      "category": "Topology and qualitative invariants",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0390",
+      "label": "Lindelof space",
+      "aliases": [],
+      "category": "Topology and qualitative invariants",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0391",
+      "label": "normal space",
+      "aliases": [],
+      "category": "Topology and qualitative invariants",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0392",
+      "label": "Urysohn lemma",
+      "aliases": [],
+      "category": "Topology and qualitative invariants",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0393",
+      "label": "Tietze extension theorem",
+      "aliases": [],
+      "category": "Topology and qualitative invariants",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0394",
+      "label": "Tychonoff theorem",
+      "aliases": [],
+      "category": "Topology and qualitative invariants",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0034",
+        "math-t-0379"
+      ]
+    },
+    {
+      "id": "math-t-0395",
+      "label": "paracompactness",
+      "aliases": [],
+      "category": "Topology and qualitative invariants",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0396",
+      "label": "metrization theorem",
+      "aliases": [],
+      "category": "Topology and qualitative invariants",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0397",
+      "label": "Baire category theorem",
+      "aliases": [],
+      "category": "Topology and qualitative invariants",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0398",
+      "label": "dimension theory",
+      "aliases": [],
+      "category": "Topology and qualitative invariants",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0400",
+      "label": "path homotopy",
+      "aliases": [],
+      "category": "Topology and qualitative invariants",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0403",
+      "label": "lifting property",
+      "aliases": [],
+      "category": "Topology and qualitative invariants",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0404",
+      "label": "Seifert-van Kampen theorem",
+      "aliases": [],
+      "category": "Topology and qualitative invariants",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0402"
+      ]
+    },
+    {
+      "id": "math-t-0405",
+      "label": "surface classification",
+      "aliases": [],
+      "category": "Topology and qualitative invariants",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0406",
+      "label": "compact surface",
+      "aliases": [],
+      "category": "Topology and qualitative invariants",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0407",
+      "label": "orientable surface",
+      "aliases": [],
+      "category": "Topology and qualitative invariants",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0408",
+      "label": "torus",
+      "aliases": [],
+      "category": "Topology and qualitative invariants",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0409",
+      "label": "sphere",
+      "aliases": [],
+      "category": "Topology and qualitative invariants",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0410",
+      "label": "real number",
+      "aliases": [],
+      "category": "Real analysis, convergence and calculus",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0411",
+      "label": "complex number",
+      "aliases": [],
+      "category": "Real analysis, convergence and calculus",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0412",
+      "label": "order completeness",
+      "aliases": [],
+      "category": "Real analysis, convergence and calculus",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0413",
+      "label": "Archimedean property",
+      "aliases": [],
+      "category": "Real analysis, convergence and calculus",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0414",
+      "label": "sequence",
+      "aliases": [],
+      "category": "Real analysis, convergence and calculus",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0415",
+      "label": "subsequence",
+      "aliases": [],
+      "category": "Real analysis, convergence and calculus",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0416",
+      "label": "limit",
+      "aliases": [],
+      "category": "Real analysis, convergence and calculus",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0417",
+      "label": "limsup",
+      "aliases": [],
+      "category": "Real analysis, convergence and calculus",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0418",
+      "label": "liminf",
+      "aliases": [],
+      "category": "Real analysis, convergence and calculus",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0419",
+      "label": "series",
+      "aliases": [],
+      "category": "Real analysis, convergence and calculus",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0420",
+      "label": "Cauchy criterion",
+      "aliases": [],
+      "category": "Real analysis, convergence and calculus",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0421",
+      "label": "absolute convergence",
+      "aliases": [],
+      "category": "Real analysis, convergence and calculus",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0422",
+      "label": "conditional convergence",
+      "aliases": [],
+      "category": "Real analysis, convergence and calculus",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0425",
+      "label": "continuity",
+      "aliases": [],
+      "category": "Real analysis, convergence and calculus",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0426",
+      "label": "uniform continuity",
+      "aliases": [],
+      "category": "Real analysis, convergence and calculus",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0427",
+      "label": "differentiability",
+      "aliases": [],
+      "category": "Real analysis, convergence and calculus",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0428",
+      "label": "mean value theorem",
+      "aliases": [],
+      "category": "Real analysis, convergence and calculus",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0429",
+      "label": "Taylor theorem",
+      "aliases": [],
+      "category": "Real analysis, convergence and calculus",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0431",
+      "label": "Riemann-Stieltjes integral",
+      "aliases": [],
+      "category": "Real analysis, convergence and calculus",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0432",
+      "label": "integrable function",
+      "aliases": [],
+      "category": "Real analysis, convergence and calculus",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0433",
+      "label": "improper integral",
+      "aliases": [],
+      "category": "Real analysis, convergence and calculus",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0434",
+      "label": "monotone sequence theorem",
+      "aliases": [],
+      "category": "Real analysis, convergence and calculus",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0435",
+      "label": "Bolzano-Weierstrass theorem",
+      "aliases": [],
+      "category": "Real analysis, convergence and calculus",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0436",
+      "label": "Arzela-Ascoli theorem",
+      "aliases": [],
+      "category": "Real analysis, convergence and calculus",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0379"
+      ]
+    },
+    {
+      "id": "math-t-0437",
+      "label": "Weierstrass approximation theorem",
+      "aliases": [],
+      "category": "Real analysis, convergence and calculus",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0438",
+      "label": "inverse function theorem",
+      "aliases": [],
+      "category": "Real analysis, convergence and calculus",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0439",
+      "label": "implicit function theorem",
+      "aliases": [],
+      "category": "Real analysis, convergence and calculus",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0440",
+      "label": "multivariable derivative",
+      "aliases": [],
+      "category": "Real analysis, convergence and calculus",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0441",
+      "label": "Jacobian matrix",
+      "aliases": [],
+      "category": "Real analysis, convergence and calculus",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0443",
+      "label": "fixed-point theorem",
+      "aliases": [],
+      "category": "Real analysis, convergence and calculus",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0444",
+      "label": "function sequence",
+      "aliases": [],
+      "category": "Real analysis, convergence and calculus",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0445",
+      "label": "equicontinuity",
+      "aliases": [],
+      "category": "Real analysis, convergence and calculus",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0446",
+      "label": "power series",
+      "aliases": [],
+      "category": "Real analysis, convergence and calculus",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0447",
+      "label": "Fourier series",
+      "aliases": [],
+      "category": "Real analysis, convergence and calculus",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0448",
+      "label": "differentiation under integral",
+      "aliases": [],
+      "category": "Real analysis, convergence and calculus",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0450",
+      "label": "absolute continuity",
+      "aliases": [],
+      "category": "Real analysis, convergence and calculus",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0451",
+      "label": "bounded variation",
+      "aliases": [],
+      "category": "Real analysis, convergence and calculus",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0452",
+      "label": "Lebesgue differentiation theorem",
+      "aliases": [],
+      "category": "Real analysis, convergence and calculus",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0454",
+      "label": "Borel sigma-algebra",
+      "aliases": [],
+      "category": "Measure, integration and spaces of functions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0455",
+      "label": "measurable set",
+      "aliases": [],
+      "category": "Measure, integration and spaces of functions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0453",
+        "math-t-0459"
+      ]
+    },
+    {
+      "id": "math-t-0456",
+      "label": "measurable function",
+      "aliases": [],
+      "category": "Measure, integration and spaces of functions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0457",
+      "label": "measure",
+      "aliases": [],
+      "category": "Measure, integration and spaces of functions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0458",
+      "label": "outer measure",
+      "aliases": [],
+      "category": "Measure, integration and spaces of functions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0460",
+      "label": "Caratheodory criterion",
+      "aliases": [],
+      "category": "Measure, integration and spaces of functions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0461",
+      "label": "null set",
+      "aliases": [],
+      "category": "Measure, integration and spaces of functions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0462",
+      "label": "almost everywhere",
+      "aliases": [
+        "a.e."
+      ],
+      "category": "Measure, integration and spaces of functions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0464",
+      "label": "Vitali set",
+      "aliases": [],
+      "category": "Measure, integration and spaces of functions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0465",
+      "label": "simple function",
+      "aliases": [],
+      "category": "Measure, integration and spaces of functions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0467",
+      "label": "nonnegative measurable function",
+      "aliases": [],
+      "category": "Measure, integration and spaces of functions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0469",
+      "label": "Fatou's lemma",
+      "aliases": [],
+      "category": "Measure, integration and spaces of functions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0471",
+      "label": "Tonelli theorem",
+      "aliases": [],
+      "category": "Measure, integration and spaces of functions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0472",
+      "label": "Fubini theorem",
+      "aliases": [],
+      "category": "Measure, integration and spaces of functions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0473"
+      ]
+    },
+    {
+      "id": "math-t-0473",
+      "label": "product measure",
+      "aliases": [],
+      "category": "Measure, integration and spaces of functions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0472"
+      ]
+    },
+    {
+      "id": "math-t-0474",
+      "label": "signed measure",
+      "aliases": [],
+      "category": "Measure, integration and spaces of functions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0475",
+      "label": "Jordan decomposition",
+      "aliases": [],
+      "category": "Measure, integration and spaces of functions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0476",
+      "label": "Hahn decomposition",
+      "aliases": [],
+      "category": "Measure, integration and spaces of functions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0477",
+      "label": "Radon-Nikodym theorem",
+      "aliases": [],
+      "category": "Measure, integration and spaces of functions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0478"
+      ]
+    },
+    {
+      "id": "math-t-0478",
+      "label": "absolute continuity of measures",
+      "aliases": [],
+      "category": "Measure, integration and spaces of functions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0477"
+      ]
+    },
+    {
+      "id": "math-t-0479",
+      "label": "Lebesgue decomposition",
+      "aliases": [],
+      "category": "Measure, integration and spaces of functions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0480",
+      "label": "L1 space",
+      "aliases": [],
+      "category": "Measure, integration and spaces of functions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0481",
+      "label": "L2 space",
+      "aliases": [],
+      "category": "Measure, integration and spaces of functions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0483",
+      "label": "essential supremum",
+      "aliases": [],
+      "category": "Measure, integration and spaces of functions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0484",
+      "label": "convergence in measure",
+      "aliases": [],
+      "category": "Measure, integration and spaces of functions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0485",
+      "label": "convergence almost everywhere",
+      "aliases": [],
+      "category": "Measure, integration and spaces of functions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0486",
+      "label": "uniform integrability",
+      "aliases": [],
+      "category": "Measure, integration and spaces of functions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0487",
+      "label": "Holder inequality",
+      "aliases": [],
+      "category": "Measure, integration and spaces of functions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0488",
+      "label": "Minkowski inequality",
+      "aliases": [],
+      "category": "Measure, integration and spaces of functions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0489",
+      "label": "Borel-Cantelli lemma",
+      "aliases": [],
+      "category": "Measure, integration and spaces of functions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0490",
+      "label": "measure extension theorem",
+      "aliases": [],
+      "category": "Measure, integration and spaces of functions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0491",
+      "label": "regular measure",
+      "aliases": [],
+      "category": "Measure, integration and spaces of functions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0492",
+      "label": "Haar measure",
+      "aliases": [],
+      "category": "Measure, integration and spaces of functions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0493",
+      "label": "invariant measure",
+      "aliases": [],
+      "category": "Measure, integration and spaces of functions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0494",
+      "label": "pushforward measure",
+      "aliases": [],
+      "category": "Measure, integration and spaces of functions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0495",
+      "label": "probability measure",
+      "aliases": [],
+      "category": "Measure, integration and spaces of functions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0453"
+      ]
+    },
+    {
+      "id": "math-t-0496",
+      "label": "topological vector space",
+      "aliases": [],
+      "category": "Functional analysis and operators",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0497",
+      "label": "normed space",
+      "aliases": [],
+      "category": "Functional analysis and operators",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0501",
+      "label": "operator norm",
+      "aliases": [],
+      "category": "Functional analysis and operators",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0502",
+      "label": "bounded functional",
+      "aliases": [],
+      "category": "Functional analysis and operators",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0503",
+      "label": "continuous functional",
+      "aliases": [],
+      "category": "Functional analysis and operators",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0504",
+      "label": "continuous dual",
+      "aliases": [],
+      "category": "Functional analysis and operators",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0510"
+      ]
+    },
+    {
+      "id": "math-t-0505",
+      "label": "topological dual",
+      "aliases": [],
+      "category": "Functional analysis and operators",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0506",
+      "label": "dual pairing",
+      "aliases": [],
+      "category": "Functional analysis and operators",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0507",
+      "label": "reflexive space",
+      "aliases": [],
+      "category": "Functional analysis and operators",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0508",
+      "label": "weak topology",
+      "aliases": [],
+      "category": "Functional analysis and operators",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0510",
+      "label": "weak-star topology",
+      "aliases": [],
+      "category": "Functional analysis and operators",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0504"
+      ]
+    },
+    {
+      "id": "math-t-0511",
+      "label": "strong convergence",
+      "aliases": [],
+      "category": "Functional analysis and operators",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0512",
+      "label": "weak compactness",
+      "aliases": [],
+      "category": "Functional analysis and operators",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0514",
+      "label": "uniform boundedness principle",
+      "aliases": [],
+      "category": "Functional analysis and operators",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0515",
+      "label": "Banach-Steinhaus theorem",
+      "aliases": [],
+      "category": "Functional analysis and operators",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0516",
+      "label": "open mapping theorem",
+      "aliases": [],
+      "category": "Functional analysis and operators",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0498"
+      ]
+    },
+    {
+      "id": "math-t-0517",
+      "label": "closed graph theorem",
+      "aliases": [],
+      "category": "Functional analysis and operators",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0519",
+      "label": "compact operator",
+      "aliases": [],
+      "category": "Functional analysis and operators",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0521"
+      ]
+    },
+    {
+      "id": "math-t-0520",
+      "label": "finite-rank operator",
+      "aliases": [],
+      "category": "Functional analysis and operators",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0522",
+      "label": "resolvent",
+      "aliases": [],
+      "category": "Functional analysis and operators",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0523",
+      "label": "resolvent set",
+      "aliases": [],
+      "category": "Functional analysis and operators",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0524",
+      "label": "spectral radius",
+      "aliases": [],
+      "category": "Functional analysis and operators",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0100"
+      ]
+    },
+    {
+      "id": "math-t-0525",
+      "label": "spectrum of an operator",
+      "aliases": [],
+      "category": "Functional analysis and operators",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0526",
+      "label": "point spectrum",
+      "aliases": [],
+      "category": "Functional analysis and operators",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0527",
+      "label": "continuous spectrum",
+      "aliases": [],
+      "category": "Functional analysis and operators",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0528",
+      "label": "residual spectrum",
+      "aliases": [],
+      "category": "Functional analysis and operators",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0529",
+      "label": "spectral measure",
+      "aliases": [],
+      "category": "Functional analysis and operators",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0531",
+      "label": "closed operator",
+      "aliases": [],
+      "category": "Functional analysis and operators",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0532",
+      "label": "densely defined operator",
+      "aliases": [],
+      "category": "Functional analysis and operators",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0533",
+      "label": "self-adjoint unbounded operator",
+      "aliases": [],
+      "category": "Functional analysis and operators",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0534",
+      "label": "functional calculus",
+      "aliases": [],
+      "category": "Functional analysis and operators",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0535",
+      "label": "Riesz representation theorem",
+      "aliases": [],
+      "category": "Functional analysis and operators",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0536",
+      "label": "Riesz-Schauder theory",
+      "aliases": [],
+      "category": "Functional analysis and operators",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0537",
+      "label": "orthogonal complement",
+      "aliases": [],
+      "category": "Functional analysis and operators",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0538",
+      "label": "Fredholm alternative",
+      "aliases": [],
+      "category": "Functional analysis and operators",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0539",
+      "label": "basis of a Hilbert space",
+      "aliases": [],
+      "category": "Functional analysis and operators",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0540",
+      "label": "Fourier transform",
+      "aliases": [],
+      "category": "Functional analysis and operators",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0541",
+      "label": "orthogonal polynomial",
+      "aliases": [],
+      "category": "Functional analysis and operators",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0542",
+      "label": "Galerkin method",
+      "aliases": [],
+      "category": "Functional analysis and operators",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0543",
+      "label": "approximation operator",
+      "aliases": [],
+      "category": "Functional analysis and operators",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0544",
+      "label": "complex plane",
+      "aliases": [],
+      "category": "Complex analysis and analytic continuation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0546",
+      "label": "complex differentiability",
+      "aliases": [],
+      "category": "Complex analysis and analytic continuation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0548",
+      "label": "complex power series",
+      "aliases": [],
+      "category": "Complex analysis and analytic continuation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0549",
+      "label": "radius of convergence",
+      "aliases": [],
+      "category": "Complex analysis and analytic continuation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0550",
+      "label": "entire function",
+      "aliases": [],
+      "category": "Complex analysis and analytic continuation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0551",
+      "label": "meromorphic function",
+      "aliases": [],
+      "category": "Complex analysis and analytic continuation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0552",
+      "label": "complex contour",
+      "aliases": [],
+      "category": "Complex analysis and analytic continuation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0553",
+      "label": "line integral",
+      "aliases": [],
+      "category": "Complex analysis and analytic continuation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0554",
+      "label": "winding number",
+      "aliases": [
+        "index"
+      ],
+      "category": "Complex analysis and analytic continuation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0567"
+      ]
+    },
+    {
+      "id": "math-t-0555",
+      "label": "Cauchy integral theorem",
+      "aliases": [],
+      "category": "Complex analysis and analytic continuation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0557",
+      "label": "Morera's theorem",
+      "aliases": [],
+      "category": "Complex analysis and analytic continuation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0558",
+      "label": "Liouville's theorem",
+      "aliases": [],
+      "category": "Complex analysis and analytic continuation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0559",
+      "label": "maximum modulus principle",
+      "aliases": [],
+      "category": "Complex analysis and analytic continuation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0560",
+      "label": "open mapping theorem for holomorphic functions",
+      "aliases": [],
+      "category": "Complex analysis and analytic continuation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0561",
+      "label": "isolated singularity",
+      "aliases": [],
+      "category": "Complex analysis and analytic continuation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0562",
+      "label": "removable singularity",
+      "aliases": [],
+      "category": "Complex analysis and analytic continuation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0564",
+      "label": "essential singularity",
+      "aliases": [],
+      "category": "Complex analysis and analytic continuation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0566",
+      "label": "residue",
+      "aliases": [],
+      "category": "Complex analysis and analytic continuation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0568",
+      "label": "argument principle",
+      "aliases": [],
+      "category": "Complex analysis and analytic continuation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0569",
+      "label": "Rouche theorem",
+      "aliases": [],
+      "category": "Complex analysis and analytic continuation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0570",
+      "label": "analytic continuation",
+      "aliases": [],
+      "category": "Complex analysis and analytic continuation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0573"
+      ]
+    },
+    {
+      "id": "math-t-0571",
+      "label": "monodromy theorem",
+      "aliases": [],
+      "category": "Complex analysis and analytic continuation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0572",
+      "label": "branch point",
+      "aliases": [],
+      "category": "Complex analysis and analytic continuation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0573",
+      "label": "Riemann surface",
+      "aliases": [],
+      "category": "Complex analysis and analytic continuation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0570"
+      ]
+    },
+    {
+      "id": "math-t-0574",
+      "label": "conformal map",
+      "aliases": [],
+      "category": "Complex analysis and analytic continuation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0577"
+      ]
+    },
+    {
+      "id": "math-t-0575",
+      "label": "Mobius transformation",
+      "aliases": [],
+      "category": "Complex analysis and analytic continuation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0576",
+      "label": "cross ratio",
+      "aliases": [],
+      "category": "Complex analysis and analytic continuation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0577",
+      "label": "Riemann mapping theorem",
+      "aliases": [],
+      "category": "Complex analysis and analytic continuation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0574"
+      ]
+    },
+    {
+      "id": "math-t-0578",
+      "label": "harmonic function",
+      "aliases": [],
+      "category": "Complex analysis and analytic continuation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0580"
+      ]
+    },
+    {
+      "id": "math-t-0579",
+      "label": "harmonic conjugate",
+      "aliases": [],
+      "category": "Complex analysis and analytic continuation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0580",
+      "label": "Dirichlet problem",
+      "aliases": [],
+      "category": "Complex analysis and analytic continuation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0578"
+      ]
+    },
+    {
+      "id": "math-t-0581",
+      "label": "Poisson kernel",
+      "aliases": [],
+      "category": "Complex analysis and analytic continuation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0582",
+      "label": "normal family",
+      "aliases": [],
+      "category": "Complex analysis and analytic continuation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0583",
+      "label": "Montel theorem",
+      "aliases": [],
+      "category": "Complex analysis and analytic continuation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0584",
+      "label": "Weierstrass product",
+      "aliases": [],
+      "category": "Complex analysis and analytic continuation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0585",
+      "label": "Mittag-Leffler theorem",
+      "aliases": [],
+      "category": "Complex analysis and analytic continuation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0586",
+      "label": "elliptic function",
+      "aliases": [],
+      "category": "Complex analysis and analytic continuation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0587",
+      "label": "Weierstrass elliptic function",
+      "aliases": [],
+      "category": "Complex analysis and analytic continuation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0588",
+      "label": "doubly periodic function",
+      "aliases": [],
+      "category": "Complex analysis and analytic continuation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0589",
+      "label": "Picard theorem",
+      "aliases": [],
+      "category": "Complex analysis and analytic continuation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0590",
+      "label": "parametrized curve",
+      "aliases": [],
+      "category": "Differential geometry and curved spaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0591",
+      "label": "regular curve",
+      "aliases": [],
+      "category": "Differential geometry and curved spaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0592",
+      "label": "arc length",
+      "aliases": [],
+      "category": "Differential geometry and curved spaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0593",
+      "label": "unit tangent",
+      "aliases": [],
+      "category": "Differential geometry and curved spaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0594",
+      "label": "normal vector",
+      "aliases": [],
+      "category": "Differential geometry and curved spaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0595",
+      "label": "binormal vector",
+      "aliases": [],
+      "category": "Differential geometry and curved spaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0596",
+      "label": "Frenet frame",
+      "aliases": [],
+      "category": "Differential geometry and curved spaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0597",
+      "label": "curvature",
+      "aliases": [],
+      "category": "Differential geometry and curved spaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0598",
+      "label": "torsion",
+      "aliases": [],
+      "category": "Differential geometry and curved spaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0599",
+      "label": "osculating circle",
+      "aliases": [],
+      "category": "Differential geometry and curved spaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0600",
+      "label": "regular surface",
+      "aliases": [],
+      "category": "Differential geometry and curved spaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0606",
+        "math-t-0610"
+      ]
+    },
+    {
+      "id": "math-t-0601",
+      "label": "surface parametrization",
+      "aliases": [],
+      "category": "Differential geometry and curved spaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0602",
+      "label": "tangent plane",
+      "aliases": [],
+      "category": "Differential geometry and curved spaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0603",
+      "label": "differential of a map",
+      "aliases": [],
+      "category": "Differential geometry and curved spaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0604",
+      "label": "tangent vector",
+      "aliases": [],
+      "category": "Differential geometry and curved spaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0605",
+      "label": "tangent space",
+      "aliases": [],
+      "category": "Differential geometry and curved spaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0607",
+      "label": "second fundamental form",
+      "aliases": [],
+      "category": "Differential geometry and curved spaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0608",
+      "label": "surface area",
+      "aliases": [],
+      "category": "Differential geometry and curved spaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0609",
+      "label": "normal field",
+      "aliases": [],
+      "category": "Differential geometry and curved spaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0610",
+      "label": "Gauss map",
+      "aliases": [],
+      "category": "Differential geometry and curved spaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0600",
+        "math-t-0613"
+      ]
+    },
+    {
+      "id": "math-t-0611",
+      "label": "shape operator",
+      "aliases": [],
+      "category": "Differential geometry and curved spaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0612",
+      "label": "principal curvature",
+      "aliases": [],
+      "category": "Differential geometry and curved spaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0614",
+      "label": "mean curvature",
+      "aliases": [],
+      "category": "Differential geometry and curved spaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0615",
+      "label": "minimal surface",
+      "aliases": [],
+      "category": "Differential geometry and curved spaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0616",
+      "label": "ruled surface",
+      "aliases": [],
+      "category": "Differential geometry and curved spaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0617",
+      "label": "isometry",
+      "aliases": [],
+      "category": "Differential geometry and curved spaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0618",
+      "label": "conformal map of surfaces",
+      "aliases": [],
+      "category": "Differential geometry and curved spaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0619",
+      "label": "covariant derivative",
+      "aliases": [],
+      "category": "Differential geometry and curved spaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0621",
+      "label": "Levi-Civita connection",
+      "aliases": [],
+      "category": "Differential geometry and curved spaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0623",
+      "label": "geodesic curvature",
+      "aliases": [],
+      "category": "Differential geometry and curved spaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0624",
+      "label": "geodesic completeness",
+      "aliases": [],
+      "category": "Differential geometry and curved spaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0627",
+      "label": "exponential map of a surface",
+      "aliases": [],
+      "category": "Differential geometry and curved spaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0628",
+      "label": "Jacobi field",
+      "aliases": [],
+      "category": "Differential geometry and curved spaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0629",
+      "label": "conjugate point",
+      "aliases": [],
+      "category": "Differential geometry and curved spaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0630",
+      "label": "Riemannian metric",
+      "aliases": [],
+      "category": "Differential geometry and curved spaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0631",
+      "label": "Riemannian manifold",
+      "aliases": [],
+      "category": "Differential geometry and curved spaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0632",
+      "label": "differential form",
+      "aliases": [],
+      "category": "Differential geometry and curved spaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0633",
+      "label": "exterior derivative",
+      "aliases": [],
+      "category": "Differential geometry and curved spaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0634",
+      "label": "connection",
+      "aliases": [],
+      "category": "Differential geometry and curved spaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0636",
+      "label": "event",
+      "aliases": [],
+      "category": "Probability distributions and processes",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0637",
+      "label": "event algebra",
+      "aliases": [],
+      "category": "Probability distributions and processes",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0639",
+      "label": "probability mass function",
+      "aliases": [
+        "PMF"
+      ],
+      "category": "Probability distributions and processes",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0640",
+      "label": "probability density function",
+      "aliases": [
+        "PDF density"
+      ],
+      "category": "Probability distributions and processes",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0641",
+      "label": "cumulative distribution function",
+      "aliases": [
+        "CDF"
+      ],
+      "category": "Probability distributions and processes",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0644",
+      "label": "conditional independence",
+      "aliases": [],
+      "category": "Probability distributions and processes",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0645",
+      "label": "random variable",
+      "aliases": [],
+      "category": "Probability distributions and processes",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0647",
+        "math-t-0638"
+      ]
+    },
+    {
+      "id": "math-t-0646",
+      "label": "random vector",
+      "aliases": [],
+      "category": "Probability distributions and processes",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0647",
+      "label": "expectation",
+      "aliases": [],
+      "category": "Probability distributions and processes",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0645"
+      ]
+    },
+    {
+      "id": "math-t-0648",
+      "label": "variance",
+      "aliases": [],
+      "category": "Probability distributions and processes",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0649",
+      "label": "covariance",
+      "aliases": [],
+      "category": "Probability distributions and processes",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0650",
+      "label": "correlation",
+      "aliases": [],
+      "category": "Probability distributions and processes",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0651",
+      "label": "moment",
+      "aliases": [],
+      "category": "Probability distributions and processes",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0652",
+      "label": "moment generating function",
+      "aliases": [
+        "MGF"
+      ],
+      "category": "Probability distributions and processes",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0653",
+      "label": "characteristic function of a random variable",
+      "aliases": [],
+      "category": "Probability distributions and processes",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0654",
+      "label": "binomial distribution",
+      "aliases": [],
+      "category": "Probability distributions and processes",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0655",
+      "label": "Poisson distribution",
+      "aliases": [],
+      "category": "Probability distributions and processes",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0657",
+      "label": "hypergeometric distribution",
+      "aliases": [],
+      "category": "Probability distributions and processes",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0658",
+      "label": "geometric distribution",
+      "aliases": [],
+      "category": "Probability distributions and processes",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0659",
+      "label": "negative binomial distribution",
+      "aliases": [],
+      "category": "Probability distributions and processes",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0660",
+      "label": "multinomial distribution",
+      "aliases": [],
+      "category": "Probability distributions and processes",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0661",
+      "label": "law of large numbers",
+      "aliases": [
+        "LLN"
+      ],
+      "category": "Probability distributions and processes",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0662"
+      ]
+    },
+    {
+      "id": "math-t-0662",
+      "label": "strong law of large numbers",
+      "aliases": [
+        "SLLN"
+      ],
+      "category": "Probability distributions and processes",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0661"
+      ]
+    },
+    {
+      "id": "math-t-0663",
+      "label": "central limit theorem",
+      "aliases": [
+        "CLT"
+      ],
+      "category": "Probability distributions and processes",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0667"
+      ]
+    },
+    {
+      "id": "math-t-0664",
+      "label": "Chebyshev inequality",
+      "aliases": [],
+      "category": "Probability distributions and processes",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0665",
+      "label": "Markov inequality",
+      "aliases": [],
+      "category": "Probability distributions and processes",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0666",
+      "label": "convergence in probability",
+      "aliases": [],
+      "category": "Probability distributions and processes",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0667",
+      "label": "convergence in distribution",
+      "aliases": [],
+      "category": "Probability distributions and processes",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0663"
+      ]
+    },
+    {
+      "id": "math-t-0668",
+      "label": "almost sure convergence",
+      "aliases": [],
+      "category": "Probability distributions and processes",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0670",
+      "label": "gambler's ruin",
+      "aliases": [],
+      "category": "Probability distributions and processes",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0671",
+      "label": "reflection principle",
+      "aliases": [],
+      "category": "Probability distributions and processes",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0672",
+      "label": "first passage time",
+      "aliases": [],
+      "category": "Probability distributions and processes",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0669"
+      ]
+    },
+    {
+      "id": "math-t-0673",
+      "label": "hitting time",
+      "aliases": [],
+      "category": "Probability distributions and processes",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0674",
+      "label": "return time",
+      "aliases": [],
+      "category": "Probability distributions and processes",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0675",
+      "label": "renewal process",
+      "aliases": [],
+      "category": "Probability distributions and processes",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0678",
+      "label": "extinction probability",
+      "aliases": [],
+      "category": "Probability distributions and processes",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0677"
+      ]
+    },
+    {
+      "id": "math-t-0680",
+      "label": "transition matrix",
+      "aliases": [],
+      "category": "Probability distributions and processes",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0682",
+      "label": "recurrent state",
+      "aliases": [],
+      "category": "Probability distributions and processes",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0683",
+      "label": "transient state",
+      "aliases": [],
+      "category": "Probability distributions and processes",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0684",
+      "label": "absorbing state",
+      "aliases": [],
+      "category": "Probability distributions and processes",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0685",
+      "label": "reversible Markov chain",
+      "aliases": [],
+      "category": "Probability distributions and processes",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0686",
+      "label": "Poisson process",
+      "aliases": [],
+      "category": "Probability distributions and processes",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0687",
+      "label": "stochastic process",
+      "aliases": [],
+      "category": "Probability distributions and processes",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0688",
+      "label": "martingale",
+      "aliases": [],
+      "category": "Probability distributions and processes",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0689",
+      "label": "stopping time",
+      "aliases": [],
+      "category": "Probability distributions and processes",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0691",
+      "label": "parameter",
+      "aliases": [],
+      "category": "Statistical inference and experimental reasoning",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0692",
+      "label": "statistic",
+      "aliases": [],
+      "category": "Statistical inference and experimental reasoning",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0693",
+      "label": "sampling distribution",
+      "aliases": [],
+      "category": "Statistical inference and experimental reasoning",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0694",
+      "label": "random sample",
+      "aliases": [],
+      "category": "Statistical inference and experimental reasoning",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0697",
+      "label": "method of moments",
+      "aliases": [],
+      "category": "Statistical inference and experimental reasoning",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0699",
+      "label": "minimal sufficient statistic",
+      "aliases": [],
+      "category": "Statistical inference and experimental reasoning",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0700",
+      "label": "complete statistic",
+      "aliases": [],
+      "category": "Statistical inference and experimental reasoning",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0704"
+      ]
+    },
+    {
+      "id": "math-t-0701",
+      "label": "ancillary statistic",
+      "aliases": [],
+      "category": "Statistical inference and experimental reasoning",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0702",
+      "label": "exponential family",
+      "aliases": [],
+      "category": "Statistical inference and experimental reasoning",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0704",
+      "label": "Lehmann-Scheffe theorem",
+      "aliases": [],
+      "category": "Statistical inference and experimental reasoning",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0700"
+      ]
+    },
+    {
+      "id": "math-t-0706",
+      "label": "Cramer-Rao lower bound",
+      "aliases": [],
+      "category": "Statistical inference and experimental reasoning",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0705"
+      ]
+    },
+    {
+      "id": "math-t-0707",
+      "label": "unbiased estimator",
+      "aliases": [],
+      "category": "Statistical inference and experimental reasoning",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0709",
+      "label": "bias-variance tradeoff",
+      "aliases": [],
+      "category": "Statistical inference and experimental reasoning",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0710",
+      "label": "consistent estimator",
+      "aliases": [],
+      "category": "Statistical inference and experimental reasoning",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0711",
+      "label": "asymptotic normality",
+      "aliases": [],
+      "category": "Statistical inference and experimental reasoning",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0712",
+      "label": "maximum a posteriori estimator",
+      "aliases": [
+        "MAP estimator"
+      ],
+      "category": "Statistical inference and experimental reasoning",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0713",
+      "label": "Bayes estimator",
+      "aliases": [],
+      "category": "Statistical inference and experimental reasoning",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0714",
+      "label": "posterior distribution",
+      "aliases": [],
+      "category": "Statistical inference and experimental reasoning",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0715",
+      "label": "conjugate prior",
+      "aliases": [],
+      "category": "Statistical inference and experimental reasoning",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0716",
+      "label": "point estimation",
+      "aliases": [],
+      "category": "Statistical inference and experimental reasoning",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0717",
+      "label": "interval estimation",
+      "aliases": [],
+      "category": "Statistical inference and experimental reasoning",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0719",
+      "label": "coverage probability",
+      "aliases": [],
+      "category": "Statistical inference and experimental reasoning",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0720",
+      "label": "pivotal quantity",
+      "aliases": [],
+      "category": "Statistical inference and experimental reasoning",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0718"
+      ]
+    },
+    {
+      "id": "math-t-0722",
+      "label": "null hypothesis",
+      "aliases": [],
+      "category": "Statistical inference and experimental reasoning",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0723",
+      "label": "alternative hypothesis",
+      "aliases": [],
+      "category": "Statistical inference and experimental reasoning",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0724",
+      "label": "significance level",
+      "aliases": [],
+      "category": "Statistical inference and experimental reasoning",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0726",
+      "label": "test statistic",
+      "aliases": [],
+      "category": "Statistical inference and experimental reasoning",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0727",
+      "label": "type I error",
+      "aliases": [],
+      "category": "Statistical inference and experimental reasoning",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0728",
+      "label": "type II error",
+      "aliases": [],
+      "category": "Statistical inference and experimental reasoning",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0730",
+      "label": "likelihood ratio test",
+      "aliases": [],
+      "category": "Statistical inference and experimental reasoning",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0731",
+      "label": "Neyman-Pearson lemma",
+      "aliases": [],
+      "category": "Statistical inference and experimental reasoning",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0721"
+      ]
+    },
+    {
+      "id": "math-t-0732",
+      "label": "uniformly most powerful test",
+      "aliases": [
+        "UMP"
+      ],
+      "category": "Statistical inference and experimental reasoning",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0733",
+      "label": "chi-square distribution",
+      "aliases": [],
+      "category": "Statistical inference and experimental reasoning",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0734",
+      "label": "Student t distribution",
+      "aliases": [],
+      "category": "Statistical inference and experimental reasoning",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0735",
+      "label": "F distribution",
+      "aliases": [],
+      "category": "Statistical inference and experimental reasoning",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0736",
+      "label": "asymptotic distribution",
+      "aliases": [],
+      "category": "Statistical inference and experimental reasoning",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0737",
+      "label": "delta method",
+      "aliases": [],
+      "category": "Statistical inference and experimental reasoning",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0738",
+      "label": "bootstrap",
+      "aliases": [],
+      "category": "Statistical inference and experimental reasoning",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0739",
+      "label": "expectation-maximization algorithm",
+      "aliases": [
+        "EM"
+      ],
+      "category": "Statistical inference and experimental reasoning",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0740",
+      "label": "analysis of variance",
+      "aliases": [
+        "ANOVA"
+      ],
+      "category": "Statistical inference and experimental reasoning",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0741",
+      "label": "linear regression",
+      "aliases": [],
+      "category": "Statistical inference and experimental reasoning",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0742",
+      "label": "least squares estimator",
+      "aliases": [
+        "OLS"
+      ],
+      "category": "Statistical inference and experimental reasoning",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0743",
+      "label": "experimental design",
+      "aliases": [],
+      "category": "Statistical inference and experimental reasoning",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0746",
+      "label": "equivalence",
+      "aliases": [],
+      "category": "Cross-domain operators and distinctions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0747",
+      "label": "representation",
+      "aliases": [],
+      "category": "Cross-domain operators and distinctions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0748",
+      "label": "coordinate independence",
+      "aliases": [],
+      "category": "Cross-domain operators and distinctions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0750",
+      "label": "decomposition",
+      "aliases": [],
+      "category": "Cross-domain operators and distinctions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0751",
+      "label": "composition",
+      "aliases": [],
+      "category": "Cross-domain operators and distinctions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0754",
+      "label": "extension construction",
+      "aliases": [],
+      "category": "Cross-domain operators and distinctions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0755",
+      "label": "completion",
+      "aliases": [],
+      "category": "Cross-domain operators and distinctions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0756",
+      "label": "closure operator",
+      "aliases": [],
+      "category": "Cross-domain operators and distinctions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0757",
+      "label": "local-to-global principle",
+      "aliases": [],
+      "category": "Cross-domain operators and distinctions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0758",
+      "label": "universal property",
+      "aliases": [],
+      "category": "Cross-domain operators and distinctions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0759",
+      "label": "functor",
+      "aliases": [],
+      "category": "Cross-domain operators and distinctions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0760",
+      "label": "category",
+      "aliases": [],
+      "category": "Cross-domain operators and distinctions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0761",
+      "label": "morphism",
+      "aliases": [],
+      "category": "Cross-domain operators and distinctions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0763",
+      "label": "homomorphism",
+      "aliases": [],
+      "category": "Cross-domain operators and distinctions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0765",
+      "label": "embedding",
+      "aliases": [],
+      "category": "Cross-domain operators and distinctions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0766",
+      "label": "projection map",
+      "aliases": [],
+      "category": "Cross-domain operators and distinctions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0767",
+      "label": "approximation",
+      "aliases": [],
+      "category": "Cross-domain operators and distinctions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0768",
+      "label": "limiting process",
+      "aliases": [],
+      "category": "Cross-domain operators and distinctions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0769",
+      "label": "convergence mode",
+      "aliases": [],
+      "category": "Cross-domain operators and distinctions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0770",
+      "label": "conservation law",
+      "aliases": [],
+      "category": "Cross-domain operators and distinctions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0771",
+      "label": "symmetry",
+      "aliases": [],
+      "category": "Cross-domain operators and distinctions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0772",
+      "label": "counting via bijection",
+      "aliases": [],
+      "category": "Cross-domain operators and distinctions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0773",
+      "label": "counting via generating function",
+      "aliases": [],
+      "category": "Cross-domain operators and distinctions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0774",
+      "label": "inclusion-exclusion transform",
+      "aliases": [],
+      "category": "Cross-domain operators and distinctions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0775",
+      "label": "Mobius transform",
+      "aliases": [],
+      "category": "Cross-domain operators and distinctions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0776",
+      "label": "Fourier transform operator",
+      "aliases": [],
+      "category": "Cross-domain operators and distinctions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0777",
+      "label": "linearization",
+      "aliases": [],
+      "category": "Cross-domain operators and distinctions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0778",
+      "label": "spectral decomposition",
+      "aliases": [],
+      "category": "Cross-domain operators and distinctions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0779",
+      "label": "fixed point",
+      "aliases": [],
+      "category": "Cross-domain operators and distinctions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0780",
+      "label": "existence theorem",
+      "aliases": [],
+      "category": "Cross-domain operators and distinctions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0781",
+      "label": "uniqueness theorem",
+      "aliases": [],
+      "category": "Cross-domain operators and distinctions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0783",
+      "label": "nonconstructive proof",
+      "aliases": [],
+      "category": "Cross-domain operators and distinctions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0784",
+      "label": "structural induction",
+      "aliases": [],
+      "category": "Cross-domain operators and distinctions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0029"
+      ]
+    },
+    {
+      "id": "math-t-0785",
+      "label": "countermodel",
+      "aliases": [],
+      "category": "Cross-domain operators and distinctions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0787",
+      "label": "identifiability",
+      "aliases": [],
+      "category": "Cross-domain operators and distinctions",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0786"
+      ]
+    },
+    {
+      "id": "math-t-0788",
+      "label": "Lean theorem prover",
+      "aliases": [],
+      "category": "Adjacent possibilities, implementations and formal methods",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0789"
+      ]
+    },
+    {
+      "id": "math-t-0789",
+      "label": "Mathlib",
+      "aliases": [],
+      "category": "Adjacent possibilities, implementations and formal methods",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0788"
+      ]
+    },
+    {
+      "id": "math-t-0790",
+      "label": "Coq",
+      "aliases": [],
+      "category": "Adjacent possibilities, implementations and formal methods",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0791",
+      "label": "Agda",
+      "aliases": [],
+      "category": "Adjacent possibilities, implementations and formal methods",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0792",
+      "label": "Isabelle/HOL",
+      "aliases": [],
+      "category": "Adjacent possibilities, implementations and formal methods",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0793",
+      "label": "SMT solver",
+      "aliases": [],
+      "category": "Adjacent possibilities, implementations and formal methods",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0794",
+      "label": "SAT solver",
+      "aliases": [],
+      "category": "Adjacent possibilities, implementations and formal methods",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0795",
+      "label": "computer algebra system",
+      "aliases": [
+        "CAS"
+      ],
+      "category": "Adjacent possibilities, implementations and formal methods",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0796",
+      "label": "SageMath",
+      "aliases": [],
+      "category": "Adjacent possibilities, implementations and formal methods",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0797",
+      "label": "SymPy",
+      "aliases": [],
+      "category": "Adjacent possibilities, implementations and formal methods",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0798",
+      "label": "GAP system",
+      "aliases": [],
+      "category": "Adjacent possibilities, implementations and formal methods",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0799",
+      "label": "Macaulay2",
+      "aliases": [],
+      "category": "Adjacent possibilities, implementations and formal methods",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0800",
+      "label": "Pari/GP",
+      "aliases": [],
+      "category": "Adjacent possibilities, implementations and formal methods",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0801",
+      "label": "NumPy",
+      "aliases": [],
+      "category": "Adjacent possibilities, implementations and formal methods",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0802",
+      "label": "SciPy",
+      "aliases": [],
+      "category": "Adjacent possibilities, implementations and formal methods",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0803",
+      "label": "formal verification",
+      "aliases": [],
+      "category": "Adjacent possibilities, implementations and formal methods",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0804",
+      "label": "proof assistant",
+      "aliases": [],
+      "category": "Adjacent possibilities, implementations and formal methods",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0805",
+      "label": "interactive theorem proving",
+      "aliases": [],
+      "category": "Adjacent possibilities, implementations and formal methods",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0806",
+      "label": "type theory",
+      "aliases": [],
+      "category": "Adjacent possibilities, implementations and formal methods",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0807",
+      "label": "dependent type",
+      "aliases": [],
+      "category": "Adjacent possibilities, implementations and formal methods",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0808",
+      "label": "homotopy type theory",
+      "aliases": [
+        "HoTT"
+      ],
+      "category": "Adjacent possibilities, implementations and formal methods",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0809",
+      "label": "category theory",
+      "aliases": [],
+      "category": "Adjacent possibilities, implementations and formal methods",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0810",
+      "label": "algebraic topology",
+      "aliases": [],
+      "category": "Adjacent possibilities, implementations and formal methods",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0811",
+      "label": "algebraic geometry",
+      "aliases": [],
+      "category": "Adjacent possibilities, implementations and formal methods",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0812",
+      "label": "algebraic number theory",
+      "aliases": [],
+      "category": "Adjacent possibilities, implementations and formal methods",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0813",
+      "label": "differential topology",
+      "aliases": [],
+      "category": "Adjacent possibilities, implementations and formal methods",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0814",
+      "label": "dynamical systems",
+      "aliases": [],
+      "category": "Adjacent possibilities, implementations and formal methods",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0815",
+      "label": "PDE",
+      "aliases": [
+        "partial differential equation"
+      ],
+      "category": "Adjacent possibilities, implementations and formal methods",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0816",
+      "label": "optimization theory",
+      "aliases": [],
+      "category": "Adjacent possibilities, implementations and formal methods",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0817",
+      "label": "convex optimization",
+      "aliases": [],
+      "category": "Adjacent possibilities, implementations and formal methods",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0818",
+      "label": "numerical analysis",
+      "aliases": [],
+      "category": "Adjacent possibilities, implementations and formal methods",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0819",
+      "label": "numerical linear algebra",
+      "aliases": [],
+      "category": "Adjacent possibilities, implementations and formal methods",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "math-t-0065"
+      ]
+    },
+    {
+      "id": "math-t-0820",
+      "label": "information theory",
+      "aliases": [],
+      "category": "Adjacent possibilities, implementations and formal methods",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0821",
+      "label": "entropy",
+      "aliases": [],
+      "category": "Adjacent possibilities, implementations and formal methods",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0822",
+      "label": "machine learning theory",
+      "aliases": [],
+      "category": "Adjacent possibilities, implementations and formal methods",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0823",
+      "label": "kernel method",
+      "aliases": [],
+      "category": "Adjacent possibilities, implementations and formal methods",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0824",
+      "label": "Gaussian process",
+      "aliases": [],
+      "category": "Adjacent possibilities, implementations and formal methods",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0825",
+      "label": "random matrix theory",
+      "aliases": [],
+      "category": "Adjacent possibilities, implementations and formal methods",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0826",
+      "label": "spectral clustering",
+      "aliases": [],
+      "category": "Adjacent possibilities, implementations and formal methods",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0827",
+      "label": "topological data analysis",
+      "aliases": [],
+      "category": "Adjacent possibilities, implementations and formal methods",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0828",
+      "label": "persistent homology",
+      "aliases": [],
+      "category": "Adjacent possibilities, implementations and formal methods",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0829",
+      "label": "computational geometry",
+      "aliases": [],
+      "category": "Adjacent possibilities, implementations and formal methods",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0830",
+      "label": "cryptography",
+      "aliases": [],
+      "category": "Adjacent possibilities, implementations and formal methods",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "math-t-0831",
+      "label": "error-correcting code",
+      "aliases": [],
+      "category": "Adjacent possibilities, implementations and formal methods",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    }
+  ]
+}

@@ -1,8 +1,18 @@
 # Mathematics — fourteen-book research navigator and generative factorization
 
-**Read this before reindexing the shelf.** These original books have one canonical [`investigation.json`](investigation.json) and one independently expandable [`glossary.json`](glossary.json). The investigation currently contains 14 books, 185 main chapter/part/section units, 836 finer subsection candidates, 39 canonical technical studies, 46 plain-language entrances, 9 large investigation sets, 12 cross-book operator chains, and 14 source-passage inspections. Counts are **navigation coverage**, not comprehension or proof reproduction.
+**Read this before reindexing the shelf.** The root [`investigation.json`](investigation.json) composes five family-owned research files at read time. Its [`glossary.json`](glossary.json) indexes actively used research terms; [unlinked vocabulary candidates](vocabulary_candidates.json) remain available for selective future promotion. The investigation currently contains 14 books, 185 main chapter/part/section units, 836 finer subsection candidates, 39 canonical technical studies, 46 plain-language entrances, 9 large investigation sets, 12 cross-book operator chains, and 14 source-passage inspections. Counts are **navigation coverage**, not comprehension or proof reproduction.
 
 **Original [Drive shelf](https://drive.google.com/drive/folders/1Qx_V7FAz2EhbmCAijHMr18swPu5GLyZr)**. Read and highlight original PDFs in Kami/Drive; GitHub holds only research state, stable pointers and interpretation.
+
+## Research families — canonical ownership
+
+- [Foundations and algebra](foundations-and-algebra/) — Definitions, mappings, linear structure, symmetry and algebraic obstructions.
+- [Analysis and dynamics](analysis-and-dynamics/) — Limits, integration, function spaces and operators; future home for differential equations and dynamical systems.
+- [Geometry and topology](geometry-and-topology/) — Continuity, global shape, topology and intrinsic/extrinsic curvature.
+- [Probability and statistics](probability-and-statistics/) — Uncertainty models, stochastic processes, observations and inference.
+- [Discrete mathematics](discrete-mathematics/) — Arithmetic, posets, counting, graphs and finite certificates.
+
+Each source catalog, technical node and inspected passage has one canonical owner. The unified atlas preserves cross-family questions, operator compositions and stable source identities without duplicating the content of family files. Original Drive PDF links remain unchanged.
 
 ## The underlying generative model
 

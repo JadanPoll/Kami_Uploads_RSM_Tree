@@ -1,6 +1,6 @@
 # Glossary substrate for the Knowledge Atlas
 
-Each research domain has **one canonical `investigation.json` for evidence, questions and mechanisms** and **one adjacent `glossary.json` for persistent vocabulary identities**. They are distinct data lifecycles: changing how a term is spelled or discovered should not copy or rewrite its technical explanations.
+Most domains have **one canonical `investigation.json` for evidence, questions and mechanisms** and **one adjacent `glossary.json` for persistent vocabulary identities**. Mathematics instead composes five family-owned files into a small root atlas; its active glossary contains linked terms and its noncanonical candidate file retains optional exploratory vocabulary. They are distinct data lifecycles: changing how a term is spelled or discovered should not copy or rewrite its technical explanations.
 
 | Domain | Vocabulary | Research |
 | --- | --- | --- |

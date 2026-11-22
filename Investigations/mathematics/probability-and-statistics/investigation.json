@@ -1,0 +1,1454 @@
+{
+  "id": "mathematics/probability-and-statistics",
+  "kind": "mathematics_research_family",
+  "title": "Mathematics — Probability and statistics",
+  "updated": "2026-11-22",
+  "parent_atlas": "../investigation.json",
+  "scope": "Uncertainty models, stochastic processes, observations and inference.",
+  "sources": [
+    {
+      "id": "CASELLA",
+      "title": "Statistical Inference",
+      "authors": [
+        "George Casella",
+        "Roger L. Berger"
+      ],
+      "edition": "Second Edition, 2002",
+      "role": "Sampling distributions, sufficiency, estimation, tests, confidence intervals and large-sample theory",
+      "url": "https://drive.google.com/file/d/16l7HK50HTLSDxGNZt31yLu__JsMLOqkm/view",
+      "source_folder": "https://drive.google.com/drive/folders/1Qx_V7FAz2EhbmCAijHMr18swPu5GLyZr",
+      "limitations": [
+        "Printed page and PDF index must not be conflated; scanned and retypeset editions vary.",
+        "A TOC title is a retrieval lead, not a read proof or successful calculation."
+      ]
+    },
+    {
+      "id": "FELLER",
+      "title": "An Introduction to Probability Theory and Its Applications, Volume I",
+      "authors": [
+        "William Feller"
+      ],
+      "edition": "Third Edition, revised printing",
+      "role": "Classical and discrete probability, random walks, limit laws, generating functions, renewal, branching and Markov processes",
+      "url": "https://drive.google.com/file/d/1qY0vrM1KHzLD5x1cMjdio6LFIP_ge4Pb/view",
+      "source_folder": "https://drive.google.com/drive/folders/1Qx_V7FAz2EhbmCAijHMr18swPu5GLyZr",
+      "limitations": [
+        "Printed page and PDF index must not be conflated; scanned and retypeset editions vary.",
+        "A TOC title is a retrieval lead, not a read proof or successful calculation."
+      ]
+    }
+  ],
+  "book_landscaplets": [
+    {
+      "source_id": "CASELLA",
+      "page_scheme": "Printed page numbers from connected source's contents when reliably recoverable, never assumed equal to PDF viewer page index",
+      "source_navigation_status": "All main units captured; section extraction varies with scan/OCR quality. Missing printed-page anchors remain unverified, not fabricated.",
+      "sections": [
+        {
+          "ref": "1",
+          "title": "Probability Theory",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 1
+        },
+        {
+          "ref": "2",
+          "title": "Transformations and Expectations",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 47
+        },
+        {
+          "ref": "3",
+          "title": "Common Families of Distributions",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 85
+        },
+        {
+          "ref": "4",
+          "title": "Multiple Random Variables",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 139
+        },
+        {
+          "ref": "5",
+          "title": "Properties of a Random Sample",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 207
+        },
+        {
+          "ref": "6",
+          "title": "Principles of Data Reduction",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 271
+        },
+        {
+          "ref": "7",
+          "title": "Point Estimation",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 311
+        },
+        {
+          "ref": "8",
+          "title": "Hypothesis Testing",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 373
+        },
+        {
+          "ref": "9",
+          "title": "Interval Estimation",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 417
+        },
+        {
+          "ref": "10",
+          "title": "Asymptotic Evaluations",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 467
+        },
+        {
+          "ref": "11",
+          "title": "Analysis of Variance and Regression",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 521
+        },
+        {
+          "ref": "12",
+          "title": "Regression Models",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 577
+        }
+      ],
+      "subsections": [
+        {
+          "ref": "1.1",
+          "title": "Set Theory",
+          "printed_page_start": 1,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "1.2",
+          "title": "Basics of Probability Theory",
+          "printed_page_start": 5,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "1.2.1",
+          "title": "Axiomatic Foundations",
+          "printed_page_start": 5,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "1.2.2",
+          "title": "The Calculus of Probabilities",
+          "printed_page_start": 9,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "1.2.3",
+          "title": "Counting",
+          "printed_page_start": 13,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "1.2.4",
+          "title": "Enumerating Outcomes",
+          "printed_page_start": 16,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "1.3",
+          "title": "Conditional Probability and Independence",
+          "printed_page_start": 20,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "1.4",
+          "title": "Random Variables",
+          "printed_page_start": 27,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "1.5",
+          "title": "Distribution Functions",
+          "printed_page_start": 29,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "1.6",
+          "title": "Density and Mass Functions",
+          "printed_page_start": 34,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "1.7",
+          "title": "Exercises",
+          "printed_page_start": 37,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "1.8",
+          "title": "Miscellanea",
+          "printed_page_start": 44,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "2.1",
+          "title": "Distributions of Functions of a Random Variable",
+          "printed_page_start": 47,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "2.2",
+          "title": "Expected Values",
+          "printed_page_start": 55,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "2.3",
+          "title": "Moments and Moment Generating Functions",
+          "printed_page_start": 59,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "2.4",
+          "title": "Differentiating Under an Integral Sign",
+          "printed_page_start": 68,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "2.5",
+          "title": "Exercises",
+          "printed_page_start": 76,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "2.6",
+          "title": "Miscellanea",
+          "printed_page_start": 82,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "3.1",
+          "title": "Introduction",
+          "printed_page_start": 85,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "3.2",
+          "title": "Discrete Distributions",
+          "printed_page_start": 85,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "3.3",
+          "title": "Continuous Distributions",
+          "printed_page_start": 98,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "3.4",
+          "title": "Exponential Families",
+          "printed_page_start": 111,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "3.5",
+          "title": "Location and Scale Families",
+          "printed_page_start": 116,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "3.6",
+          "title": "Inequalities and Identities",
+          "printed_page_start": 121,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "3.6.1",
+          "title": "Probability Inequalities",
+          "printed_page_start": 122,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "3.6.2",
+          "title": "Identities",
+          "printed_page_start": 123,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "3.7",
+          "title": "Exercises",
+          "printed_page_start": 127,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "3.8",
+          "title": "Miscellanea",
+          "printed_page_start": 135,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "4.1",
+          "title": "Joint and Marginal Distributions",
+          "printed_page_start": 139,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "4.2",
+          "title": "Conditional Distributions and Independence",
+          "printed_page_start": 147,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "4.3",
+          "title": "Bivariate Transformations",
+          "printed_page_start": 156,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "4.4",
+          "title": "Hierarchical Models and Mixture Distributions",
+          "printed_page_start": 162,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "4.5",
+          "title": "Covariance and Correlation",
+          "printed_page_start": 169,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "4.6",
+          "title": "Multivariate Distributions",
+          "printed_page_start": 177,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "4.7",
+          "title": "Inequalities",
+          "printed_page_start": 186,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "4.7.1",
+          "title": "Numerical Inequalities",
+          "printed_page_start": 186,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "4.7.2",
+          "title": "Functional Inequalities",
+          "printed_page_start": 189,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "4.8",
+          "title": "Exercises",
+          "printed_page_start": 192,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "4.9",
+          "title": "Miscellanea",
+          "printed_page_start": 203,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "5.1",
+          "title": "Basic Concepts of Random Samples",
+          "printed_page_start": 207,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "5.2",
+          "title": "Sums of Random Variables from a Random Sample",
+          "printed_page_start": 211,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "5.3",
+          "title": "Sampling from the Normal Distribution",
+          "printed_page_start": 218,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "5.3.1",
+          "title": "Properties of the Sample Mean and Variance",
+          "printed_page_start": 218,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "5.3.2",
+          "title": "The Derived Distributions: Student’s t and Snedecor’s F",
+          "printed_page_start": 222,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "5.4",
+          "title": "Order Statistics",
+          "printed_page_start": 226,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "5.5",
+          "title": "Convergence Concepts",
+          "printed_page_start": 232,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "5.5.1",
+          "title": "Convergence in Probability",
+          "printed_page_start": 232,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "5.5.2",
+          "title": "Almost Sure Convergence",
+          "printed_page_start": 234,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "5.5.3",
+          "title": "Convergence in Distribution",
+          "printed_page_start": 235,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "5.5.4",
+          "title": "The Delta Method",
+          "printed_page_start": 240,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "5.6",
+          "title": "Generating a Random Sample",
+          "printed_page_start": 245,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "5.6.1",
+          "title": "Direct Methods",
+          "printed_page_start": 247,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "5.6.2",
+          "title": "Indirect Methods",
+          "printed_page_start": 251,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "5.6.3",
+          "title": "The Accept/Reject Algorithm",
+          "printed_page_start": 253,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "5.7",
+          "title": "Exercises",
+          "printed_page_start": 255,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "5.8",
+          "title": "Miscellanea",
+          "printed_page_start": 267,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "6.1",
+          "title": "Introduction",
+          "printed_page_start": 271,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "6.2",
+          "title": "The Sufficiency Principle",
+          "printed_page_start": 272,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "6.2.1",
+          "title": "Sufficient Statistics",
+          "printed_page_start": 272,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "6.2.2",
+          "title": "Minimal Sufficient Statistics",
+          "printed_page_start": 279,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "6.2.3",
+          "title": "Ancillary Statistics",
+          "printed_page_start": 282,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "6.2.4",
+          "title": "Sufficient, Ancillary, and Complete Statistics",
+          "printed_page_start": 284,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "6.3",
+          "title": "The Likelihood Principle",
+          "printed_page_start": 290,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "6.3.1",
+          "title": "The Likelihood Function",
+          "printed_page_start": 290,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "6.3.2",
+          "title": "The Formal Likelihood Principle",
+          "printed_page_start": 292,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "6.4",
+          "title": "The Equivariance Principle",
+          "printed_page_start": 296,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "6.5",
+          "title": "Exercises",
+          "printed_page_start": 300,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "6.6",
+          "title": "Miscellanea",
+          "printed_page_start": 307,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "7.1",
+          "title": "Introduction",
+          "printed_page_start": 311,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "7.2",
+          "title": "Methods of Finding Estimators",
+          "printed_page_start": 312,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "7.2.1",
+          "title": "Method of Moments",
+          "printed_page_start": 312,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "7.2.2",
+          "title": "Maximum Likelihood Estimators",
+          "printed_page_start": 315,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "7.2.3",
+          "title": "Bayes Estimators",
+          "printed_page_start": 324,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "7.2.4",
+          "title": "The EM Algorithm",
+          "printed_page_start": 326,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "7.3",
+          "title": "Methods of Evaluating Estimators",
+          "printed_page_start": 330,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "7.3.1",
+          "title": "Mean Squared Error",
+          "printed_page_start": 330,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "7.3.2",
+          "title": "Best Unbiased Estimators",
+          "printed_page_start": 334,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "7.3.3",
+          "title": "Sufficiency and Unbiasedness",
+          "printed_page_start": 342,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "7.3.4",
+          "title": "Loss Function Optimality",
+          "printed_page_start": 348,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "7.4",
+          "title": "Exercises",
+          "printed_page_start": 355,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "7.5",
+          "title": "Miscellanea",
+          "printed_page_start": 367,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "8.1",
+          "title": "Introduction",
+          "printed_page_start": 373,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "8.2",
+          "title": "Methods of Finding Tests",
+          "printed_page_start": 374,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "8.2.1",
+          "title": "Likelihood Ratio Tests",
+          "printed_page_start": 374,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "8.2.2",
+          "title": "Bayesian Tests",
+          "printed_page_start": 379,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "8.2.3",
+          "title": "Union–Intersection and Intersection–Union Tests",
+          "printed_page_start": 380,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "8.3",
+          "title": "Methods of Evaluating Tests",
+          "printed_page_start": 382,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "8.3.1",
+          "title": "Error Probabilities and the Power Function",
+          "printed_page_start": 382,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "8.3.2",
+          "title": "Most Powerful Tests",
+          "printed_page_start": 387,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "8.3.3",
+          "title": "Sizes of Union–Intersection and Intersection–Union Tests",
+          "printed_page_start": 394,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "8.3.4",
+          "title": "p-Values",
+          "printed_page_start": 397,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "8.3.5",
+          "title": "Loss Function Optimality",
+          "printed_page_start": 400,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "8.4",
+          "title": "Exercises",
+          "printed_page_start": 402,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "8.5",
+          "title": "Miscellanea",
+          "printed_page_start": 413,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "9.1",
+          "title": "Introduction",
+          "printed_page_start": 417,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "9.2",
+          "title": "Methods of Finding Interval Estimators",
+          "printed_page_start": 420,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "9.2.1",
+          "title": "Inverting a Test Statistic",
+          "printed_page_start": 420,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "9.2.2",
+          "title": "Pivotal Quantities",
+          "printed_page_start": 427,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "9.2.3",
+          "title": "Pivoting the CDF",
+          "printed_page_start": 430,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "9.2.4",
+          "title": "Bayesian Intervals",
+          "printed_page_start": 435,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "9.3",
+          "title": "Methods of Evaluating Interval Estimators",
+          "printed_page_start": 440,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "9.3.1",
+          "title": "Size and Coverage Probability",
+          "printed_page_start": 440,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "9.3.2",
+          "title": "Test-Related Optimality",
+          "printed_page_start": 444,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "9.3.3",
+          "title": "Bayesian Optimality",
+          "printed_page_start": 447,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "9.3.4",
+          "title": "Loss Function Optimality",
+          "printed_page_start": 449,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "9.4",
+          "title": "Exercises",
+          "printed_page_start": 451,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "9.5",
+          "title": "Miscellanea",
+          "printed_page_start": 463,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "10.1",
+          "title": "Point Estimation",
+          "printed_page_start": 467,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "10.1.1",
+          "title": "Consistency",
+          "printed_page_start": 467,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "10.1.2",
+          "title": "Efficiency",
+          "printed_page_start": 470,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "10.1.3",
+          "title": "Calculations and Comparisons",
+          "printed_page_start": 473,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "10.1.4",
+          "title": "Bootstrap Standard Errors",
+          "printed_page_start": 478,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "10.2",
+          "title": "Robustness",
+          "printed_page_start": 481,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "10.2.1",
+          "title": "The Mean and the Median",
+          "printed_page_start": 482,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "10.2.2",
+          "title": "M-Estimators",
+          "printed_page_start": 484,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "10.3",
+          "title": "Hypothesis Testing",
+          "printed_page_start": 488,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "10.3.1",
+          "title": "Asymptotic Distribution of LRTs",
+          "printed_page_start": 488,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "10.3.2",
+          "title": "Other Large-Sample Tests",
+          "printed_page_start": 492,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "10.4",
+          "title": "Interval Estimation",
+          "printed_page_start": 496,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "10.4.1",
+          "title": "Approximate Maximum Likelihood Intervals",
+          "printed_page_start": 496,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "10.4.2",
+          "title": "Other Large-Sample Intervals",
+          "printed_page_start": 499,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "10.5",
+          "title": "Exercises",
+          "printed_page_start": 504,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "10.6",
+          "title": "Miscellanea",
+          "printed_page_start": 515,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "11.1",
+          "title": "Introduction",
+          "printed_page_start": 521,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "11.2",
+          "title": "Oneway Analysis of Variance",
+          "printed_page_start": 522,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "11.2.1",
+          "title": "Model and Distribution Assumptions",
+          "printed_page_start": 524,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "11.2.2",
+          "title": "The Classic ANOVA Hypothesis",
+          "printed_page_start": 525,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "11.2.3",
+          "title": "Inferences Regarding Linear Combinations of Means",
+          "printed_page_start": 527,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "11.2.4",
+          "title": "The ANOVA F Test",
+          "printed_page_start": 530,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "11.2.5",
+          "title": "Simultaneous Estimation of Contrasts",
+          "printed_page_start": 534,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "11.2.6",
+          "title": "Partitioning Sums of Squares",
+          "printed_page_start": 536,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "11.3",
+          "title": "Simple Linear Regression",
+          "printed_page_start": 539,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "11.3.1",
+          "title": "Least Squares: A Mathematical Solution",
+          "printed_page_start": 542,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "11.3.2",
+          "title": "Best Linear Unbiased Estimators: A Statistical Solution",
+          "printed_page_start": 544,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "11.3.3",
+          "title": "Models and Distribution Assumptions",
+          "printed_page_start": 548,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "11.3.4",
+          "title": "Estimation and Testing with Normal Errors",
+          "printed_page_start": 550,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "11.3.5",
+          "title": "Estimation and Prediction at a Specified x = x0",
+          "printed_page_start": 557,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "11.3.6",
+          "title": "Simultaneous Estimation and Confidence Bands",
+          "printed_page_start": 559,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "11.4",
+          "title": "Exercises",
+          "printed_page_start": 563,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "11.5",
+          "title": "Miscellanea",
+          "printed_page_start": 572,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "12.1",
+          "title": "Introduction",
+          "printed_page_start": 577,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "12.2",
+          "title": "Regression with Errors in Variables",
+          "printed_page_start": 577,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "12.2.1",
+          "title": "Functional and Structural Relationships",
+          "printed_page_start": 579,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "12.2.2",
+          "title": "A Least Squares Solution",
+          "printed_page_start": 581,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "12.2.3",
+          "title": "Maximum Likelihood Estimation",
+          "printed_page_start": 583,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "12.2.4",
+          "title": "Confidence Sets",
+          "printed_page_start": 588,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "12.3",
+          "title": "Logistic Regression",
+          "printed_page_start": 591,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "12.3.1",
+          "title": "The Model",
+          "printed_page_start": 591,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "12.3.2",
+          "title": "Estimation",
+          "printed_page_start": 593,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "12.4",
+          "title": "Robust Regression",
+          "printed_page_start": 597,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "12.5",
+          "title": "Exercises",
+          "printed_page_start": 602,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "12.6",
+          "title": "Miscellanea",
+          "printed_page_start": 608,
+          "locator_status": "table_of_contents_inspected"
+        }
+      ],
+      "source_filename": "04_Statistics_Statistical Inference.pdf"
+    },
+    {
+      "source_id": "FELLER",
+      "page_scheme": "Printed page numbers from connected source's contents when reliably recoverable, never assumed equal to PDF viewer page index",
+      "source_navigation_status": "All main units captured; section extraction varies with scan/OCR quality. Missing printed-page anchors remain unverified, not fabricated.",
+      "sections": [
+        {
+          "ref": "I",
+          "title": "The Sample Space",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset"
+        },
+        {
+          "ref": "II",
+          "title": "Elements of Combinatorial Analysis",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset"
+        },
+        {
+          "ref": "III",
+          "title": "Fluctuations in Coin Tossing and Random Walks",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 67
+        },
+        {
+          "ref": "IV",
+          "title": "Combination of Events",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 97
+        },
+        {
+          "ref": "V",
+          "title": "Conditional Probability and Stochastic Independence",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 114
+        },
+        {
+          "ref": "VI",
+          "title": "The Binomial and the Poisson Distributions",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 146
+        },
+        {
+          "ref": "VII",
+          "title": "The Normal Approximation to the Binomial Distribution",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 173
+        },
+        {
+          "ref": "VIII",
+          "title": "Infinite Sequences of Bernoulli Trials",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset"
+        },
+        {
+          "ref": "IX",
+          "title": "Random Variables; Expectation",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 212
+        },
+        {
+          "ref": "X",
+          "title": "Laws of Large Numbers",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 243
+        },
+        {
+          "ref": "XI",
+          "title": "Integral-Valued Variables; Generating Functions",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 264
+        },
+        {
+          "ref": "XII",
+          "title": "Compound Distributions; Branching Processes",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 286
+        },
+        {
+          "ref": "XIII",
+          "title": "Recurrent Events; Renewal Theory",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 303
+        },
+        {
+          "ref": "XIV",
+          "title": "Random Walk and Ruin Problems",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 342
+        },
+        {
+          "ref": "XV",
+          "title": "Markov Chains",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 372
+        },
+        {
+          "ref": "XVI",
+          "title": "Algebraic Treatment of Finite Markov Chains",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset"
+        },
+        {
+          "ref": "XVII",
+          "title": "The Simplest Time-Dependent Stochastic Processes",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset"
+        }
+      ],
+      "subsections": [],
+      "source_filename": "03_Probability_An Introduction to Probability Theory and Its Applications.pdf"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "MATH-PROB",
+      "parent_id": "MATH-ROOT",
+      "kind": "technical_investigation",
+      "question": "What distinguishes an uncertainty model from observed frequencies?",
+      "why": "Sampling without replacement breaks naive independent-trial assumptions.",
+      "mechanism_explanation": "A probability space is measurable events with a normalized measure. Independence and conditional probability are further assumptions; a stochastic model's adequacy is empirical, not a tautology of probability axioms.",
+      "status": "research_active",
+      "evidence_status": "table_of_contents_lead",
+      "source_sections": [
+        {
+          "source_id": "FELLER",
+          "ref": "I",
+          "section": "I: The Sample Space",
+          "pages": "Printed start unverified",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "I: The Sample Space"
+        },
+        {
+          "source_id": "FELLER",
+          "ref": "V",
+          "section": "V: Conditional Probability and Stochastic Independence",
+          "pages": "Printed p. 114",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "V: Conditional Probability and Stochastic Independence · printed p. 114"
+        },
+        {
+          "source_id": "CASELLA",
+          "ref": "1",
+          "section": "1: Probability Theory",
+          "pages": "Printed p. 1",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "1: Probability Theory · printed p. 1"
+        }
+      ],
+      "term_ids": [
+        "math-t-0635",
+        "math-t-0643",
+        "math-t-0642"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "Sampling without replacement breaks naive independent-trial assumptions.",
+          "mechanism": "A probability space is measurable events with a normalized measure. Independence and conditional probability are further assumptions; a stochastic model's adequacy is empirical, not a tautology of probability axioms.",
+          "discriminating_observation": "Compare distributions of draws with and without replacement."
+        }
+      ]
+    },
+    {
+      "id": "MATH-STOCHASTIC",
+      "parent_id": "MATH-PROB",
+      "kind": "technical_investigation",
+      "question": "How can local random transitions produce long-run regularity?",
+      "why": "A Markov chain need not converge to a unique stationary distribution.",
+      "mechanism_explanation": "Random walks, branching, renewal and Markov chains encode temporal dependence and distinct recurrence or extinction phenomena.",
+      "status": "research_active",
+      "evidence_status": "source_section_inspected",
+      "source_sections": [
+        {
+          "source_id": "FELLER",
+          "ref": "III",
+          "section": "III: Fluctuations in Coin Tossing and Random Walks",
+          "pages": "Printed p. 67",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "III: Fluctuations in Coin Tossing and Random Walks · printed p. 67"
+        },
+        {
+          "source_id": "FELLER",
+          "ref": "XIII",
+          "section": "XIII: Recurrent Events; Renewal Theory",
+          "pages": "Printed p. 303",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "XIII: Recurrent Events; Renewal Theory · printed p. 303"
+        },
+        {
+          "source_id": "FELLER",
+          "ref": "XV",
+          "section": "XV: Markov Chains",
+          "pages": "Printed p. 372",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "inspected",
+          "locator_level": "source_section_inspected",
+          "why": "XV: Markov Chains · printed p. 372"
+        }
+      ],
+      "term_ids": [
+        "math-t-0669",
+        "math-t-0679",
+        "math-t-0677",
+        "math-t-0676"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "A Markov chain need not converge to a unique stationary distribution.",
+          "mechanism": "Random walks, branching, renewal and Markov chains encode temporal dependence and distinct recurrence or extinction phenomena.",
+          "discriminating_observation": "Contrast a periodic two-state chain with an aperiodic irreducible chain."
+        }
+      ]
+    },
+    {
+      "id": "MATH-STAT",
+      "parent_id": "MATH-PROB",
+      "kind": "technical_investigation",
+      "question": "How does a probability model become a defensible inference from data?",
+      "why": "Observing data is not equivalent to knowing which probability law produced them.",
+      "mechanism_explanation": "Statistical inference introduces unknown parameters, a likelihood and sampling distribution. Sufficient statistics preserve information only relative to a specified statistical family.",
+      "status": "research_active",
+      "evidence_status": "table_of_contents_lead",
+      "source_sections": [
+        {
+          "source_id": "CASELLA",
+          "ref": "6",
+          "section": "6: Principles of Data Reduction",
+          "pages": "Printed p. 271",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "6: Principles of Data Reduction · printed p. 271"
+        },
+        {
+          "source_id": "CASELLA",
+          "ref": "7",
+          "section": "7: Point Estimation",
+          "pages": "Printed p. 311",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "7: Point Estimation · printed p. 311"
+        },
+        {
+          "source_id": "CASELLA",
+          "ref": "8",
+          "section": "8: Hypothesis Testing",
+          "pages": "Printed p. 373",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "8: Hypothesis Testing · printed p. 373"
+        }
+      ],
+      "term_ids": [
+        "math-t-0690",
+        "math-t-0695",
+        "math-t-0698"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "Observing data is not equivalent to knowing which probability law produced them.",
+          "mechanism": "Statistical inference introduces unknown parameters, a likelihood and sampling distribution. Sufficient statistics preserve information only relative to a specified statistical family.",
+          "discriminating_observation": "Test sufficiency of the sum of Bernoulli observations for their success probability."
+        }
+      ]
+    },
+    {
+      "id": "MATH-ESTIMATE",
+      "parent_id": "MATH-STAT",
+      "kind": "technical_investigation",
+      "question": "What makes an estimator better besides being close on one dataset?",
+      "why": "Unbiasedness alone is not optimality; a single sample's error is not an estimator's risk.",
+      "mechanism_explanation": "Bias, variance, MSE, likelihood and Bayes risk evaluate repeated-sampling quality. Rao–Blackwell conditioning can reduce variance under appropriate hypotheses.",
+      "status": "research_active",
+      "evidence_status": "source_section_inspected",
+      "source_sections": [
+        {
+          "source_id": "CASELLA",
+          "ref": "7",
+          "section": "7: Point Estimation",
+          "pages": "Printed p. 311",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "inspected",
+          "locator_level": "source_section_inspected",
+          "why": "7: Point Estimation · printed p. 311"
+        },
+        {
+          "source_id": "CASELLA",
+          "ref": "6",
+          "section": "6: Principles of Data Reduction",
+          "pages": "Printed p. 271",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "6: Principles of Data Reduction · printed p. 271"
+        }
+      ],
+      "term_ids": [
+        "math-t-0696",
+        "math-t-0703",
+        "math-t-0708"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "Unbiasedness alone is not optimality; a single sample's error is not an estimator's risk.",
+          "mechanism": "Bias, variance, MSE, likelihood and Bayes risk evaluate repeated-sampling quality. Rao–Blackwell conditioning can reduce variance under appropriate hypotheses.",
+          "discriminating_observation": "Compare sampling MSE across two estimators over a range of parameters."
+        }
+      ]
+    },
+    {
+      "id": "MATH-TEST",
+      "parent_id": "MATH-STAT",
+      "kind": "technical_investigation",
+      "question": "Why is a p-value not the probability that a hypothesis is false?",
+      "why": "P(data|null) is not P(null|data).",
+      "mechanism_explanation": "A significance test controls sampling outcomes under a null law. Type I error, power, confidence coverage and posterior probabilities are different conditional quantities.",
+      "status": "research_active",
+      "evidence_status": "table_of_contents_lead",
+      "source_sections": [
+        {
+          "source_id": "CASELLA",
+          "ref": "8",
+          "section": "8: Hypothesis Testing",
+          "pages": "Printed p. 373",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "8: Hypothesis Testing · printed p. 373"
+        },
+        {
+          "source_id": "CASELLA",
+          "ref": "9",
+          "section": "9: Interval Estimation",
+          "pages": "Printed p. 417",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "9: Interval Estimation · printed p. 417"
+        }
+      ],
+      "term_ids": [
+        "math-t-0725",
+        "math-t-0721",
+        "math-t-0718",
+        "math-t-0729"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "P(data|null) is not P(null|data).",
+          "mechanism": "A significance test controls sampling outcomes under a null law. Type I error, power, confidence coverage and posterior probabilities are different conditional quantities.",
+          "discriminating_observation": "Simulate false-positive rates under the null and interval coverage under misspecification."
+        }
+      ]
+    }
+  ],
+  "source_coverage": {
+    "CASELLA": {
+      "chapter_units": 12,
+      "section_locators": 152,
+      "chapters_with_printed_page": 12,
+      "evidence": "Table of contents indexed; section OCR candidate vs verified title/page states explicitly identified"
+    },
+    "FELLER": {
+      "chapter_units": 17,
+      "section_locators": 0,
+      "chapters_with_printed_page": 12,
+      "evidence": "Table of contents indexed; section OCR candidate vs verified title/page states explicitly identified"
+    }
+  },
+  "source_inspection_notes": [
+    {
+      "source_id": "CASELLA",
+      "source_region": "Chapters 6–7 sufficiency/Rao–Blackwell",
+      "observation": "Sufficiency and conditioning are model-relative routes to estimator improvement.",
+      "status": "selected_passage_examined_not_reproduced"
+    },
+    {
+      "source_id": "FELLER",
+      "source_region": "Markov-chain and random-walk text",
+      "observation": "Temporal dependence demands transition and recurrence structure rather than blindly independent trials.",
+      "status": "selected_passage_examined_not_reproduced"
+    }
+  ]
+}

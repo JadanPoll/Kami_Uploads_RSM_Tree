@@ -1,0 +1,702 @@
+{
+  "id": "mathematics/geometry-and-topology",
+  "kind": "mathematics_research_family",
+  "title": "Mathematics — Geometry and topology",
+  "updated": "2026-11-22",
+  "parent_atlas": "../investigation.json",
+  "scope": "Continuity, global shape, topology and intrinsic/extrinsic curvature.",
+  "sources": [
+    {
+      "id": "MUNKRES",
+      "title": "Topology",
+      "authors": [
+        "James R. Munkres"
+      ],
+      "edition": "Second Edition text in 2014 Pearson Custom Library assembly",
+      "role": "Open-set topology, compactness/connectedness, separation, metrization, homotopy and covering spaces",
+      "url": "https://drive.google.com/file/d/1_a8QHxSed_yHkSJ7Rru01WhMak7-kf11/view",
+      "source_folder": "https://drive.google.com/drive/folders/1Qx_V7FAz2EhbmCAijHMr18swPu5GLyZr",
+      "limitations": [
+        "Printed page and PDF index must not be conflated; scanned and retypeset editions vary.",
+        "A TOC title is a retrieval lead, not a read proof or successful calculation."
+      ]
+    },
+    {
+      "id": "DOCARMO",
+      "title": "Differential Geometry of Curves and Surfaces",
+      "authors": [
+        "Manfredo P. do Carmo"
+      ],
+      "edition": "Revised & Updated Second Edition, Dover",
+      "role": "Curvature, tangent geometry, intrinsic/extrinsic surfaces, geodesics, Gauss–Bonnet and global geometry",
+      "url": "https://drive.google.com/file/d/1Hjfdm25uPxJ_A8k7SGl9TIDkxlEdnuGX/view",
+      "source_folder": "https://drive.google.com/drive/folders/1Qx_V7FAz2EhbmCAijHMr18swPu5GLyZr",
+      "limitations": [
+        "Printed page and PDF index must not be conflated; scanned and retypeset editions vary.",
+        "A TOC title is a retrieval lead, not a read proof or successful calculation."
+      ]
+    }
+  ],
+  "book_landscaplets": [
+    {
+      "source_id": "MUNKRES",
+      "page_scheme": "Printed page numbers from connected source's contents when reliably recoverable, never assumed equal to PDF viewer page index",
+      "source_navigation_status": "All main units captured; section extraction varies with scan/OCR quality. Missing printed-page anchors remain unverified, not fabricated.",
+      "sections": [
+        {
+          "ref": "1",
+          "title": "Set Theory and Logic",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 1,
+          "original_toc_order": 1
+        },
+        {
+          "ref": "2",
+          "title": "Topological Spaces and Continuous Functions",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 73,
+          "original_toc_order": 2
+        },
+        {
+          "ref": "3",
+          "title": "Connectedness and Compactness",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 145,
+          "original_toc_order": 3
+        },
+        {
+          "ref": "4",
+          "title": "Countability and Separation Axioms",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 187,
+          "original_toc_order": 4
+        },
+        {
+          "ref": "5",
+          "title": "The Tychonoff Theorem",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 228,
+          "original_toc_order": 5
+        },
+        {
+          "ref": "6",
+          "title": "Metrization Theorems and Paracompactness",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 241,
+          "original_toc_order": 6
+        },
+        {
+          "ref": "7",
+          "title": "Complete Metric Spaces and Function Spaces",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 261,
+          "original_toc_order": 7
+        },
+        {
+          "ref": "8",
+          "title": "Baire Spaces and Dimension Theory",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 292,
+          "original_toc_order": 8
+        },
+        {
+          "ref": "9",
+          "title": "The Fundamental Group",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 317,
+          "original_toc_order": 9
+        },
+        {
+          "ref": "10",
+          "title": "Separation Theorems in the Plane",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 372,
+          "original_toc_order": 10
+        },
+        {
+          "ref": "11",
+          "title": "The Seifert-van Kampen Theorem",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 403,
+          "original_toc_order": 11
+        },
+        {
+          "ref": "12",
+          "title": "Classification of Surfaces",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 468,
+          "original_toc_order": 13
+        },
+        {
+          "ref": "13",
+          "title": "Classification of Covering Spaces",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 443,
+          "original_toc_order": 12
+        }
+      ],
+      "subsections": [],
+      "source_filename": "13_Topology.pdf"
+    },
+    {
+      "source_id": "DOCARMO",
+      "page_scheme": "Printed page numbers from connected source's contents when reliably recoverable, never assumed equal to PDF viewer page index",
+      "source_navigation_status": "All main units captured; section extraction varies with scan/OCR quality. Missing printed-page anchors remain unverified, not fabricated.",
+      "sections": [
+        {
+          "ref": "1",
+          "title": "Curves",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 1
+        },
+        {
+          "ref": "2",
+          "title": "Regular Surfaces",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 53
+        },
+        {
+          "ref": "3",
+          "title": "The Geometry of the Gauss Map",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 136
+        },
+        {
+          "ref": "4",
+          "title": "The Intrinsic Geometry of Surfaces",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 220
+        },
+        {
+          "ref": "5",
+          "title": "Global Differential Geometry",
+          "locator_status": "table_of_contents_inspected",
+          "page_scheme": "printed_book_page_start_if_verified; not PDF offset",
+          "printed_page_start": 321
+        }
+      ],
+      "subsections": [
+        {
+          "ref": "1-1",
+          "title": "Introduction",
+          "printed_page_start": 1,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "1-2",
+          "title": "Parametrized Curves",
+          "printed_page_start": 2,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "1-3",
+          "title": "Regular Curves; Arc Length",
+          "printed_page_start": 6,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "1-4",
+          "title": "The Vector Product in R3",
+          "printed_page_start": 12,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "1-5",
+          "title": "The Local Theory of Curves Parametrized by Arc Length",
+          "printed_page_start": 17,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "1-6",
+          "title": "The Local Canonical Form",
+          "printed_page_start": 28,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "1-7",
+          "title": "Global Properties of Plane Curves",
+          "printed_page_start": 31,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "2-1",
+          "title": "Introduction",
+          "printed_page_start": 53,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "2-2",
+          "title": "Regular Surfaces; Inverse Images of Regular Values",
+          "printed_page_start": 54,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "2-3",
+          "title": "Change of Parameters; Differentiable Functions on Surface",
+          "printed_page_start": 72,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "2-4",
+          "title": "The Tangent Plane; The Differential of a Map",
+          "printed_page_start": 85,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "2-5",
+          "title": "The First Fundamental Form; Area",
+          "printed_page_start": 94,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "2-6",
+          "title": "Orientation of Surfaces",
+          "printed_page_start": 105,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "2-7",
+          "title": "A Characterization of Compact Orientable Surfaces",
+          "printed_page_start": 112,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "2-8",
+          "title": "A Geometric Definition of Area",
+          "printed_page_start": 116,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "3-1",
+          "title": "Introduction",
+          "printed_page_start": 136,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "3-3",
+          "title": "The Gauss Map in Local Coordinates",
+          "printed_page_start": 155,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "3-4",
+          "title": "Vector Fields",
+          "printed_page_start": 178,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "3-5",
+          "title": "Ruled Surfaces and Minimal Surfaces",
+          "printed_page_start": 191,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "4-1",
+          "title": "Introduction",
+          "printed_page_start": 220,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "4-2",
+          "title": "Isometries; Conformal Maps",
+          "printed_page_start": 221,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "4-3",
+          "title": "The Gauss Theorem and the Equations of Compatibility",
+          "printed_page_start": 235,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "4-4",
+          "title": "Parallel Transport. Geodesics.",
+          "printed_page_start": 241,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "4-5",
+          "title": "The Gauss-Bonnet Theorem and Its Applications",
+          "printed_page_start": 267,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "4-6",
+          "title": "The Exponential Map. Geodesic Polar Coordinates",
+          "printed_page_start": 287,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "4-7",
+          "title": "Further Properties of Geodesics; Convex Neighborhoods",
+          "printed_page_start": 302,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "5-1",
+          "title": "Introduction",
+          "printed_page_start": 321,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "5-2",
+          "title": "The Rigidity of the Sphere",
+          "printed_page_start": 323,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "5-3",
+          "title": "Complete Surfaces. Theorem of Hopf-Rinow",
+          "printed_page_start": 331,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "5-4",
+          "title": "First and Second Variations of Arc Length; Bonnet’s Theorem",
+          "printed_page_start": 344,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "5-5",
+          "title": "Jacobi Fields and Conjugate Points",
+          "printed_page_start": 363,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "5-6",
+          "title": "Covering Spaces; The Theorems of Hadamard",
+          "printed_page_start": 377,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "5-7",
+          "title": "Global Theorems for Curves: The Fary-Milnor Theorem",
+          "printed_page_start": 396,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "5-8",
+          "title": "Surfaces of Zero Gaussian Curvature",
+          "printed_page_start": 414,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "5-9",
+          "title": "Jacobi’s Theorems",
+          "printed_page_start": 421,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "5-10",
+          "title": "Abstract Surfaces; Further Generalizations",
+          "printed_page_start": 430,
+          "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "5-11",
+          "title": "Hilbert’s Theorem",
+          "printed_page_start": 451,
+          "locator_status": "table_of_contents_inspected"
+        }
+      ],
+      "source_filename": "10_Differential_Geometry_Differential Geometry of Curves and Surfaces_.pdf"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "MATH-TOPOLOGY",
+      "parent_id": "MATH-ROOT",
+      "kind": "technical_investigation",
+      "question": "What is continuity when distance is not defined?",
+      "why": "A continuous bijection can fail to be homeomorphic; topological equivalence ignores many geometric lengths.",
+      "mechanism_explanation": "Open sets and their inverse images define continuity; homeomorphism is a reversible topology-preserving relationship. Metrics are additional structure, not the definition of all topology.",
+      "status": "research_active",
+      "evidence_status": "table_of_contents_lead",
+      "source_sections": [
+        {
+          "source_id": "MUNKRES",
+          "ref": "2",
+          "section": "2: Topological Spaces and Continuous Functions",
+          "pages": "Printed p. 73",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "2: Topological Spaces and Continuous Functions · printed p. 73"
+        },
+        {
+          "source_id": "MUNKRES",
+          "ref": "3",
+          "section": "3: Connectedness and Compactness",
+          "pages": "Printed p. 145",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "3: Connectedness and Compactness · printed p. 145"
+        },
+        {
+          "source_id": "RUDIN",
+          "ref": "2",
+          "section": "2: Basic Topology",
+          "pages": "Printed p. 22",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "2: Basic Topology · printed p. 22"
+        }
+      ],
+      "term_ids": [
+        "math-t-0355",
+        "math-t-0365",
+        "math-t-0366"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "A continuous bijection can fail to be homeomorphic; topological equivalence ignores many geometric lengths.",
+          "mechanism": "Open sets and their inverse images define continuity; homeomorphism is a reversible topology-preserving relationship. Metrics are additional structure, not the definition of all topology.",
+          "discriminating_observation": "Create two distinct topologies on the same set and see which functions remain continuous."
+        }
+      ]
+    },
+    {
+      "id": "MATH-COMPACT",
+      "parent_id": "MATH-TOPOLOGY",
+      "kind": "technical_investigation",
+      "question": "When can a local condition yield a global finiteness conclusion?",
+      "why": "The infinite-dimensional unit ball invalidates naive closed-and-bounded compactness.",
+      "mechanism_explanation": "Compactness gives finite subcovers and powers many extrema/subsequence principles. Heine–Borel closed-and-bounded criteria are specific to finite-dimensional Euclidean settings.",
+      "status": "research_active",
+      "evidence_status": "table_of_contents_lead",
+      "source_sections": [
+        {
+          "source_id": "MUNKRES",
+          "ref": "3",
+          "section": "3: Connectedness and Compactness",
+          "pages": "Printed p. 145",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "3: Connectedness and Compactness · printed p. 145"
+        },
+        {
+          "source_id": "KREYSZIG",
+          "ref": "2.5",
+          "section": "2.5: Compactness and Finite Dimension",
+          "pages": "Printed p. 77",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "2.5: Compactness and Finite Dimension · printed p. 77"
+        },
+        {
+          "source_id": "RUDIN",
+          "ref": "2",
+          "section": "2: Basic Topology",
+          "pages": "Printed p. 22",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "2: Basic Topology · printed p. 22"
+        }
+      ],
+      "term_ids": [
+        "math-t-0379",
+        "math-t-0381",
+        "math-t-0498"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "The infinite-dimensional unit ball invalidates naive closed-and-bounded compactness.",
+          "mechanism": "Compactness gives finite subcovers and powers many extrema/subsequence principles. Heine–Borel closed-and-bounded criteria are specific to finite-dimensional Euclidean settings.",
+          "discriminating_observation": "Compare bounded sequences in R^n and l2 for convergent subsequences."
+        }
+      ]
+    },
+    {
+      "id": "MATH-LOOPS",
+      "parent_id": "MATH-TOPOLOGY",
+      "kind": "technical_investigation",
+      "question": "How can a hole be detected without relying on a picture?",
+      "why": "The fundamental group detects some but not all non-homeomorphism distinctions.",
+      "mechanism_explanation": "Homotopy classes of loops define the fundamental group; coverings and van Kampen assemble global topology from local pieces under overlap conditions.",
+      "status": "research_active",
+      "evidence_status": "source_section_inspected",
+      "source_sections": [
+        {
+          "source_id": "MUNKRES",
+          "ref": "9",
+          "section": "9: The Fundamental Group",
+          "pages": "Printed p. 317",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "inspected",
+          "locator_level": "source_section_inspected",
+          "why": "9: The Fundamental Group · printed p. 317"
+        },
+        {
+          "source_id": "MUNKRES",
+          "ref": "11",
+          "section": "11: The Seifert-van Kampen Theorem",
+          "pages": "Printed p. 403",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "11: The Seifert-van Kampen Theorem · printed p. 403"
+        },
+        {
+          "source_id": "MUNKRES",
+          "ref": "13",
+          "section": "13: Classification of Covering Spaces",
+          "pages": "Printed p. 443",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "13: Classification of Covering Spaces · printed p. 443"
+        }
+      ],
+      "term_ids": [
+        "math-t-0401",
+        "math-t-0399",
+        "math-t-0402"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "The fundamental group detects some but not all non-homeomorphism distinctions.",
+          "mechanism": "Homotopy classes of loops define the fundamental group; coverings and van Kampen assemble global topology from local pieces under overlap conditions.",
+          "discriminating_observation": "Contract a loop on a disk, then explain why its analogue cannot shrink around an annular hole."
+        }
+      ]
+    },
+    {
+      "id": "MATH-CURVATURE",
+      "parent_id": "MATH-ROOT",
+      "kind": "technical_investigation",
+      "question": "How can local curvature constrain the whole shape of a surface?",
+      "why": "A cylinder has extrinsic bending but zero intrinsic Gaussian curvature, unlike a sphere.",
+      "mechanism_explanation": "The intrinsic first fundamental form measures lengths and angles; Gaussian curvature and Gauss–Bonnet connect local geometry with Euler-characteristic topology.",
+      "status": "research_active",
+      "evidence_status": "source_section_inspected",
+      "source_sections": [
+        {
+          "source_id": "DOCARMO",
+          "ref": "2-5",
+          "section": "2-5: The First Fundamental Form; Area",
+          "pages": "Printed p. 94",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "2-5: The First Fundamental Form; Area · printed p. 94"
+        },
+        {
+          "source_id": "DOCARMO",
+          "ref": "4-5",
+          "section": "4-5: The Gauss-Bonnet Theorem and Its Applications",
+          "pages": "Printed p. 267",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "inspected",
+          "locator_level": "source_section_inspected",
+          "why": "4-5: The Gauss-Bonnet Theorem and Its Applications · printed p. 267"
+        }
+      ],
+      "term_ids": [
+        "math-t-0606",
+        "math-t-0613",
+        "math-t-0626"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "A cylinder has extrinsic bending but zero intrinsic Gaussian curvature, unlike a sphere.",
+          "mechanism": "The intrinsic first fundamental form measures lengths and angles; Gaussian curvature and Gauss–Bonnet connect local geometry with Euler-characteristic topology.",
+          "discriminating_observation": "Contrast sphere, cylinder and plane via intrinsic distances and total curvature."
+        }
+      ]
+    },
+    {
+      "id": "MATH-GEODESIC",
+      "parent_id": "MATH-CURVATURE",
+      "kind": "technical_investigation",
+      "question": "What counts as a straight line on a curved surface?",
+      "why": "Locally geodesic need not mean globally shortest between endpoints.",
+      "mechanism_explanation": "Geodesics generalize locally straight paths under the surface metric and connection; parallel transport and conjugate points expose additional geometry.",
+      "status": "research_active",
+      "evidence_status": "table_of_contents_lead",
+      "source_sections": [
+        {
+          "source_id": "DOCARMO",
+          "ref": "4-4",
+          "section": "4-4: Parallel Transport. Geodesics.",
+          "pages": "Printed p. 241",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "4-4: Parallel Transport. Geodesics. · printed p. 241"
+        },
+        {
+          "source_id": "DOCARMO",
+          "ref": "5-3",
+          "section": "5-3: Complete Surfaces. Theorem of Hopf-Rinow",
+          "pages": "Printed p. 331",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "5-3: Complete Surfaces. Theorem of Hopf-Rinow · printed p. 331"
+        }
+      ],
+      "term_ids": [
+        "math-t-0622",
+        "math-t-0620",
+        "math-t-0625"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "Locally geodesic need not mean globally shortest between endpoints.",
+          "mechanism": "Geodesics generalize locally straight paths under the surface metric and connection; parallel transport and conjugate points expose additional geometry.",
+          "discriminating_observation": "Compare short and long arcs of the same great circle."
+        }
+      ]
+    }
+  ],
+  "source_coverage": {
+    "MUNKRES": {
+      "chapter_units": 13,
+      "section_locators": 0,
+      "chapters_with_printed_page": 13,
+      "evidence": "Table of contents indexed; section OCR candidate vs verified title/page states explicitly identified"
+    },
+    "DOCARMO": {
+      "chapter_units": 5,
+      "section_locators": 37,
+      "chapters_with_printed_page": 5,
+      "evidence": "Table of contents indexed; section OCR candidate vs verified title/page states explicitly identified"
+    }
+  },
+  "source_inspection_notes": [
+    {
+      "source_id": "MUNKRES",
+      "source_region": "Chapter 9 fundamental group",
+      "observation": "The text distinguishes constructing a homeomorphism from detecting failure with invariants.",
+      "status": "selected_passage_examined_not_reproduced"
+    },
+    {
+      "source_id": "DOCARMO",
+      "source_region": "Chapter 4 Gauss–Bonnet discussion",
+      "observation": "Local curvature can constrain global surface topology.",
+      "status": "selected_passage_examined_not_reproduced"
+    }
+  ]
+}
