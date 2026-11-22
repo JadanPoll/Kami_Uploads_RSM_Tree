@@ -1,7 +1,7 @@
 {
   "id": "operating-systems",
   "kind": "question_tree",
-  "version": 6,
+  "version": 7,
   "status": "provisional",
   "root": "OS-00",
   "title": "I want to build an OS! — question tree",
@@ -1724,6 +1724,131 @@
       ],
       "investigation_id": null,
       "established_certificate_id": null
+    },
+    {
+      "id": "OS-Q16",
+      "parent_id": "OS-00",
+      "question": "What stays alive when I close a window, disconnect, log out, or restart?",
+      "why_ask": "An app window, a network connection, a login session, a running process, and saved state have different lifetimes. Which event actually ended the work?",
+      "status": "candidate",
+      "candidate_references": [],
+      "related_question_ids": [
+        "OS-Q05",
+        "OS-Q09",
+        "OS-Q11a",
+        "OS-Q12"
+      ],
+      "technical_target_ids": [
+        "OS-02",
+        "OS-05",
+        "OS-08"
+      ],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "OS-Q17",
+      "parent_id": "OS-00",
+      "question": "Why can my computer be busy but make no useful progress?",
+      "why_ask": "High CPU usage can mean productive work, spinning, contention, reclaim, interrupt load or stalled progress. Which measurable resource is limiting the task?",
+      "status": "candidate",
+      "candidate_references": [],
+      "related_question_ids": [
+        "OS-Q06",
+        "OS-Q06b",
+        "OS-Q07",
+        "OS-Q08"
+      ],
+      "technical_target_ids": [
+        "OS-02",
+        "OS-03",
+        "OS-04",
+        "OS-06"
+      ],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "OS-Q18",
+      "parent_id": "OS-00",
+      "question": "Why can one program run out of memory while another still works?",
+      "why_ask": "Virtual addresses, physical pages, allocation limits, swapping and out-of-memory policy are different resources and boundaries.",
+      "status": "candidate",
+      "candidate_references": [],
+      "related_question_ids": [
+        "OS-Q07",
+        "OS-Q07a",
+        "OS-Q10"
+      ],
+      "technical_target_ids": [
+        "OS-03",
+        "OS-07"
+      ],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "OS-Q19",
+      "parent_id": "OS-00",
+      "question": "Could a browser, robot, or game console be my whole operating environment?",
+      "why_ask": "The experience someone uses can differ radically even when a familiar kernel, embedded runtime or remote machine supplies most system services.",
+      "status": "candidate",
+      "candidate_references": [],
+      "related_question_ids": [
+        "OS-Q13c",
+        "OS-Q14a",
+        "OS-Q15"
+      ],
+      "technical_target_ids": [
+        "OS-01",
+        "OS-06",
+        "OS-07",
+        "OS-08"
+      ],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "OS-Q20",
+      "parent_id": "OS-00",
+      "question": "Can a broken component recover without restarting the whole computer?",
+      "why_ask": "Fault containment, restart supervision, persistent state and safe recovery are distinct contracts; surviving a crash is not the same as resuming correctly.",
+      "status": "candidate",
+      "candidate_references": [],
+      "related_question_ids": [
+        "OS-Q10",
+        "OS-Q12",
+        "OS-Q09a"
+      ],
+      "technical_target_ids": [
+        "OS-04",
+        "OS-05",
+        "OS-07",
+        "OS-08"
+      ],
+      "investigation_id": null,
+      "established_certificate_id": null
+    },
+    {
+      "id": "OS-Q21",
+      "parent_id": "OS-00",
+      "question": "Why can an app access a file but not a camera, another app, or a remote service?",
+      "why_ask": "Filesystems, process privileges, device mediation and remote authorization enforce different access boundaries; a single notion of 'permission' hides the mechanism.",
+      "status": "candidate",
+      "candidate_references": [],
+      "related_question_ids": [
+        "OS-Q10",
+        "OS-Q05a",
+        "OS-Q08"
+      ],
+      "technical_target_ids": [
+        "OS-03",
+        "OS-06",
+        "OS-07",
+        "OS-08"
+      ],
+      "investigation_id": null,
+      "established_certificate_id": null
     }
   ],
   "answer_branches": [
@@ -2037,12 +2162,48 @@
       "to": "OS-Q02",
       "relationship": "reframes feasibility",
       "why": "What one person can build depends strongly on which components are reused"
+    },
+    {
+      "from": "OS-Q16",
+      "to": "OS-Q09",
+      "relationship": "lifetime-versus-durability",
+      "why": "A session can end while persistent data survives, or remain alive while unsaved data is lost."
+    },
+    {
+      "from": "OS-Q17",
+      "to": "OS-Q06b",
+      "relationship": "liveness-versus-utilization",
+      "why": "CPU occupancy does not imply progress when tasks are contending or spinning."
+    },
+    {
+      "from": "OS-Q18",
+      "to": "OS-Q07a",
+      "relationship": "address-space-versus-physical-resource",
+      "why": "Virtual isolation does not make physical memory infinite."
+    },
+    {
+      "from": "OS-Q19",
+      "to": "OS-Q13c",
+      "relationship": "implementation-alternative",
+      "why": "A distinct operating experience may be built above a reused kernel."
+    },
+    {
+      "from": "OS-Q20",
+      "to": "OS-Q12",
+      "relationship": "real-session-verification",
+      "why": "Recovery must be demonstrated after fault and restart, not inferred from successful initialization."
+    },
+    {
+      "from": "OS-Q21",
+      "to": "OS-Q10",
+      "relationship": "multiple-trust-boundaries",
+      "why": "Resource-specific authorization is not equivalent to a single all-or-nothing kernel boundary."
     }
   ],
   "source_reference_policy": "Candidate reference ranges are reading leads indexed by printed book pages, not established Certificates (C). Exact evidentiary citations and conclusions belong in investigation records after reading.",
   "guidance": "Speak like a curious human. Start from the user's actual ambition. Ask deceptively simple questions; consider plausible yes / yes-but / no / no-unless branches only when they change what to investigate. Do not substitute an artificial syllabus or technical headings for the question tree. Follow RSM-01.03, RSM-02.08–02.12, RSM-08.10.",
   "previous_tree_note": "The earlier abstract OS-01..OS-08 topic-centered tree remains in Git history before this revision; this is a deliberate re-rooting, not a renaming.",
-  "updated": "2026-11-19",
+  "updated": "2026-11-21",
   "focus_branch_ids": [
     "OS-Q13",
     "OS-Q14",
@@ -2468,5 +2629,592 @@
     "reference_guide": "Investigations/operating-systems/reference_guide.json",
     "reading_route_rule": "Routes link existing questions to bounded primary source sections; a reading suggestion is not a verified technical conclusion.",
     "route_count": 23
-  }
+  },
+  "curiosity_atlas": {
+    "purpose": "Enter OS knowledge through ordinary frustrations, observations or intended creations; each entry points to the same technical questions, source routes and evolving evidence.",
+    "families": [
+      {
+        "id": "unexpected-behavior",
+        "label": "Why did my computer do that?",
+        "description": "Frozen apps, memory pressure, missing files and permissions"
+      },
+      {
+        "id": "what-survives",
+        "label": "What stays alive or persists?",
+        "description": "Crashes, disconnects, restarts and stored state"
+      },
+      {
+        "id": "create-a-system",
+        "label": "Could I build a different computing environment?",
+        "description": "Kernels, embedded systems, operating experiences and connected computers"
+      }
+    ],
+    "entries": [
+      {
+        "id": "OS-CURI-freeze",
+        "family_id": "unexpected-behavior",
+        "question": "Why does one frozen app not always freeze the whole computer?",
+        "aliases": [
+          "program not responding",
+          "unresponsive app",
+          "computer hangs"
+        ],
+        "context": "Distinguish a blocked process from global liveness loss.",
+        "bridge_ids": [
+          "OS-BRG-runtime",
+          "OS-BRG-coordination"
+        ],
+        "related_question_ids": [
+          "OS-Q17",
+          "OS-Q06a"
+        ]
+      },
+      {
+        "id": "OS-CURI-busy",
+        "family_id": "unexpected-behavior",
+        "question": "Why is the computer busy even when nothing useful gets done?",
+        "aliases": [
+          "100 percent CPU",
+          "high utilization low progress"
+        ],
+        "context": "CPU utilization is not a correctness or progress metric.",
+        "bridge_ids": [
+          "OS-BRG-runtime",
+          "OS-BRG-coordination"
+        ],
+        "related_question_ids": [
+          "OS-Q17"
+        ]
+      },
+      {
+        "id": "OS-CURI-memory",
+        "family_id": "unexpected-behavior",
+        "question": "Why does running out of memory slow everything down or kill one app?",
+        "aliases": [
+          "out of memory",
+          "swap",
+          "ram full"
+        ],
+        "context": "Differentiate address-space mappings, reclaim and process quotas.",
+        "bridge_ids": [
+          "OS-BRG-memory",
+          "OS-BRG-runtime"
+        ],
+        "related_question_ids": [
+          "OS-Q18",
+          "OS-Q07"
+        ]
+      },
+      {
+        "id": "OS-CURI-same-address",
+        "family_id": "unexpected-behavior",
+        "question": "How can two programs use the same memory address without colliding?",
+        "aliases": [
+          "virtual memory",
+          "address translation"
+        ],
+        "context": "Numeric addresses acquire meaning through their process mapping.",
+        "bridge_ids": [
+          "OS-BRG-memory"
+        ],
+        "related_question_ids": [
+          "OS-Q07a"
+        ]
+      },
+      {
+        "id": "OS-CURI-permission",
+        "family_id": "unexpected-behavior",
+        "question": "Why can an app read one thing but not a camera, another app or a remote service?",
+        "aliases": [
+          "app sandbox",
+          "camera permission",
+          "file permissions"
+        ],
+        "context": "Find the responsible authorization mechanism rather than treating permission as universal.",
+        "bridge_ids": [
+          "OS-BRG-boundary"
+        ],
+        "related_question_ids": [
+          "OS-Q21",
+          "OS-Q10"
+        ]
+      },
+      {
+        "id": "OS-CURI-device",
+        "family_id": "unexpected-behavior",
+        "question": "Why does plugging in a device sometimes need a driver or cause a freeze?",
+        "aliases": [
+          "USB driver",
+          "device interrupt",
+          "hardware"
+        ],
+        "context": "Hardware events, driver code and scheduling interact.",
+        "bridge_ids": [
+          "OS-BRG-runtime",
+          "OS-BRG-boundary"
+        ],
+        "related_question_ids": [
+          "OS-Q08",
+          "OS-Q08a"
+        ]
+      },
+      {
+        "id": "OS-CURI-save",
+        "family_id": "what-survives",
+        "question": "Why can a file be lost even though I pressed Save?",
+        "aliases": [
+          "power loss",
+          "write cache",
+          "data durability"
+        ],
+        "context": "A successful write may not be a durable commit.",
+        "bridge_ids": [
+          "OS-BRG-durability"
+        ],
+        "related_question_ids": [
+          "OS-Q09a"
+        ]
+      },
+      {
+        "id": "OS-CURI-recovery",
+        "family_id": "what-survives",
+        "question": "What must a computer do to recover safely after a crash?",
+        "aliases": [
+          "journaling",
+          "crash consistency",
+          "restart supervision"
+        ],
+        "context": "Correct recovery preserves invariants and progress, not merely rebootability.",
+        "bridge_ids": [
+          "OS-BRG-durability",
+          "OS-BRG-lifetime"
+        ],
+        "related_question_ids": [
+          "OS-Q20",
+          "OS-Q12"
+        ]
+      },
+      {
+        "id": "OS-CURI-remote",
+        "family_id": "what-survives",
+        "question": "Why can I disconnect from a computer and find my programs still running?",
+        "aliases": [
+          "remote desktop",
+          "disconnect versus sign out",
+          "session"
+        ],
+        "context": "A client connection can disappear without ending the server-side process.",
+        "bridge_ids": [
+          "OS-BRG-lifetime",
+          "OS-BRG-distribution"
+        ],
+        "related_question_ids": [
+          "OS-Q16"
+        ]
+      },
+      {
+        "id": "OS-CURI-restart",
+        "family_id": "what-survives",
+        "question": "What is the difference between closing a window, logging out and restarting?",
+        "aliases": [
+          "process lifecycle",
+          "login session",
+          "volatile state"
+        ],
+        "context": "Identify which state owner each action destroys.",
+        "bridge_ids": [
+          "OS-BRG-lifetime",
+          "OS-BRG-durability"
+        ],
+        "related_question_ids": [
+          "OS-Q16",
+          "OS-Q09"
+        ]
+      },
+      {
+        "id": "OS-CURI-boot",
+        "family_id": "create-a-system",
+        "question": "How does a computer get from turning on to running my own code?",
+        "aliases": [
+          "bootloader",
+          "firmware",
+          "bare metal"
+        ],
+        "context": "Identify firmware, loader, privileged runtime and their handoff contracts.",
+        "bridge_ids": [
+          "OS-BRG-platform",
+          "OS-BRG-boundary"
+        ],
+        "related_question_ids": [
+          "OS-Q04",
+          "OS-Q04a"
+        ]
+      },
+      {
+        "id": "OS-CURI-browser-os",
+        "family_id": "create-a-system",
+        "question": "Could I make a browser, console or robot into the computer's entire interface?",
+        "aliases": [
+          "browser OS",
+          "robot operating environment",
+          "game console"
+        ],
+        "context": "Separate what users experience from what trusted system services supply.",
+        "bridge_ids": [
+          "OS-BRG-platform"
+        ],
+        "related_question_ids": [
+          "OS-Q19",
+          "OS-Q13c"
+        ]
+      },
+      {
+        "id": "OS-CURI-small-os",
+        "family_id": "create-a-system",
+        "question": "What is the smallest useful OS I could build without reinventing everything?",
+        "aliases": [
+          "minimal operating system",
+          "build a kernel",
+          "borrow bootloader"
+        ],
+        "context": "Choose the minimal capability set and identify reusable infrastructure.",
+        "bridge_ids": [
+          "OS-BRG-platform",
+          "OS-BRG-coordination"
+        ],
+        "related_question_ids": [
+          "OS-Q02",
+          "OS-Q15"
+        ]
+      },
+      {
+        "id": "OS-CURI-distributed",
+        "family_id": "create-a-system",
+        "question": "Can several computers behave like one coherent system?",
+        "aliases": [
+          "distributed operating system",
+          "remote applications",
+          "shared storage"
+        ],
+        "context": "Shared experience does not imply shared failure, identity or consistency guarantees.",
+        "bridge_ids": [
+          "OS-BRG-distribution"
+        ],
+        "related_question_ids": [
+          "OS-Q11a",
+          "OS-Q14b"
+        ]
+      },
+      {
+        "id": "OS-CURI-robot",
+        "family_id": "create-a-system",
+        "question": "What should happen when software controlling a real device gets stuck?",
+        "aliases": [
+          "real time system",
+          "robot control",
+          "watchdog"
+        ],
+        "context": "Physical deadlines and safe failure states can matter more than general-purpose throughput.",
+        "bridge_ids": [
+          "OS-BRG-runtime",
+          "OS-BRG-platform"
+        ],
+        "related_question_ids": [
+          "OS-Q14a",
+          "OS-Q12"
+        ]
+      }
+    ],
+    "technical_corpus": "investigation.json",
+    "entry_policy": "Entry formulations are discovery surfaces; bridge choices explain consequential differences. They are not separate copies of technical investigations."
+  },
+  "navigation_bridges": [
+    {
+      "id": "OS-BRG-runtime",
+      "question": "Which part of the system is still making progress?",
+      "target_path": "investigation.json",
+      "choices": [
+        {
+          "label": "A program is blocked, spinning, or starved",
+          "technical_title": "Scheduling, wait states and fairness",
+          "distinguishing_question": "Can the kernel still schedule other work, and what is the blocked task waiting for?",
+          "why": "An unresponsive window can coexist with a healthy scheduler. CPU saturation, sleeping on I/O and starvation require different observations.",
+          "targets": [
+            "OS-02",
+            "OS-04"
+          ],
+          "candidate_source_ids": [
+            "OSTEP",
+            "LKD"
+          ]
+        },
+        {
+          "label": "Devices or memory pressure stall the whole system",
+          "technical_title": "Page faults, reclaim, interrupt and device paths",
+          "distinguishing_question": "Is time being spent reclaiming memory, faulting pages, or servicing a device?",
+          "why": "A fast CPU cannot hide a bottleneck that forces most progress to wait on memory or device completion.",
+          "targets": [
+            "OS-03",
+            "OS-06"
+          ],
+          "candidate_source_ids": [
+            "OSTEP",
+            "LKD"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "OS-BRG-memory",
+      "question": "Which resource or address-space contract failed?",
+      "target_path": "investigation.json",
+      "choices": [
+        {
+          "label": "Addresses appear identical across processes",
+          "technical_title": "Per-process virtual address translation",
+          "distinguishing_question": "Do equal virtual addresses resolve to the same physical page or two different mappings?",
+          "why": "An address is meaningful only relative to its address-space mapping; equality of numeric addresses does not imply aliasing.",
+          "targets": [
+            "OS-03",
+            "OS-07"
+          ],
+          "candidate_source_ids": [
+            "OSTEP"
+          ]
+        },
+        {
+          "label": "Memory is exhausted or slow",
+          "technical_title": "Allocation limits, paging and replacement",
+          "distinguishing_question": "Is failure caused by virtual-space limits, resident-memory pressure, reclaim, or explicit process quotas?",
+          "why": "Allocated, mapped, committed and resident bytes are not interchangeable. Repeated page faults can dominate elapsed time.",
+          "targets": [
+            "OS-03",
+            "OS-02"
+          ],
+          "candidate_source_ids": [
+            "OSTEP",
+            "LKD"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "OS-BRG-durability",
+      "question": "What exactly was made durable?",
+      "target_path": "investigation.json",
+      "choices": [
+        {
+          "label": "A write returned but the machine lost power",
+          "technical_title": "Write visibility versus stable storage",
+          "distinguishing_question": "Did the write reach a durable medium, or only the OS or device cache?",
+          "why": "A successful write call may establish availability in a cache without guaranteeing survival of sudden power loss.",
+          "targets": [
+            "OS-05"
+          ],
+          "candidate_source_ids": [
+            "OSTEP",
+            "TLPI"
+          ]
+        },
+        {
+          "label": "After reboot, a file is partially updated or missing",
+          "technical_title": "Crash consistency and recovery invariants",
+          "distinguishing_question": "Was the data written atomically, ordered, journaled or recoverable after a torn update?",
+          "why": "Protecting individual writes is different from preserving filesystem-wide invariants through a crash.",
+          "targets": [
+            "OS-05",
+            "OS-07"
+          ],
+          "candidate_source_ids": [
+            "OSTEP",
+            "LKD"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "OS-BRG-lifetime",
+      "question": "What survived the event?",
+      "target_path": "investigation.json",
+      "choices": [
+        {
+          "label": "Closing a window or disconnecting a client",
+          "technical_title": "Display, connection, session and process lifetime",
+          "distinguishing_question": "Did the application process exit, the login session end, or only its presentation transport disconnect?",
+          "why": "The visible client is not necessarily the owner of the running application, and remote display transport can disappear while computation continues.",
+          "targets": [
+            "OS-02",
+            "OS-08"
+          ],
+          "candidate_source_ids": [
+            "TLPI",
+            "OSTEP"
+          ]
+        },
+        {
+          "label": "Logging out, killing a process or restarting",
+          "technical_title": "Process ownership, persistence and restart",
+          "distinguishing_question": "Which state lives only in memory, which belongs to an authenticated session, and which is stored persistently?",
+          "why": "A session teardown may terminate processes without affecting saved files; a machine restart removes volatile state even when durable profiles remain.",
+          "targets": [
+            "OS-02",
+            "OS-05",
+            "OS-08"
+          ],
+          "candidate_source_ids": [
+            "TLPI",
+            "OSTEP"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "OS-BRG-boundary",
+      "question": "Where is the actual trust or ownership boundary?",
+      "target_path": "investigation.json",
+      "choices": [
+        {
+          "label": "An app cannot access memory or a device",
+          "technical_title": "Address spaces, privilege modes, mediated I/O",
+          "distinguishing_question": "Is access blocked by page permissions, process credentials, device driver policy or application sandbox?",
+          "why": "Isolation and authorization are implemented at multiple layers; kernel privilege by itself does not explain who is allowed to use a camera or file.",
+          "targets": [
+            "OS-03",
+            "OS-06",
+            "OS-07"
+          ],
+          "candidate_source_ids": [
+            "OSTEP",
+            "TLPI",
+            "LKD"
+          ]
+        },
+        {
+          "label": "A request fails across computers",
+          "technical_title": "Remote identity, authentication and failure boundaries",
+          "distinguishing_question": "Who authenticates the requester and where is the authority for the resource located?",
+          "why": "Local permissions do not automatically grant remote access; the other machine has its own identities, policies and failure modes.",
+          "targets": [
+            "OS-07",
+            "OS-08"
+          ],
+          "candidate_source_ids": [
+            "TLPI"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "OS-BRG-platform",
+      "question": "Which computing experience do I actually need to own?",
+      "target_path": "investigation.json",
+      "choices": [
+        {
+          "label": "I want a new interface or application environment",
+          "technical_title": "Kernel contract versus shell and application platform",
+          "distinguishing_question": "Can an existing kernel and drivers already provide the safety, storage and device services needed?",
+          "why": "Replacing the user experience is often possible without rewriting the kernel; the motivation determines the minimal useful system boundary.",
+          "targets": [
+            "OS-01",
+            "OS-07",
+            "OS-08"
+          ],
+          "candidate_source_ids": [
+            "OSTEP",
+            "TLPI"
+          ]
+        },
+        {
+          "label": "I need unusual timing, devices or isolation",
+          "technical_title": "Embedded runtime versus general-purpose OS",
+          "distinguishing_question": "Which hardware guarantees, latency constraints and fault models cannot be satisfied by reused components?",
+          "why": "A single-function device may simplify process and storage requirements while making deadlines and physical recovery more stringent.",
+          "targets": [
+            "OS-01",
+            "OS-02",
+            "OS-06",
+            "OS-07"
+          ],
+          "candidate_source_ids": [
+            "MES",
+            "COD-RV",
+            "COD-ARM"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "OS-BRG-coordination",
+      "question": "What actually prevents concurrent work from finishing?",
+      "target_path": "investigation.json",
+      "choices": [
+        {
+          "label": "Tasks interleave and corrupt shared state",
+          "technical_title": "Atomicity and synchronization contracts",
+          "distinguishing_question": "Which shared invariant becomes false under a particular interleaving?",
+          "why": "Mutual exclusion protects a critical invariant, not arbitrary application correctness. A reproducible interleaving reveals the missing synchronization.",
+          "targets": [
+            "OS-04",
+            "OS-02"
+          ],
+          "candidate_source_ids": [
+            "OSTEP",
+            "LKD"
+          ]
+        },
+        {
+          "label": "Tasks wait forever or starve",
+          "technical_title": "Deadlock, livelock and scheduling fairness",
+          "distinguishing_question": "Is there a cycle of dependencies, repeated unproductive retry, or systematic unfairness?",
+          "why": "Deadlock, livelock and starvation can all look like a freeze but require different interventions.",
+          "targets": [
+            "OS-04",
+            "OS-02"
+          ],
+          "candidate_source_ids": [
+            "OSTEP",
+            "LKD"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "OS-BRG-distribution",
+      "question": "Where is shared state actually located?",
+      "target_path": "investigation.json",
+      "choices": [
+        {
+          "label": "Two machines share a user experience",
+          "technical_title": "Remote execution, identity and session transport",
+          "distinguishing_question": "Is the application running here or elsewhere, and what remains alive if the connection drops?",
+          "why": "A remote screen can look local without sharing its process, filesystem or failure domain.",
+          "targets": [
+            "OS-08",
+            "OS-02",
+            "OS-05"
+          ],
+          "candidate_source_ids": [
+            "TLPI",
+            "OSTEP"
+          ]
+        },
+        {
+          "label": "Several machines cooperate on one result",
+          "technical_title": "Distributed coordination and partial failure",
+          "distinguishing_question": "How do retries, duplicated requests and inconsistent views of state affect correctness?",
+          "why": "A crashed remote task and a lost reply are observationally similar; retrying without idempotency can execute an operation twice.",
+          "targets": [
+            "OS-08",
+            "OS-04",
+            "OS-05"
+          ],
+          "candidate_source_ids": [
+            "OSTEP",
+            "TLPI"
+          ]
+        }
+      ]
+    }
+  ],
+  "entry_model": "One question or a related question set selects a purpose-conditioned projection of canonical OS mechanisms and source locations. Candidate chapter locators remain reading leads, not proof certificates."
 }
