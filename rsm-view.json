@@ -78,6 +78,17 @@
       "projection": {
         "shape": "curiosities"
       }
+    },
+    {
+      "id": "mathematics-curiosities",
+      "title": "Mathematics — Explore structures, proofs, invariants and investigations",
+      "short_title": "Mathematics",
+      "shared_reader_id": "mathematics",
+      "file": "Investigations/mathematics/investigation.json",
+      "glossary_file": "Investigations/mathematics/glossary.json",
+      "projection": {
+        "shape": "curiosities"
+      }
     }
   ]
 }
