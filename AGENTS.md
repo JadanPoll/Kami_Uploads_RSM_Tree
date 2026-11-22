@@ -45,30 +45,22 @@ Source: [FKEN — Frustration-to-resource traversability](https://github.com/Jad
 - Evidence separate from model interpretation; hypotheses remain hypotheses. For books not inspected, mark chapters/pages as unverified candidates rather than inventing exact locations.
 - Compact certificates: conclusion or obstruction, first-hand evidence, assumptions, uncertainty, and what would justify reopening.
 
-## Curiosity entrance versus technical knowledge (implementation contract)
+## Manufacturing: one research corpus, question- or set-scoped investigation
 
-The manufacturing atlas intentionally separates two cognitive functions: **an encyclopedia-like entry set of ordinary, childlike questions** and **dense technical investigation trees** that those questions activate. Preserve this separation whenever expanding or editing the project.
+An **investigation** is a purposeful exploration of one question or a set of related questions, including relevant mechanisms, evidence, open alternatives and source locations. It is not a different kind of tree or a separate JSON by default. Questions and question sets both enter the same technical research corpus.
 
-- `Investigations/manufacturing-orientation/investigation.json` stores `curiosity_atlas.entries` (natural questions, aliases, family membership, and bridge IDs), `navigation_bridges` (conditional mechanism alternatives and source locators), and `nodes`/`sources` (canonical technical studies and their evidence). The user-visible index stays approachable; scientific precision and caveats belong in the technical projection.
-- The viewer generates a temporary technical tree from a chosen entry and its `bridge_ids`. Branches have substantive mechanism explanations and discriminating conditions. Existing canonical study IDs are reused; a question formulation must **not** fork or copy its own version of the books, evidence, or experimental history.
-- Multiple entries can activate the same technical mechanism (e.g. fatigue or compliance) while preserving different contexts. Conversely, visually similar questions (a bent **metal paper clip** versus a breaking **printed-plastic clip**) must not be collapsed if their material-specific mechanisms and evidence differ.
-- The five goal-conditioned manufacturing trees are **technical navigation views**, not the entry encyclopedia. Earlier `MFG-ISSUE-*` nodes are preserved solely for backwards compatibility with existing annotations/links and hidden from the technical views. New natural-language entry questions belong in `curiosity_atlas.entries`, not as more childlike nodes scattered through the technical hierarchy.
-- `book_landscaplets` remains a source-location index; `source_section_inspected` is a stronger evidence state than `toc_only`. An activated technical tree must display the distinction and link to an actual recoverable book location. Never represent a proposed diagnosis as an observed cause.
-- Grow the entry encyclopedia from *distinct frustrations or curiosities that unlock meaningful different routes*. Keep related paraphrases as search aliases unless a change in the wording materially changes the activated scientific/engineering landscape. Search, scrollable families, and context are complementary retrieval methods.
-- Use FKEN-16A to audit both directions: unfamiliar question → source passage and important source passage → plausible question entry. Tests of valid JSON, link connectivity and source-level projection logic are necessary but **not sufficient**: compare unfamiliar users against book TOCs and ordinary search when testing actual discoverability.
-
-## Multiple manufacturing landscapes
-
-- Keep `Investigations/manufacturing-orientation/investigation.json` as the canonical identity of sources, findings, questions and mechanism studies. Its `landscape_views` are goal-conditioned projections: member IDs plus alternate parents, **not duplicate copies** of evidence. Preserve stable IDs across every view.
-- Differentiate actual source inspection from table-of-contents navigation. `book_landscaplets` is a retrieval map, not a collection of established results. Record exact edition and printed/PDF page scheme where known.
-- Prefer substantive functional operators—force/travel transformation, motion and constraint, material transformation, support/release, geometry, joining, tolerancing and scale—over taxonomies of book titles or manufacturing brands.
-- A cross-view link should answer a useful new question. Do not automatically assign every source or case to all views. Add a new view only when a distinct navigation purpose is demonstrated.
-- The existing canonical IDs (for example `MFG-FUNC-COMPLIANT`) can appear in several manufacturing perspectives; user annotations and source lineage must remain attached to the one record. Inspect the actual source section and contrasting mechanism before upgrading candidate navigation to an observed claim.
+- **Canonical knowledge:** `Investigations/manufacturing-orientation/investigation.json` holds all manufacturing technical `nodes`, `connections`, book `sources`, and `book_landscaplets` (65 chapter/part locators). Research is written once with stable IDs, evidence status, and printed/PDF page distinctions.
+- **Entry:** `curiosity_atlas.entries` has simple questions and search aliases. `navigation_bridges` defines substantive, conditional mechanism options and cited source sections. Similar wording need not mean the same explanation: repeatedly bent **metal wire** and a broken **3D-printed polymer clip** must remain distinguishable.
+- **Sets:** `landscape_views` defines existing larger investigations as sets of question IDs and their purpose-dependent parent relationships. Render these alongside individual questions in the same browse interface. Neither kind of entry duplicates technical evidence or requires another investigation JSON.
+- **Projection:** A selected entry activates a dense technical subgraph that can contain existing study IDs and source citations. Keep ordinary-language wording at the entrance; avoid diluting technical explanations and evidence with repeated beginner-facing prompts.
+- **Provenance:** Distinguish `source_section_inspected` from chapter-only candidates. Source IDs and reader notes must remain stable across every projection. Archived `MFG-ISSUE-*` IDs are retained for historical note compatibility, not displayed as current technical nodes.
+- **Subtraction rule:** Prefer fewer user-facing paths to the same purpose. Do not revive the former root-level **Problems** menu, replicate the entire book catalog at every tree root, or introduce a separate “question tree versus investigation tree” workflow. Use contextual source routes and one questions/sets browser.
+- **Empirical acceptance:** Apply FKEN-16A using real unfamiliar questions and independently sampled meaningful passages. Static node/link checks are not proof of discoverability. Fix failed navigation with the smallest useful change rather than inflating taxonomies.
 
 ## Keep it lean
 
 - Begin with a question and a few useful nodes. Grow only when new distinctions affect research or decisions.
-- Create one canonical JSON record per investigation. Optional Markdown notes should serve actual reading or explanatory needs, not duplicate the JSON.
+- Keep research evidence canonical within its domain/corpus. Create a new JSON only when a distinct source, data lifecycle, or tooling boundary earns it; questions and investigation sets are projections, not automatic files.
 - Use stable IDs. Prefer editing/relinking existing branches to copying them.
 - Avoid rote RSM checklists, fabricated question trees, universal ontologies, auto-generated source dumps, and model-facing prose in reader-facing records.
 - Link FKEN resource/domain records rather than duplicating them. Link original PDFs, Kami documents, or Drive files rather than copying binary books into Git.
@@ -79,6 +71,6 @@ The manufacturing atlas intentionally separates two cognitive functions: **an en
 
 `investigations.json` lists `id`, `title`, `path`, `status`, and `updated` for each investigation.
 
-A substantive investigation record should have `id`, `title`, `question`, and `nodes`. Add `sources`, `relations`, `certificates`, and `notes` as the investigation needs them. Every node uses a stable `id`; when hierarchical, a `parent_id` points to another node, or is `null` for the root.
+A canonical research-corpus record should have an identity, substantive questions or nodes, and provenance appropriate to what has actually been investigated. Add `sources`, `relations`, `certificates`, and `notes` as the investigation needs them. Every node uses a stable `id`; when hierarchical, a `parent_id` points to another node, or is `null` for the root.
 
 Avoid schema churn. A useful source record has a URL or stable locator, the book/paper identity, verified chapter/page details when available, and a short statement of relevance. A useful certificate allows a reader to check what we established without trusting an ungrounded summary.
