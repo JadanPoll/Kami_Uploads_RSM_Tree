@@ -307,6 +307,169 @@
       "why": "Investigates closure, dependency and external inputs",
       "status": "candidate",
       "kind": "question"
+    },
+    {
+      "id": "MFG-PROC-INJECTION",
+      "parent_id": "MFG-TRANSFORM",
+      "question": "How does injection molding exchange tooling investment for repeatable plastic parts?",
+      "status": "source_section_inspected",
+      "kind": "process_study",
+      "observed": "Molten thermoplastic is forced into a cooled, shaped mold and ejected after solidification. The source emphasizes expensive engineered tooling, short repeat cycles and high volumes of near-identical parts.",
+      "mechanism_explanation": "A permanent tool encodes geometry into every cycle. Mold filling, cooling and ejection impose design constraints: wall thickness variation produces unequal cooling and warpage; draft and accessible parting/ejection paths affect whether a geometry can be released.",
+      "failure_to_intervention": "Sharp corners, nonuniform walls and insufficient draft concentrate stress or impede ejection. The source recommends early tooling collaboration, suitable draft, and more uniform wall thickness rather than treating these as post-production defects.",
+      "transferable_insight": "Production scale changes the optimal geometry and investment: the mold amortizes over many parts, while hard-to-eject geometry increases tooling complexity.",
+      "source_ids": [
+        "BOOK-MFG-PROCESSES"
+      ],
+      "source_sections": [
+        {
+          "source_id": "BOOK-MFG-PROCESSES",
+          "pages": "PDF pages 57–59",
+          "section": "Injection Molding",
+          "page_scheme": "PDF position"
+        }
+      ],
+      "unresolved_questions": [
+        "At which quantity does a specific tool design beat printing or CNC alternatives once tooling, scrap and revision risk are included?"
+      ],
+      "minimum_reconstruction_probe": "Choose a plastic enclosure; compare designs for mold parting/draft and a printed alternative. Obtain a tooling estimate or real quotation rather than assuming a break-even quantity."
+    },
+    {
+      "id": "MFG-PROC-SAND",
+      "parent_id": "MFG-TRANSFORM",
+      "question": "Why can expendable sand molds create large, internally complex metal parts?",
+      "status": "source_section_inspected",
+      "kind": "process_study",
+      "observed": "A sand mold forms a cavity for poured metal; it is broken apart to release the casting. Sand casting supports ferrous and nonferrous alloys, large parts, and lower-volume production, typically followed by surface finishing or machining.",
+      "mechanism_explanation": "The mold does not need to survive extraction, unlike a reusable die. That frees some internal geometries and part sizes but transfers burden to patternmaking, melt flow, solidification, shrinkage allowances and finishing.",
+      "failure_to_intervention": "Changes in wall section and cooling rate can produce distortion or defects. The source recommends considering draft, gradual transitions, fillets, gating and material shrinkage during design rather than only after casting.",
+      "transferable_insight": "Tool reusability is one independent manufacturing variable: expendable tooling broadens accessible geometry and volume regimes, even while increasing per-part preparation.",
+      "source_ids": [
+        "BOOK-MFG-PROCESSES"
+      ],
+      "source_sections": [
+        {
+          "source_id": "BOOK-MFG-PROCESSES",
+          "pages": "PDF pages 127–129",
+          "section": "Sand Casting",
+          "page_scheme": "PDF position"
+        }
+      ],
+      "unresolved_questions": [
+        "When do surface finish, porosity and machining costs eliminate the apparent savings of an expendable mold?"
+      ],
+      "minimum_reconstruction_probe": "Trace a real casting from part drawing through pattern, mold, casting, machining and inspection; identify which geometry and tolerance requirements must be deferred to later operations."
+    },
+    {
+      "id": "MFG-PROC-LAYERS",
+      "parent_id": "MFG-TRANSFORM",
+      "question": "What do layer-building processes gain and sacrifice by avoiding a custom mold?",
+      "status": "source_section_inspected",
+      "kind": "process_study",
+      "observed": "The process survey describes stereolithography and selective laser sintering among layer-based rapid prototyping methods. CAD geometry is sliced and formed incrementally from resin or powder; it notes no custom mold tooling, rapid design iteration, and surface/finishing limitations.",
+      "mechanism_explanation": "Machine-controlled deposition or solidification substitutes a digital toolpath for a custom shape-defining physical tool. Supports, residual material and surface steps differ across processes: in the book's SLS description unsintered powder surrounds the part, while SLA uses built support structures.",
+      "transferable_insight": "Removing per-shape hard tooling accelerates variation and prototyping, but does not remove material, machine, support, accuracy or post-processing constraints.",
+      "source_ids": [
+        "BOOK-MFG-PROCESSES"
+      ],
+      "source_sections": [
+        {
+          "source_id": "BOOK-MFG-PROCESSES",
+          "pages": "PDF pages 239–241",
+          "section": "Rapid Prototyping (SLA/SLS)",
+          "page_scheme": "PDF position"
+        }
+      ],
+      "unresolved_questions": [
+        "Which process becomes favorable when functional part properties—not simply shape similarity—matter?"
+      ],
+      "minimum_reconstruction_probe": "Take a real complex part with an internal cavity. Compare SLA, powder-bed printing and a split-and-joined approach, including support removal and inspection access."
+    },
+    {
+      "id": "MFG-PROC-WATERJET",
+      "parent_id": "MFG-TRANSFORM",
+      "question": "Why can waterjet cutting reach materials that heat-based cutting may damage?",
+      "status": "source_section_inspected",
+      "kind": "process_study",
+      "observed": "A high-pressure pure-water or abrasive jet removes material along a programmed profile. The source emphasizes cold cutting without a heat-affected zone, low tooling cost, and increasing cut drag and taper in deeper or harder material.",
+      "mechanism_explanation": "Erosion by a directed jet avoids a thermally melted cutting edge. Cut quality and speed still depend on thickness, hardness, abrasive, nozzle motion and part support; the stream can lag as depth increases.",
+      "failure_to_intervention": "The source's glass-disc case uses wedges during cutting and polishing afterward. It demonstrates that part support and finishing remain necessary even when no shaped die is required.",
+      "transferable_insight": "A process's main physical side effect (heat, force, contamination, residual stress) may matter more than its nominal ability to cut a shape.",
+      "source_ids": [
+        "BOOK-MFG-PROCESSES"
+      ],
+      "source_sections": [
+        {
+          "source_id": "BOOK-MFG-PROCESSES",
+          "pages": "PDF pages 279–281",
+          "section": "Water Jet Cutting and glass-disc case",
+          "page_scheme": "PDF position"
+        }
+      ],
+      "unresolved_questions": [
+        "For an actual part, how does abrasive-waterjet edge accuracy and time compare to laser cutting, punching and machining?"
+      ],
+      "minimum_reconstruction_probe": "Specify the same sheet-metal or glass profile for waterjet and one alternative process. Obtain toolpath time/kerf estimates and measure edge quality of real samples."
+    },
+    {
+      "id": "MFG-FFM-ORIENT",
+      "parent_id": "MFG-REALIZE",
+      "question": "How can reorienting and splitting an FFM part change strength, time and reliability?",
+      "status": "source_section_inspected",
+      "kind": "design_study",
+      "observed": "Smyth's four dimensionally equivalent cylinder models take 38, about 12, just under 12, and 20 minutes respectively, with 2.53, 3.13, 2.99, and 3.58 g of filament. They differ in support, surface, strength expectations and assembly.",
+      "mechanism_explanation": "Layer-by-layer extrusion creates direction-dependent strength, especially across layer interfaces. Orientation changes how loads cross layers and how much support or bed contact is needed. Splitting a part replaces difficult print geometry with easier prints plus a joining step.",
+      "failure_to_intervention": "An upright narrow cylinder risks adhesion instability; horizontal printing can damage undersides or require support. Printing two halves or designing interlocking subparts can avoid unsupported geometry at the expense of joints.",
+      "transferable_insight": "Geometric equivalence does not imply manufacturing equivalence. Shape decomposition and process orientation are design variables, not mere machine settings.",
+      "source_ids": [
+        "BOOK-FFF"
+      ],
+      "source_sections": [
+        {
+          "source_id": "BOOK-FFF",
+          "pages": "Printed pages 18–21, 46–49, 61, 94–95",
+          "section": "Anisotropy; print orientation/design refactoring; support; layer fusion",
+          "page_scheme": "printed book page"
+        }
+      ],
+      "unresolved_questions": [
+        "Does the predicted strength ranking hold for a given polymer and printer?",
+        "When do joint weaknesses outweigh the printing gains from decomposition?"
+      ],
+      "minimum_reconstruction_probe": "Print two equal-function designs with differing orientations or split geometry. Record failed attempts, total time including assembly, mass, dimensional error and load direction; destructively test multiple specimens rather than accept the book's example as a universal rule."
+    },
+    {
+      "id": "MFG-TOLERANCE",
+      "parent_id": "MFG-FEASIBILITY",
+      "question": "How do tolerances turn an ideal CAD shape into a manufacturable assembly?",
+      "status": "source_section_inspected",
+      "kind": "design_study",
+      "observed": "Shigley chapter 20 describes GD&T as defining allowed variation in size, position, orientation and form so that design, manufacturing and quality inspection share a usable geometric specification. Smyth chapter V emphasizes calibration and over-extrusion compensation for printed mating features.",
+      "mechanism_explanation": "CAD nominal geometry is only the target. Real parts vary, and assemblies fail when positional/form deviations combine even if individual dimensions seem acceptable. GD&T establishes datums and admissible geometric variation; printing offsets should reflect measured machine behavior.",
+      "transferable_insight": "A manufacturing process is useful only if its tolerance distribution can satisfy an assembly's functional contract. Nominal resolution alone does not establish usable fit or interchangeability.",
+      "source_ids": [
+        "BOOK-SHIGLEY",
+        "BOOK-FFF"
+      ],
+      "source_sections": [
+        {
+          "source_id": "BOOK-SHIGLEY",
+          "pages": "Printed chapter 20, beginning p. 995",
+          "section": "Geometric Dimensioning and Tolerancing",
+          "page_scheme": "printed book page"
+        },
+        {
+          "source_id": "BOOK-FFF",
+          "pages": "Printed chapter V, beginning p. 116",
+          "section": "Designing for Fit",
+          "page_scheme": "printed book page"
+        }
+      ],
+      "unresolved_questions": [
+        "Which actual feature deviations dominate assembly failure for an accessible 3D printer?",
+        "Which tolerances can be verified with calipers versus more involved metrology?"
+      ],
+      "minimum_reconstruction_probe": "Design mating printed features with nominal clearances; print a dimensioned variation matrix, measure real dimensions, identify fit failure thresholds and distinguish slicer compensation from a model's geometric allowances."
     }
   ],
   "sources": [
@@ -319,7 +482,11 @@
       "linked_nodes": [
         "MFG-TRANSFORM",
         "MFG-FEASIBILITY",
-        "MFG-EXPAND"
+        "MFG-EXPAND",
+        "MFG-PROC-INJECTION",
+        "MFG-PROC-SAND",
+        "MFG-PROC-LAYERS",
+        "MFG-PROC-WATERJET"
       ],
       "verified_sections": [
         {
@@ -406,7 +573,9 @@
       ],
       "linked_nodes": [
         "MFG-REALIZE",
-        "MFG-FEASIBILITY"
+        "MFG-FEASIBILITY",
+        "MFG-FFM-ORIENT",
+        "MFG-TOLERANCE"
       ]
     },
     {
@@ -431,7 +600,8 @@
       ],
       "linked_nodes": [
         "MFG-REALIZE",
-        "MFG-FEASIBILITY"
+        "MFG-FEASIBILITY",
+        "MFG-TOLERANCE"
       ]
     }
   ],
@@ -493,7 +663,7 @@
       "purpose": "How print orientation, supports and process limitations change design."
     }
   ],
-  "updated_at": "2026-11-18",
+  "updated_at": "2026-11-21",
   "reading_preferences": {
     "unit": "Entire chapters when practical; otherwise explicit meaningful start–end page ranges",
     "navigation": "Always distinguish printed page numbers from PDF page positions for Kami navigation",
@@ -517,6 +687,30 @@
       "to": "MFG-Q1",
       "relationship": "capability relationship",
       "why": "Bootstrapping and composition can expand the frontier of actually manufacturable outcomes"
+    },
+    {
+      "from": "MFG-PROC-INJECTION",
+      "to": "MFG-PROC-SAND",
+      "relationship": "tooling strategy",
+      "why": "Permanent versus expendable molds change part volume, extraction geometry and per-part preparation."
+    },
+    {
+      "from": "MFG-PROC-LAYERS",
+      "to": "MFG-FFM-ORIENT",
+      "relationship": "layer-construction contrast",
+      "why": "All layer-building processes substitute digital formation for shaped tooling, but their material and support physics are not interchangeable."
+    },
+    {
+      "from": "MFG-PROC-WATERJET",
+      "to": "MFG-PROC-LAYERS",
+      "relationship": "geometry operators",
+      "why": "Cutting a 2D profile from stock and assembling it can compete with building a complex 3D shape layer by layer."
+    },
+    {
+      "from": "MFG-TOLERANCE",
+      "to": "MFG-FFM-ORIENT",
+      "relationship": "assembly contract",
+      "why": "Splitting a print adds mating interfaces whose dimensional errors and strength must be evaluated."
     }
   ],
   "presentation": {
@@ -528,5 +722,200 @@
     ],
     "source_reading_note": "Source ranges are assigned navigation, not proofs of the proposed questions. Preserve printed-versus-PDF page conventions.",
     "source_of_promoted_nodes": "question_selection.selected_big_picture_questions and alternative_formulations"
+  },
+  "book_factorization": {
+    "status": "source-based initial comparison; no physical replication or cost survey performed",
+    "books": [
+      {
+        "source_id": "BOOK-MFG-PROCESSES",
+        "role": "Maps process families, transformation physics, materials, applications, tooling and finishing",
+        "inspected_sections": [
+          "PDF 57–59 Injection Molding",
+          "PDF 127–129 Sand Casting",
+          "PDF 239–241 SLA/SLS rapid prototyping",
+          "PDF 279–281 Water Jet Cutting"
+        ]
+      },
+      {
+        "source_id": "BOOK-FFF",
+        "role": "Maps FFM process constraints into geometry, orientation, structure, slicer settings, failure and joints",
+        "inspected_sections": [
+          "Printed 18–21 anisotropy",
+          "27–29 shell/infill",
+          "46–49 cylinder refactoring",
+          "50–61 adhesion/overhang/bridging/support",
+          "94–95 layer fusion",
+          "116 onward fitting"
+        ]
+      },
+      {
+        "source_id": "BOOK-SHIGLEY",
+        "role": "Maps desired physical function to design margins and toleranced geometric contracts",
+        "inspected_sections": [
+          "Printed chapter 20 beginning p. 995, GD&T definition and geometric variation"
+        ]
+      }
+    ],
+    "factors": [
+      {
+        "id": "transformation",
+        "question": "What acts on material?",
+        "options": [
+          "melt/flow/solidify in a shaped cavity",
+          "pour and solidify in expendable tooling",
+          "selective layer solidification",
+          "erosion/cutting of existing stock"
+        ],
+        "practical_effect": "Determines possible shapes, material effects and tooling needs",
+        "cases": [
+          "MFG-PROC-INJECTION",
+          "MFG-PROC-SAND",
+          "MFG-PROC-LAYERS",
+          "MFG-PROC-WATERJET"
+        ]
+      },
+      {
+        "id": "geometry_representation",
+        "question": "How is shape encoded?",
+        "options": [
+          "permanent mold",
+          "expendable mold/pattern",
+          "digital cross-sections",
+          "cut path"
+        ],
+        "practical_effect": "Shapes revision cost and whether variations need new hardware",
+        "cases": [
+          "MFG-PROC-INJECTION",
+          "MFG-PROC-SAND",
+          "MFG-PROC-LAYERS",
+          "MFG-PROC-WATERJET"
+        ]
+      },
+      {
+        "id": "direction_structure",
+        "question": "Are resulting properties directional?",
+        "options": [
+          "layers/anisotropy",
+          "solidification/shrinkage",
+          "surface/edge effects"
+        ],
+        "practical_effect": "Changes part orientation, wall transitions and useful load paths",
+        "cases": [
+          "MFG-FFM-ORIENT",
+          "MFG-PROC-INJECTION",
+          "MFG-PROC-SAND",
+          "MFG-PROC-WATERJET"
+        ]
+      },
+      {
+        "id": "support_release",
+        "question": "What supports the shape and how is it released?",
+        "options": [
+          "draft and ejection",
+          "break expendable mold",
+          "support structures or unsintered powder",
+          "fixture and support tabs/wedges"
+        ],
+        "practical_effect": "Can force changes to part topology and postprocessing",
+        "cases": [
+          "MFG-PROC-INJECTION",
+          "MFG-PROC-SAND",
+          "MFG-PROC-LAYERS",
+          "MFG-PROC-WATERJET"
+        ]
+      },
+      {
+        "id": "decomposition_joining",
+        "question": "One part or an assembly of manufacturable parts?",
+        "options": [
+          "monolithic construction",
+          "split-and-joined construction",
+          "combined or sequential operations"
+        ],
+        "practical_effect": "Trades easier manufacturing for added interfaces and tolerances",
+        "cases": [
+          "MFG-FFM-ORIENT",
+          "MFG-TOLERANCE",
+          "MFG-PROC-SAND"
+        ]
+      },
+      {
+        "id": "quality_contract",
+        "question": "Which variations and failures can the function tolerate?",
+        "options": [
+          "dimensional/geometric deviation",
+          "strength under directional loading",
+          "surface/edge quality",
+          "repeatability and inspection"
+        ],
+        "practical_effect": "Filters physically possible artifacts to reliable usable products",
+        "cases": [
+          "MFG-TOLERANCE",
+          "MFG-FFM-ORIENT",
+          "MFG-PROC-WATERJET"
+        ]
+      },
+      {
+        "id": "economics",
+        "question": "How do setup, tooling, cycle, revision and finishing costs combine?",
+        "options": [
+          "high tooling/low repetitive cycle",
+          "expendable pattern/mold cost",
+          "machine time without hard tooling",
+          "time-based cutting and secondary finishing"
+        ],
+        "practical_effect": "Reorders the preferred process as volume and specifications change",
+        "cases": [
+          "MFG-PROC-INJECTION",
+          "MFG-PROC-SAND",
+          "MFG-PROC-LAYERS",
+          "MFG-PROC-WATERJET"
+        ]
+      }
+    ],
+    "cross_book_insights": [
+      {
+        "claim": "A CAD shape is not a sufficient manufacturing design.",
+        "reason": "Process choice determines supports, release, shrinkage, load direction and finishing; tolerancing determines whether resulting parts assemble.",
+        "source_ids": [
+          "BOOK-MFG-PROCESSES",
+          "BOOK-FFF",
+          "BOOK-SHIGLEY"
+        ],
+        "status": "synthesis of inspected sections"
+      },
+      {
+        "claim": "Part decomposition is an operator over manufacturing feasibility.",
+        "reason": "A split FFM cylinder can print faster with better support behavior, but adds joins and fitted interfaces; similar tradeoffs arise when casting/finishing components separately.",
+        "source_ids": [
+          "BOOK-FFF",
+          "BOOK-MFG-PROCESSES",
+          "BOOK-SHIGLEY"
+        ],
+        "status": "cross-process hypothesis illustrated by sources, not universal quantitative rule"
+      },
+      {
+        "claim": "Tooling reuse, not just process name, changes which production volumes are economical.",
+        "reason": "Injection molding encodes reusable cavities; sand casting consumes mold; layer-build and waterjet paths are digitally revised. Actual break-even quantities require price and throughput measurements.",
+        "source_ids": [
+          "BOOK-MFG-PROCESSES"
+        ],
+        "status": "supported conceptual contrast; no measured break-even"
+      }
+    ],
+    "competence_probe": {
+      "title": "One functional bracket, three manufacturing routes",
+      "task": "Specify a bracket with loads, holes, clearance, and a real mounting use. Compare (A) a printed monolithic bracket, (B) printed pieces with fasteners, (C) a waterjet-cut plate plus joining/finishing. Use a fourth process only if it changes the decision.",
+      "observables": [
+        "load direction and failure mode",
+        "time including redesign and assembly",
+        "material/outsourced price",
+        "dimension and hole-position error",
+        "repeatability across multiple parts",
+        "surface treatment and post-processing"
+      ],
+      "decision": "Select the process/assembly that satisfies the functional tolerances at lowest total cost for a stated quantity; diagnose rather than explain away failed samples.",
+      "evidence_status": "proposed study; not performed"
+    }
   }
 }
