@@ -12,15 +12,9 @@
       "id": "hai-t-0001",
       "label": "large language model",
       "aliases": [
-        "language model"
+        "language model",
+        "LLM"
       ],
-      "category": "Models and reasoning",
-      "related_ids": []
-    },
-    {
-      "id": "hai-t-0002",
-      "label": "LLM",
-      "aliases": [],
       "category": "Models and reasoning",
       "related_ids": []
     },
@@ -90,14 +84,9 @@
     {
       "id": "hai-t-0012",
       "label": "retrieval-augmented generation",
-      "aliases": [],
-      "category": "Models and reasoning",
-      "related_ids": []
-    },
-    {
-      "id": "hai-t-0013",
-      "label": "RAG",
-      "aliases": [],
+      "aliases": [
+        "RAG"
+      ],
       "category": "Models and reasoning",
       "related_ids": []
     },
@@ -1390,5 +1379,9 @@
       "category": "FKEN vocabulary",
       "related_ids": []
     }
-  ]
+  ],
+  "redirects": {
+    "hai-t-0002": "hai-t-0001",
+    "hai-t-0013": "hai-t-0012"
+  }
 }
