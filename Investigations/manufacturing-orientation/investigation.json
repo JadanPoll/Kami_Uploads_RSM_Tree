@@ -618,6 +618,86 @@
       "unresolved_questions": [
         "How do nominally equivalent constraint arrangements differ in off-axis stiffness and real manufacturing error?"
       ]
+    },
+    {
+      "id": "MFG-ISSUE-SNAP",
+      "parent_id": "MFG-REALIZE",
+      "question": "My printed clip or flexible part keeps snapping after repeated use.",
+      "why": "A few uses or repeated bending can expose layer adhesion, excessive strain, sharp stress concentrations or fatigue; compare the failure location before changing materials.",
+      "status": "navigation_question",
+      "kind": "frustration_entry"
+    },
+    {
+      "id": "MFG-ISSUE-FIT",
+      "parent_id": "MFG-FEASIBILITY",
+      "question": "My parts look correct in CAD but don't fit together.",
+      "why": "Find out whether the issue is inaccurate dimensions, process-dependent shape, geometry of the mating interface, or the way the assembly is specified.",
+      "status": "navigation_question",
+      "kind": "frustration_entry"
+    },
+    {
+      "id": "MFG-ISSUE-STEP",
+      "parent_id": "MFG-FUNC-MOTION",
+      "question": "I need a wheel to move one step, stop, then move again.",
+      "why": "Distinguish required motion during movement, holding accuracy during rest, cycle speed, force and acceleration before selecting the drive.",
+      "status": "navigation_question",
+      "kind": "frustration_entry"
+    },
+    {
+      "id": "MFG-ISSUE-QUANTITY",
+      "parent_id": "MFG-SCALE",
+      "question": "Should I make ten parts and ten thousand parts the same way?",
+      "why": "Compare fixed setup and tooling against per-unit time, revision risk, quality and assembly at the actual volumes.",
+      "status": "navigation_question",
+      "kind": "frustration_entry"
+    },
+    {
+      "id": "MFG-ISSUE-OUTSOURCE",
+      "parent_id": "MFG-Q2b",
+      "question": "How can I make this without owning a workshop or expensive machines?",
+      "why": "Own the specification and verification; consider accessible services for cutting, printing, forming, finishing, joining, and measurement.",
+      "status": "navigation_question",
+      "kind": "frustration_entry"
+    },
+    {
+      "id": "MFG-ISSUE-FLEX",
+      "parent_id": "MFG-FUNC-REALIZE",
+      "question": "Can I build a hinge or clamp without loose joints?",
+      "why": "Separate desired movement from allowed force, side play, fatigue and manufacturability; flexures can replace some joints but not all.",
+      "status": "navigation_question",
+      "kind": "frustration_entry"
+    },
+    {
+      "id": "MFG-ISSUE-WOBBLE",
+      "parent_id": "MFG-FUNC-REALIZE",
+      "question": "My mechanism moves, but it wobbles or won't return to the same position.",
+      "why": "Separate intended degrees of freedom, unwanted compliance, joint clearance, geometry errors, hysteresis, and measurement.",
+      "status": "navigation_question",
+      "kind": "frustration_entry"
+    },
+    {
+      "id": "MFG-ISSUE-HEAT",
+      "parent_id": "MFG-TRANSFORM",
+      "question": "How can I cut this material without burning or distorting its edges?",
+      "why": "Compare thermal versus erosion cutting and the resulting edge quality, support, thickness and finishing requirements.",
+      "status": "navigation_question",
+      "kind": "frustration_entry"
+    },
+    {
+      "id": "MFG-ISSUE-CAVITY",
+      "parent_id": "MFG-Q1a",
+      "question": "How can I make a part with an internal cavity or complicated shape?",
+      "why": "Compare direct layer building, removable or expendable cores, and splitting parts for later joining; finished access and tolerance matter.",
+      "status": "navigation_question",
+      "kind": "frustration_entry"
+    },
+    {
+      "id": "MFG-ISSUE-FORCE",
+      "parent_id": "MFG-FUNC-MOTION",
+      "question": "How can I make a small input force move a heavy load?",
+      "why": "Use the work-versus-distance tradeoff and distinguish force transmission, friction, structural stiffness and actual required output travel.",
+      "status": "navigation_question",
+      "kind": "frustration_entry"
     }
   ],
   "sources": [
@@ -1296,7 +1376,9 @@
         "MFG-FUNC-DOF",
         "MFG-FUNC-INDEX",
         "MFG-FFM-ORIENT",
-        "MFG-TOLERANCE"
+        "MFG-TOLERANCE",
+        "MFG-ISSUE-HEAT",
+        "MFG-ISSUE-CAVITY"
       ],
       "parent_overrides": {
         "MFG-TRANSFORM": "MFG-Q1",
@@ -1312,7 +1394,9 @@
         "MFG-FUNC-DOF": "MFG-Q1a",
         "MFG-FUNC-INDEX": "MFG-Q1a",
         "MFG-FFM-ORIENT": "MFG-Q1a",
-        "MFG-TOLERANCE": "MFG-Q1b"
+        "MFG-TOLERANCE": "MFG-Q1b",
+        "MFG-ISSUE-HEAT": "MFG-TRANSFORM",
+        "MFG-ISSUE-CAVITY": "MFG-Q1a"
       }
     },
     {
@@ -1344,7 +1428,16 @@
         "MFG-PROC-WATERJET",
         "MFG-TOLERANCE",
         "MFG-PROC-INJECTION",
-        "MFG-PROC-SAND"
+        "MFG-PROC-SAND",
+        "MFG-ISSUE-SNAP",
+        "MFG-ISSUE-FIT",
+        "MFG-ISSUE-STEP",
+        "MFG-ISSUE-QUANTITY",
+        "MFG-ISSUE-OUTSOURCE",
+        "MFG-ISSUE-FLEX",
+        "MFG-ISSUE-HEAT",
+        "MFG-ISSUE-CAVITY",
+        "MFG-ISSUE-FORCE"
       ],
       "parent_overrides": {
         "MFG-REALIZE": "MFG-Q2",
@@ -1361,7 +1454,16 @@
         "MFG-PROC-WATERJET": "MFG-REALIZE",
         "MFG-TOLERANCE": "MFG-FEASIBILITY",
         "MFG-PROC-INJECTION": "MFG-Q2b",
-        "MFG-PROC-SAND": "MFG-Q2b"
+        "MFG-PROC-SAND": "MFG-Q2b",
+        "MFG-ISSUE-SNAP": "MFG-REALIZE",
+        "MFG-ISSUE-FIT": "MFG-FEASIBILITY",
+        "MFG-ISSUE-STEP": "MFG-REALIZE",
+        "MFG-ISSUE-QUANTITY": "MFG-Q2b",
+        "MFG-ISSUE-OUTSOURCE": "MFG-Q2b",
+        "MFG-ISSUE-FLEX": "MFG-REALIZE",
+        "MFG-ISSUE-HEAT": "MFG-REALIZE",
+        "MFG-ISSUE-CAVITY": "MFG-REALIZE",
+        "MFG-ISSUE-FORCE": "MFG-REALIZE"
       }
     },
     {
@@ -1386,7 +1488,12 @@
         "MFG-FUNC-COMPLIANT",
         "MFG-FFM-ORIENT",
         "MFG-TOLERANCE",
-        "MFG-PROC-LAYERS"
+        "MFG-PROC-LAYERS",
+        "MFG-ISSUE-SNAP",
+        "MFG-ISSUE-STEP",
+        "MFG-ISSUE-FLEX",
+        "MFG-ISSUE-WOBBLE",
+        "MFG-ISSUE-FORCE"
       ],
       "parent_overrides": {
         "MFG-FUNC-MOTION": "MFG-FUNCTION",
@@ -1397,7 +1504,12 @@
         "MFG-FUNC-COMPLIANT": "MFG-FUNC-REALIZE",
         "MFG-FFM-ORIENT": "MFG-FUNC-REALIZE",
         "MFG-TOLERANCE": "MFG-FUNC-REALIZE",
-        "MFG-PROC-LAYERS": "MFG-FUNC-REALIZE"
+        "MFG-PROC-LAYERS": "MFG-FUNC-REALIZE",
+        "MFG-ISSUE-SNAP": "MFG-FUNC-REALIZE",
+        "MFG-ISSUE-STEP": "MFG-FUNC-MOTION",
+        "MFG-ISSUE-FLEX": "MFG-FUNC-REALIZE",
+        "MFG-ISSUE-WOBBLE": "MFG-FUNC-REALIZE",
+        "MFG-ISSUE-FORCE": "MFG-FUNC-MOTION"
       }
     },
     {
@@ -1422,7 +1534,10 @@
         "MFG-PROC-LAYERS",
         "MFG-PROC-WATERJET",
         "MFG-TOLERANCE",
-        "MFG-FFM-ORIENT"
+        "MFG-FFM-ORIENT",
+        "MFG-ISSUE-FIT",
+        "MFG-ISSUE-QUANTITY",
+        "MFG-ISSUE-WOBBLE"
       ],
       "parent_overrides": {
         "MFG-SCALE-TOOL": "MFG-SCALE",
@@ -1433,7 +1548,10 @@
         "MFG-PROC-LAYERS": "MFG-SCALE-TOOL",
         "MFG-PROC-WATERJET": "MFG-SCALE-TOOL",
         "MFG-TOLERANCE": "MFG-FEASIBILITY",
-        "MFG-FFM-ORIENT": "MFG-FEASIBILITY"
+        "MFG-FFM-ORIENT": "MFG-FEASIBILITY",
+        "MFG-ISSUE-FIT": "MFG-FEASIBILITY",
+        "MFG-ISSUE-QUANTITY": "MFG-SCALE",
+        "MFG-ISSUE-WOBBLE": "MFG-FEASIBILITY"
       }
     },
     {
@@ -1463,7 +1581,8 @@
         "MFG-TOLERANCE",
         "MFG-PROC-INJECTION",
         "MFG-PROC-SAND",
-        "MFG-FUNC-COMPLIANT"
+        "MFG-FUNC-COMPLIANT",
+        "MFG-ISSUE-OUTSOURCE"
       ],
       "parent_overrides": {
         "MFG-Q5a": "MFG-Q5",
@@ -1478,7 +1597,8 @@
         "MFG-TOLERANCE": "MFG-Q5b",
         "MFG-PROC-INJECTION": "MFG-Q5b",
         "MFG-PROC-SAND": "MFG-Q5c",
-        "MFG-FUNC-COMPLIANT": "MFG-Q5c"
+        "MFG-FUNC-COMPLIANT": "MFG-Q5c",
+        "MFG-ISSUE-OUTSOURCE": "MFG-Q2b"
       }
     }
   ],
@@ -2199,5 +2319,584 @@
         }
       ]
     }
-  ]
+  ],
+  "navigation_bridges": [
+    {
+      "id": "SNAP",
+      "entry_node_id": "MFG-ISSUE-SNAP",
+      "choices": [
+        {
+          "label": "It splits across printed layers",
+          "distinguishing_question": "Does the crack follow the stacked layers or printed perimeter?",
+          "why": "Interlayer strength depends on orientation, fusion and load direction; try a different orientation or geometry before attributing failure to material alone.",
+          "targets": [
+            "MFG-FFM-ORIENT"
+          ],
+          "section_targets": [
+            {
+              "source_id": "BOOK-FFF",
+              "ref": "I",
+              "why": "Anisotropy: printed p. 18, examined",
+              "level": "inspected"
+            },
+            {
+              "source_id": "BOOK-FFF",
+              "ref": "III",
+              "why": "Strength under stress: printed p. 76, chapter locator",
+              "level": "toc_only"
+            }
+          ]
+        },
+        {
+          "label": "The bendable tab stretches too far",
+          "distinguishing_question": "Where is bending concentrated; could a longer or differently supported flexure lower strain?",
+          "why": "A flexible element needs a strain-limited load path, not only a convenient hinge shape.",
+          "targets": [
+            "MFG-FUNC-COMPLIANT"
+          ],
+          "section_targets": [
+            {
+              "source_id": "BOOK-COMPLIANT",
+              "ref": "1",
+              "why": "Stiffness versus strength, pp. 8–11, examined",
+              "level": "inspected"
+            },
+            {
+              "source_id": "BOOK-FFF",
+              "ref": "VII",
+              "why": "Snap-fits and latching, printed p. 141, passage examined",
+              "level": "inspected"
+            }
+          ]
+        },
+        {
+          "label": "It fails after many cycles, not on the first bend",
+          "distinguishing_question": "Does failure correlate with repeated cycles even below the one-time breaking load?",
+          "why": "Fatigue is a distinct failure mechanism; do not infer an endurance limit from a one-time strength test.",
+          "targets": [
+            "MFG-FUNC-COMPLIANT"
+          ],
+          "section_targets": [
+            {
+              "source_id": "BOOK-SHIGLEY",
+              "ref": "6",
+              "why": "Repeated-loading fatigue, beginning p. 297; chapter not analyzed",
+              "level": "toc_only"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FIT",
+      "entry_node_id": "MFG-ISSUE-FIT",
+      "choices": [
+        {
+          "label": "The printed dimensions differ from the model",
+          "distinguishing_question": "Did actual measurements change in X/Y, holes, or the assembled position?",
+          "why": "Measure the printer and compensation behavior before adjusting nominal clearances.",
+          "targets": [
+            "MFG-TOLERANCE"
+          ],
+          "section_targets": [
+            {
+              "source_id": "BOOK-FFF",
+              "ref": "V",
+              "why": "Mating clearance and slicer correction, starting p. 116, examined",
+              "level": "inspected"
+            }
+          ]
+        },
+        {
+          "label": "Each part looks close, but the assembly jams",
+          "distinguishing_question": "Which surfaces and datums actually constrain mating?",
+          "why": "Allowed form, position and orientation errors matter separately from size.",
+          "targets": [
+            "MFG-TOLERANCE"
+          ],
+          "section_targets": [
+            {
+              "source_id": "BOOK-SHIGLEY",
+              "ref": "20",
+              "why": "GD&T and datum references, starting p. 995, examined",
+              "level": "inspected"
+            }
+          ]
+        },
+        {
+          "label": "I can redesign the joint rather than tighten precision",
+          "distinguishing_question": "Could a different connection tolerate the variation or move adjustment to assembly?",
+          "why": "A suitable fastening or joinery strategy may lower required process accuracy.",
+          "targets": [
+            "MFG-FFM-ORIENT"
+          ],
+          "section_targets": [
+            {
+              "source_id": "BOOK-FFF",
+              "ref": "VI",
+              "why": "Fastening and joinery, starting p. 124; candidate reading",
+              "level": "toc_only"
+            },
+            {
+              "source_id": "BOOK-SHIGLEY",
+              "ref": "8",
+              "why": "Nonpermanent joints, starting p. 433; candidate reading",
+              "level": "toc_only"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "STEP",
+      "entry_node_id": "MFG-ISSUE-STEP",
+      "choices": [
+        {
+          "label": "I need a mechanical rest between movements",
+          "distinguishing_question": "How long must it remain stationary, and what motion occurs during each index?",
+          "why": "Geneva mechanisms inherently alternate engagement and dwell, but acceleration and locking geometry constrain speed.",
+          "targets": [
+            "MFG-FUNC-INDEX"
+          ],
+          "section_targets": [
+            {
+              "source_id": "BOOK-MECHANISMS",
+              "ref": "7",
+              "why": "Geneva mechanism variants, pp. 192–197, examined",
+              "level": "inspected"
+            }
+          ]
+        },
+        {
+          "label": "I need to vary the timing or acceleration",
+          "distinguishing_question": "Is the movement profile more important than using a simple fixed mechanism?",
+          "why": "Cam profiles and modified indexers can alter velocity and dwell; compare wear and controls.",
+          "targets": [
+            "MFG-FUNC-INDEX"
+          ],
+          "section_targets": [
+            {
+              "source_id": "BOOK-MECHANISMS",
+              "ref": "7",
+              "why": "Modified Geneva drives and cam control, printed p. 196, examined",
+              "level": "inspected"
+            }
+          ]
+        },
+        {
+          "label": "I need very precise motion in selected directions",
+          "distinguishing_question": "Which movements must be free and which forbidden?",
+          "why": "Start from allowed/forbidden freedoms, then evaluate alternative guiding arrangements.",
+          "targets": [
+            "MFG-FUNC-DOF"
+          ],
+          "section_targets": [
+            {
+              "source_id": "BOOK-COMPLIANT",
+              "ref": "6",
+              "why": "FACT constraint synthesis, pp. 82–89, examined",
+              "level": "inspected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QUANTITY",
+      "entry_node_id": "MFG-ISSUE-QUANTITY",
+      "choices": [
+        {
+          "label": "I expect to revise the design frequently",
+          "distinguishing_question": "Would paying for fixed tooling before the shape stabilizes be wasteful?",
+          "why": "Digital instructions often reduce shape-revision setup, but production speed and postprocessing still matter.",
+          "targets": [
+            "MFG-PROC-LAYERS"
+          ],
+          "section_targets": [
+            {
+              "source_id": "BOOK-MFG-PROCESSES",
+              "ref": "Part 1",
+              "why": "Contrast molding's tooling with alternatives, source has part locator only",
+              "level": "toc_only"
+            },
+            {
+              "source_id": "BOOK-FFF",
+              "ref": "VIII",
+              "why": "Slicer and settings, printed p. 154, not yet analyzed",
+              "level": "toc_only"
+            }
+          ]
+        },
+        {
+          "label": "I need thousands of repeatable copies",
+          "distinguishing_question": "How large are tooling/setup costs compared with per-part machine time, finishing, scrap and inspection?",
+          "why": "Reusable hard tooling may amortize across many copies. The break-even quantity must be estimated from actual quotations.",
+          "targets": [
+            "MFG-PROC-INJECTION"
+          ],
+          "section_targets": [
+            {
+              "source_id": "BOOK-MFG-PROCESSES",
+              "ref": "Part 1",
+              "why": "Injection molding, PDF pp. 57–59, examined",
+              "level": "inspected"
+            }
+          ]
+        },
+        {
+          "label": "My quantity is small or my part is large or complex",
+          "distinguishing_question": "Could an expendable mold, cutting or additive route avoid unjustified tooling?",
+          "why": "Process feasibility and assembly can matter more than purely nominal per-unit cost.",
+          "targets": [
+            "MFG-PROC-SAND",
+            "MFG-PROC-WATERJET"
+          ],
+          "section_targets": [
+            {
+              "source_id": "BOOK-MFG-PROCESSES",
+              "ref": "Part 1",
+              "why": "Sand casting, PDF pp. 127–129, examined",
+              "level": "inspected"
+            },
+            {
+              "source_id": "BOOK-MFG-PROCESSES",
+              "ref": "Part 2",
+              "why": "Waterjet cutting, PDF pp. 279–281, examined",
+              "level": "inspected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "OUTSOURCE",
+      "entry_node_id": "MFG-ISSUE-OUTSOURCE",
+      "choices": [
+        {
+          "label": "My part can be cut from flat sheet",
+          "distinguishing_question": "Can a plate plus bends or joints satisfy the desired shape?",
+          "why": "A cutting service plus assembly may replace ownership of a machine shop; check edge accuracy and finishing.",
+          "targets": [
+            "MFG-PROC-WATERJET"
+          ],
+          "section_targets": [
+            {
+              "source_id": "BOOK-MFG-PROCESSES",
+              "ref": "Part 2",
+              "why": "Waterjet process example, PDF pp. 279–281, examined",
+              "level": "inspected"
+            }
+          ]
+        },
+        {
+          "label": "I need a bespoke 3D part with changes",
+          "distinguishing_question": "Is a digitally fabricated shape sufficient despite directional properties and tolerances?",
+          "why": "An external printing service removes machine ownership but not the engineering responsibility for function and fit.",
+          "targets": [
+            "MFG-PROC-LAYERS",
+            "MFG-FFM-ORIENT"
+          ],
+          "section_targets": [
+            {
+              "source_id": "BOOK-FFF",
+              "ref": "II",
+              "why": "Design for FFM, printed pp. 40–75, partly examined",
+              "level": "toc_only"
+            },
+            {
+              "source_id": "BOOK-MFG-PROCESSES",
+              "ref": "Part 1",
+              "why": "Additive rapid prototyping, PDF pp. 239–241, examined",
+              "level": "inspected"
+            }
+          ]
+        },
+        {
+          "label": "The shape must be molded, cast, or assembled",
+          "distinguishing_question": "What minimum work can be specified, commissioned, inspected and joined by you?",
+          "why": "You may acquire fabrication as a service; tools for inspecting results and specifying interfaces remain a bottleneck.",
+          "targets": [
+            "MFG-PROC-SAND",
+            "MFG-TOLERANCE"
+          ],
+          "section_targets": [
+            {
+              "source_id": "BOOK-MFG-PROCESSES",
+              "ref": "Part 1",
+              "why": "Sand casting and patternmaking, PDF pp. 127–129, examined",
+              "level": "inspected"
+            },
+            {
+              "source_id": "BOOK-SHIGLEY",
+              "ref": "20",
+              "why": "Geometric tolerancing, p. 995 onwards, examined",
+              "level": "inspected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FLEX",
+      "entry_node_id": "MFG-ISSUE-FLEX",
+      "choices": [
+        {
+          "label": "I want motion without pin joints or backlash",
+          "distinguishing_question": "Could bending replace a sliding or pinned interface while preserving useful motion?",
+          "why": "Flexural replacement reduces some joint issues but introduces elastic strain, restoring forces and limited travel.",
+          "targets": [
+            "MFG-FUNC-COMPLIANT"
+          ],
+          "section_targets": [
+            {
+              "source_id": "BOOK-COMPLIANT",
+              "ref": "8",
+              "why": "Rigid-body replacement synthesis, pp. 111–120, examined",
+              "level": "inspected"
+            }
+          ]
+        },
+        {
+          "label": "The hinge needs a very specific allowed direction",
+          "distinguishing_question": "What degrees of freedom should it allow or forbid?",
+          "why": "Choose constraints based on function instead of copying a particular flexure shape.",
+          "targets": [
+            "MFG-FUNC-DOF"
+          ],
+          "section_targets": [
+            {
+              "source_id": "BOOK-COMPLIANT",
+              "ref": "6",
+              "why": "FACT synthesis, pp. 82–89, examined",
+              "level": "inspected"
+            }
+          ]
+        },
+        {
+          "label": "It will flex many times or carry significant weight",
+          "distinguishing_question": "What stress, strain and cycles will it see?",
+          "why": "Strength and stiffness are different; a design can work once yet fail through fatigue.",
+          "targets": [
+            "MFG-FUNC-COMPLIANT"
+          ],
+          "section_targets": [
+            {
+              "source_id": "BOOK-COMPLIANT",
+              "ref": "1",
+              "why": "Stiffness and strength, pp. 8–11, examined",
+              "level": "inspected"
+            },
+            {
+              "source_id": "BOOK-SHIGLEY",
+              "ref": "6",
+              "why": "Fatigue failure, printed p. 297, candidate reading",
+              "level": "toc_only"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "WOBBLE",
+      "entry_node_id": "MFG-ISSUE-WOBBLE",
+      "choices": [
+        {
+          "label": "It moves in extra directions",
+          "distinguishing_question": "Which motions are actually allowed, and what is resisting the others?",
+          "why": "Freedom/constraint analysis can reveal a missing or weak constraint before attempting tighter machining.",
+          "targets": [
+            "MFG-FUNC-DOF"
+          ],
+          "section_targets": [
+            {
+              "source_id": "BOOK-COMPLIANT",
+              "ref": "6",
+              "why": "Freedom and constraint topology, pp. 82–89, examined",
+              "level": "inspected"
+            }
+          ]
+        },
+        {
+          "label": "There is clearance or misalignment at a joint",
+          "distinguishing_question": "Are there datum/fit errors or loose mechanical interfaces?",
+          "why": "A rigid or compliant mechanism must satisfy geometric fits and assembly tolerances.",
+          "targets": [
+            "MFG-TOLERANCE"
+          ],
+          "section_targets": [
+            {
+              "source_id": "BOOK-SHIGLEY",
+              "ref": "20",
+              "why": "GD&T and position, pp. 995 onward, examined",
+              "level": "inspected"
+            },
+            {
+              "source_id": "BOOK-SHIGLEY",
+              "ref": "8",
+              "why": "Nonpermanent joints, chapter locator p. 433",
+              "level": "toc_only"
+            }
+          ]
+        },
+        {
+          "label": "It returns differently after load reverses",
+          "distinguishing_question": "Do friction, backlash, hysteresis or spring restoring forces explain the change?",
+          "why": "A reversible ideal kinematic diagram does not certify repeatability under real loads.",
+          "targets": [
+            "MFG-FUNC-RIGID",
+            "MFG-FUNC-COMPLIANT"
+          ],
+          "section_targets": [
+            {
+              "source_id": "BOOK-MECHANISMS",
+              "ref": "1",
+              "why": "Mechanism basics and losses, printed pp. 2–8, examined",
+              "level": "inspected"
+            },
+            {
+              "source_id": "BOOK-COMPLIANT",
+              "ref": "5",
+              "why": "Pseudo-rigid body approximations, printed p. 55, candidate reading",
+              "level": "toc_only"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HEAT",
+      "entry_node_id": "MFG-ISSUE-HEAT",
+      "choices": [
+        {
+          "label": "The material is sensitive to heating while cutting",
+          "distinguishing_question": "Could an erosion-based process avoid a heat-affected cutting zone?",
+          "why": "Abrasive-waterjet cutting can avoid thermal damage but creates kerf, taper and edge-quality constraints.",
+          "targets": [
+            "MFG-PROC-WATERJET"
+          ],
+          "section_targets": [
+            {
+              "source_id": "BOOK-MFG-PROCESSES",
+              "ref": "Part 2",
+              "why": "Waterjet cutting, PDF pp. 279–281, examined",
+              "level": "inspected"
+            }
+          ]
+        },
+        {
+          "label": "The part distorts from force, supports, or finishing",
+          "distinguishing_question": "How is the part fixtured, and how does cutting force interact with geometry?",
+          "why": "A nominally cold cut does not eliminate mechanical distortion or postprocess requirements.",
+          "targets": [
+            "MFG-PROC-WATERJET"
+          ],
+          "section_targets": [
+            {
+              "source_id": "BOOK-MFG-PROCESSES",
+              "ref": "Part 2",
+              "why": "Waterjet workholding and finishing example, PDF pp. 279–281, examined",
+              "level": "inspected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CAVITY",
+      "entry_node_id": "MFG-ISSUE-CAVITY",
+      "choices": [
+        {
+          "label": "I cannot remove a rigid tool or core from inside",
+          "distinguishing_question": "Would layer construction or a disposable mold avoid the extraction obstruction?",
+          "why": "Shape access, support and release determine whether internal features are realizable.",
+          "targets": [
+            "MFG-PROC-LAYERS",
+            "MFG-PROC-SAND"
+          ],
+          "section_targets": [
+            {
+              "source_id": "BOOK-MFG-PROCESSES",
+              "ref": "Part 1",
+              "why": "SLA/SLS rapid prototyping, PDF pp. 239–241, examined",
+              "level": "inspected"
+            },
+            {
+              "source_id": "BOOK-MFG-PROCESSES",
+              "ref": "Part 1",
+              "why": "Sand casting and expendable mold, PDF pp. 127–129, examined",
+              "level": "inspected"
+            }
+          ]
+        },
+        {
+          "label": "I can split the object and join it later",
+          "distinguishing_question": "Which parts can be manufactured separately and still satisfy the interface contract?",
+          "why": "Decomposition exchanges difficult fabrication for additional joints and tolerances.",
+          "targets": [
+            "MFG-FFM-ORIENT",
+            "MFG-TOLERANCE"
+          ],
+          "section_targets": [
+            {
+              "source_id": "BOOK-FFF",
+              "ref": "II",
+              "why": "Print-orientation and splitting comparison, pp. 46–49, examined",
+              "level": "inspected"
+            },
+            {
+              "source_id": "BOOK-FFF",
+              "ref": "VI",
+              "why": "Fastening and joinery, printed p. 124, candidate reading",
+              "level": "toc_only"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FORCE",
+      "entry_node_id": "MFG-ISSUE-FORCE",
+      "choices": [
+        {
+          "label": "I need to multiply force over short motion",
+          "distinguishing_question": "How much output travel can I give up in exchange for force?",
+          "why": "Work conservation and losses constrain leverage, gears and screw mechanisms.",
+          "targets": [
+            "MFG-FUNC-RIGID"
+          ],
+          "section_targets": [
+            {
+              "source_id": "BOOK-MECHANISMS",
+              "ref": "1",
+              "why": "Mechanical advantage and work, pp. 2–8, examined",
+              "level": "inspected"
+            }
+          ]
+        },
+        {
+          "label": "I need both travel and force at the same time",
+          "distinguishing_question": "Can the power or actuator change instead?",
+          "why": "Pure gearing cannot multiply both force and travel at the same energy input.",
+          "targets": [
+            "MFG-FUNC-RIGID"
+          ],
+          "section_targets": [
+            {
+              "source_id": "BOOK-SHIGLEY",
+              "ref": "18",
+              "why": "Power transmission case, beginning p. 953, candidate reading",
+              "level": "toc_only"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "navigation_contract": {
+    "purpose": "FKEN-16A: from an ordinary frustration to an intelligible set of competing mechanisms, then an explicit source passage.",
+    "provenance": "Problem nodes are retrieval prompts, not empirical research findings. Bridge hypotheses and candidate chapter routes are not asserted as validated solutions.",
+    "rendering": "Offer each bridge as a separate conditional path with discriminating question, explanation, verified locator and optional canonical study links. Never hide useful source locations only in a global root catalog.",
+    "reverse_check": "Every source section tagged to a view should have at least one actionable entry question or a stated unindexed gap; TOC-only associations cannot be mistaken for inspected evidence.",
+    "decision": "When a practical route fails, improve the minimum useful entry or link, rather than adding another universal hierarchy."
+  }
 }
