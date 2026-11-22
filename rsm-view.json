@@ -50,6 +50,103 @@
           "description": "why"
         },
         "relations": "relations"
+      },
+      "shared_reader_id": "manufacturing",
+      "short_title": "All questions"
+    },
+    {
+      "id": "manufacturing-possibilities",
+      "title": "Manufacturing — What humanity can manufacture",
+      "short_title": "Possibilities",
+      "file": "Investigations/manufacturing-orientation/investigation.json",
+      "shared_reader_id": "manufacturing",
+      "projection": {
+        "shape": "flat",
+        "records": "nodes",
+        "fields": {
+          "id": "id",
+          "label": "question",
+          "parent": "parent_id",
+          "description": "why"
+        },
+        "relations": "relations",
+        "lens": "possibilities"
+      }
+    },
+    {
+      "id": "manufacturing-make",
+      "title": "Manufacturing — How to make a working thing",
+      "short_title": "Make it",
+      "file": "Investigations/manufacturing-orientation/investigation.json",
+      "shared_reader_id": "manufacturing",
+      "projection": {
+        "shape": "flat",
+        "records": "nodes",
+        "fields": {
+          "id": "id",
+          "label": "question",
+          "parent": "parent_id",
+          "description": "why"
+        },
+        "relations": "relations",
+        "lens": "make"
+      }
+    },
+    {
+      "id": "manufacturing-mechanisms",
+      "title": "Manufacturing — Motion and force synthesis",
+      "short_title": "Mechanisms",
+      "file": "Investigations/manufacturing-orientation/investigation.json",
+      "shared_reader_id": "manufacturing",
+      "projection": {
+        "shape": "flat",
+        "records": "nodes",
+        "fields": {
+          "id": "id",
+          "label": "question",
+          "parent": "parent_id",
+          "description": "why"
+        },
+        "relations": "relations",
+        "lens": "mechanisms"
+      }
+    },
+    {
+      "id": "manufacturing-production",
+      "title": "Manufacturing — Reliable and economical production",
+      "short_title": "Production",
+      "file": "Investigations/manufacturing-orientation/investigation.json",
+      "shared_reader_id": "manufacturing",
+      "projection": {
+        "shape": "flat",
+        "records": "nodes",
+        "fields": {
+          "id": "id",
+          "label": "question",
+          "parent": "parent_id",
+          "description": "why"
+        },
+        "relations": "relations",
+        "lens": "production"
+      }
+    },
+    {
+      "id": "manufacturing-bootstrap",
+      "title": "Manufacturing — Building generative manufacturing capabilities",
+      "short_title": "Bootstrap",
+      "file": "Investigations/manufacturing-orientation/investigation.json",
+      "shared_reader_id": "manufacturing",
+      "projection": {
+        "shape": "flat",
+        "records": "nodes",
+        "fields": {
+          "id": "id",
+          "label": "question",
+          "parent": "parent_id",
+          "description": "why"
+        },
+        "relations": "relations",
+        "lens": "bootstrap"
       }
     },
     {
