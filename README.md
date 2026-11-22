@@ -4,6 +4,8 @@ Explore what you are curious about, follow the underlying mechanisms, and recove
 
 [**Open the manufacturing questions and investigations**](https://raw.githack.com/JadanPoll/Learning_Visualizations_Taxonomy/main/RSM_Tree_Viewer.html?repo=https%3A%2F%2Fgithub.com%2FJadanPoll%2FKami_Uploads_RSM_Tree&view=manufacturing-curiosities)
 
+[**Explore FPGA and VLSI questions**](https://raw.githack.com/JadanPoll/Learning_Visualizations_Taxonomy/main/RSM_Tree_Viewer.html?repo=https%3A%2F%2Fgithub.com%2FJadanPoll%2FKami_Uploads_RSM_Tree&view=digital-hardware-curiosities)
+
 ## One entrance, variable investigation scope
 
 The manufacturing browser supports two entry sizes in one place:
@@ -24,6 +26,7 @@ Each domain has **one canonical research JSON** (and multiple possible scoped vi
 | Manufacturing | [`investigation.json`](Investigations/manufacturing-orientation/investigation.json) | Questions, technical nodes, source sections, and manufacturing operators |
 | Operating systems | [`investigation.json`](Investigations/operating-systems/investigation.json) | 15 curiosity entries, 43 question-index nodes, 9 technical nodes, 51 OSTEP chapter anchors, and cross-book routes |
 | Human–AI collaboration | [`investigation.json`](Investigations/human-ai-symbiosis/investigation.json) | 18 curiosities, 56 question-index nodes, 13 technical nodes, 19 fieldwork nodes, supporting sources, projects, and communities |
+| Digital hardware (FPGA/VLSI) | [`investigation.json`](Investigations/digital-hardware-design/investigation.json) | 24 curiosities, five larger sets, 15 technical nodes, 18 FPGA + 9 VLSI chapter locations, and conditional source routes |
 
 The manufacturing corpus's principal sections are:
 
@@ -49,6 +52,8 @@ Run the **reverse test** from independently chosen important passages: can plaus
 [Manufacturing book reference guide — all five books, 65 indexed chapters/parts, inspected passages, and quick retrieval routes](Investigations/manufacturing-orientation/REFERENCE_GUIDE.md)
 
 [Operating systems reference guide — OS, Linux, bare-metal and architecture book maps](Investigations/operating-systems/REFERENCE_GUIDE.md)
+
+[FPGA and VLSI reference guide — 2 books, 27 reusable chapter anchors and practical mechanism routes](Investigations/digital-hardware-design/REFERENCE_GUIDE.md)
 
 [Manufacturing navigation audit and test prompts](Investigations/manufacturing-orientation/navigation_audit.md)
 
