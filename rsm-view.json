@@ -45,6 +45,17 @@
         "shape": "curiosities"
       },
       "glossary_file": "Investigations/digital-hardware-design/glossary.json"
+    },
+    {
+      "id": "neuromorphic-curiosities",
+      "title": "Neuromorphic engineering — Explore physical neural computation",
+      "short_title": "Neuromorphic engineering",
+      "shared_reader_id": "neuromorphic-engineering",
+      "file": "Investigations/neuromorphic-engineering/investigation.json",
+      "glossary_file": "Investigations/neuromorphic-engineering/glossary.json",
+      "projection": {
+        "shape": "curiosities"
+      }
     }
   ]
 }
