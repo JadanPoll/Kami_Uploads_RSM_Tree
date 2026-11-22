@@ -24,6 +24,24 @@ The connected source collection presently contains five books: *Manufacturing Pr
 
 The ambition is to make the books traversable by what one is trying to accomplish, rather than by book order or a rigid universal hierarchy. Add another major view only when it serves a genuinely different recurring task; new studied mechanisms should normally extend canonical records and appear in existing views.
 
+## Empirical audit: can a frustration recover the right passage?
+
+The [FKEN frustration-to-resource criterion](https://github.com/JadanPoll/Learning_Visualizations_Taxonomy/blob/main/Navigationals/Fractal_Knowledge_And_Ecosystem_Navigation.md#fken-16a--frustration-to-resource-traversability) is an acceptance test for our factorization, not a claim already achieved: **Can someone start with what they want to make or what is going wrong, traverse intelligible question/landscaplet choices, and reach a genuinely useful, source-anchored section—even without knowing the book's terminology?** The reverse test asks whether important book passages have plausible question-entry routes at all.
+
+Candidate blind-navigation prompts for the five-book manufacturing corpus (the right column is the *audit key*, not wording to show the navigator):
+
+| Frustration stated in everyday language | Candidate source regions the navigator ought to make discoverable |
+| --- | --- |
+| "My printed clip keeps snapping after opening it a few times." | Smyth: layer orientation/strength; Howell: flexure design; Shigley: fatigue failure |
+| "I need the wheel to rotate a step, then hold still, then step again." | Sclater: Geneva drives and indexing; Howell: freedom/constraint alternatives where applicable |
+| "Two parts look correct in CAD but jam when I put them together." | Smyth: designing for fit; Shigley: GD&T; the relevant process's dimensional limits |
+| "Should I make ten enclosures now and thousands later using the same method?" | Manufacturing process handbook: injection molding versus additive approaches, tooling and cycle economics |
+| "Can I manufacture a device even if I don't own a machine shop?" | The Make it and Bootstrap views: outsourced cutting/forming, part decomposition, joining and verification |
+
+For each case, have a reader navigate **without seeing the audit key**. Record whether the cited passage was reached; whether the explanation warranted its relevance; useful candidates versus distracting ones; wrong turns, backtracking and interaction cost; and whether source location was recoverable. Compare with the book TOC and ordinary search. Repeat in reverse from independently selected meaningful book sections; do not treat every indexed chapter as equally consequential.
+
+Current state: five goal-conditioned views, 65 TOC-level section locators, and 10 source-inspected mechanism/process studies. This is **index coverage**, not demonstrated frustration-to-resource coverage. Fix observed failures by improving an existing distinction, cross-link or source landscaplet before creating more permanent hierarchies.
+
 ## Using the tree
 
 1. Start with an actual curiosity or goal. Recover the parent purpose without silently replacing the question.
