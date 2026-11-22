@@ -59,7 +59,10 @@
           "parent": "parent_id",
           "description": "why"
         },
-        "relations": "relations"
+        "relations": "relations",
+        "exclude_kinds": [
+          "frustration_entry"
+        ]
       },
       "shared_reader_id": "manufacturing",
       "short_title": "All questions"
