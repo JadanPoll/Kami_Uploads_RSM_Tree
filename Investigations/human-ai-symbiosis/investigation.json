@@ -35,7 +35,13 @@
       "id": "HAI-I00",
       "parent_id": null,
       "question": "What accounts for observed differences in human–AI accomplishments?",
-      "status": "open"
+      "status": "open",
+      "term_ids": [
+        "hai-t-0035",
+        "hai-t-0032",
+        "hai-t-0039",
+        "hai-t-0099"
+      ]
     },
     {
       "id": "HAI-I01",
@@ -48,6 +54,15 @@
       ],
       "fieldwork_case_ids": [
         "FW-ALPOGE"
+      ],
+      "term_ids": [
+        "hai-t-0142",
+        "hai-t-0056",
+        "hai-t-0059",
+        "hai-t-0099",
+        "hai-t-0050",
+        "hai-t-0052",
+        "hai-t-0061"
       ]
     },
     {
@@ -60,6 +75,13 @@
       ],
       "fieldwork_case_ids": [
         "FW-ALPHA"
+      ],
+      "term_ids": [
+        "hai-t-0137",
+        "hai-t-0086",
+        "hai-t-0089",
+        "hai-t-0138",
+        "hai-t-0087"
       ]
     },
     {
@@ -84,6 +106,12 @@
           "mechanism": "A measured result on experienced maintainers, familiar repositories and a particular tool generation does not identify the effect for novices, different projects or later systems.",
           "discriminating_observation": "What changes if task type, developer familiarity and agent implementation are held or varied separately?"
         }
+      ],
+      "term_ids": [
+        "hai-t-0126",
+        "hai-t-0127",
+        "hai-t-0128",
+        "hai-t-0129"
       ]
     },
     {
@@ -107,6 +135,13 @@
           "mechanism": "Delegation is economical when outcomes are inspectable and changes reversible. Irreversible or poorly specified work calls for human choice before action.",
           "discriminating_observation": "Which exact decision requires explicit human approval?"
         }
+      ],
+      "term_ids": [
+        "hai-t-0106",
+        "hai-t-0107",
+        "hai-t-0081",
+        "hai-t-0084",
+        "hai-t-0043"
       ]
     },
     {
@@ -133,6 +168,12 @@
           "mechanism": "Useful drafting, learning and planning are real functions but have different evidence requirements from producing maintained software or new scientific knowledge.",
           "discriminating_observation": "What would verify persistence, accuracy or learned competence for the specific use case?"
         }
+      ],
+      "term_ids": [
+        "hai-t-0134",
+        "hai-t-0118",
+        "hai-t-0116",
+        "hai-t-0105"
       ]
     },
     {
@@ -151,6 +192,12 @@
           "mechanism": "Specialist judgment, compute budget, access to tools, collaborators and prior artifacts can independently change outcomes.",
           "discriminating_observation": "Does the ranking change when time, money and existing expertise are controlled?"
         }
+      ],
+      "term_ids": [
+        "hai-t-0120",
+        "hai-t-0133",
+        "hai-t-0134",
+        "hai-t-0122"
       ]
     },
     {
@@ -180,6 +227,15 @@
           "mechanism": "Repeated large rewrites obscure the first consequential break and increase recovery cost. Versioned changes and observed failures preserve a path back.",
           "discriminating_observation": "Can the first violating change or missing contract be isolated from an inspectable baseline?"
         }
+      ],
+      "term_ids": [
+        "hai-t-0101",
+        "hai-t-0102",
+        "hai-t-0100",
+        "hai-t-0098",
+        "hai-t-0079",
+        "hai-t-0092",
+        "hai-t-0076"
       ]
     },
     {
@@ -211,13 +267,26 @@
           "mechanism": "A high-resource experiment can teach a transferable mechanism through a smaller case whose success conditions and limits remain honest.",
           "discriminating_observation": "What minimum implementation would discriminate the mechanism from an alternative explanation?"
         }
+      ],
+      "term_ids": [
+        "hai-t-0146",
+        "hai-t-0099",
+        "hai-t-0097",
+        "hai-t-0049",
+        "hai-t-0130"
       ]
     },
     {
       "id": "HAI-I09",
       "parent_id": "HAI-I00",
       "question": "What people, communities, projects and working systems connect these capability strata?",
-      "status": "candidate ecosystem survey, not yet populated"
+      "status": "candidate ecosystem survey, not yet populated",
+      "term_ids": [
+        "hai-t-0145",
+        "hai-t-0147",
+        "hai-t-0108",
+        "hai-t-0146"
+      ]
     },
     {
       "id": "HAI-I10",
@@ -251,6 +320,14 @@
           "mechanism": "An identical model can serve as search assistant, author, evaluator user or delegating agent; the governing workflow changes what can be achieved.",
           "discriminating_observation": "Which independently observable step differentiates the workflows?"
         }
+      ],
+      "term_ids": [
+        "hai-t-0063",
+        "hai-t-0069",
+        "hai-t-0037",
+        "hai-t-0095",
+        "hai-t-0099",
+        "hai-t-0064"
       ]
     },
     {
@@ -278,6 +355,14 @@
           "mechanism": "An automated evaluator can enable iteration yet reward solutions that exploit its blind spots; cross-check with representative reality is needed.",
           "discriminating_observation": "Which incorrect result would still pass the current evaluator?"
         }
+      ],
+      "term_ids": [
+        "hai-t-0068",
+        "hai-t-0071",
+        "hai-t-0065",
+        "hai-t-0084",
+        "hai-t-0094",
+        "hai-t-0064"
       ]
     },
     {
@@ -301,6 +386,12 @@
           "mechanism": "Source code alone may omit credentials, compute, datasets, hardware, undocumented setup and obsolete dependencies.",
           "discriminating_observation": "What is the cheapest defensible reproduction and which requirement remains irreducible?"
         }
+      ],
+      "term_ids": [
+        "hai-t-0147",
+        "hai-t-0114",
+        "hai-t-0113",
+        "hai-t-0108"
       ]
     }
   ],
@@ -668,7 +759,25 @@
         "HAI-CURI-learn",
         "HAI-CURI-beginner"
       ],
-      "rationale": "Purpose-dependent subset of shared technical questions and independently recorded fieldwork; not a separately authored investigation."
+      "rationale": "Purpose-dependent subset of shared technical questions and independently recorded fieldwork; not a separately authored investigation.",
+      "term_ids": [
+        "hai-t-0035",
+        "hai-t-0032",
+        "hai-t-0039",
+        "hai-t-0099",
+        "hai-t-0126",
+        "hai-t-0127",
+        "hai-t-0128",
+        "hai-t-0129",
+        "hai-t-0106",
+        "hai-t-0107",
+        "hai-t-0081",
+        "hai-t-0084",
+        "hai-t-0043",
+        "hai-t-0134",
+        "hai-t-0118",
+        "hai-t-0116"
+      ]
     },
     {
       "id": "durable-work",
@@ -697,7 +806,25 @@
         "HAI-CURI-handoff",
         "HAI-CURI-failed-edits"
       ],
-      "rationale": "Purpose-dependent subset of shared technical questions and independently recorded fieldwork; not a separately authored investigation."
+      "rationale": "Purpose-dependent subset of shared technical questions and independently recorded fieldwork; not a separately authored investigation.",
+      "term_ids": [
+        "hai-t-0035",
+        "hai-t-0032",
+        "hai-t-0039",
+        "hai-t-0099",
+        "hai-t-0126",
+        "hai-t-0127",
+        "hai-t-0128",
+        "hai-t-0129",
+        "hai-t-0106",
+        "hai-t-0107",
+        "hai-t-0081",
+        "hai-t-0084",
+        "hai-t-0043",
+        "hai-t-0101",
+        "hai-t-0102",
+        "hai-t-0100"
+      ]
     },
     {
       "id": "agency-and-evaluation",
@@ -724,7 +851,25 @@
         "HAI-CURI-many-agents",
         "HAI-CURI-new-tests"
       ],
-      "rationale": "Purpose-dependent subset of shared technical questions and independently recorded fieldwork; not a separately authored investigation."
+      "rationale": "Purpose-dependent subset of shared technical questions and independently recorded fieldwork; not a separately authored investigation.",
+      "term_ids": [
+        "hai-t-0035",
+        "hai-t-0032",
+        "hai-t-0039",
+        "hai-t-0099",
+        "hai-t-0137",
+        "hai-t-0086",
+        "hai-t-0089",
+        "hai-t-0138",
+        "hai-t-0087",
+        "hai-t-0126",
+        "hai-t-0127",
+        "hai-t-0128",
+        "hai-t-0129",
+        "hai-t-0106",
+        "hai-t-0107",
+        "hai-t-0081"
+      ]
     },
     {
       "id": "exceptional-workflows",
@@ -756,7 +901,25 @@
         "HAI-CURI-verify",
         "HAI-CURI-cheaper"
       ],
-      "rationale": "Purpose-dependent subset of shared technical questions and independently recorded fieldwork; not a separately authored investigation."
+      "rationale": "Purpose-dependent subset of shared technical questions and independently recorded fieldwork; not a separately authored investigation.",
+      "term_ids": [
+        "hai-t-0035",
+        "hai-t-0032",
+        "hai-t-0039",
+        "hai-t-0099",
+        "hai-t-0142",
+        "hai-t-0056",
+        "hai-t-0059",
+        "hai-t-0050",
+        "hai-t-0052",
+        "hai-t-0061",
+        "hai-t-0137",
+        "hai-t-0086",
+        "hai-t-0089",
+        "hai-t-0138",
+        "hai-t-0087",
+        "hai-t-0146"
+      ]
     },
     {
       "id": "population-and-transfer",
@@ -785,7 +948,25 @@
         "HAI-CURI-learn",
         "HAI-CURI-speed"
       ],
-      "rationale": "Purpose-dependent subset of shared technical questions and independently recorded fieldwork; not a separately authored investigation."
+      "rationale": "Purpose-dependent subset of shared technical questions and independently recorded fieldwork; not a separately authored investigation.",
+      "term_ids": [
+        "hai-t-0035",
+        "hai-t-0032",
+        "hai-t-0039",
+        "hai-t-0099",
+        "hai-t-0126",
+        "hai-t-0127",
+        "hai-t-0128",
+        "hai-t-0129",
+        "hai-t-0106",
+        "hai-t-0107",
+        "hai-t-0081",
+        "hai-t-0084",
+        "hai-t-0043",
+        "hai-t-0134",
+        "hai-t-0118",
+        "hai-t-0116"
+      ]
     }
   ],
   "kind": "canonical_research_corpus",
@@ -840,6 +1021,24 @@
         "related_question_ids": [
           "HAI-Q07D",
           "HAI-Q01B"
+        ],
+        "term_ids": [
+          "hai-t-0015",
+          "hai-t-0126",
+          "hai-t-0127",
+          "hai-t-0128",
+          "hai-t-0129",
+          "hai-t-0134",
+          "hai-t-0118",
+          "hai-t-0116",
+          "hai-t-0105",
+          "hai-t-0103",
+          "hai-t-0142",
+          "hai-t-0056",
+          "hai-t-0059",
+          "hai-t-0099",
+          "hai-t-0050",
+          "hai-t-0052"
         ]
       },
       {
@@ -859,6 +1058,24 @@
         "related_question_ids": [
           "HAI-Q07D",
           "HAI-Q05D"
+        ],
+        "term_ids": [
+          "hai-t-0106",
+          "hai-t-0107",
+          "hai-t-0081",
+          "hai-t-0084",
+          "hai-t-0043",
+          "hai-t-0101",
+          "hai-t-0102",
+          "hai-t-0100",
+          "hai-t-0098",
+          "hai-t-0079",
+          "hai-t-0092",
+          "hai-t-0085",
+          "hai-t-0137",
+          "hai-t-0086",
+          "hai-t-0089",
+          "hai-t-0126"
         ]
       },
       {
@@ -877,6 +1094,24 @@
         "related_question_ids": [
           "HAI-Q07E",
           "HAI-Q03E"
+        ],
+        "term_ids": [
+          "hai-t-0006",
+          "hai-t-0070",
+          "hai-t-0101",
+          "hai-t-0102",
+          "hai-t-0100",
+          "hai-t-0098",
+          "hai-t-0079",
+          "hai-t-0092",
+          "hai-t-0076",
+          "hai-t-0106",
+          "hai-t-0107",
+          "hai-t-0081",
+          "hai-t-0068",
+          "hai-t-0071",
+          "hai-t-0065",
+          "hai-t-0084"
         ]
       },
       {
@@ -896,6 +1131,24 @@
         "related_question_ids": [
           "HAI-Q01B",
           "HAI-Q07D"
+        ],
+        "term_ids": [
+          "hai-t-0126",
+          "hai-t-0127",
+          "hai-t-0128",
+          "hai-t-0129",
+          "hai-t-0134",
+          "hai-t-0118",
+          "hai-t-0116",
+          "hai-t-0105",
+          "hai-t-0103",
+          "hai-t-0142",
+          "hai-t-0056",
+          "hai-t-0059",
+          "hai-t-0099",
+          "hai-t-0050",
+          "hai-t-0052",
+          "hai-t-0146"
         ]
       },
       {
@@ -914,6 +1167,23 @@
         "related_question_ids": [
           "HAI-Q05B",
           "HAI-Q03D"
+        ],
+        "term_ids": [
+          "hai-t-0106",
+          "hai-t-0105",
+          "hai-t-0112",
+          "hai-t-0107",
+          "hai-t-0081",
+          "hai-t-0084",
+          "hai-t-0043",
+          "hai-t-0134",
+          "hai-t-0118",
+          "hai-t-0116",
+          "hai-t-0146",
+          "hai-t-0099",
+          "hai-t-0097",
+          "hai-t-0049",
+          "hai-t-0130"
         ]
       },
       {
@@ -933,6 +1203,24 @@
         "related_question_ids": [
           "HAI-Q07B",
           "HAI-Q03B"
+        ],
+        "term_ids": [
+          "hai-t-0105",
+          "hai-t-0112",
+          "hai-t-0106",
+          "hai-t-0107",
+          "hai-t-0081",
+          "hai-t-0084",
+          "hai-t-0043",
+          "hai-t-0134",
+          "hai-t-0118",
+          "hai-t-0116",
+          "hai-t-0146",
+          "hai-t-0099",
+          "hai-t-0097",
+          "hai-t-0049",
+          "hai-t-0130",
+          "hai-t-0101"
         ]
       },
       {
@@ -951,6 +1239,24 @@
         ],
         "related_question_ids": [
           "HAI-Q05D"
+        ],
+        "term_ids": [
+          "hai-t-0104",
+          "hai-t-0106",
+          "hai-t-0107",
+          "hai-t-0081",
+          "hai-t-0084",
+          "hai-t-0043",
+          "hai-t-0101",
+          "hai-t-0102",
+          "hai-t-0100",
+          "hai-t-0098",
+          "hai-t-0079",
+          "hai-t-0092",
+          "hai-t-0085",
+          "hai-t-0137",
+          "hai-t-0086",
+          "hai-t-0089"
         ]
       },
       {
@@ -969,6 +1275,23 @@
         "related_question_ids": [
           "HAI-Q03E",
           "HAI-Q09D"
+        ],
+        "term_ids": [
+          "hai-t-0100",
+          "hai-t-0101",
+          "hai-t-0070",
+          "hai-t-0102",
+          "hai-t-0098",
+          "hai-t-0079",
+          "hai-t-0092",
+          "hai-t-0076",
+          "hai-t-0106",
+          "hai-t-0107",
+          "hai-t-0081",
+          "hai-t-0068",
+          "hai-t-0071",
+          "hai-t-0065",
+          "hai-t-0084"
         ]
       },
       {
@@ -988,6 +1311,24 @@
         "related_question_ids": [
           "HAI-Q10A",
           "HAI-Q02C"
+        ],
+        "term_ids": [
+          "hai-t-0035",
+          "hai-t-0036",
+          "hai-t-0135",
+          "hai-t-0040",
+          "hai-t-0041",
+          "hai-t-0064",
+          "hai-t-0176",
+          "hai-t-0106",
+          "hai-t-0107",
+          "hai-t-0081",
+          "hai-t-0084",
+          "hai-t-0043",
+          "hai-t-0068",
+          "hai-t-0071",
+          "hai-t-0146",
+          "hai-t-0099"
         ]
       },
       {
@@ -1005,6 +1346,24 @@
         ],
         "related_question_ids": [
           "HAI-Q04D"
+        ],
+        "term_ids": [
+          "hai-t-0044",
+          "hai-t-0062",
+          "hai-t-0135",
+          "hai-t-0040",
+          "hai-t-0041",
+          "hai-t-0064",
+          "hai-t-0176",
+          "hai-t-0106",
+          "hai-t-0107",
+          "hai-t-0081",
+          "hai-t-0084",
+          "hai-t-0043",
+          "hai-t-0068",
+          "hai-t-0071",
+          "hai-t-0146",
+          "hai-t-0099"
         ]
       },
       {
@@ -1024,6 +1383,24 @@
         "related_question_ids": [
           "HAI-Q04B",
           "HAI-Q10E"
+        ],
+        "term_ids": [
+          "hai-t-0053",
+          "hai-t-0064",
+          "hai-t-0068",
+          "hai-t-0071",
+          "hai-t-0073",
+          "hai-t-0065",
+          "hai-t-0084",
+          "hai-t-0094",
+          "hai-t-0106",
+          "hai-t-0107",
+          "hai-t-0081",
+          "hai-t-0043",
+          "hai-t-0101",
+          "hai-t-0102",
+          "hai-t-0100",
+          "hai-t-0098"
         ]
       },
       {
@@ -1042,6 +1419,24 @@
         ],
         "related_question_ids": [
           "HAI-Q09D"
+        ],
+        "term_ids": [
+          "hai-t-0092",
+          "hai-t-0094",
+          "hai-t-0070",
+          "hai-t-0101",
+          "hai-t-0102",
+          "hai-t-0100",
+          "hai-t-0098",
+          "hai-t-0079",
+          "hai-t-0076",
+          "hai-t-0106",
+          "hai-t-0107",
+          "hai-t-0081",
+          "hai-t-0068",
+          "hai-t-0071",
+          "hai-t-0065",
+          "hai-t-0084"
         ]
       },
       {
@@ -1060,6 +1455,24 @@
         "related_question_ids": [
           "HAI-Q05A",
           "HAI-Q07D"
+        ],
+        "term_ids": [
+          "hai-t-0052",
+          "hai-t-0125",
+          "hai-t-0127",
+          "hai-t-0126",
+          "hai-t-0128",
+          "hai-t-0129",
+          "hai-t-0106",
+          "hai-t-0107",
+          "hai-t-0081",
+          "hai-t-0084",
+          "hai-t-0043",
+          "hai-t-0008",
+          "hai-t-0064",
+          "hai-t-0068",
+          "hai-t-0071",
+          "hai-t-0065"
         ]
       },
       {
@@ -1078,6 +1491,24 @@
         "related_question_ids": [
           "HAI-Q10",
           "HAI-Q10E"
+        ],
+        "term_ids": [
+          "hai-t-0135",
+          "hai-t-0146",
+          "hai-t-0099",
+          "hai-t-0097",
+          "hai-t-0049",
+          "hai-t-0130",
+          "hai-t-0063",
+          "hai-t-0069",
+          "hai-t-0037",
+          "hai-t-0095",
+          "hai-t-0064",
+          "hai-t-0147",
+          "hai-t-0137",
+          "hai-t-0086",
+          "hai-t-0089",
+          "hai-t-0138"
         ]
       },
       {
@@ -1097,6 +1528,24 @@
         "related_question_ids": [
           "HAI-Q01B",
           "HAI-Q10C"
+        ],
+        "term_ids": [
+          "hai-t-0052",
+          "hai-t-0126",
+          "hai-t-0127",
+          "hai-t-0128",
+          "hai-t-0129",
+          "hai-t-0134",
+          "hai-t-0118",
+          "hai-t-0116",
+          "hai-t-0105",
+          "hai-t-0103",
+          "hai-t-0142",
+          "hai-t-0056",
+          "hai-t-0059",
+          "hai-t-0099",
+          "hai-t-0050",
+          "hai-t-0146"
         ]
       },
       {
@@ -1116,6 +1565,24 @@
         "related_question_ids": [
           "HAI-Q10B",
           "HAI-Q03"
+        ],
+        "term_ids": [
+          "hai-t-0135",
+          "hai-t-0146",
+          "hai-t-0099",
+          "hai-t-0097",
+          "hai-t-0049",
+          "hai-t-0130",
+          "hai-t-0063",
+          "hai-t-0069",
+          "hai-t-0037",
+          "hai-t-0095",
+          "hai-t-0064",
+          "hai-t-0147",
+          "hai-t-0137",
+          "hai-t-0086",
+          "hai-t-0089",
+          "hai-t-0138"
         ]
       },
       {
@@ -1135,6 +1602,24 @@
         "related_question_ids": [
           "HAI-Q08",
           "HAI-Q08D"
+        ],
+        "term_ids": [
+          "hai-t-0135",
+          "hai-t-0159",
+          "hai-t-0134",
+          "hai-t-0118",
+          "hai-t-0116",
+          "hai-t-0105",
+          "hai-t-0120",
+          "hai-t-0133",
+          "hai-t-0122",
+          "hai-t-0052",
+          "hai-t-0146",
+          "hai-t-0099",
+          "hai-t-0097",
+          "hai-t-0049",
+          "hai-t-0130",
+          "hai-t-0126"
         ]
       },
       {
@@ -1154,6 +1639,24 @@
         "related_question_ids": [
           "HAI-Q06C",
           "HAI-Q04A"
+        ],
+        "term_ids": [
+          "hai-t-0052",
+          "hai-t-0106",
+          "hai-t-0107",
+          "hai-t-0081",
+          "hai-t-0084",
+          "hai-t-0043",
+          "hai-t-0101",
+          "hai-t-0102",
+          "hai-t-0100",
+          "hai-t-0098",
+          "hai-t-0079",
+          "hai-t-0092",
+          "hai-t-0085",
+          "hai-t-0137",
+          "hai-t-0086",
+          "hai-t-0089"
         ]
       }
     ]
@@ -1175,6 +1678,16 @@
           "case_ids": [
             "FW-OPENAI",
             "FW-METR"
+          ],
+          "term_ids": [
+            "hai-t-0126",
+            "hai-t-0127",
+            "hai-t-0128",
+            "hai-t-0129",
+            "hai-t-0134",
+            "hai-t-0118",
+            "hai-t-0116",
+            "hai-t-0105"
           ]
         },
         {
@@ -1188,8 +1701,38 @@
           ],
           "case_ids": [
             "FW-ALPOGE"
+          ],
+          "term_ids": [
+            "hai-t-0103",
+            "hai-t-0142",
+            "hai-t-0056",
+            "hai-t-0059",
+            "hai-t-0099",
+            "hai-t-0050",
+            "hai-t-0052",
+            "hai-t-0061",
+            "hai-t-0146",
+            "hai-t-0097",
+            "hai-t-0049"
           ]
         }
+      ],
+      "term_ids": [
+        "hai-t-0126",
+        "hai-t-0127",
+        "hai-t-0128",
+        "hai-t-0129",
+        "hai-t-0134",
+        "hai-t-0118",
+        "hai-t-0116",
+        "hai-t-0105",
+        "hai-t-0103",
+        "hai-t-0142",
+        "hai-t-0056",
+        "hai-t-0059",
+        "hai-t-0099",
+        "hai-t-0050",
+        "hai-t-0052"
       ]
     },
     {
@@ -1208,6 +1751,19 @@
           "case_ids": [
             "FW-OWN",
             "FW-SIMON"
+          ],
+          "term_ids": [
+            "hai-t-0106",
+            "hai-t-0107",
+            "hai-t-0081",
+            "hai-t-0084",
+            "hai-t-0043",
+            "hai-t-0101",
+            "hai-t-0102",
+            "hai-t-0100",
+            "hai-t-0098",
+            "hai-t-0079",
+            "hai-t-0092"
           ]
         },
         {
@@ -1222,8 +1778,38 @@
           "case_ids": [
             "FW-ALPHA",
             "FW-CARLINI"
+          ],
+          "term_ids": [
+            "hai-t-0085",
+            "hai-t-0137",
+            "hai-t-0086",
+            "hai-t-0089",
+            "hai-t-0138",
+            "hai-t-0087",
+            "hai-t-0068",
+            "hai-t-0071",
+            "hai-t-0065",
+            "hai-t-0084",
+            "hai-t-0094"
           ]
         }
+      ],
+      "term_ids": [
+        "hai-t-0106",
+        "hai-t-0107",
+        "hai-t-0081",
+        "hai-t-0084",
+        "hai-t-0043",
+        "hai-t-0101",
+        "hai-t-0102",
+        "hai-t-0100",
+        "hai-t-0098",
+        "hai-t-0079",
+        "hai-t-0092",
+        "hai-t-0085",
+        "hai-t-0137",
+        "hai-t-0086",
+        "hai-t-0089"
       ]
     },
     {
@@ -1241,6 +1827,19 @@
           ],
           "case_ids": [
             "FW-OWN"
+          ],
+          "term_ids": [
+            "hai-t-0070",
+            "hai-t-0101",
+            "hai-t-0102",
+            "hai-t-0100",
+            "hai-t-0098",
+            "hai-t-0079",
+            "hai-t-0092",
+            "hai-t-0076",
+            "hai-t-0106",
+            "hai-t-0107",
+            "hai-t-0081"
           ]
         },
         {
@@ -1255,8 +1854,38 @@
           "case_ids": [
             "FW-OWN",
             "FW-ARMIN"
+          ],
+          "term_ids": [
+            "hai-t-0101",
+            "hai-t-0102",
+            "hai-t-0100",
+            "hai-t-0098",
+            "hai-t-0079",
+            "hai-t-0092",
+            "hai-t-0076",
+            "hai-t-0068",
+            "hai-t-0071",
+            "hai-t-0065",
+            "hai-t-0084"
           ]
         }
+      ],
+      "term_ids": [
+        "hai-t-0070",
+        "hai-t-0101",
+        "hai-t-0102",
+        "hai-t-0100",
+        "hai-t-0098",
+        "hai-t-0079",
+        "hai-t-0092",
+        "hai-t-0076",
+        "hai-t-0106",
+        "hai-t-0107",
+        "hai-t-0081",
+        "hai-t-0068",
+        "hai-t-0071",
+        "hai-t-0065",
+        "hai-t-0084"
       ]
     },
     {
@@ -1275,6 +1904,18 @@
           "case_ids": [
             "FW-STUDENTS",
             "FW-SMALLBUS"
+          ],
+          "term_ids": [
+            "hai-t-0105",
+            "hai-t-0112",
+            "hai-t-0106",
+            "hai-t-0107",
+            "hai-t-0081",
+            "hai-t-0084",
+            "hai-t-0043",
+            "hai-t-0134",
+            "hai-t-0118",
+            "hai-t-0116"
           ]
         },
         {
@@ -1290,8 +1931,36 @@
             "FW-SIMON",
             "FW-CLAX",
             "FW-CARLINI"
+          ],
+          "term_ids": [
+            "hai-t-0146",
+            "hai-t-0099",
+            "hai-t-0097",
+            "hai-t-0049",
+            "hai-t-0130",
+            "hai-t-0147",
+            "hai-t-0114",
+            "hai-t-0113",
+            "hai-t-0108"
           ]
         }
+      ],
+      "term_ids": [
+        "hai-t-0105",
+        "hai-t-0112",
+        "hai-t-0106",
+        "hai-t-0107",
+        "hai-t-0081",
+        "hai-t-0084",
+        "hai-t-0043",
+        "hai-t-0134",
+        "hai-t-0118",
+        "hai-t-0116",
+        "hai-t-0146",
+        "hai-t-0099",
+        "hai-t-0097",
+        "hai-t-0049",
+        "hai-t-0130"
       ]
     },
     {
@@ -1310,6 +1979,19 @@
           "case_ids": [
             "FW-MOLLICK",
             "FW-OWN"
+          ],
+          "term_ids": [
+            "hai-t-0040",
+            "hai-t-0041",
+            "hai-t-0064",
+            "hai-t-0176",
+            "hai-t-0106",
+            "hai-t-0107",
+            "hai-t-0081",
+            "hai-t-0084",
+            "hai-t-0043",
+            "hai-t-0068",
+            "hai-t-0071"
           ]
         },
         {
@@ -1324,8 +2006,37 @@
           "case_ids": [
             "FW-ALPOGE",
             "FW-CLAX"
+          ],
+          "term_ids": [
+            "hai-t-0146",
+            "hai-t-0099",
+            "hai-t-0097",
+            "hai-t-0049",
+            "hai-t-0130",
+            "hai-t-0063",
+            "hai-t-0069",
+            "hai-t-0037",
+            "hai-t-0095",
+            "hai-t-0064"
           ]
         }
+      ],
+      "term_ids": [
+        "hai-t-0135",
+        "hai-t-0040",
+        "hai-t-0041",
+        "hai-t-0064",
+        "hai-t-0176",
+        "hai-t-0106",
+        "hai-t-0107",
+        "hai-t-0081",
+        "hai-t-0084",
+        "hai-t-0043",
+        "hai-t-0068",
+        "hai-t-0071",
+        "hai-t-0146",
+        "hai-t-0099",
+        "hai-t-0097"
       ]
     },
     {
@@ -1344,6 +2055,18 @@
           "case_ids": [
             "FW-CARLINI",
             "FW-ALPHA"
+          ],
+          "term_ids": [
+            "hai-t-0068",
+            "hai-t-0071",
+            "hai-t-0065",
+            "hai-t-0084",
+            "hai-t-0094",
+            "hai-t-0064",
+            "hai-t-0106",
+            "hai-t-0107",
+            "hai-t-0081",
+            "hai-t-0043"
           ]
         },
         {
@@ -1358,8 +2081,38 @@
           "case_ids": [
             "FW-CLAX",
             "FW-CARLINI"
+          ],
+          "term_ids": [
+            "hai-t-0068",
+            "hai-t-0071",
+            "hai-t-0065",
+            "hai-t-0084",
+            "hai-t-0094",
+            "hai-t-0064",
+            "hai-t-0101",
+            "hai-t-0102",
+            "hai-t-0100",
+            "hai-t-0098",
+            "hai-t-0079"
           ]
         }
+      ],
+      "term_ids": [
+        "hai-t-0068",
+        "hai-t-0071",
+        "hai-t-0065",
+        "hai-t-0084",
+        "hai-t-0094",
+        "hai-t-0064",
+        "hai-t-0106",
+        "hai-t-0107",
+        "hai-t-0081",
+        "hai-t-0043",
+        "hai-t-0101",
+        "hai-t-0102",
+        "hai-t-0100",
+        "hai-t-0098",
+        "hai-t-0079"
       ]
     },
     {
@@ -1380,6 +2133,19 @@
             "FW-CARLINI",
             "FW-CLAX",
             "FW-ALPOGE"
+          ],
+          "term_ids": [
+            "hai-t-0146",
+            "hai-t-0099",
+            "hai-t-0097",
+            "hai-t-0049",
+            "hai-t-0130",
+            "hai-t-0063",
+            "hai-t-0069",
+            "hai-t-0037",
+            "hai-t-0095",
+            "hai-t-0064",
+            "hai-t-0147"
           ]
         },
         {
@@ -1394,8 +2160,38 @@
           "case_ids": [
             "FW-ALPHA",
             "FW-SIMON"
+          ],
+          "term_ids": [
+            "hai-t-0137",
+            "hai-t-0086",
+            "hai-t-0089",
+            "hai-t-0138",
+            "hai-t-0087",
+            "hai-t-0068",
+            "hai-t-0071",
+            "hai-t-0065",
+            "hai-t-0084",
+            "hai-t-0094",
+            "hai-t-0064"
           ]
         }
+      ],
+      "term_ids": [
+        "hai-t-0146",
+        "hai-t-0099",
+        "hai-t-0097",
+        "hai-t-0049",
+        "hai-t-0130",
+        "hai-t-0063",
+        "hai-t-0069",
+        "hai-t-0037",
+        "hai-t-0095",
+        "hai-t-0064",
+        "hai-t-0147",
+        "hai-t-0137",
+        "hai-t-0086",
+        "hai-t-0089",
+        "hai-t-0138"
       ]
     },
     {
@@ -1414,6 +2210,15 @@
           "case_ids": [
             "FW-OPENAI",
             "FW-CLAUDE"
+          ],
+          "term_ids": [
+            "hai-t-0134",
+            "hai-t-0118",
+            "hai-t-0116",
+            "hai-t-0105",
+            "hai-t-0120",
+            "hai-t-0133",
+            "hai-t-0122"
           ]
         },
         {
@@ -1430,8 +2235,37 @@
             "FW-CARLINI",
             "FW-ALPOGE",
             "FW-METR"
+          ],
+          "term_ids": [
+            "hai-t-0052",
+            "hai-t-0120",
+            "hai-t-0135",
+            "hai-t-0133",
+            "hai-t-0134",
+            "hai-t-0122",
+            "hai-t-0146",
+            "hai-t-0099",
+            "hai-t-0097",
+            "hai-t-0049",
+            "hai-t-0130"
           ]
         }
+      ],
+      "term_ids": [
+        "hai-t-0134",
+        "hai-t-0118",
+        "hai-t-0116",
+        "hai-t-0105",
+        "hai-t-0120",
+        "hai-t-0133",
+        "hai-t-0122",
+        "hai-t-0052",
+        "hai-t-0135",
+        "hai-t-0146",
+        "hai-t-0099",
+        "hai-t-0097",
+        "hai-t-0049",
+        "hai-t-0130"
       ]
     },
     {
@@ -1450,6 +2284,17 @@
           "case_ids": [
             "FW-METR",
             "FW-SIMON"
+          ],
+          "term_ids": [
+            "hai-t-0126",
+            "hai-t-0127",
+            "hai-t-0128",
+            "hai-t-0129",
+            "hai-t-0106",
+            "hai-t-0107",
+            "hai-t-0081",
+            "hai-t-0084",
+            "hai-t-0043"
           ]
         },
         {
@@ -1464,8 +2309,38 @@
           "case_ids": [
             "FW-CARLINI",
             "FW-CLAX"
+          ],
+          "term_ids": [
+            "hai-t-0008",
+            "hai-t-0064",
+            "hai-t-0068",
+            "hai-t-0071",
+            "hai-t-0065",
+            "hai-t-0084",
+            "hai-t-0094",
+            "hai-t-0120",
+            "hai-t-0133",
+            "hai-t-0134",
+            "hai-t-0122"
           ]
         }
+      ],
+      "term_ids": [
+        "hai-t-0126",
+        "hai-t-0127",
+        "hai-t-0128",
+        "hai-t-0129",
+        "hai-t-0106",
+        "hai-t-0107",
+        "hai-t-0081",
+        "hai-t-0084",
+        "hai-t-0043",
+        "hai-t-0008",
+        "hai-t-0064",
+        "hai-t-0068",
+        "hai-t-0071",
+        "hai-t-0065",
+        "hai-t-0094"
       ]
     }
   ],
@@ -1478,7 +2353,8 @@
       "status": "candidate",
       "candidate_references": [],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "term_ids": []
     },
     {
       "id": "HAI-Q07",
@@ -1497,7 +2373,8 @@
         }
       ],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "term_ids": []
     },
     {
       "id": "HAI-Q07A",
@@ -1517,7 +2394,8 @@
         "FW-OPENAI",
         "FW-CLAUDE",
         "FW-SMALLBUS"
-      ]
+      ],
+      "term_ids": []
     },
     {
       "id": "HAI-Q07B",
@@ -1537,7 +2415,8 @@
         "FW-SMALLBUS",
         "FW-ANDY",
         "FW-STUDENTS"
-      ]
+      ],
+      "term_ids": []
     },
     {
       "id": "HAI-Q07C",
@@ -1552,7 +2431,8 @@
         }
       ],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "term_ids": []
     },
     {
       "id": "HAI-Q08",
@@ -1575,7 +2455,8 @@
         }
       ],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "term_ids": []
     },
     {
       "id": "HAI-Q01",
@@ -1598,7 +2479,8 @@
         }
       ],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "term_ids": []
     },
     {
       "id": "HAI-Q01A",
@@ -1608,7 +2490,8 @@
       "status": "candidate",
       "candidate_references": [],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "term_ids": []
     },
     {
       "id": "HAI-Q01B",
@@ -1634,6 +2517,9 @@
       "established_certificate_id": null,
       "fieldwork_case_ids": [
         "FW-ALPOGE"
+      ],
+      "term_ids": [
+        "hai-t-0075"
       ]
     },
     {
@@ -1649,7 +2535,10 @@
         }
       ],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "term_ids": [
+        "hai-t-0154"
+      ]
     },
     {
       "id": "HAI-Q02",
@@ -1668,7 +2557,8 @@
         }
       ],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "term_ids": []
     },
     {
       "id": "HAI-Q02A",
@@ -1687,7 +2577,8 @@
         }
       ],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "term_ids": []
     },
     {
       "id": "HAI-Q02B",
@@ -1705,7 +2596,8 @@
       "established_certificate_id": null,
       "fieldwork_case_ids": [
         "FW-ARMIN"
-      ]
+      ],
+      "term_ids": []
     },
     {
       "id": "HAI-Q02C",
@@ -1724,7 +2616,8 @@
         }
       ],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "term_ids": []
     },
     {
       "id": "HAI-Q02D",
@@ -1742,6 +2635,10 @@
       "established_certificate_id": null,
       "fieldwork_case_ids": [
         "FW-ALPHA"
+      ],
+      "term_ids": [
+        "hai-t-0052",
+        "hai-t-0075"
       ]
     },
     {
@@ -1757,7 +2654,8 @@
         }
       ],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "term_ids": []
     },
     {
       "id": "HAI-Q05A",
@@ -1775,7 +2673,8 @@
       "established_certificate_id": null,
       "fieldwork_case_ids": [
         "FW-METR"
-      ]
+      ],
+      "term_ids": []
     },
     {
       "id": "HAI-Q05B",
@@ -1789,7 +2688,8 @@
       "fieldwork_case_ids": [
         "FW-STUDENTS",
         "FW-ARMIN"
-      ]
+      ],
+      "term_ids": []
     },
     {
       "id": "HAI-Q05C",
@@ -1807,7 +2707,8 @@
       "established_certificate_id": null,
       "fieldwork_case_ids": [
         "FW-MOLLICK"
-      ]
+      ],
+      "term_ids": []
     },
     {
       "id": "HAI-Q08A",
@@ -1817,7 +2718,8 @@
       "status": "candidate",
       "candidate_references": [],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "term_ids": []
     },
     {
       "id": "HAI-Q08B",
@@ -1827,7 +2729,10 @@
       "status": "candidate",
       "candidate_references": [],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "term_ids": [
+        "hai-t-0009"
+      ]
     },
     {
       "id": "HAI-Q08C",
@@ -1837,7 +2742,10 @@
       "status": "candidate",
       "candidate_references": [],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "term_ids": [
+        "hai-t-0135"
+      ]
     },
     {
       "id": "HAI-Q08D",
@@ -1865,7 +2773,8 @@
         "FW-OPENAI",
         "FW-CLAUDE",
         "FW-METR"
-      ]
+      ],
+      "term_ids": []
     },
     {
       "id": "HAI-Q12",
@@ -1884,7 +2793,8 @@
         }
       ],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "term_ids": []
     },
     {
       "id": "HAI-Q09",
@@ -1894,7 +2804,8 @@
       "status": "candidate",
       "candidate_references": [],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "term_ids": []
     },
     {
       "id": "HAI-Q03",
@@ -1904,7 +2815,8 @@
       "status": "candidate",
       "candidate_references": [],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "term_ids": []
     },
     {
       "id": "HAI-Q03A",
@@ -1914,7 +2826,8 @@
       "status": "candidate",
       "candidate_references": [],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "term_ids": []
     },
     {
       "id": "HAI-Q03B",
@@ -1927,7 +2840,8 @@
       "established_certificate_id": null,
       "fieldwork_case_ids": [
         "FW-SIMON"
-      ]
+      ],
+      "term_ids": []
     },
     {
       "id": "HAI-Q03C",
@@ -1945,7 +2859,8 @@
       "established_certificate_id": null,
       "fieldwork_case_ids": [
         "FW-SIMON"
-      ]
+      ],
+      "term_ids": []
     },
     {
       "id": "HAI-Q03D",
@@ -1958,7 +2873,8 @@
       "established_certificate_id": null,
       "fieldwork_case_ids": [
         "FW-CLAX"
-      ]
+      ],
+      "term_ids": []
     },
     {
       "id": "HAI-Q09A",
@@ -1976,7 +2892,8 @@
       "established_certificate_id": null,
       "fieldwork_case_ids": [
         "FW-OWN"
-      ]
+      ],
+      "term_ids": []
     },
     {
       "id": "HAI-Q09B",
@@ -1990,7 +2907,8 @@
       "fieldwork_case_ids": [
         "FW-ANDY",
         "FW-SIMON"
-      ]
+      ],
+      "term_ids": []
     },
     {
       "id": "HAI-Q09C",
@@ -2009,7 +2927,8 @@
       "fieldwork_case_ids": [
         "FW-ARMIN",
         "FW-OWN"
-      ]
+      ],
+      "term_ids": []
     },
     {
       "id": "HAI-Q10",
@@ -2028,7 +2947,10 @@
         }
       ],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "term_ids": [
+        "hai-t-0103"
+      ]
     },
     {
       "id": "HAI-Q10A",
@@ -2047,7 +2969,8 @@
       "fieldwork_case_ids": [
         "FW-CARLINI",
         "FW-ALPOGE"
-      ]
+      ],
+      "term_ids": []
     },
     {
       "id": "HAI-Q10B",
@@ -2066,7 +2989,8 @@
       "fieldwork_case_ids": [
         "FW-CARLINI",
         "FW-CLAX"
-      ]
+      ],
+      "term_ids": []
     },
     {
       "id": "HAI-Q10C",
@@ -2079,6 +3003,10 @@
       "established_certificate_id": null,
       "fieldwork_case_ids": [
         "FW-ALPOGE"
+      ],
+      "term_ids": [
+        "hai-t-0009",
+        "hai-t-0135"
       ]
     },
     {
@@ -2089,7 +3017,10 @@
       "status": "candidate",
       "candidate_references": [],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "term_ids": [
+        "hai-t-0085"
+      ]
     },
     {
       "id": "HAI-Q04",
@@ -2104,7 +3035,8 @@
         }
       ],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "term_ids": []
     },
     {
       "id": "HAI-Q04A",
@@ -2122,6 +3054,11 @@
       "established_certificate_id": null,
       "fieldwork_case_ids": [
         "FW-ALPHA"
+      ],
+      "term_ids": [
+        "hai-t-0028",
+        "hai-t-0077",
+        "hai-t-0085"
       ]
     },
     {
@@ -2136,6 +3073,9 @@
       "fieldwork_case_ids": [
         "FW-CARLINI",
         "FW-CLAX"
+      ],
+      "term_ids": [
+        "hai-t-0071"
       ]
     },
     {
@@ -2149,7 +3089,8 @@
       "established_certificate_id": null,
       "fieldwork_case_ids": [
         "FW-MOLLICK"
-      ]
+      ],
+      "term_ids": []
     },
     {
       "id": "HAI-Q06",
@@ -2159,7 +3100,8 @@
       "status": "candidate",
       "candidate_references": [],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "term_ids": []
     },
     {
       "id": "HAI-Q06A",
@@ -2172,6 +3114,10 @@
       "established_certificate_id": null,
       "fieldwork_case_ids": [
         "FW-ALPHA"
+      ],
+      "term_ids": [
+        "hai-t-0052",
+        "hai-t-0062"
       ]
     },
     {
@@ -2182,7 +3128,8 @@
       "status": "candidate",
       "candidate_references": [],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "term_ids": []
     },
     {
       "id": "HAI-Q11",
@@ -2192,7 +3139,8 @@
       "status": "candidate",
       "candidate_references": [],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "term_ids": []
     },
     {
       "id": "HAI-Q11A",
@@ -2202,7 +3150,8 @@
       "status": "candidate",
       "candidate_references": [],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "term_ids": []
     },
     {
       "id": "HAI-Q11B",
@@ -2212,7 +3161,8 @@
       "status": "candidate",
       "candidate_references": [],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "term_ids": []
     },
     {
       "id": "HAI-Q07D",
@@ -2234,7 +3184,8 @@
       "fieldwork_case_ids": [
         "FW-METR",
         "FW-SIMON"
-      ]
+      ],
+      "term_ids": []
     },
     {
       "id": "HAI-Q07E",
@@ -2255,6 +3206,9 @@
       ],
       "fieldwork_case_ids": [
         "FW-OWN"
+      ],
+      "term_ids": [
+        "hai-t-0100"
       ]
     },
     {
@@ -2277,6 +3231,9 @@
       "fieldwork_case_ids": [
         "FW-OWN",
         "FW-SIMON"
+      ],
+      "term_ids": [
+        "hai-t-0070"
       ]
     },
     {
@@ -2299,6 +3256,9 @@
       "fieldwork_case_ids": [
         "FW-MOLLICK",
         "FW-CARLINI"
+      ],
+      "term_ids": [
+        "hai-t-0041"
       ]
     },
     {
@@ -2321,6 +3281,9 @@
       "fieldwork_case_ids": [
         "FW-OWN",
         "FW-METR"
+      ],
+      "term_ids": [
+        "hai-t-0104"
       ]
     },
     {
@@ -2343,6 +3306,10 @@
       "fieldwork_case_ids": [
         "FW-OWN",
         "FW-ARMIN"
+      ],
+      "term_ids": [
+        "hai-t-0093",
+        "hai-t-0123"
       ]
     },
     {
@@ -2366,6 +3333,9 @@
         "FW-CARLINI",
         "FW-CLAX",
         "FW-ALPOGE"
+      ],
+      "term_ids": [
+        "hai-t-0085"
       ]
     },
     {
@@ -2389,7 +3359,8 @@
       "fieldwork_case_ids": [
         "FW-ALPHA",
         "FW-SIMON"
-      ]
+      ],
+      "term_ids": []
     }
   ],
   "question_connections": [
@@ -2679,35 +3650,40 @@
       "parent_id": null,
       "title": "How do people actually collaborate with AI?",
       "type": "root",
-      "description": "A deliberately mixed sampling landscape: ordinary use, real work, engineering, scientific research and counterexamples."
+      "description": "A deliberately mixed sampling landscape: ordinary use, real work, engineering, scientific research and counterexamples.",
+      "term_ids": []
     },
     {
       "id": "FW-A",
       "parent_id": "FW-ROOT",
       "title": "Everyday use, learning and independent work",
       "type": "group",
-      "description": "Representative behaviors and situated practices; do not reduce ordinary users to stereotypical low ability."
+      "description": "Representative behaviors and situated practices; do not reduce ordinary users to stereotypical low ability.",
+      "term_ids": []
     },
     {
       "id": "FW-B",
       "parent_id": "FW-ROOT",
       "title": "Working engineers and builders",
       "type": "group",
-      "description": "End-to-end workflow traces and personally owned projects, with real quality constraints."
+      "description": "End-to-end workflow traces and personally owned projects, with real quality constraints.",
+      "term_ids": []
     },
     {
       "id": "FW-C",
       "parent_id": "FW-ROOT",
       "title": "Long-running and frontier research",
       "type": "group",
-      "description": "Large-scale agent systems, research simulations and mathematical claims with distinct verification standards."
+      "description": "Large-scale agent systems, research simulations and mathematical claims with distinct verification standards.",
+      "term_ids": []
     },
     {
       "id": "FW-D",
       "parent_id": "FW-ROOT",
       "title": "Counterexamples and alternative collaboration models",
       "type": "group",
-      "description": "Cases that could disconfirm simplistic ideas of scale, autonomy or expertise."
+      "description": "Cases that could disconfirm simplistic ideas of scale, autonomy or expertise.",
+      "term_ids": []
     },
     {
       "id": "FW-OPENAI",
@@ -2746,7 +3722,8 @@
       "question": "What do most individual ChatGPT conversations actually do?",
       "why_ask": "OpenAI Signals categorizes individual ChatGPT chats across work and non-work purposes; most message data are not direct observations of outcomes.",
       "mechanism_explanation": "A message taxonomy measures what people ask of AI, not what they accomplish. A difficult research dialogue and a failed attempt can share the same usage label; outcome claims require task-level artifacts and independent success criteria.",
-      "transferable_insight": "Distinguish the population's distribution of activities from the distribution of verified capability. Neither the number nor the category of messages assigns a user a skill percentile."
+      "transferable_insight": "Distinguish the population's distribution of activities from the distribution of verified capability. Neither the number nor the category of messages assigns a user a skill percentile.",
+      "term_ids": []
     },
     {
       "id": "FW-CLAUDE",
@@ -2786,7 +3763,10 @@
       "question": "How much AI use is collaboration rather than delegation?",
       "why_ask": "Anthropic classifies November 2025 Claude.ai conversations as 52% augmentation and 45% automation; task iteration was a major contributor to augmentation.",
       "mechanism_explanation": "Augmentation and automation classify the interaction pattern: iterative collaboration versus more directive delegation. The 52% and 45% figures describe classified Claude.ai conversations in the reported sample, not comparative quality, task completion, or user ability.",
-      "transferable_insight": "Use the categories to ask what control and feedback the human retains, then examine comparable task outcomes before favoring either interaction style."
+      "transferable_insight": "Use the categories to ask what control and feedback the human retains, then examine comparable task outcomes before favoring either interaction style.",
+      "term_ids": [
+        "hai-t-0041"
+      ]
     },
     {
       "id": "FW-SMALLBUS",
@@ -2825,7 +3805,11 @@
       "question": "How do ordinary businesses use AI to handle many small tasks?",
       "why_ask": "The San Francisco Fed documents a wide range: email, grant writing, market research, operations and pricing, as well as some owners who develop client-facing AI software.",
       "mechanism_explanation": "Owners can spot neglected but costly operational tasks because they encounter the failures personally. Writing a grant or adjusting a price is less impressive than an autonomous research agent, but its value depends on whether the result survives actual business review.",
-      "transferable_insight": "The opportunity-selection skill is often domain knowledge: choose a repeated, locally consequential task and include verification, repair, and adoption costs when evaluating automation."
+      "transferable_insight": "The opportunity-selection skill is often domain knowledge: choose a repeated, locally consequential task and include verification, repair, and adoption costs when evaluating automation.",
+      "term_ids": [
+        "hai-t-0052",
+        "hai-t-0064"
+      ]
     },
     {
       "id": "FW-ANDY",
@@ -2865,7 +3849,10 @@
       "question": "How did a pizza-shop owner become able to build useful operational software?",
       "why_ask": "Reported use of Claude and YouTube tutorials to make a voice-driven inventory application in English and Spanish, alongside operational apps for kitchen, orders and scheduling.",
       "mechanism_explanation": "The reported inventory tool turns a specific restaurant bottleneck into a voice-driven bilingual interface. Operational knowledge supplies requirements that a generic code-generation prompt would lack; the article does not reveal the complete development/debugging trace.",
-      "transferable_insight": "A low-cost transferable approach is to build around a real user workflow and test it with the people who perform that work. The unresolved variable is maintenance and actual use, not merely whether code can be generated."
+      "transferable_insight": "A low-cost transferable approach is to build around a real user workflow and test it with the people who perform that work. The unresolved variable is maintenance and actual use, not merely whether code can be generated.",
+      "term_ids": [
+        "hai-t-0009"
+      ]
     },
     {
       "id": "FW-STUDENTS",
@@ -2904,7 +3891,8 @@
       "question": "When does AI tutoring help students learn rather than merely give answers?",
       "why_ask": "Published 2025 trial studied a custom AI tutor versus in-class active learning, with higher measured learning gains for the AI-tutor arm.",
       "mechanism_explanation": "The result concerns a designed tutoring intervention, not unrestricted ChatGPT. The tested learning outcome is more informative than students' satisfaction or the amount of generated explanation; tutor structure and feedback remain possible causal contributors.",
-      "transferable_insight": "Assess retained learning with a novel question attempted without the tutor. A fluent AI-assisted answer is not evidence that the student acquired the underlying competence."
+      "transferable_insight": "Assess retained learning with a novel question attempted without the tutor. A fluent AI-assisted answer is not evidence that the student acquired the underlying competence.",
+      "term_ids": []
     },
     {
       "id": "FW-SIMON",
@@ -2947,7 +3935,11 @@
       "question": "How does Simon Willison go from an idea to a demonstrably working tool?",
       "why_ask": "Author documents iteration on small tools, context feeding, executable tests, and visual demonstration artifacts via Showboat/Rodney.",
       "mechanism_explanation": "The documented workflow links short-lived generated tools to executable observations and visual demonstration artifacts. Showboat/Rodney can record commands and browser state, creating a path from a claimed implementation to something another person can inspect.",
-      "transferable_insight": "Keep the artifact, the command that produced it, and a representative user flow together. A screenshot alone is weaker than a reproducible execution trace; a generated demo can still misrepresent the real system."
+      "transferable_insight": "Keep the artifact, the command that produced it, and a representative user flow together. A screenshot alone is weaker than a reproducible execution trace; a generated demo can still misrepresent the real system.",
+      "term_ids": [
+        "hai-t-0081",
+        "hai-t-0103"
+      ]
     },
     {
       "id": "FW-ARMIN",
@@ -2988,7 +3980,10 @@
       "question": "Why might an expert reject apparently more autonomous coding?",
       "why_ask": "Ronacher reports that long autonomous coding loops can increase complexity and weaken understanding despite producing substantial output.",
       "mechanism_explanation": "A long autonomous loop can increase completed output while decreasing the maintainer's understanding of invariants, coupling, and design intent. The hidden cost emerges when modifications must be explained or repaired after the generation session.",
-      "transferable_insight": "Compare maintainability after a week, not just generated line count or initial completion time. This is a first-person engineering critique, not a controlled estimate of typical losses."
+      "transferable_insight": "Compare maintainability after a week, not just generated line count or initial completion time. This is a first-person engineering critique, not a controlled estimate of typical losses.",
+      "term_ids": [
+        "hai-t-0104"
+      ]
     },
     {
       "id": "FW-OWN",
@@ -3030,7 +4025,13 @@
       "question": "What have our own ChatGPT-plus-GitHub projects actually taught us?",
       "why_ask": "Real viewer and question-tree workflows include source-linked research, repository edits, usability revisions, a GitHub API 404 and a mistaken-repository edit subsequently reverted.",
       "mechanism_explanation": "The navigation project provides a direct example of whole-system inefficiency: repeated interface redesign, wrong-target edits, and debugging overhead can consume benefits from fast code generation. GitHub commits and reports make the sequence inspectable, but no counterfactual time saving has been measured.",
-      "transferable_insight": "An agent's effectiveness includes choosing the correct repository, preserving working behavior, capturing user-visible failure signals, and recovering accurately. A passing isolated edit cannot substitute for a usable end-to-end interaction."
+      "transferable_insight": "An agent's effectiveness includes choosing the correct repository, preserving working behavior, capturing user-visible failure signals, and recovering accurately. A passing isolated edit cannot substitute for a usable end-to-end interaction.",
+      "term_ids": [
+        "hai-t-0064",
+        "hai-t-0075",
+        "hai-t-0076",
+        "hai-t-0124"
+      ]
     },
     {
       "id": "FW-CARLINI",
@@ -3115,7 +4116,12 @@
       "compare_with": [
         "FW-CLAX"
       ],
-      "failure_to_intervention": "Sixteen workers encountered the same monolithic kernel-compilation obstruction; GCC-based file-subset isolation transformed it into several distinguishable failures."
+      "failure_to_intervention": "Sixteen workers encountered the same monolithic kernel-compilation obstruction; GCC-based file-subset isolation transformed it into several distinguishable failures.",
+      "term_ids": [
+        "hai-t-0068",
+        "hai-t-0077",
+        "hai-t-0085"
+      ]
     },
     {
       "id": "FW-CLAX",
@@ -3195,7 +4201,10 @@
       "compare_with": [
         "FW-CARLINI"
       ],
-      "failure_to_intervention": "Coupled numerical stages favored sequential diagnosis against CLASS over unstructured independent parallel changes."
+      "failure_to_intervention": "Coupled numerical stages favored sequential diagnosis against CLASS over unstructured independent parallel changes.",
+      "term_ids": [
+        "hai-t-0084"
+      ]
     },
     {
       "id": "FW-ALPHA",
@@ -3237,7 +4246,14 @@
       "question": "How does AlphaEvolve turn LLM ideas into validated algorithm improvements?",
       "why_ask": "A mix of LLM-generated programs, automated evaluators, stored candidates and evolutionary selection; DeepMind reports algorithm improvements deployed in its infrastructure.",
       "mechanism_explanation": "Generated programs become useful candidates only when an executable evaluator can rank them and selection retains or mutates promising variants. Candidate archives permit iterative search, but improvements are bounded by what the scoring function measures.",
-      "transferable_insight": "Before scaling evolutionary agents, determine whether the objective corresponds to the real engineering outcome and compare against conventional search. This is a developer-reported system, not a measured percentile of human AI practitioners."
+      "transferable_insight": "Before scaling evolutionary agents, determine whether the objective corresponds to the real engineering outcome and compare against conventional search. This is a developer-reported system, not a measured percentile of human AI practitioners.",
+      "term_ids": [
+        "hai-t-0002",
+        "hai-t-0035",
+        "hai-t-0085",
+        "hai-t-0089",
+        "hai-t-0137"
+      ]
     },
     {
       "id": "FW-ALPOGE",
@@ -3280,7 +4296,17 @@
       "question": "What did Alpöge and Claude actually do, and what can be checked?",
       "why_ask": "November 20, 2026 announcement of claimed Riemann hypothesis and GRH proof with Lean formalization; mathematical correctness and full independent checking remain unresolved.",
       "mechanism_explanation": "The public account attributes mathematical direction and analogy selection to a specialist and some unexpected intermediate steps to Claude. Formal proof claims need both replay of the proof artifact and confirmation that the formalized theorem matches the intended mathematical statement.",
-      "transferable_insight": "Formal verification can catch derivation errors while leaving specification mismatch as a separate failure mode. The announcement alone cannot establish the mathematical claim or quantify which parts generalize to nonexperts."
+      "transferable_insight": "Formal verification can catch derivation errors while leaving specification mismatch as a separate failure mode. The announcement alone cannot establish the mathematical claim or quantify which parts generalize to nonexperts.",
+      "term_ids": [
+        "hai-t-0048",
+        "hai-t-0050",
+        "hai-t-0052",
+        "hai-t-0056",
+        "hai-t-0058",
+        "hai-t-0060",
+        "hai-t-0061",
+        "hai-t-0103"
+      ]
     },
     {
       "id": "FW-METR",
@@ -3320,7 +4346,8 @@
       "question": "Why did experts sometimes become slower when AI was available?",
       "why_ask": "Across 246 real issues in developers' familiar codebases, allowing early-2025 AI tools increased observed completion time by 19%; developer expectations were for speedup.",
       "mechanism_explanation": "In the published early-2025 task setting, developers experienced overhead from using and reviewing AI help despite expecting speedups. The observed 19% slower completion is an end-to-end result; the precise contribution of individual causes has not been isolated.",
-      "transferable_insight": "Measure time from problem understanding through accepted, correct integration—not model output speed. Familiarity with a codebase may make reviewing plausible generated changes more expensive than solving the issue directly."
+      "transferable_insight": "Measure time from problem understanding through accepted, correct integration—not model output speed. Familiarity with a codebase may make reviewing plausible generated changes more expensive than solving the issue directly.",
+      "term_ids": []
     },
     {
       "id": "FW-MOLLICK",
@@ -3359,7 +4386,14 @@
       "question": "Should agents do everything, or know when to involve humans?",
       "why_ask": "Propose 'Twilight Factory' in which agents proactively seek human approval, expertise and judgment rather than maximizing unattended autonomy.",
       "mechanism_explanation": "The 'Twilight Factory' proposal changes the agent's goal from operating without humans to deciding when human approval, expertise, or judgment is required. This is an organizational design hypothesis, not evidence of measured superiority.",
-      "transferable_insight": "Escalation should be treated as a control policy that can be evaluated on consequential decisions, missed interventions, and review cost; more autonomous action is not necessarily more useful."
+      "transferable_insight": "Escalation should be treated as a control policy that can be evaluated on consequential decisions, missed interventions, and review cost; more autonomous action is not necessarily more useful.",
+      "term_ids": [
+        "hai-t-0048",
+        "hai-t-0062",
+        "hai-t-0064",
+        "hai-t-0135",
+        "hai-t-0176"
+      ]
     }
   ],
   "projects": [
@@ -3736,5 +4770,7 @@
     "Case inclusion is purposefully heterogeneous. A named entrepreneur, research study, AI team, and user case are not comparable units without defining a task and measure.",
     "Mechanisms are proposed explanations. We should not promote them to established conclusions without comparative evidence.",
     "An exceptional result should be demystified through concrete artifacts and reconstructions, without denying genuine expertise or resource limits."
-  ]
+  ],
+  "glossary_path": "glossary.json",
+  "glossary_schema": "1.0"
 }
