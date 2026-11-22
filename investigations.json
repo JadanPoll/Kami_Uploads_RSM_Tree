@@ -3,10 +3,10 @@
   "investigations": [
     {
       "id": "manufacturing-orientation",
-      "title": "Getting comfortable with manufacturing",
+      "title": "Manufacturing — curiosity-to-evidence navigator",
       "path": "Investigations/manufacturing-orientation/investigation.json",
-      "status": "big-picture-question-landscape-active",
-      "updated": "2026-11-18"
+      "status": "question-and-question-set-navigation-active",
+      "updated": "2026-11-21"
     },
     {
       "id": "operating-systems",
