@@ -328,18 +328,11 @@
     {
       "id": "dhw-t-0038",
       "label": "finite state machine",
-      "aliases": [],
+      "aliases": [
+        "FSM"
+      ],
       "category": "RTL and state",
       "related_ids": []
-    },
-    {
-      "id": "dhw-t-0039",
-      "label": "FSM",
-      "aliases": [],
-      "category": "RTL and state",
-      "related_ids": [
-        "dhw-t-0041"
-      ]
     },
     {
       "id": "dhw-t-0040",
@@ -355,7 +348,7 @@
       "category": "RTL and state",
       "related_ids": [
         "dhw-t-0042",
-        "dhw-t-0039"
+        "dhw-t-0038"
       ]
     },
     {
@@ -504,14 +497,9 @@
     {
       "id": "dhw-t-0061",
       "label": "lookup table",
-      "aliases": [],
-      "category": "FPGA and engineering flow",
-      "related_ids": []
-    },
-    {
-      "id": "dhw-t-0062",
-      "label": "LUT",
-      "aliases": [],
+      "aliases": [
+        "LUT"
+      ],
       "category": "FPGA and engineering flow",
       "related_ids": []
     },
@@ -525,14 +513,9 @@
     {
       "id": "dhw-t-0064",
       "label": "block RAM",
-      "aliases": [],
-      "category": "FPGA and engineering flow",
-      "related_ids": []
-    },
-    {
-      "id": "dhw-t-0065",
-      "label": "BRAM",
-      "aliases": [],
+      "aliases": [
+        "BRAM"
+      ],
       "category": "FPGA and engineering flow",
       "related_ids": []
     },
@@ -652,19 +635,13 @@
       "id": "dhw-t-0080",
       "label": "clock-domain crossing",
       "aliases": [
-        "clock crossing"
+        "clock crossing",
+        "CDC"
       ],
       "category": "FPGA and engineering flow",
       "related_ids": [
         "dhw-t-0082"
       ]
-    },
-    {
-      "id": "dhw-t-0081",
-      "label": "CDC",
-      "aliases": [],
-      "category": "FPGA and engineering flow",
-      "related_ids": []
     },
     {
       "id": "dhw-t-0082",
@@ -713,14 +690,9 @@
     {
       "id": "dhw-t-0088",
       "label": "static timing analysis",
-      "aliases": [],
-      "category": "FPGA and engineering flow",
-      "related_ids": []
-    },
-    {
-      "id": "dhw-t-0089",
-      "label": "STA",
-      "aliases": [],
+      "aliases": [
+        "STA"
+      ],
       "category": "FPGA and engineering flow",
       "related_ids": []
     },
@@ -1377,14 +1349,9 @@
     {
       "id": "dhw-t-0176",
       "label": "process design kit",
-      "aliases": [],
-      "category": "VLSI and fabrication",
-      "related_ids": []
-    },
-    {
-      "id": "dhw-t-0177",
-      "label": "PDK",
-      "aliases": [],
+      "aliases": [
+        "PDK"
+      ],
       "category": "VLSI and fabrication",
       "related_ids": []
     },
@@ -1421,14 +1388,9 @@
     {
       "id": "dhw-t-0182",
       "label": "multiproject wafer",
-      "aliases": [],
-      "category": "VLSI and fabrication",
-      "related_ids": []
-    },
-    {
-      "id": "dhw-t-0183",
-      "label": "MPW",
-      "aliases": [],
+      "aliases": [
+        "MPW"
+      ],
       "category": "VLSI and fabrication",
       "related_ids": []
     },
@@ -2195,5 +2157,14 @@
       "category": "FKEN vocabulary",
       "related_ids": []
     }
-  ]
+  ],
+  "redirects": {
+    "dhw-t-0039": "dhw-t-0038",
+    "dhw-t-0081": "dhw-t-0080",
+    "dhw-t-0065": "dhw-t-0064",
+    "dhw-t-0089": "dhw-t-0088",
+    "dhw-t-0177": "dhw-t-0176",
+    "dhw-t-0183": "dhw-t-0182",
+    "dhw-t-0062": "dhw-t-0061"
+  }
 }
