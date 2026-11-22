@@ -1,0 +1,2279 @@
+{
+  "schema_version": "1.0",
+  "domain_id": "manufacturing-orientation",
+  "title": "Getting comfortable with manufacturing — technical vocabulary",
+  "id_policy": "Assign IDs once. Preserve them across renames, sorting, additions and merges; never recompute IDs from display labels. Use aliases for alternative spellings; separate distinct senses even when their words match.",
+  "related_ids_semantics": "Explicitly related concepts, NOT synonyms or automatically equivalent search results.",
+  "source_vocabularies": [
+    "https://github.com/JadanPoll/FKEN_Ecosystem/blob/main/Glossaries/Nanotechnology.json"
+  ],
+  "terms": [
+    {
+      "id": "mfg-t-0001",
+      "label": "fatigue",
+      "aliases": [],
+      "category": "Material behavior",
+      "related_ids": [
+        "mfg-t-0013",
+        "mfg-t-0003"
+      ]
+    },
+    {
+      "id": "mfg-t-0002",
+      "label": "fatigue crack",
+      "aliases": [],
+      "category": "Material behavior",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0003",
+      "label": "cyclic loading",
+      "aliases": [],
+      "category": "Material behavior",
+      "related_ids": [
+        "mfg-t-0001"
+      ]
+    },
+    {
+      "id": "mfg-t-0004",
+      "label": "cyclic plastic deformation",
+      "aliases": [],
+      "category": "Material behavior",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0005",
+      "label": "fracture mechanics",
+      "aliases": [],
+      "category": "Material behavior",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0006",
+      "label": "static fracture",
+      "aliases": [],
+      "category": "Material behavior",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0007",
+      "label": "yield strength",
+      "aliases": [],
+      "category": "Material behavior",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0008",
+      "label": "ultimate tensile strength",
+      "aliases": [],
+      "category": "Material behavior",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0009",
+      "label": "elasticity",
+      "aliases": [],
+      "category": "Material behavior",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0010",
+      "label": "plasticity",
+      "aliases": [],
+      "category": "Material behavior",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0011",
+      "label": "stress",
+      "aliases": [],
+      "category": "Material behavior",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0012",
+      "label": "strain",
+      "aliases": [],
+      "category": "Material behavior",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0013",
+      "label": "stress concentration",
+      "aliases": [],
+      "category": "Material behavior",
+      "related_ids": [
+        "mfg-t-0001"
+      ]
+    },
+    {
+      "id": "mfg-t-0014",
+      "label": "notch sensitivity",
+      "aliases": [],
+      "category": "Material behavior",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0015",
+      "label": "stress intensity factor",
+      "aliases": [],
+      "category": "Material behavior",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0016",
+      "label": "strain concentration",
+      "aliases": [],
+      "category": "Material behavior",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0017",
+      "label": "dislocation",
+      "aliases": [],
+      "category": "Material behavior",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0018",
+      "label": "grain structure",
+      "aliases": [],
+      "category": "Material behavior",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0019",
+      "label": "microstructure",
+      "aliases": [],
+      "category": "Material behavior",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0020",
+      "label": "heat treatment",
+      "aliases": [],
+      "category": "Material behavior",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0021",
+      "label": "work hardening",
+      "aliases": [],
+      "category": "Material behavior",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0022",
+      "label": "ductility",
+      "aliases": [],
+      "category": "Material behavior",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0023",
+      "label": "brittleness",
+      "aliases": [],
+      "category": "Material behavior",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0024",
+      "label": "Young's modulus",
+      "aliases": [],
+      "category": "Material behavior",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0025",
+      "label": "stiffness",
+      "aliases": [],
+      "category": "Material behavior",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0026",
+      "label": "flexure",
+      "aliases": [],
+      "category": "Material behavior",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0027",
+      "label": "compliance",
+      "aliases": [],
+      "category": "Material behavior",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0028",
+      "label": "creep",
+      "aliases": [],
+      "category": "Material behavior",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0029",
+      "label": "wear",
+      "aliases": [],
+      "category": "Material behavior",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0030",
+      "label": "corrosion",
+      "aliases": [],
+      "category": "Material behavior",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0031",
+      "label": "thermal expansion",
+      "aliases": [],
+      "category": "Material behavior",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0032",
+      "label": "anisotropy",
+      "aliases": [],
+      "category": "Material behavior",
+      "related_ids": [
+        "mfg-t-0114"
+      ]
+    },
+    {
+      "id": "mfg-t-0033",
+      "label": "material properties",
+      "aliases": [],
+      "category": "Material behavior",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0034",
+      "label": "failure analysis",
+      "aliases": [],
+      "category": "Material behavior",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0035",
+      "label": "service life",
+      "aliases": [],
+      "category": "Material behavior",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0036",
+      "label": "factor of safety",
+      "aliases": [],
+      "category": "Material behavior",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0037",
+      "label": "kinematic chain",
+      "aliases": [],
+      "category": "Mechanism synthesis",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0038",
+      "label": "degree of freedom",
+      "aliases": [],
+      "category": "Mechanism synthesis",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0039",
+      "label": "constraint",
+      "aliases": [],
+      "category": "Mechanism synthesis",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0040",
+      "label": "mechanism",
+      "aliases": [],
+      "category": "Mechanism synthesis",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0041",
+      "label": "compliant mechanism",
+      "aliases": [],
+      "category": "Mechanism synthesis",
+      "related_ids": [
+        "mfg-t-0044"
+      ]
+    },
+    {
+      "id": "mfg-t-0042",
+      "label": "compliant joint",
+      "aliases": [],
+      "category": "Mechanism synthesis",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0043",
+      "label": "living hinge",
+      "aliases": [],
+      "category": "Mechanism synthesis",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0044",
+      "label": "flexure hinge",
+      "aliases": [],
+      "category": "Mechanism synthesis",
+      "related_ids": [
+        "mfg-t-0041"
+      ]
+    },
+    {
+      "id": "mfg-t-0045",
+      "label": "rigid-body mechanism",
+      "aliases": [],
+      "category": "Mechanism synthesis",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0046",
+      "label": "mechanical advantage",
+      "aliases": [],
+      "category": "Mechanism synthesis",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0047",
+      "label": "gear ratio",
+      "aliases": [],
+      "category": "Mechanism synthesis",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0048",
+      "label": "torque",
+      "aliases": [],
+      "category": "Mechanism synthesis",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0049",
+      "label": "angular velocity",
+      "aliases": [],
+      "category": "Mechanism synthesis",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0050",
+      "label": "linkage",
+      "aliases": [],
+      "category": "Mechanism synthesis",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0051",
+      "label": "four-bar linkage",
+      "aliases": [],
+      "category": "Mechanism synthesis",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0052",
+      "label": "cam",
+      "aliases": [],
+      "category": "Mechanism synthesis",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0053",
+      "label": "follower",
+      "aliases": [],
+      "category": "Mechanism synthesis",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0054",
+      "label": "Geneva mechanism",
+      "aliases": [],
+      "category": "Mechanism synthesis",
+      "related_ids": [
+        "mfg-t-0055"
+      ]
+    },
+    {
+      "id": "mfg-t-0055",
+      "label": "dwell",
+      "aliases": [],
+      "category": "Mechanism synthesis",
+      "related_ids": [
+        "mfg-t-0054"
+      ]
+    },
+    {
+      "id": "mfg-t-0056",
+      "label": "intermittent motion",
+      "aliases": [],
+      "category": "Mechanism synthesis",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0057",
+      "label": "indexing",
+      "aliases": [],
+      "category": "Mechanism synthesis",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0058",
+      "label": "mechanical transmission",
+      "aliases": [],
+      "category": "Mechanism synthesis",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0059",
+      "label": "lever",
+      "aliases": [],
+      "category": "Mechanism synthesis",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0060",
+      "label": "backlash",
+      "aliases": [],
+      "category": "Mechanism synthesis",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0061",
+      "label": "hysteresis",
+      "aliases": [],
+      "category": "Mechanism synthesis",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0062",
+      "label": "repeatability",
+      "aliases": [],
+      "category": "Mechanism synthesis",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0063",
+      "label": "guidance",
+      "aliases": [],
+      "category": "Mechanism synthesis",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0064",
+      "label": "beam bending",
+      "aliases": [],
+      "category": "Mechanism synthesis",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0065",
+      "label": "contact stress",
+      "aliases": [],
+      "category": "Mechanism synthesis",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0066",
+      "label": "pin joint",
+      "aliases": [],
+      "category": "Mechanism synthesis",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0067",
+      "label": "spring",
+      "aliases": [],
+      "category": "Mechanism synthesis",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0068",
+      "label": "deflection",
+      "aliases": [],
+      "category": "Mechanism synthesis",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0069",
+      "label": "actuation",
+      "aliases": [],
+      "category": "Mechanism synthesis",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0070",
+      "label": "additive manufacturing",
+      "aliases": [],
+      "category": "Manufacturing processes",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0071",
+      "label": "fused filament fabrication",
+      "aliases": [
+        "fused deposition modeling"
+      ],
+      "category": "Manufacturing processes",
+      "related_ids": [
+        "mfg-t-0114"
+      ]
+    },
+    {
+      "id": "mfg-t-0072",
+      "label": "FFM",
+      "aliases": [],
+      "category": "Manufacturing processes",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0073",
+      "label": "FFF",
+      "aliases": [],
+      "category": "Manufacturing processes",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0074",
+      "label": "FDM",
+      "aliases": [],
+      "category": "Manufacturing processes",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0075",
+      "label": "3D printing",
+      "aliases": [],
+      "category": "Manufacturing processes",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0076",
+      "label": "filament",
+      "aliases": [],
+      "category": "Manufacturing processes",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0077",
+      "label": "extrusion",
+      "aliases": [],
+      "category": "Manufacturing processes",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0078",
+      "label": "injection molding",
+      "aliases": [
+        "plastic injection molding"
+      ],
+      "category": "Manufacturing processes",
+      "related_ids": [
+        "mfg-t-0152"
+      ]
+    },
+    {
+      "id": "mfg-t-0079",
+      "label": "casting",
+      "aliases": [],
+      "category": "Manufacturing processes",
+      "related_ids": [
+        "mfg-t-0080"
+      ]
+    },
+    {
+      "id": "mfg-t-0080",
+      "label": "sand casting",
+      "aliases": [],
+      "category": "Manufacturing processes",
+      "related_ids": [
+        "mfg-t-0079"
+      ]
+    },
+    {
+      "id": "mfg-t-0081",
+      "label": "investment casting",
+      "aliases": [],
+      "category": "Manufacturing processes",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0082",
+      "label": "die casting",
+      "aliases": [],
+      "category": "Manufacturing processes",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0083",
+      "label": "mold",
+      "aliases": [],
+      "category": "Manufacturing processes",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0084",
+      "label": "tooling",
+      "aliases": [],
+      "category": "Manufacturing processes",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0085",
+      "label": "core",
+      "aliases": [],
+      "category": "Manufacturing processes",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0086",
+      "label": "draft angle",
+      "aliases": [],
+      "category": "Manufacturing processes",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0087",
+      "label": "parting line",
+      "aliases": [],
+      "category": "Manufacturing processes",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0088",
+      "label": "undercut",
+      "aliases": [],
+      "category": "Manufacturing processes",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0089",
+      "label": "machining",
+      "aliases": [],
+      "category": "Manufacturing processes",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0090",
+      "label": "subtractive manufacturing",
+      "aliases": [],
+      "category": "Manufacturing processes",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0091",
+      "label": "waterjet cutting",
+      "aliases": [],
+      "category": "Manufacturing processes",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0092",
+      "label": "laser cutting",
+      "aliases": [],
+      "category": "Manufacturing processes",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0093",
+      "label": "plasma cutting",
+      "aliases": [],
+      "category": "Manufacturing processes",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0094",
+      "label": "heat-affected zone",
+      "aliases": [],
+      "category": "Manufacturing processes",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0095",
+      "label": "kerf",
+      "aliases": [],
+      "category": "Manufacturing processes",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0096",
+      "label": "CNC milling",
+      "aliases": [],
+      "category": "Manufacturing processes",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0097",
+      "label": "CNC turning",
+      "aliases": [],
+      "category": "Manufacturing processes",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0098",
+      "label": "sheet metal forming",
+      "aliases": [],
+      "category": "Manufacturing processes",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0099",
+      "label": "forging",
+      "aliases": [],
+      "category": "Manufacturing processes",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0100",
+      "label": "stamping",
+      "aliases": [],
+      "category": "Manufacturing processes",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0101",
+      "label": "powder bed fusion",
+      "aliases": [],
+      "category": "Manufacturing processes",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0102",
+      "label": "stereolithography",
+      "aliases": [],
+      "category": "Manufacturing processes",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0103",
+      "label": "selective laser sintering",
+      "aliases": [],
+      "category": "Manufacturing processes",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0104",
+      "label": "SLA",
+      "aliases": [],
+      "category": "Manufacturing processes",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0105",
+      "label": "SLS",
+      "aliases": [],
+      "category": "Manufacturing processes",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0106",
+      "label": "postprocessing",
+      "aliases": [],
+      "category": "Manufacturing processes",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0107",
+      "label": "surface finishing",
+      "aliases": [],
+      "category": "Manufacturing processes",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0108",
+      "label": "thermal processing",
+      "aliases": [],
+      "category": "Manufacturing processes",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0109",
+      "label": "joining",
+      "aliases": [],
+      "category": "Manufacturing processes",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0110",
+      "label": "fastening",
+      "aliases": [],
+      "category": "Manufacturing processes",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0111",
+      "label": "adhesive bonding",
+      "aliases": [],
+      "category": "Manufacturing processes",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0112",
+      "label": "welding",
+      "aliases": [],
+      "category": "Manufacturing processes",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0113",
+      "label": "brazing",
+      "aliases": [],
+      "category": "Manufacturing processes",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0114",
+      "label": "layer adhesion",
+      "aliases": [],
+      "category": "Print design and assembly",
+      "related_ids": [
+        "mfg-t-0071",
+        "mfg-t-0032"
+      ]
+    },
+    {
+      "id": "mfg-t-0115",
+      "label": "interlayer strength",
+      "aliases": [],
+      "category": "Print design and assembly",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0116",
+      "label": "layer orientation",
+      "aliases": [],
+      "category": "Print design and assembly",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0117",
+      "label": "build orientation",
+      "aliases": [],
+      "category": "Print design and assembly",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0118",
+      "label": "support structures",
+      "aliases": [],
+      "category": "Print design and assembly",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0119",
+      "label": "overhang",
+      "aliases": [],
+      "category": "Print design and assembly",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0120",
+      "label": "bridging",
+      "aliases": [],
+      "category": "Print design and assembly",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0121",
+      "label": "bed adhesion",
+      "aliases": [],
+      "category": "Print design and assembly",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0122",
+      "label": "warping",
+      "aliases": [],
+      "category": "Print design and assembly",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0123",
+      "label": "dimensional accuracy",
+      "aliases": [],
+      "category": "Print design and assembly",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0124",
+      "label": "shrinkage",
+      "aliases": [],
+      "category": "Print design and assembly",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0125",
+      "label": "hole compensation",
+      "aliases": [],
+      "category": "Print design and assembly",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0126",
+      "label": "clearance",
+      "aliases": [],
+      "category": "Print design and assembly",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0127",
+      "label": "interference fit",
+      "aliases": [],
+      "category": "Print design and assembly",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0128",
+      "label": "tolerance",
+      "aliases": [],
+      "category": "Print design and assembly",
+      "related_ids": [
+        "mfg-t-0132"
+      ]
+    },
+    {
+      "id": "mfg-t-0129",
+      "label": "geometric dimensioning and tolerancing",
+      "aliases": [
+        "GD and T"
+      ],
+      "category": "Print design and assembly",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0130",
+      "label": "GD&T",
+      "aliases": [],
+      "category": "Print design and assembly",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0131",
+      "label": "datum",
+      "aliases": [],
+      "category": "Print design and assembly",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0132",
+      "label": "tolerance stack-up",
+      "aliases": [],
+      "category": "Print design and assembly",
+      "related_ids": [
+        "mfg-t-0128"
+      ]
+    },
+    {
+      "id": "mfg-t-0133",
+      "label": "assembly",
+      "aliases": [],
+      "category": "Print design and assembly",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0134",
+      "label": "design for manufacturing",
+      "aliases": [],
+      "category": "Print design and assembly",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0135",
+      "label": "design for assembly",
+      "aliases": [],
+      "category": "Print design and assembly",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0136",
+      "label": "design for additive manufacturing",
+      "aliases": [],
+      "category": "Print design and assembly",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0137",
+      "label": "DfAM",
+      "aliases": [],
+      "category": "Print design and assembly",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0138",
+      "label": "CAD",
+      "aliases": [],
+      "category": "Print design and assembly",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0139",
+      "label": "computer-aided design",
+      "aliases": [],
+      "category": "Print design and assembly",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0140",
+      "label": "part splitting",
+      "aliases": [],
+      "category": "Print design and assembly",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0141",
+      "label": "fastener",
+      "aliases": [],
+      "category": "Print design and assembly",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0142",
+      "label": "screw",
+      "aliases": [],
+      "category": "Print design and assembly",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0143",
+      "label": "press fit",
+      "aliases": [],
+      "category": "Print design and assembly",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0144",
+      "label": "insert",
+      "aliases": [],
+      "category": "Print design and assembly",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0145",
+      "label": "fillet",
+      "aliases": [],
+      "category": "Print design and assembly",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0146",
+      "label": "stress riser",
+      "aliases": [],
+      "category": "Print design and assembly",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0147",
+      "label": "minimum wall thickness",
+      "aliases": [],
+      "category": "Print design and assembly",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0148",
+      "label": "batch size",
+      "aliases": [],
+      "category": "Production and capability",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0149",
+      "label": "production volume",
+      "aliases": [],
+      "category": "Production and capability",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0150",
+      "label": "cycle time",
+      "aliases": [],
+      "category": "Production and capability",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0151",
+      "label": "setup cost",
+      "aliases": [],
+      "category": "Production and capability",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0152",
+      "label": "tooling cost",
+      "aliases": [],
+      "category": "Production and capability",
+      "related_ids": [
+        "mfg-t-0078"
+      ]
+    },
+    {
+      "id": "mfg-t-0153",
+      "label": "variable cost",
+      "aliases": [],
+      "category": "Production and capability",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0154",
+      "label": "break-even quantity",
+      "aliases": [],
+      "category": "Production and capability",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0155",
+      "label": "economies of scale",
+      "aliases": [],
+      "category": "Production and capability",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0156",
+      "label": "supplier",
+      "aliases": [],
+      "category": "Production and capability",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0157",
+      "label": "machine shop",
+      "aliases": [],
+      "category": "Production and capability",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0158",
+      "label": "contract manufacturing",
+      "aliases": [],
+      "category": "Production and capability",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0159",
+      "label": "outsourcing",
+      "aliases": [],
+      "category": "Production and capability",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0160",
+      "label": "prototyping",
+      "aliases": [],
+      "category": "Production and capability",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0161",
+      "label": "process capability",
+      "aliases": [],
+      "category": "Production and capability",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0162",
+      "label": "statistical process control",
+      "aliases": [],
+      "category": "Production and capability",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0163",
+      "label": "quality control",
+      "aliases": [],
+      "category": "Production and capability",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0164",
+      "label": "inspection",
+      "aliases": [],
+      "category": "Production and capability",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0165",
+      "label": "metrology",
+      "aliases": [],
+      "category": "Production and capability",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0166",
+      "label": "surface roughness",
+      "aliases": [],
+      "category": "Production and capability",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0167",
+      "label": "yield",
+      "aliases": [],
+      "category": "Production and capability",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0168",
+      "label": "reject rate",
+      "aliases": [],
+      "category": "Production and capability",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0169",
+      "label": "material selection",
+      "aliases": [],
+      "category": "Production and capability",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0170",
+      "label": "process selection",
+      "aliases": [],
+      "category": "Production and capability",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0171",
+      "label": "process window",
+      "aliases": [],
+      "category": "Production and capability",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0172",
+      "label": "lead time",
+      "aliases": [],
+      "category": "Production and capability",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0173",
+      "label": "design iteration",
+      "aliases": [],
+      "category": "Production and capability",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0174",
+      "label": "factory",
+      "aliases": [],
+      "category": "Production and capability",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0175",
+      "label": "manufacturing ecosystem",
+      "aliases": [],
+      "category": "Production and capability",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0176",
+      "label": "capability bootstrap",
+      "aliases": [],
+      "category": "Production and capability",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0177",
+      "label": "self-replication",
+      "aliases": [],
+      "category": "Production and capability",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0178",
+      "label": "bill of materials",
+      "aliases": [],
+      "category": "Production and capability",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0179",
+      "label": "fixture",
+      "aliases": [],
+      "category": "Production and capability",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0180",
+      "label": "jig",
+      "aliases": [],
+      "category": "Production and capability",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0181",
+      "label": "gauge",
+      "aliases": [],
+      "category": "Production and capability",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0182",
+      "label": "process chain",
+      "aliases": [],
+      "category": "Production and capability",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0183",
+      "label": "tradeoff",
+      "aliases": [],
+      "category": "Production and capability",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0184",
+      "label": "cost of revision",
+      "aliases": [],
+      "category": "Production and capability",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0185",
+      "label": "lithography",
+      "aliases": [],
+      "category": "Nanofabrication and adjacent",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0186",
+      "label": "photoresist",
+      "aliases": [],
+      "category": "Nanofabrication and adjacent",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0187",
+      "label": "deposition",
+      "aliases": [],
+      "category": "Nanofabrication and adjacent",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0188",
+      "label": "etching",
+      "aliases": [],
+      "category": "Nanofabrication and adjacent",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0189",
+      "label": "ion implantation",
+      "aliases": [],
+      "category": "Nanofabrication and adjacent",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0190",
+      "label": "atomic layer deposition",
+      "aliases": [],
+      "category": "Nanofabrication and adjacent",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0191",
+      "label": "chemical vapor deposition",
+      "aliases": [],
+      "category": "Nanofabrication and adjacent",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0192",
+      "label": "physical vapor deposition",
+      "aliases": [],
+      "category": "Nanofabrication and adjacent",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0193",
+      "label": "electron-beam lithography",
+      "aliases": [],
+      "category": "Nanofabrication and adjacent",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0194",
+      "label": "nanoimprint lithography",
+      "aliases": [],
+      "category": "Nanofabrication and adjacent",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0195",
+      "label": "SEM",
+      "aliases": [],
+      "category": "Nanofabrication and adjacent",
+      "related_ids": [
+        "mfg-t-0196",
+        "mfg-t-0197",
+        "mfg-t-0279"
+      ]
+    },
+    {
+      "id": "mfg-t-0196",
+      "label": "TEM",
+      "aliases": [],
+      "category": "Nanofabrication and adjacent",
+      "related_ids": [
+        "mfg-t-0195",
+        "mfg-t-0197",
+        "mfg-t-0279"
+      ]
+    },
+    {
+      "id": "mfg-t-0197",
+      "label": "AFM",
+      "aliases": [],
+      "category": "Nanofabrication and adjacent",
+      "related_ids": [
+        "mfg-t-0195",
+        "mfg-t-0196",
+        "mfg-t-0279"
+      ]
+    },
+    {
+      "id": "mfg-t-0198",
+      "label": "critical dimension",
+      "aliases": [],
+      "category": "Nanofabrication and adjacent",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0199",
+      "label": "nanomanufacturing",
+      "aliases": [],
+      "category": "Nanofabrication and adjacent",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0200",
+      "label": "surface chemistry",
+      "aliases": [],
+      "category": "Nanofabrication and adjacent",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0201",
+      "label": "grain boundary",
+      "aliases": [],
+      "category": "Nanofabrication and adjacent",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0202",
+      "label": "defect density",
+      "aliases": [],
+      "category": "Nanofabrication and adjacent",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0203",
+      "label": "nanotechnology",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0204",
+      "label": "nanoscience",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0205",
+      "label": "nanomaterial",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0206",
+      "label": "0D",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "mfg-t-0207",
+        "mfg-t-0208",
+        "mfg-t-0209"
+      ]
+    },
+    {
+      "id": "mfg-t-0207",
+      "label": "1D",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "mfg-t-0206",
+        "mfg-t-0208",
+        "mfg-t-0209"
+      ]
+    },
+    {
+      "id": "mfg-t-0208",
+      "label": "2D",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "mfg-t-0206",
+        "mfg-t-0207",
+        "mfg-t-0209"
+      ]
+    },
+    {
+      "id": "mfg-t-0209",
+      "label": "3D",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "mfg-t-0206",
+        "mfg-t-0207",
+        "mfg-t-0208"
+      ]
+    },
+    {
+      "id": "mfg-t-0210",
+      "label": "nanoparticle",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0211",
+      "label": "nanocrystal",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0212",
+      "label": "quantum dot",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0213",
+      "label": "nanowire",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0214",
+      "label": "nanotube",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0215",
+      "label": "nanosheet",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0216",
+      "label": "thin film",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0217",
+      "label": "monolayer",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0218",
+      "label": "surface-to-volume ratio",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "mfg-t-0219",
+        "mfg-t-0220"
+      ]
+    },
+    {
+      "id": "mfg-t-0219",
+      "label": "surface energy",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "mfg-t-0218",
+        "mfg-t-0220"
+      ]
+    },
+    {
+      "id": "mfg-t-0220",
+      "label": "surface tension",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "mfg-t-0218",
+        "mfg-t-0219"
+      ]
+    },
+    {
+      "id": "mfg-t-0221",
+      "label": "adsorption",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "mfg-t-0222"
+      ]
+    },
+    {
+      "id": "mfg-t-0222",
+      "label": "desorption",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "mfg-t-0221"
+      ]
+    },
+    {
+      "id": "mfg-t-0223",
+      "label": "surface functionalization",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0224",
+      "label": "ligand",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "mfg-t-0225"
+      ]
+    },
+    {
+      "id": "mfg-t-0225",
+      "label": "passivation",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "mfg-t-0224"
+      ]
+    },
+    {
+      "id": "mfg-t-0226",
+      "label": "wetting",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0227",
+      "label": "contact angle",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0228",
+      "label": "interfacial energy",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0229",
+      "label": "quantum confinement",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0230",
+      "label": "tunneling",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0231",
+      "label": "band gap",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0232",
+      "label": "ballistic transport",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "mfg-t-0233"
+      ]
+    },
+    {
+      "id": "mfg-t-0233",
+      "label": "diffusive transport",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "mfg-t-0232"
+      ]
+    },
+    {
+      "id": "mfg-t-0234",
+      "label": "electron mean free path",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0235",
+      "label": "exciton",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0236",
+      "label": "plasmon",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0237",
+      "label": "localized surface plasmon resonance",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0238",
+      "label": "photoluminescence",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0239",
+      "label": "nucleation",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "mfg-t-0240"
+      ]
+    },
+    {
+      "id": "mfg-t-0240",
+      "label": "growth",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "mfg-t-0239"
+      ]
+    },
+    {
+      "id": "mfg-t-0241",
+      "label": "supersaturation",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0242",
+      "label": "seeded growth",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0243",
+      "label": "Ostwald ripening",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0244",
+      "label": "aggregation",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0245",
+      "label": "colloid",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0246",
+      "label": "particle size distribution",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0247",
+      "label": "polydispersity",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0248",
+      "label": "zeta potential",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0249",
+      "label": "top-down",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "mfg-t-0250"
+      ]
+    },
+    {
+      "id": "mfg-t-0250",
+      "label": "bottom-up",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "mfg-t-0249"
+      ]
+    },
+    {
+      "id": "mfg-t-0251",
+      "label": "self-assembly",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "mfg-t-0252"
+      ]
+    },
+    {
+      "id": "mfg-t-0252",
+      "label": "directed assembly",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "mfg-t-0251"
+      ]
+    },
+    {
+      "id": "mfg-t-0253",
+      "label": "block copolymer",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0254",
+      "label": "DNA origami",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0255",
+      "label": "nanopatterning",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0256",
+      "label": "alignment/overlay",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0257",
+      "label": "PVD",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "mfg-t-0258",
+        "mfg-t-0259",
+        "mfg-t-0260"
+      ]
+    },
+    {
+      "id": "mfg-t-0258",
+      "label": "CVD",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "mfg-t-0257",
+        "mfg-t-0259",
+        "mfg-t-0260"
+      ]
+    },
+    {
+      "id": "mfg-t-0259",
+      "label": "ALD",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "mfg-t-0257",
+        "mfg-t-0258",
+        "mfg-t-0260"
+      ]
+    },
+    {
+      "id": "mfg-t-0260",
+      "label": "epitaxy",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "mfg-t-0257",
+        "mfg-t-0258",
+        "mfg-t-0259"
+      ]
+    },
+    {
+      "id": "mfg-t-0261",
+      "label": "conformality",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0262",
+      "label": "step coverage",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0263",
+      "label": "high-aspect-ratio structure",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0264",
+      "label": "isotropic etch",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "mfg-t-0265"
+      ]
+    },
+    {
+      "id": "mfg-t-0265",
+      "label": "anisotropic etch",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "mfg-t-0264"
+      ]
+    },
+    {
+      "id": "mfg-t-0266",
+      "label": "etch selectivity",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0267",
+      "label": "plasma etch",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0268",
+      "label": "annealing",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0269",
+      "label": "oxidation",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0270",
+      "label": "doping",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0271",
+      "label": "heterostructure",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0272",
+      "label": "heterojunction",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0273",
+      "label": "core-shell nanoparticle",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0274",
+      "label": "interface states",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0275",
+      "label": "dislocations",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0276",
+      "label": "residual stress",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0277",
+      "label": "surface diffusion",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0278",
+      "label": "reaction kinetics",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0279",
+      "label": "STM",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "mfg-t-0195",
+        "mfg-t-0196",
+        "mfg-t-0197"
+      ]
+    },
+    {
+      "id": "mfg-t-0280",
+      "label": "ellipsometry",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0281",
+      "label": "XRD",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0282",
+      "label": "XPS",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0283",
+      "label": "Raman spectroscopy",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0284",
+      "label": "particle sizing",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0285",
+      "label": "calibration",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0286",
+      "label": "reference material",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0287",
+      "label": "metrology uncertainty",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0288",
+      "label": "inverse problem",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0289",
+      "label": "line-edge roughness",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0290",
+      "label": "nanopore",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0291",
+      "label": "nanomembrane",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0292",
+      "label": "nanofiltration",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0293",
+      "label": "ion transport",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0294",
+      "label": "catalysis",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0295",
+      "label": "biosensor",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0296",
+      "label": "nanomedicine",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0297",
+      "label": "drug-delivery carrier",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0298",
+      "label": "protein corona",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0299",
+      "label": "nanotoxicology",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0300",
+      "label": "environmental fate",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0301",
+      "label": "NEMS",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0302",
+      "label": "MEMS",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0303",
+      "label": "nanofabrication",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0304",
+      "label": "reproducibility",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0305",
+      "label": "scale-up",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "mfg-t-0306",
+      "label": "roll-to-roll processing",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    }
+  ]
+}
