@@ -4,6 +4,12 @@
 
 **Original [Drive shelf](https://drive.google.com/drive/folders/1Qx_V7FAz2EhbmCAijHMr18swPu5GLyZr)**. Read and highlight original PDFs in Kami/Drive; GitHub holds only research state, stable pointers and interpretation.
 
+## Research-family question panels
+
+Each family records `question_ids` in its own `investigation.json`: stable references to ordinary-language questions owned by the mathematics root `curiosity_atlas.entries`. A question can appear in several families **without copying its text, bridge definitions or evidence**. The [viewer](https://github.com/JadanPoll/Learning_Visualizations_Taxonomy/blob/main/RSM_Tree_Viewer.html) loads the family research and the shared question atlas explicitly, not GitHub's recursive directory API. Within the family panel, shared bridge choices are limited to technical records actually owned there; **Explore all mathematics** exposes their other branches on demand. The family glossary panel similarly indexes only concepts connected to its research.
+
+To extend a family: add or improve authentic questions in the root entry registry, reference those IDs in the relevant family's `question_ids`, and add source-backed mechanisms to the family research file. Do not manufacture filler questions or add a question merely to achieve symmetry between families. Check that each selected question has at least one technical route into that family, and that the viewer can actually traverse it. The full atlas remains the cross-family entry point.
+
 ## Research families — canonical ownership
 
 - [Foundations and algebra](foundations-and-algebra/) — Definitions, mappings, linear structure, symmetry and algebraic obstructions.
