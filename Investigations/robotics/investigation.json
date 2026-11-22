@@ -4474,7 +4474,11 @@
               "printed_page_start": 59,
               "level": "toc_only",
               "locator_status": "table_of_contents_inspected",
-              "why": "Rigid-Body Motions"
+              "why": "§3 · Rigid-Body Motions · printed p. 59",
+              "section": "§3 · Rigid-Body Motions",
+              "pages": "Printed p. 59",
+              "page_scheme": "Printed book TOC, not PDF viewer offset",
+              "locator_level": "toc_only"
             },
             {
               "source_id": "UAV-2012",
@@ -4482,7 +4486,11 @@
               "printed_page_start": 12,
               "level": "toc_only",
               "locator_status": "table_of_contents_inspected",
-              "why": "MAV Coordinate Frames"
+              "why": "§2.2 · MAV Coordinate Frames · printed p. 12",
+              "section": "§2.2 · MAV Coordinate Frames",
+              "pages": "Printed p. 12",
+              "page_scheme": "Printed book TOC, not PDF viewer offset",
+              "locator_level": "toc_only"
             }
           ],
           "why": "An inconsistent frame convention breaks calibration and commands.",
@@ -4509,7 +4517,11 @@
               "printed_page_start": 23,
               "level": "toc_only",
               "locator_status": "table_of_contents_inspected",
-              "why": "Configuration Space: Topology and Representation"
+              "why": "§2.3 · Configuration Space: Topology and Representation · printed p. 23",
+              "section": "§2.3 · Configuration Space: Topology and Representation",
+              "pages": "Printed p. 23",
+              "page_scheme": "Printed book TOC, not PDF viewer offset",
+              "locator_level": "toc_only"
             },
             {
               "source_id": "MR-2017",
@@ -4517,7 +4529,11 @@
               "printed_page_start": 178,
               "level": "inspected",
               "locator_status": "source_section_inspected",
-              "why": "Manipulator Jacobian"
+              "why": "§5.1 · Manipulator Jacobian · printed p. 178",
+              "section": "§5.1 · Manipulator Jacobian",
+              "pages": "Printed p. 178",
+              "page_scheme": "Printed book TOC, not PDF viewer offset",
+              "locator_level": "inspected"
             },
             {
               "source_id": "MR-2017",
@@ -4525,7 +4541,11 @@
               "printed_page_start": 358,
               "level": "inspected",
               "locator_status": "source_section_inspected",
-              "why": "Foundations"
+              "why": "§10.2 · Foundations · printed p. 358",
+              "section": "§10.2 · Foundations",
+              "pages": "Printed p. 358",
+              "page_scheme": "Printed book TOC, not PDF viewer offset",
+              "locator_level": "inspected"
             }
           ],
           "why": "Separate algebraic IK from geometric and kinematic feasibility.",
@@ -4551,7 +4571,11 @@
               "printed_page_start": 520,
               "level": "toc_only",
               "locator_status": "table_of_contents_inspected",
-              "why": "Nonholonomic Wheeled Mobile Robots"
+              "why": "§13.3 · Nonholonomic Wheeled Mobile Robots · printed p. 520",
+              "section": "§13.3 · Nonholonomic Wheeled Mobile Robots",
+              "pages": "Printed p. 520",
+              "page_scheme": "Printed book TOC, not PDF viewer offset",
+              "locator_level": "toc_only"
             },
             {
               "source_id": "UAV-2012",
@@ -4559,7 +4583,11 @@
               "printed_page_start": 194,
               "level": "inspected",
               "locator_status": "source_section_inspected",
-              "why": "Dubins Paths"
+              "why": "§11.2 · Dubins Paths · printed p. 194",
+              "section": "§11.2 · Dubins Paths",
+              "pages": "Printed p. 194",
+              "page_scheme": "Printed book TOC, not PDF viewer offset",
+              "locator_level": "inspected"
             }
           ],
           "why": "The embodiment determines admissible paths.",
@@ -4603,7 +4631,11 @@
               "printed_page_start": 26,
               "level": "inspected",
               "locator_status": "source_section_inspected",
-              "why": "The Bayes Filter Algorithm"
+              "why": "§2.4.1 · The Bayes Filter Algorithm · printed p. 26",
+              "section": "§2.4.1 · The Bayes Filter Algorithm",
+              "pages": "Printed p. 26",
+              "page_scheme": "Printed book TOC, not PDF viewer offset",
+              "locator_level": "inspected"
             },
             {
               "source_id": "PR-2006",
@@ -4611,7 +4643,11 @@
               "printed_page_start": 54,
               "level": "toc_only",
               "locator_status": "table_of_contents_inspected",
-              "why": "The Extended Kalman Filter"
+              "why": "§3.3 · The Extended Kalman Filter · printed p. 54",
+              "section": "§3.3 · The Extended Kalman Filter",
+              "pages": "Printed p. 54",
+              "page_scheme": "Printed book TOC, not PDF viewer offset",
+              "locator_level": "toc_only"
             },
             {
               "source_id": "UAV-2012",
@@ -4619,7 +4655,11 @@
               "printed_page_start": 151,
               "level": "inspected",
               "locator_status": "source_section_inspected",
-              "why": "Derivation of the Continuous-discrete Kalman Filter"
+              "why": "§8.5 · Derivation of the Continuous-discrete Kalman Filter · printed p. 151",
+              "section": "§8.5 · Derivation of the Continuous-discrete Kalman Filter",
+              "pages": "Printed p. 151",
+              "page_scheme": "Printed book TOC, not PDF viewer offset",
+              "locator_level": "inspected"
             }
           ],
           "why": "Local Gaussian filtering may be sufficient if modeling is credible.",
@@ -4645,7 +4685,11 @@
               "printed_page_start": 96,
               "level": "inspected",
               "locator_status": "source_section_inspected",
-              "why": "The Particle Filter"
+              "why": "§4.3 · The Particle Filter · printed p. 96",
+              "section": "§4.3 · The Particle Filter",
+              "pages": "Printed p. 96",
+              "page_scheme": "Printed book TOC, not PDF viewer offset",
+              "locator_level": "inspected"
             },
             {
               "source_id": "PR-2006",
@@ -4653,7 +4697,11 @@
               "printed_page_start": 250,
               "level": "toc_only",
               "locator_status": "table_of_contents_inspected",
-              "why": "Monte Carlo Localization"
+              "why": "§8.3 · Monte Carlo Localization · printed p. 250",
+              "section": "§8.3 · Monte Carlo Localization",
+              "pages": "Printed p. 250",
+              "page_scheme": "Printed book TOC, not PDF viewer offset",
+              "locator_level": "toc_only"
             }
           ],
           "why": "A single Gaussian can prematurely rule out the right pose.",
@@ -4679,7 +4727,11 @@
               "printed_page_start": 256,
               "level": "toc_only",
               "locator_status": "table_of_contents_inspected",
-              "why": "Random Particle MCL: Recovery from Failures"
+              "why": "§8.3.5 · Random Particle MCL: Recovery from Failures · printed p. 256",
+              "section": "§8.3.5 · Random Particle MCL: Recovery from Failures",
+              "pages": "Printed p. 256",
+              "page_scheme": "Printed book TOC, not PDF viewer offset",
+              "locator_level": "toc_only"
             },
             {
               "source_id": "PR-2006",
@@ -4687,7 +4739,11 @@
               "printed_page_start": 250,
               "level": "toc_only",
               "locator_status": "table_of_contents_inspected",
-              "why": "Monte Carlo Localization"
+              "why": "§8.3 · Monte Carlo Localization · printed p. 250",
+              "section": "§8.3 · Monte Carlo Localization",
+              "pages": "Printed p. 250",
+              "page_scheme": "Printed book TOC, not PDF viewer offset",
+              "locator_level": "toc_only"
             }
           ],
           "why": "Force global hypotheses or recovery behavior to re-enter.",
@@ -4730,7 +4786,11 @@
               "printed_page_start": 284,
               "level": "toc_only",
               "locator_status": "table_of_contents_inspected",
-              "why": "The Occupancy Grid Mapping Algorithm"
+              "why": "§9.2 · The Occupancy Grid Mapping Algorithm · printed p. 284",
+              "section": "§9.2 · The Occupancy Grid Mapping Algorithm",
+              "pages": "Printed p. 284",
+              "page_scheme": "Printed book TOC, not PDF viewer offset",
+              "locator_level": "toc_only"
             },
             {
               "source_id": "PR-2006",
@@ -4738,7 +4798,11 @@
               "printed_page_start": 169,
               "level": "inspected",
               "locator_status": "source_section_inspected",
-              "why": "Likelihood Fields for Range Finders"
+              "why": "§6.4 · Likelihood Fields for Range Finders · printed p. 169",
+              "section": "§6.4 · Likelihood Fields for Range Finders",
+              "pages": "Printed p. 169",
+              "page_scheme": "Printed book TOC, not PDF viewer offset",
+              "locator_level": "inspected"
             }
           ],
           "why": "Beam endpoints depend on uncertain pose and measurement model.",
@@ -4765,7 +4829,11 @@
               "printed_page_start": 340,
               "level": "inspected",
               "locator_status": "source_section_inspected",
-              "why": "Intuitive Description"
+              "why": "§11.2 · Intuitive Description · printed p. 340",
+              "section": "§11.2 · Intuitive Description",
+              "pages": "Printed p. 340",
+              "page_scheme": "Printed book TOC, not PDF viewer offset",
+              "locator_level": "inspected"
             },
             {
               "source_id": "PR-2006",
@@ -4773,7 +4841,11 @@
               "printed_page_start": 362,
               "level": "toc_only",
               "locator_status": "table_of_contents_inspected",
-              "why": "Data Association in GraphSLAM"
+              "why": "§11.5 · Data Association in GraphSLAM · printed p. 362",
+              "section": "§11.5 · Data Association in GraphSLAM",
+              "pages": "Printed p. 362",
+              "page_scheme": "Printed book TOC, not PDF viewer offset",
+              "locator_level": "toc_only"
             }
           ],
           "why": "The graph needs valid evidence that the two observations represent one place.",
@@ -4800,7 +4872,11 @@
               "printed_page_start": 362,
               "level": "toc_only",
               "locator_status": "table_of_contents_inspected",
-              "why": "Data Association in GraphSLAM"
+              "why": "§11.5 · Data Association in GraphSLAM · printed p. 362",
+              "section": "§11.5 · Data Association in GraphSLAM",
+              "pages": "Printed p. 362",
+              "page_scheme": "Printed book TOC, not PDF viewer offset",
+              "locator_level": "toc_only"
             },
             {
               "source_id": "PR-2006",
@@ -4808,7 +4884,11 @@
               "printed_page_start": 439,
               "level": "inspected",
               "locator_status": "source_section_inspected",
-              "why": "Factoring the SLAM Posterior"
+              "why": "§13.2 · Factoring the SLAM Posterior · printed p. 439",
+              "section": "§13.2 · Factoring the SLAM Posterior",
+              "pages": "Printed p. 439",
+              "page_scheme": "Printed book TOC, not PDF viewer offset",
+              "locator_level": "inspected"
             }
           ],
           "why": "Backend optimization is not a detector of true identity.",
@@ -4851,7 +4931,11 @@
               "printed_page_start": 178,
               "level": "inspected",
               "locator_status": "source_section_inspected",
-              "why": "Manipulator Jacobian"
+              "why": "§5.1 · Manipulator Jacobian · printed p. 178",
+              "section": "§5.1 · Manipulator Jacobian",
+              "pages": "Printed p. 178",
+              "page_scheme": "Printed book TOC, not PDF viewer offset",
+              "locator_level": "inspected"
             },
             {
               "source_id": "MR-2017",
@@ -4859,7 +4943,11 @@
               "printed_page_start": 294,
               "level": "inspected",
               "locator_status": "source_section_inspected",
-              "why": "Newton-Euler Inverse Dynamics Algorithm"
+              "why": "§8.3.2 · Newton-Euler Inverse Dynamics Algorithm · printed p. 294",
+              "section": "§8.3.2 · Newton-Euler Inverse Dynamics Algorithm",
+              "pages": "Printed p. 294",
+              "page_scheme": "Printed book TOC, not PDF viewer offset",
+              "locator_level": "inspected"
             }
           ],
           "why": "A kinematic solution can require unbounded rates or excessive torque.",
@@ -4885,7 +4973,11 @@
               "printed_page_start": 358,
               "level": "inspected",
               "locator_status": "source_section_inspected",
-              "why": "Foundations"
+              "why": "§10.2 · Foundations · printed p. 358",
+              "section": "§10.2 · Foundations",
+              "pages": "Printed p. 358",
+              "page_scheme": "Printed book TOC, not PDF viewer offset",
+              "locator_level": "inspected"
             },
             {
               "source_id": "MR-2017",
@@ -4893,7 +4985,11 @@
               "printed_page_start": 378,
               "level": "inspected",
               "locator_status": "source_section_inspected",
-              "why": "Sampling Methods"
+              "why": "§10.5 · Sampling Methods · printed p. 378",
+              "section": "§10.5 · Sampling Methods",
+              "pages": "Printed p. 378",
+              "page_scheme": "Printed book TOC, not PDF viewer offset",
+              "locator_level": "inspected"
             }
           ],
           "why": "Path points must encode whole-body clearance.",
@@ -4920,7 +5016,11 @@
               "printed_page_start": 336,
               "level": "toc_only",
               "locator_status": "table_of_contents_inspected",
-              "why": "Time-Optimal Time Scaling"
+              "why": "§9.4 · Time-Optimal Time Scaling · printed p. 336",
+              "section": "§9.4 · Time-Optimal Time Scaling",
+              "pages": "Printed p. 336",
+              "page_scheme": "Printed book TOC, not PDF viewer offset",
+              "locator_level": "toc_only"
             },
             {
               "source_id": "UAV-2012",
@@ -4928,7 +5028,11 @@
               "printed_page_start": 194,
               "level": "inspected",
               "locator_status": "source_section_inspected",
-              "why": "Dubins Paths"
+              "why": "§11.2 · Dubins Paths · printed p. 194",
+              "section": "§11.2 · Dubins Paths",
+              "pages": "Printed p. 194",
+              "page_scheme": "Printed book TOC, not PDF viewer offset",
+              "locator_level": "inspected"
             }
           ],
           "why": "Speed and turn limits are different constraints on the same route.",
@@ -4972,7 +5076,11 @@
               "printed_page_start": 97,
               "level": "inspected",
               "locator_status": "source_section_inspected",
-              "why": "Saturation Constraints and Performance"
+              "why": "§6.2 · Saturation Constraints and Performance · printed p. 97",
+              "section": "§6.2 · Saturation Constraints and Performance",
+              "pages": "Printed p. 97",
+              "page_scheme": "Printed book TOC, not PDF viewer offset",
+              "locator_level": "inspected"
             },
             {
               "source_id": "UAV-2012",
@@ -4980,7 +5088,11 @@
               "printed_page_start": 65,
               "level": "inspected",
               "locator_status": "source_section_inspected",
-              "why": "Trim Conditions"
+              "why": "§5.3 · Trim Conditions · printed p. 65",
+              "section": "§5.3 · Trim Conditions",
+              "pages": "Printed p. 65",
+              "page_scheme": "Printed book TOC, not PDF viewer offset",
+              "locator_level": "inspected"
             }
           ],
           "why": "A commanded acceleration or angle may exceed physical authority.",
@@ -5006,7 +5118,11 @@
               "printed_page_start": 441,
               "level": "inspected",
               "locator_status": "source_section_inspected",
-              "why": "Impedance Control"
+              "why": "§11.7 · Impedance Control · printed p. 441",
+              "section": "§11.7 · Impedance Control",
+              "pages": "Printed p. 441",
+              "page_scheme": "Printed book TOC, not PDF viewer offset",
+              "locator_level": "inspected"
             },
             {
               "source_id": "MR-2017",
@@ -5014,7 +5130,11 @@
               "printed_page_start": 484,
               "level": "inspected",
               "locator_status": "source_section_inspected",
-              "why": "Friction"
+              "why": "§12.2.1 · Friction · printed p. 484",
+              "section": "§12.2.1 · Friction",
+              "pages": "Printed p. 484",
+              "page_scheme": "Printed book TOC, not PDF viewer offset",
+              "locator_level": "inspected"
             }
           ],
           "why": "Contact changes which variable should be imposed versus allowed to respond.",
@@ -5040,7 +5160,11 @@
               "printed_page_start": 95,
               "level": "toc_only",
               "locator_status": "table_of_contents_inspected",
-              "why": "Successive Loop Closure"
+              "why": "§6.1 · Successive Loop Closure · printed p. 95",
+              "section": "§6.1 · Successive Loop Closure",
+              "pages": "Printed p. 95",
+              "page_scheme": "Printed book TOC, not PDF viewer offset",
+              "locator_level": "toc_only"
             },
             {
               "source_id": "UAV-2012",
@@ -5048,7 +5172,11 @@
               "printed_page_start": 97,
               "level": "inspected",
               "locator_status": "source_section_inspected",
-              "why": "Saturation Constraints and Performance"
+              "why": "§6.2 · Saturation Constraints and Performance · printed p. 97",
+              "section": "§6.2 · Saturation Constraints and Performance",
+              "pages": "Printed p. 97",
+              "page_scheme": "Printed book TOC, not PDF viewer offset",
+              "locator_level": "inspected"
             }
           ],
           "why": "The inner loop is a physical dependency, not a transparent actuator.",
@@ -5092,7 +5220,11 @@
               "printed_page_start": 18,
               "level": "toc_only",
               "locator_status": "table_of_contents_inspected",
-              "why": "Airspeed, Wind Speed, and Ground Speed"
+              "why": "§2.3 · Airspeed, Wind Speed, and Ground Speed · printed p. 18",
+              "section": "§2.3 · Airspeed, Wind Speed, and Ground Speed",
+              "pages": "Printed p. 18",
+              "page_scheme": "Printed book TOC, not PDF viewer offset",
+              "locator_level": "toc_only"
             },
             {
               "source_id": "UAV-2012",
@@ -5100,7 +5232,11 @@
               "printed_page_start": 40,
               "level": "inspected",
               "locator_status": "source_section_inspected",
-              "why": "Aerodynamic Forces and Moments"
+              "why": "§4.2 · Aerodynamic Forces and Moments · printed p. 40",
+              "section": "§4.2 · Aerodynamic Forces and Moments",
+              "pages": "Printed p. 40",
+              "page_scheme": "Printed book TOC, not PDF viewer offset",
+              "locator_level": "inspected"
             },
             {
               "source_id": "UAV-2012",
@@ -5108,7 +5244,11 @@
               "printed_page_start": 65,
               "level": "inspected",
               "locator_status": "source_section_inspected",
-              "why": "Trim Conditions"
+              "why": "§5.3 · Trim Conditions · printed p. 65",
+              "section": "§5.3 · Trim Conditions",
+              "pages": "Printed p. 65",
+              "page_scheme": "Printed book TOC, not PDF viewer offset",
+              "locator_level": "inspected"
             }
           ],
           "why": "Wind and airspeed, not GPS ground speed alone, determine dynamic pressure.",
@@ -5135,7 +5275,11 @@
               "printed_page_start": 65,
               "level": "inspected",
               "locator_status": "source_section_inspected",
-              "why": "Trim Conditions"
+              "why": "§5.3 · Trim Conditions · printed p. 65",
+              "section": "§5.3 · Trim Conditions",
+              "pages": "Printed p. 65",
+              "page_scheme": "Printed book TOC, not PDF viewer offset",
+              "locator_level": "inspected"
             },
             {
               "source_id": "UAV-2012",
@@ -5143,7 +5287,11 @@
               "printed_page_start": 97,
               "level": "inspected",
               "locator_status": "source_section_inspected",
-              "why": "Saturation Constraints and Performance"
+              "why": "§6.2 · Saturation Constraints and Performance · printed p. 97",
+              "section": "§6.2 · Saturation Constraints and Performance",
+              "pages": "Printed p. 97",
+              "page_scheme": "Printed book TOC, not PDF viewer offset",
+              "locator_level": "inspected"
             },
             {
               "source_id": "UAV-2012",
@@ -5151,7 +5299,11 @@
               "printed_page_start": 181,
               "level": "toc_only",
               "locator_status": "table_of_contents_inspected",
-              "why": "Orbit Following"
+              "why": "§10.2 · Orbit Following · printed p. 181",
+              "section": "§10.2 · Orbit Following",
+              "pages": "Printed p. 181",
+              "page_scheme": "Printed book TOC, not PDF viewer offset",
+              "locator_level": "toc_only"
             }
           ],
           "why": "A geometric orbit must fit the aircraft's controllable turn envelope.",
@@ -5177,7 +5329,11 @@
               "printed_page_start": 194,
               "level": "inspected",
               "locator_status": "source_section_inspected",
-              "why": "Dubins Paths"
+              "why": "§11.2 · Dubins Paths · printed p. 194",
+              "section": "§11.2 · Dubins Paths",
+              "pages": "Printed p. 194",
+              "page_scheme": "Printed book TOC, not PDF viewer offset",
+              "locator_level": "inspected"
             },
             {
               "source_id": "UAV-2012",
@@ -5185,7 +5341,11 @@
               "printed_page_start": 175,
               "level": "toc_only",
               "locator_status": "table_of_contents_inspected",
-              "why": "Straight-line Path Following"
+              "why": "§10.1 · Straight-line Path Following · printed p. 175",
+              "section": "§10.1 · Straight-line Path Following",
+              "pages": "Printed p. 175",
+              "page_scheme": "Printed book TOC, not PDF viewer offset",
+              "locator_level": "toc_only"
             }
           ],
           "why": "A path manager must preserve turn feasibility.",
@@ -5228,7 +5388,11 @@
               "printed_page_start": 226,
               "level": "toc_only",
               "locator_status": "table_of_contents_inspected",
-              "why": "Gimbal and Camera Frames and Projective Geometry"
+              "why": "§13.1 · Gimbal and Camera Frames and Projective Geometry · printed p. 226",
+              "section": "§13.1 · Gimbal and Camera Frames and Projective Geometry",
+              "pages": "Printed p. 226",
+              "page_scheme": "Printed book TOC, not PDF viewer offset",
+              "locator_level": "toc_only"
             },
             {
               "source_id": "UAV-2012",
@@ -5236,7 +5400,11 @@
               "printed_page_start": 238,
               "level": "inspected",
               "locator_status": "source_section_inspected",
-              "why": "Time to Collision"
+              "why": "§13.5 · Time to Collision · printed p. 238",
+              "section": "§13.5 · Time to Collision",
+              "pages": "Printed p. 238",
+              "page_scheme": "Printed book TOC, not PDF viewer offset",
+              "locator_level": "inspected"
             }
           ],
           "why": "A monocular projection needs extra geometry or scale information.",
@@ -5263,7 +5431,11 @@
               "printed_page_start": 226,
               "level": "toc_only",
               "locator_status": "table_of_contents_inspected",
-              "why": "Gimbal and Camera Frames and Projective Geometry"
+              "why": "§13.1 · Gimbal and Camera Frames and Projective Geometry · printed p. 226",
+              "section": "§13.1 · Gimbal and Camera Frames and Projective Geometry",
+              "pages": "Printed p. 226",
+              "page_scheme": "Printed book TOC, not PDF viewer offset",
+              "locator_level": "toc_only"
             },
             {
               "source_id": "UAV-2012",
@@ -5271,7 +5443,11 @@
               "printed_page_start": 231,
               "level": "toc_only",
               "locator_status": "table_of_contents_inspected",
-              "why": "Geolocation"
+              "why": "§13.3 · Geolocation · printed p. 231",
+              "section": "§13.3 · Geolocation",
+              "pages": "Printed p. 231",
+              "page_scheme": "Printed book TOC, not PDF viewer offset",
+              "locator_level": "toc_only"
             }
           ],
           "why": "Changing frames or sensor delay can masquerade as moving targets.",
@@ -5314,7 +5490,11 @@
               "printed_page_start": 513,
               "level": "toc_only",
               "locator_status": "table_of_contents_inspected",
-              "why": "Partially Observable Markov Decision Processes"
+              "why": "§15 · Partially Observable Markov Decision Processes · printed p. 513",
+              "section": "§15 · Partially Observable Markov Decision Processes",
+              "pages": "Printed p. 513",
+              "page_scheme": "Printed book TOC, not PDF viewer offset",
+              "locator_level": "toc_only"
             },
             {
               "source_id": "PR-2006",
@@ -5322,7 +5502,11 @@
               "printed_page_start": 547,
               "level": "toc_only",
               "locator_status": "table_of_contents_inspected",
-              "why": "Approximate POMDP Techniques"
+              "why": "§16 · Approximate POMDP Techniques · printed p. 547",
+              "section": "§16 · Approximate POMDP Techniques",
+              "pages": "Printed p. 547",
+              "page_scheme": "Printed book TOC, not PDF viewer offset",
+              "locator_level": "toc_only"
             }
           ],
           "why": "Information about hidden state is an action value.",
@@ -5348,7 +5532,11 @@
               "printed_page_start": 571,
               "level": "inspected",
               "locator_status": "source_section_inspected",
-              "why": "Information Gain"
+              "why": "§17.2.1 · Information Gain · printed p. 571",
+              "section": "§17.2.1 · Information Gain",
+              "pages": "Printed p. 571",
+              "page_scheme": "Printed book TOC, not PDF viewer offset",
+              "locator_level": "inspected"
             },
             {
               "source_id": "PR-2006",
@@ -5356,7 +5544,11 @@
               "printed_page_start": 580,
               "level": "toc_only",
               "locator_status": "table_of_contents_inspected",
-              "why": "Exploration for Learning Occupancy Grid Maps"
+              "why": "§17.4 · Exploration for Learning Occupancy Grid Maps · printed p. 580",
+              "section": "§17.4 · Exploration for Learning Occupancy Grid Maps",
+              "pages": "Printed p. 580",
+              "page_scheme": "Printed book TOC, not PDF viewer offset",
+              "locator_level": "toc_only"
             }
           ],
           "why": "The best sensor action can differ from the shortest route.",
@@ -5382,7 +5574,11 @@
               "printed_page_start": 547,
               "level": "toc_only",
               "locator_status": "table_of_contents_inspected",
-              "why": "Approximate POMDP Techniques"
+              "why": "§16 · Approximate POMDP Techniques · printed p. 547",
+              "section": "§16 · Approximate POMDP Techniques",
+              "pages": "Printed p. 547",
+              "page_scheme": "Printed book TOC, not PDF viewer offset",
+              "locator_level": "toc_only"
             },
             {
               "source_id": "MR-2017",
@@ -5390,7 +5586,11 @@
               "printed_page_start": 378,
               "level": "inspected",
               "locator_status": "source_section_inspected",
-              "why": "Sampling Methods"
+              "why": "§10.5 · Sampling Methods · printed p. 378",
+              "section": "§10.5 · Sampling Methods",
+              "pages": "Printed p. 378",
+              "page_scheme": "Printed book TOC, not PDF viewer offset",
+              "locator_level": "inspected"
             }
           ],
           "why": "Tractability and decision quality trade off.",
@@ -5434,7 +5634,11 @@
               "printed_page_start": 143,
               "level": "toc_only",
               "locator_status": "table_of_contents_inspected",
-              "why": "State Estimation"
+              "why": "§8 · State Estimation · printed p. 143",
+              "section": "§8 · State Estimation",
+              "pages": "Printed p. 143",
+              "page_scheme": "Printed book TOC, not PDF viewer offset",
+              "locator_level": "toc_only"
             },
             {
               "source_id": "UAV-2012",
@@ -5442,7 +5646,11 @@
               "printed_page_start": 97,
               "level": "inspected",
               "locator_status": "source_section_inspected",
-              "why": "Saturation Constraints and Performance"
+              "why": "§6.2 · Saturation Constraints and Performance · printed p. 97",
+              "section": "§6.2 · Saturation Constraints and Performance",
+              "pages": "Printed p. 97",
+              "page_scheme": "Printed book TOC, not PDF viewer offset",
+              "locator_level": "inspected"
             }
           ],
           "why": "Subcomponent correctness does not establish closed-loop task success.",
@@ -5469,7 +5677,11 @@
               "printed_page_start": 65,
               "level": "inspected",
               "locator_status": "source_section_inspected",
-              "why": "Trim Conditions"
+              "why": "§5.3 · Trim Conditions · printed p. 65",
+              "section": "§5.3 · Trim Conditions",
+              "pages": "Printed p. 65",
+              "page_scheme": "Printed book TOC, not PDF viewer offset",
+              "locator_level": "inspected"
             },
             {
               "source_id": "MR-2017",
@@ -5477,7 +5689,11 @@
               "printed_page_start": 303,
               "level": "toc_only",
               "locator_status": "table_of_contents_inspected",
-              "why": "Actuation, Gearing, and Friction"
+              "why": "§8.9 · Actuation, Gearing, and Friction · printed p. 303",
+              "section": "§8.9 · Actuation, Gearing, and Friction",
+              "pages": "Printed p. 303",
+              "page_scheme": "Printed book TOC, not PDF viewer offset",
+              "locator_level": "toc_only"
             },
             {
               "source_id": "UAV-2012",
@@ -5485,7 +5701,11 @@
               "printed_page_start": 97,
               "level": "inspected",
               "locator_status": "source_section_inspected",
-              "why": "Saturation Constraints and Performance"
+              "why": "§6.2 · Saturation Constraints and Performance · printed p. 97",
+              "section": "§6.2 · Saturation Constraints and Performance",
+              "pages": "Printed p. 97",
+              "page_scheme": "Printed book TOC, not PDF viewer offset",
+              "locator_level": "inspected"
             }
           ],
           "why": "An operational envelope is more useful than one ideal pass.",
@@ -5513,7 +5733,11 @@
               "printed_page_start": 59,
               "level": "toc_only",
               "locator_status": "table_of_contents_inspected",
-              "why": "Rigid-Body Motions"
+              "why": "§3 · Rigid-Body Motions · printed p. 59",
+              "section": "§3 · Rigid-Body Motions",
+              "pages": "Printed p. 59",
+              "page_scheme": "Printed book TOC, not PDF viewer offset",
+              "locator_level": "toc_only"
             },
             {
               "source_id": "PR-2006",
@@ -5521,7 +5745,11 @@
               "printed_page_start": 13,
               "level": "toc_only",
               "locator_status": "table_of_contents_inspected",
-              "why": "Recursive State Estimation"
+              "why": "§2 · Recursive State Estimation · printed p. 13",
+              "section": "§2 · Recursive State Estimation",
+              "pages": "Printed p. 13",
+              "page_scheme": "Printed book TOC, not PDF viewer offset",
+              "locator_level": "toc_only"
             }
           ],
           "why": "Build an integration boundary whose result can contradict your model.",
@@ -5937,7 +6165,11 @@
           "printed_page_start": 1,
           "level": "toc_only",
           "locator_status": "table_of_contents_inspected",
-          "why": "Preview"
+          "why": "§1 · Preview · printed p. 1",
+          "section": "§1 · Preview",
+          "pages": "Printed p. 1",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "toc_only"
         },
         {
           "source_id": "PR-2006",
@@ -5945,7 +6177,11 @@
           "printed_page_start": 3,
           "level": "toc_only",
           "locator_status": "table_of_contents_inspected",
-          "why": "Introduction"
+          "why": "§1 · Introduction · printed p. 3",
+          "section": "§1 · Introduction",
+          "pages": "Printed p. 3",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "toc_only"
         },
         {
           "source_id": "UAV-2012",
@@ -5953,7 +6189,11 @@
           "printed_page_start": 1,
           "level": "toc_only",
           "locator_status": "table_of_contents_inspected",
-          "why": "Introduction"
+          "why": "§1 · Introduction · printed p. 1",
+          "section": "§1 · Introduction",
+          "pages": "Printed p. 1",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "toc_only"
         }
       ],
       "term_ids": [
@@ -5962,7 +6202,10 @@
         "robot-t-0491"
       ],
       "technical_distinctions": [
-        "A planar rover, a manipulator and a fixed-wing aircraft share state, estimation and control abstractions but not all motion constraints or force laws."
+        {
+          "contrast": "Discriminating practical check",
+          "discriminating_observation": "Take one accomplishment and identify the minimum state, sensing, actuation, dynamics and success evidence needed."
+        }
       ],
       "competence_probe": "Take one accomplishment and identify the minimum state, sensing, actuation, dynamics and success evidence needed.",
       "unresolved_questions": [
@@ -5985,7 +6228,11 @@
           "printed_page_start": 59,
           "level": "toc_only",
           "locator_status": "table_of_contents_inspected",
-          "why": "Rigid-Body Motions"
+          "why": "§3 · Rigid-Body Motions · printed p. 59",
+          "section": "§3 · Rigid-Body Motions",
+          "pages": "Printed p. 59",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "toc_only"
         },
         {
           "source_id": "UAV-2012",
@@ -5993,7 +6240,11 @@
           "printed_page_start": 8,
           "level": "toc_only",
           "locator_status": "table_of_contents_inspected",
-          "why": "Coordinate Frames"
+          "why": "§2 · Coordinate Frames · printed p. 8",
+          "section": "§2 · Coordinate Frames",
+          "pages": "Printed p. 8",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "toc_only"
         }
       ],
       "term_ids": [
@@ -6004,7 +6255,10 @@
         "robot-t-0397"
       ],
       "technical_distinctions": [
-        "An orientation convention and direction-of-transform error may appear as controller or sensor malfunction; camera/body versus inertial frame changes projection."
+        {
+          "contrast": "Discriminating practical check",
+          "discriminating_observation": "Transform a point world→body→camera and back; compare with an independent geometric check."
+        }
       ],
       "competence_probe": "Transform a point world→body→camera and back; compare with an independent geometric check.",
       "unresolved_questions": [
@@ -6027,7 +6281,11 @@
           "printed_page_start": 11,
           "level": "toc_only",
           "locator_status": "table_of_contents_inspected",
-          "why": "Configuration Space"
+          "why": "§2 · Configuration Space · printed p. 11",
+          "section": "§2 · Configuration Space",
+          "pages": "Printed p. 11",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "toc_only"
         },
         {
           "source_id": "MR-2017",
@@ -6035,7 +6293,11 @@
           "printed_page_start": 245,
           "level": "toc_only",
           "locator_status": "table_of_contents_inspected",
-          "why": "Kinematics of Closed Chains"
+          "why": "§7 · Kinematics of Closed Chains · printed p. 245",
+          "section": "§7 · Kinematics of Closed Chains",
+          "pages": "Printed p. 245",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "toc_only"
         },
         {
           "source_id": "MR-2017",
@@ -6043,7 +6305,11 @@
           "printed_page_start": 520,
           "level": "toc_only",
           "locator_status": "table_of_contents_inspected",
-          "why": "Nonholonomic Wheeled Mobile Robots"
+          "why": "§13.3 · Nonholonomic Wheeled Mobile Robots · printed p. 520",
+          "section": "§13.3 · Nonholonomic Wheeled Mobile Robots",
+          "pages": "Printed p. 520",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "toc_only"
         }
       ],
       "term_ids": [
@@ -6053,7 +6319,10 @@
         "robot-t-0008"
       ],
       "technical_distinctions": [
-        "A reachable endpoint may not be reachable by a collision-free, kinematically feasible path; wheel rolling constraints differ from closed-chain loop closure."
+        {
+          "contrast": "Discriminating practical check",
+          "discriminating_observation": "Try a car-like robot that cannot move sideways: distinguish instantaneous motion from multi-step maneuverability."
+        }
       ],
       "competence_probe": "Try a car-like robot that cannot move sideways: distinguish instantaneous motion from multi-step maneuverability.",
       "unresolved_questions": [
@@ -6076,7 +6345,11 @@
           "printed_page_start": 140,
           "level": "inspected",
           "locator_status": "source_section_inspected",
-          "why": "Product of Exponentials Formula"
+          "why": "§4.1 · Product of Exponentials Formula · printed p. 140",
+          "section": "§4.1 · Product of Exponentials Formula",
+          "pages": "Printed p. 140",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "inspected"
         },
         {
           "source_id": "MR-2017",
@@ -6084,7 +6357,11 @@
           "printed_page_start": 178,
           "level": "inspected",
           "locator_status": "source_section_inspected",
-          "why": "Manipulator Jacobian"
+          "why": "§5.1 · Manipulator Jacobian · printed p. 178",
+          "section": "§5.1 · Manipulator Jacobian",
+          "pages": "Printed p. 178",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "inspected"
         },
         {
           "source_id": "MR-2017",
@@ -6092,7 +6369,11 @@
           "printed_page_start": 219,
           "level": "toc_only",
           "locator_status": "table_of_contents_inspected",
-          "why": "Inverse Kinematics"
+          "why": "§6 · Inverse Kinematics · printed p. 219",
+          "section": "§6 · Inverse Kinematics",
+          "pages": "Printed p. 219",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "toc_only"
         }
       ],
       "term_ids": [
@@ -6102,7 +6383,10 @@
         "robot-t-0064"
       ],
       "technical_distinctions": [
-        "The forward problem is not the inverse problem; a Jacobian singularity can lose a direction of motion or amplify rates/forces."
+        {
+          "contrast": "Discriminating practical check",
+          "discriminating_observation": "Compute a 2-link arm pose and its Jacobian; compare numeric finite-difference velocity across configurations."
+        }
       ],
       "competence_probe": "Compute a 2-link arm pose and its Jacobian; compare numeric finite-difference velocity across configurations.",
       "unresolved_questions": [
@@ -6125,7 +6409,11 @@
           "printed_page_start": 520,
           "level": "toc_only",
           "locator_status": "table_of_contents_inspected",
-          "why": "Nonholonomic Wheeled Mobile Robots"
+          "why": "§13.3 · Nonholonomic Wheeled Mobile Robots · printed p. 520",
+          "section": "§13.3 · Nonholonomic Wheeled Mobile Robots",
+          "pages": "Printed p. 520",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "toc_only"
         },
         {
           "source_id": "UAV-2012",
@@ -6133,7 +6421,11 @@
           "printed_page_start": 194,
           "level": "inspected",
           "locator_status": "source_section_inspected",
-          "why": "Dubins Paths"
+          "why": "§11.2 · Dubins Paths · printed p. 194",
+          "section": "§11.2 · Dubins Paths",
+          "pages": "Printed p. 194",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "inspected"
         }
       ],
       "term_ids": [
@@ -6143,7 +6435,10 @@
         "robot-t-0317"
       ],
       "technical_distinctions": [
-        "Geometric reachability, instantaneous steerability and dynamic flight feasibility are different conditions."
+        {
+          "contrast": "Discriminating practical check",
+          "discriminating_observation": "Compare a side-step command for an omniwheel rover and a differential-drive rover."
+        }
       ],
       "competence_probe": "Compare a side-step command for an omniwheel rover and a differential-drive rover.",
       "unresolved_questions": [
@@ -6166,7 +6461,11 @@
           "printed_page_start": 294,
           "level": "inspected",
           "locator_status": "source_section_inspected",
-          "why": "Newton-Euler Inverse Dynamics Algorithm"
+          "why": "§8.3.2 · Newton-Euler Inverse Dynamics Algorithm · printed p. 294",
+          "section": "§8.3.2 · Newton-Euler Inverse Dynamics Algorithm",
+          "pages": "Printed p. 294",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "inspected"
         },
         {
           "source_id": "MR-2017",
@@ -6174,7 +6473,11 @@
           "printed_page_start": 303,
           "level": "toc_only",
           "locator_status": "table_of_contents_inspected",
-          "why": "Actuation, Gearing, and Friction"
+          "why": "§8.9 · Actuation, Gearing, and Friction · printed p. 303",
+          "section": "§8.9 · Actuation, Gearing, and Friction",
+          "pages": "Printed p. 303",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "toc_only"
         },
         {
           "source_id": "UAV-2012",
@@ -6182,7 +6485,11 @@
           "printed_page_start": 28,
           "level": "toc_only",
           "locator_status": "table_of_contents_inspected",
-          "why": "Kinematics and Dynamics"
+          "why": "§3 · Kinematics and Dynamics · printed p. 28",
+          "section": "§3 · Kinematics and Dynamics",
+          "pages": "Printed p. 28",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "toc_only"
         }
       ],
       "term_ids": [
@@ -6192,7 +6499,10 @@
         "robot-t-0098"
       ],
       "technical_distinctions": [
-        "Kinematic command feasibility does not imply actuator torque, thermal, transmission or contact feasibility."
+        {
+          "contrast": "Discriminating practical check",
+          "discriminating_observation": "Compare desired joint acceleration torque across payloads and gear ratios."
+        }
       ],
       "competence_probe": "Compare desired joint acceleration torque across payloads and gear ratios.",
       "unresolved_questions": [
@@ -6215,7 +6525,11 @@
           "printed_page_start": 40,
           "level": "inspected",
           "locator_status": "source_section_inspected",
-          "why": "Aerodynamic Forces and Moments"
+          "why": "§4.2 · Aerodynamic Forces and Moments · printed p. 40",
+          "section": "§4.2 · Aerodynamic Forces and Moments",
+          "pages": "Printed p. 40",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "inspected"
         },
         {
           "source_id": "UAV-2012",
@@ -6223,7 +6537,11 @@
           "printed_page_start": 52,
           "level": "toc_only",
           "locator_status": "table_of_contents_inspected",
-          "why": "Propulsion Forces and Moments"
+          "why": "§4.3 · Propulsion Forces and Moments · printed p. 52",
+          "section": "§4.3 · Propulsion Forces and Moments",
+          "pages": "Printed p. 52",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "toc_only"
         },
         {
           "source_id": "UAV-2012",
@@ -6231,7 +6549,11 @@
           "printed_page_start": 54,
           "level": "toc_only",
           "locator_status": "table_of_contents_inspected",
-          "why": "Atmospheric Disturbances"
+          "why": "§4.4 · Atmospheric Disturbances · printed p. 54",
+          "section": "§4.4 · Atmospheric Disturbances",
+          "pages": "Printed p. 54",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "toc_only"
         }
       ],
       "term_ids": [
@@ -6243,7 +6565,10 @@
         "robot-t-0385"
       ],
       "technical_distinctions": [
-        "Ground speed is not airspeed; a controller that tracks course or altitude may fail from stall, saturation or gust despite correct navigation geometry."
+        {
+          "contrast": "Discriminating practical check",
+          "discriminating_observation": "Change airspeed in a model while preserving ground speed using wind; inspect lift margin and actuator authority."
+        }
       ],
       "competence_probe": "Change airspeed in a model while preserving ground speed using wind; inspect lift margin and actuator authority.",
       "unresolved_questions": [
@@ -6266,7 +6591,11 @@
           "printed_page_start": 65,
           "level": "inspected",
           "locator_status": "source_section_inspected",
-          "why": "Trim Conditions"
+          "why": "§5.3 · Trim Conditions · printed p. 65",
+          "section": "§5.3 · Trim Conditions",
+          "pages": "Printed p. 65",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "inspected"
         },
         {
           "source_id": "UAV-2012",
@@ -6274,7 +6603,11 @@
           "printed_page_start": 68,
           "level": "toc_only",
           "locator_status": "table_of_contents_inspected",
-          "why": "Transfer Function Models"
+          "why": "§5.4 · Transfer Function Models · printed p. 68",
+          "section": "§5.4 · Transfer Function Models",
+          "pages": "Printed p. 68",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "toc_only"
         },
         {
           "source_id": "UAV-2012",
@@ -6282,7 +6615,11 @@
           "printed_page_start": 77,
           "level": "toc_only",
           "locator_status": "table_of_contents_inspected",
-          "why": "Linear State-space Models"
+          "why": "§5.5 · Linear State-space Models · printed p. 77",
+          "section": "§5.5 · Linear State-space Models",
+          "pages": "Printed p. 77",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "toc_only"
         }
       ],
       "term_ids": [
@@ -6292,7 +6629,10 @@
         "robot-t-0400"
       ],
       "technical_distinctions": [
-        "Linear models describe a neighborhood of trim, not the entire flight envelope; heading can evolve during steady-turn trim."
+        {
+          "contrast": "Discriminating practical check",
+          "discriminating_observation": "Compute trim at two speeds and compare predicted responses with nonlinear simulation."
+        }
       ],
       "competence_probe": "Compute trim at two speeds and compare predicted responses with nonlinear simulation.",
       "unresolved_questions": [
@@ -6315,7 +6655,11 @@
           "printed_page_start": 149,
           "level": "toc_only",
           "locator_status": "table_of_contents_inspected",
-          "why": "Robot Perception"
+          "why": "§6 · Robot Perception · printed p. 149",
+          "section": "§6 · Robot Perception",
+          "pages": "Printed p. 149",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "toc_only"
         },
         {
           "source_id": "UAV-2012",
@@ -6323,7 +6667,11 @@
           "printed_page_start": 120,
           "level": "toc_only",
           "locator_status": "table_of_contents_inspected",
-          "why": "Sensors for MAVs"
+          "why": "§7 · Sensors for MAVs · printed p. 120",
+          "section": "§7 · Sensors for MAVs",
+          "pages": "Printed p. 120",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "toc_only"
         },
         {
           "source_id": "UAV-2012",
@@ -6331,7 +6679,11 @@
           "printed_page_start": 238,
           "level": "inspected",
           "locator_status": "source_section_inspected",
-          "why": "Time to Collision"
+          "why": "§13.5 · Time to Collision · printed p. 238",
+          "section": "§13.5 · Time to Collision",
+          "pages": "Printed p. 238",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "inspected"
         }
       ],
       "term_ids": [
@@ -6342,7 +6694,10 @@
         "robot-t-0248"
       ],
       "technical_distinctions": [
-        "An IMU integrates into drift; a monocular image has scale ambiguity; GNSS provides different information from a gyroscope or wheel encoder."
+        {
+          "contrast": "Discriminating practical check",
+          "discriminating_observation": "Remove GPS and estimate what attitude, velocity and absolute position remain observable over time."
+        }
       ],
       "competence_probe": "Remove GPS and estimate what attitude, velocity and absolute position remain observable over time.",
       "unresolved_questions": [
@@ -6365,7 +6720,11 @@
           "printed_page_start": 26,
           "level": "inspected",
           "locator_status": "source_section_inspected",
-          "why": "The Bayes Filter Algorithm"
+          "why": "§2.4.1 · The Bayes Filter Algorithm · printed p. 26",
+          "section": "§2.4.1 · The Bayes Filter Algorithm",
+          "pages": "Printed p. 26",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "inspected"
         },
         {
           "source_id": "PR-2006",
@@ -6373,7 +6732,11 @@
           "printed_page_start": 33,
           "level": "toc_only",
           "locator_status": "table_of_contents_inspected",
-          "why": "The Markov Assumption"
+          "why": "§2.4.4 · The Markov Assumption · printed p. 33",
+          "section": "§2.4.4 · The Markov Assumption",
+          "pages": "Printed p. 33",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "toc_only"
         }
       ],
       "term_ids": [
@@ -6383,7 +6746,10 @@
         "robot-t-0216"
       ],
       "technical_distinctions": [
-        "A posterior is not just a filtered sensor readout. Wrong independence assumptions, missed dynamics or incorrect likelihoods can yield confident but wrong estimates."
+        {
+          "contrast": "Discriminating practical check",
+          "discriminating_observation": "Run a one-dimensional hidden-state filter with contradictory sensor updates and compare belief sensitivity to assumed noise."
+        }
       ],
       "competence_probe": "Run a one-dimensional hidden-state filter with contradictory sensor updates and compare belief sensitivity to assumed noise.",
       "unresolved_questions": [
@@ -6406,7 +6772,11 @@
           "printed_page_start": 40,
           "level": "toc_only",
           "locator_status": "table_of_contents_inspected",
-          "why": "The Kalman Filter"
+          "why": "§3.2 · The Kalman Filter · printed p. 40",
+          "section": "§3.2 · The Kalman Filter",
+          "pages": "Printed p. 40",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "toc_only"
         },
         {
           "source_id": "PR-2006",
@@ -6414,7 +6784,11 @@
           "printed_page_start": 54,
           "level": "toc_only",
           "locator_status": "table_of_contents_inspected",
-          "why": "The Extended Kalman Filter"
+          "why": "§3.3 · The Extended Kalman Filter · printed p. 54",
+          "section": "§3.3 · The Extended Kalman Filter",
+          "pages": "Printed p. 54",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "toc_only"
         },
         {
           "source_id": "PR-2006",
@@ -6422,7 +6796,11 @@
           "printed_page_start": 65,
           "level": "toc_only",
           "locator_status": "table_of_contents_inspected",
-          "why": "The Unscented Kalman Filter"
+          "why": "§3.4 · The Unscented Kalman Filter · printed p. 65",
+          "section": "§3.4 · The Unscented Kalman Filter",
+          "pages": "Printed p. 65",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "toc_only"
         },
         {
           "source_id": "UAV-2012",
@@ -6430,7 +6808,11 @@
           "printed_page_start": 151,
           "level": "inspected",
           "locator_status": "source_section_inspected",
-          "why": "Derivation of the Continuous-discrete Kalman Filter"
+          "why": "§8.5 · Derivation of the Continuous-discrete Kalman Filter · printed p. 151",
+          "section": "§8.5 · Derivation of the Continuous-discrete Kalman Filter",
+          "pages": "Printed p. 151",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "inspected"
         }
       ],
       "term_ids": [
@@ -6440,7 +6822,10 @@
         "robot-t-0247"
       ],
       "technical_distinctions": [
-        "A single Gaussian cannot faithfully encode separated competing pose hypotheses; filter consistency can collapse under wrong nonlinear models."
+        {
+          "contrast": "Discriminating practical check",
+          "discriminating_observation": "Compare normalized innovation statistics and error covariance under incorrect sensor-noise assumptions."
+        }
       ],
       "competence_probe": "Compare normalized innovation statistics and error covariance under incorrect sensor-noise assumptions.",
       "unresolved_questions": [
@@ -6463,7 +6848,11 @@
           "printed_page_start": 96,
           "level": "inspected",
           "locator_status": "source_section_inspected",
-          "why": "The Particle Filter"
+          "why": "§4.3 · The Particle Filter · printed p. 96",
+          "section": "§4.3 · The Particle Filter",
+          "pages": "Printed p. 96",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "inspected"
         },
         {
           "source_id": "PR-2006",
@@ -6471,7 +6860,11 @@
           "printed_page_start": 250,
           "level": "toc_only",
           "locator_status": "table_of_contents_inspected",
-          "why": "Monte Carlo Localization"
+          "why": "§8.3 · Monte Carlo Localization · printed p. 250",
+          "section": "§8.3 · Monte Carlo Localization",
+          "pages": "Printed p. 250",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "toc_only"
         }
       ],
       "term_ids": [
@@ -6482,7 +6875,10 @@
         "robot-t-0239"
       ],
       "technical_distinctions": [
-        "Resampling can impoverish hypotheses; a Gaussian filter may mask multimodality; dense high-dimensional particle spaces are costly."
+        {
+          "contrast": "Discriminating practical check",
+          "discriminating_observation": "Compare PF versus EKF in symmetric corridors with two plausible positions; count false convergence and recovery time."
+        }
       ],
       "competence_probe": "Compare PF versus EKF in symmetric corridors with two plausible positions; count false convergence and recovery time.",
       "unresolved_questions": [
@@ -6505,7 +6901,11 @@
           "printed_page_start": 215,
           "level": "toc_only",
           "locator_status": "table_of_contents_inspected",
-          "why": "Estimating Correspondences"
+          "why": "§7.5 · Estimating Correspondences · printed p. 215",
+          "section": "§7.5 · Estimating Correspondences",
+          "pages": "Printed p. 215",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "toc_only"
         },
         {
           "source_id": "PR-2006",
@@ -6513,7 +6913,11 @@
           "printed_page_start": 362,
           "level": "toc_only",
           "locator_status": "table_of_contents_inspected",
-          "why": "Data Association in GraphSLAM"
+          "why": "§11.5 · Data Association in GraphSLAM · printed p. 362",
+          "section": "§11.5 · Data Association in GraphSLAM",
+          "pages": "Printed p. 362",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "toc_only"
         },
         {
           "source_id": "PR-2006",
@@ -6521,7 +6925,11 @@
           "printed_page_start": 415,
           "level": "toc_only",
           "locator_status": "table_of_contents_inspected",
-          "why": "Branch-and-Bound Data Association"
+          "why": "§12.9 · Branch-and-Bound Data Association · printed p. 415",
+          "section": "§12.9 · Branch-and-Bound Data Association",
+          "pages": "Printed p. 415",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "toc_only"
         }
       ],
       "term_ids": [
@@ -6531,7 +6939,10 @@
         "robot-t-0243"
       ],
       "technical_distinctions": [
-        "A mathematically accurate backend cannot recover a correct map from arbitrary false correspondences."
+        {
+          "contrast": "Discriminating practical check",
+          "discriminating_observation": "Present repeated landmarks and deliberately inject false loop closures; observe map distortion and recovery."
+        }
       ],
       "competence_probe": "Present repeated landmarks and deliberately inject false loop closures; observe map distortion and recovery.",
       "unresolved_questions": [
@@ -6554,7 +6965,11 @@
           "printed_page_start": 191,
           "level": "toc_only",
           "locator_status": "table_of_contents_inspected",
-          "why": "Mobile Robot Localization: Markov and Gaussian"
+          "why": "§7 · Mobile Robot Localization: Markov and Gaussian · printed p. 191",
+          "section": "§7 · Mobile Robot Localization: Markov and Gaussian",
+          "pages": "Printed p. 191",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "toc_only"
         },
         {
           "source_id": "PR-2006",
@@ -6562,7 +6977,11 @@
           "printed_page_start": 250,
           "level": "toc_only",
           "locator_status": "table_of_contents_inspected",
-          "why": "Monte Carlo Localization"
+          "why": "§8.3 · Monte Carlo Localization · printed p. 250",
+          "section": "§8.3 · Monte Carlo Localization",
+          "pages": "Printed p. 250",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "toc_only"
         },
         {
           "source_id": "PR-2006",
@@ -6570,7 +6989,11 @@
           "printed_page_start": 256,
           "level": "toc_only",
           "locator_status": "table_of_contents_inspected",
-          "why": "Random Particle MCL: Recovery from Failures"
+          "why": "§8.3.5 · Random Particle MCL: Recovery from Failures · printed p. 256",
+          "section": "§8.3.5 · Random Particle MCL: Recovery from Failures",
+          "pages": "Printed p. 256",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "toc_only"
         }
       ],
       "term_ids": [
@@ -6580,7 +7003,10 @@
         "robot-t-0256"
       ],
       "technical_distinctions": [
-        "Pose tracking with a known initial pose is easier than global localization; failure recovery needs explicit hypothesis renewal."
+        {
+          "contrast": "Discriminating practical check",
+          "discriminating_observation": "Teleport a simulated rover, withhold odometry correction, measure whether and when relocalization succeeds."
+        }
       ],
       "competence_probe": "Teleport a simulated rover, withhold odometry correction, measure whether and when relocalization succeeds.",
       "unresolved_questions": [
@@ -6603,7 +7029,11 @@
           "printed_page_start": 284,
           "level": "toc_only",
           "locator_status": "table_of_contents_inspected",
-          "why": "The Occupancy Grid Mapping Algorithm"
+          "why": "§9.2 · The Occupancy Grid Mapping Algorithm · printed p. 284",
+          "section": "§9.2 · The Occupancy Grid Mapping Algorithm",
+          "pages": "Printed p. 284",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "toc_only"
         },
         {
           "source_id": "PR-2006",
@@ -6611,7 +7041,11 @@
           "printed_page_start": 299,
           "level": "toc_only",
           "locator_status": "table_of_contents_inspected",
-          "why": "Maximum A Posteriori Occupancy Mapping"
+          "why": "§9.4 · Maximum A Posteriori Occupancy Mapping · printed p. 299",
+          "section": "§9.4 · Maximum A Posteriori Occupancy Mapping",
+          "pages": "Printed p. 299",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "toc_only"
         },
         {
           "source_id": "MR-2017",
@@ -6619,7 +7053,11 @@
           "printed_page_start": 358,
           "level": "toc_only",
           "locator_status": "table_of_contents_inspected",
-          "why": "Foundations"
+          "why": "§10.2 · Foundations · printed p. 358",
+          "section": "§10.2 · Foundations",
+          "pages": "Printed p. 358",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "toc_only"
         }
       ],
       "term_ids": [
@@ -6629,7 +7067,10 @@
         "robot-t-0258"
       ],
       "technical_distinctions": [
-        "Unknown cells, free space and obstacles are not synonyms; mapping with assumed known poses differs from simultaneous pose-and-map inference."
+        {
+          "contrast": "Discriminating practical check",
+          "discriminating_observation": "Ray-cast through a short range scan and examine free-space clearing and wall thickness under pose noise."
+        }
       ],
       "competence_probe": "Ray-cast through a short range scan and examine free-space clearing and wall thickness under pose noise.",
       "unresolved_questions": [
@@ -6652,7 +7093,11 @@
           "printed_page_start": 309,
           "level": "toc_only",
           "locator_status": "table_of_contents_inspected",
-          "why": "Simultaneous Localization and Mapping"
+          "why": "§10 · Simultaneous Localization and Mapping · printed p. 309",
+          "section": "§10 · Simultaneous Localization and Mapping",
+          "pages": "Printed p. 309",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "toc_only"
         },
         {
           "source_id": "PR-2006",
@@ -6660,7 +7105,11 @@
           "printed_page_start": 337,
           "level": "toc_only",
           "locator_status": "table_of_contents_inspected",
-          "why": "The GraphSLAM Algorithm"
+          "why": "§11 · The GraphSLAM Algorithm · printed p. 337",
+          "section": "§11 · The GraphSLAM Algorithm",
+          "pages": "Printed p. 337",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "toc_only"
         },
         {
           "source_id": "PR-2006",
@@ -6668,7 +7117,11 @@
           "printed_page_start": 437,
           "level": "toc_only",
           "locator_status": "table_of_contents_inspected",
-          "why": "The FastSLAM Algorithm"
+          "why": "§13 · The FastSLAM Algorithm · printed p. 437",
+          "section": "§13 · The FastSLAM Algorithm",
+          "pages": "Printed p. 437",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "toc_only"
         }
       ],
       "term_ids": [
@@ -6677,7 +7130,10 @@
         "robot-t-0284"
       ],
       "technical_distinctions": [
-        "Map error and localization error feed each other; mapping with known poses is a simpler different problem."
+        {
+          "contrast": "Discriminating practical check",
+          "discriminating_observation": "Simulate traversing a loop: compare odometry map before and after a validated loop closure."
+        }
       ],
       "competence_probe": "Simulate traversing a loop: compare odometry map before and after a validated loop closure.",
       "unresolved_questions": [
@@ -6700,7 +7156,11 @@
           "printed_page_start": 340,
           "level": "inspected",
           "locator_status": "source_section_inspected",
-          "why": "Intuitive Description"
+          "why": "§11.2 · Intuitive Description · printed p. 340",
+          "section": "§11.2 · Intuitive Description",
+          "pages": "Printed p. 340",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "inspected"
         },
         {
           "source_id": "PR-2006",
@@ -6708,7 +7168,11 @@
           "printed_page_start": 346,
           "level": "toc_only",
           "locator_status": "table_of_contents_inspected",
-          "why": "The GraphSLAM Algorithm"
+          "why": "§11.3 · The GraphSLAM Algorithm · printed p. 346",
+          "section": "§11.3 · The GraphSLAM Algorithm",
+          "pages": "Printed p. 346",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "toc_only"
         },
         {
           "source_id": "PR-2006",
@@ -6716,7 +7180,11 @@
           "printed_page_start": 362,
           "level": "toc_only",
           "locator_status": "table_of_contents_inspected",
-          "why": "Data Association in GraphSLAM"
+          "why": "§11.5 · Data Association in GraphSLAM · printed p. 362",
+          "section": "§11.5 · Data Association in GraphSLAM",
+          "pages": "Printed p. 362",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "toc_only"
         }
       ],
       "term_ids": [
@@ -6726,7 +7194,10 @@
         "robot-t-0271"
       ],
       "technical_distinctions": [
-        "A false loop edge can damage the entire solution, and solving a backend optimization does not by itself validate the front-end match."
+        {
+          "contrast": "Discriminating practical check",
+          "discriminating_observation": "Construct a noisy square route with and without loop closure, then inject one incorrect association."
+        }
       ],
       "competence_probe": "Construct a noisy square route with and without loop closure, then inject one incorrect association.",
       "unresolved_questions": [
@@ -6749,7 +7220,11 @@
           "printed_page_start": 439,
           "level": "inspected",
           "locator_status": "source_section_inspected",
-          "why": "Factoring the SLAM Posterior"
+          "why": "§13.2 · Factoring the SLAM Posterior · printed p. 439",
+          "section": "§13.2 · Factoring the SLAM Posterior",
+          "pages": "Printed p. 439",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "inspected"
         },
         {
           "source_id": "PR-2006",
@@ -6757,7 +7232,11 @@
           "printed_page_start": 451,
           "level": "toc_only",
           "locator_status": "table_of_contents_inspected",
-          "why": "Improving the Proposal Distribution"
+          "why": "§13.4 · Improving the Proposal Distribution · printed p. 451",
+          "section": "§13.4 · Improving the Proposal Distribution",
+          "pages": "Printed p. 451",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "toc_only"
         },
         {
           "source_id": "PR-2006",
@@ -6765,7 +7244,11 @@
           "printed_page_start": 468,
           "level": "toc_only",
           "locator_status": "table_of_contents_inspected",
-          "why": "FastSLAM for Feature-Based Maps"
+          "why": "§13.9 · FastSLAM for Feature-Based Maps · printed p. 468",
+          "section": "§13.9 · FastSLAM for Feature-Based Maps",
+          "pages": "Printed p. 468",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "toc_only"
         }
       ],
       "term_ids": [
@@ -6775,7 +7258,10 @@
         "robot-t-0185"
       ],
       "technical_distinctions": [
-        "The conditional independence holds given the robot path and correspondences; finite particles and mistaken associations still matter."
+        {
+          "contrast": "Discriminating practical check",
+          "discriminating_observation": "Compare a single joint map covariance implementation with conditional feature updates on a synthetic repeated landmark loop."
+        }
       ],
       "competence_probe": "Compare a single joint map covariance implementation with conditional feature updates on a synthetic repeated landmark loop.",
       "unresolved_questions": [
@@ -6798,7 +7284,11 @@
           "printed_page_start": 326,
           "level": "toc_only",
           "locator_status": "table_of_contents_inspected",
-          "why": "Point-to-Point Trajectories"
+          "why": "§9.2 · Point-to-Point Trajectories · printed p. 326",
+          "section": "§9.2 · Point-to-Point Trajectories",
+          "pages": "Printed p. 326",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "toc_only"
         },
         {
           "source_id": "MR-2017",
@@ -6806,7 +7296,11 @@
           "printed_page_start": 336,
           "level": "toc_only",
           "locator_status": "table_of_contents_inspected",
-          "why": "Time-Optimal Time Scaling"
+          "why": "§9.4 · Time-Optimal Time Scaling · printed p. 336",
+          "section": "§9.4 · Time-Optimal Time Scaling",
+          "pages": "Printed p. 336",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "toc_only"
         }
       ],
       "term_ids": [
@@ -6816,7 +7310,10 @@
         "robot-t-0109"
       ],
       "technical_distinctions": [
-        "A collision-free route executed too quickly may violate actuator limits or contact stability."
+        {
+          "contrast": "Discriminating practical check",
+          "discriminating_observation": "Time-scale one joint-space path with two torque limits and compare peak demands."
+        }
       ],
       "competence_probe": "Time-scale one joint-space path with two torque limits and compare peak demands.",
       "unresolved_questions": [
@@ -6839,7 +7336,11 @@
           "printed_page_start": 358,
           "level": "inspected",
           "locator_status": "source_section_inspected",
-          "why": "Foundations"
+          "why": "§10.2 · Foundations · printed p. 358",
+          "section": "§10.2 · Foundations",
+          "pages": "Printed p. 358",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "inspected"
         },
         {
           "source_id": "MR-2017",
@@ -6847,7 +7348,11 @@
           "printed_page_start": 369,
           "level": "toc_only",
           "locator_status": "table_of_contents_inspected",
-          "why": "Grid Methods"
+          "why": "§10.4 · Grid Methods · printed p. 369",
+          "section": "§10.4 · Grid Methods",
+          "pages": "Printed p. 369",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "toc_only"
         }
       ],
       "term_ids": [
@@ -6856,7 +7361,10 @@
         "robot-t-0302"
       ],
       "technical_distinctions": [
-        "A point-robot line drawing is not collision safety for a finite-size mechanism; high-dimensional geometry changes the representation burden."
+        {
+          "contrast": "Discriminating practical check",
+          "discriminating_observation": "Compare center-point and footprint-aware maps near a narrow doorway."
+        }
       ],
       "competence_probe": "Compare center-point and footprint-aware maps near a narrow doorway.",
       "unresolved_questions": [
@@ -6879,7 +7387,11 @@
           "printed_page_start": 378,
           "level": "inspected",
           "locator_status": "source_section_inspected",
-          "why": "Sampling Methods"
+          "why": "§10.5 · Sampling Methods · printed p. 378",
+          "section": "§10.5 · Sampling Methods",
+          "pages": "Printed p. 378",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "inspected"
         },
         {
           "source_id": "UAV-2012",
@@ -6887,7 +7399,11 @@
           "printed_page_start": 207,
           "level": "toc_only",
           "locator_status": "table_of_contents_inspected",
-          "why": "Point-to-Point Algorithms"
+          "why": "§12.1 · Point-to-Point Algorithms · printed p. 207",
+          "section": "§12.1 · Point-to-Point Algorithms",
+          "pages": "Printed p. 207",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "toc_only"
         }
       ],
       "term_ids": [
@@ -6896,7 +7412,10 @@
         "robot-t-0310"
       ],
       "technical_distinctions": [
-        "Pure geometric sampling may produce a collision-free but dynamically impossible path; local steering and postprocessing matter."
+        {
+          "contrast": "Discriminating practical check",
+          "discriminating_observation": "Compare sampling planner and coarse grid planner in a narrow passage using equal collision-check budgets."
+        }
       ],
       "competence_probe": "Compare sampling planner and coarse grid planner in a narrow passage using equal collision-check budgets.",
       "unresolved_questions": [
@@ -6919,7 +7438,11 @@
           "printed_page_start": 164,
           "level": "toc_only",
           "locator_status": "table_of_contents_inspected",
-          "why": "Design Models for Guidance"
+          "why": "§9 · Design Models for Guidance · printed p. 164",
+          "section": "§9 · Design Models for Guidance",
+          "pages": "Printed p. 164",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "toc_only"
         },
         {
           "source_id": "UAV-2012",
@@ -6927,7 +7450,11 @@
           "printed_page_start": 175,
           "level": "toc_only",
           "locator_status": "table_of_contents_inspected",
-          "why": "Straight-line Path Following"
+          "why": "§10.1 · Straight-line Path Following · printed p. 175",
+          "section": "§10.1 · Straight-line Path Following",
+          "pages": "Printed p. 175",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "toc_only"
         },
         {
           "source_id": "UAV-2012",
@@ -6935,7 +7462,11 @@
           "printed_page_start": 181,
           "level": "toc_only",
           "locator_status": "table_of_contents_inspected",
-          "why": "Orbit Following"
+          "why": "§10.2 · Orbit Following · printed p. 181",
+          "section": "§10.2 · Orbit Following",
+          "pages": "Printed p. 181",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "toc_only"
         },
         {
           "source_id": "UAV-2012",
@@ -6943,7 +7474,11 @@
           "printed_page_start": 194,
           "level": "inspected",
           "locator_status": "source_section_inspected",
-          "why": "Dubins Paths"
+          "why": "§11.2 · Dubins Paths · printed p. 194",
+          "section": "§11.2 · Dubins Paths",
+          "pages": "Printed p. 194",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "inspected"
         }
       ],
       "term_ids": [
@@ -6953,7 +7488,10 @@
         "robot-t-0397"
       ],
       "technical_distinctions": [
-        "Path planning, guidance and inner-loop control are separate contracts; a path can be geometric but violate minimum turn radius."
+        {
+          "contrast": "Discriminating practical check",
+          "discriminating_observation": "Test straight-line and orbit following at multiple wind directions and radii; log cross-track error."
+        }
       ],
       "competence_probe": "Test straight-line and orbit following at multiple wind directions and radii; log cross-track error.",
       "unresolved_questions": [
@@ -6976,7 +7514,11 @@
           "printed_page_start": 403,
           "level": "toc_only",
           "locator_status": "table_of_contents_inspected",
-          "why": "Robot Control"
+          "why": "§11 · Robot Control · printed p. 403",
+          "section": "§11 · Robot Control",
+          "pages": "Printed p. 403",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "toc_only"
         },
         {
           "source_id": "UAV-2012",
@@ -6984,7 +7526,11 @@
           "printed_page_start": 95,
           "level": "toc_only",
           "locator_status": "table_of_contents_inspected",
-          "why": "Successive Loop Closure"
+          "why": "§6.1 · Successive Loop Closure · printed p. 95",
+          "section": "§6.1 · Successive Loop Closure",
+          "pages": "Printed p. 95",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "toc_only"
         }
       ],
       "term_ids": [
@@ -6994,7 +7540,10 @@
         "robot-t-0143"
       ],
       "technical_distinctions": [
-        "Good trajectory planning does not guarantee closed-loop stability; the task may require force compliance instead of rigid position tracking."
+        {
+          "contrast": "Discriminating practical check",
+          "discriminating_observation": "Introduce sensor delay, actuator saturation and payload changes in closed-loop simulation."
+        }
       ],
       "competence_probe": "Introduce sensor delay, actuator saturation and payload changes in closed-loop simulation.",
       "unresolved_questions": [
@@ -7017,7 +7566,11 @@
           "printed_page_start": 95,
           "level": "toc_only",
           "locator_status": "table_of_contents_inspected",
-          "why": "Successive Loop Closure"
+          "why": "§6.1 · Successive Loop Closure · printed p. 95",
+          "section": "§6.1 · Successive Loop Closure",
+          "pages": "Printed p. 95",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "toc_only"
         },
         {
           "source_id": "UAV-2012",
@@ -7025,7 +7578,11 @@
           "printed_page_start": 97,
           "level": "inspected",
           "locator_status": "source_section_inspected",
-          "why": "Saturation Constraints and Performance"
+          "why": "§6.2 · Saturation Constraints and Performance · printed p. 97",
+          "section": "§6.2 · Saturation Constraints and Performance",
+          "pages": "Printed p. 97",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "inspected"
         },
         {
           "source_id": "UAV-2012",
@@ -7033,7 +7590,11 @@
           "printed_page_start": 99,
           "level": "toc_only",
           "locator_status": "table_of_contents_inspected",
-          "why": "Lateral-directional Autopilot"
+          "why": "§6.3 · Lateral-directional Autopilot · printed p. 99",
+          "section": "§6.3 · Lateral-directional Autopilot",
+          "pages": "Printed p. 99",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "toc_only"
         },
         {
           "source_id": "UAV-2012",
@@ -7041,7 +7602,11 @@
           "printed_page_start": 105,
           "level": "toc_only",
           "locator_status": "table_of_contents_inspected",
-          "why": "Longitudinal Autopilot"
+          "why": "§6.4 · Longitudinal Autopilot · printed p. 105",
+          "section": "§6.4 · Longitudinal Autopilot",
+          "pages": "Printed p. 105",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "toc_only"
         }
       ],
       "term_ids": [
@@ -7051,7 +7616,10 @@
         "robot-t-0149"
       ],
       "technical_distinctions": [
-        "A stable slow outer loop cannot overcome a saturated or bandwidth-limited inner loop; fixed-wing lift/control constraints cannot be abstracted away."
+        {
+          "contrast": "Discriminating practical check",
+          "discriminating_observation": "Increase course-command bandwidth until control surfaces saturate, then inspect rise times and tracking error."
+        }
       ],
       "competence_probe": "Increase course-command bandwidth until control surfaces saturate, then inspect rise times and tracking error.",
       "unresolved_questions": [
@@ -7074,7 +7642,11 @@
           "printed_page_start": 441,
           "level": "inspected",
           "locator_status": "source_section_inspected",
-          "why": "Impedance Control"
+          "why": "§11.7 · Impedance Control · printed p. 441",
+          "section": "§11.7 · Impedance Control",
+          "pages": "Printed p. 441",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "inspected"
         },
         {
           "source_id": "MR-2017",
@@ -7082,7 +7654,11 @@
           "printed_page_start": 484,
           "level": "inspected",
           "locator_status": "source_section_inspected",
-          "why": "Friction"
+          "why": "§12.2.1 · Friction · printed p. 484",
+          "section": "§12.2.1 · Friction",
+          "pages": "Printed p. 484",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "inspected"
         },
         {
           "source_id": "MR-2017",
@@ -7090,7 +7666,11 @@
           "printed_page_start": 484,
           "level": "toc_only",
           "locator_status": "table_of_contents_inspected",
-          "why": "Contact Forces and Friction"
+          "why": "§12.2 · Contact Forces and Friction · printed p. 484",
+          "section": "§12.2 · Contact Forces and Friction",
+          "pages": "Printed p. 484",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "toc_only"
         }
       ],
       "term_ids": [
@@ -7100,7 +7680,10 @@
         "robot-t-0345"
       ],
       "technical_distinctions": [
-        "A robot cannot independently dictate both motion and contact force in the same constrained direction; friction cones differ from geometric enclosure."
+        {
+          "contrast": "Discriminating practical check",
+          "discriminating_observation": "Push a virtual object against a wall with stiff position and compliant impedance control; compare forces and errors."
+        }
       ],
       "competence_probe": "Push a virtual object against a wall with stiff position and compliant impedance control; compare forces and errors.",
       "unresolved_questions": [
@@ -7123,7 +7706,11 @@
           "printed_page_start": 487,
           "level": "toc_only",
           "locator_status": "table_of_contents_inspected",
-          "why": "Markov Decision Processes"
+          "why": "§14 · Markov Decision Processes · printed p. 487",
+          "section": "§14 · Markov Decision Processes",
+          "pages": "Printed p. 487",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "toc_only"
         },
         {
           "source_id": "PR-2006",
@@ -7131,7 +7718,11 @@
           "printed_page_start": 513,
           "level": "toc_only",
           "locator_status": "table_of_contents_inspected",
-          "why": "Partially Observable Markov Decision Processes"
+          "why": "§15 · Partially Observable Markov Decision Processes · printed p. 513",
+          "section": "§15 · Partially Observable Markov Decision Processes",
+          "pages": "Printed p. 513",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "toc_only"
         },
         {
           "source_id": "PR-2006",
@@ -7139,7 +7730,11 @@
           "printed_page_start": 547,
           "level": "toc_only",
           "locator_status": "table_of_contents_inspected",
-          "why": "Approximate POMDP Techniques"
+          "why": "§16 · Approximate POMDP Techniques · printed p. 547",
+          "section": "§16 · Approximate POMDP Techniques",
+          "pages": "Printed p. 547",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "toc_only"
         }
       ],
       "term_ids": [
@@ -7149,7 +7744,10 @@
         "robot-t-0332"
       ],
       "technical_distinctions": [
-        "Moving toward a goal and moving to disambiguate pose can be competing actions; full POMDP planning scales poorly."
+        {
+          "contrast": "Discriminating practical check",
+          "discriminating_observation": "Use a two-door search task where looking costs time but prevents costly wrong choices; compare a myopic controller."
+        }
       ],
       "competence_probe": "Use a two-door search task where looking costs time but prevents costly wrong choices; compare a myopic controller.",
       "unresolved_questions": [
@@ -7172,7 +7770,11 @@
           "printed_page_start": 571,
           "level": "inspected",
           "locator_status": "source_section_inspected",
-          "why": "Information Gain"
+          "why": "§17.2.1 · Information Gain · printed p. 571",
+          "section": "§17.2.1 · Information Gain",
+          "pages": "Printed p. 571",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "inspected"
         },
         {
           "source_id": "PR-2006",
@@ -7180,7 +7782,11 @@
           "printed_page_start": 575,
           "level": "toc_only",
           "locator_status": "table_of_contents_inspected",
-          "why": "Active Localization"
+          "why": "§17.3 · Active Localization · printed p. 575",
+          "section": "§17.3 · Active Localization",
+          "pages": "Printed p. 575",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "toc_only"
         },
         {
           "source_id": "PR-2006",
@@ -7188,7 +7794,11 @@
           "printed_page_start": 580,
           "level": "toc_only",
           "locator_status": "table_of_contents_inspected",
-          "why": "Exploration for Learning Occupancy Grid Maps"
+          "why": "§17.4 · Exploration for Learning Occupancy Grid Maps · printed p. 580",
+          "section": "§17.4 · Exploration for Learning Occupancy Grid Maps",
+          "pages": "Printed p. 580",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "toc_only"
         }
       ],
       "term_ids": [
@@ -7198,7 +7808,10 @@
         "robot-t-0328"
       ],
       "technical_distinctions": [
-        "Exploration and navigation have different objectives; high information gain may be inaccessible, unsafe or too expensive."
+        {
+          "contrast": "Discriminating practical check",
+          "discriminating_observation": "Compare a closest-frontier policy with expected-information-gain-per-cost in a branching map."
+        }
       ],
       "competence_probe": "Compare a closest-frontier policy with expected-information-gain-per-cost in a branching map.",
       "unresolved_questions": [
@@ -7221,7 +7834,11 @@
           "printed_page_start": 226,
           "level": "toc_only",
           "locator_status": "table_of_contents_inspected",
-          "why": "Gimbal and Camera Frames and Projective Geometry"
+          "why": "§13.1 · Gimbal and Camera Frames and Projective Geometry · printed p. 226",
+          "section": "§13.1 · Gimbal and Camera Frames and Projective Geometry",
+          "pages": "Printed p. 226",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "toc_only"
         },
         {
           "source_id": "UAV-2012",
@@ -7229,7 +7846,11 @@
           "printed_page_start": 231,
           "level": "toc_only",
           "locator_status": "table_of_contents_inspected",
-          "why": "Geolocation"
+          "why": "§13.3 · Geolocation · printed p. 231",
+          "section": "§13.3 · Geolocation",
+          "pages": "Printed p. 231",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "toc_only"
         },
         {
           "source_id": "UAV-2012",
@@ -7237,7 +7858,11 @@
           "printed_page_start": 238,
           "level": "inspected",
           "locator_status": "source_section_inspected",
-          "why": "Time to Collision"
+          "why": "§13.5 · Time to Collision · printed p. 238",
+          "section": "§13.5 · Time to Collision",
+          "pages": "Printed p. 238",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "inspected"
         }
       ],
       "term_ids": [
@@ -7247,7 +7872,10 @@
         "robot-t-0202"
       ],
       "technical_distinctions": [
-        "Pixel movement alone does not uniquely establish range; gimbal motion, target motion and ground plane geometry can confound geolocation."
+        {
+          "contrast": "Discriminating practical check",
+          "discriminating_observation": "Vary target size, camera motion and known geometry; compare metric distance and scale-free collision cues."
+        }
       ],
       "competence_probe": "Vary target size, camera motion and known geometry; compare metric distance and scale-free collision cues.",
       "unresolved_questions": [
@@ -7270,7 +7898,11 @@
           "printed_page_start": 1,
           "level": "toc_only",
           "locator_status": "table_of_contents_inspected",
-          "why": "System Architecture"
+          "why": "§1.1 · System Architecture · printed p. 1",
+          "section": "§1.1 · System Architecture",
+          "pages": "Printed p. 1",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "toc_only"
         },
         {
           "source_id": "MR-2017",
@@ -7278,7 +7910,11 @@
           "printed_page_start": 1,
           "level": "toc_only",
           "locator_status": "table_of_contents_inspected",
-          "why": "Preview"
+          "why": "§1 · Preview · printed p. 1",
+          "section": "§1 · Preview",
+          "pages": "Printed p. 1",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "toc_only"
         },
         {
           "source_id": "PR-2006",
@@ -7286,7 +7922,11 @@
           "printed_page_start": 3,
           "level": "toc_only",
           "locator_status": "table_of_contents_inspected",
-          "why": "Introduction"
+          "why": "§1 · Introduction · printed p. 3",
+          "section": "§1 · Introduction",
+          "pages": "Printed p. 3",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "toc_only"
         }
       ],
       "term_ids": [
@@ -7296,7 +7936,10 @@
         "robot-t-0432"
       ],
       "technical_distinctions": [
-        "An ideal-state autopilot demonstration hides estimator errors; an estimator-only demo hides closed-loop control and latency failures."
+        {
+          "contrast": "Discriminating practical check",
+          "discriminating_observation": "Run one realistic mission with sensor dropouts, wind and actuator limits; report failure chronology not merely an end-point pass."
+        }
       ],
       "competence_probe": "Run one realistic mission with sensor dropouts, wind and actuator limits; report failure chronology not merely an end-point pass.",
       "unresolved_questions": [
@@ -7319,7 +7962,11 @@
           "printed_page_start": 303,
           "level": "toc_only",
           "locator_status": "table_of_contents_inspected",
-          "why": "Actuation, Gearing, and Friction"
+          "why": "§8.9 · Actuation, Gearing, and Friction · printed p. 303",
+          "section": "§8.9 · Actuation, Gearing, and Friction",
+          "pages": "Printed p. 303",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "toc_only"
         },
         {
           "source_id": "PR-2006",
@@ -7327,7 +7974,11 @@
           "printed_page_start": 267,
           "level": "toc_only",
           "locator_status": "table_of_contents_inspected",
-          "why": "Localization in Dynamic Environments"
+          "why": "§8.4 · Localization in Dynamic Environments · printed p. 267",
+          "section": "§8.4 · Localization in Dynamic Environments",
+          "pages": "Printed p. 267",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "toc_only"
         },
         {
           "source_id": "UAV-2012",
@@ -7335,7 +7986,11 @@
           "printed_page_start": 97,
           "level": "inspected",
           "locator_status": "source_section_inspected",
-          "why": "Saturation Constraints and Performance"
+          "why": "§6.2 · Saturation Constraints and Performance · printed p. 97",
+          "section": "§6.2 · Saturation Constraints and Performance",
+          "pages": "Printed p. 97",
+          "page_scheme": "Printed book TOC, not PDF viewer offset",
+          "locator_level": "inspected"
         }
       ],
       "term_ids": [
@@ -7345,7 +8000,10 @@
         "robot-t-0523"
       ],
       "technical_distinctions": [
-        "Perfect-model simulations cannot certify real sensor/actuator timing, mechanical tolerance, or safe operation."
+        {
+          "contrast": "Discriminating practical check",
+          "discriminating_observation": "Create a falsifiable scenario matrix across disturbances, obstacle types, sensor loss and recovery behavior."
+        }
       ],
       "competence_probe": "Create a falsifiable scenario matrix across disturbances, obstacle types, sensor loss and recovery behavior.",
       "unresolved_questions": [
