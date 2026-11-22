@@ -15,13 +15,17 @@ An *investigation* is the purposeful exploration of one question **or a set of q
 
 The technical explanations remain detailed and source-specific even when the entry question is childlike. The five larger sets—**Possibilities**, **Make it**, **Mechanisms**, **Production**, and **Bootstrap**—remain available through the same entry browser, not a separate manufacturing menu.
 
-## Manufacturing data, without redundant JSONs
+## Canonical domain data, without redundant JSONs
 
-There is **one canonical manufacturing research JSON**:
+Each domain has **one canonical research JSON** (and multiple possible scoped views):
 
-[`Investigations/manufacturing-orientation/investigation.json`](Investigations/manufacturing-orientation/investigation.json)
+| Domain | Canonical research file | Contains |
+| --- | --- | --- |
+| Manufacturing | [`investigation.json`](Investigations/manufacturing-orientation/investigation.json) | Questions, technical nodes, source sections, and manufacturing operators |
+| Operating systems | [`investigation.json`](Investigations/operating-systems/investigation.json) | 15 curiosity entries, 43 question-index nodes, 9 technical nodes, 51 OSTEP chapter anchors, and cross-book routes |
+| Human–AI collaboration | [`investigation.json`](Investigations/human-ai-symbiosis/investigation.json) | 18 curiosities, 56 question-index nodes, 13 technical nodes, 19 fieldwork nodes, supporting sources, projects, and communities |
 
-Its principal sections serve different purposes without needing separate files:
+The manufacturing corpus's principal sections are:
 
 | Section | Responsibility |
 | --- | --- |
@@ -32,7 +36,7 @@ Its principal sections serve different purposes without needing separate files:
 | `sources`, `book_landscaplets` | Book identities and bounded chapter/section retrieval locations |
 | `book_factorization` | Reusable manufacturing operators and cross-book synthesis |
 
-[`rsm-view.json`](rsm-view.json) is a small **viewer mapping manifest**, not another manufacturing knowledge database. Other domains (operating systems and human–AI collaboration) have independent research records because they represent distinct source corpora.
+[`rsm-view.json`](rsm-view.json) is a small **viewer mapping manifest**, not another knowledge database. OS chapter guidance is inside the OS investigation file; human–AI fieldwork is inside the human–AI investigation file. The different question, technical, and fieldwork presentations reference sections within the same domain corpus.
 
 The current manufacturing collection contains **5 connected books**, **65 chapter/part retrieval locations**, **24 ordinary-language question entries**, **5 larger investigation scopes**, and **10 source-inspected technical studies**. These numbers describe the present index, **not** full passage coverage or proven practical navigation.
 
