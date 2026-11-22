@@ -40,6 +40,14 @@
       "glossary_path": "Investigations/neuromorphic-engineering/glossary.json",
       "status": "two-book-indexed; selective mechanism passages inspected; hardware not reproduced",
       "updated": "2026-11-21"
+    },
+    {
+      "id": "electronics-engineering",
+      "title": "Electronics engineering — circuit design, signal integrity and power electronics",
+      "path": "Investigations/electronics-engineering/investigation.json",
+      "glossary_path": "Investigations/electronics-engineering/glossary.json",
+      "status": "three books indexed; selected mechanisms source-inspected; hardware not independently reproduced",
+      "updated": "2026-11-22"
     }
   ]
 }
