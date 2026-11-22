@@ -6,28 +6,32 @@
       "title": "Manufacturing — curiosity-to-evidence navigator",
       "path": "Investigations/manufacturing-orientation/investigation.json",
       "status": "question-and-question-set-navigation-active",
-      "updated": "2026-11-21"
+      "updated": "2026-11-21",
+      "glossary_path": "Investigations/manufacturing-orientation/glossary.json"
     },
     {
       "id": "operating-systems",
       "title": "Operating Systems — question landscapes and investigation trees",
       "path": "Investigations/operating-systems/investigation.json",
       "status": "source-indexed-investigation-not-yet-certified",
-      "updated": "2026-11-19"
+      "updated": "2026-11-19",
+      "glossary_path": "Investigations/operating-systems/glossary.json"
     },
     {
       "id": "human-ai-symbiosis",
       "title": "Human–AI intellectual collaboration — capabilities and achievements",
       "path": "Investigations/human-ai-symbiosis/investigation.json",
       "status": "question-landscape-active",
-      "updated": "2026-11-21"
+      "updated": "2026-11-21",
+      "glossary_path": "Investigations/human-ai-symbiosis/glossary.json"
     },
     {
       "id": "digital-hardware-design",
       "title": "Digital hardware — Verilog/FPGA to physical VLSI",
       "path": "Investigations/digital-hardware-design/investigation.json",
       "status": "curiosity-to-technical-books-indexed; physical demonstrations pending",
-      "updated": "2026-11-21"
+      "updated": "2026-11-21",
+      "glossary_path": "Investigations/digital-hardware-design/glossary.json"
     }
   ]
 }
