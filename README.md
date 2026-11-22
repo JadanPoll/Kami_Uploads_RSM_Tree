@@ -12,6 +12,8 @@ Explore what you are curious about, follow the underlying mechanisms, and recove
 
 [**Explore robotics — from a curious question to physical mechanisms and source passages**](https://raw.githack.com/JadanPoll/Learning_Visualizations_Taxonomy/main/RSM_Tree_Viewer.html?repo=https%3A%2F%2Fgithub.com%2FJadanPoll%2FKami_Uploads_RSM_Tree&view=robotics-curiosities)
 
+[**Explore mathematics — fourteen connected textbooks, source passages and mathematical operators**](https://raw.githack.com/JadanPoll/Learning_Visualizations_Taxonomy/main/RSM_Tree_Viewer.html?repo=https%3A%2F%2Fgithub.com%2FJadanPoll%2FKami_Uploads_RSM_Tree&view=mathematics-curiosities)
+
 ## One entrance, variable investigation scope
 
 The manufacturing browser supports two entry sizes in one place:
@@ -38,6 +40,7 @@ The Knowledge Atlas viewer loads only the selected domain's glossary. In the que
 | Neuromorphic engineering | [glossary.json](Investigations/neuromorphic-engineering/glossary.json) |
 | Electronics engineering | [glossary.json](Investigations/electronics-engineering/glossary.json) |
 | Robotics | [glossary.json](Investigations/robotics/glossary.json) |
+| Mathematics | [glossary.json](Investigations/mathematics/glossary.json) |
 
 **Research remains canonical in `investigation.json`.** Vocabulary changes need not duplicate its mechanisms or books. IDs are permanent: change a label or add aliases without changing identity, and keep redirects when combining true synonyms. A related concept does not mean the same mechanism.
 
@@ -100,3 +103,6 @@ Run the **reverse test** from independently chosen important passages: can plaus
 The [Richer Scientific Method](https://github.com/JadanPoll/Learning_Visualizations_Taxonomy/blob/main/Navigationals/The_Richer_Scientific_Method.md) guides investigation, and the [Richer Engineering Method](https://github.com/JadanPoll/Learning_Visualizations_Taxonomy/blob/main/Navigationals/The_Richer_Engineering_Method.md) guides practical functionality, testing, and subtraction. [`AGENTS.md`](AGENTS.md) carries persistent continuation instructions.
 
 The objective is a navigator worth returning to after a month: **ask what you actually care about, encounter the relevant depth, and recover the evidence without rediscovering the organization**.
+
+
+**Mathematics collection:** [canonical investigation](Investigations/mathematics/investigation.json), [independent 832-concept glossary](Investigations/mathematics/glossary.json), and [persistent fourteen-book reference guide](Investigations/mathematics/REFERENCE_GUIDE.md). The collection indexes 185 major units and 836 finer source locators; its 39 technical studies, 46 curiosity entrances, nine larger sets and twelve cross-book operator compositions are views of one evidence corpus, not duplicate trees.
