@@ -51,7 +51,12 @@
         }
       ],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "fieldwork_case_ids": [
+        "FW-OPENAI",
+        "FW-CLAUDE",
+        "FW-SMALLBUS"
+      ]
     },
     {
       "id": "HAI-Q07B",
@@ -66,7 +71,12 @@
         }
       ],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "fieldwork_case_ids": [
+        "FW-SMALLBUS",
+        "FW-ANDY",
+        "FW-STUDENTS"
+      ]
     },
     {
       "id": "HAI-Q07C",
@@ -160,7 +170,10 @@
         }
       ],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "fieldwork_case_ids": [
+        "FW-ALPOGE"
+      ]
     },
     {
       "id": "HAI-Q01C",
@@ -228,7 +241,10 @@
         }
       ],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "fieldwork_case_ids": [
+        "FW-ARMIN"
+      ]
     },
     {
       "id": "HAI-Q02C",
@@ -262,7 +278,10 @@
         }
       ],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "fieldwork_case_ids": [
+        "FW-ALPHA"
+      ]
     },
     {
       "id": "HAI-Q05",
@@ -292,7 +311,10 @@
         }
       ],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "fieldwork_case_ids": [
+        "FW-METR"
+      ]
     },
     {
       "id": "HAI-Q05B",
@@ -302,7 +324,11 @@
       "status": "candidate",
       "candidate_references": [],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "fieldwork_case_ids": [
+        "FW-STUDENTS",
+        "FW-ARMIN"
+      ]
     },
     {
       "id": "HAI-Q05C",
@@ -317,7 +343,10 @@
         }
       ],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "fieldwork_case_ids": [
+        "FW-MOLLICK"
+      ]
     },
     {
       "id": "HAI-Q08A",
@@ -370,7 +399,12 @@
         }
       ],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "fieldwork_case_ids": [
+        "FW-OPENAI",
+        "FW-CLAUDE",
+        "FW-METR"
+      ]
     },
     {
       "id": "HAI-Q12",
@@ -429,7 +463,10 @@
       "status": "candidate",
       "candidate_references": [],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "fieldwork_case_ids": [
+        "FW-SIMON"
+      ]
     },
     {
       "id": "HAI-Q03C",
@@ -444,7 +481,10 @@
         }
       ],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "fieldwork_case_ids": [
+        "FW-SIMON"
+      ]
     },
     {
       "id": "HAI-Q03D",
@@ -454,7 +494,10 @@
       "status": "candidate",
       "candidate_references": [],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "fieldwork_case_ids": [
+        "FW-CLAX"
+      ]
     },
     {
       "id": "HAI-Q09A",
@@ -469,7 +512,10 @@
         }
       ],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "fieldwork_case_ids": [
+        "FW-OWN"
+      ]
     },
     {
       "id": "HAI-Q09B",
@@ -479,7 +525,11 @@
       "status": "candidate",
       "candidate_references": [],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "fieldwork_case_ids": [
+        "FW-ANDY",
+        "FW-SIMON"
+      ]
     },
     {
       "id": "HAI-Q09C",
@@ -494,7 +544,11 @@
         }
       ],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "fieldwork_case_ids": [
+        "FW-ARMIN",
+        "FW-OWN"
+      ]
     },
     {
       "id": "HAI-Q10",
@@ -528,7 +582,11 @@
         }
       ],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "fieldwork_case_ids": [
+        "FW-CARLINI",
+        "FW-ALPOGE"
+      ]
     },
     {
       "id": "HAI-Q10B",
@@ -543,7 +601,11 @@
         }
       ],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "fieldwork_case_ids": [
+        "FW-CARLINI",
+        "FW-CLAX"
+      ]
     },
     {
       "id": "HAI-Q10C",
@@ -553,7 +615,10 @@
       "status": "candidate",
       "candidate_references": [],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "fieldwork_case_ids": [
+        "FW-ALPOGE"
+      ]
     },
     {
       "id": "HAI-Q10D",
@@ -593,7 +658,10 @@
         }
       ],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "fieldwork_case_ids": [
+        "FW-ALPHA"
+      ]
     },
     {
       "id": "HAI-Q04B",
@@ -603,7 +671,11 @@
       "status": "candidate",
       "candidate_references": [],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "fieldwork_case_ids": [
+        "FW-CARLINI",
+        "FW-CLAX"
+      ]
     },
     {
       "id": "HAI-Q04C",
@@ -613,7 +685,10 @@
       "status": "candidate",
       "candidate_references": [],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "fieldwork_case_ids": [
+        "FW-MOLLICK"
+      ]
     },
     {
       "id": "HAI-Q06",
@@ -633,7 +708,10 @@
       "status": "candidate",
       "candidate_references": [],
       "investigation_id": null,
-      "established_certificate_id": null
+      "established_certificate_id": null,
+      "fieldwork_case_ids": [
+        "FW-ALPHA"
+      ]
     },
     {
       "id": "HAI-Q06B",
@@ -1039,5 +1117,6 @@
     ],
     "anti_myth_rule": "Do not replace a legend with a simplistic 'anyone can do it' story. Distinguish replicable method, expertise, unusually favorable problem selection, institution-scale resources and unexplained residuals."
   },
-  "presentation_note": "The why_ask field is reader-facing subject context, not instructions to the assistant, editor, or investigator. Procedural priorities, source skepticism, evidence certification rules, and editorial direction are recorded in investigation metadata instead."
+  "presentation_note": "The why_ask field is reader-facing subject context, not instructions to the assistant, editor, or investigator. Procedural priorities, source skepticism, evidence certification rules, and editorial direction are recorded in investigation metadata instead.",
+  "fieldwork_link_rule": "fieldwork_case_ids link candidate questions to case records in fieldwork.json; case observations do not certify the question tree's possible answers."
 }
