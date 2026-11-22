@@ -87,7 +87,7 @@ The question tree starts from **“I want to build an OS!”** and keeps the chi
 
 **Candidate C references vs established certificates:** A chapter range says where we expect to find clarity. It is not an established conclusion or a certificate that the claim is true. Once we investigate a question, specific passages, findings, limitations and observed behavior can form a certificate.
 
-Structured source of truth: [`reference_guide.json`](reference_guide.json); question tree: [`question_tree.json`](question_tree.json).
+Structured source of truth: [`investigation.json`](investigation.json), with `chapter_catalog`, `routes`, `cross_source_routes`, `source_catalogs`, `question_nodes`, and `curiosity_atlas` in one file.
 
 
 ## Hardware and bare-metal cross-references
