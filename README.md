@@ -46,6 +46,8 @@ Follow [FKEN-16A — Frustration-to-resource traversability](AGENTS.md#fken-16a-
 
 Run the **reverse test** from independently chosen important passages: can plausible everyday questions lead to them? Compare with a book's table of contents and ordinary full-text search. Counts of nodes, branches, or chapter links do not establish discoverability.
 
+[Manufacturing book reference guide — all five books, 65 indexed chapters/parts, inspected passages, and quick retrieval routes](Investigations/manufacturing-orientation/REFERENCE_GUIDE.md)
+
 [Manufacturing navigation audit and test prompts](Investigations/manufacturing-orientation/navigation_audit.md)
 
 ## Continuing and contributing
