@@ -470,6 +470,154 @@
         "Which tolerances can be verified with calipers versus more involved metrology?"
       ],
       "minimum_reconstruction_probe": "Design mating printed features with nominal clearances; print a dimensioned variation matrix, measure real dimensions, identify fit failure thresholds and distinguish slicer compensation from a model's geometric allowances."
+    },
+    {
+      "id": "MFG-FUNCTION",
+      "parent_id": "MFG-ROOT",
+      "question": "How can we synthesize a physical mechanism from desired motion, force, and constraints?",
+      "status": "active_question",
+      "kind": "major_question",
+      "why": "A mechanism's function is not identical to its geometry: the same movement may be realized by links and joints, a shaped cam, a flexible member or another arrangement. Inputs, degrees of freedom, load paths, actuation and constraints determine useful alternatives."
+    },
+    {
+      "id": "MFG-SCALE",
+      "parent_id": "MFG-ROOT",
+      "question": "How can we manufacture reliable products at a specified quantity, quality, and cost?",
+      "status": "active_question",
+      "kind": "major_question",
+      "why": "A prototype that works once is not a production route. Tooling reuse, cycle time, yield, inspections, revision costs, assembly and operating volume can reverse which process is economical."
+    },
+    {
+      "id": "MFG-FUNC-MOTION",
+      "parent_id": "MFG-FUNCTION",
+      "question": "Which mechanism topologies create the motion, force, or dwell we want?",
+      "status": "provisional",
+      "kind": "question",
+      "why": "A desired output behavior can admit linkage, cam, gear, Geneva, ratchet or flexural realizations. Compare their motion and force laws, constraints and loads before choosing physical parts."
+    },
+    {
+      "id": "MFG-FUNC-REALIZE",
+      "parent_id": "MFG-FUNCTION",
+      "question": "When does a mechanism concept survive materials, flexure strain, fabrication, and assembly?",
+      "status": "provisional",
+      "kind": "question",
+      "why": "A mechanism with correct idealized motion may still break, jam, fatigue or fail tolerances. Kinematics, structural compliance and manufacturing limits are coupled."
+    },
+    {
+      "id": "MFG-SCALE-TOOL",
+      "parent_id": "MFG-SCALE",
+      "question": "When should shape be encoded in reusable tooling, expendable tooling, or digital instructions?",
+      "status": "provisional",
+      "kind": "question",
+      "why": "Mold reuse, destructible patterns and programmable toolpaths lead to different setup, revision and per-unit costs; feasible material and shape constraints must be screened first."
+    },
+    {
+      "id": "MFG-FUNC-RIGID",
+      "parent_id": "MFG-FUNC-MOTION",
+      "question": "How do mechanical advantage and motion ratios constrain a mechanism's output?",
+      "status": "source_section_inspected",
+      "kind": "mechanism_study",
+      "observed": "Sclater's mechanical fundamentals distinguish greater output force from greater output energy: obtaining more force requires less displacement, and friction consumes useful work.",
+      "mechanism_explanation": "At a chosen operating point, a mechanism transforms input displacement, velocity and force. Ideal work balance couples force multiplication to reduced travel; nonideal friction and geometry-dependent ratios further limit performance. A designer must specify output motion and force together, not independently.",
+      "transferable_insight": "Start mechanism design with an input-output contract (force, travel, speed, timing, load), then filter linkages, gears or screws for physically plausible ratios and efficiency. A gear ratio is not a free gain in both speed and torque.",
+      "source_ids": [
+        "BOOK-MECHANISMS"
+      ],
+      "source_sections": [
+        {
+          "source_id": "BOOK-MECHANISMS",
+          "section": "Ch. 1: efficiency, mechanical advantage, velocity ratio, levers and linkages",
+          "pages": "Printed pp. 2–8",
+          "page_scheme": "printed book page"
+        }
+      ],
+      "minimum_reconstruction_probe": "Using a real lever or screw-jack specimen, measure applied travel and force against output travel and force; estimate work efficiency and compare the measured result to a frictionless model.",
+      "unresolved_questions": [
+        "Which specific linkage geometries meet a stated force/travel envelope under practical backlash and friction?"
+      ]
+    },
+    {
+      "id": "MFG-FUNC-INDEX",
+      "parent_id": "MFG-FUNC-MOTION",
+      "question": "How can continuous rotation produce an intermittent output with controlled dwell?",
+      "status": "source_section_inspected",
+      "kind": "mechanism_study",
+      "observed": "Sclater's Geneva examples show a driver entering an output wheel slot to index it and disengaging while the wheel stays stationary. Modified drives use cam-shaped radial motion or gear variants to change acceleration, speed profile and dwell.",
+      "mechanism_explanation": "A Geneva couples and uncouples motion periodically: the driver applies displacement during a short engagement, while locking/dwell geometry holds the output between indexes. Its acceleration spikes and entry/exit loads become design constraints; changing the driver trajectory changes those loads without changing the required indexing function.",
+      "transferable_insight": "Specify an output timeline (move, settle, hold) before choosing a cam, ratchet or Geneva. Identical net indexing does not imply identical acceleration, duty cycle, wear or control cost.",
+      "source_ids": [
+        "BOOK-MECHANISMS"
+      ],
+      "source_sections": [
+        {
+          "source_id": "BOOK-MECHANISMS",
+          "section": "Ch. 7: Twenty Geneva Drives and modified Geneva drives",
+          "pages": "Printed pp. 192–197",
+          "page_scheme": "printed book page"
+        }
+      ],
+      "minimum_reconstruction_probe": "Compare a Geneva wheel with a cam-controlled or stepper-driven indexing alternative for the same step angle and cycle rate; measure dwell accuracy, peak acceleration and repeatability.",
+      "unresolved_questions": [
+        "At what cycle speed do dynamic loads overwhelm the simplicity of the mechanical dwell?"
+      ]
+    },
+    {
+      "id": "MFG-FUNC-COMPLIANT",
+      "parent_id": "MFG-FUNC-REALIZE",
+      "question": "When should elastic deformation replace pin joints or articulated rigid links?",
+      "status": "source_section_inspected",
+      "kind": "mechanism_study",
+      "observed": "Howell distinguishes stiffness (resistance to deflection) from strength (resistance to failure), and demonstrates rigid-body replacement: identify the desired motion of a linkage, then replace selected joints or links with elastic members. The handbook's four-bar synthesis generates 28 compliant configurations before selecting based on load and strain.",
+      "mechanism_explanation": "A flexure creates controlled relative motion through material strain rather than sliding or rolling contact. Removing joints can reduce assembly and play, but stores elastic energy and introduces stress, fatigue, stiffness and limited-motion constraints. The most favorable topology depends on what must move, what must remain stiff and the direction of load.",
+      "failure_to_intervention": "Simply replacing all joints with thin flexures can sacrifice load capacity. In the bicycle-derailleur study, the authors retain several rigid links and pin joints while evaluating two compliant alternatives instead of maximizing compliance blindly.",
+      "transferable_insight": "A mechanism can be simultaneously flexible in intended directions and strong against failure. Distinguish degrees of freedom, desired stiffness, strength, strain limits and fatigue life before deciding whether to use conventional joints or flexures.",
+      "source_ids": [
+        "BOOK-COMPLIANT"
+      ],
+      "source_sections": [
+        {
+          "source_id": "BOOK-COMPLIANT",
+          "section": "Ch. 1: Stiffness and strength; flexible yet strong",
+          "pages": "Printed pp. 8–11",
+          "page_scheme": "printed book page"
+        },
+        {
+          "source_id": "BOOK-COMPLIANT",
+          "section": "Ch. 8: Rigid-body replacement and bicycle derailleur case",
+          "pages": "Printed pp. 111–120",
+          "page_scheme": "printed book page"
+        }
+      ],
+      "minimum_reconstruction_probe": "Design a small repeatedly actuated clamp as (A) pinned links and (B) a compliant substitute. Compare required force, travel, off-axis motion, assembly steps, measured strain/fatigue and print orientation.",
+      "unresolved_questions": [
+        "Which material and fabrication route meets the desired fatigue life and precision?",
+        "How well does a simplified flexural model predict the real build?"
+      ]
+    },
+    {
+      "id": "MFG-FUNC-DOF",
+      "parent_id": "MFG-FUNC-MOTION",
+      "question": "How can desired degrees of freedom generate candidate flexure architectures?",
+      "status": "source_section_inspected",
+      "kind": "mechanism_study",
+      "observed": "Howell's freedom and constraint topology (FACT) procedure specifies desired degrees of freedom, identifies a corresponding freedom space, chooses nonredundant constraints from the complementary space, and optionally adds redundant constraints for stiffness, load capacity or symmetry. A ball-joint probe example uses three intersecting independent rotational degrees of freedom.",
+      "mechanism_explanation": "The designer chooses allowable motions first, rather than copying an existing mechanism's geometry. Complementary constraints forbid unwanted motions; alternative physical arrangements can realize the same kinematic freedom. Redundancy may improve load behavior but changes stress and stiffness.",
+      "transferable_insight": "Represent motion requirements as allowed and forbidden degrees of freedom before choosing specific beams or joints. This produces a family of mechanically different candidates with equivalent nominal motion.",
+      "source_ids": [
+        "BOOK-COMPLIANT"
+      ],
+      "source_sections": [
+        {
+          "source_id": "BOOK-COMPLIANT",
+          "section": "Ch. 6: freedom/constraint spaces and FACT synthesis",
+          "pages": "Printed pp. 82–89",
+          "page_scheme": "printed book page"
+        }
+      ],
+      "minimum_reconstruction_probe": "Choose a precision platform allowed to translate in X and Y but resist Z translation and unwanted rotations. Identify target freedoms, propose two alternative constraint topologies, then verify their actual parasitic motion.",
+      "unresolved_questions": [
+        "How do nominally equivalent constraint arrangements differ in off-axis stiffness and real manufacturing error?"
+      ]
     }
   ],
   "sources": [
@@ -603,6 +751,41 @@
         "MFG-FEASIBILITY",
         "MFG-TOLERANCE"
       ]
+    },
+    {
+      "id": "BOOK-COMPLIANT",
+      "title": "Handbook of Compliant Mechanisms",
+      "editors": [
+        "Larry L. Howell",
+        "Spencer P. Magleby",
+        "Brian M. Olsen"
+      ],
+      "year": 2013,
+      "url": "https://drive.google.com/file/d/11-NSSa3M-ogZTo-XFaHbxzKKBN_F3bNl/view",
+      "role": "Synthesizing motion and constraint through elastic deformation; flexure design, rigid-body replacement, FACT and building blocks",
+      "toc_status": "connected PDF contents inspected; cited explanatory sections read",
+      "linked_nodes": [
+        "MFG-FUNCTION",
+        "MFG-FUNC-COMPLIANT",
+        "MFG-FUNC-DOF",
+        "MFG-FUNC-REALIZE"
+      ]
+    },
+    {
+      "id": "BOOK-MECHANISMS",
+      "title": "Mechanisms and Mechanical Devices Sourcebook",
+      "author": "Neil Sclater",
+      "edition": "Fifth edition",
+      "year": 2011,
+      "url": "https://drive.google.com/file/d/1yzoMc0ZtYfXBOV__kZQG1rIhImg9unVN/view",
+      "role": "Mechanical function patterns: force and speed transformation, gears, linkages, cams, indexing and motion control",
+      "toc_status": "connected PDF contents inspected; cited explanatory sections read",
+      "linked_nodes": [
+        "MFG-FUNCTION",
+        "MFG-FUNC-RIGID",
+        "MFG-FUNC-INDEX",
+        "MFG-FUNC-MOTION"
+      ]
     }
   ],
   "next_decision": "Complete targeted chapter/page-range reading and discuss discoveries relevant to Q1, Q2 and Q5.",
@@ -711,6 +894,54 @@
       "to": "MFG-FFM-ORIENT",
       "relationship": "assembly contract",
       "why": "Splitting a print adds mating interfaces whose dimensional errors and strength must be evaluated."
+    },
+    {
+      "from": "MFG-FUNC-RIGID",
+      "to": "MFG-FUNC-COMPLIANT",
+      "relationship": "same function alternative mechanisms",
+      "why": "A required force/travel relation can be realized with rigid links and joints or elastic members, but stiffness, energy storage and fatigue differ."
+    },
+    {
+      "from": "MFG-FUNC-DOF",
+      "to": "MFG-FUNC-COMPLIANT",
+      "relationship": "functional synthesis",
+      "why": "Freedom/constraint specification identifies a kinematic family; compliant replacement specifies one physical implementation."
+    },
+    {
+      "from": "MFG-FUNC-INDEX",
+      "to": "MFG-FUNC-RIGID",
+      "relationship": "motion profile",
+      "why": "Indexing adds timing, dwell and acceleration constraints to the ordinary force/travel relation."
+    },
+    {
+      "from": "MFG-FUNC-COMPLIANT",
+      "to": "MFG-FFM-ORIENT",
+      "relationship": "physical realization constraint",
+      "why": "Layer orientation and anisotropic strength can determine whether a printed flexure survives its intended bending cycle."
+    },
+    {
+      "from": "MFG-FUNC-DOF",
+      "to": "MFG-TOLERANCE",
+      "relationship": "ideal versus real constraints",
+      "why": "Nominal freedom/constraint topology must survive tolerances, compliance and assembly variation."
+    },
+    {
+      "from": "MFG-FUNC-INDEX",
+      "to": "MFG-PROC-LAYERS",
+      "relationship": "manufacturing alternative",
+      "why": "An indexing device can use assembled machined components or a printed mechanical arrangement, with different clearances and wear."
+    },
+    {
+      "from": "MFG-SCALE",
+      "to": "MFG-Q5",
+      "relationship": "production versus capability bootstrapping",
+      "why": "Reliable high-volume production and expanding self-manufacturing reach are related but have different cost and dependency objectives."
+    },
+    {
+      "from": "MFG-FUNCTION",
+      "to": "MFG-Q2",
+      "relationship": "function to making",
+      "why": "Mechanism synthesis determines what must be built; fabrication and validation determine whether the design functions."
     }
   ],
   "presentation": {
@@ -753,6 +984,24 @@
         "role": "Maps desired physical function to design margins and toleranced geometric contracts",
         "inspected_sections": [
           "Printed chapter 20 beginning p. 995, GD&T definition and geometric variation"
+        ]
+      },
+      {
+        "source_id": "BOOK-COMPLIANT",
+        "role": "Starts from target freedoms, constraints, stiffness and strength; synthesizes mechanisms by rigid-body replacement or flexure topology",
+        "inspected_sections": [
+          "Printed pp. 8–11 stiffness versus strength",
+          "pp. 82–89 FACT synthesis",
+          "pp. 111–120 rigid-body replacement and derailleur example",
+          "Ch. 10 categorization limitations"
+        ]
+      },
+      {
+        "source_id": "BOOK-MECHANISMS",
+        "role": "Provides families of rigid mechanism operators that convert movement, force, speed and timing",
+        "inspected_sections": [
+          "Printed pp. 2–8 efficiency and mechanical advantage",
+          "pp. 192–197 Geneva indexing and variants"
         ]
       }
     ],
@@ -871,6 +1120,36 @@
           "MFG-PROC-LAYERS",
           "MFG-PROC-WATERJET"
         ]
+      },
+      {
+        "id": "kinematic_function",
+        "question": "What movement, force, timing or freedom must the device produce?",
+        "options": [
+          "force versus displacement",
+          "continuous versus intermittent motion",
+          "allowed and forbidden degrees of freedom"
+        ],
+        "practical_effect": "Defines alternatives across rigid linkages, gears, cams, flexures, and controlled actuators",
+        "cases": [
+          "MFG-FUNC-RIGID",
+          "MFG-FUNC-INDEX",
+          "MFG-FUNC-DOF"
+        ]
+      },
+      {
+        "id": "elastic_realization",
+        "question": "Can elastic deflection replace a joint without violating strength and life requirements?",
+        "options": [
+          "rigid pin joints",
+          "compliant beam or hinge",
+          "mixed rigid-compliant topology"
+        ],
+        "practical_effect": "Trades assembly, backlash and wear against stiffness, stress, fatigue and travel",
+        "cases": [
+          "MFG-FUNC-COMPLIANT",
+          "MFG-FUNC-DOF",
+          "MFG-FFM-ORIENT"
+        ]
       }
     ],
     "cross_book_insights": [
@@ -901,6 +1180,33 @@
           "BOOK-MFG-PROCESSES"
         ],
         "status": "supported conceptual contrast; no measured break-even"
+      },
+      {
+        "claim": "A mechanism's function has multiple physical realizations.",
+        "reason": "Rigid components convert travel and force; flexures allow similar intended freedoms by controlled strain. Load capacity, friction, assembly and lifetime distinguish alternatives.",
+        "source_ids": [
+          "BOOK-MECHANISMS",
+          "BOOK-COMPLIANT"
+        ],
+        "status": "mechanism synthesis supported by inspected chapters; performance ranking remains conditional"
+      },
+      {
+        "claim": "Mechanism synthesis and manufacturing selection cannot be completed independently.",
+        "reason": "The flexure geometry that supplies intended motion must survive anisotropic material properties, feasible orientation, tolerances and real operating cycles.",
+        "source_ids": [
+          "BOOK-COMPLIANT",
+          "BOOK-FFF",
+          "BOOK-SHIGLEY"
+        ],
+        "status": "cross-book engineering synthesis; requires component-specific validation"
+      },
+      {
+        "claim": "A single category tree is not a reliable model of the mechanism landscape.",
+        "reason": "Howell's own mechanism catalog observes overlapping classifications because kinematics and force–deflection functions coexist; one design participates in several useful classification questions.",
+        "source_ids": [
+          "BOOK-COMPLIANT"
+        ],
+        "status": "explicit catalog limitation, Ch. 10; motivates several goal-conditioned navigation trees"
       }
     ],
     "competence_probe": {
@@ -916,6 +1222,43 @@
       ],
       "decision": "Select the process/assembly that satisfies the functional tolerances at lowest total cost for a stated quantity; diagnose rather than explain away failed samples.",
       "evidence_status": "proposed study; not performed"
+    },
+    "source_coverage": [
+      {
+        "source_id": "BOOK-MFG-PROCESSES",
+        "inspected": "Injection molding; sand casting; rapid prototyping; waterjet cutting",
+        "candidate": "Other forming, joining, finishing families, material and scale distinctions",
+        "coverage": "selected sections inspected, broad catalog not exhaustively read"
+      },
+      {
+        "source_id": "BOOK-FFF",
+        "inspected": "Anisotropy; print orientation; shell/infill; support; layer fusion; fitting",
+        "candidate": "Fit, fastening, hinges, latches, structural features and slicer behavior",
+        "coverage": "several selected sections inspected, not the full text"
+      },
+      {
+        "source_id": "BOOK-SHIGLEY",
+        "inspected": "GD&T contract, Ch. 20",
+        "candidate": "Material selection, stress/fatigue, joints, gearing, loads, machine elements and failures",
+        "coverage": "one substantive chapter section read; further contents available"
+      },
+      {
+        "source_id": "BOOK-COMPLIANT",
+        "inspected": "Stiffness versus strength; FACT synthesis; rigid-body replacement; catalog classification limitation",
+        "candidate": "Topology optimization, building-block synthesis, pseudo-rigid body methods, library of flexures and examples",
+        "coverage": "several substantive sections read; illustrated library not exhaustively indexed"
+      },
+      {
+        "source_id": "BOOK-MECHANISMS",
+        "inspected": "Mechanical advantage, force/travel; Geneva indexing and variants",
+        "candidate": "Kinematic linkages, cams, gear trains, clutches, robotic actuation, drives and controls",
+        "coverage": "selected technical sections read; large mechanism compendium not exhaustively indexed"
+      }
+    ],
+    "navigation_principle": {
+      "canonical_items": "Research observations, studies, case nodes and source anchors are recorded once with stable IDs.",
+      "multiple_views": "Different big-picture purposes activate overlapping canonical items with different parent relationships. A view is an inquiry-specific path, not a claim of unique natural classification.",
+      "boundary": "No attempt is made to turn every TOC entry into a separate question; a new item earns its place when it changes an alternative, a failure mode, a source path or a practical capability."
     }
   }
 }
