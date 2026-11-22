@@ -31,6 +31,16 @@
       "projection": {
         "shape": "curiosities"
       }
+    },
+    {
+      "id": "digital-hardware-curiosities",
+      "title": "Digital hardware — Explore FPGA, Verilog and VLSI",
+      "short_title": "FPGA & VLSI",
+      "shared_reader_id": "digital-hardware-design",
+      "file": "Investigations/digital-hardware-design/investigation.json",
+      "projection": {
+        "shape": "curiosities"
+      }
     }
   ]
 }
