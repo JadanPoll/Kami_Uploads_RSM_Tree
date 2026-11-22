@@ -1,0 +1,1394 @@
+{
+  "schema_version": "1.0",
+  "domain_id": "human-ai-symbiosis",
+  "title": "Human–AI collaboration — curiosities, mechanisms, evidence, and working cases — technical vocabulary",
+  "id_policy": "Assign IDs once. Preserve them across renames, sorting, additions and merges; never recompute IDs from display labels. Use aliases for alternative spellings; separate distinct senses even when their words match.",
+  "related_ids_semantics": "Explicitly related concepts, NOT synonyms or automatically equivalent search results.",
+  "source_vocabularies": [
+    "https://github.com/JadanPoll/FKEN_Ecosystem/blob/main/Glossaries/Artificial_Intelligence.json"
+  ],
+  "terms": [
+    {
+      "id": "hai-t-0001",
+      "label": "large language model",
+      "aliases": [
+        "language model"
+      ],
+      "category": "Models and reasoning",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0002",
+      "label": "LLM",
+      "aliases": [],
+      "category": "Models and reasoning",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0003",
+      "label": "transformer",
+      "aliases": [],
+      "category": "Models and reasoning",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0004",
+      "label": "token",
+      "aliases": [],
+      "category": "Models and reasoning",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0005",
+      "label": "tokenization",
+      "aliases": [],
+      "category": "Models and reasoning",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0006",
+      "label": "context window",
+      "aliases": [],
+      "category": "Models and reasoning",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0007",
+      "label": "embedding",
+      "aliases": [],
+      "category": "Models and reasoning",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0008",
+      "label": "inference",
+      "aliases": [],
+      "category": "Models and reasoning",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0009",
+      "label": "prompt",
+      "aliases": [],
+      "category": "Models and reasoning",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0010",
+      "label": "prompt engineering",
+      "aliases": [],
+      "category": "Models and reasoning",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0011",
+      "label": "prompt expansion",
+      "aliases": [],
+      "category": "Models and reasoning",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0012",
+      "label": "retrieval-augmented generation",
+      "aliases": [],
+      "category": "Models and reasoning",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0013",
+      "label": "RAG",
+      "aliases": [],
+      "category": "Models and reasoning",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0014",
+      "label": "knowledge grounding",
+      "aliases": [],
+      "category": "Models and reasoning",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0015",
+      "label": "hallucination",
+      "aliases": [],
+      "category": "Models and reasoning",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0016",
+      "label": "fabricated citation",
+      "aliases": [],
+      "category": "Models and reasoning",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0017",
+      "label": "confidence calibration",
+      "aliases": [],
+      "category": "Models and reasoning",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0018",
+      "label": "model uncertainty",
+      "aliases": [],
+      "category": "Models and reasoning",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0019",
+      "label": "generative model",
+      "aliases": [],
+      "category": "Models and reasoning",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0020",
+      "label": "fine-tuning",
+      "aliases": [],
+      "category": "Models and reasoning",
+      "related_ids": [
+        "hai-t-0021",
+        "hai-t-0022"
+      ]
+    },
+    {
+      "id": "hai-t-0021",
+      "label": "pretraining",
+      "aliases": [],
+      "category": "Models and reasoning",
+      "related_ids": [
+        "hai-t-0022",
+        "hai-t-0020"
+      ]
+    },
+    {
+      "id": "hai-t-0022",
+      "label": "post-training",
+      "aliases": [],
+      "category": "Models and reasoning",
+      "related_ids": [
+        "hai-t-0021",
+        "hai-t-0020"
+      ]
+    },
+    {
+      "id": "hai-t-0023",
+      "label": "quantization",
+      "aliases": [],
+      "category": "Models and reasoning",
+      "related_ids": [
+        "hai-t-0163",
+        "hai-t-0164"
+      ]
+    },
+    {
+      "id": "hai-t-0024",
+      "label": "reasoning trace",
+      "aliases": [],
+      "category": "Models and reasoning",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0025",
+      "label": "context compression",
+      "aliases": [],
+      "category": "Models and reasoning",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0026",
+      "label": "context retrieval",
+      "aliases": [],
+      "category": "Models and reasoning",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0027",
+      "label": "model evaluation",
+      "aliases": [],
+      "category": "Models and reasoning",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0028",
+      "label": "benchmark",
+      "aliases": [],
+      "category": "Models and reasoning",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0029",
+      "label": "contamination",
+      "aliases": [],
+      "category": "Models and reasoning",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0030",
+      "label": "reward hacking",
+      "aliases": [],
+      "category": "Models and reasoning",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0031",
+      "label": "test-time compute",
+      "aliases": [],
+      "category": "Models and reasoning",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0032",
+      "label": "model capability",
+      "aliases": [],
+      "category": "Models and reasoning",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0033",
+      "label": "tool calling",
+      "aliases": [],
+      "category": "Models and reasoning",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0034",
+      "label": "computer use",
+      "aliases": [],
+      "category": "Models and reasoning",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0035",
+      "label": "human-AI collaboration",
+      "aliases": [
+        "AI collaboration",
+        "human AI"
+      ],
+      "category": "Human contribution",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0036",
+      "label": "human-in-the-loop",
+      "aliases": [
+        "HITL"
+      ],
+      "category": "Human contribution",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0037",
+      "label": "human oversight",
+      "aliases": [],
+      "category": "Human contribution",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0038",
+      "label": "problem framing",
+      "aliases": [],
+      "category": "Human contribution",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0039",
+      "label": "task specification",
+      "aliases": [],
+      "category": "Human contribution",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0040",
+      "label": "functional intent",
+      "aliases": [],
+      "category": "Human contribution",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0041",
+      "label": "delegation",
+      "aliases": [],
+      "category": "Human contribution",
+      "related_ids": [
+        "hai-t-0043"
+      ]
+    },
+    {
+      "id": "hai-t-0042",
+      "label": "escalation policy",
+      "aliases": [],
+      "category": "Human contribution",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0043",
+      "label": "approval boundary",
+      "aliases": [],
+      "category": "Human contribution",
+      "related_ids": [
+        "hai-t-0041"
+      ]
+    },
+    {
+      "id": "hai-t-0044",
+      "label": "reversibility",
+      "aliases": [],
+      "category": "Human contribution",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0045",
+      "label": "expert judgment",
+      "aliases": [],
+      "category": "Human contribution",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0046",
+      "label": "domain expertise",
+      "aliases": [],
+      "category": "Human contribution",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0047",
+      "label": "research question",
+      "aliases": [],
+      "category": "Human contribution",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0048",
+      "label": "hypothesis",
+      "aliases": [],
+      "category": "Human contribution",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0049",
+      "label": "causal inference",
+      "aliases": [],
+      "category": "Human contribution",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0050",
+      "label": "analogy",
+      "aliases": [],
+      "category": "Human contribution",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0051",
+      "label": "counterexample",
+      "aliases": [],
+      "category": "Human contribution",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0052",
+      "label": "verification",
+      "aliases": [],
+      "category": "Human contribution",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0053",
+      "label": "validation",
+      "aliases": [],
+      "category": "Human contribution",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0054",
+      "label": "independent replication",
+      "aliases": [],
+      "category": "Human contribution",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0055",
+      "label": "scientific discovery",
+      "aliases": [],
+      "category": "Human contribution",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0056",
+      "label": "formal proof",
+      "aliases": [],
+      "category": "Human contribution",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0057",
+      "label": "proof assistant",
+      "aliases": [
+        "formal proof checker"
+      ],
+      "category": "Human contribution",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0058",
+      "label": "Lean",
+      "aliases": [],
+      "category": "Human contribution",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0059",
+      "label": "theorem specification",
+      "aliases": [],
+      "category": "Human contribution",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0060",
+      "label": "specification mismatch",
+      "aliases": [],
+      "category": "Human contribution",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0061",
+      "label": "formal verification",
+      "aliases": [],
+      "category": "Human contribution",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0062",
+      "label": "autonomy",
+      "aliases": [],
+      "category": "Human contribution",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0063",
+      "label": "agentic workflow",
+      "aliases": [],
+      "category": "Human contribution",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0064",
+      "label": "agent",
+      "aliases": [],
+      "category": "Human contribution",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0065",
+      "label": "task decomposition",
+      "aliases": [],
+      "category": "Workflow engineering",
+      "related_ids": [
+        "hai-t-0069"
+      ]
+    },
+    {
+      "id": "hai-t-0066",
+      "label": "agent orchestration",
+      "aliases": [],
+      "category": "Workflow engineering",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0067",
+      "label": "multi-agent system",
+      "aliases": [],
+      "category": "Workflow engineering",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0068",
+      "label": "agent parallelism",
+      "aliases": [
+        "parallel agents",
+        "multi-agent collaboration"
+      ],
+      "category": "Workflow engineering",
+      "related_ids": [
+        "hai-t-0071"
+      ]
+    },
+    {
+      "id": "hai-t-0069",
+      "label": "task ownership",
+      "aliases": [],
+      "category": "Workflow engineering",
+      "related_ids": [
+        "hai-t-0065"
+      ]
+    },
+    {
+      "id": "hai-t-0070",
+      "label": "contract",
+      "aliases": [],
+      "category": "Workflow engineering",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0071",
+      "label": "coordination overhead",
+      "aliases": [],
+      "category": "Workflow engineering",
+      "related_ids": [
+        "hai-t-0068"
+      ]
+    },
+    {
+      "id": "hai-t-0072",
+      "label": "merge conflict",
+      "aliases": [],
+      "category": "Workflow engineering",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0073",
+      "label": "shared state",
+      "aliases": [],
+      "category": "Workflow engineering",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0074",
+      "label": "version control",
+      "aliases": [],
+      "category": "Workflow engineering",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0075",
+      "label": "repository",
+      "aliases": [],
+      "category": "Workflow engineering",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0076",
+      "label": "GitHub",
+      "aliases": [],
+      "category": "Workflow engineering",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0077",
+      "label": "compiler",
+      "aliases": [],
+      "category": "Workflow engineering",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0078",
+      "label": "compiler test harness",
+      "aliases": [],
+      "category": "Workflow engineering",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0079",
+      "label": "integration test",
+      "aliases": [],
+      "category": "Workflow engineering",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0080",
+      "label": "end-to-end test",
+      "aliases": [],
+      "category": "Workflow engineering",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0081",
+      "label": "representative user flow",
+      "aliases": [],
+      "category": "Workflow engineering",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0082",
+      "label": "fuzz testing",
+      "aliases": [],
+      "category": "Workflow engineering",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0083",
+      "label": "unit test",
+      "aliases": [],
+      "category": "Workflow engineering",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0084",
+      "label": "test oracle",
+      "aliases": [
+        "oracle"
+      ],
+      "category": "Workflow engineering",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0085",
+      "label": "evaluator",
+      "aliases": [],
+      "category": "Workflow engineering",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0086",
+      "label": "automatic evaluator",
+      "aliases": [],
+      "category": "Workflow engineering",
+      "related_ids": [
+        "hai-t-0138"
+      ]
+    },
+    {
+      "id": "hai-t-0087",
+      "label": "objective evaluation",
+      "aliases": [],
+      "category": "Workflow engineering",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0088",
+      "label": "feedback loop",
+      "aliases": [],
+      "category": "Workflow engineering",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0089",
+      "label": "iterative search",
+      "aliases": [],
+      "category": "Workflow engineering",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0090",
+      "label": "search space",
+      "aliases": [],
+      "category": "Workflow engineering",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0091",
+      "label": "checkpoint",
+      "aliases": [],
+      "category": "Workflow engineering",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0092",
+      "label": "rollback",
+      "aliases": [],
+      "category": "Workflow engineering",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0093",
+      "label": "diff",
+      "aliases": [],
+      "category": "Workflow engineering",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0094",
+      "label": "causal debugging",
+      "aliases": [
+        "root cause analysis"
+      ],
+      "category": "Workflow engineering",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0095",
+      "label": "observability",
+      "aliases": [],
+      "category": "Workflow engineering",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0096",
+      "label": "telemetry",
+      "aliases": [],
+      "category": "Workflow engineering",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0097",
+      "label": "source provenance",
+      "aliases": [],
+      "category": "Workflow engineering",
+      "related_ids": [
+        "hai-t-0146"
+      ]
+    },
+    {
+      "id": "hai-t-0098",
+      "label": "reproducible experiment",
+      "aliases": [],
+      "category": "Workflow engineering",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0099",
+      "label": "human intervention",
+      "aliases": [],
+      "category": "Workflow engineering",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0100",
+      "label": "handoff",
+      "aliases": [],
+      "category": "Workflow engineering",
+      "related_ids": [
+        "hai-t-0101"
+      ]
+    },
+    {
+      "id": "hai-t-0101",
+      "label": "project memory",
+      "aliases": [],
+      "category": "Workflow engineering",
+      "related_ids": [
+        "hai-t-0100"
+      ]
+    },
+    {
+      "id": "hai-t-0102",
+      "label": "persistent state",
+      "aliases": [],
+      "category": "Workflow engineering",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0103",
+      "label": "artifact",
+      "aliases": [],
+      "category": "Workflow engineering",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0104",
+      "label": "maintainability",
+      "aliases": [],
+      "category": "Workflow engineering",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0105",
+      "label": "assisted performance",
+      "aliases": [],
+      "category": "Learning and measurement",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0106",
+      "label": "independent competence",
+      "aliases": [
+        "skill retention"
+      ],
+      "category": "Learning and measurement",
+      "related_ids": [
+        "hai-t-0108"
+      ]
+    },
+    {
+      "id": "hai-t-0107",
+      "label": "transfer learning",
+      "aliases": [],
+      "category": "Learning and measurement",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0108",
+      "label": "skill transfer",
+      "aliases": [],
+      "category": "Learning and measurement",
+      "related_ids": [
+        "hai-t-0106"
+      ]
+    },
+    {
+      "id": "hai-t-0109",
+      "label": "deliberate practice",
+      "aliases": [],
+      "category": "Learning and measurement",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0110",
+      "label": "learning curve",
+      "aliases": [],
+      "category": "Learning and measurement",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0111",
+      "label": "cognitive offloading",
+      "aliases": [],
+      "category": "Learning and measurement",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0112",
+      "label": "scaffolding",
+      "aliases": [],
+      "category": "Learning and measurement",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0113",
+      "label": "tacit knowledge",
+      "aliases": [],
+      "category": "Learning and measurement",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0114",
+      "label": "competence probe",
+      "aliases": [],
+      "category": "Learning and measurement",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0115",
+      "label": "operational confidence",
+      "aliases": [],
+      "category": "Learning and measurement",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0116",
+      "label": "user study",
+      "aliases": [],
+      "category": "Learning and measurement",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0117",
+      "label": "randomized controlled trial",
+      "aliases": [],
+      "category": "Learning and measurement",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0118",
+      "label": "sample selection",
+      "aliases": [],
+      "category": "Learning and measurement",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0119",
+      "label": "sampling bias",
+      "aliases": [],
+      "category": "Learning and measurement",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0120",
+      "label": "selection bias",
+      "aliases": [],
+      "category": "Learning and measurement",
+      "related_ids": [
+        "hai-t-0133"
+      ]
+    },
+    {
+      "id": "hai-t-0121",
+      "label": "confounding",
+      "aliases": [],
+      "category": "Learning and measurement",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0122",
+      "label": "control group",
+      "aliases": [],
+      "category": "Learning and measurement",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0123",
+      "label": "baseline",
+      "aliases": [],
+      "category": "Learning and measurement",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0124",
+      "label": "counterfactual",
+      "aliases": [],
+      "category": "Learning and measurement",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0125",
+      "label": "productivity",
+      "aliases": [],
+      "category": "Learning and measurement",
+      "related_ids": [
+        "hai-t-0127"
+      ]
+    },
+    {
+      "id": "hai-t-0126",
+      "label": "developer productivity",
+      "aliases": [],
+      "category": "Learning and measurement",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0127",
+      "label": "review overhead",
+      "aliases": [],
+      "category": "Learning and measurement",
+      "related_ids": [
+        "hai-t-0125"
+      ]
+    },
+    {
+      "id": "hai-t-0128",
+      "label": "time-to-completion",
+      "aliases": [],
+      "category": "Learning and measurement",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0129",
+      "label": "accepted correctness",
+      "aliases": [
+        "accepted result"
+      ],
+      "category": "Learning and measurement",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0130",
+      "label": "compute budget",
+      "aliases": [],
+      "category": "Learning and measurement",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0131",
+      "label": "inference cost",
+      "aliases": [],
+      "category": "Learning and measurement",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0132",
+      "label": "human attention cost",
+      "aliases": [],
+      "category": "Learning and measurement",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0133",
+      "label": "resource confounding",
+      "aliases": [],
+      "category": "Learning and measurement",
+      "related_ids": [
+        "hai-t-0120"
+      ]
+    },
+    {
+      "id": "hai-t-0134",
+      "label": "population percentile",
+      "aliases": [],
+      "category": "Learning and measurement",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0135",
+      "label": "expertise",
+      "aliases": [],
+      "category": "Learning and measurement",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0136",
+      "label": "longitudinal usefulness",
+      "aliases": [],
+      "category": "Learning and measurement",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0137",
+      "label": "AlphaEvolve",
+      "aliases": [],
+      "category": "Frontier mechanisms",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0138",
+      "label": "evolutionary search",
+      "aliases": [],
+      "category": "Frontier mechanisms",
+      "related_ids": [
+        "hai-t-0086"
+      ]
+    },
+    {
+      "id": "hai-t-0139",
+      "label": "program synthesis",
+      "aliases": [],
+      "category": "Frontier mechanisms",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0140",
+      "label": "algorithm discovery",
+      "aliases": [],
+      "category": "Frontier mechanisms",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0141",
+      "label": "AI theorem proving",
+      "aliases": [],
+      "category": "Frontier mechanisms",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0142",
+      "label": "AI-assisted mathematical research",
+      "aliases": [],
+      "category": "Frontier mechanisms",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0143",
+      "label": "scientific computing",
+      "aliases": [],
+      "category": "Frontier mechanisms",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0144",
+      "label": "parallel compiler construction",
+      "aliases": [],
+      "category": "Frontier mechanisms",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0145",
+      "label": "open-source software",
+      "aliases": [],
+      "category": "Frontier mechanisms",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0146",
+      "label": "research reproduction",
+      "aliases": [],
+      "category": "Frontier mechanisms",
+      "related_ids": [
+        "hai-t-0097"
+      ]
+    },
+    {
+      "id": "hai-t-0147",
+      "label": "working implementation",
+      "aliases": [],
+      "category": "Frontier mechanisms",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0148",
+      "label": "agent benchmark",
+      "aliases": [],
+      "category": "Frontier mechanisms",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0149",
+      "label": "software maintenance",
+      "aliases": [],
+      "category": "Frontier mechanisms",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0150",
+      "label": "alignment",
+      "aliases": [],
+      "category": "Frontier mechanisms",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0151",
+      "label": "scalable oversight",
+      "aliases": [],
+      "category": "Frontier mechanisms",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0152",
+      "label": "agent reliability",
+      "aliases": [],
+      "category": "Frontier mechanisms",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0153",
+      "label": "tool-use reliability",
+      "aliases": [],
+      "category": "Frontier mechanisms",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0154",
+      "label": "attention",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0155",
+      "label": "self-attention",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0156",
+      "label": "hidden state",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0157",
+      "label": "logits",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0158",
+      "label": "softmax",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0159",
+      "label": "sampling",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0160",
+      "label": "temperature",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0161",
+      "label": "top-k",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0162",
+      "label": "top-p",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0163",
+      "label": "pruning",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "hai-t-0023",
+        "hai-t-0164"
+      ]
+    },
+    {
+      "id": "hai-t-0164",
+      "label": "distillation",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "hai-t-0023",
+        "hai-t-0163"
+      ]
+    },
+    {
+      "id": "hai-t-0165",
+      "label": "knowledge distillation",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0166",
+      "label": "mixture of experts",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0167",
+      "label": "sparse activation",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0168",
+      "label": "mechanistic interpretability",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0169",
+      "label": "superposition",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0170",
+      "label": "polysemanticity",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0171",
+      "label": "feature visualization",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0172",
+      "label": "activation steering",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0173",
+      "label": "RLHF",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "hai-t-0174"
+      ]
+    },
+    {
+      "id": "hai-t-0174",
+      "label": "RLAIF",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "hai-t-0173"
+      ]
+    },
+    {
+      "id": "hai-t-0175",
+      "label": "reward model",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0176",
+      "label": "policy",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0177",
+      "label": "value function",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0178",
+      "label": "chain of thought",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0179",
+      "label": "monitorability",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0180",
+      "label": "generalization",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "hai-t-0181",
+        "hai-t-0182"
+      ]
+    },
+    {
+      "id": "hai-t-0181",
+      "label": "memorization",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "hai-t-0180",
+        "hai-t-0182"
+      ]
+    },
+    {
+      "id": "hai-t-0182",
+      "label": "distribution shift",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "hai-t-0180",
+        "hai-t-0181"
+      ]
+    },
+    {
+      "id": "hai-t-0183",
+      "label": "tool use",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0184",
+      "label": "multimodal",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "hai-t-0185",
+      "label": "vision-language model",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    }
+  ]
+}
