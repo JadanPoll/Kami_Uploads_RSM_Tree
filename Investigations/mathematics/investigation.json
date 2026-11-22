@@ -6513,9 +6513,718 @@
     }
   ],
   "curiosity_atlas": {
-    "families": [],
-    "entries": [],
-    "purpose": "Ordinary curiosity and ambitious research questions; no generated filler to force glossary coverage."
+    "purpose": "Navigate from authentic curiosities, failed arguments, real systems or larger question sets to distinct mechanisms and source passages.",
+    "families": [
+      {
+        "id": "foundations",
+        "label": "What can be defined or proved to exist?",
+        "description": "Sets, equivalences, existence and admissible constructions"
+      },
+      {
+        "id": "structures",
+        "label": "What structure is hidden inside this problem?",
+        "description": "Linear, algebraic and symmetry viewpoints"
+      },
+      {
+        "id": "discrete",
+        "label": "How can huge finite possibilities become manageable?",
+        "description": "Counting, graph, generating and number-theoretic mechanisms"
+      },
+      {
+        "id": "continuous",
+        "label": "What remains valid under limits and approximation?",
+        "description": "Convergence, completeness, integration and operators"
+      },
+      {
+        "id": "space",
+        "label": "What is shape, continuity and curvature?",
+        "description": "Topology, geometry and holomorphic maps"
+      },
+      {
+        "id": "random",
+        "label": "What can randomness and observed data establish?",
+        "description": "Probability models, stochastic processes and inference"
+      },
+      {
+        "id": "transfer",
+        "label": "Which mathematical operators genuinely transfer across fields?",
+        "description": "Factoring, duality, quotient, inverse and local/global"
+      },
+      {
+        "id": "prove",
+        "label": "Why did a plausible mathematical argument fail?",
+        "description": "Counterexamples, missing hypotheses and false equivalences"
+      }
+    ],
+    "entries": [
+      {
+        "id": "MATH-CURI-same",
+        "family_id": "foundations",
+        "question": "When are two differently described things actually the same?",
+        "aliases": [],
+        "bridge_ids": [
+          "STRUCTURE",
+          "PROOF"
+        ],
+        "context": "Select the mathematically consequential distinction before treating a source as applicable. TOC leads are not inspected results.",
+        "term_ids": [
+          "math-t-0762",
+          "math-t-0366"
+        ]
+      },
+      {
+        "id": "MATH-CURI-exist",
+        "family_id": "foundations",
+        "question": "Can I prove something exists even if nobody can construct it?",
+        "aliases": [],
+        "bridge_ids": [
+          "PROOF"
+        ],
+        "context": "Select the mathematically consequential distinction before treating a source as applicable. TOC leads are not inspected results.",
+        "term_ids": [
+          "math-t-0035",
+          "math-t-0782"
+        ]
+      },
+      {
+        "id": "MATH-CURI-paradox",
+        "family_id": "foundations",
+        "question": "Why can't I make a set of absolutely everything?",
+        "aliases": [],
+        "bridge_ids": [
+          "PROOF"
+        ],
+        "context": "Select the mathematically consequential distinction before treating a source as applicable. TOC leads are not inspected results.",
+        "term_ids": [
+          "math-t-0001",
+          "math-t-0033"
+        ]
+      },
+      {
+        "id": "MATH-CURI-structure",
+        "family_id": "foundations",
+        "question": "What changes when I give the same set addition, order or distance?",
+        "aliases": [],
+        "bridge_ids": [
+          "STRUCTURE",
+          "SPACE"
+        ],
+        "context": "Select the mathematically consequential distinction before treating a source as applicable. TOC leads are not inspected results.",
+        "term_ids": [
+          "math-t-0055",
+          "math-t-0355",
+          "math-t-0049"
+        ]
+      },
+      {
+        "id": "MATH-CURI-quotient",
+        "family_id": "foundations",
+        "question": "Can I simplify a problem by treating different things as equivalent?",
+        "aliases": [],
+        "bridge_ids": [
+          "TRANSFER",
+          "STRUCTURE"
+        ],
+        "context": "Select the mathematically consequential distinction before treating a source as applicable. TOC leads are not inspected results.",
+        "term_ids": [
+          "math-t-0753",
+          "math-t-0008"
+        ]
+      },
+      {
+        "id": "MATH-CURI-basis",
+        "family_id": "structures",
+        "question": "Why do coordinate systems give different matrices for one transformation?",
+        "aliases": [],
+        "bridge_ids": [
+          "LINEAR"
+        ],
+        "context": "Select the mathematically consequential distinction before treating a source as applicable. TOC leads are not inspected results.",
+        "term_ids": [
+          "math-t-0066",
+          "math-t-0064"
+        ]
+      },
+      {
+        "id": "MATH-CURI-dual",
+        "family_id": "structures",
+        "question": "What does it mean to study an object through all ways of measuring it?",
+        "aliases": [],
+        "bridge_ids": [
+          "LINEAR",
+          "CONTINUOUS"
+        ],
+        "context": "Select the mathematically consequential distinction before treating a source as applicable. TOC leads are not inspected results.",
+        "term_ids": [
+          "math-t-0075",
+          "math-t-0076"
+        ]
+      },
+      {
+        "id": "MATH-CURI-diagonal",
+        "family_id": "structures",
+        "question": "Why can some matrices be split into independent modes while others cannot?",
+        "aliases": [],
+        "bridge_ids": [
+          "LINEAR"
+        ],
+        "context": "Select the mathematically consequential distinction before treating a source as applicable. TOC leads are not inspected results.",
+        "term_ids": [
+          "math-t-0100",
+          "math-t-0088"
+        ]
+      },
+      {
+        "id": "MATH-CURI-symmetry",
+        "family_id": "structures",
+        "question": "How can rotating or relabeling objects shrink a huge count?",
+        "aliases": [],
+        "bridge_ids": [
+          "STRUCTURE",
+          "DISCRETE"
+        ],
+        "context": "Select the mathematically consequential distinction before treating a source as applicable. TOC leads are not inspected results.",
+        "term_ids": [
+          "math-t-0120",
+          "math-t-0121"
+        ]
+      },
+      {
+        "id": "MATH-CURI-factor",
+        "family_id": "structures",
+        "question": "When does factoring stop working as it does for ordinary integers?",
+        "aliases": [],
+        "bridge_ids": [
+          "STRUCTURE"
+        ],
+        "context": "Select the mathematically consequential distinction before treating a source as applicable. TOC leads are not inspected results.",
+        "term_ids": [
+          "math-t-0173",
+          "math-t-0164"
+        ]
+      },
+      {
+        "id": "MATH-CURI-unsolvable",
+        "family_id": "structures",
+        "question": "How can algebra prove a geometric construction impossible?",
+        "aliases": [],
+        "bridge_ids": [
+          "STRUCTURE",
+          "PROOF"
+        ],
+        "context": "Select the mathematically consequential distinction before treating a source as applicable. TOC leads are not inspected results.",
+        "term_ids": [
+          "math-t-0194",
+          "math-t-0197"
+        ]
+      },
+      {
+        "id": "MATH-CURI-infinite-operator",
+        "family_id": "structures",
+        "question": "Why can't every finite-matrix trick work on functions?",
+        "aliases": [],
+        "bridge_ids": [
+          "LINEAR",
+          "CONTINUOUS"
+        ],
+        "context": "Select the mathematically consequential distinction before treating a source as applicable. TOC leads are not inspected results.",
+        "term_ids": [
+          "math-t-0521",
+          "math-t-0530"
+        ]
+      },
+      {
+        "id": "MATH-CURI-count-many",
+        "family_id": "discrete",
+        "question": "How can I count a trillion objects without listing any of them?",
+        "aliases": [],
+        "bridge_ids": [
+          "DISCRETE"
+        ],
+        "context": "Select the mathematically consequential distinction before treating a source as applicable. TOC leads are not inspected results.",
+        "term_ids": [
+          "math-t-0245",
+          "math-t-0283"
+        ]
+      },
+      {
+        "id": "MATH-CURI-labels",
+        "family_id": "discrete",
+        "question": "Why does swapping identical objects sometimes change a count?",
+        "aliases": [],
+        "bridge_ids": [
+          "DISCRETE"
+        ],
+        "context": "Select the mathematically consequential distinction before treating a source as applicable. TOC leads are not inspected results.",
+        "term_ids": [
+          "math-t-0265",
+          "math-t-0252"
+        ]
+      },
+      {
+        "id": "MATH-CURI-inclusion",
+        "family_id": "discrete",
+        "question": "How do I count objects when several forbidden conditions overlap?",
+        "aliases": [],
+        "bridge_ids": [
+          "DISCRETE"
+        ],
+        "context": "Select the mathematically consequential distinction before treating a source as applicable. TOC leads are not inspected results.",
+        "term_ids": [
+          "math-t-0259"
+        ]
+      },
+      {
+        "id": "MATH-CURI-mobius",
+        "family_id": "discrete",
+        "question": "Can I recover counts from totals over divisors or subsets?",
+        "aliases": [],
+        "bridge_ids": [
+          "DISCRETE",
+          "TRANSFER"
+        ],
+        "context": "Select the mathematically consequential distinction before treating a source as applicable. TOC leads are not inspected results.",
+        "term_ids": [
+          "math-t-0275",
+          "math-t-0276"
+        ]
+      },
+      {
+        "id": "MATH-CURI-automaton",
+        "family_id": "discrete",
+        "question": "Can a matrix count all strings accepted by a finite-state machine?",
+        "aliases": [],
+        "bridge_ids": [
+          "DISCRETE",
+          "LINEAR"
+        ],
+        "context": "Select the mathematically consequential distinction before treating a source as applicable. TOC leads are not inspected results.",
+        "term_ids": [
+          "math-t-0290",
+          "math-t-0832"
+        ]
+      },
+      {
+        "id": "MATH-CURI-bottleneck",
+        "family_id": "discrete",
+        "question": "How can one cut prove a network cannot carry more flow?",
+        "aliases": [],
+        "bridge_ids": [
+          "DISCRETE"
+        ],
+        "context": "Select the mathematically consequential distinction before treating a source as applicable. TOC leads are not inspected results.",
+        "term_ids": [
+          "math-t-0329",
+          "math-t-0330"
+        ]
+      },
+      {
+        "id": "MATH-CURI-connect",
+        "family_id": "discrete",
+        "question": "How many genuinely independent paths connect two points?",
+        "aliases": [],
+        "bridge_ids": [
+          "DISCRETE"
+        ],
+        "context": "Select the mathematically consequential distinction before treating a source as applicable. TOC leads are not inspected results.",
+        "term_ids": [
+          "math-t-0325",
+          "math-t-0326"
+        ]
+      },
+      {
+        "id": "MATH-CURI-treewidth",
+        "family_id": "discrete",
+        "question": "Why might a gigantic graph be easier than a much smaller dense graph?",
+        "aliases": [],
+        "bridge_ids": [
+          "DISCRETE"
+        ],
+        "context": "Select the mathematically consequential distinction before treating a source as applicable. TOC leads are not inspected results.",
+        "term_ids": [
+          "math-t-0348",
+          "math-t-0345"
+        ]
+      },
+      {
+        "id": "MATH-CURI-primes",
+        "family_id": "discrete",
+        "question": "How can we estimate how many primes exist below an enormous number?",
+        "aliases": [],
+        "bridge_ids": [
+          "DISCRETE"
+        ],
+        "context": "Select the mathematically consequential distinction before treating a source as applicable. TOC leads are not inspected results.",
+        "term_ids": [
+          "math-t-0207"
+        ]
+      },
+      {
+        "id": "MATH-CURI-approx-rational",
+        "family_id": "discrete",
+        "question": "Why can a simple fraction approximate an irrational so well?",
+        "aliases": [],
+        "bridge_ids": [
+          "DISCRETE",
+          "CONTINUOUS"
+        ],
+        "context": "Select the mathematically consequential distinction before treating a source as applicable. TOC leads are not inspected results.",
+        "term_ids": [
+          "math-t-0223",
+          "math-t-0225"
+        ]
+      },
+      {
+        "id": "MATH-CURI-limit-integral",
+        "family_id": "continuous",
+        "question": "Why can't I always swap a limit and an integral?",
+        "aliases": [],
+        "bridge_ids": [
+          "CONTINUOUS",
+          "PROOF"
+        ],
+        "context": "Select the mathematically consequential distinction before treating a source as applicable. TOC leads are not inspected results.",
+        "term_ids": [
+          "math-t-0424",
+          "math-t-0470"
+        ]
+      },
+      {
+        "id": "MATH-CURI-uniform",
+        "family_id": "continuous",
+        "question": "Why isn't convergence at every point enough to preserve continuity?",
+        "aliases": [],
+        "bridge_ids": [
+          "CONTINUOUS"
+        ],
+        "context": "Select the mathematically consequential distinction before treating a source as applicable. TOC leads are not inspected results.",
+        "term_ids": [
+          "math-t-0423",
+          "math-t-0424"
+        ]
+      },
+      {
+        "id": "MATH-CURI-complete",
+        "family_id": "continuous",
+        "question": "Can better approximations converge outside the space I started with?",
+        "aliases": [],
+        "bridge_ids": [
+          "CONTINUOUS"
+        ],
+        "context": "Select the mathematically consequential distinction before treating a source as applicable. TOC leads are not inspected results.",
+        "term_ids": [
+          "math-t-0376",
+          "math-t-0375"
+        ]
+      },
+      {
+        "id": "MATH-CURI-fp",
+        "family_id": "continuous",
+        "question": "Why does repeatedly applying a rule sometimes guarantee exactly one answer?",
+        "aliases": [],
+        "bridge_ids": [
+          "CONTINUOUS",
+          "PROOF"
+        ],
+        "context": "Select the mathematically consequential distinction before treating a source as applicable. TOC leads are not inspected results.",
+        "term_ids": [
+          "math-t-0518",
+          "math-t-0442"
+        ]
+      },
+      {
+        "id": "MATH-CURI-integrable",
+        "family_id": "continuous",
+        "question": "What should area under a function mean when ordinary sums break down?",
+        "aliases": [],
+        "bridge_ids": [
+          "CONTINUOUS",
+          "RANDOM"
+        ],
+        "context": "Select the mathematically consequential distinction before treating a source as applicable. TOC leads are not inspected results.",
+        "term_ids": [
+          "math-t-0466",
+          "math-t-0430"
+        ]
+      },
+      {
+        "id": "MATH-CURI-unbounded",
+        "family_id": "continuous",
+        "question": "Can a perfectly linear operator fail to be continuous?",
+        "aliases": [],
+        "bridge_ids": [
+          "CONTINUOUS",
+          "LINEAR"
+        ],
+        "context": "Select the mathematically consequential distinction before treating a source as applicable. TOC leads are not inspected results.",
+        "term_ids": [
+          "math-t-0500",
+          "math-t-0530"
+        ]
+      },
+      {
+        "id": "MATH-CURI-holes",
+        "family_id": "space",
+        "question": "How can I detect a hole without a picture of the space?",
+        "aliases": [],
+        "bridge_ids": [
+          "SPACE"
+        ],
+        "context": "Select the mathematically consequential distinction before treating a source as applicable. TOC leads are not inspected results.",
+        "term_ids": [
+          "math-t-0401",
+          "math-t-0399"
+        ]
+      },
+      {
+        "id": "MATH-CURI-compact",
+        "family_id": "space",
+        "question": "Why doesn't closed and bounded always mean compact?",
+        "aliases": [],
+        "bridge_ids": [
+          "SPACE",
+          "CONTINUOUS"
+        ],
+        "context": "Select the mathematically consequential distinction before treating a source as applicable. TOC leads are not inspected results.",
+        "term_ids": [
+          "math-t-0379",
+          "math-t-0498"
+        ]
+      },
+      {
+        "id": "MATH-CURI-sphere",
+        "family_id": "space",
+        "question": "Why is a spherical surface intrinsically unlike a flat sheet?",
+        "aliases": [],
+        "bridge_ids": [
+          "SPACE"
+        ],
+        "context": "Select the mathematically consequential distinction before treating a source as applicable. TOC leads are not inspected results.",
+        "term_ids": [
+          "math-t-0613",
+          "math-t-0626"
+        ]
+      },
+      {
+        "id": "MATH-CURI-straight",
+        "family_id": "space",
+        "question": "What is a straight line on a curved surface?",
+        "aliases": [],
+        "bridge_ids": [
+          "SPACE"
+        ],
+        "context": "Select the mathematically consequential distinction before treating a source as applicable. TOC leads are not inspected results.",
+        "term_ids": [
+          "math-t-0622",
+          "math-t-0620"
+        ]
+      },
+      {
+        "id": "MATH-CURI-holomorphic",
+        "family_id": "space",
+        "question": "Why does complex differentiability impose extraordinary restrictions?",
+        "aliases": [],
+        "bridge_ids": [
+          "SPACE"
+        ],
+        "context": "Select the mathematically consequential distinction before treating a source as applicable. TOC leads are not inspected results.",
+        "term_ids": [
+          "math-t-0545",
+          "math-t-0556"
+        ]
+      },
+      {
+        "id": "MATH-CURI-residue",
+        "family_id": "space",
+        "question": "How can isolated complex singularities compute a real integral?",
+        "aliases": [],
+        "bridge_ids": [
+          "SPACE"
+        ],
+        "context": "Select the mathematically consequential distinction before treating a source as applicable. TOC leads are not inspected results.",
+        "term_ids": [
+          "math-t-0567",
+          "math-t-0563"
+        ]
+      },
+      {
+        "id": "MATH-CURI-prob-vs-data",
+        "family_id": "random",
+        "question": "What is the difference between a probability model and evidence from data?",
+        "aliases": [],
+        "bridge_ids": [
+          "RANDOM",
+          "PROOF"
+        ],
+        "context": "Select the mathematically consequential distinction before treating a source as applicable. TOC leads are not inspected results.",
+        "term_ids": [
+          "math-t-0638",
+          "math-t-0690"
+        ]
+      },
+      {
+        "id": "MATH-CURI-independence",
+        "family_id": "random",
+        "question": "Why does sampling without replacement alter probability formulas?",
+        "aliases": [],
+        "bridge_ids": [
+          "RANDOM"
+        ],
+        "context": "Select the mathematically consequential distinction before treating a source as applicable. TOC leads are not inspected results.",
+        "term_ids": [
+          "math-t-0642",
+          "math-t-0643"
+        ]
+      },
+      {
+        "id": "MATH-CURI-markov",
+        "family_id": "random",
+        "question": "When does a random process eventually forget its initial state?",
+        "aliases": [],
+        "bridge_ids": [
+          "RANDOM"
+        ],
+        "context": "Select the mathematically consequential distinction before treating a source as applicable. TOC leads are not inspected results.",
+        "term_ids": [
+          "math-t-0679",
+          "math-t-0681"
+        ]
+      },
+      {
+        "id": "MATH-CURI-estimate",
+        "family_id": "random",
+        "question": "How do I judge a parameter estimate beyond one observed dataset?",
+        "aliases": [],
+        "bridge_ids": [
+          "RANDOM"
+        ],
+        "context": "Select the mathematically consequential distinction before treating a source as applicable. TOC leads are not inspected results.",
+        "term_ids": [
+          "math-t-0708",
+          "math-t-0705"
+        ]
+      },
+      {
+        "id": "MATH-CURI-sufficient",
+        "family_id": "random",
+        "question": "Can a tiny summary retain all information relevant to a statistical parameter?",
+        "aliases": [],
+        "bridge_ids": [
+          "RANDOM",
+          "TRANSFER"
+        ],
+        "context": "Select the mathematically consequential distinction before treating a source as applicable. TOC leads are not inspected results.",
+        "term_ids": [
+          "math-t-0698",
+          "math-t-0703"
+        ]
+      },
+      {
+        "id": "MATH-CURI-pvalue",
+        "family_id": "random",
+        "question": "Why doesn't a low p-value tell me a hypothesis is probably false?",
+        "aliases": [],
+        "bridge_ids": [
+          "RANDOM",
+          "PROOF"
+        ],
+        "context": "Select the mathematically consequential distinction before treating a source as applicable. TOC leads are not inspected results.",
+        "term_ids": [
+          "math-t-0725",
+          "math-t-0721"
+        ]
+      },
+      {
+        "id": "MATH-CURI-transplant",
+        "family_id": "transfer",
+        "question": "Why are inverses and dualities across branches similar but not equivalent?",
+        "aliases": [],
+        "bridge_ids": [
+          "TRANSFER"
+        ],
+        "context": "Select the mathematically consequential distinction before treating a source as applicable. TOC leads are not inspected results.",
+        "term_ids": [
+          "math-t-0752",
+          "math-t-0021"
+        ]
+      },
+      {
+        "id": "MATH-CURI-topo-algebra",
+        "family_id": "transfer",
+        "question": "How are a group quotient and quotient topological space related?",
+        "aliases": [],
+        "bridge_ids": [
+          "TRANSFER",
+          "STRUCTURE"
+        ],
+        "context": "Select the mathematically consequential distinction before treating a source as applicable. TOC leads are not inspected results.",
+        "term_ids": [
+          "math-t-0753",
+          "math-t-0370"
+        ]
+      },
+      {
+        "id": "MATH-CURI-local-global",
+        "family_id": "transfer",
+        "question": "How can local calculations constrain an entire surface or space?",
+        "aliases": [],
+        "bridge_ids": [
+          "TRANSFER",
+          "SPACE"
+        ],
+        "context": "Select the mathematically consequential distinction before treating a source as applicable. TOC leads are not inspected results.",
+        "term_ids": [
+          "math-t-0626",
+          "math-t-0401"
+        ]
+      },
+      {
+        "id": "MATH-CURI-operator",
+        "family_id": "transfer",
+        "question": "Which reusable operations cut across these fourteen books?",
+        "aliases": [],
+        "bridge_ids": [
+          "TRANSFER"
+        ],
+        "context": "Select the mathematically consequential distinction before treating a source as applicable. TOC leads are not inspected results.",
+        "term_ids": [
+          "math-t-0749",
+          "math-t-0745"
+        ]
+      },
+      {
+        "id": "MATH-CURI-counterexample",
+        "family_id": "prove",
+        "question": "What counterexample would expose an assumption I forgot?",
+        "aliases": [],
+        "bridge_ids": [
+          "PROOF",
+          "CONTINUOUS"
+        ],
+        "context": "Select the mathematically consequential distinction before treating a source as applicable. TOC leads are not inspected results.",
+        "term_ids": [
+          "math-t-0026",
+          "math-t-0786"
+        ]
+      },
+      {
+        "id": "MATH-CURI-normal-word",
+        "family_id": "prove",
+        "question": "Why does normal mean different things in groups, probability and operators?",
+        "aliases": [],
+        "bridge_ids": [
+          "PROOF",
+          "TRANSFER"
+        ],
+        "context": "Select the mathematically consequential distinction before treating a source as applicable. TOC leads are not inspected results.",
+        "term_ids": [
+          "math-t-0127",
+          "math-t-0656",
+          "math-t-0097"
+        ]
+      }
+    ],
+    "entry_policy": "Question entrances and mathematical sets share one technical corpus. Glossary concepts can remain unlinked until research earns the mapping."
   },
   "navigation_bridges": [
     {
