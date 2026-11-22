@@ -1621,13 +1621,20 @@
           "printed_page_start": null,
           "views": [
             "possibilities",
-            "production",
-            "bootstrap"
+            "make",
+            "production"
           ],
           "case_ids": [
             "MFG-PROC-INJECTION",
             "MFG-PROC-SAND"
-          ]
+          ],
+          "entry_node_ids": [
+            "MFG-TRANSFORM",
+            "MFG-SCALE-TOOL",
+            "MFG-ISSUE-QUANTITY"
+          ],
+          "use_when": "Choosing between molding, casting and additive processes; compare tooling and part geometry",
+          "knowledge_status": "table_of_contents_locator"
         },
         {
           "ref": "Part 2",
@@ -1636,11 +1643,19 @@
           "views": [
             "possibilities",
             "make",
+            "production",
             "bootstrap"
           ],
           "case_ids": [
             "MFG-PROC-WATERJET"
-          ]
+          ],
+          "entry_node_ids": [
+            "MFG-ISSUE-HEAT",
+            "MFG-ISSUE-OUTSOURCE",
+            "MFG-PROC-WATERJET"
+          ],
+          "use_when": "Cutting or shaping stock while considering kerf, heat and fixturing",
+          "knowledge_status": "table_of_contents_locator"
         },
         {
           "ref": "Part 3",
@@ -1649,9 +1664,16 @@
           "views": [
             "make",
             "production",
-            "mechanisms"
+            "bootstrap"
           ],
-          "case_ids": []
+          "case_ids": [],
+          "entry_node_ids": [
+            "MFG-ISSUE-FIT",
+            "MFG-REALIZE",
+            "MFG-Q5a"
+          ],
+          "use_when": "Designing assemblies from separately made parts; matching joining process to materials",
+          "knowledge_status": "table_of_contents_locator"
         },
         {
           "ref": "Part 4",
@@ -1661,7 +1683,13 @@
             "make",
             "production"
           ],
-          "case_ids": []
+          "case_ids": [],
+          "entry_node_ids": [
+            "MFG-FEASIBILITY",
+            "MFG-SCALE"
+          ],
+          "use_when": "When functional surface, edge or appearance requirements need post-processing",
+          "knowledge_status": "table_of_contents_locator"
         },
         {
           "ref": "Part 5",
@@ -1670,9 +1698,15 @@
           "views": [
             "possibilities",
             "make",
-            "production"
+            "mechanisms"
           ],
-          "case_ids": []
+          "case_ids": [],
+          "entry_node_ids": [
+            "MFG-Q1a",
+            "MFG-ISSUE-SNAP"
+          ],
+          "use_when": "Choosing which material properties enable a manufacturable function",
+          "knowledge_status": "table_of_contents_locator"
         }
       ]
     },
@@ -1688,23 +1722,40 @@
           "views": [
             "possibilities",
             "make",
-            "mechanisms"
+            "mechanisms",
+            "production"
           ],
           "case_ids": [
             "MFG-FFM-ORIENT"
-          ]
+          ],
+          "entry_node_ids": [
+            "MFG-ISSUE-SNAP",
+            "MFG-FFM-ORIENT"
+          ],
+          "use_when": "Diagnosing layer-direction strength, shell/infill or porosity",
+          "knowledge_status": "table_of_contents_locator"
         },
         {
           "ref": "II",
           "title": "Designing for FFM",
           "printed_page_start": 40,
           "views": [
+            "possibilities",
             "make",
-            "mechanisms"
+            "mechanisms",
+            "production",
+            "bootstrap"
           ],
           "case_ids": [
             "MFG-FFM-ORIENT"
-          ]
+          ],
+          "entry_node_ids": [
+            "MFG-ISSUE-CAVITY",
+            "MFG-ISSUE-OUTSOURCE",
+            "MFG-FFM-ORIENT"
+          ],
+          "use_when": "Adapting geometry, orientation and supports for a printer",
+          "knowledge_status": "table_of_contents_locator"
         },
         {
           "ref": "III",
@@ -1712,54 +1763,84 @@
           "printed_page_start": 76,
           "views": [
             "make",
-            "mechanisms",
-            "production"
+            "mechanisms"
           ],
-          "case_ids": []
+          "case_ids": [],
+          "entry_node_ids": [
+            "MFG-ISSUE-SNAP",
+            "MFG-ISSUE-FLEX"
+          ],
+          "use_when": "Preventing a printed part from breaking under realistic loads",
+          "knowledge_status": "table_of_contents_locator"
         },
         {
           "ref": "IV",
           "title": "Design Paradigms",
           "printed_page_start": 106,
           "views": [
-            "make",
-            "mechanisms"
+            "make"
           ],
-          "case_ids": []
+          "case_ids": [],
+          "entry_node_ids": [
+            "MFG-REALIZE",
+            "MFG-Q2a"
+          ],
+          "use_when": "Revising shape and design strategy around FFM behavior",
+          "knowledge_status": "table_of_contents_locator"
         },
         {
           "ref": "V",
           "title": "Designing for Fit",
           "printed_page_start": 116,
           "views": [
+            "possibilities",
             "make",
+            "mechanisms",
             "production",
-            "mechanisms"
+            "bootstrap"
           ],
           "case_ids": [
             "MFG-TOLERANCE"
-          ]
+          ],
+          "entry_node_ids": [
+            "MFG-ISSUE-FIT",
+            "MFG-TOLERANCE"
+          ],
+          "use_when": "Making two printed components fit or slide",
+          "knowledge_status": "table_of_contents_locator"
         },
         {
           "ref": "VI",
           "title": "Fastening and Joinery",
           "printed_page_start": 124,
           "views": [
+            "possibilities",
             "make",
-            "production",
-            "mechanisms"
+            "production"
           ],
-          "case_ids": []
+          "case_ids": [],
+          "entry_node_ids": [
+            "MFG-ISSUE-FIT",
+            "MFG-ISSUE-CAVITY"
+          ],
+          "use_when": "Choosing how printed parts connect or come apart",
+          "knowledge_status": "table_of_contents_locator"
         },
         {
           "ref": "VII",
           "title": "Functional Elements and Engineered Features",
           "printed_page_start": 136,
           "views": [
-            "mechanisms",
-            "make"
+            "make",
+            "mechanisms"
           ],
-          "case_ids": []
+          "case_ids": [],
+          "entry_node_ids": [
+            "MFG-ISSUE-FLEX",
+            "MFG-ISSUE-SNAP"
+          ],
+          "use_when": "Designing hinges, latches and useful functional features",
+          "knowledge_status": "table_of_contents_locator"
         },
         {
           "ref": "VIII",
@@ -1767,10 +1848,15 @@
           "printed_page_start": 154,
           "views": [
             "make",
-            "bootstrap",
-            "production"
+            "bootstrap"
           ],
-          "case_ids": []
+          "case_ids": [],
+          "entry_node_ids": [
+            "MFG-ISSUE-OUTSOURCE",
+            "MFG-REALIZE"
+          ],
+          "use_when": "Understanding why slicer settings change the manufactured part",
+          "knowledge_status": "table_of_contents_locator"
         }
       ]
     },
@@ -1784,10 +1870,15 @@
           "title": "Introduction to Mechanical Engineering Design",
           "printed_page_start": 3,
           "views": [
-            "make",
-            "production"
+            "make"
           ],
-          "case_ids": []
+          "case_ids": [],
+          "entry_node_ids": [
+            "MFG-Q2c",
+            "MFG-REALIZE"
+          ],
+          "use_when": "Translating a practical requirement into an engineering design target",
+          "knowledge_status": "table_of_contents_locator"
         },
         {
           "ref": "2",
@@ -1795,9 +1886,16 @@
           "printed_page_start": 39,
           "views": [
             "possibilities",
-            "make"
+            "make",
+            "mechanisms"
           ],
-          "case_ids": []
+          "case_ids": [],
+          "entry_node_ids": [
+            "MFG-Q1a",
+            "MFG-ISSUE-SNAP"
+          ],
+          "use_when": "Choosing materials for required properties",
+          "knowledge_status": "table_of_contents_locator"
         },
         {
           "ref": "3",
@@ -1807,7 +1905,13 @@
             "make",
             "mechanisms"
           ],
-          "case_ids": []
+          "case_ids": [],
+          "entry_node_ids": [
+            "MFG-ISSUE-FORCE",
+            "MFG-ISSUE-FLEX"
+          ],
+          "use_when": "Understanding force paths and local stresses",
+          "knowledge_status": "table_of_contents_locator"
         },
         {
           "ref": "4",
@@ -1815,9 +1919,16 @@
           "printed_page_start": 179,
           "views": [
             "make",
-            "mechanisms"
+            "mechanisms",
+            "production"
           ],
-          "case_ids": []
+          "case_ids": [],
+          "entry_node_ids": [
+            "MFG-ISSUE-WOBBLE",
+            "MFG-ISSUE-FLEX"
+          ],
+          "use_when": "Distinguishing unwanted deformation from strength limits",
+          "knowledge_status": "table_of_contents_locator"
         },
         {
           "ref": "5",
@@ -1825,19 +1936,33 @@
           "printed_page_start": 253,
           "views": [
             "make",
+            "mechanisms",
             "production"
           ],
-          "case_ids": []
+          "case_ids": [],
+          "entry_node_ids": [
+            "MFG-ISSUE-SNAP",
+            "MFG-FEASIBILITY"
+          ],
+          "use_when": "Diagnosing failure under a single or static load",
+          "knowledge_status": "table_of_contents_locator"
         },
         {
           "ref": "6",
           "title": "Fatigue Failure Resulting from Variable Loading",
           "printed_page_start": 297,
           "views": [
+            "make",
             "mechanisms",
             "production"
           ],
-          "case_ids": []
+          "case_ids": [],
+          "entry_node_ids": [
+            "MFG-ISSUE-SNAP",
+            "MFG-FEASIBILITY"
+          ],
+          "use_when": "Diagnosing failure after many load cycles",
+          "knowledge_status": "table_of_contents_locator"
         },
         {
           "ref": "7",
@@ -1847,7 +1972,13 @@
             "mechanisms",
             "production"
           ],
-          "case_ids": []
+          "case_ids": [],
+          "entry_node_ids": [
+            "MFG-FUNC-MOTION",
+            "MFG-ISSUE-WOBBLE"
+          ],
+          "use_when": "Designing rotating shafts and their load paths",
+          "knowledge_status": "table_of_contents_locator"
         },
         {
           "ref": "8",
@@ -1855,9 +1986,16 @@
           "printed_page_start": 433,
           "views": [
             "make",
+            "mechanisms",
             "production"
           ],
-          "case_ids": []
+          "case_ids": [],
+          "entry_node_ids": [
+            "MFG-ISSUE-FIT",
+            "MFG-ISSUE-WOBBLE"
+          ],
+          "use_when": "Selecting bolts, screws and removable joint interfaces",
+          "knowledge_status": "table_of_contents_locator"
         },
         {
           "ref": "9",
@@ -1865,19 +2003,32 @@
           "printed_page_start": 497,
           "views": [
             "make",
-            "production"
+            "production",
+            "bootstrap"
           ],
-          "case_ids": []
+          "case_ids": [],
+          "entry_node_ids": [
+            "MFG-ISSUE-FIT",
+            "MFG-Q2b"
+          ],
+          "use_when": "Selecting permanent joints and bonding routes",
+          "knowledge_status": "table_of_contents_locator"
         },
         {
           "ref": "10",
           "title": "Mechanical Springs",
           "printed_page_start": 537,
           "views": [
-            "mechanisms",
-            "make"
+            "make",
+            "mechanisms"
           ],
-          "case_ids": []
+          "case_ids": [],
+          "entry_node_ids": [
+            "MFG-ISSUE-FLEX",
+            "MFG-FUNC-REALIZE"
+          ],
+          "use_when": "Storing energy or producing restoring force with springs",
+          "knowledge_status": "table_of_contents_locator"
         },
         {
           "ref": "11",
@@ -1887,7 +2038,13 @@
             "mechanisms",
             "production"
           ],
-          "case_ids": []
+          "case_ids": [],
+          "entry_node_ids": [
+            "MFG-ISSUE-WOBBLE",
+            "MFG-FUNC-REALIZE"
+          ],
+          "use_when": "Reducing friction and supporting rotating components",
+          "knowledge_status": "table_of_contents_locator"
         },
         {
           "ref": "12",
@@ -1897,66 +2054,112 @@
             "mechanisms",
             "production"
           ],
-          "case_ids": []
+          "case_ids": [],
+          "entry_node_ids": [
+            "MFG-ISSUE-WOBBLE",
+            "MFG-FUNC-REALIZE"
+          ],
+          "use_when": "Reasoning about sliding-bearing loads and lubrication",
+          "knowledge_status": "table_of_contents_locator"
         },
         {
           "ref": "13",
           "title": "Gears—General",
           "printed_page_start": 697,
           "views": [
-            "mechanisms"
+            "make",
+            "mechanisms",
+            "bootstrap"
           ],
-          "case_ids": []
+          "case_ids": [],
+          "entry_node_ids": [
+            "MFG-ISSUE-FORCE",
+            "MFG-FUNC-RIGID"
+          ],
+          "use_when": "Using gear trains to exchange speed for torque",
+          "knowledge_status": "table_of_contents_locator"
         },
         {
           "ref": "14",
           "title": "Spur and Helical Gears",
           "printed_page_start": 757,
           "views": [
+            "make",
             "mechanisms",
-            "production"
+            "bootstrap"
           ],
-          "case_ids": []
+          "case_ids": [],
+          "entry_node_ids": [
+            "MFG-ISSUE-FORCE",
+            "MFG-FUNC-RIGID"
+          ],
+          "use_when": "Designing common gear geometry and load limits",
+          "knowledge_status": "table_of_contents_locator"
         },
         {
           "ref": "15",
           "title": "Bevel and Worm Gears",
           "printed_page_start": 809,
           "views": [
+            "make",
             "mechanisms",
-            "production"
+            "bootstrap"
           ],
-          "case_ids": []
+          "case_ids": [],
+          "entry_node_ids": [
+            "MFG-ISSUE-FORCE",
+            "MFG-FUNC-RIGID"
+          ],
+          "use_when": "Redirecting rotational axes and designing worm/bevel gearing",
+          "knowledge_status": "table_of_contents_locator"
         },
         {
           "ref": "16",
           "title": "Clutches, Brakes, Couplings, and Flywheels",
           "printed_page_start": 847,
           "views": [
-            "mechanisms",
-            "production"
+            "make",
+            "mechanisms"
           ],
-          "case_ids": []
+          "case_ids": [],
+          "entry_node_ids": [
+            "MFG-ISSUE-STEP",
+            "MFG-FUNC-MOTION"
+          ],
+          "use_when": "Stopping, engaging or coupling rotating machinery",
+          "knowledge_status": "table_of_contents_locator"
         },
         {
           "ref": "17",
           "title": "Flexible Mechanical Elements",
           "printed_page_start": 899,
           "views": [
+            "make",
             "mechanisms"
           ],
-          "case_ids": []
+          "case_ids": [],
+          "entry_node_ids": [
+            "MFG-ISSUE-FORCE",
+            "MFG-FUNC-MOTION"
+          ],
+          "use_when": "Transmitting mechanical power using flexible elements",
+          "knowledge_status": "table_of_contents_locator"
         },
         {
           "ref": "18",
           "title": "Power Transmission Case Study",
           "printed_page_start": 953,
           "views": [
-            "mechanisms",
             "make",
-            "production"
+            "mechanisms"
           ],
-          "case_ids": []
+          "case_ids": [],
+          "entry_node_ids": [
+            "MFG-ISSUE-FORCE",
+            "MFG-REALIZE"
+          ],
+          "use_when": "Designing and assessing a complete power transmission path",
+          "knowledge_status": "table_of_contents_locator"
         },
         {
           "ref": "19",
@@ -1964,21 +2167,37 @@
           "printed_page_start": 973,
           "views": [
             "make",
-            "mechanisms"
+            "mechanisms",
+            "production"
           ],
-          "case_ids": []
+          "case_ids": [],
+          "entry_node_ids": [
+            "MFG-ISSUE-FLEX",
+            "MFG-ISSUE-WOBBLE"
+          ],
+          "use_when": "Exploring stress and deformation with simulation",
+          "knowledge_status": "table_of_contents_locator"
         },
         {
           "ref": "20",
           "title": "Geometric Dimensioning and Tolerancing",
           "printed_page_start": 995,
           "views": [
+            "possibilities",
             "make",
-            "production"
+            "mechanisms",
+            "production",
+            "bootstrap"
           ],
           "case_ids": [
             "MFG-TOLERANCE"
-          ]
+          ],
+          "entry_node_ids": [
+            "MFG-ISSUE-FIT",
+            "MFG-TOLERANCE"
+          ],
+          "use_when": "Specifying which geometric variations are functionally acceptable",
+          "knowledge_status": "table_of_contents_locator"
         }
       ]
     },
@@ -1992,86 +2211,144 @@
           "title": "Introduction to Compliant Mechanisms",
           "printed_page_start": 3,
           "views": [
-            "mechanisms",
-            "possibilities"
+            "make",
+            "mechanisms"
           ],
           "case_ids": [
             "MFG-FUNC-COMPLIANT"
-          ]
+          ],
+          "entry_node_ids": [
+            "MFG-ISSUE-FLEX",
+            "MFG-ISSUE-SNAP"
+          ],
+          "use_when": "Distinguishing elastic movement, stiffness and strength",
+          "knowledge_status": "table_of_contents_locator"
         },
         {
           "ref": "2",
           "title": "Using the Handbook to Design Devices",
           "printed_page_start": 15,
           "views": [
-            "mechanisms",
-            "make"
+            "make",
+            "mechanisms"
           ],
-          "case_ids": []
+          "case_ids": [],
+          "entry_node_ids": [
+            "MFG-ISSUE-FLEX",
+            "MFG-Q2c"
+          ],
+          "use_when": "Selecting a compliant mechanism architecture for a function",
+          "knowledge_status": "table_of_contents_locator"
         },
         {
           "ref": "3",
           "title": "Analysis of Flexure Mechanisms in the Intermediate Displacement Range",
           "printed_page_start": 29,
           "views": [
+            "make",
             "mechanisms",
-            "make"
+            "production"
           ],
-          "case_ids": []
+          "case_ids": [],
+          "entry_node_ids": [
+            "MFG-ISSUE-WOBBLE",
+            "MFG-ISSUE-FLEX"
+          ],
+          "use_when": "Estimating deflection and unwanted parasitic motion",
+          "knowledge_status": "table_of_contents_locator"
         },
         {
           "ref": "4",
           "title": "Modeling of Large Deflection Members",
           "printed_page_start": 45,
           "views": [
-            "mechanisms",
-            "make"
+            "make",
+            "mechanisms"
           ],
-          "case_ids": []
+          "case_ids": [],
+          "entry_node_ids": [
+            "MFG-ISSUE-FLEX",
+            "MFG-FUNC-REALIZE"
+          ],
+          "use_when": "Investigating large elastic deflection beyond small-motion approximations",
+          "knowledge_status": "table_of_contents_locator"
         },
         {
           "ref": "5",
           "title": "Using Pseudo-Rigid Body Models",
           "printed_page_start": 55,
           "views": [
+            "possibilities",
+            "make",
             "mechanisms",
-            "make"
+            "production",
+            "bootstrap"
           ],
-          "case_ids": []
+          "case_ids": [],
+          "entry_node_ids": [
+            "MFG-ISSUE-WOBBLE",
+            "MFG-FUNC-COMPLIANT"
+          ],
+          "use_when": "Using an approximate rigid-link model for flexure behavior",
+          "knowledge_status": "table_of_contents_locator"
         },
         {
           "ref": "6",
           "title": "Synthesis through Freedom and Constraint Topologies",
           "printed_page_start": 79,
           "views": [
+            "possibilities",
+            "make",
             "mechanisms",
-            "possibilities"
+            "production",
+            "bootstrap"
           ],
           "case_ids": [
             "MFG-FUNC-DOF"
-          ]
+          ],
+          "entry_node_ids": [
+            "MFG-ISSUE-STEP",
+            "MFG-ISSUE-WOBBLE",
+            "MFG-FUNC-DOF"
+          ],
+          "use_when": "Synthesizing intended motions while constraining unwanted freedoms",
+          "knowledge_status": "table_of_contents_locator"
         },
         {
           "ref": "7",
           "title": "Synthesis through Topology Optimization",
           "printed_page_start": 93,
           "views": [
-            "mechanisms",
-            "possibilities"
+            "possibilities",
+            "mechanisms"
           ],
-          "case_ids": []
+          "case_ids": [],
+          "entry_node_ids": [
+            "MFG-FUNC-REALIZE",
+            "MFG-Q1a"
+          ],
+          "use_when": "Finding alternative compliant shapes through topology optimization",
+          "knowledge_status": "table_of_contents_locator"
         },
         {
           "ref": "8",
           "title": "Synthesis through Rigid-Body Replacement",
           "printed_page_start": 109,
           "views": [
+            "possibilities",
+            "make",
             "mechanisms",
-            "make"
+            "bootstrap"
           ],
           "case_ids": [
             "MFG-FUNC-COMPLIANT"
-          ]
+          ],
+          "entry_node_ids": [
+            "MFG-ISSUE-FLEX",
+            "MFG-FUNC-COMPLIANT"
+          ],
+          "use_when": "Replacing selected rigid joints or links with flexible members",
+          "knowledge_status": "table_of_contents_locator"
         },
         {
           "ref": "9",
@@ -2081,37 +2358,65 @@
             "mechanisms",
             "bootstrap"
           ],
-          "case_ids": []
+          "case_ids": [],
+          "entry_node_ids": [
+            "MFG-FUNC-REALIZE",
+            "MFG-Q5a"
+          ],
+          "use_when": "Combining reusable flexure building blocks",
+          "knowledge_status": "table_of_contents_locator"
         },
         {
           "ref": "10",
           "title": "Library Organization",
           "printed_page_start": 149,
           "views": [
-            "mechanisms",
-            "possibilities"
+            "possibilities",
+            "mechanisms"
           ],
-          "case_ids": []
+          "case_ids": [],
+          "entry_node_ids": [
+            "MFG-Q1a",
+            "MFG-FUNC-REALIZE"
+          ],
+          "use_when": "Looking up compliant designs by functional behavior",
+          "knowledge_status": "table_of_contents_locator"
         },
         {
           "ref": "11",
           "title": "Elements of Mechanisms",
           "printed_page_start": 155,
           "views": [
+            "possibilities",
+            "make",
             "mechanisms",
             "bootstrap"
           ],
-          "case_ids": []
+          "case_ids": [],
+          "entry_node_ids": [
+            "MFG-FUNC-COMPLIANT",
+            "MFG-Q5a"
+          ],
+          "use_when": "Finding reusable compliant element patterns",
+          "knowledge_status": "table_of_contents_locator"
         },
         {
           "ref": "12",
           "title": "Mechanisms",
           "printed_page_start": 193,
           "views": [
+            "possibilities",
+            "make",
             "mechanisms",
             "bootstrap"
           ],
-          "case_ids": []
+          "case_ids": [],
+          "entry_node_ids": [
+            "MFG-FUNC-COMPLIANT",
+            "MFG-Q5a"
+          ],
+          "use_when": "Finding whole compliant mechanism patterns",
+          "knowledge_status": "table_of_contents_locator"
         },
         {
           "ref": "13",
@@ -2121,7 +2426,13 @@
             "make",
             "mechanisms"
           ],
-          "case_ids": []
+          "case_ids": [],
+          "entry_node_ids": [
+            "MFG-ISSUE-FLEX",
+            "MFG-Q2c"
+          ],
+          "use_when": "Studying an application of compliant mechanism design",
+          "knowledge_status": "table_of_contents_locator"
         }
       ]
     },
@@ -2135,30 +2446,51 @@
           "title": "Basics of Mechanisms",
           "printed_page_start": 1,
           "views": [
-            "mechanisms"
+            "make",
+            "mechanisms",
+            "bootstrap"
           ],
           "case_ids": [
             "MFG-FUNC-RIGID"
-          ]
+          ],
+          "entry_node_ids": [
+            "MFG-ISSUE-FORCE",
+            "MFG-FUNC-RIGID"
+          ],
+          "use_when": "Relating forces, displacements, power, linkages and gear ratios",
+          "knowledge_status": "table_of_contents_locator"
         },
         {
           "ref": "2",
           "title": "Motion Control Systems",
           "printed_page_start": 21,
           "views": [
+            "make",
             "mechanisms"
           ],
-          "case_ids": []
+          "case_ids": [],
+          "entry_node_ids": [
+            "MFG-ISSUE-STEP",
+            "MFG-FUNC-MOTION"
+          ],
+          "use_when": "Selecting actuation and feedback mechanisms for controlled motion",
+          "knowledge_status": "table_of_contents_locator"
         },
         {
           "ref": "3",
           "title": "Stationary and Mobile Robots",
           "printed_page_start": 49,
           "views": [
-            "mechanisms",
-            "make"
+            "possibilities",
+            "mechanisms"
           ],
-          "case_ids": []
+          "case_ids": [],
+          "entry_node_ids": [
+            "MFG-FUNC-MOTION",
+            "MFG-Q1a"
+          ],
+          "use_when": "Examining physical-motion capabilities in robotics",
+          "knowledge_status": "table_of_contents_locator"
         },
         {
           "ref": "4",
@@ -2168,46 +2500,82 @@
             "possibilities",
             "bootstrap"
           ],
-          "case_ids": []
+          "case_ids": [],
+          "entry_node_ids": [
+            "MFG-Q5a",
+            "MFG-Q1a"
+          ],
+          "use_when": "Using mechanical conversion for renewable power generation",
+          "knowledge_status": "table_of_contents_locator"
         },
         {
           "ref": "5",
           "title": "Linkages: Drives and Mechanisms",
           "printed_page_start": 89,
           "views": [
-            "mechanisms"
+            "make",
+            "mechanisms",
+            "bootstrap"
           ],
-          "case_ids": []
+          "case_ids": [],
+          "entry_node_ids": [
+            "MFG-FUNC-RIGID",
+            "MFG-FUNC-MOTION"
+          ],
+          "use_when": "Finding linkage alternatives for a particular motion path",
+          "knowledge_status": "table_of_contents_locator"
         },
         {
           "ref": "6",
           "title": "Gears: Devices, Drives, and Mechanisms",
           "printed_page_start": 131,
           "views": [
-            "mechanisms"
+            "make",
+            "mechanisms",
+            "bootstrap"
           ],
-          "case_ids": []
+          "case_ids": [],
+          "entry_node_ids": [
+            "MFG-ISSUE-FORCE",
+            "MFG-FUNC-RIGID"
+          ],
+          "use_when": "Changing speed, direction and torque using gears",
+          "knowledge_status": "table_of_contents_locator"
         },
         {
           "ref": "7",
           "title": "Cam, Geneva, and Ratchet Drives and Mechanisms",
           "printed_page_start": 179,
           "views": [
+            "possibilities",
+            "make",
             "mechanisms"
           ],
           "case_ids": [
             "MFG-FUNC-INDEX"
-          ]
+          ],
+          "entry_node_ids": [
+            "MFG-ISSUE-STEP",
+            "MFG-FUNC-INDEX"
+          ],
+          "use_when": "Producing timed movement, indexing, dwell and ratcheting",
+          "knowledge_status": "table_of_contents_locator"
         },
         {
           "ref": "8",
           "title": "Clutches and Brakes",
           "printed_page_start": 211,
           "views": [
-            "mechanisms",
-            "production"
+            "make",
+            "mechanisms"
           ],
-          "case_ids": []
+          "case_ids": [],
+          "entry_node_ids": [
+            "MFG-ISSUE-STEP",
+            "MFG-FUNC-MOTION"
+          ],
+          "use_when": "Engaging, releasing, stopping or overrunning a drive",
+          "knowledge_status": "table_of_contents_locator"
         },
         {
           "ref": "9",
@@ -2215,29 +2583,49 @@
           "printed_page_start": 237,
           "views": [
             "make",
-            "mechanisms"
+            "mechanisms",
+            "production"
           ],
-          "case_ids": []
+          "case_ids": [],
+          "entry_node_ids": [
+            "MFG-ISSUE-FLEX",
+            "MFG-ISSUE-FIT"
+          ],
+          "use_when": "Implementing latch, clamp and release functions",
+          "knowledge_status": "table_of_contents_locator"
         },
         {
           "ref": "10",
           "title": "Chain and Belt Devices and Mechanisms",
           "printed_page_start": 261,
           "views": [
+            "make",
             "mechanisms",
-            "production"
+            "bootstrap"
           ],
-          "case_ids": []
+          "case_ids": [],
+          "entry_node_ids": [
+            "MFG-FUNC-RIGID",
+            "MFG-Q5a"
+          ],
+          "use_when": "Transmitting power through chains and belts",
+          "knowledge_status": "table_of_contents_locator"
         },
         {
           "ref": "11",
           "title": "Spring and Screw Devices and Mechanisms",
           "printed_page_start": 279,
           "views": [
-            "mechanisms",
-            "make"
+            "make",
+            "mechanisms"
           ],
-          "case_ids": []
+          "case_ids": [],
+          "entry_node_ids": [
+            "MFG-ISSUE-FLEX",
+            "MFG-ISSUE-FORCE"
+          ],
+          "use_when": "Generating restoring forces, clamping or movement using springs and screws",
+          "knowledge_status": "table_of_contents_locator"
         },
         {
           "ref": "12",
@@ -2247,35 +2635,61 @@
             "mechanisms",
             "production"
           ],
-          "case_ids": []
+          "case_ids": [],
+          "entry_node_ids": [
+            "MFG-ISSUE-WOBBLE",
+            "MFG-FUNC-MOTION"
+          ],
+          "use_when": "Joining rotating shafts with alignment or compliance constraints",
+          "knowledge_status": "table_of_contents_locator"
         },
         {
           "ref": "13",
           "title": "Motion-Specific Devices, Mechanisms, and Machines",
           "printed_page_start": 323,
           "views": [
+            "make",
             "mechanisms"
           ],
-          "case_ids": []
+          "case_ids": [],
+          "entry_node_ids": [
+            "MFG-FUNC-MOTION",
+            "MFG-ISSUE-STEP"
+          ],
+          "use_when": "Finding mechanisms tailored to specific movement requirements",
+          "knowledge_status": "table_of_contents_locator"
         },
         {
           "ref": "14",
           "title": "Packaging, Conveying, Handling, and Safety Mechanisms and Machines",
           "printed_page_start": 381,
           "views": [
-            "production"
+            "production",
+            "bootstrap"
           ],
-          "case_ids": []
+          "case_ids": [],
+          "entry_node_ids": [
+            "MFG-SCALE",
+            "MFG-Q5a"
+          ],
+          "use_when": "Moving, feeding, sorting and handling products in manufacturing",
+          "knowledge_status": "table_of_contents_locator"
         },
         {
           "ref": "15",
           "title": "Torque, Speed, Tension, and Limit Control Systems",
           "printed_page_start": 419,
           "views": [
-            "production",
-            "mechanisms"
+            "mechanisms",
+            "production"
           ],
-          "case_ids": []
+          "case_ids": [],
+          "entry_node_ids": [
+            "MFG-SCALE",
+            "MFG-ISSUE-WOBBLE"
+          ],
+          "use_when": "Controlling speed, torque, tension or travel limits",
+          "knowledge_status": "table_of_contents_locator"
         },
         {
           "ref": "16",
@@ -2285,7 +2699,13 @@
             "production",
             "bootstrap"
           ],
-          "case_ids": []
+          "case_ids": [],
+          "entry_node_ids": [
+            "MFG-SCALE",
+            "MFG-Q5a"
+          ],
+          "use_when": "Integrating pneumatic, hydraulic, electric and electronic control",
+          "knowledge_status": "table_of_contents_locator"
         },
         {
           "ref": "17",
@@ -2293,19 +2713,31 @@
           "printed_page_start": 477,
           "views": [
             "make",
-            "bootstrap"
+            "mechanisms"
           ],
-          "case_ids": []
+          "case_ids": [],
+          "entry_node_ids": [
+            "MFG-Q2c",
+            "MFG-FUNC-REALIZE"
+          ],
+          "use_when": "Simulating and checking mechanism behavior before construction",
+          "knowledge_status": "table_of_contents_locator"
         },
         {
           "ref": "18",
           "title": "Rapid Prototyping",
           "printed_page_start": 487,
           "views": [
-            "make",
-            "possibilities"
+            "possibilities",
+            "make"
           ],
-          "case_ids": []
+          "case_ids": [],
+          "entry_node_ids": [
+            "MFG-REALIZE",
+            "MFG-Q1a"
+          ],
+          "use_when": "Making prototype functional parts without production-scale tooling",
+          "knowledge_status": "table_of_contents_locator"
         },
         {
           "ref": "19",
@@ -2315,7 +2747,13 @@
             "possibilities",
             "bootstrap"
           ],
-          "case_ids": []
+          "case_ids": [],
+          "entry_node_ids": [
+            "MFG-Q1a",
+            "MFG-Q5b"
+          ],
+          "use_when": "Scanning emerging mechanical design alternatives",
+          "knowledge_status": "table_of_contents_locator"
         }
       ]
     }
@@ -2897,6 +3335,7 @@
     "provenance": "Problem nodes are retrieval prompts, not empirical research findings. Bridge hypotheses and candidate chapter routes are not asserted as validated solutions.",
     "rendering": "Offer each bridge as a separate conditional path with discriminating question, explanation, verified locator and optional canonical study links. Never hide useful source locations only in a global root catalog.",
     "reverse_check": "Every source section tagged to a view should have at least one actionable entry question or a stated unindexed gap; TOC-only associations cannot be mistaken for inspected evidence.",
-    "decision": "When a practical route fails, improve the minimum useful entry or link, rather than adding another universal hierarchy."
+    "decision": "When a practical route fails, improve the minimum useful entry or link, rather than adding another universal hierarchy.",
+    "chapter_routing": "Each chapter is attached to specific existing question nodes via entry_node_ids and a plain-language use_when. The section remains TOC-only until source study is recorded. View tags are derived from these paths, not from a broad topic-label guess."
   }
 }
