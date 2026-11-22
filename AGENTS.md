@@ -45,6 +45,12 @@ Source: [FKEN — Frustration-to-resource traversability](https://github.com/Jad
 - Evidence separate from model interpretation; hypotheses remain hypotheses. For books not inspected, mark chapters/pages as unverified candidates rather than inventing exact locations.
 - Compact certificates: conclusion or obstruction, first-hand evidence, assumptions, uncertainty, and what would justify reopening.
 
+## Each domain: one research corpus, question- or set-scoped investigation
+
+The manufacturing, operating-systems, and human–AI domains each use a single `Investigations/<slug>/investigation.json`. Do not reintroduce separate `question_tree.json`, `reference_guide.json`, or `fieldwork.json` files just because an investigation has multiple entry questions, sources, evidence types, or presentation views. The canonical domain file preserves `curiosity_atlas`, `navigation_bridges`, `landscape_views`, `nodes`, and `sources`; supplementary `question_nodes`, `fieldwork_nodes`, and `routes` remain sections of that same file when they offer distinct information. The `rsm-view.json` manifest may define multiple display projections over one source file without duplicating research.
+
+Do not confuse `question_nodes` (historical question-index entries and candidate reading paths) with `nodes` (canonical technical investigation records), and do not treat `fieldwork_nodes` as independently validated conclusions. Old JSONs remain recoverable in Git history but are not active files. Update only the relevant section of the canonical file while preserving stable IDs and source anchors.
+
 ## Manufacturing: one research corpus, question- or set-scoped investigation
 
 An **investigation** is a purposeful exploration of one question or a set of related questions, including relevant mechanisms, evidence, open alternatives and source locations. It is not a different kind of tree or a separate JSON by default. Questions and question sets both enter the same technical research corpus.
