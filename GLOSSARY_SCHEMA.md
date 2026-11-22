@@ -8,6 +8,7 @@ Each research domain has **one canonical `investigation.json` for evidence, ques
 | Operating systems | [glossary](Investigations/operating-systems/glossary.json) | [investigation](Investigations/operating-systems/investigation.json) |
 | Human–AI collaboration | [glossary](Investigations/human-ai-symbiosis/glossary.json) | [investigation](Investigations/human-ai-symbiosis/investigation.json) |
 | FPGA / VLSI | [glossary](Investigations/digital-hardware-design/glossary.json) | [investigation](Investigations/digital-hardware-design/investigation.json) |
+| Robotics | [glossary](Investigations/robotics/glossary.json) | [investigation](Investigations/robotics/investigation.json) |
 
 ## Contract
 
