@@ -1,7 +1,7 @@
 {
   "id": "human-ai-symbiosis",
   "kind": "question_tree",
-  "version": 2,
+  "version": 3,
   "status": "provisional",
   "root": "HAI-00",
   "title": "How do people use AI, from everyday help to seemingly alien intellectual capability?",
@@ -752,6 +752,183 @@
       "candidate_references": [],
       "investigation_id": null,
       "established_certificate_id": null
+    },
+    {
+      "id": "HAI-Q07D",
+      "parent_id": "HAI-Q07",
+      "question": "Why does AI give a persuasive answer that fails when I actually use it?",
+      "why_ask": "Fluent explanations and generated code are proposals until real execution, source evidence or another decisive observation checks them.",
+      "status": "candidate",
+      "candidate_references": [],
+      "investigation_id": null,
+      "established_certificate_id": null,
+      "related_question_ids": [
+        "HAI-Q07C",
+        "HAI-Q05A"
+      ],
+      "technical_target_ids": [
+        "HAI-I03",
+        "HAI-I04"
+      ],
+      "fieldwork_case_ids": [
+        "FW-METR",
+        "FW-SIMON"
+      ]
+    },
+    {
+      "id": "HAI-Q07E",
+      "parent_id": "HAI-Q07",
+      "question": "Why does AI seem to lose track of a project after a long conversation?",
+      "why_ask": "Context windows, retrieval, state handoff and persistent project records are different mechanisms; continuity must be designed, not inferred from one session.",
+      "status": "candidate",
+      "candidate_references": [],
+      "investigation_id": null,
+      "established_certificate_id": null,
+      "related_question_ids": [
+        "HAI-Q09C",
+        "HAI-Q03D"
+      ],
+      "technical_target_ids": [
+        "HAI-I07",
+        "HAI-I04"
+      ],
+      "fieldwork_case_ids": [
+        "FW-OWN"
+      ]
+    },
+    {
+      "id": "HAI-Q03E",
+      "parent_id": "HAI-Q03",
+      "question": "What must I save so another AI or person can continue the project correctly next month?",
+      "why_ask": "The goal, current functional contract, working artifacts, failed approaches, provenance and unresolved decisions each protect a different part of recoverability.",
+      "status": "candidate",
+      "candidate_references": [],
+      "investigation_id": null,
+      "established_certificate_id": null,
+      "related_question_ids": [
+        "HAI-Q03B",
+        "HAI-Q03D"
+      ],
+      "technical_target_ids": [
+        "HAI-I04",
+        "HAI-I07"
+      ],
+      "fieldwork_case_ids": [
+        "FW-OWN",
+        "FW-SIMON"
+      ]
+    },
+    {
+      "id": "HAI-Q04D",
+      "parent_id": "HAI-Q04",
+      "question": "When should an AI stop and ask for a human decision?",
+      "why_ask": "A high-impact, irreversible, ambiguous or poorly measurable action has different delegation requirements than a repeatable, reversible operation.",
+      "status": "candidate",
+      "candidate_references": [],
+      "investigation_id": null,
+      "established_certificate_id": null,
+      "related_question_ids": [
+        "HAI-Q02C",
+        "HAI-Q04C"
+      ],
+      "technical_target_ids": [
+        "HAI-I04",
+        "HAI-I11"
+      ],
+      "fieldwork_case_ids": [
+        "FW-MOLLICK",
+        "FW-CARLINI"
+      ]
+    },
+    {
+      "id": "HAI-Q05D",
+      "parent_id": "HAI-Q05",
+      "question": "How would I know the AI-built thing is still useful a month later?",
+      "why_ask": "A screenshot or passing unit check does not establish real user flows, maintainability, recoverability or successful operation under changed conditions.",
+      "status": "candidate",
+      "candidate_references": [],
+      "investigation_id": null,
+      "established_certificate_id": null,
+      "related_question_ids": [
+        "HAI-Q05A",
+        "HAI-Q05C"
+      ],
+      "technical_target_ids": [
+        "HAI-I04",
+        "HAI-I07"
+      ],
+      "fieldwork_case_ids": [
+        "FW-OWN",
+        "FW-METR"
+      ]
+    },
+    {
+      "id": "HAI-Q09D",
+      "parent_id": "HAI-Q09",
+      "question": "How do I recover if an AI makes a large set of wrong changes?",
+      "why_ask": "A reversible diff, trusted baseline, explicit failing behavior and a small independent repair can outperform blind retries and accumulating patches.",
+      "status": "candidate",
+      "candidate_references": [],
+      "investigation_id": null,
+      "established_certificate_id": null,
+      "related_question_ids": [
+        "HAI-Q09C",
+        "HAI-Q03C"
+      ],
+      "technical_target_ids": [
+        "HAI-I07",
+        "HAI-I04"
+      ],
+      "fieldwork_case_ids": [
+        "FW-OWN",
+        "FW-ARMIN"
+      ]
+    },
+    {
+      "id": "HAI-Q10E",
+      "parent_id": "HAI-Q10",
+      "question": "What did the successful demo leave out about how the result was achieved?",
+      "why_ask": "Pre-existing code, tool orchestration, human corrections, evaluator design, failed attempts, and maintenance may be invisible in a public result.",
+      "status": "candidate",
+      "candidate_references": [],
+      "investigation_id": null,
+      "established_certificate_id": null,
+      "related_question_ids": [
+        "HAI-Q10A",
+        "HAI-Q10B"
+      ],
+      "technical_target_ids": [
+        "HAI-I08",
+        "HAI-I10"
+      ],
+      "fieldwork_case_ids": [
+        "FW-CARLINI",
+        "FW-CLAX",
+        "FW-ALPOGE"
+      ]
+    },
+    {
+      "id": "HAI-Q06C",
+      "parent_id": "HAI-Q06",
+      "question": "Could a better test make an apparently impossible AI project tractable?",
+      "why_ask": "A task can change from vague generation to directed search if success becomes cheaply measurable without losing the actual objective.",
+      "status": "candidate",
+      "candidate_references": [],
+      "investigation_id": null,
+      "established_certificate_id": null,
+      "related_question_ids": [
+        "HAI-Q04A",
+        "HAI-Q06B"
+      ],
+      "technical_target_ids": [
+        "HAI-I02",
+        "HAI-I04",
+        "HAI-I11"
+      ],
+      "fieldwork_case_ids": [
+        "FW-ALPHA",
+        "FW-SIMON"
+      ]
     }
   ],
   "answer_branches": [
@@ -1049,6 +1226,48 @@
       "to": "HAI-Q04",
       "relationship": "reconstruction",
       "why": "Test whether the claimed advantage comes from composing known mechanisms"
+    },
+    {
+      "from": "HAI-Q07D",
+      "to": "HAI-Q01B",
+      "relationship": "claims-versus-evidence",
+      "why": "Plausible output must be separated from independently established effects."
+    },
+    {
+      "from": "HAI-Q07E",
+      "to": "HAI-Q03E",
+      "relationship": "continuity-contract",
+      "why": "Recoverability depends on what is externalized, not an assumption of unlimited conversation memory."
+    },
+    {
+      "from": "HAI-Q05D",
+      "to": "HAI-Q03D",
+      "relationship": "durability-of-capability",
+      "why": "A reusable skill or maintainable artifact matters beyond a one-time generated result."
+    },
+    {
+      "from": "HAI-Q04D",
+      "to": "HAI-Q02C",
+      "relationship": "delegation-boundaries",
+      "why": "Human oversight is a policy to design for consequences, not a universal degree of autonomy."
+    },
+    {
+      "from": "HAI-Q09D",
+      "to": "HAI-Q03C",
+      "relationship": "recoverable-verification",
+      "why": "Rollback and causal debugging must preserve trustworthy evidence of what changed."
+    },
+    {
+      "from": "HAI-Q10E",
+      "to": "HAI-Q08D",
+      "relationship": "sample-and-resource-confounds",
+      "why": "A public demo is selected evidence, not a representative account of costs or capability."
+    },
+    {
+      "from": "HAI-Q06C",
+      "to": "HAI-Q04A",
+      "relationship": "evaluator-enables-search",
+      "why": "Reliable measurement can change which generation and exploration strategies are viable."
     }
   ],
   "possible_perspectives": [
@@ -1118,5 +1337,696 @@
     "anti_myth_rule": "Do not replace a legend with a simplistic 'anyone can do it' story. Distinguish replicable method, expertise, unusually favorable problem selection, institution-scale resources and unexplained residuals."
   },
   "presentation_note": "The why_ask field is reader-facing subject context, not instructions to the assistant, editor, or investigator. Procedural priorities, source skepticism, evidence certification rules, and editorial direction are recorded in investigation metadata instead.",
-  "fieldwork_link_rule": "fieldwork_case_ids link candidate questions to case records in fieldwork.json; case observations do not certify the question tree's possible answers."
+  "fieldwork_link_rule": "fieldwork_case_ids link candidate questions to case records in fieldwork.json; case observations do not certify the question tree's possible answers.",
+  "curiosity_atlas": {
+    "purpose": "Begin from everyday uses, frustrations, professional ambitions or extraordinary claims, then encounter the relevant technical explanations, evidence and contrasting cases without flattening the investigation.",
+    "families": [
+      {
+        "id": "ordinary-experience",
+        "label": "Why does AI behave this way?",
+        "description": "Plausibility, missing context, verification and everyday usefulness"
+      },
+      {
+        "id": "learning-and-building",
+        "label": "Can I learn or make something real with AI?",
+        "description": "Operational skill, software quality, projects and continuity"
+      },
+      {
+        "id": "agency-and-teams",
+        "label": "How should humans and agents actually work together?",
+        "description": "Delegation, evaluation, coordination, reversibility and costs"
+      },
+      {
+        "id": "outliers-and-frontiers",
+        "label": "What explains the most extraordinary outcomes?",
+        "description": "Credible evidence, human expertise, resources, reproduction and new capabilities"
+      }
+    ],
+    "entries": [
+      {
+        "id": "HAI-CURI-confidence",
+        "family_id": "ordinary-experience",
+        "question": "Why does AI sound certain even when it is wrong?",
+        "aliases": [
+          "hallucination",
+          "convincing answer"
+        ],
+        "context": "Distinguish fluent generation, grounded sources and independently checked truth.",
+        "bridge_ids": [
+          "HAI-BRG-trust"
+        ],
+        "related_question_ids": [
+          "HAI-Q07D",
+          "HAI-Q01B"
+        ]
+      },
+      {
+        "id": "HAI-CURI-failed-code",
+        "family_id": "ordinary-experience",
+        "question": "Why can AI write code so quickly but still fail to build a working app?",
+        "aliases": [
+          "AI code doesn't work",
+          "vibe coding",
+          "integration bugs"
+        ],
+        "context": "Generated source, execution and accepted end-to-end behavior are different results.",
+        "bridge_ids": [
+          "HAI-BRG-evaluation",
+          "HAI-BRG-economics"
+        ],
+        "related_question_ids": [
+          "HAI-Q07D",
+          "HAI-Q05D"
+        ]
+      },
+      {
+        "id": "HAI-CURI-forget",
+        "family_id": "ordinary-experience",
+        "question": "Why does AI forget decisions we made earlier?",
+        "aliases": [
+          "lost context",
+          "new chat",
+          "context window"
+        ],
+        "context": "Separate context availability from persistent project state and continuity.",
+        "bridge_ids": [
+          "HAI-BRG-continuity"
+        ],
+        "related_question_ids": [
+          "HAI-Q07E",
+          "HAI-Q03E"
+        ]
+      },
+      {
+        "id": "HAI-CURI-trust",
+        "family_id": "ordinary-experience",
+        "question": "How can I tell whether an AI-cited study or achievement is real?",
+        "aliases": [
+          "fake citations",
+          "research claims",
+          "proof"
+        ],
+        "context": "A source can establish what was claimed without verifying the actual result.",
+        "bridge_ids": [
+          "HAI-BRG-trust",
+          "HAI-BRG-demystify"
+        ],
+        "related_question_ids": [
+          "HAI-Q01B",
+          "HAI-Q07D"
+        ]
+      },
+      {
+        "id": "HAI-CURI-learn",
+        "family_id": "learning-and-building",
+        "question": "Am I actually learning with AI, or only getting answers?",
+        "aliases": [
+          "AI tutor",
+          "skill retention",
+          "understanding"
+        ],
+        "context": "Task completion, independent competence and transfer to a new task require different observations.",
+        "bridge_ids": [
+          "HAI-BRG-learning"
+        ],
+        "related_question_ids": [
+          "HAI-Q05B",
+          "HAI-Q03D"
+        ]
+      },
+      {
+        "id": "HAI-CURI-beginner",
+        "family_id": "learning-and-building",
+        "question": "Can someone who cannot code yet build something genuinely useful with AI?",
+        "aliases": [
+          "beginner software",
+          "no code",
+          "first project"
+        ],
+        "context": "Real scope and reliable integration determine feasibility more than a persuasive first demo.",
+        "bridge_ids": [
+          "HAI-BRG-learning",
+          "HAI-BRG-evaluation"
+        ],
+        "related_question_ids": [
+          "HAI-Q07B",
+          "HAI-Q03B"
+        ]
+      },
+      {
+        "id": "HAI-CURI-maintain",
+        "family_id": "learning-and-building",
+        "question": "How do I know whether an AI-made tool will still work next month?",
+        "aliases": [
+          "maintainability",
+          "real user flow",
+          "future usefulness"
+        ],
+        "context": "Usability, regression resistance and recoverability require more than immediate output.",
+        "bridge_ids": [
+          "HAI-BRG-evaluation",
+          "HAI-BRG-continuity"
+        ],
+        "related_question_ids": [
+          "HAI-Q05D"
+        ]
+      },
+      {
+        "id": "HAI-CURI-handoff",
+        "family_id": "learning-and-building",
+        "question": "How can a new chat or collaborator continue a large project without starting over?",
+        "aliases": [
+          "handoff",
+          "persistent work",
+          "project memory"
+        ],
+        "context": "Stable intent, working artifacts, evidence and unresolved choices need explicit handoff boundaries.",
+        "bridge_ids": [
+          "HAI-BRG-continuity"
+        ],
+        "related_question_ids": [
+          "HAI-Q03E",
+          "HAI-Q09D"
+        ]
+      },
+      {
+        "id": "HAI-CURI-human",
+        "family_id": "agency-and-teams",
+        "question": "What does the human actually contribute to an exceptional AI project?",
+        "aliases": [
+          "human in the loop",
+          "AI collaboration",
+          "expertise"
+        ],
+        "context": "Problem choice, representation, domain judgment and evaluation are separately testable contributions.",
+        "bridge_ids": [
+          "HAI-BRG-agency",
+          "HAI-BRG-demystify"
+        ],
+        "related_question_ids": [
+          "HAI-Q10A",
+          "HAI-Q02C"
+        ]
+      },
+      {
+        "id": "HAI-CURI-approval",
+        "family_id": "agency-and-teams",
+        "question": "When should the AI ask permission instead of continuing on its own?",
+        "aliases": [
+          "autonomy",
+          "approval",
+          "irreversible action"
+        ],
+        "context": "Escalation depends on uncertainty, stakes, reversibility and available validators.",
+        "bridge_ids": [
+          "HAI-BRG-agency"
+        ],
+        "related_question_ids": [
+          "HAI-Q04D"
+        ]
+      },
+      {
+        "id": "HAI-CURI-many-agents",
+        "family_id": "agency-and-teams",
+        "question": "Why can a team of AI agents be worse than one good agent?",
+        "aliases": [
+          "parallel agents",
+          "duplicate work",
+          "coordination overhead"
+        ],
+        "context": "Parallelism is valuable only when task factorization and validation outweigh shared-state costs.",
+        "bridge_ids": [
+          "HAI-BRG-parallel",
+          "HAI-BRG-economics"
+        ],
+        "related_question_ids": [
+          "HAI-Q04B",
+          "HAI-Q10E"
+        ]
+      },
+      {
+        "id": "HAI-CURI-failed-edits",
+        "family_id": "agency-and-teams",
+        "question": "What should I do when an AI makes many changes but the project gets worse?",
+        "aliases": [
+          "rollback",
+          "AI edits broke it",
+          "causal debugging"
+        ],
+        "context": "Recovering a known-good state and isolating a changed failure is different from adding retries.",
+        "bridge_ids": [
+          "HAI-BRG-continuity",
+          "HAI-BRG-evaluation"
+        ],
+        "related_question_ids": [
+          "HAI-Q09D"
+        ]
+      },
+      {
+        "id": "HAI-CURI-speed",
+        "family_id": "agency-and-teams",
+        "question": "Why can AI make an experienced engineer slower?",
+        "aliases": [
+          "productivity",
+          "review overhead",
+          "developer"
+        ],
+        "context": "End-to-end accepted work includes verification and correction rather than only time spent generating code.",
+        "bridge_ids": [
+          "HAI-BRG-economics"
+        ],
+        "related_question_ids": [
+          "HAI-Q05A",
+          "HAI-Q07D"
+        ]
+      },
+      {
+        "id": "HAI-CURI-legend",
+        "family_id": "outliers-and-frontiers",
+        "question": "How did someone make an AI do something that seems impossible?",
+        "aliases": [
+          "superhuman AI",
+          "extraordinary AI",
+          "legend"
+        ],
+        "context": "Reconstruct the action sequence, prior expertise, tests and resources before attributing the outcome to any one cause.",
+        "bridge_ids": [
+          "HAI-BRG-demystify"
+        ],
+        "related_question_ids": [
+          "HAI-Q10",
+          "HAI-Q10E"
+        ]
+      },
+      {
+        "id": "HAI-CURI-verify",
+        "family_id": "outliers-and-frontiers",
+        "question": "How can we know whether a spectacular AI research claim actually holds up?",
+        "aliases": [
+          "AI theorem proof",
+          "AI science",
+          "independent verification"
+        ],
+        "context": "Formal artifacts, specification matching, reproducibility and external review have distinct evidentiary roles.",
+        "bridge_ids": [
+          "HAI-BRG-trust",
+          "HAI-BRG-demystify"
+        ],
+        "related_question_ids": [
+          "HAI-Q01B",
+          "HAI-Q10C"
+        ]
+      },
+      {
+        "id": "HAI-CURI-cheaper",
+        "family_id": "outliers-and-frontiers",
+        "question": "Can I reproduce the useful part of a famous AI experiment on ordinary hardware?",
+        "aliases": [
+          "cheap reproduction",
+          "reduce compute",
+          "learn from research"
+        ],
+        "context": "Separate the transferable mechanism from scale, tools, unusual expertise and hidden preparation.",
+        "bridge_ids": [
+          "HAI-BRG-demystify",
+          "HAI-BRG-learning"
+        ],
+        "related_question_ids": [
+          "HAI-Q10B",
+          "HAI-Q03"
+        ]
+      },
+      {
+        "id": "HAI-CURI-unequal",
+        "family_id": "outliers-and-frontiers",
+        "question": "Why do people using similar AI tools get such different results?",
+        "aliases": [
+          "AI power users",
+          "percentiles",
+          "expert users"
+        ],
+        "context": "Sampling, task difficulty, expertise, tools, compute and evaluators are confounders rather than a single ranking.",
+        "bridge_ids": [
+          "HAI-BRG-population",
+          "HAI-BRG-economics"
+        ],
+        "related_question_ids": [
+          "HAI-Q08",
+          "HAI-Q08D"
+        ]
+      },
+      {
+        "id": "HAI-CURI-new-tests",
+        "family_id": "outliers-and-frontiers",
+        "question": "Could a new test make AI capable of tackling an entirely new class of problems?",
+        "aliases": [
+          "evaluation",
+          "automatic verification",
+          "new capability"
+        ],
+        "context": "Turning outcomes into reliable signals can alter which search and optimization procedures are effective.",
+        "bridge_ids": [
+          "HAI-BRG-evaluation",
+          "HAI-BRG-demystify"
+        ],
+        "related_question_ids": [
+          "HAI-Q06C",
+          "HAI-Q04A"
+        ]
+      }
+    ],
+    "technical_corpus": "investigation.json",
+    "fieldwork_corpus": "fieldwork.json",
+    "entry_policy": "Ordinary questions identify a starting concern, not a ceiling on technical depth. A case may support several entries without copying case evidence."
+  },
+  "navigation_bridges": [
+    {
+      "id": "HAI-BRG-trust",
+      "question": "Which claim or result is actually supported?",
+      "target_path": "investigation.json",
+      "case_path": "fieldwork.json",
+      "choices": [
+        {
+          "label": "An answer or citation sounds plausible",
+          "technical_title": "Grounding and independent validity",
+          "distinguishing_question": "Does the cited source support the precise proposition, and can a separate check falsify it?",
+          "why": "Generating a convincing assertion is distinct from retrieving a source, interpreting it correctly and verifying the intended claim.",
+          "targets": [
+            "HAI-I03",
+            "HAI-I05"
+          ],
+          "case_ids": [
+            "FW-OPENAI",
+            "FW-METR"
+          ]
+        },
+        {
+          "label": "A claimed theorem or scientific result is formalized",
+          "technical_title": "Formal artifact versus correct specification",
+          "distinguishing_question": "Can the artifact be independently replayed, and does its formal statement match the claimed mathematical theorem?",
+          "why": "A proof checker can validate derivations relative to formal assumptions while leaving specification equivalence as an independent obligation.",
+          "targets": [
+            "HAI-I01",
+            "HAI-I08"
+          ],
+          "case_ids": [
+            "FW-ALPOGE"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HAI-BRG-evaluation",
+      "question": "What would establish useful, correct behavior?",
+      "target_path": "investigation.json",
+      "case_path": "fieldwork.json",
+      "choices": [
+        {
+          "label": "A generated app compiles or a demo looks good",
+          "technical_title": "Syntactic success versus end-to-end acceptance",
+          "distinguishing_question": "Does a representative task succeed under real input, integration boundaries and failure/restart conditions?",
+          "why": "Compilation, unit checks, screenshots and sustained practical utility certify different claims. Tests must attack the uncertainty that matters.",
+          "targets": [
+            "HAI-I04",
+            "HAI-I07"
+          ],
+          "case_ids": [
+            "FW-OWN",
+            "FW-SIMON"
+          ]
+        },
+        {
+          "label": "An evaluator can choose among AI candidates",
+          "technical_title": "Feedback-guided search and evaluator validity",
+          "distinguishing_question": "Can the score be gamed or diverge from actual human intent?",
+          "why": "A cheap, faithful evaluator turns generation into iterative search; a misaligned oracle can efficiently optimize the wrong objective.",
+          "targets": [
+            "HAI-I02",
+            "HAI-I11"
+          ],
+          "case_ids": [
+            "FW-ALPHA",
+            "FW-CARLINI"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HAI-BRG-continuity",
+      "question": "What state makes the work recoverable?",
+      "target_path": "investigation.json",
+      "case_path": "fieldwork.json",
+      "choices": [
+        {
+          "label": "A new conversation cannot reconstruct project intent",
+          "technical_title": "Persisted functional contract versus transient conversation",
+          "distinguishing_question": "Can a new participant recover the goal, current working state and unresolved decisions from durable artifacts?",
+          "why": "Message history, source code, evaluated behavior and intentional requirements are not interchangeable stores of project knowledge.",
+          "targets": [
+            "HAI-I07",
+            "HAI-I04"
+          ],
+          "case_ids": [
+            "FW-OWN"
+          ]
+        },
+        {
+          "label": "A large mistaken edit set must be repaired",
+          "technical_title": "Known-good baselines, diffs and causal fault localization",
+          "distinguishing_question": "Which change first violated a representative requirement and can it be reverted independently?",
+          "why": "Recovery uses inspectable changes and real failure evidence; blind retries add states without explaining the break.",
+          "targets": [
+            "HAI-I07",
+            "HAI-I11"
+          ],
+          "case_ids": [
+            "FW-OWN",
+            "FW-ARMIN"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HAI-BRG-learning",
+      "question": "Did the user acquire transferable capability?",
+      "target_path": "investigation.json",
+      "case_path": "fieldwork.json",
+      "choices": [
+        {
+          "label": "AI helped complete today's task",
+          "technical_title": "Assisted performance versus independent transfer",
+          "distinguishing_question": "Can the person solve a meaningfully different task without identical AI scaffolding?",
+          "why": "Task completion is not proof of retained competence; discriminate assistance, operational understanding and reusable tacit skill.",
+          "targets": [
+            "HAI-I04",
+            "HAI-I05"
+          ],
+          "case_ids": [
+            "FW-STUDENTS",
+            "FW-SMALLBUS"
+          ]
+        },
+        {
+          "label": "A famous system used unusual resources",
+          "technical_title": "Minimal transferable mechanism",
+          "distinguishing_question": "What smaller project preserves the essential causal mechanism while removing unrelated scale?",
+          "why": "Copying an entire system can be less informative than reproducing its evaluator, coordination contract or domain-specific insight.",
+          "targets": [
+            "HAI-I08",
+            "HAI-I12"
+          ],
+          "case_ids": [
+            "FW-SIMON",
+            "FW-CLAX",
+            "FW-CARLINI"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HAI-BRG-agency",
+      "question": "Which decisions require human authority or expertise?",
+      "target_path": "investigation.json",
+      "case_path": "fieldwork.json",
+      "choices": [
+        {
+          "label": "The agent could continue, but the consequences matter",
+          "technical_title": "Delegation and escalation as a control policy",
+          "distinguishing_question": "Are decisions reversible, independently checkable and consistent with the user's functional intent?",
+          "why": "More autonomy is not automatically more useful; escalation can be the correct behavior at consequential uncertainty.",
+          "targets": [
+            "HAI-I04",
+            "HAI-I11"
+          ],
+          "case_ids": [
+            "FW-MOLLICK",
+            "FW-OWN"
+          ]
+        },
+        {
+          "label": "A result depended on expert intervention",
+          "technical_title": "Human causal contribution versus model generation",
+          "distinguishing_question": "Which problem choices, analogies, rejections and corrections materially changed the trajectory?",
+          "why": "The final artifact alone cannot identify who supplied each decisive constraint or whether another person could reproduce it.",
+          "targets": [
+            "HAI-I08",
+            "HAI-I10"
+          ],
+          "case_ids": [
+            "FW-ALPOGE",
+            "FW-CLAX"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HAI-BRG-parallel",
+      "question": "Can agents work independently without destructive interference?",
+      "target_path": "investigation.json",
+      "case_path": "fieldwork.json",
+      "choices": [
+        {
+          "label": "Tasks have separable contracts and cheap tests",
+          "technical_title": "Parallel search and integration boundaries",
+          "distinguishing_question": "Can results be developed and evaluated independently, then integrated without ambiguous ownership?",
+          "why": "Parallel work pays off when dependency edges are sparse enough and the verification cost is controlled.",
+          "targets": [
+            "HAI-I11",
+            "HAI-I04"
+          ],
+          "case_ids": [
+            "FW-CARLINI",
+            "FW-ALPHA"
+          ]
+        },
+        {
+          "label": "Errors share state and need one causal explanation",
+          "technical_title": "Sequential debugging of coupled systems",
+          "distinguishing_question": "Does changing one part invalidate assumptions and observations elsewhere?",
+          "why": "Strongly coupled faults require a coherent evolving model; spawning agents can multiply inconsistent local fixes.",
+          "targets": [
+            "HAI-I11",
+            "HAI-I07"
+          ],
+          "case_ids": [
+            "FW-CLAX",
+            "FW-CARLINI"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HAI-BRG-demystify",
+      "question": "What made the extraordinary result possible?",
+      "target_path": "investigation.json",
+      "case_path": "fieldwork.json",
+      "choices": [
+        {
+          "label": "An achievement seems far beyond ordinary users",
+          "technical_title": "Reconstructable action trace and skill/resource factoring",
+          "distinguishing_question": "Which hidden dependencies, failed attempts, expert interventions and external tools were necessary?",
+          "why": "A claim becomes learnable when observable decisions and causal mechanisms replace prestige labels, without pretending expertise disappears.",
+          "targets": [
+            "HAI-I08",
+            "HAI-I10",
+            "HAI-I12"
+          ],
+          "case_ids": [
+            "FW-CARLINI",
+            "FW-CLAX",
+            "FW-ALPOGE"
+          ]
+        },
+        {
+          "label": "The project improved through iterative generation",
+          "technical_title": "Objective evaluators and composable search",
+          "distinguishing_question": "What observable score or test made a candidate meaningfully better, and how was that score validated?",
+          "why": "Evaluation can amplify search but only where the objective represents the real goal; uncaptured expertise and invalid benchmarks remain limits.",
+          "targets": [
+            "HAI-I02",
+            "HAI-I11"
+          ],
+          "case_ids": [
+            "FW-ALPHA",
+            "FW-SIMON"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HAI-BRG-population",
+      "question": "Who is being compared, on what task, with what measurement?",
+      "target_path": "investigation.json",
+      "case_path": "fieldwork.json",
+      "choices": [
+        {
+          "label": "Many people use AI but few outcomes are measured",
+          "technical_title": "Usage population versus independently measured performance",
+          "distinguishing_question": "Does the evidence count conversations, self-reported activity, completed tasks or independently verified outcomes?",
+          "why": "Aggregate message proportions cannot establish an individual's ability or rank in real engineering performance.",
+          "targets": [
+            "HAI-I05",
+            "HAI-I06"
+          ],
+          "case_ids": [
+            "FW-OPENAI",
+            "FW-CLAUDE"
+          ]
+        },
+        {
+          "label": "Exceptional examples dominate the discussion",
+          "technical_title": "Selection bias and resource-confounded comparisons",
+          "distinguishing_question": "What would the result be with equal task difficulty, compute, prior expertise and verification?",
+          "why": "Visible frontier accomplishments are selected samples; apparent percentiles have no meaning without a defined cohort and metric.",
+          "targets": [
+            "HAI-I06",
+            "HAI-I08",
+            "HAI-I09"
+          ],
+          "case_ids": [
+            "FW-CARLINI",
+            "FW-ALPOGE",
+            "FW-METR"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HAI-BRG-economics",
+      "question": "Did the tool reduce real work?",
+      "target_path": "investigation.json",
+      "case_path": "fieldwork.json",
+      "choices": [
+        {
+          "label": "Generation was quick but reviewing was expensive",
+          "technical_title": "End-to-end time and correctness accounting",
+          "distinguishing_question": "How much time elapsed from understanding the task through accepted integration and later correction?",
+          "why": "Model speed cannot substitute for total task cost; review burden and rework can exceed generation gains.",
+          "targets": [
+            "HAI-I03",
+            "HAI-I04"
+          ],
+          "case_ids": [
+            "FW-METR",
+            "FW-SIMON"
+          ]
+        },
+        {
+          "label": "More agents or compute appear to increase capability",
+          "technical_title": "Marginal output versus coordination and inference budget",
+          "distinguishing_question": "Does an additional agent improve net correct progress after counting integration, duplicated work and retries?",
+          "why": "The optimal number of agents depends on task independence, evaluator quality, compute and human attention.",
+          "targets": [
+            "HAI-I11",
+            "HAI-I06"
+          ],
+          "case_ids": [
+            "FW-CARLINI",
+            "FW-CLAX"
+          ]
+        }
+      ]
+    }
+  ],
+  "entry_model": "Select one curiosity or a question set; recover technical models, relevant comparative fieldwork and source evidence without cloning any case. The entry language does not limit technical depth."
 }
