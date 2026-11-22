@@ -25,6 +25,14 @@ This repository is persistent state for research across chats, not an instructio
 - Evidence separate from model interpretation; hypotheses remain hypotheses. For books not inspected, mark chapters/pages as unverified candidates rather than inventing exact locations.
 - Compact certificates: conclusion or obstruction, first-hand evidence, assumptions, uncertainty, and what would justify reopening.
 
+## Multiple manufacturing landscapes
+
+- Keep `Investigations/manufacturing-orientation/investigation.json` as the canonical identity of sources, findings, questions and mechanism studies. Its `landscape_views` are goal-conditioned projections: member IDs plus alternate parents, **not duplicate copies** of evidence. Preserve stable IDs across every view.
+- Differentiate actual source inspection from table-of-contents navigation. `book_landscaplets` is a retrieval map, not a collection of established results. Record exact edition and printed/PDF page scheme where known.
+- Prefer substantive functional operators—force/travel transformation, motion and constraint, material transformation, support/release, geometry, joining, tolerancing and scale—over taxonomies of book titles or manufacturing brands.
+- A cross-view link should answer a useful new question. Do not automatically assign every source or case to all views. Add a new view only when a distinct navigation purpose is demonstrated.
+- The existing canonical IDs (for example `MFG-FUNC-COMPLIANT`) can appear in several manufacturing perspectives; user annotations and source lineage must remain attached to the one record. Inspect the actual source section and contrasting mechanism before upgrading candidate navigation to an observed claim.
+
 ## Keep it lean
 
 - Begin with a question and a few useful nodes. Grow only when new distinctions affect research or decisions.
