@@ -335,7 +335,7 @@
         },
         {
           "ref": "1.2",
-          "title": "Row Reduction . . .",
+          "title": "Row Reduction",
           "locator_status": "toc_title_only_page_unverified"
         },
         {
@@ -345,12 +345,12 @@
         },
         {
           "ref": "1.4",
-          "title": "Determinants . . . . .",
+          "title": "Determinants",
           "locator_status": "toc_title_only_page_unverified"
         },
         {
           "ref": "1.5",
-          "title": "Permutations . . . . .",
+          "title": "Permutations",
           "locator_status": "toc_title_only_page_unverified"
         },
         {
@@ -360,12 +360,12 @@
         },
         {
           "ref": "2.1",
-          "title": "Laws of Composition . . . . . . . . . . . . .",
+          "title": "Laws of Composition",
           "locator_status": "toc_title_only_page_unverified"
         },
         {
           "ref": "2.2",
-          "title": "Groups and Subgroups . . . . . . . . . . . .",
+          "title": "Groups and Subgroups",
           "locator_status": "toc_title_only_page_unverified"
         },
         {
@@ -375,17 +375,17 @@
         },
         {
           "ref": "2.4",
-          "title": "Cyclic Groups . . . . . . .",
+          "title": "Cyclic Groups",
           "locator_status": "toc_title_only_page_unverified"
         },
         {
           "ref": "2.5",
-          "title": "Homomorphisms . . . . . . . . . . .",
+          "title": "Homomorphisms",
           "locator_status": "toc_title_only_page_unverified"
         },
         {
           "ref": "2.6",
-          "title": "Isomorphisms . . . . . . . . . . . . .",
+          "title": "Isomorphisms",
           "locator_status": "toc_title_only_page_unverified"
         },
         {
@@ -400,7 +400,7 @@
         },
         {
           "ref": "2.9",
-          "title": "Modular Arithmetic . . . . .",
+          "title": "Modular Arithmetic",
           "locator_status": "toc_title_only_page_unverified"
         },
         {
@@ -445,7 +445,7 @@
         },
         {
           "ref": "3.6",
-          "title": "Direct Sums . . . . . .",
+          "title": "Direct Sums",
           "locator_status": "toc_title_only_page_unverified"
         },
         {
@@ -455,7 +455,7 @@
         },
         {
           "ref": "4.1",
-          "title": "The Dimension Formula . . . . . . .",
+          "title": "The Dimension Formula",
           "locator_status": "toc_title_only_page_unverified"
         },
         {
@@ -465,12 +465,12 @@
         },
         {
           "ref": "4.3",
-          "title": "Linear Operators . . . . . . .",
+          "title": "Linear Operators",
           "locator_status": "toc_title_only_page_unverified"
         },
         {
           "ref": "4.4",
-          "title": "Eigenvectors . . . . . . . . .",
+          "title": "Eigenvectors",
           "locator_status": "toc_title_only_page_unverified"
         },
         {
@@ -515,7 +515,7 @@
         },
         {
           "ref": "6.2",
-          "title": "Isometries . . . . . . . . .",
+          "title": "Isometries",
           "locator_status": "toc_title_only_page_unverified"
         },
         {
@@ -530,12 +530,12 @@
         },
         {
           "ref": "6.5",
-          "title": "Discrete Groups of Isometries . . . .",
+          "title": "Discrete Groups of Isometries",
           "locator_status": "toc_title_only_page_unverified"
         },
         {
           "ref": "6.6",
-          "title": "Plane Crystallographic Groups . . . .",
+          "title": "Plane Crystallographic Groups",
           "locator_status": "toc_title_only_page_unverified"
         },
         {
@@ -550,7 +550,7 @@
         },
         {
           "ref": "6.9",
-          "title": "The Counting Formula . . .",
+          "title": "The Counting Formula",
           "locator_status": "toc_title_only_page_unverified"
         },
         {
@@ -595,8 +595,9 @@
         },
         {
           "ref": "7.8",
-          "title": "Groups of Order 12",
-          "locator_status": "toc_title_only_page_unverified"
+          "title": "Groups of Order",
+          "locator_status": "ocr_page_candidate_verify_before_use",
+          "printed_page_start": 12
         },
         {
           "ref": "7.9",
@@ -625,7 +626,7 @@
         },
         {
           "ref": "8.4",
-          "title": "Orthogonality . . . . . . . . . . . . . . .",
+          "title": "Orthogonality",
           "locator_status": "toc_title_only_page_unverified"
         },
         {
@@ -635,7 +636,7 @@
         },
         {
           "ref": "8.6",
-          "title": "The Spectral Theorem . . .",
+          "title": "The Spectral Theorem",
           "locator_status": "toc_title_only_page_unverified"
         },
         {
@@ -680,7 +681,7 @@
         },
         {
           "ref": "9.6",
-          "title": "The Lie Algebra . . . .",
+          "title": "The Lie Algebra",
           "locator_status": "toc_title_only_page_unverified"
         },
         {
@@ -710,7 +711,7 @@
         },
         {
           "ref": "10.4",
-          "title": "Characters . . . . . . . . .",
+          "title": "Characters",
           "locator_status": "toc_title_only_page_unverified"
         },
         {
@@ -740,12 +741,12 @@
         },
         {
           "ref": "11.1",
-          "title": "Definition of a Ring . . . .",
+          "title": "Definition of a Ring",
           "locator_status": "toc_title_only_page_unverified"
         },
         {
           "ref": "11.2",
-          "title": "Polynomial Rings . . . . . .",
+          "title": "Polynomial Rings",
           "locator_status": "toc_title_only_page_unverified"
         },
         {
@@ -800,27 +801,27 @@
         },
         {
           "ref": "12.4",
-          "title": "Factoring Integer Polynomials . . . . . . . . . . . . . . . . . . . . . . .",
+          "title": "Factoring Integer Polynomials",
           "locator_status": "toc_title_only_page_unverified"
         },
         {
           "ref": "12.5",
-          "title": "Gauss Primes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+          "title": "Gauss Primes",
           "locator_status": "toc_title_only_page_unverified"
         },
         {
           "ref": "13.1",
-          "title": "Algebraic Integers . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+          "title": "Algebraic Integers",
           "locator_status": "toc_title_only_page_unverified"
         },
         {
           "ref": "13.2",
-          "title": "Factoring Algebraiclntegers . . . . . . . . . . . . . . . . . . . . . . . . . .",
+          "title": "Factoring Algebraiclntegers",
           "locator_status": "toc_title_only_page_unverified"
         },
         {
           "ref": "13.5",
-          "title": "Factoring Ideals . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+          "title": "Factoring Ideals",
           "locator_status": "toc_title_only_page_unverified"
         },
         {
@@ -835,12 +836,12 @@
         },
         {
           "ref": "13.8",
-          "title": "Computing the Class Group . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+          "title": "Computing the Class Group",
           "locator_status": "toc_title_only_page_unverified"
         },
         {
           "ref": "13.9",
-          "title": "Real Quadratic Fields . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+          "title": "Real Quadratic Fields",
           "locator_status": "toc_title_only_page_unverified"
         },
         {
@@ -855,7 +856,7 @@
         },
         {
           "ref": "14.2",
-          "title": "Free Modules . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+          "title": "Free Modules",
           "locator_status": "toc_title_only_page_unverified"
         },
         {
@@ -875,7 +876,7 @@
         },
         {
           "ref": "14.6",
-          "title": "Noetherian Rings . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+          "title": "Noetherian Rings",
           "locator_status": "toc_title_only_page_unverified"
         },
         {
@@ -895,42 +896,42 @@
         },
         {
           "ref": "15.1",
-          "title": "Examples of Fields . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+          "title": "Examples of Fields",
           "locator_status": "toc_title_only_page_unverified"
         },
         {
           "ref": "15.2",
-          "title": "Algebraic and Transcendental Elements . . . . . . . . . . . . . . . . . .",
+          "title": "Algebraic and Transcendental Elements",
           "locator_status": "toc_title_only_page_unverified"
         },
         {
           "ref": "15.3",
-          "title": "The Degree of a Field Extension . . . . . . . . . . . . . . . . . . . . . . .",
+          "title": "The Degree of a Field Extension",
           "locator_status": "toc_title_only_page_unverified"
         },
         {
           "ref": "15.4",
-          "title": "Finding the Irreducible Polynomial . . . . . . . . . . . . . . . . . . . . .",
+          "title": "Finding the Irreducible Polynomial",
           "locator_status": "toc_title_only_page_unverified"
         },
         {
           "ref": "15.5",
-          "title": "Ruler and Compass Constructions . . . . . . . . . . . . . . . . . . . . . .",
+          "title": "Ruler and Compass Constructions",
           "locator_status": "toc_title_only_page_unverified"
         },
         {
           "ref": "15.6",
-          "title": "Adjoining Roots . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+          "title": "Adjoining Roots",
           "locator_status": "toc_title_only_page_unverified"
         },
         {
           "ref": "15.7",
-          "title": "Finite Fields . . . . . . . . .",
+          "title": "Finite Fields",
           "locator_status": "toc_title_only_page_unverified"
         },
         {
           "ref": "15.8",
-          "title": "Primitive Elements . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+          "title": "Primitive Elements",
           "locator_status": "toc_title_only_page_unverified"
         },
         {
@@ -945,63 +946,75 @@
         },
         {
           "ref": "16.1",
-          "title": "Symmetric Functions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 477",
-          "locator_status": "toc_title_only_page_unverified"
+          "title": "Symmetric Functions",
+          "locator_status": "ocr_page_candidate_verify_before_use",
+          "printed_page_start": 477
         },
         {
           "ref": "16.2",
-          "title": "The Discriminant . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 481",
-          "locator_status": "toc_title_only_page_unverified"
+          "title": "The Discriminant",
+          "locator_status": "ocr_page_candidate_verify_before_use",
+          "printed_page_start": 481
         },
         {
           "ref": "16.3",
-          "title": "Splitting Fields . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 483",
-          "locator_status": "toc_title_only_page_unverified"
+          "title": "Splitting Fields",
+          "locator_status": "ocr_page_candidate_verify_before_use",
+          "printed_page_start": 483
         },
         {
           "ref": "16.4",
-          "title": "Isomorphisms of Field Extensions . . . . . . . . . . . . . . . . . . . . . . . . 484",
-          "locator_status": "toc_title_only_page_unverified"
+          "title": "Isomorphisms of Field Extensions",
+          "locator_status": "ocr_page_candidate_verify_before_use",
+          "printed_page_start": 484
         },
         {
           "ref": "16.5",
-          "title": "Fixed Fields . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 486",
-          "locator_status": "toc_title_only_page_unverified"
+          "title": "Fixed Fields",
+          "locator_status": "ocr_page_candidate_verify_before_use",
+          "printed_page_start": 486
         },
         {
           "ref": "16.6",
-          "title": "Galois Extensions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 488",
-          "locator_status": "toc_title_only_page_unverified"
+          "title": "Galois Extensions",
+          "locator_status": "ocr_page_candidate_verify_before_use",
+          "printed_page_start": 488
         },
         {
           "ref": "16.7",
-          "title": "The Main Theorem   489",
-          "locator_status": "toc_title_only_page_unverified"
+          "title": "The Main Theorem",
+          "locator_status": "ocr_page_candidate_verify_before_use",
+          "printed_page_start": 489
         },
         {
           "ref": "16.8",
-          "title": "Cubic Equations . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 492",
-          "locator_status": "toc_title_only_page_unverified"
+          "title": "Cubic Equations",
+          "locator_status": "ocr_page_candidate_verify_before_use",
+          "printed_page_start": 492
         },
         {
           "ref": "16.9",
-          "title": "Quartic Equations . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 493",
-          "locator_status": "toc_title_only_page_unverified"
+          "title": "Quartic Equations",
+          "locator_status": "ocr_page_candidate_verify_before_use",
+          "printed_page_start": 493
         },
         {
           "ref": "16.10",
-          "title": "Roots of Unity . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 497",
-          "locator_status": "toc_title_only_page_unverified"
+          "title": "Roots of Unity",
+          "locator_status": "ocr_page_candidate_verify_before_use",
+          "printed_page_start": 497
         },
         {
           "ref": "16.11",
-          "title": "Kummer Extensions   500",
-          "locator_status": "toc_title_only_page_unverified"
+          "title": "Kummer Extensions",
+          "locator_status": "ocr_page_candidate_verify_before_use",
+          "printed_page_start": 500
         },
         {
           "ref": "16.12",
-          "title": "Quintic Equations . . . . . . . . . . . . . . . . . . . . 502",
-          "locator_status": "toc_title_only_page_unverified"
+          "title": "Quintic Equations",
+          "locator_status": "ocr_page_candidate_verify_before_use",
+          "printed_page_start": 502
         }
       ],
       "source_filename": "02_Abstract_Algebra.pdf"
@@ -1043,7 +1056,7 @@
       "subsections": [
         {
           "ref": "1",
-          "title": "SPACES 1. Fields",
+          "title": "Fields",
           "printed_page_start": 1,
           "locator_status": "ocr_table_of_contents_candidate_verify_before_precision_use"
         },
@@ -2669,12 +2682,6 @@
           "title": "Miscellanea",
           "printed_page_start": 608,
           "locator_status": "table_of_contents_inspected"
-        },
-        {
-          "ref": "4.1.1",
-          "title": "Values of the joint pmf f(x, y)",
-          "printed_page_start": 141,
-          "locator_status": "table_of_contents_inspected"
         }
       ],
       "source_filename": "04_Statistics_Statistical Inference.pdf"
@@ -3021,547 +3028,547 @@
       "subsections": [
         {
           "ref": "1.1",
-          "title": "The Field, Positivity, and Completeness Axioms . . . . . . . . . . . . . . .",
+          "title": "The Field, Positivity, and Completeness Axioms",
           "printed_page_start": 7,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "1.2",
-          "title": "The Natural and Rational Numbers . . . . . . . . . . . . . . . . . . . . . .",
+          "title": "The Natural and Rational Numbers",
           "printed_page_start": 11,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "1.3",
-          "title": "Countable and Uncountable Sets . . . . . . . . . . . . . . . . . . . . . . . .",
+          "title": "Countable and Uncountable Sets",
           "printed_page_start": 13,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "1.4",
-          "title": "Open Sets, Closed Sets, and Borel Sets of Real Numbers . . . . . . . . . . .",
+          "title": "Open Sets, Closed Sets, and Borel Sets of Real Numbers",
           "printed_page_start": 16,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "1.5",
-          "title": "Sequences of Real Numbers . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+          "title": "Sequences of Real Numbers",
           "printed_page_start": 20,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "1.6",
-          "title": "Continuous Real-Valued Functions of a Real Variable . . . . . . . . . . . . .",
+          "title": "Continuous Real-Valued Functions of a Real Variable",
           "printed_page_start": 25,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "2.1",
-          "title": "Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+          "title": "Introduction",
           "printed_page_start": 29,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "2.2",
-          "title": "Outer-Measure . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+          "title": "Outer-Measure",
           "printed_page_start": 31,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "2.3",
-          "title": "The σ-Algebra of Lebesgue Measurable Sets . . . . . . . . . . . . . . . . . .",
+          "title": "The σ-Algebra of Lebesgue Measurable Sets",
           "printed_page_start": 34,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "2.4",
-          "title": "Finer Properties of Measurable Sets . . . . . . . . . . . . . . . . . . . . . .",
+          "title": "Finer Properties of Measurable Sets",
           "printed_page_start": 39,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "2.6",
-          "title": "Vitali’s Example of a Non-measurable Set . . . . . . . . . . . . . . . . . . .",
+          "title": "Vitali’s Example of a Non-measurable Set",
           "printed_page_start": 45,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "2.7",
-          "title": "The Cantor Set and the Cantor-Lebesgue Function . . . . . . . . . . . . . .",
+          "title": "The Cantor Set and the Cantor-Lebesgue Function",
           "printed_page_start": 46,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "3.1",
-          "title": "Sums, Products, and Compositions . . . . . . . . . . . . . . . . . . . . . . .",
+          "title": "Sums, Products, and Compositions",
           "printed_page_start": 51,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "3.2",
-          "title": "Sequential Pointwise Limits and Simple Approximation . . . . . . . . . . .",
+          "title": "Sequential Pointwise Limits and Simple Approximation",
           "printed_page_start": 55,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "3.3",
-          "title": "Littlewood’s Three Principles, Egoroff’s Theorem, and Lusin’s Theorem . .",
+          "title": "Littlewood’s Three Principles, Egoroff’s Theorem, and Lusin’s Theorem",
           "printed_page_start": 59,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "4.1",
-          "title": "Comments on the Riemann Integral . . . . . . . . . . . . . . . . . . . . . .",
+          "title": "Comments on the Riemann Integral",
           "printed_page_start": 62,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "4.2",
-          "title": "The Integral of a Bounded, Finitely Supported, Measurable Function . . . .",
+          "title": "The Integral of a Bounded, Finitely Supported, Measurable Function",
           "printed_page_start": 64,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "4.3",
-          "title": "The Integral of a Non-Negative Measurable Function . . . . . . . . . . . . .",
+          "title": "The Integral of a Non-Negative Measurable Function",
           "printed_page_start": 70,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "4.4",
-          "title": "The General Lebesgue Integral . . . . . . . . . . . . . . . . . . . . . . . . .",
+          "title": "The General Lebesgue Integral",
           "printed_page_start": 74,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "4.5",
-          "title": "Countable Additivity and Continuity of Integration . . . . . . . . . . . . . .",
+          "title": "Countable Additivity and Continuity of Integration",
           "printed_page_start": 78,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "5.1",
-          "title": "Uniform Integrability and Tightness: The Vitali Convergence Theorems . .",
+          "title": "Uniform Integrability and Tightness: The Vitali Convergence Theorems",
           "printed_page_start": 81,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "5.2",
-          "title": "Convergence in the Mean and in Measure: A Theorem of Riesz . . . . . . .",
+          "title": "Convergence in the Mean and in Measure: A Theorem of Riesz",
           "printed_page_start": 85,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "5.3",
-          "title": "Characterizations of Riemann and Lebesgue Integrability . . . . . . . . . .",
+          "title": "Characterizations of Riemann and Lebesgue Integrability",
           "printed_page_start": 88,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "6.1",
-          "title": "Continuity of Monotone Functions . . . . . . . . . . . . . . . . . . . . . . .",
+          "title": "Continuity of Monotone Functions",
           "printed_page_start": 92,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "6.2",
-          "title": "Differentiability of Monotone Functions: Lebesgue’s Theorem . . . . . . . .",
+          "title": "Differentiability of Monotone Functions: Lebesgue’s Theorem",
           "printed_page_start": 94,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "6.3",
-          "title": "Functions of Bounded Variation: Jordan’s Theorem . . . . . . . . . . . . . .",
+          "title": "Functions of Bounded Variation: Jordan’s Theorem",
           "printed_page_start": 99,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "6.4",
-          "title": "Absolutely Continuous Functions . . . . . . . . . . . . . . . . . . . . . . . .",
+          "title": "Absolutely Continuous Functions",
           "printed_page_start": 103,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "6.5",
-          "title": "Integrating Derivatives: Differentiating Indefinite Integrals . . . . . . . . . .",
+          "title": "Integrating Derivatives: Differentiating Indefinite Integrals",
           "printed_page_start": 107,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "6.6",
-          "title": "Measurability: Images of Sets, Compositions of Functions . . . . . . . . . .",
+          "title": "Measurability: Images of Sets, Compositions of Functions",
           "printed_page_start": 114,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "6.7",
-          "title": "Convex Functions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+          "title": "Convex Functions",
           "printed_page_start": 118,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "7.1",
-          "title": "Normed Linear Spaces . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+          "title": "Normed Linear Spaces",
           "printed_page_start": 123,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "7.2",
-          "title": "The Inequalities of Young, H¨older, and Minkowski . . . . . . . . . . . . . .",
+          "title": "The Inequalities of Young, H¨older, and Minkowski",
           "printed_page_start": 125,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "7.4",
-          "title": "Approximation and Separability . . . . . . . . . . . . . . . . . . . . . . . .",
+          "title": "Approximation and Separability",
           "printed_page_start": 134,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "8.1",
-          "title": "Bounded Linear Functionals on a Normed Linear Space . . . . . . . . . . .",
+          "title": "Bounded Linear Functionals on a Normed Linear Space",
           "printed_page_start": 137,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "8.4",
-          "title": "The Minimization of Convex Functionals . . . . . . . . . . . . . . . . . . . .",
+          "title": "The Minimization of Convex Functionals",
           "printed_page_start": 150,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "9.1",
-          "title": "Measurable Sets and Measure Spaces . . . . . . . . . . . . . . . . . . . . .",
+          "title": "Measurable Sets and Measure Spaces",
           "printed_page_start": 159,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "9.2",
-          "title": "Measures Induced by an Outer-Measure . . . . . . . . . . . . . . . . . . . .",
+          "title": "Measures Induced by an Outer-Measure",
           "printed_page_start": 164,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "9.3",
-          "title": "The Carath´eodory-Hahn Theorem . . . . . . . . . . . . . . . . . . . . . . .",
+          "title": "The Carath´eodory-Hahn Theorem",
           "printed_page_start": 168,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "10.1",
-          "title": "Lebesgue Measure on Euclidean Space . . . . . . . . . . . . . . . . . . . . .",
+          "title": "Lebesgue Measure on Euclidean Space",
           "printed_page_start": 174,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "10.2",
-          "title": "Lebesgue Measurability and Measure of Images of Mappings . . . . . . . .",
+          "title": "Lebesgue Measurability and Measure of Images of Mappings",
           "printed_page_start": 182,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "10.3",
-          "title": "Borel Measures on Rn and Regularity . . . . . . . . . . . . . . . . . . . . .",
+          "title": "Borel Measures on Rn and Regularity",
           "printed_page_start": 190,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "10.4",
-          "title": "Carath´eodory Outer-Measures and Hausdorff Measures . . . . . . . . . . . .",
+          "title": "Carath´eodory Outer-Measures and Hausdorff Measures",
           "printed_page_start": 193,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "10.5",
-          "title": "Signed Measures: The Hahn and Jordan Decompositions . . . . . . . . . . .",
+          "title": "Signed Measures: The Hahn and Jordan Decompositions",
           "printed_page_start": 197,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "11.4",
-          "title": "The Radon-Nikodym Theorem . . . . . . . . . . . . . . . . . . . . . . . . .",
+          "title": "The Radon-Nikodym Theorem",
           "printed_page_start": 219,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "11.5",
-          "title": "Product Measures: The Tonelli and Fubini Theorems . . . . . . . . . . . . .",
+          "title": "Product Measures: The Tonelli and Fubini Theorems",
           "printed_page_start": 225,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "12.2",
-          "title": "Convolution, Smooth Approximation, and a Smooth Urysohn’s Lemma . . .",
+          "title": "Convolution, Smooth Approximation, and a Smooth Urysohn’s Lemma",
           "printed_page_start": 243,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "12.5",
-          "title": "The Kantorovitch Representation Theorem for the Dual of L∞(X, µ) . . . .",
+          "title": "The Kantorovitch Representation Theorem for the Dual of L∞(X, µ)",
           "printed_page_start": 257,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "13.1",
-          "title": "Examples of Metric Spaces . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+          "title": "Examples of Metric Spaces",
           "printed_page_start": 263,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "13.2",
-          "title": "Open Sets, Closed Sets, and Convergent Sequences . . . . . . . . . . . . . .",
+          "title": "Open Sets, Closed Sets, and Convergent Sequences",
           "printed_page_start": 265,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "13.3",
-          "title": "Continuous Mappings Between Metric Spaces . . . . . . . . . . . . . . . . .",
+          "title": "Continuous Mappings Between Metric Spaces",
           "printed_page_start": 269,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "13.4",
-          "title": "Complete Metric Spaces . . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+          "title": "Complete Metric Spaces",
           "printed_page_start": 271,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "13.5",
-          "title": "Compact Metric Spaces . . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+          "title": "Compact Metric Spaces",
           "printed_page_start": 274,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "13.6",
-          "title": "Separable Metric Spaces Ulam’s Regularity Theorem . . . . . . . . . . . . .",
+          "title": "Separable Metric Spaces Ulam’s Regularity Theorem",
           "printed_page_start": 280,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "14.1",
-          "title": "The Arzel`a-Ascoli Theorem . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+          "title": "The Arzel`a-Ascoli Theorem",
           "printed_page_start": 285,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "14.2",
-          "title": "The Banach Contraction Principle and Picard’s Theorem . . . . . . . . . .",
+          "title": "The Banach Contraction Principle and Picard’s Theorem",
           "printed_page_start": 289,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "14.3",
-          "title": "The Baire Category Theorem . . . . . . . . . . . . . . . . . . . . . . . . . .",
+          "title": "The Baire Category Theorem",
           "printed_page_start": 295,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "15.1",
-          "title": "Open Sets, Closed Sets, Bases, and Subbases . . . . . . . . . . . . . . . . .",
+          "title": "Open Sets, Closed Sets, Bases, and Subbases",
           "printed_page_start": 305,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "15.2",
-          "title": "The Separation Properties . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+          "title": "The Separation Properties",
           "printed_page_start": 309,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "15.3",
-          "title": "Countability and Separability . . . . . . . . . . . . . . . . . . . . . . . . . .",
+          "title": "Countability and Separability",
           "printed_page_start": 311,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "15.4",
-          "title": "Continuous Mappings, Weak Topologies, and Metrizability . . . . . . . . . .",
+          "title": "Continuous Mappings, Weak Topologies, and Metrizability",
           "printed_page_start": 313,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "15.5",
-          "title": "Compact Topological Spaces . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+          "title": "Compact Topological Spaces",
           "printed_page_start": 317,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "15.6",
-          "title": "Connected Topological Spaces . . . . . . . . . . . . . . . . . . . . . . . . . .",
+          "title": "Connected Topological Spaces",
           "printed_page_start": 320,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "16.1",
-          "title": "Urysohn’s Lemma and the Tietze Extension Theorem . . . . . . . . . . . .",
+          "title": "Urysohn’s Lemma and the Tietze Extension Theorem",
           "printed_page_start": 323,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "16.2",
-          "title": "The Tychonoff Product Theorem . . . . . . . . . . . . . . . . . . . . . . . .",
+          "title": "The Tychonoff Product Theorem",
           "printed_page_start": 327,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "17.1",
-          "title": "Normed Linear Spaces . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+          "title": "Normed Linear Spaces",
           "printed_page_start": 337,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "17.2",
-          "title": "Linear Operators . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+          "title": "Linear Operators",
           "printed_page_start": 340,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "17.3",
-          "title": "Compactness Lost: Infinite Dimensional Normed Linear Spaces . . . . . . .",
+          "title": "Compactness Lost: Infinite Dimensional Normed Linear Spaces",
           "printed_page_start": 343,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "17.4",
-          "title": "The Open Mapping and Closed Graph Theorems . . . . . . . . . . . . . . .",
+          "title": "The Open Mapping and Closed Graph Theorems",
           "printed_page_start": 347,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "17.5",
-          "title": "The Uniform Boundedness Principle . . . . . . . . . . . . . . . . . . . . . .",
+          "title": "The Uniform Boundedness Principle",
           "printed_page_start": 353,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "18.1",
-          "title": "Linear Functionals, Bounded Linear Functionals, and Weak Topologies . . .",
+          "title": "Linear Functionals, Bounded Linear Functionals, and Weak Topologies",
           "printed_page_start": 355,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "18.2",
-          "title": "The Hahn-Banach Theorem . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+          "title": "The Hahn-Banach Theorem",
           "printed_page_start": 361,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "18.3",
-          "title": "Reflexive Banach Spaces and Weak Sequential Convergence . . . . . . . . .",
+          "title": "Reflexive Banach Spaces and Weak Sequential Convergence",
           "printed_page_start": 367,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "18.4",
-          "title": "Locally Convex Topological Vector Spaces . . . . . . . . . . . . . . . . . . .",
+          "title": "Locally Convex Topological Vector Spaces",
           "printed_page_start": 370,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "18.5",
-          "title": "The Separation of Convex Sets and Mazur’s Theorem . . . . . . . . . . . .",
+          "title": "The Separation of Convex Sets and Mazur’s Theorem",
           "printed_page_start": 375,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "18.6",
-          "title": "The Krein-Milman Theorem . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+          "title": "The Krein-Milman Theorem",
           "printed_page_start": 379,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "19.1",
-          "title": "Alaoglu’s Extension of Helly’s Theorem . . . . . . . . . . . . . . . . . . . .",
+          "title": "Alaoglu’s Extension of Helly’s Theorem",
           "printed_page_start": 382,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "19.2",
-          "title": "Reflexivity and Weak Compactness: Kakutani’s Theorem . . . . . . . . . .",
+          "title": "Reflexivity and Weak Compactness: Kakutani’s Theorem",
           "printed_page_start": 384,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "19.4",
-          "title": "Metrizability of Weak Topologies . . . . . . . . . . . . . . . . . . . . . . . .",
+          "title": "Metrizability of Weak Topologies",
           "printed_page_start": 389,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "20.1",
-          "title": "The Inner-Product and Orthogonality . . . . . . . . . . . . . . . . . . . . .",
+          "title": "The Inner-Product and Orthogonality",
           "printed_page_start": 393,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "20.2",
-          "title": "Separability, Bessel’s Inequality, and Orthonormal Bases . . . . . . . . . . .",
+          "title": "Separability, Bessel’s Inequality, and Orthonormal Bases",
           "printed_page_start": 397,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "20.3",
-          "title": "The Dual Space and Weak Sequential Compactness . . . . . . . . . . . . . .",
+          "title": "The Dual Space and Weak Sequential Compactness",
           "printed_page_start": 399,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "20.4",
-          "title": "Symmetric Operators . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+          "title": "Symmetric Operators",
           "printed_page_start": 404,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "20.5",
-          "title": "Compact Operators . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+          "title": "Compact Operators",
           "printed_page_start": 409,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "20.6",
-          "title": "The Hilbert-Schmidt Theorem . . . . . . . . . . . . . . . . . . . . . . . . .",
+          "title": "The Hilbert-Schmidt Theorem",
           "printed_page_start": 411,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "21.1",
-          "title": "Locally Compact Topological Spaces . . . . . . . . . . . . . . . . . . . . . .",
+          "title": "Locally Compact Topological Spaces",
           "printed_page_start": 424,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "21.2",
-          "title": "Separating Sets and Extending Functions . . . . . . . . . . . . . . . . . . .",
+          "title": "Separating Sets and Extending Functions",
           "printed_page_start": 428,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "21.3",
-          "title": "The Construction of Radon Measures . . . . . . . . . . . . . . . . . . . . .",
+          "title": "The Construction of Radon Measures",
           "printed_page_start": 430,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "22.1",
-          "title": "Topological Groups: The General Linear Group . . . . . . . . . . . . . . . .",
+          "title": "Topological Groups: The General Linear Group",
           "printed_page_start": 452,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "22.2",
-          "title": "Kakutani’s Fixed-Point Theorem . . . . . . . . . . . . . . . . . . . . . . . .",
+          "title": "Kakutani’s Fixed-Point Theorem",
           "printed_page_start": 455,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "22.3",
-          "title": "Invariant Borel Measures on Compact Groups: von Neumann’s Theorem . .",
+          "title": "Invariant Borel Measures on Compact Groups: von Neumann’s Theorem",
           "printed_page_start": 460,
           "locator_status": "table_of_contents_inspected"
         },
         {
           "ref": "22.4",
-          "title": "Measure Preserving Transformations and Ergodicity . . . . . . . . . . . . .",
+          "title": "Measure Preserving Transformations and Ergodicity",
           "printed_page_start": 463,
           "locator_status": "table_of_contents_inspected"
         }
@@ -3922,24 +3929,6 @@
         }
       ],
       "subsections": [
-        {
-          "ref": "3.3",
-          "title": "First proof of Theorems 28 and",
-          "printed_page_start": 29,
-          "locator_status": "table_of_contents_inspected"
-        },
-        {
-          "ref": "3.7",
-          "title": "Third proof of Theorems 28 and",
-          "printed_page_start": 29,
-          "locator_status": "table_of_contents_inspected"
-        },
-        {
-          "ref": "3.11",
-          "title": "Developments of Theorem 37CONTENTS",
-          "printed_page_start": 11,
-          "locator_status": "table_of_contents_inspected"
-        },
         {
           "ref": "4.1",
           "title": "Some generalities",
@@ -4475,12 +4464,6 @@
           "locator_status": "table_of_contents_inspected"
         },
         {
-          "ref": "17.4",
-          "title": "Multiplication of Dirichlet series 323CONTENTS",
-          "printed_page_start": 15,
-          "locator_status": "table_of_contents_inspected"
-        },
-        {
           "ref": "17.5",
           "title": "The generating functions of some special arithmetical functions",
           "printed_page_start": 326,
@@ -4697,33 +4680,9 @@
           "locator_status": "table_of_contents_inspected"
         },
         {
-          "ref": "22.4",
-          "title": "Proof of Theorems 7 and",
-          "printed_page_start": 9,
-          "locator_status": "table_of_contents_inspected"
-        },
-        {
-          "ref": "22.9",
-          "title": "Proof of Theorems 323 and",
-          "printed_page_start": 328,
-          "locator_status": "table_of_contents_inspected"
-        },
-        {
-          "ref": "22.16",
-          "title": "Completion of the proof of Theorems 434, 6, and",
-          "printed_page_start": 8,
-          "locator_status": "table_of_contents_inspected"
-        },
-        {
           "ref": "22.17",
           "title": "Proof of Theorem",
           "printed_page_start": 335,
-          "locator_status": "table_of_contents_inspected"
-        },
-        {
-          "ref": "22.20",
-          "title": "A conjecture about the distribution of prime pairs p, p +",
-          "printed_page_start": 2,
           "locator_status": "table_of_contents_inspected"
         },
         {
@@ -6568,85 +6527,85 @@
       "chapter_units": 16,
       "section_locators": 135,
       "chapters_with_printed_page": 0,
-      "evidence": "TOC indexed, mechanisms to inspect selectively"
+      "evidence": "Table of contents indexed; section OCR candidate vs verified title/page states explicitly identified"
     },
     "HALMOS-LIN": {
       "chapter_units": 4,
       "section_locators": 85,
       "chapters_with_printed_page": 4,
-      "evidence": "TOC indexed, mechanisms to inspect selectively"
+      "evidence": "Table of contents indexed; section OCR candidate vs verified title/page states explicitly identified"
     },
     "MUNKRES": {
       "chapter_units": 13,
       "section_locators": 0,
       "chapters_with_printed_page": 13,
-      "evidence": "TOC indexed, mechanisms to inspect selectively"
+      "evidence": "Table of contents indexed; section OCR candidate vs verified title/page states explicitly identified"
     },
     "CASELLA": {
       "chapter_units": 12,
-      "section_locators": 153,
+      "section_locators": 152,
       "chapters_with_printed_page": 12,
-      "evidence": "TOC indexed, mechanisms to inspect selectively"
+      "evidence": "Table of contents indexed; section OCR candidate vs verified title/page states explicitly identified"
     },
     "FELLER": {
       "chapter_units": 17,
       "section_locators": 0,
       "chapters_with_printed_page": 12,
-      "evidence": "TOC indexed, mechanisms to inspect selectively"
+      "evidence": "Table of contents indexed; section OCR candidate vs verified title/page states explicitly identified"
     },
     "AHLFORS": {
       "chapter_units": 8,
       "section_locators": 0,
       "chapters_with_printed_page": 2,
-      "evidence": "TOC indexed, mechanisms to inspect selectively"
+      "evidence": "Table of contents indexed; section OCR candidate vs verified title/page states explicitly identified"
     },
     "ROYDEN": {
       "chapter_units": 22,
       "section_locators": 91,
       "chapters_with_printed_page": 19,
-      "evidence": "TOC indexed, mechanisms to inspect selectively"
+      "evidence": "Table of contents indexed; section OCR candidate vs verified title/page states explicitly identified"
     },
     "HALMOS-SET": {
       "chapter_units": 25,
       "section_locators": 0,
       "chapters_with_printed_page": 25,
-      "evidence": "TOC indexed, mechanisms to inspect selectively"
+      "evidence": "Table of contents indexed; section OCR candidate vs verified title/page states explicitly identified"
     },
     "HARDY": {
       "chapter_units": 25,
-      "section_locators": 164,
+      "section_locators": 156,
       "chapters_with_printed_page": 13,
-      "evidence": "TOC indexed, mechanisms to inspect selectively"
+      "evidence": "Table of contents indexed; section OCR candidate vs verified title/page states explicitly identified"
     },
     "DOCARMO": {
       "chapter_units": 5,
       "section_locators": 37,
       "chapters_with_printed_page": 5,
-      "evidence": "TOC indexed, mechanisms to inspect selectively"
+      "evidence": "Table of contents indexed; section OCR candidate vs verified title/page states explicitly identified"
     },
     "KREYSZIG": {
       "chapter_units": 11,
       "section_locators": 65,
       "chapters_with_printed_page": 2,
-      "evidence": "TOC indexed, mechanisms to inspect selectively"
+      "evidence": "Table of contents indexed; section OCR candidate vs verified title/page states explicitly identified"
     },
     "RUDIN": {
       "chapter_units": 11,
       "section_locators": 0,
       "chapters_with_printed_page": 11,
-      "evidence": "TOC indexed, mechanisms to inspect selectively"
+      "evidence": "Table of contents indexed; section OCR candidate vs verified title/page states explicitly identified"
     },
     "DIESTEL": {
       "chapter_units": 12,
       "section_locators": 71,
       "chapters_with_printed_page": 12,
-      "evidence": "TOC indexed, mechanisms to inspect selectively"
+      "evidence": "Table of contents indexed; section OCR candidate vs verified title/page states explicitly identified"
     },
     "STANLEY": {
       "chapter_units": 4,
       "section_locators": 44,
       "chapters_with_printed_page": 4,
-      "evidence": "TOC indexed, mechanisms to inspect selectively"
+      "evidence": "Table of contents indexed; section OCR candidate vs verified title/page states explicitly identified"
     }
   },
   "research_boundaries": [
