@@ -3524,7 +3524,10 @@
         "aliases": [
           "wire bent back and forth",
           "Why does metal break after lots of bends?",
-          "paperclip fatigue"
+          "paperclip fatigue",
+          "paperclip broke",
+          "bending wire",
+          "bent metal wire snaps"
         ],
         "context": "A repeatedly bent metal wire—not a 3D-printed plastic latch."
       },
@@ -3538,7 +3541,9 @@
         "aliases": [
           "printed tab snaps",
           "3D printed latch cracks after opening",
-          "plastic printed clip breaks"
+          "plastic printed clip breaks",
+          "plastic clip cracking",
+          "printed plastic fails"
         ],
         "context": "A printed polymer part; distinguish the break relative to its layers and flexure geometry."
       },
@@ -3580,7 +3585,9 @@
         ],
         "aliases": [
           "fatigue failure spring",
-          "cycles until it snaps"
+          "cycles until it snaps",
+          "spring breaking",
+          "spring snaps after bending"
         ],
         "context": "Repeated loading and lifetime rather than merely one-time breaking force."
       },
@@ -3619,7 +3626,10 @@
         ],
         "aliases": [
           "mechanism has play",
-          "loose moving joint"
+          "loose moving joint",
+          "robot arm shaking",
+          "mechanism wobbling",
+          "robot joint loose"
         ],
         "context": "Unwanted motion may arise from joint clearance or constraints."
       },
@@ -3633,7 +3643,9 @@
         "aliases": [
           "repeatability problem",
           "backlash",
-          "return position varies"
+          "return position varies",
+          "robot position drifts",
+          "motion doesn't repeat"
         ],
         "context": "Consider backlash, hysteresis, geometric tolerances and forbidden motion."
       },
@@ -3752,7 +3764,10 @@
         ],
         "aliases": [
           "3d print needs support",
-          "overhangs printing"
+          "overhangs printing",
+          "nozzle support",
+          "printing into air",
+          "3d printing overhang"
         ],
         "context": "Ask how new material is supported before it solidifies."
       },
@@ -3817,7 +3832,10 @@
         ],
         "aliases": [
           "tooling costs",
-          "injection molding economics"
+          "injection molding economics",
+          "factory mold",
+          "factory tooling",
+          "expensive molds"
         ],
         "context": "Reusable physical tooling can exchange upfront investment for cheap repetitive cycles."
       },
