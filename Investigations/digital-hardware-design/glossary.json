@@ -1,0 +1,2199 @@
+{
+  "schema_version": "1.0",
+  "domain_id": "digital-hardware-design",
+  "title": "Digital hardware — from Verilog/FPGA behavior to VLSI physical design — technical vocabulary",
+  "id_policy": "Assign IDs once. Preserve them across renames, sorting, additions and merges; never recompute IDs from display labels. Use aliases for alternative spellings; separate distinct senses even when their words match.",
+  "related_ids_semantics": "Explicitly related concepts, NOT synonyms or automatically equivalent search results.",
+  "source_vocabularies": [
+    "https://github.com/JadanPoll/FKEN_Ecosystem/blob/main/Glossaries/Digital_Design.json",
+    "https://github.com/JadanPoll/FKEN_Ecosystem/blob/main/Glossaries/Embedded_Systems.json"
+  ],
+  "terms": [
+    {
+      "id": "dhw-t-0001",
+      "label": "digital logic",
+      "aliases": [],
+      "category": "RTL and state",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0002",
+      "label": "RTL",
+      "aliases": [],
+      "category": "RTL and state",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0003",
+      "label": "Verilog",
+      "aliases": [],
+      "category": "RTL and state",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0004",
+      "label": "SystemVerilog",
+      "aliases": [],
+      "category": "RTL and state",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0005",
+      "label": "HDL",
+      "aliases": [],
+      "category": "RTL and state",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0006",
+      "label": "combinational logic",
+      "aliases": [],
+      "category": "RTL and state",
+      "related_ids": [
+        "dhw-t-0007",
+        "dhw-t-0025"
+      ]
+    },
+    {
+      "id": "dhw-t-0007",
+      "label": "sequential logic",
+      "aliases": [],
+      "category": "RTL and state",
+      "related_ids": [
+        "dhw-t-0006"
+      ]
+    },
+    {
+      "id": "dhw-t-0008",
+      "label": "wire",
+      "aliases": [],
+      "category": "RTL and state",
+      "related_ids": [
+        "dhw-t-0009",
+        "dhw-t-0010"
+      ]
+    },
+    {
+      "id": "dhw-t-0009",
+      "label": "reg",
+      "aliases": [],
+      "category": "RTL and state",
+      "related_ids": [
+        "dhw-t-0008",
+        "dhw-t-0010"
+      ]
+    },
+    {
+      "id": "dhw-t-0010",
+      "label": "logic",
+      "aliases": [],
+      "category": "RTL and state",
+      "related_ids": [
+        "dhw-t-0008",
+        "dhw-t-0009"
+      ]
+    },
+    {
+      "id": "dhw-t-0011",
+      "label": "bit vector",
+      "aliases": [],
+      "category": "RTL and state",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0012",
+      "label": "bit-select",
+      "aliases": [],
+      "category": "RTL and state",
+      "related_ids": [
+        "dhw-t-0013"
+      ]
+    },
+    {
+      "id": "dhw-t-0013",
+      "label": "part-select",
+      "aliases": [],
+      "category": "RTL and state",
+      "related_ids": [
+        "dhw-t-0012"
+      ]
+    },
+    {
+      "id": "dhw-t-0014",
+      "label": "signed",
+      "aliases": [],
+      "category": "RTL and state",
+      "related_ids": [
+        "dhw-t-0015"
+      ]
+    },
+    {
+      "id": "dhw-t-0015",
+      "label": "unsigned",
+      "aliases": [],
+      "category": "RTL and state",
+      "related_ids": [
+        "dhw-t-0014"
+      ]
+    },
+    {
+      "id": "dhw-t-0016",
+      "label": "width truncation",
+      "aliases": [],
+      "category": "RTL and state",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0017",
+      "label": "sign extension",
+      "aliases": [],
+      "category": "RTL and state",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0018",
+      "label": "continuous assignment",
+      "aliases": [],
+      "category": "RTL and state",
+      "related_ids": [
+        "dhw-t-0019"
+      ]
+    },
+    {
+      "id": "dhw-t-0019",
+      "label": "procedural assignment",
+      "aliases": [],
+      "category": "RTL and state",
+      "related_ids": [
+        "dhw-t-0018"
+      ]
+    },
+    {
+      "id": "dhw-t-0020",
+      "label": "blocking assignment",
+      "aliases": [],
+      "category": "RTL and state",
+      "related_ids": [
+        "dhw-t-0021"
+      ]
+    },
+    {
+      "id": "dhw-t-0021",
+      "label": "nonblocking assignment",
+      "aliases": [],
+      "category": "RTL and state",
+      "related_ids": [
+        "dhw-t-0020"
+      ]
+    },
+    {
+      "id": "dhw-t-0022",
+      "label": "always_comb",
+      "aliases": [],
+      "category": "RTL and state",
+      "related_ids": [
+        "dhw-t-0023",
+        "dhw-t-0024"
+      ]
+    },
+    {
+      "id": "dhw-t-0023",
+      "label": "always_ff",
+      "aliases": [],
+      "category": "RTL and state",
+      "related_ids": [
+        "dhw-t-0022",
+        "dhw-t-0024"
+      ]
+    },
+    {
+      "id": "dhw-t-0024",
+      "label": "always @(*)",
+      "aliases": [],
+      "category": "RTL and state",
+      "related_ids": [
+        "dhw-t-0022",
+        "dhw-t-0023"
+      ]
+    },
+    {
+      "id": "dhw-t-0025",
+      "label": "inferred latch",
+      "aliases": [],
+      "category": "RTL and state",
+      "related_ids": [
+        "dhw-t-0006"
+      ]
+    },
+    {
+      "id": "dhw-t-0026",
+      "label": "multiplexer",
+      "aliases": [],
+      "category": "RTL and state",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0027",
+      "label": "priority encoder",
+      "aliases": [],
+      "category": "RTL and state",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0028",
+      "label": "adder",
+      "aliases": [],
+      "category": "RTL and state",
+      "related_ids": [
+        "dhw-t-0029",
+        "dhw-t-0030"
+      ]
+    },
+    {
+      "id": "dhw-t-0029",
+      "label": "carry",
+      "aliases": [],
+      "category": "RTL and state",
+      "related_ids": [
+        "dhw-t-0028",
+        "dhw-t-0030"
+      ]
+    },
+    {
+      "id": "dhw-t-0030",
+      "label": "overflow",
+      "aliases": [],
+      "category": "RTL and state",
+      "related_ids": [
+        "dhw-t-0028",
+        "dhw-t-0029"
+      ]
+    },
+    {
+      "id": "dhw-t-0031",
+      "label": "flip-flop",
+      "aliases": [
+        "FF",
+        "DFF"
+      ],
+      "category": "RTL and state",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0032",
+      "label": "register",
+      "aliases": [],
+      "category": "RTL and state",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0033",
+      "label": "register file",
+      "aliases": [],
+      "category": "RTL and state",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0034",
+      "label": "counter",
+      "aliases": [],
+      "category": "RTL and state",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0035",
+      "label": "shift register",
+      "aliases": [],
+      "category": "RTL and state",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0036",
+      "label": "Moore FSM",
+      "aliases": [],
+      "category": "RTL and state",
+      "related_ids": [
+        "dhw-t-0037"
+      ]
+    },
+    {
+      "id": "dhw-t-0037",
+      "label": "Mealy FSM",
+      "aliases": [],
+      "category": "RTL and state",
+      "related_ids": [
+        "dhw-t-0036"
+      ]
+    },
+    {
+      "id": "dhw-t-0038",
+      "label": "finite state machine",
+      "aliases": [],
+      "category": "RTL and state",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0039",
+      "label": "FSM",
+      "aliases": [],
+      "category": "RTL and state",
+      "related_ids": [
+        "dhw-t-0041"
+      ]
+    },
+    {
+      "id": "dhw-t-0040",
+      "label": "FSMD",
+      "aliases": [],
+      "category": "RTL and state",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0041",
+      "label": "datapath",
+      "aliases": [],
+      "category": "RTL and state",
+      "related_ids": [
+        "dhw-t-0042",
+        "dhw-t-0039"
+      ]
+    },
+    {
+      "id": "dhw-t-0042",
+      "label": "control path",
+      "aliases": [],
+      "category": "RTL and state",
+      "related_ids": [
+        "dhw-t-0041"
+      ]
+    },
+    {
+      "id": "dhw-t-0043",
+      "label": "state encoding",
+      "aliases": [],
+      "category": "RTL and state",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0044",
+      "label": "state transition",
+      "aliases": [],
+      "category": "RTL and state",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0045",
+      "label": "reset",
+      "aliases": [],
+      "category": "RTL and state",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0046",
+      "label": "synchronous reset",
+      "aliases": [],
+      "category": "RTL and state",
+      "related_ids": [
+        "dhw-t-0047"
+      ]
+    },
+    {
+      "id": "dhw-t-0047",
+      "label": "asynchronous reset",
+      "aliases": [],
+      "category": "RTL and state",
+      "related_ids": [
+        "dhw-t-0046"
+      ]
+    },
+    {
+      "id": "dhw-t-0048",
+      "label": "enable",
+      "aliases": [],
+      "category": "RTL and state",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0049",
+      "label": "clock enable",
+      "aliases": [],
+      "category": "RTL and state",
+      "related_ids": [
+        "dhw-t-0079"
+      ]
+    },
+    {
+      "id": "dhw-t-0050",
+      "label": "register transfer",
+      "aliases": [],
+      "category": "RTL and state",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0051",
+      "label": "control state",
+      "aliases": [],
+      "category": "RTL and state",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0052",
+      "label": "pipeline",
+      "aliases": [],
+      "category": "RTL and state",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0053",
+      "label": "pipelining",
+      "aliases": [],
+      "category": "RTL and state",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0054",
+      "label": "pipeline latency",
+      "aliases": [],
+      "category": "RTL and state",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0055",
+      "label": "valid bit",
+      "aliases": [],
+      "category": "RTL and state",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0056",
+      "label": "memory controller",
+      "aliases": [],
+      "category": "RTL and state",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0057",
+      "label": "FIFO",
+      "aliases": [],
+      "category": "RTL and state",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0058",
+      "label": "FPGA",
+      "aliases": [],
+      "category": "FPGA and engineering flow",
+      "related_ids": [
+        "dhw-t-0146"
+      ]
+    },
+    {
+      "id": "dhw-t-0059",
+      "label": "Spartan-3",
+      "aliases": [],
+      "category": "FPGA and engineering flow",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0060",
+      "label": "programmable logic",
+      "aliases": [],
+      "category": "FPGA and engineering flow",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0061",
+      "label": "lookup table",
+      "aliases": [],
+      "category": "FPGA and engineering flow",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0062",
+      "label": "LUT",
+      "aliases": [],
+      "category": "FPGA and engineering flow",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0063",
+      "label": "flip-flop resource",
+      "aliases": [],
+      "category": "FPGA and engineering flow",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0064",
+      "label": "block RAM",
+      "aliases": [],
+      "category": "FPGA and engineering flow",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0065",
+      "label": "BRAM",
+      "aliases": [],
+      "category": "FPGA and engineering flow",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0066",
+      "label": "distributed RAM",
+      "aliases": [],
+      "category": "FPGA and engineering flow",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0067",
+      "label": "DSP slice",
+      "aliases": [],
+      "category": "FPGA and engineering flow",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0068",
+      "label": "carry chain",
+      "aliases": [],
+      "category": "FPGA and engineering flow",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0069",
+      "label": "pin constraint",
+      "aliases": [],
+      "category": "FPGA and engineering flow",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0070",
+      "label": "FPGA constraints",
+      "aliases": [],
+      "category": "FPGA and engineering flow",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0071",
+      "label": "clock constraint",
+      "aliases": [],
+      "category": "FPGA and engineering flow",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0072",
+      "label": "timing closure",
+      "aliases": [],
+      "category": "FPGA and engineering flow",
+      "related_ids": [
+        "dhw-t-0073",
+        "dhw-t-0074",
+        "dhw-t-0077"
+      ]
+    },
+    {
+      "id": "dhw-t-0073",
+      "label": "setup time",
+      "aliases": [],
+      "category": "FPGA and engineering flow",
+      "related_ids": [
+        "dhw-t-0074",
+        "dhw-t-0072"
+      ]
+    },
+    {
+      "id": "dhw-t-0074",
+      "label": "hold time",
+      "aliases": [],
+      "category": "FPGA and engineering flow",
+      "related_ids": [
+        "dhw-t-0073",
+        "dhw-t-0072"
+      ]
+    },
+    {
+      "id": "dhw-t-0075",
+      "label": "clock-to-Q",
+      "aliases": [],
+      "category": "FPGA and engineering flow",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0076",
+      "label": "propagation delay",
+      "aliases": [],
+      "category": "FPGA and engineering flow",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0077",
+      "label": "critical path",
+      "aliases": [],
+      "category": "FPGA and engineering flow",
+      "related_ids": [
+        "dhw-t-0072"
+      ]
+    },
+    {
+      "id": "dhw-t-0078",
+      "label": "clock edge",
+      "aliases": [],
+      "category": "FPGA and engineering flow",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0079",
+      "label": "clock domain",
+      "aliases": [],
+      "category": "FPGA and engineering flow",
+      "related_ids": [
+        "dhw-t-0049"
+      ]
+    },
+    {
+      "id": "dhw-t-0080",
+      "label": "clock-domain crossing",
+      "aliases": [
+        "clock crossing"
+      ],
+      "category": "FPGA and engineering flow",
+      "related_ids": [
+        "dhw-t-0082"
+      ]
+    },
+    {
+      "id": "dhw-t-0081",
+      "label": "CDC",
+      "aliases": [],
+      "category": "FPGA and engineering flow",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0082",
+      "label": "metastability",
+      "aliases": [],
+      "category": "FPGA and engineering flow",
+      "related_ids": [
+        "dhw-t-0080"
+      ]
+    },
+    {
+      "id": "dhw-t-0083",
+      "label": "synchronizer",
+      "aliases": [],
+      "category": "FPGA and engineering flow",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0084",
+      "label": "clock skew",
+      "aliases": [],
+      "category": "FPGA and engineering flow",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0085",
+      "label": "clock tree",
+      "aliases": [],
+      "category": "FPGA and engineering flow",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0086",
+      "label": "PLL",
+      "aliases": [],
+      "category": "FPGA and engineering flow",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0087",
+      "label": "timing analysis",
+      "aliases": [],
+      "category": "FPGA and engineering flow",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0088",
+      "label": "static timing analysis",
+      "aliases": [],
+      "category": "FPGA and engineering flow",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0089",
+      "label": "STA",
+      "aliases": [],
+      "category": "FPGA and engineering flow",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0090",
+      "label": "place and route",
+      "aliases": [],
+      "category": "FPGA and engineering flow",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0091",
+      "label": "synthesis",
+      "aliases": [],
+      "category": "FPGA and engineering flow",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0092",
+      "label": "technology mapping",
+      "aliases": [],
+      "category": "FPGA and engineering flow",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0093",
+      "label": "bitstream",
+      "aliases": [],
+      "category": "FPGA and engineering flow",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0094",
+      "label": "programming",
+      "aliases": [],
+      "category": "FPGA and engineering flow",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0095",
+      "label": "JTAG",
+      "aliases": [],
+      "category": "FPGA and engineering flow",
+      "related_ids": [
+        "dhw-t-0218"
+      ]
+    },
+    {
+      "id": "dhw-t-0096",
+      "label": "testbench",
+      "aliases": [],
+      "category": "FPGA and engineering flow",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0097",
+      "label": "waveform",
+      "aliases": [],
+      "category": "FPGA and engineering flow",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0098",
+      "label": "assertion",
+      "aliases": [],
+      "category": "FPGA and engineering flow",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0099",
+      "label": "RTL simulation",
+      "aliases": [],
+      "category": "FPGA and engineering flow",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0100",
+      "label": "simulation",
+      "aliases": [],
+      "category": "FPGA and engineering flow",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0101",
+      "label": "formal verification",
+      "aliases": [],
+      "category": "FPGA and engineering flow",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0102",
+      "label": "hardware-in-the-loop",
+      "aliases": [],
+      "category": "FPGA and engineering flow",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0103",
+      "label": "resource utilization",
+      "aliases": [],
+      "category": "FPGA and engineering flow",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0104",
+      "label": "Yosys",
+      "aliases": [],
+      "category": "FPGA and engineering flow",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0105",
+      "label": "Vivado",
+      "aliases": [],
+      "category": "FPGA and engineering flow",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0106",
+      "label": "Xilinx ISE",
+      "aliases": [],
+      "category": "FPGA and engineering flow",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0107",
+      "label": "nextpnr",
+      "aliases": [],
+      "category": "FPGA and engineering flow",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0108",
+      "label": "UART",
+      "aliases": [],
+      "category": "Physical interfaces",
+      "related_ids": [
+        "dhw-t-0134",
+        "dhw-t-0135",
+        "dhw-t-0216",
+        "dhw-t-0111"
+      ]
+    },
+    {
+      "id": "dhw-t-0109",
+      "label": "serial framing",
+      "aliases": [],
+      "category": "Physical interfaces",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0110",
+      "label": "baud rate",
+      "aliases": [],
+      "category": "Physical interfaces",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0111",
+      "label": "oversampling",
+      "aliases": [],
+      "category": "Physical interfaces",
+      "related_ids": [
+        "dhw-t-0108"
+      ]
+    },
+    {
+      "id": "dhw-t-0112",
+      "label": "start bit",
+      "aliases": [],
+      "category": "Physical interfaces",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0113",
+      "label": "stop bit",
+      "aliases": [],
+      "category": "Physical interfaces",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0114",
+      "label": "parity bit",
+      "aliases": [],
+      "category": "Physical interfaces",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0115",
+      "label": "sampling tick",
+      "aliases": [],
+      "category": "Physical interfaces",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0116",
+      "label": "ready",
+      "aliases": [],
+      "category": "Physical interfaces",
+      "related_ids": [
+        "dhw-t-0117",
+        "dhw-t-0118"
+      ]
+    },
+    {
+      "id": "dhw-t-0117",
+      "label": "valid",
+      "aliases": [],
+      "category": "Physical interfaces",
+      "related_ids": [
+        "dhw-t-0116",
+        "dhw-t-0118"
+      ]
+    },
+    {
+      "id": "dhw-t-0118",
+      "label": "backpressure",
+      "aliases": [],
+      "category": "Physical interfaces",
+      "related_ids": [
+        "dhw-t-0116",
+        "dhw-t-0117"
+      ]
+    },
+    {
+      "id": "dhw-t-0119",
+      "label": "external SRAM",
+      "aliases": [],
+      "category": "Physical interfaces",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0120",
+      "label": "SRAM",
+      "aliases": [],
+      "category": "Physical interfaces",
+      "related_ids": [
+        "dhw-t-0253",
+        "dhw-t-0254"
+      ]
+    },
+    {
+      "id": "dhw-t-0121",
+      "label": "PS/2",
+      "aliases": [],
+      "category": "Physical interfaces",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0122",
+      "label": "scan code",
+      "aliases": [],
+      "category": "Physical interfaces",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0123",
+      "label": "keyboard interface",
+      "aliases": [],
+      "category": "Physical interfaces",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0124",
+      "label": "mouse interface",
+      "aliases": [],
+      "category": "Physical interfaces",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0125",
+      "label": "VGA",
+      "aliases": [],
+      "category": "Physical interfaces",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0126",
+      "label": "horizontal sync",
+      "aliases": [],
+      "category": "Physical interfaces",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0127",
+      "label": "vertical sync",
+      "aliases": [],
+      "category": "Physical interfaces",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0128",
+      "label": "pixel clock",
+      "aliases": [],
+      "category": "Physical interfaces",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0129",
+      "label": "framebuffer",
+      "aliases": [],
+      "category": "Physical interfaces",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0130",
+      "label": "tile map",
+      "aliases": [],
+      "category": "Physical interfaces",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0131",
+      "label": "pixel pipeline",
+      "aliases": [],
+      "category": "Physical interfaces",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0132",
+      "label": "GPIO",
+      "aliases": [],
+      "category": "Physical interfaces",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0133",
+      "label": "debouncing",
+      "aliases": [],
+      "category": "Physical interfaces",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0134",
+      "label": "SPI",
+      "aliases": [],
+      "category": "Physical interfaces",
+      "related_ids": [
+        "dhw-t-0108",
+        "dhw-t-0135",
+        "dhw-t-0216"
+      ]
+    },
+    {
+      "id": "dhw-t-0135",
+      "label": "I2C",
+      "aliases": [],
+      "category": "Physical interfaces",
+      "related_ids": [
+        "dhw-t-0108",
+        "dhw-t-0134",
+        "dhw-t-0216"
+      ]
+    },
+    {
+      "id": "dhw-t-0136",
+      "label": "DMA",
+      "aliases": [],
+      "category": "Physical interfaces",
+      "related_ids": [
+        "dhw-t-0207",
+        "dhw-t-0208"
+      ]
+    },
+    {
+      "id": "dhw-t-0137",
+      "label": "interrupt",
+      "aliases": [],
+      "category": "Physical interfaces",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0138",
+      "label": "interrupt controller",
+      "aliases": [],
+      "category": "Physical interfaces",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0139",
+      "label": "PicoBlaze",
+      "aliases": [],
+      "category": "Physical interfaces",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0140",
+      "label": "soft-core CPU",
+      "aliases": [
+        "softcore CPU"
+      ],
+      "category": "Physical interfaces",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0141",
+      "label": "soft processor",
+      "aliases": [],
+      "category": "Physical interfaces",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0142",
+      "label": "instruction set",
+      "aliases": [],
+      "category": "Physical interfaces",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0143",
+      "label": "assembly language",
+      "aliases": [],
+      "category": "Physical interfaces",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0144",
+      "label": "memory-mapped I/O",
+      "aliases": [
+        "MMIO"
+      ],
+      "category": "Physical interfaces",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0145",
+      "label": "VLSI",
+      "aliases": [],
+      "category": "VLSI and fabrication",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0146",
+      "label": "ASIC",
+      "aliases": [],
+      "category": "VLSI and fabrication",
+      "related_ids": [
+        "dhw-t-0058"
+      ]
+    },
+    {
+      "id": "dhw-t-0147",
+      "label": "MOS transistor",
+      "aliases": [],
+      "category": "VLSI and fabrication",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0148",
+      "label": "MOSFET",
+      "aliases": [],
+      "category": "VLSI and fabrication",
+      "related_ids": [
+        "dhw-t-0158"
+      ]
+    },
+    {
+      "id": "dhw-t-0149",
+      "label": "NMOS",
+      "aliases": [],
+      "category": "VLSI and fabrication",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0150",
+      "label": "PMOS",
+      "aliases": [],
+      "category": "VLSI and fabrication",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0151",
+      "label": "CMOS",
+      "aliases": [],
+      "category": "VLSI and fabrication",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0152",
+      "label": "inverter",
+      "aliases": [],
+      "category": "VLSI and fabrication",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0153",
+      "label": "NAND",
+      "aliases": [],
+      "category": "VLSI and fabrication",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0154",
+      "label": "NOR",
+      "aliases": [],
+      "category": "VLSI and fabrication",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0155",
+      "label": "gate delay",
+      "aliases": [],
+      "category": "VLSI and fabrication",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0156",
+      "label": "fan-out",
+      "aliases": [],
+      "category": "VLSI and fabrication",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0157",
+      "label": "drive strength",
+      "aliases": [],
+      "category": "VLSI and fabrication",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0158",
+      "label": "gate capacitance",
+      "aliases": [],
+      "category": "VLSI and fabrication",
+      "related_ids": [
+        "dhw-t-0148"
+      ]
+    },
+    {
+      "id": "dhw-t-0159",
+      "label": "parasitic capacitance",
+      "aliases": [],
+      "category": "VLSI and fabrication",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0160",
+      "label": "interconnect resistance",
+      "aliases": [],
+      "category": "VLSI and fabrication",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0161",
+      "label": "RC delay",
+      "aliases": [],
+      "category": "VLSI and fabrication",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0162",
+      "label": "setup margin",
+      "aliases": [],
+      "category": "VLSI and fabrication",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0163",
+      "label": "noise margin",
+      "aliases": [],
+      "category": "VLSI and fabrication",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0164",
+      "label": "transistor sizing",
+      "aliases": [],
+      "category": "VLSI and fabrication",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0165",
+      "label": "power dissipation",
+      "aliases": [],
+      "category": "VLSI and fabrication",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0166",
+      "label": "voltage scaling",
+      "aliases": [],
+      "category": "VLSI and fabrication",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0167",
+      "label": "device scaling",
+      "aliases": [],
+      "category": "VLSI and fabrication",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0168",
+      "label": "fabrication",
+      "aliases": [],
+      "category": "VLSI and fabrication",
+      "related_ids": [
+        "dhw-t-0179"
+      ]
+    },
+    {
+      "id": "dhw-t-0169",
+      "label": "masks",
+      "aliases": [],
+      "category": "VLSI and fabrication",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0170",
+      "label": "photolithography",
+      "aliases": [],
+      "category": "VLSI and fabrication",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0171",
+      "label": "mask layout",
+      "aliases": [],
+      "category": "VLSI and fabrication",
+      "related_ids": [
+        "dhw-t-0173"
+      ]
+    },
+    {
+      "id": "dhw-t-0172",
+      "label": "layout",
+      "aliases": [],
+      "category": "VLSI and fabrication",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0173",
+      "label": "design rule",
+      "aliases": [],
+      "category": "VLSI and fabrication",
+      "related_ids": [
+        "dhw-t-0171"
+      ]
+    },
+    {
+      "id": "dhw-t-0174",
+      "label": "DRC",
+      "aliases": [],
+      "category": "VLSI and fabrication",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0175",
+      "label": "LVS",
+      "aliases": [],
+      "category": "VLSI and fabrication",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0176",
+      "label": "process design kit",
+      "aliases": [],
+      "category": "VLSI and fabrication",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0177",
+      "label": "PDK",
+      "aliases": [],
+      "category": "VLSI and fabrication",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0178",
+      "label": "silicon wafer",
+      "aliases": [],
+      "category": "VLSI and fabrication",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0179",
+      "label": "yield",
+      "aliases": [],
+      "category": "VLSI and fabrication",
+      "related_ids": [
+        "dhw-t-0168"
+      ]
+    },
+    {
+      "id": "dhw-t-0180",
+      "label": "defect density",
+      "aliases": [],
+      "category": "VLSI and fabrication",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0181",
+      "label": "multichip module",
+      "aliases": [],
+      "category": "VLSI and fabrication",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0182",
+      "label": "multiproject wafer",
+      "aliases": [],
+      "category": "VLSI and fabrication",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0183",
+      "label": "MPW",
+      "aliases": [],
+      "category": "VLSI and fabrication",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0184",
+      "label": "standard cell",
+      "aliases": [],
+      "category": "VLSI and fabrication",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0185",
+      "label": "clock distribution",
+      "aliases": [],
+      "category": "VLSI and fabrication",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0186",
+      "label": "self-timed system",
+      "aliases": [],
+      "category": "VLSI and fabrication",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0187",
+      "label": "asynchronous logic",
+      "aliases": [],
+      "category": "VLSI and fabrication",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0188",
+      "label": "handshake",
+      "aliases": [],
+      "category": "VLSI and fabrication",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0189",
+      "label": "two-phase clock",
+      "aliases": [],
+      "category": "VLSI and fabrication",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0190",
+      "label": "metastable state",
+      "aliases": [],
+      "category": "VLSI and fabrication",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0191",
+      "label": "physical verification",
+      "aliases": [],
+      "category": "VLSI and fabrication",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0192",
+      "label": "power distribution",
+      "aliases": [],
+      "category": "VLSI and fabrication",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0193",
+      "label": "module",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0194",
+      "label": "port binding",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0195",
+      "label": "embedded system",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0196",
+      "label": "microcontroller",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "dhw-t-0197",
+        "dhw-t-0198"
+      ]
+    },
+    {
+      "id": "dhw-t-0197",
+      "label": "microprocessor",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "dhw-t-0196",
+        "dhw-t-0198"
+      ]
+    },
+    {
+      "id": "dhw-t-0198",
+      "label": "SoC",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "dhw-t-0196",
+        "dhw-t-0197"
+      ]
+    },
+    {
+      "id": "dhw-t-0199",
+      "label": "firmware",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0200",
+      "label": "bare metal",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0201",
+      "label": "bootloader",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0202",
+      "label": "startup code",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0203",
+      "label": "vector table",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0204",
+      "label": "interrupt handler",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0205",
+      "label": "ISR",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0206",
+      "label": "exception",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0207",
+      "label": "polling",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "dhw-t-0208",
+        "dhw-t-0136"
+      ]
+    },
+    {
+      "id": "dhw-t-0208",
+      "label": "interrupt-driven",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "dhw-t-0207",
+        "dhw-t-0136"
+      ]
+    },
+    {
+      "id": "dhw-t-0209",
+      "label": "peripheral",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0210",
+      "label": "timer",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0211",
+      "label": "watchdog",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0212",
+      "label": "RTC",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0213",
+      "label": "ADC",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0214",
+      "label": "DAC",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0215",
+      "label": "PWM",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0216",
+      "label": "CAN",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "dhw-t-0108",
+        "dhw-t-0134",
+        "dhw-t-0135"
+      ]
+    },
+    {
+      "id": "dhw-t-0217",
+      "label": "USB",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0218",
+      "label": "SWD",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "dhw-t-0095"
+      ]
+    },
+    {
+      "id": "dhw-t-0219",
+      "label": "clock",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0220",
+      "label": "brownout",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0221",
+      "label": "pull-up",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0222",
+      "label": "pull-down",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0223",
+      "label": "open-drain",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0224",
+      "label": "tri-state",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0225",
+      "label": "endianness",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0226",
+      "label": "alignment",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0227",
+      "label": "volatile",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0228",
+      "label": "atomic operation",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0229",
+      "label": "critical section",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0230",
+      "label": "race condition",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0231",
+      "label": "priority inversion",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0232",
+      "label": "real-time",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0233",
+      "label": "hard real-time",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "dhw-t-0234"
+      ]
+    },
+    {
+      "id": "dhw-t-0234",
+      "label": "soft real-time",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "dhw-t-0233"
+      ]
+    },
+    {
+      "id": "dhw-t-0235",
+      "label": "deadline",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0236",
+      "label": "latency",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0237",
+      "label": "jitter",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0238",
+      "label": "worst-case execution time",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0239",
+      "label": "RTOS",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0240",
+      "label": "task",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0241",
+      "label": "thread",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0242",
+      "label": "scheduler",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0243",
+      "label": "preemption",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0244",
+      "label": "context switch",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0245",
+      "label": "mutex",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "dhw-t-0246",
+        "dhw-t-0247"
+      ]
+    },
+    {
+      "id": "dhw-t-0246",
+      "label": "semaphore",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "dhw-t-0245",
+        "dhw-t-0247"
+      ]
+    },
+    {
+      "id": "dhw-t-0247",
+      "label": "queue",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "dhw-t-0245",
+        "dhw-t-0246"
+      ]
+    },
+    {
+      "id": "dhw-t-0248",
+      "label": "event flag",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0249",
+      "label": "stack",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0250",
+      "label": "heap",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0251",
+      "label": "static allocation",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0252",
+      "label": "dynamic allocation",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0253",
+      "label": "flash",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "dhw-t-0120",
+        "dhw-t-0254"
+      ]
+    },
+    {
+      "id": "dhw-t-0254",
+      "label": "EEPROM",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "dhw-t-0253",
+        "dhw-t-0120"
+      ]
+    },
+    {
+      "id": "dhw-t-0255",
+      "label": "memory protection unit",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0256",
+      "label": "cache",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0257",
+      "label": "TCM",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0258",
+      "label": "linker script",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0259",
+      "label": "cross compiler",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0260",
+      "label": "toolchain",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0261",
+      "label": "ABI",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0262",
+      "label": "device tree",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0263",
+      "label": "HAL",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "dhw-t-0264",
+        "dhw-t-0265"
+      ]
+    },
+    {
+      "id": "dhw-t-0264",
+      "label": "BSP",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "dhw-t-0263",
+        "dhw-t-0265"
+      ]
+    },
+    {
+      "id": "dhw-t-0265",
+      "label": "driver",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": [
+        "dhw-t-0263",
+        "dhw-t-0264"
+      ]
+    },
+    {
+      "id": "dhw-t-0266",
+      "label": "power budget",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0267",
+      "label": "sleep mode",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0268",
+      "label": "deep sleep",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0269",
+      "label": "wake source",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0270",
+      "label": "low-power mode",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0271",
+      "label": "current draw",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0272",
+      "label": "power domain",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0273",
+      "label": "logic analyzer",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0274",
+      "label": "oscilloscope",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0275",
+      "label": "serial console",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0276",
+      "label": "in-circuit debugging",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0277",
+      "label": "in-circuit programming",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0278",
+      "label": "boot time",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0279",
+      "label": "fault handler",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0280",
+      "label": "brownout reset",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0281",
+      "label": "field programmable gate array",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0282",
+      "label": "design rule check",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0283",
+      "label": "layout versus schematic",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0284",
+      "label": "application-specific integrated circuit",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "dhw-t-0285",
+      "label": "register-transfer level",
+      "aliases": [],
+      "category": "FKEN vocabulary",
+      "related_ids": []
+    }
+  ]
+}
