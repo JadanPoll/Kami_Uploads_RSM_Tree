@@ -338,19 +338,19 @@
     {
       "node_id": "HAI-I10",
       "observation": "OpenAI Signals and Anthropic Economic Index characterize ordinary use and interaction categories; SF Fed records business-use narratives; HBS reports owner Andy Brown built operational apps; Harvard controlled study evaluates a tailored AI tutor.",
-      "basis": "fieldwork.json cases FW-OPENAI, FW-CLAUDE, FW-SMALLBUS, FW-ANDY, FW-STUDENTS",
+      "basis": "fieldwork_nodes cases FW-OPENAI, FW-CLAUDE, FW-SMALLBUS, FW-ANDY, FW-STUDENTS",
       "interpretation": "AI use spans many environments and knowledge levels. Aggregate message distributions and isolated stories cannot establish population percentiles or general superiority."
     },
     {
       "node_id": "HAI-I11",
       "observation": "Carlini chose parallel agents for separable compiler tasks and invested heavily in evaluators; Mishra-Sharma's coupled numerical solver was better suited to mostly sequential debugging against CLASS.",
-      "basis": "fieldwork.json cases FW-CARLINI and FW-CLAX",
+      "basis": "fieldwork_nodes cases FW-CARLINI and FW-CLAX",
       "interpretation": "Hypothesis: coupling among tasks and quality of the evaluator, not number of agents, govern effective orchestration. This contrast is not itself a controlled test."
     },
     {
       "node_id": "HAI-I12",
       "observation": "Found working primary artifacts: Showboat/Rodney, mini-swe-agent, DSPy, Claude C compiler, clax. Communities include Hugging Face, Latent Space, Lean and AI engineering talks.",
-      "basis": "fieldwork.json projects and communities",
+      "basis": "fieldwork_nodes projects and communities",
       "interpretation": "These are candidate FKEN gas resources and practical scaffolding, not proof of acquired tacit competence."
     }
   ],
@@ -643,7 +643,6 @@
     "what_changed": "First comparative investigation through documentary samples, not speculative ranking. Each case records observed workflow, competing mechanism hypotheses, remaining uncertainty and cheap reconstruction probes.",
     "relevance": "Cases inform multiple questions without turning the question tree into a celebrity list."
   },
-  "fieldwork_link_rule": "fieldwork_case_ids point to source-backed records in fieldwork_path; follow them for mechanism explanations, action traces, limitations and original sources. Case links are not completed proof certificates.",
   "landscape_views": [
     {
       "id": "daily-use",
@@ -789,7 +788,6 @@
       "rationale": "Purpose-dependent subset of shared technical questions and independently recorded fieldwork; not a separately authored investigation."
     }
   ],
-  "projection_contract": "A curiosity or question set activates the same technical questions with links to independently grounded fieldwork. Observed outcomes, mechanisms, uncertainties and speculation remain distinguishable.",
   "kind": "canonical_research_corpus",
   "original_curiosity": "I want to investigate the landscape of human–AI intellectual symbiosis, from ordinary users through the 90th, 99th, 99.9th percentiles, and eventually what we might call alien-level intelligence or capability.",
   "original_prompt": "I want to investigate the landscape of human–AI intellectual symbiosis, from ordinary users through the 90th, 99th, 99.9th percentiles, and eventually what we might call alien-level intelligence or capability. I'm interested in how the most capable people use AI to accomplish extraordinary intellectual and engineering work. For example, consider Levent Alpöge's reported use of Claude in pursuing a proof of the Riemann hypothesis. Following RSM and FKEN, let's develop a rich question landscape and investigation tree. I want to discover the people, techniques, workflows, projects, tools, communities, and constituent capabilities that distinguish these levels. Importantly, don't just admire extraordinary outcomes or reduce everything to prompting. Investigate how the capabilities compose, what makes them effective, and how we could progressively reproduce, acquire, and surpass them. The investigations should completely demystify what they did and soften the idea of the 'untouchable legend', while studying average users, percentile tiers, and people using AI in ways similar to mine.",
@@ -1158,17 +1156,12 @@
           "HAI-Q04A"
         ]
       }
-    ],
-    "technical_corpus": "investigation.json",
-    "fieldwork_corpus": "fieldwork.json",
-    "entry_policy": "Ordinary questions identify a starting concern, not a ceiling on technical depth. A case may support several entries without copying case evidence."
+    ]
   },
   "navigation_bridges": [
     {
       "id": "HAI-BRG-trust",
       "question": "Which claim or result is actually supported?",
-      "target_path": "investigation.json",
-      "case_path": "fieldwork.json",
       "choices": [
         {
           "label": "An answer or citation sounds plausible",
@@ -1202,8 +1195,6 @@
     {
       "id": "HAI-BRG-evaluation",
       "question": "What would establish useful, correct behavior?",
-      "target_path": "investigation.json",
-      "case_path": "fieldwork.json",
       "choices": [
         {
           "label": "A generated app compiles or a demo looks good",
@@ -1238,8 +1229,6 @@
     {
       "id": "HAI-BRG-continuity",
       "question": "What state makes the work recoverable?",
-      "target_path": "investigation.json",
-      "case_path": "fieldwork.json",
       "choices": [
         {
           "label": "A new conversation cannot reconstruct project intent",
@@ -1273,8 +1262,6 @@
     {
       "id": "HAI-BRG-learning",
       "question": "Did the user acquire transferable capability?",
-      "target_path": "investigation.json",
-      "case_path": "fieldwork.json",
       "choices": [
         {
           "label": "AI helped complete today's task",
@@ -1310,8 +1297,6 @@
     {
       "id": "HAI-BRG-agency",
       "question": "Which decisions require human authority or expertise?",
-      "target_path": "investigation.json",
-      "case_path": "fieldwork.json",
       "choices": [
         {
           "label": "The agent could continue, but the consequences matter",
@@ -1346,8 +1331,6 @@
     {
       "id": "HAI-BRG-parallel",
       "question": "Can agents work independently without destructive interference?",
-      "target_path": "investigation.json",
-      "case_path": "fieldwork.json",
       "choices": [
         {
           "label": "Tasks have separable contracts and cheap tests",
@@ -1382,8 +1365,6 @@
     {
       "id": "HAI-BRG-demystify",
       "question": "What made the extraordinary result possible?",
-      "target_path": "investigation.json",
-      "case_path": "fieldwork.json",
       "choices": [
         {
           "label": "An achievement seems far beyond ordinary users",
@@ -1420,8 +1401,6 @@
     {
       "id": "HAI-BRG-population",
       "question": "Who is being compared, on what task, with what measurement?",
-      "target_path": "investigation.json",
-      "case_path": "fieldwork.json",
       "choices": [
         {
           "label": "Many people use AI but few outcomes are measured",
@@ -1458,8 +1437,6 @@
     {
       "id": "HAI-BRG-economics",
       "question": "Did the tool reduce real work?",
-      "target_path": "investigation.json",
-      "case_path": "fieldwork.json",
       "choices": [
         {
           "label": "Generation was quick but reviewing was expensive",
