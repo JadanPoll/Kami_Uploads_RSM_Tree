@@ -4,6 +4,8 @@ Explore what you are curious about, follow the underlying mechanisms, and recove
 
 [**Open the manufacturing questions and investigations**](https://raw.githack.com/JadanPoll/Learning_Visualizations_Taxonomy/main/RSM_Tree_Viewer.html?repo=https%3A%2F%2Fgithub.com%2FJadanPoll%2FKami_Uploads_RSM_Tree&view=manufacturing-curiosities)
 
+[**Explore neuromorphic engineering**](https://raw.githack.com/JadanPoll/Learning_Visualizations_Taxonomy/main/RSM_Tree_Viewer.html?repo=https%3A%2F%2Fgithub.com%2FJadanPoll%2FKami_Uploads_RSM_Tree&view=neuromorphic-curiosities)
+
 [**Explore FPGA and VLSI questions**](https://raw.githack.com/JadanPoll/Learning_Visualizations_Taxonomy/main/RSM_Tree_Viewer.html?repo=https%3A%2F%2Fgithub.com%2FJadanPoll%2FKami_Uploads_RSM_Tree&view=digital-hardware-curiosities)
 
 ## One entrance, variable investigation scope
@@ -29,6 +31,7 @@ The Knowledge Atlas viewer loads only the selected domain's glossary. In the que
 | Operating systems | [glossary.json](Investigations/operating-systems/glossary.json) |
 | Human–AI collaboration | [glossary.json](Investigations/human-ai-symbiosis/glossary.json) |
 | FPGA and VLSI | [glossary.json](Investigations/digital-hardware-design/glossary.json) |
+| Neuromorphic engineering | [glossary.json](Investigations/neuromorphic-engineering/glossary.json) |
 
 **Research remains canonical in `investigation.json`.** Vocabulary changes need not duplicate its mechanisms or books. IDs are permanent: change a label or add aliases without changing identity, and keep redirects when combining true synonyms. A related concept does not mean the same mechanism.
 
@@ -42,6 +45,7 @@ Each domain has **one canonical research JSON** (and multiple possible scoped vi
 | Operating systems | [`investigation.json`](Investigations/operating-systems/investigation.json) | 15 curiosity entries, 43 question-index nodes, 9 technical nodes, 51 OSTEP chapter anchors, and cross-book routes |
 | Human–AI collaboration | [`investigation.json`](Investigations/human-ai-symbiosis/investigation.json) | 18 curiosities, 56 question-index nodes, 13 technical nodes, 19 fieldwork nodes, supporting sources, projects, and communities |
 | Digital hardware (FPGA/VLSI) | [`investigation.json`](Investigations/digital-hardware-design/investigation.json) | 24 curiosities, five larger sets, 15 technical nodes, 18 FPGA + 9 VLSI chapter locations, and conditional source routes |
+| Neuromorphic engineering | [`investigation.json`](Investigations/neuromorphic-engineering/investigation.json) | 28 curiosity entries, 20 technical records, 12 conditional bridges, five investigation sets, two books, and their reusable source maps |
 
 The manufacturing corpus's principal sections are:
 
@@ -69,6 +73,8 @@ Run the **reverse test** from independently chosen important passages: can plaus
 [Operating systems reference guide — OS, Linux, bare-metal and architecture book maps](Investigations/operating-systems/REFERENCE_GUIDE.md)
 
 [FPGA and VLSI reference guide — 2 books, 27 reusable chapter anchors and practical mechanism routes](Investigations/digital-hardware-design/REFERENCE_GUIDE.md)
+
+[Neuromorphic reference guide — 33 book chapters, four Mead appendices, 52 selected subsection starts and inspected mechanisms](Investigations/neuromorphic-engineering/REFERENCE_GUIDE.md)
 
 [Manufacturing navigation audit and test prompts](Investigations/manufacturing-orientation/navigation_audit.md)
 
