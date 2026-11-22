@@ -481,7 +481,25 @@
           "BUILD",
           "TIME"
         ],
-        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result."
+        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result.",
+        "term_ids": [
+          "dhw-t-0058",
+          "dhw-t-0091",
+          "dhw-t-0096",
+          "dhw-t-0100",
+          "dhw-t-0045",
+          "dhw-t-0219",
+          "dhw-t-0099",
+          "dhw-t-0092",
+          "dhw-t-0090",
+          "dhw-t-0069",
+          "dhw-t-0093",
+          "dhw-t-0005",
+          "dhw-t-0052",
+          "dhw-t-0209",
+          "dhw-t-0032",
+          "dhw-t-0084"
+        ]
       },
       {
         "id": "DHW-CURI-led",
@@ -494,7 +512,22 @@
         "bridge_ids": [
           "BUILD"
         ],
-        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result."
+        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result.",
+        "term_ids": [
+          "dhw-t-0058",
+          "dhw-t-0216",
+          "dhw-t-0045",
+          "dhw-t-0219",
+          "dhw-t-0099",
+          "dhw-t-0091",
+          "dhw-t-0092",
+          "dhw-t-0090",
+          "dhw-t-0069",
+          "dhw-t-0093",
+          "dhw-t-0005",
+          "dhw-t-0052",
+          "dhw-t-0209"
+        ]
       },
       {
         "id": "DHW-CURI-uart",
@@ -508,7 +541,25 @@
           "SERIAL",
           "TIME"
         ],
-        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result."
+        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result.",
+        "term_ids": [
+          "dhw-t-0008",
+          "dhw-t-0108",
+          "dhw-t-0219",
+          "dhw-t-0112",
+          "dhw-t-0111",
+          "dhw-t-0110",
+          "dhw-t-0049",
+          "dhw-t-0109",
+          "dhw-t-0079",
+          "dhw-t-0216",
+          "dhw-t-0048",
+          "dhw-t-0072",
+          "dhw-t-0032",
+          "dhw-t-0084",
+          "dhw-t-0073",
+          "dhw-t-0074"
+        ]
       },
       {
         "id": "DHW-CURI-vga",
@@ -522,7 +573,20 @@
         "bridge_ids": [
           "VIDEO"
         ],
-        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result."
+        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result.",
+        "term_ids": [
+          "dhw-t-0125",
+          "dhw-t-0216",
+          "dhw-t-0126",
+          "dhw-t-0127",
+          "dhw-t-0128",
+          "dhw-t-0130",
+          "dhw-t-0010",
+          "dhw-t-0064",
+          "dhw-t-0119",
+          "dhw-t-0056",
+          "dhw-t-0057"
+        ]
       },
       {
         "id": "DHW-CURI-keyboard",
@@ -535,7 +599,21 @@
         "bridge_ids": [
           "PERIPHERAL"
         ],
-        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result."
+        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result.",
+        "term_ids": [
+          "dhw-t-0122",
+          "dhw-t-0209",
+          "dhw-t-0216",
+          "dhw-t-0121",
+          "dhw-t-0118",
+          "dhw-t-0137",
+          "dhw-t-0117",
+          "dhw-t-0193",
+          "dhw-t-0064",
+          "dhw-t-0119",
+          "dhw-t-0056",
+          "dhw-t-0057"
+        ]
       },
       {
         "id": "DHW-CURI-missing",
@@ -549,7 +627,25 @@
           "PORTABLE",
           "BUILD"
         ],
-        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result."
+        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result.",
+        "term_ids": [
+          "dhw-t-0058",
+          "dhw-t-0002",
+          "dhw-t-0005",
+          "dhw-t-0059",
+          "dhw-t-0216",
+          "dhw-t-0099",
+          "dhw-t-0091",
+          "dhw-t-0092",
+          "dhw-t-0090",
+          "dhw-t-0069",
+          "dhw-t-0093",
+          "dhw-t-0062",
+          "dhw-t-0146",
+          "dhw-t-0169",
+          "dhw-t-0045",
+          "dhw-t-0219"
+        ]
       },
       {
         "id": "DHW-CURI-if",
@@ -563,7 +659,25 @@
           "COMB",
           "CONTROL"
         ],
-        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result."
+        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result.",
+        "term_ids": [
+          "dhw-t-0002",
+          "dhw-t-0003",
+          "dhw-t-0006",
+          "dhw-t-0025",
+          "dhw-t-0026",
+          "dhw-t-0027",
+          "dhw-t-0022",
+          "dhw-t-0010",
+          "dhw-t-0216",
+          "dhw-t-0040",
+          "dhw-t-0041",
+          "dhw-t-0032",
+          "dhw-t-0039",
+          "dhw-t-0042",
+          "dhw-t-0050",
+          "dhw-t-0031"
+        ]
       },
       {
         "id": "DHW-CURI-latch",
@@ -576,7 +690,21 @@
         "bridge_ids": [
           "COMB"
         ],
-        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result."
+        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result.",
+        "term_ids": [
+          "dhw-t-0010",
+          "dhw-t-0024",
+          "dhw-t-0025",
+          "dhw-t-0006",
+          "dhw-t-0026",
+          "dhw-t-0027",
+          "dhw-t-0022",
+          "dhw-t-0003",
+          "dhw-t-0216",
+          "dhw-t-0002",
+          "dhw-t-0040",
+          "dhw-t-0041"
+        ]
       },
       {
         "id": "DHW-CURI-debounce",
@@ -590,7 +718,25 @@
           "STATE",
           "TIME"
         ],
-        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result."
+        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result.",
+        "term_ids": [
+          "dhw-t-0083",
+          "dhw-t-0031",
+          "dhw-t-0039",
+          "dhw-t-0044",
+          "dhw-t-0032",
+          "dhw-t-0045",
+          "dhw-t-0133",
+          "dhw-t-0010",
+          "dhw-t-0079",
+          "dhw-t-0216",
+          "dhw-t-0219",
+          "dhw-t-0084",
+          "dhw-t-0072",
+          "dhw-t-0073",
+          "dhw-t-0074",
+          "dhw-t-0077"
+        ]
       },
       {
         "id": "DHW-CURI-fsm",
@@ -603,7 +749,24 @@
         "bridge_ids": [
           "CONTROL"
         ],
-        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result."
+        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result.",
+        "term_ids": [
+          "dhw-t-0040",
+          "dhw-t-0032",
+          "dhw-t-0039",
+          "dhw-t-0041",
+          "dhw-t-0216",
+          "dhw-t-0042",
+          "dhw-t-0050",
+          "dhw-t-0031",
+          "dhw-t-0044",
+          "dhw-t-0045",
+          "dhw-t-0133",
+          "dhw-t-0199",
+          "dhw-t-0139",
+          "dhw-t-0140",
+          "dhw-t-0143"
+        ]
       },
       {
         "id": "DHW-CURI-memory",
@@ -617,7 +780,18 @@
         "bridge_ids": [
           "MEMORY"
         ],
-        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result."
+        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result.",
+        "term_ids": [
+          "dhw-t-0056",
+          "dhw-t-0064",
+          "dhw-t-0119",
+          "dhw-t-0120",
+          "dhw-t-0216",
+          "dhw-t-0057",
+          "dhw-t-0058",
+          "dhw-t-0002",
+          "dhw-t-0059"
+        ]
       },
       {
         "id": "DHW-CURI-cpu",
@@ -632,7 +806,25 @@
           "SOFTCORE",
           "CONTROL"
         ],
-        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result."
+        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result.",
+        "term_ids": [
+          "dhw-t-0058",
+          "dhw-t-0139",
+          "dhw-t-0140",
+          "dhw-t-0143",
+          "dhw-t-0144",
+          "dhw-t-0039",
+          "dhw-t-0041",
+          "dhw-t-0040",
+          "dhw-t-0042",
+          "dhw-t-0050",
+          "dhw-t-0032",
+          "dhw-t-0216",
+          "dhw-t-0236",
+          "dhw-t-0031",
+          "dhw-t-0044",
+          "dhw-t-0045"
+        ]
       },
       {
         "id": "DHW-CURI-fast",
@@ -646,7 +838,25 @@
           "TIME",
           "MOS"
         ],
-        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result."
+        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result.",
+        "term_ids": [
+          "dhw-t-0072",
+          "dhw-t-0216",
+          "dhw-t-0219",
+          "dhw-t-0032",
+          "dhw-t-0084",
+          "dhw-t-0073",
+          "dhw-t-0074",
+          "dhw-t-0077",
+          "dhw-t-0075",
+          "dhw-t-0100",
+          "dhw-t-0185",
+          "dhw-t-0079",
+          "dhw-t-0080",
+          "dhw-t-0082",
+          "dhw-t-0188",
+          "dhw-t-0010"
+        ]
       },
       {
         "id": "DHW-CURI-cdc",
@@ -661,7 +871,25 @@
           "TIME",
           "PHYSICALCLOCK"
         ],
-        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result."
+        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result.",
+        "term_ids": [
+          "dhw-t-0080",
+          "dhw-t-0082",
+          "dhw-t-0083",
+          "dhw-t-0216",
+          "dhw-t-0219",
+          "dhw-t-0032",
+          "dhw-t-0084",
+          "dhw-t-0072",
+          "dhw-t-0073",
+          "dhw-t-0074",
+          "dhw-t-0077",
+          "dhw-t-0075",
+          "dhw-t-0100",
+          "dhw-t-0185",
+          "dhw-t-0079",
+          "dhw-t-0188"
+        ]
       },
       {
         "id": "DHW-CURI-uart-glitch",
@@ -674,7 +902,21 @@
         "bridge_ids": [
           "SERIAL"
         ],
-        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result."
+        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result.",
+        "term_ids": [
+          "dhw-t-0108",
+          "dhw-t-0110",
+          "dhw-t-0112",
+          "dhw-t-0111",
+          "dhw-t-0049",
+          "dhw-t-0109",
+          "dhw-t-0008",
+          "dhw-t-0079",
+          "dhw-t-0216",
+          "dhw-t-0048",
+          "dhw-t-0219",
+          "dhw-t-0072"
+        ]
       },
       {
         "id": "DHW-CURI-clockwire",
@@ -687,7 +929,19 @@
         "bridge_ids": [
           "PHYSICALCLOCK"
         ],
-        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result."
+        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result.",
+        "term_ids": [
+          "dhw-t-0084",
+          "dhw-t-0085",
+          "dhw-t-0219",
+          "dhw-t-0185",
+          "dhw-t-0082",
+          "dhw-t-0081",
+          "dhw-t-0188",
+          "dhw-t-0186",
+          "dhw-t-0083",
+          "dhw-t-0216"
+        ]
       },
       {
         "id": "DHW-CURI-transistor",
@@ -701,7 +955,23 @@
         "bridge_ids": [
           "MOS"
         ],
-        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result."
+        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result.",
+        "term_ids": [
+          "dhw-t-0148",
+          "dhw-t-0151",
+          "dhw-t-0152",
+          "dhw-t-0216",
+          "dhw-t-0010",
+          "dhw-t-0156",
+          "dhw-t-0158",
+          "dhw-t-0155",
+          "dhw-t-0167",
+          "dhw-t-0171",
+          "dhw-t-0173",
+          "dhw-t-0160",
+          "dhw-t-0161",
+          "dhw-t-0174"
+        ]
       },
       {
         "id": "DHW-CURI-wires",
@@ -715,7 +985,25 @@
           "MOS",
           "LAYOUT"
         ],
-        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result."
+        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result.",
+        "term_ids": [
+          "dhw-t-0159",
+          "dhw-t-0216",
+          "dhw-t-0010",
+          "dhw-t-0156",
+          "dhw-t-0148",
+          "dhw-t-0152",
+          "dhw-t-0158",
+          "dhw-t-0155",
+          "dhw-t-0167",
+          "dhw-t-0171",
+          "dhw-t-0173",
+          "dhw-t-0160",
+          "dhw-t-0161",
+          "dhw-t-0174",
+          "dhw-t-0172",
+          "dhw-t-0008"
+        ]
       },
       {
         "id": "DHW-CURI-chips",
@@ -729,7 +1017,25 @@
           "FAB",
           "LAYOUT"
         ],
-        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result."
+        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result.",
+        "term_ids": [
+          "dhw-t-0168",
+          "dhw-t-0179",
+          "dhw-t-0216",
+          "dhw-t-0180",
+          "dhw-t-0178",
+          "dhw-t-0176",
+          "dhw-t-0182",
+          "dhw-t-0149",
+          "dhw-t-0172",
+          "dhw-t-0174",
+          "dhw-t-0177",
+          "dhw-t-0171",
+          "dhw-t-0173",
+          "dhw-t-0160",
+          "dhw-t-0161",
+          "dhw-t-0008"
+        ]
       },
       {
         "id": "DHW-CURI-area",
@@ -744,7 +1050,25 @@
           "MOS",
           "LAYOUT"
         ],
-        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result."
+        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result.",
+        "term_ids": [
+          "dhw-t-0172",
+          "dhw-t-0010",
+          "dhw-t-0156",
+          "dhw-t-0148",
+          "dhw-t-0152",
+          "dhw-t-0158",
+          "dhw-t-0155",
+          "dhw-t-0167",
+          "dhw-t-0171",
+          "dhw-t-0173",
+          "dhw-t-0160",
+          "dhw-t-0161",
+          "dhw-t-0174",
+          "dhw-t-0008",
+          "dhw-t-0216",
+          "dhw-t-0145"
+        ]
       },
       {
         "id": "DHW-CURI-hdl-vs-silicon",
@@ -758,7 +1082,25 @@
           "PORTABLE",
           "FAB"
         ],
-        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result."
+        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result.",
+        "term_ids": [
+          "dhw-t-0058",
+          "dhw-t-0093",
+          "dhw-t-0094",
+          "dhw-t-0146",
+          "dhw-t-0002",
+          "dhw-t-0005",
+          "dhw-t-0059",
+          "dhw-t-0216",
+          "dhw-t-0099",
+          "dhw-t-0091",
+          "dhw-t-0092",
+          "dhw-t-0090",
+          "dhw-t-0069",
+          "dhw-t-0062",
+          "dhw-t-0169",
+          "dhw-t-0179"
+        ]
       },
       {
         "id": "DHW-CURI-firmware",
@@ -772,7 +1114,25 @@
           "SOFTCORE",
           "CONTROL"
         ],
-        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result."
+        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result.",
+        "term_ids": [
+          "dhw-t-0039",
+          "dhw-t-0040",
+          "dhw-t-0041",
+          "dhw-t-0139",
+          "dhw-t-0140",
+          "dhw-t-0143",
+          "dhw-t-0144",
+          "dhw-t-0042",
+          "dhw-t-0050",
+          "dhw-t-0032",
+          "dhw-t-0216",
+          "dhw-t-0236",
+          "dhw-t-0031",
+          "dhw-t-0044",
+          "dhw-t-0045",
+          "dhw-t-0133"
+        ]
       },
       {
         "id": "DHW-CURI-tool-old",
@@ -786,7 +1146,25 @@
         "bridge_ids": [
           "PORTABLE"
         ],
-        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result."
+        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result.",
+        "term_ids": [
+          "dhw-t-0059",
+          "dhw-t-0104",
+          "dhw-t-0105",
+          "dhw-t-0106",
+          "dhw-t-0002",
+          "dhw-t-0005",
+          "dhw-t-0216",
+          "dhw-t-0058",
+          "dhw-t-0099",
+          "dhw-t-0091",
+          "dhw-t-0092",
+          "dhw-t-0090",
+          "dhw-t-0069",
+          "dhw-t-0093",
+          "dhw-t-0062",
+          "dhw-t-0146"
+        ]
       },
       {
         "id": "DHW-CURI-test",
@@ -802,7 +1180,25 @@
           "TIME",
           "FAB"
         ],
-        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result."
+        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result.",
+        "term_ids": [
+          "dhw-t-0058",
+          "dhw-t-0045",
+          "dhw-t-0219",
+          "dhw-t-0099",
+          "dhw-t-0091",
+          "dhw-t-0092",
+          "dhw-t-0090",
+          "dhw-t-0069",
+          "dhw-t-0093",
+          "dhw-t-0005",
+          "dhw-t-0052",
+          "dhw-t-0209",
+          "dhw-t-0032",
+          "dhw-t-0084",
+          "dhw-t-0072",
+          "dhw-t-0073"
+        ]
       }
     ],
     "entry_policy": "Questions are entry surfaces. Shared technical nodes, book chapters and experiments keep single identities; differences in tools, materials and process generations are explicit."
@@ -828,6 +1224,19 @@
               "level": "inspected",
               "why": "Mapping and physical-implementation flow — Was the failure behavioral, pin/clock/reset wiring, resource mapping, or a violated timing constraint?"
             }
+          ],
+          "term_ids": [
+            "dhw-t-0045",
+            "dhw-t-0219",
+            "dhw-t-0058",
+            "dhw-t-0099",
+            "dhw-t-0091",
+            "dhw-t-0092",
+            "dhw-t-0090",
+            "dhw-t-0069",
+            "dhw-t-0093",
+            "dhw-t-0005",
+            "dhw-t-0052"
           ]
         },
         {
@@ -846,8 +1255,35 @@
               "level": "toc_only",
               "why": "Board clock, pins and I/O interface contract — Does the board actually offer that device, voltage, interface or connection?"
             }
+          ],
+          "term_ids": [
+            "dhw-t-0209",
+            "dhw-t-0219",
+            "dhw-t-0058",
+            "dhw-t-0099",
+            "dhw-t-0091",
+            "dhw-t-0092",
+            "dhw-t-0090",
+            "dhw-t-0069",
+            "dhw-t-0093",
+            "dhw-t-0005",
+            "dhw-t-0052"
           ]
         }
+      ],
+      "term_ids": [
+        "dhw-t-0045",
+        "dhw-t-0219",
+        "dhw-t-0058",
+        "dhw-t-0099",
+        "dhw-t-0091",
+        "dhw-t-0092",
+        "dhw-t-0090",
+        "dhw-t-0069",
+        "dhw-t-0093",
+        "dhw-t-0005",
+        "dhw-t-0052",
+        "dhw-t-0209"
       ]
     },
     {
@@ -869,6 +1305,16 @@
               "level": "inspected",
               "why": "Unintended latch from incomplete assignment — Does every output receive a value for every input combination?"
             }
+          ],
+          "term_ids": [
+            "dhw-t-0006",
+            "dhw-t-0025",
+            "dhw-t-0026",
+            "dhw-t-0027",
+            "dhw-t-0022",
+            "dhw-t-0003",
+            "dhw-t-0010",
+            "dhw-t-0216"
           ]
         },
         {
@@ -887,8 +1333,34 @@
               "level": "inspected",
               "why": "Hardware interpretation of conditional RTL — Which branch priorities and gate structures are inferred, rather than which line executes first?"
             }
+          ],
+          "term_ids": [
+            "dhw-t-0002",
+            "dhw-t-0006",
+            "dhw-t-0025",
+            "dhw-t-0026",
+            "dhw-t-0027",
+            "dhw-t-0022",
+            "dhw-t-0003",
+            "dhw-t-0010",
+            "dhw-t-0216",
+            "dhw-t-0040",
+            "dhw-t-0041"
           ]
         }
+      ],
+      "term_ids": [
+        "dhw-t-0006",
+        "dhw-t-0025",
+        "dhw-t-0026",
+        "dhw-t-0027",
+        "dhw-t-0022",
+        "dhw-t-0003",
+        "dhw-t-0010",
+        "dhw-t-0216",
+        "dhw-t-0002",
+        "dhw-t-0040",
+        "dhw-t-0041"
       ]
     },
     {
@@ -911,6 +1383,19 @@
               "level": "toc_only",
               "why": "Contact bounce versus edge detection — Does the input trace contain several transitions and how does a synchronizer/debouncer recognize one event?"
             }
+          ],
+          "term_ids": [
+            "dhw-t-0083",
+            "dhw-t-0031",
+            "dhw-t-0039",
+            "dhw-t-0044",
+            "dhw-t-0032",
+            "dhw-t-0045",
+            "dhw-t-0133",
+            "dhw-t-0010",
+            "dhw-t-0079",
+            "dhw-t-0216",
+            "dhw-t-0219"
           ]
         },
         {
@@ -928,8 +1413,33 @@
               "level": "toc_only",
               "why": "Registers and finite-state control — Which history is necessary to determine the next output and transition?"
             }
+          ],
+          "term_ids": [
+            "dhw-t-0031",
+            "dhw-t-0039",
+            "dhw-t-0044",
+            "dhw-t-0032",
+            "dhw-t-0045",
+            "dhw-t-0133",
+            "dhw-t-0010",
+            "dhw-t-0079",
+            "dhw-t-0216",
+            "dhw-t-0219"
           ]
         }
+      ],
+      "term_ids": [
+        "dhw-t-0083",
+        "dhw-t-0031",
+        "dhw-t-0039",
+        "dhw-t-0044",
+        "dhw-t-0032",
+        "dhw-t-0045",
+        "dhw-t-0133",
+        "dhw-t-0010",
+        "dhw-t-0079",
+        "dhw-t-0216",
+        "dhw-t-0219"
       ]
     },
     {
@@ -952,6 +1462,19 @@
               "level": "toc_only",
               "why": "FSM plus datapath and register transfers — Can a limited datapath be reused over multiple cycles with explicit control?"
             }
+          ],
+          "term_ids": [
+            "dhw-t-0032",
+            "dhw-t-0039",
+            "dhw-t-0041",
+            "dhw-t-0216",
+            "dhw-t-0040",
+            "dhw-t-0042",
+            "dhw-t-0050",
+            "dhw-t-0031",
+            "dhw-t-0044",
+            "dhw-t-0045",
+            "dhw-t-0133"
           ]
         },
         {
@@ -970,8 +1493,38 @@
               "level": "toc_only",
               "why": "Microprogrammed or stored-program controller — Which tasks change in firmware and which are fixed-time datapath contracts?"
             }
+          ],
+          "term_ids": [
+            "dhw-t-0041",
+            "dhw-t-0199",
+            "dhw-t-0139",
+            "dhw-t-0140",
+            "dhw-t-0143",
+            "dhw-t-0144",
+            "dhw-t-0039",
+            "dhw-t-0040",
+            "dhw-t-0042",
+            "dhw-t-0050",
+            "dhw-t-0032"
           ]
         }
+      ],
+      "term_ids": [
+        "dhw-t-0032",
+        "dhw-t-0039",
+        "dhw-t-0041",
+        "dhw-t-0216",
+        "dhw-t-0040",
+        "dhw-t-0042",
+        "dhw-t-0050",
+        "dhw-t-0031",
+        "dhw-t-0044",
+        "dhw-t-0045",
+        "dhw-t-0133",
+        "dhw-t-0199",
+        "dhw-t-0139",
+        "dhw-t-0140",
+        "dhw-t-0143"
       ]
     },
     {
@@ -993,6 +1546,19 @@
               "level": "inspected",
               "why": "Path delay and setup/hold margin — Which register-to-register path, clock skew or external path budget is violated?"
             }
+          ],
+          "term_ids": [
+            "dhw-t-0032",
+            "dhw-t-0084",
+            "dhw-t-0219",
+            "dhw-t-0072",
+            "dhw-t-0073",
+            "dhw-t-0074",
+            "dhw-t-0077",
+            "dhw-t-0075",
+            "dhw-t-0100",
+            "dhw-t-0185",
+            "dhw-t-0216"
           ]
         },
         {
@@ -1011,8 +1577,38 @@
               "level": "inspected",
               "why": "Clock-domain crossing and metastability — What ownership/handshake/sampling guarantee prevents a transient violating downstream state?"
             }
+          ],
+          "term_ids": [
+            "dhw-t-0079",
+            "dhw-t-0080",
+            "dhw-t-0082",
+            "dhw-t-0188",
+            "dhw-t-0219",
+            "dhw-t-0185",
+            "dhw-t-0081",
+            "dhw-t-0084",
+            "dhw-t-0186",
+            "dhw-t-0083",
+            "dhw-t-0216"
           ]
         }
+      ],
+      "term_ids": [
+        "dhw-t-0032",
+        "dhw-t-0084",
+        "dhw-t-0219",
+        "dhw-t-0072",
+        "dhw-t-0073",
+        "dhw-t-0074",
+        "dhw-t-0077",
+        "dhw-t-0075",
+        "dhw-t-0100",
+        "dhw-t-0185",
+        "dhw-t-0216",
+        "dhw-t-0079",
+        "dhw-t-0080",
+        "dhw-t-0082",
+        "dhw-t-0188"
       ]
     },
     {
@@ -1034,6 +1630,17 @@
               "level": "inspected",
               "why": "UART bit-center sampling and baud tolerance — How does the receiver find the start bit and where is the data sampled?"
             }
+          ],
+          "term_ids": [
+            "dhw-t-0108",
+            "dhw-t-0112",
+            "dhw-t-0111",
+            "dhw-t-0110",
+            "dhw-t-0049",
+            "dhw-t-0109",
+            "dhw-t-0008",
+            "dhw-t-0079",
+            "dhw-t-0216"
           ]
         },
         {
@@ -1052,8 +1659,35 @@
               "level": "inspected",
               "why": "Clock-enable ticks versus new generated clock domain — Can sampling be implemented as synchronous enables without creating another clock domain?"
             }
+          ],
+          "term_ids": [
+            "dhw-t-0048",
+            "dhw-t-0049",
+            "dhw-t-0079",
+            "dhw-t-0216",
+            "dhw-t-0219",
+            "dhw-t-0108",
+            "dhw-t-0111",
+            "dhw-t-0110",
+            "dhw-t-0109",
+            "dhw-t-0008",
+            "dhw-t-0072"
           ]
         }
+      ],
+      "term_ids": [
+        "dhw-t-0108",
+        "dhw-t-0112",
+        "dhw-t-0111",
+        "dhw-t-0110",
+        "dhw-t-0049",
+        "dhw-t-0109",
+        "dhw-t-0008",
+        "dhw-t-0079",
+        "dhw-t-0216",
+        "dhw-t-0048",
+        "dhw-t-0219",
+        "dhw-t-0072"
       ]
     },
     {
@@ -1075,6 +1709,16 @@
               "level": "toc_only",
               "why": "Registers versus mapped on-chip block RAM — What memory primitive, port timing and read-during-write behavior does the synthesizer implement?"
             }
+          ],
+          "term_ids": [
+            "dhw-t-0057",
+            "dhw-t-0058",
+            "dhw-t-0064",
+            "dhw-t-0119",
+            "dhw-t-0056",
+            "dhw-t-0002",
+            "dhw-t-0059",
+            "dhw-t-0120"
           ]
         },
         {
@@ -1092,8 +1736,30 @@
               "level": "toc_only",
               "why": "External SRAM transaction and timing controller — When is the address/data stable, when can the memory respond, and who arbitrates use?"
             }
+          ],
+          "term_ids": [
+            "dhw-t-0058",
+            "dhw-t-0119",
+            "dhw-t-0120",
+            "dhw-t-0216",
+            "dhw-t-0064",
+            "dhw-t-0056",
+            "dhw-t-0057",
+            "dhw-t-0002",
+            "dhw-t-0059"
           ]
         }
+      ],
+      "term_ids": [
+        "dhw-t-0057",
+        "dhw-t-0058",
+        "dhw-t-0064",
+        "dhw-t-0119",
+        "dhw-t-0056",
+        "dhw-t-0002",
+        "dhw-t-0059",
+        "dhw-t-0120",
+        "dhw-t-0216"
       ]
     },
     {
@@ -1115,6 +1781,15 @@
               "level": "toc_only",
               "why": "VGA pixel/line/frame timing — Are pixel ticks, blanking and sync periods generated to match the interface's timing contract?"
             }
+          ],
+          "term_ids": [
+            "dhw-t-0125",
+            "dhw-t-0126",
+            "dhw-t-0127",
+            "dhw-t-0128",
+            "dhw-t-0130",
+            "dhw-t-0010",
+            "dhw-t-0216"
           ]
         },
         {
@@ -1133,8 +1808,34 @@
               "level": "toc_only",
               "why": "Character and tile-mapped graphics architecture — How are screen coordinates converted into glyph or tile indices and pixel data?"
             }
+          ],
+          "term_ids": [
+            "dhw-t-0125",
+            "dhw-t-0126",
+            "dhw-t-0127",
+            "dhw-t-0128",
+            "dhw-t-0130",
+            "dhw-t-0010",
+            "dhw-t-0216",
+            "dhw-t-0064",
+            "dhw-t-0119",
+            "dhw-t-0056",
+            "dhw-t-0057"
           ]
         }
+      ],
+      "term_ids": [
+        "dhw-t-0125",
+        "dhw-t-0126",
+        "dhw-t-0127",
+        "dhw-t-0128",
+        "dhw-t-0130",
+        "dhw-t-0010",
+        "dhw-t-0216",
+        "dhw-t-0064",
+        "dhw-t-0119",
+        "dhw-t-0056",
+        "dhw-t-0057"
       ]
     },
     {
@@ -1156,6 +1857,13 @@
               "level": "toc_only",
               "why": "Physical event to protocol frame — What constitutes the complete command, and can errors recover?"
             }
+          ],
+          "term_ids": [
+            "dhw-t-0216",
+            "dhw-t-0121",
+            "dhw-t-0122",
+            "dhw-t-0118",
+            "dhw-t-0137"
           ]
         },
         {
@@ -1174,8 +1882,35 @@
               "level": "toc_only",
               "why": "Interface buffer and protocol backpressure — What does the target module need to preserve and when can the receiver accept more events?"
             }
+          ],
+          "term_ids": [
+            "dhw-t-0117",
+            "dhw-t-0118",
+            "dhw-t-0193",
+            "dhw-t-0216",
+            "dhw-t-0121",
+            "dhw-t-0122",
+            "dhw-t-0137",
+            "dhw-t-0064",
+            "dhw-t-0119",
+            "dhw-t-0056",
+            "dhw-t-0057"
           ]
         }
+      ],
+      "term_ids": [
+        "dhw-t-0209",
+        "dhw-t-0216",
+        "dhw-t-0121",
+        "dhw-t-0122",
+        "dhw-t-0118",
+        "dhw-t-0137",
+        "dhw-t-0117",
+        "dhw-t-0193",
+        "dhw-t-0064",
+        "dhw-t-0119",
+        "dhw-t-0056",
+        "dhw-t-0057"
       ]
     },
     {
@@ -1198,6 +1933,19 @@
               "level": "toc_only",
               "why": "Processor-based reprogrammable control — What operation must be represented as data/instructions instead of fixed wiring?"
             }
+          ],
+          "term_ids": [
+            "dhw-t-0139",
+            "dhw-t-0140",
+            "dhw-t-0143",
+            "dhw-t-0144",
+            "dhw-t-0039",
+            "dhw-t-0041",
+            "dhw-t-0040",
+            "dhw-t-0042",
+            "dhw-t-0050",
+            "dhw-t-0032",
+            "dhw-t-0216"
           ]
         },
         {
@@ -1216,8 +1964,38 @@
               "level": "toc_only",
               "why": "Dedicated state machine or datapath — Can hardwired hardware perform the work without instruction overhead and with simpler latency?"
             }
+          ],
+          "term_ids": [
+            "dhw-t-0041",
+            "dhw-t-0216",
+            "dhw-t-0236",
+            "dhw-t-0040",
+            "dhw-t-0042",
+            "dhw-t-0050",
+            "dhw-t-0032",
+            "dhw-t-0031",
+            "dhw-t-0039",
+            "dhw-t-0044",
+            "dhw-t-0045"
           ]
         }
+      ],
+      "term_ids": [
+        "dhw-t-0139",
+        "dhw-t-0140",
+        "dhw-t-0143",
+        "dhw-t-0144",
+        "dhw-t-0039",
+        "dhw-t-0041",
+        "dhw-t-0040",
+        "dhw-t-0042",
+        "dhw-t-0050",
+        "dhw-t-0032",
+        "dhw-t-0216",
+        "dhw-t-0236",
+        "dhw-t-0031",
+        "dhw-t-0044",
+        "dhw-t-0045"
       ]
     },
     {
@@ -1239,6 +2017,14 @@
               "level": "inspected",
               "why": "Transistor drive and capacitive switching — What load capacitance, fan-out and available current set the transition time?"
             }
+          ],
+          "term_ids": [
+            "dhw-t-0010",
+            "dhw-t-0156",
+            "dhw-t-0148",
+            "dhw-t-0152",
+            "dhw-t-0158",
+            "dhw-t-0155"
           ]
         },
         {
@@ -1257,8 +2043,35 @@
               "level": "toc_only",
               "why": "Device scaling and interconnect tradeoffs — Which dimensions/voltages actually scale and what physical constraints dominate?"
             }
+          ],
+          "term_ids": [
+            "dhw-t-0167",
+            "dhw-t-0148",
+            "dhw-t-0152",
+            "dhw-t-0158",
+            "dhw-t-0156",
+            "dhw-t-0155",
+            "dhw-t-0171",
+            "dhw-t-0173",
+            "dhw-t-0160",
+            "dhw-t-0161",
+            "dhw-t-0174"
           ]
         }
+      ],
+      "term_ids": [
+        "dhw-t-0010",
+        "dhw-t-0156",
+        "dhw-t-0148",
+        "dhw-t-0152",
+        "dhw-t-0158",
+        "dhw-t-0155",
+        "dhw-t-0167",
+        "dhw-t-0171",
+        "dhw-t-0173",
+        "dhw-t-0160",
+        "dhw-t-0161",
+        "dhw-t-0174"
       ]
     },
     {
@@ -1281,6 +2094,19 @@
               "level": "toc_only",
               "why": "Geometry and parasitic interconnect constraints — Can an electrically equivalent layout reduce wire/capacitance without violating process rules?"
             }
+          ],
+          "term_ids": [
+            "dhw-t-0008",
+            "dhw-t-0172",
+            "dhw-t-0216",
+            "dhw-t-0171",
+            "dhw-t-0173",
+            "dhw-t-0160",
+            "dhw-t-0161",
+            "dhw-t-0174",
+            "dhw-t-0145",
+            "dhw-t-0179",
+            "dhw-t-0148"
           ]
         },
         {
@@ -1299,8 +2125,35 @@
               "level": "toc_only",
               "why": "Process design rules and layer semantics — Which layer, contact and spacing rule controls a reliable physical implementation?"
             }
+          ],
+          "term_ids": [
+            "dhw-t-0171",
+            "dhw-t-0173",
+            "dhw-t-0160",
+            "dhw-t-0161",
+            "dhw-t-0174",
+            "dhw-t-0008",
+            "dhw-t-0145",
+            "dhw-t-0172",
+            "dhw-t-0179",
+            "dhw-t-0216",
+            "dhw-t-0168"
           ]
         }
+      ],
+      "term_ids": [
+        "dhw-t-0172",
+        "dhw-t-0008",
+        "dhw-t-0216",
+        "dhw-t-0171",
+        "dhw-t-0173",
+        "dhw-t-0160",
+        "dhw-t-0161",
+        "dhw-t-0174",
+        "dhw-t-0145",
+        "dhw-t-0179",
+        "dhw-t-0148",
+        "dhw-t-0168"
       ]
     },
     {
@@ -1322,6 +2175,18 @@
               "level": "inspected",
               "why": "Process defects and yield statistics — How is expected yield affected by defect density, chip area and process control?"
             }
+          ],
+          "term_ids": [
+            "dhw-t-0179",
+            "dhw-t-0180",
+            "dhw-t-0168",
+            "dhw-t-0178",
+            "dhw-t-0176",
+            "dhw-t-0182",
+            "dhw-t-0149",
+            "dhw-t-0172",
+            "dhw-t-0174",
+            "dhw-t-0177"
           ]
         },
         {
@@ -1340,8 +2205,38 @@
               "level": "toc_only",
               "why": "Multiproject chip and design-to-fabrication handoff — Which layout artifact, design rules and shared fabrication service are actually required?"
             }
+          ],
+          "term_ids": [
+            "dhw-t-0168",
+            "dhw-t-0172",
+            "dhw-t-0171",
+            "dhw-t-0173",
+            "dhw-t-0160",
+            "dhw-t-0161",
+            "dhw-t-0174",
+            "dhw-t-0008",
+            "dhw-t-0145",
+            "dhw-t-0179",
+            "dhw-t-0216"
           ]
         }
+      ],
+      "term_ids": [
+        "dhw-t-0179",
+        "dhw-t-0180",
+        "dhw-t-0168",
+        "dhw-t-0178",
+        "dhw-t-0176",
+        "dhw-t-0182",
+        "dhw-t-0149",
+        "dhw-t-0172",
+        "dhw-t-0174",
+        "dhw-t-0177",
+        "dhw-t-0171",
+        "dhw-t-0173",
+        "dhw-t-0160",
+        "dhw-t-0161",
+        "dhw-t-0008"
       ]
     },
     {
@@ -1363,6 +2258,17 @@
               "level": "inspected",
               "why": "Clock distribution and skew — Which path assumptions break when sampling edges do not arrive simultaneously?"
             }
+          ],
+          "term_ids": [
+            "dhw-t-0185",
+            "dhw-t-0219",
+            "dhw-t-0082",
+            "dhw-t-0081",
+            "dhw-t-0084",
+            "dhw-t-0188",
+            "dhw-t-0186",
+            "dhw-t-0083",
+            "dhw-t-0216"
           ]
         },
         {
@@ -1380,8 +2286,30 @@
               "level": "inspected",
               "why": "Handshake, synchronization and self-timed coordination — Would local sequencing and acknowledgments remove a problematic global timing assumption?"
             }
+          ],
+          "term_ids": [
+            "dhw-t-0188",
+            "dhw-t-0185",
+            "dhw-t-0082",
+            "dhw-t-0081",
+            "dhw-t-0084",
+            "dhw-t-0186",
+            "dhw-t-0083",
+            "dhw-t-0216",
+            "dhw-t-0219"
           ]
         }
+      ],
+      "term_ids": [
+        "dhw-t-0185",
+        "dhw-t-0219",
+        "dhw-t-0082",
+        "dhw-t-0081",
+        "dhw-t-0084",
+        "dhw-t-0188",
+        "dhw-t-0186",
+        "dhw-t-0083",
+        "dhw-t-0216"
       ]
     },
     {
@@ -1404,6 +2332,19 @@
               "level": "inspected",
               "why": "Portable RTL versus vendor-specific primitives and constraints — Which HDL constructs describe common hardware, and which rely on Spartan-3 or ISE?"
             }
+          ],
+          "term_ids": [
+            "dhw-t-0002",
+            "dhw-t-0005",
+            "dhw-t-0059",
+            "dhw-t-0216",
+            "dhw-t-0058",
+            "dhw-t-0099",
+            "dhw-t-0091",
+            "dhw-t-0092",
+            "dhw-t-0090",
+            "dhw-t-0069",
+            "dhw-t-0093"
           ]
         },
         {
@@ -1423,8 +2364,37 @@
               "level": "toc_only",
               "why": "Reprogrammable LUT fabric versus fixed transistor masks — What functional flexibility, verification route, production cost and technology constraint actually changes?"
             }
+          ],
+          "term_ids": [
+            "dhw-t-0058",
+            "dhw-t-0062",
+            "dhw-t-0146",
+            "dhw-t-0169",
+            "dhw-t-0099",
+            "dhw-t-0091",
+            "dhw-t-0092",
+            "dhw-t-0090",
+            "dhw-t-0069",
+            "dhw-t-0093",
+            "dhw-t-0005"
           ]
         }
+      ],
+      "term_ids": [
+        "dhw-t-0002",
+        "dhw-t-0005",
+        "dhw-t-0059",
+        "dhw-t-0216",
+        "dhw-t-0058",
+        "dhw-t-0099",
+        "dhw-t-0091",
+        "dhw-t-0092",
+        "dhw-t-0090",
+        "dhw-t-0069",
+        "dhw-t-0093",
+        "dhw-t-0062",
+        "dhw-t-0146",
+        "dhw-t-0169"
       ]
     }
   ],
@@ -1453,7 +2423,25 @@
         "logic",
         "physical"
       ],
-      "rationale": "Choose a purpose and inspect the same shared technical records through a narrower decision landscape."
+      "rationale": "Choose a purpose and inspect the same shared technical records through a narrower decision landscape.",
+      "term_ids": [
+        "dhw-t-0001",
+        "dhw-t-0058",
+        "dhw-t-0146",
+        "dhw-t-0145",
+        "dhw-t-0005",
+        "dhw-t-0010",
+        "dhw-t-0168",
+        "dhw-t-0260",
+        "dhw-t-0148",
+        "dhw-t-0152",
+        "dhw-t-0158",
+        "dhw-t-0156",
+        "dhw-t-0155",
+        "dhw-t-0006",
+        "dhw-t-0025",
+        "dhw-t-0026"
+      ]
     },
     {
       "id": "build-a-device",
@@ -1485,7 +2473,25 @@
         "visible",
         "logic"
       ],
-      "rationale": "Choose a purpose and inspect the same shared technical records through a narrower decision landscape."
+      "rationale": "Choose a purpose and inspect the same shared technical records through a narrower decision landscape.",
+      "term_ids": [
+        "dhw-t-0058",
+        "dhw-t-0001",
+        "dhw-t-0146",
+        "dhw-t-0145",
+        "dhw-t-0005",
+        "dhw-t-0010",
+        "dhw-t-0168",
+        "dhw-t-0260",
+        "dhw-t-0099",
+        "dhw-t-0091",
+        "dhw-t-0092",
+        "dhw-t-0090",
+        "dhw-t-0069",
+        "dhw-t-0093",
+        "dhw-t-0052",
+        "dhw-t-0059"
+      ]
     },
     {
       "id": "timing-and-failure",
@@ -1513,7 +2519,25 @@
         "time",
         "physical"
       ],
-      "rationale": "Choose a purpose and inspect the same shared technical records through a narrower decision landscape."
+      "rationale": "Choose a purpose and inspect the same shared technical records through a narrower decision landscape.",
+      "term_ids": [
+        "dhw-t-0001",
+        "dhw-t-0058",
+        "dhw-t-0146",
+        "dhw-t-0145",
+        "dhw-t-0005",
+        "dhw-t-0010",
+        "dhw-t-0168",
+        "dhw-t-0260",
+        "dhw-t-0072",
+        "dhw-t-0073",
+        "dhw-t-0074",
+        "dhw-t-0077",
+        "dhw-t-0075",
+        "dhw-t-0084",
+        "dhw-t-0100",
+        "dhw-t-0185"
+      ]
     },
     {
       "id": "silicon-and-design",
@@ -1541,7 +2565,25 @@
         "physical",
         "choice"
       ],
-      "rationale": "Choose a purpose and inspect the same shared technical records through a narrower decision landscape."
+      "rationale": "Choose a purpose and inspect the same shared technical records through a narrower decision landscape.",
+      "term_ids": [
+        "dhw-t-0010",
+        "dhw-t-0001",
+        "dhw-t-0058",
+        "dhw-t-0146",
+        "dhw-t-0145",
+        "dhw-t-0005",
+        "dhw-t-0168",
+        "dhw-t-0260",
+        "dhw-t-0148",
+        "dhw-t-0152",
+        "dhw-t-0158",
+        "dhw-t-0156",
+        "dhw-t-0155",
+        "dhw-t-0171",
+        "dhw-t-0173",
+        "dhw-t-0160"
+      ]
     },
     {
       "id": "architecture-and-tradeoffs",
@@ -1571,7 +2613,25 @@
         "choice",
         "logic"
       ],
-      "rationale": "Choose a purpose and inspect the same shared technical records through a narrower decision landscape."
+      "rationale": "Choose a purpose and inspect the same shared technical records through a narrower decision landscape.",
+      "term_ids": [
+        "dhw-t-0001",
+        "dhw-t-0058",
+        "dhw-t-0146",
+        "dhw-t-0145",
+        "dhw-t-0005",
+        "dhw-t-0010",
+        "dhw-t-0168",
+        "dhw-t-0260",
+        "dhw-t-0099",
+        "dhw-t-0091",
+        "dhw-t-0092",
+        "dhw-t-0090",
+        "dhw-t-0069",
+        "dhw-t-0093",
+        "dhw-t-0052",
+        "dhw-t-0059"
+      ]
     }
   ],
   "nodes": [
@@ -1588,6 +2648,16 @@
       "technical_distinctions": [],
       "unresolved_questions": [
         "The linked chapter is a retrieval lead; substantive validation or implementation is not yet documented."
+      ],
+      "term_ids": [
+        "dhw-t-0001",
+        "dhw-t-0058",
+        "dhw-t-0146",
+        "dhw-t-0145",
+        "dhw-t-0005",
+        "dhw-t-0010",
+        "dhw-t-0168",
+        "dhw-t-0260"
       ]
     },
     {
@@ -1618,6 +2688,18 @@
       "minimum_reconstruction_probe": "Implement one clocked counter on an available board, inspect actual mapped resources and the timing report, and verify pin behavior.",
       "unresolved_questions": [
         "Which target family, toolchain, and concrete constraints make this explanation insufficient for a present-day device?"
+      ],
+      "term_ids": [
+        "dhw-t-0058",
+        "dhw-t-0099",
+        "dhw-t-0091",
+        "dhw-t-0092",
+        "dhw-t-0090",
+        "dhw-t-0069",
+        "dhw-t-0093",
+        "dhw-t-0005",
+        "dhw-t-0052",
+        "dhw-t-0059"
       ]
     },
     {
@@ -1655,6 +2737,16 @@
       "minimum_reconstruction_probe": "Synthesize two otherwise similar blocks with and without a missing assignment and inspect the inferred components.",
       "unresolved_questions": [
         "Which target family, toolchain, and concrete constraints make this explanation insufficient for a present-day device?"
+      ],
+      "term_ids": [
+        "dhw-t-0006",
+        "dhw-t-0025",
+        "dhw-t-0026",
+        "dhw-t-0027",
+        "dhw-t-0022",
+        "dhw-t-0003",
+        "dhw-t-0010",
+        "dhw-t-0216"
       ]
     },
     {
@@ -1692,6 +2784,18 @@
       "minimum_reconstruction_probe": "Implement a debounce-and-edge detector and distinguish contact chatter from unintended repeated state changes.",
       "unresolved_questions": [
         "Which target family, toolchain, and concrete constraints make this explanation insufficient for a present-day device?"
+      ],
+      "term_ids": [
+        "dhw-t-0031",
+        "dhw-t-0039",
+        "dhw-t-0044",
+        "dhw-t-0032",
+        "dhw-t-0045",
+        "dhw-t-0133",
+        "dhw-t-0010",
+        "dhw-t-0079",
+        "dhw-t-0216",
+        "dhw-t-0219"
       ]
     },
     {
@@ -1729,6 +2833,14 @@
       "minimum_reconstruction_probe": "Implement an iterative divider with explicit control/state and datapath registers; compare cycle count and hardware use against a combinational alternative.",
       "unresolved_questions": [
         "The linked chapter is a retrieval lead; substantive validation or implementation is not yet documented."
+      ],
+      "term_ids": [
+        "dhw-t-0040",
+        "dhw-t-0041",
+        "dhw-t-0042",
+        "dhw-t-0050",
+        "dhw-t-0032",
+        "dhw-t-0216"
       ]
     },
     {
@@ -1766,6 +2878,18 @@
       "minimum_reconstruction_probe": "Change arithmetic depth or pipeline placement and compare the timing path and real-device operation.",
       "unresolved_questions": [
         "Which target family, toolchain, and concrete constraints make this explanation insufficient for a present-day device?"
+      ],
+      "term_ids": [
+        "dhw-t-0072",
+        "dhw-t-0073",
+        "dhw-t-0074",
+        "dhw-t-0077",
+        "dhw-t-0075",
+        "dhw-t-0084",
+        "dhw-t-0100",
+        "dhw-t-0185",
+        "dhw-t-0216",
+        "dhw-t-0219"
       ]
     },
     {
@@ -1796,6 +2920,16 @@
       "minimum_reconstruction_probe": "Implement UART RX/TX and sweep baud mismatch, start-bit glitches and frame length in realistic serial tests.",
       "unresolved_questions": [
         "Which target family, toolchain, and concrete constraints make this explanation insufficient for a present-day device?"
+      ],
+      "term_ids": [
+        "dhw-t-0108",
+        "dhw-t-0111",
+        "dhw-t-0110",
+        "dhw-t-0049",
+        "dhw-t-0109",
+        "dhw-t-0008",
+        "dhw-t-0079",
+        "dhw-t-0216"
       ]
     },
     {
@@ -1833,6 +2967,16 @@
       "minimum_reconstruction_probe": "Compare a mapped on-chip FIFO with an external-memory transaction controller under a representative burst.",
       "unresolved_questions": [
         "The linked chapter is a retrieval lead; substantive validation or implementation is not yet documented."
+      ],
+      "term_ids": [
+        "dhw-t-0064",
+        "dhw-t-0119",
+        "dhw-t-0056",
+        "dhw-t-0057",
+        "dhw-t-0002",
+        "dhw-t-0058",
+        "dhw-t-0059",
+        "dhw-t-0120"
       ]
     },
     {
@@ -1869,6 +3013,13 @@
       ],
       "unresolved_questions": [
         "The linked chapter is a retrieval lead; substantive validation or implementation is not yet documented."
+      ],
+      "term_ids": [
+        "dhw-t-0121",
+        "dhw-t-0122",
+        "dhw-t-0118",
+        "dhw-t-0137",
+        "dhw-t-0216"
       ]
     },
     {
@@ -1906,6 +3057,15 @@
       "minimum_reconstruction_probe": "Render a moving tile on a real display, observe blanking and verify that buffer reads meet pixel-rate timing.",
       "unresolved_questions": [
         "The linked chapter is a retrieval lead; substantive validation or implementation is not yet documented."
+      ],
+      "term_ids": [
+        "dhw-t-0125",
+        "dhw-t-0126",
+        "dhw-t-0127",
+        "dhw-t-0128",
+        "dhw-t-0130",
+        "dhw-t-0010",
+        "dhw-t-0216"
       ]
     },
     {
@@ -1964,6 +3124,14 @@
       "minimum_reconstruction_probe": "Implement one I/O feature twice—FSMD and software running on a soft-core—and compare end-to-end functional change cost.",
       "unresolved_questions": [
         "The linked chapter is a retrieval lead; substantive validation or implementation is not yet documented."
+      ],
+      "term_ids": [
+        "dhw-t-0139",
+        "dhw-t-0140",
+        "dhw-t-0143",
+        "dhw-t-0144",
+        "dhw-t-0039",
+        "dhw-t-0041"
       ]
     },
     {
@@ -1994,6 +3162,13 @@
       "minimum_reconstruction_probe": "Compare an inverter's logic truth table with a simple transistor/capacitance delay model across increasing load.",
       "unresolved_questions": [
         "Which target family, toolchain, and concrete constraints make this explanation insufficient for a present-day device?"
+      ],
+      "term_ids": [
+        "dhw-t-0148",
+        "dhw-t-0152",
+        "dhw-t-0158",
+        "dhw-t-0156",
+        "dhw-t-0155"
       ]
     },
     {
@@ -2031,6 +3206,18 @@
       "minimum_reconstruction_probe": "Sketch equivalent layouts and trace which local wire/capacitance/spacing constraints change.",
       "unresolved_questions": [
         "The linked chapter is a retrieval lead; substantive validation or implementation is not yet documented."
+      ],
+      "term_ids": [
+        "dhw-t-0171",
+        "dhw-t-0173",
+        "dhw-t-0160",
+        "dhw-t-0161",
+        "dhw-t-0174",
+        "dhw-t-0008",
+        "dhw-t-0145",
+        "dhw-t-0172",
+        "dhw-t-0179",
+        "dhw-t-0216"
       ]
     },
     {
@@ -2068,6 +3255,17 @@
       "minimum_reconstruction_probe": "Use a published PDK's rule checks and a process-yield model rather than applying 1980 design dimensions to a new foundry.",
       "unresolved_questions": [
         "Which target family, toolchain, and concrete constraints make this explanation insufficient for a present-day device?"
+      ],
+      "term_ids": [
+        "dhw-t-0168",
+        "dhw-t-0178",
+        "dhw-t-0179",
+        "dhw-t-0176",
+        "dhw-t-0182",
+        "dhw-t-0149",
+        "dhw-t-0172",
+        "dhw-t-0174",
+        "dhw-t-0177"
       ]
     },
     {
@@ -2098,6 +3296,17 @@
       "minimum_reconstruction_probe": "Compare direct asynchronous sampling to a synchronized or handshake protocol on changing input phase; measure error symptoms rather than assuming zero risk.",
       "unresolved_questions": [
         "Which target family, toolchain, and concrete constraints make this explanation insufficient for a present-day device?"
+      ],
+      "term_ids": [
+        "dhw-t-0185",
+        "dhw-t-0082",
+        "dhw-t-0081",
+        "dhw-t-0084",
+        "dhw-t-0188",
+        "dhw-t-0186",
+        "dhw-t-0083",
+        "dhw-t-0216",
+        "dhw-t-0219"
       ]
     }
   ],
@@ -2205,5 +3414,7 @@
       "contrast": "VLSI first principles versus production-ready PDK",
       "distinction": "Mead–Conway teach geometry, timing and process abstractions in an older nMOS technology; modern devices/fabrication require their own process rule decks and signoff."
     }
-  ]
+  ],
+  "glossary_path": "glossary.json",
+  "glossary_schema": "1.0"
 }
