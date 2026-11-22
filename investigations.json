@@ -21,6 +21,13 @@
       "path": "Investigations/human-ai-symbiosis/investigation.json",
       "status": "question-landscape-active",
       "updated": "2026-11-21"
+    },
+    {
+      "id": "digital-hardware-design",
+      "title": "Digital hardware — Verilog/FPGA to physical VLSI",
+      "path": "Investigations/digital-hardware-design/investigation.json",
+      "status": "curiosity-to-technical-books-indexed; physical demonstrations pending",
+      "updated": "2026-11-21"
     }
   ]
 }
