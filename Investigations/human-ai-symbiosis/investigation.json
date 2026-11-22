@@ -4248,7 +4248,7 @@
       "mechanism_explanation": "Generated programs become useful candidates only when an executable evaluator can rank them and selection retains or mutates promising variants. Candidate archives permit iterative search, but improvements are bounded by what the scoring function measures.",
       "transferable_insight": "Before scaling evolutionary agents, determine whether the objective corresponds to the real engineering outcome and compare against conventional search. This is a developer-reported system, not a measured percentile of human AI practitioners.",
       "term_ids": [
-        "hai-t-0002",
+        "hai-t-0001",
         "hai-t-0035",
         "hai-t-0085",
         "hai-t-0089",
