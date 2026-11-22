@@ -45,6 +45,18 @@ Source: [FKEN — Frustration-to-resource traversability](https://github.com/Jad
 - Evidence separate from model interpretation; hypotheses remain hypotheses. For books not inspected, mark chapters/pages as unverified candidates rather than inventing exact locations.
 - Compact certificates: conclusion or obstruction, first-hand evidence, assumptions, uncertainty, and what would justify reopening.
 
+## Curiosity entrance versus technical knowledge (implementation contract)
+
+The manufacturing atlas intentionally separates two cognitive functions: **an encyclopedia-like entry set of ordinary, childlike questions** and **dense technical investigation trees** that those questions activate. Preserve this separation whenever expanding or editing the project.
+
+- `Investigations/manufacturing-orientation/investigation.json` stores `curiosity_atlas.entries` (natural questions, aliases, family membership, and bridge IDs), `navigation_bridges` (conditional mechanism alternatives and source locators), and `nodes`/`sources` (canonical technical studies and their evidence). The user-visible index stays approachable; scientific precision and caveats belong in the technical projection.
+- The viewer generates a temporary technical tree from a chosen entry and its `bridge_ids`. Branches have substantive mechanism explanations and discriminating conditions. Existing canonical study IDs are reused; a question formulation must **not** fork or copy its own version of the books, evidence, or experimental history.
+- Multiple entries can activate the same technical mechanism (e.g. fatigue or compliance) while preserving different contexts. Conversely, visually similar questions (a bent **metal paper clip** versus a breaking **printed-plastic clip**) must not be collapsed if their material-specific mechanisms and evidence differ.
+- The five goal-conditioned manufacturing trees are **technical navigation views**, not the entry encyclopedia. Earlier `MFG-ISSUE-*` nodes are preserved solely for backwards compatibility with existing annotations/links and hidden from the technical views. New natural-language entry questions belong in `curiosity_atlas.entries`, not as more childlike nodes scattered through the technical hierarchy.
+- `book_landscaplets` remains a source-location index; `source_section_inspected` is a stronger evidence state than `toc_only`. An activated technical tree must display the distinction and link to an actual recoverable book location. Never represent a proposed diagnosis as an observed cause.
+- Grow the entry encyclopedia from *distinct frustrations or curiosities that unlock meaningful different routes*. Keep related paraphrases as search aliases unless a change in the wording materially changes the activated scientific/engineering landscape. Search, scrollable families, and context are complementary retrieval methods.
+- Use FKEN-16A to audit both directions: unfamiliar question → source passage and important source passage → plausible question entry. Tests of valid JSON, link connectivity and source-level projection logic are necessary but **not sufficient**: compare unfamiliar users against book TOCs and ordinary search when testing actual discoverability.
+
 ## Multiple manufacturing landscapes
 
 - Keep `Investigations/manufacturing-orientation/investigation.json` as the canonical identity of sources, findings, questions and mechanism studies. Its `landscape_views` are goal-conditioned projections: member IDs plus alternate parents, **not duplicate copies** of evidence. Preserve stable IDs across every view.
