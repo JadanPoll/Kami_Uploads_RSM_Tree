@@ -1,0 +1,4677 @@
+{
+  "schema_version": "1.0",
+  "domain_id": "robotics",
+  "title": "Robotics — mechanics, inference, control, autonomy and embodiment vocabulary landscape",
+  "scope": "Independent source-informed and adjacent vocabulary atlas. A term can exist before any related question, passage, implementation or experiment; presence is not evidence of applicability.",
+  "id_policy": "Opaque permanent IDs, never renumber or derive from mutable spelling; preserve redirects if merging genuine synonyms.",
+  "related_ids_semantics": "Conceptually relevant but distinct; neither synonymy nor a causal diagnosis.",
+  "sources": [
+    {
+      "source_id": "PR-2006",
+      "url": "https://drive.google.com/file/d/1NqxGKSV7M4pMbBN_BdcKSYKbGzGHkuxm/view",
+      "title": "Probabilistic Robotics (2006)"
+    },
+    {
+      "source_id": "MR-2017",
+      "url": "https://drive.google.com/file/d/1wKeNmtPvxRGkb_MabBjqb4-Iq-s2eBIf/view",
+      "title": "Modern Robotics (2017 preprint)"
+    },
+    {
+      "source_id": "UAV-2012",
+      "url": "https://drive.google.com/file/d/10hEU6VDGJLBcdHa6kqrgkgwhkZkdJpyv/view",
+      "title": "Small Unmanned Aircraft (2012)"
+    }
+  ],
+  "redirects": {},
+  "terms": [
+    {
+      "id": "robot-t-0001",
+      "label": "configuration space",
+      "aliases": [
+        "C-space"
+      ],
+      "category": "Geometry, frames and rigid motion",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0002",
+        "robot-t-0301",
+        "robot-t-0293"
+      ]
+    },
+    {
+      "id": "robot-t-0002",
+      "label": "workspace",
+      "aliases": [],
+      "category": "Geometry, frames and rigid motion",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0001",
+        "robot-t-0003"
+      ]
+    },
+    {
+      "id": "robot-t-0003",
+      "label": "task space",
+      "aliases": [],
+      "category": "Geometry, frames and rigid motion",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0002"
+      ]
+    },
+    {
+      "id": "robot-t-0004",
+      "label": "degrees of freedom",
+      "aliases": [
+        "DOF"
+      ],
+      "category": "Geometry, frames and rigid motion",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0005",
+      "label": "generalized coordinates",
+      "aliases": [],
+      "category": "Geometry, frames and rigid motion",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0006",
+      "label": "joint configuration",
+      "aliases": [],
+      "category": "Geometry, frames and rigid motion",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0007",
+      "label": "holonomic constraint",
+      "aliases": [],
+      "category": "Geometry, frames and rigid motion",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0008",
+      "label": "nonholonomic constraint",
+      "aliases": [],
+      "category": "Geometry, frames and rigid motion",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0074",
+        "robot-t-0317"
+      ]
+    },
+    {
+      "id": "robot-t-0009",
+      "label": "rigid-body transformation",
+      "aliases": [],
+      "category": "Geometry, frames and rigid motion",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0040"
+      ]
+    },
+    {
+      "id": "robot-t-0010",
+      "label": "homogeneous transformation",
+      "aliases": [],
+      "category": "Geometry, frames and rigid motion",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0011",
+      "label": "rotation matrix",
+      "aliases": [],
+      "category": "Geometry, frames and rigid motion",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0012",
+      "label": "special orthogonal group",
+      "aliases": [
+        "SO(3)"
+      ],
+      "category": "Geometry, frames and rigid motion",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0013"
+      ]
+    },
+    {
+      "id": "robot-t-0013",
+      "label": "special Euclidean group",
+      "aliases": [
+        "SE(3)"
+      ],
+      "category": "Geometry, frames and rigid motion",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0012"
+      ]
+    },
+    {
+      "id": "robot-t-0014",
+      "label": "Lie group",
+      "aliases": [],
+      "category": "Geometry, frames and rigid motion",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0015",
+      "label": "Lie algebra",
+      "aliases": [],
+      "category": "Geometry, frames and rigid motion",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0016",
+      "label": "matrix exponential",
+      "aliases": [],
+      "category": "Geometry, frames and rigid motion",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0017",
+      "label": "exponential coordinates",
+      "aliases": [],
+      "category": "Geometry, frames and rigid motion",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0018",
+      "label": "twist",
+      "aliases": [],
+      "category": "Geometry, frames and rigid motion",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0019",
+        "robot-t-0060"
+      ]
+    },
+    {
+      "id": "robot-t-0019",
+      "label": "wrench",
+      "aliases": [],
+      "category": "Geometry, frames and rigid motion",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0018"
+      ]
+    },
+    {
+      "id": "robot-t-0020",
+      "label": "screw axis",
+      "aliases": [],
+      "category": "Geometry, frames and rigid motion",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0021",
+      "label": "adjoint transformation",
+      "aliases": [],
+      "category": "Geometry, frames and rigid motion",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0022",
+      "label": "change of basis",
+      "aliases": [],
+      "category": "Geometry, frames and rigid motion",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0023",
+      "label": "coordinate frame",
+      "aliases": [],
+      "category": "Geometry, frames and rigid motion",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0040"
+      ]
+    },
+    {
+      "id": "robot-t-0024",
+      "label": "world frame",
+      "aliases": [],
+      "category": "Geometry, frames and rigid motion",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0025",
+      "label": "body frame",
+      "aliases": [],
+      "category": "Geometry, frames and rigid motion",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0026",
+      "label": "inertial frame",
+      "aliases": [],
+      "category": "Geometry, frames and rigid motion",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0027",
+      "label": "camera frame",
+      "aliases": [],
+      "category": "Geometry, frames and rigid motion",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0028",
+      "label": "gimbal frame",
+      "aliases": [],
+      "category": "Geometry, frames and rigid motion",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0029",
+      "label": "Euler angles",
+      "aliases": [],
+      "category": "Geometry, frames and rigid motion",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0030",
+      "label": "roll pitch yaw",
+      "aliases": [],
+      "category": "Geometry, frames and rigid motion",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0031",
+      "label": "unit quaternion",
+      "aliases": [],
+      "category": "Geometry, frames and rigid motion",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0032",
+      "label": "axis-angle representation",
+      "aliases": [],
+      "category": "Geometry, frames and rigid motion",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0033",
+      "label": "gimbal lock",
+      "aliases": [],
+      "category": "Geometry, frames and rigid motion",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0034",
+      "label": "rotation composition",
+      "aliases": [],
+      "category": "Geometry, frames and rigid motion",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0035",
+      "label": "product of exponentials",
+      "aliases": [
+        "PoE"
+      ],
+      "category": "Geometry, frames and rigid motion",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0036"
+      ]
+    },
+    {
+      "id": "robot-t-0036",
+      "label": "forward kinematics",
+      "aliases": [],
+      "category": "Geometry, frames and rigid motion",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0035",
+        "robot-t-0037"
+      ]
+    },
+    {
+      "id": "robot-t-0037",
+      "label": "inverse kinematics",
+      "aliases": [],
+      "category": "Geometry, frames and rigid motion",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0036",
+        "robot-t-0060"
+      ]
+    },
+    {
+      "id": "robot-t-0038",
+      "label": "transformation tree",
+      "aliases": [],
+      "category": "Geometry, frames and rigid motion",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0039",
+      "label": "frame calibration",
+      "aliases": [],
+      "category": "Geometry, frames and rigid motion",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0040",
+      "label": "pose",
+      "aliases": [],
+      "category": "Geometry, frames and rigid motion",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0023",
+        "robot-t-0253",
+        "robot-t-0009"
+      ]
+    },
+    {
+      "id": "robot-t-0041",
+      "label": "pose composition",
+      "aliases": [],
+      "category": "Geometry, frames and rigid motion",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0042",
+      "label": "relative pose",
+      "aliases": [],
+      "category": "Geometry, frames and rigid motion",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0043",
+      "label": "spatial velocity",
+      "aliases": [],
+      "category": "Geometry, frames and rigid motion",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0044",
+      "label": "angular velocity",
+      "aliases": [],
+      "category": "Geometry, frames and rigid motion",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0045",
+      "label": "linear velocity",
+      "aliases": [],
+      "category": "Geometry, frames and rigid motion",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0046",
+      "label": "frame convention",
+      "aliases": [],
+      "category": "Geometry, frames and rigid motion",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0047",
+      "label": "right-handed coordinate system",
+      "aliases": [],
+      "category": "Geometry, frames and rigid motion",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0048",
+      "label": "serial manipulator",
+      "aliases": [],
+      "category": "Mechanisms, kinematics and reachability",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0049",
+      "label": "parallel manipulator",
+      "aliases": [],
+      "category": "Mechanisms, kinematics and reachability",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0050",
+      "label": "closed-chain mechanism",
+      "aliases": [],
+      "category": "Mechanisms, kinematics and reachability",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0051",
+      "label": "link",
+      "aliases": [],
+      "category": "Mechanisms, kinematics and reachability",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0052",
+      "label": "joint",
+      "aliases": [],
+      "category": "Mechanisms, kinematics and reachability",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0053",
+      "label": "revolute joint",
+      "aliases": [],
+      "category": "Mechanisms, kinematics and reachability",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0054",
+      "label": "prismatic joint",
+      "aliases": [],
+      "category": "Mechanisms, kinematics and reachability",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0055",
+      "label": "kinematic chain",
+      "aliases": [],
+      "category": "Mechanisms, kinematics and reachability",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0056",
+      "label": "Stewart platform",
+      "aliases": [],
+      "category": "Mechanisms, kinematics and reachability",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0057",
+      "label": "Grubler formula",
+      "aliases": [],
+      "category": "Mechanisms, kinematics and reachability",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0058",
+      "label": "forward velocity kinematics",
+      "aliases": [],
+      "category": "Mechanisms, kinematics and reachability",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0059",
+      "label": "inverse velocity kinematics",
+      "aliases": [],
+      "category": "Mechanisms, kinematics and reachability",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0060",
+      "label": "manipulator Jacobian",
+      "aliases": [],
+      "category": "Mechanisms, kinematics and reachability",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0018",
+        "robot-t-0037",
+        "robot-t-0064"
+      ]
+    },
+    {
+      "id": "robot-t-0061",
+      "label": "body Jacobian",
+      "aliases": [],
+      "category": "Mechanisms, kinematics and reachability",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0062",
+      "label": "space Jacobian",
+      "aliases": [],
+      "category": "Mechanisms, kinematics and reachability",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0063",
+      "label": "Jacobian rank",
+      "aliases": [],
+      "category": "Mechanisms, kinematics and reachability",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0064",
+      "label": "kinematic singularity",
+      "aliases": [],
+      "category": "Mechanisms, kinematics and reachability",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0060"
+      ]
+    },
+    {
+      "id": "robot-t-0065",
+      "label": "manipulability ellipsoid",
+      "aliases": [],
+      "category": "Mechanisms, kinematics and reachability",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0066",
+      "label": "force ellipsoid",
+      "aliases": [],
+      "category": "Mechanisms, kinematics and reachability",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0067",
+      "label": "reachable workspace",
+      "aliases": [],
+      "category": "Mechanisms, kinematics and reachability",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0068",
+      "label": "dexterous workspace",
+      "aliases": [],
+      "category": "Mechanisms, kinematics and reachability",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0069",
+      "label": "redundancy",
+      "aliases": [],
+      "category": "Mechanisms, kinematics and reachability",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0070",
+      "label": "null-space motion",
+      "aliases": [],
+      "category": "Mechanisms, kinematics and reachability",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0071",
+      "label": "joint limit",
+      "aliases": [],
+      "category": "Mechanisms, kinematics and reachability",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0072",
+      "label": "inverse kinematics numerical solver",
+      "aliases": [],
+      "category": "Mechanisms, kinematics and reachability",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0073",
+      "label": "Newton-Raphson inverse kinematics",
+      "aliases": [],
+      "category": "Mechanisms, kinematics and reachability",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0074",
+      "label": "differential drive",
+      "aliases": [],
+      "category": "Mechanisms, kinematics and reachability",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0008",
+        "robot-t-0370"
+      ]
+    },
+    {
+      "id": "robot-t-0075",
+      "label": "omnidirectional wheel",
+      "aliases": [],
+      "category": "Mechanisms, kinematics and reachability",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0076",
+      "label": "mecanum wheel",
+      "aliases": [],
+      "category": "Mechanisms, kinematics and reachability",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0077",
+      "label": "Ackermann steering",
+      "aliases": [],
+      "category": "Mechanisms, kinematics and reachability",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0078",
+      "label": "unicycle model",
+      "aliases": [],
+      "category": "Mechanisms, kinematics and reachability",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0079",
+      "label": "bicycle model",
+      "aliases": [],
+      "category": "Mechanisms, kinematics and reachability",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0080",
+      "label": "rolling constraint",
+      "aliases": [],
+      "category": "Mechanisms, kinematics and reachability",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0081",
+      "label": "wheel odometry",
+      "aliases": [],
+      "category": "Mechanisms, kinematics and reachability",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0082",
+      "label": "steering radius",
+      "aliases": [],
+      "category": "Mechanisms, kinematics and reachability",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0083",
+      "label": "controllability",
+      "aliases": [],
+      "category": "Mechanisms, kinematics and reachability",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0084",
+      "label": "underactuation",
+      "aliases": [],
+      "category": "Mechanisms, kinematics and reachability",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0085",
+      "label": "nonminimum-phase behavior",
+      "aliases": [],
+      "category": "Mechanisms, kinematics and reachability",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0086",
+      "label": "rigid-body dynamics",
+      "aliases": [],
+      "category": "Dynamics, forces and actuation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0087",
+      "label": "Newton-Euler method",
+      "aliases": [],
+      "category": "Dynamics, forces and actuation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0088",
+      "label": "Lagrangian mechanics",
+      "aliases": [],
+      "category": "Dynamics, forces and actuation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0089",
+      "label": "inertia tensor",
+      "aliases": [],
+      "category": "Dynamics, forces and actuation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0090",
+      "label": "mass matrix",
+      "aliases": [],
+      "category": "Dynamics, forces and actuation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0097"
+      ]
+    },
+    {
+      "id": "robot-t-0091",
+      "label": "Coriolis force",
+      "aliases": [],
+      "category": "Dynamics, forces and actuation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0092",
+      "label": "centrifugal force",
+      "aliases": [],
+      "category": "Dynamics, forces and actuation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0093",
+      "label": "gravity compensation",
+      "aliases": [],
+      "category": "Dynamics, forces and actuation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0094",
+      "label": "joint torque",
+      "aliases": [],
+      "category": "Dynamics, forces and actuation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0096"
+      ]
+    },
+    {
+      "id": "robot-t-0095",
+      "label": "external wrench",
+      "aliases": [],
+      "category": "Dynamics, forces and actuation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0096",
+      "label": "inverse dynamics",
+      "aliases": [],
+      "category": "Dynamics, forces and actuation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0094"
+      ]
+    },
+    {
+      "id": "robot-t-0097",
+      "label": "forward dynamics",
+      "aliases": [],
+      "category": "Dynamics, forces and actuation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0090"
+      ]
+    },
+    {
+      "id": "robot-t-0098",
+      "label": "recursive Newton-Euler algorithm",
+      "aliases": [
+        "RNEA"
+      ],
+      "category": "Dynamics, forces and actuation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0099",
+      "label": "operational-space dynamics",
+      "aliases": [],
+      "category": "Dynamics, forces and actuation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0100",
+      "label": "constrained dynamics",
+      "aliases": [],
+      "category": "Dynamics, forces and actuation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0101",
+      "label": "motor",
+      "aliases": [],
+      "category": "Dynamics, forces and actuation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0102",
+      "label": "DC motor model",
+      "aliases": [],
+      "category": "Dynamics, forces and actuation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0103",
+      "label": "gear ratio",
+      "aliases": [],
+      "category": "Dynamics, forces and actuation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0104"
+      ]
+    },
+    {
+      "id": "robot-t-0104",
+      "label": "backdrivability",
+      "aliases": [],
+      "category": "Dynamics, forces and actuation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0103"
+      ]
+    },
+    {
+      "id": "robot-t-0105",
+      "label": "friction",
+      "aliases": [],
+      "category": "Dynamics, forces and actuation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0106",
+      "label": "viscous friction",
+      "aliases": [],
+      "category": "Dynamics, forces and actuation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0107",
+      "label": "Coulomb friction",
+      "aliases": [],
+      "category": "Dynamics, forces and actuation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0108",
+      "label": "stiction",
+      "aliases": [],
+      "category": "Dynamics, forces and actuation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0109",
+      "label": "actuator saturation",
+      "aliases": [],
+      "category": "Dynamics, forces and actuation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0133"
+      ]
+    },
+    {
+      "id": "robot-t-0110",
+      "label": "actuator bandwidth",
+      "aliases": [],
+      "category": "Dynamics, forces and actuation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0111",
+      "label": "servo actuator",
+      "aliases": [],
+      "category": "Dynamics, forces and actuation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0112",
+      "label": "encoder",
+      "aliases": [],
+      "category": "Dynamics, forces and actuation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0113",
+      "label": "mechanical compliance",
+      "aliases": [],
+      "category": "Dynamics, forces and actuation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0114",
+      "label": "joint flexibility",
+      "aliases": [],
+      "category": "Dynamics, forces and actuation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0115",
+      "label": "energy dissipation",
+      "aliases": [],
+      "category": "Dynamics, forces and actuation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0116",
+      "label": "power budget",
+      "aliases": [],
+      "category": "Dynamics, forces and actuation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0117",
+      "label": "reaction wheel",
+      "aliases": [],
+      "category": "Dynamics, forces and actuation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0118",
+      "label": "thruster",
+      "aliases": [],
+      "category": "Dynamics, forces and actuation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0119",
+      "label": "propeller",
+      "aliases": [],
+      "category": "Dynamics, forces and actuation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0120",
+      "label": "aerodynamic moment",
+      "aliases": [],
+      "category": "Dynamics, forces and actuation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0121",
+      "label": "feedback control",
+      "aliases": [],
+      "category": "Feedback, regulation and guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0124"
+      ]
+    },
+    {
+      "id": "robot-t-0122",
+      "label": "open-loop control",
+      "aliases": [],
+      "category": "Feedback, regulation and guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0123",
+      "label": "closed-loop control",
+      "aliases": [],
+      "category": "Feedback, regulation and guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0124",
+      "label": "stability",
+      "aliases": [],
+      "category": "Feedback, regulation and guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0121"
+      ]
+    },
+    {
+      "id": "robot-t-0125",
+      "label": "linearization",
+      "aliases": [],
+      "category": "Feedback, regulation and guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0127"
+      ]
+    },
+    {
+      "id": "robot-t-0126",
+      "label": "equilibrium",
+      "aliases": [],
+      "category": "Feedback, regulation and guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0127",
+      "label": "trim condition",
+      "aliases": [],
+      "category": "Feedback, regulation and guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0125",
+        "robot-t-0381"
+      ]
+    },
+    {
+      "id": "robot-t-0128",
+      "label": "state-space model",
+      "aliases": [],
+      "category": "Feedback, regulation and guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0129",
+      "label": "transfer function",
+      "aliases": [],
+      "category": "Feedback, regulation and guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0130",
+      "label": "state feedback",
+      "aliases": [],
+      "category": "Feedback, regulation and guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0131",
+      "label": "output feedback",
+      "aliases": [],
+      "category": "Feedback, regulation and guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0132",
+      "label": "PID controller",
+      "aliases": [],
+      "category": "Feedback, regulation and guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0133",
+      "label": "anti-windup",
+      "aliases": [],
+      "category": "Feedback, regulation and guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0109"
+      ]
+    },
+    {
+      "id": "robot-t-0134",
+      "label": "gain scheduling",
+      "aliases": [],
+      "category": "Feedback, regulation and guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0135",
+      "label": "pole placement",
+      "aliases": [],
+      "category": "Feedback, regulation and guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0136",
+      "label": "feedforward",
+      "aliases": [],
+      "category": "Feedback, regulation and guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0137",
+      "label": "tracking error",
+      "aliases": [],
+      "category": "Feedback, regulation and guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0138",
+      "label": "reference trajectory",
+      "aliases": [],
+      "category": "Feedback, regulation and guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0139",
+      "label": "trajectory tracking",
+      "aliases": [],
+      "category": "Feedback, regulation and guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0140",
+      "label": "path following",
+      "aliases": [],
+      "category": "Feedback, regulation and guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0141",
+      "label": "velocity control",
+      "aliases": [],
+      "category": "Feedback, regulation and guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0142",
+      "label": "torque control",
+      "aliases": [],
+      "category": "Feedback, regulation and guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0143",
+      "label": "force control",
+      "aliases": [],
+      "category": "Feedback, regulation and guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0145"
+      ]
+    },
+    {
+      "id": "robot-t-0144",
+      "label": "hybrid motion-force control",
+      "aliases": [],
+      "category": "Feedback, regulation and guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0145",
+      "label": "impedance control",
+      "aliases": [],
+      "category": "Feedback, regulation and guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0143",
+        "robot-t-0146",
+        "robot-t-0368"
+      ]
+    },
+    {
+      "id": "robot-t-0146",
+      "label": "admittance control",
+      "aliases": [],
+      "category": "Feedback, regulation and guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0145"
+      ]
+    },
+    {
+      "id": "robot-t-0147",
+      "label": "successive loop closure",
+      "aliases": [],
+      "category": "Feedback, regulation and guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0148",
+        "robot-t-0409"
+      ]
+    },
+    {
+      "id": "robot-t-0148",
+      "label": "inner loop",
+      "aliases": [],
+      "category": "Feedback, regulation and guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0147"
+      ]
+    },
+    {
+      "id": "robot-t-0149",
+      "label": "outer loop",
+      "aliases": [],
+      "category": "Feedback, regulation and guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0150",
+      "label": "lateral-directional control",
+      "aliases": [],
+      "category": "Feedback, regulation and guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0151",
+      "label": "longitudinal control",
+      "aliases": [],
+      "category": "Feedback, regulation and guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0152",
+      "label": "course control",
+      "aliases": [],
+      "category": "Feedback, regulation and guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0153",
+      "label": "altitude hold",
+      "aliases": [],
+      "category": "Feedback, regulation and guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0409"
+      ]
+    },
+    {
+      "id": "robot-t-0154",
+      "label": "airspeed hold",
+      "aliases": [],
+      "category": "Feedback, regulation and guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0409"
+      ]
+    },
+    {
+      "id": "robot-t-0155",
+      "label": "digital control",
+      "aliases": [],
+      "category": "Feedback, regulation and guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0156",
+      "label": "sample period",
+      "aliases": [],
+      "category": "Feedback, regulation and guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0157",
+      "label": "control allocation",
+      "aliases": [],
+      "category": "Feedback, regulation and guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0158",
+      "label": "model predictive control",
+      "aliases": [
+        "MPC"
+      ],
+      "category": "Feedback, regulation and guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0159",
+      "label": "robust control",
+      "aliases": [],
+      "category": "Feedback, regulation and guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0160",
+      "label": "adaptive control",
+      "aliases": [],
+      "category": "Feedback, regulation and guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0161",
+      "label": "Lyapunov function",
+      "aliases": [],
+      "category": "Feedback, regulation and guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0162",
+      "label": "actuator limits",
+      "aliases": [],
+      "category": "Feedback, regulation and guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0163",
+      "label": "range finder",
+      "aliases": [],
+      "category": "Sensors, perception and measurement",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0164",
+      "label": "lidar",
+      "aliases": [],
+      "category": "Sensors, perception and measurement",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0165",
+      "label": "radar",
+      "aliases": [],
+      "category": "Sensors, perception and measurement",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0166",
+      "label": "sonar",
+      "aliases": [],
+      "category": "Sensors, perception and measurement",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0167",
+      "label": "RGB camera",
+      "aliases": [],
+      "category": "Sensors, perception and measurement",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0168",
+      "label": "stereo camera",
+      "aliases": [],
+      "category": "Sensors, perception and measurement",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0169",
+      "label": "depth camera",
+      "aliases": [],
+      "category": "Sensors, perception and measurement",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0170",
+      "label": "RGB-D camera",
+      "aliases": [],
+      "category": "Sensors, perception and measurement",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0171",
+      "label": "event camera",
+      "aliases": [],
+      "category": "Sensors, perception and measurement",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0172",
+      "label": "inertial measurement unit",
+      "aliases": [
+        "IMU"
+      ],
+      "category": "Sensors, perception and measurement",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0173",
+      "label": "accelerometer",
+      "aliases": [],
+      "category": "Sensors, perception and measurement",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0174",
+      "label": "gyroscope",
+      "aliases": [],
+      "category": "Sensors, perception and measurement",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0175",
+      "label": "magnetometer",
+      "aliases": [],
+      "category": "Sensors, perception and measurement",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0176",
+      "label": "barometer",
+      "aliases": [],
+      "category": "Sensors, perception and measurement",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0177",
+      "label": "pressure sensor",
+      "aliases": [],
+      "category": "Sensors, perception and measurement",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0178",
+      "label": "GPS",
+      "aliases": [
+        "GNSS"
+      ],
+      "category": "Sensors, perception and measurement",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0179",
+      "label": "wheel encoder",
+      "aliases": [],
+      "category": "Sensors, perception and measurement",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0180",
+      "label": "visual odometry",
+      "aliases": [],
+      "category": "Sensors, perception and measurement",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0181",
+      "label": "optical flow",
+      "aliases": [],
+      "category": "Sensors, perception and measurement",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0182",
+      "label": "feature descriptor",
+      "aliases": [],
+      "category": "Sensors, perception and measurement",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0183",
+      "label": "feature extraction",
+      "aliases": [],
+      "category": "Sensors, perception and measurement",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0184",
+      "label": "landmark",
+      "aliases": [],
+      "category": "Sensors, perception and measurement",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0185",
+      "label": "data association",
+      "aliases": [],
+      "category": "Sensors, perception and measurement",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0243",
+        "robot-t-0271"
+      ]
+    },
+    {
+      "id": "robot-t-0186",
+      "label": "correspondence",
+      "aliases": [],
+      "category": "Sensors, perception and measurement",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0187",
+      "label": "camera intrinsics",
+      "aliases": [],
+      "category": "Sensors, perception and measurement",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0188",
+      "label": "camera extrinsics",
+      "aliases": [],
+      "category": "Sensors, perception and measurement",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0189",
+      "label": "projective geometry",
+      "aliases": [],
+      "category": "Sensors, perception and measurement",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0190",
+      "label": "pinhole camera",
+      "aliases": [],
+      "category": "Sensors, perception and measurement",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0191",
+      "label": "camera distortion",
+      "aliases": [],
+      "category": "Sensors, perception and measurement",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0192",
+      "label": "measurement noise",
+      "aliases": [],
+      "category": "Sensors, perception and measurement",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0193",
+      "label": "bias",
+      "aliases": [],
+      "category": "Sensors, perception and measurement",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0194",
+      "label": "scale factor",
+      "aliases": [],
+      "category": "Sensors, perception and measurement",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0195",
+      "label": "sensor calibration",
+      "aliases": [],
+      "category": "Sensors, perception and measurement",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0196",
+      "label": "extrinsic calibration",
+      "aliases": [],
+      "category": "Sensors, perception and measurement",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0197",
+      "label": "time synchronization",
+      "aliases": [],
+      "category": "Sensors, perception and measurement",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0198",
+      "label": "rolling shutter",
+      "aliases": [],
+      "category": "Sensors, perception and measurement",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0199",
+      "label": "point cloud",
+      "aliases": [],
+      "category": "Sensors, perception and measurement",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0200",
+      "label": "image-plane motion",
+      "aliases": [],
+      "category": "Sensors, perception and measurement",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0201",
+      "label": "time-to-collision",
+      "aliases": [
+        "TTC"
+      ],
+      "category": "Sensors, perception and measurement",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0202",
+      "label": "geolocation",
+      "aliases": [],
+      "category": "Sensors, perception and measurement",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0203",
+      "label": "gimbal pointing",
+      "aliases": [],
+      "category": "Sensors, perception and measurement",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0204",
+      "label": "state estimation",
+      "aliases": [],
+      "category": "Probabilistic inference and estimation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0249"
+      ]
+    },
+    {
+      "id": "robot-t-0205",
+      "label": "state",
+      "aliases": [],
+      "category": "Probabilistic inference and estimation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0206",
+      "label": "latent state",
+      "aliases": [],
+      "category": "Probabilistic inference and estimation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0207",
+      "label": "observation",
+      "aliases": [],
+      "category": "Probabilistic inference and estimation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0208",
+      "label": "action",
+      "aliases": [],
+      "category": "Probabilistic inference and estimation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0209",
+      "label": "belief state",
+      "aliases": [],
+      "category": "Probabilistic inference and estimation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0330"
+      ]
+    },
+    {
+      "id": "robot-t-0210",
+      "label": "posterior distribution",
+      "aliases": [],
+      "category": "Probabilistic inference and estimation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0211",
+      "label": "prior distribution",
+      "aliases": [],
+      "category": "Probabilistic inference and estimation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0212",
+      "label": "likelihood",
+      "aliases": [],
+      "category": "Probabilistic inference and estimation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0213",
+      "label": "Bayes rule",
+      "aliases": [],
+      "category": "Probabilistic inference and estimation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0214",
+      "label": "Bayes filter",
+      "aliases": [],
+      "category": "Probabilistic inference and estimation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0215",
+        "robot-t-0216",
+        "robot-t-0217"
+      ]
+    },
+    {
+      "id": "robot-t-0215",
+      "label": "prediction step",
+      "aliases": [],
+      "category": "Probabilistic inference and estimation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0214"
+      ]
+    },
+    {
+      "id": "robot-t-0216",
+      "label": "measurement update",
+      "aliases": [],
+      "category": "Probabilistic inference and estimation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0214"
+      ]
+    },
+    {
+      "id": "robot-t-0217",
+      "label": "Markov assumption",
+      "aliases": [],
+      "category": "Probabilistic inference and estimation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0214"
+      ]
+    },
+    {
+      "id": "robot-t-0218",
+      "label": "conditional independence",
+      "aliases": [],
+      "category": "Probabilistic inference and estimation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0219",
+      "label": "generative model",
+      "aliases": [],
+      "category": "Probabilistic inference and estimation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0220",
+      "label": "motion model",
+      "aliases": [],
+      "category": "Probabilistic inference and estimation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0221",
+      "label": "measurement model",
+      "aliases": [],
+      "category": "Probabilistic inference and estimation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0249"
+      ]
+    },
+    {
+      "id": "robot-t-0222",
+      "label": "velocity motion model",
+      "aliases": [],
+      "category": "Probabilistic inference and estimation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0223",
+      "label": "odometry motion model",
+      "aliases": [],
+      "category": "Probabilistic inference and estimation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0224",
+      "label": "Gaussian distribution",
+      "aliases": [],
+      "category": "Probabilistic inference and estimation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0225",
+      "label": "multivariate covariance",
+      "aliases": [],
+      "category": "Probabilistic inference and estimation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0228"
+      ]
+    },
+    {
+      "id": "robot-t-0226",
+      "label": "process noise",
+      "aliases": [],
+      "category": "Probabilistic inference and estimation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0227",
+      "label": "innovation",
+      "aliases": [],
+      "category": "Probabilistic inference and estimation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0228",
+      "label": "Kalman filter",
+      "aliases": [
+        "KF"
+      ],
+      "category": "Probabilistic inference and estimation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0229",
+        "robot-t-0230",
+        "robot-t-0225"
+      ]
+    },
+    {
+      "id": "robot-t-0229",
+      "label": "extended Kalman filter",
+      "aliases": [
+        "EKF"
+      ],
+      "category": "Probabilistic inference and estimation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0228"
+      ]
+    },
+    {
+      "id": "robot-t-0230",
+      "label": "unscented Kalman filter",
+      "aliases": [
+        "UKF"
+      ],
+      "category": "Probabilistic inference and estimation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0228"
+      ]
+    },
+    {
+      "id": "robot-t-0231",
+      "label": "information filter",
+      "aliases": [],
+      "category": "Probabilistic inference and estimation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0232",
+      "label": "extended information filter",
+      "aliases": [],
+      "category": "Probabilistic inference and estimation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0233",
+      "label": "histogram filter",
+      "aliases": [],
+      "category": "Probabilistic inference and estimation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0234",
+      "label": "grid filter",
+      "aliases": [],
+      "category": "Probabilistic inference and estimation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0235",
+      "label": "particle filter",
+      "aliases": [],
+      "category": "Probabilistic inference and estimation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0238",
+        "robot-t-0237",
+        "robot-t-0239",
+        "robot-t-0236"
+      ]
+    },
+    {
+      "id": "robot-t-0236",
+      "label": "Monte Carlo localization",
+      "aliases": [
+        "MCL"
+      ],
+      "category": "Probabilistic inference and estimation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0235"
+      ]
+    },
+    {
+      "id": "robot-t-0237",
+      "label": "importance sampling",
+      "aliases": [],
+      "category": "Probabilistic inference and estimation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0235"
+      ]
+    },
+    {
+      "id": "robot-t-0238",
+      "label": "resampling",
+      "aliases": [],
+      "category": "Probabilistic inference and estimation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0235"
+      ]
+    },
+    {
+      "id": "robot-t-0239",
+      "label": "proposal distribution",
+      "aliases": [],
+      "category": "Probabilistic inference and estimation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0235"
+      ]
+    },
+    {
+      "id": "robot-t-0240",
+      "label": "particle depletion",
+      "aliases": [],
+      "category": "Probabilistic inference and estimation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0241"
+      ]
+    },
+    {
+      "id": "robot-t-0241",
+      "label": "effective sample size",
+      "aliases": [
+        "ESS"
+      ],
+      "category": "Probabilistic inference and estimation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0240"
+      ]
+    },
+    {
+      "id": "robot-t-0242",
+      "label": "KLD sampling",
+      "aliases": [],
+      "category": "Probabilistic inference and estimation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0243",
+      "label": "multi-hypothesis tracking",
+      "aliases": [],
+      "category": "Probabilistic inference and estimation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0185"
+      ]
+    },
+    {
+      "id": "robot-t-0244",
+      "label": "maximum likelihood",
+      "aliases": [
+        "ML"
+      ],
+      "category": "Probabilistic inference and estimation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0245",
+      "label": "maximum a posteriori",
+      "aliases": [
+        "MAP"
+      ],
+      "category": "Probabilistic inference and estimation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0246",
+      "label": "dynamic observer",
+      "aliases": [],
+      "category": "Probabilistic inference and estimation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0247",
+      "label": "continuous-discrete filtering",
+      "aliases": [],
+      "category": "Probabilistic inference and estimation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0248",
+      "label": "observability",
+      "aliases": [],
+      "category": "Probabilistic inference and estimation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0249",
+      "label": "sensor fusion",
+      "aliases": [],
+      "category": "Probabilistic inference and estimation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0204",
+        "robot-t-0221"
+      ]
+    },
+    {
+      "id": "robot-t-0250",
+      "label": "state augmentation",
+      "aliases": [],
+      "category": "Probabilistic inference and estimation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0251",
+      "label": "filter inconsistency",
+      "aliases": [],
+      "category": "Probabilistic inference and estimation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0252",
+      "label": "uncertainty propagation",
+      "aliases": [],
+      "category": "Probabilistic inference and estimation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0253",
+      "label": "localization",
+      "aliases": [],
+      "category": "Localization, mapping and SLAM",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0040",
+        "robot-t-0254",
+        "robot-t-0256"
+      ]
+    },
+    {
+      "id": "robot-t-0254",
+      "label": "global localization",
+      "aliases": [],
+      "category": "Localization, mapping and SLAM",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0253"
+      ]
+    },
+    {
+      "id": "robot-t-0255",
+      "label": "pose tracking",
+      "aliases": [],
+      "category": "Localization, mapping and SLAM",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0256",
+      "label": "kidnapped robot problem",
+      "aliases": [],
+      "category": "Localization, mapping and SLAM",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0253"
+      ]
+    },
+    {
+      "id": "robot-t-0257",
+      "label": "relocalization",
+      "aliases": [],
+      "category": "Localization, mapping and SLAM",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0258",
+      "label": "map",
+      "aliases": [],
+      "category": "Localization, mapping and SLAM",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0259",
+      "label": "metric map",
+      "aliases": [],
+      "category": "Localization, mapping and SLAM",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0260",
+      "label": "topological map",
+      "aliases": [],
+      "category": "Localization, mapping and SLAM",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0261",
+      "label": "occupancy grid",
+      "aliases": [],
+      "category": "Localization, mapping and SLAM",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0263"
+      ]
+    },
+    {
+      "id": "robot-t-0262",
+      "label": "inverse sensor model",
+      "aliases": [],
+      "category": "Localization, mapping and SLAM",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0263",
+      "label": "log-odds occupancy update",
+      "aliases": [],
+      "category": "Localization, mapping and SLAM",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0261"
+      ]
+    },
+    {
+      "id": "robot-t-0264",
+      "label": "ray casting",
+      "aliases": [],
+      "category": "Localization, mapping and SLAM",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0265",
+      "label": "free-space carving",
+      "aliases": [],
+      "category": "Localization, mapping and SLAM",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0266",
+      "label": "simultaneous localization and mapping",
+      "aliases": [
+        "SLAM"
+      ],
+      "category": "Localization, mapping and SLAM",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0268",
+        "robot-t-0278"
+      ]
+    },
+    {
+      "id": "robot-t-0267",
+      "label": "EKF-SLAM",
+      "aliases": [],
+      "category": "Localization, mapping and SLAM",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0268",
+      "label": "GraphSLAM",
+      "aliases": [],
+      "category": "Localization, mapping and SLAM",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0269",
+        "robot-t-0266"
+      ]
+    },
+    {
+      "id": "robot-t-0269",
+      "label": "factor graph",
+      "aliases": [],
+      "category": "Localization, mapping and SLAM",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0268"
+      ]
+    },
+    {
+      "id": "robot-t-0270",
+      "label": "pose graph",
+      "aliases": [],
+      "category": "Localization, mapping and SLAM",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0271"
+      ]
+    },
+    {
+      "id": "robot-t-0271",
+      "label": "loop closure",
+      "aliases": [],
+      "category": "Localization, mapping and SLAM",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0270",
+        "robot-t-0284",
+        "robot-t-0185"
+      ]
+    },
+    {
+      "id": "robot-t-0272",
+      "label": "front-end SLAM",
+      "aliases": [],
+      "category": "Localization, mapping and SLAM",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0273",
+      "label": "back-end SLAM",
+      "aliases": [],
+      "category": "Localization, mapping and SLAM",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0274",
+      "label": "bundle adjustment",
+      "aliases": [],
+      "category": "Localization, mapping and SLAM",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0275",
+      "label": "sparse information matrix",
+      "aliases": [],
+      "category": "Localization, mapping and SLAM",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0276",
+      "label": "sparsification",
+      "aliases": [],
+      "category": "Localization, mapping and SLAM",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0277",
+      "label": "sparse extended information filter",
+      "aliases": [
+        "SEIF"
+      ],
+      "category": "Localization, mapping and SLAM",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0278",
+      "label": "FastSLAM",
+      "aliases": [],
+      "category": "Localization, mapping and SLAM",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0279",
+        "robot-t-0266"
+      ]
+    },
+    {
+      "id": "robot-t-0279",
+      "label": "Rao-Blackwellization",
+      "aliases": [],
+      "category": "Localization, mapping and SLAM",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0278"
+      ]
+    },
+    {
+      "id": "robot-t-0280",
+      "label": "landmark map",
+      "aliases": [],
+      "category": "Localization, mapping and SLAM",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0281",
+      "label": "grid mapping",
+      "aliases": [],
+      "category": "Localization, mapping and SLAM",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0282",
+      "label": "map merging",
+      "aliases": [],
+      "category": "Localization, mapping and SLAM",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0283",
+      "label": "multi-robot SLAM",
+      "aliases": [],
+      "category": "Localization, mapping and SLAM",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0284",
+      "label": "map consistency",
+      "aliases": [],
+      "category": "Localization, mapping and SLAM",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0271"
+      ]
+    },
+    {
+      "id": "robot-t-0285",
+      "label": "drift",
+      "aliases": [],
+      "category": "Localization, mapping and SLAM",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0286",
+      "label": "dead reckoning",
+      "aliases": [],
+      "category": "Localization, mapping and SLAM",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0287",
+      "label": "scan matching",
+      "aliases": [],
+      "category": "Localization, mapping and SLAM",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0288",
+      "label": "likelihood field",
+      "aliases": [],
+      "category": "Localization, mapping and SLAM",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0289"
+      ]
+    },
+    {
+      "id": "robot-t-0289",
+      "label": "beam sensor model",
+      "aliases": [],
+      "category": "Localization, mapping and SLAM",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0288"
+      ]
+    },
+    {
+      "id": "robot-t-0290",
+      "label": "unknown correspondence",
+      "aliases": [],
+      "category": "Localization, mapping and SLAM",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0291",
+      "label": "dynamic environment",
+      "aliases": [],
+      "category": "Localization, mapping and SLAM",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0292",
+      "label": "map reuse",
+      "aliases": [],
+      "category": "Localization, mapping and SLAM",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0293",
+      "label": "motion planning",
+      "aliases": [],
+      "category": "Planning, decisions and exploration",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0001",
+        "robot-t-0300",
+        "robot-t-0309"
+      ]
+    },
+    {
+      "id": "robot-t-0294",
+      "label": "path planning",
+      "aliases": [],
+      "category": "Planning, decisions and exploration",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0295",
+      "label": "trajectory generation",
+      "aliases": [],
+      "category": "Planning, decisions and exploration",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0297"
+      ]
+    },
+    {
+      "id": "robot-t-0296",
+      "label": "path parameterization",
+      "aliases": [],
+      "category": "Planning, decisions and exploration",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0297",
+      "label": "time scaling",
+      "aliases": [],
+      "category": "Planning, decisions and exploration",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0295"
+      ]
+    },
+    {
+      "id": "robot-t-0298",
+      "label": "time-optimal trajectory",
+      "aliases": [],
+      "category": "Planning, decisions and exploration",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0299",
+      "label": "via point",
+      "aliases": [],
+      "category": "Planning, decisions and exploration",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0300",
+      "label": "collision detection",
+      "aliases": [],
+      "category": "Planning, decisions and exploration",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0293"
+      ]
+    },
+    {
+      "id": "robot-t-0301",
+      "label": "configuration-space obstacle",
+      "aliases": [
+        "C-obstacle"
+      ],
+      "category": "Planning, decisions and exploration",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0001"
+      ]
+    },
+    {
+      "id": "robot-t-0302",
+      "label": "free configuration space",
+      "aliases": [
+        "C-free"
+      ],
+      "category": "Planning, decisions and exploration",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0303",
+      "label": "graph search",
+      "aliases": [],
+      "category": "Planning, decisions and exploration",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0304",
+      "label": "Dijkstra algorithm",
+      "aliases": [],
+      "category": "Planning, decisions and exploration",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0305",
+      "label": "A-star search",
+      "aliases": [
+        "A*"
+      ],
+      "category": "Planning, decisions and exploration",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0306",
+      "label": "search tree",
+      "aliases": [],
+      "category": "Planning, decisions and exploration",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0307",
+      "label": "roadmap",
+      "aliases": [],
+      "category": "Planning, decisions and exploration",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0308",
+      "label": "probabilistic roadmap",
+      "aliases": [
+        "PRM"
+      ],
+      "category": "Planning, decisions and exploration",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0309"
+      ]
+    },
+    {
+      "id": "robot-t-0309",
+      "label": "rapidly exploring random tree",
+      "aliases": [
+        "RRT"
+      ],
+      "category": "Planning, decisions and exploration",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0293",
+        "robot-t-0308"
+      ]
+    },
+    {
+      "id": "robot-t-0310",
+      "label": "sampling-based planning",
+      "aliases": [],
+      "category": "Planning, decisions and exploration",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0311",
+      "label": "grid-based planning",
+      "aliases": [],
+      "category": "Planning, decisions and exploration",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0312",
+      "label": "potential field",
+      "aliases": [],
+      "category": "Planning, decisions and exploration",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0313",
+      "label": "navigation function",
+      "aliases": [],
+      "category": "Planning, decisions and exploration",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0314",
+      "label": "trajectory optimization",
+      "aliases": [],
+      "category": "Planning, decisions and exploration",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0315",
+      "label": "nonlinear programming",
+      "aliases": [],
+      "category": "Planning, decisions and exploration",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0316",
+      "label": "motion primitive",
+      "aliases": [],
+      "category": "Planning, decisions and exploration",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0317",
+      "label": "Dubins path",
+      "aliases": [],
+      "category": "Planning, decisions and exploration",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0008",
+        "robot-t-0318",
+        "robot-t-0320"
+      ]
+    },
+    {
+      "id": "robot-t-0318",
+      "label": "minimum turning radius",
+      "aliases": [],
+      "category": "Planning, decisions and exploration",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0317"
+      ]
+    },
+    {
+      "id": "robot-t-0319",
+      "label": "waypoint",
+      "aliases": [],
+      "category": "Planning, decisions and exploration",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0320",
+      "label": "waypoint manager",
+      "aliases": [],
+      "category": "Planning, decisions and exploration",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0317"
+      ]
+    },
+    {
+      "id": "robot-t-0321",
+      "label": "line following",
+      "aliases": [],
+      "category": "Planning, decisions and exploration",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0322",
+      "label": "orbit following",
+      "aliases": [],
+      "category": "Planning, decisions and exploration",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0323",
+      "label": "coverage planning",
+      "aliases": [],
+      "category": "Planning, decisions and exploration",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0324",
+      "label": "exploration",
+      "aliases": [],
+      "category": "Planning, decisions and exploration",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0326"
+      ]
+    },
+    {
+      "id": "robot-t-0325",
+      "label": "frontier exploration",
+      "aliases": [],
+      "category": "Planning, decisions and exploration",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0326",
+      "label": "information gain",
+      "aliases": [],
+      "category": "Planning, decisions and exploration",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0324",
+        "robot-t-0328"
+      ]
+    },
+    {
+      "id": "robot-t-0327",
+      "label": "active localization",
+      "aliases": [],
+      "category": "Planning, decisions and exploration",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0328",
+      "label": "active perception",
+      "aliases": [],
+      "category": "Planning, decisions and exploration",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0326",
+        "robot-t-0534"
+      ]
+    },
+    {
+      "id": "robot-t-0329",
+      "label": "Markov decision process",
+      "aliases": [
+        "MDP"
+      ],
+      "category": "Planning, decisions and exploration",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0331"
+      ]
+    },
+    {
+      "id": "robot-t-0330",
+      "label": "partially observable Markov decision process",
+      "aliases": [
+        "POMDP"
+      ],
+      "category": "Planning, decisions and exploration",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0209"
+      ]
+    },
+    {
+      "id": "robot-t-0331",
+      "label": "value iteration",
+      "aliases": [],
+      "category": "Planning, decisions and exploration",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0329"
+      ]
+    },
+    {
+      "id": "robot-t-0332",
+      "label": "policy",
+      "aliases": [],
+      "category": "Planning, decisions and exploration",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0333",
+      "label": "reward function",
+      "aliases": [],
+      "category": "Planning, decisions and exploration",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0334",
+      "label": "expected utility",
+      "aliases": [],
+      "category": "Planning, decisions and exploration",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0335",
+      "label": "belief-space planning",
+      "aliases": [],
+      "category": "Planning, decisions and exploration",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0336",
+      "label": "QMDP approximation",
+      "aliases": [],
+      "category": "Planning, decisions and exploration",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0337",
+      "label": "Monte Carlo POMDP",
+      "aliases": [],
+      "category": "Planning, decisions and exploration",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0338",
+      "label": "receding horizon",
+      "aliases": [],
+      "category": "Planning, decisions and exploration",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0339",
+      "label": "risk-aware planning",
+      "aliases": [],
+      "category": "Planning, decisions and exploration",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0340",
+      "label": "end effector",
+      "aliases": [],
+      "category": "Manipulation, contact and interaction",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0341",
+      "label": "gripper",
+      "aliases": [],
+      "category": "Manipulation, contact and interaction",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0342",
+      "label": "grasp",
+      "aliases": [],
+      "category": "Manipulation, contact and interaction",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0354"
+      ]
+    },
+    {
+      "id": "robot-t-0343",
+      "label": "dexterous manipulation",
+      "aliases": [],
+      "category": "Manipulation, contact and interaction",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0344",
+      "label": "contact kinematics",
+      "aliases": [],
+      "category": "Manipulation, contact and interaction",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0345",
+      "label": "friction cone",
+      "aliases": [],
+      "category": "Manipulation, contact and interaction",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0355"
+      ]
+    },
+    {
+      "id": "robot-t-0346",
+      "label": "contact wrench",
+      "aliases": [],
+      "category": "Manipulation, contact and interaction",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0347",
+      "label": "contact mode",
+      "aliases": [],
+      "category": "Manipulation, contact and interaction",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0348",
+      "label": "rolling contact",
+      "aliases": [],
+      "category": "Manipulation, contact and interaction",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0349",
+      "label": "sliding contact",
+      "aliases": [],
+      "category": "Manipulation, contact and interaction",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0350",
+      "label": "sticking contact",
+      "aliases": [],
+      "category": "Manipulation, contact and interaction",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0351",
+      "label": "unilateral constraint",
+      "aliases": [],
+      "category": "Manipulation, contact and interaction",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0352",
+      "label": "complementarity",
+      "aliases": [],
+      "category": "Manipulation, contact and interaction",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0353",
+      "label": "form closure",
+      "aliases": [],
+      "category": "Manipulation, contact and interaction",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0354"
+      ]
+    },
+    {
+      "id": "robot-t-0354",
+      "label": "force closure",
+      "aliases": [],
+      "category": "Manipulation, contact and interaction",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0342",
+        "robot-t-0353"
+      ]
+    },
+    {
+      "id": "robot-t-0355",
+      "label": "grasp matrix",
+      "aliases": [],
+      "category": "Manipulation, contact and interaction",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0345"
+      ]
+    },
+    {
+      "id": "robot-t-0356",
+      "label": "grasp quality",
+      "aliases": [],
+      "category": "Manipulation, contact and interaction",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0357",
+      "label": "stable grasp",
+      "aliases": [],
+      "category": "Manipulation, contact and interaction",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0358",
+      "label": "object pose",
+      "aliases": [],
+      "category": "Manipulation, contact and interaction",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0359",
+      "label": "object tracking",
+      "aliases": [],
+      "category": "Manipulation, contact and interaction",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0360",
+      "label": "push manipulation",
+      "aliases": [],
+      "category": "Manipulation, contact and interaction",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0361",
+      "label": "in-hand manipulation",
+      "aliases": [],
+      "category": "Manipulation, contact and interaction",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0362",
+      "label": "compliant grasp",
+      "aliases": [],
+      "category": "Manipulation, contact and interaction",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0363",
+      "label": "force sensing",
+      "aliases": [],
+      "category": "Manipulation, contact and interaction",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0364",
+      "label": "tactile sensing",
+      "aliases": [],
+      "category": "Manipulation, contact and interaction",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0368"
+      ]
+    },
+    {
+      "id": "robot-t-0365",
+      "label": "slip detection",
+      "aliases": [],
+      "category": "Manipulation, contact and interaction",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0366",
+      "label": "assembly insertion",
+      "aliases": [],
+      "category": "Manipulation, contact and interaction",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0367",
+      "label": "peg-in-hole task",
+      "aliases": [],
+      "category": "Manipulation, contact and interaction",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0368",
+      "label": "contact-rich manipulation",
+      "aliases": [],
+      "category": "Manipulation, contact and interaction",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0145",
+        "robot-t-0364"
+      ]
+    },
+    {
+      "id": "robot-t-0369",
+      "label": "tool use",
+      "aliases": [],
+      "category": "Manipulation, contact and interaction",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0370",
+      "label": "mobile manipulation",
+      "aliases": [],
+      "category": "Manipulation, contact and interaction",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0074"
+      ]
+    },
+    {
+      "id": "robot-t-0371",
+      "label": "dual-arm coordination",
+      "aliases": [],
+      "category": "Manipulation, contact and interaction",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0372",
+      "label": "fixed-wing aircraft",
+      "aliases": [],
+      "category": "Fixed-wing flight and aerospace guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0373",
+      "label": "miniature air vehicle",
+      "aliases": [
+        "MAV"
+      ],
+      "category": "Fixed-wing flight and aerospace guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0374",
+      "label": "unmanned aircraft system",
+      "aliases": [
+        "UAS"
+      ],
+      "category": "Fixed-wing flight and aerospace guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0375",
+      "label": "airframe",
+      "aliases": [],
+      "category": "Fixed-wing flight and aerospace guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0376",
+      "label": "airfoil",
+      "aliases": [],
+      "category": "Fixed-wing flight and aerospace guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0377",
+      "label": "wing loading",
+      "aliases": [],
+      "category": "Fixed-wing flight and aerospace guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0378",
+      "label": "lift",
+      "aliases": [],
+      "category": "Fixed-wing flight and aerospace guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0384"
+      ]
+    },
+    {
+      "id": "robot-t-0379",
+      "label": "drag",
+      "aliases": [],
+      "category": "Fixed-wing flight and aerospace guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0380",
+      "label": "side force",
+      "aliases": [],
+      "category": "Fixed-wing flight and aerospace guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0381",
+      "label": "aerodynamic coefficient",
+      "aliases": [],
+      "category": "Fixed-wing flight and aerospace guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0127"
+      ]
+    },
+    {
+      "id": "robot-t-0382",
+      "label": "angle of attack",
+      "aliases": [
+        "AoA"
+      ],
+      "category": "Fixed-wing flight and aerospace guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0383",
+      "label": "sideslip angle",
+      "aliases": [],
+      "category": "Fixed-wing flight and aerospace guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0384",
+      "label": "dynamic pressure",
+      "aliases": [],
+      "category": "Fixed-wing flight and aerospace guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0378"
+      ]
+    },
+    {
+      "id": "robot-t-0385",
+      "label": "stall",
+      "aliases": [],
+      "category": "Fixed-wing flight and aerospace guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0386",
+      "label": "propulsion",
+      "aliases": [],
+      "category": "Fixed-wing flight and aerospace guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0387",
+      "label": "thrust",
+      "aliases": [],
+      "category": "Fixed-wing flight and aerospace guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0388",
+      "label": "propeller efficiency",
+      "aliases": [],
+      "category": "Fixed-wing flight and aerospace guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0389",
+      "label": "pitch",
+      "aliases": [],
+      "category": "Fixed-wing flight and aerospace guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0390",
+      "label": "roll",
+      "aliases": [],
+      "category": "Fixed-wing flight and aerospace guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0391",
+      "label": "yaw",
+      "aliases": [],
+      "category": "Fixed-wing flight and aerospace guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0392",
+      "label": "bank angle",
+      "aliases": [],
+      "category": "Fixed-wing flight and aerospace guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0393",
+      "label": "coordinated turn",
+      "aliases": [],
+      "category": "Fixed-wing flight and aerospace guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0394",
+      "label": "ground speed",
+      "aliases": [],
+      "category": "Fixed-wing flight and aerospace guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0397",
+        "robot-t-0396"
+      ]
+    },
+    {
+      "id": "robot-t-0395",
+      "label": "airspeed",
+      "aliases": [],
+      "category": "Fixed-wing flight and aerospace guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0397"
+      ]
+    },
+    {
+      "id": "robot-t-0396",
+      "label": "wind speed",
+      "aliases": [],
+      "category": "Fixed-wing flight and aerospace guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0394"
+      ]
+    },
+    {
+      "id": "robot-t-0397",
+      "label": "wind triangle",
+      "aliases": [],
+      "category": "Fixed-wing flight and aerospace guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0395",
+        "robot-t-0394"
+      ]
+    },
+    {
+      "id": "robot-t-0398",
+      "label": "wind disturbance",
+      "aliases": [],
+      "category": "Fixed-wing flight and aerospace guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0399",
+      "label": "gust",
+      "aliases": [],
+      "category": "Fixed-wing flight and aerospace guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0400",
+      "label": "flight envelope",
+      "aliases": [],
+      "category": "Fixed-wing flight and aerospace guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0401",
+      "label": "longitudinal mode",
+      "aliases": [],
+      "category": "Fixed-wing flight and aerospace guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0402",
+      "label": "lateral-directional mode",
+      "aliases": [],
+      "category": "Fixed-wing flight and aerospace guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0403",
+      "label": "short-period mode",
+      "aliases": [],
+      "category": "Fixed-wing flight and aerospace guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0404",
+      "label": "phugoid",
+      "aliases": [],
+      "category": "Fixed-wing flight and aerospace guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0405",
+      "label": "Dutch roll",
+      "aliases": [],
+      "category": "Fixed-wing flight and aerospace guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0406",
+      "label": "spiral mode",
+      "aliases": [],
+      "category": "Fixed-wing flight and aerospace guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0407",
+      "label": "trim",
+      "aliases": [],
+      "category": "Fixed-wing flight and aerospace guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0408",
+      "label": "linear flight model",
+      "aliases": [],
+      "category": "Fixed-wing flight and aerospace guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0409",
+      "label": "autopilot",
+      "aliases": [],
+      "category": "Fixed-wing flight and aerospace guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0147",
+        "robot-t-0153",
+        "robot-t-0154"
+      ]
+    },
+    {
+      "id": "robot-t-0410",
+      "label": "flight controller",
+      "aliases": [],
+      "category": "Fixed-wing flight and aerospace guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0501"
+      ]
+    },
+    {
+      "id": "robot-t-0411",
+      "label": "flight path",
+      "aliases": [],
+      "category": "Fixed-wing flight and aerospace guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0412",
+      "label": "orbit radius",
+      "aliases": [],
+      "category": "Fixed-wing flight and aerospace guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0413",
+      "label": "precision landing",
+      "aliases": [],
+      "category": "Fixed-wing flight and aerospace guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0414",
+      "label": "flight simulator",
+      "aliases": [],
+      "category": "Fixed-wing flight and aerospace guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0437"
+      ]
+    },
+    {
+      "id": "robot-t-0415",
+      "label": "flight dynamics",
+      "aliases": [],
+      "category": "Fixed-wing flight and aerospace guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0416",
+      "label": "elevator",
+      "aliases": [],
+      "category": "Fixed-wing flight and aerospace guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0417",
+      "label": "aileron",
+      "aliases": [],
+      "category": "Fixed-wing flight and aerospace guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0418",
+      "label": "rudder",
+      "aliases": [],
+      "category": "Fixed-wing flight and aerospace guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0419",
+      "label": "throttle",
+      "aliases": [],
+      "category": "Fixed-wing flight and aerospace guidance",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0420",
+      "label": "robot software architecture",
+      "aliases": [],
+      "category": "Software, models and evaluation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0495"
+      ]
+    },
+    {
+      "id": "robot-t-0421",
+      "label": "sense-plan-act loop",
+      "aliases": [],
+      "category": "Software, models and evaluation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0533"
+      ]
+    },
+    {
+      "id": "robot-t-0422",
+      "label": "control pipeline",
+      "aliases": [],
+      "category": "Software, models and evaluation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0423",
+      "label": "closed-loop simulation",
+      "aliases": [],
+      "category": "Software, models and evaluation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0438"
+      ]
+    },
+    {
+      "id": "robot-t-0424",
+      "label": "numerical integration",
+      "aliases": [],
+      "category": "Software, models and evaluation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0425",
+      "label": "simulation timestep",
+      "aliases": [],
+      "category": "Software, models and evaluation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0426",
+      "label": "physics engine",
+      "aliases": [],
+      "category": "Software, models and evaluation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0427",
+      "label": "digital twin",
+      "aliases": [],
+      "category": "Software, models and evaluation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0428",
+      "label": "system identification",
+      "aliases": [],
+      "category": "Software, models and evaluation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0429",
+      "label": "parameter identification",
+      "aliases": [],
+      "category": "Software, models and evaluation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0430",
+      "label": "model uncertainty",
+      "aliases": [],
+      "category": "Software, models and evaluation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0431",
+      "label": "Monte Carlo evaluation",
+      "aliases": [],
+      "category": "Software, models and evaluation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0432",
+      "label": "ground truth",
+      "aliases": [],
+      "category": "Software, models and evaluation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0433",
+      "label": "benchmark trajectory",
+      "aliases": [],
+      "category": "Software, models and evaluation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0434",
+      "label": "benchmark maneuver",
+      "aliases": [],
+      "category": "Software, models and evaluation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0435",
+      "label": "logging",
+      "aliases": [],
+      "category": "Software, models and evaluation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0436",
+      "label": "telemetry",
+      "aliases": [],
+      "category": "Software, models and evaluation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0437",
+      "label": "hardware-in-the-loop",
+      "aliases": [
+        "HIL"
+      ],
+      "category": "Software, models and evaluation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0414"
+      ]
+    },
+    {
+      "id": "robot-t-0438",
+      "label": "software-in-the-loop",
+      "aliases": [
+        "SIL"
+      ],
+      "category": "Software, models and evaluation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "robot-t-0423"
+      ]
+    },
+    {
+      "id": "robot-t-0439",
+      "label": "unit test",
+      "aliases": [],
+      "category": "Software, models and evaluation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0440",
+      "label": "integration test",
+      "aliases": [],
+      "category": "Software, models and evaluation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0441",
+      "label": "state machine",
+      "aliases": [],
+      "category": "Software, models and evaluation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0442",
+      "label": "real-time loop",
+      "aliases": [],
+      "category": "Software, models and evaluation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0443",
+      "label": "scheduler latency",
+      "aliases": [],
+      "category": "Software, models and evaluation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0444",
+      "label": "computational budget",
+      "aliases": [],
+      "category": "Software, models and evaluation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0445",
+      "label": "sensor latency",
+      "aliases": [],
+      "category": "Software, models and evaluation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0446",
+      "label": "closed-loop latency",
+      "aliases": [],
+      "category": "Software, models and evaluation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0447",
+      "label": "saturation test",
+      "aliases": [],
+      "category": "Software, models and evaluation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0448",
+      "label": "disturbance rejection",
+      "aliases": [],
+      "category": "Software, models and evaluation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0449",
+      "label": "sensitivity analysis",
+      "aliases": [],
+      "category": "Software, models and evaluation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0450",
+      "label": "model mismatch",
+      "aliases": [],
+      "category": "Software, models and evaluation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0451",
+      "label": "domain randomization",
+      "aliases": [],
+      "category": "Software, models and evaluation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0452",
+      "label": "reproducibility",
+      "aliases": [],
+      "category": "Software, models and evaluation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0453",
+      "label": "multirotor",
+      "aliases": [],
+      "category": "Embodiments and adjacent robotics landscape",
+      "origin": "adjacent_landscape",
+      "related_ids": [
+        "robot-t-0454"
+      ]
+    },
+    {
+      "id": "robot-t-0454",
+      "label": "quadcopter",
+      "aliases": [],
+      "category": "Embodiments and adjacent robotics landscape",
+      "origin": "adjacent_landscape",
+      "related_ids": [
+        "robot-t-0453"
+      ]
+    },
+    {
+      "id": "robot-t-0455",
+      "label": "hexacopter",
+      "aliases": [],
+      "category": "Embodiments and adjacent robotics landscape",
+      "origin": "adjacent_landscape",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0456",
+      "label": "VTOL aircraft",
+      "aliases": [],
+      "category": "Embodiments and adjacent robotics landscape",
+      "origin": "adjacent_landscape",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0457",
+      "label": "legged robot",
+      "aliases": [],
+      "category": "Embodiments and adjacent robotics landscape",
+      "origin": "adjacent_landscape",
+      "related_ids": [
+        "robot-t-0461"
+      ]
+    },
+    {
+      "id": "robot-t-0458",
+      "label": "quadruped robot",
+      "aliases": [],
+      "category": "Embodiments and adjacent robotics landscape",
+      "origin": "adjacent_landscape",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0459",
+      "label": "humanoid robot",
+      "aliases": [],
+      "category": "Embodiments and adjacent robotics landscape",
+      "origin": "adjacent_landscape",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0460",
+      "label": "bipedal locomotion",
+      "aliases": [],
+      "category": "Embodiments and adjacent robotics landscape",
+      "origin": "adjacent_landscape",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0461",
+      "label": "gait",
+      "aliases": [],
+      "category": "Embodiments and adjacent robotics landscape",
+      "origin": "adjacent_landscape",
+      "related_ids": [
+        "robot-t-0457"
+      ]
+    },
+    {
+      "id": "robot-t-0462",
+      "label": "footstep planning",
+      "aliases": [],
+      "category": "Embodiments and adjacent robotics landscape",
+      "origin": "adjacent_landscape",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0463",
+      "label": "zero moment point",
+      "aliases": [
+        "ZMP"
+      ],
+      "category": "Embodiments and adjacent robotics landscape",
+      "origin": "adjacent_landscape",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0464",
+      "label": "centroidal dynamics",
+      "aliases": [],
+      "category": "Embodiments and adjacent robotics landscape",
+      "origin": "adjacent_landscape",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0465",
+      "label": "model predictive walking",
+      "aliases": [],
+      "category": "Embodiments and adjacent robotics landscape",
+      "origin": "adjacent_landscape",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0466",
+      "label": "underwater robot",
+      "aliases": [
+        "AUV"
+      ],
+      "category": "Embodiments and adjacent robotics landscape",
+      "origin": "adjacent_landscape",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0467",
+      "label": "remotely operated vehicle",
+      "aliases": [
+        "ROV"
+      ],
+      "category": "Embodiments and adjacent robotics landscape",
+      "origin": "adjacent_landscape",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0468",
+      "label": "surface vessel",
+      "aliases": [],
+      "category": "Embodiments and adjacent robotics landscape",
+      "origin": "adjacent_landscape",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0469",
+      "label": "space robot",
+      "aliases": [],
+      "category": "Embodiments and adjacent robotics landscape",
+      "origin": "adjacent_landscape",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0470",
+      "label": "tethered robot",
+      "aliases": [],
+      "category": "Embodiments and adjacent robotics landscape",
+      "origin": "adjacent_landscape",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0471",
+      "label": "swarm robotics",
+      "aliases": [],
+      "category": "Embodiments and adjacent robotics landscape",
+      "origin": "adjacent_landscape",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0472",
+      "label": "multi-agent coordination",
+      "aliases": [],
+      "category": "Embodiments and adjacent robotics landscape",
+      "origin": "adjacent_landscape",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0473",
+      "label": "distributed consensus",
+      "aliases": [],
+      "category": "Embodiments and adjacent robotics landscape",
+      "origin": "adjacent_landscape",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0474",
+      "label": "formation control",
+      "aliases": [],
+      "category": "Embodiments and adjacent robotics landscape",
+      "origin": "adjacent_landscape",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0475",
+      "label": "warehouse robot",
+      "aliases": [
+        "AMR"
+      ],
+      "category": "Embodiments and adjacent robotics landscape",
+      "origin": "adjacent_landscape",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0476",
+      "label": "autonomous mobile robot",
+      "aliases": [],
+      "category": "Embodiments and adjacent robotics landscape",
+      "origin": "adjacent_landscape",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0477",
+      "label": "industrial robot",
+      "aliases": [],
+      "category": "Embodiments and adjacent robotics landscape",
+      "origin": "adjacent_landscape",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0478",
+      "label": "collaborative robot",
+      "aliases": [
+        "cobot"
+      ],
+      "category": "Embodiments and adjacent robotics landscape",
+      "origin": "adjacent_landscape",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0479",
+      "label": "soft robot",
+      "aliases": [],
+      "category": "Embodiments and adjacent robotics landscape",
+      "origin": "adjacent_landscape",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0480",
+      "label": "continuum robot",
+      "aliases": [],
+      "category": "Embodiments and adjacent robotics landscape",
+      "origin": "adjacent_landscape",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0481",
+      "label": "bio-inspired robot",
+      "aliases": [],
+      "category": "Embodiments and adjacent robotics landscape",
+      "origin": "adjacent_landscape",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0482",
+      "label": "exoskeleton",
+      "aliases": [],
+      "category": "Embodiments and adjacent robotics landscape",
+      "origin": "adjacent_landscape",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0483",
+      "label": "teleoperation",
+      "aliases": [],
+      "category": "Embodiments and adjacent robotics landscape",
+      "origin": "adjacent_landscape",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0484",
+      "label": "shared autonomy",
+      "aliases": [],
+      "category": "Embodiments and adjacent robotics landscape",
+      "origin": "adjacent_landscape",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0485",
+      "label": "human-robot interaction",
+      "aliases": [
+        "HRI"
+      ],
+      "category": "Embodiments and adjacent robotics landscape",
+      "origin": "adjacent_landscape",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0486",
+      "label": "robot learning",
+      "aliases": [],
+      "category": "Embodiments and adjacent robotics landscape",
+      "origin": "adjacent_landscape",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0487",
+      "label": "reinforcement learning",
+      "aliases": [],
+      "category": "Embodiments and adjacent robotics landscape",
+      "origin": "adjacent_landscape",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0488",
+      "label": "imitation learning",
+      "aliases": [],
+      "category": "Embodiments and adjacent robotics landscape",
+      "origin": "adjacent_landscape",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0489",
+      "label": "behavior cloning",
+      "aliases": [],
+      "category": "Embodiments and adjacent robotics landscape",
+      "origin": "adjacent_landscape",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0490",
+      "label": "vision-language-action model",
+      "aliases": [
+        "VLA"
+      ],
+      "category": "Embodiments and adjacent robotics landscape",
+      "origin": "adjacent_landscape",
+      "related_ids": [
+        "robot-t-0491"
+      ]
+    },
+    {
+      "id": "robot-t-0491",
+      "label": "robot foundation model",
+      "aliases": [],
+      "category": "Embodiments and adjacent robotics landscape",
+      "origin": "adjacent_landscape",
+      "related_ids": [
+        "robot-t-0490"
+      ]
+    },
+    {
+      "id": "robot-t-0492",
+      "label": "sim-to-real transfer",
+      "aliases": [],
+      "category": "Embodiments and adjacent robotics landscape",
+      "origin": "adjacent_landscape",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0493",
+      "label": "ROS 2",
+      "aliases": [],
+      "category": "Embodiments and adjacent robotics landscape",
+      "origin": "adjacent_landscape",
+      "related_ids": [
+        "robot-t-0494"
+      ]
+    },
+    {
+      "id": "robot-t-0494",
+      "label": "robot middleware",
+      "aliases": [],
+      "category": "Embodiments and adjacent robotics landscape",
+      "origin": "adjacent_landscape",
+      "related_ids": [
+        "robot-t-0493"
+      ]
+    },
+    {
+      "id": "robot-t-0495",
+      "label": "URDF",
+      "aliases": [],
+      "category": "Embodiments and adjacent robotics landscape",
+      "origin": "adjacent_landscape",
+      "related_ids": [
+        "robot-t-0420"
+      ]
+    },
+    {
+      "id": "robot-t-0496",
+      "label": "SDF",
+      "aliases": [],
+      "category": "Embodiments and adjacent robotics landscape",
+      "origin": "adjacent_landscape",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0497",
+      "label": "MoveIt",
+      "aliases": [],
+      "category": "Embodiments and adjacent robotics landscape",
+      "origin": "adjacent_landscape",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0498",
+      "label": "Nav2",
+      "aliases": [],
+      "category": "Embodiments and adjacent robotics landscape",
+      "origin": "adjacent_landscape",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0499",
+      "label": "Gazebo",
+      "aliases": [],
+      "category": "Embodiments and adjacent robotics landscape",
+      "origin": "adjacent_landscape",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0500",
+      "label": "MuJoCo",
+      "aliases": [],
+      "category": "Embodiments and adjacent robotics landscape",
+      "origin": "adjacent_landscape",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0501",
+      "label": "PX4",
+      "aliases": [],
+      "category": "Embodiments and adjacent robotics landscape",
+      "origin": "adjacent_landscape",
+      "related_ids": [
+        "robot-t-0410"
+      ]
+    },
+    {
+      "id": "robot-t-0502",
+      "label": "ArduPilot",
+      "aliases": [],
+      "category": "Embodiments and adjacent robotics landscape",
+      "origin": "adjacent_landscape",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0503",
+      "label": "fault detection",
+      "aliases": [],
+      "category": "Safety, integration and ambitious systems",
+      "origin": "adjacent_landscape",
+      "related_ids": [
+        "robot-t-0518"
+      ]
+    },
+    {
+      "id": "robot-t-0504",
+      "label": "fault tolerance",
+      "aliases": [],
+      "category": "Safety, integration and ambitious systems",
+      "origin": "adjacent_landscape",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0505",
+      "label": "fail-safe state",
+      "aliases": [],
+      "category": "Safety, integration and ambitious systems",
+      "origin": "adjacent_landscape",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0506",
+      "label": "emergency stop",
+      "aliases": [],
+      "category": "Safety, integration and ambitious systems",
+      "origin": "adjacent_landscape",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0507",
+      "label": "collision avoidance",
+      "aliases": [],
+      "category": "Safety, integration and ambitious systems",
+      "origin": "adjacent_landscape",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0508",
+      "label": "safety envelope",
+      "aliases": [],
+      "category": "Safety, integration and ambitious systems",
+      "origin": "adjacent_landscape",
+      "related_ids": [
+        "robot-t-0523"
+      ]
+    },
+    {
+      "id": "robot-t-0509",
+      "label": "runtime assurance",
+      "aliases": [],
+      "category": "Safety, integration and ambitious systems",
+      "origin": "adjacent_landscape",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0510",
+      "label": "safety monitor",
+      "aliases": [],
+      "category": "Safety, integration and ambitious systems",
+      "origin": "adjacent_landscape",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0511",
+      "label": "redundant sensing",
+      "aliases": [],
+      "category": "Safety, integration and ambitious systems",
+      "origin": "adjacent_landscape",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0512",
+      "label": "redundant actuation",
+      "aliases": [],
+      "category": "Safety, integration and ambitious systems",
+      "origin": "adjacent_landscape",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0513",
+      "label": "observability failure",
+      "aliases": [],
+      "category": "Safety, integration and ambitious systems",
+      "origin": "adjacent_landscape",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0514",
+      "label": "controllability failure",
+      "aliases": [],
+      "category": "Safety, integration and ambitious systems",
+      "origin": "adjacent_landscape",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0515",
+      "label": "common-mode failure",
+      "aliases": [],
+      "category": "Safety, integration and ambitious systems",
+      "origin": "adjacent_landscape",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0516",
+      "label": "hardware watchdog",
+      "aliases": [],
+      "category": "Safety, integration and ambitious systems",
+      "origin": "adjacent_landscape",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0517",
+      "label": "communication loss",
+      "aliases": [],
+      "category": "Safety, integration and ambitious systems",
+      "origin": "adjacent_landscape",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0518",
+      "label": "graceful degradation",
+      "aliases": [],
+      "category": "Safety, integration and ambitious systems",
+      "origin": "adjacent_landscape",
+      "related_ids": [
+        "robot-t-0503"
+      ]
+    },
+    {
+      "id": "robot-t-0519",
+      "label": "uncertainty calibration",
+      "aliases": [],
+      "category": "Safety, integration and ambitious systems",
+      "origin": "adjacent_landscape",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0520",
+      "label": "risk budget",
+      "aliases": [],
+      "category": "Safety, integration and ambitious systems",
+      "origin": "adjacent_landscape",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0521",
+      "label": "closed-loop validation",
+      "aliases": [],
+      "category": "Safety, integration and ambitious systems",
+      "origin": "adjacent_landscape",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0522",
+      "label": "scenario-based testing",
+      "aliases": [],
+      "category": "Safety, integration and ambitious systems",
+      "origin": "adjacent_landscape",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0523",
+      "label": "operational design domain",
+      "aliases": [
+        "ODD"
+      ],
+      "category": "Safety, integration and ambitious systems",
+      "origin": "adjacent_landscape",
+      "related_ids": [
+        "robot-t-0508"
+      ]
+    },
+    {
+      "id": "robot-t-0524",
+      "label": "autonomous mission",
+      "aliases": [],
+      "category": "Safety, integration and ambitious systems",
+      "origin": "adjacent_landscape",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0525",
+      "label": "recovery behavior",
+      "aliases": [],
+      "category": "Safety, integration and ambitious systems",
+      "origin": "adjacent_landscape",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0526",
+      "label": "behavior tree",
+      "aliases": [],
+      "category": "Safety, integration and ambitious systems",
+      "origin": "adjacent_landscape",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0527",
+      "label": "task planning",
+      "aliases": [],
+      "category": "Safety, integration and ambitious systems",
+      "origin": "adjacent_landscape",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0528",
+      "label": "hierarchical planning",
+      "aliases": [],
+      "category": "Safety, integration and ambitious systems",
+      "origin": "adjacent_landscape",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0529",
+      "label": "world model",
+      "aliases": [],
+      "category": "Safety, integration and ambitious systems",
+      "origin": "adjacent_landscape",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0530",
+      "label": "semantic map",
+      "aliases": [],
+      "category": "Safety, integration and ambitious systems",
+      "origin": "adjacent_landscape",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0531",
+      "label": "multi-sensor calibration",
+      "aliases": [],
+      "category": "Safety, integration and ambitious systems",
+      "origin": "adjacent_landscape",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0532",
+      "label": "mechanical-electrical integration",
+      "aliases": [],
+      "category": "Safety, integration and ambitious systems",
+      "origin": "adjacent_landscape",
+      "related_ids": []
+    },
+    {
+      "id": "robot-t-0533",
+      "label": "perception-action loop",
+      "aliases": [],
+      "category": "Safety, integration and ambitious systems",
+      "origin": "adjacent_landscape",
+      "related_ids": [
+        "robot-t-0421"
+      ]
+    },
+    {
+      "id": "robot-t-0534",
+      "label": "active sensing",
+      "aliases": [],
+      "category": "Safety, integration and ambitious systems",
+      "origin": "adjacent_landscape",
+      "related_ids": [
+        "robot-t-0328"
+      ]
+    }
+  ]
+}
