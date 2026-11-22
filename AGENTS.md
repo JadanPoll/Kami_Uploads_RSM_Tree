@@ -30,6 +30,8 @@ Source: [FKEN — Frustration-to-resource traversability](https://github.com/Jad
 
 ## When an investigation resumes
 
+When working with manufacturing books, **begin with** [`Investigations/manufacturing-orientation/REFERENCE_GUIDE.md`](Investigations/manufacturing-orientation/REFERENCE_GUIDE.md): it indexes the current five books' 65 meaningful chapters/parts, inspected passages and cross-book retrieval shortcuts. Do not reindex the same books on every new question. Only inspect a chapter or passage where existing indexed knowledge cannot resolve the new uncertainty; write new verified locators and insights once to the canonical JSON, then update the readable guide where useful. Chapter locators and examined passages remain distinct levels of evidence.
+
 1. Read `investigations.json` and the relevant `Investigations/<slug>/investigation.json` before proposing changes.
 2. Recover the user's actual question, parent purpose, existing branches, prior evidence, unresolved alternatives, and why the latest stopping point mattered.
 3. Continue from that state. Don't restart, duplicate branches, invent achievements, or silently rewrite the user's aims.
