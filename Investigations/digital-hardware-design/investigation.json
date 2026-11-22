@@ -1,0 +1,2209 @@
+{
+  "id": "digital-hardware-design",
+  "kind": "canonical_research_corpus",
+  "title": "Digital hardware — from Verilog/FPGA behavior to VLSI physical design",
+  "status": "source-indexed-curiosity-landscape; real hardware validation pending",
+  "updated": "2026-11-21",
+  "question": "What can digital hardware compute, how do we design it, and what determines whether it works on actual devices and silicon?",
+  "purpose": "Connect natural curiosity to reusable RTL, device, architecture and physical VLSI knowledge using the source collection without re-indexing the books every time.",
+  "source_folder": "https://drive.google.com/drive/folders/1veFqc1U0plkG-mpiXaqRW-QLEPY5pvYS",
+  "sources": [
+    {
+      "id": "CHU-VERILOG",
+      "title": "FPGA Prototyping by Verilog Examples: Xilinx Spartan-3 Version",
+      "authors": "Pong P. Chu",
+      "edition": "Wiley, 2008",
+      "url": "https://drive.google.com/file/d/1N_LEBervU1AF7B3deioFkq-h83zAdDbA/view?usp=drivesdk",
+      "role": "FPGA RTL, simulation, synchronous design and composite peripheral prototypes",
+      "caution": "Xilinx Spartan-3, ISE and some board-specific examples are historical; RTL principles must be rechecked for modern FPGA synthesis, resource mapping, constraints and I/O"
+    },
+    {
+      "id": "MEAD-CONWAY",
+      "title": "Introduction to VLSI Systems",
+      "authors": "Carver Mead; Lynn Conway",
+      "edition": "Addison-Wesley, 1980",
+      "url": "https://drive.google.com/file/d/1FX7k8OxgEFrcgIr6sIn_gCd3mpE9STsh/view?usp=drivesdk",
+      "role": "Physical transistor, interconnect, layout, fabrication and system timing constraints underlying integrated digital design",
+      "caution": "Historical nMOS processes, two-phase clocking and era-specific design rules are not contemporary process design kits or signoff guidance"
+    }
+  ],
+  "book_landscaplets": [
+    {
+      "source_id": "CHU-VERILOG",
+      "page_scheme": "Printed pages in source; chapter start pages not verified because PDF contents extraction separates titles and number columns",
+      "source_navigation_status": "Preface and 18 chapter roles inspected; targeted sections inspected selectively, not full textbook",
+      "sections": [
+        {
+          "ref": "1",
+          "title": "Gate-level combinational circuit",
+          "printed_page_start": null,
+          "part": "I",
+          "use_when": "Verilog structure, primitive gates and testbench; mapping a Boolean function to explicit logic",
+          "case_ids": [
+            "DHW-COMB"
+          ],
+          "entry_node_ids": [
+            "DHW-COMB"
+          ],
+          "locator_status": "chapter_title_verified_printed_start_unverified"
+        },
+        {
+          "ref": "2",
+          "title": "Overview of FPGA and EDA software",
+          "printed_page_start": null,
+          "part": "I",
+          "use_when": "FPGA configuration and tool flow; synthesize, place, constrain and load the circuit",
+          "case_ids": [
+            "DHW-FLOW"
+          ],
+          "entry_node_ids": [
+            "DHW-FLOW"
+          ],
+          "locator_status": "chapter_title_verified_printed_start_unverified"
+        },
+        {
+          "ref": "3",
+          "title": "RT-level combinational circuit",
+          "printed_page_start": null,
+          "part": "I",
+          "use_when": "Operators, mux/priority structure, incomplete assignment and unintended latches",
+          "case_ids": [
+            "DHW-COMB"
+          ],
+          "entry_node_ids": [
+            "DHW-COMB"
+          ],
+          "locator_status": "chapter_title_verified_printed_start_unverified"
+        },
+        {
+          "ref": "4",
+          "title": "Regular Sequential Circuit",
+          "printed_page_start": null,
+          "part": "I",
+          "use_when": "Flip-flop, register, counter, FIFO and clock timing; clock-to-Q, setup and hold",
+          "case_ids": [
+            "DHW-TIMING",
+            "DHW-STATE"
+          ],
+          "entry_node_ids": [
+            "DHW-TIMING",
+            "DHW-STATE"
+          ],
+          "locator_status": "chapter_title_verified_printed_start_unverified"
+        },
+        {
+          "ref": "5",
+          "title": "FSM",
+          "printed_page_start": null,
+          "part": "I",
+          "use_when": "Control state and transitions; switch debounce and edge detection",
+          "case_ids": [
+            "DHW-STATE"
+          ],
+          "entry_node_ids": [
+            "DHW-STATE"
+          ],
+          "locator_status": "chapter_title_verified_printed_start_unverified"
+        },
+        {
+          "ref": "6",
+          "title": "FSMD",
+          "printed_page_start": null,
+          "part": "I",
+          "use_when": "FSM plus datapath and register-transfer operations; divider and BCD conversion",
+          "case_ids": [
+            "DHW-DATAPATH"
+          ],
+          "entry_node_ids": [
+            "DHW-DATAPATH"
+          ],
+          "locator_status": "chapter_title_verified_printed_start_unverified"
+        },
+        {
+          "ref": "7",
+          "title": "Selected Topics of Verilog",
+          "printed_page_start": null,
+          "part": "I",
+          "use_when": "Blocking versus nonblocking, signed arithmetic, functions and richer testbenches",
+          "case_ids": [
+            "DHW-COMB",
+            "DHW-TIMING"
+          ],
+          "entry_node_ids": [
+            "DHW-COMB",
+            "DHW-TIMING"
+          ],
+          "locator_status": "chapter_title_verified_printed_start_unverified"
+        },
+        {
+          "ref": "8",
+          "title": "UART",
+          "printed_page_start": null,
+          "part": "II",
+          "use_when": "Receiver oversampling, baud-enable tick generation, framing and serial verification",
+          "case_ids": [
+            "DHW-UART"
+          ],
+          "entry_node_ids": [
+            "DHW-UART"
+          ],
+          "locator_status": "chapter_title_verified_printed_start_unverified"
+        },
+        {
+          "ref": "9",
+          "title": "PS2 Keyboard",
+          "printed_page_start": null,
+          "part": "II",
+          "use_when": "Scan-code receiving, sampling/decoding and protocol boundary",
+          "case_ids": [
+            "DHW-PERIPHERALS"
+          ],
+          "entry_node_ids": [
+            "DHW-PERIPHERALS"
+          ],
+          "locator_status": "chapter_title_verified_printed_start_unverified"
+        },
+        {
+          "ref": "10",
+          "title": "PS2 Mouse",
+          "printed_page_start": null,
+          "part": "II",
+          "use_when": "Bidirectional PS/2 host control, mouse events and initialization",
+          "case_ids": [
+            "DHW-PERIPHERALS"
+          ],
+          "entry_node_ids": [
+            "DHW-PERIPHERALS"
+          ],
+          "locator_status": "chapter_title_verified_printed_start_unverified"
+        },
+        {
+          "ref": "11",
+          "title": "External SRAM",
+          "printed_page_start": null,
+          "part": "II",
+          "use_when": "Memory-controller timing, safe versus aggressive access and verification",
+          "case_ids": [
+            "DHW-MEMORY"
+          ],
+          "entry_node_ids": [
+            "DHW-MEMORY"
+          ],
+          "locator_status": "chapter_title_verified_printed_start_unverified"
+        },
+        {
+          "ref": "12",
+          "title": "Xilinx Spartan-3 Specific Memory",
+          "printed_page_start": null,
+          "part": "II",
+          "use_when": "FPGA memory primitives, inference and board-dependent resources",
+          "case_ids": [
+            "DHW-MEMORY"
+          ],
+          "entry_node_ids": [
+            "DHW-MEMORY"
+          ],
+          "locator_status": "chapter_title_verified_printed_start_unverified"
+        },
+        {
+          "ref": "13",
+          "title": "VGA controller I: graphic",
+          "printed_page_start": null,
+          "part": "II",
+          "use_when": "Synchronization timing and bit-/object-mapped graphics controllers",
+          "case_ids": [
+            "DHW-VIDEO"
+          ],
+          "entry_node_ids": [
+            "DHW-VIDEO"
+          ],
+          "locator_status": "chapter_title_verified_printed_start_unverified"
+        },
+        {
+          "ref": "14",
+          "title": "VGA controller II: text",
+          "printed_page_start": null,
+          "part": "II",
+          "use_when": "Character tiles, fonts and display memory addressing",
+          "case_ids": [
+            "DHW-VIDEO"
+          ],
+          "entry_node_ids": [
+            "DHW-VIDEO"
+          ],
+          "locator_status": "chapter_title_verified_printed_start_unverified"
+        },
+        {
+          "ref": "15",
+          "title": "PicoBlaze Overview",
+          "printed_page_start": null,
+          "part": "III",
+          "use_when": "Microcontroller datapath/ISA hosted inside FPGA programmable resources",
+          "case_ids": [
+            "DHW-SOFTCORE"
+          ],
+          "entry_node_ids": [
+            "DHW-SOFTCORE"
+          ],
+          "locator_status": "chapter_title_verified_printed_start_unverified"
+        },
+        {
+          "ref": "16",
+          "title": "PicoBlaze Assembly Code Development",
+          "printed_page_start": null,
+          "part": "III",
+          "use_when": "Assembly behavior and firmware development for a soft-core processor",
+          "case_ids": [
+            "DHW-SOFTCORE"
+          ],
+          "entry_node_ids": [
+            "DHW-SOFTCORE"
+          ],
+          "locator_status": "chapter_title_verified_printed_start_unverified"
+        },
+        {
+          "ref": "17",
+          "title": "PicoBlaze I/O Interface",
+          "printed_page_start": null,
+          "part": "III",
+          "use_when": "Custom soft-core ports and hardware/firmware interfaces",
+          "case_ids": [
+            "DHW-SOFTCORE",
+            "DHW-PERIPHERALS"
+          ],
+          "entry_node_ids": [
+            "DHW-SOFTCORE",
+            "DHW-PERIPHERALS"
+          ],
+          "locator_status": "chapter_title_verified_printed_start_unverified"
+        },
+        {
+          "ref": "18",
+          "title": "PicoBlaze Interrupt Interface",
+          "printed_page_start": null,
+          "part": "III",
+          "use_when": "Soft-core interrupt handling and its custom external logic",
+          "case_ids": [
+            "DHW-SOFTCORE",
+            "DHW-TIMING"
+          ],
+          "entry_node_ids": [
+            "DHW-SOFTCORE",
+            "DHW-TIMING"
+          ],
+          "locator_status": "chapter_title_verified_printed_start_unverified"
+        }
+      ]
+    },
+    {
+      "source_id": "MEAD-CONWAY",
+      "page_scheme": "Printed pages indicated in contents (OCR partly corrupted, confirm visually before claiming exact direct page)",
+      "source_navigation_status": "Nine chapters inspected in noisy PDF contents, selected passages inspected, physical process is historical",
+      "sections": [
+        {
+          "ref": "1",
+          "title": "MOS Devices and Circuits",
+          "printed_page_start": 1,
+          "use_when": "Transistor gating, pullups, capacitance, switching delay and logic fan-out",
+          "case_ids": [
+            "DHW-MOS",
+            "DHW-PHYSICAL-TIMING"
+          ],
+          "entry_node_ids": [
+            "DHW-MOS",
+            "DHW-PHYSICAL-TIMING"
+          ],
+          "locator_status": "printed_start_from_partially_legible_ocr_toc_needs_visual_confirmation"
+        },
+        {
+          "ref": "2",
+          "title": "Integrated System Fabrication",
+          "printed_page_start": 38,
+          "use_when": "Photolithographic patterning, nMOS process, design rules, yield and scaling",
+          "case_ids": [
+            "DHW-FABRICATION",
+            "DHW-LAYOUT"
+          ],
+          "entry_node_ids": [
+            "DHW-FABRICATION",
+            "DHW-LAYOUT"
+          ],
+          "locator_status": "printed_start_from_partially_legible_ocr_toc_needs_visual_confirmation"
+        },
+        {
+          "ref": "3",
+          "title": "Data and Control Flow in Systematic Structures",
+          "printed_page_start": 60,
+          "use_when": "Two-phase clocking, registers, register transfer, logic arrays and FSMs",
+          "case_ids": [
+            "DHW-DATAPATH",
+            "DHW-STATE"
+          ],
+          "entry_node_ids": [
+            "DHW-DATAPATH",
+            "DHW-STATE"
+          ],
+          "locator_status": "printed_start_from_partially_legible_ocr_toc_needs_visual_confirmation"
+        },
+        {
+          "ref": "4",
+          "title": "Implementing Integrated System Designs: From Circuit Topology to Patterning Geometry to Wafer Fabrication",
+          "printed_page_start": 91,
+          "use_when": "Symbolic layout, design-rule adaptation, chip production and multiproject chips",
+          "case_ids": [
+            "DHW-LAYOUT",
+            "DHW-FABRICATION"
+          ],
+          "entry_node_ids": [
+            "DHW-LAYOUT",
+            "DHW-FABRICATION"
+          ],
+          "locator_status": "printed_start_from_partially_legible_ocr_toc_needs_visual_confirmation"
+        },
+        {
+          "ref": "5",
+          "title": "Overview of an LSI Computer System and the Design of the OM2 Datapath Chip",
+          "printed_page_start": 145,
+          "use_when": "Functional partitioning into ALU, registers, buses, barrel shifter and register array",
+          "case_ids": [
+            "DHW-DATAPATH",
+            "DHW-SOFTCORE"
+          ],
+          "entry_node_ids": [
+            "DHW-DATAPATH",
+            "DHW-SOFTCORE"
+          ],
+          "locator_status": "printed_start_from_partially_legible_ocr_toc_needs_visual_confirmation"
+        },
+        {
+          "ref": "6",
+          "title": "Architecture and Design of System Controllers, and the Design of the OM2 Controller Chip",
+          "printed_page_start": 189,
+          "use_when": "Stored-program control, microprogramming and integrated controller architecture",
+          "case_ids": [
+            "DHW-SOFTCORE",
+            "DHW-STATE"
+          ],
+          "entry_node_ids": [
+            "DHW-SOFTCORE",
+            "DHW-STATE"
+          ],
+          "locator_status": "printed_start_from_partially_legible_ocr_toc_needs_visual_confirmation"
+        },
+        {
+          "ref": "7",
+          "title": "System Timing",
+          "printed_page_start": 218,
+          "use_when": "Synchronous clocks, distribution and skew, synchronization failure and self-timed systems",
+          "case_ids": [
+            "DHW-PHYSICAL-TIMING",
+            "DHW-TIMING"
+          ],
+          "entry_node_ids": [
+            "DHW-PHYSICAL-TIMING",
+            "DHW-TIMING"
+          ],
+          "locator_status": "printed_start_from_partially_legible_ocr_toc_needs_visual_confirmation"
+        },
+        {
+          "ref": "8",
+          "title": "Highly Concurrent Systems",
+          "printed_page_start": 263,
+          "use_when": "Global communication, hierarchically structured concurrent computation and processor arrays",
+          "case_ids": [
+            "DHW-PHYSICAL-TIMING",
+            "DHW-DATAPATH"
+          ],
+          "entry_node_ids": [
+            "DHW-PHYSICAL-TIMING",
+            "DHW-DATAPATH"
+          ],
+          "locator_status": "printed_start_from_partially_legible_ocr_toc_needs_visual_confirmation"
+        },
+        {
+          "ref": "9",
+          "title": "Physics of Computational Systems",
+          "printed_page_start": 333,
+          "use_when": "Voltage, charge discreteness, thermodynamic/quantum/physical limits and computational complexity",
+          "case_ids": [
+            "DHW-MOS",
+            "DHW-PHYSICAL-TIMING"
+          ],
+          "entry_node_ids": [
+            "DHW-MOS",
+            "DHW-PHYSICAL-TIMING"
+          ],
+          "locator_status": "printed_start_from_partially_legible_ocr_toc_needs_visual_confirmation"
+        }
+      ]
+    }
+  ],
+  "curiosity_atlas": {
+    "purpose": "Recognize a desired digital device, a surprising circuit behavior or a physical-design frustration; then open evidence-grounded technical distinctions, not watered-down encyclopedia articles.",
+    "families": [
+      {
+        "id": "visible",
+        "label": "What makes the hardware actually do something?",
+        "description": "Boards, LEDs, serial ports, video and working devices"
+      },
+      {
+        "id": "logic",
+        "label": "How does hardware represent useful computations?",
+        "description": "RTL, state, arithmetic, memories and soft processors"
+      },
+      {
+        "id": "time",
+        "label": "Why does timing make otherwise good designs fail?",
+        "description": "Clock setup/hold, crossing domains, communications and synchronization"
+      },
+      {
+        "id": "physical",
+        "label": "What makes circuits real physical things?",
+        "description": "Transistors, geometry, manufacturing and power"
+      },
+      {
+        "id": "choice",
+        "label": "Which implementation should I choose?",
+        "description": "FPGA versus custom chip, hardware versus firmware, historical toolchains"
+      }
+    ],
+    "entries": [
+      {
+        "id": "DHW-CURI-simulation",
+        "family_id": "visible",
+        "question": "Why does my FPGA work in simulation but not on the board?",
+        "aliases": [
+          "synthesis mismatch",
+          "works in testbench",
+          "hardware bug"
+        ],
+        "bridge_ids": [
+          "BUILD",
+          "TIME"
+        ],
+        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result."
+      },
+      {
+        "id": "DHW-CURI-led",
+        "family_id": "visible",
+        "question": "Can a few lines of code really turn an LED on and off?",
+        "aliases": [
+          "blink LED",
+          "what runs FPGA code"
+        ],
+        "bridge_ids": [
+          "BUILD"
+        ],
+        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result."
+      },
+      {
+        "id": "DHW-CURI-uart",
+        "family_id": "visible",
+        "question": "How does a computer read bytes from a wire with no clock signal?",
+        "aliases": [
+          "UART receiver",
+          "serial data"
+        ],
+        "bridge_ids": [
+          "SERIAL",
+          "TIME"
+        ],
+        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result."
+      },
+      {
+        "id": "DHW-CURI-vga",
+        "family_id": "visible",
+        "question": "How can a chip draw moving graphics on a screen?",
+        "aliases": [
+          "VGA",
+          "video timing",
+          "pixel scan"
+        ],
+        "bridge_ids": [
+          "VIDEO"
+        ],
+        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result."
+      },
+      {
+        "id": "DHW-CURI-keyboard",
+        "family_id": "visible",
+        "question": "How does a keyboard press become a digital event?",
+        "aliases": [
+          "scan code",
+          "PS2"
+        ],
+        "bridge_ids": [
+          "PERIPHERAL"
+        ],
+        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result."
+      },
+      {
+        "id": "DHW-CURI-missing",
+        "family_id": "visible",
+        "question": "Why does a circuit work on one FPGA board but not another?",
+        "aliases": [
+          "FPGA portability",
+          "different FPGA pinout"
+        ],
+        "bridge_ids": [
+          "PORTABLE",
+          "BUILD"
+        ],
+        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result."
+      },
+      {
+        "id": "DHW-CURI-if",
+        "family_id": "logic",
+        "question": "Does an if statement in Verilog make the circuit run instructions?",
+        "aliases": [
+          "if hardware",
+          "hardware RTL"
+        ],
+        "bridge_ids": [
+          "COMB",
+          "CONTROL"
+        ],
+        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result."
+      },
+      {
+        "id": "DHW-CURI-latch",
+        "family_id": "logic",
+        "question": "Why did my logic unexpectedly remember a previous input?",
+        "aliases": [
+          "inferred latch",
+          "always block bug"
+        ],
+        "bridge_ids": [
+          "COMB"
+        ],
+        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result."
+      },
+      {
+        "id": "DHW-CURI-debounce",
+        "family_id": "logic",
+        "question": "Why does one button press sometimes count as several?",
+        "aliases": [
+          "switch bounce",
+          "edge detect"
+        ],
+        "bridge_ids": [
+          "STATE",
+          "TIME"
+        ],
+        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result."
+      },
+      {
+        "id": "DHW-CURI-fsm",
+        "family_id": "logic",
+        "question": "How do I make a circuit perform a long calculation over several clocks?",
+        "aliases": [
+          "FSMD",
+          "iterative divider"
+        ],
+        "bridge_ids": [
+          "CONTROL"
+        ],
+        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result."
+      },
+      {
+        "id": "DHW-CURI-memory",
+        "family_id": "logic",
+        "question": "Can I make a memory with registers or do I need RAM?",
+        "aliases": [
+          "block ram",
+          "external SRAM",
+          "memory controller"
+        ],
+        "bridge_ids": [
+          "MEMORY"
+        ],
+        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result."
+      },
+      {
+        "id": "DHW-CURI-cpu",
+        "family_id": "logic",
+        "question": "Could I build a programmable computer inside an FPGA?",
+        "aliases": [
+          "softcore",
+          "PicoBlaze",
+          "CPU"
+        ],
+        "bridge_ids": [
+          "SOFTCORE",
+          "CONTROL"
+        ],
+        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result."
+      },
+      {
+        "id": "DHW-CURI-fast",
+        "family_id": "time",
+        "question": "Why can't I simply increase my clock speed indefinitely?",
+        "aliases": [
+          "setup hold",
+          "timing closure"
+        ],
+        "bridge_ids": [
+          "TIME",
+          "MOS"
+        ],
+        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result."
+      },
+      {
+        "id": "DHW-CURI-cdc",
+        "family_id": "time",
+        "question": "Why can two individually working circuits fail when connected?",
+        "aliases": [
+          "clock crossing",
+          "metastability",
+          "synchronizer"
+        ],
+        "bridge_ids": [
+          "TIME",
+          "PHYSICALCLOCK"
+        ],
+        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result."
+      },
+      {
+        "id": "DHW-CURI-uart-glitch",
+        "family_id": "time",
+        "question": "Why does my serial connection work at one baud rate and fail at another?",
+        "aliases": [
+          "baud mismatch",
+          "UART framing"
+        ],
+        "bridge_ids": [
+          "SERIAL"
+        ],
+        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result."
+      },
+      {
+        "id": "DHW-CURI-clockwire",
+        "family_id": "time",
+        "question": "Why does the same clock arrive at different parts of a chip at different times?",
+        "aliases": [
+          "clock skew",
+          "clock tree"
+        ],
+        "bridge_ids": [
+          "PHYSICALCLOCK"
+        ],
+        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result."
+      },
+      {
+        "id": "DHW-CURI-transistor",
+        "family_id": "physical",
+        "question": "How can one transistor behave like an electrical switch?",
+        "aliases": [
+          "MOSFET",
+          "CMOS gate",
+          "inverter"
+        ],
+        "bridge_ids": [
+          "MOS"
+        ],
+        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result."
+      },
+      {
+        "id": "DHW-CURI-wires",
+        "family_id": "physical",
+        "question": "Why can the wires on a chip make it slow?",
+        "aliases": [
+          "parasitic capacitance",
+          "physical routing"
+        ],
+        "bridge_ids": [
+          "MOS",
+          "LAYOUT"
+        ],
+        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result."
+      },
+      {
+        "id": "DHW-CURI-chips",
+        "family_id": "physical",
+        "question": "Why can't I just draw a circuit and have a flawless chip manufactured?",
+        "aliases": [
+          "fabrication yield",
+          "chip defects"
+        ],
+        "bridge_ids": [
+          "FAB",
+          "LAYOUT"
+        ],
+        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result."
+      },
+      {
+        "id": "DHW-CURI-area",
+        "family_id": "physical",
+        "question": "Why does making gates smaller not automatically make everything better?",
+        "aliases": [
+          "scaling",
+          "power delay",
+          "layout"
+        ],
+        "bridge_ids": [
+          "MOS",
+          "LAYOUT"
+        ],
+        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result."
+      },
+      {
+        "id": "DHW-CURI-hdl-vs-silicon",
+        "family_id": "choice",
+        "question": "Is making a custom silicon chip the same as programming an FPGA?",
+        "aliases": [
+          "FPGA vs ASIC",
+          "bitstream vs mask"
+        ],
+        "bridge_ids": [
+          "PORTABLE",
+          "FAB"
+        ],
+        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result."
+      },
+      {
+        "id": "DHW-CURI-firmware",
+        "family_id": "choice",
+        "question": "Should a feature be an FSM, custom datapath, or software on a small CPU?",
+        "aliases": [
+          "softcore or hardware",
+          "FSMD"
+        ],
+        "bridge_ids": [
+          "SOFTCORE",
+          "CONTROL"
+        ],
+        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result."
+      },
+      {
+        "id": "DHW-CURI-tool-old",
+        "family_id": "choice",
+        "question": "What parts of a 2008 Spartan-3 tutorial are still useful today?",
+        "aliases": [
+          "Xilinx ISE",
+          "Vivado",
+          "Yosys"
+        ],
+        "bridge_ids": [
+          "PORTABLE"
+        ],
+        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result."
+      },
+      {
+        "id": "DHW-CURI-test",
+        "family_id": "choice",
+        "question": "What evidence shows a digital design actually works beyond a passing unit test?",
+        "aliases": [
+          "FPGA validation",
+          "timing report",
+          "integration test"
+        ],
+        "bridge_ids": [
+          "BUILD",
+          "TIME",
+          "FAB"
+        ],
+        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result."
+      }
+    ],
+    "entry_policy": "Questions are entry surfaces. Shared technical nodes, book chapters and experiments keep single identities; differences in tools, materials and process generations are explicit."
+  },
+  "navigation_bridges": [
+    {
+      "id": "BUILD",
+      "question": "BUILD",
+      "choices": [
+        {
+          "label": "Functional output differs between simulator and physical device",
+          "technical_title": "Mapping and physical-implementation flow",
+          "distinguishing_question": "Was the failure behavioral, pin/clock/reset wiring, resource mapping, or a violated timing constraint?",
+          "why": "Compare the observable constraints with the proposed mechanism before treating it as the explanation; follow the cited book region and its evidence status.",
+          "targets": [
+            "DHW-FLOW",
+            "DHW-TIMING"
+          ],
+          "section_targets": [
+            {
+              "source_id": "CHU-VERILOG",
+              "ref": "2",
+              "level": "inspected",
+              "why": "Mapping and physical-implementation flow — Was the failure behavioral, pin/clock/reset wiring, resource mapping, or a violated timing constraint?"
+            }
+          ]
+        },
+        {
+          "label": "The design is correct but cannot reach the real peripheral",
+          "technical_title": "Board clock, pins and I/O interface contract",
+          "distinguishing_question": "Does the board actually offer that device, voltage, interface or connection?",
+          "why": "Compare the observable constraints with the proposed mechanism before treating it as the explanation; follow the cited book region and its evidence status.",
+          "targets": [
+            "DHW-FLOW",
+            "DHW-PERIPHERALS"
+          ],
+          "section_targets": [
+            {
+              "source_id": "CHU-VERILOG",
+              "ref": "2",
+              "level": "toc_only",
+              "why": "Board clock, pins and I/O interface contract — Does the board actually offer that device, voltage, interface or connection?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "COMB",
+      "question": "COMB",
+      "choices": [
+        {
+          "label": "A previously computed value persists unexpectedly",
+          "technical_title": "Unintended latch from incomplete assignment",
+          "distinguishing_question": "Does every output receive a value for every input combination?",
+          "why": "Compare the observable constraints with the proposed mechanism before treating it as the explanation; follow the cited book region and its evidence status.",
+          "targets": [
+            "DHW-COMB"
+          ],
+          "section_targets": [
+            {
+              "source_id": "CHU-VERILOG",
+              "ref": "3",
+              "level": "inspected",
+              "why": "Unintended latch from incomplete assignment — Does every output receive a value for every input combination?"
+            }
+          ]
+        },
+        {
+          "label": "The output is a complex mux or priority circuit",
+          "technical_title": "Hardware interpretation of conditional RTL",
+          "distinguishing_question": "Which branch priorities and gate structures are inferred, rather than which line executes first?",
+          "why": "Compare the observable constraints with the proposed mechanism before treating it as the explanation; follow the cited book region and its evidence status.",
+          "targets": [
+            "DHW-COMB",
+            "DHW-DATAPATH"
+          ],
+          "section_targets": [
+            {
+              "source_id": "CHU-VERILOG",
+              "ref": "3",
+              "level": "inspected",
+              "why": "Hardware interpretation of conditional RTL — Which branch priorities and gate structures are inferred, rather than which line executes first?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "STATE",
+      "question": "STATE",
+      "choices": [
+        {
+          "label": "Mechanical switch causes multiple changes",
+          "technical_title": "Contact bounce versus edge detection",
+          "distinguishing_question": "Does the input trace contain several transitions and how does a synchronizer/debouncer recognize one event?",
+          "why": "Compare the observable constraints with the proposed mechanism before treating it as the explanation; follow the cited book region and its evidence status.",
+          "targets": [
+            "DHW-STATE",
+            "DHW-TIMING"
+          ],
+          "section_targets": [
+            {
+              "source_id": "CHU-VERILOG",
+              "ref": "5",
+              "level": "toc_only",
+              "why": "Contact bounce versus edge detection — Does the input trace contain several transitions and how does a synchronizer/debouncer recognize one event?"
+            }
+          ]
+        },
+        {
+          "label": "Behavior must depend on earlier events",
+          "technical_title": "Registers and finite-state control",
+          "distinguishing_question": "Which history is necessary to determine the next output and transition?",
+          "why": "Compare the observable constraints with the proposed mechanism before treating it as the explanation; follow the cited book region and its evidence status.",
+          "targets": [
+            "DHW-STATE"
+          ],
+          "section_targets": [
+            {
+              "source_id": "CHU-VERILOG",
+              "ref": "4",
+              "level": "toc_only",
+              "why": "Registers and finite-state control — Which history is necessary to determine the next output and transition?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CONTROL",
+      "question": "CONTROL",
+      "choices": [
+        {
+          "label": "Arithmetic is broken into repeated small steps",
+          "technical_title": "FSM plus datapath and register transfers",
+          "distinguishing_question": "Can a limited datapath be reused over multiple cycles with explicit control?",
+          "why": "Compare the observable constraints with the proposed mechanism before treating it as the explanation; follow the cited book region and its evidence status.",
+          "targets": [
+            "DHW-DATAPATH",
+            "DHW-STATE"
+          ],
+          "section_targets": [
+            {
+              "source_id": "CHU-VERILOG",
+              "ref": "6",
+              "level": "toc_only",
+              "why": "FSM plus datapath and register transfers — Can a limited datapath be reused over multiple cycles with explicit control?"
+            }
+          ]
+        },
+        {
+          "label": "The operation is easier as programmable commands",
+          "technical_title": "Microprogrammed or stored-program controller",
+          "distinguishing_question": "Which tasks change in firmware and which are fixed-time datapath contracts?",
+          "why": "Compare the observable constraints with the proposed mechanism before treating it as the explanation; follow the cited book region and its evidence status.",
+          "targets": [
+            "DHW-SOFTCORE",
+            "DHW-DATAPATH"
+          ],
+          "section_targets": [
+            {
+              "source_id": "MEAD-CONWAY",
+              "ref": "6",
+              "level": "toc_only",
+              "why": "Microprogrammed or stored-program controller — Which tasks change in firmware and which are fixed-time datapath contracts?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "TIME",
+      "question": "TIME",
+      "choices": [
+        {
+          "label": "It is correct at slow clock but fails at higher frequency",
+          "technical_title": "Path delay and setup/hold margin",
+          "distinguishing_question": "Which register-to-register path, clock skew or external path budget is violated?",
+          "why": "Compare the observable constraints with the proposed mechanism before treating it as the explanation; follow the cited book region and its evidence status.",
+          "targets": [
+            "DHW-TIMING"
+          ],
+          "section_targets": [
+            {
+              "source_id": "CHU-VERILOG",
+              "ref": "4",
+              "level": "inspected",
+              "why": "Path delay and setup/hold margin — Which register-to-register path, clock skew or external path budget is violated?"
+            }
+          ]
+        },
+        {
+          "label": "Asynchronous signals arrive between clock edges",
+          "technical_title": "Clock-domain crossing and metastability",
+          "distinguishing_question": "What ownership/handshake/sampling guarantee prevents a transient violating downstream state?",
+          "why": "Compare the observable constraints with the proposed mechanism before treating it as the explanation; follow the cited book region and its evidence status.",
+          "targets": [
+            "DHW-PHYSICAL-TIMING",
+            "DHW-TIMING"
+          ],
+          "section_targets": [
+            {
+              "source_id": "MEAD-CONWAY",
+              "ref": "7",
+              "level": "inspected",
+              "why": "Clock-domain crossing and metastability — What ownership/handshake/sampling guarantee prevents a transient violating downstream state?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SERIAL",
+      "question": "SERIAL",
+      "choices": [
+        {
+          "label": "Serial bytes are corrupted intermittently",
+          "technical_title": "UART bit-center sampling and baud tolerance",
+          "distinguishing_question": "How does the receiver find the start bit and where is the data sampled?",
+          "why": "Compare the observable constraints with the proposed mechanism before treating it as the explanation; follow the cited book region and its evidence status.",
+          "targets": [
+            "DHW-UART"
+          ],
+          "section_targets": [
+            {
+              "source_id": "CHU-VERILOG",
+              "ref": "8",
+              "level": "inspected",
+              "why": "UART bit-center sampling and baud tolerance — How does the receiver find the start bit and where is the data sampled?"
+            }
+          ]
+        },
+        {
+          "label": "A baud generator seems to need another clock",
+          "technical_title": "Clock-enable ticks versus new generated clock domain",
+          "distinguishing_question": "Can sampling be implemented as synchronous enables without creating another clock domain?",
+          "why": "Compare the observable constraints with the proposed mechanism before treating it as the explanation; follow the cited book region and its evidence status.",
+          "targets": [
+            "DHW-UART",
+            "DHW-TIMING"
+          ],
+          "section_targets": [
+            {
+              "source_id": "CHU-VERILOG",
+              "ref": "8",
+              "level": "inspected",
+              "why": "Clock-enable ticks versus new generated clock domain — Can sampling be implemented as synchronous enables without creating another clock domain?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "MEMORY",
+      "question": "MEMORY",
+      "choices": [
+        {
+          "label": "I need a small FIFO or buffer inside the FPGA",
+          "technical_title": "Registers versus mapped on-chip block RAM",
+          "distinguishing_question": "What memory primitive, port timing and read-during-write behavior does the synthesizer implement?",
+          "why": "Compare the observable constraints with the proposed mechanism before treating it as the explanation; follow the cited book region and its evidence status.",
+          "targets": [
+            "DHW-MEMORY"
+          ],
+          "section_targets": [
+            {
+              "source_id": "CHU-VERILOG",
+              "ref": "12",
+              "level": "toc_only",
+              "why": "Registers versus mapped on-chip block RAM — What memory primitive, port timing and read-during-write behavior does the synthesizer implement?"
+            }
+          ]
+        },
+        {
+          "label": "My large memory lives outside the FPGA",
+          "technical_title": "External SRAM transaction and timing controller",
+          "distinguishing_question": "When is the address/data stable, when can the memory respond, and who arbitrates use?",
+          "why": "Compare the observable constraints with the proposed mechanism before treating it as the explanation; follow the cited book region and its evidence status.",
+          "targets": [
+            "DHW-MEMORY"
+          ],
+          "section_targets": [
+            {
+              "source_id": "CHU-VERILOG",
+              "ref": "11",
+              "level": "toc_only",
+              "why": "External SRAM transaction and timing controller — When is the address/data stable, when can the memory respond, and who arbitrates use?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "VIDEO",
+      "question": "VIDEO",
+      "choices": [
+        {
+          "label": "Output video is not synchronized",
+          "technical_title": "VGA pixel/line/frame timing",
+          "distinguishing_question": "Are pixel ticks, blanking and sync periods generated to match the interface's timing contract?",
+          "why": "Compare the observable constraints with the proposed mechanism before treating it as the explanation; follow the cited book region and its evidence status.",
+          "targets": [
+            "DHW-VIDEO"
+          ],
+          "section_targets": [
+            {
+              "source_id": "CHU-VERILOG",
+              "ref": "13",
+              "level": "toc_only",
+              "why": "VGA pixel/line/frame timing — Are pixel ticks, blanking and sync periods generated to match the interface's timing contract?"
+            }
+          ]
+        },
+        {
+          "label": "I want text or sprites without storing every pixel",
+          "technical_title": "Character and tile-mapped graphics architecture",
+          "distinguishing_question": "How are screen coordinates converted into glyph or tile indices and pixel data?",
+          "why": "Compare the observable constraints with the proposed mechanism before treating it as the explanation; follow the cited book region and its evidence status.",
+          "targets": [
+            "DHW-VIDEO",
+            "DHW-MEMORY"
+          ],
+          "section_targets": [
+            {
+              "source_id": "CHU-VERILOG",
+              "ref": "14",
+              "level": "toc_only",
+              "why": "Character and tile-mapped graphics architecture — How are screen coordinates converted into glyph or tile indices and pixel data?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PERIPHERAL",
+      "question": "PERIPHERAL",
+      "choices": [
+        {
+          "label": "A keyboard or mouse sends transitions that need decoding",
+          "technical_title": "Physical event to protocol frame",
+          "distinguishing_question": "What constitutes the complete command, and can errors recover?",
+          "why": "Compare the observable constraints with the proposed mechanism before treating it as the explanation; follow the cited book region and its evidence status.",
+          "targets": [
+            "DHW-PERIPHERALS"
+          ],
+          "section_targets": [
+            {
+              "source_id": "CHU-VERILOG",
+              "ref": "9",
+              "level": "toc_only",
+              "why": "Physical event to protocol frame — What constitutes the complete command, and can errors recover?"
+            }
+          ]
+        },
+        {
+          "label": "Data is valid but not arriving in usable time",
+          "technical_title": "Interface buffer and protocol backpressure",
+          "distinguishing_question": "What does the target module need to preserve and when can the receiver accept more events?",
+          "why": "Compare the observable constraints with the proposed mechanism before treating it as the explanation; follow the cited book region and its evidence status.",
+          "targets": [
+            "DHW-PERIPHERALS",
+            "DHW-MEMORY"
+          ],
+          "section_targets": [
+            {
+              "source_id": "CHU-VERILOG",
+              "ref": "10",
+              "level": "toc_only",
+              "why": "Interface buffer and protocol backpressure — What does the target module need to preserve and when can the receiver accept more events?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SOFTCORE",
+      "question": "SOFTCORE",
+      "choices": [
+        {
+          "label": "The control changes often or needs programs",
+          "technical_title": "Processor-based reprogrammable control",
+          "distinguishing_question": "What operation must be represented as data/instructions instead of fixed wiring?",
+          "why": "Compare the observable constraints with the proposed mechanism before treating it as the explanation; follow the cited book region and its evidence status.",
+          "targets": [
+            "DHW-SOFTCORE",
+            "DHW-DATAPATH"
+          ],
+          "section_targets": [
+            {
+              "source_id": "CHU-VERILOG",
+              "ref": "15",
+              "level": "toc_only",
+              "why": "Processor-based reprogrammable control — What operation must be represented as data/instructions instead of fixed wiring?"
+            }
+          ]
+        },
+        {
+          "label": "Hard timing dominates and operations are fixed",
+          "technical_title": "Dedicated state machine or datapath",
+          "distinguishing_question": "Can hardwired hardware perform the work without instruction overhead and with simpler latency?",
+          "why": "Compare the observable constraints with the proposed mechanism before treating it as the explanation; follow the cited book region and its evidence status.",
+          "targets": [
+            "DHW-DATAPATH",
+            "DHW-STATE"
+          ],
+          "section_targets": [
+            {
+              "source_id": "CHU-VERILOG",
+              "ref": "6",
+              "level": "toc_only",
+              "why": "Dedicated state machine or datapath — Can hardwired hardware perform the work without instruction overhead and with simpler latency?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "MOS",
+      "question": "MOS",
+      "choices": [
+        {
+          "label": "A logic gate works, but slower under load",
+          "technical_title": "Transistor drive and capacitive switching",
+          "distinguishing_question": "What load capacitance, fan-out and available current set the transition time?",
+          "why": "Compare the observable constraints with the proposed mechanism before treating it as the explanation; follow the cited book region and its evidence status.",
+          "targets": [
+            "DHW-MOS"
+          ],
+          "section_targets": [
+            {
+              "source_id": "MEAD-CONWAY",
+              "ref": "1",
+              "level": "inspected",
+              "why": "Transistor drive and capacitive switching — What load capacitance, fan-out and available current set the transition time?"
+            }
+          ]
+        },
+        {
+          "label": "I want smaller gates and better efficiency",
+          "technical_title": "Device scaling and interconnect tradeoffs",
+          "distinguishing_question": "Which dimensions/voltages actually scale and what physical constraints dominate?",
+          "why": "Compare the observable constraints with the proposed mechanism before treating it as the explanation; follow the cited book region and its evidence status.",
+          "targets": [
+            "DHW-MOS",
+            "DHW-LAYOUT"
+          ],
+          "section_targets": [
+            {
+              "source_id": "MEAD-CONWAY",
+              "ref": "1",
+              "level": "toc_only",
+              "why": "Device scaling and interconnect tradeoffs — Which dimensions/voltages actually scale and what physical constraints dominate?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "LAYOUT",
+      "question": "LAYOUT",
+      "choices": [
+        {
+          "label": "The circuit is logically correct but physical routing is expensive",
+          "technical_title": "Geometry and parasitic interconnect constraints",
+          "distinguishing_question": "Can an electrically equivalent layout reduce wire/capacitance without violating process rules?",
+          "why": "Compare the observable constraints with the proposed mechanism before treating it as the explanation; follow the cited book region and its evidence status.",
+          "targets": [
+            "DHW-LAYOUT",
+            "DHW-MOS"
+          ],
+          "section_targets": [
+            {
+              "source_id": "MEAD-CONWAY",
+              "ref": "4",
+              "level": "toc_only",
+              "why": "Geometry and parasitic interconnect constraints — Can an electrically equivalent layout reduce wire/capacitance without violating process rules?"
+            }
+          ]
+        },
+        {
+          "label": "Two mask shapes touch or overlap incorrectly",
+          "technical_title": "Process design rules and layer semantics",
+          "distinguishing_question": "Which layer, contact and spacing rule controls a reliable physical implementation?",
+          "why": "Compare the observable constraints with the proposed mechanism before treating it as the explanation; follow the cited book region and its evidence status.",
+          "targets": [
+            "DHW-LAYOUT",
+            "DHW-FABRICATION"
+          ],
+          "section_targets": [
+            {
+              "source_id": "MEAD-CONWAY",
+              "ref": "2",
+              "level": "toc_only",
+              "why": "Process design rules and layer semantics — Which layer, contact and spacing rule controls a reliable physical implementation?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FAB",
+      "question": "FAB",
+      "choices": [
+        {
+          "label": "Chips from the same mask do not all function",
+          "technical_title": "Process defects and yield statistics",
+          "distinguishing_question": "How is expected yield affected by defect density, chip area and process control?",
+          "why": "Compare the observable constraints with the proposed mechanism before treating it as the explanation; follow the cited book region and its evidence status.",
+          "targets": [
+            "DHW-FABRICATION"
+          ],
+          "section_targets": [
+            {
+              "source_id": "MEAD-CONWAY",
+              "ref": "2",
+              "level": "inspected",
+              "why": "Process defects and yield statistics — How is expected yield affected by defect density, chip area and process control?"
+            }
+          ]
+        },
+        {
+          "label": "I want a one-off custom chip without my own fab",
+          "technical_title": "Multiproject chip and design-to-fabrication handoff",
+          "distinguishing_question": "Which layout artifact, design rules and shared fabrication service are actually required?",
+          "why": "Compare the observable constraints with the proposed mechanism before treating it as the explanation; follow the cited book region and its evidence status.",
+          "targets": [
+            "DHW-LAYOUT",
+            "DHW-FABRICATION"
+          ],
+          "section_targets": [
+            {
+              "source_id": "MEAD-CONWAY",
+              "ref": "4",
+              "level": "toc_only",
+              "why": "Multiproject chip and design-to-fabrication handoff — Which layout artifact, design rules and shared fabrication service are actually required?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PHYSICALCLOCK",
+      "question": "PHYSICALCLOCK",
+      "choices": [
+        {
+          "label": "One clock reaches different parts at different times",
+          "technical_title": "Clock distribution and skew",
+          "distinguishing_question": "Which path assumptions break when sampling edges do not arrive simultaneously?",
+          "why": "Compare the observable constraints with the proposed mechanism before treating it as the explanation; follow the cited book region and its evidence status.",
+          "targets": [
+            "DHW-PHYSICAL-TIMING"
+          ],
+          "section_targets": [
+            {
+              "source_id": "MEAD-CONWAY",
+              "ref": "7",
+              "level": "inspected",
+              "why": "Clock distribution and skew — Which path assumptions break when sampling edges do not arrive simultaneously?"
+            }
+          ]
+        },
+        {
+          "label": "A globally synchronous design has risky asynchronous boundaries",
+          "technical_title": "Handshake, synchronization and self-timed coordination",
+          "distinguishing_question": "Would local sequencing and acknowledgments remove a problematic global timing assumption?",
+          "why": "Compare the observable constraints with the proposed mechanism before treating it as the explanation; follow the cited book region and its evidence status.",
+          "targets": [
+            "DHW-PHYSICAL-TIMING"
+          ],
+          "section_targets": [
+            {
+              "source_id": "MEAD-CONWAY",
+              "ref": "7",
+              "level": "inspected",
+              "why": "Handshake, synchronization and self-timed coordination — Would local sequencing and acknowledgments remove a problematic global timing assumption?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PORTABLE",
+      "question": "PORTABLE",
+      "choices": [
+        {
+          "label": "I can use the RTL concept but not the old tools or board",
+          "technical_title": "Portable RTL versus vendor-specific primitives and constraints",
+          "distinguishing_question": "Which HDL constructs describe common hardware, and which rely on Spartan-3 or ISE?",
+          "why": "Compare the observable constraints with the proposed mechanism before treating it as the explanation; follow the cited book region and its evidence status.",
+          "targets": [
+            "DHW-FLOW",
+            "DHW-MEMORY"
+          ],
+          "section_targets": [
+            {
+              "source_id": "CHU-VERILOG",
+              "ref": "2",
+              "level": "inspected",
+              "why": "Portable RTL versus vendor-specific primitives and constraints — Which HDL constructs describe common hardware, and which rely on Spartan-3 or ISE?"
+            }
+          ]
+        },
+        {
+          "label": "I am comparing FPGA configuration with physical ASIC realization",
+          "technical_title": "Reprogrammable LUT fabric versus fixed transistor masks",
+          "distinguishing_question": "What functional flexibility, verification route, production cost and technology constraint actually changes?",
+          "why": "Compare the observable constraints with the proposed mechanism before treating it as the explanation; follow the cited book region and its evidence status.",
+          "targets": [
+            "DHW-FLOW",
+            "DHW-LAYOUT",
+            "DHW-FABRICATION"
+          ],
+          "section_targets": [
+            {
+              "source_id": "MEAD-CONWAY",
+              "ref": "4",
+              "level": "toc_only",
+              "why": "Reprogrammable LUT fabric versus fixed transistor masks — What functional flexibility, verification route, production cost and technology constraint actually changes?"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "landscape_views": [
+    {
+      "id": "what-can-compute",
+      "title": "What physical circuits are capable of useful computation?",
+      "short_label": "Capabilities",
+      "root_id": "DHW-ROOT",
+      "node_ids": [
+        "DHW-ROOT",
+        "DHW-MOS",
+        "DHW-COMB",
+        "DHW-STATE",
+        "DHW-DATAPATH",
+        "DHW-SOFTCORE"
+      ],
+      "parent_overrides": {
+        "DHW-MOS": "DHW-ROOT",
+        "DHW-COMB": "DHW-ROOT",
+        "DHW-STATE": "DHW-ROOT",
+        "DHW-DATAPATH": "DHW-ROOT",
+        "DHW-SOFTCORE": "DHW-ROOT"
+      },
+      "family_ids": [
+        "logic",
+        "physical"
+      ],
+      "rationale": "Choose a purpose and inspect the same shared technical records through a narrower decision landscape."
+    },
+    {
+      "id": "build-a-device",
+      "title": "How do I make an FPGA design work on actual hardware?",
+      "short_label": "Build it",
+      "root_id": "DHW-ROOT",
+      "node_ids": [
+        "DHW-ROOT",
+        "DHW-FLOW",
+        "DHW-COMB",
+        "DHW-STATE",
+        "DHW-DATAPATH",
+        "DHW-UART",
+        "DHW-MEMORY",
+        "DHW-PERIPHERALS",
+        "DHW-VIDEO"
+      ],
+      "parent_overrides": {
+        "DHW-FLOW": "DHW-ROOT",
+        "DHW-COMB": "DHW-ROOT",
+        "DHW-STATE": "DHW-ROOT",
+        "DHW-DATAPATH": "DHW-ROOT",
+        "DHW-UART": "DHW-ROOT",
+        "DHW-MEMORY": "DHW-ROOT",
+        "DHW-PERIPHERALS": "DHW-ROOT",
+        "DHW-VIDEO": "DHW-ROOT"
+      },
+      "family_ids": [
+        "visible",
+        "logic"
+      ],
+      "rationale": "Choose a purpose and inspect the same shared technical records through a narrower decision landscape."
+    },
+    {
+      "id": "timing-and-failure",
+      "title": "Why do working designs fail with changing time or physical conditions?",
+      "short_label": "Timing",
+      "root_id": "DHW-ROOT",
+      "node_ids": [
+        "DHW-ROOT",
+        "DHW-TIMING",
+        "DHW-PHYSICAL-TIMING",
+        "DHW-UART",
+        "DHW-MOS",
+        "DHW-FLOW",
+        "DHW-FABRICATION"
+      ],
+      "parent_overrides": {
+        "DHW-TIMING": "DHW-ROOT",
+        "DHW-PHYSICAL-TIMING": "DHW-ROOT",
+        "DHW-UART": "DHW-ROOT",
+        "DHW-MOS": "DHW-ROOT",
+        "DHW-FLOW": "DHW-ROOT",
+        "DHW-FABRICATION": "DHW-ROOT"
+      },
+      "family_ids": [
+        "time",
+        "physical"
+      ],
+      "rationale": "Choose a purpose and inspect the same shared technical records through a narrower decision landscape."
+    },
+    {
+      "id": "silicon-and-design",
+      "title": "What makes an abstract logic function physically manufacturable?",
+      "short_label": "Silicon",
+      "root_id": "DHW-ROOT",
+      "node_ids": [
+        "DHW-ROOT",
+        "DHW-MOS",
+        "DHW-LAYOUT",
+        "DHW-FABRICATION",
+        "DHW-PHYSICAL-TIMING",
+        "DHW-DATAPATH",
+        "DHW-SOFTCORE"
+      ],
+      "parent_overrides": {
+        "DHW-MOS": "DHW-ROOT",
+        "DHW-LAYOUT": "DHW-ROOT",
+        "DHW-FABRICATION": "DHW-ROOT",
+        "DHW-PHYSICAL-TIMING": "DHW-ROOT",
+        "DHW-DATAPATH": "DHW-ROOT",
+        "DHW-SOFTCORE": "DHW-ROOT"
+      },
+      "family_ids": [
+        "physical",
+        "choice"
+      ],
+      "rationale": "Choose a purpose and inspect the same shared technical records through a narrower decision landscape."
+    },
+    {
+      "id": "architecture-and-tradeoffs",
+      "title": "Which representation and implementation earns its complexity?",
+      "short_label": "Alternatives",
+      "root_id": "DHW-ROOT",
+      "node_ids": [
+        "DHW-ROOT",
+        "DHW-FLOW",
+        "DHW-DATAPATH",
+        "DHW-SOFTCORE",
+        "DHW-TIMING",
+        "DHW-MEMORY",
+        "DHW-LAYOUT",
+        "DHW-FABRICATION"
+      ],
+      "parent_overrides": {
+        "DHW-FLOW": "DHW-ROOT",
+        "DHW-DATAPATH": "DHW-ROOT",
+        "DHW-SOFTCORE": "DHW-ROOT",
+        "DHW-TIMING": "DHW-ROOT",
+        "DHW-MEMORY": "DHW-ROOT",
+        "DHW-LAYOUT": "DHW-ROOT",
+        "DHW-FABRICATION": "DHW-ROOT"
+      },
+      "family_ids": [
+        "choice",
+        "logic"
+      ],
+      "rationale": "Choose a purpose and inspect the same shared technical records through a narrower decision landscape."
+    }
+  ],
+  "nodes": [
+    {
+      "id": "DHW-ROOT",
+      "parent_id": null,
+      "kind": "technical_question",
+      "question": "How do we turn a functional idea into reliable working digital hardware, from HDL to physical integrated circuits?",
+      "why": "The same behavior must satisfy logic, state, timing, electrical, toolchain, fabrication and verification constraints.",
+      "mechanism_explanation": "Use function, state, timing, interfaces and physical implementation as composable—not interchangeable—contracts.",
+      "status": "active_question",
+      "evidence_status": "active_question",
+      "source_sections": [],
+      "technical_distinctions": [],
+      "unresolved_questions": [
+        "The linked chapter is a retrieval lead; substantive validation or implementation is not yet documented."
+      ]
+    },
+    {
+      "id": "DHW-FLOW",
+      "parent_id": "DHW-ROOT",
+      "kind": "design_study",
+      "question": "What is the actual path from HDL and simulation to a physical FPGA?",
+      "why": "Code describes behavior; the FPGA configuration depends on synthesis, technology mapping, placement, routing, timing and board constraints.",
+      "mechanism_explanation": "The 2008 text shows HDL → synthesis/implementation → device programming on Spartan-3/ISE. Contemporary systems keep the conceptual pipeline but require a platform-specific implementation and bitstream flow.",
+      "status": "source_section_inspected",
+      "evidence_status": "source_section_inspected",
+      "source_sections": [
+        {
+          "source_id": "CHU-VERILOG",
+          "section": "Ch. 2, FPGA overview, synthesis/implement/download",
+          "pages": "Chapter 2; printed start not verified",
+          "page_scheme": "chapter/section lookup",
+          "locator_level": "inspected"
+        }
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "Simulation versus physical realization",
+          "mechanism": "An RTL simulation models specified behavior while the implemented circuit occupies particular cells and wires with delays.",
+          "discriminating_observation": "Does a representative design pass both a behavioral run and board-level I/O/timing?"
+        }
+      ],
+      "minimum_reconstruction_probe": "Implement one clocked counter on an available board, inspect actual mapped resources and the timing report, and verify pin behavior.",
+      "unresolved_questions": [
+        "Which target family, toolchain, and concrete constraints make this explanation insufficient for a present-day device?"
+      ]
+    },
+    {
+      "id": "DHW-COMB",
+      "parent_id": "DHW-ROOT",
+      "kind": "design_study",
+      "question": "Why can a Verilog combinational block accidentally remember something?",
+      "why": "Incomplete assignments can synthesize an unexpected latch; text shape and intended truth table can diverge.",
+      "mechanism_explanation": "Chu's RT-level combinational discussion explicitly identifies incomplete branch/output assignment as a way an internal state element or feedback is inferred. Conditional control logic maps to mux/priority structures; a source-level if is not necessarily an instruction executed by a CPU.",
+      "status": "source_section_inspected",
+      "evidence_status": "source_section_inspected",
+      "source_sections": [
+        {
+          "source_id": "CHU-VERILOG",
+          "section": "Ch. 3, incomplete branch/output assignment and combinational always blocks",
+          "pages": "Chapter 3; printed start not verified",
+          "page_scheme": "chapter/section lookup",
+          "locator_level": "inspected"
+        },
+        {
+          "source_id": "CHU-VERILOG",
+          "section": "Ch. 7, blocking versus nonblocking assignments",
+          "pages": "Chapter 7; printed start not verified",
+          "page_scheme": "chapter/section lookup",
+          "locator_level": "toc_only"
+        }
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "Combinational versus sequential behavior",
+          "mechanism": "A combinational output is fully determined by present inputs; a latch retains earlier information when enable conditions hold.",
+          "discriminating_observation": "Enumerate input combinations, inspect whether every output gets a value, and compare synthesized storage elements."
+        }
+      ],
+      "minimum_reconstruction_probe": "Synthesize two otherwise similar blocks with and without a missing assignment and inspect the inferred components.",
+      "unresolved_questions": [
+        "Which target family, toolchain, and concrete constraints make this explanation insufficient for a present-day device?"
+      ]
+    },
+    {
+      "id": "DHW-STATE",
+      "parent_id": "DHW-ROOT",
+      "kind": "design_study",
+      "question": "How can logic remember history and respond to events?",
+      "why": "Registers and finite-state machines express different reusable patterns for state evolution.",
+      "mechanism_explanation": "Counters and shift registers have regular next-state operations; finite-state machines encode irregular control transitions. Correctness requires explicit reset behavior and observation of state transitions in the intended clock domain.",
+      "status": "source_section_inspected",
+      "evidence_status": "source_section_inspected",
+      "source_sections": [
+        {
+          "source_id": "CHU-VERILOG",
+          "section": "Ch. 4, flip-flop/register, counter, FIFO and timing",
+          "pages": "Chapter 4; printed start not verified",
+          "page_scheme": "chapter/section lookup",
+          "locator_level": "toc_only"
+        },
+        {
+          "source_id": "CHU-VERILOG",
+          "section": "Ch. 5, FSM and switch-debouncing examples",
+          "pages": "Chapter 5; printed start not verified",
+          "page_scheme": "chapter/section lookup",
+          "locator_level": "toc_only"
+        }
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "State representation versus implementation",
+          "mechanism": "A behavioral control state can be encoded differently in flip-flops without changing its visible transition contract.",
+          "discriminating_observation": "Can a trace of inputs, clocks, current state and outputs reconstruct every transition?"
+        }
+      ],
+      "minimum_reconstruction_probe": "Implement a debounce-and-edge detector and distinguish contact chatter from unintended repeated state changes.",
+      "unresolved_questions": [
+        "Which target family, toolchain, and concrete constraints make this explanation insufficient for a present-day device?"
+      ]
+    },
+    {
+      "id": "DHW-DATAPATH",
+      "parent_id": "DHW-ROOT",
+      "kind": "technical_question",
+      "question": "When should I separate a controller from a datapath?",
+      "why": "An FSMD combines conditional state sequencing with register-transfer operations; a chip datapath and controller can be designed as separate contracts.",
+      "mechanism_explanation": "Chu's preface and Ch. 6 outline register-transfer FSMD organization; Mead–Conway Chs. 3, 5 and 6 show how data paths, state and controller choices shape integrated computer structures.",
+      "status": "candidate",
+      "evidence_status": "candidate",
+      "source_sections": [
+        {
+          "source_id": "CHU-VERILOG",
+          "section": "Ch. 6, FSMD, divider, Fibonacci and binary-to-BCD",
+          "pages": "Chapter 6; printed start not verified",
+          "page_scheme": "chapter/section lookup",
+          "locator_level": "toc_only"
+        },
+        {
+          "source_id": "MEAD-CONWAY",
+          "section": "Ch. 5, OM2 ALU/registers/buses and barrel shifter",
+          "pages": "Chapter 5 — approximately printed p. 145; see printed table of contents",
+          "page_scheme": "printed pages, starts interpreted from OCR TOC",
+          "locator_level": "toc_only"
+        }
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "Control flow versus data transformation",
+          "mechanism": "The controller determines *which step and when*; datapath components determine the values transformed and stored.",
+          "discriminating_observation": "Can alternate controllers operate on the same datapath without changing its arithmetic semantics?"
+        }
+      ],
+      "minimum_reconstruction_probe": "Implement an iterative divider with explicit control/state and datapath registers; compare cycle count and hardware use against a combinational alternative.",
+      "unresolved_questions": [
+        "The linked chapter is a retrieval lead; substantive validation or implementation is not yet documented."
+      ]
+    },
+    {
+      "id": "DHW-TIMING",
+      "parent_id": "DHW-ROOT",
+      "kind": "design_study",
+      "question": "Why can a circuit work in simulation but fail at speed?",
+      "why": "Flip-flops require setup/hold; a combinational path and clock distribution bound safe sampling.",
+      "mechanism_explanation": "Chu's synchronous circuit discussion separates clock-to-Q, propagation and setup/hold timing. Implementable clock rate depends on the particular mapped path, not the developer's intended nominal frequency.",
+      "status": "source_section_inspected",
+      "evidence_status": "source_section_inspected",
+      "source_sections": [
+        {
+          "source_id": "CHU-VERILOG",
+          "section": "Ch. 4, §4.1, synchronous timing, setup and hold",
+          "pages": "Chapter 4 — search the indicated section; printed start not verified",
+          "page_scheme": "chapter/section lookup",
+          "locator_level": "inspected"
+        },
+        {
+          "source_id": "MEAD-CONWAY",
+          "section": "Ch. 7, clock distribution and synchronization failure",
+          "pages": "Chapter 7 — approximately printed p. 218; see printed table of contents",
+          "page_scheme": "printed pages, starts interpreted from OCR TOC",
+          "locator_level": "toc_only"
+        }
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "Synchronous functional correctness versus timing closure",
+          "mechanism": "A correct next-state function can still violate setup/hold in the realized placement.",
+          "discriminating_observation": "Check worst path delay and the clock/setup/hold budget, not only RTL waveform values."
+        }
+      ],
+      "minimum_reconstruction_probe": "Change arithmetic depth or pipeline placement and compare the timing path and real-device operation.",
+      "unresolved_questions": [
+        "Which target family, toolchain, and concrete constraints make this explanation insufficient for a present-day device?"
+      ]
+    },
+    {
+      "id": "DHW-UART",
+      "parent_id": "DHW-ROOT",
+      "kind": "design_study",
+      "question": "How can a receiver reconstruct bits when the wire carries no clock?",
+      "why": "UART receiver estimates bit centers from start-edge timing, baud-rate agreement and oversampling.",
+      "mechanism_explanation": "Chu's UART section uses 16x baud oversampling to estimate serial bit centers; its baud generator produces one-clock enables rather than a second physical clock domain. Incorrect tick rates or framing can corrupt serial interpretation.",
+      "status": "source_section_inspected",
+      "evidence_status": "source_section_inspected",
+      "source_sections": [
+        {
+          "source_id": "CHU-VERILOG",
+          "section": "Ch. 8, §8.2.1 oversampling and §8.2.2 baud-rate generator",
+          "pages": "Chapter 8 — search the indicated section; printed start not verified",
+          "page_scheme": "chapter/section lookup",
+          "locator_level": "inspected"
+        }
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "Sampling enable versus new clock",
+          "mechanism": "A synchronous tick within a clock domain is different from a separately clocked domain crossing.",
+          "discriminating_observation": "Does the receiver maintain framing under small baud mismatch and carefully timed noisy transitions?"
+        }
+      ],
+      "minimum_reconstruction_probe": "Implement UART RX/TX and sweep baud mismatch, start-bit glitches and frame length in realistic serial tests.",
+      "unresolved_questions": [
+        "Which target family, toolchain, and concrete constraints make this explanation insufficient for a present-day device?"
+      ]
+    },
+    {
+      "id": "DHW-MEMORY",
+      "parent_id": "DHW-ROOT",
+      "kind": "technical_question",
+      "question": "How do on-chip FPGA memories and an external RAM change the design?",
+      "why": "An RTL memory can map to registers, block RAM or external SRAM, each with distinct port and timing contracts.",
+      "mechanism_explanation": "The source's Chs. 11–12 distinguish external asynchronous SRAM-controller access timing from Spartan-3 specific internal memory usage. Neither inference nor pin-level memory behavior is guaranteed by a plain array declaration.",
+      "status": "candidate",
+      "evidence_status": "candidate",
+      "source_sections": [
+        {
+          "source_id": "CHU-VERILOG",
+          "section": "Ch. 11, safe SRAM controller vs aggressive timing",
+          "pages": "Chapter 11; printed start not verified",
+          "page_scheme": "chapter/section lookup",
+          "locator_level": "toc_only"
+        },
+        {
+          "source_id": "CHU-VERILOG",
+          "section": "Ch. 12, Spartan-3 memory primitives",
+          "pages": "Chapter 12; printed start not verified",
+          "page_scheme": "chapter/section lookup",
+          "locator_level": "toc_only"
+        }
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "Functional storage versus memory interface",
+          "mechanism": "A memory cell array is not a complete interface; address, latency, byte enables and arbitration determine correctness.",
+          "discriminating_observation": "Can read/write sequences establish the requested data and ordering under actual device latency?"
+        }
+      ],
+      "minimum_reconstruction_probe": "Compare a mapped on-chip FIFO with an external-memory transaction controller under a representative burst.",
+      "unresolved_questions": [
+        "The linked chapter is a retrieval lead; substantive validation or implementation is not yet documented."
+      ]
+    },
+    {
+      "id": "DHW-PERIPHERALS",
+      "parent_id": "DHW-ROOT",
+      "kind": "technical_question",
+      "question": "How can external electrical events become reliable device interfaces?",
+      "why": "Physical signaling, protocol state and host/device role are distinct contracts.",
+      "mechanism_explanation": "Chu Chs. 9–10 implement PS/2 keyboard and mouse protocols with scan-code interpretation and bidirectional roles. Examples are valuable protocol state machines but the particular physical ports may be absent on newer boards.",
+      "status": "candidate",
+      "evidence_status": "candidate",
+      "source_sections": [
+        {
+          "source_id": "CHU-VERILOG",
+          "section": "Ch. 9, PS/2 keyboard receiver and scan-code parser",
+          "pages": "Chapter 9; printed start not verified",
+          "page_scheme": "chapter/section lookup",
+          "locator_level": "toc_only"
+        },
+        {
+          "source_id": "CHU-VERILOG",
+          "section": "Ch. 10, PS/2 mouse bidirectional interface",
+          "pages": "Chapter 10; printed start not verified",
+          "page_scheme": "chapter/section lookup",
+          "locator_level": "toc_only"
+        }
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "Input samples versus protocol events",
+          "mechanism": "Electrical edges are not necessarily complete commands or user actions.",
+          "discriminating_observation": "Can the controller reject invalid framing and recover after partial or unexpected messages?"
+        }
+      ],
+      "unresolved_questions": [
+        "The linked chapter is a retrieval lead; substantive validation or implementation is not yet documented."
+      ]
+    },
+    {
+      "id": "DHW-VIDEO",
+      "parent_id": "DHW-ROOT",
+      "kind": "technical_question",
+      "question": "How can logic draw pictures or text on a display?",
+      "why": "Pixels require coordinated spatial addressing, scan timing and data bandwidth, not simply writing a 2D array.",
+      "mechanism_explanation": "Chu's Chs. 13–14 build VGA graphics synchronization and text/tile addressing. Their legacy VGA electrical and timing interface illustrates constraints that HDMI, DisplayPort and modern display pipelines implement differently.",
+      "status": "candidate",
+      "evidence_status": "candidate",
+      "source_sections": [
+        {
+          "source_id": "CHU-VERILOG",
+          "section": "Ch. 13, VGA synchronization, bitmap/object graphics",
+          "pages": "Chapter 13; printed start not verified",
+          "page_scheme": "chapter/section lookup",
+          "locator_level": "toc_only"
+        },
+        {
+          "source_id": "CHU-VERILOG",
+          "section": "Ch. 14, VGA text and tile-mapped graphics",
+          "pages": "Chapter 14; printed start not verified",
+          "page_scheme": "chapter/section lookup",
+          "locator_level": "toc_only"
+        }
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "Image model versus scanout transport",
+          "mechanism": "A framebuffer/tilemap specifies pixels; a video interface specifies when and how those pixels are transmitted.",
+          "discriminating_observation": "Can the implementation meet pixel timing while concurrent logic updates display data?"
+        }
+      ],
+      "minimum_reconstruction_probe": "Render a moving tile on a real display, observe blanking and verify that buffer reads meet pixel-rate timing.",
+      "unresolved_questions": [
+        "The linked chapter is a retrieval lead; substantive validation or implementation is not yet documented."
+      ]
+    },
+    {
+      "id": "DHW-SOFTCORE",
+      "parent_id": "DHW-ROOT",
+      "kind": "technical_question",
+      "question": "When should the hardware contain a programmable CPU instead of hardwired control?",
+      "why": "A soft-core executes stored instructions; an FSM or dedicated datapath implements a narrower workload directly.",
+      "mechanism_explanation": "Chu Chs. 15–18 introduce PicoBlaze, assembly, I/O and interrupts; Mead–Conway Chs. 5–6 illustrate a datapath/controller composition. A processor trades instruction overhead and state for programmability, not automatic improvement.",
+      "status": "candidate",
+      "evidence_status": "candidate",
+      "source_sections": [
+        {
+          "source_id": "CHU-VERILOG",
+          "section": "Ch. 15, PicoBlaze organization",
+          "pages": "Chapter 15; printed start not verified",
+          "page_scheme": "chapter/section lookup",
+          "locator_level": "toc_only"
+        },
+        {
+          "source_id": "CHU-VERILOG",
+          "section": "Ch. 16, assembly",
+          "pages": "Chapter 16; printed start not verified",
+          "page_scheme": "chapter/section lookup",
+          "locator_level": "toc_only"
+        },
+        {
+          "source_id": "CHU-VERILOG",
+          "section": "Ch. 17, customized I/O",
+          "pages": "Chapter 17; printed start not verified",
+          "page_scheme": "chapter/section lookup",
+          "locator_level": "toc_only"
+        },
+        {
+          "source_id": "CHU-VERILOG",
+          "section": "Ch. 18, interrupts",
+          "pages": "Chapter 18; printed start not verified",
+          "page_scheme": "chapter/section lookup",
+          "locator_level": "toc_only"
+        },
+        {
+          "source_id": "MEAD-CONWAY",
+          "section": "Ch. 6, stored-program and microprogrammed controllers",
+          "pages": "Chapter 6 — approximately printed p. 189; see printed table of contents",
+          "page_scheme": "printed pages, starts interpreted from OCR TOC",
+          "locator_level": "toc_only"
+        }
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "Programmable control versus fixed function",
+          "mechanism": "The critical variable is variability of behavior and cost of changing it versus timing/area overhead.",
+          "discriminating_observation": "Can the same application be updated by replacing firmware only, and what latency/area does that flexibility require?"
+        }
+      ],
+      "minimum_reconstruction_probe": "Implement one I/O feature twice—FSMD and software running on a soft-core—and compare end-to-end functional change cost.",
+      "unresolved_questions": [
+        "The linked chapter is a retrieval lead; substantive validation or implementation is not yet documented."
+      ]
+    },
+    {
+      "id": "DHW-MOS",
+      "parent_id": "DHW-ROOT",
+      "kind": "design_study",
+      "question": "How do a handful of transistors become gates with real delays?",
+      "why": "MOS gate voltage controls conduction; capacitance and transistor/current limits shape digital switching.",
+      "mechanism_explanation": "Mead–Conway Ch. 1 explains MOS switching, inverter operation, loading and delay. A Boolean '1' abstracts away analog transfer curves, transition times, power and noise margins.",
+      "status": "source_section_inspected",
+      "evidence_status": "source_section_inspected",
+      "source_sections": [
+        {
+          "source_id": "MEAD-CONWAY",
+          "section": "Ch. 1, §1.1 MOS transistor, §1.2 inverter, §1.3 delay",
+          "pages": "Chapter 1 — approximately printed p. 1; see printed table of contents",
+          "page_scheme": "printed pages, starts interpreted from OCR TOC",
+          "locator_level": "inspected"
+        }
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "Logic state versus analog transition",
+          "mechanism": "A digital gate maps voltage regions to logic, while its internal switching is continuous and physically limited.",
+          "discriminating_observation": "How does added capacitive load affect transition delay and reachable clock period?"
+        }
+      ],
+      "minimum_reconstruction_probe": "Compare an inverter's logic truth table with a simple transistor/capacitance delay model across increasing load.",
+      "unresolved_questions": [
+        "Which target family, toolchain, and concrete constraints make this explanation insufficient for a present-day device?"
+      ]
+    },
+    {
+      "id": "DHW-LAYOUT",
+      "parent_id": "DHW-ROOT",
+      "kind": "technical_question",
+      "question": "Why can two electrically equivalent gate networks have very different physical quality?",
+      "why": "Transistor geometry, wire lengths, contacts, signal loading and design rules shape speed/area/yield.",
+      "mechanism_explanation": "The VLSI text spans symbolic layout and design-rule layers rather than treating gates as zero-area symbols; the same netlist can be physically arranged with different parasitic load and routing costs.",
+      "status": "candidate",
+      "evidence_status": "candidate",
+      "source_sections": [
+        {
+          "source_id": "MEAD-CONWAY",
+          "section": "Ch. 2, §2.6 design rules",
+          "pages": "Chapter 2 — approximately printed p. 38; see printed table of contents",
+          "page_scheme": "printed pages, starts interpreted from OCR TOC",
+          "locator_level": "toc_only"
+        },
+        {
+          "source_id": "MEAD-CONWAY",
+          "section": "Ch. 4, symbolic layout to pattern geometry",
+          "pages": "Chapter 4 — approximately printed p. 91; see printed table of contents",
+          "page_scheme": "printed pages, starts interpreted from OCR TOC",
+          "locator_level": "toc_only"
+        }
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "Connectivity versus geometry",
+          "mechanism": "A logically connected circuit is not necessarily fabricable at a specified feature size or routable/timing-correct.",
+          "discriminating_observation": "Can a different layout of the same schematic meet the rule set and measured critical delay?"
+        }
+      ],
+      "minimum_reconstruction_probe": "Sketch equivalent layouts and trace which local wire/capacitance/spacing constraints change.",
+      "unresolved_questions": [
+        "The linked chapter is a retrieval lead; substantive validation or implementation is not yet documented."
+      ]
+    },
+    {
+      "id": "DHW-FABRICATION",
+      "parent_id": "DHW-ROOT",
+      "kind": "design_study",
+      "question": "Why can a circuit design be correct but fail to become a reliable chip?",
+      "why": "Wafer-patterning steps, layer alignment and random defects constrain whether designed circuit patterns become functional devices.",
+      "mechanism_explanation": "Mead–Conway Ch. 2 covers nMOS process and yield statistics, and Ch. 4 layout-to-fabrication. Historical process rules are illustrative: a modern fabrication requires the actual target foundry PDK, DRC and signoff flow.",
+      "status": "source_section_inspected",
+      "evidence_status": "source_section_inspected",
+      "source_sections": [
+        {
+          "source_id": "MEAD-CONWAY",
+          "section": "Ch. 2, §2.3 silicon-gate nMOS process and §2.4 yield statistics",
+          "pages": "Chapter 2 — approximately printed p. 38; see printed table of contents",
+          "page_scheme": "printed pages, starts interpreted from OCR TOC",
+          "locator_level": "inspected"
+        },
+        {
+          "source_id": "MEAD-CONWAY",
+          "section": "Ch. 4, multiproject chip and layout exchange",
+          "pages": "Chapter 4 — approximately printed p. 91; see printed table of contents",
+          "page_scheme": "printed pages, starts interpreted from OCR TOC",
+          "locator_level": "toc_only"
+        }
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "Simulation versus fabrication yield",
+          "mechanism": "Logical functionality cannot eliminate process defects or guarantee manufactured pattern margins.",
+          "discriminating_observation": "What failures remain after design-rule checks and how does the expected yield change with area/defect rate?"
+        }
+      ],
+      "minimum_reconstruction_probe": "Use a published PDK's rule checks and a process-yield model rather than applying 1980 design dimensions to a new foundry.",
+      "unresolved_questions": [
+        "Which target family, toolchain, and concrete constraints make this explanation insufficient for a present-day device?"
+      ]
+    },
+    {
+      "id": "DHW-PHYSICAL-TIMING",
+      "parent_id": "DHW-ROOT",
+      "kind": "design_study",
+      "question": "What can a clock coordinate, and what happens when timing assumptions fail?",
+      "why": "Distributed clocks skew; asynchronous events can violate sampling assumptions; handshake/self-timed approaches exchange global clock assumptions for protocol constraints.",
+      "mechanism_explanation": "Mead–Conway Ch. 7 discusses clock distribution, synchronization failure and self-timed signaling. A synchronizer may lower failure probability, but cannot remove metastability from physics.",
+      "status": "source_section_inspected",
+      "evidence_status": "source_section_inspected",
+      "source_sections": [
+        {
+          "source_id": "MEAD-CONWAY",
+          "section": "Ch. 7, §7.3 clock distribution, §7.5 synchronization failure, §7.6–7.8 self-timed systems",
+          "pages": "Chapter 7 — approximately printed p. 218; see printed table of contents",
+          "page_scheme": "printed pages, starts interpreted from OCR TOC",
+          "locator_level": "inspected"
+        }
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "Global synchrony versus asynchronous coordination",
+          "mechanism": "Clocked elements require bounded skew/delay; asynchronous protocols require correct event ordering and completion acknowledgement.",
+          "discriminating_observation": "Can an out-of-domain input be sampled without creating an uncontrollable state transition?"
+        }
+      ],
+      "minimum_reconstruction_probe": "Compare direct asynchronous sampling to a synchronized or handshake protocol on changing input phase; measure error symptoms rather than assuming zero risk.",
+      "unresolved_questions": [
+        "Which target family, toolchain, and concrete constraints make this explanation insufficient for a present-day device?"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "from": "DHW-COMB",
+      "to": "DHW-STATE",
+      "relationship": "adds_persistence",
+      "why": "State is the new mechanism beyond a total combinational input-output mapping"
+    },
+    {
+      "from": "DHW-STATE",
+      "to": "DHW-DATAPATH",
+      "relationship": "composes_with",
+      "why": "Control state determines register-transfer steps and datapath operations"
+    },
+    {
+      "from": "DHW-FLOW",
+      "to": "DHW-TIMING",
+      "relationship": "requires",
+      "why": "Technology-mapped logic has physically measurable paths and timing requirements"
+    },
+    {
+      "from": "DHW-UART",
+      "to": "DHW-TIMING",
+      "relationship": "requires",
+      "why": "Bit-center sampling and baud-rate ticks depend on a clocking contract"
+    },
+    {
+      "from": "DHW-UART",
+      "to": "DHW-PERIPHERALS",
+      "relationship": "generalizes",
+      "why": "Serial framing is one example of protocol state and physical transport"
+    },
+    {
+      "from": "DHW-VIDEO",
+      "to": "DHW-MEMORY",
+      "relationship": "requires",
+      "why": "Pixel generation must satisfy access patterns and scanout bandwidth"
+    },
+    {
+      "from": "DHW-SOFTCORE",
+      "to": "DHW-DATAPATH",
+      "relationship": "alternative",
+      "why": "A stored-program controller and dedicated datapath can realize related behavior under different cost conditions"
+    },
+    {
+      "from": "DHW-MOS",
+      "to": "DHW-LAYOUT",
+      "relationship": "constrains",
+      "why": "Analog switching and load effects depend on physical connectivity and geometry"
+    },
+    {
+      "from": "DHW-LAYOUT",
+      "to": "DHW-FABRICATION",
+      "relationship": "depends_on",
+      "why": "Physical layout must satisfy a real fabrication process and its design rules"
+    },
+    {
+      "from": "DHW-PHYSICAL-TIMING",
+      "to": "DHW-TIMING",
+      "relationship": "constrains",
+      "why": "Clock skew, metastability and handshake behavior change timing guarantees"
+    },
+    {
+      "from": "DHW-FLOW",
+      "to": "DHW-FABRICATION",
+      "relationship": "contrasts",
+      "why": "Configuring premanufactured LUT fabric is different from manufacturing a custom transistor pattern"
+    }
+  ],
+  "source_coverage": {
+    "CHU-VERILOG": "18 chapter names/purposes inspected from the book preface and table of contents; selected passages on inferred latches, flip-flop timing, UART oversampling/clock-enable ticks and FPGA tool flow inspected; board-level implementations not independently executed.",
+    "MEAD-CONWAY": "9 chapters from OCR table of contents; inspected selected passages on MOS/inverter switching, yield and timing/synchronization; older nMOS implementation is a historical design and reasoning resource, not modern foundry guidance."
+  },
+  "shelf_subfolders": [
+    {
+      "name": "Binding_And_Logical_Gases",
+      "url": "https://drive.google.com/drive/folders/12WX4O3pf0U2iAy3JMHKzUreVLuB0UWN9",
+      "status": "empty_as_of_2026-11-21",
+      "future_role": "Potential gate-level mechanism and composition notes; do not invent contents"
+    },
+    {
+      "name": "Tacit",
+      "url": "https://drive.google.com/drive/folders/1dNsN1Hff4Pe6n9P50WB2hEE3CnYZmsWx",
+      "status": "empty_as_of_2026-11-21",
+      "future_role": "Potential physical hardware exercise and competence records; do not invent completed exercises"
+    }
+  ],
+  "source_policy": "Source chapter indexing is a one-time retrieval pass. Preserved sections are not proof of contemporary compatibility. An actual worked implementation, timing report, physical board trace, or design-rule signoff must be recorded separately.",
+  "portfolio_boundaries": [
+    {
+      "contrast": "FPGA RTL versus chip layout",
+      "distinction": "Program a fabricated routing/LUT fabric versus pattern the transistor/interconnect geometry itself; similar logic contracts but different technology flows and economics."
+    },
+    {
+      "contrast": "Behavioral simulation versus mapped or built hardware",
+      "distinction": "A behavioral waveform omits actual pin/clock constraints, placement-dependent delays and silicon manufacturing defects."
+    },
+    {
+      "contrast": "Portability versus source-generation era",
+      "distinction": "Chu's portable Verilog/FSMD patterns can transfer; Spartan-3 memory primitives, Xilinx ISE UI and PS/2 ports may not."
+    },
+    {
+      "contrast": "VLSI first principles versus production-ready PDK",
+      "distinction": "Mead–Conway teach geometry, timing and process abstractions in an older nMOS technology; modern devices/fabrication require their own process rule decks and signoff."
+    }
+  ]
+}
