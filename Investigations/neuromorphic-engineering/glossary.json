@@ -1,0 +1,3438 @@
+{
+  "schema_version": "1.0",
+  "domain_id": "neuromorphic-engineering",
+  "title": "Neuromorphic engineering — technical vocabulary landscape",
+  "scope": "Two indexed books plus explicitly marked adjacent candidates. Vocabulary inclusion does not mean a chapter was read, an experiment succeeded, or the term has a mapped question.",
+  "id_policy": "Permanent opaque domain-local IDs; never hash or renumber mutable labels. Keep redirects on genuine alias merges and never reuse retired IDs.",
+  "related_ids_semantics": "Related mechanisms are not synonyms and do not imply causal equivalence.",
+  "sources": [
+    {
+      "source_id": "MEAD-1989",
+      "title": "Analog VLSI and Neural Systems",
+      "link": "https://drive.google.com/file/d/1EoxZXhmCF_aiJCdQBhu8E2VUiw6xvY_Q/view"
+    },
+    {
+      "source_id": "LIU-2015",
+      "title": "Event-Based Neuromorphic Systems",
+      "link": "https://drive.google.com/file/d/1chsw9TCVW_qVTCvunYcIMSHWOdy99V43/view"
+    }
+  ],
+  "redirects": {
+    "nmr-t-0053": "nmr-t-0052",
+    "nmr-t-0058": "nmr-t-0057",
+    "nmr-t-0188": "nmr-t-0187",
+    "nmr-t-0233": "nmr-t-0232",
+    "nmr-t-0235": "nmr-t-0234",
+    "nmr-t-0289": "nmr-t-0048",
+    "nmr-t-0163": "nmr-t-0162",
+    "nmr-t-0183": "nmr-t-0182",
+    "nmr-t-0307": "nmr-t-0306",
+    "nmr-t-0264": "nmr-t-0263",
+    "nmr-t-0117": "nmr-t-0116",
+    "nmr-t-0380": "nmr-t-0379",
+    "nmr-t-0382": "nmr-t-0381",
+    "nmr-t-0404": "nmr-t-0403",
+    "nmr-t-0409": "nmr-t-0410",
+    "nmr-t-0275": "nmr-t-0274"
+  },
+  "terms": [
+    {
+      "id": "nmr-t-0001",
+      "label": "neuron",
+      "aliases": [],
+      "category": "Neural substrate and biology",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0002",
+      "label": "biological neuron",
+      "aliases": [],
+      "category": "Neural substrate and biology",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0003",
+      "label": "dendrite",
+      "aliases": [],
+      "category": "Neural substrate and biology",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0004",
+      "label": "axon",
+      "aliases": [],
+      "category": "Neural substrate and biology",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0005",
+      "label": "axon hillock",
+      "aliases": [],
+      "category": "Neural substrate and biology",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0006",
+      "label": "soma",
+      "aliases": [],
+      "category": "Neural substrate and biology",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0007",
+      "label": "nerve membrane",
+      "aliases": [],
+      "category": "Neural substrate and biology",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0008",
+      "label": "membrane potential",
+      "aliases": [],
+      "category": "Neural substrate and biology",
+      "origin": "source_topic_vocabulary",
+      "related_ids": [
+        "nmr-t-0023"
+      ]
+    },
+    {
+      "id": "nmr-t-0009",
+      "label": "resting potential",
+      "aliases": [],
+      "category": "Neural substrate and biology",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0010",
+      "label": "action potential",
+      "aliases": [],
+      "category": "Neural substrate and biology",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0011",
+      "label": "depolarization",
+      "aliases": [],
+      "category": "Neural substrate and biology",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0012",
+      "label": "repolarization",
+      "aliases": [],
+      "category": "Neural substrate and biology",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0013",
+      "label": "ion channel",
+      "aliases": [],
+      "category": "Neural substrate and biology",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0014",
+      "label": "channel conductance",
+      "aliases": [],
+      "category": "Neural substrate and biology",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0015",
+      "label": "leak conductance",
+      "aliases": [],
+      "category": "Neural substrate and biology",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0016",
+      "label": "ionic current",
+      "aliases": [],
+      "category": "Neural substrate and biology",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0017",
+      "label": "equilibrium potential",
+      "aliases": [],
+      "category": "Neural substrate and biology",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0018",
+      "label": "reversal potential",
+      "aliases": [],
+      "category": "Neural substrate and biology",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0019",
+      "label": "Nernst potential",
+      "aliases": [],
+      "category": "Neural substrate and biology",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0020",
+      "label": "conductance-based model",
+      "aliases": [],
+      "category": "Neural substrate and biology",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0021",
+      "label": "Hodgkin-Huxley model",
+      "aliases": [],
+      "category": "Neural substrate and biology",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0022",
+      "label": "integrate-and-fire model",
+      "aliases": [
+        "I&F model",
+        "IF neuron"
+      ],
+      "category": "Neural substrate and biology",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0023",
+      "label": "leaky integrate-and-fire model",
+      "aliases": [
+        "LIF model",
+        "LIF neuron"
+      ],
+      "category": "Neural substrate and biology",
+      "origin": "source_topic_vocabulary",
+      "related_ids": [
+        "nmr-t-0008"
+      ]
+    },
+    {
+      "id": "nmr-t-0024",
+      "label": "firing threshold",
+      "aliases": [],
+      "category": "Neural substrate and biology",
+      "origin": "source_topic_vocabulary",
+      "related_ids": [
+        "nmr-t-0025"
+      ]
+    },
+    {
+      "id": "nmr-t-0025",
+      "label": "refractory period",
+      "aliases": [],
+      "category": "Neural substrate and biology",
+      "origin": "source_topic_vocabulary",
+      "related_ids": [
+        "nmr-t-0024"
+      ]
+    },
+    {
+      "id": "nmr-t-0026",
+      "label": "firing rate",
+      "aliases": [],
+      "category": "Neural substrate and biology",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0027",
+      "label": "spike train",
+      "aliases": [],
+      "category": "Neural substrate and biology",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0028",
+      "label": "inter-spike interval",
+      "aliases": [],
+      "category": "Neural substrate and biology",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0029",
+      "label": "spike-frequency adaptation",
+      "aliases": [],
+      "category": "Neural substrate and biology",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0030",
+      "label": "temporal code",
+      "aliases": [],
+      "category": "Neural substrate and biology",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0031",
+      "label": "rate code",
+      "aliases": [],
+      "category": "Neural substrate and biology",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0032",
+      "label": "population code",
+      "aliases": [],
+      "category": "Neural substrate and biology",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0033",
+      "label": "neural variability",
+      "aliases": [],
+      "category": "Neural substrate and biology",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0034",
+      "label": "neuromodulation",
+      "aliases": [],
+      "category": "Neural substrate and biology",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0035",
+      "label": "shunting inhibition",
+      "aliases": [],
+      "category": "Neural substrate and biology",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0036",
+      "label": "excitatory synapse",
+      "aliases": [],
+      "category": "Neural substrate and biology",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0037",
+      "label": "inhibitory synapse",
+      "aliases": [],
+      "category": "Neural substrate and biology",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0038",
+      "label": "dendritic computation",
+      "aliases": [],
+      "category": "Neural substrate and biology",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0039",
+      "label": "retina",
+      "aliases": [],
+      "category": "Neural substrate and biology",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0040",
+      "label": "photoreceptor",
+      "aliases": [],
+      "category": "Neural substrate and biology",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0041",
+      "label": "horizontal cell",
+      "aliases": [],
+      "category": "Neural substrate and biology",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0042",
+      "label": "bipolar cell",
+      "aliases": [],
+      "category": "Neural substrate and biology",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0043",
+      "label": "ganglion cell",
+      "aliases": [],
+      "category": "Neural substrate and biology",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0044",
+      "label": "cochlea",
+      "aliases": [],
+      "category": "Neural substrate and biology",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0045",
+      "label": "basilar membrane",
+      "aliases": [],
+      "category": "Neural substrate and biology",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0046",
+      "label": "inner hair cell",
+      "aliases": [],
+      "category": "Neural substrate and biology",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0047",
+      "label": "outer hair cell",
+      "aliases": [],
+      "category": "Neural substrate and biology",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0048",
+      "label": "central pattern generator",
+      "aliases": [
+        "CPG"
+      ],
+      "category": "Neural substrate and biology",
+      "origin": "source_topic_vocabulary",
+      "related_ids": [
+        "nmr-t-0290"
+      ]
+    },
+    {
+      "id": "nmr-t-0049",
+      "label": "locomotor circuit",
+      "aliases": [],
+      "category": "Neural substrate and biology",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0050",
+      "label": "neuroprosthesis",
+      "aliases": [],
+      "category": "Neural substrate and biology",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0051",
+      "label": "attractor dynamics",
+      "aliases": [],
+      "category": "Neural substrate and biology",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0052",
+      "label": "MOS transistor",
+      "aliases": [
+        "MOSFET"
+      ],
+      "category": "Transistor physics and analog foundations",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0054",
+      "label": "CMOS",
+      "aliases": [],
+      "category": "Transistor physics and analog foundations",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0055",
+      "label": "NMOS",
+      "aliases": [],
+      "category": "Transistor physics and analog foundations",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0056",
+      "label": "PMOS",
+      "aliases": [],
+      "category": "Transistor physics and analog foundations",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0057",
+      "label": "subthreshold operation",
+      "aliases": [
+        "weak inversion"
+      ],
+      "category": "Transistor physics and analog foundations",
+      "origin": "source_topic_vocabulary",
+      "related_ids": [
+        "nmr-t-0061",
+        "nmr-t-0063"
+      ]
+    },
+    {
+      "id": "nmr-t-0059",
+      "label": "strong inversion",
+      "aliases": [],
+      "category": "Transistor physics and analog foundations",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0060",
+      "label": "Boltzmann distribution",
+      "aliases": [],
+      "category": "Transistor physics and analog foundations",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0061",
+      "label": "exponential current-voltage relation",
+      "aliases": [],
+      "category": "Transistor physics and analog foundations",
+      "origin": "source_topic_vocabulary",
+      "related_ids": [
+        "nmr-t-0057"
+      ]
+    },
+    {
+      "id": "nmr-t-0062",
+      "label": "thermal voltage",
+      "aliases": [],
+      "category": "Transistor physics and analog foundations",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0063",
+      "label": "transconductance",
+      "aliases": [],
+      "category": "Transistor physics and analog foundations",
+      "origin": "source_topic_vocabulary",
+      "related_ids": [
+        "nmr-t-0057"
+      ]
+    },
+    {
+      "id": "nmr-t-0064",
+      "label": "drain current",
+      "aliases": [],
+      "category": "Transistor physics and analog foundations",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0065",
+      "label": "drain conductance",
+      "aliases": [],
+      "category": "Transistor physics and analog foundations",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0066",
+      "label": "body effect",
+      "aliases": [],
+      "category": "Transistor physics and analog foundations",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0067",
+      "label": "current mirror",
+      "aliases": [
+        "current mirror circuit"
+      ],
+      "category": "Transistor physics and analog foundations",
+      "origin": "source_topic_vocabulary",
+      "related_ids": [
+        "nmr-t-0084",
+        "nmr-t-0068"
+      ]
+    },
+    {
+      "id": "nmr-t-0068",
+      "label": "current reference",
+      "aliases": [],
+      "category": "Transistor physics and analog foundations",
+      "origin": "source_topic_vocabulary",
+      "related_ids": [
+        "nmr-t-0067"
+      ]
+    },
+    {
+      "id": "nmr-t-0069",
+      "label": "current splitter",
+      "aliases": [],
+      "category": "Transistor physics and analog foundations",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0070",
+      "label": "differential pair",
+      "aliases": [],
+      "category": "Transistor physics and analog foundations",
+      "origin": "source_topic_vocabulary",
+      "related_ids": [
+        "nmr-t-0071"
+      ]
+    },
+    {
+      "id": "nmr-t-0071",
+      "label": "transconductance amplifier",
+      "aliases": [],
+      "category": "Transistor physics and analog foundations",
+      "origin": "source_topic_vocabulary",
+      "related_ids": [
+        "nmr-t-0070"
+      ]
+    },
+    {
+      "id": "nmr-t-0072",
+      "label": "operational transconductance amplifier",
+      "aliases": [
+        "OTA"
+      ],
+      "category": "Transistor physics and analog foundations",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0073",
+      "label": "source follower",
+      "aliases": [],
+      "category": "Transistor physics and analog foundations",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0074",
+      "label": "capacitor",
+      "aliases": [],
+      "category": "Transistor physics and analog foundations",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0075",
+      "label": "capacitance",
+      "aliases": [],
+      "category": "Transistor physics and analog foundations",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0076",
+      "label": "charge conservation",
+      "aliases": [],
+      "category": "Transistor physics and analog foundations",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0077",
+      "label": "RC time constant",
+      "aliases": [],
+      "category": "Transistor physics and analog foundations",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0078",
+      "label": "leakage current",
+      "aliases": [],
+      "category": "Transistor physics and analog foundations",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0079",
+      "label": "thermal noise",
+      "aliases": [],
+      "category": "Transistor physics and analog foundations",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0080",
+      "label": "shot noise",
+      "aliases": [],
+      "category": "Transistor physics and analog foundations",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0081",
+      "label": "flicker noise",
+      "aliases": [],
+      "category": "Transistor physics and analog foundations",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0082",
+      "label": "transistor mismatch",
+      "aliases": [],
+      "category": "Transistor physics and analog foundations",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0083",
+      "label": "device offset",
+      "aliases": [],
+      "category": "Transistor physics and analog foundations",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0084",
+      "label": "bias current",
+      "aliases": [],
+      "category": "Transistor physics and analog foundations",
+      "origin": "source_topic_vocabulary",
+      "related_ids": [
+        "nmr-t-0067"
+      ]
+    },
+    {
+      "id": "nmr-t-0085",
+      "label": "bias generator",
+      "aliases": [],
+      "category": "Transistor physics and analog foundations",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0086",
+      "label": "power-supply rejection ratio",
+      "aliases": [],
+      "category": "Transistor physics and analog foundations",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0087",
+      "label": "power dissipation",
+      "aliases": [],
+      "category": "Transistor physics and analog foundations",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0088",
+      "label": "voltage headroom",
+      "aliases": [],
+      "category": "Transistor physics and analog foundations",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0089",
+      "label": "dynamic range",
+      "aliases": [],
+      "category": "Transistor physics and analog foundations",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0090",
+      "label": "linearity",
+      "aliases": [],
+      "category": "Transistor physics and analog foundations",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0091",
+      "label": "saturation",
+      "aliases": [],
+      "category": "Transistor physics and analog foundations",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0092",
+      "label": "small-signal model",
+      "aliases": [],
+      "category": "Transistor physics and analog foundations",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0093",
+      "label": "large-signal response",
+      "aliases": [],
+      "category": "Transistor physics and analog foundations",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0094",
+      "label": "temperature dependence",
+      "aliases": [],
+      "category": "Transistor physics and analog foundations",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0095",
+      "label": "parasitic capacitance",
+      "aliases": [],
+      "category": "Transistor physics and analog foundations",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0096",
+      "label": "electrostatic coupling",
+      "aliases": [],
+      "category": "Transistor physics and analog foundations",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0097",
+      "label": "floating gate",
+      "aliases": [],
+      "category": "Transistor physics and analog foundations",
+      "origin": "source_topic_vocabulary",
+      "related_ids": [
+        "nmr-t-0101"
+      ]
+    },
+    {
+      "id": "nmr-t-0098",
+      "label": "hot-electron injection",
+      "aliases": [],
+      "category": "Transistor physics and analog foundations",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0099",
+      "label": "electron tunneling",
+      "aliases": [],
+      "category": "Transistor physics and analog foundations",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0100",
+      "label": "nonvolatile analog memory",
+      "aliases": [],
+      "category": "Transistor physics and analog foundations",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0101",
+      "label": "analog programmability",
+      "aliases": [],
+      "category": "Transistor physics and analog foundations",
+      "origin": "source_topic_vocabulary",
+      "related_ids": [
+        "nmr-t-0097"
+      ]
+    },
+    {
+      "id": "nmr-t-0102",
+      "label": "analog VLSI",
+      "aliases": [],
+      "category": "Physical arithmetic and continuous computation",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0103",
+      "label": "neuromorphic engineering",
+      "aliases": [
+        "neuromorphic systems"
+      ],
+      "category": "Physical arithmetic and continuous computation",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0104",
+      "label": "physical computation",
+      "aliases": [],
+      "category": "Physical arithmetic and continuous computation",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0105",
+      "label": "current-mode computation",
+      "aliases": [],
+      "category": "Physical arithmetic and continuous computation",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0106",
+      "label": "voltage-mode computation",
+      "aliases": [],
+      "category": "Physical arithmetic and continuous computation",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0107",
+      "label": "log-domain computation",
+      "aliases": [],
+      "category": "Physical arithmetic and continuous computation",
+      "origin": "source_topic_vocabulary",
+      "related_ids": [
+        "nmr-t-0108"
+      ]
+    },
+    {
+      "id": "nmr-t-0108",
+      "label": "translinear loop",
+      "aliases": [],
+      "category": "Physical arithmetic and continuous computation",
+      "origin": "source_topic_vocabulary",
+      "related_ids": [
+        "nmr-t-0107"
+      ]
+    },
+    {
+      "id": "nmr-t-0109",
+      "label": "four-quadrant multiplier",
+      "aliases": [],
+      "category": "Physical arithmetic and continuous computation",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0110",
+      "label": "squaring circuit",
+      "aliases": [],
+      "category": "Physical arithmetic and continuous computation",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0111",
+      "label": "nonlinear arithmetic",
+      "aliases": [],
+      "category": "Physical arithmetic and continuous computation",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0112",
+      "label": "current summation",
+      "aliases": [],
+      "category": "Physical arithmetic and continuous computation",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0113",
+      "label": "voltage summation",
+      "aliases": [],
+      "category": "Physical arithmetic and continuous computation",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0114",
+      "label": "resistive network",
+      "aliases": [],
+      "category": "Physical arithmetic and continuous computation",
+      "origin": "source_topic_vocabulary",
+      "related_ids": [
+        "nmr-t-0119",
+        "nmr-t-0116"
+      ]
+    },
+    {
+      "id": "nmr-t-0115",
+      "label": "electrotonic spread",
+      "aliases": [],
+      "category": "Physical arithmetic and continuous computation",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0116",
+      "label": "horizontal resistor",
+      "aliases": [
+        "HRes",
+        "horizontal resistance circuit"
+      ],
+      "category": "Physical arithmetic and continuous computation",
+      "origin": "source_topic_vocabulary",
+      "related_ids": [
+        "nmr-t-0114"
+      ]
+    },
+    {
+      "id": "nmr-t-0118",
+      "label": "resistive grid",
+      "aliases": [],
+      "category": "Physical arithmetic and continuous computation",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0119",
+      "label": "spatial smoothing",
+      "aliases": [],
+      "category": "Physical arithmetic and continuous computation",
+      "origin": "source_topic_vocabulary",
+      "related_ids": [
+        "nmr-t-0114"
+      ]
+    },
+    {
+      "id": "nmr-t-0120",
+      "label": "segmentation",
+      "aliases": [],
+      "category": "Physical arithmetic and continuous computation",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0121",
+      "label": "local connectivity",
+      "aliases": [],
+      "category": "Physical arithmetic and continuous computation",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0122",
+      "label": "follower aggregation",
+      "aliases": [],
+      "category": "Physical arithmetic and continuous computation",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0123",
+      "label": "winner-take-all",
+      "aliases": [],
+      "category": "Physical arithmetic and continuous computation",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0124",
+      "label": "normalization",
+      "aliases": [],
+      "category": "Physical arithmetic and continuous computation",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0125",
+      "label": "follower-integrator",
+      "aliases": [],
+      "category": "Physical arithmetic and continuous computation",
+      "origin": "source_topic_vocabulary",
+      "related_ids": [
+        "nmr-t-0131"
+      ]
+    },
+    {
+      "id": "nmr-t-0126",
+      "label": "continuous-time integrator",
+      "aliases": [],
+      "category": "Physical arithmetic and continuous computation",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0127",
+      "label": "differentiator",
+      "aliases": [],
+      "category": "Physical arithmetic and continuous computation",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0128",
+      "label": "hysteretic differentiator",
+      "aliases": [],
+      "category": "Physical arithmetic and continuous computation",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0129",
+      "label": "second-order section",
+      "aliases": [],
+      "category": "Physical arithmetic and continuous computation",
+      "origin": "source_topic_vocabulary",
+      "related_ids": [
+        "nmr-t-0132"
+      ]
+    },
+    {
+      "id": "nmr-t-0130",
+      "label": "second-order filter",
+      "aliases": [],
+      "category": "Physical arithmetic and continuous computation",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0131",
+      "label": "low-pass filter",
+      "aliases": [],
+      "category": "Physical arithmetic and continuous computation",
+      "origin": "source_topic_vocabulary",
+      "related_ids": [
+        "nmr-t-0125"
+      ]
+    },
+    {
+      "id": "nmr-t-0132",
+      "label": "bandpass filter",
+      "aliases": [],
+      "category": "Physical arithmetic and continuous computation",
+      "origin": "source_topic_vocabulary",
+      "related_ids": [
+        "nmr-t-0129"
+      ]
+    },
+    {
+      "id": "nmr-t-0133",
+      "label": "transfer function",
+      "aliases": [],
+      "category": "Physical arithmetic and continuous computation",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0134",
+      "label": "frequency response",
+      "aliases": [],
+      "category": "Physical arithmetic and continuous computation",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0135",
+      "label": "impulse response",
+      "aliases": [],
+      "category": "Physical arithmetic and continuous computation",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0136",
+      "label": "time constant",
+      "aliases": [],
+      "category": "Physical arithmetic and continuous computation",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0137",
+      "label": "gain control",
+      "aliases": [],
+      "category": "Physical arithmetic and continuous computation",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0138",
+      "label": "Q factor",
+      "aliases": [],
+      "category": "Physical arithmetic and continuous computation",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0139",
+      "label": "stability margin",
+      "aliases": [],
+      "category": "Physical arithmetic and continuous computation",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0140",
+      "label": "feedback loop",
+      "aliases": [],
+      "category": "Physical arithmetic and continuous computation",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0141",
+      "label": "logarithmic compression",
+      "aliases": [],
+      "category": "Physical arithmetic and continuous computation",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0142",
+      "label": "delay line",
+      "aliases": [],
+      "category": "Physical arithmetic and continuous computation",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0143",
+      "label": "wave propagation",
+      "aliases": [],
+      "category": "Physical arithmetic and continuous computation",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0144",
+      "label": "distributed computation",
+      "aliases": [],
+      "category": "Physical arithmetic and continuous computation",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0145",
+      "label": "computational substrate",
+      "aliases": [],
+      "category": "Physical arithmetic and continuous computation",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0146",
+      "label": "silicon neuron",
+      "aliases": [],
+      "category": "Silicon neurons and synapses",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0147",
+      "label": "silicon synapse",
+      "aliases": [],
+      "category": "Silicon neurons and synapses",
+      "origin": "source_topic_vocabulary",
+      "related_ids": [
+        "nmr-t-0158"
+      ]
+    },
+    {
+      "id": "nmr-t-0148",
+      "label": "axon-hillock circuit",
+      "aliases": [],
+      "category": "Silicon neurons and synapses",
+      "origin": "source_topic_vocabulary",
+      "related_ids": [
+        "nmr-t-0149"
+      ]
+    },
+    {
+      "id": "nmr-t-0149",
+      "label": "spike generator",
+      "aliases": [],
+      "category": "Silicon neurons and synapses",
+      "origin": "source_topic_vocabulary",
+      "related_ids": [
+        "nmr-t-0148"
+      ]
+    },
+    {
+      "id": "nmr-t-0150",
+      "label": "self-resetting neuron",
+      "aliases": [],
+      "category": "Silicon neurons and synapses",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0151",
+      "label": "conductance dynamics",
+      "aliases": [],
+      "category": "Silicon neurons and synapses",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0152",
+      "label": "neuromorphic refractory circuit",
+      "aliases": [],
+      "category": "Silicon neurons and synapses",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0153",
+      "label": "adaptive threshold",
+      "aliases": [],
+      "category": "Silicon neurons and synapses",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0154",
+      "label": "spiking threshold",
+      "aliases": [],
+      "category": "Silicon neurons and synapses",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0155",
+      "label": "refractory control",
+      "aliases": [],
+      "category": "Silicon neurons and synapses",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0156",
+      "label": "short-term plasticity",
+      "aliases": [],
+      "category": "Silicon neurons and synapses",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0157",
+      "label": "long-term plasticity",
+      "aliases": [],
+      "category": "Silicon neurons and synapses",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0158",
+      "label": "synaptic weight",
+      "aliases": [],
+      "category": "Silicon neurons and synapses",
+      "origin": "source_topic_vocabulary",
+      "related_ids": [
+        "nmr-t-0147"
+      ]
+    },
+    {
+      "id": "nmr-t-0159",
+      "label": "synaptic efficacy",
+      "aliases": [],
+      "category": "Silicon neurons and synapses",
+      "origin": "source_topic_vocabulary",
+      "related_ids": [
+        "nmr-t-0162"
+      ]
+    },
+    {
+      "id": "nmr-t-0160",
+      "label": "synaptic depression",
+      "aliases": [],
+      "category": "Silicon neurons and synapses",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0161",
+      "label": "synaptic facilitation",
+      "aliases": [],
+      "category": "Silicon neurons and synapses",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0162",
+      "label": "spike-timing-dependent plasticity",
+      "aliases": [
+        "STDP"
+      ],
+      "category": "Silicon neurons and synapses",
+      "origin": "source_topic_vocabulary",
+      "related_ids": [
+        "nmr-t-0159"
+      ]
+    },
+    {
+      "id": "nmr-t-0164",
+      "label": "homeostatic plasticity",
+      "aliases": [],
+      "category": "Silicon neurons and synapses",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0165",
+      "label": "Hebbian learning",
+      "aliases": [],
+      "category": "Silicon neurons and synapses",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0166",
+      "label": "associative memory",
+      "aliases": [],
+      "category": "Silicon neurons and synapses",
+      "origin": "source_topic_vocabulary",
+      "related_ids": [
+        "nmr-t-0167"
+      ]
+    },
+    {
+      "id": "nmr-t-0167",
+      "label": "attractor network",
+      "aliases": [],
+      "category": "Silicon neurons and synapses",
+      "origin": "source_topic_vocabulary",
+      "related_ids": [
+        "nmr-t-0166"
+      ]
+    },
+    {
+      "id": "nmr-t-0168",
+      "label": "attractor state",
+      "aliases": [],
+      "category": "Silicon neurons and synapses",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0169",
+      "label": "memory retention",
+      "aliases": [],
+      "category": "Silicon neurons and synapses",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0170",
+      "label": "memory decay",
+      "aliases": [],
+      "category": "Silicon neurons and synapses",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0171",
+      "label": "bounded synapse",
+      "aliases": [],
+      "category": "Silicon neurons and synapses",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0172",
+      "label": "multi-state synapse",
+      "aliases": [],
+      "category": "Silicon neurons and synapses",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0173",
+      "label": "bistable synapse",
+      "aliases": [],
+      "category": "Silicon neurons and synapses",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0174",
+      "label": "cascade model",
+      "aliases": [],
+      "category": "Silicon neurons and synapses",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0175",
+      "label": "plasticity circuit",
+      "aliases": [],
+      "category": "Silicon neurons and synapses",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0176",
+      "label": "on-chip learning",
+      "aliases": [],
+      "category": "Silicon neurons and synapses",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0177",
+      "label": "learning rule",
+      "aliases": [],
+      "category": "Silicon neurons and synapses",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0178",
+      "label": "NMDA synapse",
+      "aliases": [],
+      "category": "Silicon neurons and synapses",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0179",
+      "label": "biophysical neuron model",
+      "aliases": [],
+      "category": "Silicon neurons and synapses",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0180",
+      "label": "accelerated-time neuron",
+      "aliases": [],
+      "category": "Silicon neurons and synapses",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0181",
+      "label": "switched-capacitor neuron",
+      "aliases": [],
+      "category": "Silicon neurons and synapses",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0182",
+      "label": "spiking neural network",
+      "aliases": [
+        "SNN"
+      ],
+      "category": "Silicon neurons and synapses",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0184",
+      "label": "neuromorphic neuron array",
+      "aliases": [],
+      "category": "Silicon neurons and synapses",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0185",
+      "label": "event-based representation",
+      "aliases": [
+        "event representation"
+      ],
+      "category": "Event-based communication and protocols",
+      "origin": "source_topic_vocabulary",
+      "related_ids": [
+        "nmr-t-0187"
+      ]
+    },
+    {
+      "id": "nmr-t-0186",
+      "label": "event-driven sensing",
+      "aliases": [],
+      "category": "Event-based communication and protocols",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0187",
+      "label": "address-event representation",
+      "aliases": [
+        "AER",
+        "address event representation"
+      ],
+      "category": "Event-based communication and protocols",
+      "origin": "source_topic_vocabulary",
+      "related_ids": [
+        "nmr-t-0185"
+      ]
+    },
+    {
+      "id": "nmr-t-0189",
+      "label": "address event",
+      "aliases": [],
+      "category": "Event-based communication and protocols",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0190",
+      "label": "address mapping",
+      "aliases": [],
+      "category": "Event-based communication and protocols",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0191",
+      "label": "address decoder",
+      "aliases": [],
+      "category": "Event-based communication and protocols",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0192",
+      "label": "AER encoder",
+      "aliases": [],
+      "category": "Event-based communication and protocols",
+      "origin": "source_topic_vocabulary",
+      "related_ids": [
+        "nmr-t-0328"
+      ]
+    },
+    {
+      "id": "nmr-t-0193",
+      "label": "AER decoder",
+      "aliases": [],
+      "category": "Event-based communication and protocols",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0194",
+      "label": "event address",
+      "aliases": [],
+      "category": "Event-based communication and protocols",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0195",
+      "label": "event timestamp",
+      "aliases": [
+        "AE timestamp"
+      ],
+      "category": "Event-based communication and protocols",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0196",
+      "label": "spike timestamp",
+      "aliases": [],
+      "category": "Event-based communication and protocols",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0197",
+      "label": "arbitration",
+      "aliases": [],
+      "category": "Event-based communication and protocols",
+      "origin": "source_topic_vocabulary",
+      "related_ids": [
+        "nmr-t-0206"
+      ]
+    },
+    {
+      "id": "nmr-t-0198",
+      "label": "arbiter",
+      "aliases": [],
+      "category": "Event-based communication and protocols",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0199",
+      "label": "event routing",
+      "aliases": [],
+      "category": "Event-based communication and protocols",
+      "origin": "source_topic_vocabulary",
+      "related_ids": [
+        "nmr-t-0201"
+      ]
+    },
+    {
+      "id": "nmr-t-0200",
+      "label": "event packet",
+      "aliases": [],
+      "category": "Event-based communication and protocols",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0201",
+      "label": "event bus",
+      "aliases": [],
+      "category": "Event-based communication and protocols",
+      "origin": "source_topic_vocabulary",
+      "related_ids": [
+        "nmr-t-0199"
+      ]
+    },
+    {
+      "id": "nmr-t-0202",
+      "label": "asynchronous handshake",
+      "aliases": [
+        "request-acknowledge handshake"
+      ],
+      "category": "Event-based communication and protocols",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0203",
+      "label": "request acknowledge protocol",
+      "aliases": [],
+      "category": "Event-based communication and protocols",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0204",
+      "label": "event collision",
+      "aliases": [],
+      "category": "Event-based communication and protocols",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0205",
+      "label": "contention",
+      "aliases": [],
+      "category": "Event-based communication and protocols",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0206",
+      "label": "queueing delay",
+      "aliases": [],
+      "category": "Event-based communication and protocols",
+      "origin": "source_topic_vocabulary",
+      "related_ids": [
+        "nmr-t-0197",
+        "nmr-t-0207"
+      ]
+    },
+    {
+      "id": "nmr-t-0207",
+      "label": "event dropping",
+      "aliases": [],
+      "category": "Event-based communication and protocols",
+      "origin": "source_topic_vocabulary",
+      "related_ids": [
+        "nmr-t-0206"
+      ]
+    },
+    {
+      "id": "nmr-t-0208",
+      "label": "spike loss",
+      "aliases": [],
+      "category": "Event-based communication and protocols",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0209",
+      "label": "offered load",
+      "aliases": [],
+      "category": "Event-based communication and protocols",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0210",
+      "label": "channel utilization",
+      "aliases": [],
+      "category": "Event-based communication and protocols",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0211",
+      "label": "throughput",
+      "aliases": [],
+      "category": "Event-based communication and protocols",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0212",
+      "label": "bandwidth",
+      "aliases": [],
+      "category": "Event-based communication and protocols",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0213",
+      "label": "event latency",
+      "aliases": [],
+      "category": "Event-based communication and protocols",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0214",
+      "label": "jitter",
+      "aliases": [],
+      "category": "Event-based communication and protocols",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0215",
+      "label": "temporal dispersion",
+      "aliases": [],
+      "category": "Event-based communication and protocols",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0216",
+      "label": "event burst",
+      "aliases": [],
+      "category": "Event-based communication and protocols",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0217",
+      "label": "event stream",
+      "aliases": [],
+      "category": "Event-based communication and protocols",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0218",
+      "label": "dynamic allocation",
+      "aliases": [],
+      "category": "Event-based communication and protocols",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0219",
+      "label": "static allocation",
+      "aliases": [],
+      "category": "Event-based communication and protocols",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0220",
+      "label": "serial AER",
+      "aliases": [],
+      "category": "Event-based communication and protocols",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0221",
+      "label": "parallel AER",
+      "aliases": [],
+      "category": "Event-based communication and protocols",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0222",
+      "label": "daisy-chain topology",
+      "aliases": [],
+      "category": "Event-based communication and protocols",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0223",
+      "label": "mesh routing",
+      "aliases": [],
+      "category": "Event-based communication and protocols",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0224",
+      "label": "hierarchical AER",
+      "aliases": [],
+      "category": "Event-based communication and protocols",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0225",
+      "label": "multicast routing",
+      "aliases": [],
+      "category": "Event-based communication and protocols",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0226",
+      "label": "event-based API",
+      "aliases": [],
+      "category": "Event-based communication and protocols",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0227",
+      "label": "event serialization",
+      "aliases": [],
+      "category": "Event-based communication and protocols",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0228",
+      "label": "time synchronization",
+      "aliases": [],
+      "category": "Event-based communication and protocols",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0229",
+      "label": "clockless communication",
+      "aliases": [],
+      "category": "Event-based communication and protocols",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0230",
+      "label": "spike throughput budget",
+      "aliases": [],
+      "category": "Event-based communication and protocols",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0231",
+      "label": "silicon retina",
+      "aliases": [],
+      "category": "Vision and silicon retina",
+      "origin": "source_topic_vocabulary",
+      "related_ids": [
+        "nmr-t-0232"
+      ]
+    },
+    {
+      "id": "nmr-t-0232",
+      "label": "dynamic vision sensor",
+      "aliases": [
+        "DVS",
+        "dynamic vision sensor camera"
+      ],
+      "category": "Vision and silicon retina",
+      "origin": "source_topic_vocabulary",
+      "related_ids": [
+        "nmr-t-0231",
+        "nmr-t-0243",
+        "nmr-t-0256"
+      ]
+    },
+    {
+      "id": "nmr-t-0234",
+      "label": "asynchronous time-based image sensor",
+      "aliases": [
+        "ATIS"
+      ],
+      "category": "Vision and silicon retina",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0236",
+      "label": "vision sensor",
+      "aliases": [],
+      "category": "Vision and silicon retina",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0237",
+      "label": "event camera",
+      "aliases": [
+        "event-based camera"
+      ],
+      "category": "Vision and silicon retina",
+      "origin": "source_topic_vocabulary",
+      "related_ids": [
+        "nmr-t-0246"
+      ]
+    },
+    {
+      "id": "nmr-t-0238",
+      "label": "frame-based camera",
+      "aliases": [],
+      "category": "Vision and silicon retina",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0239",
+      "label": "asynchronous pixel",
+      "aliases": [],
+      "category": "Vision and silicon retina",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0240",
+      "label": "event-based pixel",
+      "aliases": [],
+      "category": "Vision and silicon retina",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0241",
+      "label": "ON event",
+      "aliases": [],
+      "category": "Vision and silicon retina",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0242",
+      "label": "OFF event",
+      "aliases": [],
+      "category": "Vision and silicon retina",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0243",
+      "label": "contrast threshold",
+      "aliases": [],
+      "category": "Vision and silicon retina",
+      "origin": "source_topic_vocabulary",
+      "related_ids": [
+        "nmr-t-0232"
+      ]
+    },
+    {
+      "id": "nmr-t-0244",
+      "label": "log intensity",
+      "aliases": [],
+      "category": "Vision and silicon retina",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0245",
+      "label": "logarithmic photoreceptor",
+      "aliases": [],
+      "category": "Vision and silicon retina",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0246",
+      "label": "temporal contrast",
+      "aliases": [],
+      "category": "Vision and silicon retina",
+      "origin": "source_topic_vocabulary",
+      "related_ids": [
+        "nmr-t-0237"
+      ]
+    },
+    {
+      "id": "nmr-t-0247",
+      "label": "spatial contrast",
+      "aliases": [],
+      "category": "Vision and silicon retina",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0248",
+      "label": "optical flow",
+      "aliases": [],
+      "category": "Vision and silicon retina",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0249",
+      "label": "visual motion",
+      "aliases": [],
+      "category": "Vision and silicon retina",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0250",
+      "label": "optical motion sensor",
+      "aliases": [],
+      "category": "Vision and silicon retina",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0251",
+      "label": "motion constraint",
+      "aliases": [],
+      "category": "Vision and silicon retina",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0252",
+      "label": "visual tracking",
+      "aliases": [],
+      "category": "Vision and silicon retina",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0253",
+      "label": "event-based tracking",
+      "aliases": [],
+      "category": "Vision and silicon retina",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0254",
+      "label": "feature event",
+      "aliases": [],
+      "category": "Vision and silicon retina",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0255",
+      "label": "noise event",
+      "aliases": [],
+      "category": "Vision and silicon retina",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0256",
+      "label": "background activity",
+      "aliases": [],
+      "category": "Vision and silicon retina",
+      "origin": "source_topic_vocabulary",
+      "related_ids": [
+        "nmr-t-0232"
+      ]
+    },
+    {
+      "id": "nmr-t-0257",
+      "label": "leakage event",
+      "aliases": [],
+      "category": "Vision and silicon retina",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0258",
+      "label": "hot pixel",
+      "aliases": [],
+      "category": "Vision and silicon retina",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0259",
+      "label": "photoreceptor adaptation",
+      "aliases": [],
+      "category": "Vision and silicon retina",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0260",
+      "label": "retinal adaptation",
+      "aliases": [],
+      "category": "Vision and silicon retina",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0261",
+      "label": "retinal circuit",
+      "aliases": [],
+      "category": "Vision and silicon retina",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0262",
+      "label": "phototransduction",
+      "aliases": [],
+      "category": "Vision and silicon retina",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0263",
+      "label": "time-to-first-spike",
+      "aliases": [
+        "TTFS"
+      ],
+      "category": "Vision and silicon retina",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0265",
+      "label": "pixel uniformity",
+      "aliases": [],
+      "category": "Vision and silicon retina",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0266",
+      "label": "event dynamic range",
+      "aliases": [],
+      "category": "Vision and silicon retina",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0267",
+      "label": "event sensor latency",
+      "aliases": [],
+      "category": "Vision and silicon retina",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0268",
+      "label": "event sensor jitter",
+      "aliases": [],
+      "category": "Vision and silicon retina",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0269",
+      "label": "intensity reconstruction",
+      "aliases": [],
+      "category": "Vision and silicon retina",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0270",
+      "label": "edge response",
+      "aliases": [],
+      "category": "Vision and silicon retina",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0271",
+      "label": "Mach bands",
+      "aliases": [],
+      "category": "Vision and silicon retina",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0272",
+      "label": "spatiotemporal filter",
+      "aliases": [],
+      "category": "Vision and silicon retina",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0273",
+      "label": "refractory pixel",
+      "aliases": [],
+      "category": "Vision and silicon retina",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0274",
+      "label": "silicon cochlea",
+      "aliases": [
+        "electronic cochlea"
+      ],
+      "category": "Auditory, movement and embodied systems",
+      "origin": "source_topic_vocabulary",
+      "related_ids": [
+        "nmr-t-0276"
+      ]
+    },
+    {
+      "id": "nmr-t-0276",
+      "label": "cochlear filterbank",
+      "aliases": [],
+      "category": "Auditory, movement and embodied systems",
+      "origin": "source_topic_vocabulary",
+      "related_ids": [
+        "nmr-t-0274"
+      ]
+    },
+    {
+      "id": "nmr-t-0277",
+      "label": "basilar membrane resonator",
+      "aliases": [],
+      "category": "Auditory, movement and embodied systems",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0278",
+      "label": "cascaded filter",
+      "aliases": [],
+      "category": "Auditory, movement and embodied systems",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0279",
+      "label": "frequency selectivity",
+      "aliases": [],
+      "category": "Auditory, movement and embodied systems",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0280",
+      "label": "auditory event",
+      "aliases": [],
+      "category": "Auditory, movement and embodied systems",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0281",
+      "label": "spike-based auditory processing",
+      "aliases": [],
+      "category": "Auditory, movement and embodied systems",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0282",
+      "label": "spectral processing",
+      "aliases": [],
+      "category": "Auditory, movement and embodied systems",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0283",
+      "label": "cochlear gain control",
+      "aliases": [],
+      "category": "Auditory, movement and embodied systems",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0284",
+      "label": "outer hair cell amplification",
+      "aliases": [],
+      "category": "Auditory, movement and embodied systems",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0285",
+      "label": "inner hair cell transduction",
+      "aliases": [],
+      "category": "Auditory, movement and embodied systems",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0286",
+      "label": "active nonlinear cochlea",
+      "aliases": [],
+      "category": "Auditory, movement and embodied systems",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0287",
+      "label": "locomotion control",
+      "aliases": [],
+      "category": "Auditory, movement and embodied systems",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0288",
+      "label": "rhythmic motor pattern",
+      "aliases": [],
+      "category": "Auditory, movement and embodied systems",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0290",
+      "label": "gait generation",
+      "aliases": [],
+      "category": "Auditory, movement and embodied systems",
+      "origin": "source_topic_vocabulary",
+      "related_ids": [
+        "nmr-t-0048"
+      ]
+    },
+    {
+      "id": "nmr-t-0291",
+      "label": "walking robot",
+      "aliases": [],
+      "category": "Auditory, movement and embodied systems",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0292",
+      "label": "intersegmental coordination",
+      "aliases": [],
+      "category": "Auditory, movement and embodied systems",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0293",
+      "label": "motor neuron",
+      "aliases": [],
+      "category": "Auditory, movement and embodied systems",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0294",
+      "label": "neural controller",
+      "aliases": [],
+      "category": "Auditory, movement and embodied systems",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0295",
+      "label": "neuromorphic robotics",
+      "aliases": [],
+      "category": "Auditory, movement and embodied systems",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0296",
+      "label": "sensorimotor loop",
+      "aliases": [],
+      "category": "Auditory, movement and embodied systems",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0297",
+      "label": "closed-loop control",
+      "aliases": [],
+      "category": "Auditory, movement and embodied systems",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0298",
+      "label": "fictive locomotion",
+      "aliases": [],
+      "category": "Auditory, movement and embodied systems",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0299",
+      "label": "robotic neuromorphics",
+      "aliases": [],
+      "category": "Auditory, movement and embodied systems",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0300",
+      "label": "bias programming",
+      "aliases": [],
+      "category": "Physical implementation and tools",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0301",
+      "label": "master bias",
+      "aliases": [],
+      "category": "Physical implementation and tools",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0302",
+      "label": "current mirror bias",
+      "aliases": [],
+      "category": "Physical implementation and tools",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0303",
+      "label": "coarse-fine current selection",
+      "aliases": [],
+      "category": "Physical implementation and tools",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0304",
+      "label": "analog bias tuning",
+      "aliases": [],
+      "category": "Physical implementation and tools",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0305",
+      "label": "floating-gate programming",
+      "aliases": [],
+      "category": "Physical implementation and tools",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0306",
+      "label": "field-programmable analog array",
+      "aliases": [
+        "FPAA"
+      ],
+      "category": "Physical implementation and tools",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0308",
+      "label": "analog computing in memory",
+      "aliases": [
+        "analog in-memory computing"
+      ],
+      "category": "Physical implementation and tools",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0309",
+      "label": "compute-in-memory",
+      "aliases": [],
+      "category": "Physical implementation and tools",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0310",
+      "label": "ASIC",
+      "aliases": [],
+      "category": "Physical implementation and tools",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0311",
+      "label": "neuromorphic IC",
+      "aliases": [],
+      "category": "Physical implementation and tools",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0312",
+      "label": "CMOS fabrication",
+      "aliases": [],
+      "category": "Physical implementation and tools",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0313",
+      "label": "photolithography",
+      "aliases": [],
+      "category": "Physical implementation and tools",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0314",
+      "label": "layout",
+      "aliases": [],
+      "category": "Physical implementation and tools",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0315",
+      "label": "design rule",
+      "aliases": [],
+      "category": "Physical implementation and tools",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0316",
+      "label": "process variation",
+      "aliases": [],
+      "category": "Physical implementation and tools",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0317",
+      "label": "yield",
+      "aliases": [],
+      "category": "Physical implementation and tools",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0318",
+      "label": "silicon mismatch",
+      "aliases": [],
+      "category": "Physical implementation and tools",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0319",
+      "label": "low-power design",
+      "aliases": [],
+      "category": "Physical implementation and tools",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0320",
+      "label": "power budget",
+      "aliases": [],
+      "category": "Physical implementation and tools",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0321",
+      "label": "event monitor",
+      "aliases": [],
+      "category": "Physical implementation and tools",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0322",
+      "label": "event sequencer",
+      "aliases": [],
+      "category": "Physical implementation and tools",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0323",
+      "label": "event mapper",
+      "aliases": [],
+      "category": "Physical implementation and tools",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0324",
+      "label": "hardware infrastructure",
+      "aliases": [],
+      "category": "Physical implementation and tools",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0325",
+      "label": "FPGA interface",
+      "aliases": [],
+      "category": "Physical implementation and tools",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0326",
+      "label": "FPGA AER bridge",
+      "aliases": [],
+      "category": "Physical implementation and tools",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0327",
+      "label": "board interface",
+      "aliases": [],
+      "category": "Physical implementation and tools",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0328",
+      "label": "on-chip AER",
+      "aliases": [],
+      "category": "Physical implementation and tools",
+      "origin": "source_topic_vocabulary",
+      "related_ids": [
+        "nmr-t-0192"
+      ]
+    },
+    {
+      "id": "nmr-t-0329",
+      "label": "multichip neuromorphic system",
+      "aliases": [],
+      "category": "Physical implementation and tools",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0330",
+      "label": "Neurogrid",
+      "aliases": [],
+      "category": "Physical implementation and tools",
+      "origin": "source_topic_vocabulary",
+      "related_ids": [
+        "nmr-t-0355"
+      ]
+    },
+    {
+      "id": "nmr-t-0331",
+      "label": "silicon cortex",
+      "aliases": [],
+      "category": "Physical implementation and tools",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0332",
+      "label": "CAVIAR",
+      "aliases": [],
+      "category": "Physical implementation and tools",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0333",
+      "label": "open-source neuromorphic software",
+      "aliases": [],
+      "category": "Physical implementation and tools",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0334",
+      "label": "NeuroML",
+      "aliases": [],
+      "category": "Physical implementation and tools",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0335",
+      "label": "PyNN",
+      "aliases": [],
+      "category": "Physical implementation and tools",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0336",
+      "label": "jAER",
+      "aliases": [],
+      "category": "Physical implementation and tools",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0337",
+      "label": "Spike Toolbox",
+      "aliases": [],
+      "category": "Physical implementation and tools",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0338",
+      "label": "ChipDatabase",
+      "aliases": [],
+      "category": "Physical implementation and tools",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0339",
+      "label": "configuration software",
+      "aliases": [],
+      "category": "Physical implementation and tools",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0340",
+      "label": "address-event handling",
+      "aliases": [],
+      "category": "Physical implementation and tools",
+      "origin": "source_topic_vocabulary",
+      "related_ids": [
+        "nmr-t-0345"
+      ]
+    },
+    {
+      "id": "nmr-t-0341",
+      "label": "stream recording",
+      "aliases": [],
+      "category": "Physical implementation and tools",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0342",
+      "label": "neuromorphic testbench",
+      "aliases": [],
+      "category": "Physical implementation and tools",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0343",
+      "label": "neuromorphic computation",
+      "aliases": [],
+      "category": "Learning, inference and systems",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0344",
+      "label": "event-driven algorithm",
+      "aliases": [],
+      "category": "Learning, inference and systems",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0345",
+      "label": "event stream processing",
+      "aliases": [],
+      "category": "Learning, inference and systems",
+      "origin": "source_topic_vocabulary",
+      "related_ids": [
+        "nmr-t-0340",
+        "nmr-t-0346"
+      ]
+    },
+    {
+      "id": "nmr-t-0346",
+      "label": "event noise reduction",
+      "aliases": [],
+      "category": "Learning, inference and systems",
+      "origin": "source_topic_vocabulary",
+      "related_ids": [
+        "nmr-t-0345"
+      ]
+    },
+    {
+      "id": "nmr-t-0347",
+      "label": "event subsampling",
+      "aliases": [],
+      "category": "Learning, inference and systems",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0348",
+      "label": "event labeling",
+      "aliases": [],
+      "category": "Learning, inference and systems",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0349",
+      "label": "feature detector",
+      "aliases": [],
+      "category": "Learning, inference and systems",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0350",
+      "label": "visual tracker",
+      "aliases": [],
+      "category": "Learning, inference and systems",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0351",
+      "label": "neuromorphic cognition",
+      "aliases": [],
+      "category": "Learning, inference and systems",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0352",
+      "label": "brain-inspired computing",
+      "aliases": [],
+      "category": "Learning, inference and systems",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0353",
+      "label": "silicon brain",
+      "aliases": [],
+      "category": "Learning, inference and systems",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0354",
+      "label": "asynchronous computation",
+      "aliases": [],
+      "category": "Learning, inference and systems",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0355",
+      "label": "distributed neuromorphic architecture",
+      "aliases": [],
+      "category": "Learning, inference and systems",
+      "origin": "source_topic_vocabulary",
+      "related_ids": [
+        "nmr-t-0330"
+      ]
+    },
+    {
+      "id": "nmr-t-0356",
+      "label": "spiking inference",
+      "aliases": [],
+      "category": "Learning, inference and systems",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0357",
+      "label": "spike-based classification",
+      "aliases": [],
+      "category": "Learning, inference and systems",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0358",
+      "label": "local learning",
+      "aliases": [],
+      "category": "Learning, inference and systems",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0359",
+      "label": "on-device learning",
+      "aliases": [],
+      "category": "Learning, inference and systems",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0360",
+      "label": "network memory capacity",
+      "aliases": [],
+      "category": "Learning, inference and systems",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0361",
+      "label": "network stability",
+      "aliases": [],
+      "category": "Learning, inference and systems",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0362",
+      "label": "attractor retrieval",
+      "aliases": [],
+      "category": "Learning, inference and systems",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0363",
+      "label": "associative retrieval",
+      "aliases": [],
+      "category": "Learning, inference and systems",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0364",
+      "label": "continual learning",
+      "aliases": [],
+      "category": "Learning, inference and systems",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0365",
+      "label": "catastrophic forgetting",
+      "aliases": [],
+      "category": "Learning, inference and systems",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0366",
+      "label": "energy-delay tradeoff",
+      "aliases": [],
+      "category": "Learning, inference and systems",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0367",
+      "label": "latency-energy tradeoff",
+      "aliases": [],
+      "category": "Learning, inference and systems",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0368",
+      "label": "sparse activity",
+      "aliases": [],
+      "category": "Learning, inference and systems",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0369",
+      "label": "sparse coding",
+      "aliases": [],
+      "category": "Learning, inference and systems",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0370",
+      "label": "temporal sparsity",
+      "aliases": [],
+      "category": "Learning, inference and systems",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0371",
+      "label": "large-scale neuron simulation",
+      "aliases": [],
+      "category": "Learning, inference and systems",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0372",
+      "label": "analog-to-digital interface",
+      "aliases": [],
+      "category": "Learning, inference and systems",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0373",
+      "label": "hybrid analog-digital system",
+      "aliases": [],
+      "category": "Learning, inference and systems",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0374",
+      "label": "spiking network hardware",
+      "aliases": [],
+      "category": "Learning, inference and systems",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0375",
+      "label": "learning system evaluation",
+      "aliases": [],
+      "category": "Learning, inference and systems",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0376",
+      "label": "task performance",
+      "aliases": [],
+      "category": "Learning, inference and systems",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0377",
+      "label": "real-world workload",
+      "aliases": [],
+      "category": "Learning, inference and systems",
+      "origin": "source_topic_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0378",
+      "label": "memristor",
+      "aliases": [],
+      "category": "Adjacent neuromorphic landscape",
+      "origin": "adjacent_candidate",
+      "related_ids": [
+        "nmr-t-0379"
+      ]
+    },
+    {
+      "id": "nmr-t-0379",
+      "label": "resistive RAM",
+      "aliases": [
+        "RRAM"
+      ],
+      "category": "Adjacent neuromorphic landscape",
+      "origin": "adjacent_candidate",
+      "related_ids": [
+        "nmr-t-0378"
+      ]
+    },
+    {
+      "id": "nmr-t-0381",
+      "label": "phase-change memory",
+      "aliases": [
+        "PCM"
+      ],
+      "category": "Adjacent neuromorphic landscape",
+      "origin": "adjacent_candidate",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0383",
+      "label": "spintronic neuron",
+      "aliases": [],
+      "category": "Adjacent neuromorphic landscape",
+      "origin": "adjacent_candidate",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0384",
+      "label": "photonic neuromorphic computing",
+      "aliases": [],
+      "category": "Adjacent neuromorphic landscape",
+      "origin": "adjacent_candidate",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0385",
+      "label": "oscillatory neural network",
+      "aliases": [],
+      "category": "Adjacent neuromorphic landscape",
+      "origin": "adjacent_candidate",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0386",
+      "label": "reservoir computing",
+      "aliases": [],
+      "category": "Adjacent neuromorphic landscape",
+      "origin": "adjacent_candidate",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0387",
+      "label": "liquid state machine",
+      "aliases": [],
+      "category": "Adjacent neuromorphic landscape",
+      "origin": "adjacent_candidate",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0388",
+      "label": "surrogate gradient",
+      "aliases": [],
+      "category": "Adjacent neuromorphic landscape",
+      "origin": "adjacent_candidate",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0389",
+      "label": "event-driven backpropagation",
+      "aliases": [],
+      "category": "Adjacent neuromorphic landscape",
+      "origin": "adjacent_candidate",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0390",
+      "label": "neuromorphic accelerator",
+      "aliases": [],
+      "category": "Adjacent neuromorphic landscape",
+      "origin": "adjacent_candidate",
+      "related_ids": [
+        "nmr-t-0400"
+      ]
+    },
+    {
+      "id": "nmr-t-0391",
+      "label": "Loihi",
+      "aliases": [],
+      "category": "Adjacent neuromorphic landscape",
+      "origin": "adjacent_candidate",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0392",
+      "label": "TrueNorth",
+      "aliases": [],
+      "category": "Adjacent neuromorphic landscape",
+      "origin": "adjacent_candidate",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0393",
+      "label": "SpiNNaker",
+      "aliases": [],
+      "category": "Adjacent neuromorphic landscape",
+      "origin": "adjacent_candidate",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0394",
+      "label": "BrainScaleS",
+      "aliases": [],
+      "category": "Adjacent neuromorphic landscape",
+      "origin": "adjacent_candidate",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0395",
+      "label": "Akida",
+      "aliases": [],
+      "category": "Adjacent neuromorphic landscape",
+      "origin": "adjacent_candidate",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0396",
+      "label": "DYNAP-SE",
+      "aliases": [],
+      "category": "Adjacent neuromorphic landscape",
+      "origin": "adjacent_candidate",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0397",
+      "label": "event-based SLAM",
+      "aliases": [],
+      "category": "Adjacent neuromorphic landscape",
+      "origin": "adjacent_candidate",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0398",
+      "label": "event-based odometry",
+      "aliases": [],
+      "category": "Adjacent neuromorphic landscape",
+      "origin": "adjacent_candidate",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0399",
+      "label": "event-based optical flow",
+      "aliases": [],
+      "category": "Adjacent neuromorphic landscape",
+      "origin": "adjacent_candidate",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0400",
+      "label": "neuromorphic edge AI",
+      "aliases": [],
+      "category": "Adjacent neuromorphic landscape",
+      "origin": "adjacent_candidate",
+      "related_ids": [
+        "nmr-t-0390"
+      ]
+    },
+    {
+      "id": "nmr-t-0401",
+      "label": "neuromorphic sensor fusion",
+      "aliases": [],
+      "category": "Adjacent neuromorphic landscape",
+      "origin": "adjacent_candidate",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0402",
+      "label": "neural dust",
+      "aliases": [],
+      "category": "Adjacent neuromorphic landscape",
+      "origin": "adjacent_candidate",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0403",
+      "label": "brain-computer interface",
+      "aliases": [
+        "BCI"
+      ],
+      "category": "Adjacent neuromorphic landscape",
+      "origin": "adjacent_candidate",
+      "related_ids": [
+        "nmr-t-0407"
+      ]
+    },
+    {
+      "id": "nmr-t-0405",
+      "label": "neural implant",
+      "aliases": [],
+      "category": "Adjacent neuromorphic landscape",
+      "origin": "adjacent_candidate",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0406",
+      "label": "biocompatibility",
+      "aliases": [],
+      "category": "Adjacent neuromorphic landscape",
+      "origin": "adjacent_candidate",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0407",
+      "label": "closed-loop neural stimulation",
+      "aliases": [],
+      "category": "Adjacent neuromorphic landscape",
+      "origin": "adjacent_candidate",
+      "related_ids": [
+        "nmr-t-0403"
+      ]
+    },
+    {
+      "id": "nmr-t-0408",
+      "label": "electrophysiology",
+      "aliases": [],
+      "category": "Adjacent neuromorphic landscape",
+      "origin": "adjacent_candidate",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0410",
+      "label": "multi-electrode array",
+      "aliases": [
+        "MEA"
+      ],
+      "category": "Adjacent neuromorphic landscape",
+      "origin": "adjacent_candidate",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0411",
+      "label": "neuromorphic benchmark",
+      "aliases": [],
+      "category": "Adjacent neuromorphic landscape",
+      "origin": "adjacent_candidate",
+      "related_ids": [
+        "nmr-t-0413"
+      ]
+    },
+    {
+      "id": "nmr-t-0412",
+      "label": "power per inference",
+      "aliases": [],
+      "category": "Adjacent neuromorphic landscape",
+      "origin": "adjacent_candidate",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0413",
+      "label": "end-to-end energy measurement",
+      "aliases": [],
+      "category": "Adjacent neuromorphic landscape",
+      "origin": "adjacent_candidate",
+      "related_ids": [
+        "nmr-t-0411"
+      ]
+    },
+    {
+      "id": "nmr-t-0414",
+      "label": "event-to-frame conversion",
+      "aliases": [],
+      "category": "Adjacent neuromorphic landscape",
+      "origin": "adjacent_candidate",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0415",
+      "label": "event data format",
+      "aliases": [],
+      "category": "Adjacent neuromorphic landscape",
+      "origin": "adjacent_candidate",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0416",
+      "label": "microsecond timestamp",
+      "aliases": [],
+      "category": "Adjacent neuromorphic landscape",
+      "origin": "adjacent_candidate",
+      "related_ids": []
+    },
+    {
+      "id": "nmr-t-0417",
+      "label": "hybrid event-frame sensing",
+      "aliases": [],
+      "category": "Adjacent neuromorphic landscape",
+      "origin": "adjacent_candidate",
+      "related_ids": []
+    }
+  ]
+}
