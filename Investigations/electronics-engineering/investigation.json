@@ -4525,92 +4525,113 @@
           "ref": "A",
           "title": "Math Review",
           "printed_page_start": 1097,
-          "use_when": "Reference appendix: Math Review",
-          "locator_status": "table_of_contents_inspected"
+          "use_when": "Supplement: Math Review",
+          "locator_status": "book_table_of_contents_inspected"
         },
         {
           "ref": "B",
-          "title": "How to Draw Schematic Dia\u0002grams",
+          "title": "How to Draw Schematic Diagrams",
           "printed_page_start": 1101,
-          "use_when": "Reference appendix: How to Draw Schematic Dia\u0002grams",
-          "locator_status": "table_of_contents_inspected"
+          "use_when": "Supplement: How to Draw Schematic Diagrams",
+          "locator_status": "book_table_of_contents_inspected"
         },
         {
           "ref": "C",
           "title": "Resistor Types",
           "printed_page_start": 1104,
-          "use_when": "Reference appendix: Resistor Types",
-          "locator_status": "table_of_contents_inspected"
+          "use_when": "Supplement: Resistor Types",
+          "locator_status": "book_table_of_contents_inspected"
+        },
+        {
+          "ref": "D",
+          "title": "Thevenin's Theorem",
+          "printed_page_start": 1107,
+          "use_when": "Supplement: Thevenin's Theorem",
+          "locator_status": "book_table_of_contents_inspected"
         },
         {
           "ref": "E",
           "title": "LC Butterworth Filters",
           "printed_page_start": 1109,
-          "use_when": "Reference appendix: LC Butterworth Filters",
-          "locator_status": "table_of_contents_inspected"
+          "use_when": "Supplement: LC Butterworth Filters",
+          "locator_status": "book_table_of_contents_inspected"
         },
         {
           "ref": "F",
           "title": "Load Lines",
           "printed_page_start": 1112,
-          "use_when": "Reference appendix: Load Lines",
-          "locator_status": "table_of_contents_inspected"
+          "use_when": "Supplement: Load Lines",
+          "locator_status": "book_table_of_contents_inspected"
         },
         {
           "ref": "G",
           "title": "The Curve Tracer",
           "printed_page_start": 1115,
-          "use_when": "Reference appendix: The Curve Tracer",
-          "locator_status": "table_of_contents_inspected"
+          "use_when": "Supplement: The Curve Tracer",
+          "locator_status": "book_table_of_contents_inspected"
+        },
+        {
+          "ref": "H",
+          "title": "Transmission Lines and Impedance Matching",
+          "printed_page_start": 1116,
+          "use_when": "Supplement: Transmission Lines and Impedance Matching",
+          "locator_status": "book_table_of_contents_inspected"
         },
         {
           "ref": "I",
           "title": "Television: A Compact Tutorial",
           "printed_page_start": 1131,
-          "use_when": "Reference appendix: Television: A Compact Tutorial",
-          "locator_status": "table_of_contents_inspected"
+          "use_when": "Supplement: Television: A Compact Tutorial",
+          "locator_status": "book_table_of_contents_inspected"
         },
         {
           "ref": "J",
           "title": "SPICE Primer",
           "printed_page_start": 1146,
-          "use_when": "Reference appendix: SPICE Primer",
-          "locator_status": "table_of_contents_inspected"
+          "use_when": "Supplement: SPICE Primer",
+          "locator_status": "book_table_of_contents_inspected"
         },
         {
           "ref": "K",
-          "title": "“Where Do I Go to Buy Elec\u0002tronic Goodies?”",
+          "title": "Where Do I Go to Buy Electronic Goodies?",
           "printed_page_start": 1150,
-          "use_when": "Reference appendix: “Where Do I Go to Buy Elec\u0002tronic Goodies?”",
-          "locator_status": "table_of_contents_inspected"
+          "use_when": "Supplement: Where Do I Go to Buy Electronic Goodies?",
+          "locator_status": "book_table_of_contents_inspected"
+        },
+        {
+          "ref": "L",
+          "title": "Workbench Instruments and Tools",
+          "printed_page_start": 1152,
+          "use_when": "Supplement: Workbench Instruments and Tools",
+          "locator_status": "book_table_of_contents_inspected"
         },
         {
           "ref": "M",
-          "title": "Catalogs, Magazines, Data\u0002books",
+          "title": "Catalogs, Magazines, Databooks",
           "printed_page_start": 1153,
-          "use_when": "Reference appendix: Catalogs, Magazines, Data\u0002books",
-          "locator_status": "table_of_contents_inspected"
+          "use_when": "Supplement: Catalogs, Magazines, Databooks",
+          "locator_status": "book_table_of_contents_inspected"
         },
         {
           "ref": "N",
-          "title": "Further Reading and Refer\u0002ences",
+          "title": "Further Reading and References",
           "printed_page_start": 1154,
-          "use_when": "Reference appendix: Further Reading and Refer\u0002ences",
-          "locator_status": "table_of_contents_inspected"
+          "use_when": "Supplement: Further Reading and References",
+          "locator_status": "book_table_of_contents_inspected"
         },
         {
           "ref": "O",
           "title": "The Oscilloscope",
           "printed_page_start": 1158,
-          "use_when": "Reference appendix: The Oscilloscope",
-          "locator_status": "table_of_contents_inspected"
+          "use_when": "Supplement: The Oscilloscope",
+          "locator_status": "book_table_of_contents_inspected"
         },
         {
           "ref": "P",
           "title": "Acronyms and Abbreviations",
           "printed_page_start": 1166,
-          "use_when": "Reference appendix: Acronyms and Abbreviations",
-          "locator_status": "table_of_contents_inspected"
+          "use_when": "Supplement: Acronyms and Abbreviations",
+          "locator_status": "book_table_of_contents_inspected"
         }
       ]
     },
@@ -10176,7 +10197,7 @@
     }
   ],
   "source_coverage": {
-    "ART-3": "15 major chapters plus indexed subsection starts from electronic contents; selected text examined on op-amp noise, switching versus linear regulation, and microcontroller decoupling. Remaining sections largely chapter/TOC leads.",
+    "ART-3": "15 major chapters, 16 appendices and indexed subsection starts from printed contents; selected text examined on op-amp noise, switching versus linear regulation, and microcontroller decoupling. Remaining sections largely TOC leads.",
     "HSDD": "12 major chapters and curated subsection locators from imperfect OCR; actual paragraphs examined on distributed edges, source termination, high-frequency return current, probing and ground bounce. Some print page values remain unverified.",
     "POWER-3": "23 major chapters and detailed indexed subsection starts from publisher contents; selected text examined on small-ripple/volt-second analysis and switching magnetic reset; other specialized chapters are navigational leads."
   },
