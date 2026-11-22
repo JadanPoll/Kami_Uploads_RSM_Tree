@@ -3,7 +3,7 @@
   "kind": "canonical_research_corpus",
   "title": "Mathematics — generative structures, transformations, invariants, limits and inference",
   "updated": "2026-11-22",
-  "status": "fourteen source books enumerated with edition-aware main units; mechanism investigation and vocabulary active; actual mathematical demonstrations not yet certified",
+  "status": "fourteen books indexed, selected actual mechanism passages inspected, technical factorization active; user navigation and competence not certified",
   "question": "What small set of mathematical constructions, structures, transformations and tests generates broad families of questions, theorems and real applications?",
   "purpose": "Navigate from authentic naive questions or ambitious mathematical/engineering goals through a composable mathematical capability landscape to source-backed distinctions and reusable books.",
   "source_folder": "https://drive.google.com/drive/folders/1Qx_V7FAz2EhbmCAijHMr18swPu5GLyZr",
@@ -6519,8 +6519,2233 @@
   },
   "navigation_bridges": [],
   "landscape_views": [],
-  "nodes": [],
-  "relations": [],
+  "nodes": [
+    {
+      "id": "MATH-ROOT",
+      "parent_id": null,
+      "kind": "major_question",
+      "question": "What makes mathematics generative rather than a collection of formulas?",
+      "why": "An analogy is useful only when operations, domains, outputs and invariants are specified.",
+      "mechanism_explanation": "Give objects structure, use structure-preserving transformations, derive invariants, use limits or counts to investigate, and prove conclusions under precise hypotheses. Distinct mathematical fields are overlapping toolkits, not book-bound taxonomies.",
+      "status": "research_active",
+      "evidence_status": "table_of_contents_lead",
+      "source_sections": [
+        {
+          "source_id": "HALMOS-SET",
+          "ref": "1",
+          "section": "1: The Axiom of Extension",
+          "pages": "Printed p. 1",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "1: The Axiom of Extension · printed p. 1"
+        },
+        {
+          "source_id": "ARTIN",
+          "ref": "2",
+          "section": "2: Groups",
+          "pages": "Printed start unverified",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "2: Groups"
+        },
+        {
+          "source_id": "MUNKRES",
+          "ref": "2",
+          "section": "2: Topological Spaces and Continuous Functions",
+          "pages": "Printed p. 73",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "2: Topological Spaces and Continuous Functions · printed p. 73"
+        },
+        {
+          "source_id": "ROYDEN",
+          "ref": "9",
+          "section": "9: General Measure Spaces: Their Properties and Construction",
+          "pages": "Printed p. 159",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "9: General Measure Spaces: Their Properties and Construction · printed p. 159"
+        }
+      ],
+      "term_ids": [
+        "math-t-0001",
+        "math-t-0745",
+        "math-t-0744",
+        "math-t-0786"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "An analogy is useful only when operations, domains, outputs and invariants are specified.",
+          "mechanism": "Give objects structure, use structure-preserving transformations, derive invariants, use limits or counts to investigate, and prove conclusions under precise hypotheses. Distinct mathematical fields are overlapping toolkits, not book-bound taxonomies.",
+          "discriminating_observation": "Use one set and make it a group, ordered set and topological space; list which map types preserve each."
+        }
+      ]
+    },
+    {
+      "id": "MATH-SETS",
+      "parent_id": "MATH-ROOT",
+      "kind": "technical_investigation",
+      "question": "Why doesn't every describable collection qualify as a legitimate set?",
+      "why": "The permission to define a predicate is not permission to collect all satisfying objects into a set.",
+      "mechanism_explanation": "Set constructions are constrained by foundational axioms. Relations, products, functions and equivalence classes create new objects; unrestricted self-referential comprehension leads to contradiction.",
+      "status": "research_active",
+      "evidence_status": "table_of_contents_lead",
+      "source_sections": [
+        {
+          "source_id": "HALMOS-SET",
+          "ref": "1",
+          "section": "1: The Axiom of Extension",
+          "pages": "Printed p. 1",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "1: The Axiom of Extension · printed p. 1"
+        },
+        {
+          "source_id": "HALMOS-SET",
+          "ref": "2",
+          "section": "2: The Axiom of Specification",
+          "pages": "Printed p. 4",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "2: The Axiom of Specification · printed p. 4"
+        },
+        {
+          "source_id": "MUNKRES",
+          "ref": "1",
+          "section": "1: Set Theory and Logic",
+          "pages": "Printed p. 1",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "1: Set Theory and Logic · printed p. 1"
+        }
+      ],
+      "term_ids": [
+        "math-t-0001",
+        "math-t-0007",
+        "math-t-0011",
+        "math-t-0032"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "The permission to define a predicate is not permission to collect all satisfying objects into a set.",
+          "mechanism": "Set constructions are constrained by foundational axioms. Relations, products, functions and equivalence classes create new objects; unrestricted self-referential comprehension leads to contradiction.",
+          "discriminating_observation": "Attempt Russell's paradox, then identify which restricted construction blocks it."
+        }
+      ]
+    },
+    {
+      "id": "MATH-CHOICE",
+      "parent_id": "MATH-SETS",
+      "kind": "technical_investigation",
+      "question": "Can existence be proven without producing a computable example?",
+      "why": "An existential proof by choice need not be an algorithm with a feasible runtime.",
+      "mechanism_explanation": "Choice, well-ordering, Zorn maximality and transfinite recursion support existential arguments. Halmos explicitly distinguishes these foundations; functional-analysis extension theorems use related ideas.",
+      "status": "research_active",
+      "evidence_status": "source_section_inspected",
+      "source_sections": [
+        {
+          "source_id": "HALMOS-SET",
+          "ref": "15",
+          "section": "15: The Axiom of Choice",
+          "pages": "Printed p. 49",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "inspected",
+          "locator_level": "source_section_inspected",
+          "why": "15: The Axiom of Choice · printed p. 49"
+        },
+        {
+          "source_id": "HALMOS-SET",
+          "ref": "18",
+          "section": "18: Transfinite Recursion",
+          "pages": "Printed p. 58",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "inspected",
+          "locator_level": "source_section_inspected",
+          "why": "18: Transfinite Recursion · printed p. 58"
+        },
+        {
+          "source_id": "KREYSZIG",
+          "ref": "4.1",
+          "section": "4.1: Zorn's Lemma",
+          "pages": "Printed p. 210",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "4.1: Zorn's Lemma · printed p. 210"
+        }
+      ],
+      "term_ids": [
+        "math-t-0034",
+        "math-t-0035",
+        "math-t-0037"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "An existential proof by choice need not be an algorithm with a feasible runtime.",
+          "mechanism": "Choice, well-ordering, Zorn maximality and transfinite recursion support existential arguments. Halmos explicitly distinguishes these foundations; functional-analysis extension theorems use related ideas.",
+          "discriminating_observation": "Identify the first choice/maximal step in a proof, then compare it with finite search."
+        }
+      ]
+    },
+    {
+      "id": "MATH-MAPS",
+      "parent_id": "MATH-SETS",
+      "kind": "technical_investigation",
+      "question": "When are two differently described mathematical objects really the same?",
+      "why": "A continuous bijection need not have a continuous inverse; shared size is not shared structure.",
+      "mechanism_explanation": "Bijections preserve cardinality; linear and group isomorphisms preserve algebraic operations; homeomorphisms preserve topology. Each equality-up-to-structure has different invariants.",
+      "status": "research_active",
+      "evidence_status": "table_of_contents_lead",
+      "source_sections": [
+        {
+          "source_id": "HALMOS-LIN",
+          "ref": "9",
+          "section": "9: Isomorphism",
+          "pages": "Printed p. 14",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "9: Isomorphism · printed p. 14"
+        },
+        {
+          "source_id": "ARTIN",
+          "ref": "2.6",
+          "section": "2.6: Isomorphisms",
+          "pages": "Printed start unverified",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "2.6: Isomorphisms"
+        },
+        {
+          "source_id": "MUNKRES",
+          "ref": "2",
+          "section": "2: Topological Spaces and Continuous Functions",
+          "pages": "Printed p. 73",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "2: Topological Spaces and Continuous Functions · printed p. 73"
+        }
+      ],
+      "term_ids": [
+        "math-t-0762",
+        "math-t-0366",
+        "math-t-0745",
+        "math-t-0764"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "A continuous bijection need not have a continuous inverse; shared size is not shared structure.",
+          "mechanism": "Bijections preserve cardinality; linear and group isomorphisms preserve algebraic operations; homeomorphisms preserve topology. Each equality-up-to-structure has different invariants.",
+          "discriminating_observation": "Produce a continuous bijection with discontinuous inverse."
+        }
+      ]
+    },
+    {
+      "id": "MATH-ORDER",
+      "parent_id": "MATH-SETS",
+      "kind": "technical_investigation",
+      "question": "How can partial comparison generate lattice and inversion structures?",
+      "why": "A directed relation becomes an order only with specified reflexivity, antisymmetry and transitivity.",
+      "mechanism_explanation": "Partial orders need not compare every pair; their intervals and incidence algebras permit cumulative aggregation and Möbius inversion. Maximal elements are distinct from greatest elements.",
+      "status": "research_active",
+      "evidence_status": "table_of_contents_lead",
+      "source_sections": [
+        {
+          "source_id": "STANLEY",
+          "ref": "3.1",
+          "section": "3.1: Basic Concepts",
+          "pages": "Printed p. 241",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "3.1: Basic Concepts · printed p. 241"
+        },
+        {
+          "source_id": "STANLEY",
+          "ref": "3.3",
+          "section": "3.3: Lattices",
+          "pages": "Printed p. 248",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "3.3: Lattices · printed p. 248"
+        },
+        {
+          "source_id": "HALMOS-SET",
+          "ref": "14",
+          "section": "14: Order",
+          "pages": "Printed p. 45",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "14: Order · printed p. 45"
+        }
+      ],
+      "term_ids": [
+        "math-t-0049",
+        "math-t-0273",
+        "math-t-0276"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "A directed relation becomes an order only with specified reflexivity, antisymmetry and transitivity.",
+          "mechanism": "Partial orders need not compare every pair; their intervals and incidence algebras permit cumulative aggregation and Möbius inversion. Maximal elements are distinct from greatest elements.",
+          "discriminating_observation": "Use the divisors of twelve as a poset and compute greatest lower bounds."
+        }
+      ]
+    },
+    {
+      "id": "MATH-VECTOR",
+      "parent_id": "MATH-ROOT",
+      "kind": "technical_investigation",
+      "question": "Why does changing coordinates not change the underlying linear map?",
+      "why": "A matrix and its represented transformation must not be conflated; invertible basis changes preserve rank.",
+      "mechanism_explanation": "Vector spaces support basis-free addition and scaling; a matrix is a representation after choosing bases. Kernel, rank and nullity constrain linear maps independently of coordinate systems.",
+      "status": "research_active",
+      "evidence_status": "source_section_inspected",
+      "source_sections": [
+        {
+          "source_id": "HALMOS-LIN",
+          "ref": "50",
+          "section": "50: Rank and nullity",
+          "pages": "Printed p. 90",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "inspected",
+          "locator_level": "source_section_inspected",
+          "why": "50: Rank and nullity · printed p. 90"
+        },
+        {
+          "source_id": "ARTIN",
+          "ref": "3",
+          "section": "3: Vector Spaces",
+          "pages": "Printed start unverified",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "3: Vector Spaces"
+        },
+        {
+          "source_id": "ARTIN",
+          "ref": "4",
+          "section": "4: Linear Operators",
+          "pages": "Printed start unverified",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "4: Linear Operators"
+        }
+      ],
+      "term_ids": [
+        "math-t-0055",
+        "math-t-0064",
+        "math-t-0066",
+        "math-t-0072"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "A matrix and its represented transformation must not be conflated; invertible basis changes preserve rank.",
+          "mechanism": "Vector spaces support basis-free addition and scaling; a matrix is a representation after choosing bases. Kernel, rank and nullity constrain linear maps independently of coordinate systems.",
+          "discriminating_observation": "Represent the same linear map in two bases and verify invariant rank/nullity."
+        }
+      ]
+    },
+    {
+      "id": "MATH-SPECTRAL",
+      "parent_id": "MATH-VECTOR",
+      "kind": "technical_investigation",
+      "question": "When can a transformation be separated into independent modes?",
+      "why": "Diagonalizability is not automatic for a general matrix, let alone an unbounded function operator.",
+      "mechanism_explanation": "Eigenvectors and invariant subspaces expose stable directions. Spectral theorems need normality or self-adjointness; Jordan structure and infinite-dimensional continuous spectra expose limitations.",
+      "status": "research_active",
+      "evidence_status": "source_section_inspected",
+      "source_sections": [
+        {
+          "source_id": "HALMOS-LIN",
+          "ref": "79",
+          "section": "79: Spec\u0002tral theorem",
+          "pages": "Printed p. 155",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "inspected",
+          "locator_level": "source_section_inspected",
+          "why": "79: Spec\u0002tral theorem · printed p. 155"
+        },
+        {
+          "source_id": "ARTIN",
+          "ref": "4.7",
+          "section": "4.7: Jordan Form",
+          "pages": "Printed start unverified",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "4.7: Jordan Form"
+        },
+        {
+          "source_id": "KREYSZIG",
+          "ref": "9",
+          "section": "9: Spectral Theory of Bounded Self-Adjoint Linear Operators finer §9.1 unverified, showing chapter 9",
+          "pages": "Printed start unverified",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "9: Spectral Theory of Bounded Self-Adjoint Linear Operators finer §9.1 unverified, showing chapter 9"
+        }
+      ],
+      "term_ids": [
+        "math-t-0100",
+        "math-t-0088",
+        "math-t-0096",
+        "math-t-0521"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "Diagonalizability is not automatic for a general matrix, let alone an unbounded function operator.",
+          "mechanism": "Eigenvectors and invariant subspaces expose stable directions. Spectral theorems need normality or self-adjointness; Jordan structure and infinite-dimensional continuous spectra expose limitations.",
+          "discriminating_observation": "Compare a Jordan block with a symmetric matrix of the same size."
+        }
+      ]
+    },
+    {
+      "id": "MATH-GROUP",
+      "parent_id": "MATH-ROOT",
+      "kind": "technical_investigation",
+      "question": "How do reversible transformations form reusable algebraic structure?",
+      "why": "Quotients by arbitrary nonnormal subgroups do not inherit well-defined group multiplication.",
+      "mechanism_explanation": "A group is composition with identity and inverses. Homomorphisms preserve operation; cosets/normal subgroups permit quotients, and representations turn transformations into matrices.",
+      "status": "research_active",
+      "evidence_status": "table_of_contents_lead",
+      "source_sections": [
+        {
+          "source_id": "ARTIN",
+          "ref": "2",
+          "section": "2: Groups",
+          "pages": "Printed start unverified",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "2: Groups"
+        },
+        {
+          "source_id": "ARTIN",
+          "ref": "7",
+          "section": "7: More Group Theory",
+          "pages": "Printed start unverified",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "7: More Group Theory"
+        },
+        {
+          "source_id": "ARTIN",
+          "ref": "10",
+          "section": "10: Group Representations",
+          "pages": "Printed start unverified",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "10: Group Representations"
+        }
+      ],
+      "term_ids": [
+        "math-t-0110",
+        "math-t-0129",
+        "math-t-0127",
+        "math-t-0150"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "Quotients by arbitrary nonnormal subgroups do not inherit well-defined group multiplication.",
+          "mechanism": "A group is composition with identity and inverses. Homomorphisms preserve operation; cosets/normal subgroups permit quotients, and representations turn transformations into matrices.",
+          "discriminating_observation": "Test invertibility and normality in permutation subgroups."
+        }
+      ]
+    },
+    {
+      "id": "MATH-SYMMETRY",
+      "parent_id": "MATH-GROUP",
+      "kind": "technical_investigation",
+      "question": "How can symmetry reduce counting and computation?",
+      "why": "The counted equivalence depends on whether reflections, rotations or relabelings belong to the action.",
+      "mechanism_explanation": "A group action partitions objects into orbits with stabilizers. Representation characters encode transformation behavior; equivalent configurations may be counted once rather than repeatedly.",
+      "status": "research_active",
+      "evidence_status": "table_of_contents_lead",
+      "source_sections": [
+        {
+          "source_id": "ARTIN",
+          "ref": "6",
+          "section": "6: Symmetry",
+          "pages": "Printed start unverified",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "6: Symmetry"
+        },
+        {
+          "source_id": "ARTIN",
+          "ref": "7.1",
+          "section": "7.1: Cayley's Theorem",
+          "pages": "Printed start unverified",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "7.1: Cayley's Theorem"
+        },
+        {
+          "source_id": "STANLEY",
+          "ref": "1",
+          "section": "1: What Is Enumerative Combinatorics?",
+          "pages": "Printed p. 1",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "1: What Is Enumerative Combinatorics? · printed p. 1"
+        }
+      ],
+      "term_ids": [
+        "math-t-0120",
+        "math-t-0121",
+        "math-t-0122",
+        "math-t-0150"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "The counted equivalence depends on whether reflections, rotations or relabelings belong to the action.",
+          "mechanism": "A group action partitions objects into orbits with stabilizers. Representation characters encode transformation behavior; equivalent configurations may be counted once rather than repeatedly.",
+          "discriminating_observation": "Count colorings of a ring under rotations, then under all dihedral symmetries."
+        }
+      ]
+    },
+    {
+      "id": "MATH-RINGS",
+      "parent_id": "MATH-ROOT",
+      "kind": "technical_investigation",
+      "question": "Why might factorization stop being unique when the number system changes?",
+      "why": "Prime elements, irreducibles and prime ideals are different notions unless additional hypotheses hold.",
+      "mechanism_explanation": "Ring multiplication supports ideals, quotient rings and varying notions of primality. Quadratic integer domains can lose unique factorization of elements while ideals recover a structured replacement.",
+      "status": "research_active",
+      "evidence_status": "table_of_contents_lead",
+      "source_sections": [
+        {
+          "source_id": "ARTIN",
+          "ref": "11",
+          "section": "11: Rings",
+          "pages": "Printed start unverified",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "11: Rings"
+        },
+        {
+          "source_id": "ARTIN",
+          "ref": "12",
+          "section": "12: Factoring",
+          "pages": "Printed start unverified",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "12: Factoring"
+        },
+        {
+          "source_id": "ARTIN",
+          "ref": "13",
+          "section": "13: Quadratic Number Fields",
+          "pages": "Printed start unverified",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "13: Quadratic Number Fields"
+        }
+      ],
+      "term_ids": [
+        "math-t-0159",
+        "math-t-0164",
+        "math-t-0173",
+        "math-t-0167"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "Prime elements, irreducibles and prime ideals are different notions unless additional hypotheses hold.",
+          "mechanism": "Ring multiplication supports ideals, quotient rings and varying notions of primality. Quadratic integer domains can lose unique factorization of elements while ideals recover a structured replacement.",
+          "discriminating_observation": "Compare factorization of elements and ideals in a non-UFD."
+        }
+      ]
+    },
+    {
+      "id": "MATH-GALOIS",
+      "parent_id": "MATH-RINGS",
+      "kind": "technical_investigation",
+      "question": "How can algebra prove a classical construction cannot be performed?",
+      "why": "Failure to discover a radical expression is not proof of impossibility; allowed operations must be fixed.",
+      "mechanism_explanation": "Field extensions and automorphism groups encode algebraic relations among roots. Artin uses degree restrictions to distinguish constructible lengths from impossible ruler-and-compass requests.",
+      "status": "research_active",
+      "evidence_status": "source_section_inspected",
+      "source_sections": [
+        {
+          "source_id": "ARTIN",
+          "ref": "15",
+          "section": "15: Fields",
+          "pages": "Printed start unverified",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "15: Fields"
+        },
+        {
+          "source_id": "ARTIN",
+          "ref": "16",
+          "section": "16: Galois Theory",
+          "pages": "Printed start unverified",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "inspected",
+          "locator_level": "source_section_inspected",
+          "why": "16: Galois Theory"
+        }
+      ],
+      "term_ids": [
+        "math-t-0188",
+        "math-t-0194",
+        "math-t-0197"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "Failure to discover a radical expression is not proof of impossibility; allowed operations must be fixed.",
+          "mechanism": "Field extensions and automorphism groups encode algebraic relations among roots. Artin uses degree restrictions to distinguish constructible lengths from impossible ruler-and-compass requests.",
+          "discriminating_observation": "Explain why a field-extension degree condition restricts a proposed construction."
+        }
+      ]
+    },
+    {
+      "id": "MATH-ARITH",
+      "parent_id": "MATH-ROOT",
+      "kind": "technical_investigation",
+      "question": "What can modular arithmetic reveal without searching every integer?",
+      "why": "Satisfying several residue constraints need not solve the original Diophantine equation.",
+      "mechanism_explanation": "Divisibility, congruences, prime distribution and multiplicative arithmetic functions compress number-theoretic problems. Congruence obstructions are powerful negative certificates, not sufficient positive witnesses.",
+      "status": "research_active",
+      "evidence_status": "table_of_contents_lead",
+      "source_sections": [
+        {
+          "source_id": "HARDY",
+          "ref": "V",
+          "section": "V: Congruences and Residues",
+          "pages": "Printed p. 57",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "V: Congruences and Residues · printed p. 57"
+        },
+        {
+          "source_id": "HARDY",
+          "ref": "XVI",
+          "section": "XVI: The Arithmetical Functions",
+          "pages": "Printed p. 302",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "XVI: The Arithmetical Functions · printed p. 302"
+        },
+        {
+          "source_id": "HARDY",
+          "ref": "XXIV",
+          "section": "XXIV: Geometry of Numbers",
+          "pages": "Printed p. 523",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "XXIV: Geometry of Numbers · printed p. 523"
+        }
+      ],
+      "term_ids": [
+        "math-t-0209",
+        "math-t-0204",
+        "math-t-0211",
+        "math-t-0233"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "Satisfying several residue constraints need not solve the original Diophantine equation.",
+          "mechanism": "Divisibility, congruences, prime distribution and multiplicative arithmetic functions compress number-theoretic problems. Congruence obstructions are powerful negative certificates, not sufficient positive witnesses.",
+          "discriminating_observation": "Rule out a Diophantine solution modulo a small prime and contrast a modularly feasible non-solution."
+        }
+      ]
+    },
+    {
+      "id": "MATH-RATIONAL",
+      "parent_id": "MATH-ARITH",
+      "kind": "technical_investigation",
+      "question": "Why do certain fractions approximate irrational values unusually well?",
+      "why": "Truncating decimal digits is not generally optimal for a fixed denominator budget.",
+      "mechanism_explanation": "Continued fractions and Farey sequences expose rational approximation under denominator constraints; geometry of numbers relates this to lattices.",
+      "status": "research_active",
+      "evidence_status": "source_section_inspected",
+      "source_sections": [
+        {
+          "source_id": "HARDY",
+          "ref": "III",
+          "section": "III: Farey Series and a Theorem of Minkowski",
+          "pages": "Printed start unverified",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "III: Farey Series and a Theorem of Minkowski"
+        },
+        {
+          "source_id": "HARDY",
+          "ref": "X",
+          "section": "X: Continued Fractions",
+          "pages": "Printed start unverified",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "inspected",
+          "locator_level": "source_section_inspected",
+          "why": "X: Continued Fractions"
+        },
+        {
+          "source_id": "HARDY",
+          "ref": "XI",
+          "section": "XI: Approximation of Irrationals by Rationals",
+          "pages": "Printed p. 198",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "XI: Approximation of Irrationals by Rationals · printed p. 198"
+        }
+      ],
+      "term_ids": [
+        "math-t-0223",
+        "math-t-0224",
+        "math-t-0225"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "Truncating decimal digits is not generally optimal for a fixed denominator budget.",
+          "mechanism": "Continued fractions and Farey sequences expose rational approximation under denominator constraints; geometry of numbers relates this to lattices.",
+          "discriminating_observation": "Compare continued-fraction convergents and decimals for sqrt(2)."
+        }
+      ]
+    },
+    {
+      "id": "MATH-COUNT",
+      "parent_id": "MATH-ROOT",
+      "kind": "technical_investigation",
+      "question": "How can we count astronomically many objects without enumerating them?",
+      "why": "Labeled boxes and unlabeled boxes can have radically different counts.",
+      "mechanism_explanation": "Bijections, inclusion–exclusion, the twelvefold way and recurrences encode combinatorial classes. Labeling, order and repetition are part of the question's contract.",
+      "status": "research_active",
+      "evidence_status": "table_of_contents_lead",
+      "source_sections": [
+        {
+          "source_id": "STANLEY",
+          "ref": "1.9",
+          "section": "1.9: The Twelvefold Way",
+          "pages": "Printed p. 71",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "1.9: The Twelvefold Way · printed p. 71"
+        },
+        {
+          "source_id": "STANLEY",
+          "ref": "2.1",
+          "section": "2.1: Inclusion-Exclusion",
+          "pages": "Printed p. 195",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "2.1: Inclusion-Exclusion · printed p. 195"
+        },
+        {
+          "source_id": "FELLER",
+          "ref": "II",
+          "section": "II: Elements of Combinatorial Analysis",
+          "pages": "Printed start unverified",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "II: Elements of Combinatorial Analysis"
+        }
+      ],
+      "term_ids": [
+        "math-t-0245",
+        "math-t-0265",
+        "math-t-0259"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "Labeled boxes and unlabeled boxes can have radically different counts.",
+          "mechanism": "Bijections, inclusion–exclusion, the twelvefold way and recurrences encode combinatorial classes. Labeling, order and repetition are part of the question's contract.",
+          "discriminating_observation": "Count ball-in-box assignments with labels and restrictions changed one at a time."
+        }
+      ]
+    },
+    {
+      "id": "MATH-MOBIUS",
+      "parent_id": "MATH-COUNT",
+      "kind": "technical_investigation",
+      "question": "How can totals over subsets or divisors be inverted?",
+      "why": "It is not ordinary numerical reciprocal inversion; it depends on a locally finite ordering.",
+      "mechanism_explanation": "An incidence algebra provides convolution over comparable pairs; Möbius inversion recovers local contributions from cumulative values. Divisor inversion is one special poset.",
+      "status": "research_active",
+      "evidence_status": "source_section_inspected",
+      "source_sections": [
+        {
+          "source_id": "STANLEY",
+          "ref": "3.6",
+          "section": "3.6: Incidence Algebras",
+          "pages": "Printed p. 261",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "3.6: Incidence Algebras · printed p. 261"
+        },
+        {
+          "source_id": "STANLEY",
+          "ref": "3.7",
+          "section": "3.7: The Möbius Inversion Formula",
+          "pages": "Printed p. 264",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "inspected",
+          "locator_level": "source_section_inspected",
+          "why": "3.7: The Möbius Inversion Formula · printed p. 264"
+        },
+        {
+          "source_id": "HARDY",
+          "ref": "XVI",
+          "section": "XVI: The Arithmetical Functions",
+          "pages": "Printed p. 302",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "XVI: The Arithmetical Functions · printed p. 302"
+        }
+      ],
+      "term_ids": [
+        "math-t-0275",
+        "math-t-0276",
+        "math-t-0049"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "It is not ordinary numerical reciprocal inversion; it depends on a locally finite ordering.",
+          "mechanism": "An incidence algebra provides convolution over comparable pairs; Möbius inversion recovers local contributions from cumulative values. Divisor inversion is one special poset.",
+          "discriminating_observation": "Invert cumulative counts over subsets, then over integer divisors."
+        }
+      ]
+    },
+    {
+      "id": "MATH-GENFUN",
+      "parent_id": "MATH-COUNT",
+      "kind": "technical_investigation",
+      "question": "Can matrix powers count every string accepted by an automaton?",
+      "why": "An encoding only counts intended objects if states/transitions preserve the relevant restrictions.",
+      "mechanism_explanation": "Generating functions encode counts as coefficients. Stanley's transfer-matrix method encodes allowed finite-state transitions as directed paths, counted through matrix powers; formal power series need not analytically converge.",
+      "status": "research_active",
+      "evidence_status": "source_section_inspected",
+      "source_sections": [
+        {
+          "source_id": "STANLEY",
+          "ref": "4.7",
+          "section": "4.7: The Transfer-Matrix Method",
+          "pages": "Printed p. 500",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "inspected",
+          "locator_level": "source_section_inspected",
+          "why": "4.7: The Transfer-Matrix Method · printed p. 500"
+        },
+        {
+          "source_id": "STANLEY",
+          "ref": "4.1",
+          "section": "4.1: Rational Power Series in One Variable",
+          "pages": "Printed p. 464",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "4.1: Rational Power Series in One Variable · printed p. 464"
+        },
+        {
+          "source_id": "FELLER",
+          "ref": "XI",
+          "section": "XI: Integral-Valued Variables; Generating Functions",
+          "pages": "Printed p. 264",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "XI: Integral-Valued Variables; Generating Functions · printed p. 264"
+        }
+      ],
+      "term_ids": [
+        "math-t-0283",
+        "math-t-0290",
+        "math-t-0287"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "An encoding only counts intended objects if states/transitions preserve the relevant restrictions.",
+          "mechanism": "Generating functions encode counts as coefficients. Stanley's transfer-matrix method encodes allowed finite-state transitions as directed paths, counted through matrix powers; formal power series need not analytically converge.",
+          "discriminating_observation": "Count short binary strings avoiding a forbidden pattern by both enumeration and a transition matrix."
+        }
+      ]
+    },
+    {
+      "id": "MATH-GRAPH",
+      "parent_id": "MATH-ROOT",
+      "kind": "technical_investigation",
+      "question": "How do many local relationships create global connectivity and constraints?",
+      "why": "A shortest path does not prove high capacity or multiple independent routes.",
+      "mechanism_explanation": "Paths, matchings, flows, colorings and minor structure solve different global questions about one graph. Choosing the correct edge semantics is a necessary modeling step.",
+      "status": "research_active",
+      "evidence_status": "table_of_contents_lead",
+      "source_sections": [
+        {
+          "source_id": "DIESTEL",
+          "ref": "1",
+          "section": "1: The Basics",
+          "pages": "Printed p. 1",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "1: The Basics · printed p. 1"
+        },
+        {
+          "source_id": "DIESTEL",
+          "ref": "2",
+          "section": "2: Matching, Covering and Packing",
+          "pages": "Printed p. 37",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "2: Matching, Covering and Packing · printed p. 37"
+        },
+        {
+          "source_id": "DIESTEL",
+          "ref": "3",
+          "section": "3: Connectivity",
+          "pages": "Printed p. 63",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "3: Connectivity · printed p. 63"
+        }
+      ],
+      "term_ids": [
+        "math-t-0296",
+        "math-t-0306",
+        "math-t-0319",
+        "math-t-0328"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "A shortest path does not prove high capacity or multiple independent routes.",
+          "mechanism": "Paths, matchings, flows, colorings and minor structure solve different global questions about one graph. Choosing the correct edge semantics is a necessary modeling step.",
+          "discriminating_observation": "Reinterpret the same edges as capacity, conflict and communication links."
+        }
+      ]
+    },
+    {
+      "id": "MATH-FLOW",
+      "parent_id": "MATH-GRAPH",
+      "kind": "technical_investigation",
+      "question": "How can a small bottleneck certify a global network limitation?",
+      "why": "Many drawn paths can reuse one capacity-limiting edge or vertex.",
+      "mechanism_explanation": "Flow capacity and cut size connect via max-flow/min-cut duality; Menger-style statements relate disjoint paths to separators under appropriate graph semantics.",
+      "status": "research_active",
+      "evidence_status": "table_of_contents_lead",
+      "source_sections": [
+        {
+          "source_id": "DIESTEL",
+          "ref": "3.3",
+          "section": "3.3: Menger’s theorem*",
+          "pages": "Printed p. 71",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "3.3: Menger’s theorem* · printed p. 71"
+        },
+        {
+          "source_id": "DIESTEL",
+          "ref": "6",
+          "section": "6: Flows",
+          "pages": "Printed p. 155",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "6: Flows · printed p. 155"
+        }
+      ],
+      "term_ids": [
+        "math-t-0330",
+        "math-t-0329",
+        "math-t-0325"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "Many drawn paths can reuse one capacity-limiting edge or vertex.",
+          "mechanism": "Flow capacity and cut size connect via max-flow/min-cut duality; Menger-style statements relate disjoint paths to separators under appropriate graph semantics.",
+          "discriminating_observation": "Construct a network with many walks but a cut of capacity two."
+        }
+      ]
+    },
+    {
+      "id": "MATH-MINORS",
+      "parent_id": "MATH-GRAPH",
+      "kind": "technical_investigation",
+      "question": "Why are some huge graphs tractable while smaller dense graphs aren't?",
+      "why": "Sparse edges alone do not guarantee low treewidth; minor and induced subgraph are different operations.",
+      "mechanism_explanation": "Graph minors and tree decompositions identify global structure captured by bounded-width local interfaces. Forbidden minors constrain possible graph families.",
+      "status": "research_active",
+      "evidence_status": "table_of_contents_lead",
+      "source_sections": [
+        {
+          "source_id": "DIESTEL",
+          "ref": "12.6",
+          "section": "12.6: Tree-decompositions and forbidden minors",
+          "pages": "Printed p. 391",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "12.6: Tree-decompositions and forbidden minors · printed p. 391"
+        },
+        {
+          "source_id": "DIESTEL",
+          "ref": "12.7",
+          "section": "12.7: The graph minor theorem(⇤)",
+          "pages": "Printed p. 396",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "12.7: The graph minor theorem(⇤) · printed p. 396"
+        }
+      ],
+      "term_ids": [
+        "math-t-0345",
+        "math-t-0348",
+        "math-t-0347"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "Sparse edges alone do not guarantee low treewidth; minor and induced subgraph are different operations.",
+          "mechanism": "Graph minors and tree decompositions identify global structure captured by bounded-width local interfaces. Forbidden minors constrain possible graph families.",
+          "discriminating_observation": "Compare dynamic programming on a long path and a clique."
+        }
+      ]
+    },
+    {
+      "id": "MATH-TOPOLOGY",
+      "parent_id": "MATH-ROOT",
+      "kind": "technical_investigation",
+      "question": "What is continuity when distance is not defined?",
+      "why": "A continuous bijection can fail to be homeomorphic; topological equivalence ignores many geometric lengths.",
+      "mechanism_explanation": "Open sets and their inverse images define continuity; homeomorphism is a reversible topology-preserving relationship. Metrics are additional structure, not the definition of all topology.",
+      "status": "research_active",
+      "evidence_status": "table_of_contents_lead",
+      "source_sections": [
+        {
+          "source_id": "MUNKRES",
+          "ref": "2",
+          "section": "2: Topological Spaces and Continuous Functions",
+          "pages": "Printed p. 73",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "2: Topological Spaces and Continuous Functions · printed p. 73"
+        },
+        {
+          "source_id": "MUNKRES",
+          "ref": "3",
+          "section": "3: Connectedness and Compactness",
+          "pages": "Printed p. 145",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "3: Connectedness and Compactness · printed p. 145"
+        },
+        {
+          "source_id": "RUDIN",
+          "ref": "2",
+          "section": "2: Basic Topology",
+          "pages": "Printed p. 22",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "2: Basic Topology · printed p. 22"
+        }
+      ],
+      "term_ids": [
+        "math-t-0355",
+        "math-t-0365",
+        "math-t-0366"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "A continuous bijection can fail to be homeomorphic; topological equivalence ignores many geometric lengths.",
+          "mechanism": "Open sets and their inverse images define continuity; homeomorphism is a reversible topology-preserving relationship. Metrics are additional structure, not the definition of all topology.",
+          "discriminating_observation": "Create two distinct topologies on the same set and see which functions remain continuous."
+        }
+      ]
+    },
+    {
+      "id": "MATH-COMPACT",
+      "parent_id": "MATH-TOPOLOGY",
+      "kind": "technical_investigation",
+      "question": "When can a local condition yield a global finiteness conclusion?",
+      "why": "The infinite-dimensional unit ball invalidates naive closed-and-bounded compactness.",
+      "mechanism_explanation": "Compactness gives finite subcovers and powers many extrema/subsequence principles. Heine–Borel closed-and-bounded criteria are specific to finite-dimensional Euclidean settings.",
+      "status": "research_active",
+      "evidence_status": "table_of_contents_lead",
+      "source_sections": [
+        {
+          "source_id": "MUNKRES",
+          "ref": "3",
+          "section": "3: Connectedness and Compactness",
+          "pages": "Printed p. 145",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "3: Connectedness and Compactness · printed p. 145"
+        },
+        {
+          "source_id": "KREYSZIG",
+          "ref": "2.5",
+          "section": "2.5: Compactness and Finite Dimension",
+          "pages": "Printed p. 77",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "2.5: Compactness and Finite Dimension · printed p. 77"
+        },
+        {
+          "source_id": "RUDIN",
+          "ref": "2",
+          "section": "2: Basic Topology",
+          "pages": "Printed p. 22",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "2: Basic Topology · printed p. 22"
+        }
+      ],
+      "term_ids": [
+        "math-t-0379",
+        "math-t-0381",
+        "math-t-0498"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "The infinite-dimensional unit ball invalidates naive closed-and-bounded compactness.",
+          "mechanism": "Compactness gives finite subcovers and powers many extrema/subsequence principles. Heine–Borel closed-and-bounded criteria are specific to finite-dimensional Euclidean settings.",
+          "discriminating_observation": "Compare bounded sequences in R^n and l2 for convergent subsequences."
+        }
+      ]
+    },
+    {
+      "id": "MATH-LOOPS",
+      "parent_id": "MATH-TOPOLOGY",
+      "kind": "technical_investigation",
+      "question": "How can a hole be detected without relying on a picture?",
+      "why": "The fundamental group detects some but not all non-homeomorphism distinctions.",
+      "mechanism_explanation": "Homotopy classes of loops define the fundamental group; coverings and van Kampen assemble global topology from local pieces under overlap conditions.",
+      "status": "research_active",
+      "evidence_status": "source_section_inspected",
+      "source_sections": [
+        {
+          "source_id": "MUNKRES",
+          "ref": "9",
+          "section": "9: The Fundamental Group",
+          "pages": "Printed p. 317",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "inspected",
+          "locator_level": "source_section_inspected",
+          "why": "9: The Fundamental Group · printed p. 317"
+        },
+        {
+          "source_id": "MUNKRES",
+          "ref": "11",
+          "section": "11: The Seifert-van Kampen Theorem",
+          "pages": "Printed p. 403",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "11: The Seifert-van Kampen Theorem · printed p. 403"
+        },
+        {
+          "source_id": "MUNKRES",
+          "ref": "13",
+          "section": "13: Classification of Covering Spaces",
+          "pages": "Printed p. 443",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "13: Classification of Covering Spaces · printed p. 443"
+        }
+      ],
+      "term_ids": [
+        "math-t-0401",
+        "math-t-0399",
+        "math-t-0402"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "The fundamental group detects some but not all non-homeomorphism distinctions.",
+          "mechanism": "Homotopy classes of loops define the fundamental group; coverings and van Kampen assemble global topology from local pieces under overlap conditions.",
+          "discriminating_observation": "Contract a loop on a disk, then explain why its analogue cannot shrink around an annular hole."
+        }
+      ]
+    },
+    {
+      "id": "MATH-LIMITS",
+      "parent_id": "MATH-ROOT",
+      "kind": "technical_investigation",
+      "question": "When does exchanging a limit with an operation give a wrong answer?",
+      "why": "Pointwise convergence alone does not permit interchange of integration and limit.",
+      "mechanism_explanation": "Pointwise convergence uses input-dependent thresholds, while uniform convergence controls every point simultaneously. Integration, differentiation and summation require suitable convergence hypotheses; Rudin gives explicit contrary examples.",
+      "status": "research_active",
+      "evidence_status": "source_section_inspected",
+      "source_sections": [
+        {
+          "source_id": "RUDIN",
+          "ref": "7",
+          "section": "7: Sequences and Series of Functions",
+          "pages": "Printed p. 132",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "inspected",
+          "locator_level": "source_section_inspected",
+          "why": "7: Sequences and Series of Functions · printed p. 132"
+        },
+        {
+          "source_id": "ROYDEN",
+          "ref": "4",
+          "section": "4: Lebesgue Integration",
+          "pages": "Printed p. 62",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "inspected",
+          "locator_level": "source_section_inspected",
+          "why": "4: Lebesgue Integration · printed p. 62"
+        }
+      ],
+      "term_ids": [
+        "math-t-0424",
+        "math-t-0423",
+        "math-t-0449"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "Pointwise convergence alone does not permit interchange of integration and limit.",
+          "mechanism": "Pointwise convergence uses input-dependent thresholds, while uniform convergence controls every point simultaneously. Integration, differentiation and summation require suitable convergence hypotheses; Rudin gives explicit contrary examples.",
+          "discriminating_observation": "Calculate integrals of a spiky pointwise-vanishing function sequence."
+        }
+      ]
+    },
+    {
+      "id": "MATH-COMPLETE",
+      "parent_id": "MATH-LIMITS",
+      "kind": "technical_investigation",
+      "question": "Why can successive approximations approach something outside the claimed space?",
+      "why": "Small differences do not establish that a limit belongs to a noncomplete domain.",
+      "mechanism_explanation": "Completeness is the property that Cauchy sequences converge within the space. Banach and Hilbert spaces retain limits needed for operator and fixed-point arguments.",
+      "status": "research_active",
+      "evidence_status": "table_of_contents_lead",
+      "source_sections": [
+        {
+          "source_id": "RUDIN",
+          "ref": "3",
+          "section": "3: Numerical Sequences and Series",
+          "pages": "Printed p. 43",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "3: Numerical Sequences and Series · printed p. 43"
+        },
+        {
+          "source_id": "KREYSZIG",
+          "ref": "1.4",
+          "section": "1.4: Convergence, Cauchy Sequence, Completeness",
+          "pages": "Printed p. 25",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "1.4: Convergence, Cauchy Sequence, Completeness · printed p. 25"
+        },
+        {
+          "source_id": "MUNKRES",
+          "ref": "7",
+          "section": "7: Complete Metric Spaces and Function Spaces",
+          "pages": "Printed p. 261",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "7: Complete Metric Spaces and Function Spaces · printed p. 261"
+        }
+      ],
+      "term_ids": [
+        "math-t-0375",
+        "math-t-0376",
+        "math-t-0498"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "Small differences do not establish that a limit belongs to a noncomplete domain.",
+          "mechanism": "Completeness is the property that Cauchy sequences converge within the space. Banach and Hilbert spaces retain limits needed for operator and fixed-point arguments.",
+          "discriminating_observation": "Take rational approximations to sqrt(2), contrasting Q with R."
+        }
+      ]
+    },
+    {
+      "id": "MATH-MEASURE",
+      "parent_id": "MATH-ROOT",
+      "kind": "technical_investigation",
+      "question": "Which collections can consistently be assigned size or probability?",
+      "why": "A definable collection does not automatically possess a countably additive measure.",
+      "mechanism_explanation": "Sigma-algebras encode permitted measurable events; countably additive measures assign size. Lebesgue's theory includes non-measurable set counterexamples showing a boundary to unrestricted intuitive volume.",
+      "status": "research_active",
+      "evidence_status": "source_section_inspected",
+      "source_sections": [
+        {
+          "source_id": "ROYDEN",
+          "ref": "2.2",
+          "section": "2.2: Outer-Measure",
+          "pages": "Printed p. 31",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "2.2: Outer-Measure · printed p. 31"
+        },
+        {
+          "source_id": "ROYDEN",
+          "ref": "2.6",
+          "section": "2.6: Vitali’s Example of a Non-measurable Set",
+          "pages": "Printed p. 45",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "inspected",
+          "locator_level": "source_section_inspected",
+          "why": "2.6: Vitali’s Example of a Non-measurable Set · printed p. 45"
+        },
+        {
+          "source_id": "HALMOS-SET",
+          "ref": "15",
+          "section": "15: The Axiom of Choice",
+          "pages": "Printed p. 49",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "15: The Axiom of Choice · printed p. 49"
+        }
+      ],
+      "term_ids": [
+        "math-t-0453",
+        "math-t-0459",
+        "math-t-0463"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "A definable collection does not automatically possess a countably additive measure.",
+          "mechanism": "Sigma-algebras encode permitted measurable events; countably additive measures assign size. Lebesgue's theory includes non-measurable set counterexamples showing a boundary to unrestricted intuitive volume.",
+          "discriminating_observation": "Compare length, counting measure and probability on the same measurable carrier."
+        }
+      ]
+    },
+    {
+      "id": "MATH-INTEGRAL",
+      "parent_id": "MATH-MEASURE",
+      "kind": "technical_investigation",
+      "question": "Why does Lebesgue integration allow some limit exchanges that Riemann reasoning cannot justify?",
+      "why": "A function spike can converge at each point while its integral behaves differently.",
+      "mechanism_explanation": "Monotone and dominated convergence use explicit hypotheses to move limits through integrals; measurable simple approximations build the integral from below.",
+      "status": "research_active",
+      "evidence_status": "source_section_inspected",
+      "source_sections": [
+        {
+          "source_id": "ROYDEN",
+          "ref": "4",
+          "section": "4: Lebesgue Integration",
+          "pages": "Printed p. 62",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "inspected",
+          "locator_level": "source_section_inspected",
+          "why": "4: Lebesgue Integration · printed p. 62"
+        },
+        {
+          "source_id": "RUDIN",
+          "ref": "7",
+          "section": "7: Sequences and Series of Functions",
+          "pages": "Printed p. 132",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "inspected",
+          "locator_level": "source_section_inspected",
+          "why": "7: Sequences and Series of Functions · printed p. 132"
+        }
+      ],
+      "term_ids": [
+        "math-t-0466",
+        "math-t-0470",
+        "math-t-0468"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "A function spike can converge at each point while its integral behaves differently.",
+          "mechanism": "Monotone and dominated convergence use explicit hypotheses to move limits through integrals; measurable simple approximations build the integral from below.",
+          "discriminating_observation": "Find a pointwise-convergent family that lacks a common integrable dominating function."
+        }
+      ]
+    },
+    {
+      "id": "MATH-FUNCTIONS",
+      "parent_id": "MATH-MEASURE",
+      "kind": "technical_investigation",
+      "question": "What happens if we treat functions themselves as points?",
+      "why": "Pointwise function equality is not the same as equality almost everywhere; weak convergence does not imply norm convergence.",
+      "mechanism_explanation": "Lp norms and Hilbert inner products give geometry to function classes; weak and strong convergence describe distinct observational limits. Functions differing almost everywhere may represent one Lp element.",
+      "status": "research_active",
+      "evidence_status": "table_of_contents_lead",
+      "source_sections": [
+        {
+          "source_id": "ROYDEN",
+          "ref": "7",
+          "section": "7: The Lp Spaces: Completeness and Approximation",
+          "pages": "Printed start unverified",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "7: The Lp Spaces: Completeness and Approximation"
+        },
+        {
+          "source_id": "ROYDEN",
+          "ref": "8",
+          "section": "8: The Lp Spaces: Duality, Weak Convergence, and Minimization",
+          "pages": "Printed start unverified",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "8: The Lp Spaces: Duality, Weak Convergence, and Minimization"
+        },
+        {
+          "source_id": "KREYSZIG",
+          "ref": "3",
+          "section": "3: Inner Product Spaces; Hilbert Spaces",
+          "pages": "Printed p. 127",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "3: Inner Product Spaces; Hilbert Spaces · printed p. 127"
+        }
+      ],
+      "term_ids": [
+        "math-t-0482",
+        "math-t-0499",
+        "math-t-0509"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "Pointwise function equality is not the same as equality almost everywhere; weak convergence does not imply norm convergence.",
+          "mechanism": "Lp norms and Hilbert inner products give geometry to function classes; weak and strong convergence describe distinct observational limits. Functions differing almost everywhere may represent one Lp element.",
+          "discriminating_observation": "Construct a norm-one orthonormal sequence weakly convergent to zero."
+        }
+      ]
+    },
+    {
+      "id": "MATH-OPERATOR",
+      "parent_id": "MATH-FUNCTIONS",
+      "kind": "technical_investigation",
+      "question": "Why are infinite-dimensional transformations not just enormous matrices?",
+      "why": "An operator may not be defined on all inputs; boundedness, dense domains and self-adjointness are substantive.",
+      "mechanism_explanation": "Hahn–Banach and bounded/closed graph theorems analyze linear functionals and operators. Unbounded operators have domains and spectra whose analysis requires more than finite-dimensional eigenvector intuition.",
+      "status": "research_active",
+      "evidence_status": "source_section_inspected",
+      "source_sections": [
+        {
+          "source_id": "KREYSZIG",
+          "ref": "4.2",
+          "section": "4.2: Hahn-Banach Theorem",
+          "pages": "Printed p. 213",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "inspected",
+          "locator_level": "source_section_inspected",
+          "why": "4.2: Hahn-Banach Theorem · printed p. 213"
+        },
+        {
+          "source_id": "KREYSZIG",
+          "ref": "10",
+          "section": "10: Unbounded Linear Operators in Hilbert Space finer §10.1 unverified, showing chapter 10",
+          "pages": "Printed start unverified",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "10: Unbounded Linear Operators in Hilbert Space finer §10.1 unverified, showing chapter 10"
+        },
+        {
+          "source_id": "ROYDEN",
+          "ref": "17",
+          "section": "17: Continuous Linear Operators Between Banach Spaces",
+          "pages": "Printed p. 337",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "17: Continuous Linear Operators Between Banach Spaces · printed p. 337"
+        }
+      ],
+      "term_ids": [
+        "math-t-0513",
+        "math-t-0530",
+        "math-t-0521"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "An operator may not be defined on all inputs; boundedness, dense domains and self-adjointness are substantive.",
+          "mechanism": "Hahn–Banach and bounded/closed graph theorems analyze linear functionals and operators. Unbounded operators have domains and spectra whose analysis requires more than finite-dimensional eigenvector intuition.",
+          "discriminating_observation": "Show why differentiation fails to be bounded on a naive L2 normed domain."
+        }
+      ]
+    },
+    {
+      "id": "MATH-FIXED",
+      "parent_id": "MATH-OPERATOR",
+      "kind": "technical_investigation",
+      "question": "When does repeated iteration certify that a unique solution exists?",
+      "why": "Continuous maps need not contract or have uniquely attracting fixed points.",
+      "mechanism_explanation": "Banach's contraction theorem couples a complete metric space with an invariant contraction to guarantee a unique fixed point and convergent iteration.",
+      "status": "research_active",
+      "evidence_status": "source_section_inspected",
+      "source_sections": [
+        {
+          "source_id": "KREYSZIG",
+          "ref": "5.1",
+          "section": "5.1: Banach Fixed Point Theorem",
+          "pages": "Printed p. 299",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "inspected",
+          "locator_level": "source_section_inspected",
+          "why": "5.1: Banach Fixed Point Theorem · printed p. 299"
+        },
+        {
+          "source_id": "RUDIN",
+          "ref": "9",
+          "section": "9: Functions of Several Variables",
+          "pages": "Printed p. 190",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "9: Functions of Several Variables · printed p. 190"
+        }
+      ],
+      "term_ids": [
+        "math-t-0518",
+        "math-t-0442",
+        "math-t-0376"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "Continuous maps need not contract or have uniquely attracting fixed points.",
+          "mechanism": "Banach's contraction theorem couples a complete metric space with an invariant contraction to guarantee a unique fixed point and convergent iteration.",
+          "discriminating_observation": "Compare x→x/2 with a noncontracting iteration."
+        }
+      ]
+    },
+    {
+      "id": "MATH-HOLO",
+      "parent_id": "MATH-ROOT",
+      "kind": "technical_investigation",
+      "question": "Why is complex differentiability so restrictive?",
+      "why": "A function can be real differentiable in two variables but not holomorphic.",
+      "mechanism_explanation": "Holomorphicity links the Cauchy–Riemann equations, contour integrals and analytic rigidity; Cauchy's formula recovers interior values from boundary data.",
+      "status": "research_active",
+      "evidence_status": "source_section_inspected",
+      "source_sections": [
+        {
+          "source_id": "AHLFORS",
+          "ref": "2",
+          "section": "2: Complex Functions",
+          "pages": "Printed start unverified",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "2: Complex Functions"
+        },
+        {
+          "source_id": "AHLFORS",
+          "ref": "4",
+          "section": "4: Complex Integration",
+          "pages": "Printed start unverified",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "inspected",
+          "locator_level": "source_section_inspected",
+          "why": "4: Complex Integration"
+        }
+      ],
+      "term_ids": [
+        "math-t-0545",
+        "math-t-0556",
+        "math-t-0547"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "A function can be real differentiable in two variables but not holomorphic.",
+          "mechanism": "Holomorphicity links the Cauchy–Riemann equations, contour integrals and analytic rigidity; Cauchy's formula recovers interior values from boundary data.",
+          "discriminating_observation": "Contrast z² and complex conjugation under Cauchy–Riemann."
+        }
+      ]
+    },
+    {
+      "id": "MATH-RESIDUES",
+      "parent_id": "MATH-HOLO",
+      "kind": "technical_investigation",
+      "question": "How can a contour around singularities compute a difficult real integral?",
+      "why": "The residue theorem does not justify an arbitrary real-to-complex contour with poles on its boundary.",
+      "mechanism_explanation": "Laurent coefficients and residues turn closed-contour integrals into local singular contributions, subject to decay, branch and region assumptions.",
+      "status": "research_active",
+      "evidence_status": "source_section_inspected",
+      "source_sections": [
+        {
+          "source_id": "AHLFORS",
+          "ref": "4",
+          "section": "4: Complex Integration",
+          "pages": "Printed start unverified",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "inspected",
+          "locator_level": "source_section_inspected",
+          "why": "4: Complex Integration"
+        },
+        {
+          "source_id": "AHLFORS",
+          "ref": "5",
+          "section": "5: Series and Product Developments",
+          "pages": "Printed p. 175",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "5: Series and Product Developments · printed p. 175"
+        }
+      ],
+      "term_ids": [
+        "math-t-0567",
+        "math-t-0565",
+        "math-t-0563"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "The residue theorem does not justify an arbitrary real-to-complex contour with poles on its boundary.",
+          "mechanism": "Laurent coefficients and residues turn closed-contour integrals into local singular contributions, subject to decay, branch and region assumptions.",
+          "discriminating_observation": "Compare a rational integral with and without an admissible decaying semicircular contour."
+        }
+      ]
+    },
+    {
+      "id": "MATH-CURVATURE",
+      "parent_id": "MATH-ROOT",
+      "kind": "technical_investigation",
+      "question": "How can local curvature constrain the whole shape of a surface?",
+      "why": "A cylinder has extrinsic bending but zero intrinsic Gaussian curvature, unlike a sphere.",
+      "mechanism_explanation": "The intrinsic first fundamental form measures lengths and angles; Gaussian curvature and Gauss–Bonnet connect local geometry with Euler-characteristic topology.",
+      "status": "research_active",
+      "evidence_status": "source_section_inspected",
+      "source_sections": [
+        {
+          "source_id": "DOCARMO",
+          "ref": "2-5",
+          "section": "2-5: The First Fundamental Form; Area",
+          "pages": "Printed p. 94",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "2-5: The First Fundamental Form; Area · printed p. 94"
+        },
+        {
+          "source_id": "DOCARMO",
+          "ref": "4-5",
+          "section": "4-5: The Gauss-Bonnet Theorem and Its Applications",
+          "pages": "Printed p. 267",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "inspected",
+          "locator_level": "source_section_inspected",
+          "why": "4-5: The Gauss-Bonnet Theorem and Its Applications · printed p. 267"
+        }
+      ],
+      "term_ids": [
+        "math-t-0606",
+        "math-t-0613",
+        "math-t-0626"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "A cylinder has extrinsic bending but zero intrinsic Gaussian curvature, unlike a sphere.",
+          "mechanism": "The intrinsic first fundamental form measures lengths and angles; Gaussian curvature and Gauss–Bonnet connect local geometry with Euler-characteristic topology.",
+          "discriminating_observation": "Contrast sphere, cylinder and plane via intrinsic distances and total curvature."
+        }
+      ]
+    },
+    {
+      "id": "MATH-GEODESIC",
+      "parent_id": "MATH-CURVATURE",
+      "kind": "technical_investigation",
+      "question": "What counts as a straight line on a curved surface?",
+      "why": "Locally geodesic need not mean globally shortest between endpoints.",
+      "mechanism_explanation": "Geodesics generalize locally straight paths under the surface metric and connection; parallel transport and conjugate points expose additional geometry.",
+      "status": "research_active",
+      "evidence_status": "table_of_contents_lead",
+      "source_sections": [
+        {
+          "source_id": "DOCARMO",
+          "ref": "4-4",
+          "section": "4-4: Parallel Transport. Geodesics.",
+          "pages": "Printed p. 241",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "4-4: Parallel Transport. Geodesics. · printed p. 241"
+        },
+        {
+          "source_id": "DOCARMO",
+          "ref": "5-3",
+          "section": "5-3: Complete Surfaces. Theorem of Hopf-Rinow",
+          "pages": "Printed p. 331",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "5-3: Complete Surfaces. Theorem of Hopf-Rinow · printed p. 331"
+        }
+      ],
+      "term_ids": [
+        "math-t-0622",
+        "math-t-0620",
+        "math-t-0625"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "Locally geodesic need not mean globally shortest between endpoints.",
+          "mechanism": "Geodesics generalize locally straight paths under the surface metric and connection; parallel transport and conjugate points expose additional geometry.",
+          "discriminating_observation": "Compare short and long arcs of the same great circle."
+        }
+      ]
+    },
+    {
+      "id": "MATH-PROB",
+      "parent_id": "MATH-ROOT",
+      "kind": "technical_investigation",
+      "question": "What distinguishes an uncertainty model from observed frequencies?",
+      "why": "Sampling without replacement breaks naive independent-trial assumptions.",
+      "mechanism_explanation": "A probability space is measurable events with a normalized measure. Independence and conditional probability are further assumptions; a stochastic model's adequacy is empirical, not a tautology of probability axioms.",
+      "status": "research_active",
+      "evidence_status": "table_of_contents_lead",
+      "source_sections": [
+        {
+          "source_id": "FELLER",
+          "ref": "I",
+          "section": "I: The Sample Space",
+          "pages": "Printed start unverified",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "I: The Sample Space"
+        },
+        {
+          "source_id": "FELLER",
+          "ref": "V",
+          "section": "V: Conditional Probability and Stochastic Independence",
+          "pages": "Printed p. 114",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "V: Conditional Probability and Stochastic Independence · printed p. 114"
+        },
+        {
+          "source_id": "CASELLA",
+          "ref": "1",
+          "section": "1: Probability Theory",
+          "pages": "Printed p. 1",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "1: Probability Theory · printed p. 1"
+        }
+      ],
+      "term_ids": [
+        "math-t-0635",
+        "math-t-0643",
+        "math-t-0642"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "Sampling without replacement breaks naive independent-trial assumptions.",
+          "mechanism": "A probability space is measurable events with a normalized measure. Independence and conditional probability are further assumptions; a stochastic model's adequacy is empirical, not a tautology of probability axioms.",
+          "discriminating_observation": "Compare distributions of draws with and without replacement."
+        }
+      ]
+    },
+    {
+      "id": "MATH-STOCHASTIC",
+      "parent_id": "MATH-PROB",
+      "kind": "technical_investigation",
+      "question": "How can local random transitions produce long-run regularity?",
+      "why": "A Markov chain need not converge to a unique stationary distribution.",
+      "mechanism_explanation": "Random walks, branching, renewal and Markov chains encode temporal dependence and distinct recurrence or extinction phenomena.",
+      "status": "research_active",
+      "evidence_status": "source_section_inspected",
+      "source_sections": [
+        {
+          "source_id": "FELLER",
+          "ref": "III",
+          "section": "III: Fluctuations in Coin Tossing and Random Walks",
+          "pages": "Printed p. 67",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "III: Fluctuations in Coin Tossing and Random Walks · printed p. 67"
+        },
+        {
+          "source_id": "FELLER",
+          "ref": "XIII",
+          "section": "XIII: Recurrent Events; Renewal Theory",
+          "pages": "Printed p. 303",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "XIII: Recurrent Events; Renewal Theory · printed p. 303"
+        },
+        {
+          "source_id": "FELLER",
+          "ref": "XV",
+          "section": "XV: Markov Chains",
+          "pages": "Printed p. 372",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "inspected",
+          "locator_level": "source_section_inspected",
+          "why": "XV: Markov Chains · printed p. 372"
+        }
+      ],
+      "term_ids": [
+        "math-t-0669",
+        "math-t-0679",
+        "math-t-0677",
+        "math-t-0676"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "A Markov chain need not converge to a unique stationary distribution.",
+          "mechanism": "Random walks, branching, renewal and Markov chains encode temporal dependence and distinct recurrence or extinction phenomena.",
+          "discriminating_observation": "Contrast a periodic two-state chain with an aperiodic irreducible chain."
+        }
+      ]
+    },
+    {
+      "id": "MATH-STAT",
+      "parent_id": "MATH-PROB",
+      "kind": "technical_investigation",
+      "question": "How does a probability model become a defensible inference from data?",
+      "why": "Observing data is not equivalent to knowing which probability law produced them.",
+      "mechanism_explanation": "Statistical inference introduces unknown parameters, a likelihood and sampling distribution. Sufficient statistics preserve information only relative to a specified statistical family.",
+      "status": "research_active",
+      "evidence_status": "table_of_contents_lead",
+      "source_sections": [
+        {
+          "source_id": "CASELLA",
+          "ref": "6",
+          "section": "6: Principles of Data Reduction",
+          "pages": "Printed p. 271",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "6: Principles of Data Reduction · printed p. 271"
+        },
+        {
+          "source_id": "CASELLA",
+          "ref": "7",
+          "section": "7: Point Estimation",
+          "pages": "Printed p. 311",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "7: Point Estimation · printed p. 311"
+        },
+        {
+          "source_id": "CASELLA",
+          "ref": "8",
+          "section": "8: Hypothesis Testing",
+          "pages": "Printed p. 373",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "8: Hypothesis Testing · printed p. 373"
+        }
+      ],
+      "term_ids": [
+        "math-t-0690",
+        "math-t-0695",
+        "math-t-0698"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "Observing data is not equivalent to knowing which probability law produced them.",
+          "mechanism": "Statistical inference introduces unknown parameters, a likelihood and sampling distribution. Sufficient statistics preserve information only relative to a specified statistical family.",
+          "discriminating_observation": "Test sufficiency of the sum of Bernoulli observations for their success probability."
+        }
+      ]
+    },
+    {
+      "id": "MATH-ESTIMATE",
+      "parent_id": "MATH-STAT",
+      "kind": "technical_investigation",
+      "question": "What makes an estimator better besides being close on one dataset?",
+      "why": "Unbiasedness alone is not optimality; a single sample's error is not an estimator's risk.",
+      "mechanism_explanation": "Bias, variance, MSE, likelihood and Bayes risk evaluate repeated-sampling quality. Rao–Blackwell conditioning can reduce variance under appropriate hypotheses.",
+      "status": "research_active",
+      "evidence_status": "source_section_inspected",
+      "source_sections": [
+        {
+          "source_id": "CASELLA",
+          "ref": "7",
+          "section": "7: Point Estimation",
+          "pages": "Printed p. 311",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "inspected",
+          "locator_level": "source_section_inspected",
+          "why": "7: Point Estimation · printed p. 311"
+        },
+        {
+          "source_id": "CASELLA",
+          "ref": "6",
+          "section": "6: Principles of Data Reduction",
+          "pages": "Printed p. 271",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "6: Principles of Data Reduction · printed p. 271"
+        }
+      ],
+      "term_ids": [
+        "math-t-0696",
+        "math-t-0703",
+        "math-t-0708"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "Unbiasedness alone is not optimality; a single sample's error is not an estimator's risk.",
+          "mechanism": "Bias, variance, MSE, likelihood and Bayes risk evaluate repeated-sampling quality. Rao–Blackwell conditioning can reduce variance under appropriate hypotheses.",
+          "discriminating_observation": "Compare sampling MSE across two estimators over a range of parameters."
+        }
+      ]
+    },
+    {
+      "id": "MATH-TEST",
+      "parent_id": "MATH-STAT",
+      "kind": "technical_investigation",
+      "question": "Why is a p-value not the probability that a hypothesis is false?",
+      "why": "P(data|null) is not P(null|data).",
+      "mechanism_explanation": "A significance test controls sampling outcomes under a null law. Type I error, power, confidence coverage and posterior probabilities are different conditional quantities.",
+      "status": "research_active",
+      "evidence_status": "table_of_contents_lead",
+      "source_sections": [
+        {
+          "source_id": "CASELLA",
+          "ref": "8",
+          "section": "8: Hypothesis Testing",
+          "pages": "Printed p. 373",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "8: Hypothesis Testing · printed p. 373"
+        },
+        {
+          "source_id": "CASELLA",
+          "ref": "9",
+          "section": "9: Interval Estimation",
+          "pages": "Printed p. 417",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "9: Interval Estimation · printed p. 417"
+        }
+      ],
+      "term_ids": [
+        "math-t-0725",
+        "math-t-0721",
+        "math-t-0718",
+        "math-t-0729"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "P(data|null) is not P(null|data).",
+          "mechanism": "A significance test controls sampling outcomes under a null law. Type I error, power, confidence coverage and posterior probabilities are different conditional quantities.",
+          "discriminating_observation": "Simulate false-positive rates under the null and interval coverage under misspecification."
+        }
+      ]
+    },
+    {
+      "id": "MATH-CROSS",
+      "parent_id": "MATH-ROOT",
+      "kind": "technical_investigation",
+      "question": "Which apparently similar mathematical operations genuinely transfer across fields?",
+      "why": "A graph quotient, quotient ring and quotient topology are not the same theorem; shared names invite counterexamples.",
+      "mechanism_explanation": "Quotienting, inversion, duality, completion, spectral decomposition and structure-preserving maps recur across mathematics, but require distinct domain and compatibility contracts.",
+      "status": "research_active",
+      "evidence_status": "table_of_contents_lead",
+      "source_sections": [
+        {
+          "source_id": "ARTIN",
+          "ref": "11",
+          "section": "11: Rings",
+          "pages": "Printed start unverified",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "11: Rings"
+        },
+        {
+          "source_id": "STANLEY",
+          "ref": "3",
+          "section": "3: Partially Ordered Sets",
+          "pages": "Printed p. 241",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "3: Partially Ordered Sets · printed p. 241"
+        },
+        {
+          "source_id": "MUNKRES",
+          "ref": "2",
+          "section": "2: Topological Spaces and Continuous Functions",
+          "pages": "Printed p. 73",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "2: Topological Spaces and Continuous Functions · printed p. 73"
+        },
+        {
+          "source_id": "KREYSZIG",
+          "ref": "4",
+          "section": "4: Fundamental Theorems for Normed and Banach Spaces",
+          "pages": "Printed start unverified",
+          "page_scheme": "Source-printed book pagination; PDF index unverified",
+          "level": "toc_only",
+          "locator_level": "toc_only",
+          "why": "4: Fundamental Theorems for Normed and Banach Spaces"
+        }
+      ],
+      "term_ids": [
+        "math-t-0752",
+        "math-t-0749",
+        "math-t-0745",
+        "math-t-0753"
+      ],
+      "technical_distinctions": [
+        {
+          "contrast": "A graph quotient, quotient ring and quotient topology are not the same theorem; shared names invite counterexamples.",
+          "mechanism": "Quotienting, inversion, duality, completion, spectral decomposition and structure-preserving maps recur across mathematics, but require distinct domain and compatibility contracts.",
+          "discriminating_observation": "Transport one construction to a second structure, then find an assumption under which it fails."
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "from": "MATH-SETS",
+      "to": "MATH-MAPS",
+      "relationship": "shares_mechanism_or_dependency",
+      "why": "sets and equivalence underlie preserving maps"
+    },
+    {
+      "from": "MATH-SETS",
+      "to": "MATH-CHOICE",
+      "relationship": "shares_mechanism_or_dependency",
+      "why": "some existence arguments need choice axioms"
+    },
+    {
+      "from": "MATH-SETS",
+      "to": "MATH-ORDER",
+      "relationship": "shares_mechanism_or_dependency",
+      "why": "relations can define partial orders"
+    },
+    {
+      "from": "MATH-ORDER",
+      "to": "MATH-MOBIUS",
+      "relationship": "shares_mechanism_or_dependency",
+      "why": "incidence inversion requires ordered intervals"
+    },
+    {
+      "from": "MATH-VECTOR",
+      "to": "MATH-SPECTRAL",
+      "relationship": "shares_mechanism_or_dependency",
+      "why": "operator decompositions refine linear structure"
+    },
+    {
+      "from": "MATH-GROUP",
+      "to": "MATH-SYMMETRY",
+      "relationship": "shares_mechanism_or_dependency",
+      "why": "symmetry acts via group operations"
+    },
+    {
+      "from": "MATH-RINGS",
+      "to": "MATH-GALOIS",
+      "relationship": "shares_mechanism_or_dependency",
+      "why": "field extensions carry Galois automorphisms"
+    },
+    {
+      "from": "MATH-ARITH",
+      "to": "MATH-RATIONAL",
+      "relationship": "shares_mechanism_or_dependency",
+      "why": "rational approximation uses arithmetic structure"
+    },
+    {
+      "from": "MATH-COUNT",
+      "to": "MATH-MOBIUS",
+      "relationship": "shares_mechanism_or_dependency",
+      "why": "poset transforms invert cumulative counts"
+    },
+    {
+      "from": "MATH-COUNT",
+      "to": "MATH-GENFUN",
+      "relationship": "shares_mechanism_or_dependency",
+      "why": "coefficient encodings factor counting"
+    },
+    {
+      "from": "MATH-GRAPH",
+      "to": "MATH-FLOW",
+      "relationship": "shares_mechanism_or_dependency",
+      "why": "cuts and flows turn local edges into global certificates"
+    },
+    {
+      "from": "MATH-GRAPH",
+      "to": "MATH-MINORS",
+      "relationship": "shares_mechanism_or_dependency",
+      "why": "minors and treewidth constrain global structure"
+    },
+    {
+      "from": "MATH-TOPOLOGY",
+      "to": "MATH-COMPACT",
+      "relationship": "shares_mechanism_or_dependency",
+      "why": "compactness is topological"
+    },
+    {
+      "from": "MATH-TOPOLOGY",
+      "to": "MATH-LOOPS",
+      "relationship": "shares_mechanism_or_dependency",
+      "why": "homotopy records global loop topology"
+    },
+    {
+      "from": "MATH-LIMITS",
+      "to": "MATH-COMPLETE",
+      "relationship": "shares_mechanism_or_dependency",
+      "why": "completeness supplies Cauchy limits"
+    },
+    {
+      "from": "MATH-MEASURE",
+      "to": "MATH-INTEGRAL",
+      "relationship": "shares_mechanism_or_dependency",
+      "why": "measurability licenses Lebesgue integration"
+    },
+    {
+      "from": "MATH-MEASURE",
+      "to": "MATH-PROB",
+      "relationship": "shares_mechanism_or_dependency",
+      "why": "probability is normalized measure"
+    },
+    {
+      "from": "MATH-INTEGRAL",
+      "to": "MATH-LIMITS",
+      "relationship": "shares_mechanism_or_dependency",
+      "why": "limit interchange needs convergence theorems"
+    },
+    {
+      "from": "MATH-MEASURE",
+      "to": "MATH-FUNCTIONS",
+      "relationship": "shares_mechanism_or_dependency",
+      "why": "Lp space quotients functions up to null sets"
+    },
+    {
+      "from": "MATH-FUNCTIONS",
+      "to": "MATH-OPERATOR",
+      "relationship": "shares_mechanism_or_dependency",
+      "why": "linear maps on function spaces need continuity"
+    },
+    {
+      "from": "MATH-OPERATOR",
+      "to": "MATH-FIXED",
+      "relationship": "shares_mechanism_or_dependency",
+      "why": "contractions provide existence and iteration"
+    },
+    {
+      "from": "MATH-HOLO",
+      "to": "MATH-RESIDUES",
+      "relationship": "shares_mechanism_or_dependency",
+      "why": "singularities localize holomorphic contour calculations"
+    },
+    {
+      "from": "MATH-CURVATURE",
+      "to": "MATH-GEODESIC",
+      "relationship": "shares_mechanism_or_dependency",
+      "why": "intrinsic metrics define geodesics"
+    },
+    {
+      "from": "MATH-PROB",
+      "to": "MATH-STOCHASTIC",
+      "relationship": "shares_mechanism_or_dependency",
+      "why": "random processes add temporal state"
+    },
+    {
+      "from": "MATH-PROB",
+      "to": "MATH-STAT",
+      "relationship": "shares_mechanism_or_dependency",
+      "why": "statistical inference models unknown parameters"
+    },
+    {
+      "from": "MATH-STAT",
+      "to": "MATH-ESTIMATE",
+      "relationship": "shares_mechanism_or_dependency",
+      "why": "estimators have model-dependent risk"
+    },
+    {
+      "from": "MATH-STAT",
+      "to": "MATH-TEST",
+      "relationship": "shares_mechanism_or_dependency",
+      "why": "tests have model-dependent error control"
+    },
+    {
+      "from": "MATH-GENFUN",
+      "to": "MATH-STOCHASTIC",
+      "relationship": "shares_mechanism_or_dependency",
+      "why": "generating functions encode random-count laws"
+    },
+    {
+      "from": "MATH-MOBIUS",
+      "to": "MATH-ARITH",
+      "relationship": "shares_mechanism_or_dependency",
+      "why": "divisor inversion is a poset instance"
+    },
+    {
+      "from": "MATH-SPECTRAL",
+      "to": "MATH-OPERATOR",
+      "relationship": "shares_mechanism_or_dependency",
+      "why": "infinite-dimensional operator spectrum generalizes matrices"
+    },
+    {
+      "from": "MATH-CURVATURE",
+      "to": "MATH-TOPOLOGY",
+      "relationship": "shares_mechanism_or_dependency",
+      "why": "Gauss Bonnet links geometry to topology"
+    },
+    {
+      "from": "MATH-GROUP",
+      "to": "MATH-CROSS",
+      "relationship": "shares_mechanism_or_dependency",
+      "why": "structure-preserving actions are reusable"
+    },
+    {
+      "from": "MATH-MAPS",
+      "to": "MATH-CROSS",
+      "relationship": "shares_mechanism_or_dependency",
+      "why": "equivalence must specify preserved data"
+    },
+    {
+      "from": "MATH-COMPACT",
+      "to": "MATH-OPERATOR",
+      "relationship": "shares_mechanism_or_dependency",
+      "why": "compact topological objects differ from compact linear operators"
+    }
+  ],
   "cross_book_factors": [],
   "source_coverage": {
     "ARTIN": {
