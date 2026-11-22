@@ -238,7 +238,7 @@
       ],
       "term_ids": [
         "mfg-t-0134",
-        "mfg-t-0138",
+        "mfg-t-0139",
         "mfg-t-0164",
         "mfg-t-0182"
       ]
@@ -457,8 +457,6 @@
         "mfg-t-0103",
         "mfg-t-0118",
         "mfg-t-0083",
-        "mfg-t-0104",
-        "mfg-t-0105",
         "mfg-t-0187"
       ]
     },
@@ -525,7 +523,6 @@
         "mfg-t-0114",
         "mfg-t-0032",
         "mfg-t-0140",
-        "mfg-t-0072",
         "mfg-t-0077",
         "mfg-t-0109"
       ]
@@ -564,12 +561,12 @@
       "minimum_reconstruction_probe": "Design mating printed features with nominal clearances; print a dimensioned variation matrix, measure real dimensions, identify fit failure thresholds and distinguish slicer compensation from a model's geometric allowances.",
       "term_ids": [
         "mfg-t-0128",
-        "mfg-t-0130",
+        "mfg-t-0129",
         "mfg-t-0131",
         "mfg-t-0132",
         "mfg-t-0126",
         "mfg-t-0133",
-        "mfg-t-0138"
+        "mfg-t-0139"
       ]
     },
     {
@@ -811,7 +808,7 @@
       "kind": "frustration_entry",
       "term_ids": [
         "mfg-t-0133",
-        "mfg-t-0138"
+        "mfg-t-0139"
       ]
     },
     {
@@ -1707,7 +1704,7 @@
         "mfg-t-0160",
         "mfg-t-0159",
         "mfg-t-0134",
-        "mfg-t-0138",
+        "mfg-t-0139",
         "mfg-t-0164",
         "mfg-t-0182",
         "mfg-t-0128",
@@ -1897,8 +1894,6 @@
         "mfg-t-0103",
         "mfg-t-0118",
         "mfg-t-0083",
-        "mfg-t-0104",
-        "mfg-t-0105",
         "mfg-t-0187",
         "mfg-t-0091",
         "mfg-t-0095",
@@ -3125,7 +3120,6 @@
             "mfg-t-0114",
             "mfg-t-0032",
             "mfg-t-0140",
-            "mfg-t-0072",
             "mfg-t-0077",
             "mfg-t-0109"
           ]
@@ -3204,7 +3198,6 @@
         "mfg-t-0114",
         "mfg-t-0032",
         "mfg-t-0140",
-        "mfg-t-0072",
         "mfg-t-0077",
         "mfg-t-0109",
         "mfg-t-0012",
@@ -3237,12 +3230,12 @@
           "technical_title": "Dimensional deviation and process compensation",
           "term_ids": [
             "mfg-t-0128",
-            "mfg-t-0130",
+            "mfg-t-0129",
             "mfg-t-0131",
             "mfg-t-0132",
             "mfg-t-0126",
             "mfg-t-0133",
-            "mfg-t-0138"
+            "mfg-t-0139"
           ]
         },
         {
@@ -3264,11 +3257,11 @@
           "term_ids": [
             "mfg-t-0133",
             "mfg-t-0128",
-            "mfg-t-0130",
+            "mfg-t-0129",
             "mfg-t-0131",
             "mfg-t-0132",
             "mfg-t-0126",
-            "mfg-t-0138"
+            "mfg-t-0139"
           ]
         },
         {
@@ -3301,7 +3294,6 @@
             "mfg-t-0114",
             "mfg-t-0032",
             "mfg-t-0140",
-            "mfg-t-0072",
             "mfg-t-0077",
             "mfg-t-0109"
           ]
@@ -3309,18 +3301,17 @@
       ],
       "term_ids": [
         "mfg-t-0128",
-        "mfg-t-0130",
+        "mfg-t-0129",
         "mfg-t-0131",
         "mfg-t-0132",
         "mfg-t-0126",
         "mfg-t-0133",
-        "mfg-t-0138",
+        "mfg-t-0139",
         "mfg-t-0071",
         "mfg-t-0117",
         "mfg-t-0114",
         "mfg-t-0032",
         "mfg-t-0140",
-        "mfg-t-0072",
         "mfg-t-0077",
         "mfg-t-0109"
       ]
@@ -3450,8 +3441,6 @@
             "mfg-t-0103",
             "mfg-t-0118",
             "mfg-t-0083",
-            "mfg-t-0104",
-            "mfg-t-0105",
             "mfg-t-0187"
           ]
         },
@@ -3525,8 +3514,6 @@
         "mfg-t-0103",
         "mfg-t-0118",
         "mfg-t-0083",
-        "mfg-t-0104",
-        "mfg-t-0105",
         "mfg-t-0187",
         "mfg-t-0150",
         "mfg-t-0164",
@@ -3590,8 +3577,6 @@
             "mfg-t-0103",
             "mfg-t-0118",
             "mfg-t-0083",
-            "mfg-t-0104",
-            "mfg-t-0105",
             "mfg-t-0187",
             "mfg-t-0071",
             "mfg-t-0117",
@@ -3631,7 +3616,7 @@
             "mfg-t-0083",
             "mfg-t-0124",
             "mfg-t-0128",
-            "mfg-t-0130",
+            "mfg-t-0129",
             "mfg-t-0131"
           ]
         }
@@ -3645,8 +3630,6 @@
         "mfg-t-0103",
         "mfg-t-0118",
         "mfg-t-0083",
-        "mfg-t-0104",
-        "mfg-t-0105",
         "mfg-t-0187",
         "mfg-t-0071",
         "mfg-t-0117",
@@ -3824,10 +3807,10 @@
             "mfg-t-0126",
             "mfg-t-0131",
             "mfg-t-0128",
-            "mfg-t-0130",
+            "mfg-t-0129",
             "mfg-t-0132",
             "mfg-t-0133",
-            "mfg-t-0138"
+            "mfg-t-0139"
           ]
         },
         {
@@ -3879,10 +3862,10 @@
         "mfg-t-0126",
         "mfg-t-0131",
         "mfg-t-0128",
-        "mfg-t-0130",
+        "mfg-t-0129",
         "mfg-t-0132",
         "mfg-t-0133",
-        "mfg-t-0138",
+        "mfg-t-0139",
         "mfg-t-0060"
       ]
     },
@@ -3973,8 +3956,6 @@
             "mfg-t-0102",
             "mfg-t-0103",
             "mfg-t-0118",
-            "mfg-t-0104",
-            "mfg-t-0105",
             "mfg-t-0187",
             "mfg-t-0080",
             "mfg-t-0087"
@@ -4010,10 +3991,9 @@
             "mfg-t-0114",
             "mfg-t-0032",
             "mfg-t-0140",
-            "mfg-t-0072",
             "mfg-t-0077",
             "mfg-t-0128",
-            "mfg-t-0130",
+            "mfg-t-0129",
             "mfg-t-0131"
           ]
         }
@@ -4025,8 +4005,6 @@
         "mfg-t-0102",
         "mfg-t-0103",
         "mfg-t-0118",
-        "mfg-t-0104",
-        "mfg-t-0105",
         "mfg-t-0187",
         "mfg-t-0080",
         "mfg-t-0087",
@@ -4228,7 +4206,6 @@
             "mfg-t-0114",
             "mfg-t-0032",
             "mfg-t-0140",
-            "mfg-t-0072",
             "mfg-t-0077",
             "mfg-t-0109"
           ]
@@ -4257,7 +4234,6 @@
             "mfg-t-0114",
             "mfg-t-0032",
             "mfg-t-0140",
-            "mfg-t-0072",
             "mfg-t-0077",
             "mfg-t-0109"
           ]
@@ -4284,7 +4260,6 @@
             "mfg-t-0114",
             "mfg-t-0032",
             "mfg-t-0140",
-            "mfg-t-0072",
             "mfg-t-0077",
             "mfg-t-0109"
           ]
@@ -4297,7 +4272,6 @@
         "mfg-t-0114",
         "mfg-t-0032",
         "mfg-t-0140",
-        "mfg-t-0072",
         "mfg-t-0077",
         "mfg-t-0109",
         "mfg-t-0120",
@@ -4393,7 +4367,6 @@
           "mfg-t-0114",
           "mfg-t-0032",
           "mfg-t-0140",
-          "mfg-t-0072",
           "mfg-t-0077",
           "mfg-t-0109",
           "mfg-t-0012",
@@ -4516,8 +4489,8 @@
         "term_ids": [
           "mfg-t-0128",
           "mfg-t-0133",
-          "mfg-t-0138",
-          "mfg-t-0130",
+          "mfg-t-0139",
+          "mfg-t-0129",
           "mfg-t-0131",
           "mfg-t-0132",
           "mfg-t-0126",
@@ -4526,7 +4499,6 @@
           "mfg-t-0114",
           "mfg-t-0032",
           "mfg-t-0140",
-          "mfg-t-0072",
           "mfg-t-0077",
           "mfg-t-0109"
         ]
@@ -4545,18 +4517,17 @@
         "context": "Dimensional variation and printer/slicer compensation.",
         "term_ids": [
           "mfg-t-0128",
-          "mfg-t-0130",
+          "mfg-t-0129",
           "mfg-t-0131",
           "mfg-t-0132",
           "mfg-t-0126",
           "mfg-t-0133",
-          "mfg-t-0138",
+          "mfg-t-0139",
           "mfg-t-0071",
           "mfg-t-0117",
           "mfg-t-0114",
           "mfg-t-0032",
           "mfg-t-0140",
-          "mfg-t-0072",
           "mfg-t-0077",
           "mfg-t-0109"
         ]
@@ -4587,10 +4558,10 @@
           "mfg-t-0026",
           "mfg-t-0131",
           "mfg-t-0128",
-          "mfg-t-0130",
+          "mfg-t-0129",
           "mfg-t-0132",
           "mfg-t-0133",
-          "mfg-t-0138",
+          "mfg-t-0139",
           "mfg-t-0060"
         ]
       },
@@ -4623,7 +4594,7 @@
           "mfg-t-0126",
           "mfg-t-0131",
           "mfg-t-0128",
-          "mfg-t-0130",
+          "mfg-t-0129",
           "mfg-t-0132",
           "mfg-t-0133"
         ]
@@ -4644,18 +4615,17 @@
         "term_ids": [
           "mfg-t-0062",
           "mfg-t-0128",
-          "mfg-t-0130",
+          "mfg-t-0129",
           "mfg-t-0131",
           "mfg-t-0132",
           "mfg-t-0126",
           "mfg-t-0133",
-          "mfg-t-0138",
+          "mfg-t-0139",
           "mfg-t-0071",
           "mfg-t-0117",
           "mfg-t-0114",
           "mfg-t-0032",
           "mfg-t-0140",
-          "mfg-t-0072",
           "mfg-t-0077",
           "mfg-t-0109"
         ]
@@ -4760,10 +4730,10 @@
           "mfg-t-0126",
           "mfg-t-0131",
           "mfg-t-0128",
-          "mfg-t-0130",
+          "mfg-t-0129",
           "mfg-t-0132",
           "mfg-t-0133",
-          "mfg-t-0138",
+          "mfg-t-0139",
           "mfg-t-0060"
         ]
       },
@@ -4808,8 +4778,6 @@
           "mfg-t-0102",
           "mfg-t-0103",
           "mfg-t-0118",
-          "mfg-t-0104",
-          "mfg-t-0105",
           "mfg-t-0187",
           "mfg-t-0080",
           "mfg-t-0087",
@@ -4860,7 +4828,6 @@
           "mfg-t-0114",
           "mfg-t-0032",
           "mfg-t-0140",
-          "mfg-t-0072",
           "mfg-t-0077",
           "mfg-t-0109",
           "mfg-t-0120",
@@ -4887,7 +4854,6 @@
           "mfg-t-0114",
           "mfg-t-0032",
           "mfg-t-0140",
-          "mfg-t-0072",
           "mfg-t-0077",
           "mfg-t-0109",
           "mfg-t-0187"
@@ -4913,7 +4879,6 @@
           "mfg-t-0114",
           "mfg-t-0032",
           "mfg-t-0140",
-          "mfg-t-0072",
           "mfg-t-0077",
           "mfg-t-0109",
           "mfg-t-0120",
@@ -4939,8 +4904,6 @@
           "mfg-t-0103",
           "mfg-t-0118",
           "mfg-t-0083",
-          "mfg-t-0104",
-          "mfg-t-0105",
           "mfg-t-0187",
           "mfg-t-0150",
           "mfg-t-0164",
@@ -4973,8 +4936,6 @@
           "mfg-t-0103",
           "mfg-t-0118",
           "mfg-t-0083",
-          "mfg-t-0104",
-          "mfg-t-0105",
           "mfg-t-0187",
           "mfg-t-0071",
           "mfg-t-0117",
@@ -5005,8 +4966,6 @@
           "mfg-t-0102",
           "mfg-t-0103",
           "mfg-t-0118",
-          "mfg-t-0104",
-          "mfg-t-0105",
           "mfg-t-0187",
           "mfg-t-0150",
           "mfg-t-0164",
@@ -5034,8 +4993,6 @@
           "mfg-t-0102",
           "mfg-t-0103",
           "mfg-t-0118",
-          "mfg-t-0104",
-          "mfg-t-0105",
           "mfg-t-0187",
           "mfg-t-0150",
           "mfg-t-0164",
