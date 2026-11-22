@@ -1,0 +1,5363 @@
+{
+  "schema_version": "1.0",
+  "domain_id": "electronics-engineering",
+  "title": "Electronics engineering — analog, power, measurement and signal-integrity vocabulary",
+  "scope": "Broad independent vocabulary landscape seeded from three indexed books, with adjacent discovery terms marked separately. No term requires a question, source passage or experiment.",
+  "id_policy": "Opaque permanent IDs; never regenerate or renumber on edits. Retired synonym IDs map via redirects and cannot be reused.",
+  "related_ids_semantics": "Related concepts are NOT synonyms; relation does not certify causal applicability.",
+  "source_vocabularies": [
+    {
+      "id": "ART-3",
+      "url": "https://drive.google.com/file/d/1gn0Ry4DXyNha41fjSmAX17YxiMOWH-vv/view",
+      "title": "The Art of Electronics (3rd edition)"
+    },
+    {
+      "id": "POWER-3",
+      "url": "https://drive.google.com/file/d/1YH4DDlxKP4WqYoq_W6QFJ8r-DsZXk9-o/view",
+      "title": "Fundamentals of Power Electronics (3rd edition)"
+    },
+    {
+      "id": "HSDD",
+      "url": "https://drive.google.com/file/d/1bY6RnLH7OgcZ6LGGiv6fwNnfY-W128Az/view",
+      "title": "High-Speed Digital Design: A Handbook of Black Magic"
+    }
+  ],
+  "redirects": {
+    "elec-t-0119": "elec-t-0118",
+    "elec-t-0069": "elec-t-0070",
+    "elec-t-0030": "elec-t-0029",
+    "elec-t-0032": "elec-t-0031",
+    "elec-t-0135": "elec-t-0134",
+    "elec-t-0137": "elec-t-0136",
+    "elec-t-0203": "elec-t-0202",
+    "elec-t-0208": "elec-t-0207",
+    "elec-t-0210": "elec-t-0209",
+    "elec-t-0269": "elec-t-0268",
+    "elec-t-0304": "elec-t-0303",
+    "elec-t-0292": "elec-t-0293",
+    "elec-t-0294": "elec-t-0295",
+    "elec-t-0389": "elec-t-0388",
+    "elec-t-0346": "elec-t-0345",
+    "elec-t-0348": "elec-t-0347",
+    "elec-t-0360": "elec-t-0359",
+    "elec-t-0362": "elec-t-0361",
+    "elec-t-0576": "elec-t-0575",
+    "elec-t-0418": "elec-t-0417",
+    "elec-t-0421": "elec-t-0420",
+    "elec-t-0425": "elec-t-0424",
+    "elec-t-0434": "elec-t-0433",
+    "elec-t-0436": "elec-t-0435",
+    "elec-t-0451": "elec-t-0450",
+    "elec-t-0453": "elec-t-0452",
+    "elec-t-0640": "elec-t-0641",
+    "elec-t-0638": "elec-t-0637",
+    "elec-t-0561": "elec-t-0560",
+    "elec-t-0659": "elec-t-0658",
+    "elec-t-0661": "elec-t-0660",
+    "elec-t-0105": "elec-t-0104",
+    "elec-t-0107": "elec-t-0106"
+  },
+  "terms": [
+    {
+      "id": "elec-t-0001",
+      "label": "electric charge",
+      "aliases": [],
+      "category": "Circuit primitives and physics",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0002",
+      "label": "electric current",
+      "aliases": [],
+      "category": "Circuit primitives and physics",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0003",
+      "label": "voltage",
+      "aliases": [],
+      "category": "Circuit primitives and physics",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0004",
+      "label": "potential difference",
+      "aliases": [],
+      "category": "Circuit primitives and physics",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0005",
+      "label": "power",
+      "aliases": [],
+      "category": "Circuit primitives and physics",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0006",
+      "label": "energy",
+      "aliases": [],
+      "category": "Circuit primitives and physics",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0007",
+      "label": "resistance",
+      "aliases": [],
+      "category": "Circuit primitives and physics",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0008",
+      "label": "resistivity",
+      "aliases": [],
+      "category": "Circuit primitives and physics",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0009",
+      "label": "conductance",
+      "aliases": [],
+      "category": "Circuit primitives and physics",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0010",
+      "label": "Ohm's law",
+      "aliases": [],
+      "category": "Circuit primitives and physics",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0011",
+      "label": "Kirchhoff's current law",
+      "aliases": [],
+      "category": "Circuit primitives and physics",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0012",
+      "label": "Kirchhoff's voltage law",
+      "aliases": [],
+      "category": "Circuit primitives and physics",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0013",
+      "label": "nodal analysis",
+      "aliases": [],
+      "category": "Circuit primitives and physics",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0014",
+      "label": "mesh analysis",
+      "aliases": [],
+      "category": "Circuit primitives and physics",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0015",
+      "label": "superposition",
+      "aliases": [],
+      "category": "Circuit primitives and physics",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0016",
+      "label": "Thevenin equivalent",
+      "aliases": [
+        "Thévenin equivalent"
+      ],
+      "category": "Circuit primitives and physics",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0017",
+      "label": "Norton equivalent",
+      "aliases": [],
+      "category": "Circuit primitives and physics",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0018",
+      "label": "source impedance",
+      "aliases": [],
+      "category": "Circuit primitives and physics",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "elec-t-0195"
+      ]
+    },
+    {
+      "id": "elec-t-0019",
+      "label": "load impedance",
+      "aliases": [],
+      "category": "Circuit primitives and physics",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0020",
+      "label": "impedance",
+      "aliases": [],
+      "category": "Circuit primitives and physics",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0021",
+      "label": "admittance",
+      "aliases": [],
+      "category": "Circuit primitives and physics",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0022",
+      "label": "reactance",
+      "aliases": [],
+      "category": "Circuit primitives and physics",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0023",
+      "label": "capacitance",
+      "aliases": [],
+      "category": "Circuit primitives and physics",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0024",
+      "label": "inductance",
+      "aliases": [],
+      "category": "Circuit primitives and physics",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0025",
+      "label": "mutual inductance",
+      "aliases": [],
+      "category": "Circuit primitives and physics",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0026",
+      "label": "mutual capacitance",
+      "aliases": [],
+      "category": "Circuit primitives and physics",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0027",
+      "label": "parasitic capacitance",
+      "aliases": [],
+      "category": "Circuit primitives and physics",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0028",
+      "label": "parasitic inductance",
+      "aliases": [],
+      "category": "Circuit primitives and physics",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0029",
+      "label": "equivalent series resistance",
+      "aliases": [
+        "ESR"
+      ],
+      "category": "Circuit primitives and physics",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0031",
+      "label": "equivalent series inductance",
+      "aliases": [
+        "ESL"
+      ],
+      "category": "Circuit primitives and physics",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0033",
+      "label": "electric field",
+      "aliases": [],
+      "category": "Circuit primitives and physics",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0034",
+      "label": "magnetic field",
+      "aliases": [],
+      "category": "Circuit primitives and physics",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0035",
+      "label": "magnetic flux",
+      "aliases": [],
+      "category": "Circuit primitives and physics",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0036",
+      "label": "skin effect",
+      "aliases": [],
+      "category": "Circuit primitives and physics",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "elec-t-0492"
+      ]
+    },
+    {
+      "id": "elec-t-0037",
+      "label": "proximity effect",
+      "aliases": [],
+      "category": "Circuit primitives and physics",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "elec-t-0492"
+      ]
+    },
+    {
+      "id": "elec-t-0038",
+      "label": "eddy current",
+      "aliases": [],
+      "category": "Circuit primitives and physics",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0039",
+      "label": "dielectric",
+      "aliases": [],
+      "category": "Circuit primitives and physics",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0040",
+      "label": "dielectric constant",
+      "aliases": [],
+      "category": "Circuit primitives and physics",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0041",
+      "label": "transmission delay",
+      "aliases": [],
+      "category": "Circuit primitives and physics",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0042",
+      "label": "phase shift",
+      "aliases": [],
+      "category": "Circuit primitives and physics",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0043",
+      "label": "RMS voltage",
+      "aliases": [],
+      "category": "Circuit primitives and physics",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0044",
+      "label": "RMS current",
+      "aliases": [],
+      "category": "Circuit primitives and physics",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0045",
+      "label": "power factor",
+      "aliases": [],
+      "category": "Circuit primitives and physics",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0046",
+      "label": "thermal resistance",
+      "aliases": [],
+      "category": "Circuit primitives and physics",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "elec-t-0049"
+      ]
+    },
+    {
+      "id": "elec-t-0047",
+      "label": "temperature coefficient",
+      "aliases": [],
+      "category": "Circuit primitives and physics",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0048",
+      "label": "thermal runaway",
+      "aliases": [],
+      "category": "Circuit primitives and physics",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0049",
+      "label": "safe operating area",
+      "aliases": [],
+      "category": "Circuit primitives and physics",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "elec-t-0046"
+      ]
+    },
+    {
+      "id": "elec-t-0050",
+      "label": "electrical isolation",
+      "aliases": [],
+      "category": "Circuit primitives and physics",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0051",
+      "label": "galvanic isolation",
+      "aliases": [],
+      "category": "Circuit primitives and physics",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0052",
+      "label": "creepage",
+      "aliases": [],
+      "category": "Circuit primitives and physics",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0053",
+      "label": "clearance",
+      "aliases": [],
+      "category": "Circuit primitives and physics",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0054",
+      "label": "ground",
+      "aliases": [],
+      "category": "Circuit primitives and physics",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0055",
+      "label": "chassis ground",
+      "aliases": [],
+      "category": "Circuit primitives and physics",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0056",
+      "label": "signal ground",
+      "aliases": [],
+      "category": "Circuit primitives and physics",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0057",
+      "label": "earth ground",
+      "aliases": [],
+      "category": "Circuit primitives and physics",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0058",
+      "label": "return current",
+      "aliases": [],
+      "category": "Circuit primitives and physics",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "elec-t-0395"
+      ]
+    },
+    {
+      "id": "elec-t-0059",
+      "label": "reference plane",
+      "aliases": [],
+      "category": "Circuit primitives and physics",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0060",
+      "label": "p-n junction",
+      "aliases": [],
+      "category": "Semiconductors and discrete devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0061",
+      "label": "semiconductor",
+      "aliases": [],
+      "category": "Semiconductors and discrete devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0062",
+      "label": "diode",
+      "aliases": [],
+      "category": "Semiconductors and discrete devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0063",
+      "label": "Schottky diode",
+      "aliases": [],
+      "category": "Semiconductors and discrete devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0064",
+      "label": "Zener diode",
+      "aliases": [],
+      "category": "Semiconductors and discrete devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0065",
+      "label": "LED",
+      "aliases": [],
+      "category": "Semiconductors and discrete devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0066",
+      "label": "photodiode",
+      "aliases": [],
+      "category": "Semiconductors and discrete devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0067",
+      "label": "phototransistor",
+      "aliases": [],
+      "category": "Semiconductors and discrete devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0068",
+      "label": "varactor",
+      "aliases": [],
+      "category": "Semiconductors and discrete devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0070",
+      "label": "bipolar junction transistor",
+      "aliases": [
+        "BJT"
+      ],
+      "category": "Semiconductors and discrete devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0071",
+      "label": "MOSFET",
+      "aliases": [],
+      "category": "Semiconductors and discrete devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0072",
+      "label": "JFET",
+      "aliases": [],
+      "category": "Semiconductors and discrete devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0073",
+      "label": "field-effect transistor",
+      "aliases": [
+        "FET"
+      ],
+      "category": "Semiconductors and discrete devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0074",
+      "label": "IGBT",
+      "aliases": [],
+      "category": "Semiconductors and discrete devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0075",
+      "label": "thyristor",
+      "aliases": [],
+      "category": "Semiconductors and discrete devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0076",
+      "label": "SCR",
+      "aliases": [],
+      "category": "Semiconductors and discrete devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0077",
+      "label": "triac",
+      "aliases": [],
+      "category": "Semiconductors and discrete devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0078",
+      "label": "transistor biasing",
+      "aliases": [],
+      "category": "Semiconductors and discrete devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0079",
+      "label": "current mirror",
+      "aliases": [],
+      "category": "Semiconductors and discrete devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0080",
+      "label": "current source",
+      "aliases": [],
+      "category": "Semiconductors and discrete devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0081",
+      "label": "current sink",
+      "aliases": [],
+      "category": "Semiconductors and discrete devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0082",
+      "label": "diode-connected transistor",
+      "aliases": [],
+      "category": "Semiconductors and discrete devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0083",
+      "label": "emitter follower",
+      "aliases": [],
+      "category": "Semiconductors and discrete devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0084",
+      "label": "source follower",
+      "aliases": [],
+      "category": "Semiconductors and discrete devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0085",
+      "label": "common emitter",
+      "aliases": [],
+      "category": "Semiconductors and discrete devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0086",
+      "label": "common collector",
+      "aliases": [],
+      "category": "Semiconductors and discrete devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0087",
+      "label": "common base",
+      "aliases": [],
+      "category": "Semiconductors and discrete devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0088",
+      "label": "common source",
+      "aliases": [],
+      "category": "Semiconductors and discrete devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0089",
+      "label": "common drain",
+      "aliases": [],
+      "category": "Semiconductors and discrete devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0090",
+      "label": "common gate",
+      "aliases": [],
+      "category": "Semiconductors and discrete devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0091",
+      "label": "transconductance",
+      "aliases": [],
+      "category": "Semiconductors and discrete devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0092",
+      "label": "transistor gain",
+      "aliases": [],
+      "category": "Semiconductors and discrete devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0093",
+      "label": "beta",
+      "aliases": [],
+      "category": "Semiconductors and discrete devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0094",
+      "label": "threshold voltage",
+      "aliases": [],
+      "category": "Semiconductors and discrete devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0095",
+      "label": "gate charge",
+      "aliases": [],
+      "category": "Semiconductors and discrete devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "elec-t-0441"
+      ]
+    },
+    {
+      "id": "elec-t-0096",
+      "label": "gate driver",
+      "aliases": [],
+      "category": "Semiconductors and discrete devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0097",
+      "label": "body diode",
+      "aliases": [],
+      "category": "Semiconductors and discrete devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0098",
+      "label": "reverse recovery",
+      "aliases": [],
+      "category": "Semiconductors and discrete devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0099",
+      "label": "forward voltage drop",
+      "aliases": [],
+      "category": "Semiconductors and discrete devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0100",
+      "label": "breakdown voltage",
+      "aliases": [],
+      "category": "Semiconductors and discrete devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0101",
+      "label": "avalanche breakdown",
+      "aliases": [],
+      "category": "Semiconductors and discrete devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0102",
+      "label": "power MOSFET",
+      "aliases": [],
+      "category": "Semiconductors and discrete devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0103",
+      "label": "wide-bandgap semiconductor",
+      "aliases": [],
+      "category": "Semiconductors and discrete devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0104",
+      "label": "silicon carbide",
+      "aliases": [
+        "SiC"
+      ],
+      "category": "Semiconductors and discrete devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0106",
+      "label": "gallium nitride",
+      "aliases": [
+        "GaN"
+      ],
+      "category": "Semiconductors and discrete devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0108",
+      "label": "driver bootstrap",
+      "aliases": [],
+      "category": "Semiconductors and discrete devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0109",
+      "label": "high-side switching",
+      "aliases": [],
+      "category": "Semiconductors and discrete devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0110",
+      "label": "low-side switching",
+      "aliases": [],
+      "category": "Semiconductors and discrete devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0111",
+      "label": "dead time",
+      "aliases": [],
+      "category": "Semiconductors and discrete devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0112",
+      "label": "shoot-through",
+      "aliases": [],
+      "category": "Semiconductors and discrete devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0113",
+      "label": "snubber",
+      "aliases": [],
+      "category": "Semiconductors and discrete devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0114",
+      "label": "clamping diode",
+      "aliases": [],
+      "category": "Semiconductors and discrete devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0115",
+      "label": "flyback diode",
+      "aliases": [],
+      "category": "Semiconductors and discrete devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0116",
+      "label": "ESD",
+      "aliases": [],
+      "category": "Semiconductors and discrete devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0117",
+      "label": "transient voltage suppressor",
+      "aliases": [],
+      "category": "Semiconductors and discrete devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0118",
+      "label": "operational amplifier",
+      "aliases": [
+        "op-amp",
+        "op amp"
+      ],
+      "category": "Analog circuits and signal processing",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0120",
+      "label": "feedback",
+      "aliases": [],
+      "category": "Analog circuits and signal processing",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0121",
+      "label": "negative feedback",
+      "aliases": [],
+      "category": "Analog circuits and signal processing",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0122",
+      "label": "positive feedback",
+      "aliases": [],
+      "category": "Analog circuits and signal processing",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0123",
+      "label": "loop gain",
+      "aliases": [],
+      "category": "Analog circuits and signal processing",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "elec-t-0128"
+      ]
+    },
+    {
+      "id": "elec-t-0124",
+      "label": "open-loop gain",
+      "aliases": [],
+      "category": "Analog circuits and signal processing",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0125",
+      "label": "closed-loop gain",
+      "aliases": [],
+      "category": "Analog circuits and signal processing",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0126",
+      "label": "gain bandwidth product",
+      "aliases": [],
+      "category": "Analog circuits and signal processing",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0127",
+      "label": "unity gain bandwidth",
+      "aliases": [],
+      "category": "Analog circuits and signal processing",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0128",
+      "label": "phase margin",
+      "aliases": [],
+      "category": "Analog circuits and signal processing",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "elec-t-0123"
+      ]
+    },
+    {
+      "id": "elec-t-0129",
+      "label": "gain margin",
+      "aliases": [],
+      "category": "Analog circuits and signal processing",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0130",
+      "label": "slew rate",
+      "aliases": [],
+      "category": "Analog circuits and signal processing",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0131",
+      "label": "input offset voltage",
+      "aliases": [],
+      "category": "Analog circuits and signal processing",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0132",
+      "label": "input bias current",
+      "aliases": [],
+      "category": "Analog circuits and signal processing",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0133",
+      "label": "common-mode voltage",
+      "aliases": [],
+      "category": "Analog circuits and signal processing",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0134",
+      "label": "common-mode rejection ratio",
+      "aliases": [
+        "CMRR"
+      ],
+      "category": "Analog circuits and signal processing",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0136",
+      "label": "power supply rejection ratio",
+      "aliases": [
+        "PSRR"
+      ],
+      "category": "Analog circuits and signal processing",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0138",
+      "label": "instrumentation amplifier",
+      "aliases": [],
+      "category": "Analog circuits and signal processing",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0139",
+      "label": "differential amplifier",
+      "aliases": [],
+      "category": "Analog circuits and signal processing",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0140",
+      "label": "comparator",
+      "aliases": [],
+      "category": "Analog circuits and signal processing",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0141",
+      "label": "Schmitt trigger",
+      "aliases": [],
+      "category": "Analog circuits and signal processing",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0142",
+      "label": "sample and hold",
+      "aliases": [],
+      "category": "Analog circuits and signal processing",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0143",
+      "label": "transimpedance amplifier",
+      "aliases": [],
+      "category": "Analog circuits and signal processing",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0144",
+      "label": "transconductance amplifier",
+      "aliases": [],
+      "category": "Analog circuits and signal processing",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0145",
+      "label": "voltage follower",
+      "aliases": [],
+      "category": "Analog circuits and signal processing",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0146",
+      "label": "integrator",
+      "aliases": [],
+      "category": "Analog circuits and signal processing",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0147",
+      "label": "differentiator",
+      "aliases": [],
+      "category": "Analog circuits and signal processing",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0148",
+      "label": "active filter",
+      "aliases": [],
+      "category": "Analog circuits and signal processing",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0149",
+      "label": "passive filter",
+      "aliases": [],
+      "category": "Analog circuits and signal processing",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0150",
+      "label": "RC filter",
+      "aliases": [],
+      "category": "Analog circuits and signal processing",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0151",
+      "label": "LC filter",
+      "aliases": [],
+      "category": "Analog circuits and signal processing",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0152",
+      "label": "low-pass filter",
+      "aliases": [],
+      "category": "Analog circuits and signal processing",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0153",
+      "label": "high-pass filter",
+      "aliases": [],
+      "category": "Analog circuits and signal processing",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0154",
+      "label": "band-pass filter",
+      "aliases": [],
+      "category": "Analog circuits and signal processing",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0155",
+      "label": "notch filter",
+      "aliases": [],
+      "category": "Analog circuits and signal processing",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0156",
+      "label": "Butterworth filter",
+      "aliases": [],
+      "category": "Analog circuits and signal processing",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0157",
+      "label": "Chebyshev filter",
+      "aliases": [],
+      "category": "Analog circuits and signal processing",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0158",
+      "label": "Bessel filter",
+      "aliases": [],
+      "category": "Analog circuits and signal processing",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0159",
+      "label": "filter order",
+      "aliases": [],
+      "category": "Analog circuits and signal processing",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0160",
+      "label": "corner frequency",
+      "aliases": [],
+      "category": "Analog circuits and signal processing",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0161",
+      "label": "cutoff frequency",
+      "aliases": [],
+      "category": "Analog circuits and signal processing",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0162",
+      "label": "quality factor",
+      "aliases": [],
+      "category": "Analog circuits and signal processing",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0163",
+      "label": "Q factor",
+      "aliases": [],
+      "category": "Analog circuits and signal processing",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0164",
+      "label": "resonance",
+      "aliases": [],
+      "category": "Analog circuits and signal processing",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0165",
+      "label": "transfer function",
+      "aliases": [],
+      "category": "Analog circuits and signal processing",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0166",
+      "label": "frequency response",
+      "aliases": [],
+      "category": "Analog circuits and signal processing",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0167",
+      "label": "Bode plot",
+      "aliases": [],
+      "category": "Analog circuits and signal processing",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0168",
+      "label": "pole",
+      "aliases": [],
+      "category": "Analog circuits and signal processing",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0169",
+      "label": "zero",
+      "aliases": [],
+      "category": "Analog circuits and signal processing",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0170",
+      "label": "right-half-plane zero",
+      "aliases": [],
+      "category": "Analog circuits and signal processing",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "elec-t-0406"
+      ]
+    },
+    {
+      "id": "elec-t-0171",
+      "label": "RHP zero",
+      "aliases": [],
+      "category": "Analog circuits and signal processing",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0172",
+      "label": "step response",
+      "aliases": [],
+      "category": "Analog circuits and signal processing",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0173",
+      "label": "impulse response",
+      "aliases": [],
+      "category": "Analog circuits and signal processing",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0174",
+      "label": "overshoot",
+      "aliases": [],
+      "category": "Analog circuits and signal processing",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0175",
+      "label": "ringing",
+      "aliases": [],
+      "category": "Analog circuits and signal processing",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0176",
+      "label": "settling time",
+      "aliases": [],
+      "category": "Analog circuits and signal processing",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0177",
+      "label": "hysteresis",
+      "aliases": [],
+      "category": "Analog circuits and signal processing",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0178",
+      "label": "nonlinearity",
+      "aliases": [],
+      "category": "Analog circuits and signal processing",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0179",
+      "label": "distortion",
+      "aliases": [],
+      "category": "Analog circuits and signal processing",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0180",
+      "label": "total harmonic distortion",
+      "aliases": [],
+      "category": "Analog circuits and signal processing",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0181",
+      "label": "harmonic",
+      "aliases": [],
+      "category": "Analog circuits and signal processing",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0182",
+      "label": "oscillator",
+      "aliases": [],
+      "category": "Analog circuits and signal processing",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0183",
+      "label": "relaxation oscillator",
+      "aliases": [],
+      "category": "Analog circuits and signal processing",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0184",
+      "label": "PLL",
+      "aliases": [],
+      "category": "Analog circuits and signal processing",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0185",
+      "label": "phase-locked loop",
+      "aliases": [],
+      "category": "Analog circuits and signal processing",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0186",
+      "label": "crystal oscillator",
+      "aliases": [],
+      "category": "Analog circuits and signal processing",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0187",
+      "label": "555 timer",
+      "aliases": [],
+      "category": "Analog circuits and signal processing",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0188",
+      "label": "analog switch",
+      "aliases": [],
+      "category": "Analog circuits and signal processing",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0189",
+      "label": "thermal noise",
+      "aliases": [],
+      "category": "Noise, precision and instrumentation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "elec-t-0201"
+      ]
+    },
+    {
+      "id": "elec-t-0190",
+      "label": "Johnson noise",
+      "aliases": [],
+      "category": "Noise, precision and instrumentation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0191",
+      "label": "shot noise",
+      "aliases": [],
+      "category": "Noise, precision and instrumentation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0192",
+      "label": "flicker noise",
+      "aliases": [],
+      "category": "Noise, precision and instrumentation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0193",
+      "label": "1/f noise",
+      "aliases": [],
+      "category": "Noise, precision and instrumentation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0194",
+      "label": "voltage noise density",
+      "aliases": [],
+      "category": "Noise, precision and instrumentation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0195",
+      "label": "current noise density",
+      "aliases": [],
+      "category": "Noise, precision and instrumentation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "elec-t-0018"
+      ]
+    },
+    {
+      "id": "elec-t-0196",
+      "label": "noise figure",
+      "aliases": [],
+      "category": "Noise, precision and instrumentation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0197",
+      "label": "noise floor",
+      "aliases": [],
+      "category": "Noise, precision and instrumentation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0198",
+      "label": "noise bandwidth",
+      "aliases": [],
+      "category": "Noise, precision and instrumentation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0199",
+      "label": "equivalent noise bandwidth",
+      "aliases": [],
+      "category": "Noise, precision and instrumentation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0200",
+      "label": "noise gain",
+      "aliases": [],
+      "category": "Noise, precision and instrumentation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0201",
+      "label": "input referred noise",
+      "aliases": [],
+      "category": "Noise, precision and instrumentation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "elec-t-0189"
+      ]
+    },
+    {
+      "id": "elec-t-0202",
+      "label": "signal-to-noise ratio",
+      "aliases": [
+        "SNR"
+      ],
+      "category": "Noise, precision and instrumentation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0204",
+      "label": "dynamic range",
+      "aliases": [],
+      "category": "Noise, precision and instrumentation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0205",
+      "label": "common-mode noise",
+      "aliases": [],
+      "category": "Noise, precision and instrumentation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0206",
+      "label": "ground loop",
+      "aliases": [],
+      "category": "Noise, precision and instrumentation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0207",
+      "label": "electromagnetic interference",
+      "aliases": [
+        "EMI"
+      ],
+      "category": "Noise, precision and instrumentation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0209",
+      "label": "electromagnetic compatibility",
+      "aliases": [
+        "EMC"
+      ],
+      "category": "Noise, precision and instrumentation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0211",
+      "label": "crosstalk",
+      "aliases": [],
+      "category": "Noise, precision and instrumentation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "elec-t-0352"
+      ]
+    },
+    {
+      "id": "elec-t-0212",
+      "label": "coupled noise",
+      "aliases": [],
+      "category": "Noise, precision and instrumentation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0213",
+      "label": "shielding",
+      "aliases": [],
+      "category": "Noise, precision and instrumentation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0214",
+      "label": "guard trace",
+      "aliases": [],
+      "category": "Noise, precision and instrumentation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0215",
+      "label": "differential measurement",
+      "aliases": [],
+      "category": "Noise, precision and instrumentation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0216",
+      "label": "four-wire measurement",
+      "aliases": [],
+      "category": "Noise, precision and instrumentation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0217",
+      "label": "Kelvin connection",
+      "aliases": [],
+      "category": "Noise, precision and instrumentation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0218",
+      "label": "bridge measurement",
+      "aliases": [],
+      "category": "Noise, precision and instrumentation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0219",
+      "label": "Wheatstone bridge",
+      "aliases": [],
+      "category": "Noise, precision and instrumentation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0220",
+      "label": "offset calibration",
+      "aliases": [],
+      "category": "Noise, precision and instrumentation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0221",
+      "label": "drift",
+      "aliases": [],
+      "category": "Noise, precision and instrumentation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0222",
+      "label": "gain error",
+      "aliases": [],
+      "category": "Noise, precision and instrumentation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0223",
+      "label": "offset error",
+      "aliases": [],
+      "category": "Noise, precision and instrumentation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0224",
+      "label": "reference voltage",
+      "aliases": [],
+      "category": "Noise, precision and instrumentation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0225",
+      "label": "precision voltage reference",
+      "aliases": [],
+      "category": "Noise, precision and instrumentation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0226",
+      "label": "bandgap reference",
+      "aliases": [],
+      "category": "Noise, precision and instrumentation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0227",
+      "label": "temperature drift",
+      "aliases": [],
+      "category": "Noise, precision and instrumentation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0228",
+      "label": "chopper amplifier",
+      "aliases": [],
+      "category": "Noise, precision and instrumentation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0229",
+      "label": "auto-zero amplifier",
+      "aliases": [],
+      "category": "Noise, precision and instrumentation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0230",
+      "label": "lock-in amplifier",
+      "aliases": [],
+      "category": "Noise, precision and instrumentation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0231",
+      "label": "oscilloscope",
+      "aliases": [],
+      "category": "Noise, precision and instrumentation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0232",
+      "label": "oscilloscope probe",
+      "aliases": [],
+      "category": "Noise, precision and instrumentation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "elec-t-0233"
+      ]
+    },
+    {
+      "id": "elec-t-0233",
+      "label": "probe loading",
+      "aliases": [],
+      "category": "Noise, precision and instrumentation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "elec-t-0232"
+      ]
+    },
+    {
+      "id": "elec-t-0234",
+      "label": "probe ground lead",
+      "aliases": [],
+      "category": "Noise, precision and instrumentation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "elec-t-0395"
+      ]
+    },
+    {
+      "id": "elec-t-0235",
+      "label": "oscilloscope bandwidth",
+      "aliases": [],
+      "category": "Noise, precision and instrumentation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0236",
+      "label": "oscilloscope rise time",
+      "aliases": [],
+      "category": "Noise, precision and instrumentation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0237",
+      "label": "logic analyzer",
+      "aliases": [],
+      "category": "Noise, precision and instrumentation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0238",
+      "label": "spectrum analyzer",
+      "aliases": [],
+      "category": "Noise, precision and instrumentation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0239",
+      "label": "network analyzer",
+      "aliases": [],
+      "category": "Noise, precision and instrumentation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0240",
+      "label": "function generator",
+      "aliases": [],
+      "category": "Noise, precision and instrumentation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0241",
+      "label": "bench supply",
+      "aliases": [],
+      "category": "Noise, precision and instrumentation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0242",
+      "label": "current probe",
+      "aliases": [],
+      "category": "Noise, precision and instrumentation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0243",
+      "label": "differential probe",
+      "aliases": [],
+      "category": "Noise, precision and instrumentation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0244",
+      "label": "measurement uncertainty",
+      "aliases": [],
+      "category": "Noise, precision and instrumentation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0245",
+      "label": "calibration",
+      "aliases": [],
+      "category": "Noise, precision and instrumentation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0246",
+      "label": "test fixture",
+      "aliases": [],
+      "category": "Noise, precision and instrumentation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0247",
+      "label": "debugging",
+      "aliases": [],
+      "category": "Noise, precision and instrumentation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0248",
+      "label": "SPICE",
+      "aliases": [],
+      "category": "Noise, precision and instrumentation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0249",
+      "label": "circuit simulation",
+      "aliases": [],
+      "category": "Noise, precision and instrumentation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0250",
+      "label": "measurement artifact",
+      "aliases": [],
+      "category": "Noise, precision and instrumentation",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0251",
+      "label": "digital logic",
+      "aliases": [],
+      "category": "Digital circuits and interfaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0252",
+      "label": "CMOS logic",
+      "aliases": [],
+      "category": "Digital circuits and interfaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0253",
+      "label": "TTL logic",
+      "aliases": [],
+      "category": "Digital circuits and interfaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0254",
+      "label": "logic threshold",
+      "aliases": [],
+      "category": "Digital circuits and interfaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0255",
+      "label": "noise margin",
+      "aliases": [],
+      "category": "Digital circuits and interfaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0256",
+      "label": "rise time",
+      "aliases": [],
+      "category": "Digital circuits and interfaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "elec-t-0329",
+        "elec-t-0396"
+      ]
+    },
+    {
+      "id": "elec-t-0257",
+      "label": "fall time",
+      "aliases": [],
+      "category": "Digital circuits and interfaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0258",
+      "label": "propagation delay",
+      "aliases": [],
+      "category": "Digital circuits and interfaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0259",
+      "label": "fanout",
+      "aliases": [],
+      "category": "Digital circuits and interfaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0260",
+      "label": "fan-in",
+      "aliases": [],
+      "category": "Digital circuits and interfaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0261",
+      "label": "flip-flop",
+      "aliases": [],
+      "category": "Digital circuits and interfaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0262",
+      "label": "latch",
+      "aliases": [],
+      "category": "Digital circuits and interfaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0263",
+      "label": "setup time",
+      "aliases": [],
+      "category": "Digital circuits and interfaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "elec-t-0265"
+      ]
+    },
+    {
+      "id": "elec-t-0264",
+      "label": "hold time",
+      "aliases": [],
+      "category": "Digital circuits and interfaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0265",
+      "label": "metastability",
+      "aliases": [],
+      "category": "Digital circuits and interfaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "elec-t-0263"
+      ]
+    },
+    {
+      "id": "elec-t-0266",
+      "label": "synchronizer",
+      "aliases": [],
+      "category": "Digital circuits and interfaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0267",
+      "label": "clock domain",
+      "aliases": [],
+      "category": "Digital circuits and interfaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0268",
+      "label": "clock-domain crossing",
+      "aliases": [
+        "CDC"
+      ],
+      "category": "Digital circuits and interfaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0270",
+      "label": "clock skew",
+      "aliases": [],
+      "category": "Digital circuits and interfaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0271",
+      "label": "clock jitter",
+      "aliases": [],
+      "category": "Digital circuits and interfaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0272",
+      "label": "clock distribution",
+      "aliases": [],
+      "category": "Digital circuits and interfaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0273",
+      "label": "clock tree",
+      "aliases": [],
+      "category": "Digital circuits and interfaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0274",
+      "label": "sequential logic",
+      "aliases": [],
+      "category": "Digital circuits and interfaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0275",
+      "label": "combinational logic",
+      "aliases": [],
+      "category": "Digital circuits and interfaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0276",
+      "label": "open drain",
+      "aliases": [],
+      "category": "Digital circuits and interfaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0277",
+      "label": "open collector",
+      "aliases": [],
+      "category": "Digital circuits and interfaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0278",
+      "label": "tri-state",
+      "aliases": [],
+      "category": "Digital circuits and interfaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0279",
+      "label": "bus contention",
+      "aliases": [],
+      "category": "Digital circuits and interfaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0280",
+      "label": "pull-up resistor",
+      "aliases": [],
+      "category": "Digital circuits and interfaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0281",
+      "label": "pull-down resistor",
+      "aliases": [],
+      "category": "Digital circuits and interfaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0282",
+      "label": "level shifter",
+      "aliases": [],
+      "category": "Digital circuits and interfaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0283",
+      "label": "logic level translation",
+      "aliases": [],
+      "category": "Digital circuits and interfaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0284",
+      "label": "digital input protection",
+      "aliases": [],
+      "category": "Digital circuits and interfaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0285",
+      "label": "microcontroller",
+      "aliases": [],
+      "category": "Digital circuits and interfaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0286",
+      "label": "FPGA",
+      "aliases": [],
+      "category": "Digital circuits and interfaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0287",
+      "label": "programmable logic device",
+      "aliases": [],
+      "category": "Digital circuits and interfaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0288",
+      "label": "PLD",
+      "aliases": [],
+      "category": "Digital circuits and interfaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0289",
+      "label": "microcontroller peripheral",
+      "aliases": [],
+      "category": "Digital circuits and interfaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0290",
+      "label": "memory-mapped I/O",
+      "aliases": [],
+      "category": "Digital circuits and interfaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0291",
+      "label": "GPIO",
+      "aliases": [],
+      "category": "Digital circuits and interfaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0293",
+      "label": "analog-to-digital converter",
+      "aliases": [
+        "ADC"
+      ],
+      "category": "Digital circuits and interfaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0295",
+      "label": "digital-to-analog converter",
+      "aliases": [
+        "DAC"
+      ],
+      "category": "Digital circuits and interfaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0296",
+      "label": "quantization",
+      "aliases": [],
+      "category": "Digital circuits and interfaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0297",
+      "label": "quantization noise",
+      "aliases": [],
+      "category": "Digital circuits and interfaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0298",
+      "label": "aliasing",
+      "aliases": [],
+      "category": "Digital circuits and interfaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0299",
+      "label": "sampling",
+      "aliases": [],
+      "category": "Digital circuits and interfaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0300",
+      "label": "sample rate",
+      "aliases": [],
+      "category": "Digital circuits and interfaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0301",
+      "label": "sample depth",
+      "aliases": [],
+      "category": "Digital circuits and interfaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0302",
+      "label": "anti-alias filter",
+      "aliases": [],
+      "category": "Digital circuits and interfaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0303",
+      "label": "successive approximation ADC",
+      "aliases": [
+        "SAR ADC"
+      ],
+      "category": "Digital circuits and interfaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0305",
+      "label": "delta-sigma ADC",
+      "aliases": [],
+      "category": "Digital circuits and interfaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0306",
+      "label": "oversampling",
+      "aliases": [],
+      "category": "Digital circuits and interfaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0307",
+      "label": "PWM",
+      "aliases": [],
+      "category": "Digital circuits and interfaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0308",
+      "label": "DAC linearity",
+      "aliases": [],
+      "category": "Digital circuits and interfaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0309",
+      "label": "integral nonlinearity",
+      "aliases": [],
+      "category": "Digital circuits and interfaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0310",
+      "label": "INL",
+      "aliases": [],
+      "category": "Digital circuits and interfaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0311",
+      "label": "differential nonlinearity",
+      "aliases": [],
+      "category": "Digital circuits and interfaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0312",
+      "label": "DNL",
+      "aliases": [],
+      "category": "Digital circuits and interfaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0313",
+      "label": "SPI",
+      "aliases": [],
+      "category": "Digital circuits and interfaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0314",
+      "label": "I2C",
+      "aliases": [],
+      "category": "Digital circuits and interfaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0315",
+      "label": "UART",
+      "aliases": [],
+      "category": "Digital circuits and interfaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0316",
+      "label": "USB",
+      "aliases": [],
+      "category": "Digital circuits and interfaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0317",
+      "label": "JTAG",
+      "aliases": [],
+      "category": "Digital circuits and interfaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0318",
+      "label": "RS-232",
+      "aliases": [],
+      "category": "Digital circuits and interfaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0319",
+      "label": "RS-485",
+      "aliases": [],
+      "category": "Digital circuits and interfaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0320",
+      "label": "CAN bus",
+      "aliases": [],
+      "category": "Digital circuits and interfaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0321",
+      "label": "Ethernet",
+      "aliases": [],
+      "category": "Digital circuits and interfaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0322",
+      "label": "PCI Express",
+      "aliases": [],
+      "category": "Digital circuits and interfaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0323",
+      "label": "serial bus",
+      "aliases": [],
+      "category": "Digital circuits and interfaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0324",
+      "label": "interrupt",
+      "aliases": [],
+      "category": "Digital circuits and interfaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0325",
+      "label": "DMA",
+      "aliases": [],
+      "category": "Digital circuits and interfaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0326",
+      "label": "embedded firmware",
+      "aliases": [],
+      "category": "Digital circuits and interfaces",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0327",
+      "label": "signal integrity",
+      "aliases": [],
+      "category": "Signal integrity and physical interconnect",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0328",
+      "label": "power integrity",
+      "aliases": [],
+      "category": "Signal integrity and physical interconnect",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0329",
+      "label": "transmission line",
+      "aliases": [],
+      "category": "Signal integrity and physical interconnect",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "elec-t-0256"
+      ]
+    },
+    {
+      "id": "elec-t-0330",
+      "label": "characteristic impedance",
+      "aliases": [],
+      "category": "Signal integrity and physical interconnect",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "elec-t-0335"
+      ]
+    },
+    {
+      "id": "elec-t-0331",
+      "label": "propagation velocity",
+      "aliases": [],
+      "category": "Signal integrity and physical interconnect",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0332",
+      "label": "electrical length",
+      "aliases": [],
+      "category": "Signal integrity and physical interconnect",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0333",
+      "label": "lumped circuit",
+      "aliases": [],
+      "category": "Signal integrity and physical interconnect",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0334",
+      "label": "distributed circuit",
+      "aliases": [],
+      "category": "Signal integrity and physical interconnect",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0335",
+      "label": "reflection coefficient",
+      "aliases": [],
+      "category": "Signal integrity and physical interconnect",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "elec-t-0330",
+        "elec-t-0337",
+        "elec-t-0338"
+      ]
+    },
+    {
+      "id": "elec-t-0336",
+      "label": "impedance mismatch",
+      "aliases": [],
+      "category": "Signal integrity and physical interconnect",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0337",
+      "label": "source termination",
+      "aliases": [],
+      "category": "Signal integrity and physical interconnect",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "elec-t-0335"
+      ]
+    },
+    {
+      "id": "elec-t-0338",
+      "label": "end termination",
+      "aliases": [],
+      "category": "Signal integrity and physical interconnect",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "elec-t-0335"
+      ]
+    },
+    {
+      "id": "elec-t-0339",
+      "label": "far-end termination",
+      "aliases": [],
+      "category": "Signal integrity and physical interconnect",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0340",
+      "label": "parallel termination",
+      "aliases": [],
+      "category": "Signal integrity and physical interconnect",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0341",
+      "label": "series termination",
+      "aliases": [],
+      "category": "Signal integrity and physical interconnect",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0342",
+      "label": "AC termination",
+      "aliases": [],
+      "category": "Signal integrity and physical interconnect",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0343",
+      "label": "stubs",
+      "aliases": [],
+      "category": "Signal integrity and physical interconnect",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0344",
+      "label": "undershoot",
+      "aliases": [],
+      "category": "Signal integrity and physical interconnect",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0345",
+      "label": "near-end crosstalk",
+      "aliases": [
+        "NEXT"
+      ],
+      "category": "Signal integrity and physical interconnect",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0347",
+      "label": "far-end crosstalk",
+      "aliases": [
+        "FEXT"
+      ],
+      "category": "Signal integrity and physical interconnect",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0349",
+      "label": "capacitive coupling",
+      "aliases": [],
+      "category": "Signal integrity and physical interconnect",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0350",
+      "label": "inductive coupling",
+      "aliases": [],
+      "category": "Signal integrity and physical interconnect",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0351",
+      "label": "return path",
+      "aliases": [],
+      "category": "Signal integrity and physical interconnect",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0352",
+      "label": "return path discontinuity",
+      "aliases": [],
+      "category": "Signal integrity and physical interconnect",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "elec-t-0211"
+      ]
+    },
+    {
+      "id": "elec-t-0353",
+      "label": "ground bounce",
+      "aliases": [
+        "simultaneous switching induced ground bounce"
+      ],
+      "category": "Signal integrity and physical interconnect",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0354",
+      "label": "simultaneous switching noise",
+      "aliases": [],
+      "category": "Signal integrity and physical interconnect",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0355",
+      "label": "SSN",
+      "aliases": [],
+      "category": "Signal integrity and physical interconnect",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0356",
+      "label": "eye diagram",
+      "aliases": [],
+      "category": "Signal integrity and physical interconnect",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0357",
+      "label": "eye opening",
+      "aliases": [],
+      "category": "Signal integrity and physical interconnect",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0358",
+      "label": "jitter budget",
+      "aliases": [],
+      "category": "Signal integrity and physical interconnect",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0359",
+      "label": "bit error rate",
+      "aliases": [
+        "BER"
+      ],
+      "category": "Signal integrity and physical interconnect",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0361",
+      "label": "inter-symbol interference",
+      "aliases": [
+        "ISI"
+      ],
+      "category": "Signal integrity and physical interconnect",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0363",
+      "label": "PCB stackup",
+      "aliases": [],
+      "category": "Signal integrity and physical interconnect",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0364",
+      "label": "ground plane",
+      "aliases": [],
+      "category": "Signal integrity and physical interconnect",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0365",
+      "label": "power plane",
+      "aliases": [],
+      "category": "Signal integrity and physical interconnect",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0366",
+      "label": "stripline",
+      "aliases": [],
+      "category": "Signal integrity and physical interconnect",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0367",
+      "label": "microstrip",
+      "aliases": [],
+      "category": "Signal integrity and physical interconnect",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0368",
+      "label": "controlled impedance",
+      "aliases": [],
+      "category": "Signal integrity and physical interconnect",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0369",
+      "label": "differential pair",
+      "aliases": [],
+      "category": "Signal integrity and physical interconnect",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0370",
+      "label": "differential signaling",
+      "aliases": [],
+      "category": "Signal integrity and physical interconnect",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0371",
+      "label": "common-mode conversion",
+      "aliases": [],
+      "category": "Signal integrity and physical interconnect",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0372",
+      "label": "via",
+      "aliases": [],
+      "category": "Signal integrity and physical interconnect",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0373",
+      "label": "via stub",
+      "aliases": [],
+      "category": "Signal integrity and physical interconnect",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0374",
+      "label": "via inductance",
+      "aliases": [],
+      "category": "Signal integrity and physical interconnect",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0375",
+      "label": "via capacitance",
+      "aliases": [],
+      "category": "Signal integrity and physical interconnect",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0376",
+      "label": "connector",
+      "aliases": [],
+      "category": "Signal integrity and physical interconnect",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0377",
+      "label": "connector crosstalk",
+      "aliases": [],
+      "category": "Signal integrity and physical interconnect",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0378",
+      "label": "ribbon cable",
+      "aliases": [],
+      "category": "Signal integrity and physical interconnect",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0379",
+      "label": "coaxial cable",
+      "aliases": [],
+      "category": "Signal integrity and physical interconnect",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0380",
+      "label": "twisted pair",
+      "aliases": [],
+      "category": "Signal integrity and physical interconnect",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0381",
+      "label": "shielded cable",
+      "aliases": [],
+      "category": "Signal integrity and physical interconnect",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0382",
+      "label": "trace geometry",
+      "aliases": [],
+      "category": "Signal integrity and physical interconnect",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0383",
+      "label": "trace spacing",
+      "aliases": [],
+      "category": "Signal integrity and physical interconnect",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0384",
+      "label": "trace length matching",
+      "aliases": [],
+      "category": "Signal integrity and physical interconnect",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0385",
+      "label": "skew matching",
+      "aliases": [],
+      "category": "Signal integrity and physical interconnect",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0386",
+      "label": "decoupling capacitor",
+      "aliases": [],
+      "category": "Signal integrity and physical interconnect",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "elec-t-0388"
+      ]
+    },
+    {
+      "id": "elec-t-0387",
+      "label": "decoupling",
+      "aliases": [],
+      "category": "Signal integrity and physical interconnect",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0388",
+      "label": "power distribution network",
+      "aliases": [
+        "PDN"
+      ],
+      "category": "Signal integrity and physical interconnect",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "elec-t-0386"
+      ]
+    },
+    {
+      "id": "elec-t-0390",
+      "label": "anti-resonance",
+      "aliases": [],
+      "category": "Signal integrity and physical interconnect",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "elec-t-0392"
+      ]
+    },
+    {
+      "id": "elec-t-0391",
+      "label": "impedance profile",
+      "aliases": [],
+      "category": "Signal integrity and physical interconnect",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0392",
+      "label": "PDN impedance",
+      "aliases": [],
+      "category": "Signal integrity and physical interconnect",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "elec-t-0390"
+      ]
+    },
+    {
+      "id": "elec-t-0393",
+      "label": "plane resonance",
+      "aliases": [],
+      "category": "Signal integrity and physical interconnect",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0394",
+      "label": "EMI radiation",
+      "aliases": [],
+      "category": "Signal integrity and physical interconnect",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0395",
+      "label": "loop area",
+      "aliases": [],
+      "category": "Signal integrity and physical interconnect",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "elec-t-0058",
+        "elec-t-0234"
+      ]
+    },
+    {
+      "id": "elec-t-0396",
+      "label": "edge rate",
+      "aliases": [],
+      "category": "Signal integrity and physical interconnect",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "elec-t-0256"
+      ]
+    },
+    {
+      "id": "elec-t-0397",
+      "label": "signal return",
+      "aliases": [],
+      "category": "Signal integrity and physical interconnect",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0398",
+      "label": "probe loop",
+      "aliases": [],
+      "category": "Signal integrity and physical interconnect",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0399",
+      "label": "clock termination",
+      "aliases": [],
+      "category": "Signal integrity and physical interconnect",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0400",
+      "label": "power electronics",
+      "aliases": [],
+      "category": "Power conversion and devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0401",
+      "label": "power converter",
+      "aliases": [],
+      "category": "Power conversion and devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0402",
+      "label": "DC-DC converter",
+      "aliases": [],
+      "category": "Power conversion and devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0403",
+      "label": "AC-DC converter",
+      "aliases": [],
+      "category": "Power conversion and devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0404",
+      "label": "DC-AC inverter",
+      "aliases": [],
+      "category": "Power conversion and devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0405",
+      "label": "buck converter",
+      "aliases": [],
+      "category": "Power conversion and devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "elec-t-0429"
+      ]
+    },
+    {
+      "id": "elec-t-0406",
+      "label": "boost converter",
+      "aliases": [],
+      "category": "Power conversion and devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "elec-t-0170"
+      ]
+    },
+    {
+      "id": "elec-t-0407",
+      "label": "buck-boost converter",
+      "aliases": [],
+      "category": "Power conversion and devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0408",
+      "label": "Cuk converter",
+      "aliases": [],
+      "category": "Power conversion and devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0409",
+      "label": "SEPIC converter",
+      "aliases": [],
+      "category": "Power conversion and devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0410",
+      "label": "flyback converter",
+      "aliases": [],
+      "category": "Power conversion and devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0411",
+      "label": "forward converter",
+      "aliases": [],
+      "category": "Power conversion and devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0412",
+      "label": "push-pull converter",
+      "aliases": [],
+      "category": "Power conversion and devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0413",
+      "label": "half-bridge converter",
+      "aliases": [],
+      "category": "Power conversion and devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0414",
+      "label": "full-bridge converter",
+      "aliases": [],
+      "category": "Power conversion and devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0415",
+      "label": "synchronous rectification",
+      "aliases": [],
+      "category": "Power conversion and devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0416",
+      "label": "power diode",
+      "aliases": [],
+      "category": "Power conversion and devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0417",
+      "label": "switch-mode power supply",
+      "aliases": [
+        "SMPS"
+      ],
+      "category": "Power conversion and devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0419",
+      "label": "linear regulator",
+      "aliases": [],
+      "category": "Power conversion and devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "elec-t-0422"
+      ]
+    },
+    {
+      "id": "elec-t-0420",
+      "label": "low-dropout regulator",
+      "aliases": [
+        "LDO"
+      ],
+      "category": "Power conversion and devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0422",
+      "label": "switching regulator",
+      "aliases": [],
+      "category": "Power conversion and devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "elec-t-0419"
+      ]
+    },
+    {
+      "id": "elec-t-0423",
+      "label": "rectifier",
+      "aliases": [],
+      "category": "Power conversion and devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0424",
+      "label": "power factor correction",
+      "aliases": [
+        "PFC"
+      ],
+      "category": "Power conversion and devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0426",
+      "label": "PWM rectifier",
+      "aliases": [],
+      "category": "Power conversion and devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0427",
+      "label": "three-phase inverter",
+      "aliases": [],
+      "category": "Power conversion and devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0428",
+      "label": "switching frequency",
+      "aliases": [],
+      "category": "Power conversion and devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "elec-t-0441"
+      ]
+    },
+    {
+      "id": "elec-t-0429",
+      "label": "duty cycle",
+      "aliases": [],
+      "category": "Power conversion and devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "elec-t-0405"
+      ]
+    },
+    {
+      "id": "elec-t-0430",
+      "label": "volt-second balance",
+      "aliases": [],
+      "category": "Power conversion and devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0431",
+      "label": "charge balance",
+      "aliases": [],
+      "category": "Power conversion and devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0432",
+      "label": "small-ripple approximation",
+      "aliases": [],
+      "category": "Power conversion and devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0433",
+      "label": "continuous conduction mode",
+      "aliases": [
+        "CCM"
+      ],
+      "category": "Power conversion and devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0435",
+      "label": "discontinuous conduction mode",
+      "aliases": [
+        "DCM"
+      ],
+      "category": "Power conversion and devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0437",
+      "label": "converter conversion ratio",
+      "aliases": [],
+      "category": "Power conversion and devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0438",
+      "label": "current ripple",
+      "aliases": [],
+      "category": "Power conversion and devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0439",
+      "label": "voltage ripple",
+      "aliases": [
+        "ripple voltage"
+      ],
+      "category": "Power conversion and devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0440",
+      "label": "conduction loss",
+      "aliases": [],
+      "category": "Power conversion and devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0441",
+      "label": "switching loss",
+      "aliases": [],
+      "category": "Power conversion and devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "elec-t-0428",
+        "elec-t-0095"
+      ]
+    },
+    {
+      "id": "elec-t-0442",
+      "label": "turn-on loss",
+      "aliases": [],
+      "category": "Power conversion and devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0443",
+      "label": "turn-off loss",
+      "aliases": [],
+      "category": "Power conversion and devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0444",
+      "label": "converter efficiency",
+      "aliases": [],
+      "category": "Power conversion and devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0445",
+      "label": "thermal management",
+      "aliases": [],
+      "category": "Power conversion and devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0446",
+      "label": "heat sink",
+      "aliases": [],
+      "category": "Power conversion and devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0447",
+      "label": "switch realization",
+      "aliases": [],
+      "category": "Power conversion and devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0448",
+      "label": "four-quadrant switch",
+      "aliases": [],
+      "category": "Power conversion and devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0449",
+      "label": "soft switching",
+      "aliases": [],
+      "category": "Power conversion and devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0450",
+      "label": "zero-voltage switching",
+      "aliases": [
+        "ZVS"
+      ],
+      "category": "Power conversion and devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0452",
+      "label": "zero-current switching",
+      "aliases": [
+        "ZCS"
+      ],
+      "category": "Power conversion and devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0454",
+      "label": "resonant converter",
+      "aliases": [],
+      "category": "Power conversion and devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0455",
+      "label": "LLC converter",
+      "aliases": [],
+      "category": "Power conversion and devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0456",
+      "label": "current mode control",
+      "aliases": [
+        "current-mode control"
+      ],
+      "category": "Power conversion and devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0457",
+      "label": "voltage mode control",
+      "aliases": [],
+      "category": "Power conversion and devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0458",
+      "label": "peak current mode control",
+      "aliases": [],
+      "category": "Power conversion and devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0459",
+      "label": "average current mode control",
+      "aliases": [],
+      "category": "Power conversion and devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0460",
+      "label": "current programmed control",
+      "aliases": [],
+      "category": "Power conversion and devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "elec-t-0462"
+      ]
+    },
+    {
+      "id": "elec-t-0461",
+      "label": "subharmonic oscillation",
+      "aliases": [],
+      "category": "Power conversion and devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0462",
+      "label": "slope compensation",
+      "aliases": [],
+      "category": "Power conversion and devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "elec-t-0460"
+      ]
+    },
+    {
+      "id": "elec-t-0463",
+      "label": "input filter instability",
+      "aliases": [],
+      "category": "Power conversion and devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "elec-t-0537"
+      ]
+    },
+    {
+      "id": "elec-t-0464",
+      "label": "output impedance",
+      "aliases": [],
+      "category": "Power conversion and devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0465",
+      "label": "line regulation",
+      "aliases": [],
+      "category": "Power conversion and devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0466",
+      "label": "load regulation",
+      "aliases": [],
+      "category": "Power conversion and devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0467",
+      "label": "load transient",
+      "aliases": [],
+      "category": "Power conversion and devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0468",
+      "label": "load step",
+      "aliases": [],
+      "category": "Power conversion and devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0469",
+      "label": "hot plugging",
+      "aliases": [],
+      "category": "Power conversion and devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0470",
+      "label": "inrush current",
+      "aliases": [],
+      "category": "Power conversion and devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0471",
+      "label": "overcurrent protection",
+      "aliases": [],
+      "category": "Power conversion and devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0472",
+      "label": "overvoltage protection",
+      "aliases": [],
+      "category": "Power conversion and devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0473",
+      "label": "undervoltage lockout",
+      "aliases": [],
+      "category": "Power conversion and devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0474",
+      "label": "crowbar",
+      "aliases": [],
+      "category": "Power conversion and devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0475",
+      "label": "fuse",
+      "aliases": [],
+      "category": "Power conversion and devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0476",
+      "label": "thermal shutdown",
+      "aliases": [],
+      "category": "Power conversion and devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0477",
+      "label": "power sequencing",
+      "aliases": [],
+      "category": "Power conversion and devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0478",
+      "label": "soft start",
+      "aliases": [],
+      "category": "Power conversion and devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0479",
+      "label": "gate-drive isolation",
+      "aliases": [],
+      "category": "Power conversion and devices",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0480",
+      "label": "inductor",
+      "aliases": [],
+      "category": "Magnetics and energy storage",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0481",
+      "label": "transformer",
+      "aliases": [],
+      "category": "Magnetics and energy storage",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0482",
+      "label": "coupled inductor",
+      "aliases": [],
+      "category": "Magnetics and energy storage",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0483",
+      "label": "magnetizing inductance",
+      "aliases": [],
+      "category": "Magnetics and energy storage",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "elec-t-0510"
+      ]
+    },
+    {
+      "id": "elec-t-0484",
+      "label": "leakage inductance",
+      "aliases": [],
+      "category": "Magnetics and energy storage",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0485",
+      "label": "magnetic core",
+      "aliases": [],
+      "category": "Magnetics and energy storage",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0486",
+      "label": "ferrite core",
+      "aliases": [],
+      "category": "Magnetics and energy storage",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0487",
+      "label": "air gap",
+      "aliases": [],
+      "category": "Magnetics and energy storage",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0488",
+      "label": "core saturation",
+      "aliases": [],
+      "category": "Magnetics and energy storage",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0489",
+      "label": "magnetic hysteresis",
+      "aliases": [],
+      "category": "Magnetics and energy storage",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0490",
+      "label": "B-H curve",
+      "aliases": [],
+      "category": "Magnetics and energy storage",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0491",
+      "label": "core loss",
+      "aliases": [],
+      "category": "Magnetics and energy storage",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0492",
+      "label": "winding loss",
+      "aliases": [],
+      "category": "Magnetics and energy storage",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "elec-t-0036",
+        "elec-t-0037"
+      ]
+    },
+    {
+      "id": "elec-t-0493",
+      "label": "copper loss",
+      "aliases": [],
+      "category": "Magnetics and energy storage",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0494",
+      "label": "skin depth",
+      "aliases": [],
+      "category": "Magnetics and energy storage",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0495",
+      "label": "proximity loss",
+      "aliases": [],
+      "category": "Magnetics and energy storage",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0496",
+      "label": "eddy-current loss",
+      "aliases": [],
+      "category": "Magnetics and energy storage",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0497",
+      "label": "magnetic flux density",
+      "aliases": [],
+      "category": "Magnetics and energy storage",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0498",
+      "label": "flux linkage",
+      "aliases": [],
+      "category": "Magnetics and energy storage",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0499",
+      "label": "turns ratio",
+      "aliases": [],
+      "category": "Magnetics and energy storage",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0500",
+      "label": "winding capacitance",
+      "aliases": [],
+      "category": "Magnetics and energy storage",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0501",
+      "label": "interleaved winding",
+      "aliases": [],
+      "category": "Magnetics and energy storage",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0502",
+      "label": "planar transformer",
+      "aliases": [],
+      "category": "Magnetics and energy storage",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0503",
+      "label": "foil winding",
+      "aliases": [],
+      "category": "Magnetics and energy storage",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0504",
+      "label": "magnetic reluctance",
+      "aliases": [],
+      "category": "Magnetics and energy storage",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0505",
+      "label": "Faraday law",
+      "aliases": [],
+      "category": "Magnetics and energy storage",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0506",
+      "label": "Lenz law",
+      "aliases": [],
+      "category": "Magnetics and energy storage",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0507",
+      "label": "filter inductor",
+      "aliases": [],
+      "category": "Magnetics and energy storage",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0508",
+      "label": "power inductor",
+      "aliases": [],
+      "category": "Magnetics and energy storage",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0509",
+      "label": "flyback transformer",
+      "aliases": [],
+      "category": "Magnetics and energy storage",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0510",
+      "label": "transformer reset",
+      "aliases": [],
+      "category": "Magnetics and energy storage",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "elec-t-0483"
+      ]
+    },
+    {
+      "id": "elec-t-0511",
+      "label": "flux walking",
+      "aliases": [],
+      "category": "Magnetics and energy storage",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0512",
+      "label": "current transformer",
+      "aliases": [],
+      "category": "Magnetics and energy storage",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0513",
+      "label": "energy storage capacitor",
+      "aliases": [],
+      "category": "Magnetics and energy storage",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0514",
+      "label": "bulk capacitor",
+      "aliases": [],
+      "category": "Magnetics and energy storage",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0515",
+      "label": "supercapacitor",
+      "aliases": [],
+      "category": "Magnetics and energy storage",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0516",
+      "label": "battery",
+      "aliases": [],
+      "category": "Magnetics and energy storage",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0517",
+      "label": "Li-ion battery",
+      "aliases": [],
+      "category": "Magnetics and energy storage",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0518",
+      "label": "battery management",
+      "aliases": [],
+      "category": "Magnetics and energy storage",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0519",
+      "label": "state of charge",
+      "aliases": [],
+      "category": "Magnetics and energy storage",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0520",
+      "label": "state of health",
+      "aliases": [],
+      "category": "Magnetics and energy storage",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0521",
+      "label": "energy density",
+      "aliases": [],
+      "category": "Magnetics and energy storage",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0522",
+      "label": "power density",
+      "aliases": [],
+      "category": "Magnetics and energy storage",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0523",
+      "label": "capacitor ESR",
+      "aliases": [],
+      "category": "Magnetics and energy storage",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0524",
+      "label": "capacitor ripple current",
+      "aliases": [],
+      "category": "Magnetics and energy storage",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0525",
+      "label": "voltage derating",
+      "aliases": [],
+      "category": "Magnetics and energy storage",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0526",
+      "label": "steady-state analysis",
+      "aliases": [],
+      "category": "Converter control and models",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0527",
+      "label": "DC transformer model",
+      "aliases": [],
+      "category": "Converter control and models",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0528",
+      "label": "average switch model",
+      "aliases": [],
+      "category": "Converter control and models",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0529",
+      "label": "state-space averaging",
+      "aliases": [],
+      "category": "Converter control and models",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "elec-t-0530"
+      ]
+    },
+    {
+      "id": "elec-t-0530",
+      "label": "small-signal modeling",
+      "aliases": [],
+      "category": "Converter control and models",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "elec-t-0529"
+      ]
+    },
+    {
+      "id": "elec-t-0531",
+      "label": "AC equivalent circuit",
+      "aliases": [],
+      "category": "Converter control and models",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0532",
+      "label": "perturbation",
+      "aliases": [],
+      "category": "Converter control and models",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0533",
+      "label": "linearization",
+      "aliases": [],
+      "category": "Converter control and models",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0534",
+      "label": "converter transfer function",
+      "aliases": [],
+      "category": "Converter control and models",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0535",
+      "label": "control-to-output transfer function",
+      "aliases": [],
+      "category": "Converter control and models",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0536",
+      "label": "line-to-output transfer function",
+      "aliases": [],
+      "category": "Converter control and models",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0537",
+      "label": "input impedance",
+      "aliases": [],
+      "category": "Converter control and models",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "elec-t-0463"
+      ]
+    },
+    {
+      "id": "elec-t-0538",
+      "label": "compensation network",
+      "aliases": [],
+      "category": "Converter control and models",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0539",
+      "label": "PI controller",
+      "aliases": [],
+      "category": "Converter control and models",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0540",
+      "label": "PD controller",
+      "aliases": [],
+      "category": "Converter control and models",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0541",
+      "label": "PID controller",
+      "aliases": [],
+      "category": "Converter control and models",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0542",
+      "label": "type II compensator",
+      "aliases": [],
+      "category": "Converter control and models",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0543",
+      "label": "type III compensator",
+      "aliases": [],
+      "category": "Converter control and models",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0544",
+      "label": "loop crossover frequency",
+      "aliases": [],
+      "category": "Converter control and models",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0545",
+      "label": "Nyquist stability",
+      "aliases": [],
+      "category": "Converter control and models",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0546",
+      "label": "feedback theorem",
+      "aliases": [],
+      "category": "Converter control and models",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0547",
+      "label": "extra element theorem",
+      "aliases": [],
+      "category": "Converter control and models",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0548",
+      "label": "input filter",
+      "aliases": [],
+      "category": "Converter control and models",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0549",
+      "label": "Middlebrook criterion",
+      "aliases": [],
+      "category": "Converter control and models",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0550",
+      "label": "PWM modulator",
+      "aliases": [],
+      "category": "Converter control and models",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0551",
+      "label": "current loop",
+      "aliases": [],
+      "category": "Converter control and models",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0552",
+      "label": "voltage loop",
+      "aliases": [],
+      "category": "Converter control and models",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0553",
+      "label": "sampled-data model",
+      "aliases": [],
+      "category": "Converter control and models",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0554",
+      "label": "digital control",
+      "aliases": [],
+      "category": "Converter control and models",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "elec-t-0556"
+      ]
+    },
+    {
+      "id": "elec-t-0555",
+      "label": "digital compensator",
+      "aliases": [],
+      "category": "Converter control and models",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0556",
+      "label": "Z-transform",
+      "aliases": [],
+      "category": "Converter control and models",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": [
+        "elec-t-0554"
+      ]
+    },
+    {
+      "id": "elec-t-0557",
+      "label": "Laplace transform",
+      "aliases": [],
+      "category": "Converter control and models",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0558",
+      "label": "sampling delay",
+      "aliases": [],
+      "category": "Converter control and models",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0559",
+      "label": "computation delay",
+      "aliases": [],
+      "category": "Converter control and models",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0560",
+      "label": "digital PWM",
+      "aliases": [
+        "DPWM"
+      ],
+      "category": "Converter control and models",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0562",
+      "label": "ADC sampling",
+      "aliases": [],
+      "category": "Converter control and models",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0563",
+      "label": "control quantization",
+      "aliases": [],
+      "category": "Converter control and models",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0564",
+      "label": "limit cycle",
+      "aliases": [],
+      "category": "Converter control and models",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0565",
+      "label": "dithering",
+      "aliases": [],
+      "category": "Converter control and models",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0566",
+      "label": "pole-zero cancellation",
+      "aliases": [],
+      "category": "Converter control and models",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0567",
+      "label": "nonminimum-phase response",
+      "aliases": [
+        "non-minimum phase response"
+      ],
+      "category": "Converter control and models",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0568",
+      "label": "load-step response",
+      "aliases": [],
+      "category": "Converter control and models",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0569",
+      "label": "loop gain measurement",
+      "aliases": [],
+      "category": "Converter control and models",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0570",
+      "label": "network injection",
+      "aliases": [],
+      "category": "Converter control and models",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0571",
+      "label": "frequency response analyzer",
+      "aliases": [],
+      "category": "Converter control and models",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0572",
+      "label": "schematic",
+      "aliases": [],
+      "category": "PCB realization, safety and ecosystems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0573",
+      "label": "breadboard",
+      "aliases": [],
+      "category": "PCB realization, safety and ecosystems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0574",
+      "label": "prototype PCB",
+      "aliases": [],
+      "category": "PCB realization, safety and ecosystems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0575",
+      "label": "printed circuit board",
+      "aliases": [
+        "PCB"
+      ],
+      "category": "PCB realization, safety and ecosystems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0577",
+      "label": "component footprint",
+      "aliases": [],
+      "category": "PCB realization, safety and ecosystems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0578",
+      "label": "pad",
+      "aliases": [],
+      "category": "PCB realization, safety and ecosystems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0579",
+      "label": "trace",
+      "aliases": [],
+      "category": "PCB realization, safety and ecosystems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0580",
+      "label": "soldermask",
+      "aliases": [],
+      "category": "PCB realization, safety and ecosystems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0581",
+      "label": "silkscreen",
+      "aliases": [],
+      "category": "PCB realization, safety and ecosystems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0582",
+      "label": "stackup",
+      "aliases": [],
+      "category": "PCB realization, safety and ecosystems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0583",
+      "label": "design rule check",
+      "aliases": [],
+      "category": "PCB realization, safety and ecosystems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0584",
+      "label": "DRC",
+      "aliases": [],
+      "category": "PCB realization, safety and ecosystems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0585",
+      "label": "PCB layout",
+      "aliases": [],
+      "category": "PCB realization, safety and ecosystems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0586",
+      "label": "bill of materials",
+      "aliases": [],
+      "category": "PCB realization, safety and ecosystems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0587",
+      "label": "BOM",
+      "aliases": [],
+      "category": "PCB realization, safety and ecosystems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0588",
+      "label": "schematic capture",
+      "aliases": [],
+      "category": "PCB realization, safety and ecosystems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0589",
+      "label": "EDA",
+      "aliases": [],
+      "category": "PCB realization, safety and ecosystems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0590",
+      "label": "PCB fabrication",
+      "aliases": [],
+      "category": "PCB realization, safety and ecosystems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0591",
+      "label": "PCB assembly",
+      "aliases": [],
+      "category": "PCB realization, safety and ecosystems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0592",
+      "label": "reflow soldering",
+      "aliases": [],
+      "category": "PCB realization, safety and ecosystems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0593",
+      "label": "soldering",
+      "aliases": [],
+      "category": "PCB realization, safety and ecosystems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0594",
+      "label": "surface mount",
+      "aliases": [],
+      "category": "PCB realization, safety and ecosystems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0595",
+      "label": "SMT",
+      "aliases": [],
+      "category": "PCB realization, safety and ecosystems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0596",
+      "label": "through hole",
+      "aliases": [],
+      "category": "PCB realization, safety and ecosystems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0597",
+      "label": "connector selection",
+      "aliases": [],
+      "category": "PCB realization, safety and ecosystems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0598",
+      "label": "component derating",
+      "aliases": [],
+      "category": "PCB realization, safety and ecosystems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0599",
+      "label": "thermal via",
+      "aliases": [],
+      "category": "PCB realization, safety and ecosystems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0600",
+      "label": "heat spreading",
+      "aliases": [],
+      "category": "PCB realization, safety and ecosystems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0601",
+      "label": "heatsink",
+      "aliases": [],
+      "category": "PCB realization, safety and ecosystems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0602",
+      "label": "isolation transformer",
+      "aliases": [],
+      "category": "PCB realization, safety and ecosystems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0603",
+      "label": "hot chassis",
+      "aliases": [],
+      "category": "PCB realization, safety and ecosystems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0604",
+      "label": "earth leakage",
+      "aliases": [],
+      "category": "PCB realization, safety and ecosystems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0605",
+      "label": "protective earth",
+      "aliases": [],
+      "category": "PCB realization, safety and ecosystems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0606",
+      "label": "reinforced isolation",
+      "aliases": [],
+      "category": "PCB realization, safety and ecosystems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0607",
+      "label": "fusing",
+      "aliases": [],
+      "category": "PCB realization, safety and ecosystems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0608",
+      "label": "surge protection",
+      "aliases": [],
+      "category": "PCB realization, safety and ecosystems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0609",
+      "label": "creepage distance",
+      "aliases": [],
+      "category": "PCB realization, safety and ecosystems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0610",
+      "label": "clearance distance",
+      "aliases": [],
+      "category": "PCB realization, safety and ecosystems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0611",
+      "label": "bench safety",
+      "aliases": [],
+      "category": "PCB realization, safety and ecosystems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0612",
+      "label": "oscilloscope grounding",
+      "aliases": [],
+      "category": "PCB realization, safety and ecosystems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0613",
+      "label": "isolated probing",
+      "aliases": [],
+      "category": "PCB realization, safety and ecosystems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0614",
+      "label": "floating supply",
+      "aliases": [],
+      "category": "PCB realization, safety and ecosystems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0615",
+      "label": "ESD handling",
+      "aliases": [],
+      "category": "PCB realization, safety and ecosystems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0616",
+      "label": "workbench",
+      "aliases": [],
+      "category": "PCB realization, safety and ecosystems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0617",
+      "label": "datasheet",
+      "aliases": [],
+      "category": "PCB realization, safety and ecosystems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0618",
+      "label": "reference design",
+      "aliases": [],
+      "category": "PCB realization, safety and ecosystems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0619",
+      "label": "application note",
+      "aliases": [],
+      "category": "PCB realization, safety and ecosystems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0620",
+      "label": "design review",
+      "aliases": [],
+      "category": "PCB realization, safety and ecosystems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0621",
+      "label": "manufacturing test",
+      "aliases": [],
+      "category": "PCB realization, safety and ecosystems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0622",
+      "label": "hardware bring-up",
+      "aliases": [],
+      "category": "PCB realization, safety and ecosystems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0623",
+      "label": "first power-on",
+      "aliases": [],
+      "category": "PCB realization, safety and ecosystems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0624",
+      "label": "test points",
+      "aliases": [],
+      "category": "PCB realization, safety and ecosystems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0625",
+      "label": "failure analysis",
+      "aliases": [],
+      "category": "PCB realization, safety and ecosystems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0626",
+      "label": "reliability",
+      "aliases": [],
+      "category": "PCB realization, safety and ecosystems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0627",
+      "label": "derating",
+      "aliases": [],
+      "category": "PCB realization, safety and ecosystems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0628",
+      "label": "cost of ownership",
+      "aliases": [],
+      "category": "PCB realization, safety and ecosystems",
+      "origin": "book_coverage_vocabulary",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0629",
+      "label": "GaN power stages",
+      "aliases": [],
+      "category": "Adjacent landscapes",
+      "origin": "adjacent_candidate",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0630",
+      "label": "SiC traction inverter",
+      "aliases": [],
+      "category": "Adjacent landscapes",
+      "origin": "adjacent_candidate",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0631",
+      "label": "wireless power transfer",
+      "aliases": [],
+      "category": "Adjacent landscapes",
+      "origin": "adjacent_candidate",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0632",
+      "label": "bidirectional converter",
+      "aliases": [],
+      "category": "Adjacent landscapes",
+      "origin": "adjacent_candidate",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0633",
+      "label": "energy harvesting",
+      "aliases": [],
+      "category": "Adjacent landscapes",
+      "origin": "adjacent_candidate",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0634",
+      "label": "USB-C power delivery",
+      "aliases": [],
+      "category": "Adjacent landscapes",
+      "origin": "adjacent_candidate",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0635",
+      "label": "USB PD",
+      "aliases": [],
+      "category": "Adjacent landscapes",
+      "origin": "adjacent_candidate",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0636",
+      "label": "PMBus",
+      "aliases": [],
+      "category": "Adjacent landscapes",
+      "origin": "adjacent_candidate",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0637",
+      "label": "point of load regulator",
+      "aliases": [
+        "POL regulator"
+      ],
+      "category": "Adjacent landscapes",
+      "origin": "adjacent_candidate",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0639",
+      "label": "multiphase buck",
+      "aliases": [],
+      "category": "Adjacent landscapes",
+      "origin": "adjacent_candidate",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0641",
+      "label": "voltage regulator module",
+      "aliases": [
+        "VRM"
+      ],
+      "category": "Adjacent landscapes",
+      "origin": "adjacent_candidate",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0642",
+      "label": "embedded power management",
+      "aliases": [],
+      "category": "Adjacent landscapes",
+      "origin": "adjacent_candidate",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0643",
+      "label": "motor drive",
+      "aliases": [],
+      "category": "Adjacent landscapes",
+      "origin": "adjacent_candidate",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0644",
+      "label": "BLDC motor controller",
+      "aliases": [],
+      "category": "Adjacent landscapes",
+      "origin": "adjacent_candidate",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0645",
+      "label": "solar MPPT",
+      "aliases": [],
+      "category": "Adjacent landscapes",
+      "origin": "adjacent_candidate",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0646",
+      "label": "maximum power point tracking",
+      "aliases": [
+        "MPPT"
+      ],
+      "category": "Adjacent landscapes",
+      "origin": "adjacent_candidate",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0647",
+      "label": "EV charger",
+      "aliases": [],
+      "category": "Adjacent landscapes",
+      "origin": "adjacent_candidate",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0648",
+      "label": "grid-tied inverter",
+      "aliases": [],
+      "category": "Adjacent landscapes",
+      "origin": "adjacent_candidate",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0649",
+      "label": "microgrid",
+      "aliases": [],
+      "category": "Adjacent landscapes",
+      "origin": "adjacent_candidate",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0650",
+      "label": "switching audio amplifier",
+      "aliases": [],
+      "category": "Adjacent landscapes",
+      "origin": "adjacent_candidate",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0651",
+      "label": "class D amplifier",
+      "aliases": [],
+      "category": "Adjacent landscapes",
+      "origin": "adjacent_candidate",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0652",
+      "label": "RF PCB",
+      "aliases": [],
+      "category": "Adjacent landscapes",
+      "origin": "adjacent_candidate",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0653",
+      "label": "high-speed serial transceiver",
+      "aliases": [],
+      "category": "Adjacent landscapes",
+      "origin": "adjacent_candidate",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0654",
+      "label": "SerDes",
+      "aliases": [],
+      "category": "Adjacent landscapes",
+      "origin": "adjacent_candidate",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0655",
+      "label": "DDR timing",
+      "aliases": [],
+      "category": "Adjacent landscapes",
+      "origin": "adjacent_candidate",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0656",
+      "label": "DDR signal integrity",
+      "aliases": [],
+      "category": "Adjacent landscapes",
+      "origin": "adjacent_candidate",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0657",
+      "label": "EMC precompliance",
+      "aliases": [],
+      "category": "Adjacent landscapes",
+      "origin": "adjacent_candidate",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0658",
+      "label": "vector network analyzer",
+      "aliases": [
+        "VNA"
+      ],
+      "category": "Adjacent landscapes",
+      "origin": "adjacent_candidate",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0660",
+      "label": "time-domain reflectometry",
+      "aliases": [
+        "TDR"
+      ],
+      "category": "Adjacent landscapes",
+      "origin": "adjacent_candidate",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0662",
+      "label": "power rail probing",
+      "aliases": [],
+      "category": "Adjacent landscapes",
+      "origin": "adjacent_candidate",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0663",
+      "label": "oscilloscope de-embedding",
+      "aliases": [],
+      "category": "Adjacent landscapes",
+      "origin": "adjacent_candidate",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0664",
+      "label": "SPICE model fidelity",
+      "aliases": [],
+      "category": "Adjacent landscapes",
+      "origin": "adjacent_candidate",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0665",
+      "label": "thermal camera",
+      "aliases": [],
+      "category": "Adjacent landscapes",
+      "origin": "adjacent_candidate",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0666",
+      "label": "semiconductor characterization",
+      "aliases": [],
+      "category": "Adjacent landscapes",
+      "origin": "adjacent_candidate",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0667",
+      "label": "FPGA power tree",
+      "aliases": [],
+      "category": "Adjacent landscapes",
+      "origin": "adjacent_candidate",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0668",
+      "label": "power electronics HIL",
+      "aliases": [],
+      "category": "Adjacent landscapes",
+      "origin": "adjacent_candidate",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0669",
+      "label": "hardware-in-the-loop",
+      "aliases": [
+        "HIL"
+      ],
+      "category": "Adjacent landscapes",
+      "origin": "adjacent_candidate",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0670",
+      "label": "digital power converter",
+      "aliases": [],
+      "category": "Adjacent landscapes",
+      "origin": "adjacent_candidate",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0671",
+      "label": "wide bandgap switching",
+      "aliases": [],
+      "category": "Adjacent landscapes",
+      "origin": "adjacent_candidate",
+      "related_ids": []
+    },
+    {
+      "id": "elec-t-0672",
+      "label": "modern PCB design",
+      "aliases": [],
+      "category": "Adjacent landscapes",
+      "origin": "adjacent_candidate",
+      "related_ids": []
+    }
+  ]
+}
