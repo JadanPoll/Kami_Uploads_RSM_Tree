@@ -90,24 +90,116 @@ The question tree starts from **“I want to build an OS!”** and keeps the chi
 Structured source of truth: [`investigation.json`](investigation.json), with `chapter_catalog`, `routes`, `cross_source_routes`, `source_catalogs`, `question_nodes`, and `curiosity_atlas` in one file.
 
 
-## Hardware and bare-metal cross-references
+## Embedded-systems and architecture shelf — indexed once
 
-These are **additional ways into the existing OS question tree**. Keep OSTEP for OS concepts; use the architecture texts to see what the processor actually provides, and *Making Embedded Systems* to compare software running without an OS. References are prospective reading leads, not established certificates.
+**Source folder:** [Embedded systems and computer architecture](https://drive.google.com/drive/folders/1Yfk9GlplruQzpIsPq7ks3fmMYNz7lFvS). This folder contains three **existing** OS investigation sources: [Making Embedded Systems](https://drive.google.com/file/d/1hU4l-fAivhO7f3b8ZZK58JOPTKysXzhl/view?usp=drivesdk) (MES), [Computer Organization and Design — RISC-V](https://drive.google.com/file/d/1oLtJEtoD_edhxRXXp9NqBg0eqwdHDpjP/view?usp=drivesdk) (COD-RV), and [Computer Organization and Design — ARM](https://drive.google.com/file/d/11keBAs8ZzIym0p4V_QEUfNtgjGH_91EA/view?usp=drivesdk) (COD-ARM). The book identities were already in the canonical JSON; the addition here is the deeper reusable map.
 
-| When I ask… | Book and chapter/section | Printed pages |
-|---|---|---|
-| What do I actually need an OS for? | MES: Ch. 1 — Introduction; MES: Ch. 6 — Managing the Flow of Activity; COD-RV: §1.3–1.4 — Below Your Program; Under the Covers; COD-ARM: §1.3–1.4 — Below Your Program; Under the Covers | MES chapter (range unverified); MES chapter (range unverified); COD-RV 13–24; COD-ARM 13–23 |
-| How do I bring up hardware and get my program working? | MES: Ch. 3 — Getting Your Hands on the Hardware; COD-RV: §2.12 — Translating and Starting a Program; COD-ARM: §2.12 — Translating and Starting a Program | MES chapter (range unverified); COD-RV 131–139; COD-ARM 128–136 |
-| How does a processor hand control to my OS when something happens? | COD-RV: §4.10 — Exceptions; COD-ARM: §4.9 — Exceptions; MES: Ch. 5 — Interrupts; MES: Ch. 6 — Managing the Flow of Activity | COD-RV 333–339; COD-ARM 336–341; MES chapter (range unverified); MES chapter (range unverified) |
-| How do I talk to a device and know when it needs attention? | MES: Ch. 4 — Inputs, Outputs, and Timers; MES: Ch. 5 — Interrupts; MES: Ch. 7 — Communicating with Peripherals; MES: Ch. 8 — Putting Together a System | MES chapter (range unverified); MES chapter (range unverified); MES chapter (range unverified); MES chapter (range unverified) |
-| What does the processor do when my OS gives a program virtual memory? | COD-RV: §5.7 — Virtual Memory; COD-ARM: §5.7 — Virtual Memory | COD-RV 440–463; COD-ARM 441–464 |
-| If two cores have caches, how do they see each other's changes? | COD-RV: §5.10 — Cache Coherence; COD-ARM: §5.10 — Cache Coherence | COD-RV 475–478; COD-ARM 477–480 |
-| What if my processor doesn't have enough memory, time, or power? | MES: Ch. 11 — Doing More with Less; MES: Ch. 13 — Reducing Power Consumption | MES chapter (range unverified); MES chapter (range unverified) |
-| Why does my system hang, and how do I find out where? | MES: Ch. 9 — Getting into Trouble; MES: Ch. 3 — Getting Your Hands on the Hardware | MES chapter (range unverified); MES chapter (range unverified) |
+**Navigation convention:** Source catalogs are canonical in [`investigation.json`](investigation.json) under `source_catalogs.MES`, `source_catalogs.COD-RV`, and `source_catalogs.COD-ARM`. The architecture entries below report **printed page starts** transcribed from these exact PDFs' tables of contents; MES chapter starting pages are **not yet established**. They are not PDF-position offsets or verified Kami jumps. Book contents identify *candidate reading locations*; only the selected observations under `source_inspected_observations` were read more closely.
 
-[Making Embedded Systems](https://drive.google.com/file/d/1hU4l-fAivhO7f3b8ZZK58JOPTKysXzhl/view?usp=drivesdk) · [RISC-V architecture book](https://drive.google.com/file/d/1oLtJEtoD_edhxRXXp9NqBg0eqwdHDpjP/view?usp=drivesdk) · [ARM architecture book](https://drive.google.com/file/d/11keBAs8ZzIym0p4V_QEUfNtgjGH_91EA/view?usp=drivesdk)
+### What each book contributes to the OS question
 
-**Boundary:** The processor books' program-start sections are not a replacement for a firmware/bootloader manual. The embedded book deliberately focuses on bare-metal software, not OS kernel implementation.
+| Book | Where it sits in the stack | Why it matters | Do not confuse it with… |
+| --- | --- | --- | --- |
+| **MES** — Elecia White, 2nd ed. (2024) | Firmware, board integration and resource-constrained software **without** an OS | Architecture, bare-metal main loops, state machines, IRQ timing, device buses, debugging, updates, power and physical behavior | A kernel implementation reference or a complete device-specific hardware manual |
+| **COD-RV** — Patterson & Hennessy, RISC-V edition | Instructions, datapath, memory hierarchy, exceptions and multicore hardware | The machine-level mechanisms that OS schedulers, traps, memory translation and synchronization rely on | The complete RISC-V privileged architecture specification (needed for concrete supervisor configuration) |
+| **COD-ARM** — Patterson & Hennessy, ARM edition | Comparable machine-level mechanisms with an ARM-centered teaching ISA | Architectural contrasts and the Cortex-A53 examples; useful alongside RISC-V | Real ARMv8-A instruction semantics: **LEGv8 is a deliberately simplified teaching subset**, not the complete architecture |
+
+### Factorization: six capability boundaries
+
+**Which OS functions genuinely need a privileged kernel?** A superloop, finite-state machine, IRQ handlers and peripheral drivers can run directly on hardware; adding multiple independently untrusted programs changes isolation, resource arbitration and recovery requirements.
+
+*Retrieve:* MES Ch. 2, Ch. 5, Ch. 6, Ch. 8 · OSTEP Ch. 2, Ch. 4, Ch. 6 · LKD Ch. 3, Ch. 5. *Discriminate:* Try satisfying the actual device requirement bare-metal; identify the first unmet contract that justifies a scheduler, protection domain, or service boundary.
+
+**How does a physical event become safe software action?** Hardware raises an event, the processor takes an exception/interrupt path, low-level code saves state and acknowledges it, and deferred work or a main loop completes the operation under timing and concurrency constraints.
+
+*Retrieve:* MES Ch. 4, Ch. 5, Ch. 6 · COD-RV §4.10 · COD-ARM §4.9 · OSTEP Ch. 36 · LKD Ch. 7, Ch. 8. *Discriminate:* Measure worst-case IRQ-to-useful-response latency, including masking, handler time and deferred work; compare polling and interrupts.
+
+**What lies beneath a process address and a memory fault?** The instruction set produces virtual addresses; translations and permissions affect access; caches and coherence determine performance/visibility, while the OS supplies mappings, allocation, page-fault and reclaim policies.
+
+*Retrieve:* COD-RV §5.3, §5.7, §5.10 · COD-ARM §5.3, §5.7, §5.10 · OSTEP Chs. 13–23 · LKD Ch. 12, Ch. 15, Ch. 16. *Discriminate:* Differentiate translation/permission faults, physical memory pressure, cache misses and shared-memory ordering with their own measurements.
+
+**What turns source code into control of a real device?** Compiler, assembler and linker produce an executable image; the processor executes instructions through an implementation, but firmware reset/boot handoff and board-specific peripheral setup remain platform contracts.
+
+*Retrieve:* COD-RV §2.12, §4.3–4.10 · COD-ARM §2.12, §4.3–4.9 · MES Ch. 3, Ch. 9. *Discriminate:* Separate a hosted program startup example from reset vector, linker mapping, initialization, trap vector and actual bootloader responsibility.
+
+**How do multiple cores share memory without silently corrupting progress?** ISA synchronization primitives, memory hierarchy/cache coherence and OS thread synchronization solve different pieces of the shared-memory problem. Coherence does not automatically provide atomicity for an application invariant.
+
+*Retrieve:* COD-RV §2.11, §5.10 · COD-ARM §2.11, §5.10 · OSTEP Chs. 26–33 · TLPI Chs. 29–31. *Discriminate:* Construct a concurrent operation with well-defined ownership and measure whether the invariant survives interleavings and stalls.
+
+**What makes a useful physical computer persist beyond a successful demo?** The device must bound memory, power, response times, peripheral errors, firmware update and recovery procedures; the OS may simplify services but does not by itself prove a safe physical session.
+
+*Retrieve:* MES Ch. 8, Ch. 9, Ch. 10, Ch. 11, Ch. 13, Ch. 14 · OSTEP Ch. 42, Ch. 48. *Discriminate:* Exercise representative faults, resets, power limits and updates; check that controlled hardware reaches safe states and correctly recovers.
+
+### MES — complete chapter map (2nd edition, 2024)
+
+The source preface confirms that the examples operate bare-metal and describes each of these fourteen chapters. **Chapter titles and purposes are verified; printed starting pages remain unverified.** Use chapter names in Kami/Drive search rather than inventing offsets.
+
+| Chapter | What it covers | Use it when… |
+| ---: | --- | --- |
+| 1 | Introduction | Bound the resource, timing and hardware interaction requirements before deciding whether an OS is necessary |
+| 2 | Creating a System Architecture | Decompose requirements, data flows, module responsibilities and state before implementing drivers |
+| 3 | Getting Your Hands on the Hardware | Bring up boards, inspect schematics and debug physical/software integration |
+| 4 | Inputs, Outputs, and Timers | Implement concrete I/O, timers, observable hardware events and small diagnostics |
+| 5 | Interrupts | Trace IRQ-to-ISR path, context, latency, nested priorities and short interrupt work |
+| 6 | Managing the Flow of Activity | Compare cooperative main loop, event processing, finite-state machines and interrupt-driven execution |
+| 7 | Communicating with Peripherals | Select UART/SPI/I2C/USB interfaces and understand framing, communication ownership and timing |
+| 8 | Putting Together a System | Integrate LCD/ADC/flash/sensors with buffers, bandwidth and pipelines |
+| 9 | Getting into Trouble | Trace hard faults, linker maps, stack corruption, reset and hardware-versus-code failure |
+| 10 | Building Connected Devices | Handle connected-device lifecycle, updates, remote visibility, monitoring and security |
+| 11 | Doing More with Less | Inspect RAM/flash/CPU budget, memory layout and measurement-driven optimization |
+| 12 | Math | Reason about arithmetic representation, fixed point, floating point and numeric limitations |
+| 13 | Reducing Power Consumption | Trade sleep/wakeup, latency, energy and always-on requirements |
+| 14 | Motors and Movement | Connect firmware timing and control loops to motors, sensing and physical movement |
+
+**Inspected technical nugget — interrupt latency (MES Ch. 5):** the processor's interrupt entry latency and the system's worst-case latency are different. The latter includes time spent with interrupts disabled; long handlers and context management increase response time. An ISR's existence is not itself evidence of meeting a physical deadline. This was read from the book text, though its printed page number is not established.
+
+### RISC-V and ARM — complete six-chapter top-level maps
+
+Both editions use a parallel progression but differ in concrete instruction-set examples and section numbering. **Do not assume the same numbered section covers an identical topic:** for example, exceptions are **RISC-V §4.10 (p. 333)** versus **ARM §4.9 (p. 336)**.
+
+| Ch. | RISC-V edition (printed start) | ARM edition (printed start) | Why this level matters |
+| ---: | --- | --- | --- |
+| 1 | Computer Abstractions and Technology — **p. 2** | Computer Abstractions and Technology — **p. 2** | Hardware/software abstraction, measured performance, power and the OS's placement |
+| 2 | Instructions: Language of the Computer — **p. 66** | Instructions: Language of the Computer — **p. 60** | ISA instruction and call conventions, atomic operations, translation/linking/starting a program |
+| 3 | Arithmetic for Computers — **p. 188** | Arithmetic for Computers — **p. 186** | Representations and arithmetic behavior affecting correctness and numerical limits |
+| 4 | The Processor — **p. 252** | The Processor — **p. 254** | Datapath/pipeline, hazards, exceptions and machine-level control transfer |
+| 5 | Large and Fast: Exploiting Memory Hierarchy — **p. 386** | Large and Fast: Exploiting Memory Hierarchy — **p. 386** | Caches, virtual machines/memory, translation and coherence |
+| 6 | Parallel Processors from Client to Cloud — **p. 518** | Parallel Processors from Client to Cloud — **p. 514** | Multicore execution, synchronization context, parallel hardware and cluster boundaries |
+
+### Targeted hardware lookup: OS question → exact printed section
+
+| Problem | RISC-V | ARM | What this helps establish |
+| --- | --- | --- | --- |
+| How does source code become executable work? | §2.12 Translating and Starting a Program — **p. 131** | §2.12 Translating and Starting a Program — **p. 128** | Compiler/linker/startup concepts, **not** the firmware-to-kernel boot process |
+| Why do two threads need atomic operations? | §2.11 Parallelism and Instructions: Synchronization — **p. 128** | §2.11 Parallelism and Instructions: Synchronization — **p. 125** | ISA synchronization primitives, distinct from the correct application-level invariant |
+| What is the processor executing and how? | §4.3 Building a Datapath — **p. 261** | §4.3 Building a Datapath — **p. 263** | Datapath construction and implementation constraints |
+| What makes a pipeline stall or forward data? | §4.8 Data Hazards: Forwarding versus Stalling — **p. 313** | §4.7 Data Hazards: Forwarding versus Stalling — **p. 316** | Dependencies, stalls and forwarding mechanisms |
+| How does the processor transfer control on an exception? | §4.10 Exceptions — **p. 333** | §4.9 Exceptions — **p. 336** | Hardware exception concepts; platform trap details need the relevant privileged specification |
+| What is virtual memory below an OS page table? | §5.7 Virtual Memory — **p. 440** | §5.7 Virtual Memory — **p. 441** | Virtual address translation, mappings and hardware-facing concepts |
+| How do caches accelerate, but also complicate, memory? | §5.3 The Basics of Caches — **p. 398** | §5.3 The Basics of Caches — **p. 397** | Locality and the cache hierarchy |
+| How do multiple cores keep their cache contents coherent? | §5.10 Parallelism and Memory Hierarchy: Cache Coherence — **p. 475** | §5.10 Parallelism and Memory Hierarchy: Cache Coherence — **p. 477** | Cache coherence, **not** guaranteed application atomicity |
+| Why is multicore parallelism difficult? | §6.2 The Difficulty of Creating Parallel Processing Programs — **p. 522** | §6.2 The Difficulty of Creating Parallel Processing Programs — **p. 518** | Parallel programming difficulty and cross-core design tradeoffs |
+| What is the cost of hardware multithreading? | §6.4 Hardware Multithreading — **p. 534** | §6.4 Hardware Multithreading — **p. 530** | Latency hiding versus resource contention |
+| Where do dedicated accelerators and clusters fit? | §6.7 Domain-Specific Architectures — **p. 549** | §6.6 Introduction to Graphics Processing Units — **p. 538** | Parallel hardware landscape; different topics at the same section number |
+
+**Important practical distinctions:** `COD-RV` and `COD-ARM` have complete chapter and subsection-start catalogs in the canonical JSON (115 and 105 entries). This Markdown section surfaces the highest-value OS intersections rather than repeating every textbook section. In the ARM PDF, the authors explicitly distinguish LEGv8 from the full ARMv8 instruction set. In the RISC-V edition's further reading, the authors refer readers to the privileged architecture manual for detailed privilege and address-protection mechanisms.
+
+### High-information paths that combine the shelf with the OS books
+
+| Starting failure or ambition | First sources | What to differentiate |
+| --- | --- | --- |
+| A board never reaches my program | MES Chs. 3, 9; COD-RV/ARM §2.12; target board startup spec | Wrong image/reset vector/linker placement vs driver initialization vs actual bootloader handoff |
+| Interrupt fires but hardware misses a deadline | MES Chs. 4–6; COD-RV §4.10 or ARM §4.9; LKD Chs. 7–8 | CPU entry latency, interrupt-masked time, ISR cost and deferred-work delay |
+| Busy main loop versus small OS scheduler | MES Chs. 2, 6; OSTEP Chs. 4–10 | What tasks are independently schedulable, who owns timing, and whether isolation is needed |
+| Virtual addresses or cache effects make memory behavior surprising | COD-RV/ARM §§5.3, 5.7, 5.10; OSTEP Chs. 13–23; LKD Chs. 12, 15–16 | Page translation, resident-memory pressure, cache/locality and ordering are distinct mechanisms |
+| I need multiple cooperative peripherals without data loss | MES Chs. 7–8; LKD Chs. 7–8; TLPI Ch. 63 | Device protocol and buffers vs driver work queues and nonblocking program interfaces |
+| An embedded device hangs after hours or after an update | MES Chs. 9–11, 13; OSTEP persistence; TLPI process lifecycle | Reproducible fault trace, reset/supervision path, persistent state and power-dependent failure |
+| A robot controller must not harm its hardware on stalls | MES Chs. 5–6, 13–14; OSTEP Ch. 7; platform timing documentation | Deadline guarantees and safe state, not merely benchmark throughput |
+
+### Long-term retrieval rule
+
+On a future OS question, **search this guide or the canonical `source_catalogs` first**. Reuse the existing `MES`, `COD-RV`, and `COD-ARM` source IDs. Open only the relevant section, record newly inspected mechanism/evidence with its actual page scheme, and update an existing technical node or source route instead of cloning a question tree or reindexing the books. The embedded folder is a *shelf*, not a new independent research database.
+
 
 ## Linux programming and kernel references
 
