@@ -157,32 +157,156 @@
       "status": "active"
     },
     {
-      "id": "MFG-TRANSFORM",
+      "id": "MFG-Q1",
       "parent_id": "MFG-ROOT",
+      "question": "What can humanity manufacture?",
+      "status": "active_question",
+      "why": "Possibility landscape and its boundaries",
+      "kind": "question",
+      "distinction": "Physical possibility, industrial demonstration, and individual accessibility are different boundaries.",
+      "distinctions": [
+        "Feasible in physical principle vs demonstrated by human industry vs accessible to an individual",
+        "One-off artifact vs reliable repeated production"
+      ]
+    },
+    {
+      "id": "MFG-Q2",
+      "parent_id": "MFG-ROOT",
+      "question": "How could I learn to make almost anything?",
+      "status": "active_question",
+      "why": "Practical agency and accessible capabilities",
+      "kind": "question",
+      "distinction": "Practical agency can come from owned tools or from designing and commissioning work through others.",
+      "distinctions": [
+        "Owning a process vs accessing it through services, institutions or collaborators"
+      ]
+    },
+    {
+      "id": "MFG-Q5",
+      "parent_id": "MFG-ROOT",
+      "question": "How do capabilities compose and bootstrap?",
+      "status": "active_question",
+      "why": "Generativity, bottlenecks and capability dependencies",
+      "kind": "question",
+      "distinction": "Having tools is different from knowing which tools, materials, processes and dependencies can combine to generate new capabilities.",
+      "distinctions": [
+        "Having capabilities vs knowing which compositions are possible and what dependencies block them"
+      ]
+    },
+    {
+      "id": "MFG-TRANSFORM",
+      "parent_id": "MFG-Q1",
       "question": "What transformations can we perform on matter, and what materials, geometries, scales and properties can each process produce?",
       "status": "provisional",
-      "why": "Build transferable literacy across manufacturing mechanisms"
+      "why": "Build transferable literacy across manufacturing mechanisms",
+      "source_ids": [
+        "BOOK-MFG-PROCESSES"
+      ]
     },
     {
       "id": "MFG-REALIZE",
-      "parent_id": "MFG-ROOT",
+      "parent_id": "MFG-Q2",
       "question": "What is required to realize a physical object, from design through fabrication and inspection?",
       "status": "provisional",
-      "why": "Translate process literacy into practical making capability"
+      "why": "Translate process literacy into practical making capability",
+      "source_ids": [
+        "BOOK-FFF",
+        "BOOK-SHIGLEY"
+      ]
     },
     {
       "id": "MFG-FEASIBILITY",
-      "parent_id": "MFG-ROOT",
+      "parent_id": "MFG-Q2",
       "question": "What determines whether a part can be made reliably to specification and at acceptable cost?",
       "status": "provisional",
-      "why": "Expose hidden constraints behind apparently simple parts"
+      "why": "Expose hidden constraints behind apparently simple parts",
+      "source_ids": [
+        "BOOK-MFG-PROCESSES",
+        "BOOK-FFF",
+        "BOOK-SHIGLEY"
+      ]
     },
     {
       "id": "MFG-EXPAND",
-      "parent_id": "MFG-ROOT",
+      "parent_id": "MFG-Q5",
       "question": "What becomes possible when we change materials, tools, design, process combinations or production arrangements?",
       "status": "provisional",
-      "why": "Explore the possibility frontier rather than memorize existing processes"
+      "why": "Explore the possibility frontier rather than memorize existing processes",
+      "source_ids": [
+        "BOOK-MFG-PROCESSES"
+      ]
+    },
+    {
+      "id": "MFG-Q1a",
+      "parent_id": "MFG-Q1",
+      "question": "What physical structures and properties can we create?",
+      "why": "Broadens beyond familiar product categories",
+      "status": "candidate",
+      "kind": "question"
+    },
+    {
+      "id": "MFG-Q1b",
+      "parent_id": "MFG-Q1",
+      "question": "What cannot we manufacture, and which limits are fundamental versus contingent?",
+      "why": "Separates impossible from not-yet-practical",
+      "status": "candidate",
+      "kind": "question"
+    },
+    {
+      "id": "MFG-Q1c",
+      "parent_id": "MFG-Q1",
+      "question": "How did the present manufacturing frontier arise?",
+      "why": "Exposes historical technology dependencies",
+      "status": "candidate",
+      "kind": "question"
+    },
+    {
+      "id": "MFG-Q2a",
+      "parent_id": "MFG-Q2",
+      "question": "What capabilities would give me the greatest manufacturing reach?",
+      "why": "Optimizes generative competence rather than a tool checklist",
+      "status": "candidate",
+      "kind": "question"
+    },
+    {
+      "id": "MFG-Q2b",
+      "parent_id": "MFG-Q2",
+      "question": "What can I accomplish through accessible external manufacturing?",
+      "why": "Distinguishes agency from owning equipment",
+      "status": "candidate",
+      "kind": "question"
+    },
+    {
+      "id": "MFG-Q2c",
+      "parent_id": "MFG-Q2",
+      "question": "What would operational confidence on unfamiliar manufacturing tasks look like?",
+      "why": "Creates meaningful competence criteria",
+      "status": "candidate",
+      "kind": "question"
+    },
+    {
+      "id": "MFG-Q5a",
+      "parent_id": "MFG-Q5",
+      "question": "Which initial capability sets can generate or unlock others?",
+      "why": "Studies bootstrap structure",
+      "status": "candidate",
+      "kind": "question"
+    },
+    {
+      "id": "MFG-Q5b",
+      "parent_id": "MFG-Q5",
+      "question": "Which capabilities are bottlenecks, bridges, or multiplicative complements?",
+      "why": "Identifies leverage",
+      "status": "candidate",
+      "kind": "question"
+    },
+    {
+      "id": "MFG-Q5c",
+      "parent_id": "MFG-Q5",
+      "question": "Under what conditions can a production system reproduce or improve its own tooling?",
+      "why": "Investigates closure, dependency and external inputs",
+      "status": "candidate",
+      "kind": "question"
     }
   ],
   "sources": [
@@ -374,5 +498,35 @@
     "unit": "Entire chapters when practical; otherwise explicit meaningful start–end page ranges",
     "navigation": "Always distinguish printed page numbers from PDF page positions for Kami navigation",
     "source_of_truth": "Inspect actual edition's table of contents and document pages; never assign lone page starts as homework"
+  },
+  "connections": [
+    {
+      "from": "MFG-Q1",
+      "to": "MFG-Q2",
+      "relationship": "capability relationship",
+      "why": "Human production capabilities delimit accessible learning opportunities but do not determine which are worth acquiring"
+    },
+    {
+      "from": "MFG-Q2",
+      "to": "MFG-Q5",
+      "relationship": "capability relationship",
+      "why": "Capability acquisition can increase ability to acquire or create further capabilities"
+    },
+    {
+      "from": "MFG-Q5",
+      "to": "MFG-Q1",
+      "relationship": "capability relationship",
+      "why": "Bootstrapping and composition can expand the frontier of actually manufacturable outcomes"
+    }
+  ],
+  "presentation": {
+    "content_status": "Question landscape and source navigation; technical findings are not yet certified.",
+    "main_questions": [
+      "MFG-Q1",
+      "MFG-Q2",
+      "MFG-Q5"
+    ],
+    "source_reading_note": "Source ranges are assigned navigation, not proofs of the proposed questions. Preserve printed-versus-PDF page conventions.",
+    "source_of_promoted_nodes": "question_selection.selected_big_picture_questions and alternative_formulations"
   }
 }
