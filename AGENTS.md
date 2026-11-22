@@ -30,6 +30,8 @@ Source: [FKEN — Frustration-to-resource traversability](https://github.com/Jad
 
 ## When an investigation resumes
 
+When investigating operating systems, start with [`Investigations/operating-systems/REFERENCE_GUIDE.md`](Investigations/operating-systems/REFERENCE_GUIDE.md). Its six-book map includes the three PDFs in the [embedded systems and architecture shelf](https://drive.google.com/drive/folders/1Yfk9GlplruQzpIsPq7ks3fmMYNz7lFvS): `MES` (14 chapters), `COD-RV` (115 chapters/sections), and `COD-ARM` (105 chapters/sections). Their canonical structured maps live under `source_catalogs` in the single OS `investigation.json`; `cross_book_factors` identifies the functional/physical boundaries. Reuse these persistent locators on future questions, inspect new passages only where needed, and distinguish chapter-TOC evidence from actual studied mechanisms. In the ARM edition, LEGv8 is a simplified teaching subset, not a substitute for the official ISA and platform references.
+
 When working with manufacturing books, **begin with** [`Investigations/manufacturing-orientation/REFERENCE_GUIDE.md`](Investigations/manufacturing-orientation/REFERENCE_GUIDE.md): it indexes the current five books' 65 meaningful chapters/parts, inspected passages and cross-book retrieval shortcuts. Do not reindex the same books on every new question. Only inspect a chapter or passage where existing indexed knowledge cannot resolve the new uncertainty; write new verified locators and insights once to the canonical JSON, then update the readable guide where useful. Chapter locators and examined passages remain distinct levels of evidence.
 
 1. Read `investigations.json` and the relevant `Investigations/<slug>/investigation.json` before proposing changes.
