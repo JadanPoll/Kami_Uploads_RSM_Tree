@@ -14,6 +14,16 @@ The repository follows the [Richer Scientific Method (RSM)](https://github.com/J
 - **[FKEN Ecosystem](https://github.com/JadanPoll/FKEN_Ecosystem):** Broad domain and resource landscapes, reusable knowledge, projects, and skills. Link relevant records instead of copying them.
 - **Google Drive / Kami:** Original books and annotated PDFs. Link to actual files; do not commit copyrighted books or duplicate uploads solely to populate this repository.
 
+## Manufacturing: one research corpus, five question-conditioned views
+
+[Open the manufacturing atlas](https://raw.githack.com/JadanPoll/Learning_Visualizations_Taxonomy/main/RSM_Tree_Viewer.html?repo=https%3A%2F%2Fgithub.com%2FJadanPoll%2FKami_Uploads_RSM_Tree&view=manufacturing-investigation). The selector above the map offers **Possibilities**, **Make it**, **Mechanisms**, **Production**, and **Bootstrap**, as well as the complete research tree.
+
+These are not separate summaries of the same books. `Investigations/manufacturing-orientation/investigation.json` holds one canonical set of source-backed question and mechanism records. Its `landscape_views` contain only referenced IDs and alternative parents; a mechanism can therefore appear in several purpose-specific trees without multiplying its evidence or notes. `rsm-view.json` registers those views. The inspector offers explicit links to the other perspectives in which a record appears.
+
+The connected source collection presently contains five books: *Manufacturing Processes for Design Professionals*, *Functional Design for 3D Printing*, *Shigley's Mechanical Engineering Design*, *Handbook of Compliant Mechanisms*, and *Mechanisms and Mechanical Devices Sourcebook*. Their `book_landscaplets` index 65 relevant major parts and chapters by question. **A chapter locator is not a finding.** Only records with inspected evidence should claim a mechanism or result; incomplete coverage remains visible.
+
+The ambition is to make the books traversable by what one is trying to accomplish, rather than by book order or a rigid universal hierarchy. Add another major view only when it serves a genuinely different recurring task; new studied mechanisms should normally extend canonical records and appear in existing views.
+
 ## Using the tree
 
 1. Start with an actual curiosity or goal. Recover the parent purpose without silently replacing the question.
