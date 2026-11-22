@@ -154,7 +154,12 @@
       "id": "MFG-ROOT",
       "parent_id": null,
       "question": "How can we understand and acquire the capabilities needed to manufacture an increasingly broad variety of physical things?",
-      "status": "active"
+      "status": "active",
+      "term_ids": [
+        "mfg-t-0175",
+        "mfg-t-0170",
+        "mfg-t-0176"
+      ]
     },
     {
       "id": "MFG-Q1",
@@ -167,6 +172,11 @@
       "distinctions": [
         "Feasible in physical principle vs demonstrated by human industry vs accessible to an individual",
         "One-off artifact vs reliable repeated production"
+      ],
+      "term_ids": [
+        "mfg-t-0175",
+        "mfg-t-0033",
+        "mfg-t-0170"
       ]
     },
     {
@@ -179,6 +189,11 @@
       "distinction": "Practical agency can come from owned tools or from designing and commissioning work through others.",
       "distinctions": [
         "Owning a process vs accessing it through services, institutions or collaborators"
+      ],
+      "term_ids": [
+        "mfg-t-0176",
+        "mfg-t-0160",
+        "mfg-t-0159"
       ]
     },
     {
@@ -191,6 +206,10 @@
       "distinction": "Having tools is different from knowing which tools, materials, processes and dependencies can combine to generate new capabilities.",
       "distinctions": [
         "Having capabilities vs knowing which compositions are possible and what dependencies block them"
+      ],
+      "term_ids": [
+        "mfg-t-0176",
+        "mfg-t-0182"
       ]
     },
     {
@@ -201,6 +220,10 @@
       "why": "Build transferable literacy across manufacturing mechanisms",
       "source_ids": [
         "BOOK-MFG-PROCESSES"
+      ],
+      "term_ids": [
+        "mfg-t-0170",
+        "mfg-t-0169"
       ]
     },
     {
@@ -212,6 +235,12 @@
       "source_ids": [
         "BOOK-FFF",
         "BOOK-SHIGLEY"
+      ],
+      "term_ids": [
+        "mfg-t-0134",
+        "mfg-t-0138",
+        "mfg-t-0164",
+        "mfg-t-0182"
       ]
     },
     {
@@ -224,6 +253,12 @@
         "BOOK-MFG-PROCESSES",
         "BOOK-FFF",
         "BOOK-SHIGLEY"
+      ],
+      "term_ids": [
+        "mfg-t-0128",
+        "mfg-t-0161",
+        "mfg-t-0184",
+        "mfg-t-0149"
       ]
     },
     {
@@ -234,6 +269,11 @@
       "why": "Explore the possibility frontier rather than memorize existing processes",
       "source_ids": [
         "BOOK-MFG-PROCESSES"
+      ],
+      "term_ids": [
+        "mfg-t-0176",
+        "mfg-t-0070",
+        "mfg-t-0159"
       ]
     },
     {
@@ -242,7 +282,8 @@
       "question": "What physical structures and properties can we create?",
       "why": "Broadens beyond familiar product categories",
       "status": "candidate",
-      "kind": "question"
+      "kind": "question",
+      "term_ids": []
     },
     {
       "id": "MFG-Q1b",
@@ -250,7 +291,8 @@
       "question": "What cannot we manufacture, and which limits are fundamental versus contingent?",
       "why": "Separates impossible from not-yet-practical",
       "status": "candidate",
-      "kind": "question"
+      "kind": "question",
+      "term_ids": []
     },
     {
       "id": "MFG-Q1c",
@@ -258,7 +300,8 @@
       "question": "How did the present manufacturing frontier arise?",
       "why": "Exposes historical technology dependencies",
       "status": "candidate",
-      "kind": "question"
+      "kind": "question",
+      "term_ids": []
     },
     {
       "id": "MFG-Q2a",
@@ -266,7 +309,8 @@
       "question": "What capabilities would give me the greatest manufacturing reach?",
       "why": "Optimizes generative competence rather than a tool checklist",
       "status": "candidate",
-      "kind": "question"
+      "kind": "question",
+      "term_ids": []
     },
     {
       "id": "MFG-Q2b",
@@ -274,7 +318,8 @@
       "question": "What can I accomplish through accessible external manufacturing?",
       "why": "Distinguishes agency from owning equipment",
       "status": "candidate",
-      "kind": "question"
+      "kind": "question",
+      "term_ids": []
     },
     {
       "id": "MFG-Q2c",
@@ -282,7 +327,8 @@
       "question": "What would operational confidence on unfamiliar manufacturing tasks look like?",
       "why": "Creates meaningful competence criteria",
       "status": "candidate",
-      "kind": "question"
+      "kind": "question",
+      "term_ids": []
     },
     {
       "id": "MFG-Q5a",
@@ -290,7 +336,8 @@
       "question": "Which initial capability sets can generate or unlock others?",
       "why": "Studies bootstrap structure",
       "status": "candidate",
-      "kind": "question"
+      "kind": "question",
+      "term_ids": []
     },
     {
       "id": "MFG-Q5b",
@@ -298,7 +345,8 @@
       "question": "Which capabilities are bottlenecks, bridges, or multiplicative complements?",
       "why": "Identifies leverage",
       "status": "candidate",
-      "kind": "question"
+      "kind": "question",
+      "term_ids": []
     },
     {
       "id": "MFG-Q5c",
@@ -306,7 +354,10 @@
       "question": "Under what conditions can a production system reproduce or improve its own tooling?",
       "why": "Investigates closure, dependency and external inputs",
       "status": "candidate",
-      "kind": "question"
+      "kind": "question",
+      "term_ids": [
+        "mfg-t-0084"
+      ]
     },
     {
       "id": "MFG-PROC-INJECTION",
@@ -332,7 +383,15 @@
       "unresolved_questions": [
         "At which quantity does a specific tool design beat printing or CNC alternatives once tooling, scrap and revision risk are included?"
       ],
-      "minimum_reconstruction_probe": "Choose a plastic enclosure; compare designs for mold parting/draft and a printed alternative. Obtain a tooling estimate or real quotation rather than assuming a break-even quantity."
+      "minimum_reconstruction_probe": "Choose a plastic enclosure; compare designs for mold parting/draft and a printed alternative. Obtain a tooling estimate or real quotation rather than assuming a break-even quantity.",
+      "term_ids": [
+        "mfg-t-0078",
+        "mfg-t-0083",
+        "mfg-t-0152",
+        "mfg-t-0150",
+        "mfg-t-0086",
+        "mfg-t-0084"
+      ]
     },
     {
       "id": "MFG-PROC-SAND",
@@ -358,7 +417,15 @@
       "unresolved_questions": [
         "When do surface finish, porosity and machining costs eliminate the apparent savings of an expendable mold?"
       ],
-      "minimum_reconstruction_probe": "Trace a real casting from part drawing through pattern, mold, casting, machining and inspection; identify which geometry and tolerance requirements must be deferred to later operations."
+      "minimum_reconstruction_probe": "Trace a real casting from part drawing through pattern, mold, casting, machining and inspection; identify which geometry and tolerance requirements must be deferred to later operations.",
+      "term_ids": [
+        "mfg-t-0080",
+        "mfg-t-0085",
+        "mfg-t-0087",
+        "mfg-t-0152",
+        "mfg-t-0083",
+        "mfg-t-0124"
+      ]
     },
     {
       "id": "MFG-PROC-LAYERS",
@@ -383,7 +450,17 @@
       "unresolved_questions": [
         "Which process becomes favorable when functional part properties—not simply shape similarity—matter?"
       ],
-      "minimum_reconstruction_probe": "Take a real complex part with an internal cavity. Compare SLA, powder-bed printing and a split-and-joined approach, including support removal and inspection access."
+      "minimum_reconstruction_probe": "Take a real complex part with an internal cavity. Compare SLA, powder-bed printing and a split-and-joined approach, including support removal and inspection access.",
+      "term_ids": [
+        "mfg-t-0070",
+        "mfg-t-0102",
+        "mfg-t-0103",
+        "mfg-t-0118",
+        "mfg-t-0083",
+        "mfg-t-0104",
+        "mfg-t-0105",
+        "mfg-t-0187"
+      ]
     },
     {
       "id": "MFG-PROC-WATERJET",
@@ -409,7 +486,12 @@
       "unresolved_questions": [
         "For an actual part, how does abrasive-waterjet edge accuracy and time compare to laser cutting, punching and machining?"
       ],
-      "minimum_reconstruction_probe": "Specify the same sheet-metal or glass profile for waterjet and one alternative process. Obtain toolpath time/kerf estimates and measure edge quality of real samples."
+      "minimum_reconstruction_probe": "Specify the same sheet-metal or glass profile for waterjet and one alternative process. Obtain toolpath time/kerf estimates and measure edge quality of real samples.",
+      "term_ids": [
+        "mfg-t-0091",
+        "mfg-t-0095",
+        "mfg-t-0094"
+      ]
     },
     {
       "id": "MFG-FFM-ORIENT",
@@ -436,7 +518,17 @@
         "Does the predicted strength ranking hold for a given polymer and printer?",
         "When do joint weaknesses outweigh the printing gains from decomposition?"
       ],
-      "minimum_reconstruction_probe": "Print two equal-function designs with differing orientations or split geometry. Record failed attempts, total time including assembly, mass, dimensional error and load direction; destructively test multiple specimens rather than accept the book's example as a universal rule."
+      "minimum_reconstruction_probe": "Print two equal-function designs with differing orientations or split geometry. Record failed attempts, total time including assembly, mass, dimensional error and load direction; destructively test multiple specimens rather than accept the book's example as a universal rule.",
+      "term_ids": [
+        "mfg-t-0071",
+        "mfg-t-0117",
+        "mfg-t-0114",
+        "mfg-t-0032",
+        "mfg-t-0140",
+        "mfg-t-0072",
+        "mfg-t-0077",
+        "mfg-t-0109"
+      ]
     },
     {
       "id": "MFG-TOLERANCE",
@@ -469,7 +561,16 @@
         "Which actual feature deviations dominate assembly failure for an accessible 3D printer?",
         "Which tolerances can be verified with calipers versus more involved metrology?"
       ],
-      "minimum_reconstruction_probe": "Design mating printed features with nominal clearances; print a dimensioned variation matrix, measure real dimensions, identify fit failure thresholds and distinguish slicer compensation from a model's geometric allowances."
+      "minimum_reconstruction_probe": "Design mating printed features with nominal clearances; print a dimensioned variation matrix, measure real dimensions, identify fit failure thresholds and distinguish slicer compensation from a model's geometric allowances.",
+      "term_ids": [
+        "mfg-t-0128",
+        "mfg-t-0130",
+        "mfg-t-0131",
+        "mfg-t-0132",
+        "mfg-t-0126",
+        "mfg-t-0133",
+        "mfg-t-0138"
+      ]
     },
     {
       "id": "MFG-FUNCTION",
@@ -477,7 +578,14 @@
       "question": "How can we synthesize a physical mechanism from desired motion, force, and constraints?",
       "status": "active_question",
       "kind": "major_question",
-      "why": "A mechanism's function is not identical to its geometry: the same movement may be realized by links and joints, a shaped cam, a flexible member or another arrangement. Inputs, degrees of freedom, load paths, actuation and constraints determine useful alternatives."
+      "why": "A mechanism's function is not identical to its geometry: the same movement may be realized by links and joints, a shaped cam, a flexible member or another arrangement. Inputs, degrees of freedom, load paths, actuation and constraints determine useful alternatives.",
+      "term_ids": [
+        "mfg-t-0040",
+        "mfg-t-0038",
+        "mfg-t-0046",
+        "mfg-t-0052",
+        "mfg-t-0069"
+      ]
     },
     {
       "id": "MFG-SCALE",
@@ -485,7 +593,16 @@
       "question": "How can we manufacture reliable products at a specified quantity, quality, and cost?",
       "status": "active_question",
       "kind": "major_question",
-      "why": "A prototype that works once is not a production route. Tooling reuse, cycle time, yield, inspections, revision costs, assembly and operating volume can reverse which process is economical."
+      "why": "A prototype that works once is not a production route. Tooling reuse, cycle time, yield, inspections, revision costs, assembly and operating volume can reverse which process is economical.",
+      "term_ids": [
+        "mfg-t-0149",
+        "mfg-t-0150",
+        "mfg-t-0152",
+        "mfg-t-0163",
+        "mfg-t-0084",
+        "mfg-t-0133",
+        "mfg-t-0167"
+      ]
     },
     {
       "id": "MFG-FUNC-MOTION",
@@ -493,7 +610,13 @@
       "question": "Which mechanism topologies create the motion, force, or dwell we want?",
       "status": "provisional",
       "kind": "question",
-      "why": "A desired output behavior can admit linkage, cam, gear, Geneva, ratchet or flexural realizations. Compare their motion and force laws, constraints and loads before choosing physical parts."
+      "why": "A desired output behavior can admit linkage, cam, gear, Geneva, ratchet or flexural realizations. Compare their motion and force laws, constraints and loads before choosing physical parts.",
+      "term_ids": [
+        "mfg-t-0040",
+        "mfg-t-0050",
+        "mfg-t-0052",
+        "mfg-t-0055"
+      ]
     },
     {
       "id": "MFG-FUNC-REALIZE",
@@ -501,7 +624,15 @@
       "question": "When does a mechanism concept survive materials, flexure strain, fabrication, and assembly?",
       "status": "provisional",
       "kind": "question",
-      "why": "A mechanism with correct idealized motion may still break, jam, fatigue or fail tolerances. Kinematics, structural compliance and manufacturing limits are coupled."
+      "why": "A mechanism with correct idealized motion may still break, jam, fatigue or fail tolerances. Kinematics, structural compliance and manufacturing limits are coupled.",
+      "term_ids": [
+        "mfg-t-0001",
+        "mfg-t-0012",
+        "mfg-t-0026",
+        "mfg-t-0027",
+        "mfg-t-0040",
+        "mfg-t-0133"
+      ]
     },
     {
       "id": "MFG-SCALE-TOOL",
@@ -509,7 +640,11 @@
       "question": "When should shape be encoded in reusable tooling, expendable tooling, or digital instructions?",
       "status": "provisional",
       "kind": "question",
-      "why": "Mold reuse, destructible patterns and programmable toolpaths lead to different setup, revision and per-unit costs; feasible material and shape constraints must be screened first."
+      "why": "Mold reuse, destructible patterns and programmable toolpaths lead to different setup, revision and per-unit costs; feasible material and shape constraints must be screened first.",
+      "term_ids": [
+        "mfg-t-0083",
+        "mfg-t-0084"
+      ]
     },
     {
       "id": "MFG-FUNC-RIGID",
@@ -534,6 +669,13 @@
       "minimum_reconstruction_probe": "Using a real lever or screw-jack specimen, measure applied travel and force against output travel and force; estimate work efficiency and compare the measured result to a frictionless model.",
       "unresolved_questions": [
         "Which specific linkage geometries meet a stated force/travel envelope under practical backlash and friction?"
+      ],
+      "term_ids": [
+        "mfg-t-0046",
+        "mfg-t-0047",
+        "mfg-t-0048",
+        "mfg-t-0050",
+        "mfg-t-0040"
       ]
     },
     {
@@ -559,6 +701,12 @@
       "minimum_reconstruction_probe": "Compare a Geneva wheel with a cam-controlled or stepper-driven indexing alternative for the same step angle and cycle rate; measure dwell accuracy, peak acceleration and repeatability.",
       "unresolved_questions": [
         "At what cycle speed do dynamic loads overwhelm the simplicity of the mechanical dwell?"
+      ],
+      "term_ids": [
+        "mfg-t-0054",
+        "mfg-t-0056",
+        "mfg-t-0055",
+        "mfg-t-0057"
       ]
     },
     {
@@ -592,6 +740,18 @@
       "unresolved_questions": [
         "Which material and fabrication route meets the desired fatigue life and precision?",
         "How well does a simplified flexural model predict the real build?"
+      ],
+      "term_ids": [
+        "mfg-t-0041",
+        "mfg-t-0044",
+        "mfg-t-0013",
+        "mfg-t-0068",
+        "mfg-t-0001",
+        "mfg-t-0011",
+        "mfg-t-0012",
+        "mfg-t-0025",
+        "mfg-t-0026",
+        "mfg-t-0133"
       ]
     },
     {
@@ -617,6 +777,15 @@
       "minimum_reconstruction_probe": "Choose a precision platform allowed to translate in X and Y but resist Z translation and unwanted rotations. Identify target freedoms, propose two alternative constraint topologies, then verify their actual parasitic motion.",
       "unresolved_questions": [
         "How do nominally equivalent constraint arrangements differ in off-axis stiffness and real manufacturing error?"
+      ],
+      "term_ids": [
+        "mfg-t-0038",
+        "mfg-t-0039",
+        "mfg-t-0041",
+        "mfg-t-0011",
+        "mfg-t-0025",
+        "mfg-t-0026",
+        "mfg-t-0040"
       ]
     },
     {
@@ -625,7 +794,13 @@
       "question": "My printed clip or flexible part keeps snapping after repeated use.",
       "why": "A few uses or repeated bending can expose layer adhesion, excessive strain, sharp stress concentrations or fatigue; compare the failure location before changing materials.",
       "status": "navigation_question",
-      "kind": "frustration_entry"
+      "kind": "frustration_entry",
+      "term_ids": [
+        "mfg-t-0001",
+        "mfg-t-0011",
+        "mfg-t-0012",
+        "mfg-t-0114"
+      ]
     },
     {
       "id": "MFG-ISSUE-FIT",
@@ -633,7 +808,11 @@
       "question": "My parts look correct in CAD but don't fit together.",
       "why": "Find out whether the issue is inaccurate dimensions, process-dependent shape, geometry of the mating interface, or the way the assembly is specified.",
       "status": "navigation_question",
-      "kind": "frustration_entry"
+      "kind": "frustration_entry",
+      "term_ids": [
+        "mfg-t-0133",
+        "mfg-t-0138"
+      ]
     },
     {
       "id": "MFG-ISSUE-STEP",
@@ -641,7 +820,8 @@
       "question": "I need a wheel to move one step, stop, then move again.",
       "why": "Distinguish required motion during movement, holding accuracy during rest, cycle speed, force and acceleration before selecting the drive.",
       "status": "navigation_question",
-      "kind": "frustration_entry"
+      "kind": "frustration_entry",
+      "term_ids": []
     },
     {
       "id": "MFG-ISSUE-QUANTITY",
@@ -649,7 +829,11 @@
       "question": "Should I make ten parts and ten thousand parts the same way?",
       "why": "Compare fixed setup and tooling against per-unit time, revision risk, quality and assembly at the actual volumes.",
       "status": "navigation_question",
-      "kind": "frustration_entry"
+      "kind": "frustration_entry",
+      "term_ids": [
+        "mfg-t-0084",
+        "mfg-t-0133"
+      ]
     },
     {
       "id": "MFG-ISSUE-OUTSOURCE",
@@ -657,7 +841,10 @@
       "question": "How can I make this without owning a workshop or expensive machines?",
       "why": "Own the specification and verification; consider accessible services for cutting, printing, forming, finishing, joining, and measurement.",
       "status": "navigation_question",
-      "kind": "frustration_entry"
+      "kind": "frustration_entry",
+      "term_ids": [
+        "mfg-t-0109"
+      ]
     },
     {
       "id": "MFG-ISSUE-FLEX",
@@ -665,7 +852,10 @@
       "question": "Can I build a hinge or clamp without loose joints?",
       "why": "Separate desired movement from allowed force, side play, fatigue and manufacturability; flexures can replace some joints but not all.",
       "status": "navigation_question",
-      "kind": "frustration_entry"
+      "kind": "frustration_entry",
+      "term_ids": [
+        "mfg-t-0001"
+      ]
     },
     {
       "id": "MFG-ISSUE-WOBBLE",
@@ -673,7 +863,13 @@
       "question": "My mechanism moves, but it wobbles or won't return to the same position.",
       "why": "Separate intended degrees of freedom, unwanted compliance, joint clearance, geometry errors, hysteresis, and measurement.",
       "status": "navigation_question",
-      "kind": "frustration_entry"
+      "kind": "frustration_entry",
+      "term_ids": [
+        "mfg-t-0027",
+        "mfg-t-0040",
+        "mfg-t-0061",
+        "mfg-t-0126"
+      ]
     },
     {
       "id": "MFG-ISSUE-HEAT",
@@ -681,7 +877,8 @@
       "question": "How can I cut this material without burning or distorting its edges?",
       "why": "Compare thermal versus erosion cutting and the resulting edge quality, support, thickness and finishing requirements.",
       "status": "navigation_question",
-      "kind": "frustration_entry"
+      "kind": "frustration_entry",
+      "term_ids": []
     },
     {
       "id": "MFG-ISSUE-CAVITY",
@@ -689,7 +886,11 @@
       "question": "How can I make a part with an internal cavity or complicated shape?",
       "why": "Compare direct layer building, removable or expendable cores, and splitting parts for later joining; finished access and tolerance matter.",
       "status": "navigation_question",
-      "kind": "frustration_entry"
+      "kind": "frustration_entry",
+      "term_ids": [
+        "mfg-t-0109",
+        "mfg-t-0128"
+      ]
     },
     {
       "id": "MFG-ISSUE-FORCE",
@@ -697,7 +898,11 @@
       "question": "How can I make a small input force move a heavy load?",
       "why": "Use the work-versus-distance tradeoff and distinguish force transmission, friction, structural stiffness and actual required output travel.",
       "status": "navigation_question",
-      "kind": "frustration_entry"
+      "kind": "frustration_entry",
+      "term_ids": [
+        "mfg-t-0025",
+        "mfg-t-0183"
+      ]
     },
     {
       "id": "MFG-FAILURE-CYCLIC",
@@ -719,6 +924,14 @@
       ],
       "unresolved_questions": [
         "Which load spectrum and material data would be required to estimate a useful fatigue life?"
+      ],
+      "term_ids": [
+        "mfg-t-0001",
+        "mfg-t-0004",
+        "mfg-t-0013",
+        "mfg-t-0005",
+        "mfg-t-0011",
+        "mfg-t-0012"
       ]
     },
     {
@@ -741,6 +954,12 @@
       ],
       "unresolved_questions": [
         "Is local overstress or an existing defect responsible for the observed break?"
+      ],
+      "term_ids": [
+        "mfg-t-0006",
+        "mfg-t-0007",
+        "mfg-t-0013",
+        "mfg-t-0011"
       ]
     },
     {
@@ -770,6 +989,14 @@
       ],
       "unresolved_questions": [
         "Which interface changes allow looser part tolerances without sacrificing load capacity and serviceability?"
+      ],
+      "term_ids": [
+        "mfg-t-0109",
+        "mfg-t-0110",
+        "mfg-t-0111",
+        "mfg-t-0128",
+        "mfg-t-0133",
+        "mfg-t-0141"
       ]
     }
   ],
@@ -1401,7 +1628,25 @@
         "MFG-FFM-ORIENT": "MFG-Q1a",
         "MFG-TOLERANCE": "MFG-Q1b",
         "MFG-FAILURE-CYCLIC": "MFG-Q1b"
-      }
+      },
+      "term_ids": [
+        "mfg-t-0175",
+        "mfg-t-0033",
+        "mfg-t-0170",
+        "mfg-t-0169",
+        "mfg-t-0176",
+        "mfg-t-0070",
+        "mfg-t-0159",
+        "mfg-t-0078",
+        "mfg-t-0083",
+        "mfg-t-0152",
+        "mfg-t-0150",
+        "mfg-t-0086",
+        "mfg-t-0084",
+        "mfg-t-0080",
+        "mfg-t-0085",
+        "mfg-t-0087"
+      ]
     },
     {
       "id": "make",
@@ -1456,7 +1701,25 @@
         "MFG-FAILURE-CYCLIC": "MFG-FEASIBILITY",
         "MFG-FAILURE-STATIC": "MFG-FEASIBILITY",
         "MFG-JOINING": "MFG-REALIZE"
-      }
+      },
+      "term_ids": [
+        "mfg-t-0176",
+        "mfg-t-0160",
+        "mfg-t-0159",
+        "mfg-t-0134",
+        "mfg-t-0138",
+        "mfg-t-0164",
+        "mfg-t-0182",
+        "mfg-t-0128",
+        "mfg-t-0161",
+        "mfg-t-0184",
+        "mfg-t-0149",
+        "mfg-t-0046",
+        "mfg-t-0047",
+        "mfg-t-0048",
+        "mfg-t-0050",
+        "mfg-t-0040"
+      ]
     },
     {
       "id": "mechanisms",
@@ -1498,7 +1761,25 @@
         "MFG-FAILURE-CYCLIC": "MFG-FUNC-REALIZE",
         "MFG-FAILURE-STATIC": "MFG-FUNC-REALIZE",
         "MFG-JOINING": "MFG-FUNC-REALIZE"
-      }
+      },
+      "term_ids": [
+        "mfg-t-0040",
+        "mfg-t-0038",
+        "mfg-t-0046",
+        "mfg-t-0052",
+        "mfg-t-0069",
+        "mfg-t-0050",
+        "mfg-t-0055",
+        "mfg-t-0001",
+        "mfg-t-0012",
+        "mfg-t-0026",
+        "mfg-t-0027",
+        "mfg-t-0133",
+        "mfg-t-0047",
+        "mfg-t-0048",
+        "mfg-t-0054",
+        "mfg-t-0056"
+      ]
     },
     {
       "id": "production",
@@ -1540,7 +1821,25 @@
         "MFG-FAILURE-CYCLIC": "MFG-FEASIBILITY",
         "MFG-FAILURE-STATIC": "MFG-FEASIBILITY",
         "MFG-JOINING": "MFG-FEASIBILITY"
-      }
+      },
+      "term_ids": [
+        "mfg-t-0084",
+        "mfg-t-0133",
+        "mfg-t-0167",
+        "mfg-t-0149",
+        "mfg-t-0150",
+        "mfg-t-0152",
+        "mfg-t-0163",
+        "mfg-t-0083",
+        "mfg-t-0128",
+        "mfg-t-0161",
+        "mfg-t-0184",
+        "mfg-t-0078",
+        "mfg-t-0086",
+        "mfg-t-0080",
+        "mfg-t-0085",
+        "mfg-t-0087"
+      ]
     },
     {
       "id": "bootstrap",
@@ -1587,7 +1886,25 @@
         "MFG-PROC-SAND": "MFG-Q5c",
         "MFG-FUNC-COMPLIANT": "MFG-Q5c",
         "MFG-JOINING": "MFG-Q5b"
-      }
+      },
+      "term_ids": [
+        "mfg-t-0176",
+        "mfg-t-0182",
+        "mfg-t-0084",
+        "mfg-t-0070",
+        "mfg-t-0159",
+        "mfg-t-0102",
+        "mfg-t-0103",
+        "mfg-t-0118",
+        "mfg-t-0083",
+        "mfg-t-0104",
+        "mfg-t-0105",
+        "mfg-t-0187",
+        "mfg-t-0091",
+        "mfg-t-0095",
+        "mfg-t-0094",
+        "mfg-t-0046"
+      ]
     }
   ],
   "book_landscaplets": [
@@ -2801,7 +3118,17 @@
               "level": "toc_only"
             }
           ],
-          "technical_title": "Interlayer adhesion and anisotropic failure"
+          "technical_title": "Interlayer adhesion and anisotropic failure",
+          "term_ids": [
+            "mfg-t-0071",
+            "mfg-t-0117",
+            "mfg-t-0114",
+            "mfg-t-0032",
+            "mfg-t-0140",
+            "mfg-t-0072",
+            "mfg-t-0077",
+            "mfg-t-0109"
+          ]
         },
         {
           "label": "The bendable tab stretches too far",
@@ -2824,7 +3151,20 @@
               "level": "inspected"
             }
           ],
-          "technical_title": "Flexure geometry and strain concentration"
+          "technical_title": "Flexure geometry and strain concentration",
+          "term_ids": [
+            "mfg-t-0012",
+            "mfg-t-0016",
+            "mfg-t-0026",
+            "mfg-t-0041",
+            "mfg-t-0044",
+            "mfg-t-0013",
+            "mfg-t-0068",
+            "mfg-t-0001",
+            "mfg-t-0011",
+            "mfg-t-0025",
+            "mfg-t-0133"
+          ]
         },
         {
           "label": "It fails after many cycles, not on the first bend",
@@ -2842,8 +3182,38 @@
               "level": "toc_only"
             }
           ],
-          "technical_title": "Cyclic loading and fatigue life"
+          "technical_title": "Cyclic loading and fatigue life",
+          "term_ids": [
+            "mfg-t-0001",
+            "mfg-t-0003",
+            "mfg-t-0041",
+            "mfg-t-0044",
+            "mfg-t-0013",
+            "mfg-t-0068",
+            "mfg-t-0011",
+            "mfg-t-0012",
+            "mfg-t-0025",
+            "mfg-t-0026",
+            "mfg-t-0133"
+          ]
         }
+      ],
+      "term_ids": [
+        "mfg-t-0071",
+        "mfg-t-0117",
+        "mfg-t-0114",
+        "mfg-t-0032",
+        "mfg-t-0140",
+        "mfg-t-0072",
+        "mfg-t-0077",
+        "mfg-t-0109",
+        "mfg-t-0012",
+        "mfg-t-0016",
+        "mfg-t-0026",
+        "mfg-t-0041",
+        "mfg-t-0044",
+        "mfg-t-0013",
+        "mfg-t-0068"
       ]
     },
     {
@@ -2864,7 +3234,16 @@
               "level": "inspected"
             }
           ],
-          "technical_title": "Dimensional deviation and process compensation"
+          "technical_title": "Dimensional deviation and process compensation",
+          "term_ids": [
+            "mfg-t-0128",
+            "mfg-t-0130",
+            "mfg-t-0131",
+            "mfg-t-0132",
+            "mfg-t-0126",
+            "mfg-t-0133",
+            "mfg-t-0138"
+          ]
         },
         {
           "label": "Each part looks close, but the assembly jams",
@@ -2881,7 +3260,16 @@
               "level": "inspected"
             }
           ],
-          "technical_title": "Geometric tolerancing of mating interfaces"
+          "technical_title": "Geometric tolerancing of mating interfaces",
+          "term_ids": [
+            "mfg-t-0133",
+            "mfg-t-0128",
+            "mfg-t-0130",
+            "mfg-t-0131",
+            "mfg-t-0132",
+            "mfg-t-0126",
+            "mfg-t-0138"
+          ]
         },
         {
           "label": "I can redesign the joint rather than tighten precision",
@@ -2904,8 +3292,37 @@
               "level": "toc_only"
             }
           ],
-          "technical_title": "Joint redesign and tolerance accommodation"
+          "technical_title": "Joint redesign and tolerance accommodation",
+          "term_ids": [
+            "mfg-t-0128",
+            "mfg-t-0133",
+            "mfg-t-0071",
+            "mfg-t-0117",
+            "mfg-t-0114",
+            "mfg-t-0032",
+            "mfg-t-0140",
+            "mfg-t-0072",
+            "mfg-t-0077",
+            "mfg-t-0109"
+          ]
         }
+      ],
+      "term_ids": [
+        "mfg-t-0128",
+        "mfg-t-0130",
+        "mfg-t-0131",
+        "mfg-t-0132",
+        "mfg-t-0126",
+        "mfg-t-0133",
+        "mfg-t-0138",
+        "mfg-t-0071",
+        "mfg-t-0117",
+        "mfg-t-0114",
+        "mfg-t-0032",
+        "mfg-t-0140",
+        "mfg-t-0072",
+        "mfg-t-0077",
+        "mfg-t-0109"
       ]
     },
     {
@@ -2926,7 +3343,13 @@
               "level": "inspected"
             }
           ],
-          "technical_title": "Intermittent kinematic indexing and dwell"
+          "technical_title": "Intermittent kinematic indexing and dwell",
+          "term_ids": [
+            "mfg-t-0055",
+            "mfg-t-0057",
+            "mfg-t-0054",
+            "mfg-t-0056"
+          ]
         },
         {
           "label": "I need to vary the timing or acceleration",
@@ -2943,7 +3366,14 @@
               "level": "inspected"
             }
           ],
-          "technical_title": "Motion-law design and acceleration control"
+          "technical_title": "Motion-law design and acceleration control",
+          "term_ids": [
+            "mfg-t-0040",
+            "mfg-t-0054",
+            "mfg-t-0056",
+            "mfg-t-0055",
+            "mfg-t-0057"
+          ]
         },
         {
           "label": "I need very precise motion in selected directions",
@@ -2960,8 +3390,32 @@
               "level": "inspected"
             }
           ],
-          "technical_title": "Constraint topology for precise guidance"
+          "technical_title": "Constraint topology for precise guidance",
+          "term_ids": [
+            "mfg-t-0039",
+            "mfg-t-0063",
+            "mfg-t-0038",
+            "mfg-t-0041",
+            "mfg-t-0011",
+            "mfg-t-0025",
+            "mfg-t-0026",
+            "mfg-t-0040"
+          ]
         }
+      ],
+      "term_ids": [
+        "mfg-t-0055",
+        "mfg-t-0057",
+        "mfg-t-0054",
+        "mfg-t-0056",
+        "mfg-t-0040",
+        "mfg-t-0039",
+        "mfg-t-0063",
+        "mfg-t-0038",
+        "mfg-t-0041",
+        "mfg-t-0011",
+        "mfg-t-0025",
+        "mfg-t-0026"
       ]
     },
     {
@@ -2988,7 +3442,18 @@
               "level": "toc_only"
             }
           ],
-          "technical_title": "Revision economics and digitally defined geometry"
+          "technical_title": "Revision economics and digitally defined geometry",
+          "term_ids": [
+            "mfg-t-0084",
+            "mfg-t-0070",
+            "mfg-t-0102",
+            "mfg-t-0103",
+            "mfg-t-0118",
+            "mfg-t-0083",
+            "mfg-t-0104",
+            "mfg-t-0105",
+            "mfg-t-0187"
+          ]
         },
         {
           "label": "I need thousands of repeatable copies",
@@ -3005,7 +3470,16 @@
               "level": "inspected"
             }
           ],
-          "technical_title": "Reusable tooling, cycle time and amortization"
+          "technical_title": "Reusable tooling, cycle time and amortization",
+          "term_ids": [
+            "mfg-t-0084",
+            "mfg-t-0150",
+            "mfg-t-0164",
+            "mfg-t-0078",
+            "mfg-t-0083",
+            "mfg-t-0152",
+            "mfg-t-0086"
+          ]
         },
         {
           "label": "My quantity is small or my part is large or complex",
@@ -3029,8 +3503,37 @@
               "level": "inspected"
             }
           ],
-          "technical_title": "Low-volume alternatives and secondary operations"
+          "technical_title": "Low-volume alternatives and secondary operations",
+          "term_ids": [
+            "mfg-t-0083",
+            "mfg-t-0084",
+            "mfg-t-0080",
+            "mfg-t-0085",
+            "mfg-t-0087",
+            "mfg-t-0152",
+            "mfg-t-0124",
+            "mfg-t-0091",
+            "mfg-t-0095",
+            "mfg-t-0094"
+          ]
         }
+      ],
+      "term_ids": [
+        "mfg-t-0084",
+        "mfg-t-0070",
+        "mfg-t-0102",
+        "mfg-t-0103",
+        "mfg-t-0118",
+        "mfg-t-0083",
+        "mfg-t-0104",
+        "mfg-t-0105",
+        "mfg-t-0187",
+        "mfg-t-0150",
+        "mfg-t-0164",
+        "mfg-t-0078",
+        "mfg-t-0152",
+        "mfg-t-0086",
+        "mfg-t-0080"
       ]
     },
     {
@@ -3051,7 +3554,12 @@
               "level": "inspected"
             }
           ],
-          "technical_title": "2D cutting plus part decomposition"
+          "technical_title": "2D cutting plus part decomposition",
+          "term_ids": [
+            "mfg-t-0091",
+            "mfg-t-0095",
+            "mfg-t-0094"
+          ]
         },
         {
           "label": "I need a bespoke 3D part with changes",
@@ -3075,7 +3583,20 @@
               "level": "inspected"
             }
           ],
-          "technical_title": "Digital fabrication as a service"
+          "technical_title": "Digital fabrication as a service",
+          "term_ids": [
+            "mfg-t-0070",
+            "mfg-t-0102",
+            "mfg-t-0103",
+            "mfg-t-0118",
+            "mfg-t-0083",
+            "mfg-t-0104",
+            "mfg-t-0105",
+            "mfg-t-0187",
+            "mfg-t-0071",
+            "mfg-t-0117",
+            "mfg-t-0114"
+          ]
         },
         {
           "label": "The shape must be molded, cast, or assembled",
@@ -3099,8 +3620,38 @@
               "level": "inspected"
             }
           ],
-          "technical_title": "Casting, assembly and verification contracts"
+          "technical_title": "Casting, assembly and verification contracts",
+          "term_ids": [
+            "mfg-t-0079",
+            "mfg-t-0133",
+            "mfg-t-0080",
+            "mfg-t-0085",
+            "mfg-t-0087",
+            "mfg-t-0152",
+            "mfg-t-0083",
+            "mfg-t-0124",
+            "mfg-t-0128",
+            "mfg-t-0130",
+            "mfg-t-0131"
+          ]
         }
+      ],
+      "term_ids": [
+        "mfg-t-0091",
+        "mfg-t-0095",
+        "mfg-t-0094",
+        "mfg-t-0070",
+        "mfg-t-0102",
+        "mfg-t-0103",
+        "mfg-t-0118",
+        "mfg-t-0083",
+        "mfg-t-0104",
+        "mfg-t-0105",
+        "mfg-t-0187",
+        "mfg-t-0071",
+        "mfg-t-0117",
+        "mfg-t-0114",
+        "mfg-t-0079"
       ]
     },
     {
@@ -3121,7 +3672,20 @@
               "level": "inspected"
             }
           ],
-          "technical_title": "Compliant kinematic substitution for pin joints"
+          "technical_title": "Compliant kinematic substitution for pin joints",
+          "term_ids": [
+            "mfg-t-0060",
+            "mfg-t-0041",
+            "mfg-t-0044",
+            "mfg-t-0013",
+            "mfg-t-0068",
+            "mfg-t-0001",
+            "mfg-t-0011",
+            "mfg-t-0012",
+            "mfg-t-0025",
+            "mfg-t-0026",
+            "mfg-t-0133"
+          ]
         },
         {
           "label": "The hinge needs a very specific allowed direction",
@@ -3138,7 +3702,16 @@
               "level": "inspected"
             }
           ],
-          "technical_title": "Degrees of freedom and off-axis constraints"
+          "technical_title": "Degrees of freedom and off-axis constraints",
+          "term_ids": [
+            "mfg-t-0038",
+            "mfg-t-0039",
+            "mfg-t-0041",
+            "mfg-t-0011",
+            "mfg-t-0025",
+            "mfg-t-0026",
+            "mfg-t-0040"
+          ]
         },
         {
           "label": "It will flex many times or carry significant weight",
@@ -3162,8 +3735,38 @@
               "level": "toc_only"
             }
           ],
-          "technical_title": "Strain, load capacity and fatigue design"
+          "technical_title": "Strain, load capacity and fatigue design",
+          "term_ids": [
+            "mfg-t-0001",
+            "mfg-t-0011",
+            "mfg-t-0012",
+            "mfg-t-0041",
+            "mfg-t-0044",
+            "mfg-t-0013",
+            "mfg-t-0068",
+            "mfg-t-0025",
+            "mfg-t-0026",
+            "mfg-t-0133",
+            "mfg-t-0004"
+          ]
         }
+      ],
+      "term_ids": [
+        "mfg-t-0060",
+        "mfg-t-0041",
+        "mfg-t-0044",
+        "mfg-t-0013",
+        "mfg-t-0068",
+        "mfg-t-0001",
+        "mfg-t-0011",
+        "mfg-t-0012",
+        "mfg-t-0025",
+        "mfg-t-0026",
+        "mfg-t-0133",
+        "mfg-t-0038",
+        "mfg-t-0039",
+        "mfg-t-0040",
+        "mfg-t-0004"
       ]
     },
     {
@@ -3184,7 +3787,16 @@
               "level": "inspected"
             }
           ],
-          "technical_title": "Parasitic degrees of freedom and insufficient constraints"
+          "technical_title": "Parasitic degrees of freedom and insufficient constraints",
+          "term_ids": [
+            "mfg-t-0038",
+            "mfg-t-0039",
+            "mfg-t-0041",
+            "mfg-t-0011",
+            "mfg-t-0025",
+            "mfg-t-0026",
+            "mfg-t-0040"
+          ]
         },
         {
           "label": "There is clearance or misalignment at a joint",
@@ -3207,7 +3819,16 @@
               "level": "toc_only"
             }
           ],
-          "technical_title": "Clearance, datum error and joint alignment"
+          "technical_title": "Clearance, datum error and joint alignment",
+          "term_ids": [
+            "mfg-t-0126",
+            "mfg-t-0131",
+            "mfg-t-0128",
+            "mfg-t-0130",
+            "mfg-t-0132",
+            "mfg-t-0133",
+            "mfg-t-0138"
+          ]
         },
         {
           "label": "It returns differently after load reverses",
@@ -3231,8 +3852,38 @@
               "level": "toc_only"
             }
           ],
-          "technical_title": "Backlash, hysteresis and elastic recovery"
+          "technical_title": "Backlash, hysteresis and elastic recovery",
+          "term_ids": [
+            "mfg-t-0060",
+            "mfg-t-0061",
+            "mfg-t-0067",
+            "mfg-t-0046",
+            "mfg-t-0047",
+            "mfg-t-0048",
+            "mfg-t-0050",
+            "mfg-t-0040",
+            "mfg-t-0041",
+            "mfg-t-0044",
+            "mfg-t-0013"
+          ]
         }
+      ],
+      "term_ids": [
+        "mfg-t-0038",
+        "mfg-t-0039",
+        "mfg-t-0041",
+        "mfg-t-0011",
+        "mfg-t-0025",
+        "mfg-t-0026",
+        "mfg-t-0040",
+        "mfg-t-0126",
+        "mfg-t-0131",
+        "mfg-t-0128",
+        "mfg-t-0130",
+        "mfg-t-0132",
+        "mfg-t-0133",
+        "mfg-t-0138",
+        "mfg-t-0060"
       ]
     },
     {
@@ -3253,7 +3904,12 @@
               "level": "inspected"
             }
           ],
-          "technical_title": "Cold erosion versus heat-affected material removal"
+          "technical_title": "Cold erosion versus heat-affected material removal",
+          "term_ids": [
+            "mfg-t-0091",
+            "mfg-t-0095",
+            "mfg-t-0094"
+          ]
         },
         {
           "label": "The part distorts from force, supports, or finishing",
@@ -3270,8 +3926,18 @@
               "level": "inspected"
             }
           ],
-          "technical_title": "Cutting forces, fixturing and secondary finishing"
+          "technical_title": "Cutting forces, fixturing and secondary finishing",
+          "term_ids": [
+            "mfg-t-0091",
+            "mfg-t-0095",
+            "mfg-t-0094"
+          ]
         }
+      ],
+      "term_ids": [
+        "mfg-t-0091",
+        "mfg-t-0095",
+        "mfg-t-0094"
       ]
     },
     {
@@ -3299,7 +3965,20 @@
               "level": "inspected"
             }
           ],
-          "technical_title": "Tool-release constraints and sacrificial supports"
+          "technical_title": "Tool-release constraints and sacrificial supports",
+          "term_ids": [
+            "mfg-t-0083",
+            "mfg-t-0085",
+            "mfg-t-0070",
+            "mfg-t-0102",
+            "mfg-t-0103",
+            "mfg-t-0118",
+            "mfg-t-0104",
+            "mfg-t-0105",
+            "mfg-t-0187",
+            "mfg-t-0080",
+            "mfg-t-0087"
+          ]
         },
         {
           "label": "I can split the object and join it later",
@@ -3323,8 +4002,38 @@
               "level": "toc_only"
             }
           ],
-          "technical_title": "Topology decomposition, joining and fit"
+          "technical_title": "Topology decomposition, joining and fit",
+          "term_ids": [
+            "mfg-t-0109",
+            "mfg-t-0071",
+            "mfg-t-0117",
+            "mfg-t-0114",
+            "mfg-t-0032",
+            "mfg-t-0140",
+            "mfg-t-0072",
+            "mfg-t-0077",
+            "mfg-t-0128",
+            "mfg-t-0130",
+            "mfg-t-0131"
+          ]
         }
+      ],
+      "term_ids": [
+        "mfg-t-0083",
+        "mfg-t-0085",
+        "mfg-t-0070",
+        "mfg-t-0102",
+        "mfg-t-0103",
+        "mfg-t-0118",
+        "mfg-t-0104",
+        "mfg-t-0105",
+        "mfg-t-0187",
+        "mfg-t-0080",
+        "mfg-t-0087",
+        "mfg-t-0109",
+        "mfg-t-0071",
+        "mfg-t-0117",
+        "mfg-t-0114"
       ]
     },
     {
@@ -3345,7 +4054,14 @@
               "level": "inspected"
             }
           ],
-          "technical_title": "Work-conserving force/displacement transformation"
+          "technical_title": "Work-conserving force/displacement transformation",
+          "term_ids": [
+            "mfg-t-0046",
+            "mfg-t-0047",
+            "mfg-t-0048",
+            "mfg-t-0050",
+            "mfg-t-0040"
+          ]
         },
         {
           "label": "I need both travel and force at the same time",
@@ -3362,8 +4078,22 @@
               "level": "toc_only"
             }
           ],
-          "technical_title": "Power constraints and actuator sizing"
+          "technical_title": "Power constraints and actuator sizing",
+          "term_ids": [
+            "mfg-t-0046",
+            "mfg-t-0047",
+            "mfg-t-0048",
+            "mfg-t-0050",
+            "mfg-t-0040"
+          ]
         }
+      ],
+      "term_ids": [
+        "mfg-t-0046",
+        "mfg-t-0047",
+        "mfg-t-0048",
+        "mfg-t-0050",
+        "mfg-t-0040"
       ]
     },
     {
@@ -3384,6 +4114,15 @@
               "why": "Fatigue failure from variable loading, printed chapter starts p. 297; substantive section not yet inspected",
               "level": "toc_only"
             }
+          ],
+          "term_ids": [
+            "mfg-t-0001",
+            "mfg-t-0002",
+            "mfg-t-0004",
+            "mfg-t-0013",
+            "mfg-t-0005",
+            "mfg-t-0011",
+            "mfg-t-0012"
           ]
         },
         {
@@ -3407,6 +4146,12 @@
               "why": "Static-load failure, printed p. 253; candidate reading",
               "level": "toc_only"
             }
+          ],
+          "term_ids": [
+            "mfg-t-0011",
+            "mfg-t-0013",
+            "mfg-t-0006",
+            "mfg-t-0007"
           ]
         },
         {
@@ -3424,8 +4169,37 @@
               "why": "Stiffness versus strength, pp. 8–11; inspected",
               "level": "inspected"
             }
+          ],
+          "term_ids": [
+            "mfg-t-0025",
+            "mfg-t-0026",
+            "mfg-t-0041",
+            "mfg-t-0044",
+            "mfg-t-0013",
+            "mfg-t-0068",
+            "mfg-t-0001",
+            "mfg-t-0011",
+            "mfg-t-0012",
+            "mfg-t-0133"
           ]
         }
+      ],
+      "term_ids": [
+        "mfg-t-0001",
+        "mfg-t-0002",
+        "mfg-t-0004",
+        "mfg-t-0013",
+        "mfg-t-0005",
+        "mfg-t-0011",
+        "mfg-t-0012",
+        "mfg-t-0006",
+        "mfg-t-0007",
+        "mfg-t-0025",
+        "mfg-t-0026",
+        "mfg-t-0041",
+        "mfg-t-0044",
+        "mfg-t-0068",
+        "mfg-t-0133"
       ]
     },
     {
@@ -3446,6 +4220,17 @@
               "why": "Overhangs and support structures, printed chapter II pp. 50–61, selected material inspected",
               "level": "inspected"
             }
+          ],
+          "term_ids": [
+            "mfg-t-0119",
+            "mfg-t-0071",
+            "mfg-t-0117",
+            "mfg-t-0114",
+            "mfg-t-0032",
+            "mfg-t-0140",
+            "mfg-t-0072",
+            "mfg-t-0077",
+            "mfg-t-0109"
           ]
         },
         {
@@ -3463,6 +4248,18 @@
               "why": "Bridging and overhanging structures, selected pages in chapter II; candidate targeted reading",
               "level": "toc_only"
             }
+          ],
+          "term_ids": [
+            "mfg-t-0120",
+            "mfg-t-0187",
+            "mfg-t-0071",
+            "mfg-t-0117",
+            "mfg-t-0114",
+            "mfg-t-0032",
+            "mfg-t-0140",
+            "mfg-t-0072",
+            "mfg-t-0077",
+            "mfg-t-0109"
           ]
         },
         {
@@ -3480,8 +4277,31 @@
               "why": "Bed adhesion and orientation, printed pp. 46–53, selected sections inspected",
               "level": "inspected"
             }
+          ],
+          "term_ids": [
+            "mfg-t-0071",
+            "mfg-t-0117",
+            "mfg-t-0114",
+            "mfg-t-0032",
+            "mfg-t-0140",
+            "mfg-t-0072",
+            "mfg-t-0077",
+            "mfg-t-0109"
           ]
         }
+      ],
+      "term_ids": [
+        "mfg-t-0119",
+        "mfg-t-0071",
+        "mfg-t-0117",
+        "mfg-t-0114",
+        "mfg-t-0032",
+        "mfg-t-0140",
+        "mfg-t-0072",
+        "mfg-t-0077",
+        "mfg-t-0109",
+        "mfg-t-0120",
+        "mfg-t-0187"
       ]
     }
   ],
@@ -3532,7 +4352,24 @@
           "bending wire",
           "bent metal wire snaps"
         ],
-        "context": "A repeatedly bent metal wire—not a 3D-printed plastic latch."
+        "context": "A repeatedly bent metal wire—not a 3D-printed plastic latch.",
+        "term_ids": [
+          "mfg-t-0001",
+          "mfg-t-0002",
+          "mfg-t-0004",
+          "mfg-t-0013",
+          "mfg-t-0005",
+          "mfg-t-0011",
+          "mfg-t-0012",
+          "mfg-t-0006",
+          "mfg-t-0007",
+          "mfg-t-0025",
+          "mfg-t-0026",
+          "mfg-t-0041",
+          "mfg-t-0044",
+          "mfg-t-0068",
+          "mfg-t-0133"
+        ]
       },
       {
         "id": "MFG-CURI-printed-clip",
@@ -3548,7 +4385,24 @@
           "plastic clip cracking",
           "printed plastic fails"
         ],
-        "context": "A printed polymer part; distinguish the break relative to its layers and flexure geometry."
+        "context": "A printed polymer part; distinguish the break relative to its layers and flexure geometry.",
+        "term_ids": [
+          "mfg-t-0026",
+          "mfg-t-0071",
+          "mfg-t-0117",
+          "mfg-t-0114",
+          "mfg-t-0032",
+          "mfg-t-0140",
+          "mfg-t-0072",
+          "mfg-t-0077",
+          "mfg-t-0109",
+          "mfg-t-0012",
+          "mfg-t-0016",
+          "mfg-t-0041",
+          "mfg-t-0044",
+          "mfg-t-0013",
+          "mfg-t-0068"
+        ]
       },
       {
         "id": "MFG-CURI-bend-strong",
@@ -3562,7 +4416,25 @@
           "Why does a flexible part not break?",
           "strong yet flexible hinge"
         ],
-        "context": "Intentional deformation is not automatically a failure; stiffness, strength and endurance differ."
+        "context": "Intentional deformation is not automatically a failure; stiffness, strength and endurance differ.",
+        "term_ids": [
+          "mfg-t-0025",
+          "mfg-t-0060",
+          "mfg-t-0041",
+          "mfg-t-0044",
+          "mfg-t-0013",
+          "mfg-t-0068",
+          "mfg-t-0001",
+          "mfg-t-0011",
+          "mfg-t-0012",
+          "mfg-t-0026",
+          "mfg-t-0133",
+          "mfg-t-0038",
+          "mfg-t-0039",
+          "mfg-t-0040",
+          "mfg-t-0004",
+          "mfg-t-0002"
+        ]
       },
       {
         "id": "MFG-CURI-pinless-hinge",
@@ -3576,7 +4448,24 @@
           "no joints clamp",
           "flexure hinge"
         ],
-        "context": "A jointless or partly compliant mechanism can replace some rigid joints."
+        "context": "A jointless or partly compliant mechanism can replace some rigid joints.",
+        "term_ids": [
+          "mfg-t-0026",
+          "mfg-t-0040",
+          "mfg-t-0041",
+          "mfg-t-0044",
+          "mfg-t-0060",
+          "mfg-t-0013",
+          "mfg-t-0068",
+          "mfg-t-0001",
+          "mfg-t-0011",
+          "mfg-t-0012",
+          "mfg-t-0025",
+          "mfg-t-0133",
+          "mfg-t-0038",
+          "mfg-t-0039",
+          "mfg-t-0004"
+        ]
       },
       {
         "id": "MFG-CURI-repeated-spring",
@@ -3592,7 +4481,25 @@
           "spring breaking",
           "spring snaps after bending"
         ],
-        "context": "Repeated loading and lifetime rather than merely one-time breaking force."
+        "context": "Repeated loading and lifetime rather than merely one-time breaking force.",
+        "term_ids": [
+          "mfg-t-0001",
+          "mfg-t-0067",
+          "mfg-t-0060",
+          "mfg-t-0041",
+          "mfg-t-0044",
+          "mfg-t-0013",
+          "mfg-t-0068",
+          "mfg-t-0011",
+          "mfg-t-0012",
+          "mfg-t-0025",
+          "mfg-t-0026",
+          "mfg-t-0133",
+          "mfg-t-0038",
+          "mfg-t-0039",
+          "mfg-t-0040",
+          "mfg-t-0004"
+        ]
       },
       {
         "id": "MFG-CURI-cad-fit",
@@ -3605,7 +4512,24 @@
           "CAD says parts fit but they jam",
           "assembly tolerance"
         ],
-        "context": "A real assembly differs from an ideal nominal CAD model."
+        "context": "A real assembly differs from an ideal nominal CAD model.",
+        "term_ids": [
+          "mfg-t-0128",
+          "mfg-t-0133",
+          "mfg-t-0138",
+          "mfg-t-0130",
+          "mfg-t-0131",
+          "mfg-t-0132",
+          "mfg-t-0126",
+          "mfg-t-0071",
+          "mfg-t-0117",
+          "mfg-t-0114",
+          "mfg-t-0032",
+          "mfg-t-0140",
+          "mfg-t-0072",
+          "mfg-t-0077",
+          "mfg-t-0109"
+        ]
       },
       {
         "id": "MFG-CURI-holes-small",
@@ -3618,7 +4542,24 @@
           "printed holes don't fit",
           "overextrusion holes"
         ],
-        "context": "Dimensional variation and printer/slicer compensation."
+        "context": "Dimensional variation and printer/slicer compensation.",
+        "term_ids": [
+          "mfg-t-0128",
+          "mfg-t-0130",
+          "mfg-t-0131",
+          "mfg-t-0132",
+          "mfg-t-0126",
+          "mfg-t-0133",
+          "mfg-t-0138",
+          "mfg-t-0071",
+          "mfg-t-0117",
+          "mfg-t-0114",
+          "mfg-t-0032",
+          "mfg-t-0140",
+          "mfg-t-0072",
+          "mfg-t-0077",
+          "mfg-t-0109"
+        ]
       },
       {
         "id": "MFG-CURI-wobble",
@@ -3634,7 +4575,24 @@
           "mechanism wobbling",
           "robot joint loose"
         ],
-        "context": "Unwanted motion may arise from joint clearance or constraints."
+        "context": "Unwanted motion may arise from joint clearance or constraints.",
+        "term_ids": [
+          "mfg-t-0040",
+          "mfg-t-0126",
+          "mfg-t-0038",
+          "mfg-t-0039",
+          "mfg-t-0041",
+          "mfg-t-0011",
+          "mfg-t-0025",
+          "mfg-t-0026",
+          "mfg-t-0131",
+          "mfg-t-0128",
+          "mfg-t-0130",
+          "mfg-t-0132",
+          "mfg-t-0133",
+          "mfg-t-0138",
+          "mfg-t-0060"
+        ]
       },
       {
         "id": "MFG-CURI-return-drift",
@@ -3650,7 +4608,25 @@
           "robot position drifts",
           "motion doesn't repeat"
         ],
-        "context": "Consider backlash, hysteresis, geometric tolerances and forbidden motion."
+        "context": "Consider backlash, hysteresis, geometric tolerances and forbidden motion.",
+        "term_ids": [
+          "mfg-t-0040",
+          "mfg-t-0060",
+          "mfg-t-0061",
+          "mfg-t-0062",
+          "mfg-t-0038",
+          "mfg-t-0039",
+          "mfg-t-0041",
+          "mfg-t-0011",
+          "mfg-t-0025",
+          "mfg-t-0026",
+          "mfg-t-0126",
+          "mfg-t-0131",
+          "mfg-t-0128",
+          "mfg-t-0130",
+          "mfg-t-0132",
+          "mfg-t-0133"
+        ]
       },
       {
         "id": "MFG-CURI-identical",
@@ -3664,7 +4640,25 @@
           "identical parts",
           "manufacturing repeatability"
         ],
-        "context": "Repeatability is about the distribution of real outcomes, not nominal geometry."
+        "context": "Repeatability is about the distribution of real outcomes, not nominal geometry.",
+        "term_ids": [
+          "mfg-t-0062",
+          "mfg-t-0128",
+          "mfg-t-0130",
+          "mfg-t-0131",
+          "mfg-t-0132",
+          "mfg-t-0126",
+          "mfg-t-0133",
+          "mfg-t-0138",
+          "mfg-t-0071",
+          "mfg-t-0117",
+          "mfg-t-0114",
+          "mfg-t-0032",
+          "mfg-t-0140",
+          "mfg-t-0072",
+          "mfg-t-0077",
+          "mfg-t-0109"
+        ]
       },
       {
         "id": "MFG-CURI-one-step",
@@ -3677,7 +4671,21 @@
           "step then pause",
           "indexing wheel"
         ],
-        "context": "Intermittent motion and dwell must be distinguished from simple continuous rotation."
+        "context": "Intermittent motion and dwell must be distinguished from simple continuous rotation.",
+        "term_ids": [
+          "mfg-t-0055",
+          "mfg-t-0056",
+          "mfg-t-0057",
+          "mfg-t-0054",
+          "mfg-t-0040",
+          "mfg-t-0039",
+          "mfg-t-0063",
+          "mfg-t-0038",
+          "mfg-t-0041",
+          "mfg-t-0011",
+          "mfg-t-0025",
+          "mfg-t-0026"
+        ]
       },
       {
         "id": "MFG-CURI-heavy-load",
@@ -3690,7 +4698,14 @@
           "levers give more force",
           "small motor heavy lift"
         ],
-        "context": "Trade force against travel and account for losses."
+        "context": "Trade force against travel and account for losses.",
+        "term_ids": [
+          "mfg-t-0046",
+          "mfg-t-0047",
+          "mfg-t-0048",
+          "mfg-t-0050",
+          "mfg-t-0040"
+        ]
       },
       {
         "id": "MFG-CURI-machine-pause",
@@ -3703,7 +4718,22 @@
           "motion dwell",
           "rotating shaft intermittent movement"
         ],
-        "context": "Intermittent output can come from continuously driven mechanism geometry."
+        "context": "Intermittent output can come from continuously driven mechanism geometry.",
+        "term_ids": [
+          "mfg-t-0040",
+          "mfg-t-0055",
+          "mfg-t-0174",
+          "mfg-t-0057",
+          "mfg-t-0054",
+          "mfg-t-0056",
+          "mfg-t-0039",
+          "mfg-t-0063",
+          "mfg-t-0038",
+          "mfg-t-0041",
+          "mfg-t-0011",
+          "mfg-t-0025",
+          "mfg-t-0026"
+        ]
       },
       {
         "id": "MFG-CURI-smooth-direction",
@@ -3717,7 +4747,25 @@
           "guided motion",
           "prevent side motion"
         ],
-        "context": "Choose allowed and forbidden degrees of freedom before picking physical guidance."
+        "context": "Choose allowed and forbidden degrees of freedom before picking physical guidance.",
+        "term_ids": [
+          "mfg-t-0063",
+          "mfg-t-0038",
+          "mfg-t-0039",
+          "mfg-t-0041",
+          "mfg-t-0011",
+          "mfg-t-0025",
+          "mfg-t-0026",
+          "mfg-t-0040",
+          "mfg-t-0126",
+          "mfg-t-0131",
+          "mfg-t-0128",
+          "mfg-t-0130",
+          "mfg-t-0132",
+          "mfg-t-0133",
+          "mfg-t-0138",
+          "mfg-t-0060"
+        ]
       },
       {
         "id": "MFG-CURI-gears-power",
@@ -3730,7 +4778,15 @@
           "torque speed tradeoff",
           "gearing output force"
         ],
-        "context": "Input work and power constrain simultaneous gains in output torque and speed."
+        "context": "Input work and power constrain simultaneous gains in output torque and speed.",
+        "term_ids": [
+          "mfg-t-0048",
+          "mfg-t-0183",
+          "mfg-t-0046",
+          "mfg-t-0047",
+          "mfg-t-0050",
+          "mfg-t-0040"
+        ]
       },
       {
         "id": "MFG-CURI-hollow-shape",
@@ -3743,7 +4799,25 @@
           "internal cavity",
           "hollow metal casting"
         ],
-        "context": "Consider access to interior surfaces and how supports or molds are removed."
+        "context": "Consider access to interior surfaces and how supports or molds are removed.",
+        "term_ids": [
+          "mfg-t-0079",
+          "mfg-t-0083",
+          "mfg-t-0085",
+          "mfg-t-0070",
+          "mfg-t-0102",
+          "mfg-t-0103",
+          "mfg-t-0118",
+          "mfg-t-0104",
+          "mfg-t-0105",
+          "mfg-t-0187",
+          "mfg-t-0080",
+          "mfg-t-0087",
+          "mfg-t-0109",
+          "mfg-t-0071",
+          "mfg-t-0117",
+          "mfg-t-0114"
+        ]
       },
       {
         "id": "MFG-CURI-no-heat",
@@ -3756,7 +4830,12 @@
           "cold cutting",
           "avoid heat affected cutting"
         ],
-        "context": "Material removal and its side-effects depend on the process physics."
+        "context": "Material removal and its side-effects depend on the process physics.",
+        "term_ids": [
+          "mfg-t-0091",
+          "mfg-t-0095",
+          "mfg-t-0094"
+        ]
       },
       {
         "id": "MFG-CURI-print-air",
@@ -3772,7 +4851,21 @@
           "printing into air",
           "3d printing overhang"
         ],
-        "context": "Ask how new material is supported before it solidifies."
+        "context": "Ask how new material is supported before it solidifies.",
+        "term_ids": [
+          "mfg-t-0075",
+          "mfg-t-0119",
+          "mfg-t-0071",
+          "mfg-t-0117",
+          "mfg-t-0114",
+          "mfg-t-0032",
+          "mfg-t-0140",
+          "mfg-t-0072",
+          "mfg-t-0077",
+          "mfg-t-0109",
+          "mfg-t-0120",
+          "mfg-t-0187"
+        ]
       },
       {
         "id": "MFG-CURI-sagging",
@@ -3785,7 +4878,20 @@
           "bridging plastic droops",
           "drooping overhang"
         ],
-        "context": "Bridging, cooling and span geometry are relevant."
+        "context": "Bridging, cooling and span geometry are relevant.",
+        "term_ids": [
+          "mfg-t-0119",
+          "mfg-t-0120",
+          "mfg-t-0071",
+          "mfg-t-0117",
+          "mfg-t-0114",
+          "mfg-t-0032",
+          "mfg-t-0140",
+          "mfg-t-0072",
+          "mfg-t-0077",
+          "mfg-t-0109",
+          "mfg-t-0187"
+        ]
       },
       {
         "id": "MFG-CURI-tipping",
@@ -3798,7 +4904,21 @@
           "bed adhesion",
           "failed tall print"
         ],
-        "context": "Bed contact, adhesion and slender geometry can dominate print success."
+        "context": "Bed contact, adhesion and slender geometry can dominate print success.",
+        "term_ids": [
+          "mfg-t-0121",
+          "mfg-t-0119",
+          "mfg-t-0071",
+          "mfg-t-0117",
+          "mfg-t-0114",
+          "mfg-t-0032",
+          "mfg-t-0140",
+          "mfg-t-0072",
+          "mfg-t-0077",
+          "mfg-t-0109",
+          "mfg-t-0120",
+          "mfg-t-0187"
+        ]
       },
       {
         "id": "MFG-CURI-one-or-many",
@@ -3811,7 +4931,24 @@
           "mass production",
           "one-off versus high volume"
         ],
-        "context": "Fixed tooling, revisions and per-unit work change preferred processes."
+        "context": "Fixed tooling, revisions and per-unit work change preferred processes.",
+        "term_ids": [
+          "mfg-t-0084",
+          "mfg-t-0070",
+          "mfg-t-0102",
+          "mfg-t-0103",
+          "mfg-t-0118",
+          "mfg-t-0083",
+          "mfg-t-0104",
+          "mfg-t-0105",
+          "mfg-t-0187",
+          "mfg-t-0150",
+          "mfg-t-0164",
+          "mfg-t-0078",
+          "mfg-t-0152",
+          "mfg-t-0086",
+          "mfg-t-0080"
+        ]
       },
       {
         "id": "MFG-CURI-no-shop",
@@ -3824,7 +4961,25 @@
           "outsource fabrication",
           "no workshop"
         ],
-        "context": "Manufacturing agency can involve external services plus specification and inspection."
+        "context": "Manufacturing agency can involve external services plus specification and inspection.",
+        "term_ids": [
+          "mfg-t-0157",
+          "mfg-t-0164",
+          "mfg-t-0091",
+          "mfg-t-0095",
+          "mfg-t-0094",
+          "mfg-t-0070",
+          "mfg-t-0102",
+          "mfg-t-0103",
+          "mfg-t-0118",
+          "mfg-t-0083",
+          "mfg-t-0104",
+          "mfg-t-0105",
+          "mfg-t-0187",
+          "mfg-t-0071",
+          "mfg-t-0117",
+          "mfg-t-0114"
+        ]
       },
       {
         "id": "MFG-CURI-factory-molds",
@@ -3840,7 +4995,25 @@
           "factory tooling",
           "expensive molds"
         ],
-        "context": "Reusable physical tooling can exchange upfront investment for cheap repetitive cycles."
+        "context": "Reusable physical tooling can exchange upfront investment for cheap repetitive cycles.",
+        "term_ids": [
+          "mfg-t-0078",
+          "mfg-t-0083",
+          "mfg-t-0084",
+          "mfg-t-0174",
+          "mfg-t-0070",
+          "mfg-t-0102",
+          "mfg-t-0103",
+          "mfg-t-0118",
+          "mfg-t-0104",
+          "mfg-t-0105",
+          "mfg-t-0187",
+          "mfg-t-0150",
+          "mfg-t-0164",
+          "mfg-t-0152",
+          "mfg-t-0086",
+          "mfg-t-0080"
+        ]
       },
       {
         "id": "MFG-CURI-change-design",
@@ -3853,7 +5026,24 @@
           "mold revision cost",
           "changing tooling"
         ],
-        "context": "Changing digitally described geometry and reworking a fixed tool are economically different."
+        "context": "Changing digitally described geometry and reworking a fixed tool are economically different.",
+        "term_ids": [
+          "mfg-t-0083",
+          "mfg-t-0084",
+          "mfg-t-0070",
+          "mfg-t-0102",
+          "mfg-t-0103",
+          "mfg-t-0118",
+          "mfg-t-0104",
+          "mfg-t-0105",
+          "mfg-t-0187",
+          "mfg-t-0150",
+          "mfg-t-0164",
+          "mfg-t-0078",
+          "mfg-t-0152",
+          "mfg-t-0086",
+          "mfg-t-0080"
+        ]
       }
     ],
     "legacy_entry_ids": [
@@ -3868,5 +5058,7 @@
       "MFG-ISSUE-CAVITY",
       "MFG-ISSUE-FORCE"
     ]
-  }
+  },
+  "glossary_path": "glossary.json",
+  "glossary_schema": "1.0"
 }
