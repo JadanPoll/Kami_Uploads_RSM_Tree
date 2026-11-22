@@ -1260,5 +1260,226 @@
       "multiple_views": "Different big-picture purposes activate overlapping canonical items with different parent relationships. A view is an inquiry-specific path, not a claim of unique natural classification.",
       "boundary": "No attempt is made to turn every TOC entry into a separate question; a new item earns its place when it changes an alternative, a failure mode, a source path or a practical capability."
     }
+  },
+  "landscape_views": [
+    {
+      "id": "possibilities",
+      "title": "What can humanity manufacture?",
+      "short_label": "Possibilities",
+      "root_id": "MFG-Q1",
+      "rationale": "Explore the physics, materials, shapes, scales and process families that delimit physical possibility, current industry and individual access.",
+      "factor_ids": [
+        "transformation",
+        "geometry_representation",
+        "direction_structure",
+        "support_release"
+      ],
+      "node_ids": [
+        "MFG-Q1",
+        "MFG-TRANSFORM",
+        "MFG-Q1a",
+        "MFG-Q1b",
+        "MFG-Q1c",
+        "MFG-EXPAND",
+        "MFG-PROC-INJECTION",
+        "MFG-PROC-SAND",
+        "MFG-PROC-LAYERS",
+        "MFG-PROC-WATERJET",
+        "MFG-FUNC-COMPLIANT",
+        "MFG-FUNC-DOF",
+        "MFG-FUNC-INDEX",
+        "MFG-FFM-ORIENT",
+        "MFG-TOLERANCE"
+      ],
+      "parent_overrides": {
+        "MFG-TRANSFORM": "MFG-Q1",
+        "MFG-Q1a": "MFG-Q1",
+        "MFG-Q1b": "MFG-Q1",
+        "MFG-Q1c": "MFG-Q1",
+        "MFG-EXPAND": "MFG-Q1",
+        "MFG-PROC-INJECTION": "MFG-TRANSFORM",
+        "MFG-PROC-SAND": "MFG-TRANSFORM",
+        "MFG-PROC-LAYERS": "MFG-TRANSFORM",
+        "MFG-PROC-WATERJET": "MFG-TRANSFORM",
+        "MFG-FUNC-COMPLIANT": "MFG-Q1a",
+        "MFG-FUNC-DOF": "MFG-Q1a",
+        "MFG-FUNC-INDEX": "MFG-Q1a",
+        "MFG-FFM-ORIENT": "MFG-Q1a",
+        "MFG-TOLERANCE": "MFG-Q1b"
+      }
+    },
+    {
+      "id": "make",
+      "title": "How could I make an unfamiliar functional thing?",
+      "short_label": "Make it",
+      "root_id": "MFG-Q2",
+      "rationale": "Start from the intended behavior and an accessible route; select construction and process alternatives, then verify real strength, interfaces and tolerances.",
+      "factor_ids": [
+        "kinematic_function",
+        "elastic_realization",
+        "decomposition_joining",
+        "support_release",
+        "quality_contract"
+      ],
+      "node_ids": [
+        "MFG-Q2",
+        "MFG-REALIZE",
+        "MFG-FEASIBILITY",
+        "MFG-Q2a",
+        "MFG-Q2b",
+        "MFG-Q2c",
+        "MFG-FUNC-RIGID",
+        "MFG-FUNC-COMPLIANT",
+        "MFG-FUNC-DOF",
+        "MFG-FUNC-INDEX",
+        "MFG-FFM-ORIENT",
+        "MFG-PROC-LAYERS",
+        "MFG-PROC-WATERJET",
+        "MFG-TOLERANCE",
+        "MFG-PROC-INJECTION",
+        "MFG-PROC-SAND"
+      ],
+      "parent_overrides": {
+        "MFG-REALIZE": "MFG-Q2",
+        "MFG-FEASIBILITY": "MFG-Q2",
+        "MFG-Q2a": "MFG-Q2",
+        "MFG-Q2b": "MFG-Q2",
+        "MFG-Q2c": "MFG-Q2",
+        "MFG-FUNC-RIGID": "MFG-REALIZE",
+        "MFG-FUNC-COMPLIANT": "MFG-REALIZE",
+        "MFG-FUNC-DOF": "MFG-REALIZE",
+        "MFG-FUNC-INDEX": "MFG-REALIZE",
+        "MFG-FFM-ORIENT": "MFG-REALIZE",
+        "MFG-PROC-LAYERS": "MFG-REALIZE",
+        "MFG-PROC-WATERJET": "MFG-REALIZE",
+        "MFG-TOLERANCE": "MFG-FEASIBILITY",
+        "MFG-PROC-INJECTION": "MFG-Q2b",
+        "MFG-PROC-SAND": "MFG-Q2b"
+      }
+    },
+    {
+      "id": "mechanisms",
+      "title": "How can motion and force be synthesized?",
+      "short_label": "Mechanisms",
+      "root_id": "MFG-FUNCTION",
+      "rationale": "Start from output motion, force, timing and allowed degrees of freedom; compare rigid and compliant alternatives before committing to a fabrication route.",
+      "factor_ids": [
+        "kinematic_function",
+        "elastic_realization",
+        "direction_structure",
+        "quality_contract"
+      ],
+      "node_ids": [
+        "MFG-FUNCTION",
+        "MFG-FUNC-MOTION",
+        "MFG-FUNC-REALIZE",
+        "MFG-FUNC-RIGID",
+        "MFG-FUNC-INDEX",
+        "MFG-FUNC-DOF",
+        "MFG-FUNC-COMPLIANT",
+        "MFG-FFM-ORIENT",
+        "MFG-TOLERANCE",
+        "MFG-PROC-LAYERS"
+      ],
+      "parent_overrides": {
+        "MFG-FUNC-MOTION": "MFG-FUNCTION",
+        "MFG-FUNC-REALIZE": "MFG-FUNCTION",
+        "MFG-FUNC-RIGID": "MFG-FUNC-MOTION",
+        "MFG-FUNC-INDEX": "MFG-FUNC-MOTION",
+        "MFG-FUNC-DOF": "MFG-FUNC-MOTION",
+        "MFG-FUNC-COMPLIANT": "MFG-FUNC-REALIZE",
+        "MFG-FFM-ORIENT": "MFG-FUNC-REALIZE",
+        "MFG-TOLERANCE": "MFG-FUNC-REALIZE",
+        "MFG-PROC-LAYERS": "MFG-FUNC-REALIZE"
+      }
+    },
+    {
+      "id": "production",
+      "title": "How do we manufacture reliably at scale?",
+      "short_label": "Production",
+      "root_id": "MFG-SCALE",
+      "rationale": "Compare tooling and digital processes under specified volume, required geometry, part variation, yield, assembly and total lifetime cost.",
+      "factor_ids": [
+        "economics",
+        "geometry_representation",
+        "quality_contract",
+        "support_release"
+      ],
+      "node_ids": [
+        "MFG-SCALE",
+        "MFG-SCALE-TOOL",
+        "MFG-FEASIBILITY",
+        "MFG-Q2b",
+        "MFG-PROC-INJECTION",
+        "MFG-PROC-SAND",
+        "MFG-PROC-LAYERS",
+        "MFG-PROC-WATERJET",
+        "MFG-TOLERANCE",
+        "MFG-FFM-ORIENT"
+      ],
+      "parent_overrides": {
+        "MFG-SCALE-TOOL": "MFG-SCALE",
+        "MFG-FEASIBILITY": "MFG-SCALE",
+        "MFG-Q2b": "MFG-SCALE",
+        "MFG-PROC-INJECTION": "MFG-SCALE-TOOL",
+        "MFG-PROC-SAND": "MFG-SCALE-TOOL",
+        "MFG-PROC-LAYERS": "MFG-SCALE-TOOL",
+        "MFG-PROC-WATERJET": "MFG-SCALE-TOOL",
+        "MFG-TOLERANCE": "MFG-FEASIBILITY",
+        "MFG-FFM-ORIENT": "MFG-FEASIBILITY"
+      }
+    },
+    {
+      "id": "bootstrap",
+      "title": "How do capabilities compose and bootstrap?",
+      "short_label": "Bootstrap",
+      "root_id": "MFG-Q5",
+      "rationale": "Investigate which accessible tools, processes, design skills, outside services and measurement capabilities unlock others; avoid assuming a tool chain is self-reproducing.",
+      "factor_ids": [
+        "transformation",
+        "geometry_representation",
+        "decomposition_joining",
+        "quality_contract",
+        "kinematic_function"
+      ],
+      "node_ids": [
+        "MFG-Q5",
+        "MFG-Q5a",
+        "MFG-Q5b",
+        "MFG-Q5c",
+        "MFG-EXPAND",
+        "MFG-Q2b",
+        "MFG-PROC-LAYERS",
+        "MFG-PROC-WATERJET",
+        "MFG-FUNC-RIGID",
+        "MFG-FUNC-DOF",
+        "MFG-TOLERANCE",
+        "MFG-PROC-INJECTION",
+        "MFG-PROC-SAND",
+        "MFG-FUNC-COMPLIANT"
+      ],
+      "parent_overrides": {
+        "MFG-Q5a": "MFG-Q5",
+        "MFG-Q5b": "MFG-Q5",
+        "MFG-Q5c": "MFG-Q5",
+        "MFG-EXPAND": "MFG-Q5",
+        "MFG-Q2b": "MFG-Q5",
+        "MFG-PROC-LAYERS": "MFG-Q5a",
+        "MFG-PROC-WATERJET": "MFG-Q5a",
+        "MFG-FUNC-RIGID": "MFG-Q5a",
+        "MFG-FUNC-DOF": "MFG-Q5b",
+        "MFG-TOLERANCE": "MFG-Q5b",
+        "MFG-PROC-INJECTION": "MFG-Q5b",
+        "MFG-PROC-SAND": "MFG-Q5c",
+        "MFG-FUNC-COMPLIANT": "MFG-Q5c"
+      }
+    }
+  ],
+  "view_contract": {
+    "source_of_truth": "The canonical nodes, sources, connections, and book_factorization in this file are shared across every view.",
+    "placement": "landscape_views reference existing node IDs and state only how those IDs are parented for a given root question.",
+    "source_status": "A question and a source section are different kinds of objects; candidate reading remains candidate reading.",
+    "selection_rule": "Choose the view according to the current big-picture goal; retain navigable cross-links rather than duplicating source records.",
+    "asymptotic_goal": "Index every consequential capability, constraint, mechanism and source encounter that helps answer a real question; do not materialize a node for every book heading."
   }
 }
