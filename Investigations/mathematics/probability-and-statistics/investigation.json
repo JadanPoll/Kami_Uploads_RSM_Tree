@@ -1450,5 +1450,14 @@
       "observation": "Temporal dependence demands transition and recurrence structure rather than blindly independent trials.",
       "status": "selected_passage_examined_not_reproduced"
     }
+  ],
+  "question_ids": [
+    "MATH-CURI-prob-vs-data",
+    "MATH-CURI-independence",
+    "MATH-CURI-markov",
+    "MATH-CURI-estimate",
+    "MATH-CURI-sufficient",
+    "MATH-CURI-pvalue",
+    "MATH-CURI-integrable"
   ]
 }

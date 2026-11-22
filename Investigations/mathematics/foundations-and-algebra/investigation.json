@@ -2104,5 +2104,22 @@
       "observation": "Choice and well-ordering support existential reasoning and generalized recursion.",
       "status": "selected_passage_examined_not_reproduced"
     }
+  ],
+  "question_ids": [
+    "MATH-CURI-same",
+    "MATH-CURI-exist",
+    "MATH-CURI-paradox",
+    "MATH-CURI-structure",
+    "MATH-CURI-quotient",
+    "MATH-CURI-basis",
+    "MATH-CURI-dual",
+    "MATH-CURI-diagonal",
+    "MATH-CURI-symmetry",
+    "MATH-CURI-factor",
+    "MATH-CURI-unsolvable",
+    "MATH-CURI-infinite-operator",
+    "MATH-CURI-transplant",
+    "MATH-CURI-topo-algebra",
+    "MATH-CURI-normal-word"
   ]
 }

@@ -1879,5 +1879,19 @@
       "observation": "A pointwise-vanishing sequence can have integrals that fail to converge accordingly.",
       "status": "selected_passage_examined_not_reproduced"
     }
+  ],
+  "question_ids": [
+    "MATH-CURI-limit-integral",
+    "MATH-CURI-uniform",
+    "MATH-CURI-complete",
+    "MATH-CURI-fp",
+    "MATH-CURI-integrable",
+    "MATH-CURI-unbounded",
+    "MATH-CURI-holomorphic",
+    "MATH-CURI-residue",
+    "MATH-CURI-infinite-operator",
+    "MATH-CURI-dual",
+    "MATH-CURI-compact",
+    "MATH-CURI-counterexample"
   ]
 }

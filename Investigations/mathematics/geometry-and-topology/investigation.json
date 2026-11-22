@@ -698,5 +698,14 @@
       "observation": "Local curvature can constrain global surface topology.",
       "status": "selected_passage_examined_not_reproduced"
     }
+  ],
+  "question_ids": [
+    "MATH-CURI-holes",
+    "MATH-CURI-compact",
+    "MATH-CURI-sphere",
+    "MATH-CURI-straight",
+    "MATH-CURI-local-global",
+    "MATH-CURI-topo-algebra",
+    "MATH-CURI-structure"
   ]
 }

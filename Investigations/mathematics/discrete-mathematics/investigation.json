@@ -2495,5 +2495,19 @@
       "observation": "State transitions and linear-algebra powers encode combinatorial path counts.",
       "status": "selected_passage_examined_not_reproduced"
     }
+  ],
+  "question_ids": [
+    "MATH-CURI-count-many",
+    "MATH-CURI-labels",
+    "MATH-CURI-inclusion",
+    "MATH-CURI-mobius",
+    "MATH-CURI-automaton",
+    "MATH-CURI-bottleneck",
+    "MATH-CURI-connect",
+    "MATH-CURI-treewidth",
+    "MATH-CURI-primes",
+    "MATH-CURI-approx-rational",
+    "MATH-CURI-symmetry",
+    "MATH-CURI-transplant"
   ]
 }

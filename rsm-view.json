@@ -96,8 +96,10 @@
       "short_title": "Foundations and algebra",
       "file": "Investigations/mathematics/foundations-and-algebra/investigation.json",
       "projection": {
-        "shape": "flat"
-      }
+        "shape": "curiosities"
+      },
+      "atlas_file": "Investigations/mathematics/investigation.json",
+      "glossary_file": "Investigations/mathematics/glossary.json"
     },
     {
       "id": "mathematics-analysis-and-dynamics",
@@ -105,8 +107,10 @@
       "short_title": "Analysis and dynamics",
       "file": "Investigations/mathematics/analysis-and-dynamics/investigation.json",
       "projection": {
-        "shape": "flat"
-      }
+        "shape": "curiosities"
+      },
+      "atlas_file": "Investigations/mathematics/investigation.json",
+      "glossary_file": "Investigations/mathematics/glossary.json"
     },
     {
       "id": "mathematics-geometry-and-topology",
@@ -114,8 +118,10 @@
       "short_title": "Geometry and topology",
       "file": "Investigations/mathematics/geometry-and-topology/investigation.json",
       "projection": {
-        "shape": "flat"
-      }
+        "shape": "curiosities"
+      },
+      "atlas_file": "Investigations/mathematics/investigation.json",
+      "glossary_file": "Investigations/mathematics/glossary.json"
     },
     {
       "id": "mathematics-probability-and-statistics",
@@ -123,8 +129,10 @@
       "short_title": "Probability and statistics",
       "file": "Investigations/mathematics/probability-and-statistics/investigation.json",
       "projection": {
-        "shape": "flat"
-      }
+        "shape": "curiosities"
+      },
+      "atlas_file": "Investigations/mathematics/investigation.json",
+      "glossary_file": "Investigations/mathematics/glossary.json"
     },
     {
       "id": "mathematics-discrete-mathematics",
@@ -132,8 +140,10 @@
       "short_title": "Discrete mathematics",
       "file": "Investigations/mathematics/discrete-mathematics/investigation.json",
       "projection": {
-        "shape": "flat"
-      }
+        "shape": "curiosities"
+      },
+      "atlas_file": "Investigations/mathematics/investigation.json",
+      "glossary_file": "Investigations/mathematics/glossary.json"
     }
   ]
 }
