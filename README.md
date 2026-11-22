@@ -48,6 +48,8 @@ Run the **reverse test** from independently chosen important passages: can plaus
 
 [Manufacturing book reference guide — all five books, 65 indexed chapters/parts, inspected passages, and quick retrieval routes](Investigations/manufacturing-orientation/REFERENCE_GUIDE.md)
 
+[Operating systems reference guide — OS, Linux, bare-metal and architecture book maps](Investigations/operating-systems/REFERENCE_GUIDE.md)
+
 [Manufacturing navigation audit and test prompts](Investigations/manufacturing-orientation/navigation_audit.md)
 
 ## Continuing and contributing
