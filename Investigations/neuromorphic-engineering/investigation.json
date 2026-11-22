@@ -3158,7 +3158,7 @@
   ],
   "source_coverage": {
     "MEAD-1989": "16 chapters, 4 appendices and 16 selected subheadings indexed from scanned printed contents; passages on subthreshold operation, current mirrors, HRes spatial coupling and axon-hillock examined. Many other sections remain TOC leads.",
-    "LIU-2015": "17 chapters and 35 selected subsection starts indexed from electronic TOC; inspected passages on queue-versus-drop, sensor leakage/background events, bounded synapse retention, silicon refractory circuits and hardware timestamps versus online latency. Many chapter-level routes remain only leads."
+    "LIU-2015": "17 chapters and 36 selected subsection starts indexed from electronic TOC; inspected passages on queue-versus-drop, sensor leakage/background events, bounded synapse retention, silicon refractory circuits and hardware timestamps versus online latency. Many chapter-level routes remain only leads."
   },
   "research_boundaries": [
     "Historical source data is not a modern neuromorphic performance benchmark. Process-era analog numbers and vendor hardware assumptions require current independent checks.",
