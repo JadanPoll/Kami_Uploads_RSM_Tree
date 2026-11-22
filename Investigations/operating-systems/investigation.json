@@ -97,7 +97,19 @@
             "verification": "chapter/title and boundary checked against this PDF's contents"
           }
         ]
-      }
+      },
+      "technical_distinctions": [
+        {
+          "contrast": "OS purpose versus familiar implementation",
+          "mechanism": "A usable operating environment is a service contract; a protected monolithic kernel, microkernel, embedded runtime or existing OS with a custom shell are different ways to realize parts of it.",
+          "discriminating_observation": "Does the intended result require new privileged code, or only a new interface and resource policy?"
+        },
+        {
+          "contrast": "Bare metal versus shared computing",
+          "mechanism": "A single program can run directly on hardware. Scheduling, isolation, durable naming and third-party application support become valuable when multiple independently failing activities must coexist.",
+          "discriminating_observation": "Which requirements appear only when the second independent task or device is introduced?"
+        }
+      ]
     },
     {
       "id": "OS-02",
@@ -174,7 +186,24 @@
             "verification": "chapter/title and boundary checked against this PDF's contents"
           }
         ]
-      }
+      },
+      "technical_distinctions": [
+        {
+          "contrast": "Program, process and scheduled thread",
+          "mechanism": "A program is executable description; a process owns an execution environment; threads share resources yet have schedulable execution states.",
+          "discriminating_observation": "Can two runnable threads make progress without one blocking the entire process?"
+        },
+        {
+          "contrast": "Mechanism versus policy",
+          "mechanism": "Timer interrupts and privilege transitions make preemption possible; a scheduling policy determines fairness, latency and throughput.",
+          "discriminating_observation": "If one task hogs the CPU, does the system regain control, and which runnable task runs next?"
+        },
+        {
+          "contrast": "CPU busy versus work accomplished",
+          "mechanism": "CPU use may reflect productive execution, busy waiting, lock contention or repeated retries.",
+          "discriminating_observation": "Can the workload demonstrate completed work per second rather than only CPU occupancy?"
+        }
+      ]
     },
     {
       "id": "OS-03",
@@ -240,7 +269,24 @@
             "verification": "chapter/title and boundary checked against this PDF's contents"
           }
         ]
-      }
+      },
+      "technical_distinctions": [
+        {
+          "contrast": "Virtual address versus physical page",
+          "mechanism": "Equal virtual addresses in different processes can map to different physical memory; mappings enforce protection and enable sharing.",
+          "discriminating_observation": "What does the page-table translation of a suspicious address actually resolve to?"
+        },
+        {
+          "contrast": "Allocation versus residency",
+          "mechanism": "Reserved address space, committed memory, resident pages and swap backing are different quantities. Memory pressure can induce reclaim and page-fault thrashing.",
+          "discriminating_observation": "Is the failure a virtual allocation limit, physical memory exhaustion or excessive page-in/page-out?"
+        },
+        {
+          "contrast": "Isolation versus sharing",
+          "mechanism": "Read-only mappings, shared memory and copy-on-write change which writes are visible across processes; the correct mechanism depends on ownership and synchronization.",
+          "discriminating_observation": "Which specific write should be observable by another process, and when?"
+        }
+      ]
     },
     {
       "id": "OS-04",
@@ -306,7 +352,24 @@
             "verification": "chapter/title and boundary checked against this PDF's contents"
           }
         ]
-      }
+      },
+      "technical_distinctions": [
+        {
+          "contrast": "Race versus data race",
+          "mechanism": "A race is dependence on event order; a data race is unsynchronized conflicting access under a given memory model. A system can have logically incorrect races even with no data race.",
+          "discriminating_observation": "Which interleaving violates an application invariant?"
+        },
+        {
+          "contrast": "Deadlock, livelock and starvation",
+          "mechanism": "Deadlock has blocked cyclic dependency, livelock continues activity without useful progress, and starvation denies a runnable participant adequate service.",
+          "discriminating_observation": "Is there a wait-for cycle, futile retry or unfair selection?"
+        },
+        {
+          "contrast": "Locks versus messages",
+          "mechanism": "A lock protects shared-state invariants; message passing transfers responsibility through a protocol. Neither automatically guarantees liveness or correct ordering.",
+          "discriminating_observation": "What ownership model eliminates the disputed shared mutation?"
+        }
+      ]
     },
     {
       "id": "OS-05",
@@ -372,7 +435,24 @@
             "verification": "chapter/title and boundary checked against this PDF's contents"
           }
         ]
-      }
+      },
+      "technical_distinctions": [
+        {
+          "contrast": "Successful write versus durable state",
+          "mechanism": "The write interface may acknowledge cached bytes before the device commits them. Durability needs an explicitly defined synchronization and storage contract.",
+          "discriminating_observation": "What exactly survives power removal immediately after the acknowledged operation?"
+        },
+        {
+          "contrast": "Atomicity versus crash consistency",
+          "mechanism": "An individually atomic update does not prove a multi-step filesystem operation survives a torn sequence. Journaling, copy-on-write and careful ordering preserve different invariants.",
+          "discriminating_observation": "Which crash point can leave directory metadata or file contents inconsistent?"
+        },
+        {
+          "contrast": "Recovery versus uninterrupted execution",
+          "mechanism": "Restarting a service does not imply preserved work; useful recovery needs durable checkpoints, idempotent operations or reconstruction from a log.",
+          "discriminating_observation": "After restart, which application-level invariant is still true?"
+        }
+      ]
     },
     {
       "id": "OS-06",
@@ -438,7 +518,24 @@
             "verification": "chapter/title and boundary checked against this PDF's contents"
           }
         ]
-      }
+      },
+      "technical_distinctions": [
+        {
+          "contrast": "Polling versus interrupt versus DMA",
+          "mechanism": "Polling checks device readiness, interrupts signal events, and DMA transfers buffers with less CPU copying; each has separate scheduling and coherency implications.",
+          "discriminating_observation": "Where does the CPU wait, who owns the buffer, and what event signals completion?"
+        },
+        {
+          "contrast": "Device completion versus driver correctness",
+          "mechanism": "An interrupt merely signals a condition; a driver still must interpret status, obey ordering, handle timeouts and recover from unexpected hardware behavior.",
+          "discriminating_observation": "What happens when the device never responds or reports a partial transfer?"
+        },
+        {
+          "contrast": "Physical timing versus throughput",
+          "mechanism": "For controllers and robots, worst-case response time and safe fallback can matter more than aggregate operations per second.",
+          "discriminating_observation": "Can the system guarantee its actuator remains safe when its scheduling deadline is missed?"
+        }
+      ]
     },
     {
       "id": "OS-07",
@@ -504,7 +601,24 @@
             "verification": "chapter/title and boundary checked against this PDF's contents"
           }
         ]
-      }
+      },
+      "technical_distinctions": [
+        {
+          "contrast": "Privilege versus authorization",
+          "mechanism": "CPU modes enforce privileged execution; credentials, capabilities, ACLs and sandbox policy decide which requests to accept. These are different boundaries.",
+          "discriminating_observation": "Which component checks access, and can an untrusted caller bypass it?"
+        },
+        {
+          "contrast": "Kernel code versus trusted computing base",
+          "mechanism": "Moving a service outside the kernel may reduce privileged code, but security also depends on IPC protocols and the privileges granted to that service.",
+          "discriminating_observation": "What is the smallest set of components whose compromise violates the promise?"
+        },
+        {
+          "contrast": "Fault isolation versus full recovery",
+          "mechanism": "Preventing a component from corrupting peers is distinct from restoring correct application state and making future requests succeed.",
+          "discriminating_observation": "Can the failed component be restarted without violating another component's invariants?"
+        }
+      ]
     },
     {
       "id": "OS-08",
@@ -570,7 +684,24 @@
             "verification": "chapter/title and boundary checked against this PDF's contents"
           }
         ]
-      }
+      },
+      "technical_distinctions": [
+        {
+          "contrast": "Remote UI versus remote execution",
+          "mechanism": "A remote display does not transfer the running process to the client. Browser/tab, transport, login session, process and file state have separate owners.",
+          "discriminating_observation": "Does closing the viewer destroy the process or merely the transport?"
+        },
+        {
+          "contrast": "Timeout versus proof of failure",
+          "mechanism": "A missing reply cannot distinguish an unexecuted remote operation from an executed operation whose response was lost; retries can duplicate effects.",
+          "discriminating_observation": "Is the action idempotent, or can the system deduplicate repeated requests?"
+        },
+        {
+          "contrast": "Shared experience versus distributed consistency",
+          "mechanism": "Multiple devices can present one interface without sharing a synchronous view of storage, identity or time; partial failures cannot be treated as local function calls.",
+          "discriminating_observation": "Which data must agree immediately, which can converge later, and what occurs during network partition?"
+        }
+      ]
     }
   ],
   "relations": [
@@ -611,6 +742,118 @@
     "The canonical proposed questions and candidate source ranges are now in question_tree.json. The existing nodes in this file are an earlier mixed representation retained for backward compatibility, NOT completed investigations.",
     "For new investigation work, create a separate actual investigation record only after beginning evidence examination and model/hypothesis work. Candidate references attached to questions are not established certificates."
   ],
-  "updated": "2026-11-19",
-  "question_tree_path": "question_tree.json"
+  "updated": "2026-11-21",
+  "question_tree_path": "question_tree.json",
+  "landscape_views": [
+    {
+      "id": "systems-as-experience",
+      "title": "Why can very different devices feel like usable computers?",
+      "short_label": "Experiences",
+      "root_id": "OS-00",
+      "node_ids": [
+        "OS-00",
+        "OS-01",
+        "OS-06",
+        "OS-07",
+        "OS-08"
+      ],
+      "parent_overrides": {
+        "OS-01": "OS-00",
+        "OS-06": "OS-00",
+        "OS-07": "OS-00",
+        "OS-08": "OS-00"
+      },
+      "entry_ids": [
+        "OS-CURI-browser-os",
+        "OS-CURI-small-os",
+        "OS-CURI-robot",
+        "OS-CURI-boot"
+      ],
+      "rationale": "This is a reusable scope over the same canonical OS technical questions, not a separately authored tree."
+    },
+    {
+      "id": "programs-and-resources",
+      "title": "How can independent work safely share computation?",
+      "short_label": "Sharing",
+      "root_id": "OS-00",
+      "node_ids": [
+        "OS-00",
+        "OS-02",
+        "OS-03",
+        "OS-04",
+        "OS-07"
+      ],
+      "parent_overrides": {
+        "OS-02": "OS-00",
+        "OS-03": "OS-00",
+        "OS-04": "OS-00",
+        "OS-07": "OS-00"
+      },
+      "entry_ids": [
+        "OS-CURI-freeze",
+        "OS-CURI-memory",
+        "OS-CURI-same-address",
+        "OS-CURI-permission"
+      ],
+      "rationale": "This is a reusable scope over the same canonical OS technical questions, not a separately authored tree."
+    },
+    {
+      "id": "failures-and-recovery",
+      "title": "What breaks, what survives and what can be restored?",
+      "short_label": "Recovery",
+      "root_id": "OS-00",
+      "node_ids": [
+        "OS-00",
+        "OS-02",
+        "OS-04",
+        "OS-05",
+        "OS-06",
+        "OS-07",
+        "OS-08"
+      ],
+      "parent_overrides": {
+        "OS-02": "OS-00",
+        "OS-04": "OS-00",
+        "OS-05": "OS-00",
+        "OS-06": "OS-00",
+        "OS-07": "OS-00",
+        "OS-08": "OS-00"
+      },
+      "entry_ids": [
+        "OS-CURI-save",
+        "OS-CURI-recovery",
+        "OS-CURI-remote",
+        "OS-CURI-restart"
+      ],
+      "rationale": "This is a reusable scope over the same canonical OS technical questions, not a separately authored tree."
+    },
+    {
+      "id": "connected-computers",
+      "title": "How do local and distributed OS guarantees interact?",
+      "short_label": "Distribution",
+      "root_id": "OS-00",
+      "node_ids": [
+        "OS-00",
+        "OS-02",
+        "OS-05",
+        "OS-07",
+        "OS-08"
+      ],
+      "parent_overrides": {
+        "OS-02": "OS-00",
+        "OS-05": "OS-00",
+        "OS-07": "OS-00",
+        "OS-08": "OS-00"
+      },
+      "entry_ids": [
+        "OS-CURI-remote",
+        "OS-CURI-distributed",
+        "OS-CURI-restart"
+      ],
+      "rationale": "This is a reusable scope over the same canonical OS technical questions, not a separately authored tree."
+    }
+  ],
+  "curiosity_atlas_path": "question_tree.json",
+  "navigation_bridge_path": "question_tree.json#navigation_bridges",
+  "projection_contract": "Select an individual curiosity or a named question set; follow its conditional technical targets into the same investigation nodes. Evidence certificates remain pending until observed or source-verified."
 }
