@@ -233,7 +233,9 @@
     {
       "id": "os-t-0031",
       "label": "real-time operating system",
-      "aliases": [],
+      "aliases": [
+        "RTOS"
+      ],
       "category": "OS purpose and execution",
       "related_ids": []
     },
@@ -471,14 +473,9 @@
     {
       "id": "os-t-0063",
       "label": "inter-process communication",
-      "aliases": [],
-      "category": "Concurrency and IPC",
-      "related_ids": []
-    },
-    {
-      "id": "os-t-0064",
-      "label": "IPC",
-      "aliases": [],
+      "aliases": [
+        "IPC"
+      ],
       "category": "Concurrency and IPC",
       "related_ids": []
     },
@@ -1023,14 +1020,9 @@
     {
       "id": "os-t-0135",
       "label": "access control list",
-      "aliases": [],
-      "category": "Devices and security",
-      "related_ids": []
-    },
-    {
-      "id": "os-t-0136",
-      "label": "ACL",
-      "aliases": [],
+      "aliases": [
+        "ACL"
+      ],
       "category": "Devices and security",
       "related_ids": []
     },
@@ -1334,14 +1326,9 @@
     {
       "id": "os-t-0177",
       "label": "remote procedure call",
-      "aliases": [],
-      "category": "Distributed systems and sessions",
-      "related_ids": []
-    },
-    {
-      "id": "os-t-0178",
-      "label": "RPC",
-      "aliases": [],
+      "aliases": [
+        "RPC"
+      ],
       "category": "Distributed systems and sessions",
       "related_ids": []
     },
@@ -1630,13 +1617,6 @@
     {
       "id": "os-t-0216",
       "label": "jitter",
-      "aliases": [],
-      "category": "FKEN vocabulary",
-      "related_ids": []
-    },
-    {
-      "id": "os-t-0217",
-      "label": "RTOS",
       "aliases": [],
       "category": "FKEN vocabulary",
       "related_ids": []
@@ -2345,5 +2325,11 @@
       "category": "FKEN vocabulary",
       "related_ids": []
     }
-  ]
+  ],
+  "redirects": {
+    "os-t-0064": "os-t-0063",
+    "os-t-0136": "os-t-0135",
+    "os-t-0178": "os-t-0177",
+    "os-t-0217": "os-t-0031"
+  }
 }
