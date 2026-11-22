@@ -10,6 +10,8 @@ Explore what you are curious about, follow the underlying mechanisms, and recove
 
 [**Explore electronics engineering**](https://raw.githack.com/JadanPoll/Learning_Visualizations_Taxonomy/main/RSM_Tree_Viewer.html?repo=https%3A%2F%2Fgithub.com%2FJadanPoll%2FKami_Uploads_RSM_Tree&view=electronics-curiosities)
 
+[**Explore robotics — from a curious question to physical mechanisms and source passages**](https://raw.githack.com/JadanPoll/Learning_Visualizations_Taxonomy/main/RSM_Tree_Viewer.html?repo=https%3A%2F%2Fgithub.com%2FJadanPoll%2FKami_Uploads_RSM_Tree&view=robotics-curiosities)
+
 ## One entrance, variable investigation scope
 
 The manufacturing browser supports two entry sizes in one place:
@@ -35,6 +37,7 @@ The Knowledge Atlas viewer loads only the selected domain's glossary. In the que
 | FPGA and VLSI | [glossary.json](Investigations/digital-hardware-design/glossary.json) |
 | Neuromorphic engineering | [glossary.json](Investigations/neuromorphic-engineering/glossary.json) |
 | Electronics engineering | [glossary.json](Investigations/electronics-engineering/glossary.json) |
+| Robotics | [glossary.json](Investigations/robotics/glossary.json) |
 
 **Research remains canonical in `investigation.json`.** Vocabulary changes need not duplicate its mechanisms or books. IDs are permanent: change a label or add aliases without changing identity, and keep redirects when combining true synonyms. A related concept does not mean the same mechanism.
 
@@ -49,6 +52,7 @@ Each domain has **one canonical research JSON** (and multiple possible scoped vi
 | Human–AI collaboration | [`investigation.json`](Investigations/human-ai-symbiosis/investigation.json) | 18 curiosities, 56 question-index nodes, 13 technical nodes, 19 fieldwork nodes, supporting sources, projects, and communities |
 | Digital hardware (FPGA/VLSI) | [`investigation.json`](Investigations/digital-hardware-design/investigation.json) | 24 curiosities, five larger sets, 15 technical nodes, 18 FPGA + 9 VLSI chapter locations, and conditional source routes |
 | Neuromorphic engineering | [`investigation.json`](Investigations/neuromorphic-engineering/investigation.json) | 28 curiosity entries, 20 technical records, 12 conditional bridges, five investigation sets, two books, and their reusable source maps |
+| Robotics | [`investigation.json`](Investigations/robotics/investigation.json) | Three books, 43 chapters, 458 indexed subsection starts, 41 curiosities, 30 technical nodes, eight larger landscapes, nine cross-book compositions and an embodiment matrix |
 | Electronics engineering | [`investigation.json`](Investigations/electronics-engineering/investigation.json) | 34 curiosity entries, 31 technical nodes, 12 conditional bridges, 50 chapter maps and 1,133 subsection locators across three electronics books |
 
 The manufacturing corpus's principal sections are:
@@ -71,6 +75,8 @@ The current manufacturing collection contains **5 connected books**, **65 chapte
 Follow [FKEN-16A — Frustration-to-resource traversability](AGENTS.md#fken-16a--frustration-to-resource-traversability). Start from an unfamiliar real frustration without giving away book vocabulary. The user should be able to recognize the next relevant distinction, reach an actual page or worked example, and explain why it helps.
 
 Run the **reverse test** from independently chosen important passages: can plausible everyday questions lead to them? Compare with a book's table of contents and ordinary full-text search. Counts of nodes, branches, or chapter links do not establish discoverability.
+
+[Robotics book reference guide — three books, reusable capabilities, exact printed-page locators, working-case routes](Investigations/robotics/REFERENCE_GUIDE.md)
 
 [Manufacturing book reference guide — all five books, 65 indexed chapters/parts, inspected passages, and quick retrieval routes](Investigations/manufacturing-orientation/REFERENCE_GUIDE.md)
 
