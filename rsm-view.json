@@ -38,7 +38,7 @@
     },
     {
       "id": "manufacturing-curiosities",
-      "title": "Manufacturing — Curiosity encyclopedia",
+      "title": "Manufacturing — Explore questions and question sets",
       "short_title": "Curiosities",
       "shared_reader_id": "manufacturing",
       "file": "Investigations/manufacturing-orientation/investigation.json",
@@ -48,7 +48,7 @@
     },
     {
       "id": "manufacturing-investigation",
-      "title": "Manufacturing — investigation",
+      "title": "Manufacturing — Complete technical landscape",
       "file": "Investigations/manufacturing-orientation/investigation.json",
       "projection": {
         "shape": "flat",
@@ -65,7 +65,7 @@
         ]
       },
       "shared_reader_id": "manufacturing",
-      "short_title": "All questions"
+      "short_title": "Complete landscape"
     },
     {
       "id": "manufacturing-possibilities",
