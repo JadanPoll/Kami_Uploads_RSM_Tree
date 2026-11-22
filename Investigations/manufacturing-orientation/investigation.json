@@ -1101,67 +1101,8 @@
       "why": "Mechanism synthesis determines what must be built; fabrication and validation determine whether the design functions."
     }
   ],
-  "presentation": {
-    "content_status": "Question landscape and source navigation; technical findings are not yet certified.",
-    "main_questions": [
-      "MFG-Q1",
-      "MFG-Q2",
-      "MFG-Q5"
-    ],
-    "source_reading_note": "Source ranges are assigned navigation, not proofs of the proposed questions. Preserve printed-versus-PDF page conventions.",
-    "source_of_promoted_nodes": "question_selection.selected_big_picture_questions and alternative_formulations"
-  },
   "book_factorization": {
     "status": "source-based initial comparison; no physical replication or cost survey performed",
-    "books": [
-      {
-        "source_id": "BOOK-MFG-PROCESSES",
-        "role": "Maps process families, transformation physics, materials, applications, tooling and finishing",
-        "inspected_sections": [
-          "PDF 57–59 Injection Molding",
-          "PDF 127–129 Sand Casting",
-          "PDF 239–241 SLA/SLS rapid prototyping",
-          "PDF 279–281 Water Jet Cutting"
-        ]
-      },
-      {
-        "source_id": "BOOK-FFF",
-        "role": "Maps FFM process constraints into geometry, orientation, structure, slicer settings, failure and joints",
-        "inspected_sections": [
-          "Printed 18–21 anisotropy",
-          "27–29 shell/infill",
-          "46–49 cylinder refactoring",
-          "50–61 adhesion/overhang/bridging/support",
-          "94–95 layer fusion",
-          "116 onward fitting"
-        ]
-      },
-      {
-        "source_id": "BOOK-SHIGLEY",
-        "role": "Maps desired physical function to design margins and toleranced geometric contracts",
-        "inspected_sections": [
-          "Printed chapter 20 beginning p. 995, GD&T definition and geometric variation"
-        ]
-      },
-      {
-        "source_id": "BOOK-COMPLIANT",
-        "role": "Starts from target freedoms, constraints, stiffness and strength; synthesizes mechanisms by rigid-body replacement or flexure topology",
-        "inspected_sections": [
-          "Printed pp. 8–11 stiffness versus strength",
-          "pp. 82–89 FACT synthesis",
-          "pp. 111–120 rigid-body replacement and derailleur example",
-          "Ch. 10 categorization limitations"
-        ]
-      },
-      {
-        "source_id": "BOOK-MECHANISMS",
-        "role": "Provides families of rigid mechanism operators that convert movement, force, speed and timing",
-        "inspected_sections": [
-          "Printed pp. 2–8 efficiency and mechanical advantage",
-          "pp. 192–197 Geneva indexing and variants"
-        ]
-      }
-    ],
     "factors": [
       {
         "id": "transformation",
@@ -1411,19 +1352,7 @@
         "candidate": "Kinematic linkages, cams, gear trains, clutches, robotic actuation, drives and controls",
         "coverage": "selected technical sections read; large mechanism compendium not exhaustively indexed"
       }
-    ],
-    "navigation_principle": {
-      "canonical_items": "Research observations, studies, case nodes and source anchors are recorded once with stable IDs.",
-      "multiple_views": "Different big-picture purposes activate overlapping canonical items with different parent relationships. A view is an inquiry-specific path, not a claim of unique natural classification.",
-      "boundary": "No attempt is made to turn every TOC entry into a separate question; a new item earns its place when it changes an alternative, a failure mode, a source path or a practical capability."
-    },
-    "chapter_navigation": {
-      "indexed_source_count": 5,
-      "indexed_sections": 65,
-      "role": "Retrieval map, not 65 independently verified scientific or engineering findings.",
-      "grounding": "Chapter titles and printed starting pages for the four numbered books were read from the books' tables of contents. Manufacturing Processes uses verified major part titles without claimed part start pages.",
-      "interpretation": "One chapter can be relevant to several questions; navigation tags do not imply that its contents have all been researched."
-    }
+    ]
   },
   "landscape_views": [
     {
@@ -1661,13 +1590,6 @@
       }
     }
   ],
-  "view_contract": {
-    "source_of_truth": "The canonical nodes, sources, connections, and book_factorization in this file are shared across every view.",
-    "placement": "landscape_views reference existing node IDs and state only how those IDs are parented for a given root question.",
-    "source_status": "A question and a source section are different kinds of objects; candidate reading remains candidate reading.",
-    "selection_rule": "Choose the view according to the current big-picture goal; retain navigable cross-links rather than duplicating source records.",
-    "asymptotic_goal": "Index every consequential capability, constraint, mechanism and source encounter that helps answer a real question; do not materialize a node for every book heading."
-  },
   "book_landscaplets": [
     {
       "source_id": "BOOK-MFG-PROCESSES",
@@ -2857,7 +2779,6 @@
   "navigation_bridges": [
     {
       "id": "SNAP",
-      "entry_node_id": "MFG-ISSUE-SNAP",
       "choices": [
         {
           "label": "It splits across printed layers",
@@ -2927,7 +2848,6 @@
     },
     {
       "id": "FIT",
-      "entry_node_id": "MFG-ISSUE-FIT",
       "choices": [
         {
           "label": "The printed dimensions differ from the model",
@@ -2990,7 +2910,6 @@
     },
     {
       "id": "STEP",
-      "entry_node_id": "MFG-ISSUE-STEP",
       "choices": [
         {
           "label": "I need a mechanical rest between movements",
@@ -3047,7 +2966,6 @@
     },
     {
       "id": "QUANTITY",
-      "entry_node_id": "MFG-ISSUE-QUANTITY",
       "choices": [
         {
           "label": "I expect to revise the design frequently",
@@ -3117,7 +3035,6 @@
     },
     {
       "id": "OUTSOURCE",
-      "entry_node_id": "MFG-ISSUE-OUTSOURCE",
       "choices": [
         {
           "label": "My part can be cut from flat sheet",
@@ -3188,7 +3105,6 @@
     },
     {
       "id": "FLEX",
-      "entry_node_id": "MFG-ISSUE-FLEX",
       "choices": [
         {
           "label": "I want motion without pin joints or backlash",
@@ -3252,7 +3168,6 @@
     },
     {
       "id": "WOBBLE",
-      "entry_node_id": "MFG-ISSUE-WOBBLE",
       "choices": [
         {
           "label": "It moves in extra directions",
@@ -3322,7 +3237,6 @@
     },
     {
       "id": "HEAT",
-      "entry_node_id": "MFG-ISSUE-HEAT",
       "choices": [
         {
           "label": "The material is sensitive to heating while cutting",
@@ -3362,7 +3276,6 @@
     },
     {
       "id": "CAVITY",
-      "entry_node_id": "MFG-ISSUE-CAVITY",
       "choices": [
         {
           "label": "I cannot remove a rigid tool or core from inside",
@@ -3416,7 +3329,6 @@
     },
     {
       "id": "FORCE",
-      "entry_node_id": "MFG-ISSUE-FORCE",
       "choices": [
         {
           "label": "I need to multiply force over short motion",
@@ -3456,7 +3368,6 @@
     },
     {
       "id": "METAL",
-      "entry_node_id": null,
       "choices": [
         {
           "technical_title": "Cyclic plastic bending and fatigue crack propagation",
@@ -3519,7 +3430,6 @@
     },
     {
       "id": "SUPPORT",
-      "entry_node_id": null,
       "choices": [
         {
           "technical_title": "Overhang geometry and temporary support generation",
@@ -3575,16 +3485,6 @@
       ]
     }
   ],
-  "navigation_contract": {
-    "purpose": "FKEN-16A: from an ordinary frustration to an intelligible set of competing mechanisms, then an explicit source passage.",
-    "provenance": "Problem nodes are retrieval prompts, not empirical research findings. Bridge hypotheses and candidate chapter routes are not asserted as validated solutions.",
-    "rendering": "Offer each bridge as a separate conditional path with discriminating question, explanation, verified locator and optional canonical study links. Never hide useful source locations only in a global root catalog.",
-    "reverse_check": "Every source section tagged to a view should have at least one actionable entry question or a stated unindexed gap; TOC-only associations cannot be mistaken for inspected evidence.",
-    "decision": "When a practical route fails, improve the minimum useful entry or link, rather than adding another universal hierarchy.",
-    "chapter_routing": "Each chapter is attached to specific existing question nodes via entry_node_ids and a plain-language use_when. The section remains TOC-only until source study is recorded. View tags are derived from these paths, not from a broad topic-label guess.",
-    "curiosity_entry_separation": "Curiosity entries are a scalable lookup layer, not canonical technical studies. Choose one to generate a dense mechanism tree from the existing navigation bridges, canonical node IDs, and source anchors. Do not preserve a full copied technical tree for each natural-language formulation.",
-    "technical_separation": "The curiosity_atlas is the ordinary-language entry set. The five major landscape_views include technical question and mechanism records, not MFG-ISSUE-* legacy frustrations. The legacy IDs remain in canonical nodes only for backwards compatibility with prior source links and reader annotations, and do not appear in the current technical views."
-  },
   "curiosity_atlas": {
     "version": "0.1",
     "title": "Questions you might actually ask",
@@ -3956,9 +3856,6 @@
         "context": "Changing digitally described geometry and reworking a fixed tool are economically different."
       }
     ],
-    "lookup_contract": "Entries are intentionally easy to recognize; scientific/engineering precision belongs in the activated mechanism tree. Aliases aid retrieval and are not separately cloned questions.",
-    "boundaries": "The source-backed corpus is five books with ten already-inspected studies. Entry questions are navigation prompts, not verified diagnoses. Technical projections preserve TOC-only versus inspected source status.",
-    "next_expansion": "Expand from real questions that reveal missing retrieval paths. Do not inflate the index with near-identical paraphrases to simulate coverage.",
     "legacy_entry_ids": [
       "MFG-ISSUE-SNAP",
       "MFG-ISSUE-FIT",
