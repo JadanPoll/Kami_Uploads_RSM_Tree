@@ -3151,7 +3151,7 @@
     {
       "source_id": "UAV-2012",
       "page_scheme": "Printed book/preface-pagination as extracted from the exact connected PDF TOC; not PDF offsets",
-      "source_navigation_status": "13 numbered chapters and 53 numbered subsection starts indexed; selected actual passage evidence is indicated independently.",
+      "source_navigation_status": "13 numbered chapters and 54 numbered subsection starts indexed; selected actual passage evidence is indicated independently.",
       "sections": [
         {
           "ref": "1",
@@ -3259,6 +3259,13 @@
           "printed_page_start": 4,
           "chapter": "1",
           "locator_status": "table_of_contents_inspected"
+        },
+        {
+          "ref": "1.3",
+          "title": "Design Project",
+          "printed_page_start": 6,
+          "chapter": "1",
+          "locator_status": "table_of_contents_inspected_manual_wrap_repair"
         },
         {
           "ref": "2.1",
@@ -7713,7 +7720,7 @@
   "source_coverage": {
     "PR-2006": "17 numbered chapters and 243 numbered subsection starts from printed TOC; selected sections 2.4.1, 4.3, 6.4, 11.2, 13.2 and 17.2.1 examined in source text. Other chapter/section locations generally retrieval leads.",
     "MR-2017": "13 numbered chapters and 161 numbered subsection starts plus four appendices; selected sections 4.1, 5.1, 8.3.2, 10.2, 10.5, 11.7 and 12.2.1 examined. This is a preprint, with its own printed pagination.",
-    "UAV-2012": "13 numbered chapters and 53 numbered section starts plus eight appendices; selected sections 4.2, 5.3, 6.2, 8.5, 11.2 and 13.5 examined; the model and practice focus are fixed-wing only."
+    "UAV-2012": "13 numbered chapters and 54 numbered section starts plus eight appendices; selected sections 4.2, 5.3, 6.2, 8.5, 11.2 and 13.5 examined; the model and practice focus are fixed-wing only."
   },
   "navigation_audit": {
     "criterion": "FKEN-16A: actual frustration-to-source traversability, not link count.",
