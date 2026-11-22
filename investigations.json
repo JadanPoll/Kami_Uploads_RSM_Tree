@@ -32,6 +32,14 @@
       "status": "curiosity-to-technical-books-indexed; physical demonstrations pending",
       "updated": "2026-11-21",
       "glossary_path": "Investigations/digital-hardware-design/glossary.json"
+    },
+    {
+      "id": "neuromorphic-engineering",
+      "title": "Neuromorphic engineering — analog VLSI and event-based systems",
+      "path": "Investigations/neuromorphic-engineering/investigation.json",
+      "glossary_path": "Investigations/neuromorphic-engineering/glossary.json",
+      "status": "two-book-indexed; selective mechanism passages inspected; hardware not reproduced",
+      "updated": "2026-11-21"
     }
   ]
 }
