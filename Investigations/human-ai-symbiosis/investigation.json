@@ -46,6 +46,9 @@
       "source_ids": [
         "ALPOGE",
         "QUANTA"
+      ],
+      "fieldwork_case_ids": [
+        "FW-ALPOGE"
       ]
     },
     {
@@ -55,6 +58,9 @@
       "status": "published primary system report consulted; mechanism comparison untested",
       "source_ids": [
         "ALPHAEVOLVE"
+      ],
+      "fieldwork_case_ids": [
+        "FW-ALPHA"
       ]
     },
     {
@@ -64,6 +70,9 @@
       "status": "empirical result exists for a bounded population, tasks and tool generation",
       "source_ids": [
         "METR"
+      ],
+      "fieldwork_case_ids": [
+        "FW-METR"
       ]
     },
     {
@@ -80,6 +89,10 @@
       "source_ids": [
         "OPENAI_SIGNALS",
         "ANTH_ECON"
+      ],
+      "fieldwork_case_ids": [
+        "FW-OPENAI",
+        "FW-CLAUDE"
       ]
     },
     {
@@ -95,6 +108,9 @@
       "status": "candidate first-person case; not benchmarked",
       "source_ids": [
         "KNOWLEDGE_VIEWER"
+      ],
+      "fieldwork_case_ids": [
+        "FW-OWN"
       ]
     },
     {
@@ -105,6 +121,10 @@
       "source_ids": [
         "ALPOGE",
         "ALPHAEVOLVE"
+      ],
+      "fieldwork_case_ids": [
+        "FW-CARLINI",
+        "FW-ALPOGE"
       ]
     },
     {
@@ -149,7 +169,12 @@
       "id": "HAI-I12",
       "parent_id": "HAI-I00",
       "question": "Which public projects, communities and source artifacts provide affordable competence-building opportunities?",
-      "status": "initial eight projects and seven communities indexed; no engagement/reconstruction yet"
+      "status": "initial eight projects and seven communities indexed; no engagement/reconstruction yet",
+      "fieldwork_case_ids": [
+        "FW-SIMON",
+        "FW-CLAX",
+        "FW-CARLINI"
+      ]
     }
   ],
   "evidence_notes": [
@@ -386,5 +411,6 @@
     ],
     "what_changed": "First comparative investigation through documentary samples, not speculative ranking. Each case records observed workflow, competing mechanism hypotheses, remaining uncertainty and cheap reconstruction probes.",
     "relevance": "Cases inform multiple questions without turning the question tree into a celebrity list."
-  }
+  },
+  "fieldwork_link_rule": "fieldwork_case_ids point to source-backed records in fieldwork_path; follow them for mechanism explanations, action traces, limitations and original sources. Case links are not completed proof certificates."
 }
