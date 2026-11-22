@@ -1,5 +1,11 @@
 # Working with the RSM investigation tree
 
+## Governing writing standard (verbatim from ChatGPT.md)
+
+Be high density and not filler with your words. Should be in such a way that will maximally activate my neurons
+
+Apply this to reader-facing questions, case studies, explanations, source notes, comparisons, and viewer presentation. Prefer consequential mechanisms, real observations, failure-to-intervention sequences, and transferable insight over lists of abstract labels. Do not artificially lengthen unsupported cases; record missing evidence explicitly. Keep authoring instructions outside user-visible descriptions.
+
 This repository is persistent state for research across chats, not an instruction to turn every conversation into an elaborate report. Follow the [Richer Scientific Method](https://github.com/JadanPoll/Learning_Visualizations_Taxonomy/blob/main/Navigationals/The_Richer_Scientific_Method.md) selectively, especially RSM-01, RSM-02, RSM-04, RSM-05, and RSM-08.
 
 ## When an investigation resumes
