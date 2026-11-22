@@ -48,6 +48,14 @@
       "glossary_path": "Investigations/electronics-engineering/glossary.json",
       "status": "three books indexed; selected mechanisms source-inspected; hardware not independently reproduced",
       "updated": "2026-11-22"
+    },
+    {
+      "id": "robotics",
+      "title": "Robotics — mechanics, perception, planning, control and embodied autonomy",
+      "path": "Investigations/robotics/investigation.json",
+      "glossary_path": "Investigations/robotics/glossary.json",
+      "status": "three books indexed; selected source passages examined; navigation and physical demonstrations not yet user-certified",
+      "updated": "2026-11-22"
     }
   ]
 }
