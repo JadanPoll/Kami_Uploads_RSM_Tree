@@ -10,7 +10,8 @@
       "file": "Investigations/operating-systems/investigation.json",
       "projection": {
         "shape": "curiosities"
-      }
+      },
+      "glossary_file": "Investigations/operating-systems/glossary.json"
     },
     {
       "id": "manufacturing-curiosities",
@@ -20,7 +21,8 @@
       "file": "Investigations/manufacturing-orientation/investigation.json",
       "projection": {
         "shape": "curiosities"
-      }
+      },
+      "glossary_file": "Investigations/manufacturing-orientation/glossary.json"
     },
     {
       "id": "human-ai-curiosities",
@@ -30,7 +32,8 @@
       "file": "Investigations/human-ai-symbiosis/investigation.json",
       "projection": {
         "shape": "curiosities"
-      }
+      },
+      "glossary_file": "Investigations/human-ai-symbiosis/glossary.json"
     },
     {
       "id": "digital-hardware-curiosities",
@@ -40,7 +43,8 @@
       "file": "Investigations/digital-hardware-design/investigation.json",
       "projection": {
         "shape": "curiosities"
-      }
+      },
+      "glossary_file": "Investigations/digital-hardware-design/glossary.json"
     }
   ]
 }
