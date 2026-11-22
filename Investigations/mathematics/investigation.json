@@ -11426,5 +11426,187 @@
       "observation": "State transitions and linear-algebra powers encode combinatorial path counts.",
       "status": "selected_passage_examined_not_reproduced"
     }
-  ]
+  ],
+  "navigation_audit": {
+    "criterion": "FKEN-16A two-sided frustration-to-passage and passage-to-question traversability",
+    "forward_routes": [
+      {
+        "task": "A limit and integral disagree",
+        "entry_id": "MATH-CURI-limit-integral",
+        "bridge_id": "CONTINUOUS",
+        "technical_node_id": "MATH-LIMITS",
+        "source_id": "RUDIN",
+        "section_ref": "7",
+        "discriminator": "Check the selected mechanism's assumptions against the original section",
+        "evaluation_state": "static_route_checked_not_empirically_tested"
+      },
+      {
+        "task": "A finite-state rule generates exponentially many strings",
+        "entry_id": "MATH-CURI-automaton",
+        "bridge_id": "DISCRETE",
+        "technical_node_id": "MATH-GENFUN",
+        "source_id": "STANLEY",
+        "section_ref": "4.7",
+        "discriminator": "Check the selected mechanism's assumptions against the original section",
+        "evaluation_state": "static_route_checked_not_empirically_tested"
+      },
+      {
+        "task": "A network has many routes but very low capacity",
+        "entry_id": "MATH-CURI-bottleneck",
+        "bridge_id": "DISCRETE",
+        "technical_node_id": "MATH-FLOW",
+        "source_id": "DIESTEL",
+        "section_ref": "6",
+        "discriminator": "Check the selected mechanism's assumptions against the original section",
+        "evaluation_state": "static_route_checked_not_empirically_tested"
+      },
+      {
+        "task": "Someone reads p=0.01 as 99 percent chance of a hypothesis",
+        "entry_id": "MATH-CURI-pvalue",
+        "bridge_id": "RANDOM",
+        "technical_node_id": "MATH-TEST",
+        "source_id": "CASELLA",
+        "section_ref": "8",
+        "discriminator": "Check the selected mechanism's assumptions against the original section",
+        "evaluation_state": "static_route_checked_not_empirically_tested"
+      },
+      {
+        "task": "A surface's global topology seems linked to curvature",
+        "entry_id": "MATH-CURI-local-global",
+        "bridge_id": "TRANSFER",
+        "technical_node_id": "MATH-CURVATURE",
+        "source_id": "DOCARMO",
+        "section_ref": "4-5",
+        "discriminator": "Check the selected mechanism's assumptions against the original section",
+        "evaluation_state": "static_route_checked_not_empirically_tested"
+      },
+      {
+        "task": "An unfamiliar ring does not factor integers uniquely",
+        "entry_id": "MATH-CURI-factor",
+        "bridge_id": "STRUCTURE",
+        "technical_node_id": "MATH-RINGS",
+        "source_id": "ARTIN",
+        "section_ref": "13",
+        "discriminator": "Check the selected mechanism's assumptions against the original section",
+        "evaluation_state": "static_route_checked_not_empirically_tested"
+      },
+      {
+        "task": "A Cauchy approximation fails to converge in the space",
+        "entry_id": "MATH-CURI-complete",
+        "bridge_id": "CONTINUOUS",
+        "technical_node_id": "MATH-COMPLETE",
+        "source_id": "KREYSZIG",
+        "section_ref": "1.4",
+        "discriminator": "Check the selected mechanism's assumptions against the original section",
+        "evaluation_state": "static_route_checked_not_empirically_tested"
+      },
+      {
+        "task": "A continuous bijection lacks continuous inverse",
+        "entry_id": "MATH-CURI-same",
+        "bridge_id": "STRUCTURE",
+        "technical_node_id": "MATH-MAPS",
+        "source_id": "MUNKRES",
+        "section_ref": "2",
+        "discriminator": "Check the selected mechanism's assumptions against the original section",
+        "evaluation_state": "static_route_checked_not_empirically_tested"
+      },
+      {
+        "task": "Two equal-size vector representations are claimed identical",
+        "entry_id": "MATH-CURI-basis",
+        "bridge_id": "LINEAR",
+        "technical_node_id": "MATH-VECTOR",
+        "source_id": "HALMOS-LIN",
+        "section_ref": "50",
+        "discriminator": "Check the selected mechanism's assumptions against the original section",
+        "evaluation_state": "static_route_checked_not_empirically_tested"
+      },
+      {
+        "task": "A small sample summary may be statistically sufficient",
+        "entry_id": "MATH-CURI-sufficient",
+        "bridge_id": "RANDOM",
+        "technical_node_id": "MATH-STAT",
+        "source_id": "CASELLA",
+        "section_ref": "6",
+        "discriminator": "Check the selected mechanism's assumptions against the original section",
+        "evaluation_state": "static_route_checked_not_empirically_tested"
+      }
+    ],
+    "reverse_samples": [
+      {
+        "source_id": "HALMOS-SET",
+        "section_ref": "18",
+        "useful_for": "What licenses recursion through transfinite stages?",
+        "entry_id": "MATH-CURI-exist"
+      },
+      {
+        "source_id": "ARTIN",
+        "section_ref": "16",
+        "useful_for": "Why can't an arbitrary polynomial root be built with ruler and compass?",
+        "entry_id": "MATH-CURI-unsolvable"
+      },
+      {
+        "source_id": "STANLEY",
+        "section_ref": "3.7",
+        "useful_for": "How can we invert totals over all subsets?",
+        "entry_id": "MATH-CURI-mobius"
+      },
+      {
+        "source_id": "STANLEY",
+        "section_ref": "4.7",
+        "useful_for": "How can a state machine count valid paths?",
+        "entry_id": "MATH-CURI-automaton"
+      },
+      {
+        "source_id": "MUNKRES",
+        "section_ref": "9",
+        "useful_for": "What algebraic evidence proves a hole exists?",
+        "entry_id": "MATH-CURI-holes"
+      },
+      {
+        "source_id": "RUDIN",
+        "section_ref": "7",
+        "useful_for": "Why can pointwise limits disagree with integrals?",
+        "entry_id": "MATH-CURI-limit-integral"
+      },
+      {
+        "source_id": "DOCARMO",
+        "section_ref": "4-5",
+        "useful_for": "How does local curvature constrain a closed surface?",
+        "entry_id": "MATH-CURI-local-global"
+      },
+      {
+        "source_id": "KREYSZIG",
+        "section_ref": "5.1",
+        "useful_for": "When does an iteration have a unique fixed point?",
+        "entry_id": "MATH-CURI-fp"
+      },
+      {
+        "source_id": "CASELLA",
+        "section_ref": "8",
+        "useful_for": "What do p-values control?",
+        "entry_id": "MATH-CURI-pvalue"
+      },
+      {
+        "source_id": "FELLER",
+        "section_ref": "XV",
+        "useful_for": "What can we infer from a Markov process's transitions?",
+        "entry_id": "MATH-CURI-markov"
+      },
+      {
+        "source_id": "ROYDEN",
+        "section_ref": "4",
+        "useful_for": "When does Lebesgue integration justify exchanging a limit?",
+        "entry_id": "MATH-CURI-limit-integral"
+      },
+      {
+        "source_id": "DIESTEL",
+        "section_ref": "12.6",
+        "useful_for": "How can local tree decompositions solve global problems?",
+        "entry_id": "MATH-CURI-treewidth"
+      }
+    ],
+    "status": "static paths verified; no actual unfamiliar-user navigation timings, comparison baselines or Kami PDF-page jump validation",
+    "method": "Start from uncoached ordinary questions and independent important book passages, trace intermediate distinctions and real passage relevance. Compare against TOC and full-text search, track wrong turns and unresolved passage offsets.",
+    "problems": []
+  }
 }
