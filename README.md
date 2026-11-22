@@ -1,79 +1,57 @@
-# Kami Uploads — RSM Investigation Tree
+# Kami Uploads — Research Navigator
 
-A persistent home for investigations across ChatGPT conversations. Start with a question, discover its larger purpose and neighboring possibilities, find the relevant books and chapters, and preserve what reading, experiments, and discussion actually establish.
+Explore what you are curious about, follow the underlying mechanisms, and recover the relevant parts of real books. This repository preserves **questions, evidence, technical investigations, source locations, and links** across conversations; original books stay in Drive/Kami.
 
-The repository follows the [Richer Scientific Method (RSM)](https://github.com/JadanPoll/Learning_Visualizations_Taxonomy/blob/main/Navigationals/The_Richer_Scientific_Method.md). It is an **investigation navigator**, not a second PDF library or a collection of AI-generated summaries.
+[**Open the manufacturing questions and investigations**](https://raw.githack.com/JadanPoll/Learning_Visualizations_Taxonomy/main/RSM_Tree_Viewer.html?repo=https%3A%2F%2Fgithub.com%2FJadanPoll%2FKami_Uploads_RSM_Tree&view=manufacturing-curiosities)
 
-## Open the visual navigator
+## One entrance, variable investigation scope
 
-[**Explore these investigations visually**](https://raw.githack.com/JadanPoll/Learning_Visualizations_Taxonomy/main/RSM_Tree_Viewer.html) — choose a question, follow related branches, and open book references. The viewer uses this repository's [`rsm-view.json`](rsm-view.json) mapping without changing the source records. It can also load other public GitHub repositories with their own maps.
+The manufacturing browser supports two entry sizes in one place:
 
-## Where things belong
+- **One ordinary question**, such as “Why does my metal paper clip snap?” Its technical projection distinguishes cyclic plastic deformation, static fracture, and alternatives for designing flexible parts.
+- **A larger question set**, such as “How can I make an unfamiliar functional thing?” Its technical projection spans manufacturing possibilities, functional requirements, mechanisms, assembly, tolerances, and practical verification.
 
-- **Here:** Questions, branches, alternative explanations, sources mapped to those branches, findings, unresolved questions, and reasons to revisit earlier conclusions.
-- **[FKEN Ecosystem](https://github.com/JadanPoll/FKEN_Ecosystem):** Broad domain and resource landscapes, reusable knowledge, projects, and skills. Link relevant records instead of copying them.
-- **Google Drive / Kami:** Original books and annotated PDFs. Link to actual files; do not commit copyrighted books or duplicate uploads solely to populate this repository.
+An *investigation* is the purposeful exploration of one question **or a set of questions**, with evolving evidence and unresolved alternatives—not a separate file type or an independently copied tree. Both entry sizes traverse the **same technical records**. Change the question or scope; do not clone the books.
 
-## Manufacturing: a curiosity encyclopedia above dense technical investigations
+The technical explanations remain detailed and source-specific even when the entry question is childlike. The five larger sets—**Possibilities**, **Make it**, **Mechanisms**, **Production**, and **Bootstrap**—remain available through the same entry browser, not a separate manufacturing menu.
 
-[**Browse manufacturing curiosities**](https://raw.githack.com/JadanPoll/Learning_Visualizations_Taxonomy/main/RSM_Tree_Viewer.html?repo=https%3A%2F%2Fgithub.com%2FJadanPoll%2FKami_Uploads_RSM_Tree&view=manufacturing-curiosities). This is the human-facing entrance: **24 recognizable questions in five scrollable families**, searchable using everyday wording and aliases. Click one to generate a **technical map**: competing mechanisms or manufacturing alternatives, discriminating conditions, canonical researched studies and precise book locators. Example: a repeatedly bent **metal paper clip** leads to cyclic metal failure and mechanical analysis; a **printed plastic clip** activates interlayer bonding, flexure geometry and fatigue. The two questions should not share an automatically assumed diagnosis.
+## Manufacturing data, without redundant JSONs
 
-The entry questions stay approachable. **Only the entry questions need to be childlike.** Technical branches are intentionally dense and may lead to more precise engineering studies, calculations or experiments. The technical tree is a *question-conditioned projection of shared evidence*, not a saved second article for each curiosity. The selected question can be shared as a URL with `?curiosity=MFG-CURI-paperclip`.
+There is **one canonical manufacturing research JSON**:
 
-The source-of-truth file is [`Investigations/manufacturing-orientation/investigation.json`](Investigations/manufacturing-orientation/investigation.json): `curiosity_atlas` contains the question index, `navigation_bridges` contains alternative mechanisms and the distinctions that matter, and the canonical `nodes`/`sources` contain research and provenance. Existing source-inspected studies remain stable across entries and views; `MFG-ISSUE-*` legacy nodes remain for old saved notes but are hidden from current technical maps.
+[`Investigations/manufacturing-orientation/investigation.json`](Investigations/manufacturing-orientation/investigation.json)
 
-### Technical navigation
+Its principal sections serve different purposes without needing separate files:
 
-
-
-[Open the manufacturing atlas](https://raw.githack.com/JadanPoll/Learning_Visualizations_Taxonomy/main/RSM_Tree_Viewer.html?repo=https%3A%2F%2Fgithub.com%2FJadanPoll%2FKami_Uploads_RSM_Tree&view=manufacturing-investigation). The selector above the map offers **Possibilities**, **Make it**, **Mechanisms**, **Production**, and **Bootstrap**, as well as the complete research tree.
-
-These are not separate summaries of the same books. `Investigations/manufacturing-orientation/investigation.json` holds one canonical set of source-backed question and mechanism records. Its `landscape_views` contain only referenced IDs and alternative parents; a mechanism can therefore appear in several purpose-specific trees without multiplying its evidence or notes. `rsm-view.json` registers those views. The inspector offers explicit links to the other perspectives in which a record appears.
-
-The connected source collection presently contains five books: *Manufacturing Processes for Design Professionals*, *Functional Design for 3D Printing*, *Shigley's Mechanical Engineering Design*, *Handbook of Compliant Mechanisms*, and *Mechanisms and Mechanical Devices Sourcebook*. Their `book_landscaplets` index 65 relevant major parts and chapters by question. **A chapter locator is not a finding.** Only records with inspected evidence should claim a mechanism or result; incomplete coverage remains visible.
-
-The ambition is to make the books traversable by what one is trying to accomplish, rather than by book order or a rigid universal hierarchy. Add another major view only when it serves a genuinely different recurring task; new studied mechanisms should normally extend canonical records and appear in existing views.
-
-## Empirical audit: can a frustration recover the right passage?
-
-The [FKEN frustration-to-resource criterion](https://github.com/JadanPoll/Learning_Visualizations_Taxonomy/blob/main/Navigationals/Fractal_Knowledge_And_Ecosystem_Navigation.md#fken-16a--frustration-to-resource-traversability) is an acceptance test for our factorization, not a claim already achieved: **Can someone start with what they want to make or what is going wrong, traverse intelligible question/landscaplet choices, and reach a genuinely useful, source-anchored section—even without knowing the book's terminology?** The reverse test asks whether important book passages have plausible question-entry routes at all.
-
-Candidate blind-navigation prompts for the five-book manufacturing corpus (the right column is the *audit key*, not wording to show the navigator):
-
-| Frustration stated in everyday language | Candidate source regions the navigator ought to make discoverable |
+| Section | Responsibility |
 | --- | --- |
-| "My printed clip keeps snapping after opening it a few times." | Smyth: layer orientation/strength; Howell: flexure design; Shigley: fatigue failure |
-| "I need the wheel to rotate a step, then hold still, then step again." | Sclater: Geneva drives and indexing; Howell: freedom/constraint alternatives where applicable |
-| "Two parts look correct in CAD but jam when I put them together." | Smyth: designing for fit; Shigley: GD&T; the relevant process's dimensional limits |
-| "Should I make ten enclosures now and thousands later using the same method?" | Manufacturing process handbook: injection molding versus additive approaches, tooling and cycle economics |
-| "Can I manufacture a device even if I don't own a machine shop?" | The Make it and Bootstrap views: outsourced cutting/forming, part decomposition, joining and verification |
+| `curiosity_atlas` | Searchable, ordinary-language entry questions and aliases |
+| `landscape_views` | Larger question sets and purpose-conditioned parent relationships |
+| `navigation_bridges` | Conditional technical explanations and which passages support investigating them |
+| `nodes`, `connections` | Canonical technical questions, observations, mechanisms, experiments and relationships |
+| `sources`, `book_landscaplets` | Book identities and bounded chapter/section retrieval locations |
+| `book_factorization` | Reusable manufacturing operators and cross-book synthesis |
 
-For each case, have a reader navigate **without seeing the audit key**. Record whether the cited passage was reached; whether the explanation warranted its relevance; useful candidates versus distracting ones; wrong turns, backtracking and interaction cost; and whether source location was recoverable. Compare with the book TOC and ordinary search. Repeat in reverse from independently selected meaningful book sections; do not treat every indexed chapter as equally consequential.
+[`rsm-view.json`](rsm-view.json) is a small **viewer mapping manifest**, not another manufacturing knowledge database. Other domains (operating systems and human–AI collaboration) have independent research records because they represent distinct source corpora.
 
-**Current implementation (November 21, 2026):** 24 curiosity entries, 12 reusable conditional bridge families, five technical goal views, ten source-inspected technical studies and 65 chapter-level routes. Across the 24 activated trees, the same shared bridges appear as 80 *question-conditioned* technical branches and 110 source references; these counts are **not** unique scientific findings. Structural integration checks for the actual projection code pass across every entry and technical view; 17 sample everyday-language searches pass. **Unfamiliar-reader navigation has not been measured, and the book contents are not exhaustively understood or passage-indexed.** See [navigation_audit.md](Investigations/manufacturing-orientation/navigation_audit.md) for the empirical tasks, evidence limitations and stopping conditions.
+The current manufacturing collection contains **5 connected books**, **65 chapter/part retrieval locations**, **24 ordinary-language question entries**, **5 larger investigation scopes**, and **10 source-inspected technical studies**. These numbers describe the present index, **not** full passage coverage or proven practical navigation.
 
-## Using the tree
+## Acceptance test: frustration → useful source
 
-1. Start with an actual curiosity or goal. Recover the parent purpose without silently replacing the question.
-2. Sketch **only consequential branches**. The tree is provisional; cross-branch dependencies and competing models matter as much as hierarchy.
-3. Search existing books and external literature. Recommend **specific verified books, editions, chapters/sections, and page ranges** when available. Distinguish a recommendation from a chapter actually inspected.
-4. Attach evidence, observations, hypotheses, interpretations, and annotations to the branches they inform. Preserve competing explanations.
-5. Revise the tree as understanding changes. Summarize a sufficiently investigated branch with its evidence, assumptions, limitations, and reopening conditions.
-6. At the start of a later conversation, read the investigation record before continuing. Commit meaningful updates so the repository—not one chat—is the durable state.
+Follow [FKEN-16A — Frustration-to-resource traversability](AGENTS.md#fken-16a--frustration-to-resource-traversability). Start from an unfamiliar real frustration without giving away book vocabulary. The user should be able to recognize the next relevant distinction, reach an actual page or worked example, and explain why it helps.
 
-## Layout
+Run the **reverse test** from independently chosen important passages: can plausible everyday questions lead to them? Compare with a book's table of contents and ordinary full-text search. Counts of nodes, branches, or chapter links do not establish discoverability.
 
-- `investigations.json` — Small directory of active and archived investigations.
-- `Investigations/<slug>/investigation.json` — One canonical, structured record per substantive investigation, created only when needed.
-- `Investigations/<slug>/notes.md` — Optional readable working notes or longer narratives when they add value.
-- `AGENTS.md` — Conventions for continuing and editing investigations.
+[Manufacturing navigation audit and test prompts](Investigations/manufacturing-orientation/navigation_audit.md)
 
-Each investigation can contain a root question, parent purpose, branch nodes, relationships, book/chapter references, evidence, and compact certificates. Stable node IDs allow links and references to survive renaming. Avoid mandatory empty fields and universal templates: add detail when it earns its cost.
+## Continuing and contributing
 
-## Returning to an investigation
+1. Start with a genuine curiosity or purpose. Choose one question or the broader set it belongs to.
+2. Examine the technical alternatives; follow source citations. Clearly distinguish inspected technical evidence from suggested reading.
+3. Record what an experiment, worked example, or source really established and what remains uncertain.
+4. Preserve stable question, study, and source IDs across views so notes, links, and earlier research remain useful.
+5. When navigation fails, correct the smallest consequential entry, mechanism distinction, source anchor, or relation. Don't create a new JSON or menu just because the existing one is awkward.
 
-In a new ChatGPT conversation, link this repository and name the investigation, e.g.:
+The [Richer Scientific Method](https://github.com/JadanPoll/Learning_Visualizations_Taxonomy/blob/main/Navigationals/The_Richer_Scientific_Method.md) guides investigation, and the [Richer Engineering Method](https://github.com/JadanPoll/Learning_Visualizations_Taxonomy/blob/main/Navigationals/The_Richer_Engineering_Method.md) guides practical functionality, testing, and subtraction. [`AGENTS.md`](AGENTS.md) carries persistent continuation instructions.
 
-> Continue the investigation on [topic] from Kami_Uploads_RSM_Tree. Read its current tree and evidence, then help me decide which question and book chapters are most consequential next.
-
-An investigation is useful if someone returning after a month can see **why a question was asked, what was learned, where to verify it, and what could change the answer**.
+The objective is a navigator worth returning to after a month: **ask what you actually care about, encounter the relevant depth, and recover the evidence without rediscovering the organization**.
