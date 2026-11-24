@@ -1176,7 +1176,9 @@
           "os-t-0092",
           "os-t-0008",
           "os-t-0026"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "OS-CURI-same-address",
@@ -1207,7 +1209,9 @@
           "os-t-0095",
           "os-t-0092",
           "os-t-0008"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "OS-CURI-permission",
@@ -1243,7 +1247,9 @@
           "os-t-0139",
           "os-t-0141",
           "os-t-0142"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "OS-CURI-device",
@@ -1280,7 +1286,9 @@
           "os-t-0017",
           "os-t-0022",
           "os-t-0082"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "OS-CURI-save",
@@ -1388,7 +1396,9 @@
           "os-t-0119",
           "os-t-0118",
           "os-t-0141"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "OS-CURI-restart",
@@ -1425,7 +1435,9 @@
           "os-t-0119",
           "os-t-0118",
           "os-t-0101"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "OS-CURI-boot",
@@ -1576,7 +1588,9 @@
           "os-t-0170",
           "os-t-0046",
           "os-t-0054"
-        ]
+        ],
+        "question_type": "decomposition",
+        "task_scope": "open_goal"
       },
       {
         "id": "OS-CURI-robot",
@@ -1613,7 +1627,9 @@
           "os-t-0017",
           "os-t-0022",
           "os-t-0028"
-        ]
+        ],
+        "question_type": "design",
+        "task_scope": "open_goal"
       },
       {
         "id": "OS-CAP-page-translation",
