@@ -7391,7 +7391,9 @@
           "elec-t-0071",
           "elec-t-0078",
           "elec-t-0080"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "ELEC-CURI-amplifier",
@@ -7427,7 +7429,9 @@
           "elec-t-0419",
           "elec-t-0422",
           "elec-t-0466"
-        ]
+        ],
+        "question_type": "design",
+        "task_scope": "open_goal"
       },
       {
         "id": "ELEC-CURI-convert",
@@ -7445,7 +7449,9 @@
           "elec-t-0406",
           "elec-t-0405",
           "elec-t-0444"
-        ]
+        ],
+        "question_type": "design",
+        "task_scope": "open_goal"
       },
       {
         "id": "ELEC-CURI-supply",
@@ -7498,7 +7504,9 @@
         "term_ids": [
           "elec-t-0046",
           "elec-t-0419"
-        ]
+        ],
+        "question_type": "diagnosis",
+        "task_scope": "conceptual"
       },
       {
         "id": "ELEC-CURI-noisy",
@@ -7515,7 +7523,9 @@
           "elec-t-0201",
           "elec-t-0195",
           "elec-t-0018"
-        ]
+        ],
+        "question_type": "diagnosis",
+        "task_scope": "conceptual"
       },
       {
         "id": "ELEC-CURI-oscillates",
@@ -7619,7 +7629,9 @@
           "elec-t-0232",
           "elec-t-0233",
           "elec-t-0234"
-        ]
+        ],
+        "question_type": "diagnosis",
+        "task_scope": "conceptual"
       },
       {
         "id": "ELEC-CURI-truth",
@@ -7636,7 +7648,9 @@
           "elec-t-0250",
           "elec-t-0206",
           "elec-t-0439"
-        ]
+        ],
+        "question_type": "empirical_investigation",
+        "task_scope": "open_goal"
       },
       {
         "id": "ELEC-CURI-adc",
