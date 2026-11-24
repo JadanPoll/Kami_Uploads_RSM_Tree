@@ -592,7 +592,9 @@
           "dhw-t-0119",
           "dhw-t-0056",
           "dhw-t-0057"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "DHW-CURI-keyboard",
@@ -619,7 +621,9 @@
           "dhw-t-0119",
           "dhw-t-0056",
           "dhw-t-0057"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "DHW-CURI-missing",
@@ -651,7 +655,9 @@
           "dhw-t-0169",
           "dhw-t-0045",
           "dhw-t-0219"
-        ]
+        ],
+        "question_type": "diagnosis",
+        "task_scope": "conceptual"
       },
       {
         "id": "DHW-CURI-if",
@@ -683,7 +689,9 @@
           "dhw-t-0042",
           "dhw-t-0050",
           "dhw-t-0031"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "DHW-CURI-latch",
@@ -803,7 +811,9 @@
           "dhw-t-0058",
           "dhw-t-0002",
           "dhw-t-0059"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "DHW-CURI-cpu",
@@ -836,7 +846,9 @@
           "dhw-t-0031",
           "dhw-t-0044",
           "dhw-t-0045"
-        ]
+        ],
+        "question_type": "decomposition",
+        "task_scope": "open_goal"
       },
       {
         "id": "DHW-CURI-fast",
@@ -868,7 +880,9 @@
           "dhw-t-0082",
           "dhw-t-0188",
           "dhw-t-0010"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "DHW-CURI-cdc",
@@ -930,7 +944,9 @@
           "dhw-t-0048",
           "dhw-t-0219",
           "dhw-t-0072"
-        ]
+        ],
+        "question_type": "diagnosis",
+        "task_scope": "conceptual"
       },
       {
         "id": "DHW-CURI-clockwire",
@@ -955,7 +971,9 @@
           "dhw-t-0186",
           "dhw-t-0083",
           "dhw-t-0216"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "DHW-CURI-transistor",
@@ -985,7 +1003,9 @@
           "dhw-t-0160",
           "dhw-t-0161",
           "dhw-t-0174"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "DHW-CURI-wires",
@@ -1017,7 +1037,9 @@
           "dhw-t-0174",
           "dhw-t-0172",
           "dhw-t-0008"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "DHW-CURI-chips",
@@ -1048,7 +1070,9 @@
           "dhw-t-0160",
           "dhw-t-0161",
           "dhw-t-0008"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "DHW-CURI-area",
@@ -1081,7 +1105,9 @@
           "dhw-t-0008",
           "dhw-t-0216",
           "dhw-t-0145"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "DHW-CURI-hdl-vs-silicon",
@@ -1113,7 +1139,9 @@
           "dhw-t-0061",
           "dhw-t-0169",
           "dhw-t-0179"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "DHW-CURI-firmware",
@@ -1145,7 +1173,9 @@
           "dhw-t-0044",
           "dhw-t-0045",
           "dhw-t-0133"
-        ]
+        ],
+        "question_type": "design",
+        "task_scope": "open_goal"
       },
       {
         "id": "DHW-CURI-tool-old",
@@ -1177,7 +1207,9 @@
           "dhw-t-0093",
           "dhw-t-0061",
           "dhw-t-0146"
-        ]
+        ],
+        "question_type": "transfer",
+        "task_scope": "conceptual"
       },
       {
         "id": "DHW-CURI-test",
@@ -1211,7 +1243,9 @@
           "dhw-t-0084",
           "dhw-t-0072",
           "dhw-t-0073"
-        ]
+        ],
+        "question_type": "verification",
+        "task_scope": "conceptual"
       },
       {
         "id": "DHW-CAP-uart-rx",
