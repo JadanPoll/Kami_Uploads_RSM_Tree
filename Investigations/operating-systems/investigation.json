@@ -1614,6 +1614,46 @@
           "os-t-0022",
           "os-t-0028"
         ]
+      },
+      {
+        "id": "OS-CAP-page-translation",
+        "family_id": "create-a-system",
+        "question": "Can you translate a virtual address through page-table entries and determine access permissions?",
+        "aliases": [],
+        "question_type": "execution",
+        "task_scope": "capability_family",
+        "bridge_ids": [
+          "OS-BRG-memory"
+        ],
+        "target_ids": [
+          "OS-03"
+        ],
+        "success_criterion": "Given a page-table layout and access type, compute the physical address or appropriate fault; verify index and permission checks.",
+        "term_ids": [
+          "os-t-0078",
+          "os-t-0012",
+          "os-t-0083"
+        ]
+      },
+      {
+        "id": "OS-CAP-round-robin-scheduling",
+        "family_id": "create-a-system",
+        "question": "Can you trace a round-robin scheduler and calculate waiting and response times?",
+        "aliases": [],
+        "question_type": "execution",
+        "task_scope": "capability_family",
+        "bridge_ids": [
+          "OS-BRG-runtime"
+        ],
+        "target_ids": [
+          "OS-02"
+        ],
+        "success_criterion": "Given arrival times, time quantum and process bursts, derive the execution timeline and verify waiting and response metrics.",
+        "term_ids": [
+          "os-t-0007",
+          "os-t-0008",
+          "os-t-0014"
+        ]
       }
     ]
   },
