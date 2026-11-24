@@ -2039,7 +2039,9 @@
           "mechanism": "Partial orders need not compare every pair; their intervals and incidence algebras permit cumulative aggregation and Möbius inversion. Maximal elements are distinct from greatest elements.",
           "discriminating_observation": "Use the divisors of twelve as a poset and compute greatest lower bounds."
         }
-      ]
+      ],
+      "question_type": "explanation",
+      "task_scope": "conceptual"
     },
     {
       "id": "MATH-ARITH",
@@ -2094,7 +2096,9 @@
           "mechanism": "Divisibility, congruences, prime distribution and multiplicative arithmetic functions compress number-theoretic problems. Congruence obstructions are powerful negative certificates, not sufficient positive witnesses.",
           "discriminating_observation": "Rule out a Diophantine solution modulo a small prime and contrast a modularly feasible non-solution."
         }
-      ]
+      ],
+      "question_type": "explanation",
+      "task_scope": "conceptual"
     },
     {
       "id": "MATH-RATIONAL",
@@ -2148,7 +2152,9 @@
           "mechanism": "Continued fractions and Farey sequences expose rational approximation under denominator constraints; geometry of numbers relates this to lattices.",
           "discriminating_observation": "Compare continued-fraction convergents and decimals for sqrt(2)."
         }
-      ]
+      ],
+      "question_type": "explanation",
+      "task_scope": "conceptual"
     },
     {
       "id": "MATH-COUNT",
@@ -2202,7 +2208,9 @@
           "mechanism": "Bijections, inclusion–exclusion, the twelvefold way and recurrences encode combinatorial classes. Labeling, order and repetition are part of the question's contract.",
           "discriminating_observation": "Count ball-in-box assignments with labels and restrictions changed one at a time."
         }
-      ]
+      ],
+      "question_type": "explanation",
+      "task_scope": "conceptual"
     },
     {
       "id": "MATH-MOBIUS",
@@ -2256,7 +2264,9 @@
           "mechanism": "An incidence algebra provides convolution over comparable pairs; Möbius inversion recovers local contributions from cumulative values. Divisor inversion is one special poset.",
           "discriminating_observation": "Invert cumulative counts over subsets, then over integer divisors."
         }
-      ]
+      ],
+      "question_type": "explanation",
+      "task_scope": "conceptual"
     },
     {
       "id": "MATH-GENFUN",
@@ -2310,7 +2320,9 @@
           "mechanism": "Generating functions encode counts as coefficients. Stanley's transfer-matrix method encodes allowed finite-state transitions as directed paths, counted through matrix powers; formal power series need not analytically converge.",
           "discriminating_observation": "Count short binary strings avoiding a forbidden pattern by both enumeration and a transition matrix."
         }
-      ]
+      ],
+      "question_type": "explanation",
+      "task_scope": "conceptual"
     },
     {
       "id": "MATH-GRAPH",
@@ -2365,7 +2377,9 @@
           "mechanism": "Paths, matchings, flows, colorings and minor structure solve different global questions about one graph. Choosing the correct edge semantics is a necessary modeling step.",
           "discriminating_observation": "Reinterpret the same edges as capacity, conflict and communication links."
         }
-      ]
+      ],
+      "question_type": "explanation",
+      "task_scope": "conceptual"
     },
     {
       "id": "MATH-FLOW",
@@ -2409,7 +2423,9 @@
           "mechanism": "Flow capacity and cut size connect via max-flow/min-cut duality; Menger-style statements relate disjoint paths to separators under appropriate graph semantics.",
           "discriminating_observation": "Construct a network with many walks but a cut of capacity two."
         }
-      ]
+      ],
+      "question_type": "explanation",
+      "task_scope": "conceptual"
     },
     {
       "id": "MATH-MINORS",
@@ -2453,7 +2469,9 @@
           "mechanism": "Graph minors and tree decompositions identify global structure captured by bounded-width local interfaces. Forbidden minors constrain possible graph families.",
           "discriminating_observation": "Compare dynamic programming on a long path and a clique."
         }
-      ]
+      ],
+      "question_type": "explanation",
+      "task_scope": "conceptual"
     }
   ],
   "source_coverage": {
@@ -2508,6 +2526,15 @@
     "MATH-CURI-primes",
     "MATH-CURI-approx-rational",
     "MATH-CURI-symmetry",
-    "MATH-CURI-transplant"
+    "MATH-CURI-transplant",
+    "MATH-CAP-hasse-diagram",
+    "MATH-CAP-euclidean-algorithm",
+    "MATH-CAP-congruence-systems",
+    "MATH-CAP-continued-fractions",
+    "MATH-CAP-inclusion-exclusion",
+    "MATH-CAP-mobius-inversion",
+    "MATH-CAP-generating-functions",
+    "MATH-CAP-graph-connectivity",
+    "MATH-CAP-max-flow"
   ]
 }
