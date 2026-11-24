@@ -65,6 +65,12 @@ For a given domain, count questions by `question_type` and `task_scope`, and opt
 
 Audit concrete coverage separately: map a representative task to a capability, its supporting source passage, a possible instance, and a plausible wrong answer or failure mode. Count **capability families**, not arbitrary parameter variations. A handful of generators is more useful than dozens of synthetic drill questions.
 
+## Reproducible cross-domain census
+
+Use `python3 scripts/question_audit.py --strict` from the repository root (or `--json` for machine-readable results). Its denominator is only **canonical `curiosity_atlas.entries`**, grouped by domain. It reports both the primary operation and independent task scope, checks bridge and technical-target IDs (including mathematics' five included family files), and checks capability-family criteria. This avoids comparing mathematical executable prompts with raw technical-node questions or double-counting a repeated question from two views. The operating-systems and human–AI question-index trees are reported **separately**; they have not yet been given individual type labels.
+
+A complete tag matrix is **classification completeness**, not a quality result. To assess quality, independently sample genuine learner/project problems and valuable book passages: can the question distinguish mechanisms, route to a relevant recoverable passage, and lead to an actual checkable action when appropriate? Record missed routes and misleading links. Do not reward a domain for adding arbitrary questions, inflating the execution share, or attaching a success criterion without an operational test.
+
 ## Adoption across this repository
 
 Tag existing questions incrementally when they are reviewed. For mathematics, the canonical question entries live in `Investigations/mathematics/investigation.json`, while five family files retain only stable `question_ids`. Technical nodes and sources remain family-owned. Do not duplicate source notes, broad curiosities or instantiated homework into the family files.
