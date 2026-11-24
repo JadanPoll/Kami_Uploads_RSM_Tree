@@ -3748,7 +3748,9 @@
           "robot-t-0253",
           "robot-t-0261",
           "robot-t-0293"
-        ]
+        ],
+        "question_type": "decomposition",
+        "task_scope": "open_goal"
       },
       {
         "id": "ROB-CURI-build-arm",
@@ -3769,7 +3771,9 @@
           "robot-t-0048",
           "robot-t-0037",
           "robot-t-0354"
-        ]
+        ],
+        "question_type": "decomposition",
+        "task_scope": "open_goal"
       },
       {
         "id": "ROB-CURI-build-flight",
@@ -3789,7 +3793,9 @@
           "robot-t-0372",
           "robot-t-0409",
           "robot-t-0414"
-        ]
+        ],
+        "question_type": "decomposition",
+        "task_scope": "open_goal"
       },
       {
         "id": "ROB-CURI-build-soft",
@@ -3848,7 +3854,9 @@
           "robot-t-0423",
           "robot-t-0426",
           "robot-t-0432"
-        ]
+        ],
+        "question_type": "design",
+        "task_scope": "open_goal"
       },
       {
         "id": "ROB-CURI-frames",
@@ -3865,7 +3873,9 @@
         "term_ids": [
           "robot-t-0023",
           "robot-t-0009"
-        ]
+        ],
+        "question_type": "diagnosis",
+        "task_scope": "conceptual"
       },
       {
         "id": "ROB-CURI-inverse",
@@ -3881,7 +3891,9 @@
         "term_ids": [
           "robot-t-0037",
           "robot-t-0036"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "ROB-CURI-singularity",
@@ -3898,7 +3910,9 @@
         "term_ids": [
           "robot-t-0064",
           "robot-t-0060"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "ROB-CURI-sideways",
