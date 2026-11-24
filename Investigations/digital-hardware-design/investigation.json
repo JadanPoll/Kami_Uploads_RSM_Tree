@@ -499,7 +499,9 @@
           "dhw-t-0209",
           "dhw-t-0032",
           "dhw-t-0084"
-        ]
+        ],
+        "question_type": "diagnosis",
+        "task_scope": "conceptual"
       },
       {
         "id": "DHW-CURI-led",
@@ -527,7 +529,9 @@
           "dhw-t-0005",
           "dhw-t-0052",
           "dhw-t-0209"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "DHW-CURI-uart",
@@ -559,7 +563,9 @@
           "dhw-t-0084",
           "dhw-t-0073",
           "dhw-t-0074"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "DHW-CURI-vga",
@@ -704,7 +710,9 @@
           "dhw-t-0002",
           "dhw-t-0040",
           "dhw-t-0041"
-        ]
+        ],
+        "question_type": "diagnosis",
+        "task_scope": "conceptual"
       },
       {
         "id": "DHW-CURI-debounce",
@@ -736,7 +744,9 @@
           "dhw-t-0073",
           "dhw-t-0074",
           "dhw-t-0077"
-        ]
+        ],
+        "question_type": "diagnosis",
+        "task_scope": "conceptual"
       },
       {
         "id": "DHW-CURI-fsm",
@@ -766,7 +776,9 @@
           "dhw-t-0139",
           "dhw-t-0140",
           "dhw-t-0143"
-        ]
+        ],
+        "question_type": "design",
+        "task_scope": "open_goal"
       },
       {
         "id": "DHW-CURI-memory",
@@ -889,7 +901,9 @@
           "dhw-t-0185",
           "dhw-t-0079",
           "dhw-t-0188"
-        ]
+        ],
+        "question_type": "diagnosis",
+        "task_scope": "conceptual"
       },
       {
         "id": "DHW-CURI-uart-glitch",
