@@ -1212,6 +1212,46 @@
           "dhw-t-0072",
           "dhw-t-0073"
         ]
+      },
+      {
+        "id": "DHW-CAP-uart-rx",
+        "family_id": "visible",
+        "question": "Can you implement and simulate a UART receiver from a specified baud rate and frame format?",
+        "aliases": [],
+        "question_type": "execution",
+        "task_scope": "capability_family",
+        "bridge_ids": [
+          "SERIAL"
+        ],
+        "target_ids": [
+          "DHW-UART"
+        ],
+        "success_criterion": "Produce an HDL receiver and verify start detection, center sampling, parity/frame boundaries and back-to-back bytes with a protocol-aware simulation.",
+        "term_ids": [
+          "dhw-t-0108",
+          "dhw-t-0111",
+          "dhw-t-0110"
+        ]
+      },
+      {
+        "id": "DHW-CAP-synchronous-fsm",
+        "family_id": "logic",
+        "question": "Can you implement a synthesizable synchronous state machine from a transition table?",
+        "aliases": [],
+        "question_type": "execution",
+        "task_scope": "capability_family",
+        "bridge_ids": [
+          "STATE"
+        ],
+        "target_ids": [
+          "DHW-STATE"
+        ],
+        "success_criterion": "Implement state transitions and output behavior without accidental latches; verify reset and all defined transitions in simulation.",
+        "term_ids": [
+          "dhw-t-0031",
+          "dhw-t-0038",
+          "dhw-t-0044"
+        ]
       }
     ],
     "entry_policy": "Questions are entry surfaces. Shared technical nodes, book chapters and experiments keep single identities; differences in tools, materials and process generations are explicit."
