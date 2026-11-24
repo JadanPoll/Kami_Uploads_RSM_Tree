@@ -1222,7 +1222,9 @@
           "mechanism": "A probability space is measurable events with a normalized measure. Independence and conditional probability are further assumptions; a stochastic model's adequacy is empirical, not a tautology of probability axioms.",
           "discriminating_observation": "Compare distributions of draws with and without replacement."
         }
-      ]
+      ],
+      "question_type": "explanation",
+      "task_scope": "conceptual"
     },
     {
       "id": "MATH-STOCHASTIC",
@@ -1277,7 +1279,9 @@
           "mechanism": "Random walks, branching, renewal and Markov chains encode temporal dependence and distinct recurrence or extinction phenomena.",
           "discriminating_observation": "Contrast a periodic two-state chain with an aperiodic irreducible chain."
         }
-      ]
+      ],
+      "question_type": "explanation",
+      "task_scope": "conceptual"
     },
     {
       "id": "MATH-STAT",
@@ -1331,7 +1335,9 @@
           "mechanism": "Statistical inference introduces unknown parameters, a likelihood and sampling distribution. Sufficient statistics preserve information only relative to a specified statistical family.",
           "discriminating_observation": "Test sufficiency of the sum of Bernoulli observations for their success probability."
         }
-      ]
+      ],
+      "question_type": "explanation",
+      "task_scope": "conceptual"
     },
     {
       "id": "MATH-ESTIMATE",
@@ -1375,7 +1381,9 @@
           "mechanism": "Bias, variance, MSE, likelihood and Bayes risk evaluate repeated-sampling quality. Rao–Blackwell conditioning can reduce variance under appropriate hypotheses.",
           "discriminating_observation": "Compare sampling MSE across two estimators over a range of parameters."
         }
-      ]
+      ],
+      "question_type": "explanation",
+      "task_scope": "conceptual"
     },
     {
       "id": "MATH-TEST",
@@ -1420,7 +1428,9 @@
           "mechanism": "A significance test controls sampling outcomes under a null law. Type I error, power, confidence coverage and posterior probabilities are different conditional quantities.",
           "discriminating_observation": "Simulate false-positive rates under the null and interval coverage under misspecification."
         }
-      ]
+      ],
+      "question_type": "explanation",
+      "task_scope": "conceptual"
     }
   ],
   "source_coverage": {
@@ -1458,6 +1468,12 @@
     "MATH-CURI-estimate",
     "MATH-CURI-sufficient",
     "MATH-CURI-pvalue",
-    "MATH-CURI-integrable"
+    "MATH-CURI-integrable",
+    "MATH-CAP-conditional-bayes",
+    "MATH-CAP-independence",
+    "MATH-CAP-markov-stationary",
+    "MATH-CAP-maximum-likelihood",
+    "MATH-CAP-confidence-interval",
+    "MATH-CAP-hypothesis-test"
   ]
 }
