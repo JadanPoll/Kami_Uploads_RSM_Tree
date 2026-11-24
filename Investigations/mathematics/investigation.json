@@ -794,7 +794,8 @@
           "math-t-0786"
         ],
         "question_type": "verification",
-        "task_scope": "capability_family"
+        "task_scope": "capability_family",
+        "success_criterion": "Given a proposed claim, identify its assumptions, construct a concrete counterexample to an unjustified generalization, and verify precisely which assumption or conclusion fails."
       },
       {
         "id": "MATH-CURI-normal-word",
