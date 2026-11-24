@@ -2,7 +2,7 @@
   "id": "mathematics",
   "kind": "canonical_research_corpus",
   "title": "Mathematics — generative structures, transformations, invariants, limits and inference",
-  "updated": "2026-11-22",
+  "updated": "2026-11-24",
   "status": "Five canonical mathematical families composed on reading; 14 books, 39 studies and 46 curiosity entrances",
   "question": "What small set of mathematical constructions, structures, transformations and tests generates broad families of questions, theorems and real applications?",
   "purpose": "Navigate from authentic naive questions or ambitious mathematical/engineering goals through a composable mathematical capability landscape to source-backed distinctions and reusable books.",
@@ -67,7 +67,9 @@
         "term_ids": [
           "math-t-0762",
           "math-t-0366"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "MATH-CURI-exist",
@@ -81,7 +83,9 @@
         "term_ids": [
           "math-t-0035",
           "math-t-0782"
-        ]
+        ],
+        "question_type": "verification",
+        "task_scope": "conceptual"
       },
       {
         "id": "MATH-CURI-paradox",
@@ -95,7 +99,9 @@
         "term_ids": [
           "math-t-0001",
           "math-t-0033"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "MATH-CURI-structure",
@@ -111,7 +117,9 @@
           "math-t-0055",
           "math-t-0355",
           "math-t-0049"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "MATH-CURI-quotient",
@@ -126,7 +134,9 @@
         "term_ids": [
           "math-t-0753",
           "math-t-0008"
-        ]
+        ],
+        "question_type": "transfer",
+        "task_scope": "conceptual"
       },
       {
         "id": "MATH-CURI-basis",
@@ -140,7 +150,9 @@
         "term_ids": [
           "math-t-0066",
           "math-t-0064"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "MATH-CURI-dual",
@@ -155,7 +167,9 @@
         "term_ids": [
           "math-t-0075",
           "math-t-0076"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "MATH-CURI-diagonal",
@@ -169,7 +183,9 @@
         "term_ids": [
           "math-t-0100",
           "math-t-0088"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "MATH-CURI-symmetry",
@@ -184,7 +200,9 @@
         "term_ids": [
           "math-t-0120",
           "math-t-0121"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "MATH-CURI-factor",
@@ -198,7 +216,9 @@
         "term_ids": [
           "math-t-0173",
           "math-t-0164"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "MATH-CURI-unsolvable",
@@ -213,7 +233,9 @@
         "term_ids": [
           "math-t-0194",
           "math-t-0197"
-        ]
+        ],
+        "question_type": "verification",
+        "task_scope": "conceptual"
       },
       {
         "id": "MATH-CURI-infinite-operator",
@@ -228,7 +250,9 @@
         "term_ids": [
           "math-t-0521",
           "math-t-0530"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "MATH-CURI-count-many",
@@ -242,7 +266,9 @@
         "term_ids": [
           "math-t-0245",
           "math-t-0283"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "MATH-CURI-labels",
@@ -256,7 +282,9 @@
         "term_ids": [
           "math-t-0265",
           "math-t-0252"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "MATH-CURI-inclusion",
@@ -269,7 +297,10 @@
         "context": "Select the mathematically consequential distinction before treating a source as applicable. TOC leads are not inspected results.",
         "term_ids": [
           "math-t-0259"
-        ]
+        ],
+        "question_type": "execution",
+        "task_scope": "capability_family",
+        "success_criterion": "Count a finite combinatorial class with overlapping forbidden cases using inclusion–exclusion, and check a small instance by enumeration."
       },
       {
         "id": "MATH-CURI-mobius",
@@ -284,7 +315,10 @@
         "term_ids": [
           "math-t-0275",
           "math-t-0276"
-        ]
+        ],
+        "question_type": "execution",
+        "task_scope": "capability_family",
+        "success_criterion": "Recover local counts from valid cumulative subset or divisor totals and verify by summing back."
       },
       {
         "id": "MATH-CURI-automaton",
@@ -299,7 +333,9 @@
         "term_ids": [
           "math-t-0290",
           "math-t-0832"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "MATH-CURI-bottleneck",
@@ -313,7 +349,9 @@
         "term_ids": [
           "math-t-0329",
           "math-t-0330"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "MATH-CURI-connect",
@@ -327,7 +365,9 @@
         "term_ids": [
           "math-t-0325",
           "math-t-0326"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "MATH-CURI-treewidth",
@@ -341,7 +381,9 @@
         "term_ids": [
           "math-t-0348",
           "math-t-0345"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "MATH-CURI-primes",
@@ -354,7 +396,9 @@
         "context": "Select the mathematically consequential distinction before treating a source as applicable. TOC leads are not inspected results.",
         "term_ids": [
           "math-t-0207"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "MATH-CURI-approx-rational",
@@ -369,7 +413,9 @@
         "term_ids": [
           "math-t-0223",
           "math-t-0225"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "MATH-CURI-limit-integral",
@@ -384,7 +430,9 @@
         "term_ids": [
           "math-t-0424",
           "math-t-0470"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "MATH-CURI-uniform",
@@ -398,7 +446,9 @@
         "term_ids": [
           "math-t-0423",
           "math-t-0424"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "MATH-CURI-complete",
@@ -412,7 +462,9 @@
         "term_ids": [
           "math-t-0376",
           "math-t-0375"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "MATH-CURI-fp",
@@ -427,7 +479,9 @@
         "term_ids": [
           "math-t-0518",
           "math-t-0442"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "MATH-CURI-integrable",
@@ -442,7 +496,9 @@
         "term_ids": [
           "math-t-0466",
           "math-t-0430"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "MATH-CURI-unbounded",
@@ -457,7 +513,9 @@
         "term_ids": [
           "math-t-0500",
           "math-t-0530"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "MATH-CURI-holes",
@@ -471,7 +529,9 @@
         "term_ids": [
           "math-t-0401",
           "math-t-0399"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "MATH-CURI-compact",
@@ -486,7 +546,9 @@
         "term_ids": [
           "math-t-0379",
           "math-t-0498"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "MATH-CURI-sphere",
@@ -500,7 +562,9 @@
         "term_ids": [
           "math-t-0613",
           "math-t-0626"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "MATH-CURI-straight",
@@ -514,7 +578,9 @@
         "term_ids": [
           "math-t-0622",
           "math-t-0620"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "MATH-CURI-holomorphic",
@@ -528,7 +594,9 @@
         "term_ids": [
           "math-t-0545",
           "math-t-0556"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "MATH-CURI-residue",
@@ -542,7 +610,9 @@
         "term_ids": [
           "math-t-0567",
           "math-t-0563"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "MATH-CURI-prob-vs-data",
@@ -557,7 +627,9 @@
         "term_ids": [
           "math-t-0638",
           "math-t-0690"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "MATH-CURI-independence",
@@ -571,7 +643,9 @@
         "term_ids": [
           "math-t-0642",
           "math-t-0643"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "MATH-CURI-markov",
@@ -585,7 +659,9 @@
         "term_ids": [
           "math-t-0679",
           "math-t-0681"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "MATH-CURI-estimate",
@@ -599,7 +675,9 @@
         "term_ids": [
           "math-t-0708",
           "math-t-0705"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "MATH-CURI-sufficient",
@@ -614,7 +692,9 @@
         "term_ids": [
           "math-t-0698",
           "math-t-0703"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "MATH-CURI-pvalue",
@@ -629,7 +709,9 @@
         "term_ids": [
           "math-t-0725",
           "math-t-0721"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "MATH-CURI-transplant",
@@ -643,7 +725,9 @@
         "term_ids": [
           "math-t-0752",
           "math-t-0021"
-        ]
+        ],
+        "question_type": "transfer",
+        "task_scope": "conceptual"
       },
       {
         "id": "MATH-CURI-topo-algebra",
@@ -658,7 +742,9 @@
         "term_ids": [
           "math-t-0753",
           "math-t-0370"
-        ]
+        ],
+        "question_type": "transfer",
+        "task_scope": "conceptual"
       },
       {
         "id": "MATH-CURI-local-global",
@@ -673,7 +759,9 @@
         "term_ids": [
           "math-t-0626",
           "math-t-0401"
-        ]
+        ],
+        "question_type": "transfer",
+        "task_scope": "conceptual"
       },
       {
         "id": "MATH-CURI-operator",
@@ -687,7 +775,9 @@
         "term_ids": [
           "math-t-0749",
           "math-t-0745"
-        ]
+        ],
+        "question_type": "transfer",
+        "task_scope": "conceptual"
       },
       {
         "id": "MATH-CURI-counterexample",
@@ -702,7 +792,9 @@
         "term_ids": [
           "math-t-0026",
           "math-t-0786"
-        ]
+        ],
+        "question_type": "verification",
+        "task_scope": "capability_family"
       },
       {
         "id": "MATH-CURI-normal-word",
@@ -718,6 +810,788 @@
           "math-t-0127",
           "math-t-0656",
           "math-t-0097"
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
+      },
+      {
+        "id": "MATH-CAP-sets-operations",
+        "family_id": "foundations",
+        "question": "Can you construct unions, intersections, Cartesian products and functions from specified sets?",
+        "aliases": [],
+        "question_type": "execution",
+        "task_scope": "capability_family",
+        "bridge_ids": [
+          "STRUCTURE"
+        ],
+        "target_ids": [
+          "MATH-SETS"
+        ],
+        "success_criterion": "Carry out the indicated set operations, respecting element and pair identity; verify membership and cardinalities where finite.",
+        "term_ids": [
+          "math-t-0001",
+          "math-t-0007",
+          "math-t-0011"
+        ]
+      },
+      {
+        "id": "MATH-CAP-equivalence-relations",
+        "family_id": "foundations",
+        "question": "Can you determine whether a relation is an equivalence relation?",
+        "aliases": [],
+        "question_type": "verification",
+        "task_scope": "capability_family",
+        "bridge_ids": [
+          "STRUCTURE"
+        ],
+        "target_ids": [
+          "MATH-SETS"
+        ],
+        "success_criterion": "Check reflexivity, symmetry and transitivity separately; produce a violating pair/triple if a condition fails.",
+        "term_ids": [
+          "math-t-0001",
+          "math-t-0007",
+          "math-t-0011"
+        ]
+      },
+      {
+        "id": "MATH-CAP-quotient-sets",
+        "family_id": "foundations",
+        "question": "Can you construct equivalence classes and the quotient set of a relation?",
+        "aliases": [],
+        "question_type": "execution",
+        "task_scope": "capability_family",
+        "bridge_ids": [
+          "STRUCTURE"
+        ],
+        "target_ids": [
+          "MATH-MAPS"
+        ],
+        "success_criterion": "Find all distinct equivalence classes and verify they partition the carrier when the relation is an equivalence relation.",
+        "term_ids": [
+          "math-t-0762",
+          "math-t-0366",
+          "math-t-0745"
+        ]
+      },
+      {
+        "id": "MATH-CAP-injective-surjective",
+        "family_id": "foundations",
+        "question": "Can you prove or disprove that a function is injective, surjective or bijective?",
+        "aliases": [],
+        "question_type": "verification",
+        "task_scope": "capability_family",
+        "bridge_ids": [
+          "STRUCTURE"
+        ],
+        "target_ids": [
+          "MATH-MAPS"
+        ],
+        "success_criterion": "Apply each definition; exhibit collisions or missing outputs when necessary, and construct an inverse only when justified.",
+        "term_ids": [
+          "math-t-0762",
+          "math-t-0366",
+          "math-t-0745"
+        ]
+      },
+      {
+        "id": "MATH-CAP-row-reduction",
+        "family_id": "structures",
+        "question": "Can you perform Gaussian elimination and identify pivots and free variables?",
+        "aliases": [],
+        "question_type": "execution",
+        "task_scope": "capability_family",
+        "bridge_ids": [
+          "LINEAR"
+        ],
+        "target_ids": [
+          "MATH-VECTOR"
+        ],
+        "success_criterion": "Reach echelon or reduced echelon form through valid row operations; identify pivot and free columns and check row equivalence.",
+        "term_ids": [
+          "math-t-0055",
+          "math-t-0064",
+          "math-t-0066"
+        ]
+      },
+      {
+        "id": "MATH-CAP-linear-systems",
+        "family_id": "structures",
+        "question": "Can you solve a linear system and characterize all its solutions?",
+        "aliases": [],
+        "question_type": "execution",
+        "task_scope": "capability_family",
+        "bridge_ids": [
+          "LINEAR"
+        ],
+        "target_ids": [
+          "MATH-VECTOR"
+        ],
+        "success_criterion": "Distinguish inconsistent, unique and parameterized solutions; verify by substituting into the original equations.",
+        "term_ids": [
+          "math-t-0055",
+          "math-t-0064",
+          "math-t-0066"
+        ]
+      },
+      {
+        "id": "MATH-CAP-kernel-image",
+        "family_id": "structures",
+        "question": "Can you compute a linear map's kernel, image, rank and nullity?",
+        "aliases": [],
+        "question_type": "execution",
+        "task_scope": "capability_family",
+        "bridge_ids": [
+          "LINEAR"
+        ],
+        "target_ids": [
+          "MATH-VECTOR"
+        ],
+        "success_criterion": "Give bases for kernel and image and verify rank–nullity and the defining map equations.",
+        "term_ids": [
+          "math-t-0055",
+          "math-t-0064",
+          "math-t-0066"
+        ]
+      },
+      {
+        "id": "MATH-CAP-change-basis",
+        "family_id": "structures",
+        "question": "Can you change coordinates and compute a linear map's matrix in a new basis?",
+        "aliases": [],
+        "question_type": "execution",
+        "task_scope": "capability_family",
+        "bridge_ids": [
+          "LINEAR"
+        ],
+        "target_ids": [
+          "MATH-VECTOR"
+        ],
+        "success_criterion": "Construct an invertible change-of-basis matrix and check the transformed representation maps the same abstract vectors.",
+        "term_ids": [
+          "math-t-0055",
+          "math-t-0064",
+          "math-t-0066"
+        ]
+      },
+      {
+        "id": "MATH-CAP-eigenspaces",
+        "family_id": "structures",
+        "question": "Can you find eigenvalues and eigenspaces and decide whether a matrix diagonalizes?",
+        "aliases": [],
+        "question_type": "execution",
+        "task_scope": "capability_family",
+        "bridge_ids": [
+          "LINEAR"
+        ],
+        "target_ids": [
+          "MATH-SPECTRAL"
+        ],
+        "success_criterion": "Compute the characteristic polynomial and eigenspaces; produce a diagonalization or certify the deficiency of an eigenbasis.",
+        "term_ids": [
+          "math-t-0100",
+          "math-t-0088",
+          "math-t-0096"
+        ]
+      },
+      {
+        "id": "MATH-CAP-group-cosets",
+        "family_id": "structures",
+        "question": "Can you compute a group operation, its subgroups and cosets in concrete examples?",
+        "aliases": [],
+        "question_type": "execution",
+        "task_scope": "capability_family",
+        "bridge_ids": [
+          "STRUCTURE"
+        ],
+        "target_ids": [
+          "MATH-GROUP"
+        ],
+        "success_criterion": "Verify closure/identity/inverses as needed; list valid cosets and check partition and index relationships.",
+        "term_ids": [
+          "math-t-0110",
+          "math-t-0129",
+          "math-t-0127"
+        ]
+      },
+      {
+        "id": "MATH-CAP-orbit-stabilizer",
+        "family_id": "structures",
+        "question": "Can you compute orbits and stabilizers and use them to count symmetric configurations?",
+        "aliases": [],
+        "question_type": "execution",
+        "task_scope": "capability_family",
+        "bridge_ids": [
+          "STRUCTURE"
+        ],
+        "target_ids": [
+          "MATH-SYMMETRY"
+        ],
+        "success_criterion": "Identify the actual group action, compute orbits/stabilizers and check the orbit–stabilizer or Burnside count.",
+        "term_ids": [
+          "math-t-0120",
+          "math-t-0121",
+          "math-t-0122"
+        ]
+      },
+      {
+        "id": "MATH-CAP-polynomial-factor",
+        "family_id": "structures",
+        "question": "Can you factor polynomials or compute gcds over a specified ring or field?",
+        "aliases": [],
+        "question_type": "execution",
+        "task_scope": "capability_family",
+        "bridge_ids": [
+          "STRUCTURE"
+        ],
+        "target_ids": [
+          "MATH-RINGS"
+        ],
+        "success_criterion": "Respect the coefficient domain, perform justified divisions/factorizations and multiply back to check.",
+        "term_ids": [
+          "math-t-0159",
+          "math-t-0164",
+          "math-t-0173"
+        ]
+      },
+      {
+        "id": "MATH-CAP-hasse-diagram",
+        "family_id": "discrete",
+        "question": "Can you test whether a relation is a partial order and construct its Hasse diagram?",
+        "aliases": [],
+        "question_type": "execution",
+        "task_scope": "capability_family",
+        "bridge_ids": [
+          "DISCRETE"
+        ],
+        "target_ids": [
+          "MATH-ORDER"
+        ],
+        "success_criterion": "Verify order axioms; compute cover relations and reconstruct the order by transitive closure.",
+        "term_ids": [
+          "math-t-0049",
+          "math-t-0273",
+          "math-t-0276"
+        ]
+      },
+      {
+        "id": "MATH-CAP-euclidean-algorithm",
+        "family_id": "discrete",
+        "question": "Can you use the Euclidean algorithm to compute a gcd and a modular inverse?",
+        "aliases": [],
+        "question_type": "execution",
+        "task_scope": "capability_family",
+        "bridge_ids": [
+          "ARITHMETIC"
+        ],
+        "target_ids": [
+          "MATH-ARITH"
+        ],
+        "success_criterion": "Compute gcd and Bézout coefficients, and verify the inverse congruence when gcd is one.",
+        "term_ids": [
+          "math-t-0209",
+          "math-t-0204",
+          "math-t-0211"
+        ]
+      },
+      {
+        "id": "MATH-CAP-congruence-systems",
+        "family_id": "discrete",
+        "question": "Can you solve simultaneous congruences and determine when a solution exists?",
+        "aliases": [],
+        "question_type": "execution",
+        "task_scope": "capability_family",
+        "bridge_ids": [
+          "ARITHMETIC"
+        ],
+        "target_ids": [
+          "MATH-ARITH"
+        ],
+        "success_criterion": "Apply compatibility conditions and appropriate CRT form; substitute the solution into every congruence.",
+        "term_ids": [
+          "math-t-0209",
+          "math-t-0204",
+          "math-t-0211"
+        ]
+      },
+      {
+        "id": "MATH-CAP-continued-fractions",
+        "family_id": "discrete",
+        "question": "Can you compute continued-fraction convergents and bound rational approximation error?",
+        "aliases": [],
+        "question_type": "execution",
+        "task_scope": "capability_family",
+        "bridge_ids": [
+          "ARITHMETIC"
+        ],
+        "target_ids": [
+          "MATH-RATIONAL"
+        ],
+        "success_criterion": "Compute convergents and check denominator restrictions and numerical/error bounds.",
+        "term_ids": [
+          "math-t-0223",
+          "math-t-0224",
+          "math-t-0225"
+        ]
+      },
+      {
+        "id": "MATH-CAP-inclusion-exclusion",
+        "family_id": "discrete",
+        "question": "Can you use inclusion–exclusion to count objects with overlapping restrictions?",
+        "aliases": [],
+        "question_type": "execution",
+        "task_scope": "capability_family",
+        "bridge_ids": [
+          "DISCRETE"
+        ],
+        "target_ids": [
+          "MATH-COUNT"
+        ],
+        "success_criterion": "Define the forbidden sets, compute alternating intersections and independently check a small instance.",
+        "term_ids": [
+          "math-t-0245",
+          "math-t-0265",
+          "math-t-0259"
+        ]
+      },
+      {
+        "id": "MATH-CAP-mobius-inversion",
+        "family_id": "discrete",
+        "question": "Can you recover local counts from divisor or subset totals using Möbius inversion?",
+        "aliases": [],
+        "question_type": "execution",
+        "task_scope": "capability_family",
+        "bridge_ids": [
+          "DISCRETE"
+        ],
+        "target_ids": [
+          "MATH-MOBIUS"
+        ],
+        "success_criterion": "Invert the appropriate incidence relation and verify by reconstructing cumulative totals.",
+        "term_ids": [
+          "math-t-0275",
+          "math-t-0276",
+          "math-t-0049"
+        ]
+      },
+      {
+        "id": "MATH-CAP-generating-functions",
+        "family_id": "discrete",
+        "question": "Can you construct generating functions and extract coefficients for a counting problem?",
+        "aliases": [],
+        "question_type": "execution",
+        "task_scope": "capability_family",
+        "bridge_ids": [
+          "DISCRETE"
+        ],
+        "target_ids": [
+          "MATH-GENFUN"
+        ],
+        "success_criterion": "Specify the combinatorial class and its generating function, then recover small coefficients by direct counting.",
+        "term_ids": [
+          "math-t-0283",
+          "math-t-0290",
+          "math-t-0287"
+        ]
+      },
+      {
+        "id": "MATH-CAP-graph-connectivity",
+        "family_id": "discrete",
+        "question": "Can you test graph connectivity and construct spanning trees or separating cuts?",
+        "aliases": [],
+        "question_type": "execution",
+        "task_scope": "capability_family",
+        "bridge_ids": [
+          "DISCRETE"
+        ],
+        "target_ids": [
+          "MATH-GRAPH"
+        ],
+        "success_criterion": "Provide a witness tree/path or separation certificate and verify it on the original graph.",
+        "term_ids": [
+          "math-t-0296",
+          "math-t-0306",
+          "math-t-0319"
+        ]
+      },
+      {
+        "id": "MATH-CAP-max-flow",
+        "family_id": "discrete",
+        "question": "Can you calculate a maximum flow and certify it with a minimum cut?",
+        "aliases": [],
+        "question_type": "execution",
+        "task_scope": "capability_family",
+        "bridge_ids": [
+          "DISCRETE"
+        ],
+        "target_ids": [
+          "MATH-FLOW"
+        ],
+        "success_criterion": "Show feasible edge flows satisfying conservation/capacities and a cut of equal capacity.",
+        "term_ids": [
+          "math-t-0330",
+          "math-t-0329",
+          "math-t-0325"
+        ]
+      },
+      {
+        "id": "MATH-CAP-epsilon-proofs",
+        "family_id": "continuous",
+        "question": "Can you prove a sequence converges using an epsilon–N argument?",
+        "aliases": [],
+        "question_type": "verification",
+        "task_scope": "capability_family",
+        "bridge_ids": [
+          "CONTINUOUS"
+        ],
+        "target_ids": [
+          "MATH-LIMITS"
+        ],
+        "success_criterion": "Given a claimed limit, produce a valid N for arbitrary positive epsilon and justify all inequalities.",
+        "term_ids": [
+          "math-t-0424",
+          "math-t-0423",
+          "math-t-0449"
+        ]
+      },
+      {
+        "id": "MATH-CAP-pointwise-uniform",
+        "family_id": "continuous",
+        "question": "Can you decide whether a sequence of functions converges pointwise or uniformly?",
+        "aliases": [],
+        "question_type": "verification",
+        "task_scope": "capability_family",
+        "bridge_ids": [
+          "CONTINUOUS"
+        ],
+        "target_ids": [
+          "MATH-LIMITS"
+        ],
+        "success_criterion": "Find the pointwise limit, quantify the sup-norm error or produce a failure witness for uniform convergence.",
+        "term_ids": [
+          "math-t-0424",
+          "math-t-0423",
+          "math-t-0449"
+        ]
+      },
+      {
+        "id": "MATH-CAP-limit-interchange",
+        "family_id": "continuous",
+        "question": "Can you justify or refute exchanging a limit with an integral?",
+        "aliases": [],
+        "question_type": "verification",
+        "task_scope": "capability_family",
+        "bridge_ids": [
+          "CONTINUOUS"
+        ],
+        "target_ids": [
+          "MATH-INTEGRAL"
+        ],
+        "success_criterion": "Check the applicable convergence hypotheses, or calculate a counterexample with different limit/integral values.",
+        "term_ids": [
+          "math-t-0466",
+          "math-t-0470",
+          "math-t-0468"
+        ]
+      },
+      {
+        "id": "MATH-CAP-completeness",
+        "family_id": "continuous",
+        "question": "Can you determine whether a metric space is complete using Cauchy sequences?",
+        "aliases": [],
+        "question_type": "verification",
+        "task_scope": "capability_family",
+        "bridge_ids": [
+          "CONTINUOUS"
+        ],
+        "target_ids": [
+          "MATH-COMPLETE"
+        ],
+        "success_criterion": "Prove convergence within the space for every Cauchy sequence, or exhibit one whose limit leaves it.",
+        "term_ids": [
+          "math-t-0375",
+          "math-t-0376",
+          "math-t-0498"
+        ]
+      },
+      {
+        "id": "MATH-CAP-lp-norms",
+        "family_id": "continuous",
+        "question": "Can you compute Lp norms and distinguish norm, pointwise and weak convergence?",
+        "aliases": [],
+        "question_type": "execution",
+        "task_scope": "capability_family",
+        "bridge_ids": [
+          "CONTINUOUS"
+        ],
+        "target_ids": [
+          "MATH-FUNCTIONS"
+        ],
+        "success_criterion": "Evaluate norms under the stated measure and check each convergence criterion without conflating them.",
+        "term_ids": [
+          "math-t-0482",
+          "math-t-0499",
+          "math-t-0509"
+        ]
+      },
+      {
+        "id": "MATH-CAP-fixed-point",
+        "family_id": "continuous",
+        "question": "Can you apply the contraction mapping theorem to certify and approximate a fixed point?",
+        "aliases": [],
+        "question_type": "verification",
+        "task_scope": "capability_family",
+        "bridge_ids": [
+          "CONTINUOUS"
+        ],
+        "target_ids": [
+          "MATH-FIXED"
+        ],
+        "success_criterion": "Verify completeness, self-map and contraction hypotheses; bound approximation error after iteration.",
+        "term_ids": [
+          "math-t-0518",
+          "math-t-0442",
+          "math-t-0376"
+        ]
+      },
+      {
+        "id": "MATH-CAP-residue-integral",
+        "family_id": "continuous",
+        "question": "Can you calculate contour integrals using residues?",
+        "aliases": [],
+        "question_type": "execution",
+        "task_scope": "capability_family",
+        "bridge_ids": [
+          "SPACE"
+        ],
+        "target_ids": [
+          "MATH-RESIDUES"
+        ],
+        "success_criterion": "Identify singularities inside the contour, compute residues and apply the residue theorem with orientation correct.",
+        "term_ids": [
+          "math-t-0567",
+          "math-t-0565",
+          "math-t-0563"
+        ]
+      },
+      {
+        "id": "MATH-CAP-topological-continuity",
+        "family_id": "space",
+        "question": "Can you test continuity using inverse images of open sets?",
+        "aliases": [],
+        "question_type": "verification",
+        "task_scope": "capability_family",
+        "bridge_ids": [
+          "SPACE"
+        ],
+        "target_ids": [
+          "MATH-TOPOLOGY"
+        ],
+        "success_criterion": "Check the inverse image criterion under the specified source/target topologies, or provide a violating open set.",
+        "term_ids": [
+          "math-t-0355",
+          "math-t-0365",
+          "math-t-0366"
+        ]
+      },
+      {
+        "id": "MATH-CAP-compactness-test",
+        "family_id": "space",
+        "question": "Can you prove or disprove compactness in a specified topological or metric space?",
+        "aliases": [],
+        "question_type": "verification",
+        "task_scope": "capability_family",
+        "bridge_ids": [
+          "PROOF"
+        ],
+        "target_ids": [
+          "MATH-COMPACT"
+        ],
+        "success_criterion": "Apply valid compactness criteria for the ambient space; exhibit a cover or sequence counterexample when appropriate.",
+        "term_ids": [
+          "math-t-0379",
+          "math-t-0381",
+          "math-t-0498"
+        ]
+      },
+      {
+        "id": "MATH-CAP-fundamental-group",
+        "family_id": "space",
+        "question": "Can you compute the fundamental group of standard spaces using loops and deformation?",
+        "aliases": [],
+        "question_type": "execution",
+        "task_scope": "capability_family",
+        "bridge_ids": [
+          "SPACE"
+        ],
+        "target_ids": [
+          "MATH-LOOPS"
+        ],
+        "success_criterion": "Identify a basepoint and justified homotopy/deformation or covering argument; classify the resulting loop classes.",
+        "term_ids": [
+          "math-t-0401",
+          "math-t-0399",
+          "math-t-0402"
+        ]
+      },
+      {
+        "id": "MATH-CAP-surface-curvature",
+        "family_id": "space",
+        "question": "Can you compute the first fundamental form and Gaussian curvature of a parametrized surface?",
+        "aliases": [],
+        "question_type": "execution",
+        "task_scope": "capability_family",
+        "bridge_ids": [
+          "SPACE"
+        ],
+        "target_ids": [
+          "MATH-CURVATURE"
+        ],
+        "success_criterion": "Calculate metric coefficients and curvature from a regular parametrization and check known special cases.",
+        "term_ids": [
+          "math-t-0606",
+          "math-t-0613",
+          "math-t-0626"
+        ]
+      },
+      {
+        "id": "MATH-CAP-geodesic-equations",
+        "family_id": "space",
+        "question": "Can you derive and solve geodesic equations from a given metric?",
+        "aliases": [],
+        "question_type": "execution",
+        "task_scope": "capability_family",
+        "bridge_ids": [
+          "SPACE"
+        ],
+        "target_ids": [
+          "MATH-GEODESIC"
+        ],
+        "success_criterion": "Compute needed Christoffel symbols/equations, verify candidate curves and distinguish local from global minimality.",
+        "term_ids": [
+          "math-t-0622",
+          "math-t-0620",
+          "math-t-0625"
+        ]
+      },
+      {
+        "id": "MATH-CAP-conditional-bayes",
+        "family_id": "random",
+        "question": "Can you compute conditional probabilities and apply Bayes' rule?",
+        "aliases": [],
+        "question_type": "execution",
+        "task_scope": "capability_family",
+        "bridge_ids": [
+          "RANDOM"
+        ],
+        "target_ids": [
+          "MATH-PROB"
+        ],
+        "success_criterion": "State the event model, check nonzero denominators and verify the conditional probabilities by the joint law.",
+        "term_ids": [
+          "math-t-0635",
+          "math-t-0643",
+          "math-t-0642"
+        ]
+      },
+      {
+        "id": "MATH-CAP-independence",
+        "family_id": "random",
+        "question": "Can you test whether random variables or events are independent?",
+        "aliases": [],
+        "question_type": "verification",
+        "task_scope": "capability_family",
+        "bridge_ids": [
+          "RANDOM"
+        ],
+        "target_ids": [
+          "MATH-PROB"
+        ],
+        "success_criterion": "Compare joint probabilities to products of marginals and provide a counterexample when dependence occurs.",
+        "term_ids": [
+          "math-t-0635",
+          "math-t-0643",
+          "math-t-0642"
+        ]
+      },
+      {
+        "id": "MATH-CAP-markov-stationary",
+        "family_id": "random",
+        "question": "Can you compute a Markov chain's stationary distributions and check convergence?",
+        "aliases": [],
+        "question_type": "execution",
+        "task_scope": "capability_family",
+        "bridge_ids": [
+          "RANDOM"
+        ],
+        "target_ids": [
+          "MATH-STOCHASTIC"
+        ],
+        "success_criterion": "Solve pi P=pi with normalization and check irreducibility/aperiodicity rather than assuming convergence.",
+        "term_ids": [
+          "math-t-0669",
+          "math-t-0679",
+          "math-t-0677"
+        ]
+      },
+      {
+        "id": "MATH-CAP-maximum-likelihood",
+        "family_id": "random",
+        "question": "Can you derive a maximum-likelihood estimator from a specified statistical model?",
+        "aliases": [],
+        "question_type": "execution",
+        "task_scope": "capability_family",
+        "bridge_ids": [
+          "RANDOM"
+        ],
+        "target_ids": [
+          "MATH-ESTIMATE"
+        ],
+        "success_criterion": "Write the likelihood with its domain, optimize including boundaries and verify the candidate's admissibility.",
+        "term_ids": [
+          "math-t-0696",
+          "math-t-0703",
+          "math-t-0708"
+        ]
+      },
+      {
+        "id": "MATH-CAP-confidence-interval",
+        "family_id": "random",
+        "question": "Can you construct a confidence interval and state its coverage assumptions?",
+        "aliases": [],
+        "question_type": "execution",
+        "task_scope": "capability_family",
+        "bridge_ids": [
+          "RANDOM"
+        ],
+        "target_ids": [
+          "MATH-STAT"
+        ],
+        "success_criterion": "Choose a procedure appropriate to the sampling model and quantify its repeated-sampling coverage.",
+        "term_ids": [
+          "math-t-0690",
+          "math-t-0695",
+          "math-t-0698"
+        ]
+      },
+      {
+        "id": "MATH-CAP-hypothesis-test",
+        "family_id": "random",
+        "question": "Can you calculate a test statistic, p-value and decision for a specified null model?",
+        "aliases": [],
+        "question_type": "execution",
+        "task_scope": "capability_family",
+        "bridge_ids": [
+          "RANDOM"
+        ],
+        "target_ids": [
+          "MATH-TEST"
+        ],
+        "success_criterion": "Compute the null reference distribution and tail probability and distinguish the result from P(H0|data).",
+        "term_ids": [
+          "math-t-0725",
+          "math-t-0721",
+          "math-t-0718"
         ]
       }
     ],
@@ -875,7 +1749,9 @@
         "math-t-0032",
         "math-t-0110",
         "math-t-0129"
-      ]
+      ],
+      "question_type": "transfer",
+      "task_scope": "open_goal"
     },
     {
       "id": "PROOF",
@@ -1027,7 +1903,9 @@
         "math-t-0423",
         "math-t-0449",
         "math-t-0466"
-      ]
+      ],
+      "question_type": "decomposition",
+      "task_scope": "open_goal"
     },
     {
       "id": "LINEAR",
@@ -1147,7 +2025,9 @@
         "math-t-0521",
         "math-t-0482",
         "math-t-0499"
-      ]
+      ],
+      "question_type": "transfer",
+      "task_scope": "open_goal"
     },
     {
       "id": "DISCRETE",
@@ -1311,7 +2191,9 @@
         "math-t-0283",
         "math-t-0290",
         "math-t-0287"
-      ]
+      ],
+      "question_type": "transfer",
+      "task_scope": "open_goal"
     },
     {
       "id": "CONTINUOUS",
@@ -1460,7 +2342,9 @@
         "math-t-0376",
         "math-t-0498",
         "math-t-0518"
-      ]
+      ],
+      "question_type": "decomposition",
+      "task_scope": "open_goal"
     },
     {
       "id": "SPACE",
@@ -1610,7 +2494,9 @@
         "math-t-0613",
         "math-t-0626",
         "math-t-0622"
-      ]
+      ],
+      "question_type": "transfer",
+      "task_scope": "open_goal"
     },
     {
       "id": "RANDOM",
@@ -1746,7 +2632,9 @@
         "math-t-0690",
         "math-t-0695",
         "math-t-0698"
-      ]
+      ],
+      "question_type": "decomposition",
+      "task_scope": "open_goal"
     },
     {
       "id": "TRANSFER",
@@ -1902,6 +2790,72 @@
         "math-t-0150",
         "math-t-0159",
         "math-t-0164"
+      ],
+      "question_type": "transfer",
+      "task_scope": "open_goal"
+    },
+    {
+      "id": "ARITHMETIC",
+      "question": "Which number-theoretic operation should be executed?",
+      "question_type": "execution",
+      "task_scope": "capability_family",
+      "choices": [
+        {
+          "label": "Compute congruences and arithmetic invariants",
+          "technical_title": "Compute congruences and arithmetic invariants",
+          "distinguishing_question": "Which arithmetic input and invariant make this procedure applicable?",
+          "why": "Use a congruence or gcd computation and verify the resulting certificate.",
+          "targets": [
+            "MATH-ARITH"
+          ],
+          "section_targets": [
+            {
+              "source_id": "HARDY",
+              "ref": "V",
+              "level": "toc_only",
+              "why": "V: Congruences and Residues · printed p. 57"
+            },
+            {
+              "source_id": "HARDY",
+              "ref": "XVI",
+              "level": "toc_only",
+              "why": "XVI: The Arithmetical Functions · printed p. 302"
+            }
+          ],
+          "term_ids": [
+            "math-t-0209",
+            "math-t-0204",
+            "math-t-0211"
+          ]
+        },
+        {
+          "label": "Find rational approximations from continued fractions",
+          "technical_title": "Find rational approximations from continued fractions",
+          "distinguishing_question": "Which arithmetic input and invariant make this procedure applicable?",
+          "why": "Bound the approximation error under a denominator constraint.",
+          "targets": [
+            "MATH-RATIONAL"
+          ],
+          "section_targets": [
+            {
+              "source_id": "HARDY",
+              "ref": "III",
+              "level": "toc_only",
+              "why": "III: Farey Series and a Theorem of Minkowski"
+            },
+            {
+              "source_id": "HARDY",
+              "ref": "X",
+              "level": "inspected",
+              "why": "X: Continued Fractions"
+            }
+          ],
+          "term_ids": [
+            "math-t-0223",
+            "math-t-0224",
+            "math-t-0225"
+          ]
+        }
       ]
     }
   ],
@@ -2376,7 +3330,9 @@
           "mechanism": "Give objects structure, use structure-preserving transformations, derive invariants, use limits or counts to investigate, and prove conclusions under precise hypotheses. Distinct mathematical fields are overlapping toolkits, not book-bound taxonomies.",
           "discriminating_observation": "Use one set and make it a group, ordered set and topological space; list which map types preserve each."
         }
-      ]
+      ],
+      "question_type": "explanation",
+      "task_scope": "conceptual"
     },
     {
       "id": "MATH-CROSS",
@@ -2441,7 +3397,9 @@
           "mechanism": "Quotienting, inversion, duality, completion, spectral decomposition and structure-preserving maps recur across mathematics, but require distinct domain and compatibility contracts.",
           "discriminating_observation": "Transport one construction to a second structure, then find an assumption under which it fails."
         }
-      ]
+      ],
+      "question_type": "transfer",
+      "task_scope": "conceptual"
     }
   ],
   "relations": [
@@ -3052,5 +4010,6 @@
     "probability-and-statistics/investigation.json",
     "discrete-mathematics/investigation.json"
   ],
-  "glossary_candidate_path": "vocabulary_candidates.json"
+  "glossary_candidate_path": "vocabulary_candidates.json",
+  "question_type_taxonomy": "QUESTION_TYPES.md"
 }
