@@ -81,7 +81,7 @@
     },
     {
       "id": "mathematics-curiosities",
-      "title": "Mathematics — Explore structures, proofs, invariants and investigations",
+      "title": "Mathematics — Explore operational capabilities, proofs and conceptual investigations",
       "short_title": "Mathematics",
       "shared_reader_id": "mathematics",
       "file": "Investigations/mathematics/investigation.json",
