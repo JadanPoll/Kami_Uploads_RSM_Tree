@@ -7410,7 +7410,9 @@
           "elec-t-0118",
           "elec-t-0138",
           "elec-t-0018"
-        ]
+        ],
+        "question_type": "design",
+        "task_scope": "open_goal"
       },
       {
         "id": "ELEC-CURI-regulate",
@@ -7468,7 +7470,9 @@
         "term_ids": [
           "elec-t-0386",
           "elec-t-0388"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "ELEC-CURI-analog-compute",
@@ -7487,7 +7491,9 @@
           "elec-t-0148",
           "elec-t-0188",
           "elec-t-0118"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "ELEC-CURI-hot",
@@ -7543,7 +7549,9 @@
           "elec-t-0128",
           "elec-t-0123",
           "elec-t-0120"
-        ]
+        ],
+        "question_type": "diagnosis",
+        "task_scope": "conceptual"
       },
       {
         "id": "ELEC-CURI-droops",
@@ -7563,7 +7571,9 @@
           "elec-t-0568",
           "elec-t-0386",
           "elec-t-0388"
-        ]
+        ],
+        "question_type": "diagnosis",
+        "task_scope": "conceptual"
       },
       {
         "id": "ELEC-CURI-wrong-way",
@@ -7579,7 +7589,9 @@
         "term_ids": [
           "elec-t-0170",
           "elec-t-0406"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "ELEC-CURI-light-load",
@@ -7595,7 +7607,9 @@
         "term_ids": [
           "elec-t-0435",
           "elec-t-0480"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "ELEC-CURI-transformer",
@@ -7612,7 +7626,9 @@
           "elec-t-0488",
           "elec-t-0492",
           "elec-t-0428"
-        ]
+        ],
+        "question_type": "diagnosis",
+        "task_scope": "conceptual"
       },
       {
         "id": "ELEC-CURI-scope",
@@ -7667,7 +7683,9 @@
           "elec-t-0296",
           "elec-t-0293",
           "elec-t-0197"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "ELEC-CURI-model",
@@ -7684,7 +7702,9 @@
           "elec-t-0248",
           "elec-t-0249",
           "elec-t-0244"
-        ]
+        ],
+        "question_type": "verification",
+        "task_scope": "conceptual"
       },
       {
         "id": "ELEC-CURI-edge",
@@ -7701,7 +7721,9 @@
           "elec-t-0256",
           "elec-t-0258",
           "elec-t-0329"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "ELEC-CURI-ringing",
@@ -7718,7 +7740,9 @@
           "elec-t-0335",
           "elec-t-0336",
           "elec-t-0337"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "ELEC-CURI-ground",
@@ -7734,7 +7758,9 @@
         "term_ids": [
           "elec-t-0352",
           "elec-t-0364"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "ELEC-CURI-crosstalk",
@@ -7752,7 +7778,9 @@
         "term_ids": [
           "elec-t-0211",
           "elec-t-0353"
-        ]
+        ],
+        "question_type": "diagnosis",
+        "task_scope": "conceptual"
       },
       {
         "id": "ELEC-CURI-clock",
@@ -7768,7 +7796,9 @@
         "term_ids": [
           "elec-t-0270",
           "elec-t-0271"
-        ]
+        ],
+        "question_type": "diagnosis",
+        "task_scope": "conceptual"
       },
       {
         "id": "ELEC-CURI-via",
@@ -7785,7 +7815,9 @@
           "elec-t-0372",
           "elec-t-0376",
           "elec-t-0028"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "ELEC-CURI-isolate",
@@ -7801,7 +7833,9 @@
         "term_ids": [
           "elec-t-0051",
           "elec-t-0481"
-        ]
+        ],
+        "question_type": "design",
+        "task_scope": "open_goal"
       },
       {
         "id": "ELEC-CURI-efficiency",
@@ -7819,7 +7853,9 @@
           "elec-t-0441",
           "elec-t-0440",
           "elec-t-0444"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "ELEC-CURI-digital",
@@ -7835,7 +7871,9 @@
         "term_ids": [
           "elec-t-0554",
           "elec-t-0558"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "ELEC-CURI-magnetic",
@@ -7852,7 +7890,9 @@
           "elec-t-0481",
           "elec-t-0488",
           "elec-t-0480"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "ELEC-CURI-ac",
@@ -7870,7 +7910,9 @@
           "elec-t-0423",
           "elec-t-0424",
           "elec-t-0051"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "ELEC-CURI-choose",
@@ -7888,7 +7930,9 @@
           "elec-t-0118",
           "elec-t-0285",
           "elec-t-0286"
-        ]
+        ],
+        "question_type": "design",
+        "task_scope": "open_goal"
       },
       {
         "id": "ELEC-CURI-sensor",
@@ -7905,7 +7949,9 @@
           "elec-t-0293",
           "elec-t-0291",
           "elec-t-0313"
-        ]
+        ],
+        "question_type": "design",
+        "task_scope": "open_goal"
       },
       {
         "id": "ELEC-CURI-board",
@@ -7923,7 +7969,9 @@
           "elec-t-0585",
           "elec-t-0363",
           "elec-t-0058"
-        ]
+        ],
+        "question_type": "decomposition",
+        "task_scope": "open_goal"
       },
       {
         "id": "ELEC-CURI-safe",
@@ -7941,7 +7989,9 @@
           "elec-t-0612",
           "elec-t-0050",
           "elec-t-0611"
-        ]
+        ],
+        "question_type": "design",
+        "task_scope": "open_goal"
       },
       {
         "id": "ELEC-CURI-confidence",
@@ -7959,7 +8009,9 @@
           "elec-t-0622",
           "elec-t-0244",
           "elec-t-0625"
-        ]
+        ],
+        "question_type": "verification",
+        "task_scope": "conceptual"
       },
       {
         "id": "ELEC-CURI-compatibility",
@@ -7977,7 +8029,9 @@
           "elec-t-0617",
           "elec-t-0598",
           "elec-t-0585"
-        ]
+        ],
+        "question_type": "diagnosis",
+        "task_scope": "conceptual"
       },
       {
         "id": "ELEC-CAP-buck-calculation",
