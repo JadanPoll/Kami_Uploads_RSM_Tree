@@ -1433,7 +1433,9 @@
           "mechanism": "Pointwise convergence uses input-dependent thresholds, while uniform convergence controls every point simultaneously. Integration, differentiation and summation require suitable convergence hypotheses; Rudin gives explicit contrary examples.",
           "discriminating_observation": "Calculate integrals of a spiky pointwise-vanishing function sequence."
         }
-      ]
+      ],
+      "question_type": "explanation",
+      "task_scope": "conceptual"
     },
     {
       "id": "MATH-COMPLETE",
@@ -1487,7 +1489,9 @@
           "mechanism": "Completeness is the property that Cauchy sequences converge within the space. Banach and Hilbert spaces retain limits needed for operator and fixed-point arguments.",
           "discriminating_observation": "Take rational approximations to sqrt(2), contrasting Q with R."
         }
-      ]
+      ],
+      "question_type": "explanation",
+      "task_scope": "conceptual"
     },
     {
       "id": "MATH-MEASURE",
@@ -1541,7 +1545,9 @@
           "mechanism": "Sigma-algebras encode permitted measurable events; countably additive measures assign size. Lebesgue's theory includes non-measurable set counterexamples showing a boundary to unrestricted intuitive volume.",
           "discriminating_observation": "Compare length, counting measure and probability on the same measurable carrier."
         }
-      ]
+      ],
+      "question_type": "explanation",
+      "task_scope": "conceptual"
     },
     {
       "id": "MATH-INTEGRAL",
@@ -1585,7 +1591,9 @@
           "mechanism": "Monotone and dominated convergence use explicit hypotheses to move limits through integrals; measurable simple approximations build the integral from below.",
           "discriminating_observation": "Find a pointwise-convergent family that lacks a common integrable dominating function."
         }
-      ]
+      ],
+      "question_type": "explanation",
+      "task_scope": "conceptual"
     },
     {
       "id": "MATH-FUNCTIONS",
@@ -1639,7 +1647,9 @@
           "mechanism": "Lp norms and Hilbert inner products give geometry to function classes; weak and strong convergence describe distinct observational limits. Functions differing almost everywhere may represent one Lp element.",
           "discriminating_observation": "Construct a norm-one orthonormal sequence weakly convergent to zero."
         }
-      ]
+      ],
+      "question_type": "explanation",
+      "task_scope": "conceptual"
     },
     {
       "id": "MATH-OPERATOR",
@@ -1693,7 +1703,9 @@
           "mechanism": "Hahn–Banach and bounded/closed graph theorems analyze linear functionals and operators. Unbounded operators have domains and spectra whose analysis requires more than finite-dimensional eigenvector intuition.",
           "discriminating_observation": "Show why differentiation fails to be bounded on a naive L2 normed domain."
         }
-      ]
+      ],
+      "question_type": "explanation",
+      "task_scope": "conceptual"
     },
     {
       "id": "MATH-FIXED",
@@ -1737,7 +1749,9 @@
           "mechanism": "Banach's contraction theorem couples a complete metric space with an invariant contraction to guarantee a unique fixed point and convergent iteration.",
           "discriminating_observation": "Compare x→x/2 with a noncontracting iteration."
         }
-      ]
+      ],
+      "question_type": "explanation",
+      "task_scope": "conceptual"
     },
     {
       "id": "MATH-HOLO",
@@ -1781,7 +1795,9 @@
           "mechanism": "Holomorphicity links the Cauchy–Riemann equations, contour integrals and analytic rigidity; Cauchy's formula recovers interior values from boundary data.",
           "discriminating_observation": "Contrast z² and complex conjugation under Cauchy–Riemann."
         }
-      ]
+      ],
+      "question_type": "explanation",
+      "task_scope": "conceptual"
     },
     {
       "id": "MATH-RESIDUES",
@@ -1825,7 +1841,9 @@
           "mechanism": "Laurent coefficients and residues turn closed-contour integrals into local singular contributions, subject to decay, branch and region assumptions.",
           "discriminating_observation": "Compare a rational integral with and without an admissible decaying semicircular contour."
         }
-      ]
+      ],
+      "question_type": "explanation",
+      "task_scope": "conceptual"
     }
   ],
   "source_coverage": {
@@ -1892,6 +1910,13 @@
     "MATH-CURI-infinite-operator",
     "MATH-CURI-dual",
     "MATH-CURI-compact",
-    "MATH-CURI-counterexample"
+    "MATH-CURI-counterexample",
+    "MATH-CAP-epsilon-proofs",
+    "MATH-CAP-pointwise-uniform",
+    "MATH-CAP-limit-interchange",
+    "MATH-CAP-completeness",
+    "MATH-CAP-lp-norms",
+    "MATH-CAP-fixed-point",
+    "MATH-CAP-residue-integral"
   ]
 }
