@@ -4343,7 +4343,9 @@
           "mfg-t-0044",
           "mfg-t-0068",
           "mfg-t-0133"
-        ]
+        ],
+        "question_type": "diagnosis",
+        "task_scope": "conceptual"
       },
       {
         "id": "MFG-CURI-printed-clip",
@@ -4375,7 +4377,9 @@
           "mfg-t-0044",
           "mfg-t-0013",
           "mfg-t-0068"
-        ]
+        ],
+        "question_type": "diagnosis",
+        "task_scope": "conceptual"
       },
       {
         "id": "MFG-CURI-bend-strong",
@@ -4438,7 +4442,9 @@
           "mfg-t-0038",
           "mfg-t-0039",
           "mfg-t-0004"
-        ]
+        ],
+        "question_type": "design",
+        "task_scope": "open_goal"
       },
       {
         "id": "MFG-CURI-repeated-spring",
@@ -4501,7 +4507,9 @@
           "mfg-t-0140",
           "mfg-t-0077",
           "mfg-t-0109"
-        ]
+        ],
+        "question_type": "diagnosis",
+        "task_scope": "conceptual"
       },
       {
         "id": "MFG-CURI-holes-small",
@@ -4530,7 +4538,9 @@
           "mfg-t-0140",
           "mfg-t-0077",
           "mfg-t-0109"
-        ]
+        ],
+        "question_type": "diagnosis",
+        "task_scope": "conceptual"
       },
       {
         "id": "MFG-CURI-wobble",
@@ -4563,7 +4573,9 @@
           "mfg-t-0133",
           "mfg-t-0139",
           "mfg-t-0060"
-        ]
+        ],
+        "question_type": "diagnosis",
+        "task_scope": "conceptual"
       },
       {
         "id": "MFG-CURI-return-drift",
@@ -4655,7 +4667,9 @@
           "mfg-t-0011",
           "mfg-t-0025",
           "mfg-t-0026"
-        ]
+        ],
+        "question_type": "design",
+        "task_scope": "open_goal"
       },
       {
         "id": "MFG-CURI-heavy-load",
@@ -4785,7 +4799,9 @@
           "mfg-t-0071",
           "mfg-t-0117",
           "mfg-t-0114"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "MFG-CURI-no-heat",
