@@ -472,7 +472,9 @@
           "mechanism": "Open sets and their inverse images define continuity; homeomorphism is a reversible topology-preserving relationship. Metrics are additional structure, not the definition of all topology.",
           "discriminating_observation": "Create two distinct topologies on the same set and see which functions remain continuous."
         }
-      ]
+      ],
+      "question_type": "explanation",
+      "task_scope": "conceptual"
     },
     {
       "id": "MATH-COMPACT",
@@ -526,7 +528,9 @@
           "mechanism": "Compactness gives finite subcovers and powers many extrema/subsequence principles. Heine–Borel closed-and-bounded criteria are specific to finite-dimensional Euclidean settings.",
           "discriminating_observation": "Compare bounded sequences in R^n and l2 for convergent subsequences."
         }
-      ]
+      ],
+      "question_type": "explanation",
+      "task_scope": "conceptual"
     },
     {
       "id": "MATH-LOOPS",
@@ -580,7 +584,9 @@
           "mechanism": "Homotopy classes of loops define the fundamental group; coverings and van Kampen assemble global topology from local pieces under overlap conditions.",
           "discriminating_observation": "Contract a loop on a disk, then explain why its analogue cannot shrink around an annular hole."
         }
-      ]
+      ],
+      "question_type": "explanation",
+      "task_scope": "conceptual"
     },
     {
       "id": "MATH-CURVATURE",
@@ -624,7 +630,9 @@
           "mechanism": "The intrinsic first fundamental form measures lengths and angles; Gaussian curvature and Gauss–Bonnet connect local geometry with Euler-characteristic topology.",
           "discriminating_observation": "Contrast sphere, cylinder and plane via intrinsic distances and total curvature."
         }
-      ]
+      ],
+      "question_type": "explanation",
+      "task_scope": "conceptual"
     },
     {
       "id": "MATH-GEODESIC",
@@ -668,7 +676,9 @@
           "mechanism": "Geodesics generalize locally straight paths under the surface metric and connection; parallel transport and conjugate points expose additional geometry.",
           "discriminating_observation": "Compare short and long arcs of the same great circle."
         }
-      ]
+      ],
+      "question_type": "explanation",
+      "task_scope": "conceptual"
     }
   ],
   "source_coverage": {
@@ -706,6 +716,11 @@
     "MATH-CURI-straight",
     "MATH-CURI-local-global",
     "MATH-CURI-topo-algebra",
-    "MATH-CURI-structure"
+    "MATH-CURI-structure",
+    "MATH-CAP-topological-continuity",
+    "MATH-CAP-compactness-test",
+    "MATH-CAP-fundamental-group",
+    "MATH-CAP-surface-curvature",
+    "MATH-CAP-geodesic-equations"
   ]
 }
