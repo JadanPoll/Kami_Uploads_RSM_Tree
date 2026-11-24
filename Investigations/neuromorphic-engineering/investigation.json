@@ -1450,6 +1450,46 @@
           "nmr-t-0217",
           "nmr-t-0212"
         ]
+      },
+      {
+        "id": "NMR-CAP-current-mirror",
+        "family_id": "physical",
+        "question": "Can you calculate a MOS current mirror's bias currents and scaling under stated device assumptions?",
+        "aliases": [],
+        "question_type": "execution",
+        "task_scope": "capability_family",
+        "bridge_ids": [
+          "PHYS"
+        ],
+        "target_ids": [
+          "NMR-MIRROR"
+        ],
+        "success_criterion": "Compute the mirror relationship and verify transistor operating regions and mismatch limitations for the given conditions.",
+        "term_ids": [
+          "nmr-t-0067",
+          "nmr-t-0084",
+          "nmr-t-0082"
+        ]
+      },
+      {
+        "id": "NMR-CAP-aer-traffic",
+        "family_id": "spikes",
+        "question": "Can you estimate event-bus throughput and detect when event traffic will overflow a queue?",
+        "aliases": [],
+        "question_type": "execution",
+        "task_scope": "capability_family",
+        "bridge_ids": [
+          "COMM"
+        ],
+        "target_ids": [
+          "NMR-QUEUES"
+        ],
+        "success_criterion": "Given event rates, payload size, service rate and buffer capacity, calculate utilization or backlog and identify a capacity violation.",
+        "term_ids": [
+          "nmr-t-0206",
+          "nmr-t-0207",
+          "nmr-t-0209"
+        ]
       }
     ],
     "entry_policy": "Search through stable concept IDs and natural questions. The glossary has independent breadth and may contain terms with no mapped question; never force every vocabulary term into technical nodes."
