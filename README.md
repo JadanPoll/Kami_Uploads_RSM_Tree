@@ -14,6 +14,10 @@ Explore what you are curious about, follow the underlying mechanisms, and recove
 
 [**Explore mathematics — fourteen connected textbooks, source passages and mathematical operators**](https://raw.githack.com/JadanPoll/Learning_Visualizations_Taxonomy/main/RSM_Tree_Viewer.html?repo=https%3A%2F%2Fgithub.com%2FJadanPoll%2FKami_Uploads_RSM_Tree&view=mathematics-curiosities)
 
+## Two complementary question layers
+
+[**Question types and task specificity**](QUESTION_TYPES.md) distinguish explanatory inquiry, task decomposition and genuine operational execution. A broad "How would I build an RC car?" legitimately asks for problem decomposition; "Can I perform Gaussian elimination?" asks whether a known mathematical operation can be carried out on suitable inputs, without inventing a matrix for every entry. Each type supports different learning and navigation goals. Reviewed entries carry `question_type` and `task_scope`; defined capabilities may include checkable `success_criterion` and links to canonical technical studies. Counts are diagnostics for underrepresented abilities, not a reason to generate filler.
+
 ## One entrance, variable investigation scope
 
 The manufacturing browser supports two entry sizes in one place:
