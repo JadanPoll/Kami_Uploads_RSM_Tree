@@ -3813,7 +3813,9 @@
         "term_ids": [
           "robot-t-0479",
           "robot-t-0113"
-        ]
+        ],
+        "question_type": "transfer",
+        "task_scope": "conceptual"
       },
       {
         "id": "ROB-CURI-build-kinect",
@@ -3834,7 +3836,9 @@
           "robot-t-0169",
           "robot-t-0188",
           "robot-t-0199"
-        ]
+        ],
+        "question_type": "transfer",
+        "task_scope": "open_goal"
       },
       {
         "id": "ROB-CURI-build-digital-twin",
@@ -3929,7 +3933,9 @@
         "term_ids": [
           "robot-t-0008",
           "robot-t-0074"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "ROB-CURI-target",
@@ -3945,7 +3951,9 @@
         "term_ids": [
           "robot-t-0002",
           "robot-t-0067"
-        ]
+        ],
+        "question_type": "verification",
+        "task_scope": "conceptual"
       },
       {
         "id": "ROB-CURI-distance",
@@ -3962,7 +3970,9 @@
         "term_ids": [
           "robot-t-0189",
           "robot-t-0201"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "ROB-CURI-imu",
@@ -3980,7 +3990,9 @@
           "robot-t-0172",
           "robot-t-0193",
           "robot-t-0204"
-        ]
+        ],
+        "question_type": "diagnosis",
+        "task_scope": "conceptual"
       },
       {
         "id": "ROB-CURI-gps",
@@ -4000,7 +4012,9 @@
           "robot-t-0178",
           "robot-t-0174",
           "robot-t-0394"
-        ]
+        ],
+        "question_type": "diagnosis",
+        "task_scope": "conceptual"
       },
       {
         "id": "ROB-CURI-confident-wrong",
@@ -4017,7 +4031,9 @@
         "term_ids": [
           "robot-t-0251",
           "robot-t-0221"
-        ]
+        ],
+        "question_type": "diagnosis",
+        "task_scope": "conceptual"
       },
       {
         "id": "ROB-CURI-two-halls",
@@ -4034,7 +4050,9 @@
         "term_ids": [
           "robot-t-0235",
           "robot-t-0254"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "ROB-CURI-kidnapped",
@@ -4050,7 +4068,9 @@
         "term_ids": [
           "robot-t-0256",
           "robot-t-0236"
-        ]
+        ],
+        "question_type": "design",
+        "task_scope": "open_goal"
       },
       {
         "id": "ROB-CURI-map-building",
@@ -4066,7 +4086,9 @@
         "term_ids": [
           "robot-t-0261",
           "robot-t-0262"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "ROB-CURI-loop",
@@ -4082,7 +4104,9 @@
         "term_ids": [
           "robot-t-0271",
           "robot-t-0268"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "ROB-CURI-false-loop",
@@ -4099,7 +4123,9 @@
         "term_ids": [
           "robot-t-0185",
           "robot-t-0270"
-        ]
+        ],
+        "question_type": "diagnosis",
+        "task_scope": "conceptual"
       },
       {
         "id": "ROB-CURI-slam-factor",
@@ -4115,7 +4141,9 @@
         "term_ids": [
           "robot-t-0278",
           "robot-t-0279"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "ROB-CURI-path-v-speed",
@@ -4134,7 +4162,9 @@
           "robot-t-0293",
           "robot-t-0297",
           "robot-t-0008"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "ROB-CURI-rrt",
@@ -4151,7 +4181,9 @@
         "term_ids": [
           "robot-t-0309",
           "robot-t-0300"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "ROB-CURI-doorway",
@@ -4168,7 +4200,9 @@
         "term_ids": [
           "robot-t-0301",
           "robot-t-0300"
-        ]
+        ],
+        "question_type": "diagnosis",
+        "task_scope": "conceptual"
       },
       {
         "id": "ROB-CURI-waypoints",
@@ -4186,7 +4220,9 @@
         "term_ids": [
           "robot-t-0317",
           "robot-t-0320"
-        ]
+        ],
+        "question_type": "diagnosis",
+        "task_scope": "conceptual"
       },
       {
         "id": "ROB-CURI-wind",
@@ -4203,7 +4239,9 @@
         "term_ids": [
           "robot-t-0397",
           "robot-t-0140"
-        ]
+        ],
+        "question_type": "design",
+        "task_scope": "open_goal"
       },
       {
         "id": "ROB-CURI-wobble",
@@ -4219,7 +4257,9 @@
         "term_ids": [
           "robot-t-0121",
           "robot-t-0124"
-        ]
+        ],
+        "question_type": "diagnosis",
+        "task_scope": "conceptual"
       },
       {
         "id": "ROB-CURI-force",
@@ -4236,7 +4276,9 @@
         "term_ids": [
           "robot-t-0145",
           "robot-t-0143"
-        ]
+        ],
+        "question_type": "diagnosis",
+        "task_scope": "conceptual"
       },
       {
         "id": "ROB-CURI-load",
@@ -4253,7 +4295,9 @@
         "term_ids": [
           "robot-t-0096",
           "robot-t-0109"
-        ]
+        ],
+        "question_type": "diagnosis",
+        "task_scope": "conceptual"
       },
       {
         "id": "ROB-CURI-outer",
@@ -4271,7 +4315,9 @@
           "robot-t-0147",
           "robot-t-0148",
           "robot-t-0149"
-        ]
+        ],
+        "question_type": "diagnosis",
+        "task_scope": "conceptual"
       },
       {
         "id": "ROB-CURI-trim",
@@ -4289,7 +4335,9 @@
           "robot-t-0127",
           "robot-t-0378",
           "robot-t-0385"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "ROB-CURI-speed",
@@ -4306,7 +4354,9 @@
           "robot-t-0395",
           "robot-t-0394",
           "robot-t-0396"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "ROB-CURI-turn",
@@ -4323,7 +4373,9 @@
         "term_ids": [
           "robot-t-0393",
           "robot-t-0318"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "ROB-CURI-landing",
@@ -4341,7 +4393,9 @@
         "term_ids": [
           "robot-t-0413",
           "robot-t-0201"
-        ]
+        ],
+        "question_type": "design",
+        "task_scope": "open_goal"
       },
       {
         "id": "ROB-CURI-look-first",
@@ -4357,7 +4411,9 @@
         "term_ids": [
           "robot-t-0326",
           "robot-t-0335"
-        ]
+        ],
+        "question_type": "design",
+        "task_scope": "open_goal"
       },
       {
         "id": "ROB-CURI-explore",
@@ -4374,7 +4430,9 @@
         "term_ids": [
           "robot-t-0324",
           "robot-t-0326"
-        ]
+        ],
+        "question_type": "design",
+        "task_scope": "open_goal"
       },
       {
         "id": "ROB-CURI-uncertain-choice",
@@ -4391,7 +4449,9 @@
         "term_ids": [
           "robot-t-0330",
           "robot-t-0209"
-        ]
+        ],
+        "question_type": "design",
+        "task_scope": "open_goal"
       },
       {
         "id": "ROB-CURI-sim-perfect",
@@ -4408,7 +4468,9 @@
         "term_ids": [
           "robot-t-0450",
           "robot-t-0437"
-        ]
+        ],
+        "question_type": "diagnosis",
+        "task_scope": "conceptual"
       },
       {
         "id": "ROB-CURI-noisy-full",
@@ -4426,7 +4488,9 @@
         "term_ids": [
           "robot-t-0445",
           "robot-t-0446"
-        ]
+        ],
+        "question_type": "diagnosis",
+        "task_scope": "conceptual"
       },
       {
         "id": "ROB-CURI-test",
@@ -4444,7 +4508,9 @@
         "term_ids": [
           "robot-t-0521",
           "robot-t-0440"
-        ]
+        ],
+        "question_type": "verification",
+        "task_scope": "conceptual"
       },
       {
         "id": "ROB-CURI-recover",
@@ -4464,7 +4530,9 @@
           "robot-t-0518",
           "robot-t-0503",
           "robot-t-0525"
-        ]
+        ],
+        "question_type": "design",
+        "task_scope": "open_goal"
       },
       {
         "id": "ROB-CAP-forward-kinematics",
