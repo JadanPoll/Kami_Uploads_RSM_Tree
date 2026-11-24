@@ -5017,6 +5017,46 @@
           "mfg-t-0086",
           "mfg-t-0080"
         ]
+      },
+      {
+        "id": "MFG-CAP-tolerance-stack",
+        "family_id": "fit",
+        "question": "Can you calculate a tolerance stack and determine whether assembled parts have clearance or interference?",
+        "aliases": [],
+        "question_type": "execution",
+        "task_scope": "capability_family",
+        "bridge_ids": [
+          "FIT"
+        ],
+        "target_ids": [
+          "MFG-TOLERANCE"
+        ],
+        "success_criterion": "For provided nominal dimensions and tolerances, compute worst-case fit limits and verify the sign and direction of the stack.",
+        "term_ids": [
+          "mfg-t-0128",
+          "mfg-t-0129",
+          "mfg-t-0131"
+        ]
+      },
+      {
+        "id": "MFG-CAP-print-orientation",
+        "family_id": "shapes",
+        "question": "Can you select an FFM print orientation for a given loading direction and support constraint?",
+        "aliases": [],
+        "question_type": "design",
+        "task_scope": "capability_family",
+        "bridge_ids": [
+          "SNAP"
+        ],
+        "target_ids": [
+          "MFG-FFM-ORIENT"
+        ],
+        "success_criterion": "Choose an orientation, explain anticipated inter-layer failure and support tradeoffs, and compare it against an alternative using the specified constraints.",
+        "term_ids": [
+          "mfg-t-0071",
+          "mfg-t-0117",
+          "mfg-t-0114"
+        ]
       }
     ],
     "legacy_entry_ids": [
