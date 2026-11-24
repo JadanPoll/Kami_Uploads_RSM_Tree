@@ -4411,7 +4411,9 @@
           "mfg-t-0040",
           "mfg-t-0004",
           "mfg-t-0002"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "MFG-CURI-pinless-hinge",
@@ -4478,7 +4480,9 @@
           "mfg-t-0039",
           "mfg-t-0040",
           "mfg-t-0004"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "MFG-CURI-cad-fit",
@@ -4609,7 +4613,9 @@
           "mfg-t-0129",
           "mfg-t-0132",
           "mfg-t-0133"
-        ]
+        ],
+        "question_type": "diagnosis",
+        "task_scope": "conceptual"
       },
       {
         "id": "MFG-CURI-identical",
@@ -4640,7 +4646,9 @@
           "mfg-t-0140",
           "mfg-t-0077",
           "mfg-t-0109"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "MFG-CURI-one-step",
@@ -4689,7 +4697,9 @@
           "mfg-t-0048",
           "mfg-t-0050",
           "mfg-t-0040"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "MFG-CURI-machine-pause",
@@ -4717,7 +4727,9 @@
           "mfg-t-0011",
           "mfg-t-0025",
           "mfg-t-0026"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "MFG-CURI-smooth-direction",
@@ -4749,7 +4761,9 @@
           "mfg-t-0133",
           "mfg-t-0139",
           "mfg-t-0060"
-        ]
+        ],
+        "question_type": "design",
+        "task_scope": "open_goal"
       },
       {
         "id": "MFG-CURI-gears-power",
@@ -4770,7 +4784,9 @@
           "mfg-t-0047",
           "mfg-t-0050",
           "mfg-t-0040"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "MFG-CURI-hollow-shape",
@@ -4819,7 +4835,9 @@
           "mfg-t-0091",
           "mfg-t-0095",
           "mfg-t-0094"
-        ]
+        ],
+        "question_type": "design",
+        "task_scope": "open_goal"
       },
       {
         "id": "MFG-CURI-print-air",
@@ -4848,7 +4866,9 @@
           "mfg-t-0109",
           "mfg-t-0120",
           "mfg-t-0187"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "MFG-CURI-sagging",
@@ -4873,7 +4893,9 @@
           "mfg-t-0077",
           "mfg-t-0109",
           "mfg-t-0187"
-        ]
+        ],
+        "question_type": "diagnosis",
+        "task_scope": "conceptual"
       },
       {
         "id": "MFG-CURI-tipping",
@@ -4899,7 +4921,9 @@
           "mfg-t-0109",
           "mfg-t-0120",
           "mfg-t-0187"
-        ]
+        ],
+        "question_type": "diagnosis",
+        "task_scope": "conceptual"
       },
       {
         "id": "MFG-CURI-one-or-many",
@@ -4927,7 +4951,9 @@
           "mfg-t-0152",
           "mfg-t-0086",
           "mfg-t-0080"
-        ]
+        ],
+        "question_type": "design",
+        "task_scope": "open_goal"
       },
       {
         "id": "MFG-CURI-no-shop",
@@ -4956,7 +4982,9 @@
           "mfg-t-0071",
           "mfg-t-0117",
           "mfg-t-0114"
-        ]
+        ],
+        "question_type": "decomposition",
+        "task_scope": "open_goal"
       },
       {
         "id": "MFG-CURI-factory-molds",
@@ -4988,7 +5016,9 @@
           "mfg-t-0152",
           "mfg-t-0086",
           "mfg-t-0080"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "MFG-CURI-change-design",
@@ -5016,7 +5046,9 @@
           "mfg-t-0152",
           "mfg-t-0086",
           "mfg-t-0080"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "MFG-CAP-tolerance-stack",
