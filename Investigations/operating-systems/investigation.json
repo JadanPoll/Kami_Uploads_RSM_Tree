@@ -1100,7 +1100,9 @@
           "os-t-0028",
           "os-t-0082",
           "os-t-0078"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "OS-CURI-busy",
@@ -1135,7 +1137,9 @@
           "os-t-0082",
           "os-t-0078",
           "os-t-0115"
-        ]
+        ],
+        "question_type": "diagnosis",
+        "task_scope": "conceptual"
       },
       {
         "id": "OS-CURI-memory",
@@ -1307,7 +1311,9 @@
           "os-t-0121",
           "os-t-0142",
           "os-t-0143"
-        ]
+        ],
+        "question_type": "diagnosis",
+        "task_scope": "conceptual"
       },
       {
         "id": "OS-CURI-recovery",
@@ -1344,7 +1350,9 @@
           "os-t-0007",
           "os-t-0157",
           "os-t-0174"
-        ]
+        ],
+        "question_type": "design",
+        "task_scope": "open_goal"
       },
       {
         "id": "OS-CURI-remote",
@@ -1454,7 +1462,9 @@
           "os-t-0024",
           "os-t-0007",
           "os-t-0008"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "OS-CURI-browser-os",
@@ -1489,7 +1499,9 @@
           "os-t-0007",
           "os-t-0008",
           "os-t-0014"
-        ]
+        ],
+        "question_type": "design",
+        "task_scope": "open_goal"
       },
       {
         "id": "OS-CURI-small-os",
@@ -1526,7 +1538,9 @@
           "os-t-0007",
           "os-t-0008",
           "os-t-0014"
-        ]
+        ],
+        "question_type": "decomposition",
+        "task_scope": "open_goal"
       },
       {
         "id": "OS-CURI-distributed",
