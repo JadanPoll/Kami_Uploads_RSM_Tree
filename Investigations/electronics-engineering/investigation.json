@@ -7978,6 +7978,46 @@
           "elec-t-0598",
           "elec-t-0585"
         ]
+      },
+      {
+        "id": "ELEC-CAP-buck-calculation",
+        "family_id": "power",
+        "question": "Can you calculate a buck converter's ideal duty cycle, ripple and component constraints from a specification?",
+        "aliases": [],
+        "question_type": "execution",
+        "task_scope": "capability_family",
+        "bridge_ids": [
+          "CONVERT"
+        ],
+        "target_ids": [
+          "ELEC-CONVERTER"
+        ],
+        "success_criterion": "From voltage, current, frequency and inductance assumptions, calculate ideal conversion and ripple with consistent units and check operating-mode assumptions.",
+        "term_ids": [
+          "elec-t-0430",
+          "elec-t-0431",
+          "elec-t-0432"
+        ]
+      },
+      {
+        "id": "ELEC-CAP-probe-loading",
+        "family_id": "measure",
+        "question": "Can you distinguish actual signal ringing from oscilloscope probe loading or pickup?",
+        "aliases": [],
+        "question_type": "empirical_investigation",
+        "task_scope": "capability_family",
+        "bridge_ids": [
+          "MEASURE"
+        ],
+        "target_ids": [
+          "ELEC-MEASURE"
+        ],
+        "success_criterion": "Compare properly grounded measurements with alternative probe configurations and establish whether the observed ringing persists.",
+        "term_ids": [
+          "elec-t-0232",
+          "elec-t-0233",
+          "elec-t-0234"
+        ]
       }
     ],
     "entry_policy": "Curiosity questions can remain ordinary-language. The independently growing domain glossary is a vocabulary landscape, not a list whose terms must all be stuffed into the questions."
