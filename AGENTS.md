@@ -8,6 +8,14 @@ Apply this to reader-facing questions, case studies, explanations, source notes,
 
 This repository is persistent state for research across chats, not an instruction to turn every conversation into an elaborate report. Follow the [Richer Scientific Method](https://github.com/JadanPoll/Learning_Visualizations_Taxonomy/blob/main/Navigationals/The_Richer_Scientific_Method.md) selectively, especially RSM-01, RSM-02, RSM-04, RSM-05, and RSM-08.
 
+## Question typing: distinguish inquiry from operational competence
+
+The canonical [QUESTION_TYPES.md](QUESTION_TYPES.md) defines eight primary question types: explanation, execution, verification, diagnosis, decomposition, design, empirical investigation, and transfer. Use `question_type` on reviewed question entries and independently record `task_scope` as conceptual, open_goal, capability_family, or specified_instance. Tag the dominant demand; add `secondary_question_types` only for independently useful cross-cutting obligations. Existing unreviewed questions may remain untagged until assessed—do not pretend automated keyword classification is epistemically equivalent to a reviewed classification.
+
+**Execution need not be a fabricated homework instance.** "Can you perform Gaussian elimination?" is a well-defined capability *family*; concrete matrices, input parameters, test harnesses or constraints can be instantiated when useful. "Can you design a vehicle's steering system under a dimensional and load constraint?" is design, while "How would you build an RC car?" legitimately tests open-goal decomposition. Preserve explanatory conceptual questions and failure diagnoses as distinct navigation routes. For execution/verification prompts, record `success_criterion` where there is a meaningful observable/certifiable outcome, not an arbitrary confidence assertion. Where possible, connect capability prompts through `target_ids` and existing technical/source nodes, without duplicating book evidence.
+
+Use distributions by question type and task specificity to **spot meaningful gaps**, not as quotas. Audit whether a learner or practitioner can actually perform the operation on representative input and whether the mapped source route is substantively relevant. Static metadata and a passing structural test do not certify task competence. This standard applies to all investigations, not just mathematics.
+
 ## Persistent navigation acceptance criterion (verbatim FKEN-16A)
 
 Source: [FKEN — Frustration-to-resource traversability](https://github.com/JadanPoll/Learning_Visualizations_Taxonomy/blob/main/Navigationals/Fractal_Knowledge_And_Ecosystem_Navigation.md#fken-16a--frustration-to-resource-traversability). This is the actual test of whether a question landscape helps people find and use the books, not merely a taxonomy-coverage requirement.
