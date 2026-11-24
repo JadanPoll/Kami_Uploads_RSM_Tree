@@ -1039,7 +1039,9 @@
           "hai-t-0099",
           "hai-t-0050",
           "hai-t-0052"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "HAI-CURI-failed-code",
@@ -1076,7 +1078,9 @@
           "hai-t-0086",
           "hai-t-0089",
           "hai-t-0126"
-        ]
+        ],
+        "question_type": "diagnosis",
+        "task_scope": "conceptual"
       },
       {
         "id": "HAI-CURI-forget",
@@ -1112,7 +1116,9 @@
           "hai-t-0071",
           "hai-t-0065",
           "hai-t-0084"
-        ]
+        ],
+        "question_type": "diagnosis",
+        "task_scope": "conceptual"
       },
       {
         "id": "HAI-CURI-trust",
@@ -1149,7 +1155,10 @@
           "hai-t-0050",
           "hai-t-0052",
           "hai-t-0146"
-        ]
+        ],
+        "question_type": "verification",
+        "task_scope": "capability_family",
+        "success_criterion": "Given a cited claim, resolve its primary source and check whether the cited passage or evidence actually supports the claim, reporting any mismatch."
       },
       {
         "id": "HAI-CURI-learn",
@@ -1184,7 +1193,10 @@
           "hai-t-0097",
           "hai-t-0049",
           "hai-t-0130"
-        ]
+        ],
+        "question_type": "empirical_investigation",
+        "task_scope": "capability_family",
+        "success_criterion": "Compare performance on an unfamiliar, independently attempted transfer task before and after AI-assisted work; distinguish retained ability from answer access."
       },
       {
         "id": "HAI-CURI-beginner",
@@ -1221,7 +1233,9 @@
           "hai-t-0049",
           "hai-t-0130",
           "hai-t-0101"
-        ]
+        ],
+        "question_type": "decomposition",
+        "task_scope": "open_goal"
       },
       {
         "id": "HAI-CURI-maintain",
@@ -1257,7 +1271,10 @@
           "hai-t-0137",
           "hai-t-0086",
           "hai-t-0089"
-        ]
+        ],
+        "question_type": "verification",
+        "task_scope": "capability_family",
+        "success_criterion": "Run representative end-to-end workflows after a fresh start and dependency/environment changes; document reproducible failures and remaining maintenance obligations."
       },
       {
         "id": "HAI-CURI-handoff",
@@ -1292,7 +1309,9 @@
           "hai-t-0071",
           "hai-t-0065",
           "hai-t-0084"
-        ]
+        ],
+        "question_type": "design",
+        "task_scope": "open_goal"
       },
       {
         "id": "HAI-CURI-human",
@@ -1329,7 +1348,9 @@
           "hai-t-0071",
           "hai-t-0146",
           "hai-t-0099"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "HAI-CURI-approval",
@@ -1364,7 +1385,9 @@
           "hai-t-0071",
           "hai-t-0146",
           "hai-t-0099"
-        ]
+        ],
+        "question_type": "design",
+        "task_scope": "open_goal"
       },
       {
         "id": "HAI-CURI-many-agents",
@@ -1401,7 +1424,9 @@
           "hai-t-0102",
           "hai-t-0100",
           "hai-t-0098"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "HAI-CURI-failed-edits",
@@ -1437,7 +1462,9 @@
           "hai-t-0071",
           "hai-t-0065",
           "hai-t-0084"
-        ]
+        ],
+        "question_type": "diagnosis",
+        "task_scope": "open_goal"
       },
       {
         "id": "HAI-CURI-speed",
@@ -1473,7 +1500,9 @@
           "hai-t-0068",
           "hai-t-0071",
           "hai-t-0065"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "HAI-CURI-legend",
@@ -1509,7 +1538,9 @@
           "hai-t-0086",
           "hai-t-0089",
           "hai-t-0138"
-        ]
+        ],
+        "question_type": "empirical_investigation",
+        "task_scope": "open_goal"
       },
       {
         "id": "HAI-CURI-verify",
@@ -1546,7 +1577,10 @@
           "hai-t-0099",
           "hai-t-0050",
           "hai-t-0146"
-        ]
+        ],
+        "question_type": "verification",
+        "task_scope": "capability_family",
+        "success_criterion": "Separate the stated result from the underlying evidence, examine independent replication or reproducing conditions, and report which parts are verified versus unestablished."
       },
       {
         "id": "HAI-CURI-cheaper",
@@ -1583,7 +1617,9 @@
           "hai-t-0086",
           "hai-t-0089",
           "hai-t-0138"
-        ]
+        ],
+        "question_type": "transfer",
+        "task_scope": "open_goal"
       },
       {
         "id": "HAI-CURI-unequal",
@@ -1620,7 +1656,9 @@
           "hai-t-0049",
           "hai-t-0130",
           "hai-t-0126"
-        ]
+        ],
+        "question_type": "empirical_investigation",
+        "task_scope": "conceptual"
       },
       {
         "id": "HAI-CURI-new-tests",
@@ -1657,7 +1695,9 @@
           "hai-t-0137",
           "hai-t-0086",
           "hai-t-0089"
-        ]
+        ],
+        "question_type": "design",
+        "task_scope": "open_goal"
       }
     ]
   },
