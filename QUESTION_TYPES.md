@@ -17,6 +17,19 @@ This is a **classification of what a question asks the person to do**, not a tax
 
 **Primary classification:** label the dominant obligation. Use `secondary_question_types` only when a genuinely independent second operation matters, not to hedge. For example, an experiment that diagnoses a failure is primarily `empirical_investigation` when the critical action is collecting discriminating measurements; it is primarily `diagnosis` when the measurements already exist and the task is fault localization.
 
+## Four browsing buckets
+
+The viewer uses four broad navigation buckets rather than eight controls:
+
+| Bucket | Canonical question types |
+| --- | --- |
+| Understand | explanation |
+| Apply | execution, transfer |
+| Design | design, decomposition |
+| Investigate | verification, diagnosis, empirical_investigation |
+
+These are a presentation projection, not additional persistent tags. Keep canonical classifications for analysis and show the exact type in the question inspector. In particular, an Apply count is not an execution or demonstrated-competence count. The viewer shows bucket counts for the selected question family and hides unclassified larger question sets when a type filter is selected.
+
 ## Independent task specificity
 
 `task_scope` describes how fully the work has been instantiated; it is **not** difficulty or question type.
