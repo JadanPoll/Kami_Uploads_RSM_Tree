@@ -4465,6 +4465,46 @@
           "robot-t-0503",
           "robot-t-0525"
         ]
+      },
+      {
+        "id": "ROB-CAP-forward-kinematics",
+        "family_id": "geometry",
+        "question": "Can you compute forward kinematics and a robot arm's Jacobian from its joint model?",
+        "aliases": [],
+        "question_type": "execution",
+        "task_scope": "capability_family",
+        "bridge_ids": [
+          "GEOMETRY"
+        ],
+        "target_ids": [
+          "ROB-KIN"
+        ],
+        "success_criterion": "Given joint transforms and configuration, calculate end-effector pose and velocity Jacobian, and check against a direct transform or finite difference.",
+        "term_ids": [
+          "robot-t-0035",
+          "robot-t-0060",
+          "robot-t-0037"
+        ]
+      },
+      {
+        "id": "ROB-CAP-bayesian-update",
+        "family_id": "sense",
+        "question": "Can you perform one Bayesian sensor update for a robot state estimate?",
+        "aliases": [],
+        "question_type": "execution",
+        "task_scope": "capability_family",
+        "bridge_ids": [
+          "ESTIMATION"
+        ],
+        "target_ids": [
+          "ROB-BAYES"
+        ],
+        "success_criterion": "Given a prior and observation model, calculate a normalized posterior and test how it changes when the evidence is uninformative.",
+        "term_ids": [
+          "robot-t-0214",
+          "robot-t-0209",
+          "robot-t-0217"
+        ]
       }
     ],
     "entry_policy": "Questions are entrances and reuse technical nodes. Do not manufacture questions simply to link every glossary term or TOC heading."
