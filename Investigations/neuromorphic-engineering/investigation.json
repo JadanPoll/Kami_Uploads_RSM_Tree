@@ -989,7 +989,9 @@
         "term_ids": [
           "nmr-t-0057",
           "nmr-t-0102"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "NMR-CURI-why-small-current",
@@ -1020,7 +1022,9 @@
         "context": "Select between physical explanations, communication constraints and actual task evidence; the connected book sections may be inspected or TOC-only.",
         "term_ids": [
           "nmr-t-0067"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "NMR-CURI-calculator-circuit",
@@ -1036,7 +1040,9 @@
         "context": "Select between physical explanations, communication constraints and actual task evidence; the connected book sections may be inspected or TOC-only.",
         "term_ids": [
           "nmr-t-0105"
-        ]
+        ],
+        "question_type": "design",
+        "task_scope": "open_goal"
       },
       {
         "id": "NMR-CURI-analog-memory",
@@ -1135,7 +1141,9 @@
         "context": "Select between physical explanations, communication constraints and actual task evidence; the connected book sections may be inspected or TOC-only.",
         "term_ids": [
           "nmr-t-0195"
-        ]
+        ],
+        "question_type": "explanation",
+        "task_scope": "conceptual"
       },
       {
         "id": "NMR-CURI-no-frames",
@@ -1168,7 +1176,9 @@
         "term_ids": [
           "nmr-t-0256",
           "nmr-t-0257"
-        ]
+        ],
+        "question_type": "diagnosis",
+        "task_scope": "conceptual"
       },
       {
         "id": "NMR-CURI-frame-vs-event",
@@ -1185,7 +1195,9 @@
         "term_ids": [
           "nmr-t-0237",
           "nmr-t-0238"
-        ]
+        ],
+        "question_type": "transfer",
+        "task_scope": "conceptual"
       },
       {
         "id": "NMR-CURI-cochlea",
