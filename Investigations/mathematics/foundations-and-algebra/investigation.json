@@ -1634,7 +1634,9 @@
           "mechanism": "Set constructions are constrained by foundational axioms. Relations, products, functions and equivalence classes create new objects; unrestricted self-referential comprehension leads to contradiction.",
           "discriminating_observation": "Attempt Russell's paradox, then identify which restricted construction blocks it."
         }
-      ]
+      ],
+      "question_type": "explanation",
+      "task_scope": "conceptual"
     },
     {
       "id": "MATH-CHOICE",
@@ -1688,7 +1690,9 @@
           "mechanism": "Choice, well-ordering, Zorn maximality and transfinite recursion support existential arguments. Halmos explicitly distinguishes these foundations; functional-analysis extension theorems use related ideas.",
           "discriminating_observation": "Identify the first choice/maximal step in a proof, then compare it with finite search."
         }
-      ]
+      ],
+      "question_type": "explanation",
+      "task_scope": "conceptual"
     },
     {
       "id": "MATH-MAPS",
@@ -1743,7 +1747,9 @@
           "mechanism": "Bijections preserve cardinality; linear and group isomorphisms preserve algebraic operations; homeomorphisms preserve topology. Each equality-up-to-structure has different invariants.",
           "discriminating_observation": "Produce a continuous bijection with discontinuous inverse."
         }
-      ]
+      ],
+      "question_type": "explanation",
+      "task_scope": "conceptual"
     },
     {
       "id": "MATH-VECTOR",
@@ -1798,7 +1804,9 @@
           "mechanism": "Vector spaces support basis-free addition and scaling; a matrix is a representation after choosing bases. Kernel, rank and nullity constrain linear maps independently of coordinate systems.",
           "discriminating_observation": "Represent the same linear map in two bases and verify invariant rank/nullity."
         }
-      ]
+      ],
+      "question_type": "explanation",
+      "task_scope": "conceptual"
     },
     {
       "id": "MATH-SPECTRAL",
@@ -1853,7 +1861,9 @@
           "mechanism": "Eigenvectors and invariant subspaces expose stable directions. Spectral theorems need normality or self-adjointness; Jordan structure and infinite-dimensional continuous spectra expose limitations.",
           "discriminating_observation": "Compare a Jordan block with a symmetric matrix of the same size."
         }
-      ]
+      ],
+      "question_type": "explanation",
+      "task_scope": "conceptual"
     },
     {
       "id": "MATH-GROUP",
@@ -1908,7 +1918,9 @@
           "mechanism": "A group is composition with identity and inverses. Homomorphisms preserve operation; cosets/normal subgroups permit quotients, and representations turn transformations into matrices.",
           "discriminating_observation": "Test invertibility and normality in permutation subgroups."
         }
-      ]
+      ],
+      "question_type": "explanation",
+      "task_scope": "conceptual"
     },
     {
       "id": "MATH-SYMMETRY",
@@ -1963,7 +1975,9 @@
           "mechanism": "A group action partitions objects into orbits with stabilizers. Representation characters encode transformation behavior; equivalent configurations may be counted once rather than repeatedly.",
           "discriminating_observation": "Count colorings of a ring under rotations, then under all dihedral symmetries."
         }
-      ]
+      ],
+      "question_type": "explanation",
+      "task_scope": "conceptual"
     },
     {
       "id": "MATH-RINGS",
@@ -2018,7 +2032,9 @@
           "mechanism": "Ring multiplication supports ideals, quotient rings and varying notions of primality. Quadratic integer domains can lose unique factorization of elements while ideals recover a structured replacement.",
           "discriminating_observation": "Compare factorization of elements and ideals in a non-UFD."
         }
-      ]
+      ],
+      "question_type": "explanation",
+      "task_scope": "conceptual"
     },
     {
       "id": "MATH-GALOIS",
@@ -2062,7 +2078,9 @@
           "mechanism": "Field extensions and automorphism groups encode algebraic relations among roots. Artin uses degree restrictions to distinguish constructible lengths from impossible ruler-and-compass requests.",
           "discriminating_observation": "Explain why a field-extension degree condition restricts a proposed construction."
         }
-      ]
+      ],
+      "question_type": "explanation",
+      "task_scope": "conceptual"
     }
   ],
   "source_coverage": {
@@ -2120,6 +2138,18 @@
     "MATH-CURI-infinite-operator",
     "MATH-CURI-transplant",
     "MATH-CURI-topo-algebra",
-    "MATH-CURI-normal-word"
+    "MATH-CURI-normal-word",
+    "MATH-CAP-sets-operations",
+    "MATH-CAP-equivalence-relations",
+    "MATH-CAP-quotient-sets",
+    "MATH-CAP-injective-surjective",
+    "MATH-CAP-row-reduction",
+    "MATH-CAP-linear-systems",
+    "MATH-CAP-kernel-image",
+    "MATH-CAP-change-basis",
+    "MATH-CAP-eigenspaces",
+    "MATH-CAP-group-cosets",
+    "MATH-CAP-orbit-stabilizer",
+    "MATH-CAP-polynomial-factor"
   ]
 }
