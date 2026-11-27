@@ -1716,6 +1716,44 @@
         ],
         "question_type": "design",
         "task_scope": "open_goal"
+      },
+      {
+        "id": "HAI-CURI-measure-populations",
+        "family_id": "outliers-and-frontiers",
+        "question": "How can we measure the distribution of human–AI collaboration capabilities?",
+        "aliases": [
+          "How good are ordinary and exceptional AI users?",
+          "How would we measure 90th or 99th percentile AI users?"
+        ],
+        "context": "Define the cohort and task, measure independently checked outcomes, and distinguish population sampling from exceptional demonstrations. Usage frequency is not competence.",
+        "bridge_ids": [
+          "HAI-BRG-population"
+        ],
+        "target_ids": [
+          "HAI-I06"
+        ],
+        "related_question_ids": [
+          "HAI-Q08D"
+        ],
+        "term_ids": [
+          "hai-t-0134",
+          "hai-t-0118",
+          "hai-t-0116",
+          "hai-t-0105",
+          "hai-t-0120",
+          "hai-t-0133",
+          "hai-t-0122",
+          "hai-t-0052",
+          "hai-t-0135",
+          "hai-t-0146",
+          "hai-t-0099",
+          "hai-t-0097",
+          "hai-t-0049",
+          "hai-t-0130"
+        ],
+        "question_type": "empirical_investigation",
+        "task_scope": "capability_family",
+        "success_criterion": "Define a comparable task population, sampling frame and independently evaluated outcome; report uncertainty, selection bias, resource confounds and which quantiles can actually be estimated."
       }
     ]
   },
