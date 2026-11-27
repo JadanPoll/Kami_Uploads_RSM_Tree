@@ -3688,54 +3688,53 @@
     "families": [
       {
         "id": "build",
-        "label": "Robotic embodiments and system construction",
-        "description": "Mobile, manipulator, aerial and soft embodiments; composition and simulation."
+        "label": "What could I build?",
+        "description": "Systems and projects approached through their minimum viable capabilities"
       },
       {
         "id": "geometry",
-        "label": "Kinematics, frames and motion constraints",
-        "description": "Frames, joint geometry, feasible velocities, reachability and motion constraints."
+        "label": "Where and how can it move?",
+        "description": "Frames, constraints, kinematics, feasible motion and contact"
       },
       {
         "id": "sense",
-        "label": "Perception, state estimation and mapping",
-        "description": "Measurement, inference, localization, mapping and ambiguous observations."
+        "label": "How does it see and know?",
+        "description": "Measurements, estimation, localization and mapping"
       },
       {
         "id": "navigate",
-        "label": "Motion planning and guidance",
-        "description": "Search, collision constraints, trajectory feasibility and guidance."
+        "label": "How does it get somewhere?",
+        "description": "Planning, time-scaling, guidance and navigation"
       },
       {
         "id": "control",
-        "label": "Dynamics, feedback and contact",
-        "description": "Dynamics, stability, tracking, loads, contact and control hierarchy."
+        "label": "Why doesn't the motion behave?",
+        "description": "Force laws, feedback, limits and robustness"
       },
       {
         "id": "fly",
-        "label": "Fixed-wing flight mechanics and autonomy",
-        "description": "Aerodynamic state, trim, flight envelopes and autonomous landing."
+        "label": "What makes autonomous flight different?",
+        "description": "Fixed-wing force, trim, cascaded control and wind"
       },
       {
         "id": "decide",
-        "label": "Decisions under uncertainty",
-        "description": "Information gathering, exploration and action under uncertain state."
+        "label": "How can it act intelligently under uncertainty?",
+        "description": "Belief policies, exploration and information"
       },
       {
         "id": "verify",
-        "label": "System integration, validation and recovery",
-        "description": "Simulation transfer, subsystem integration, evidence and recovery."
+        "label": "How can I make it actually work?",
+        "description": "Integration, stress tests, transfer to hardware and recovery"
       }
     ],
     "entries": [
       {
         "id": "ROB-CURI-build-rover",
         "family_id": "build",
-        "question": "How can we build an autonomous mobile robot that localizes and explores?",
+        "question": "How can I build a robot that explores my home without getting lost?",
         "aliases": [
           "autonomous rover",
-          "home robot",
-          "How can I build a robot that explores my home without getting lost?"
+          "home robot"
         ],
         "bridge_ids": [
           "GEOMETRY",
@@ -3755,11 +3754,10 @@
       {
         "id": "ROB-CURI-build-arm",
         "family_id": "build",
-        "question": "How can we build a manipulator that grasps unfamiliar objects reliably?",
+        "question": "How could I build an arm that reliably picks up unfamiliar things?",
         "aliases": [
           "robot arm",
-          "pick and place",
-          "How could I build an arm that reliably picks up unfamiliar things?"
+          "pick and place"
         ],
         "bridge_ids": [
           "GEOMETRY",
@@ -3778,11 +3776,10 @@
       {
         "id": "ROB-CURI-build-flight",
         "family_id": "build",
-        "question": "What capabilities are needed for autonomous fixed-wing flight?",
+        "question": "What would it take to build an autonomous fixed-wing aircraft?",
         "aliases": [
           "small UAV",
-          "autopilot",
-          "What would it take to build an autonomous fixed-wing aircraft?"
+          "autopilot"
         ],
         "bridge_ids": [
           "FLIGHT",
@@ -3800,10 +3797,9 @@
       {
         "id": "ROB-CURI-build-soft",
         "family_id": "build",
-        "question": "Which principles of rigid-body robotics transfer to soft robots?",
+        "question": "Which robotics ideas transfer from an arm to a soft robot?",
         "aliases": [
-          "soft robotics transfer",
-          "Which robotics ideas transfer from an arm to a soft robot?"
+          "soft robotics transfer"
         ],
         "bridge_ids": [
           "GEOMETRY",
@@ -3820,11 +3816,10 @@
       {
         "id": "ROB-CURI-build-kinect",
         "family_id": "build",
-        "question": "How can depth sensing support navigation and manipulation?",
+        "question": "Can a depth camera help a robot navigate and reach for objects?",
         "aliases": [
           "Kinect",
-          "depth sensing",
-          "Can a depth camera help a robot navigate and reach for objects?"
+          "depth sensing"
         ],
         "bridge_ids": [
           "VISION",
@@ -3843,11 +3838,10 @@
       {
         "id": "ROB-CURI-build-digital-twin",
         "family_id": "build",
-        "question": "How can we simulate an integrated robotic system before building it?",
+        "question": "How can I simulate an entire robot before buying any hardware?",
         "aliases": [
           "robot simulator",
-          "digital twin",
-          "How can I simulate an entire robot before buying any hardware?"
+          "digital twin"
         ],
         "bridge_ids": [
           "INTEGRATE",
@@ -3865,11 +3859,10 @@
       {
         "id": "ROB-CURI-frames",
         "family_id": "geometry",
-        "question": "Why do coordinate-frame errors produce incorrect robot motion?",
+        "question": "Why does the arm reach to the wrong place even though its coordinates look right?",
         "aliases": [
           "wrong frame",
-          "pose convention",
-          "Why does the arm reach to the wrong place even though its coordinates look right?"
+          "pose convention"
         ],
         "bridge_ids": [
           "GEOMETRY"
@@ -3884,10 +3877,9 @@
       {
         "id": "ROB-CURI-inverse",
         "family_id": "geometry",
-        "question": "How can inverse kinematics determine joint configurations for a desired pose?",
+        "question": "How can the end of a robot arm reach a position I specify?",
         "aliases": [
-          "inverse kinematics",
-          "How can the end of a robot arm reach a position I specify?"
+          "inverse kinematics"
         ],
         "bridge_ids": [
           "GEOMETRY"
@@ -3902,10 +3894,9 @@
       {
         "id": "ROB-CURI-singularity",
         "family_id": "geometry",
-        "question": "Why do kinematic singularities demand large joint velocities?",
+        "question": "Why does a robot arm suddenly need huge joint speeds?",
         "aliases": [
-          "Jacobian singularity",
-          "Why does a robot arm suddenly need huge joint speeds?"
+          "Jacobian singularity"
         ],
         "bridge_ids": [
           "GEOMETRY",
@@ -3921,10 +3912,9 @@
       {
         "id": "ROB-CURI-sideways",
         "family_id": "geometry",
-        "question": "How do nonholonomic constraints restrict mobile robot motion?",
+        "question": "Why can a car go around a corner but not slide directly sideways?",
         "aliases": [
-          "nonholonomic wheels",
-          "Why can a car go around a corner but not slide directly sideways?"
+          "nonholonomic wheels"
         ],
         "bridge_ids": [
           "GEOMETRY",
@@ -3940,10 +3930,9 @@
       {
         "id": "ROB-CURI-target",
         "family_id": "geometry",
-        "question": "What determines a manipulator's reachable workspace?",
+        "question": "Can an arm reach every spot inside a circle around it?",
         "aliases": [
-          "workspace reachable set",
-          "Can an arm reach every spot inside a circle around it?"
+          "workspace reachable set"
         ],
         "bridge_ids": [
           "GEOMETRY"
@@ -3958,10 +3947,9 @@
       {
         "id": "ROB-CURI-distance",
         "family_id": "sense",
-        "question": "Why is depth ambiguous in a single camera image?",
+        "question": "Why can't a single camera always tell how far away something is?",
         "aliases": [
-          "monocular depth ambiguity",
-          "Why can't a single camera always tell how far away something is?"
+          "monocular depth ambiguity"
         ],
         "bridge_ids": [
           "VISION",
@@ -3977,10 +3965,9 @@
       {
         "id": "ROB-CURI-imu",
         "family_id": "sense",
-        "question": "Why does inertial state estimation drift over time?",
+        "question": "Why does my robot's estimated position drift when it has an IMU?",
         "aliases": [
-          "inertial navigation drift",
-          "Why does my robot's estimated position drift when it has an IMU?"
+          "inertial navigation drift"
         ],
         "bridge_ids": [
           "ESTIMATION",
@@ -3997,11 +3984,10 @@
       {
         "id": "ROB-CURI-gps",
         "family_id": "sense",
-        "question": "Why can different aircraft navigation sensors disagree?",
+        "question": "Why do GPS and a gyroscope disagree about where an aircraft is going?",
         "aliases": [
           "course vs heading",
-          "wind",
-          "Why do GPS and a gyroscope disagree about where an aircraft is going?"
+          "wind"
         ],
         "bridge_ids": [
           "ESTIMATION",
@@ -4019,10 +4005,9 @@
       {
         "id": "ROB-CURI-confident-wrong",
         "family_id": "sense",
-        "question": "How can a robot's state estimate be confident but wrong?",
+        "question": "How can a robot be completely confident and still wrong?",
         "aliases": [
-          "overconfident EKF",
-          "How can a robot be completely confident and still wrong?"
+          "overconfident EKF"
         ],
         "bridge_ids": [
           "ESTIMATION",
@@ -4038,10 +4023,9 @@
       {
         "id": "ROB-CURI-two-halls",
         "family_id": "sense",
-        "question": "How do robots resolve ambiguity in their observations?",
+        "question": "How does a robot distinguish two identical-looking hallways?",
         "aliases": [
-          "multimodal belief",
-          "How does a robot distinguish two identical-looking hallways?"
+          "multimodal belief"
         ],
         "bridge_ids": [
           "ESTIMATION",
@@ -4057,10 +4041,9 @@
       {
         "id": "ROB-CURI-kidnapped",
         "family_id": "sense",
-        "question": "How can robots recover localization after an unexpected relocation?",
+        "question": "If I pick up a robot and put it elsewhere, can it find itself again?",
         "aliases": [
-          "kidnapped robot",
-          "If I pick up a robot and put it elsewhere, can it find itself again?"
+          "kidnapped robot"
         ],
         "bridge_ids": [
           "ESTIMATION"
@@ -4075,10 +4058,9 @@
       {
         "id": "ROB-CURI-map-building",
         "family_id": "sense",
-        "question": "How can range measurements construct maps of occupied and free space?",
+        "question": "How do laser beams become a map showing free space and walls?",
         "aliases": [
-          "occupancy grid mapping",
-          "How do laser beams become a map showing free space and walls?"
+          "occupancy grid mapping"
         ],
         "bridge_ids": [
           "MAPPING"
@@ -4093,10 +4075,9 @@
       {
         "id": "ROB-CURI-loop",
         "family_id": "sense",
-        "question": "How can loop closure correct accumulated mapping error?",
+        "question": "How does recognizing a familiar place repair an old map?",
         "aliases": [
-          "loop closure",
-          "How does recognizing a familiar place repair an old map?"
+          "loop closure"
         ],
         "bridge_ids": [
           "MAPPING"
@@ -4111,11 +4092,10 @@
       {
         "id": "ROB-CURI-false-loop",
         "family_id": "sense",
-        "question": "Why can a false loop closure distort an entire map?",
+        "question": "Why does one wrong place match bend the whole map?",
         "aliases": [
           "false loop closure",
-          "association",
-          "Why does one wrong place match bend the whole map?"
+          "association"
         ],
         "bridge_ids": [
           "MAPPING"
@@ -4130,10 +4110,9 @@
       {
         "id": "ROB-CURI-slam-factor",
         "family_id": "sense",
-        "question": "Why do SLAM algorithms factor robot trajectories and landmarks?",
+        "question": "Why do some mapping algorithms track paths and landmarks separately?",
         "aliases": [
-          "FastSLAM factorization",
-          "Why do some mapping algorithms track paths and landmarks separately?"
+          "FastSLAM factorization"
         ],
         "bridge_ids": [
           "MAPPING"
@@ -4148,11 +4127,10 @@
       {
         "id": "ROB-CURI-path-v-speed",
         "family_id": "navigate",
-        "question": "Why is a shortest path not necessarily physically feasible or safe?",
+        "question": "Why isn't a shortest path always a drivable or safe path?",
         "aliases": [
           "motion planning",
-          "dynamic feasibility",
-          "Why isn't a shortest path always a drivable or safe path?"
+          "dynamic feasibility"
         ],
         "bridge_ids": [
           "MOTION",
@@ -4169,11 +4147,10 @@
       {
         "id": "ROB-CURI-rrt",
         "family_id": "navigate",
-        "question": "How can robots search high-dimensional motion spaces?",
+        "question": "How can a robot plan through an enormous space of possible movements?",
         "aliases": [
           "RRT",
-          "sampling planner",
-          "How can a robot plan through an enormous space of possible movements?"
+          "sampling planner"
         ],
         "bridge_ids": [
           "MOTION"
@@ -4188,10 +4165,9 @@
       {
         "id": "ROB-CURI-doorway",
         "family_id": "navigate",
-        "question": "Why must collision checking account for the robot's full geometry?",
+        "question": "Why does the robot crash into a doorway even when its center clears it?",
         "aliases": [
-          "robot footprint collision",
-          "Why does the robot crash into a doorway even when its center clears it?"
+          "robot footprint collision"
         ],
         "bridge_ids": [
           "MOTION",
@@ -4207,11 +4183,10 @@
       {
         "id": "ROB-CURI-waypoints",
         "family_id": "navigate",
-        "question": "Why do waypoint sequences produce dynamically unsuitable aircraft trajectories?",
+        "question": "Why does following a series of GPS dots produce awkward aircraft turns?",
         "aliases": [
           "Dubins",
-          "waypoint",
-          "Why does following a series of GPS dots produce awkward aircraft turns?"
+          "waypoint"
         ],
         "bridge_ids": [
           "FLIGHT",
@@ -4227,10 +4202,9 @@
       {
         "id": "ROB-CURI-wind",
         "family_id": "navigate",
-        "question": "How can aircraft guidance compensate for wind?",
+        "question": "How can an aircraft stay on course when wind pushes it sideways?",
         "aliases": [
-          "wind correction",
-          "How can an aircraft stay on course when wind pushes it sideways?"
+          "wind correction"
         ],
         "bridge_ids": [
           "FLIGHT",
@@ -4246,10 +4220,9 @@
       {
         "id": "ROB-CURI-wobble",
         "family_id": "control",
-        "question": "Why can increased feedback gain cause oscillation?",
+        "question": "Why does the robot oscillate when I increase its control gain?",
         "aliases": [
-          "feedback instability",
-          "Why does the robot oscillate when I increase its control gain?"
+          "feedback instability"
         ],
         "bridge_ids": [
           "CONTROL"
@@ -4264,11 +4237,10 @@
       {
         "id": "ROB-CURI-force",
         "family_id": "control",
-        "question": "Why can position control generate excessive contact forces?",
+        "question": "Why does a position-controlled arm push dangerously hard against a wall?",
         "aliases": [
           "force control",
-          "impedance",
-          "Why does a position-controlled arm push dangerously hard against a wall?"
+          "impedance"
         ],
         "bridge_ids": [
           "CONTROL"
@@ -4283,10 +4255,9 @@
       {
         "id": "ROB-CURI-load",
         "family_id": "control",
-        "question": "Why does a payload change robot dynamics and control performance?",
+        "question": "Why does a robot move correctly without a payload but fail when holding one?",
         "aliases": [
-          "payload torque",
-          "Why does a robot move correctly without a payload but fail when holding one?"
+          "payload torque"
         ],
         "bridge_ids": [
           "MOTION",
@@ -4302,10 +4273,9 @@
       {
         "id": "ROB-CURI-outer",
         "family_id": "control",
-        "question": "Why can stable attitude control still fail to track an aircraft course?",
+        "question": "Why can an aircraft stabilize its roll but miss the commanded course?",
         "aliases": [
-          "cascaded controller",
-          "Why can an aircraft stabilize its roll but miss the commanded course?"
+          "cascaded controller"
         ],
         "bridge_ids": [
           "CONTROL",
@@ -4322,11 +4292,10 @@
       {
         "id": "ROB-CURI-trim",
         "family_id": "fly",
-        "question": "What determines the steady-flight trim conditions of an aircraft?",
+        "question": "Why can a plane fly steadily at one speed but not another?",
         "aliases": [
           "trim condition",
-          "stall",
-          "Why can a plane fly steadily at one speed but not another?"
+          "stall"
         ],
         "bridge_ids": [
           "FLIGHT"
@@ -4342,10 +4311,9 @@
       {
         "id": "ROB-CURI-speed",
         "family_id": "fly",
-        "question": "Why can ground speed differ dangerously from aerodynamic airspeed?",
+        "question": "How can the GPS say an aircraft is fast while its wing is close to stalling?",
         "aliases": [
-          "airspeed versus ground speed",
-          "How can the GPS say an aircraft is fast while its wing is close to stalling?"
+          "airspeed versus ground speed"
         ],
         "bridge_ids": [
           "FLIGHT"
@@ -4361,10 +4329,9 @@
       {
         "id": "ROB-CURI-turn",
         "family_id": "fly",
-        "question": "What determines the feasible turning radius of a fixed-wing aircraft?",
+        "question": "What limits how tightly a fixed-wing aircraft can turn?",
         "aliases": [
-          "minimum turn radius",
-          "What limits how tightly a fixed-wing aircraft can turn?"
+          "minimum turn radius"
         ],
         "bridge_ids": [
           "FLIGHT",
@@ -4380,11 +4347,10 @@
       {
         "id": "ROB-CURI-landing",
         "family_id": "fly",
-        "question": "How can vision guide autonomous aircraft landing?",
+        "question": "How can a flying robot know when and where to land using a camera?",
         "aliases": [
           "precision landing",
-          "time to collision",
-          "How can a flying robot know when and where to land using a camera?"
+          "time to collision"
         ],
         "bridge_ids": [
           "VISION",
@@ -4400,10 +4366,9 @@
       {
         "id": "ROB-CURI-look-first",
         "family_id": "decide",
-        "question": "How should a robot trade information gathering against immediate progress?",
+        "question": "Should a robot look around before taking the shortest route?",
         "aliases": [
-          "active perception",
-          "Should a robot look around before taking the shortest route?"
+          "active perception"
         ],
         "bridge_ids": [
           "DECIDE"
@@ -4418,10 +4383,9 @@
       {
         "id": "ROB-CURI-explore",
         "family_id": "decide",
-        "question": "How can an autonomous robot choose where to explore next?",
+        "question": "How can a robot choose which unexplored room to inspect next?",
         "aliases": [
-          "frontier exploration",
-          "How can a robot choose which unexplored room to inspect next?"
+          "frontier exploration"
         ],
         "bridge_ids": [
           "DECIDE",
@@ -4437,10 +4401,9 @@
       {
         "id": "ROB-CURI-uncertain-choice",
         "family_id": "decide",
-        "question": "How can robots select safe actions under ambiguous state estimates?",
+        "question": "How can a robot choose the safest action when multiple locations are possible?",
         "aliases": [
-          "POMDP",
-          "How can a robot choose the safest action when multiple locations are possible?"
+          "POMDP"
         ],
         "bridge_ids": [
           "DECIDE",
@@ -4456,10 +4419,9 @@
       {
         "id": "ROB-CURI-sim-perfect",
         "family_id": "verify",
-        "question": "Why do robotic controllers fail to transfer from simulation to hardware?",
+        "question": "Why does my controller work perfectly in simulation but not on the real device?",
         "aliases": [
-          "sim-to-real gap",
-          "Why does my controller work perfectly in simulation but not on the real device?"
+          "sim-to-real gap"
         ],
         "bridge_ids": [
           "INTEGRATE",
@@ -4475,10 +4437,9 @@
       {
         "id": "ROB-CURI-noisy-full",
         "family_id": "verify",
-        "question": "Why do individually working perception and control modules fail when integrated?",
+        "question": "Why do separately working perception and control modules fail when connected?",
         "aliases": [
-          "integration failure",
-          "Why do separately working perception and control modules fail when connected?"
+          "integration failure"
         ],
         "bridge_ids": [
           "INTEGRATE",
@@ -4495,10 +4456,9 @@
       {
         "id": "ROB-CURI-test",
         "family_id": "verify",
-        "question": "What capabilities and evidence establish useful robotic autonomy?",
+        "question": "What demonstration would convince me that I can actually build a useful robot?",
         "aliases": [
-          "engineering competence",
-          "What demonstration would convince me that I can actually build a useful robot?"
+          "engineering competence"
         ],
         "bridge_ids": [
           "INTEGRATE",
@@ -4515,11 +4475,10 @@
       {
         "id": "ROB-CURI-recover",
         "family_id": "verify",
-        "question": "How should robots recover from localization or actuation failure?",
+        "question": "What should an autonomous robot do after it loses localization or actuator authority?",
         "aliases": [
           "fault recovery",
-          "safe state",
-          "What should an autonomous robot do after it loses localization or actuator authority?"
+          "safe state"
         ],
         "bridge_ids": [
           "ESTIMATION",
@@ -4537,10 +4496,8 @@
       {
         "id": "ROB-CAP-forward-kinematics",
         "family_id": "geometry",
-        "question": "How can we calculate a manipulator's forward kinematics and Jacobian?",
-        "aliases": [
-          "Can you compute forward kinematics and a robot arm's Jacobian from its joint model?"
-        ],
+        "question": "Can you compute forward kinematics and a robot arm's Jacobian from its joint model?",
+        "aliases": [],
         "question_type": "execution",
         "task_scope": "capability_family",
         "bridge_ids": [
@@ -4559,10 +4516,8 @@
       {
         "id": "ROB-CAP-bayesian-update",
         "family_id": "sense",
-        "question": "How can we update a robot's state belief using a sensor observation?",
-        "aliases": [
-          "Can you perform one Bayesian sensor update for a robot state estimate?"
-        ],
+        "question": "Can you perform one Bayesian sensor update for a robot state estimate?",
+        "aliases": [],
         "question_type": "execution",
         "task_scope": "capability_family",
         "bridge_ids": [
