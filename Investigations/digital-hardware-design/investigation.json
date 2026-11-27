@@ -3,7 +3,7 @@
   "kind": "canonical_research_corpus",
   "title": "Digital hardware — from Verilog/FPGA behavior to VLSI physical design",
   "status": "source-indexed-curiosity-landscape; real hardware validation pending",
-  "updated": "2026-11-21",
+  "updated": "2026-11-27",
   "question": "What can digital hardware compute, how do we design it, and what determines whether it works on actual devices and silicon?",
   "purpose": "Connect natural curiosity to reusable RTL, device, architecture and physical VLSI knowledge using the source collection without re-indexing the books every time.",
   "source_folder": "https://drive.google.com/drive/folders/1veFqc1U0plkG-mpiXaqRW-QLEPY5pvYS",
@@ -465,6 +465,16 @@
         "id": "choice",
         "label": "Which implementation should I choose?",
         "description": "FPGA versus custom chip, hardware versus firmware, historical toolchains"
+      },
+      {
+        "id": "applied-challenges",
+        "label": "What could I actually build or figure out?",
+        "description": "Try a real design, performance decision or hardware failure before opening its worked solution."
+      },
+      {
+        "id": "constituent-practice",
+        "label": "Practice the constituent machinery",
+        "description": "Smaller repeatable operations used inside larger designs."
       }
     ],
     "entries": [
@@ -481,7 +491,6 @@
           "BUILD",
           "TIME"
         ],
-        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result.",
         "term_ids": [
           "dhw-t-0058",
           "dhw-t-0091",
@@ -501,7 +510,12 @@
           "dhw-t-0084"
         ],
         "question_type": "diagnosis",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "Imagine a counter in simulation whose input changes neatly halfway between clock edges. On the board the input is a button, a wire from another chip, or a different clock. It can change at precisely the moment the receiving flip-flop samples it. The simulator's neat sequence of events has hidden a physical problem.",
+          "Separate the failure into three experiments. First prove that the bitstream really controls a known pin with a slow counter. Next expose the suspect internal signals through an LED, UART or integrated logic analyzer. Finally compare behavior at different clock rates and input phases, alongside the actual timing report. A wrong pin, an inferred latch and a setup-time violation can all look like 'nothing works' but require quite different interventions.",
+          "A passing RTL simulation establishes behavior under the testbench's model. Synthesis, placement, routing, constraints and the physical interface add obligations. Slowing the clock is informative for a long data path, but cannot repair a wrong pin assignment or guarantee safe asynchronous sampling."
+        ]
       },
       {
         "id": "DHW-CURI-led",
@@ -514,7 +528,6 @@
         "bridge_ids": [
           "BUILD"
         ],
-        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result.",
         "term_ids": [
           "dhw-t-0058",
           "dhw-t-0216",
@@ -531,7 +544,15 @@
           "dhw-t-0209"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "An FPGA does not ordinarily execute your Verilog line by line. For example, assign led = sw; can become a connection between input and output pins. With a clocked counter, assign led = counter[25]; instead connects an output to a bit of a register that is changing continuously.",
+          "At 100 MHz, a 26-bit binary counter repeats every 2^26 clock ticks. Its top bit alternates between low and high, completing one cycle about every 0.67 seconds. An LED lets you see a frequency divider that exists physically in the programmed chip.",
+          "The interesting transition is from describing behavior to allocating gates, flip-flops and routing. The bitstream configures those resources; a board constraint associates led with a package pin and suitable I/O standard. An active-low LED reverses the apparent logic. The same HDL can therefore work differently on two boards even though the computation is unchanged."
+        ],
+        "target_ids": [
+          "DHW-FLOW"
+        ]
       },
       {
         "id": "DHW-CURI-uart",
@@ -545,7 +566,6 @@
           "SERIAL",
           "TIME"
         ],
-        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result.",
         "term_ids": [
           "dhw-t-0008",
           "dhw-t-0108",
@@ -565,7 +585,16 @@
           "dhw-t-0074"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "Suppose a wire normally sits high. To send a byte, the transmitter pulls it low for one bit period, sends eight data bits (usually least significant bit first), then returns it high for a stop bit. The receiver does not need a wire carrying the transmitter's clock; both ends agree approximately on the bit duration.",
+          "At 115200 baud, a bit lasts about 8.68 microseconds. Detect the falling edge of the start bit, wait roughly half a bit to check that the start is real, then sample each successive bit near its center. A local 16-times-baud enable gives the receiver a convenient finer time grid. The received bits shift into a register; after a valid stop bit, the byte becomes available.",
+          "Two clocks need not match perfectly, but their difference accumulates across a frame. Sampling nearer the center gives more room for error. This is why a long sequence of zeros can be decoded despite there being no transition at every bit boundary, and why excessive clock mismatch eventually breaks framing.",
+          "Could we use the same wire to transfer a never-ending stream without start bits? We would need some other means of maintaining agreement about bit boundaries."
+        ],
+        "target_ids": [
+          "DHW-UART"
+        ]
       },
       {
         "id": "DHW-CURI-vga",
@@ -579,7 +608,6 @@
         "bridge_ids": [
           "VIDEO"
         ],
-        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result.",
         "term_ids": [
           "dhw-t-0125",
           "dhw-t-0216",
@@ -594,7 +622,16 @@
           "dhw-t-0057"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "Think of a display as asking for a color at a succession of coordinates. Two counters track x and y; the horizontal counter wraps at the end of each line, and the vertical counter wraps at the end of a frame. Additional timing marks tell the display where each line and frame begins; blanking intervals are not visible pixels.",
+          "Instead of keeping an entire picture in memory, a circuit can answer a question about the current coordinate: if x lies between left and right and y between top and bottom, emit the object's color; otherwise emit the background. Update the object's position once per frame and it moves. A character screen can look up a character and then a row of its glyph in a small ROM.",
+          "For a 640 × 480 RGB888 image, a framebuffer needs 921,600 bytes. A simple scene described by a few coordinates can require vastly less state. The distinction between storing an image and computing a pixel as it is requested opens a whole landscape of sprites, tiles, procedural graphics and video pipelines. The display electrical protocol is a separate contract from this computation."
+        ],
+        "target_ids": [
+          "DHW-VIDEO",
+          "DHW-MEMORY"
+        ]
       },
       {
         "id": "DHW-CURI-keyboard",
@@ -607,7 +644,6 @@
         "bridge_ids": [
           "PERIPHERAL"
         ],
-        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result.",
         "term_ids": [
           "dhw-t-0122",
           "dhw-t-0209",
@@ -623,7 +659,12 @@
           "dhw-t-0057"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A key is not inherently a character. A keyboard detects a physical switch change, encodes it and sends a report. In the PS/2 example, the peripheral supplies a clock and serial data; a receiver collects a start bit, eight data bits, parity and stop bit. A valid frame delivers a scan code, not necessarily an ASCII letter.",
+          "The circuit must then remember the context: a release sequence, a modifier key or an extended code can change what the next byte means. Only after parsing these sequences can it emit a useful event such as 'left arrow pressed'. Holding a key and pressing it twice are different events.",
+          "Modern USB keyboards use a different transport and require USB host functionality, but the separation remains: electrical signaling → protocol bytes → key events → application intent. Where would you put key remapping, repeat behavior or modifier handling if you wanted a keyboard-controlled game entirely in hardware?"
+        ]
       },
       {
         "id": "DHW-CURI-missing",
@@ -637,7 +678,6 @@
           "PORTABLE",
           "BUILD"
         ],
-        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result.",
         "term_ids": [
           "dhw-t-0058",
           "dhw-t-0002",
@@ -657,7 +697,12 @@
           "dhw-t-0219"
         ],
         "question_type": "diagnosis",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "Suppose the same LED-counter RTL is moved from a board with a 50 MHz clock to one with a 100 MHz clock. The synthesized counter may be logically identical, yet the LED blinks twice as fast. If the LED's pin or polarity changes, it may not blink visibly at all.",
+          "Separate portable logic from its board contract: oscillator frequency, pin assignments, reset polarity, I/O voltage, memory and clock-generation primitives. Parameterize the clock-dependent logic and isolate vendor-specific resources behind small modules. Do not blindly reuse a constraints file from another board.",
+          "The bitstream is specific to the target device and physical implementation. Rebuild it, check the timing constraints and confirm a small known board interaction before porting the whole system. This is the same reason an old VGA example may be computationally reusable but require an entirely different electrical output path."
+        ]
       },
       {
         "id": "DHW-CURI-if",
@@ -671,7 +716,6 @@
           "COMB",
           "CONTROL"
         ],
-        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result.",
         "term_ids": [
           "dhw-t-0002",
           "dhw-t-0003",
@@ -691,7 +735,19 @@
           "dhw-t-0031"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "Consider always_comb if (sel) y = a; else y = b;. If both inputs are wires, the circuit does not have to wait for an instruction to test sel. Synthesis can create a multiplexer: y continuously follows whichever input sel chooses.",
+          {
+            "code": "always_comb begin\n  if (sel) y = a;\n  else     y = b;\nend\n\nalways_ff @(posedge clk) begin\n  if (enable) q <= d;\nend"
+          },
+          "The second description is different because the clocked register captures d only when enabled and otherwise retains q. The if syntax looks similar, but the timing and storage obligations differ. In hardware, parallel blocks can operate simultaneously; in a CPU, a compiled branch can select a sequence of instructions.",
+          "Try drawing the first description with gates and the second with a flip-flop and a feedback multiplexer. What changes if several conditionals drive different outputs simultaneously? The important question is not how many statements the program has, but what physical resources and data dependencies its behavior requires."
+        ],
+        "target_ids": [
+          "DHW-COMB",
+          "DHW-STATE"
+        ]
       },
       {
         "id": "DHW-CURI-latch",
@@ -704,7 +760,6 @@
         "bridge_ids": [
           "COMB"
         ],
-        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result.",
         "term_ids": [
           "dhw-t-0010",
           "dhw-t-0024",
@@ -720,7 +775,14 @@
           "dhw-t-0041"
         ],
         "question_type": "diagnosis",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "Imagine telling a circuit: if enable is high, set y to x. You never say what y should be when enable is low. To preserve the behavior that the description implies, synthesis may infer a level-sensitive latch, which remembers the last value when enable goes low.",
+          {
+            "code": "// Accidental storage in combinational logic\nalways_comb begin\n  if (enable) y = x;\nend\n\n// Explicit behavior for every input combination\nalways_comb begin\n  y = 0;\n  if (enable) y = x;\nend"
+          },
+          "A latch is not inherently a broken component. The error is using storage where you intended a pure function of current inputs. Inspect what happens on the missing branch, and ask whether the output should follow an input, become a default value, or remember the past. If remembering is deliberate, express the intended clocked or level-sensitive storage contract explicitly."
+        ]
       },
       {
         "id": "DHW-CURI-debounce",
@@ -734,7 +796,6 @@
           "STATE",
           "TIME"
         ],
-        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result.",
         "term_ids": [
           "dhw-t-0083",
           "dhw-t-0031",
@@ -754,7 +815,12 @@
           "dhw-t-0077"
         ],
         "question_type": "diagnosis",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A metal contact does not usually settle instantly. A single press can produce several electrical transitions before the contact becomes stable. At a 100 MHz FPGA clock, even a millisecond contains 100,000 sampling opportunities. A naive rising-edge counter can interpret one human action as many.",
+          "Synchronize the asynchronous button signal to the clock domain, require a new sampled level to persist for a chosen interval, then produce a one-clock event on the accepted press transition. These address three different problems: metastability risk, mechanical bounce and distinguishing an event from a held level.",
+          "For example, a 10 ms stable interval at 100 MHz requires 1,000,000 cycles (a 20-bit counter is sufficient). That interval is a design choice, not a universal switch specification. Observe real bounce or vary its duration in simulation. A synchronizer alone does not debounce; a debounce filter alone is not a clock-domain crossing solution."
+        ]
       },
       {
         "id": "DHW-CURI-fsm",
@@ -767,7 +833,6 @@
         "bridge_ids": [
           "CONTROL"
         ],
-        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result.",
         "term_ids": [
           "dhw-t-0040",
           "dhw-t-0032",
@@ -786,7 +851,12 @@
           "dhw-t-0143"
         ],
         "question_type": "design",
-        "task_scope": "open_goal"
+        "task_scope": "open_goal",
+        "answer": [
+          "An 8-bit multiplier could be a large combinational network that produces the entire answer at once. Or it could repeatedly inspect one bit of the multiplier, conditionally add a shifted multiplicand to an accumulator, and advance to the next bit. The latter needs registers for the partial result and operands, an adder, and control that repeats the operation eight times.",
+          "The datapath performs the arithmetic; the controller chooses when to load, step and announce completion. Rather than asking how to express a loop in Verilog, ask which quantities must survive from one clock to the next and which operation may happen on each clock. A software-style for loop in a combinational block may instead synthesize into unrolled hardware.",
+          "This exposes a tradeoff: reusable arithmetic saves area but takes cycles; parallel arithmetic spends resources to reduce latency. Pipelines can further change throughput independently of latency. Could a new calculation start before the previous one finishes?"
+        ]
       },
       {
         "id": "DHW-CURI-memory",
@@ -800,7 +870,6 @@
         "bridge_ids": [
           "MEMORY"
         ],
-        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result.",
         "term_ids": [
           "dhw-t-0056",
           "dhw-t-0064",
@@ -813,7 +882,12 @@
           "dhw-t-0059"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "Eight registers storing eight-bit values require 64 bits of state. If you scale that idea to a 640 × 480 display, even one bit per pixel needs 307,200 bits. Implementing every bit as a flip-flop may exhaust a small FPGA long before the surrounding logic becomes interesting.",
+          "FPGA block RAM stores many bits densely and supplies access ports with particular timing. A synchronous read often returns data a clock later, while a small register array can provide combinational reads. External RAM adds a physical bus, controller timing and possibly variable access latency. The read latency and simultaneous read/write behavior are part of the design, not details that can be ignored.",
+          "Choose the storage based on access patterns: random indexed data, sequential streaming, multiple concurrent readers, or a line buffer. Sometimes the most powerful optimization is not buying more memory but changing what must be stored at all. A tile map or procedural image generator is very different from a framebuffer."
+        ]
       },
       {
         "id": "DHW-CURI-cpu",
@@ -828,7 +902,6 @@
           "SOFTCORE",
           "CONTROL"
         ],
-        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result.",
         "term_ids": [
           "dhw-t-0058",
           "dhw-t-0139",
@@ -848,7 +921,12 @@
           "dhw-t-0045"
         ],
         "question_type": "decomposition",
-        "task_scope": "open_goal"
+        "task_scope": "open_goal",
+        "answer": [
+          "A minimal programmable computer needs a program counter, instruction storage, registers or other operand state, arithmetic and logic, and a controller that decides what an instruction does. A load, add and branch can already support useful repeated computations if memory and I/O are defined.",
+          "Imagine two registers, an accumulator and a small instruction ROM. Each instruction selects an operation and where its result goes; a conditional branch changes the next instruction address. The same fixed hardware can now blink an LED, count events or run a different program merely by changing instruction memory.",
+          "This is the difference between a hardwired counter and a stored-program machine. A soft processor such as PicoBlaze is a source example, not a requirement to invent a CPU from scratch. When should an operation become a dedicated peripheral instead of instructions? When might a tiny processor controlling custom parallel hardware be better than either alone?"
+        ]
       },
       {
         "id": "DHW-CURI-fast",
@@ -862,7 +940,6 @@
           "TIME",
           "MOS"
         ],
-        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result.",
         "term_ids": [
           "dhw-t-0072",
           "dhw-t-0216",
@@ -882,22 +959,27 @@
           "dhw-t-0010"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A register launches a new value after a clock edge. That value travels through gates and wires before the next register can capture it. If the receiver needs it stable before the next edge, the available time must cover clock-to-output delay, combinational propagation, setup time and timing uncertainty.",
+          "For an illustrative path of 0.8 ns clock-to-Q, 7 ns logic/routing and 0.7 ns setup plus 0.5 ns uncertainty, the period must be at least 9 ns: about 111 MHz under those assumptions. A 200 MHz clock gives only 5 ns. The circuit may still appear correct in a zero-delay simulation.",
+          "Split the long path with another register and you may increase the sustainable clock rate, but the answer takes more cycles and related control/data must be aligned. Short paths also have hold-time constraints that lowering frequency generally does not fix. A timing report tells you which actual path fails, not merely that a requested frequency is ambitious."
+        ]
       },
       {
         "id": "DHW-CURI-cdc",
         "family_id": "time",
-        "question": "Why can two individually working circuits fail when connected?",
+        "question": "Why can two circuits running on different clocks fail when connected?",
         "aliases": [
           "clock crossing",
           "metastability",
-          "synchronizer"
+          "synchronizer",
+          "Why can two individually working circuits fail when connected?"
         ],
         "bridge_ids": [
           "TIME",
           "PHYSICALCLOCK"
         ],
-        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result.",
         "term_ids": [
           "dhw-t-0080",
           "dhw-t-0082",
@@ -917,7 +999,16 @@
           "dhw-t-0188"
         ],
         "question_type": "diagnosis",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "Suppose one circuit raises a ready signal for one cycle of a 100 MHz clock, while a second circuit samples it at 25 MHz. The pulse lasts 10 ns; the receiving clock samples every 40 ns. It might miss the event completely. If a transition occurs near a sampling edge, the receiver can also enter a metastable state.",
+          "A two-flip-flop synchronizer can reduce metastability propagation for a stable single-bit level, but it cannot guarantee capture of a short pulse. For isolated events, hold a request until acknowledgement or use a toggle under a rate constraint. For a stream of multi-bit words, an asynchronous FIFO can preserve ordering and handle different clock rates.",
+          "Synchronizing every bit of a changing data bus independently does not guarantee a coherent word. First decide whether you must transfer a level, an event or data. That distinction tells you which communication contract is necessary and which apparent fixes are inadequate."
+        ],
+        "target_ids": [
+          "DHW-PHYSICAL-TIMING",
+          "DHW-TIMING"
+        ]
       },
       {
         "id": "DHW-CURI-uart-glitch",
@@ -930,7 +1021,6 @@
         "bridge_ids": [
           "SERIAL"
         ],
-        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result.",
         "term_ids": [
           "dhw-t-0108",
           "dhw-t-0110",
@@ -946,7 +1036,12 @@
           "dhw-t-0072"
         ],
         "question_type": "diagnosis",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "At low baud rates a receiver may have many local-clock ticks per bit; at higher rates there are fewer. A baud generator that rounds a division to an integer can produce a different error at each selected rate. The start edge aligns the receiver approximately, then the sampling phase drifts relative to the transmitted bit centers.",
+          "With a 50 MHz clock and 16× oversampling at 115200 baud, the ideal interval is about 27.13 clocks. Using 27 clocks gives approximately 115741 baud, an error of +0.47% relative to the target. A different clock or baud may have a much worse integer approximation. Electrical edges, framing settings and the sending device's own clock error matter too.",
+          "Measure or simulate the actual transmitted bit duration, verify the receiver's enable spacing, and test patterns such as 0x55, 0x00 and 0xFF across modest baud mismatch. Do not confuse a baud-rate setting with the actual waveform. If a divider is too coarse, a fractional accumulator can distribute ticks more accurately."
+        ]
       },
       {
         "id": "DHW-CURI-clockwire",
@@ -959,7 +1054,6 @@
         "bridge_ids": [
           "PHYSICALCLOCK"
         ],
-        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result.",
         "term_ids": [
           "dhw-t-0084",
           "dhw-t-0085",
@@ -973,7 +1067,12 @@
           "dhw-t-0216"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A clock is a physical signal traveling along a network of wires and buffers. Two flip-flops may receive what is logically the same edge at different times because their routes and electrical loads differ. This difference is clock skew.",
+          "Imagine one register launching data and another capturing it. If the capture clock arrives later, the new value may have extra time before the next capture edge, but a very short path can become more vulnerable to a hold violation. If the capture edge arrives earlier, the setup budget may shrink. The sign of the skew matters.",
+          "Dedicated FPGA clock resources and ASIC clock-tree synthesis attempt to control these delays and uncertainties. You cannot safely assume an arbitrary logic-generated clock behaves like a dedicated clock network. Often a clock enable is enough to make some logic update less frequently without creating a second clock domain."
+        ]
       },
       {
         "id": "DHW-CURI-transistor",
@@ -987,7 +1086,6 @@
         "bridge_ids": [
           "MOS"
         ],
-        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result.",
         "term_ids": [
           "dhw-t-0148",
           "dhw-t-0151",
@@ -1005,7 +1103,12 @@
           "dhw-t-0174"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A MOS transistor's gate controls the conductivity of a channel between its other terminals. Its gate voltage changes an electric field rather than mechanically opening a contact. This lets a small voltage signal control the charging or discharging of another node.",
+          "A CMOS inverter pairs a pull-up transistor with a pull-down transistor. When the input is low, the output is pulled toward the supply; when the input is high, the output is pulled toward ground. A gate therefore restores a digital voltage level rather than simply conveying an abstract true or false.",
+          "The output has capacitance: switching it requires moving charge. A larger load can make transitions slower and consume more switching energy. Boolean logic is a useful abstraction precisely because we can normally ignore these analog details—until timing, supply voltage or noise invalidates that abstraction. The historical Mead–Conway process examples are not modern transistor sizing rules."
+        ]
       },
       {
         "id": "DHW-CURI-wires",
@@ -1019,7 +1122,6 @@
           "MOS",
           "LAYOUT"
         ],
-        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result.",
         "term_ids": [
           "dhw-t-0159",
           "dhw-t-0216",
@@ -1039,7 +1141,12 @@
           "dhw-t-0008"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "Suppose a gate can charge a tiny neighboring input quickly, but is now asked to drive a long wire and many gate inputs. The wire has capacitance and resistance; extra charge must be moved and a distributed interconnect may no longer behave like one instantaneous node.",
+          "A rough lumped model has a time constant proportional to resistance times capacitance. Long wires add both, and buffering or changing the physical placement can reduce the delay. Buffers themselves use area and energy. A logically identical netlist can therefore have very different speed after placement and routing.",
+          "This is why a fast algorithm expressed in HDL does not automatically become fast hardware. Inspect routing delay separately from logic delay on the critical path. Physical locality can be as valuable as reducing the number of logical operations."
+        ]
       },
       {
         "id": "DHW-CURI-chips",
@@ -1053,7 +1160,6 @@
           "FAB",
           "LAYOUT"
         ],
-        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result.",
         "term_ids": [
           "dhw-t-0168",
           "dhw-t-0179",
@@ -1072,7 +1178,12 @@
           "dhw-t-0008"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A schematic specifies electrical relationships, not the geometry of every transistor and wire. Fabrication requires layers of patterned material whose minimum widths, spacings, overlaps and connectivity must obey the target manufacturing process. Two drawings implementing the same Boolean function can differ in whether they are manufacturable.",
+          "Physical design must establish that the layout obeys process rules, extracts the intended circuit and satisfies timing, power and other relevant checks. Even a correctly designed chip can encounter process variation or defects. Manufacturing yield and design correctness are distinct.",
+          "An FPGA lets you configure an already manufactured chip; fabricating an ASIC creates a new physical circuit. Historical Mead–Conway layout examples expose the abstraction boundary, but a current chip must use the actual foundry process design kit and signoff flow. Could we preserve our functional RTL while changing every physical implementation decision?"
+        ]
       },
       {
         "id": "DHW-CURI-area",
@@ -1087,7 +1198,6 @@
           "MOS",
           "LAYOUT"
         ],
-        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result.",
         "term_ids": [
           "dhw-t-0172",
           "dhw-t-0010",
@@ -1107,7 +1217,12 @@
           "dhw-t-0145"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A smaller transistor may reduce capacitance or allow more gates in the same area, but logic performance is not determined by gate size alone. Wires, memory, clock distribution, power delivery and heat can dominate. Narrower wires can have greater resistance, while densely packed switching activity can make energy and temperature constraints more important.",
+          "Even dynamic switching power depends on multiple quantities: roughly activity × capacitance × voltage squared × frequency. Changing dimensions, voltage, frequency and the amount of computation can have opposing consequences. More available transistors may be spent on cache or parallelism rather than making a single operation faster.",
+          "Compare two designs by useful work per second, area, power and the workload that actually exercises them. The question is not simply how small a gate can be, but what useful system becomes possible within the physical budget."
+        ]
       },
       {
         "id": "DHW-CURI-hdl-vs-silicon",
@@ -1121,7 +1236,6 @@
           "PORTABLE",
           "FAB"
         ],
-        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result.",
         "term_ids": [
           "dhw-t-0058",
           "dhw-t-0093",
@@ -1141,7 +1255,12 @@
           "dhw-t-0179"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "Both projects can begin with the same RTL and testbench. In an FPGA, synthesis maps the logic into existing lookup tables, registers, RAM and routing resources. Placement and routing choose connections that a bitstream will configure.",
+          "An ASIC flow instead maps logic to cells or transistor circuits for a target manufacturing process, then constructs the physical geometry and checks timing, power, design rules and layout connectivity before fabrication. It cannot generally use an FPGA-specific RAM or PLL primitive unchanged.",
+          "An FPGA is reprogrammable and useful for rapid experimentation; a custom chip may deliver greater density or efficiency at sufficient volume, but fabrication and verification are costly. The reusable object is the functional contract and portable RTL, not the device configuration. What would you need to learn before deciding to move a prototype into custom silicon?"
+        ]
       },
       {
         "id": "DHW-CURI-firmware",
@@ -1155,7 +1274,6 @@
           "SOFTCORE",
           "CONTROL"
         ],
-        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result.",
         "term_ids": [
           "dhw-t-0038",
           "dhw-t-0040",
@@ -1175,21 +1293,26 @@
           "dhw-t-0133"
         ],
         "question_type": "design",
-        "task_scope": "open_goal"
+        "task_scope": "open_goal",
+        "answer": [
+          "Imagine receiving sensor samples and computing a threshold alarm. A small state machine can enforce the sequence receive → validate → update → signal. A custom datapath can compare or filter many samples every cycle. A processor can change alarm policy, parse commands and handle exceptions by running different instructions.",
+          "The boundaries need not coincide. A CPU might configure a hardware filter, which streams samples independently and interrupts only when an alarm occurs. Compare the actual input rate and allowed latency with the processor's instruction budget, the cost of communication and the resource use of dedicated logic.",
+          "Changing policies favor programmability; hard per-sample deadlines can favor hardware. But don't introduce a processor just because control contains conditionals, or build custom logic for an infrequently used operation without a reason. A real throughput measurement can change the partition."
+        ]
       },
       {
         "id": "DHW-CURI-tool-old",
         "family_id": "choice",
-        "question": "What parts of a 2008 Spartan-3 tutorial are still useful today?",
+        "question": "If I move an old FPGA design to a new board, which parts can I keep?",
         "aliases": [
           "Xilinx ISE",
           "Vivado",
-          "Yosys"
+          "Yosys",
+          "What parts of a 2008 Spartan-3 tutorial are still useful today?"
         ],
         "bridge_ids": [
           "PORTABLE"
         ],
-        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result.",
         "term_ids": [
           "dhw-t-0059",
           "dhw-t-0104",
@@ -1209,7 +1332,16 @@
           "dhw-t-0146"
         ],
         "question_type": "transfer",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "An old Spartan-3 project contains at least three different things: a functional idea, an HDL implementation and a device-specific build/interface contract. A UART sampling algorithm can survive a change of FPGA generation. An ISE project file, package pin number, DCM primitive or memory inference template may not.",
+          "Take one working example and first recover its clock, reset, input/output behavior and timing assumptions. Port the testbench and portable RTL, then replace the old board constraints and device-specific resources. Inspect the new synthesis and timing reports and exercise one real interface.",
+          "The interesting reusable skill is transferring a hardware design across platforms without treating every line of an old tutorial as equally timeless. Preserve the old example as evidence, not a universal build recipe."
+        ],
+        "target_ids": [
+          "DHW-FLOW",
+          "DHW-MEMORY"
+        ]
       },
       {
         "id": "DHW-CURI-test",
@@ -1225,7 +1357,6 @@
           "TIME",
           "FAB"
         ],
-        "context": "Choose the conditional mechanism; textbook locations are navigation leads and are not automatically a verified board or fabricated-chip result.",
         "term_ids": [
           "dhw-t-0058",
           "dhw-t-0045",
@@ -1245,11 +1376,16 @@
           "dhw-t-0073"
         ],
         "question_type": "verification",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "Imagine a UART that passes every simulation with perfectly timed, isolated bytes but drops the second byte when a downstream consumer stalls. A passing unit test may establish bit reconstruction while saying nothing about buffering, framing recovery, hardware clock accuracy or the physical pin.",
+          "Define the end-to-end obligation first: for example, receive a sequence of legal frames and deliver the bytes in order with an explicit policy for overflow and invalid frames. Test consecutive bytes, small baud mismatch, reset during reception and downstream backpressure. Separately inspect synthesis constraints and timing, then send a known real sequence to the board.",
+          "The important certificate is a specific observable outcome under stated conditions. A synthesis report, a passing testbench and a physical loopback answer different questions. Keep the exact test input, expected output and implementation version so a future change can reproduce the evidence."
+        ]
       },
       {
         "id": "DHW-CAP-uart-rx",
-        "family_id": "visible",
+        "family_id": "constituent-practice",
         "question": "Can you implement and simulate a UART receiver from a specified baud rate and frame format?",
         "aliases": [],
         "question_type": "execution",
@@ -1265,11 +1401,15 @@
           "dhw-t-0108",
           "dhw-t-0111",
           "dhw-t-0110"
+        ],
+        "worked_solution": [
+          "Choose a clock enable rather than a new generated clock. Synchronize the serial input, detect a low start, confirm its center, then sample at each bit center. Shift eight data bits into a register and check the stop bit before asserting byte_valid. A receiver that exposes ready/valid must either buffer completed bytes or explicitly signal overrun; a UART transmitter has no inherent ability to wait for an internal ready signal.",
+          "At 50 MHz and 115200 baud, a 16× tick every 27 clocks yields approximately 115741 baud. Test clean frames, back-to-back bytes, false starts, malformed stops and ±1% sender baud variation. Compare decoded bytes and flags, not just a waveform that looks plausible. Chu ch. 8 §8.2.1–8.2.2 is the preserved receiver/baud reference."
         ]
       },
       {
         "id": "DHW-CAP-synchronous-fsm",
-        "family_id": "logic",
+        "family_id": "constituent-practice",
         "question": "Can you implement a synthesizable synchronous state machine from a transition table?",
         "aliases": [],
         "question_type": "execution",
@@ -1285,6 +1425,255 @@
           "dhw-t-0031",
           "dhw-t-0038",
           "dhw-t-0044"
+        ],
+        "worked_solution": [
+          "Represent the current state with a register. Compute the next state and combinational outputs from the state and inputs, giving every branch a defined default. Commit the next state on a clock edge; reset to the specified state.",
+          {
+            "code": "always_comb begin\n  next = state;\n  done = 1'b0;\n  case (state)\n    IDLE: if (start) next = RUN;\n    RUN:  if (finished) next = REPORT;\n    REPORT: begin\n      done = 1'b1;\n      next = IDLE;\n    end\n    default: next = IDLE;\n  endcase\nend\nalways_ff @(posedge clk) begin\n  if (rst) state <= IDLE;\n  else     state <= next;\nend"
+          },
+          "This illustrative controller assumes start and finished are already synchronous. Verify each valid transition, reset from every state, and what happens when start remains asserted. If the specification calls for exactly one transaction per press, holding start high must not silently trigger a second transaction."
+        ]
+      },
+      {
+        "id": "DHW-TAC-serial-display",
+        "family_id": "applied-challenges",
+        "question": "Can I make an FPGA receive numbers from my computer and display them on a screen without dropping characters?",
+        "aliases": [],
+        "question_type": "design",
+        "task_scope": "open_goal",
+        "answer": [
+          "Assume a 50 MHz board, a 115200-baud 8N1 serial connection, and a 640 × 480 display pipeline. A computer sends ASCII digits and newline characters, possibly continuously. Display the most recent complete line (up to 40 characters); a line exceeding 40 characters must be rejected explicitly. No soft CPU is required.",
+          "Work out what has to run at each rate, how to move complete characters into the display logic safely, how much memory is needed, and what happens if the display is temporarily unable to accept an update. Decide where state must live before selecting HDL components."
+        ],
+        "worked_solution": [
+          "Start from the two independent rates. A 115200-baud 8N1 stream carries at most 11,520 bytes/s, one completed byte every 86.8 µs. A 640 × 480 raster with 800 × 525 total timing at 60 Hz needs a 25.2 MHz pixel clock; exact supported timing is display-dependent. Rendering cannot wait for a UART byte on each pixel.",
+          "Use a UART receiver in the system clock domain and a line parser with a length counter. An ASCII digit or allowed character appends to a 40-byte staging buffer; newline commits the line if valid. Reject an overlong line and discard until newline. A 40-character line needs 320 data bits, rather than a 921,600-byte RGB888 framebuffer.",
+          "To avoid a half-written line appearing on screen, hold a committed buffer stable until the pixel-domain logic acknowledges it has copied or switched buffers, preferably during blanking. A two-buffer handshake or a properly designed dual-clock FIFO can cross the clock boundary; independently synchronizing the bits cannot guarantee coherence.",
+          "Here's the real constraint: the sender can transmit a new short line much faster than 60 display frames/s. If every line must be displayed for an entire frame, unlimited lossless traffic is impossible with finite buffering. The requirement says most recent complete line, so intermediate complete lines may be superseded, but the parser must not drop characters. Keep receiving at system-clock speed; snapshot a complete validated line for display, and make the overwrite policy explicit. If the sender must observe every line, add flow control or change the requirement.",
+          "Check against a known byte stream including adjacent newline-delimited lines, overlong input, and updates crossing frame boundaries. Compare the line parser's committed output with a software oracle; then inspect visible frames and board timing. Chu chs. 8, 13–14 are the existing serial and raster/text reading routes. The architecture here is a worked design, not a tested physical implementation."
+        ],
+        "bridge_ids": [
+          "SERIAL",
+          "VIDEO",
+          "MEMORY",
+          "TIME"
+        ],
+        "target_ids": [
+          "DHW-UART",
+          "DHW-VIDEO",
+          "DHW-MEMORY",
+          "DHW-TIMING"
+        ],
+        "success_criterion": "Given representative input and a display timing contract, produce an architecture with a coherent line-update protocol, explicit loss policy, and tests distinguishing parser correctness from physical display correctness.",
+        "term_ids": [
+          "dhw-t-0108",
+          "dhw-t-0111",
+          "dhw-t-0110",
+          "dhw-t-0049",
+          "dhw-t-0109",
+          "dhw-t-0008",
+          "dhw-t-0079",
+          "dhw-t-0216",
+          "dhw-t-0125",
+          "dhw-t-0126",
+          "dhw-t-0127",
+          "dhw-t-0128",
+          "dhw-t-0130",
+          "dhw-t-0010",
+          "dhw-t-0064",
+          "dhw-t-0119",
+          "dhw-t-0056",
+          "dhw-t-0057",
+          "dhw-t-0002",
+          "dhw-t-0058",
+          "dhw-t-0059",
+          "dhw-t-0120",
+          "dhw-t-0072",
+          "dhw-t-0073",
+          "dhw-t-0074",
+          "dhw-t-0077",
+          "dhw-t-0075",
+          "dhw-t-0084",
+          "dhw-t-0100",
+          "dhw-t-0185",
+          "dhw-t-0219"
+        ]
+      },
+      {
+        "id": "DHW-TAC-stream-rate",
+        "family_id": "applied-challenges",
+        "question": "Can I process a new sensor sample every clock when the calculation itself takes several clocks?",
+        "aliases": [],
+        "question_type": "design",
+        "task_scope": "open_goal",
+        "answer": [
+          "Suppose each unsigned 12-bit sample x must produce y = 3x + 7, with no overflow or lost samples, at one sample per 100 MHz clock. A mapped implementation of the multiplication/shift-add and final addition may exceed the 10 ns clock budget. You can add registers, reuse arithmetic, or change the representation.",
+          "Find a design that meets the throughput requirement without confusing throughput with the latency of an individual result. Determine bit widths, align control with data, and decide what would establish that the design meets the physical timing requirement."
+        ],
+        "worked_solution": [
+          "First derive bounds: max x = 4095, so max y = 12292, which fits in 14 bits. Compute 3x as (x shifted left by one) + x; use explicit 14-bit intermediate widths so no high bits are lost.",
+          "A two-stage pipeline stores 3x, then adds 7. Both stages operate concurrently on different samples. The latency is two registered stages, but a new sample can enter each clock if the stages meet timing. A shared arithmetic unit that spends two cycles per sample only achieves 50 million samples/s at 100 MHz unless it operates faster or is duplicated.",
+          {
+            "code": "logic [13:0] mul3;\nlogic [13:0] y;\nlogic valid1, valid_out;\nalways_ff @(posedge clk) begin\n  if (rst) begin\n    valid1 <= 0;\n    valid_out <= 0;\n  end else begin\n    mul3 <= ({2'b0,x} << 1) + {2'b0,x};\n    valid1 <= valid_in;\n    y <= mul3 + 14'd7;\n    valid_out <= valid1;\n  end\nend"
+          },
+          "With no backpressure in this contract, every valid input produces its corresponding output one clock after the first-stage capture. A reference queue can compare the output sequence, including gaps and the maximum input. Data values during invalid cycles are irrelevant. If downstream backpressure is introduced, the valid-only pipeline must change to preserve pending results.",
+          "Whether the design actually achieves 100 MHz cannot be inferred from the two stages alone. Run synthesis/place/route with a 10 ns clock constraint and inspect the worst path; if a stage fails, further pipeline or map arithmetic differently. The source routes are Chu ch. 6 (datapath/controller) and ch. 4 timing; the specific example is illustrative RTL."
+        ],
+        "bridge_ids": [
+          "CONTROL",
+          "TIME"
+        ],
+        "target_ids": [
+          "DHW-DATAPATH",
+          "DHW-TIMING",
+          "DHW-STATE"
+        ],
+        "success_criterion": "Produce a bit-width-correct, ordered streaming implementation, compare against an independent arithmetic oracle on a continuous stream with gaps, and distinguish simulated throughput from timing closure.",
+        "term_ids": [
+          "dhw-t-0040",
+          "dhw-t-0041",
+          "dhw-t-0042",
+          "dhw-t-0050",
+          "dhw-t-0032",
+          "dhw-t-0216",
+          "dhw-t-0072",
+          "dhw-t-0073",
+          "dhw-t-0074",
+          "dhw-t-0077",
+          "dhw-t-0075",
+          "dhw-t-0084",
+          "dhw-t-0100",
+          "dhw-t-0185",
+          "dhw-t-0219",
+          "dhw-t-0031",
+          "dhw-t-0038",
+          "dhw-t-0044",
+          "dhw-t-0045",
+          "dhw-t-0133",
+          "dhw-t-0010",
+          "dhw-t-0079"
+        ]
+      },
+      {
+        "id": "DHW-TAC-button-debug",
+        "family_id": "applied-challenges",
+        "question": "My FPGA scoreboard sometimes increments twice or misses a button press. How would I find out why?",
+        "aliases": [],
+        "question_type": "diagnosis",
+        "task_scope": "open_goal",
+        "answer": [
+          "The board has a 100 MHz oscillator. A physical button increments a score shown on a display. The score should change once per deliberate press, even if the button is held, and remain unchanged on release. Some presses produce two increments; some appear to be missed.",
+          "Do not assume the problem is debounce. Determine how to distinguish raw contact bounce, sampling an asynchronous signal, a level interpreted repeatedly as an event, and a display/update-path issue. Decide what traces would make these explanations distinguishable."
+        ],
+        "worked_solution": [
+          "Observe raw input, synchronized input, debounced state, one-clock event, internal score and displayed score. If the raw pin toggles several times, contact bounce is a plausible cause. If the raw level stays high and score increments every clock, the consumer uses a level rather than an edge. If score increments once but the display disagrees, investigate display update logic instead.",
+          "Synchronize the pin using two receiving-domain flip-flops. Then require the synchronized level to stay at a changed value for a measured or conservatively chosen interval. At 100 MHz, 10 ms means 1,000,000 clock ticks. On acceptance of a rising debounced level, issue a one-cycle pulse; release re-arms future presses.",
+          "Vary the input conditions: a long hold, contact chatter, a brief glitch, and two deliberate presses with enough separation. Use an independent expected-event sequence, not a test that merely repeats the implementation. If a deliberate press is shorter than the chosen debounce interval, missing it is expected; now the specification must trade responsiveness against bounce rejection.",
+          "Compare actual board traces with the simulation. A simulation of bounce cannot establish a physical synchronizer's metastability failure rate. If the score is transferred to a separate pixel clock, use a coherent snapshot or handshake instead of independently sampling all changing bits. Chu ch. 5 is a TOC-level debounce lead; the specific diagnostic sequence is proposed, not an observed board failure."
+        ],
+        "bridge_ids": [
+          "STATE",
+          "TIME",
+          "PHYSICALCLOCK",
+          "VIDEO"
+        ],
+        "target_ids": [
+          "DHW-STATE",
+          "DHW-TIMING",
+          "DHW-PHYSICAL-TIMING",
+          "DHW-VIDEO"
+        ],
+        "success_criterion": "Given raw and internal waveforms, isolate the stage causing double/missed events; implement a repair and demonstrate one increment per accepted press with stated timing limits.",
+        "term_ids": [
+          "dhw-t-0031",
+          "dhw-t-0038",
+          "dhw-t-0044",
+          "dhw-t-0032",
+          "dhw-t-0045",
+          "dhw-t-0133",
+          "dhw-t-0010",
+          "dhw-t-0079",
+          "dhw-t-0216",
+          "dhw-t-0219",
+          "dhw-t-0072",
+          "dhw-t-0073",
+          "dhw-t-0074",
+          "dhw-t-0077",
+          "dhw-t-0075",
+          "dhw-t-0084",
+          "dhw-t-0100",
+          "dhw-t-0185",
+          "dhw-t-0082",
+          "dhw-t-0080",
+          "dhw-t-0188",
+          "dhw-t-0186",
+          "dhw-t-0083",
+          "dhw-t-0125",
+          "dhw-t-0126",
+          "dhw-t-0127",
+          "dhw-t-0128",
+          "dhw-t-0130"
+        ]
+      },
+      {
+        "id": "DHW-TAC-port",
+        "family_id": "applied-challenges",
+        "question": "Could I move a small FPGA instrument from one board to another without redesigning its behavior?",
+        "aliases": [],
+        "question_type": "transfer",
+        "task_scope": "open_goal",
+        "answer": [
+          "Assume a working UART-controlled counter instrument with a 50 MHz oscillator, active-low reset, and LED display. The replacement board has a 100 MHz oscillator, different pins and display hardware. You want identical serial commands, counting behavior and observability.",
+          "Determine which parts of the old design should survive untouched, which are parameters, which need a board-specific adapter, and how you would prove equivalence without trusting the fact that the new bitstream builds."
+        ],
+        "worked_solution": [
+          "Write the external contract: UART 115200 8N1, accepted commands and response bytes, reset semantics, counter width and display content. Extract a portable core consuming command bytes and exposing a numerical score; put clock/baud generation, pin assignments and display driver outside that core.",
+          "The baud-enable divider changes with clock frequency. A 16× oversampling interval of 27 clocks at 50 MHz becomes about 54.25 at 100 MHz; an integer of 54 yields approximately the same actual baud as before. Any real-time counter interval also scales with frequency; an active-low reset must be normalized and its release made safe for each receiving clock.",
+          "Keep the core's command-level test vectors identical. Test the new serial adapter against wire timing, verify actual pin constraints and reset polarity, and build for the correct device. Verify display behavior with the new adapter separately. A passing functional equivalence test does not prove the new placement meets its clock constraint.",
+          "Check one real serial exchange and observe the counter through both the display and serial readback. If the new board has no equivalent display, the functional intent may still be preserved through a different output representation. The legacy project is a reference, not a portable bitstream. Chu ch. 2 and ch. 8 supply the indexed flow and serial mechanisms."
+        ],
+        "bridge_ids": [
+          "PORTABLE",
+          "BUILD",
+          "SERIAL",
+          "VIDEO"
+        ],
+        "target_ids": [
+          "DHW-FLOW",
+          "DHW-UART",
+          "DHW-VIDEO",
+          "DHW-PERIPHERALS"
+        ],
+        "success_criterion": "Recover and preserve the functional interface, separate platform-specific obligations, and compare old and new implementations using the same representative command/response traces.",
+        "term_ids": [
+          "dhw-t-0058",
+          "dhw-t-0099",
+          "dhw-t-0091",
+          "dhw-t-0092",
+          "dhw-t-0090",
+          "dhw-t-0069",
+          "dhw-t-0093",
+          "dhw-t-0005",
+          "dhw-t-0052",
+          "dhw-t-0059",
+          "dhw-t-0108",
+          "dhw-t-0111",
+          "dhw-t-0110",
+          "dhw-t-0049",
+          "dhw-t-0109",
+          "dhw-t-0008",
+          "dhw-t-0079",
+          "dhw-t-0216",
+          "dhw-t-0125",
+          "dhw-t-0126",
+          "dhw-t-0127",
+          "dhw-t-0128",
+          "dhw-t-0130",
+          "dhw-t-0010",
+          "dhw-t-0121",
+          "dhw-t-0122",
+          "dhw-t-0118",
+          "dhw-t-0137"
         ]
       }
     ],
