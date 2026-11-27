@@ -7346,43 +7346,42 @@
     "families": [
       {
         "id": "build",
-        "label": "Circuit primitives and analog design",
+        "label": "What can I build, and how does it work?",
         "description": "Circuit primitives, power, amplifiers and useful physical devices"
       },
       {
         "id": "failures",
-        "label": "Circuit dynamics and failure mechanisms",
+        "label": "Why does a seemingly correct circuit misbehave?",
         "description": "Electrical limits, timing, noise, heat and return-current failures"
       },
       {
         "id": "measure",
-        "label": "Measurement, noise and model validity",
+        "label": "How do I know what really happened?",
         "description": "Waveforms, probes, source impedance, noise and operational evidence"
       },
       {
         "id": "fast",
-        "label": "High-speed signals and interconnect",
+        "label": "What changes when signals get fast?",
         "description": "Distributed wires, termination, crosstalk, clocks and PCB structure"
       },
       {
         "id": "power",
-        "label": "Power conversion, magnetics and energy",
+        "label": "How can I move, regulate and store energy?",
         "description": "Switching regulators, magnetics, feedback, efficiency and safety"
       },
       {
         "id": "systems",
-        "label": "System integration and physical realization",
+        "label": "How do electronics become working systems?",
         "description": "MCUs, sensor interfaces, design choices and reliability"
       }
     ],
     "entries": [
       {
         "id": "ELEC-CURI-led",
-        "question": "How can transistors control power using small signals?",
+        "question": "How can a transistor make a tiny signal control a bigger load?",
         "family_id": "build",
         "aliases": [
-          "transistor switching",
-          "How can a transistor make a tiny signal control a bigger load?"
+          "transistor switching"
         ],
         "bridge_ids": [
           "PHYS"
@@ -7397,11 +7396,10 @@
       },
       {
         "id": "ELEC-CURI-amplifier",
-        "question": "How can analog circuits amplify weak sensor signals without losing information?",
+        "question": "How can I amplify a weak sensor signal without changing what it means?",
         "family_id": "build",
         "aliases": [
-          "op-amp sensor amplification",
-          "How can I amplify a weak sensor signal without changing what it means?"
+          "op-amp sensor amplification"
         ],
         "bridge_ids": [
           "AMPLIFY"
@@ -7416,12 +7414,11 @@
       },
       {
         "id": "ELEC-CURI-regulate",
-        "question": "How can feedback maintain voltage under changing loads?",
+        "question": "How can a circuit hold a voltage steady as the load changes?",
         "family_id": "build",
         "aliases": [
           "power supply",
-          "voltage regulator",
-          "How can a circuit hold a voltage steady as the load changes?"
+          "voltage regulator"
         ],
         "bridge_ids": [
           "REGULATE",
@@ -7437,12 +7434,11 @@
       },
       {
         "id": "ELEC-CURI-convert",
-        "question": "How can switching circuits efficiently step voltage up or down?",
+        "question": "How can 5 volts become 12 volts or 1 volt efficiently?",
         "family_id": "build",
         "aliases": [
           "voltage boost",
-          "buck convert",
-          "How can 5 volts become 12 volts or 1 volt efficiently?"
+          "buck convert"
         ],
         "bridge_ids": [
           "CONVERT"
@@ -7457,11 +7453,10 @@
       },
       {
         "id": "ELEC-CURI-supply",
-        "question": "Why do integrated circuits need local supply decoupling?",
+        "question": "Why is a capacitor often placed right next to every chip?",
         "family_id": "build",
         "aliases": [
-          "bypass capacitor",
-          "Why is a capacitor often placed right next to every chip?"
+          "bypass capacitor"
         ],
         "bridge_ids": [
           "MEASURE",
@@ -7476,12 +7471,11 @@
       },
       {
         "id": "ELEC-CURI-analog-compute",
-        "question": "How can analog circuits implement filtering and computation?",
+        "question": "Can circuits implement filters or computations without running software?",
         "family_id": "build",
         "aliases": [
           "analog filter",
-          "circuit computing",
-          "Can circuits implement filters or computations without running software?"
+          "circuit computing"
         ],
         "bridge_ids": [
           "PHYS",
@@ -7497,11 +7491,10 @@
       },
       {
         "id": "ELEC-CURI-hot",
-        "question": "Why do voltage regulators overheat?",
+        "question": "Why is my voltage regulator getting extremely hot?",
         "family_id": "failures",
         "aliases": [
-          "overheating regulator",
-          "Why is my voltage regulator getting extremely hot?"
+          "overheating regulator"
         ],
         "bridge_ids": [
           "REGULATE",
@@ -7516,11 +7509,10 @@
       },
       {
         "id": "ELEC-CURI-noisy",
-        "question": "Why can connecting a sensor introduce amplifier noise?",
+        "question": "Why does my amplifier become noisy when I attach the sensor?",
         "family_id": "failures",
         "aliases": [
-          "source impedance noise",
-          "Why does my amplifier become noisy when I attach the sensor?"
+          "source impedance noise"
         ],
         "bridge_ids": [
           "AMPLIFY"
@@ -7535,11 +7527,10 @@
       },
       {
         "id": "ELEC-CURI-oscillates",
-        "question": "Why do feedback circuits become unstable?",
+        "question": "Why does an otherwise correct feedback circuit oscillate?",
         "family_id": "failures",
         "aliases": [
-          "unstable control loop",
-          "Why does an otherwise correct feedback circuit oscillate?"
+          "unstable control loop"
         ],
         "bridge_ids": [
           "CONTROL",
@@ -7555,12 +7546,11 @@
       },
       {
         "id": "ELEC-CURI-droops",
-        "question": "Why do rapid load changes cause power-supply transients?",
+        "question": "Why does the power rail dip when a processor suddenly switches on?",
         "family_id": "failures",
         "aliases": [
           "load step",
-          "brownout",
-          "Why does the power rail dip when a processor suddenly switches on?"
+          "brownout"
         ],
         "bridge_ids": [
           "MEASURE",
@@ -7577,11 +7567,10 @@
       },
       {
         "id": "ELEC-CURI-wrong-way",
-        "question": "Why can a converter initially respond opposite to its control input?",
+        "question": "Why can increasing a converter's duty cycle initially lower its output?",
         "family_id": "failures",
         "aliases": [
-          "boost transient inversion",
-          "Why can increasing a converter's duty cycle initially lower its output?"
+          "boost transient inversion"
         ],
         "bridge_ids": [
           "CONTROL"
@@ -7595,11 +7584,10 @@
       },
       {
         "id": "ELEC-CURI-light-load",
-        "question": "Why does a power converter change operating mode at light load?",
+        "question": "Why does a converter's behavior change at very light load?",
         "family_id": "failures",
         "aliases": [
-          "discontinuous current",
-          "Why does a converter's behavior change at very light load?"
+          "discontinuous current"
         ],
         "bridge_ids": [
           "CONVERT"
@@ -7613,11 +7601,10 @@
       },
       {
         "id": "ELEC-CURI-transformer",
-        "question": "What limits transformer operation at high switching frequencies?",
+        "question": "Why does a transformer overheat or stop working when I increase switching speed?",
         "family_id": "failures",
         "aliases": [
-          "magnetic saturation",
-          "Why does a transformer overheat or stop working when I increase switching speed?"
+          "magnetic saturation"
         ],
         "bridge_ids": [
           "MAGNETICS"
@@ -7632,11 +7619,10 @@
       },
       {
         "id": "ELEC-CURI-scope",
-        "question": "Why can an oscilloscope probe alter the measured circuit?",
+        "question": "Why does my signal look worse after I attach an oscilloscope probe?",
         "family_id": "measure",
         "aliases": [
-          "oscilloscope artifacts",
-          "Why does my signal look worse after I attach an oscilloscope probe?"
+          "oscilloscope artifacts"
         ],
         "bridge_ids": [
           "MEASURE"
@@ -7651,11 +7637,10 @@
       },
       {
         "id": "ELEC-CURI-truth",
-        "question": "How can measurements distinguish circuit noise from coupled pickup?",
+        "question": "How can I distinguish real switching noise from measurement pickup?",
         "family_id": "measure",
         "aliases": [
-          "waveform artifacts",
-          "How can I distinguish real switching noise from measurement pickup?"
+          "waveform artifacts"
         ],
         "bridge_ids": [
           "MEASURE"
@@ -7670,11 +7655,10 @@
       },
       {
         "id": "ELEC-CURI-adc",
-        "question": "What limits the effective resolution of an ADC?",
+        "question": "Why does a 12-bit ADC not always give 12 useful bits?",
         "family_id": "measure",
         "aliases": [
-          "effective bits",
-          "Why does a 12-bit ADC not always give 12 useful bits?"
+          "effective bits"
         ],
         "bridge_ids": [
           "INTERFACE"
@@ -7689,11 +7673,10 @@
       },
       {
         "id": "ELEC-CURI-model",
-        "question": "When do circuit simulation models predict physical behavior reliably?",
+        "question": "When should I trust a SPICE circuit simulation?",
         "family_id": "measure",
         "aliases": [
-          "simulation limitations",
-          "When should I trust a SPICE circuit simulation?"
+          "simulation limitations"
         ],
         "bridge_ids": [
           "BOARD"
@@ -7708,11 +7691,10 @@
       },
       {
         "id": "ELEC-CURI-edge",
-        "question": "Why does edge rate determine high-speed PCB requirements?",
+        "question": "Why would a slow clock need fast PCB design?",
         "family_id": "fast",
         "aliases": [
-          "edge speed vs clock",
-          "Why would a slow clock need fast PCB design?"
+          "edge speed vs clock"
         ],
         "bridge_ids": [
           "INTERCONNECT"
@@ -7727,11 +7709,10 @@
       },
       {
         "id": "ELEC-CURI-ringing",
-        "question": "Why do impedance discontinuities cause signal reflections?",
+        "question": "Why do digital signals ring or bounce at the far end of a cable?",
         "family_id": "fast",
         "aliases": [
-          "reflection",
-          "Why do digital signals ring or bounce at the far end of a cable?"
+          "reflection"
         ],
         "bridge_ids": [
           "INTERCONNECT"
@@ -7746,11 +7727,10 @@
       },
       {
         "id": "ELEC-CURI-ground",
-        "question": "How do return-current paths constrain PCB layout?",
+        "question": "Why does cutting a slot in a ground plane upset traces above it?",
         "family_id": "fast",
         "aliases": [
-          "split ground plane",
-          "Why does cutting a slot in a ground plane upset traces above it?"
+          "split ground plane"
         ],
         "bridge_ids": [
           "RETURN"
@@ -7764,12 +7744,11 @@
       },
       {
         "id": "ELEC-CURI-crosstalk",
-        "question": "How does coupling between interconnects create crosstalk?",
+        "question": "How can switching one pin cause another pin to glitch?",
         "family_id": "fast",
         "aliases": [
           "crosstalk",
-          "ground bounce",
-          "How can switching one pin cause another pin to glitch?"
+          "ground bounce"
         ],
         "bridge_ids": [
           "RETURN",
@@ -7784,11 +7763,10 @@
       },
       {
         "id": "ELEC-CURI-clock",
-        "question": "Why can clocked devices disagree about a shared timing reference?",
+        "question": "Why do two chips disagree about a supposedly shared clock?",
         "family_id": "fast",
         "aliases": [
-          "clock skew",
-          "Why do two chips disagree about a supposedly shared clock?"
+          "clock skew"
         ],
         "bridge_ids": [
           "CLOCK"
@@ -7802,11 +7780,10 @@
       },
       {
         "id": "ELEC-CURI-via",
-        "question": "How do vias and connectors affect high-speed signal integrity?",
+        "question": "Can a tiny via or connector matter at high speed?",
         "family_id": "fast",
         "aliases": [
-          "via parasitics",
-          "Can a tiny via or connector matter at high speed?"
+          "via parasitics"
         ],
         "bridge_ids": [
           "CLOCK"
@@ -7821,11 +7798,10 @@
       },
       {
         "id": "ELEC-CURI-isolate",
-        "question": "When does power conversion require galvanic isolation?",
+        "question": "When must a power supply isolate its output from its input?",
         "family_id": "power",
         "aliases": [
-          "galvanic isolation",
-          "When must a power supply isolate its output from its input?"
+          "galvanic isolation"
         ],
         "bridge_ids": [
           "MAGNETICS"
@@ -7839,11 +7815,10 @@
       },
       {
         "id": "ELEC-CURI-efficiency",
-        "question": "What determines power-converter efficiency and loss?",
+        "question": "Where does the missing energy go in a switching converter?",
         "family_id": "power",
         "aliases": [
-          "converter losses",
-          "Where does the missing energy go in a switching converter?"
+          "converter losses"
         ],
         "bridge_ids": [
           "CONVERT",
@@ -7859,11 +7834,10 @@
       },
       {
         "id": "ELEC-CURI-digital",
-        "question": "How does digital control change power-converter behavior?",
+        "question": "What changes when a power converter is controlled by a microcontroller?",
         "family_id": "power",
         "aliases": [
-          "digital power control",
-          "What changes when a power converter is controlled by a microcontroller?"
+          "digital power control"
         ],
         "bridge_ids": [
           "CONTROL"
@@ -7877,11 +7851,10 @@
       },
       {
         "id": "ELEC-CURI-magnetic",
-        "question": "What determines the physical size of magnetic components?",
+        "question": "Why are inductors and transformers often physically larger than the logic?",
         "family_id": "power",
         "aliases": [
-          "magnetics",
-          "Why are inductors and transformers often physically larger than the logic?"
+          "magnetics"
         ],
         "bridge_ids": [
           "MAGNETICS"
@@ -7896,11 +7869,10 @@
       },
       {
         "id": "ELEC-CURI-ac",
-        "question": "What makes practical AC rectification more than diode switching?",
+        "question": "Why is rectifying AC more complicated than adding diodes?",
         "family_id": "power",
         "aliases": [
-          "AC-DC power",
-          "Why is rectifying AC more complicated than adding diodes?"
+          "AC-DC power"
         ],
         "bridge_ids": [
           "CONVERT",
@@ -7916,11 +7888,10 @@
       },
       {
         "id": "ELEC-CURI-choose",
-        "question": "How should electronic functions be partitioned between analog, digital and programmable hardware?",
+        "question": "Should I use an op-amp, a microcontroller, or an FPGA for this behavior?",
         "family_id": "systems",
         "aliases": [
-          "analog versus digital",
-          "Should I use an op-amp, a microcontroller, or an FPGA for this behavior?"
+          "analog versus digital"
         ],
         "bridge_ids": [
           "PHYS",
@@ -7936,11 +7907,10 @@
       },
       {
         "id": "ELEC-CURI-sensor",
-        "question": "How can analog sensors be interfaced to digital electronics?",
+        "question": "How can an analog sensor safely communicate with a computer?",
         "family_id": "systems",
         "aliases": [
-          "sensor interfacing",
-          "How can an analog sensor safely communicate with a computer?"
+          "sensor interfacing"
         ],
         "bridge_ids": [
           "INTERFACE"
@@ -7955,11 +7925,10 @@
       },
       {
         "id": "ELEC-CURI-board",
-        "question": "How can a breadboard circuit become a reliable PCB?",
+        "question": "How do I turn a breadboard experiment into a reliable PCB?",
         "family_id": "systems",
         "aliases": [
-          "PCB design",
-          "How do I turn a breadboard experiment into a reliable PCB?"
+          "PCB design"
         ],
         "bridge_ids": [
           "BOARD",
@@ -7975,11 +7944,10 @@
       },
       {
         "id": "ELEC-CURI-safe",
-        "question": "How can power-circuit measurements preserve electrical isolation and safety?",
+        "question": "How can I measure a live power circuit without damaging myself or my instruments?",
         "family_id": "systems",
         "aliases": [
-          "scope earth ground",
-          "How can I measure a live power circuit without damaging myself or my instruments?"
+          "scope earth ground"
         ],
         "bridge_ids": [
           "BOARD",
@@ -7995,11 +7963,10 @@
       },
       {
         "id": "ELEC-CURI-confidence",
-        "question": "What evidence establishes that an electronic device meets its operating requirements?",
+        "question": "What evidence gives me confidence my physical electronic device really works?",
         "family_id": "systems",
         "aliases": [
-          "engineering verification",
-          "What evidence gives me confidence my physical electronic device really works?"
+          "engineering verification"
         ],
         "bridge_ids": [
           "BOARD",
@@ -8015,11 +7982,10 @@
       },
       {
         "id": "ELEC-CURI-compatibility",
-        "question": "Why can a datasheet-compliant component fail at the system level?",
+        "question": "Why might a datasheet-accurate part still fail in my assembled circuit?",
         "family_id": "systems",
         "aliases": [
-          "system context",
-          "Why might a datasheet-accurate part still fail in my assembled circuit?"
+          "system context"
         ],
         "bridge_ids": [
           "INTERFACE",
@@ -8036,10 +8002,8 @@
       {
         "id": "ELEC-CAP-buck-calculation",
         "family_id": "power",
-        "question": "How can we size a buck converter from its electrical requirements?",
-        "aliases": [
-          "Can you calculate a buck converter's ideal duty cycle, ripple and component constraints from a specification?"
-        ],
+        "question": "Can you calculate a buck converter's ideal duty cycle, ripple and component constraints from a specification?",
+        "aliases": [],
         "question_type": "execution",
         "task_scope": "capability_family",
         "bridge_ids": [
@@ -8058,10 +8022,8 @@
       {
         "id": "ELEC-CAP-probe-loading",
         "family_id": "measure",
-        "question": "How can we isolate actual signal ringing from oscilloscope probe artifacts?",
-        "aliases": [
-          "Can you distinguish actual signal ringing from oscilloscope probe loading or pickup?"
-        ],
+        "question": "Can you distinguish actual signal ringing from oscilloscope probe loading or pickup?",
+        "aliases": [],
         "question_type": "empirical_investigation",
         "task_scope": "capability_family",
         "bridge_ids": [
