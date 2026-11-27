@@ -4277,6 +4277,57 @@
         "mfg-t-0120",
         "mfg-t-0187"
       ]
+    },
+    {
+      "id": "JOIN",
+      "question": "How can separately manufactured parts become a reliable assembly?",
+      "choices": [
+        {
+          "label": "Separate parts must transmit load and remain serviceable",
+          "technical_title": "Joint geometry, fasteners and bonding",
+          "distinguishing_question": "What loads must the joint transmit, what access is available, and must it come apart?",
+          "why": "Splitting a part can remove fabrication constraints while introducing joint strength, alignment and assembly obligations. These chapters are targeted reading leads.",
+          "targets": [
+            "MFG-JOINING"
+          ],
+          "section_targets": [
+            {
+              "source_id": "BOOK-FFF",
+              "ref": "VI",
+              "level": "toc_only",
+              "why": "Fastening and Joinery · printed p. 124"
+            },
+            {
+              "source_id": "BOOK-SHIGLEY",
+              "ref": "8",
+              "level": "toc_only",
+              "why": "Removable joints · printed p. 433"
+            },
+            {
+              "source_id": "BOOK-SHIGLEY",
+              "ref": "9",
+              "level": "toc_only",
+              "why": "Permanent joints · printed p. 497"
+            }
+          ],
+          "term_ids": [
+            "mfg-t-0109",
+            "mfg-t-0110",
+            "mfg-t-0111",
+            "mfg-t-0128",
+            "mfg-t-0133",
+            "mfg-t-0141"
+          ]
+        }
+      ],
+      "term_ids": [
+        "mfg-t-0109",
+        "mfg-t-0110",
+        "mfg-t-0111",
+        "mfg-t-0128",
+        "mfg-t-0133",
+        "mfg-t-0141"
+      ]
     }
   ],
   "curiosity_atlas": {
@@ -5117,6 +5168,33 @@
           "mfg-t-0117",
           "mfg-t-0114"
         ]
+      },
+      {
+        "id": "MFG-CURI-joining",
+        "family_id": "fit",
+        "question": "How can manufactured parts be joined into a reliable assembly?",
+        "aliases": [
+          "How do I join two parts together?",
+          "screws versus adhesive",
+          "fastening and joinery"
+        ],
+        "context": "Compare load transfer, alignment, assembly access, serviceability and tolerance before choosing fastening, bonding or an integral design.",
+        "bridge_ids": [
+          "JOIN"
+        ],
+        "target_ids": [
+          "MFG-JOINING"
+        ],
+        "term_ids": [
+          "mfg-t-0109",
+          "mfg-t-0110",
+          "mfg-t-0111",
+          "mfg-t-0128",
+          "mfg-t-0133",
+          "mfg-t-0141"
+        ],
+        "question_type": "design",
+        "task_scope": "open_goal"
       }
     ],
     "legacy_entry_ids": [
