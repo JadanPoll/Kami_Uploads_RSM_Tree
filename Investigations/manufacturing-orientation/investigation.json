@@ -4564,7 +4564,10 @@
           "mfg-t-0109"
         ],
         "question_type": "diagnosis",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "CAD treats a nominal 10 mm pin and 10 mm hole as perfect boundaries; actual parts have size, shape and position variation. Even conforming parts can interfere if the pin is oversize and hole undersize. For a sliding fit, start with the smallest possible hole minus the largest possible pin, then consider ovality, alignment, roughness and temperature. One lucky prototype does not establish repeatability."
+        ]
       },
       {
         "id": "MFG-CURI-holes-small",
@@ -4780,7 +4783,11 @@
           "mfg-t-0026"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "Imagine filling bottles: each bottle must stand still under a nozzle, then advance. A Geneva mechanism encodes this sequence in geometry. A pin on a continuously rotating wheel enters a slot in a second wheel, advances it, and exits; a curved locking surface holds the output stationary between engagements. Four slots give a quarter turn per cycle without stopping the motor.",
+          "A cam can encode a chosen motion profile including dwell, a ratchet advances without reversing on the return stroke, and a clutch and brake control coupling to the load. These are different ways of creating intermittent motion. Doubling input speed with unchanged geometry doubles velocities and quadruples accelerations, making impact and wear more important. Could you extend the dwell without slowing the motor? This explanation follows Operational2B's calibration."
+        ]
       },
       {
         "id": "MFG-CURI-smooth-direction",
@@ -5167,6 +5174,35 @@
         ],
         "question_type": "design",
         "task_scope": "open_goal"
+      },
+      {
+        "id": "MFG-TACIT-sliding-guide",
+        "family_id": "fit",
+        "question": "Can I make a printed sliding guide that still fits after making ten copies?",
+        "aliases": [],
+        "bridge_ids": [
+          "FIT"
+        ],
+        "term_ids": [
+          "mfg-t-0128",
+          "mfg-t-0133",
+          "mfg-t-0139",
+          "mfg-t-0129",
+          "mfg-t-0131",
+          "mfg-t-0132",
+          "mfg-t-0126",
+          "mfg-t-0071"
+        ],
+        "question_type": "design",
+        "task_scope": "specified_instance",
+        "applied_challenge": true,
+        "answer": [
+          "A printed guide needs at least 0.15 mm total clearance, but over 0.6 mm produces unacceptable play. Both mating dimensions can deviate by ±0.15 mm. Can changing only nominal clearance guarantee both requirements?"
+        ],
+        "worked_solution": [
+          "If nominal clearance is c, worst-case variation is ±0.30 mm. The tightest fit requires c−0.30 ≥ 0.15, or c ≥ 0.45 mm; the loosest requires c+0.30 ≤ 0.6, or c ≤ 0.30 mm. No nominal clearance satisfies both.",
+          "Reduce variation, finish mating surfaces, selectively assemble, or use a compliant preload to suppress play without demanding a tight dimensional fit. Preload introduces friction and wear. Print representative coupons in the same orientation and measure and assemble mismatched extremes. The bounds are illustrative, not measured printer tolerances."
+        ]
       }
     ],
     "legacy_entry_ids": [
