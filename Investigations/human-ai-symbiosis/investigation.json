@@ -1729,9 +1729,6 @@
         "bridge_ids": [
           "HAI-BRG-population"
         ],
-        "target_ids": [
-          "HAI-I06"
-        ],
         "related_question_ids": [
           "HAI-Q08D"
         ],
@@ -2315,6 +2312,10 @@
             "hai-t-0120",
             "hai-t-0133",
             "hai-t-0122"
+          ],
+          "candidate_source_ids": [
+            "OPENAI_SIGNALS",
+            "ANTH_ECON"
           ]
         },
         {
@@ -2344,6 +2345,9 @@
             "hai-t-0097",
             "hai-t-0049",
             "hai-t-0130"
+          ],
+          "candidate_source_ids": [
+            "METR"
           ]
         }
       ],
