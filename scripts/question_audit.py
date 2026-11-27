@@ -26,11 +26,21 @@ def scan():
             continue
         domain = path.parent.name
         entries = data["curiosity_atlas"].get("entries", [])
-        bridges = {b["id"] for b in data.get("navigation_bridges", [])}
+        atlas = data["curiosity_atlas"]
+        families = {f["id"] for f in atlas.get("families", [])}
+        redirects = atlas.get("redirects", {})
+        entry_ids = {q.get("id") for q in entries}
+        for old_id, new_id in redirects.items():
+            if old_id in entry_ids or new_id not in entry_ids:
+                problems.append(f"{domain}: invalid question redirect {old_id!r} -> {new_id!r}")
+        bridges = {b["id"]: b for b in data.get("navigation_bridges", [])}
         technical = {n["id"] for n in data.get("nodes", [])}
         for included in data.get("include_files", []):
             sub = json.loads((path.parent / included).read_text(encoding="utf-8"))
             technical.update(n["id"] for n in sub.get("nodes", []))
+            for qid in sub.get("question_ids", []):
+                if qid not in entry_ids:
+                    problems.append(f"{domain}/{included}: noncanonical family question ID {qid}")
         types, scopes, seen = Counter(), Counter(), set()
         criteria = targets = resolved_bridges = 0
         for q in entries:
@@ -38,6 +48,8 @@ def scan():
             if not qid or qid in seen:
                 problems.append(f"{domain}: duplicate or missing entry ID: {qid!r}")
             seen.add(qid)
+            if q.get("family_id") not in families:
+                problems.append(f"{domain}/{qid}: unknown question family")
             typ, scope = q.get("question_type"), q.get("task_scope")
             types[typ or "UNTAGGED"] += 1
             scopes[scope or "UNTAGGED"] += 1
@@ -62,6 +74,12 @@ def scan():
                 missing = set(q["target_ids"]) - technical
                 if missing:
                     problems.append(f"{domain}/{qid}: unresolved technical targets: {sorted(missing)}")
+                reachable = {target for bid in ids if bid in bridges
+                             for choice in bridges[bid].get("choices", [])
+                             for target in choice.get("targets", [])}
+                unreachable = set(q["target_ids"]) - reachable
+                if unreachable:
+                    problems.append(f"{domain}/{qid}: technical targets absent from question bridges: {sorted(unreachable)}")
         reports.append({
             "domain": domain, "entries": len(entries),
             "typed": len(entries) - types["UNTAGGED"],
