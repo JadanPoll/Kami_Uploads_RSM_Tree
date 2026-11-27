@@ -1688,7 +1688,6 @@
           "label": "Functional output differs between simulator and physical device",
           "technical_title": "Mapping and physical-implementation flow",
           "distinguishing_question": "Was the failure behavioral, pin/clock/reset wiring, resource mapping, or a violated timing constraint?",
-          "why": "Compare the observable constraints with the proposed mechanism before treating it as the explanation; follow the cited book region and its evidence status.",
           "targets": [
             "DHW-FLOW",
             "DHW-TIMING"
@@ -1719,7 +1718,6 @@
           "label": "The design is correct but cannot reach the real peripheral",
           "technical_title": "Board clock, pins and I/O interface contract",
           "distinguishing_question": "Does the board actually offer that device, voltage, interface or connection?",
-          "why": "Compare the observable constraints with the proposed mechanism before treating it as the explanation; follow the cited book region and its evidence status.",
           "targets": [
             "DHW-FLOW",
             "DHW-PERIPHERALS"
@@ -1770,7 +1768,6 @@
           "label": "A previously computed value persists unexpectedly",
           "technical_title": "Unintended latch from incomplete assignment",
           "distinguishing_question": "Does every output receive a value for every input combination?",
-          "why": "Compare the observable constraints with the proposed mechanism before treating it as the explanation; follow the cited book region and its evidence status.",
           "targets": [
             "DHW-COMB"
           ],
@@ -1797,7 +1794,6 @@
           "label": "The output is a complex mux or priority circuit",
           "technical_title": "Hardware interpretation of conditional RTL",
           "distinguishing_question": "Which branch priorities and gate structures are inferred, rather than which line executes first?",
-          "why": "Compare the observable constraints with the proposed mechanism before treating it as the explanation; follow the cited book region and its evidence status.",
           "targets": [
             "DHW-COMB",
             "DHW-DATAPATH"
@@ -1847,7 +1843,6 @@
           "label": "Mechanical switch causes multiple changes",
           "technical_title": "Contact bounce versus edge detection",
           "distinguishing_question": "Does the input trace contain several transitions and how does a synchronizer/debouncer recognize one event?",
-          "why": "Compare the observable constraints with the proposed mechanism before treating it as the explanation; follow the cited book region and its evidence status.",
           "targets": [
             "DHW-STATE",
             "DHW-TIMING"
@@ -1878,7 +1873,6 @@
           "label": "Behavior must depend on earlier events",
           "technical_title": "Registers and finite-state control",
           "distinguishing_question": "Which history is necessary to determine the next output and transition?",
-          "why": "Compare the observable constraints with the proposed mechanism before treating it as the explanation; follow the cited book region and its evidence status.",
           "targets": [
             "DHW-STATE"
           ],
@@ -1926,7 +1920,6 @@
           "label": "Arithmetic is broken into repeated small steps",
           "technical_title": "FSM plus datapath and register transfers",
           "distinguishing_question": "Can a limited datapath be reused over multiple cycles with explicit control?",
-          "why": "Compare the observable constraints with the proposed mechanism before treating it as the explanation; follow the cited book region and its evidence status.",
           "targets": [
             "DHW-DATAPATH",
             "DHW-STATE"
@@ -1957,7 +1950,6 @@
           "label": "The operation is easier as programmable commands",
           "technical_title": "Microprogrammed or stored-program controller",
           "distinguishing_question": "Which tasks change in firmware and which are fixed-time datapath contracts?",
-          "why": "Compare the observable constraints with the proposed mechanism before treating it as the explanation; follow the cited book region and its evidence status.",
           "targets": [
             "DHW-SOFTCORE",
             "DHW-DATAPATH"
@@ -2011,7 +2003,6 @@
           "label": "It is correct at slow clock but fails at higher frequency",
           "technical_title": "Path delay and setup/hold margin",
           "distinguishing_question": "Which register-to-register path, clock skew or external path budget is violated?",
-          "why": "Compare the observable constraints with the proposed mechanism before treating it as the explanation; follow the cited book region and its evidence status.",
           "targets": [
             "DHW-TIMING"
           ],
@@ -2041,7 +2032,6 @@
           "label": "Asynchronous signals arrive between clock edges",
           "technical_title": "Clock-domain crossing and metastability",
           "distinguishing_question": "What ownership/handshake/sampling guarantee prevents a transient violating downstream state?",
-          "why": "Compare the observable constraints with the proposed mechanism before treating it as the explanation; follow the cited book region and its evidence status.",
           "targets": [
             "DHW-PHYSICAL-TIMING",
             "DHW-TIMING"
@@ -2094,7 +2084,6 @@
           "label": "Serial bytes are corrupted intermittently",
           "technical_title": "UART bit-center sampling and baud tolerance",
           "distinguishing_question": "How does the receiver find the start bit and where is the data sampled?",
-          "why": "Compare the observable constraints with the proposed mechanism before treating it as the explanation; follow the cited book region and its evidence status.",
           "targets": [
             "DHW-UART"
           ],
@@ -2122,7 +2111,6 @@
           "label": "A baud generator seems to need another clock",
           "technical_title": "Clock-enable ticks versus new generated clock domain",
           "distinguishing_question": "Can sampling be implemented as synchronous enables without creating another clock domain?",
-          "why": "Compare the observable constraints with the proposed mechanism before treating it as the explanation; follow the cited book region and its evidence status.",
           "targets": [
             "DHW-UART",
             "DHW-TIMING"
@@ -2173,7 +2161,6 @@
           "label": "I need a small FIFO or buffer inside the FPGA",
           "technical_title": "Registers versus mapped on-chip block RAM",
           "distinguishing_question": "What memory primitive, port timing and read-during-write behavior does the synthesizer implement?",
-          "why": "Compare the observable constraints with the proposed mechanism before treating it as the explanation; follow the cited book region and its evidence status.",
           "targets": [
             "DHW-MEMORY"
           ],
@@ -2200,7 +2187,6 @@
           "label": "My large memory lives outside the FPGA",
           "technical_title": "External SRAM transaction and timing controller",
           "distinguishing_question": "When is the address/data stable, when can the memory respond, and who arbitrates use?",
-          "why": "Compare the observable constraints with the proposed mechanism before treating it as the explanation; follow the cited book region and its evidence status.",
           "targets": [
             "DHW-MEMORY"
           ],
@@ -2245,7 +2231,6 @@
           "label": "Output video is not synchronized",
           "technical_title": "VGA pixel/line/frame timing",
           "distinguishing_question": "Are pixel ticks, blanking and sync periods generated to match the interface's timing contract?",
-          "why": "Compare the observable constraints with the proposed mechanism before treating it as the explanation; follow the cited book region and its evidence status.",
           "targets": [
             "DHW-VIDEO"
           ],
@@ -2271,7 +2256,6 @@
           "label": "I want text or sprites without storing every pixel",
           "technical_title": "Character and tile-mapped graphics architecture",
           "distinguishing_question": "How are screen coordinates converted into glyph or tile indices and pixel data?",
-          "why": "Compare the observable constraints with the proposed mechanism before treating it as the explanation; follow the cited book region and its evidence status.",
           "targets": [
             "DHW-VIDEO",
             "DHW-MEMORY"
@@ -2321,7 +2305,6 @@
           "label": "A keyboard or mouse sends transitions that need decoding",
           "technical_title": "Physical event to protocol frame",
           "distinguishing_question": "What constitutes the complete command, and can errors recover?",
-          "why": "Compare the observable constraints with the proposed mechanism before treating it as the explanation; follow the cited book region and its evidence status.",
           "targets": [
             "DHW-PERIPHERALS"
           ],
@@ -2345,7 +2328,6 @@
           "label": "Data is valid but not arriving in usable time",
           "technical_title": "Interface buffer and protocol backpressure",
           "distinguishing_question": "What does the target module need to preserve and when can the receiver accept more events?",
-          "why": "Compare the observable constraints with the proposed mechanism before treating it as the explanation; follow the cited book region and its evidence status.",
           "targets": [
             "DHW-PERIPHERALS",
             "DHW-MEMORY"
@@ -2396,7 +2378,6 @@
           "label": "The control changes often or needs programs",
           "technical_title": "Processor-based reprogrammable control",
           "distinguishing_question": "What operation must be represented as data/instructions instead of fixed wiring?",
-          "why": "Compare the observable constraints with the proposed mechanism before treating it as the explanation; follow the cited book region and its evidence status.",
           "targets": [
             "DHW-SOFTCORE",
             "DHW-DATAPATH"
@@ -2427,7 +2408,6 @@
           "label": "Hard timing dominates and operations are fixed",
           "technical_title": "Dedicated state machine or datapath",
           "distinguishing_question": "Can hardwired hardware perform the work without instruction overhead and with simpler latency?",
-          "why": "Compare the observable constraints with the proposed mechanism before treating it as the explanation; follow the cited book region and its evidence status.",
           "targets": [
             "DHW-DATAPATH",
             "DHW-STATE"
@@ -2481,7 +2461,6 @@
           "label": "A logic gate works, but slower under load",
           "technical_title": "Transistor drive and capacitive switching",
           "distinguishing_question": "What load capacitance, fan-out and available current set the transition time?",
-          "why": "Compare the observable constraints with the proposed mechanism before treating it as the explanation; follow the cited book region and its evidence status.",
           "targets": [
             "DHW-MOS"
           ],
@@ -2506,7 +2485,6 @@
           "label": "I want smaller gates and better efficiency",
           "technical_title": "Device scaling and interconnect tradeoffs",
           "distinguishing_question": "Which dimensions/voltages actually scale and what physical constraints dominate?",
-          "why": "Compare the observable constraints with the proposed mechanism before treating it as the explanation; follow the cited book region and its evidence status.",
           "targets": [
             "DHW-MOS",
             "DHW-LAYOUT"
@@ -2557,7 +2535,6 @@
           "label": "The circuit is logically correct but physical routing is expensive",
           "technical_title": "Geometry and parasitic interconnect constraints",
           "distinguishing_question": "Can an electrically equivalent layout reduce wire/capacitance without violating process rules?",
-          "why": "Compare the observable constraints with the proposed mechanism before treating it as the explanation; follow the cited book region and its evidence status.",
           "targets": [
             "DHW-LAYOUT",
             "DHW-MOS"
@@ -2588,7 +2565,6 @@
           "label": "Two mask shapes touch or overlap incorrectly",
           "technical_title": "Process design rules and layer semantics",
           "distinguishing_question": "Which layer, contact and spacing rule controls a reliable physical implementation?",
-          "why": "Compare the observable constraints with the proposed mechanism before treating it as the explanation; follow the cited book region and its evidence status.",
           "targets": [
             "DHW-LAYOUT",
             "DHW-FABRICATION"
@@ -2639,7 +2615,6 @@
           "label": "Chips from the same mask do not all function",
           "technical_title": "Process defects and yield statistics",
           "distinguishing_question": "How is expected yield affected by defect density, chip area and process control?",
-          "why": "Compare the observable constraints with the proposed mechanism before treating it as the explanation; follow the cited book region and its evidence status.",
           "targets": [
             "DHW-FABRICATION"
           ],
@@ -2667,7 +2642,6 @@
           "label": "I want a one-off custom chip without my own fab",
           "technical_title": "Multiproject chip and design-to-fabrication handoff",
           "distinguishing_question": "Which layout artifact, design rules and shared fabrication service are actually required?",
-          "why": "Compare the observable constraints with the proposed mechanism before treating it as the explanation; follow the cited book region and its evidence status.",
           "targets": [
             "DHW-LAYOUT",
             "DHW-FABRICATION"
@@ -2720,7 +2694,6 @@
           "label": "One clock reaches different parts at different times",
           "technical_title": "Clock distribution and skew",
           "distinguishing_question": "Which path assumptions break when sampling edges do not arrive simultaneously?",
-          "why": "Compare the observable constraints with the proposed mechanism before treating it as the explanation; follow the cited book region and its evidence status.",
           "targets": [
             "DHW-PHYSICAL-TIMING"
           ],
@@ -2748,7 +2721,6 @@
           "label": "A globally synchronous design has risky asynchronous boundaries",
           "technical_title": "Handshake, synchronization and self-timed coordination",
           "distinguishing_question": "Would local sequencing and acknowledgments remove a problematic global timing assumption?",
-          "why": "Compare the observable constraints with the proposed mechanism before treating it as the explanation; follow the cited book region and its evidence status.",
           "targets": [
             "DHW-PHYSICAL-TIMING"
           ],
@@ -2793,7 +2765,6 @@
           "label": "I can use the RTL concept but not the old tools or board",
           "technical_title": "Portable RTL versus vendor-specific primitives and constraints",
           "distinguishing_question": "Which HDL constructs describe common hardware, and which rely on Spartan-3 or ISE?",
-          "why": "Compare the observable constraints with the proposed mechanism before treating it as the explanation; follow the cited book region and its evidence status.",
           "targets": [
             "DHW-FLOW",
             "DHW-MEMORY"
@@ -2824,7 +2795,6 @@
           "label": "I am comparing FPGA configuration with physical ASIC realization",
           "technical_title": "Reprogrammable LUT fabric versus fixed transistor masks",
           "distinguishing_question": "What functional flexibility, verification route, production cost and technology constraint actually changes?",
-          "why": "Compare the observable constraints with the proposed mechanism before treating it as the explanation; follow the cited book region and its evidence status.",
           "targets": [
             "DHW-FLOW",
             "DHW-LAYOUT",
