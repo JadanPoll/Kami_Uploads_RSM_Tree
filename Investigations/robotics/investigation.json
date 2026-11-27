@@ -3907,7 +3907,11 @@
           "robot-t-0060"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "Near full extension of a two-link arm, rotating either joint moves the tip mainly sideways. Outward motion is only second order in small joint angles. Demanding a radial velocity can require enormous joint speeds, or be impossible at exact extension.",
+          "The Jacobian maps joint velocities to end-effector velocity. Near a singularity its smallest singular value approaches zero; inversion amplifies motion and measurement error in that direction. A damped inverse trades tracking accuracy for bounded joint speed; changing the path or posture may avoid the obstruction entirely."
+        ]
       },
       {
         "id": "ROB-CURI-sideways",
@@ -4036,7 +4040,11 @@
           "robot-t-0254"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A single image of identical hallways cannot identify which hallway the robot occupies. Instead of forcing one answer, maintain hypotheses for both and weight them using observations and motion history. A particle filter can carry samples in both locations; a distinctive earlier turn may make one more plausible.",
+          "If map, motion history and observations are genuinely symmetric, no inference algorithm can recover information that is absent. The robot can actively break ambiguity: turn toward a distinctive doorway, travel until the corridors diverge or use a different sensor. Localization can become an action-selection problem."
+        ]
       },
       {
         "id": "ROB-CURI-kidnapped",
@@ -4557,6 +4565,30 @@
         "question_type": "execution",
         "task_scope": "capability_family",
         "success_criterion": "Given a rigid-link model, joint trajectory and stated external loads, calculate joint torques; check a static or single-joint limiting case and compare against the actuator's limits."
+      },
+      {
+        "id": "ROB-TACIT-active-localization",
+        "family_id": "sense",
+        "question": "Can a robot work out which of two identical corridors it is in before choosing a turn?",
+        "aliases": [],
+        "bridge_ids": [
+          "ESTIMATION",
+          "MAPPING"
+        ],
+        "term_ids": [
+          "robot-t-0235",
+          "robot-t-0254"
+        ],
+        "question_type": "design",
+        "task_scope": "specified_instance",
+        "applied_challenge": true,
+        "answer": [
+          "Locations A and B are equally plausible. At a safe observation point a blue door is detected with probability 0.9 in A and 0.1 in B. A wrong turn costs 100 units and another inspection costs 2. Update the belief and decide whether more information could justify its cost."
+        ],
+        "worked_solution": [
+          "After seeing blue, Bayes' rule gives P(A|blue)=0.9. A second conditionally independent blue observation gives odds 81:1, or 81/82 ≈ 0.988; repeated frames are not necessarily independent. Acting now has expected wrong-turn cost 10. Another equally reliable independent observation has no expected improvement if ties are resolved arbitrarily: on disagreement the posterior becomes 0.5 and on agreement 81/82; the weighted error remains 0.1. Thus one such extra inspection alone is not worth its cost under these assumptions. A different sensor or a plan allowing several observations might be.",
+          "Compare policies in simulation across both locations, noisy detections and ambiguous views; track wrong turns and time to decision. This is an illustrative decision model, not a tested robot."
+        ]
       }
     ],
     "entry_policy": "Questions are entrances and reuse technical nodes. Do not manufacture questions simply to link every glossary term or TOC heading."
