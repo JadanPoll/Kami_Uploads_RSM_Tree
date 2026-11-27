@@ -911,7 +911,7 @@
         "question_type": "execution",
         "task_scope": "capability_family",
         "bridge_ids": [
-          "LINEAR"
+          "LINEAR-SYSTEMS"
         ],
         "target_ids": [
           "MATH-VECTOR"
@@ -933,7 +933,7 @@
         "question_type": "execution",
         "task_scope": "capability_family",
         "bridge_ids": [
-          "LINEAR"
+          "LINEAR-SYSTEMS"
         ],
         "target_ids": [
           "MATH-VECTOR"
@@ -2879,6 +2879,45 @@
             "math-t-0225"
           ]
         }
+      ]
+    },
+    {
+      "id": "LINEAR-SYSTEMS",
+      "question": "How can elementary row operations reveal the solution structure of linear systems?",
+      "choices": [
+        {
+          "label": "Reduce a coefficient or augmented matrix",
+          "technical_title": "Elementary row operations, pivots and solution structure",
+          "distinguishing_question": "Which operations preserve the solution set, and what do pivots reveal about consistency and free variables?",
+          "why": "Reduce by valid elementary row operations; for a system detect contradictory rows and express free variables parametrically. Artin §1.2 is the indexed precise reading lead; no worked exercise in that passage has yet been verified.",
+          "targets": [
+            "MATH-VECTOR"
+          ],
+          "section_targets": [
+            {
+              "source_id": "ARTIN",
+              "ref": "1.2",
+              "level": "toc_only",
+              "why": "Row Reduction · indexed subsection, printed start unverified"
+            },
+            {
+              "source_id": "HALMOS-LIN",
+              "ref": "50",
+              "level": "inspected",
+              "why": "Rank and nullity · printed p. 90"
+            }
+          ],
+          "term_ids": [
+            "math-t-0055",
+            "math-t-0064",
+            "math-t-0066"
+          ]
+        }
+      ],
+      "term_ids": [
+        "math-t-0055",
+        "math-t-0064",
+        "math-t-0066"
       ]
     }
   ],
