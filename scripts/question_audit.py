@@ -53,10 +53,10 @@ def scan():
             typ, scope = q.get("question_type"), q.get("task_scope")
             types[typ or "UNTAGGED"] += 1
             scopes[scope or "UNTAGGED"] += 1
-            if typ not in TYPES:
-                problems.append(f"{domain}/{qid}: missing or unknown question_type: {typ!r}")
-            if scope not in SCOPES:
-                problems.append(f"{domain}/{qid}: missing or unknown task_scope: {scope!r}")
+            if typ is not None and typ not in TYPES:
+                problems.append(f"{domain}/{qid}: unknown question_type: {typ!r}")
+            if scope is not None and scope not in SCOPES:
+                problems.append(f"{domain}/{qid}: unknown task_scope: {scope!r}")
             secondaries = q.get("secondary_question_types", [])
             if any(t not in TYPES or t == typ for t in secondaries):
                 problems.append(f"{domain}/{qid}: invalid secondary_question_types")
