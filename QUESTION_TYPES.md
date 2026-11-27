@@ -6,7 +6,7 @@ This is a **classification of what a question asks the person to do**, not a tax
 
 Use the [operational forward/inverse standard](https://github.com/JadanPoll/FKEN_REA_CaseStudies/blob/main/OPERATIONAL.md) and the book/territory rule in [AGENTS.md](AGENTS.md#governing-question-quality-standard-intellectual-territory). The types below distinguish cognitive or practical operations; they cannot determine whether a question deserves an independent place in a domain.
 
-For example, the Mathematics entries `MATH-CURI-inclusion` and `MATH-CAP-inclusion-exclusion` express nearly the same operation. Their two labels do not establish two distinct dimensions of combinatorics; inspect whether the second adds a genuinely different capability contract or whether one canonical question with alternate wording would suffice. In Robotics, distinguishing ambiguous observations, recovering from lost localization, and rejecting false loop closures opens distinct technical territory even though all can involve localization or mapping. Keep those distinctions; put particular hallway layouts, sensor values and experiments below the appropriate question.
+For example, the former Mathematics entries `MATH-CURI-inclusion` and `MATH-CAP-inclusion-exclusion` expressed nearly the same operation. They now share a single canonical entry, with the former wording searchable as an alias and its ID preserved as a redirect. Their two labels did not establish two distinct dimensions of combinatorics. In Robotics, distinguishing ambiguous observations, recovering from lost localization, and rejecting false loop closures opens distinct technical territory even though all can involve localization or mapping. Keep those distinctions; put particular hallway layouts, sensor values and experiments below the appropriate question.
 
 Use question families and larger sets as chapter-level navigation where appropriate, existing entries as subsection/capability access points, and source-backed technical records as their content. This is a semantic authoring rule, not a new JSON schema or an instruction to convert all everyday-language prompts into chapter headings.
 
@@ -69,7 +69,7 @@ A question entry can use:
 - `question_type` and `task_scope` are orthogonal labels, not synonyms for `kind`, `status`, or evidence quality.
 - `target_ids` is optional, linking a capability prompt to the canonical technical studies that support it; do not invent an unrelated technical node just to attach a label. Its IDs must exist, and a navigation bridge should reach them.
 - `success_criterion` is a **checkable outcome contract**. It is not a claim that the learner can already do it, that a book teaches it in an inspected passage, or that any test was performed.
-- Preserve original entries/IDs and source anchors. Review and tag an existing question rather than duplicating it under several phrasings.
+- Preserve stable IDs and source anchors. When two questions truly duplicate a demand, consolidate the original wording and concept IDs into the stronger canonical entry, put a one-hop old-to-current ID mapping in `curiosity_atlas.redirects`, and migrate family `question_ids`. Redirects are not independent question entries. Never reuse retired IDs. The viewer accepts legacy links and resolves them to canonical content.
 - For technical study nodes, tags are optional: a study about eigenvalues is not *itself* an executable question merely because someone could use it in an exercise.
 
 ## Practical question-quality checks
