@@ -1,6 +1,6 @@
 # Cross-domain question quality audit — 2026-11-24
 
-This is an **evidence-sensitive sample**, not a global quality score. Run `python3 scripts/question_audit.py --strict` for the complete **structural** question-type census. The 281-entry census excludes the 43 OS and 56 human–AI question-index nodes and technical study questions; never merge those populations without a separate denominator.
+This is an **evidence-sensitive sample**, not a global quality score. Run `python3 scripts/question_audit.py --strict` for the complete **structural** question-type census. The original 281-entry census excluded the 43 OS and 56 human–AI question-index nodes and technical study questions; never merge those populations without a separate denominator.
 
 ## Representative traversals
 
@@ -23,3 +23,27 @@ This is an **evidence-sensitive sample**, not a global quality score. Run `pytho
 ## Next useful discrimination
 
 Choose a small number of authentic **non-mathematics execution tasks**—for example one UART receiver, a page-table walk, a tolerance stack, and a state-estimation update. For each: supply one representative real input, reach the source or implementation from ordinary question wording, perform the operation, compare with an independent oracle or working artifact, and record the first navigation or competence failure. This tests whether the current apparent mathematical capability imbalance is merely a difference in entry-question wording or a real omission in the practical skill landscape.
+
+## Operational revision — 2026-11-27
+
+Source standard: [OPERATIONAL.md](https://github.com/JadanPoll/FKEN_REA_CaseStudies/blob/main/OPERATIONAL.md). The eight canonical entry atlases were reviewed as prospective books. All original 281 entry questions were considered; 243 formulations were revised, 47 chapter-level families now expose the major territories, two duplicate mathematical capability entries were consolidated, and four independent missing dimensions were added. There are now **283 canonical entries** and 60 capability-family contracts. Original concrete formulations remain aliases. Existing source-backed studies, larger investigation sets, stable glossary identities and question types were retained; the 99 separate question-index nodes and underlying technical questions were not comprehensively rewritten.
+
+| Domain | Distinct territory made more visible | Remaining inverse/forward coverage concern |
+| --- | --- | --- |
+| Manufacturing | Material behavior, accuracy, mechanical transformations, process feasibility, production; added reliable joining | Broader process selection and surface/quality inspection deserve reverse sampling from the five book catalogs. |
+| Operating systems | Split runtime, virtual memory/protection, devices, bootstrapping, persistence and distributed systems; added concurrent-state correctness | Compare IPC, synchronization, file-system implementation and architecture-specific translation against independently selected chapters. |
+| Human–AI | Separated claim reliability, learning, continuity, agency, coordination and exceptional work; added population measurement | Usage distributions are not capability distributions; independent comparative outcome data remains necessary. |
+| Digital hardware | Distinguish implementation interfaces, RTL/state, timing, physical silicon and architecture selection | Reverse-sample arithmetic/datapath design, memory interfaces and physical design; the existing technical coverage does not establish practical operator coverage. |
+| Neuromorphic engineering | Analog operations, perception, spikes, learning and system integration; linked optical-motion computation directly | The optical-motion chapter is a TOC lead; circuit reconstruction and contemporary benchmark evidence remain open. |
+| Electronics | Separate analog design, failure mechanisms, instrumentation, interconnect, power and realization | Reverse-sample component selection, stability and power magnetics for checkable task coverage, without duplicating diagnosis entries. |
+| Robotics | Separate embodiment, geometric reachability, belief, planning, dynamics, flight, decisions and validation; added inverse dynamics | Existing books do not establish coverage of modern soft, legged or learning-based robotics; verify representative real-world navigation and actuation tasks. |
+| Mathematics | Preserve actual mathematical operator families; consolidate inclusion–exclusion and Möbius inversion duplicates; move residue calculation to complex analysis | Remaining conceptual/execution pairs must be judged by their independent demand, and reverse sampling must test the fourteen-book coverage. |
+
+### Forward-route repairs
+
+- Page-table translation now uses `OS-BRG-page-walk`, directly linking OSTEP chapters 18 and 20 rather than the memory-exhaustion branch. Round-robin scheduling has its own queue-tracing bridge to chapter 7. Chapter anchors are existing TOC-level evidence, not completed exercises.
+- Gaussian elimination and solving linear systems use `LINEAR-SYSTEMS`, with the previously indexed Artin §1.2 **Row Reduction** and Halmos §50 rank/nullity. The exact Artin page and a worked problem remain unverified.
+- Neuromorphic visual motion now directly reaches `NMR-MOTION` and Mead chapter 14 (printed p. 229; TOC-level lead).
+- Mechanical joining reaches `MFG-JOINING`, the FFM joinery chapter and Shigley's joint chapters; robot inverse dynamics reaches the previously inspected Modern Robotics §8.3.2. The new human–AI measurement question retains the population fieldwork routes and candidate primary sources.
+
+This is a semantic review and structural repair pass, not an independent inspection of every book passage. Do not interpret the revised number of questions or chapter labels as proof of authoritative coverage. The unresolved work is two-sided sampling of actual source regions and representative real goals, with observed navigation and task outcomes.
