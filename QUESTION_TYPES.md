@@ -2,6 +2,14 @@
 
 This is a **classification of what a question asks the person to do**, not a taxonomy of subject matter or a demand for identical wording. A rich investigation needs both exploratory questions and already well-defined capabilities. Start by identifying the requested cognitive or practical operation; do not manufacture questions to satisfy proportions.
 
+## Question quality precedes classification
+
+Use the [operational forward/inverse standard](https://github.com/JadanPoll/FKEN_REA_CaseStudies/blob/main/OPERATIONAL.md) and the book/territory rule in [AGENTS.md](AGENTS.md#governing-question-quality-standard-intellectual-territory). The types below distinguish cognitive or practical operations; they cannot determine whether a question deserves an independent place in a domain.
+
+For example, the Mathematics entries `MATH-CURI-inclusion` and `MATH-CAP-inclusion-exclusion` express nearly the same operation. Their two labels do not establish two distinct dimensions of combinatorics; inspect whether the second adds a genuinely different capability contract or whether one canonical question with alternate wording would suffice. In Robotics, distinguishing ambiguous observations, recovering from lost localization, and rejecting false loop closures opens distinct technical territory even though all can involve localization or mapping. Keep those distinctions; put particular hallway layouts, sensor values and experiments below the appropriate question.
+
+Use question families and larger sets as chapter-level navigation where appropriate, existing entries as subsection/capability access points, and source-backed technical records as their content. This is a semantic authoring rule, not a new JSON schema or an instruction to convert all everyday-language prompts into chapter headings.
+
 ## Primary question types
 
 | ID (`question_type`) | Functional contract | Representative questions or capability prompts |
