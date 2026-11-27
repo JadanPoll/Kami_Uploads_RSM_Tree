@@ -1,4 +1,6 @@
-# Question types — inquiry, execution, and evidence
+# Optional question types — inquiry, execution, and evidence
+
+Classification is diagnostic metadata, not a required authoring template or reader-facing curriculum. Operation2Bminor's naturally composed challenges govern the Tacits experience. Constituent capability prompts remain useful without being promoted to major challenges.
 
 This is a **classification of what a question asks the person to do**, not a taxonomy of subject matter or a demand for identical wording. A rich investigation needs both exploratory questions and already well-defined capabilities. Start by identifying the requested cognitive or practical operation; do not manufacture questions to satisfy proportions.
 
