@@ -23,6 +23,14 @@ Source: [FKEN_REA_CaseStudies — OPERATIONAL.md](https://github.com/JadanPoll/F
 
 The question-type taxonomy below measures the requested operation, not intellectual coverage or question quality. Apply the book/territory standard first; use the type distribution to diagnose omissions afterwards.
 
+## Reader-facing answers and applied challenges
+
+Use [Operational2](https://github.com/JadanPoll/FKEN_REA_CaseStudies/blob/main/Operational2.md), [Operational2B](https://github.com/JadanPoll/FKEN_REA_CaseStudies/blob/main/Operational2B.md), and [Operation2Bminor](https://github.com/JadanPoll/FKEN_REA_CaseStudies/blob/main/Operation2Bminor.md) together.
+
+The digital-hardware-design pilot stores question-specific reader-facing `answer` blocks directly on curiosity entries. They are ordered paragraphs (strings), optionally interspersed with `{"code":"..."}` or `{"heading":"..."}` blocks when useful. The viewer presents them immediately when opening a question; existing technical nodes and source routes remain underneath. Answer the question at its own resolution: expose a mechanism, usable intuition, consequential alternatives or a model that can be varied. No required template, word count, topic list, or mechanical follow-up section. A source pointer is not an explanation, and an illustrative worked model is not experimental evidence.
+
+Applied challenges begin with a meaningful situation and desired result, not a prescription to use a named operator. Put the worked reasoning in optional `worked_solution` blocks (same format as answer), which the viewer folds away by default. Preserve useful constituent exercises separately; the applied set should span distinct kinds of real capability and composition, not mirror every textbook chapter. Do not mistake worked-example reading or a passing metadata test for acquired competence. Preserve assumptions, limitations and evidence status, and distinguish source-supported mechanisms from newly constructed illustrative examples. Expand to other domains only after the pilot is useful to the reader.
+
 ## Question typing: distinguish inquiry from operational competence
 
 The canonical [QUESTION_TYPES.md](QUESTION_TYPES.md) defines eight primary question types: explanation, execution, verification, diagnosis, decomposition, design, empirical investigation, and transfer. Use `question_type` on reviewed question entries and independently record `task_scope` as conceptual, open_goal, capability_family, or specified_instance. Tag the dominant demand; add `secondary_question_types` only for independently useful cross-cutting obligations. Existing unreviewed questions may remain untagged until assessed—do not pretend automated keyword classification is epistemically equivalent to a reviewed classification.
