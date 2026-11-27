@@ -1050,29 +1050,45 @@
     "families": [
       {
         "id": "unexpected-behavior",
-        "label": "Why did my computer do that?",
-        "description": "Frozen apps, memory pressure, missing files and permissions"
+        "label": "Execution, scheduling and resource contention",
+        "description": "How execution state, preemption, scheduling and contention determine progress."
       },
       {
         "id": "what-survives",
-        "label": "What stays alive or persists?",
-        "description": "Crashes, disconnects, restarts and stored state"
+        "label": "Persistence, sessions and crash recovery",
+        "description": "What is retained by processes, sessions and durable storage; how failures are recovered."
       },
       {
         "id": "create-a-system",
-        "label": "Could I build a different computing environment?",
-        "description": "Kernels, embedded systems, operating experiences and connected computers"
+        "label": "Bootstrapping and system architecture",
+        "description": "How bootstrapping, interfaces and reusable components determine what an OS can be."
+      },
+      {
+        "id": "memory-and-protection",
+        "label": "Virtual memory and protection",
+        "description": "Address translation, isolation, residency and access control."
+      },
+      {
+        "id": "devices-and-interfaces",
+        "label": "Devices and hardware interfaces",
+        "description": "Drivers, device completion, hardware boundaries and failure handling."
+      },
+      {
+        "id": "distributed-systems",
+        "label": "Distributed computation and sessions",
+        "description": "Remote execution, resource ownership and the limits of a single system abstraction."
       }
     ],
     "entries": [
       {
         "id": "OS-CURI-freeze",
         "family_id": "unexpected-behavior",
-        "question": "Why does one frozen app not always freeze the whole computer?",
+        "question": "How does an operating system contain a stalled program?",
         "aliases": [
           "program not responding",
           "unresponsive app",
-          "computer hangs"
+          "computer hangs",
+          "Why does one frozen app not always freeze the whole computer?"
         ],
         "context": "Distinguish a blocked process from global liveness loss.",
         "bridge_ids": [
@@ -1107,10 +1123,11 @@
       {
         "id": "OS-CURI-busy",
         "family_id": "unexpected-behavior",
-        "question": "Why is the computer busy even when nothing useful gets done?",
+        "question": "Why can a fully utilized CPU make little useful progress?",
         "aliases": [
           "100 percent CPU",
-          "high utilization low progress"
+          "high utilization low progress",
+          "Why is the computer busy even when nothing useful gets done?"
         ],
         "context": "CPU utilization is not a correctness or progress metric.",
         "bridge_ids": [
@@ -1143,12 +1160,13 @@
       },
       {
         "id": "OS-CURI-memory",
-        "family_id": "unexpected-behavior",
-        "question": "Why does running out of memory slow everything down or kill one app?",
+        "family_id": "memory-and-protection",
+        "question": "How does an OS manage memory pressure?",
         "aliases": [
           "out of memory",
           "swap",
-          "ram full"
+          "ram full",
+          "Why does running out of memory slow everything down or kill one app?"
         ],
         "context": "Differentiate address-space mappings, reclaim and process quotas.",
         "bridge_ids": [
@@ -1182,11 +1200,12 @@
       },
       {
         "id": "OS-CURI-same-address",
-        "family_id": "unexpected-behavior",
-        "question": "How can two programs use the same memory address without colliding?",
+        "family_id": "memory-and-protection",
+        "question": "How can processes have independent views of the same virtual address?",
         "aliases": [
           "virtual memory",
-          "address translation"
+          "address translation",
+          "How can two programs use the same memory address without colliding?"
         ],
         "context": "Numeric addresses acquire meaning through their process mapping.",
         "bridge_ids": [
@@ -1215,12 +1234,13 @@
       },
       {
         "id": "OS-CURI-permission",
-        "family_id": "unexpected-behavior",
-        "question": "Why can an app read one thing but not a camera, another app or a remote service?",
+        "family_id": "memory-and-protection",
+        "question": "How does an OS enforce access to devices, files and other processes?",
         "aliases": [
           "app sandbox",
           "camera permission",
-          "file permissions"
+          "file permissions",
+          "Why can an app read one thing but not a camera, another app or a remote service?"
         ],
         "context": "Find the responsible authorization mechanism rather than treating permission as universal.",
         "bridge_ids": [
@@ -1253,12 +1273,13 @@
       },
       {
         "id": "OS-CURI-device",
-        "family_id": "unexpected-behavior",
-        "question": "Why does plugging in a device sometimes need a driver or cause a freeze?",
+        "family_id": "devices-and-interfaces",
+        "question": "Why do device drivers and I/O failures affect system progress?",
         "aliases": [
           "USB driver",
           "device interrupt",
-          "hardware"
+          "hardware",
+          "Why does plugging in a device sometimes need a driver or cause a freeze?"
         ],
         "context": "Hardware events, driver code and scheduling interact.",
         "bridge_ids": [
@@ -1293,11 +1314,12 @@
       {
         "id": "OS-CURI-save",
         "family_id": "what-survives",
-        "question": "Why can a file be lost even though I pressed Save?",
+        "question": "When does a successful file write become durable?",
         "aliases": [
           "power loss",
           "write cache",
-          "data durability"
+          "data durability",
+          "Why can a file be lost even though I pressed Save?"
         ],
         "context": "A successful write may not be a durable commit.",
         "bridge_ids": [
@@ -1326,11 +1348,12 @@
       {
         "id": "OS-CURI-recovery",
         "family_id": "what-survives",
-        "question": "What must a computer do to recover safely after a crash?",
+        "question": "How can an OS recover consistently after a crash?",
         "aliases": [
           "journaling",
           "crash consistency",
-          "restart supervision"
+          "restart supervision",
+          "What must a computer do to recover safely after a crash?"
         ],
         "context": "Correct recovery preserves invariants and progress, not merely rebootability.",
         "bridge_ids": [
@@ -1365,11 +1388,12 @@
       {
         "id": "OS-CURI-remote",
         "family_id": "what-survives",
-        "question": "Why can I disconnect from a computer and find my programs still running?",
+        "question": "What keeps remote applications alive after a client disconnects?",
         "aliases": [
           "remote desktop",
           "disconnect versus sign out",
-          "session"
+          "session",
+          "Why can I disconnect from a computer and find my programs still running?"
         ],
         "context": "A client connection can disappear without ending the server-side process.",
         "bridge_ids": [
@@ -1403,11 +1427,12 @@
       {
         "id": "OS-CURI-restart",
         "family_id": "what-survives",
-        "question": "What is the difference between closing a window, logging out and restarting?",
+        "question": "What survives closing an application, logging out or rebooting?",
         "aliases": [
           "process lifecycle",
           "login session",
-          "volatile state"
+          "volatile state",
+          "What is the difference between closing a window, logging out and restarting?"
         ],
         "context": "Identify which state owner each action destroys.",
         "bridge_ids": [
@@ -1442,11 +1467,12 @@
       {
         "id": "OS-CURI-boot",
         "family_id": "create-a-system",
-        "question": "How does a computer get from turning on to running my own code?",
+        "question": "How does a computer bootstrap an operating system?",
         "aliases": [
           "bootloader",
           "firmware",
-          "bare metal"
+          "bare metal",
+          "How does a computer get from turning on to running my own code?"
         ],
         "context": "Identify firmware, loader, privileged runtime and their handoff contracts.",
         "bridge_ids": [
@@ -1481,11 +1507,12 @@
       {
         "id": "OS-CURI-browser-os",
         "family_id": "create-a-system",
-        "question": "Could I make a browser, console or robot into the computer's entire interface?",
+        "question": "How can an operating environment be built around a browser or a dedicated device?",
         "aliases": [
           "browser OS",
           "robot operating environment",
-          "game console"
+          "game console",
+          "Could I make a browser, console or robot into the computer's entire interface?"
         ],
         "context": "Separate what users experience from what trusted system services supply.",
         "bridge_ids": [
@@ -1518,11 +1545,12 @@
       {
         "id": "OS-CURI-small-os",
         "family_id": "create-a-system",
-        "question": "What is the smallest useful OS I could build without reinventing everything?",
+        "question": "What is the smallest useful operating system we can build from existing components?",
         "aliases": [
           "minimal operating system",
           "build a kernel",
-          "borrow bootloader"
+          "borrow bootloader",
+          "What is the smallest useful OS I could build without reinventing everything?"
         ],
         "context": "Choose the minimal capability set and identify reusable infrastructure.",
         "bridge_ids": [
@@ -1556,12 +1584,13 @@
       },
       {
         "id": "OS-CURI-distributed",
-        "family_id": "create-a-system",
-        "question": "Can several computers behave like one coherent system?",
+        "family_id": "distributed-systems",
+        "question": "How can distributed resources appear as one computing environment?",
         "aliases": [
           "distributed operating system",
           "remote applications",
-          "shared storage"
+          "shared storage",
+          "Can several computers behave like one coherent system?"
         ],
         "context": "Shared experience does not imply shared failure, identity or consistency guarantees.",
         "bridge_ids": [
@@ -1594,12 +1623,13 @@
       },
       {
         "id": "OS-CURI-robot",
-        "family_id": "create-a-system",
-        "question": "What should happen when software controlling a real device gets stuck?",
+        "family_id": "devices-and-interfaces",
+        "question": "How should a device-control system handle software stalls?",
         "aliases": [
           "real time system",
           "robot control",
-          "watchdog"
+          "watchdog",
+          "What should happen when software controlling a real device gets stuck?"
         ],
         "context": "Physical deadlines and safe failure states can matter more than general-purpose throughput.",
         "bridge_ids": [
@@ -1633,9 +1663,11 @@
       },
       {
         "id": "OS-CAP-page-translation",
-        "family_id": "create-a-system",
-        "question": "Can you translate a virtual address through page-table entries and determine access permissions?",
-        "aliases": [],
+        "family_id": "memory-and-protection",
+        "question": "How can we translate virtual addresses and check page permissions?",
+        "aliases": [
+          "Can you translate a virtual address through page-table entries and determine access permissions?"
+        ],
         "question_type": "execution",
         "task_scope": "capability_family",
         "bridge_ids": [
@@ -1653,9 +1685,11 @@
       },
       {
         "id": "OS-CAP-round-robin-scheduling",
-        "family_id": "create-a-system",
-        "question": "Can you trace a round-robin scheduler and calculate waiting and response times?",
-        "aliases": [],
+        "family_id": "unexpected-behavior",
+        "question": "How can we trace round-robin scheduling and calculate its latency?",
+        "aliases": [
+          "Can you trace a round-robin scheduler and calculate waiting and response times?"
+        ],
         "question_type": "execution",
         "task_scope": "capability_family",
         "bridge_ids": [
