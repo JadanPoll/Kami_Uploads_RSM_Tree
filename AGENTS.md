@@ -8,6 +8,19 @@ Apply this to reader-facing questions, case studies, explanations, source notes,
 
 This repository is persistent state for research across chats, not an instruction to turn every conversation into an elaborate report. Follow the [Richer Scientific Method](https://github.com/JadanPoll/Learning_Visualizations_Taxonomy/blob/main/Navigationals/The_Richer_Scientific_Method.md) selectively, especially RSM-01, RSM-02, RSM-04, RSM-05, and RSM-08.
 
+## Governing question-quality standard: intellectual territory
+
+Source: [FKEN_REA_CaseStudies — OPERATIONAL.md](https://github.com/JadanPoll/FKEN_REA_CaseStudies/blob/main/OPERATIONAL.md). Apply its forward and inverse criteria before classifying questions or expanding a domain.
+
+- Treat each domain as a potential authoritative book. A primary question should be a plausible chapter, subchapter or subsection title in that particular book. A question should be readable independently and give a recognizable indication of the book it belongs to; avoid both interchangeable generic prompts and technical minutiae masquerading as major questions.
+- Seek a generative, high-variance set of sibling questions at each level. A new sibling earns its place by opening a consequential dimension not already represented. Compare with actual book contents, mechanisms and projects to discover missing dimensions. Recursively distinguish chapter-level scope from subchapter and subsection scope; do not interpret convexity as a literal mathematical closure requirement or a count quota.
+- Forward criterion: a question should lead to a recoverable answer, or enough source locations, directional information, working implementations, observations, or certificates to reconstruct the answer and deepen it without repeating the original discovery process unnecessarily. Preserve the distinction between recovered evidence and work that remains to be done.
+- Inverse criterion: browsing the questions and glossary should expand the reader's conception of what is possible, interesting and worth investigating. Ask what the reader can now think to ask that they could not before. Evaluate breadth, depth, variance, fill, novelty and recoverability; a well-tagged collection can fail all of these.
+- Keep hyper-specific details, parameters, procedures and worked examples in the content below a suitable question. Preserve ordinary-language frustrations as useful search aliases or subsection entry points when they distinguish real mechanisms. Do not flatten legitimate executable capability families or delete meaningful access routes merely to make headings sound more sophisticated.
+- Before adding a question, compare its nearest siblings. If it exposes no new territory, enrich an existing question, preserve the alternate wording as an alias, or move it under the appropriate existing question. Preserve stable IDs, references and saved navigation when consolidating. Do not introduce a separate taxonomy or duplicate research tree simply to apply this standard.
+
+The question-type taxonomy below measures the requested operation, not intellectual coverage or question quality. Apply the book/territory standard first; use the type distribution to diagnose omissions afterwards.
+
 ## Question typing: distinguish inquiry from operational competence
 
 The canonical [QUESTION_TYPES.md](QUESTION_TYPES.md) defines eight primary question types: explanation, execution, verification, diagnosis, decomposition, design, empirical investigation, and transfer. Use `question_type` on reviewed question entries and independently record `task_scope` as conceptual, open_goal, capability_family, or specified_instance. Tag the dominant demand; add `secondary_question_types` only for independently useful cross-cutting obligations. Existing unreviewed questions may remain untagged until assessed—do not pretend automated keyword classification is epistemically equivalent to a reviewed classification.
