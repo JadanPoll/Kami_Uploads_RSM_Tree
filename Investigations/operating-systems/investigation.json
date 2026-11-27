@@ -1671,7 +1671,7 @@
         "question_type": "execution",
         "task_scope": "capability_family",
         "bridge_ids": [
-          "OS-BRG-memory"
+          "OS-BRG-page-walk"
         ],
         "target_ids": [
           "OS-03"
@@ -1693,7 +1693,7 @@
         "question_type": "execution",
         "task_scope": "capability_family",
         "bridge_ids": [
-          "OS-BRG-runtime"
+          "OS-BRG-scheduler-trace"
         ],
         "target_ids": [
           "OS-02"
@@ -1704,6 +1704,41 @@
           "os-t-0008",
           "os-t-0014"
         ]
+      },
+      {
+        "id": "OS-CURI-concurrency-correctness",
+        "family_id": "unexpected-behavior",
+        "question": "How can concurrent programs coordinate shared state without races or deadlock?",
+        "aliases": [
+          "Two threads update the same variable",
+          "How do I prevent a race condition?",
+          "locks semaphores condition variables"
+        ],
+        "context": "Distinguish exclusion and ordering from progress; compare locks, messages and event loops using the invariant each must preserve.",
+        "bridge_ids": [
+          "OS-BRG-coordination"
+        ],
+        "target_ids": [
+          "OS-04"
+        ],
+        "related_question_ids": [
+          "OS-Q06b"
+        ],
+        "term_ids": [
+          "os-t-0046",
+          "os-t-0054",
+          "os-t-0050",
+          "os-t-0057",
+          "os-t-0058",
+          "os-t-0019",
+          "os-t-0060",
+          "os-t-0025",
+          "os-t-0026",
+          "os-t-0049",
+          "os-t-0199"
+        ],
+        "question_type": "design",
+        "task_scope": "open_goal"
       }
     ]
   },
@@ -2195,6 +2230,20 @@
             "os-t-0025",
             "os-t-0026",
             "os-t-0049"
+          ],
+          "section_targets": [
+            {
+              "source_id": "OSTEP",
+              "ref": "28",
+              "level": "toc_only",
+              "why": "Locks · printed pp. 315–336"
+            },
+            {
+              "source_id": "OSTEP",
+              "ref": "29",
+              "level": "toc_only",
+              "why": "Lock-based Concurrent Data Structures · printed pp. 337–350"
+            }
           ]
         },
         {
@@ -2222,6 +2271,20 @@
             "os-t-0060",
             "os-t-0025",
             "os-t-0026"
+          ],
+          "section_targets": [
+            {
+              "source_id": "OSTEP",
+              "ref": "30",
+              "level": "toc_only",
+              "why": "Condition Variables · printed pp. 351–366"
+            },
+            {
+              "source_id": "OSTEP",
+              "ref": "32",
+              "level": "toc_only",
+              "why": "Common Concurrency Problems · printed pp. 385–400"
+            }
           ]
         }
       ],
@@ -2318,6 +2381,78 @@
         "os-t-0046",
         "os-t-0054",
         "os-t-0050"
+      ]
+    },
+    {
+      "id": "OS-BRG-page-walk",
+      "question": "How do page tables translate an address and enforce access?",
+      "choices": [
+        {
+          "label": "Translate a virtual page through its mapping",
+          "technical_title": "Page-table walk and access permission check",
+          "distinguishing_question": "Which virtual page is selected, which entry is valid, and what access is allowed?",
+          "why": "Use the supplied architecture's page-table format, split the address into indices and offset, follow the mappings, and distinguish an invalid or denied access from a successful translation. OSTEP chapters are conceptual leads, not a target-specific ISA specification.",
+          "targets": [
+            "OS-03"
+          ],
+          "section_targets": [
+            {
+              "source_id": "OSTEP",
+              "ref": "18",
+              "level": "toc_only",
+              "why": "Paging: Introduction · printed pp. 185–198"
+            },
+            {
+              "source_id": "OSTEP",
+              "ref": "20",
+              "level": "toc_only",
+              "why": "Paging: Smaller Tables · printed pp. 215–230"
+            }
+          ],
+          "term_ids": [
+            "os-t-0078",
+            "os-t-0012",
+            "os-t-0083"
+          ]
+        }
+      ],
+      "term_ids": [
+        "os-t-0078",
+        "os-t-0012",
+        "os-t-0083"
+      ]
+    },
+    {
+      "id": "OS-BRG-scheduler-trace",
+      "question": "How do scheduling policies determine execution order and latency?",
+      "choices": [
+        {
+          "label": "Trace the ready queue and time quantum",
+          "technical_title": "Round-robin scheduling and response metrics",
+          "distinguishing_question": "When does each job arrive, become runnable, first execute, and finish?",
+          "why": "Track ready-queue changes and quantum expiry; derive response and waiting times under declared arrival and tie-breaking rules.",
+          "targets": [
+            "OS-02"
+          ],
+          "section_targets": [
+            {
+              "source_id": "OSTEP",
+              "ref": "7",
+              "level": "toc_only",
+              "why": "Scheduling: Introduction · printed pp. 65–76"
+            }
+          ],
+          "term_ids": [
+            "os-t-0007",
+            "os-t-0008",
+            "os-t-0014"
+          ]
+        }
+      ],
+      "term_ids": [
+        "os-t-0007",
+        "os-t-0008",
+        "os-t-0014"
       ]
     }
   ],
