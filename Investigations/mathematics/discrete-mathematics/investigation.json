@@ -2533,6 +2533,7 @@
     "MATH-CAP-continued-fractions",
     "MATH-CAP-generating-functions",
     "MATH-CAP-graph-connectivity",
-    "MATH-CAP-max-flow"
+    "MATH-CAP-max-flow",
+    "MATH-TACIT-network-capacity"
   ]
 }
