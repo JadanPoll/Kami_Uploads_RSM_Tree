@@ -986,22 +986,22 @@
     "families": [
       {
         "id": "ordinary-experience",
-        "label": "Model reliability and limits",
+        "label": "Why does AI behave this way?",
         "description": "Plausibility, missing context, verification and everyday usefulness"
       },
       {
         "id": "learning-and-building",
-        "label": "Learning, building and durable knowledge",
+        "label": "Can I learn or make something real with AI?",
         "description": "Operational skill, software quality, projects and continuity"
       },
       {
         "id": "agency-and-teams",
-        "label": "Human judgment and agent coordination",
+        "label": "How should humans and agents actually work together?",
         "description": "Delegation, evaluation, coordination, reversibility and costs"
       },
       {
         "id": "outliers-and-frontiers",
-        "label": "Exceptional workflows and transferable mechanisms",
+        "label": "What explains the most extraordinary outcomes?",
         "description": "Credible evidence, human expertise, resources, reproduction and new capabilities"
       }
     ],
@@ -1009,11 +1009,10 @@
       {
         "id": "HAI-CURI-confidence",
         "family_id": "ordinary-experience",
-        "question": "Why can AI produce confident but unsupported conclusions?",
+        "question": "Why does AI sound certain even when it is wrong?",
         "aliases": [
           "hallucination",
-          "convincing answer",
-          "Why does AI sound certain even when it is wrong?"
+          "convincing answer"
         ],
         "context": "Distinguish fluent generation, grounded sources and independently checked truth.",
         "bridge_ids": [
@@ -1047,12 +1046,11 @@
       {
         "id": "HAI-CURI-failed-code",
         "family_id": "ordinary-experience",
-        "question": "Why does AI-generated code fail at system integration?",
+        "question": "Why can AI write code so quickly but still fail to build a working app?",
         "aliases": [
           "AI code doesn't work",
           "vibe coding",
-          "integration bugs",
-          "Why can AI write code so quickly but still fail to build a working app?"
+          "integration bugs"
         ],
         "context": "Generated source, execution and accepted end-to-end behavior are different results.",
         "bridge_ids": [
@@ -1087,12 +1085,11 @@
       {
         "id": "HAI-CURI-forget",
         "family_id": "ordinary-experience",
-        "question": "Why does AI lose track of project state across interactions?",
+        "question": "Why does AI forget decisions we made earlier?",
         "aliases": [
           "lost context",
           "new chat",
-          "context window",
-          "Why does AI forget decisions we made earlier?"
+          "context window"
         ],
         "context": "Separate context availability from persistent project state and continuity.",
         "bridge_ids": [
@@ -1126,12 +1123,11 @@
       {
         "id": "HAI-CURI-trust",
         "family_id": "ordinary-experience",
-        "question": "How can we verify AI-generated citations and factual claims?",
+        "question": "How can I tell whether an AI-cited study or achievement is real?",
         "aliases": [
           "fake citations",
           "research claims",
-          "proof",
-          "How can I tell whether an AI-cited study or achievement is real?"
+          "proof"
         ],
         "context": "A source can establish what was claimed without verifying the actual result.",
         "bridge_ids": [
@@ -1167,12 +1163,11 @@
       {
         "id": "HAI-CURI-learn",
         "family_id": "learning-and-building",
-        "question": "How can we distinguish AI-assisted learning from answer retrieval?",
+        "question": "Am I actually learning with AI, or only getting answers?",
         "aliases": [
           "AI tutor",
           "skill retention",
-          "understanding",
-          "Am I actually learning with AI, or only getting answers?"
+          "understanding"
         ],
         "context": "Task completion, independent competence and transfer to a new task require different observations.",
         "bridge_ids": [
@@ -1206,12 +1201,11 @@
       {
         "id": "HAI-CURI-beginner",
         "family_id": "learning-and-building",
-        "question": "What enables a novice to build useful software with AI?",
+        "question": "Can someone who cannot code yet build something genuinely useful with AI?",
         "aliases": [
           "beginner software",
           "no code",
-          "first project",
-          "Can someone who cannot code yet build something genuinely useful with AI?"
+          "first project"
         ],
         "context": "Real scope and reliable integration determine feasibility more than a persuasive first demo.",
         "bridge_ids": [
@@ -1246,12 +1240,11 @@
       {
         "id": "HAI-CURI-maintain",
         "family_id": "learning-and-building",
-        "question": "How can we establish the maintainability of AI-built software?",
+        "question": "How do I know whether an AI-made tool will still work next month?",
         "aliases": [
           "maintainability",
           "real user flow",
-          "future usefulness",
-          "How do I know whether an AI-made tool will still work next month?"
+          "future usefulness"
         ],
         "context": "Usability, regression resistance and recoverability require more than immediate output.",
         "bridge_ids": [
@@ -1286,12 +1279,11 @@
       {
         "id": "HAI-CURI-handoff",
         "family_id": "learning-and-building",
-        "question": "How can humans and AI preserve project state across handoffs?",
+        "question": "How can a new chat or collaborator continue a large project without starting over?",
         "aliases": [
           "handoff",
           "persistent work",
-          "project memory",
-          "How can a new chat or collaborator continue a large project without starting over?"
+          "project memory"
         ],
         "context": "Stable intent, working artifacts, evidence and unresolved choices need explicit handoff boundaries.",
         "bridge_ids": [
@@ -1324,12 +1316,11 @@
       {
         "id": "HAI-CURI-human",
         "family_id": "agency-and-teams",
-        "question": "Which human contributions enable exceptional human–AI work?",
+        "question": "What does the human actually contribute to an exceptional AI project?",
         "aliases": [
           "human in the loop",
           "AI collaboration",
-          "expertise",
-          "What does the human actually contribute to an exceptional AI project?"
+          "expertise"
         ],
         "context": "Problem choice, representation, domain judgment and evaluation are separately testable contributions.",
         "bridge_ids": [
@@ -1364,12 +1355,11 @@
       {
         "id": "HAI-CURI-approval",
         "family_id": "agency-and-teams",
-        "question": "When should an AI defer a decision to the human?",
+        "question": "When should the AI ask permission instead of continuing on its own?",
         "aliases": [
           "autonomy",
           "approval",
-          "irreversible action",
-          "When should the AI ask permission instead of continuing on its own?"
+          "irreversible action"
         ],
         "context": "Escalation depends on uncertainty, stakes, reversibility and available validators.",
         "bridge_ids": [
@@ -1402,12 +1392,11 @@
       {
         "id": "HAI-CURI-many-agents",
         "family_id": "agency-and-teams",
-        "question": "When does multi-agent coordination become a disadvantage?",
+        "question": "Why can a team of AI agents be worse than one good agent?",
         "aliases": [
           "parallel agents",
           "duplicate work",
-          "coordination overhead",
-          "Why can a team of AI agents be worse than one good agent?"
+          "coordination overhead"
         ],
         "context": "Parallelism is valuable only when task factorization and validation outweigh shared-state costs.",
         "bridge_ids": [
@@ -1442,12 +1431,11 @@
       {
         "id": "HAI-CURI-failed-edits",
         "family_id": "agency-and-teams",
-        "question": "How can an AI-assisted project recover from harmful changes?",
+        "question": "What should I do when an AI makes many changes but the project gets worse?",
         "aliases": [
           "rollback",
           "AI edits broke it",
-          "causal debugging",
-          "What should I do when an AI makes many changes but the project gets worse?"
+          "causal debugging"
         ],
         "context": "Recovering a known-good state and isolating a changed failure is different from adding retries.",
         "bridge_ids": [
@@ -1481,12 +1469,11 @@
       {
         "id": "HAI-CURI-speed",
         "family_id": "agency-and-teams",
-        "question": "When does AI assistance reduce expert productivity?",
+        "question": "Why can AI make an experienced engineer slower?",
         "aliases": [
           "productivity",
           "review overhead",
-          "developer",
-          "Why can AI make an experienced engineer slower?"
+          "developer"
         ],
         "context": "End-to-end accepted work includes verification and correction rather than only time spent generating code.",
         "bridge_ids": [
@@ -1520,12 +1507,11 @@
       {
         "id": "HAI-CURI-legend",
         "family_id": "outliers-and-frontiers",
-        "question": "What mechanisms underlie exceptional AI-assisted achievements?",
+        "question": "How did someone make an AI do something that seems impossible?",
         "aliases": [
           "superhuman AI",
           "extraordinary AI",
-          "legend",
-          "How did someone make an AI do something that seems impossible?"
+          "legend"
         ],
         "context": "Reconstruct the action sequence, prior expertise, tests and resources before attributing the outcome to any one cause.",
         "bridge_ids": [
@@ -1559,12 +1545,11 @@
       {
         "id": "HAI-CURI-verify",
         "family_id": "outliers-and-frontiers",
-        "question": "How can we independently verify exceptional AI research results?",
+        "question": "How can we know whether a spectacular AI research claim actually holds up?",
         "aliases": [
           "AI theorem proof",
           "AI science",
-          "independent verification",
-          "How can we know whether a spectacular AI research claim actually holds up?"
+          "independent verification"
         ],
         "context": "Formal artifacts, specification matching, reproducibility and external review have distinct evidentiary roles.",
         "bridge_ids": [
@@ -1600,12 +1585,11 @@
       {
         "id": "HAI-CURI-cheaper",
         "family_id": "outliers-and-frontiers",
-        "question": "Which parts of frontier AI experiments can be reproduced with ordinary resources?",
+        "question": "Can I reproduce the useful part of a famous AI experiment on ordinary hardware?",
         "aliases": [
           "cheap reproduction",
           "reduce compute",
-          "learn from research",
-          "Can I reproduce the useful part of a famous AI experiment on ordinary hardware?"
+          "learn from research"
         ],
         "context": "Separate the transferable mechanism from scale, tools, unusual expertise and hidden preparation.",
         "bridge_ids": [
@@ -1640,12 +1624,11 @@
       {
         "id": "HAI-CURI-unequal",
         "family_id": "outliers-and-frontiers",
-        "question": "What explains differences in outcomes among users of the same AI tools?",
+        "question": "Why do people using similar AI tools get such different results?",
         "aliases": [
           "AI power users",
           "percentiles",
-          "expert users",
-          "Why do people using similar AI tools get such different results?"
+          "expert users"
         ],
         "context": "Sampling, task difficulty, expertise, tools, compute and evaluators are confounders rather than a single ranking.",
         "bridge_ids": [
@@ -1680,12 +1663,11 @@
       {
         "id": "HAI-CURI-new-tests",
         "family_id": "outliers-and-frontiers",
-        "question": "How can new evaluators unlock previously intractable AI tasks?",
+        "question": "Could a new test make AI capable of tackling an entirely new class of problems?",
         "aliases": [
           "evaluation",
           "automatic verification",
-          "new capability",
-          "Could a new test make AI capable of tackling an entirely new class of problems?"
+          "new capability"
         ],
         "context": "Turning outcomes into reliable signals can alter which search and optimization procedures are effective.",
         "bridge_ids": [
