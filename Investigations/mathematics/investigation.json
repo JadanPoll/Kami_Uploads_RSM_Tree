@@ -286,7 +286,14 @@
           "math-t-0832"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "To count binary strings with no consecutive ones, remember only whether the previous bit was a one. Let aₙ count valid strings ending in zero (or empty initially), bₙ those ending in one. Appending zero is possible from either state; one only from a. Thus aₙ₊₁=aₙ+bₙ, bₙ₊₁=aₙ.",
+          {
+            "code": "[aₙ₊₁]   [1 1] [aₙ]\n[bₙ₊₁] = [1 0] [bₙ]"
+          },
+          "Starting with (1,0), totals are 1,2,3,5,8,13. In general Mᵢⱼ counts labeled transitions from i to j; uᵀMⁿv counts accepted strings of length n in a deterministic machine. A nondeterministic machine may count the same string via multiple accepting paths. Repeated squaring handles enormous n; changing a forbidden substring changes the machine. We replaced a population with sufficient state. This is Operational2B's calibration."
+        ]
       },
       {
         "id": "MATH-CURI-bottleneck",
@@ -301,7 +308,10 @@
           "math-t-0330"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A boundary separating source and destination must be crossed by every unit delivered. Summing outward crossing capacities bounds net delivery regardless of routing. A feasible flow matching that bound is a certificate: construction supplies a lower bound, the cut an equal upper bound. The max-flow/min-cut theorem guarantees such a pair in finite directed networks with nonnegative capacities."
+        ]
       },
       {
         "id": "MATH-CURI-connect",
@@ -1519,6 +1529,29 @@
           "math-t-0725",
           "math-t-0721",
           "math-t-0718"
+        ]
+      },
+      {
+        "id": "MATH-TACIT-network-capacity",
+        "family_id": "discrete",
+        "question": "Where should I upgrade a network if increasing the busiest link might accomplish nothing?",
+        "aliases": [],
+        "bridge_ids": [
+          "DISCRETE"
+        ],
+        "term_ids": [
+          "math-t-0329",
+          "math-t-0330"
+        ],
+        "question_type": "design",
+        "task_scope": "specified_instance",
+        "applied_challenge": true,
+        "answer": [
+          "Directed capacities: S→A=4, S→B=3, A→T=2, B→T=4, A→B=1. Find maximum delivery, certify it, and decide where a single upgrade could help."
+        ],
+        "worked_solution": [
+          "Send two units S→A→T, three S→B→T and one S→A→B→T. Delivery is six; the cut before T has capacity 2+4=6, proving optimality. Increasing S→A cannot overcome that cut.",
+          "Increasing A→T by one permits a seventh unit along S→A→T; the source cut then certifies the new optimum seven. In general, reachable vertices of the residual graph identify a minimum cut. Multiple minimum cuts can make a single upgrade ineffective."
         ]
       }
     ],
