@@ -7346,47 +7346,47 @@
     "families": [
       {
         "id": "build",
-        "label": "What can I build, and how does it work?",
+        "label": "Circuit primitives and analog design",
         "description": "Circuit primitives, power, amplifiers and useful physical devices"
       },
       {
         "id": "failures",
-        "label": "Why does a seemingly correct circuit misbehave?",
+        "label": "Circuit dynamics and failure mechanisms",
         "description": "Electrical limits, timing, noise, heat and return-current failures"
       },
       {
         "id": "measure",
-        "label": "How do I know what really happened?",
+        "label": "Measurement, noise and model validity",
         "description": "Waveforms, probes, source impedance, noise and operational evidence"
       },
       {
         "id": "fast",
-        "label": "What changes when signals get fast?",
+        "label": "High-speed signals and interconnect",
         "description": "Distributed wires, termination, crosstalk, clocks and PCB structure"
       },
       {
         "id": "power",
-        "label": "How can I move, regulate and store energy?",
+        "label": "Power conversion, magnetics and energy",
         "description": "Switching regulators, magnetics, feedback, efficiency and safety"
       },
       {
         "id": "systems",
-        "label": "How do electronics become working systems?",
+        "label": "System integration and physical realization",
         "description": "MCUs, sensor interfaces, design choices and reliability"
       }
     ],
     "entries": [
       {
         "id": "ELEC-CURI-led",
-        "question": "How can a transistor make a tiny signal control a bigger load?",
+        "question": "How can transistors control power using small signals?",
         "family_id": "build",
         "aliases": [
-          "transistor switching"
+          "transistor switching",
+          "How can a transistor make a tiny signal control a bigger load?"
         ],
         "bridge_ids": [
           "PHYS"
         ],
-        "context": "First distinguish the operating condition and physical mechanism; source inspection and a working device are separate evidence states.",
         "term_ids": [
           "elec-t-0071",
           "elec-t-0078",
@@ -7397,15 +7397,15 @@
       },
       {
         "id": "ELEC-CURI-amplifier",
-        "question": "How can I amplify a weak sensor signal without changing what it means?",
+        "question": "How can analog circuits amplify weak sensor signals without losing information?",
         "family_id": "build",
         "aliases": [
-          "op-amp sensor amplification"
+          "op-amp sensor amplification",
+          "How can I amplify a weak sensor signal without changing what it means?"
         ],
         "bridge_ids": [
           "AMPLIFY"
         ],
-        "context": "First distinguish the operating condition and physical mechanism; source inspection and a working device are separate evidence states.",
         "term_ids": [
           "elec-t-0118",
           "elec-t-0138",
@@ -7416,17 +7416,17 @@
       },
       {
         "id": "ELEC-CURI-regulate",
-        "question": "How can a circuit hold a voltage steady as the load changes?",
+        "question": "How can feedback maintain voltage under changing loads?",
         "family_id": "build",
         "aliases": [
           "power supply",
-          "voltage regulator"
+          "voltage regulator",
+          "How can a circuit hold a voltage steady as the load changes?"
         ],
         "bridge_ids": [
           "REGULATE",
           "CONTROL"
         ],
-        "context": "First distinguish the operating condition and physical mechanism; source inspection and a working device are separate evidence states.",
         "term_ids": [
           "elec-t-0419",
           "elec-t-0422",
@@ -7437,16 +7437,16 @@
       },
       {
         "id": "ELEC-CURI-convert",
-        "question": "How can 5 volts become 12 volts or 1 volt efficiently?",
+        "question": "How can switching circuits efficiently step voltage up or down?",
         "family_id": "build",
         "aliases": [
           "voltage boost",
-          "buck convert"
+          "buck convert",
+          "How can 5 volts become 12 volts or 1 volt efficiently?"
         ],
         "bridge_ids": [
           "CONVERT"
         ],
-        "context": "First distinguish the operating condition and physical mechanism; source inspection and a working device are separate evidence states.",
         "term_ids": [
           "elec-t-0406",
           "elec-t-0405",
@@ -7457,16 +7457,16 @@
       },
       {
         "id": "ELEC-CURI-supply",
-        "question": "Why is a capacitor often placed right next to every chip?",
+        "question": "Why do integrated circuits need local supply decoupling?",
         "family_id": "build",
         "aliases": [
-          "bypass capacitor"
+          "bypass capacitor",
+          "Why is a capacitor often placed right next to every chip?"
         ],
         "bridge_ids": [
           "MEASURE",
           "BOARD"
         ],
-        "context": "First distinguish the operating condition and physical mechanism; source inspection and a working device are separate evidence states.",
         "term_ids": [
           "elec-t-0386",
           "elec-t-0388"
@@ -7476,17 +7476,17 @@
       },
       {
         "id": "ELEC-CURI-analog-compute",
-        "question": "Can circuits implement filters or computations without running software?",
+        "question": "How can analog circuits implement filtering and computation?",
         "family_id": "build",
         "aliases": [
           "analog filter",
-          "circuit computing"
+          "circuit computing",
+          "Can circuits implement filters or computations without running software?"
         ],
         "bridge_ids": [
           "PHYS",
           "AMPLIFY"
         ],
-        "context": "First distinguish the operating condition and physical mechanism; source inspection and a working device are separate evidence states.",
         "term_ids": [
           "elec-t-0148",
           "elec-t-0188",
@@ -7497,16 +7497,16 @@
       },
       {
         "id": "ELEC-CURI-hot",
-        "question": "Why is my voltage regulator getting extremely hot?",
+        "question": "Why do voltage regulators overheat?",
         "family_id": "failures",
         "aliases": [
-          "overheating regulator"
+          "overheating regulator",
+          "Why is my voltage regulator getting extremely hot?"
         ],
         "bridge_ids": [
           "REGULATE",
           "MAGNETICS"
         ],
-        "context": "First distinguish the operating condition and physical mechanism; source inspection and a working device are separate evidence states.",
         "term_ids": [
           "elec-t-0046",
           "elec-t-0419"
@@ -7516,15 +7516,15 @@
       },
       {
         "id": "ELEC-CURI-noisy",
-        "question": "Why does my amplifier become noisy when I attach the sensor?",
+        "question": "Why can connecting a sensor introduce amplifier noise?",
         "family_id": "failures",
         "aliases": [
-          "source impedance noise"
+          "source impedance noise",
+          "Why does my amplifier become noisy when I attach the sensor?"
         ],
         "bridge_ids": [
           "AMPLIFY"
         ],
-        "context": "First distinguish the operating condition and physical mechanism; source inspection and a working device are separate evidence states.",
         "term_ids": [
           "elec-t-0201",
           "elec-t-0195",
@@ -7535,16 +7535,16 @@
       },
       {
         "id": "ELEC-CURI-oscillates",
-        "question": "Why does an otherwise correct feedback circuit oscillate?",
+        "question": "Why do feedback circuits become unstable?",
         "family_id": "failures",
         "aliases": [
-          "unstable control loop"
+          "unstable control loop",
+          "Why does an otherwise correct feedback circuit oscillate?"
         ],
         "bridge_ids": [
           "CONTROL",
           "AMPLIFY"
         ],
-        "context": "First distinguish the operating condition and physical mechanism; source inspection and a working device are separate evidence states.",
         "term_ids": [
           "elec-t-0128",
           "elec-t-0123",
@@ -7555,18 +7555,18 @@
       },
       {
         "id": "ELEC-CURI-droops",
-        "question": "Why does the power rail dip when a processor suddenly switches on?",
+        "question": "Why do rapid load changes cause power-supply transients?",
         "family_id": "failures",
         "aliases": [
           "load step",
-          "brownout"
+          "brownout",
+          "Why does the power rail dip when a processor suddenly switches on?"
         ],
         "bridge_ids": [
           "MEASURE",
           "BOARD",
           "REGULATE"
         ],
-        "context": "First distinguish the operating condition and physical mechanism; source inspection and a working device are separate evidence states.",
         "term_ids": [
           "elec-t-0568",
           "elec-t-0386",
@@ -7577,15 +7577,15 @@
       },
       {
         "id": "ELEC-CURI-wrong-way",
-        "question": "Why can increasing a converter's duty cycle initially lower its output?",
+        "question": "Why can a converter initially respond opposite to its control input?",
         "family_id": "failures",
         "aliases": [
-          "boost transient inversion"
+          "boost transient inversion",
+          "Why can increasing a converter's duty cycle initially lower its output?"
         ],
         "bridge_ids": [
           "CONTROL"
         ],
-        "context": "First distinguish the operating condition and physical mechanism; source inspection and a working device are separate evidence states.",
         "term_ids": [
           "elec-t-0170",
           "elec-t-0406"
@@ -7595,15 +7595,15 @@
       },
       {
         "id": "ELEC-CURI-light-load",
-        "question": "Why does a converter's behavior change at very light load?",
+        "question": "Why does a power converter change operating mode at light load?",
         "family_id": "failures",
         "aliases": [
-          "discontinuous current"
+          "discontinuous current",
+          "Why does a converter's behavior change at very light load?"
         ],
         "bridge_ids": [
           "CONVERT"
         ],
-        "context": "First distinguish the operating condition and physical mechanism; source inspection and a working device are separate evidence states.",
         "term_ids": [
           "elec-t-0435",
           "elec-t-0480"
@@ -7613,15 +7613,15 @@
       },
       {
         "id": "ELEC-CURI-transformer",
-        "question": "Why does a transformer overheat or stop working when I increase switching speed?",
+        "question": "What limits transformer operation at high switching frequencies?",
         "family_id": "failures",
         "aliases": [
-          "magnetic saturation"
+          "magnetic saturation",
+          "Why does a transformer overheat or stop working when I increase switching speed?"
         ],
         "bridge_ids": [
           "MAGNETICS"
         ],
-        "context": "First distinguish the operating condition and physical mechanism; source inspection and a working device are separate evidence states.",
         "term_ids": [
           "elec-t-0488",
           "elec-t-0492",
@@ -7632,15 +7632,15 @@
       },
       {
         "id": "ELEC-CURI-scope",
-        "question": "Why does my signal look worse after I attach an oscilloscope probe?",
+        "question": "Why can an oscilloscope probe alter the measured circuit?",
         "family_id": "measure",
         "aliases": [
-          "oscilloscope artifacts"
+          "oscilloscope artifacts",
+          "Why does my signal look worse after I attach an oscilloscope probe?"
         ],
         "bridge_ids": [
           "MEASURE"
         ],
-        "context": "First distinguish the operating condition and physical mechanism; source inspection and a working device are separate evidence states.",
         "term_ids": [
           "elec-t-0232",
           "elec-t-0233",
@@ -7651,15 +7651,15 @@
       },
       {
         "id": "ELEC-CURI-truth",
-        "question": "How can I distinguish real switching noise from measurement pickup?",
+        "question": "How can measurements distinguish circuit noise from coupled pickup?",
         "family_id": "measure",
         "aliases": [
-          "waveform artifacts"
+          "waveform artifacts",
+          "How can I distinguish real switching noise from measurement pickup?"
         ],
         "bridge_ids": [
           "MEASURE"
         ],
-        "context": "First distinguish the operating condition and physical mechanism; source inspection and a working device are separate evidence states.",
         "term_ids": [
           "elec-t-0250",
           "elec-t-0206",
@@ -7670,15 +7670,15 @@
       },
       {
         "id": "ELEC-CURI-adc",
-        "question": "Why does a 12-bit ADC not always give 12 useful bits?",
+        "question": "What limits the effective resolution of an ADC?",
         "family_id": "measure",
         "aliases": [
-          "effective bits"
+          "effective bits",
+          "Why does a 12-bit ADC not always give 12 useful bits?"
         ],
         "bridge_ids": [
           "INTERFACE"
         ],
-        "context": "First distinguish the operating condition and physical mechanism; source inspection and a working device are separate evidence states.",
         "term_ids": [
           "elec-t-0296",
           "elec-t-0293",
@@ -7689,15 +7689,15 @@
       },
       {
         "id": "ELEC-CURI-model",
-        "question": "When should I trust a SPICE circuit simulation?",
+        "question": "When do circuit simulation models predict physical behavior reliably?",
         "family_id": "measure",
         "aliases": [
-          "simulation limitations"
+          "simulation limitations",
+          "When should I trust a SPICE circuit simulation?"
         ],
         "bridge_ids": [
           "BOARD"
         ],
-        "context": "First distinguish the operating condition and physical mechanism; source inspection and a working device are separate evidence states.",
         "term_ids": [
           "elec-t-0248",
           "elec-t-0249",
@@ -7708,15 +7708,15 @@
       },
       {
         "id": "ELEC-CURI-edge",
-        "question": "Why would a slow clock need fast PCB design?",
+        "question": "Why does edge rate determine high-speed PCB requirements?",
         "family_id": "fast",
         "aliases": [
-          "edge speed vs clock"
+          "edge speed vs clock",
+          "Why would a slow clock need fast PCB design?"
         ],
         "bridge_ids": [
           "INTERCONNECT"
         ],
-        "context": "First distinguish the operating condition and physical mechanism; source inspection and a working device are separate evidence states.",
         "term_ids": [
           "elec-t-0256",
           "elec-t-0258",
@@ -7727,15 +7727,15 @@
       },
       {
         "id": "ELEC-CURI-ringing",
-        "question": "Why do digital signals ring or bounce at the far end of a cable?",
+        "question": "Why do impedance discontinuities cause signal reflections?",
         "family_id": "fast",
         "aliases": [
-          "reflection"
+          "reflection",
+          "Why do digital signals ring or bounce at the far end of a cable?"
         ],
         "bridge_ids": [
           "INTERCONNECT"
         ],
-        "context": "First distinguish the operating condition and physical mechanism; source inspection and a working device are separate evidence states.",
         "term_ids": [
           "elec-t-0335",
           "elec-t-0336",
@@ -7746,15 +7746,15 @@
       },
       {
         "id": "ELEC-CURI-ground",
-        "question": "Why does cutting a slot in a ground plane upset traces above it?",
+        "question": "How do return-current paths constrain PCB layout?",
         "family_id": "fast",
         "aliases": [
-          "split ground plane"
+          "split ground plane",
+          "Why does cutting a slot in a ground plane upset traces above it?"
         ],
         "bridge_ids": [
           "RETURN"
         ],
-        "context": "First distinguish the operating condition and physical mechanism; source inspection and a working device are separate evidence states.",
         "term_ids": [
           "elec-t-0352",
           "elec-t-0364"
@@ -7764,17 +7764,17 @@
       },
       {
         "id": "ELEC-CURI-crosstalk",
-        "question": "How can switching one pin cause another pin to glitch?",
+        "question": "How does coupling between interconnects create crosstalk?",
         "family_id": "fast",
         "aliases": [
           "crosstalk",
-          "ground bounce"
+          "ground bounce",
+          "How can switching one pin cause another pin to glitch?"
         ],
         "bridge_ids": [
           "RETURN",
           "CLOCK"
         ],
-        "context": "First distinguish the operating condition and physical mechanism; source inspection and a working device are separate evidence states.",
         "term_ids": [
           "elec-t-0211",
           "elec-t-0353"
@@ -7784,15 +7784,15 @@
       },
       {
         "id": "ELEC-CURI-clock",
-        "question": "Why do two chips disagree about a supposedly shared clock?",
+        "question": "Why can clocked devices disagree about a shared timing reference?",
         "family_id": "fast",
         "aliases": [
-          "clock skew"
+          "clock skew",
+          "Why do two chips disagree about a supposedly shared clock?"
         ],
         "bridge_ids": [
           "CLOCK"
         ],
-        "context": "First distinguish the operating condition and physical mechanism; source inspection and a working device are separate evidence states.",
         "term_ids": [
           "elec-t-0270",
           "elec-t-0271"
@@ -7802,15 +7802,15 @@
       },
       {
         "id": "ELEC-CURI-via",
-        "question": "Can a tiny via or connector matter at high speed?",
+        "question": "How do vias and connectors affect high-speed signal integrity?",
         "family_id": "fast",
         "aliases": [
-          "via parasitics"
+          "via parasitics",
+          "Can a tiny via or connector matter at high speed?"
         ],
         "bridge_ids": [
           "CLOCK"
         ],
-        "context": "First distinguish the operating condition and physical mechanism; source inspection and a working device are separate evidence states.",
         "term_ids": [
           "elec-t-0372",
           "elec-t-0376",
@@ -7821,15 +7821,15 @@
       },
       {
         "id": "ELEC-CURI-isolate",
-        "question": "When must a power supply isolate its output from its input?",
+        "question": "When does power conversion require galvanic isolation?",
         "family_id": "power",
         "aliases": [
-          "galvanic isolation"
+          "galvanic isolation",
+          "When must a power supply isolate its output from its input?"
         ],
         "bridge_ids": [
           "MAGNETICS"
         ],
-        "context": "First distinguish the operating condition and physical mechanism; source inspection and a working device are separate evidence states.",
         "term_ids": [
           "elec-t-0051",
           "elec-t-0481"
@@ -7839,16 +7839,16 @@
       },
       {
         "id": "ELEC-CURI-efficiency",
-        "question": "Where does the missing energy go in a switching converter?",
+        "question": "What determines power-converter efficiency and loss?",
         "family_id": "power",
         "aliases": [
-          "converter losses"
+          "converter losses",
+          "Where does the missing energy go in a switching converter?"
         ],
         "bridge_ids": [
           "CONVERT",
           "REGULATE"
         ],
-        "context": "First distinguish the operating condition and physical mechanism; source inspection and a working device are separate evidence states.",
         "term_ids": [
           "elec-t-0441",
           "elec-t-0440",
@@ -7859,15 +7859,15 @@
       },
       {
         "id": "ELEC-CURI-digital",
-        "question": "What changes when a power converter is controlled by a microcontroller?",
+        "question": "How does digital control change power-converter behavior?",
         "family_id": "power",
         "aliases": [
-          "digital power control"
+          "digital power control",
+          "What changes when a power converter is controlled by a microcontroller?"
         ],
         "bridge_ids": [
           "CONTROL"
         ],
-        "context": "First distinguish the operating condition and physical mechanism; source inspection and a working device are separate evidence states.",
         "term_ids": [
           "elec-t-0554",
           "elec-t-0558"
@@ -7877,15 +7877,15 @@
       },
       {
         "id": "ELEC-CURI-magnetic",
-        "question": "Why are inductors and transformers often physically larger than the logic?",
+        "question": "What determines the physical size of magnetic components?",
         "family_id": "power",
         "aliases": [
-          "magnetics"
+          "magnetics",
+          "Why are inductors and transformers often physically larger than the logic?"
         ],
         "bridge_ids": [
           "MAGNETICS"
         ],
-        "context": "First distinguish the operating condition and physical mechanism; source inspection and a working device are separate evidence states.",
         "term_ids": [
           "elec-t-0481",
           "elec-t-0488",
@@ -7896,16 +7896,16 @@
       },
       {
         "id": "ELEC-CURI-ac",
-        "question": "Why is rectifying AC more complicated than adding diodes?",
+        "question": "What makes practical AC rectification more than diode switching?",
         "family_id": "power",
         "aliases": [
-          "AC-DC power"
+          "AC-DC power",
+          "Why is rectifying AC more complicated than adding diodes?"
         ],
         "bridge_ids": [
           "CONVERT",
           "MAGNETICS"
         ],
-        "context": "First distinguish the operating condition and physical mechanism; source inspection and a working device are separate evidence states.",
         "term_ids": [
           "elec-t-0423",
           "elec-t-0424",
@@ -7916,16 +7916,16 @@
       },
       {
         "id": "ELEC-CURI-choose",
-        "question": "Should I use an op-amp, a microcontroller, or an FPGA for this behavior?",
+        "question": "How should electronic functions be partitioned between analog, digital and programmable hardware?",
         "family_id": "systems",
         "aliases": [
-          "analog versus digital"
+          "analog versus digital",
+          "Should I use an op-amp, a microcontroller, or an FPGA for this behavior?"
         ],
         "bridge_ids": [
           "PHYS",
           "INTERFACE"
         ],
-        "context": "First distinguish the operating condition and physical mechanism; source inspection and a working device are separate evidence states.",
         "term_ids": [
           "elec-t-0118",
           "elec-t-0285",
@@ -7936,15 +7936,15 @@
       },
       {
         "id": "ELEC-CURI-sensor",
-        "question": "How can an analog sensor safely communicate with a computer?",
+        "question": "How can analog sensors be interfaced to digital electronics?",
         "family_id": "systems",
         "aliases": [
-          "sensor interfacing"
+          "sensor interfacing",
+          "How can an analog sensor safely communicate with a computer?"
         ],
         "bridge_ids": [
           "INTERFACE"
         ],
-        "context": "First distinguish the operating condition and physical mechanism; source inspection and a working device are separate evidence states.",
         "term_ids": [
           "elec-t-0293",
           "elec-t-0291",
@@ -7955,16 +7955,16 @@
       },
       {
         "id": "ELEC-CURI-board",
-        "question": "How do I turn a breadboard experiment into a reliable PCB?",
+        "question": "How can a breadboard circuit become a reliable PCB?",
         "family_id": "systems",
         "aliases": [
-          "PCB design"
+          "PCB design",
+          "How do I turn a breadboard experiment into a reliable PCB?"
         ],
         "bridge_ids": [
           "BOARD",
           "RETURN"
         ],
-        "context": "First distinguish the operating condition and physical mechanism; source inspection and a working device are separate evidence states.",
         "term_ids": [
           "elec-t-0585",
           "elec-t-0363",
@@ -7975,16 +7975,16 @@
       },
       {
         "id": "ELEC-CURI-safe",
-        "question": "How can I measure a live power circuit without damaging myself or my instruments?",
+        "question": "How can power-circuit measurements preserve electrical isolation and safety?",
         "family_id": "systems",
         "aliases": [
-          "scope earth ground"
+          "scope earth ground",
+          "How can I measure a live power circuit without damaging myself or my instruments?"
         ],
         "bridge_ids": [
           "BOARD",
           "MAGNETICS"
         ],
-        "context": "First distinguish the operating condition and physical mechanism; source inspection and a working device are separate evidence states.",
         "term_ids": [
           "elec-t-0612",
           "elec-t-0050",
@@ -7995,16 +7995,16 @@
       },
       {
         "id": "ELEC-CURI-confidence",
-        "question": "What evidence gives me confidence my physical electronic device really works?",
+        "question": "What evidence establishes that an electronic device meets its operating requirements?",
         "family_id": "systems",
         "aliases": [
-          "engineering verification"
+          "engineering verification",
+          "What evidence gives me confidence my physical electronic device really works?"
         ],
         "bridge_ids": [
           "BOARD",
           "MEASURE"
         ],
-        "context": "First distinguish the operating condition and physical mechanism; source inspection and a working device are separate evidence states.",
         "term_ids": [
           "elec-t-0622",
           "elec-t-0244",
@@ -8015,16 +8015,16 @@
       },
       {
         "id": "ELEC-CURI-compatibility",
-        "question": "Why might a datasheet-accurate part still fail in my assembled circuit?",
+        "question": "Why can a datasheet-compliant component fail at the system level?",
         "family_id": "systems",
         "aliases": [
-          "system context"
+          "system context",
+          "Why might a datasheet-accurate part still fail in my assembled circuit?"
         ],
         "bridge_ids": [
           "INTERFACE",
           "BOARD"
         ],
-        "context": "First distinguish the operating condition and physical mechanism; source inspection and a working device are separate evidence states.",
         "term_ids": [
           "elec-t-0617",
           "elec-t-0598",
@@ -8036,8 +8036,10 @@
       {
         "id": "ELEC-CAP-buck-calculation",
         "family_id": "power",
-        "question": "Can you calculate a buck converter's ideal duty cycle, ripple and component constraints from a specification?",
-        "aliases": [],
+        "question": "How can we size a buck converter from its electrical requirements?",
+        "aliases": [
+          "Can you calculate a buck converter's ideal duty cycle, ripple and component constraints from a specification?"
+        ],
         "question_type": "execution",
         "task_scope": "capability_family",
         "bridge_ids": [
@@ -8056,8 +8058,10 @@
       {
         "id": "ELEC-CAP-probe-loading",
         "family_id": "measure",
-        "question": "Can you distinguish actual signal ringing from oscilloscope probe loading or pickup?",
-        "aliases": [],
+        "question": "How can we isolate actual signal ringing from oscilloscope probe artifacts?",
+        "aliases": [
+          "Can you distinguish actual signal ringing from oscilloscope probe loading or pickup?"
+        ],
         "question_type": "empirical_investigation",
         "task_scope": "capability_family",
         "bridge_ids": [
