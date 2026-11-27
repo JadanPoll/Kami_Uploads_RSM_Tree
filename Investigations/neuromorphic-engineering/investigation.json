@@ -1128,7 +1128,10 @@
           "nmr-t-0207"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "Sparse average traffic can be bursty. Arbitration serializes simultaneous events on a shared bus; a finite queue absorbs temporary excess arrivals, but sustained overload causes delay or loss. Source timestamps preserve event timing but cannot remove bandwidth bottlenecks. Compare parallel buses, filtering and backpressure using burst traces rather than only mean rates."
+        ]
       },
       {
         "id": "NMR-CURI-spike-timing",
@@ -1163,7 +1166,11 @@
           "nmr-t-0246"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "An event camera compares changes in log intensity locally at each pixel. A change exceeding a threshold generates an event with position, time and polarity. A static scene can generate little traffic, while motion produces events around edges.",
+          "This representation exposes change and timing rather than absolute brightness. Flicker, noise and camera motion can generate traffic even when objects stand still. Efficiency depends on the scene and downstream task."
+        ]
       },
       {
         "id": "NMR-CURI-dvs-noise",
@@ -1510,6 +1517,29 @@
           "nmr-t-0206",
           "nmr-t-0207",
           "nmr-t-0209"
+        ]
+      },
+      {
+        "id": "NMR-TACIT-event-burst",
+        "family_id": "spikes",
+        "question": "Can I preserve useful event-camera timing when a sudden light change floods the bus?",
+        "aliases": [],
+        "bridge_ids": [
+          "COMM"
+        ],
+        "term_ids": [
+          "nmr-t-0206",
+          "nmr-t-0207"
+        ],
+        "question_type": "design",
+        "task_scope": "specified_instance",
+        "applied_challenge": true,
+        "answer": [
+          "A sensor delivers 200,000 events/s for 10 ms, then 20,000 events/s for 90 ms. The receiver serves 100,000 events/s. Find the ideal buffer requirement and clearing time; design a test of the real system."
+        ],
+        "worked_solution": [
+          "During the burst the excess is 100,000 events/s, adding 1,000 queued events. Afterward the net drain is 80,000 events/s, clearing in 12.5 ms. Average arrivals are only 38,000 events/s, hiding the peak. At eight bytes/event the ideal payload backlog is 8,000 bytes; real queues require margin for arbitration and burst variation.",
+          "Replay measured illumination-change and moving-edge traces; record queue high-water marks, drops and timestamp lag. Compare spatial filtering and parallel receivers. The deterministic fluid model is not a measured sensor result."
         ]
       }
     ],
