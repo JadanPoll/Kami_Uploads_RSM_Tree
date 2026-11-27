@@ -7487,7 +7487,11 @@
           "elec-t-0118"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A resistor feeding a capacitor performs a physical computation. The capacitor voltage changes at a rate proportional to the difference between input and output. Rapid variations have little time to move charge, while sustained input changes eventually pass through. No sampled instructions are required.",
+          "The time constant RC connects frequency attenuation and step response. Increasing it rejects faster variations more strongly but slows legitimate changes. More elaborate networks shape several poles and zeros; the choice depends on required precision, speed, noise and power."
+        ]
       },
       {
         "id": "ELEC-CURI-hot",
@@ -7705,7 +7709,11 @@
           "elec-t-0329"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A 1 MHz clock may have a 1 ns edge. Interconnect responds to that transition, not the one-microsecond interval between edges. If propagation delay is comparable to rise time, different parts of a trace do not share the same instantaneous voltage.",
+          "Impedance discontinuities reflect traveling waves; ringing can cross receiver thresholds again. Controlled impedance, termination and continuous return paths address the physical mechanism. Lowering repetition frequency alone does not slow the edge."
+        ]
       },
       {
         "id": "ELEC-CURI-ringing",
@@ -8037,6 +8045,31 @@
           "elec-t-0232",
           "elec-t-0233",
           "elec-t-0234"
+        ]
+      },
+      {
+        "id": "ELEC-TACIT-sensor-filter",
+        "family_id": "build",
+        "question": "Can I remove 1 kHz interference without making a sensor too slow to respond?",
+        "aliases": [],
+        "bridge_ids": [
+          "PHYS",
+          "AMPLIFY"
+        ],
+        "term_ids": [
+          "elec-t-0148",
+          "elec-t-0188",
+          "elec-t-0118"
+        ],
+        "question_type": "design",
+        "task_scope": "specified_instance",
+        "applied_challenge": true,
+        "answer": [
+          "Reduce a sensor's 1 kHz interference to at most one tenth while settling within 1% of a true step in 20 ms. Can an RC filter do both? What if settling must occur in 5 ms?"
+        ],
+        "worked_solution": [
+          "With ideal source and high-impedance load, magnitude is 1/sqrt(1+(2πfRC)²). Attenuation requires RC ≥ sqrt(99)/(2π·1000) ≈ 1.58 ms. Step error is exp(−t/RC), so 1% in 20 ms requires RC ≤ 20 ms/ln(100) ≈ 4.34 ms.",
+          "Choose 3.3 kΩ and 1 µF: RC=3.3 ms, about 4.8% residual interference and 0.23% step error. At 5 ms the upper bound is 1.09 ms, so no first-order RC meets both requirements. Consider a notch or higher-order filter; check loading, ADC sampling and tolerances. This is Operation2Bminor's model, not a tested circuit."
         ]
       }
     ],
