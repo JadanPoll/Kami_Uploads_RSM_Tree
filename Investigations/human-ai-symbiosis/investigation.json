@@ -1080,7 +1080,10 @@
           "hai-t-0126"
         ],
         "question_type": "diagnosis",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "Plausible code and system-level correctness are different. A function can compile while a real workflow fails because of incompatible payloads, authentication expiry, browser restrictions or lost state. Exercise the actual workflow and identify the first boundary where behavior diverges; isolate it with a smaller discriminating probe. More generated code is not evidence of progress."
+        ]
       },
       {
         "id": "HAI-CURI-forget",
@@ -1426,7 +1429,10 @@
           "hai-t-0098"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "Parallelism helps when tasks are independent and interfaces explicit. If agents change the same state model, duplicate research or make incompatible assumptions, reconciliation can dominate the time saved. Compare one agent and several on the same goal, total compute and acceptance test; distinguish independent work from shared critical-path decisions."
+        ]
       },
       {
         "id": "HAI-CURI-failed-edits",
@@ -1733,6 +1739,39 @@
         "question_type": "empirical_investigation",
         "task_scope": "capability_family",
         "success_criterion": "Define a comparable task population, sampling frame and independently evaluated outcome; report uncertainty, selection bias, resource confounds and which quantiles can actually be estimated."
+      },
+      {
+        "id": "HAI-TACIT-stale-search",
+        "family_id": "ordinary-experience",
+        "question": "Can I stop an older search request from overwriting a newer one, and prove the fix?",
+        "aliases": [],
+        "bridge_ids": [
+          "HAI-BRG-evaluation",
+          "HAI-BRG-economics"
+        ],
+        "term_ids": [
+          "hai-t-0106",
+          "hai-t-0107",
+          "hai-t-0081",
+          "hai-t-0084",
+          "hai-t-0043",
+          "hai-t-0101",
+          "hai-t-0102",
+          "hai-t-0100"
+        ],
+        "question_type": "design",
+        "task_scope": "specified_instance",
+        "applied_challenge": true,
+        "answer": [
+          "The user searches for 'robot' then 'robotics'. The second request finishes first; the old request later replaces its results. Design the smallest behavioral fix and a test distinguishing the old implementation from the new."
+        ],
+        "worked_solution": [
+          "Assign a generation number to each request; only the current generation may render. Increment it on clear. Cancellation can save resources but cannot replace the invariant.",
+          {
+            "code": "let generation = 0;\nasync function search(query) {\n  const mine = ++generation;\n  const results = await lookup(query);\n  if (mine === generation) render(results);\n}\nfunction clearSearch() { ++generation; render([]); }"
+          },
+          "Force the first response to resolve after the second, and clear the input while a request is pending. Old results must not return. Error and loading indicators need the same guard. This isolates the mechanism but does not establish the whole app works."
+        ]
       }
     ]
   },
