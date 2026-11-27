@@ -12,7 +12,6 @@
       "RSM-05.01",
       "RSM-08.10"
     ],
-    "note": "The first task is to collaboratively choose meaningful questions, not to presume a single manufacturing curriculum.",
     "candidate_parent_purposes": [
       {
         "id": "P1",
@@ -57,7 +56,6 @@
         "information_gain": "Identify actionable missing capabilities and economical substitutes"
       }
     ],
-    "next_collaborative_choice": "Clarify whether the most exciting shared question is (a) understanding possible artifacts/physical transformations, (b) maximizing individual manufacturing agency, or (c) the growth and bootstrapping of manufacturing ecosystems; multiple can remain active. Do not select an object or curriculum.",
     "selected_big_picture_questions": [
       {
         "id": "Q1",
