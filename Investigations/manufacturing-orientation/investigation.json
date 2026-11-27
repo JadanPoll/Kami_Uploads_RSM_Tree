@@ -4286,34 +4286,34 @@
     "families": [
       {
         "id": "breakage",
-        "label": "Why things break or bend",
-        "description": "Repeated bending, snapped clips, hinges and load-bearing parts"
+        "label": "Materials, deformation and failure",
+        "description": "Elastic and plastic behavior, fatigue, anisotropy and compliant structures."
       },
       {
         "id": "fit",
-        "label": "Why things don't fit or move correctly",
-        "description": "Jammed assemblies, wobbling machines and geometric variation"
+        "label": "Tolerances, fit and precision",
+        "description": "Dimensional variation, assembly fit, constraints and positioning repeatability."
       },
       {
         "id": "motion",
-        "label": "How things move and transfer force",
-        "description": "Levers, indexing, gears and controlled motion"
+        "label": "Mechanisms, motion and force",
+        "description": "Mechanical advantage, intermittent motion and transmission limits."
       },
       {
         "id": "shapes",
-        "label": "How things are actually made",
-        "description": "Hollow shapes, overhangs, cutting and process constraints"
+        "label": "Fabrication processes and geometric limits",
+        "description": "Process geometry, thermal effects, supports and manufacturing stability."
       },
       {
         "id": "reach",
-        "label": "Making more, with fewer resources",
-        "description": "Tooling cost, production quantities and working without owning machines"
+        "label": "Tooling, production and manufacturing access",
+        "description": "Production volume, tooling economics, outsourcing and design changes."
       }
     ],
     "entries": [
       {
         "id": "MFG-CURI-paperclip",
-        "question": "Why does my metal paper clip keep snapping when I bend it?",
+        "question": "Why does repeated plastic deformation fracture metals?",
         "family_id": "breakage",
         "bridge_ids": [
           "METAL"
@@ -4324,7 +4324,8 @@
           "paperclip fatigue",
           "paperclip broke",
           "bending wire",
-          "bent metal wire snaps"
+          "bent metal wire snaps",
+          "Why does my metal paper clip keep snapping when I bend it?"
         ],
         "context": "A repeatedly bent metal wire—not a 3D-printed plastic latch.",
         "term_ids": [
@@ -4349,7 +4350,7 @@
       },
       {
         "id": "MFG-CURI-printed-clip",
-        "question": "Why does my 3D-printed clip keep breaking?",
+        "question": "Why do additively manufactured parts fail differently across and along layers?",
         "family_id": "breakage",
         "bridge_ids": [
           "SNAP"
@@ -4359,7 +4360,8 @@
           "3D printed latch cracks after opening",
           "plastic printed clip breaks",
           "plastic clip cracking",
-          "printed plastic fails"
+          "printed plastic fails",
+          "Why does my 3D-printed clip keep breaking?"
         ],
         "context": "A printed polymer part; distinguish the break relative to its layers and flexure geometry.",
         "term_ids": [
@@ -4383,7 +4385,7 @@
       },
       {
         "id": "MFG-CURI-bend-strong",
-        "question": "How can something be bendy but still strong?",
+        "question": "How can structures combine strength and flexibility?",
         "family_id": "breakage",
         "bridge_ids": [
           "FLEX",
@@ -4391,7 +4393,8 @@
         ],
         "aliases": [
           "Why does a flexible part not break?",
-          "strong yet flexible hinge"
+          "strong yet flexible hinge",
+          "How can something be bendy but still strong?"
         ],
         "context": "Intentional deformation is not automatically a failure; stiffness, strength and endurance differ.",
         "term_ids": [
@@ -4417,7 +4420,7 @@
       },
       {
         "id": "MFG-CURI-pinless-hinge",
-        "question": "Can I make a hinge without screws or pins?",
+        "question": "How can compliant mechanisms replace conventional joints?",
         "family_id": "breakage",
         "bridge_ids": [
           "FLEX"
@@ -4425,7 +4428,8 @@
         "aliases": [
           "one piece hinge",
           "no joints clamp",
-          "flexure hinge"
+          "flexure hinge",
+          "Can I make a hinge without screws or pins?"
         ],
         "context": "A jointless or partly compliant mechanism can replace some rigid joints.",
         "term_ids": [
@@ -4450,7 +4454,7 @@
       },
       {
         "id": "MFG-CURI-repeated-spring",
-        "question": "Why might a spring or flexible part break after thousands of uses?",
+        "question": "What determines the fatigue life of springs and flexible mechanisms?",
         "family_id": "breakage",
         "bridge_ids": [
           "FLEX",
@@ -4460,7 +4464,8 @@
           "fatigue failure spring",
           "cycles until it snaps",
           "spring breaking",
-          "spring snaps after bending"
+          "spring snaps after bending",
+          "Why might a spring or flexible part break after thousands of uses?"
         ],
         "context": "Repeated loading and lifetime rather than merely one-time breaking force.",
         "term_ids": [
@@ -4486,14 +4491,15 @@
       },
       {
         "id": "MFG-CURI-cad-fit",
-        "question": "Why won't two parts fit together when they fit in my computer?",
+        "question": "Why do assemblies fail to fit despite correct CAD geometry?",
         "family_id": "fit",
         "bridge_ids": [
           "FIT"
         ],
         "aliases": [
           "CAD says parts fit but they jam",
-          "assembly tolerance"
+          "assembly tolerance",
+          "Why won't two parts fit together when they fit in my computer?"
         ],
         "context": "A real assembly differs from an ideal nominal CAD model.",
         "term_ids": [
@@ -4517,14 +4523,15 @@
       },
       {
         "id": "MFG-CURI-holes-small",
-        "question": "Why do holes in my 3D prints come out too small?",
+        "question": "What determines dimensional accuracy in additive manufacturing?",
         "family_id": "fit",
         "bridge_ids": [
           "FIT"
         ],
         "aliases": [
           "printed holes don't fit",
-          "overextrusion holes"
+          "overextrusion holes",
+          "Why do holes in my 3D prints come out too small?"
         ],
         "context": "Dimensional variation and printer/slicer compensation.",
         "term_ids": [
@@ -4548,7 +4555,7 @@
       },
       {
         "id": "MFG-CURI-wobble",
-        "question": "Why does my machine wobble instead of moving smoothly?",
+        "question": "What causes unwanted motion in mechanical assemblies?",
         "family_id": "fit",
         "bridge_ids": [
           "WOBBLE"
@@ -4558,7 +4565,8 @@
           "loose moving joint",
           "robot arm shaking",
           "mechanism wobbling",
-          "robot joint loose"
+          "robot joint loose",
+          "Why does my machine wobble instead of moving smoothly?"
         ],
         "context": "Unwanted motion may arise from joint clearance or constraints.",
         "term_ids": [
@@ -4583,7 +4591,7 @@
       },
       {
         "id": "MFG-CURI-return-drift",
-        "question": "Why doesn't my mechanism return to exactly the same place?",
+        "question": "What limits the repeatability of mechanical positioning?",
         "family_id": "fit",
         "bridge_ids": [
           "WOBBLE"
@@ -4593,7 +4601,8 @@
           "backlash",
           "return position varies",
           "robot position drifts",
-          "motion doesn't repeat"
+          "motion doesn't repeat",
+          "Why doesn't my mechanism return to exactly the same place?"
         ],
         "context": "Consider backlash, hysteresis, geometric tolerances and forbidden motion.",
         "term_ids": [
@@ -4619,7 +4628,7 @@
       },
       {
         "id": "MFG-CURI-identical",
-        "question": "Why is it hard to make two copies of something exactly alike?",
+        "question": "Why does manufacturing introduce variation between identical designs?",
         "family_id": "fit",
         "bridge_ids": [
           "FIT",
@@ -4627,7 +4636,8 @@
         ],
         "aliases": [
           "identical parts",
-          "manufacturing repeatability"
+          "manufacturing repeatability",
+          "Why is it hard to make two copies of something exactly alike?"
         ],
         "context": "Repeatability is about the distribution of real outcomes, not nominal geometry.",
         "term_ids": [
@@ -4652,14 +4662,15 @@
       },
       {
         "id": "MFG-CURI-one-step",
-        "question": "How can a wheel move one step, stop, and then move again?",
+        "question": "How can continuous rotary motion produce discrete indexing?",
         "family_id": "motion",
         "bridge_ids": [
           "STEP"
         ],
         "aliases": [
           "step then pause",
-          "indexing wheel"
+          "indexing wheel",
+          "How can a wheel move one step, stop, and then move again?"
         ],
         "context": "Intermittent motion and dwell must be distinguished from simple continuous rotation.",
         "term_ids": [
@@ -4681,14 +4692,15 @@
       },
       {
         "id": "MFG-CURI-heavy-load",
-        "question": "How can a tiny push lift something really heavy?",
+        "question": "How do mechanisms trade displacement for force?",
         "family_id": "motion",
         "bridge_ids": [
           "FORCE"
         ],
         "aliases": [
           "levers give more force",
-          "small motor heavy lift"
+          "small motor heavy lift",
+          "How can a tiny push lift something really heavy?"
         ],
         "context": "Trade force against travel and account for losses.",
         "term_ids": [
@@ -4703,14 +4715,15 @@
       },
       {
         "id": "MFG-CURI-machine-pause",
-        "question": "How can a factory machine pause without stopping its motor?",
+        "question": "How can continuously driven machinery create dwell periods?",
         "family_id": "motion",
         "bridge_ids": [
           "STEP"
         ],
         "aliases": [
           "motion dwell",
-          "rotating shaft intermittent movement"
+          "rotating shaft intermittent movement",
+          "How can a factory machine pause without stopping its motor?"
         ],
         "context": "Intermittent output can come from continuously driven mechanism geometry.",
         "term_ids": [
@@ -4733,7 +4746,7 @@
       },
       {
         "id": "MFG-CURI-smooth-direction",
-        "question": "How can I make something move only in the direction I want?",
+        "question": "How can mechanisms constrain motion to desired directions?",
         "family_id": "motion",
         "bridge_ids": [
           "WOBBLE",
@@ -4741,7 +4754,8 @@
         ],
         "aliases": [
           "guided motion",
-          "prevent side motion"
+          "prevent side motion",
+          "How can I make something move only in the direction I want?"
         ],
         "context": "Choose allowed and forbidden degrees of freedom before picking physical guidance.",
         "term_ids": [
@@ -4767,14 +4781,15 @@
       },
       {
         "id": "MFG-CURI-gears-power",
-        "question": "Why can't gears make something both faster and stronger for free?",
+        "question": "What limits the speed and force available from a transmission?",
         "family_id": "motion",
         "bridge_ids": [
           "FORCE"
         ],
         "aliases": [
           "torque speed tradeoff",
-          "gearing output force"
+          "gearing output force",
+          "Why can't gears make something both faster and stronger for free?"
         ],
         "context": "Input work and power constrain simultaneous gains in output torque and speed.",
         "term_ids": [
@@ -4790,14 +4805,15 @@
       },
       {
         "id": "MFG-CURI-hollow-shape",
-        "question": "How do people make parts that are hollow inside?",
+        "question": "How can manufacturing processes create enclosed cavities?",
         "family_id": "shapes",
         "bridge_ids": [
           "CAVITY"
         ],
         "aliases": [
           "internal cavity",
-          "hollow metal casting"
+          "hollow metal casting",
+          "How do people make parts that are hollow inside?"
         ],
         "context": "Consider access to interior surfaces and how supports or molds are removed.",
         "term_ids": [
@@ -4821,14 +4837,15 @@
       },
       {
         "id": "MFG-CURI-no-heat",
-        "question": "How can I cut something without burning or melting its edges?",
+        "question": "How can materials be cut without excessive thermal damage?",
         "family_id": "shapes",
         "bridge_ids": [
           "HEAT"
         ],
         "aliases": [
           "cold cutting",
-          "avoid heat affected cutting"
+          "avoid heat affected cutting",
+          "How can I cut something without burning or melting its edges?"
         ],
         "context": "Material removal and its side-effects depend on the process physics.",
         "term_ids": [
@@ -4841,7 +4858,7 @@
       },
       {
         "id": "MFG-CURI-print-air",
-        "question": "Why can't a 3D printer just print plastic into empty air?",
+        "question": "What determines which overhangs can be manufactured without support?",
         "family_id": "shapes",
         "bridge_ids": [
           "SUPPORT"
@@ -4851,7 +4868,8 @@
           "overhangs printing",
           "nozzle support",
           "printing into air",
-          "3d printing overhang"
+          "3d printing overhang",
+          "Why can't a 3D printer just print plastic into empty air?"
         ],
         "context": "Ask how new material is supported before it solidifies.",
         "term_ids": [
@@ -4872,14 +4890,15 @@
       },
       {
         "id": "MFG-CURI-sagging",
-        "question": "Why does my 3D print sag over an empty gap?",
+        "question": "Why do unsupported spans sag during material deposition?",
         "family_id": "shapes",
         "bridge_ids": [
           "SUPPORT"
         ],
         "aliases": [
           "bridging plastic droops",
-          "drooping overhang"
+          "drooping overhang",
+          "Why does my 3D print sag over an empty gap?"
         ],
         "context": "Bridging, cooling and span geometry are relevant.",
         "term_ids": [
@@ -4899,14 +4918,15 @@
       },
       {
         "id": "MFG-CURI-tipping",
-        "question": "Why does my tall 3D print fall over while printing?",
+        "question": "What makes a part mechanically stable during fabrication?",
         "family_id": "shapes",
         "bridge_ids": [
           "SUPPORT"
         ],
         "aliases": [
           "bed adhesion",
-          "failed tall print"
+          "failed tall print",
+          "Why does my tall 3D print fall over while printing?"
         ],
         "context": "Bed contact, adhesion and slender geometry can dominate print success.",
         "term_ids": [
@@ -4927,14 +4947,15 @@
       },
       {
         "id": "MFG-CURI-one-or-many",
-        "question": "Should I make ten things the same way as ten thousand?",
+        "question": "How does production volume change the choice of manufacturing process?",
         "family_id": "reach",
         "bridge_ids": [
           "QUANTITY"
         ],
         "aliases": [
           "mass production",
-          "one-off versus high volume"
+          "one-off versus high volume",
+          "Should I make ten things the same way as ten thousand?"
         ],
         "context": "Fixed tooling, revisions and per-unit work change preferred processes.",
         "term_ids": [
@@ -4957,14 +4978,15 @@
       },
       {
         "id": "MFG-CURI-no-shop",
-        "question": "Can I make a real device without owning a machine shop?",
+        "question": "How can a designer manufacture a device without owning production equipment?",
         "family_id": "reach",
         "bridge_ids": [
           "OUTSOURCE"
         ],
         "aliases": [
           "outsource fabrication",
-          "no workshop"
+          "no workshop",
+          "Can I make a real device without owning a machine shop?"
         ],
         "context": "Manufacturing agency can involve external services plus specification and inspection.",
         "term_ids": [
@@ -4988,7 +5010,7 @@
       },
       {
         "id": "MFG-CURI-factory-molds",
-        "question": "Why do factories spend so much on molds?",
+        "question": "Why does dedicated tooling become economical at scale?",
         "family_id": "reach",
         "bridge_ids": [
           "QUANTITY"
@@ -4998,7 +5020,8 @@
           "injection molding economics",
           "factory mold",
           "factory tooling",
-          "expensive molds"
+          "expensive molds",
+          "Why do factories spend so much on molds?"
         ],
         "context": "Reusable physical tooling can exchange upfront investment for cheap repetitive cycles.",
         "term_ids": [
@@ -5022,14 +5045,15 @@
       },
       {
         "id": "MFG-CURI-change-design",
-        "question": "Why is changing a product design expensive after making a mold?",
+        "question": "Why does tooling make design changes expensive?",
         "family_id": "reach",
         "bridge_ids": [
           "QUANTITY"
         ],
         "aliases": [
           "mold revision cost",
-          "changing tooling"
+          "changing tooling",
+          "Why is changing a product design expensive after making a mold?"
         ],
         "context": "Changing digitally described geometry and reworking a fixed tool are economically different.",
         "term_ids": [
@@ -5053,8 +5077,10 @@
       {
         "id": "MFG-CAP-tolerance-stack",
         "family_id": "fit",
-        "question": "Can you calculate a tolerance stack and determine whether assembled parts have clearance or interference?",
-        "aliases": [],
+        "question": "How can we calculate assembly fit from component tolerances?",
+        "aliases": [
+          "Can you calculate a tolerance stack and determine whether assembled parts have clearance or interference?"
+        ],
         "question_type": "execution",
         "task_scope": "capability_family",
         "bridge_ids": [
@@ -5073,8 +5099,10 @@
       {
         "id": "MFG-CAP-print-orientation",
         "family_id": "shapes",
-        "question": "Can you select an FFM print orientation for a given loading direction and support constraint?",
-        "aliases": [],
+        "question": "How can we choose a print orientation for mechanical performance and manufacturability?",
+        "aliases": [
+          "Can you select an FFM print orientation for a given loading direction and support constraint?"
+        ],
         "question_type": "design",
         "task_scope": "capability_family",
         "bridge_ids": [
