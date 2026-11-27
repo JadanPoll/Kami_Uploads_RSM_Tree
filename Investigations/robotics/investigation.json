@@ -3688,53 +3688,54 @@
     "families": [
       {
         "id": "build",
-        "label": "What could I build?",
-        "description": "Systems and projects approached through their minimum viable capabilities"
+        "label": "Robotic embodiments and system construction",
+        "description": "Mobile, manipulator, aerial and soft embodiments; composition and simulation."
       },
       {
         "id": "geometry",
-        "label": "Where and how can it move?",
-        "description": "Frames, constraints, kinematics, feasible motion and contact"
+        "label": "Kinematics, frames and motion constraints",
+        "description": "Frames, joint geometry, feasible velocities, reachability and motion constraints."
       },
       {
         "id": "sense",
-        "label": "How does it see and know?",
-        "description": "Measurements, estimation, localization and mapping"
+        "label": "Perception, state estimation and mapping",
+        "description": "Measurement, inference, localization, mapping and ambiguous observations."
       },
       {
         "id": "navigate",
-        "label": "How does it get somewhere?",
-        "description": "Planning, time-scaling, guidance and navigation"
+        "label": "Motion planning and guidance",
+        "description": "Search, collision constraints, trajectory feasibility and guidance."
       },
       {
         "id": "control",
-        "label": "Why doesn't the motion behave?",
-        "description": "Force laws, feedback, limits and robustness"
+        "label": "Dynamics, feedback and contact",
+        "description": "Dynamics, stability, tracking, loads, contact and control hierarchy."
       },
       {
         "id": "fly",
-        "label": "What makes autonomous flight different?",
-        "description": "Fixed-wing force, trim, cascaded control and wind"
+        "label": "Fixed-wing flight mechanics and autonomy",
+        "description": "Aerodynamic state, trim, flight envelopes and autonomous landing."
       },
       {
         "id": "decide",
-        "label": "How can it act intelligently under uncertainty?",
-        "description": "Belief policies, exploration and information"
+        "label": "Decisions under uncertainty",
+        "description": "Information gathering, exploration and action under uncertain state."
       },
       {
         "id": "verify",
-        "label": "How can I make it actually work?",
-        "description": "Integration, stress tests, transfer to hardware and recovery"
+        "label": "System integration, validation and recovery",
+        "description": "Simulation transfer, subsystem integration, evidence and recovery."
       }
     ],
     "entries": [
       {
         "id": "ROB-CURI-build-rover",
         "family_id": "build",
-        "question": "How can I build a robot that explores my home without getting lost?",
+        "question": "How can we build an autonomous mobile robot that localizes and explores?",
         "aliases": [
           "autonomous rover",
-          "home robot"
+          "home robot",
+          "How can I build a robot that explores my home without getting lost?"
         ],
         "bridge_ids": [
           "GEOMETRY",
@@ -3743,7 +3744,6 @@
           "MOTION",
           "INTEGRATE"
         ],
-        "context": "Choose the consequential physical or informational distinction; retrieve the cited section before assuming it explains an observed robot.",
         "term_ids": [
           "robot-t-0253",
           "robot-t-0261",
@@ -3755,10 +3755,11 @@
       {
         "id": "ROB-CURI-build-arm",
         "family_id": "build",
-        "question": "How could I build an arm that reliably picks up unfamiliar things?",
+        "question": "How can we build a manipulator that grasps unfamiliar objects reliably?",
         "aliases": [
           "robot arm",
-          "pick and place"
+          "pick and place",
+          "How could I build an arm that reliably picks up unfamiliar things?"
         ],
         "bridge_ids": [
           "GEOMETRY",
@@ -3766,7 +3767,6 @@
           "MOTION",
           "INTEGRATE"
         ],
-        "context": "Choose the consequential physical or informational distinction; retrieve the cited section before assuming it explains an observed robot.",
         "term_ids": [
           "robot-t-0048",
           "robot-t-0037",
@@ -3778,17 +3778,17 @@
       {
         "id": "ROB-CURI-build-flight",
         "family_id": "build",
-        "question": "What would it take to build an autonomous fixed-wing aircraft?",
+        "question": "What capabilities are needed for autonomous fixed-wing flight?",
         "aliases": [
           "small UAV",
-          "autopilot"
+          "autopilot",
+          "What would it take to build an autonomous fixed-wing aircraft?"
         ],
         "bridge_ids": [
           "FLIGHT",
           "CONTROL",
           "INTEGRATE"
         ],
-        "context": "Choose the consequential physical or informational distinction; retrieve the cited section before assuming it explains an observed robot.",
         "term_ids": [
           "robot-t-0372",
           "robot-t-0409",
@@ -3800,16 +3800,16 @@
       {
         "id": "ROB-CURI-build-soft",
         "family_id": "build",
-        "question": "Which robotics ideas transfer from an arm to a soft robot?",
+        "question": "Which principles of rigid-body robotics transfer to soft robots?",
         "aliases": [
-          "soft robotics transfer"
+          "soft robotics transfer",
+          "Which robotics ideas transfer from an arm to a soft robot?"
         ],
         "bridge_ids": [
           "GEOMETRY",
           "CONTROL",
           "INTEGRATE"
         ],
-        "context": "Choose the consequential physical or informational distinction; retrieve the cited section before assuming it explains an observed robot.",
         "term_ids": [
           "robot-t-0479",
           "robot-t-0113"
@@ -3820,10 +3820,11 @@
       {
         "id": "ROB-CURI-build-kinect",
         "family_id": "build",
-        "question": "Can a depth camera help a robot navigate and reach for objects?",
+        "question": "How can depth sensing support navigation and manipulation?",
         "aliases": [
           "Kinect",
-          "depth sensing"
+          "depth sensing",
+          "Can a depth camera help a robot navigate and reach for objects?"
         ],
         "bridge_ids": [
           "VISION",
@@ -3831,7 +3832,6 @@
           "MAPPING",
           "GEOMETRY"
         ],
-        "context": "Choose the consequential physical or informational distinction; retrieve the cited section before assuming it explains an observed robot.",
         "term_ids": [
           "robot-t-0169",
           "robot-t-0188",
@@ -3843,17 +3843,17 @@
       {
         "id": "ROB-CURI-build-digital-twin",
         "family_id": "build",
-        "question": "How can I simulate an entire robot before buying any hardware?",
+        "question": "How can we simulate an integrated robotic system before building it?",
         "aliases": [
           "robot simulator",
-          "digital twin"
+          "digital twin",
+          "How can I simulate an entire robot before buying any hardware?"
         ],
         "bridge_ids": [
           "INTEGRATE",
           "MOTION",
           "CONTROL"
         ],
-        "context": "Choose the consequential physical or informational distinction; retrieve the cited section before assuming it explains an observed robot.",
         "term_ids": [
           "robot-t-0423",
           "robot-t-0426",
@@ -3865,15 +3865,15 @@
       {
         "id": "ROB-CURI-frames",
         "family_id": "geometry",
-        "question": "Why does the arm reach to the wrong place even though its coordinates look right?",
+        "question": "Why do coordinate-frame errors produce incorrect robot motion?",
         "aliases": [
           "wrong frame",
-          "pose convention"
+          "pose convention",
+          "Why does the arm reach to the wrong place even though its coordinates look right?"
         ],
         "bridge_ids": [
           "GEOMETRY"
         ],
-        "context": "Choose the consequential physical or informational distinction; retrieve the cited section before assuming it explains an observed robot.",
         "term_ids": [
           "robot-t-0023",
           "robot-t-0009"
@@ -3884,14 +3884,14 @@
       {
         "id": "ROB-CURI-inverse",
         "family_id": "geometry",
-        "question": "How can the end of a robot arm reach a position I specify?",
+        "question": "How can inverse kinematics determine joint configurations for a desired pose?",
         "aliases": [
-          "inverse kinematics"
+          "inverse kinematics",
+          "How can the end of a robot arm reach a position I specify?"
         ],
         "bridge_ids": [
           "GEOMETRY"
         ],
-        "context": "Choose the consequential physical or informational distinction; retrieve the cited section before assuming it explains an observed robot.",
         "term_ids": [
           "robot-t-0037",
           "robot-t-0036"
@@ -3902,15 +3902,15 @@
       {
         "id": "ROB-CURI-singularity",
         "family_id": "geometry",
-        "question": "Why does a robot arm suddenly need huge joint speeds?",
+        "question": "Why do kinematic singularities demand large joint velocities?",
         "aliases": [
-          "Jacobian singularity"
+          "Jacobian singularity",
+          "Why does a robot arm suddenly need huge joint speeds?"
         ],
         "bridge_ids": [
           "GEOMETRY",
           "MOTION"
         ],
-        "context": "Choose the consequential physical or informational distinction; retrieve the cited section before assuming it explains an observed robot.",
         "term_ids": [
           "robot-t-0064",
           "robot-t-0060"
@@ -3921,15 +3921,15 @@
       {
         "id": "ROB-CURI-sideways",
         "family_id": "geometry",
-        "question": "Why can a car go around a corner but not slide directly sideways?",
+        "question": "How do nonholonomic constraints restrict mobile robot motion?",
         "aliases": [
-          "nonholonomic wheels"
+          "nonholonomic wheels",
+          "Why can a car go around a corner but not slide directly sideways?"
         ],
         "bridge_ids": [
           "GEOMETRY",
           "MOTION"
         ],
-        "context": "Choose the consequential physical or informational distinction; retrieve the cited section before assuming it explains an observed robot.",
         "term_ids": [
           "robot-t-0008",
           "robot-t-0074"
@@ -3940,14 +3940,14 @@
       {
         "id": "ROB-CURI-target",
         "family_id": "geometry",
-        "question": "Can an arm reach every spot inside a circle around it?",
+        "question": "What determines a manipulator's reachable workspace?",
         "aliases": [
-          "workspace reachable set"
+          "workspace reachable set",
+          "Can an arm reach every spot inside a circle around it?"
         ],
         "bridge_ids": [
           "GEOMETRY"
         ],
-        "context": "Choose the consequential physical or informational distinction; retrieve the cited section before assuming it explains an observed robot.",
         "term_ids": [
           "robot-t-0002",
           "robot-t-0067"
@@ -3958,15 +3958,15 @@
       {
         "id": "ROB-CURI-distance",
         "family_id": "sense",
-        "question": "Why can't a single camera always tell how far away something is?",
+        "question": "Why is depth ambiguous in a single camera image?",
         "aliases": [
-          "monocular depth ambiguity"
+          "monocular depth ambiguity",
+          "Why can't a single camera always tell how far away something is?"
         ],
         "bridge_ids": [
           "VISION",
           "ESTIMATION"
         ],
-        "context": "Choose the consequential physical or informational distinction; retrieve the cited section before assuming it explains an observed robot.",
         "term_ids": [
           "robot-t-0189",
           "robot-t-0201"
@@ -3977,15 +3977,15 @@
       {
         "id": "ROB-CURI-imu",
         "family_id": "sense",
-        "question": "Why does my robot's estimated position drift when it has an IMU?",
+        "question": "Why does inertial state estimation drift over time?",
         "aliases": [
-          "inertial navigation drift"
+          "inertial navigation drift",
+          "Why does my robot's estimated position drift when it has an IMU?"
         ],
         "bridge_ids": [
           "ESTIMATION",
           "VISION"
         ],
-        "context": "Choose the consequential physical or informational distinction; retrieve the cited section before assuming it explains an observed robot.",
         "term_ids": [
           "robot-t-0172",
           "robot-t-0193",
@@ -3997,17 +3997,17 @@
       {
         "id": "ROB-CURI-gps",
         "family_id": "sense",
-        "question": "Why do GPS and a gyroscope disagree about where an aircraft is going?",
+        "question": "Why can different aircraft navigation sensors disagree?",
         "aliases": [
           "course vs heading",
-          "wind"
+          "wind",
+          "Why do GPS and a gyroscope disagree about where an aircraft is going?"
         ],
         "bridge_ids": [
           "ESTIMATION",
           "FLIGHT",
           "GEOMETRY"
         ],
-        "context": "Choose the consequential physical or informational distinction; retrieve the cited section before assuming it explains an observed robot.",
         "term_ids": [
           "robot-t-0178",
           "robot-t-0174",
@@ -4019,15 +4019,15 @@
       {
         "id": "ROB-CURI-confident-wrong",
         "family_id": "sense",
-        "question": "How can a robot be completely confident and still wrong?",
+        "question": "How can a robot's state estimate be confident but wrong?",
         "aliases": [
-          "overconfident EKF"
+          "overconfident EKF",
+          "How can a robot be completely confident and still wrong?"
         ],
         "bridge_ids": [
           "ESTIMATION",
           "MAPPING"
         ],
-        "context": "Choose the consequential physical or informational distinction; retrieve the cited section before assuming it explains an observed robot.",
         "term_ids": [
           "robot-t-0251",
           "robot-t-0221"
@@ -4038,15 +4038,15 @@
       {
         "id": "ROB-CURI-two-halls",
         "family_id": "sense",
-        "question": "How does a robot distinguish two identical-looking hallways?",
+        "question": "How do robots resolve ambiguity in their observations?",
         "aliases": [
-          "multimodal belief"
+          "multimodal belief",
+          "How does a robot distinguish two identical-looking hallways?"
         ],
         "bridge_ids": [
           "ESTIMATION",
           "MAPPING"
         ],
-        "context": "Choose the consequential physical or informational distinction; retrieve the cited section before assuming it explains an observed robot.",
         "term_ids": [
           "robot-t-0235",
           "robot-t-0254"
@@ -4057,14 +4057,14 @@
       {
         "id": "ROB-CURI-kidnapped",
         "family_id": "sense",
-        "question": "If I pick up a robot and put it elsewhere, can it find itself again?",
+        "question": "How can robots recover localization after an unexpected relocation?",
         "aliases": [
-          "kidnapped robot"
+          "kidnapped robot",
+          "If I pick up a robot and put it elsewhere, can it find itself again?"
         ],
         "bridge_ids": [
           "ESTIMATION"
         ],
-        "context": "Choose the consequential physical or informational distinction; retrieve the cited section before assuming it explains an observed robot.",
         "term_ids": [
           "robot-t-0256",
           "robot-t-0236"
@@ -4075,14 +4075,14 @@
       {
         "id": "ROB-CURI-map-building",
         "family_id": "sense",
-        "question": "How do laser beams become a map showing free space and walls?",
+        "question": "How can range measurements construct maps of occupied and free space?",
         "aliases": [
-          "occupancy grid mapping"
+          "occupancy grid mapping",
+          "How do laser beams become a map showing free space and walls?"
         ],
         "bridge_ids": [
           "MAPPING"
         ],
-        "context": "Choose the consequential physical or informational distinction; retrieve the cited section before assuming it explains an observed robot.",
         "term_ids": [
           "robot-t-0261",
           "robot-t-0262"
@@ -4093,14 +4093,14 @@
       {
         "id": "ROB-CURI-loop",
         "family_id": "sense",
-        "question": "How does recognizing a familiar place repair an old map?",
+        "question": "How can loop closure correct accumulated mapping error?",
         "aliases": [
-          "loop closure"
+          "loop closure",
+          "How does recognizing a familiar place repair an old map?"
         ],
         "bridge_ids": [
           "MAPPING"
         ],
-        "context": "Choose the consequential physical or informational distinction; retrieve the cited section before assuming it explains an observed robot.",
         "term_ids": [
           "robot-t-0271",
           "robot-t-0268"
@@ -4111,15 +4111,15 @@
       {
         "id": "ROB-CURI-false-loop",
         "family_id": "sense",
-        "question": "Why does one wrong place match bend the whole map?",
+        "question": "Why can a false loop closure distort an entire map?",
         "aliases": [
           "false loop closure",
-          "association"
+          "association",
+          "Why does one wrong place match bend the whole map?"
         ],
         "bridge_ids": [
           "MAPPING"
         ],
-        "context": "Choose the consequential physical or informational distinction; retrieve the cited section before assuming it explains an observed robot.",
         "term_ids": [
           "robot-t-0185",
           "robot-t-0270"
@@ -4130,14 +4130,14 @@
       {
         "id": "ROB-CURI-slam-factor",
         "family_id": "sense",
-        "question": "Why do some mapping algorithms track paths and landmarks separately?",
+        "question": "Why do SLAM algorithms factor robot trajectories and landmarks?",
         "aliases": [
-          "FastSLAM factorization"
+          "FastSLAM factorization",
+          "Why do some mapping algorithms track paths and landmarks separately?"
         ],
         "bridge_ids": [
           "MAPPING"
         ],
-        "context": "Choose the consequential physical or informational distinction; retrieve the cited section before assuming it explains an observed robot.",
         "term_ids": [
           "robot-t-0278",
           "robot-t-0279"
@@ -4148,16 +4148,16 @@
       {
         "id": "ROB-CURI-path-v-speed",
         "family_id": "navigate",
-        "question": "Why isn't a shortest path always a drivable or safe path?",
+        "question": "Why is a shortest path not necessarily physically feasible or safe?",
         "aliases": [
           "motion planning",
-          "dynamic feasibility"
+          "dynamic feasibility",
+          "Why isn't a shortest path always a drivable or safe path?"
         ],
         "bridge_ids": [
           "MOTION",
           "GEOMETRY"
         ],
-        "context": "Choose the consequential physical or informational distinction; retrieve the cited section before assuming it explains an observed robot.",
         "term_ids": [
           "robot-t-0293",
           "robot-t-0297",
@@ -4169,15 +4169,15 @@
       {
         "id": "ROB-CURI-rrt",
         "family_id": "navigate",
-        "question": "How can a robot plan through an enormous space of possible movements?",
+        "question": "How can robots search high-dimensional motion spaces?",
         "aliases": [
           "RRT",
-          "sampling planner"
+          "sampling planner",
+          "How can a robot plan through an enormous space of possible movements?"
         ],
         "bridge_ids": [
           "MOTION"
         ],
-        "context": "Choose the consequential physical or informational distinction; retrieve the cited section before assuming it explains an observed robot.",
         "term_ids": [
           "robot-t-0309",
           "robot-t-0300"
@@ -4188,15 +4188,15 @@
       {
         "id": "ROB-CURI-doorway",
         "family_id": "navigate",
-        "question": "Why does the robot crash into a doorway even when its center clears it?",
+        "question": "Why must collision checking account for the robot's full geometry?",
         "aliases": [
-          "robot footprint collision"
+          "robot footprint collision",
+          "Why does the robot crash into a doorway even when its center clears it?"
         ],
         "bridge_ids": [
           "MOTION",
           "GEOMETRY"
         ],
-        "context": "Choose the consequential physical or informational distinction; retrieve the cited section before assuming it explains an observed robot.",
         "term_ids": [
           "robot-t-0301",
           "robot-t-0300"
@@ -4207,16 +4207,16 @@
       {
         "id": "ROB-CURI-waypoints",
         "family_id": "navigate",
-        "question": "Why does following a series of GPS dots produce awkward aircraft turns?",
+        "question": "Why do waypoint sequences produce dynamically unsuitable aircraft trajectories?",
         "aliases": [
           "Dubins",
-          "waypoint"
+          "waypoint",
+          "Why does following a series of GPS dots produce awkward aircraft turns?"
         ],
         "bridge_ids": [
           "FLIGHT",
           "MOTION"
         ],
-        "context": "Choose the consequential physical or informational distinction; retrieve the cited section before assuming it explains an observed robot.",
         "term_ids": [
           "robot-t-0317",
           "robot-t-0320"
@@ -4227,15 +4227,15 @@
       {
         "id": "ROB-CURI-wind",
         "family_id": "navigate",
-        "question": "How can an aircraft stay on course when wind pushes it sideways?",
+        "question": "How can aircraft guidance compensate for wind?",
         "aliases": [
-          "wind correction"
+          "wind correction",
+          "How can an aircraft stay on course when wind pushes it sideways?"
         ],
         "bridge_ids": [
           "FLIGHT",
           "CONTROL"
         ],
-        "context": "Choose the consequential physical or informational distinction; retrieve the cited section before assuming it explains an observed robot.",
         "term_ids": [
           "robot-t-0397",
           "robot-t-0140"
@@ -4246,14 +4246,14 @@
       {
         "id": "ROB-CURI-wobble",
         "family_id": "control",
-        "question": "Why does the robot oscillate when I increase its control gain?",
+        "question": "Why can increased feedback gain cause oscillation?",
         "aliases": [
-          "feedback instability"
+          "feedback instability",
+          "Why does the robot oscillate when I increase its control gain?"
         ],
         "bridge_ids": [
           "CONTROL"
         ],
-        "context": "Choose the consequential physical or informational distinction; retrieve the cited section before assuming it explains an observed robot.",
         "term_ids": [
           "robot-t-0121",
           "robot-t-0124"
@@ -4264,15 +4264,15 @@
       {
         "id": "ROB-CURI-force",
         "family_id": "control",
-        "question": "Why does a position-controlled arm push dangerously hard against a wall?",
+        "question": "Why can position control generate excessive contact forces?",
         "aliases": [
           "force control",
-          "impedance"
+          "impedance",
+          "Why does a position-controlled arm push dangerously hard against a wall?"
         ],
         "bridge_ids": [
           "CONTROL"
         ],
-        "context": "Choose the consequential physical or informational distinction; retrieve the cited section before assuming it explains an observed robot.",
         "term_ids": [
           "robot-t-0145",
           "robot-t-0143"
@@ -4283,15 +4283,15 @@
       {
         "id": "ROB-CURI-load",
         "family_id": "control",
-        "question": "Why does a robot move correctly without a payload but fail when holding one?",
+        "question": "Why does a payload change robot dynamics and control performance?",
         "aliases": [
-          "payload torque"
+          "payload torque",
+          "Why does a robot move correctly without a payload but fail when holding one?"
         ],
         "bridge_ids": [
           "MOTION",
           "CONTROL"
         ],
-        "context": "Choose the consequential physical or informational distinction; retrieve the cited section before assuming it explains an observed robot.",
         "term_ids": [
           "robot-t-0096",
           "robot-t-0109"
@@ -4302,15 +4302,15 @@
       {
         "id": "ROB-CURI-outer",
         "family_id": "control",
-        "question": "Why can an aircraft stabilize its roll but miss the commanded course?",
+        "question": "Why can stable attitude control still fail to track an aircraft course?",
         "aliases": [
-          "cascaded controller"
+          "cascaded controller",
+          "Why can an aircraft stabilize its roll but miss the commanded course?"
         ],
         "bridge_ids": [
           "CONTROL",
           "FLIGHT"
         ],
-        "context": "Choose the consequential physical or informational distinction; retrieve the cited section before assuming it explains an observed robot.",
         "term_ids": [
           "robot-t-0147",
           "robot-t-0148",
@@ -4322,15 +4322,15 @@
       {
         "id": "ROB-CURI-trim",
         "family_id": "fly",
-        "question": "Why can a plane fly steadily at one speed but not another?",
+        "question": "What determines the steady-flight trim conditions of an aircraft?",
         "aliases": [
           "trim condition",
-          "stall"
+          "stall",
+          "Why can a plane fly steadily at one speed but not another?"
         ],
         "bridge_ids": [
           "FLIGHT"
         ],
-        "context": "Choose the consequential physical or informational distinction; retrieve the cited section before assuming it explains an observed robot.",
         "term_ids": [
           "robot-t-0127",
           "robot-t-0378",
@@ -4342,14 +4342,14 @@
       {
         "id": "ROB-CURI-speed",
         "family_id": "fly",
-        "question": "How can the GPS say an aircraft is fast while its wing is close to stalling?",
+        "question": "Why can ground speed differ dangerously from aerodynamic airspeed?",
         "aliases": [
-          "airspeed versus ground speed"
+          "airspeed versus ground speed",
+          "How can the GPS say an aircraft is fast while its wing is close to stalling?"
         ],
         "bridge_ids": [
           "FLIGHT"
         ],
-        "context": "Choose the consequential physical or informational distinction; retrieve the cited section before assuming it explains an observed robot.",
         "term_ids": [
           "robot-t-0395",
           "robot-t-0394",
@@ -4361,15 +4361,15 @@
       {
         "id": "ROB-CURI-turn",
         "family_id": "fly",
-        "question": "What limits how tightly a fixed-wing aircraft can turn?",
+        "question": "What determines the feasible turning radius of a fixed-wing aircraft?",
         "aliases": [
-          "minimum turn radius"
+          "minimum turn radius",
+          "What limits how tightly a fixed-wing aircraft can turn?"
         ],
         "bridge_ids": [
           "FLIGHT",
           "MOTION"
         ],
-        "context": "Choose the consequential physical or informational distinction; retrieve the cited section before assuming it explains an observed robot.",
         "term_ids": [
           "robot-t-0393",
           "robot-t-0318"
@@ -4380,16 +4380,16 @@
       {
         "id": "ROB-CURI-landing",
         "family_id": "fly",
-        "question": "How can a flying robot know when and where to land using a camera?",
+        "question": "How can vision guide autonomous aircraft landing?",
         "aliases": [
           "precision landing",
-          "time to collision"
+          "time to collision",
+          "How can a flying robot know when and where to land using a camera?"
         ],
         "bridge_ids": [
           "VISION",
           "FLIGHT"
         ],
-        "context": "Choose the consequential physical or informational distinction; retrieve the cited section before assuming it explains an observed robot.",
         "term_ids": [
           "robot-t-0413",
           "robot-t-0201"
@@ -4400,14 +4400,14 @@
       {
         "id": "ROB-CURI-look-first",
         "family_id": "decide",
-        "question": "Should a robot look around before taking the shortest route?",
+        "question": "How should a robot trade information gathering against immediate progress?",
         "aliases": [
-          "active perception"
+          "active perception",
+          "Should a robot look around before taking the shortest route?"
         ],
         "bridge_ids": [
           "DECIDE"
         ],
-        "context": "Choose the consequential physical or informational distinction; retrieve the cited section before assuming it explains an observed robot.",
         "term_ids": [
           "robot-t-0326",
           "robot-t-0335"
@@ -4418,15 +4418,15 @@
       {
         "id": "ROB-CURI-explore",
         "family_id": "decide",
-        "question": "How can a robot choose which unexplored room to inspect next?",
+        "question": "How can an autonomous robot choose where to explore next?",
         "aliases": [
-          "frontier exploration"
+          "frontier exploration",
+          "How can a robot choose which unexplored room to inspect next?"
         ],
         "bridge_ids": [
           "DECIDE",
           "MAPPING"
         ],
-        "context": "Choose the consequential physical or informational distinction; retrieve the cited section before assuming it explains an observed robot.",
         "term_ids": [
           "robot-t-0324",
           "robot-t-0326"
@@ -4437,15 +4437,15 @@
       {
         "id": "ROB-CURI-uncertain-choice",
         "family_id": "decide",
-        "question": "How can a robot choose the safest action when multiple locations are possible?",
+        "question": "How can robots select safe actions under ambiguous state estimates?",
         "aliases": [
-          "POMDP"
+          "POMDP",
+          "How can a robot choose the safest action when multiple locations are possible?"
         ],
         "bridge_ids": [
           "DECIDE",
           "ESTIMATION"
         ],
-        "context": "Choose the consequential physical or informational distinction; retrieve the cited section before assuming it explains an observed robot.",
         "term_ids": [
           "robot-t-0330",
           "robot-t-0209"
@@ -4456,15 +4456,15 @@
       {
         "id": "ROB-CURI-sim-perfect",
         "family_id": "verify",
-        "question": "Why does my controller work perfectly in simulation but not on the real device?",
+        "question": "Why do robotic controllers fail to transfer from simulation to hardware?",
         "aliases": [
-          "sim-to-real gap"
+          "sim-to-real gap",
+          "Why does my controller work perfectly in simulation but not on the real device?"
         ],
         "bridge_ids": [
           "INTEGRATE",
           "CONTROL"
         ],
-        "context": "Choose the consequential physical or informational distinction; retrieve the cited section before assuming it explains an observed robot.",
         "term_ids": [
           "robot-t-0450",
           "robot-t-0437"
@@ -4475,16 +4475,16 @@
       {
         "id": "ROB-CURI-noisy-full",
         "family_id": "verify",
-        "question": "Why do separately working perception and control modules fail when connected?",
+        "question": "Why do individually working perception and control modules fail when integrated?",
         "aliases": [
-          "integration failure"
+          "integration failure",
+          "Why do separately working perception and control modules fail when connected?"
         ],
         "bridge_ids": [
           "INTEGRATE",
           "ESTIMATION",
           "CONTROL"
         ],
-        "context": "Choose the consequential physical or informational distinction; retrieve the cited section before assuming it explains an observed robot.",
         "term_ids": [
           "robot-t-0445",
           "robot-t-0446"
@@ -4495,16 +4495,16 @@
       {
         "id": "ROB-CURI-test",
         "family_id": "verify",
-        "question": "What demonstration would convince me that I can actually build a useful robot?",
+        "question": "What capabilities and evidence establish useful robotic autonomy?",
         "aliases": [
-          "engineering competence"
+          "engineering competence",
+          "What demonstration would convince me that I can actually build a useful robot?"
         ],
         "bridge_ids": [
           "INTEGRATE",
           "MOTION",
           "ESTIMATION"
         ],
-        "context": "Choose the consequential physical or informational distinction; retrieve the cited section before assuming it explains an observed robot.",
         "term_ids": [
           "robot-t-0521",
           "robot-t-0440"
@@ -4515,17 +4515,17 @@
       {
         "id": "ROB-CURI-recover",
         "family_id": "verify",
-        "question": "What should an autonomous robot do after it loses localization or actuator authority?",
+        "question": "How should robots recover from localization or actuation failure?",
         "aliases": [
           "fault recovery",
-          "safe state"
+          "safe state",
+          "What should an autonomous robot do after it loses localization or actuator authority?"
         ],
         "bridge_ids": [
           "ESTIMATION",
           "INTEGRATE",
           "CONTROL"
         ],
-        "context": "Choose the consequential physical or informational distinction; retrieve the cited section before assuming it explains an observed robot.",
         "term_ids": [
           "robot-t-0518",
           "robot-t-0503",
@@ -4537,8 +4537,10 @@
       {
         "id": "ROB-CAP-forward-kinematics",
         "family_id": "geometry",
-        "question": "Can you compute forward kinematics and a robot arm's Jacobian from its joint model?",
-        "aliases": [],
+        "question": "How can we calculate a manipulator's forward kinematics and Jacobian?",
+        "aliases": [
+          "Can you compute forward kinematics and a robot arm's Jacobian from its joint model?"
+        ],
         "question_type": "execution",
         "task_scope": "capability_family",
         "bridge_ids": [
@@ -4557,8 +4559,10 @@
       {
         "id": "ROB-CAP-bayesian-update",
         "family_id": "sense",
-        "question": "Can you perform one Bayesian sensor update for a robot state estimate?",
-        "aliases": [],
+        "question": "How can we update a robot's state belief using a sensor observation?",
+        "aliases": [
+          "Can you perform one Bayesian sensor update for a robot state estimate?"
+        ],
         "question_type": "execution",
         "task_scope": "capability_family",
         "bridge_ids": [
