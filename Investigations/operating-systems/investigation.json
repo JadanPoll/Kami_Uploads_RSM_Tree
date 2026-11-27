@@ -1226,7 +1226,11 @@
           "os-t-0008"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "Two programs can both load virtual address 0x1000 because the number is interpreted through the current address space. Page tables map virtual pages to physical frames; the offset is preserved. Different processes can map the same virtual page to different frames or intentionally share a frame.",
+          "The memory-management unit translates and enforces access permissions; the OS chooses mappings and keeps cached translations consistent. A valid-looking address can fault because it is unmapped, disallowed or not resident."
+        ]
       },
       {
         "id": "OS-CURI-permission",
@@ -1336,7 +1340,10 @@
           "os-t-0143"
         ],
         "question_type": "diagnosis",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A successful write may mean bytes reached the OS page cache rather than durable storage. File bytes and the directory entry naming them have distinct persistence obligations. Atomic visibility and durability are different properties; killing a process and cutting power test different failures."
+        ]
       },
       {
         "id": "OS-CURI-recovery",
@@ -1720,6 +1727,35 @@
         ],
         "question_type": "design",
         "task_scope": "open_goal"
+      },
+      {
+        "id": "OS-TACIT-crash-safe-save",
+        "family_id": "what-survives",
+        "question": "Can I make an editor save a document so a crash leaves either the old or new version?",
+        "aliases": [],
+        "bridge_ids": [
+          "OS-BRG-durability"
+        ],
+        "term_ids": [
+          "os-t-0101",
+          "os-t-0118",
+          "os-t-0119",
+          "os-t-0199",
+          "os-t-0277",
+          "os-t-0105",
+          "os-t-0114",
+          "os-t-0116"
+        ],
+        "question_type": "design",
+        "task_scope": "specified_instance",
+        "applied_challenge": true,
+        "answer": [
+          "A local editor writes documents. A crash may occur during any write; sudden power loss is a stronger failure model. Design a replacement protocol and a test that distinguishes atomic visibility from durable recovery."
+        ],
+        "worked_solution": [
+          "Create a temporary file in the same directory, write all bytes while checking short writes and errors, synchronize the file, then atomically rename over the original. On an appropriate local POSIX filesystem, synchronize the containing directory when durability of rename is required. Atomic rename does not alone guarantee power-loss recovery.",
+          "Inject failures at each stage while writing distinctive complete versions; after recovery require a complete old or new version. Distinguish process-kill tests from storage fault injection or controlled power loss. Check actual filesystem and device guarantees; this protocol is not a universal certificate."
+        ]
       }
     ]
   },
