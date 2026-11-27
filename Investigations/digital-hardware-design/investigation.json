@@ -443,27 +443,27 @@
     "families": [
       {
         "id": "visible",
-        "label": "What makes the hardware actually do something?",
+        "label": "FPGA implementation and physical interfaces",
         "description": "Boards, LEDs, serial ports, video and working devices"
       },
       {
         "id": "logic",
-        "label": "How does hardware represent useful computations?",
+        "label": "RTL, state and computation",
         "description": "RTL, state, arithmetic, memories and soft processors"
       },
       {
         "id": "time",
-        "label": "Why does timing make otherwise good designs fail?",
+        "label": "Timing and clock domains",
         "description": "Clock setup/hold, crossing domains, communications and synchronization"
       },
       {
         "id": "physical",
-        "label": "What makes circuits real physical things?",
+        "label": "Transistors, interconnect and fabrication",
         "description": "Transistors, geometry, manufacturing and power"
       },
       {
         "id": "choice",
-        "label": "Which implementation should I choose?",
+        "label": "Architecture selection and engineering verification",
         "description": "FPGA versus custom chip, hardware versus firmware, historical toolchains"
       }
     ],
@@ -471,11 +471,12 @@
       {
         "id": "DHW-CURI-simulation",
         "family_id": "visible",
-        "question": "Why does my FPGA work in simulation but not on the board?",
+        "question": "Why can an FPGA design pass simulation but fail in hardware?",
         "aliases": [
           "synthesis mismatch",
           "works in testbench",
-          "hardware bug"
+          "hardware bug",
+          "Why does my FPGA work in simulation but not on the board?"
         ],
         "bridge_ids": [
           "BUILD",
@@ -506,10 +507,11 @@
       {
         "id": "DHW-CURI-led",
         "family_id": "visible",
-        "question": "Can a few lines of code really turn an LED on and off?",
+        "question": "How does an HDL description become physical FPGA behavior?",
         "aliases": [
           "blink LED",
-          "what runs FPGA code"
+          "what runs FPGA code",
+          "Can a few lines of code really turn an LED on and off?"
         ],
         "bridge_ids": [
           "BUILD"
@@ -536,10 +538,11 @@
       {
         "id": "DHW-CURI-uart",
         "family_id": "visible",
-        "question": "How does a computer read bytes from a wire with no clock signal?",
+        "question": "How can asynchronous serial data be decoded without a shared clock?",
         "aliases": [
           "UART receiver",
-          "serial data"
+          "serial data",
+          "How does a computer read bytes from a wire with no clock signal?"
         ],
         "bridge_ids": [
           "SERIAL",
@@ -570,11 +573,12 @@
       {
         "id": "DHW-CURI-vga",
         "family_id": "visible",
-        "question": "How can a chip draw moving graphics on a screen?",
+        "question": "How can digital hardware generate raster video?",
         "aliases": [
           "VGA",
           "video timing",
-          "pixel scan"
+          "pixel scan",
+          "How can a chip draw moving graphics on a screen?"
         ],
         "bridge_ids": [
           "VIDEO"
@@ -599,10 +603,11 @@
       {
         "id": "DHW-CURI-keyboard",
         "family_id": "visible",
-        "question": "How does a keyboard press become a digital event?",
+        "question": "How can digital hardware convert physical input into usable events?",
         "aliases": [
           "scan code",
-          "PS2"
+          "PS2",
+          "How does a keyboard press become a digital event?"
         ],
         "bridge_ids": [
           "PERIPHERAL"
@@ -628,10 +633,11 @@
       {
         "id": "DHW-CURI-missing",
         "family_id": "visible",
-        "question": "Why does a circuit work on one FPGA board but not another?",
+        "question": "What limits the portability of an FPGA design across boards?",
         "aliases": [
           "FPGA portability",
-          "different FPGA pinout"
+          "different FPGA pinout",
+          "Why does a circuit work on one FPGA board but not another?"
         ],
         "bridge_ids": [
           "PORTABLE",
@@ -662,10 +668,11 @@
       {
         "id": "DHW-CURI-if",
         "family_id": "logic",
-        "question": "Does an if statement in Verilog make the circuit run instructions?",
+        "question": "How do HDL control statements become combinational logic or sequential hardware?",
         "aliases": [
           "if hardware",
-          "hardware RTL"
+          "hardware RTL",
+          "Does an if statement in Verilog make the circuit run instructions?"
         ],
         "bridge_ids": [
           "COMB",
@@ -696,10 +703,11 @@
       {
         "id": "DHW-CURI-latch",
         "family_id": "logic",
-        "question": "Why did my logic unexpectedly remember a previous input?",
+        "question": "Why can combinational HDL infer unintended storage?",
         "aliases": [
           "inferred latch",
-          "always block bug"
+          "always block bug",
+          "Why did my logic unexpectedly remember a previous input?"
         ],
         "bridge_ids": [
           "COMB"
@@ -725,10 +733,11 @@
       {
         "id": "DHW-CURI-debounce",
         "family_id": "logic",
-        "question": "Why does one button press sometimes count as several?",
+        "question": "Why do mechanical input transitions create multiple digital events?",
         "aliases": [
           "switch bounce",
-          "edge detect"
+          "edge detect",
+          "Why does one button press sometimes count as several?"
         ],
         "bridge_ids": [
           "STATE",
@@ -759,10 +768,11 @@
       {
         "id": "DHW-CURI-fsm",
         "family_id": "logic",
-        "question": "How do I make a circuit perform a long calculation over several clocks?",
+        "question": "How can a hardware controller sequence a multi-cycle computation?",
         "aliases": [
           "FSMD",
-          "iterative divider"
+          "iterative divider",
+          "How do I make a circuit perform a long calculation over several clocks?"
         ],
         "bridge_ids": [
           "CONTROL"
@@ -791,11 +801,12 @@
       {
         "id": "DHW-CURI-memory",
         "family_id": "logic",
-        "question": "Can I make a memory with registers or do I need RAM?",
+        "question": "When should hardware use registers, distributed memory or block RAM?",
         "aliases": [
           "block ram",
           "external SRAM",
-          "memory controller"
+          "memory controller",
+          "Can I make a memory with registers or do I need RAM?"
         ],
         "bridge_ids": [
           "MEMORY"
@@ -818,11 +829,12 @@
       {
         "id": "DHW-CURI-cpu",
         "family_id": "logic",
-        "question": "Could I build a programmable computer inside an FPGA?",
+        "question": "How can a programmable processor be built inside an FPGA?",
         "aliases": [
           "softcore",
           "PicoBlaze",
-          "CPU"
+          "CPU",
+          "Could I build a programmable computer inside an FPGA?"
         ],
         "bridge_ids": [
           "SOFTCORE",
@@ -853,10 +865,11 @@
       {
         "id": "DHW-CURI-fast",
         "family_id": "time",
-        "question": "Why can't I simply increase my clock speed indefinitely?",
+        "question": "What limits the maximum clock frequency of digital hardware?",
         "aliases": [
           "setup hold",
-          "timing closure"
+          "timing closure",
+          "Why can't I simply increase my clock speed indefinitely?"
         ],
         "bridge_ids": [
           "TIME",
@@ -887,11 +900,12 @@
       {
         "id": "DHW-CURI-cdc",
         "family_id": "time",
-        "question": "Why can two individually working circuits fail when connected?",
+        "question": "Why do asynchronous clock-domain crossings fail?",
         "aliases": [
           "clock crossing",
           "metastability",
-          "synchronizer"
+          "synchronizer",
+          "Why can two individually working circuits fail when connected?"
         ],
         "bridge_ids": [
           "TIME",
@@ -922,10 +936,11 @@
       {
         "id": "DHW-CURI-uart-glitch",
         "family_id": "time",
-        "question": "Why does my serial connection work at one baud rate and fail at another?",
+        "question": "What determines reliable UART communication across baud rates?",
         "aliases": [
           "baud mismatch",
-          "UART framing"
+          "UART framing",
+          "Why does my serial connection work at one baud rate and fail at another?"
         ],
         "bridge_ids": [
           "SERIAL"
@@ -951,10 +966,11 @@
       {
         "id": "DHW-CURI-clockwire",
         "family_id": "time",
-        "question": "Why does the same clock arrive at different parts of a chip at different times?",
+        "question": "Why does clock distribution introduce skew?",
         "aliases": [
           "clock skew",
-          "clock tree"
+          "clock tree",
+          "Why does the same clock arrive at different parts of a chip at different times?"
         ],
         "bridge_ids": [
           "PHYSICALCLOCK"
@@ -978,11 +994,12 @@
       {
         "id": "DHW-CURI-transistor",
         "family_id": "physical",
-        "question": "How can one transistor behave like an electrical switch?",
+        "question": "How does a MOS transistor implement digital switching?",
         "aliases": [
           "MOSFET",
           "CMOS gate",
-          "inverter"
+          "inverter",
+          "How can one transistor behave like an electrical switch?"
         ],
         "bridge_ids": [
           "MOS"
@@ -1010,10 +1027,11 @@
       {
         "id": "DHW-CURI-wires",
         "family_id": "physical",
-        "question": "Why can the wires on a chip make it slow?",
+        "question": "How does physical interconnect limit chip performance?",
         "aliases": [
           "parasitic capacitance",
-          "physical routing"
+          "physical routing",
+          "Why can the wires on a chip make it slow?"
         ],
         "bridge_ids": [
           "MOS",
@@ -1044,10 +1062,11 @@
       {
         "id": "DHW-CURI-chips",
         "family_id": "physical",
-        "question": "Why can't I just draw a circuit and have a flawless chip manufactured?",
+        "question": "What separates a logical circuit from a manufacturable chip?",
         "aliases": [
           "fabrication yield",
-          "chip defects"
+          "chip defects",
+          "Why can't I just draw a circuit and have a flawless chip manufactured?"
         ],
         "bridge_ids": [
           "FAB",
@@ -1077,11 +1096,12 @@
       {
         "id": "DHW-CURI-area",
         "family_id": "physical",
-        "question": "Why does making gates smaller not automatically make everything better?",
+        "question": "Why does transistor scaling create tradeoffs rather than universal improvements?",
         "aliases": [
           "scaling",
           "power delay",
-          "layout"
+          "layout",
+          "Why does making gates smaller not automatically make everything better?"
         ],
         "bridge_ids": [
           "MOS",
@@ -1112,10 +1132,11 @@
       {
         "id": "DHW-CURI-hdl-vs-silicon",
         "family_id": "choice",
-        "question": "Is making a custom silicon chip the same as programming an FPGA?",
+        "question": "How do FPGA and custom silicon implementation flows differ?",
         "aliases": [
           "FPGA vs ASIC",
-          "bitstream vs mask"
+          "bitstream vs mask",
+          "Is making a custom silicon chip the same as programming an FPGA?"
         ],
         "bridge_ids": [
           "PORTABLE",
@@ -1146,10 +1167,11 @@
       {
         "id": "DHW-CURI-firmware",
         "family_id": "choice",
-        "question": "Should a feature be an FSM, custom datapath, or software on a small CPU?",
+        "question": "When should a computation use an FSM, custom datapath or programmable processor?",
         "aliases": [
           "softcore or hardware",
-          "FSMD"
+          "FSMD",
+          "Should a feature be an FSM, custom datapath, or software on a small CPU?"
         ],
         "bridge_ids": [
           "SOFTCORE",
@@ -1180,11 +1202,12 @@
       {
         "id": "DHW-CURI-tool-old",
         "family_id": "choice",
-        "question": "What parts of a 2008 Spartan-3 tutorial are still useful today?",
+        "question": "Which digital-design principles survive changes in FPGA tools and devices?",
         "aliases": [
           "Xilinx ISE",
           "Vivado",
-          "Yosys"
+          "Yosys",
+          "What parts of a 2008 Spartan-3 tutorial are still useful today?"
         ],
         "bridge_ids": [
           "PORTABLE"
@@ -1214,11 +1237,12 @@
       {
         "id": "DHW-CURI-test",
         "family_id": "choice",
-        "question": "What evidence shows a digital design actually works beyond a passing unit test?",
+        "question": "What evidence establishes correct digital hardware behavior beyond simulation?",
         "aliases": [
           "FPGA validation",
           "timing report",
-          "integration test"
+          "integration test",
+          "What evidence shows a digital design actually works beyond a passing unit test?"
         ],
         "bridge_ids": [
           "BUILD",
@@ -1250,8 +1274,10 @@
       {
         "id": "DHW-CAP-uart-rx",
         "family_id": "visible",
-        "question": "Can you implement and simulate a UART receiver from a specified baud rate and frame format?",
-        "aliases": [],
+        "question": "How can we implement and verify a UART receiver?",
+        "aliases": [
+          "Can you implement and simulate a UART receiver from a specified baud rate and frame format?"
+        ],
         "question_type": "execution",
         "task_scope": "capability_family",
         "bridge_ids": [
@@ -1270,8 +1296,10 @@
       {
         "id": "DHW-CAP-synchronous-fsm",
         "family_id": "logic",
-        "question": "Can you implement a synthesizable synchronous state machine from a transition table?",
-        "aliases": [],
+        "question": "How can we implement a synthesizable synchronous state machine?",
+        "aliases": [
+          "Can you implement a synthesizable synchronous state machine from a transition table?"
+        ],
         "question_type": "execution",
         "task_scope": "capability_family",
         "bridge_ids": [
