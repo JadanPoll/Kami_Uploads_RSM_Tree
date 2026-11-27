@@ -4013,6 +4013,5 @@
     "probability-and-statistics/investigation.json",
     "discrete-mathematics/investigation.json"
   ],
-  "glossary_candidate_path": "vocabulary_candidates.json",
   "question_type_taxonomy": "../../QUESTION_TYPES.md"
 }
