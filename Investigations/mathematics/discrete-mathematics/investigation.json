@@ -2517,8 +2517,8 @@
   "question_ids": [
     "MATH-CURI-count-many",
     "MATH-CURI-labels",
-    "MATH-CURI-inclusion",
-    "MATH-CURI-mobius",
+    "MATH-CAP-inclusion-exclusion",
+    "MATH-CAP-mobius-inversion",
     "MATH-CURI-automaton",
     "MATH-CURI-bottleneck",
     "MATH-CURI-connect",
@@ -2531,8 +2531,6 @@
     "MATH-CAP-euclidean-algorithm",
     "MATH-CAP-congruence-systems",
     "MATH-CAP-continued-fractions",
-    "MATH-CAP-inclusion-exclusion",
-    "MATH-CAP-mobius-inversion",
     "MATH-CAP-generating-functions",
     "MATH-CAP-graph-connectivity",
     "MATH-CAP-max-flow"
