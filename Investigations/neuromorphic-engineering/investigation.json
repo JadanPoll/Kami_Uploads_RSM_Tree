@@ -1240,15 +1240,18 @@
           "How could a few connected circuits figure out which way something moves?"
         ],
         "bridge_ids": [
-          "RETINA",
-          "DYNAMICS"
+          "VISUAL-MOTION"
         ],
         "term_ids": [
           "nmr-t-0248",
-          "nmr-t-0249"
+          "nmr-t-0249",
+          "nmr-t-0250"
         ],
         "question_type": "design",
-        "task_scope": "open_goal"
+        "task_scope": "open_goal",
+        "target_ids": [
+          "NMR-MOTION"
+        ]
       },
       {
         "id": "NMR-CURI-forget",
@@ -2203,6 +2206,39 @@
         "nmr-t-0367",
         "nmr-t-0375",
         "nmr-t-0411"
+      ]
+    },
+    {
+      "id": "VISUAL-MOTION",
+      "question": "How can local observations determine a visual motion field?",
+      "choices": [
+        {
+          "label": "Each local optical sensor observes only part of motion",
+          "technical_title": "Analog optical-motion computation",
+          "distinguishing_question": "How can neighboring measurements constrain velocity that is ambiguous at one location?",
+          "why": "The indexed Mead chapter identifies optical-motion circuits and constraint solving; the specific circuit and its performance still require passage inspection and reconstruction.",
+          "targets": [
+            "NMR-MOTION"
+          ],
+          "section_targets": [
+            {
+              "source_id": "MEAD-1989",
+              "ref": "14",
+              "level": "toc_only",
+              "why": "Optical Motion Sensor · printed p. 229"
+            }
+          ],
+          "term_ids": [
+            "nmr-t-0250",
+            "nmr-t-0249",
+            "nmr-t-0248"
+          ]
+        }
+      ],
+      "term_ids": [
+        "nmr-t-0250",
+        "nmr-t-0249",
+        "nmr-t-0248"
       ]
     }
   ],
