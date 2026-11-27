@@ -4577,6 +4577,31 @@
           "robot-t-0209",
           "robot-t-0217"
         ]
+      },
+      {
+        "id": "ROB-CAP-inverse-dynamics",
+        "family_id": "control",
+        "question": "How can we compute the actuator torques needed for a robot's motion?",
+        "aliases": [
+          "How strong do my robot motors need to be?",
+          "inverse dynamics",
+          "Newton–Euler torque calculation"
+        ],
+        "bridge_ids": [
+          "ROBOT-DYNAMICS"
+        ],
+        "target_ids": [
+          "ROB-DYNAMICS"
+        ],
+        "term_ids": [
+          "robot-t-0090",
+          "robot-t-0096",
+          "robot-t-0097",
+          "robot-t-0098"
+        ],
+        "question_type": "execution",
+        "task_scope": "capability_family",
+        "success_criterion": "Given a rigid-link model, joint trajectory and stated external loads, calculate joint torques; check a static or single-joint limiting case and compare against the actuator's limits."
       }
     ],
     "entry_policy": "Questions are entrances and reuse technical nodes. Do not manufacture questions simply to link every glossary term or TOC heading."
@@ -5898,6 +5923,47 @@
         "robot-t-0217",
         "robot-t-0216",
         "robot-t-0121"
+      ]
+    },
+    {
+      "id": "ROBOT-DYNAMICS",
+      "question": "How can a robot's motion determine actuator loads?",
+      "choices": [
+        {
+          "label": "Find the torques needed for a desired joint trajectory",
+          "technical_title": "Rigid-body inverse dynamics",
+          "distinguishing_question": "Given joint positions, velocities, accelerations and link parameters, what torques realize the motion?",
+          "why": "Newton–Euler inverse dynamics propagates link motion forward and forces backward. Compare predicted torque with actuator and transmission limits; friction and elasticity may require additional modeling.",
+          "targets": [
+            "ROB-DYNAMICS"
+          ],
+          "section_targets": [
+            {
+              "source_id": "MR-2017",
+              "ref": "8.3.2",
+              "level": "inspected",
+              "why": "§8.3.2 · Newton-Euler Inverse Dynamics Algorithm · printed p. 294"
+            },
+            {
+              "source_id": "MR-2017",
+              "ref": "8.9",
+              "level": "toc_only",
+              "why": "§8.9 · Actuation, Gearing, and Friction · printed p. 303"
+            }
+          ],
+          "term_ids": [
+            "robot-t-0090",
+            "robot-t-0096",
+            "robot-t-0097",
+            "robot-t-0098"
+          ]
+        }
+      ],
+      "term_ids": [
+        "robot-t-0090",
+        "robot-t-0096",
+        "robot-t-0097",
+        "robot-t-0098"
       ]
     }
   ],
