@@ -14,42 +14,42 @@
     "families": [
       {
         "id": "foundations",
-        "label": "Sets, logic and admissible constructions",
+        "label": "What can be defined or proved to exist?",
         "description": "Sets, equivalences, existence and admissible constructions"
       },
       {
         "id": "structures",
-        "label": "Linear algebra, algebraic structure and symmetry",
+        "label": "What structure is hidden inside this problem?",
         "description": "Linear, algebraic and symmetry viewpoints"
       },
       {
         "id": "discrete",
-        "label": "Enumeration, graphs and arithmetic",
+        "label": "How can huge finite possibilities become manageable?",
         "description": "Counting, graph, generating and number-theoretic mechanisms"
       },
       {
         "id": "continuous",
-        "label": "Analysis, limits and operators",
+        "label": "What remains valid under limits and approximation?",
         "description": "Convergence, completeness, integration and operators"
       },
       {
         "id": "space",
-        "label": "Topology, geometry and complex analysis",
+        "label": "What is shape, continuity and curvature?",
         "description": "Topology, geometry and holomorphic maps"
       },
       {
         "id": "random",
-        "label": "Probability, stochastic processes and inference",
+        "label": "What can randomness and observed data establish?",
         "description": "Probability models, stochastic processes and inference"
       },
       {
         "id": "transfer",
-        "label": "Shared mathematical constructions and transfer",
+        "label": "Which mathematical operators genuinely transfer across fields?",
         "description": "Factoring, duality, quotient, inverse and local/global"
       },
       {
         "id": "prove",
-        "label": "Proof failure and conceptual distinctions",
+        "label": "Why did a plausible mathematical argument fail?",
         "description": "Counterexamples, missing hypotheses and false equivalences"
       }
     ],
@@ -57,10 +57,8 @@
       {
         "id": "MATH-CURI-same",
         "family_id": "foundations",
-        "question": "How can we recognize when mathematical objects are equivalent?",
-        "aliases": [
-          "When are two differently described things actually the same?"
-        ],
+        "question": "When are two differently described things actually the same?",
+        "aliases": [],
         "bridge_ids": [
           "STRUCTURE",
           "PROOF"
@@ -75,10 +73,8 @@
       {
         "id": "MATH-CURI-exist",
         "family_id": "foundations",
-        "question": "How can existence be proved without constructing an example?",
-        "aliases": [
-          "Can I prove something exists even if nobody can construct it?"
-        ],
+        "question": "Can I prove something exists even if nobody can construct it?",
+        "aliases": [],
         "bridge_ids": [
           "PROOF"
         ],
@@ -92,10 +88,8 @@
       {
         "id": "MATH-CURI-paradox",
         "family_id": "foundations",
-        "question": "Why does unrestricted set formation lead to paradoxes?",
-        "aliases": [
-          "Why can't I make a set of absolutely everything?"
-        ],
+        "question": "Why can't I make a set of absolutely everything?",
+        "aliases": [],
         "bridge_ids": [
           "PROOF"
         ],
@@ -109,10 +103,8 @@
       {
         "id": "MATH-CURI-structure",
         "family_id": "foundations",
-        "question": "How does adding algebraic, order or metric structure change a set?",
-        "aliases": [
-          "What changes when I give the same set addition, order or distance?"
-        ],
+        "question": "What changes when I give the same set addition, order or distance?",
+        "aliases": [],
         "bridge_ids": [
           "STRUCTURE",
           "SPACE"
@@ -128,10 +120,8 @@
       {
         "id": "MATH-CURI-quotient",
         "family_id": "foundations",
-        "question": "How can quotient constructions simplify mathematical problems?",
-        "aliases": [
-          "Can I simplify a problem by treating different things as equivalent?"
-        ],
+        "question": "Can I simplify a problem by treating different things as equivalent?",
+        "aliases": [],
         "bridge_ids": [
           "TRANSFER",
           "STRUCTURE"
@@ -161,10 +151,8 @@
       {
         "id": "MATH-CURI-dual",
         "family_id": "structures",
-        "question": "How can dual spaces represent objects through linear measurements?",
-        "aliases": [
-          "What does it mean to study an object through all ways of measuring it?"
-        ],
+        "question": "What does it mean to study an object through all ways of measuring it?",
+        "aliases": [],
         "bridge_ids": [
           "LINEAR",
           "CONTINUOUS"
@@ -179,10 +167,8 @@
       {
         "id": "MATH-CURI-diagonal",
         "family_id": "structures",
-        "question": "What determines whether a linear transformation decomposes into independent modes?",
-        "aliases": [
-          "Why can some matrices be split into independent modes while others cannot?"
-        ],
+        "question": "Why can some matrices be split into independent modes while others cannot?",
+        "aliases": [],
         "bridge_ids": [
           "LINEAR"
         ],
@@ -196,10 +182,8 @@
       {
         "id": "MATH-CURI-symmetry",
         "family_id": "structures",
-        "question": "How can symmetry simplify combinatorial enumeration?",
-        "aliases": [
-          "How can rotating or relabeling objects shrink a huge count?"
-        ],
+        "question": "How can rotating or relabeling objects shrink a huge count?",
+        "aliases": [],
         "bridge_ids": [
           "STRUCTURE",
           "DISCRETE"
@@ -229,10 +213,8 @@
       {
         "id": "MATH-CURI-unsolvable",
         "family_id": "structures",
-        "question": "How can algebra establish the impossibility of geometric constructions?",
-        "aliases": [
-          "How can algebra prove a geometric construction impossible?"
-        ],
+        "question": "How can algebra prove a geometric construction impossible?",
+        "aliases": [],
         "bridge_ids": [
           "STRUCTURE",
           "PROOF"
@@ -247,10 +229,8 @@
       {
         "id": "MATH-CURI-infinite-operator",
         "family_id": "structures",
-        "question": "Which finite-dimensional linear methods fail in infinite-dimensional spaces?",
-        "aliases": [
-          "Why can't every finite-matrix trick work on functions?"
-        ],
+        "question": "Why can't every finite-matrix trick work on functions?",
+        "aliases": [],
         "bridge_ids": [
           "LINEAR",
           "CONTINUOUS"
@@ -265,10 +245,8 @@
       {
         "id": "MATH-CURI-count-many",
         "family_id": "discrete",
-        "question": "How can combinatorial structure replace exhaustive enumeration?",
-        "aliases": [
-          "How can I count a trillion objects without listing any of them?"
-        ],
+        "question": "How can I count a trillion objects without listing any of them?",
+        "aliases": [],
         "bridge_ids": [
           "DISCRETE"
         ],
@@ -282,10 +260,8 @@
       {
         "id": "MATH-CURI-labels",
         "family_id": "discrete",
-        "question": "Why does distinguishability change the result of a counting problem?",
-        "aliases": [
-          "Why does swapping identical objects sometimes change a count?"
-        ],
+        "question": "Why does swapping identical objects sometimes change a count?",
+        "aliases": [],
         "bridge_ids": [
           "DISCRETE"
         ],
@@ -299,10 +275,8 @@
       {
         "id": "MATH-CURI-automaton",
         "family_id": "discrete",
-        "question": "How can finite automata and matrices generate counting formulas?",
-        "aliases": [
-          "Can a matrix count all strings accepted by a finite-state machine?"
-        ],
+        "question": "Can a matrix count all strings accepted by a finite-state machine?",
+        "aliases": [],
         "bridge_ids": [
           "DISCRETE",
           "LINEAR"
@@ -317,10 +291,8 @@
       {
         "id": "MATH-CURI-bottleneck",
         "family_id": "discrete",
-        "question": "Why can a graph cut certify an upper bound on network flow?",
-        "aliases": [
-          "How can one cut prove a network cannot carry more flow?"
-        ],
+        "question": "How can one cut prove a network cannot carry more flow?",
+        "aliases": [],
         "bridge_ids": [
           "DISCRETE"
         ],
@@ -334,10 +306,8 @@
       {
         "id": "MATH-CURI-connect",
         "family_id": "discrete",
-        "question": "What determines the number of independent paths in a graph?",
-        "aliases": [
-          "How many genuinely independent paths connect two points?"
-        ],
+        "question": "How many genuinely independent paths connect two points?",
+        "aliases": [],
         "bridge_ids": [
           "DISCRETE"
         ],
@@ -351,10 +321,8 @@
       {
         "id": "MATH-CURI-treewidth",
         "family_id": "discrete",
-        "question": "Why can graph structure matter more than graph size for computational complexity?",
-        "aliases": [
-          "Why might a gigantic graph be easier than a much smaller dense graph?"
-        ],
+        "question": "Why might a gigantic graph be easier than a much smaller dense graph?",
+        "aliases": [],
         "bridge_ids": [
           "DISCRETE"
         ],
@@ -368,10 +336,8 @@
       {
         "id": "MATH-CURI-primes",
         "family_id": "discrete",
-        "question": "How can we estimate the distribution of prime numbers?",
-        "aliases": [
-          "How can we estimate how many primes exist below an enormous number?"
-        ],
+        "question": "How can we estimate how many primes exist below an enormous number?",
+        "aliases": [],
         "bridge_ids": [
           "DISCRETE"
         ],
@@ -384,10 +350,8 @@
       {
         "id": "MATH-CURI-approx-rational",
         "family_id": "discrete",
-        "question": "Why can rational approximations be unusually accurate?",
-        "aliases": [
-          "Why can a simple fraction approximate an irrational so well?"
-        ],
+        "question": "Why can a simple fraction approximate an irrational so well?",
+        "aliases": [],
         "bridge_ids": [
           "DISCRETE",
           "CONTINUOUS"
@@ -402,10 +366,8 @@
       {
         "id": "MATH-CURI-limit-integral",
         "family_id": "continuous",
-        "question": "What conditions justify exchanging limits and integrals?",
-        "aliases": [
-          "Why can't I always swap a limit and an integral?"
-        ],
+        "question": "Why can't I always swap a limit and an integral?",
+        "aliases": [],
         "bridge_ids": [
           "CONTINUOUS",
           "PROOF"
@@ -420,10 +382,8 @@
       {
         "id": "MATH-CURI-uniform",
         "family_id": "continuous",
-        "question": "Why does pointwise convergence fail to preserve continuity?",
-        "aliases": [
-          "Why isn't convergence at every point enough to preserve continuity?"
-        ],
+        "question": "Why isn't convergence at every point enough to preserve continuity?",
+        "aliases": [],
         "bridge_ids": [
           "CONTINUOUS"
         ],
@@ -437,10 +397,8 @@
       {
         "id": "MATH-CURI-complete",
         "family_id": "continuous",
-        "question": "Why can a Cauchy sequence converge outside its original space?",
-        "aliases": [
-          "Can better approximations converge outside the space I started with?"
-        ],
+        "question": "Can better approximations converge outside the space I started with?",
+        "aliases": [],
         "bridge_ids": [
           "CONTINUOUS"
         ],
@@ -454,10 +412,8 @@
       {
         "id": "MATH-CURI-fp",
         "family_id": "continuous",
-        "question": "Why can repeated iteration establish existence and uniqueness?",
-        "aliases": [
-          "Why does repeatedly applying a rule sometimes guarantee exactly one answer?"
-        ],
+        "question": "Why does repeatedly applying a rule sometimes guarantee exactly one answer?",
+        "aliases": [],
         "bridge_ids": [
           "CONTINUOUS",
           "PROOF"
@@ -472,10 +428,8 @@
       {
         "id": "MATH-CURI-integrable",
         "family_id": "continuous",
-        "question": "How can integration be defined beyond ordinary Riemann sums?",
-        "aliases": [
-          "What should area under a function mean when ordinary sums break down?"
-        ],
+        "question": "What should area under a function mean when ordinary sums break down?",
+        "aliases": [],
         "bridge_ids": [
           "CONTINUOUS",
           "RANDOM"
@@ -490,10 +444,8 @@
       {
         "id": "MATH-CURI-unbounded",
         "family_id": "continuous",
-        "question": "Why can a linear operator be unbounded?",
-        "aliases": [
-          "Can a perfectly linear operator fail to be continuous?"
-        ],
+        "question": "Can a perfectly linear operator fail to be continuous?",
+        "aliases": [],
         "bridge_ids": [
           "CONTINUOUS",
           "LINEAR"
@@ -508,10 +460,8 @@
       {
         "id": "MATH-CURI-holes",
         "family_id": "space",
-        "question": "How can algebraic invariants detect holes in a space?",
-        "aliases": [
-          "How can I detect a hole without a picture of the space?"
-        ],
+        "question": "How can I detect a hole without a picture of the space?",
+        "aliases": [],
         "bridge_ids": [
           "SPACE"
         ],
@@ -525,10 +475,8 @@
       {
         "id": "MATH-CURI-compact",
         "family_id": "space",
-        "question": "Why does closedness and boundedness not always imply compactness?",
-        "aliases": [
-          "Why doesn't closed and bounded always mean compact?"
-        ],
+        "question": "Why doesn't closed and bounded always mean compact?",
+        "aliases": [],
         "bridge_ids": [
           "SPACE",
           "CONTINUOUS"
@@ -543,10 +491,8 @@
       {
         "id": "MATH-CURI-sphere",
         "family_id": "space",
-        "question": "What makes the geometry of a sphere intrinsically different from a plane?",
-        "aliases": [
-          "Why is a spherical surface intrinsically unlike a flat sheet?"
-        ],
+        "question": "Why is a spherical surface intrinsically unlike a flat sheet?",
+        "aliases": [],
         "bridge_ids": [
           "SPACE"
         ],
@@ -560,10 +506,8 @@
       {
         "id": "MATH-CURI-straight",
         "family_id": "space",
-        "question": "How can geodesics generalize straight lines to curved spaces?",
-        "aliases": [
-          "What is a straight line on a curved surface?"
-        ],
+        "question": "What is a straight line on a curved surface?",
+        "aliases": [],
         "bridge_ids": [
           "SPACE"
         ],
@@ -577,10 +521,8 @@
       {
         "id": "MATH-CURI-holomorphic",
         "family_id": "space",
-        "question": "Why does complex differentiability impose strong analytic constraints?",
-        "aliases": [
-          "Why does complex differentiability impose extraordinary restrictions?"
-        ],
+        "question": "Why does complex differentiability impose extraordinary restrictions?",
+        "aliases": [],
         "bridge_ids": [
           "SPACE"
         ],
@@ -594,10 +536,8 @@
       {
         "id": "MATH-CURI-residue",
         "family_id": "space",
-        "question": "Why can complex residues determine real integrals?",
-        "aliases": [
-          "How can isolated complex singularities compute a real integral?"
-        ],
+        "question": "How can isolated complex singularities compute a real integral?",
+        "aliases": [],
         "bridge_ids": [
           "SPACE"
         ],
@@ -611,10 +551,8 @@
       {
         "id": "MATH-CURI-prob-vs-data",
         "family_id": "random",
-        "question": "What distinguishes a probability model from statistical evidence?",
-        "aliases": [
-          "What is the difference between a probability model and evidence from data?"
-        ],
+        "question": "What is the difference between a probability model and evidence from data?",
+        "aliases": [],
         "bridge_ids": [
           "RANDOM",
           "PROOF"
@@ -629,10 +567,8 @@
       {
         "id": "MATH-CURI-independence",
         "family_id": "random",
-        "question": "How does sampling without replacement introduce dependence?",
-        "aliases": [
-          "Why does sampling without replacement alter probability formulas?"
-        ],
+        "question": "Why does sampling without replacement alter probability formulas?",
+        "aliases": [],
         "bridge_ids": [
           "RANDOM"
         ],
@@ -646,10 +582,8 @@
       {
         "id": "MATH-CURI-markov",
         "family_id": "random",
-        "question": "When does a stochastic process forget its initial state?",
-        "aliases": [
-          "When does a random process eventually forget its initial state?"
-        ],
+        "question": "When does a random process eventually forget its initial state?",
+        "aliases": [],
         "bridge_ids": [
           "RANDOM"
         ],
@@ -663,10 +597,8 @@
       {
         "id": "MATH-CURI-estimate",
         "family_id": "random",
-        "question": "How can we assess the behavior of an estimator beyond a single dataset?",
-        "aliases": [
-          "How do I judge a parameter estimate beyond one observed dataset?"
-        ],
+        "question": "How do I judge a parameter estimate beyond one observed dataset?",
+        "aliases": [],
         "bridge_ids": [
           "RANDOM"
         ],
@@ -680,10 +612,8 @@
       {
         "id": "MATH-CURI-sufficient",
         "family_id": "random",
-        "question": "How can sufficient statistics retain parameter-relevant information?",
-        "aliases": [
-          "Can a tiny summary retain all information relevant to a statistical parameter?"
-        ],
+        "question": "Can a tiny summary retain all information relevant to a statistical parameter?",
+        "aliases": [],
         "bridge_ids": [
           "RANDOM",
           "TRANSFER"
@@ -698,10 +628,8 @@
       {
         "id": "MATH-CURI-pvalue",
         "family_id": "random",
-        "question": "What can a p-value establish about a statistical hypothesis?",
-        "aliases": [
-          "Why doesn't a low p-value tell me a hypothesis is probably false?"
-        ],
+        "question": "Why doesn't a low p-value tell me a hypothesis is probably false?",
+        "aliases": [],
         "bridge_ids": [
           "RANDOM",
           "PROOF"
@@ -716,10 +644,8 @@
       {
         "id": "MATH-CURI-transplant",
         "family_id": "transfer",
-        "question": "When do inverses and dualities transfer between mathematical structures?",
-        "aliases": [
-          "Why are inverses and dualities across branches similar but not equivalent?"
-        ],
+        "question": "Why are inverses and dualities across branches similar but not equivalent?",
+        "aliases": [],
         "bridge_ids": [
           "TRANSFER"
         ],
@@ -733,10 +659,8 @@
       {
         "id": "MATH-CURI-topo-algebra",
         "family_id": "transfer",
-        "question": "How do algebraic and topological quotient constructions relate?",
-        "aliases": [
-          "How are a group quotient and quotient topological space related?"
-        ],
+        "question": "How are a group quotient and quotient topological space related?",
+        "aliases": [],
         "bridge_ids": [
           "TRANSFER",
           "STRUCTURE"
@@ -751,10 +675,8 @@
       {
         "id": "MATH-CURI-local-global",
         "family_id": "transfer",
-        "question": "How can local geometric properties constrain global topology?",
-        "aliases": [
-          "How can local calculations constrain an entire surface or space?"
-        ],
+        "question": "How can local calculations constrain an entire surface or space?",
+        "aliases": [],
         "bridge_ids": [
           "TRANSFER",
           "SPACE"
@@ -769,10 +691,8 @@
       {
         "id": "MATH-CURI-operator",
         "family_id": "transfer",
-        "question": "Which constructions and transformations recur across mathematical fields?",
-        "aliases": [
-          "Which reusable operations cut across these fourteen books?"
-        ],
+        "question": "Which reusable operations cut across these fourteen books?",
+        "aliases": [],
         "bridge_ids": [
           "TRANSFER"
         ],
@@ -786,10 +706,8 @@
       {
         "id": "MATH-CURI-counterexample",
         "family_id": "prove",
-        "question": "How can counterexamples expose missing assumptions in mathematical claims?",
-        "aliases": [
-          "What counterexample would expose an assumption I forgot?"
-        ],
+        "question": "What counterexample would expose an assumption I forgot?",
+        "aliases": [],
         "bridge_ids": [
           "PROOF",
           "CONTINUOUS"
@@ -805,10 +723,8 @@
       {
         "id": "MATH-CURI-normal-word",
         "family_id": "prove",
-        "question": "Why do notions of normality differ across algebra, probability and operator theory?",
-        "aliases": [
-          "Why does normal mean different things in groups, probability and operators?"
-        ],
+        "question": "Why does normal mean different things in groups, probability and operators?",
+        "aliases": [],
         "bridge_ids": [
           "PROOF",
           "TRANSFER"
@@ -904,10 +820,8 @@
       {
         "id": "MATH-CAP-row-reduction",
         "family_id": "structures",
-        "question": "How can we perform Gaussian elimination and identify the pivot structure?",
-        "aliases": [
-          "Can you perform Gaussian elimination and identify pivots and free variables?"
-        ],
+        "question": "Can you perform Gaussian elimination and identify pivots and free variables?",
+        "aliases": [],
         "question_type": "execution",
         "task_scope": "capability_family",
         "bridge_ids": [
@@ -926,10 +840,8 @@
       {
         "id": "MATH-CAP-linear-systems",
         "family_id": "structures",
-        "question": "How can we solve linear systems and characterize their solution spaces?",
-        "aliases": [
-          "Can you solve a linear system and characterize all its solutions?"
-        ],
+        "question": "Can you solve a linear system and characterize all its solutions?",
+        "aliases": [],
         "question_type": "execution",
         "task_scope": "capability_family",
         "bridge_ids": [
@@ -1148,10 +1060,9 @@
       {
         "id": "MATH-CAP-inclusion-exclusion",
         "family_id": "discrete",
-        "question": "How can we count overlapping cases using inclusion–exclusion?",
+        "question": "How do I count objects when several forbidden conditions overlap?",
         "aliases": [
-          "Can you use inclusion–exclusion to count objects with overlapping restrictions?",
-          "How do I count objects when several forbidden conditions overlap?"
+          "Can you use inclusion–exclusion to count objects with overlapping restrictions?"
         ],
         "question_type": "execution",
         "task_scope": "capability_family",
@@ -1171,10 +1082,9 @@
       {
         "id": "MATH-CAP-mobius-inversion",
         "family_id": "discrete",
-        "question": "How can we recover local quantities by Möbius inversion?",
+        "question": "Can I recover counts from totals over divisors or subsets?",
         "aliases": [
-          "Can you recover local counts from divisor or subset totals using Möbius inversion?",
-          "Can I recover counts from totals over divisors or subsets?"
+          "Can you recover local counts from divisor or subset totals using Möbius inversion?"
         ],
         "question_type": "execution",
         "task_scope": "capability_family",
@@ -1374,10 +1284,8 @@
       {
         "id": "MATH-CAP-residue-integral",
         "family_id": "space",
-        "question": "How can we evaluate contour integrals using residues?",
-        "aliases": [
-          "Can you calculate contour integrals using residues?"
-        ],
+        "question": "Can you calculate contour integrals using residues?",
+        "aliases": [],
         "question_type": "execution",
         "task_scope": "capability_family",
         "bridge_ids": [
