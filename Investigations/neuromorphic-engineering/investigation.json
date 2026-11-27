@@ -949,43 +949,43 @@
     "families": [
       {
         "id": "physical",
-        "label": "Why computation emerges from physical circuits",
+        "label": "Analog computation and device physics",
         "description": "Transistors, analog arithmetic, time constants and network dynamics"
       },
       {
         "id": "sensing",
-        "label": "How silicon perceives the world",
+        "label": "Silicon sensing and perception",
         "description": "Motion, light, sound and event-based sensory representations"
       },
       {
         "id": "spikes",
-        "label": "Neurons, events and communication",
+        "label": "Spiking neurons and event communication",
         "description": "Spiking circuits, shared buses, latency and queueing"
       },
       {
         "id": "learning",
-        "label": "Memory, learning and adaptability",
+        "label": "Memory, learning and configuration",
         "description": "Synapses, attractors, forgetting and tunable analog circuits"
       },
       {
         "id": "systems",
-        "label": "Building and comparing working systems",
+        "label": "Embodied integration, scaling and evaluation",
         "description": "Hardware, software, control, scaling and operational evidence"
       }
     ],
     "entries": [
       {
         "id": "NMR-CURI-why-analog",
-        "question": "Why might a transistor do a calculation without executing instructions?",
+        "question": "How can semiconductor physics perform computation directly?",
         "family_id": "physical",
         "aliases": [
           "analog computer",
-          "subthreshold transistor"
+          "subthreshold transistor",
+          "Why might a transistor do a calculation without executing instructions?"
         ],
         "bridge_ids": [
           "PHYS"
         ],
-        "context": "Select between physical explanations, communication constraints and actual task evidence; the connected book sections may be inspected or TOC-only.",
         "term_ids": [
           "nmr-t-0057",
           "nmr-t-0102"
@@ -995,15 +995,15 @@
       },
       {
         "id": "NMR-CURI-why-small-current",
-        "question": "Why do tiny currents matter in brain-inspired chips?",
+        "question": "Why do subthreshold currents matter for neuromorphic computation?",
         "family_id": "physical",
         "aliases": [
-          "low power neuromorphic circuits"
+          "low power neuromorphic circuits",
+          "Why do tiny currents matter in brain-inspired chips?"
         ],
         "bridge_ids": [
           "PHYS"
         ],
-        "context": "Select between physical explanations, communication constraints and actual task evidence; the connected book sections may be inspected or TOC-only.",
         "term_ids": [
           "nmr-t-0057",
           "nmr-t-0087"
@@ -1013,15 +1013,15 @@
       },
       {
         "id": "NMR-CURI-copy-current",
-        "question": "How does one circuit copy a tiny electrical current into another?",
+        "question": "How do current mirrors reproduce and scale analog signals?",
         "family_id": "physical",
         "aliases": [
-          "current mirroring"
+          "current mirroring",
+          "How does one circuit copy a tiny electrical current into another?"
         ],
         "bridge_ids": [
           "PHYS"
         ],
-        "context": "Select between physical explanations, communication constraints and actual task evidence; the connected book sections may be inspected or TOC-only.",
         "term_ids": [
           "nmr-t-0067"
         ],
@@ -1030,16 +1030,16 @@
       },
       {
         "id": "NMR-CURI-calculator-circuit",
-        "question": "Can multiplication be done with a circuit instead of a program?",
+        "question": "How can analog circuits implement arithmetic?",
         "family_id": "physical",
         "aliases": [
           "analog multiply",
-          "physical arithmetic"
+          "physical arithmetic",
+          "Can multiplication be done with a circuit instead of a program?"
         ],
         "bridge_ids": [
           "PHYS"
         ],
-        "context": "Select between physical explanations, communication constraints and actual task evidence; the connected book sections may be inspected or TOC-only.",
         "term_ids": [
           "nmr-t-0105"
         ],
@@ -1048,16 +1048,16 @@
       },
       {
         "id": "NMR-CURI-analog-memory",
-        "question": "Can a circuit remember a value just by holding charge?",
+        "question": "How can stored charge represent and retain analog state?",
         "family_id": "physical",
         "aliases": [
           "RC memory",
-          "charge integration"
+          "charge integration",
+          "Can a circuit remember a value just by holding charge?"
         ],
         "bridge_ids": [
           "DYNAMICS"
         ],
-        "context": "Select between physical explanations, communication constraints and actual task evidence; the connected book sections may be inspected or TOC-only.",
         "term_ids": [
           "nmr-t-0074",
           "nmr-t-0077"
@@ -1067,16 +1067,16 @@
       },
       {
         "id": "NMR-CURI-neurons-fire",
-        "question": "How does a silicon neuron decide when to fire?",
+        "question": "How do silicon neurons integrate inputs and generate spikes?",
         "family_id": "spikes",
         "aliases": [
           "silicon neuron spike",
-          "integrate and fire"
+          "integrate and fire",
+          "How does a silicon neuron decide when to fire?"
         ],
         "bridge_ids": [
           "SPIKES"
         ],
-        "context": "Select between physical explanations, communication constraints and actual task evidence; the connected book sections may be inspected or TOC-only.",
         "term_ids": [
           "nmr-t-0146",
           "nmr-t-0024"
@@ -1086,15 +1086,15 @@
       },
       {
         "id": "NMR-CURI-not-brain",
-        "question": "Is copying a neuron's shape enough to reproduce its intelligence?",
+        "question": "Why is biological resemblance insufficient to establish computational intelligence?",
         "family_id": "spikes",
         "aliases": [
-          "bio inspiration versus computation"
+          "bio inspiration versus computation",
+          "Is copying a neuron's shape enough to reproduce its intelligence?"
         ],
         "bridge_ids": [
           "VALIDATE"
         ],
-        "context": "Select between physical explanations, communication constraints and actual task evidence; the connected book sections may be inspected or TOC-only.",
         "term_ids": [
           "nmr-t-0002",
           "nmr-t-0103"
@@ -1104,15 +1104,15 @@
       },
       {
         "id": "NMR-CURI-send-spikes",
-        "question": "How can thousands of electronic neurons talk over the same wires?",
+        "question": "How can many spiking neurons share a communication channel?",
         "family_id": "spikes",
         "aliases": [
-          "address event communication"
+          "address event communication",
+          "How can thousands of electronic neurons talk over the same wires?"
         ],
         "bridge_ids": [
           "COMM"
         ],
-        "context": "Select between physical explanations, communication constraints and actual task evidence; the connected book sections may be inspected or TOC-only.",
         "term_ids": [
           "nmr-t-0187",
           "nmr-t-0197"
@@ -1122,16 +1122,16 @@
       },
       {
         "id": "NMR-CURI-too-many",
-        "question": "What happens if thousands of pixels or neurons fire at once?",
+        "question": "What happens when simultaneous events exceed communication capacity?",
         "family_id": "spikes",
         "aliases": [
           "event bus overload",
-          "neuromorphic traffic"
+          "neuromorphic traffic",
+          "What happens if thousands of pixels or neurons fire at once?"
         ],
         "bridge_ids": [
           "COMM"
         ],
-        "context": "Select between physical explanations, communication constraints and actual task evidence; the connected book sections may be inspected or TOC-only.",
         "term_ids": [
           "nmr-t-0206",
           "nmr-t-0207"
@@ -1141,16 +1141,16 @@
       },
       {
         "id": "NMR-CURI-spike-timing",
-        "question": "Why can two spikes carry different information even if they use the same wire?",
+        "question": "How can spike timing encode information?",
         "family_id": "spikes",
         "aliases": [
           "event timing",
-          "spike timestamp"
+          "spike timestamp",
+          "Why can two spikes carry different information even if they use the same wire?"
         ],
         "bridge_ids": [
           "COMM"
         ],
-        "context": "Select between physical explanations, communication constraints and actual task evidence; the connected book sections may be inspected or TOC-only.",
         "term_ids": [
           "nmr-t-0195"
         ],
@@ -1159,16 +1159,16 @@
       },
       {
         "id": "NMR-CURI-no-frames",
-        "question": "Why would a camera report almost nothing when nothing moves?",
+        "question": "How do event cameras represent changes rather than image frames?",
         "family_id": "sensing",
         "aliases": [
           "DVS",
-          "event camera static scene"
+          "event camera static scene",
+          "Why would a camera report almost nothing when nothing moves?"
         ],
         "bridge_ids": [
           "RETINA"
         ],
-        "context": "Select between physical explanations, communication constraints and actual task evidence; the connected book sections may be inspected or TOC-only.",
         "term_ids": [
           "nmr-t-0232",
           "nmr-t-0246"
@@ -1178,15 +1178,15 @@
       },
       {
         "id": "NMR-CURI-dvs-noise",
-        "question": "Why does an event camera sometimes report motion in a still scene?",
+        "question": "Why do event sensors generate activity without real motion?",
         "family_id": "sensing",
         "aliases": [
-          "DVS background events"
+          "DVS background events",
+          "Why does an event camera sometimes report motion in a still scene?"
         ],
         "bridge_ids": [
           "RETINA"
         ],
-        "context": "Select between physical explanations, communication constraints and actual task evidence; the connected book sections may be inspected or TOC-only.",
         "term_ids": [
           "nmr-t-0256",
           "nmr-t-0257"
@@ -1196,16 +1196,16 @@
       },
       {
         "id": "NMR-CURI-frame-vs-event",
-        "question": "Could event cameras replace ordinary video cameras?",
+        "question": "When can event-based vision replace frame-based vision?",
         "family_id": "sensing",
         "aliases": [
-          "frame camera vs DVS"
+          "frame camera vs DVS",
+          "Could event cameras replace ordinary video cameras?"
         ],
         "bridge_ids": [
           "RETINA",
           "VALIDATE"
         ],
-        "context": "Select between physical explanations, communication constraints and actual task evidence; the connected book sections may be inspected or TOC-only.",
         "term_ids": [
           "nmr-t-0237",
           "nmr-t-0238"
@@ -1215,15 +1215,15 @@
       },
       {
         "id": "NMR-CURI-cochlea",
-        "question": "How could a chip separate sounds into different frequencies?",
+        "question": "How can silicon implement frequency-selective auditory processing?",
         "family_id": "sensing",
         "aliases": [
-          "silicon cochlea filter"
+          "silicon cochlea filter",
+          "How could a chip separate sounds into different frequencies?"
         ],
         "bridge_ids": [
           "COCHLEA"
         ],
-        "context": "Select between physical explanations, communication constraints and actual task evidence; the connected book sections may be inspected or TOC-only.",
         "term_ids": [
           "nmr-t-0274",
           "nmr-t-0276"
@@ -1233,16 +1233,16 @@
       },
       {
         "id": "NMR-CURI-visual-motion",
-        "question": "How could a few connected circuits figure out which way something moves?",
+        "question": "How can local neural circuits estimate visual motion?",
         "family_id": "sensing",
         "aliases": [
-          "analog optical flow"
+          "analog optical flow",
+          "How could a few connected circuits figure out which way something moves?"
         ],
         "bridge_ids": [
           "RETINA",
           "DYNAMICS"
         ],
-        "context": "Select between physical explanations, communication constraints and actual task evidence; the connected book sections may be inspected or TOC-only.",
         "term_ids": [
           "nmr-t-0248",
           "nmr-t-0249"
@@ -1252,16 +1252,16 @@
       },
       {
         "id": "NMR-CURI-forget",
-        "question": "Why does learning something new sometimes erase an older memory?",
+        "question": "Why does learning interfere with previously acquired information?",
         "family_id": "learning",
         "aliases": [
           "bounded synapse",
-          "catastrophic forgetting"
+          "catastrophic forgetting",
+          "Why does learning something new sometimes erase an older memory?"
         ],
         "bridge_ids": [
           "LEARNING"
         ],
-        "context": "Select between physical explanations, communication constraints and actual task evidence; the connected book sections may be inspected or TOC-only.",
         "term_ids": [
           "nmr-t-0171",
           "nmr-t-0169"
@@ -1271,15 +1271,15 @@
       },
       {
         "id": "NMR-CURI-plasticity",
-        "question": "Can an electronic synapse become stronger because it is used?",
+        "question": "How can electronic synapses implement activity-dependent plasticity?",
         "family_id": "learning",
         "aliases": [
-          "silicon synaptic plasticity"
+          "silicon synaptic plasticity",
+          "Can an electronic synapse become stronger because it is used?"
         ],
         "bridge_ids": [
           "LEARNING"
         ],
-        "context": "Select between physical explanations, communication constraints and actual task evidence; the connected book sections may be inspected or TOC-only.",
         "term_ids": [
           "nmr-t-0158",
           "nmr-t-0157"
@@ -1289,15 +1289,15 @@
       },
       {
         "id": "NMR-CURI-attractor",
-        "question": "Why can a neural network keep remembering a pattern after the input disappears?",
+        "question": "How can recurrent neural dynamics sustain a stored pattern?",
         "family_id": "learning",
         "aliases": [
-          "attractor memory"
+          "attractor memory",
+          "Why can a neural network keep remembering a pattern after the input disappears?"
         ],
         "bridge_ids": [
           "LEARNING"
         ],
-        "context": "Select between physical explanations, communication constraints and actual task evidence; the connected book sections may be inspected or TOC-only.",
         "term_ids": [
           "nmr-t-0167",
           "nmr-t-0166"
@@ -1307,16 +1307,16 @@
       },
       {
         "id": "NMR-CURI-program-analog",
-        "question": "Can an analog neural circuit be programmed like digital hardware?",
+        "question": "How can analog neural hardware be configured or programmed?",
         "family_id": "learning",
         "aliases": [
           "programmable analog",
-          "floating gate"
+          "floating gate",
+          "Can an analog neural circuit be programmed like digital hardware?"
         ],
         "bridge_ids": [
           "CONFIG"
         ],
-        "context": "Select between physical explanations, communication constraints and actual task evidence; the connected book sections may be inspected or TOC-only.",
         "term_ids": [
           "nmr-t-0097",
           "nmr-t-0101"
@@ -1326,15 +1326,15 @@
       },
       {
         "id": "NMR-CURI-bias",
-        "question": "Why do analog neural chips need carefully adjusted bias currents?",
+        "question": "Why do neuromorphic analog circuits require bias tuning?",
         "family_id": "learning",
         "aliases": [
-          "analog bias calibration"
+          "analog bias calibration",
+          "Why do analog neural chips need carefully adjusted bias currents?"
         ],
         "bridge_ids": [
           "CONFIG"
         ],
-        "context": "Select between physical explanations, communication constraints and actual task evidence; the connected book sections may be inspected or TOC-only.",
         "term_ids": [
           "nmr-t-0085",
           "nmr-t-0082"
@@ -1344,15 +1344,15 @@
       },
       {
         "id": "NMR-CURI-movement",
-        "question": "Could an electronic neural circuit help a robot walk?",
+        "question": "How can neuromorphic circuits contribute to robotic locomotion?",
         "family_id": "systems",
         "aliases": [
-          "CPG robot"
+          "CPG robot",
+          "Could an electronic neural circuit help a robot walk?"
         ],
         "bridge_ids": [
           "LOCOMOTION"
         ],
-        "context": "Select between physical explanations, communication constraints and actual task evidence; the connected book sections may be inspected or TOC-only.",
         "term_ids": [
           "nmr-t-0048",
           "nmr-t-0290"
@@ -1362,16 +1362,16 @@
       },
       {
         "id": "NMR-CURI-software",
-        "question": "How does a computer receive and analyze millions of sensor events?",
+        "question": "How can conventional computers process high-rate event streams?",
         "family_id": "systems",
         "aliases": [
           "jAER",
-          "event stream software"
+          "event stream software",
+          "How does a computer receive and analyze millions of sensor events?"
         ],
         "bridge_ids": [
           "INTEGRATION"
         ],
-        "context": "Select between physical explanations, communication constraints and actual task evidence; the connected book sections may be inspected or TOC-only.",
         "term_ids": [
           "nmr-t-0345",
           "nmr-t-0195"
@@ -1381,16 +1381,16 @@
       },
       {
         "id": "NMR-CURI-fpga",
-        "question": "Where does an FPGA fit between a neuromorphic chip and a computer?",
+        "question": "What role can FPGAs play in neuromorphic system integration?",
         "family_id": "systems",
         "aliases": [
-          "FPGA event bridge"
+          "FPGA event bridge",
+          "Where does an FPGA fit between a neuromorphic chip and a computer?"
         ],
         "bridge_ids": [
           "INTEGRATION",
           "COMM"
         ],
-        "context": "Select between physical explanations, communication constraints and actual task evidence; the connected book sections may be inspected or TOC-only.",
         "term_ids": [
           "nmr-t-0325",
           "nmr-t-0187"
@@ -1400,17 +1400,17 @@
       },
       {
         "id": "NMR-CURI-scaling",
-        "question": "Can we compose small neuromorphic chips into a larger computing system?",
+        "question": "How can neuromorphic chips compose into larger computing systems?",
         "family_id": "systems",
         "aliases": [
           "Neurogrid",
-          "hierarchical AER"
+          "hierarchical AER",
+          "Can we compose small neuromorphic chips into a larger computing system?"
         ],
         "bridge_ids": [
           "SCALE",
           "COMM"
         ],
-        "context": "Select between physical explanations, communication constraints and actual task evidence; the connected book sections may be inspected or TOC-only.",
         "term_ids": [
           "nmr-t-0224",
           "nmr-t-0329"
@@ -1420,16 +1420,16 @@
       },
       {
         "id": "NMR-CURI-better",
-        "question": "When is neuromorphic hardware actually better than ordinary computers?",
+        "question": "Under which workloads does neuromorphic computation outperform conventional hardware?",
         "family_id": "systems",
         "aliases": [
           "neuromorphic energy",
-          "efficient event computing"
+          "efficient event computing",
+          "When is neuromorphic hardware actually better than ordinary computers?"
         ],
         "bridge_ids": [
           "VALIDATE"
         ],
-        "context": "Select between physical explanations, communication constraints and actual task evidence; the connected book sections may be inspected or TOC-only.",
         "term_ids": [
           "nmr-t-0413",
           "nmr-t-0411"
@@ -1440,15 +1440,15 @@
       },
       {
         "id": "NMR-CURI-real-proof",
-        "question": "What evidence would show a neuromorphic demo works outside its author's lab?",
+        "question": "How can we establish reproducibility of a neuromorphic hardware result?",
         "family_id": "systems",
         "aliases": [
-          "reproduce a neuromorphic experiment"
+          "reproduce a neuromorphic experiment",
+          "What evidence would show a neuromorphic demo works outside its author's lab?"
         ],
         "bridge_ids": [
           "VALIDATE"
         ],
-        "context": "Select between physical explanations, communication constraints and actual task evidence; the connected book sections may be inspected or TOC-only.",
         "term_ids": [
           "nmr-t-0376",
           "nmr-t-0375"
@@ -1459,18 +1459,18 @@
       },
       {
         "id": "NMR-CURI-what-can-build",
-        "question": "What could I build using event cameras, tiny circuits, and a computer?",
+        "question": "What useful systems can we build by composing event sensors, neural circuits and processors?",
         "family_id": "systems",
         "aliases": [
           "neuromorphic projects",
-          "robotics demo"
+          "robotics demo",
+          "What could I build using event cameras, tiny circuits, and a computer?"
         ],
         "bridge_ids": [
           "INTEGRATION",
           "RETINA",
           "LOCOMOTION"
         ],
-        "context": "Select between physical explanations, communication constraints and actual task evidence; the connected book sections may be inspected or TOC-only.",
         "term_ids": [
           "nmr-t-0237",
           "nmr-t-0295"
@@ -1480,16 +1480,16 @@
       },
       {
         "id": "NMR-CURI-zero-events",
-        "question": "If event-based data is sparse, why can the system still be busy?",
+        "question": "Why can sparse event representations still incur high system costs?",
         "family_id": "systems",
         "aliases": [
-          "event overhead"
+          "event overhead",
+          "If event-based data is sparse, why can the system still be busy?"
         ],
         "bridge_ids": [
           "COMM",
           "VALIDATE"
         ],
-        "context": "Select between physical explanations, communication constraints and actual task evidence; the connected book sections may be inspected or TOC-only.",
         "term_ids": [
           "nmr-t-0217",
           "nmr-t-0212"
@@ -1500,8 +1500,10 @@
       {
         "id": "NMR-CAP-current-mirror",
         "family_id": "physical",
-        "question": "Can you calculate a MOS current mirror's bias currents and scaling under stated device assumptions?",
-        "aliases": [],
+        "question": "How can we calculate MOS current-mirror scaling and operating conditions?",
+        "aliases": [
+          "Can you calculate a MOS current mirror's bias currents and scaling under stated device assumptions?"
+        ],
         "question_type": "execution",
         "task_scope": "capability_family",
         "bridge_ids": [
@@ -1520,8 +1522,10 @@
       {
         "id": "NMR-CAP-aer-traffic",
         "family_id": "spikes",
-        "question": "Can you estimate event-bus throughput and detect when event traffic will overflow a queue?",
-        "aliases": [],
+        "question": "How can we calculate event-bus capacity and queue overflow?",
+        "aliases": [
+          "Can you estimate event-bus throughput and detect when event traffic will overflow a queue?"
+        ],
         "question_type": "execution",
         "task_scope": "capability_family",
         "bridge_ids": [
