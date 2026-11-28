@@ -1474,6 +1474,7 @@
     "MATH-CAP-markov-stationary",
     "MATH-CAP-maximum-likelihood",
     "MATH-CAP-confidence-interval",
-    "MATH-CAP-hypothesis-test"
+    "MATH-CAP-hypothesis-test",
+    "MATH-TACIT-detection-inference"
   ]
 }
