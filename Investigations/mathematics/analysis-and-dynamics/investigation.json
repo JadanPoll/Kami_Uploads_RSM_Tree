@@ -1917,6 +1917,7 @@
     "MATH-CAP-completeness",
     "MATH-CAP-lp-norms",
     "MATH-CAP-fixed-point",
-    "MATH-CAP-residue-integral"
+    "MATH-CAP-residue-integral",
+    "MATH-TACIT-iterative-solver"
   ]
 }
