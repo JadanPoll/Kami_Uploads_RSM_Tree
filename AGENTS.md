@@ -25,7 +25,7 @@ The question-type taxonomy below measures the requested operation, not intellect
 
 ## Reader-facing answers and applied challenges
 
-Kami's default is a book, not a graph. Questions, Tacits and Glossary are the primary entrances; show direct content first, and keep technical maps and source routes available on demand. No compulsory classification chips, question-type filters or bridge traversal. Preserve useful conditional bridges where the situation truly changes which mechanism applies. Omit generic field-filling prose; missing content is better than a template pretending to be an explanation.
+Kami's default is a book, not a graph. Questions, Tacits and Glossary are the primary entrances; show direct content first, and keep technical maps and source routes available on demand. No compulsory classification chips, question-type filters or bridge traversal. Preserve useful conditional bridges where the situation truly changes which mechanism applies. Omit generic field-filling prose; missing content is better than a template pretending to be an explanation. In the reading view, present children and related in-page studies as one deduplicated inline outline, with independently expandable siblings and nested studies. Do not force a new page or a map traversal for each mechanism; keep the original record link quiet at the bottom. Preserve source locators, notes and explicit navigation to other investigations.
 
 
 Use [Operational2](https://github.com/JadanPoll/FKEN_REA_CaseStudies/blob/main/Operational2.md), [Operational2B](https://github.com/JadanPoll/FKEN_REA_CaseStudies/blob/main/Operational2B.md), and [Operation2Bminor](https://github.com/JadanPoll/FKEN_REA_CaseStudies/blob/main/Operation2Bminor.md) together.
