@@ -854,7 +854,7 @@
   "notes": [
     "OSTEP and TLPI are the primary conceptual/interface sources; LKD is a 2010 snapshot, not a current-Linux implementation oracle."
   ],
-  "updated": "2026-11-21",
+  "updated": "2026-11-27",
   "landscape_views": [
     {
       "id": "systems-as-experience",
@@ -1117,7 +1117,11 @@
           "os-t-0078"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A frozen app can be a thread waiting for an event that never arrives, or a thread consuming all the CPU it can get. Neither need stop the processor from running other threads. Timer interrupts give the kernel a chance to preempt a running thread, and page tables normally prevent it from overwriting other processes' memory.",
+          "But isolation is not absolute. If the frozen task holds a shared lock, consumes all available memory, or gets stuck in a kernel path needed by other programs, the failure can spread. A responsive mouse alongside a frozen window tells you something different from a system in which interrupts or storage requests no longer progress."
+        ]
       },
       {
         "id": "OS-CURI-busy",
@@ -1154,7 +1158,11 @@
           "os-t-0115"
         ],
         "question_type": "diagnosis",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "Imagine two threads repeatedly polling for each other's work. They can spend every available CPU cycle checking a flag without producing a result. A lock convoy can similarly wake many threads only for most to block again. CPU utilization measures scheduled activity, not useful progress.",
+          "Distinguish runnable time, blocked time and completed work. A profile showing spinning in a lock suggests contention; many blocked threads with low CPU utilization suggest a different bottleneck. Replacing a poll with a blocking wait can free the core for real work, but an incorrect wakeup protocol can lose the event entirely."
+        ]
       },
       {
         "id": "OS-CURI-memory",
@@ -1193,7 +1201,11 @@
           "os-t-0026"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A computer can promise each process a large virtual address space without immediately supplying physical RAM for every page. When active pages exceed available memory, the system may reclaim file-cache pages or move anonymous pages to swap. If it repeatedly evicts pages that are needed again immediately, useful execution is replaced by page faults and storage traffic.",
+          "This is why adding another small process can suddenly make the whole machine slow: the combined working sets cross a capacity boundary. If reclaim cannot satisfy allocations, the kernel may reject them or select a process to terminate. Free memory alone is a poor indicator; look at fault rates, reclaim activity and actual application latency."
+        ]
       },
       {
         "id": "OS-CURI-same-address",
@@ -1268,7 +1280,11 @@
           "os-t-0142"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "An address, pathname or device name identifies a resource; it does not grant the right to use it. Opening a file can require filesystem permissions, opening a camera can require a sandbox or user-consent decision, and accessing a remote service can require a credential recognized by another machine.",
+          "A process can possess a file descriptor that grants a particular operation without being allowed to open arbitrary files. This makes delegation possible: give a helper access to one opened file rather than the entire directory. To diagnose a failure, identify the boundary that rejected the request instead of treating all denials as one generic permission problem."
+        ]
       },
       {
         "id": "OS-CURI-device",
@@ -1307,7 +1323,11 @@
           "os-t-0082"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A USB device advertises identifiers and interfaces, but the host still needs software that knows how to configure it, submit transfers and interpret completions. A driver translates a generic OS operation into a device-specific protocol, often involving interrupts, DMA buffers and asynchronous requests.",
+          "A driver bug can be more consequential than an ordinary app bug because it may execute with kernel authority or hold resources other devices need. A timeout, missing interrupt and incorrect DMA address can all look like a frozen device. Log submission and completion separately; do not assume successful enumeration proves data transfer works."
+        ]
       },
       {
         "id": "OS-CURI-save",
@@ -1382,7 +1402,11 @@
           "os-t-0174"
         ],
         "question_type": "design",
-        "task_scope": "open_goal"
+        "task_scope": "open_goal",
+        "answer": [
+          "Suppose a filesystem changes the directory entry and allocation bitmap for a new file, then loses power halfway through. Each individual write may be valid while the combination is inconsistent. Recovery needs a rule for deciding which sets of changes count as committed.",
+          "A journal can record intended updates and a commit marker before applying them to their final locations; replay completed transactions and discard incomplete ones. Copy-on-write takes a different route: construct new metadata without overwriting old state, then publish a new root. Both require assumptions about write ordering and durability; neither guarantees that arbitrary application data was synchronized."
+        ]
       },
       {
         "id": "OS-CURI-remote",
@@ -1420,7 +1444,11 @@
           "os-t-0141"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "The program is executing on the remote machine, while your local device is receiving its display and transmitting input. Disconnecting the viewer may only remove that transport. The server can retain the session, processes, memory and open files, so a new connection attaches to the same state.",
+          "Do not confuse a reconnecting viewer with a new login or a surviving machine. A server may log off idle users, restart the host, or attach the same profile to a different machine. To tell them apart, compare a running process identity, boot identity and a deliberately unsaved in-memory value before and after reconnecting."
+        ]
       },
       {
         "id": "OS-CURI-restart",
@@ -1459,7 +1487,11 @@
           "os-t-0101"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "Closing a window is usually a request to an application; it may leave its process or background service running. Logging out ends a user session and normally terminates its session processes. Restarting ends the running kernel and clears volatile machine state. The exact lifecycle depends on the OS and session manager.",
+          "A file stored durably can survive all three, while an unsaved editor buffer may survive only a disconnected viewer. A process that appears again after reboot might have been started by a service manager, not preserved in RAM. Distinguish reconstruction from continuity."
+        ]
       },
       {
         "id": "OS-CURI-boot",
@@ -1498,7 +1530,11 @@
           "os-t-0008"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "At reset the processor begins executing at a defined address or firmware entry point, not inside the program you eventually want to run. Firmware establishes enough hardware state to locate a bootloader or kernel. The kernel configures memory, interrupts and devices, creates its first execution contexts, then starts user programs.",
+          "A small board can bypass much of the desktop boot chain and run code directly from ROM or flash. Each stage exists because the next assumes services the previous stage establishes. To find a boot failure, put observable milestones before and after each transition; a black screen alone tells you little."
+        ]
       },
       {
         "id": "OS-CURI-browser-os",
@@ -1535,7 +1571,11 @@
           "os-t-0014"
         ],
         "question_type": "design",
-        "task_scope": "open_goal"
+        "task_scope": "open_goal",
+        "answer": [
+          "If a browser is the only interface people see, it can act like an application shell: launch tools, manage documents and dispatch work to local or remote services. The browser still relies on another system for scheduling, storage, networking and devices. The interesting choice is which of those capabilities belong in your own layer.",
+          "For a kiosk or robot, start with the workflows you actually want: select an application, resume its state, access a device, recover from a failure. A web interface plus a small privileged service can be enough. Building a new kernel is warranted only when the existing platform cannot meet a consequential requirement."
+        ]
       },
       {
         "id": "OS-CURI-small-os",
@@ -1574,7 +1614,11 @@
           "os-t-0014"
         ],
         "question_type": "decomposition",
-        "task_scope": "open_goal"
+        "task_scope": "open_goal",
+        "answer": [
+          "A useful minimal OS is defined by a workload, not by a checklist of textbook subsystems. A sensor logger might need a timer, serial I/O, storage and reliable recovery, but no graphical interface or separate address spaces. A machine that runs untrusted programs has much stronger isolation requirements.",
+          "On a teaching board, start with a single known execution path, add interrupts and a driver, then give two tasks a scheduling and memory contract. Once you can run a meaningful workload, you can identify what must be added rather than copying every feature of Linux."
+        ]
       },
       {
         "id": "OS-CURI-distributed",
@@ -1612,7 +1656,11 @@
           "os-t-0054"
         ],
         "question_type": "decomposition",
-        "task_scope": "open_goal"
+        "task_scope": "open_goal",
+        "answer": [
+          "Several computers can present one namespace or service, but their independent memories and clocks do not magically become shared. A network request can be delayed, lost, duplicated, or completed just before its reply disappears. The caller cannot always tell whether the remote operation happened.",
+          "For example, retrying an increment after a timeout can increment twice. Give operations identities and preserve their outcomes at the server if retries must be idempotent. Replication adds another question: which replicas may accept a write during a partition? A seamless interface must specify what it sacrifices when communication fails."
+        ]
       },
       {
         "id": "OS-CURI-robot",
@@ -1651,7 +1699,11 @@
           "os-t-0028"
         ],
         "question_type": "design",
-        "task_scope": "open_goal"
+        "task_scope": "open_goal",
+        "answer": [
+          "When a robot controller freezes, continuing its last motor command can be dangerous. Treat the absence of timely updates as a detectable event: a separate watchdog or motor controller can withdraw authority when valid commands stop arriving.",
+          "But stopping is not always physically safe; an aircraft, suspended load or moving vehicle may require a controlled degraded mode. Design the safety behavior from the plant's actual dynamics. Test loss of communication and stalled computation in a bounded setup, before letting an unverified controller operate freely."
+        ]
       },
       {
         "id": "OS-CAP-page-translation",
@@ -1726,7 +1778,11 @@
           "os-t-0199"
         ],
         "question_type": "design",
-        "task_scope": "open_goal"
+        "task_scope": "open_goal",
+        "answer": [
+          "Consider two threads incrementing the same variable. Each can load 5, compute 6, and store 6; two requests produce one increment because the read-modify-write sequence was not atomic. A mutex or atomic operation can protect this particular invariant.",
+          "But locking two resources can create a new problem: thread A holds one and waits for the other while B holds the second and waits for the first. Consistent lock ordering eliminates that cycle; ownership or message passing can avoid shared mutation altogether. The right abstraction depends on which state must change together and how long competing tasks can wait."
+        ]
       },
       {
         "id": "OS-TACIT-crash-safe-save",
@@ -1755,6 +1811,117 @@
         "worked_solution": [
           "Create a temporary file in the same directory, write all bytes while checking short writes and errors, synchronize the file, then atomically rename over the original. On an appropriate local POSIX filesystem, synchronize the containing directory when durability of rename is required. Atomic rename does not alone guarantee power-loss recovery.",
           "Inject failures at each stage while writing distinctive complete versions; after recovery require a complete old or new version. Distinguish process-kill tests from storage fault injection or controlled power loss. Check actual filesystem and device guarantees; this protocol is not a universal certificate."
+        ]
+      },
+      {
+        "id": "OS-TACIT-session-continuity",
+        "family_id": "what-survives",
+        "question": "Can I tell whether a remote desktop reconnected to my running machine or silently started a new one?",
+        "aliases": [],
+        "bridge_ids": [
+          "OS-BRG-lifetime",
+          "OS-BRG-distribution"
+        ],
+        "term_ids": [
+          "os-t-0007",
+          "os-t-0154",
+          "os-t-0199",
+          "os-t-0157",
+          "os-t-0174",
+          "os-t-0008",
+          "os-t-0014",
+          "os-t-0013",
+          "os-t-0017",
+          "os-t-0022",
+          "os-t-0019",
+          "os-t-0153",
+          "os-t-0105",
+          "os-t-0119",
+          "os-t-0118",
+          "os-t-0141"
+        ],
+        "question_type": "design",
+        "task_scope": "specified_instance",
+        "applied_challenge": true,
+        "answer": [
+          "A remote desktop loses its network connection. After reconnecting, the same files and desktop appear. Design a test distinguishing viewer reconnection, session reconstruction on the same host, and attachment to a different machine."
+        ],
+        "worked_solution": [
+          "Before disconnecting, record a boot identifier, host identifier, process ID plus process start time, and a random token held only in the process's memory. Save a different token to durable storage. Record time and connection state. A process ID alone is not sufficient because IDs can be reused.",
+          "After reconnecting, compare these independent observations. Same boot and in-memory token indicate continuity of that process; same durable file but missing process token is consistent with profile persistence or reconstruction. A different boot identifier does not by itself prove a different physical host. Compare explicit viewer disconnect, session logoff and reboot as distinct operations.",
+          "Use a disposable process, not unsaved important work. If access to boot or host identity is restricted, narrow the conclusion to what you can observe. A reappearing desktop screenshot is weak evidence because a profile manager can reconstruct it."
+        ]
+      },
+      {
+        "id": "OS-TACIT-buffer-shutdown",
+        "family_id": "unexpected-behavior",
+        "question": "Can I build a producer–consumer pipeline that does not lose accepted jobs when the user closes it?",
+        "aliases": [],
+        "bridge_ids": [
+          "OS-BRG-coordination"
+        ],
+        "term_ids": [
+          "os-t-0046",
+          "os-t-0054",
+          "os-t-0050",
+          "os-t-0057",
+          "os-t-0058",
+          "os-t-0019",
+          "os-t-0060",
+          "os-t-0025",
+          "os-t-0026",
+          "os-t-0049",
+          "os-t-0199"
+        ],
+        "question_type": "design",
+        "task_scope": "specified_instance",
+        "applied_challenge": true,
+        "answer": [
+          "A logger accepts records from two worker threads and writes them from one background thread. The queue is bounded. When shutdown begins, every accepted record must either be written or explicitly reported failed. How do you avoid lost wakeups, duplicate records and shutdown deadlocks?"
+        ],
+        "worked_solution": [
+          "Define the contract before selecting locks: accepting a record transfers ownership to the queue, and shutdown closes admission atomically with respect to enqueue. Under one mutex, producers wait while the queue is full and admission is open; the writer waits while empty and admission is open. Condition-variable waits must recheck predicates.",
+          "On shutdown set closed under the mutex and wake all waiters. Producers reject new records; the writer drains queued records before returning. Do not hold the queue mutex across slow I/O. If storage fails, preserve a failure result for accepted records rather than silently claiming completion. Durable persistence requires additional synchronization beyond successful writes.",
+          "Test with a small queue, delayed writer, simultaneous producers and shutdown at each boundary. Tag jobs uniquely and compare accepted IDs against written and failed IDs; require no duplication and a bounded termination time. This tests the real ownership and lifecycle contract, not merely whether threads can be started."
+        ]
+      },
+      {
+        "id": "OS-TACIT-device-liveness",
+        "family_id": "devices-and-interfaces",
+        "question": "Can I keep a motor-control device responsive when its host program becomes stuck?",
+        "aliases": [],
+        "bridge_ids": [
+          "OS-BRG-runtime",
+          "OS-BRG-platform"
+        ],
+        "term_ids": [
+          "os-t-0023",
+          "os-t-0045",
+          "os-t-0199",
+          "os-t-0215",
+          "os-t-0026",
+          "os-t-0002",
+          "os-t-0009",
+          "os-t-0010",
+          "os-t-0018",
+          "os-t-0007",
+          "os-t-0008",
+          "os-t-0014",
+          "os-t-0013",
+          "os-t-0017",
+          "os-t-0022",
+          "os-t-0028"
+        ],
+        "question_type": "design",
+        "task_scope": "specified_instance",
+        "applied_challenge": true,
+        "answer": [
+          "A low-voltage bench motor controller receives commands every 20 ms over a serial connection. A desktop process can hang, disconnect or resume with stale commands. Design a safe timeout protocol and a bounded test without using a free-moving robot."
+        ],
+        "worked_solution": [
+          "Place the freshness check on the controller, independent of the host event loop. Give each command a sequence number, define an expiration interval from the physical hazard and communication jitter, and invalidate stale commands after reconnect. A watchdog that merely checks whether the host process exists cannot establish useful control progress.",
+          "For a restrained bench rig, define the timeout action and measure command-to-output latency; confirm that the independent controller reaches the specified safe state when updates stop. The safe action is plant-dependent: disabling a motor may be unsafe for suspended loads. Separate the actuator safety mechanism from ordinary application recovery.",
+          "Inject dropped messages, a frozen host, repeated old packets and restart. Record the output and timeout timing. A successful test on an unloaded rig is not certification for a mobile vehicle, but establishes whether the protocol's failure response matches its intended contract."
         ]
       }
     ]
