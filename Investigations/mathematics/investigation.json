@@ -2,7 +2,7 @@
   "id": "mathematics",
   "kind": "canonical_research_corpus",
   "title": "Mathematics — generative structures, transformations, invariants, limits and inference",
-  "updated": "2026-11-24",
+  "updated": "2026-11-27",
   "status": "Five canonical mathematical families composed on reading; 14 books, 39 studies and 46 curiosity entrances",
   "question": "What small set of mathematical constructions, structures, transformations and tests generates broad families of questions, theorems and real applications?",
   "purpose": "Navigate from authentic naive questions or ambitious mathematical/engineering goals through a composable mathematical capability landscape to source-backed distinctions and reusable books.",
@@ -68,7 +68,11 @@
           "math-t-0366"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A square drawn on paper and the same square rotated by 30° are different sets of coordinates, but their lengths and angles agree under a rigid motion. Whether they are 'the same' depends on the structure we want to preserve. A bijection preserves the distinction between individual elements; an isomorphism must additionally preserve the relevant operations or relations.",
+          "For example, ℤ under addition and the positive powers of 2 under multiplication correspond by n↦2ⁿ (allowing all integer powers). Addition becomes multiplication: 2^(m+n)=2^m·2^n. We can transport an entire argument across this map. A mere bijection between two sets would not justify that transfer."
+        ]
       },
       {
         "id": "MATH-CURI-exist",
@@ -83,7 +87,11 @@
           "math-t-0782"
         ],
         "question_type": "verification",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "Suppose √2 were rational, a/b in lowest terms. From a²=2b², a must be even; substituting a=2k forces b even too, contradicting lowest terms. This proves an irrational real exists and identifies one. Other existence arguments can be less constructive: the intermediate value theorem guarantees a root between points where a continuous function changes sign without providing its exact expression.",
+          "A nonconstructive proof may establish that an object cannot fail to exist without giving an effective way to find it. The distinction matters for engineering: a proof that a solution exists, an algorithm that finds one, and an error bound for a finite computation are different achievements. A root-existence theorem can be combined with bisection when the sign information is computable."
+        ]
       },
       {
         "id": "MATH-CURI-paradox",
@@ -98,7 +106,11 @@
           "math-t-0033"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "Suppose unrestricted set construction allowed R={x : x is a set and x∉x}. Ask whether R belongs to itself. If R∈R, its defining property says R∉R; if R∉R, it satisfies the property and therefore R∈R. Either choice contradicts itself.",
+          "The problem is not that self-reference is always forbidden. It is that allowing every property to define a set with no restriction makes the theory inconsistent. In ZF set theory, separation forms a subset of an already existing set; it does not supply a universal set from which Russell's collection can be extracted. The restrictions determine which apparently natural constructions are legitimate."
+        ]
       },
       {
         "id": "MATH-CURI-structure",
@@ -115,7 +127,11 @@
           "math-t-0049"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "Take the same set {0,1,2}. With addition modulo 3 it is a cyclic group; with the usual order it is a chain; with distance |a−b| it is a metric space. The elements have not changed, but the statements and transformations that make sense have changed considerably.",
+          "The permutation 0→1→2→0 preserves the cyclic structure when viewed as a translation, but it is not an order-preserving map of the usual chain. A structure specifies what relationships matter; a theorem about the underlying elements alone cannot recover those relationships. This is why mathematical abstractions include operations, relations or topology rather than only collections of objects."
+        ]
       },
       {
         "id": "MATH-CURI-quotient",
@@ -131,7 +147,11 @@
           "math-t-0008"
         ],
         "question_type": "transfer",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "Suppose a clock displays hours 0 through 11. Treat every integer differing by a multiple of 12 as equivalent. The quotient replaces infinitely many integers with twelve equivalence classes, while addition remains meaningful: (a+12k)+(b+12l) differs from a+b by a multiple of 12.",
+          "The critical requirement is that the operations descend to classes independently of the representatives chosen. Reducing integers modulo 12 preserves addition and multiplication, but division by an arbitrary nonzero residue is not always possible. Quotienting deliberately forgets distinctions; it is powerful precisely when the forgotten information is irrelevant to the operation we need."
+        ]
       },
       {
         "id": "MATH-CURI-basis",
@@ -146,7 +166,11 @@
           "math-t-0064"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A matrix records the coordinates of a linear transformation relative to selected input and output bases. The transformation itself is independent of that description. If P maps coordinates in a new basis to coordinates in the old basis, the same endomorphism represented by A becomes P⁻¹AP in the new basis.",
+          "Choosing the new basis to consist of eigenvectors makes the matrix diagonal when such a basis exists. This is not a different physical transformation: it exposes independent directions in which the original transformation simply scales. A coordinate change can simplify a problem without changing its invariant properties."
+        ]
       },
       {
         "id": "MATH-CURI-dual",
@@ -162,7 +186,11 @@
           "math-t-0076"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A linear functional turns a vector into a scalar while preserving addition and scaling. Instead of describing a vector directly, we can ask what every linear measurement would report. In a finite-dimensional vector space, the coordinate-reading functionals form a dual basis, and their values determine the vector.",
+          "This becomes useful in optimization and mechanics: forces can be viewed through the work they perform on virtual displacements, and constraints can be assigned multipliers that express the value of relaxing them. The dual space is not automatically the same object as the original space; an inner product supplies one particular identification, while a different inner product can change it."
+        ]
       },
       {
         "id": "MATH-CURI-diagonal",
@@ -177,7 +205,11 @@
           "math-t-0088"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A matrix acts independently on a direction v if Av=λv. If enough independent eigenvectors exist, every state can be written as a combination of such modes, so repeated application simply multiplies each component by λⁿ.",
+          "But consider A=[[1,1],[0,1]]. It has only one independent eigenvector, despite having eigenvalue 1 twice. Repeated application gives Aⁿ=[[1,n],[0,1]]: one component accumulates into another. Jordan blocks expose behavior that eigenvalues alone do not describe. Symmetric real matrices avoid this obstruction because they admit an orthonormal eigenbasis."
+        ]
       },
       {
         "id": "MATH-CURI-symmetry",
@@ -193,7 +225,11 @@
           "math-t-0121"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "Counting colored necklaces by counting all strings and dividing by the number of rotations fails when some strings are unchanged by nontrivial rotations. A necklace with every bead the same has fewer distinct rotated representations than a necklace with no rotational symmetry.",
+          "Burnside's lemma counts orbits by averaging the number of configurations fixed by each group element. For four beads with two colors, rotations fix 16, 2, 4 and 2 colorings, giving (16+2+4+2)/4=6 necklaces when only rotations are identified. The symmetry changes the counting problem into a family of much simpler fixed-point counts."
+        ]
       },
       {
         "id": "MATH-CURI-factor",
@@ -208,7 +244,11 @@
           "math-t-0164"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "Unique factorization is a property of a number system, not of the word multiplication. In ℤ[√−5], the element 6 has factorizations 2·3 and (1+√−5)(1−√−5). These factors are irreducible in this ring, yet the two factorizations are not equivalent by units and reordering.",
+          "The norm N(a+b√−5)=a²+5b² is multiplicative; it helps show why these factors cannot split into smaller nonunit factors. There are no elements of norm 2 or 3. The failure motivates distinguishing irreducible elements from prime elements and recovering factorization at the level of ideals in suitable rings."
+        ]
       },
       {
         "id": "MATH-CURI-unsolvable",
@@ -224,7 +264,11 @@
           "math-t-0197"
         ],
         "question_type": "verification",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A straightedge-and-compass construction repeatedly intersects lines and circles. Starting from rational coordinates, these operations only require arithmetic and solving quadratic equations. The resulting coordinate field is built by a tower of extensions whose degrees are at most two.",
+          "Doubling a unit cube would require constructing ∛2. Its minimal polynomial x³−2 is irreducible over ℚ and has degree 3. That degree cannot divide a power of two, so the construction is impossible under the stated tools. The obstruction is not a shortage of clever drawings; algebra characterizes what the permitted geometric operations can produce."
+        ]
       },
       {
         "id": "MATH-CURI-infinite-operator",
@@ -240,7 +284,11 @@
           "math-t-0530"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "In finite dimensions every linear map between normed spaces is continuous, but infinite-dimensional spaces admit operations that amplify increasingly fine features without bound. On differentiable functions with the supremum norm, consider fₙ(x)=sin(nx)/n on [0,2π]. The functions approach zero uniformly, yet their derivatives cos(nx) have supremum norm 1.",
+          "Differentiation is therefore not continuous with respect to that input and output norm. Its domain also matters: not every continuous function is differentiable. Choosing a different space or graph norm can make a related operator well behaved. A finite matrix approximation can conceal these domain and convergence obligations."
+        ]
       },
       {
         "id": "MATH-CURI-count-many",
@@ -255,7 +303,11 @@
           "math-t-0283"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A combinatorial object often has a small state sufficient to decide which continuations remain possible. Counting strings without consecutive ones requires remembering only the last bit, not every prefix. A dynamic program counts objects by merging prefixes that have identical future possibilities.",
+          "Another route is to count in two ways, or subtract overlapping forbidden conditions using inclusion–exclusion. The generative question is which distinctions the problem actually needs. If a new restriction depends on the last three symbols, the state representation must grow, but it may still be exponentially smaller than the population of complete strings."
+        ]
       },
       {
         "id": "MATH-CURI-labels",
@@ -270,7 +322,11 @@
           "math-t-0252"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "If a count treats two red balls as distinct labeled objects, exchanging them creates another arrangement. If they are indistinguishable, the exchange changes nothing. With n positions and multiplicities n₁,…,nₖ, the number of arrangements is n!/(n₁!···nₖ!) because each distinct arrangement has exactly that many labelings.",
+          "But when equivalence depends on a symmetry of the arrangement itself, equal multiplicities need not imply equal orbit sizes. For necklaces and geometric patterns, stabilizers matter. Before dividing a count, identify exactly which permutations preserve the object and whether every equivalence class has the same number of representatives."
+        ]
       },
       {
         "id": "MATH-CURI-automaton",
@@ -326,7 +382,11 @@
           "math-t-0326"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "Two vertices can be connected by many paths that all pass through one narrow bridge. Counting paths exaggerates resilience. Edge-disjoint paths share no edges; internally vertex-disjoint paths share no intermediate vertices. These express different failure models.",
+          "Menger's theorem links the maximum number of disjoint paths to the minimum size of a separating cut (with the appropriate edge or vertex formulation). For unit-capacity edges this can be approached through max flow. Rather than enumerate routes, find the smallest obstruction whose removal would destroy connectivity."
+        ]
       },
       {
         "id": "MATH-CURI-treewidth",
@@ -341,7 +401,11 @@
           "math-t-0345"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A graph with a million vertices arranged in a tree can support many dynamic programs efficiently because each branch communicates with the rest through a small separator. A smaller dense graph may require tracking decisions about many vertices simultaneously.",
+          "A tree decomposition organizes vertices into overlapping bags, with edges covered and occurrences of each vertex forming a connected subtree. Treewidth measures the smallest possible maximum bag size minus one. For problems such as graph coloring, a dynamic program can enumerate states inside a bag and combine compatible subtrees. Complexity can be exponential in treewidth rather than total vertex count."
+        ]
       },
       {
         "id": "MATH-CURI-primes",
@@ -355,7 +419,11 @@
           "math-t-0207"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "The prime number theorem says π(x)~x/log x, meaning the ratio of the number of primes up to x to x/log x approaches one as x grows. Near a large x, primes have an average density roughly 1/log x, not a regular spacing.",
+          "For x=10⁹, x/log x is about 48.3 million. This is an approximation, not a primality test or an exact count. The logarithmic integral improves estimates in many ranges, while proving explicit error bounds is a deeper question. The striking fact is that an irregular arithmetic property has a predictable large-scale distribution."
+        ]
       },
       {
         "id": "MATH-CURI-approx-rational",
@@ -371,7 +439,11 @@
           "math-t-0225"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A rational approximation p/q is interesting when its error is small relative to the denominator, not merely when it has many digits. Continued fractions repeatedly extract an integer part and invert the remainder, yielding convergents that often approximate a number extraordinarily well for their denominator.",
+          "For π, 22/7 has error about 0.00126, while 355/113 has error about 2.7×10⁻⁷. This structure matters when implementing a nearly irrational gear ratio or clock division using integers. Better approximation can reduce drift but require larger counters or mechanical components."
+        ]
       },
       {
         "id": "MATH-CURI-limit-integral",
@@ -387,7 +459,11 @@
           "math-t-0470"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "Consider fₙ(x)=n on 0<x<1/n and zero elsewhere on [0,1]. At every fixed x, fₙ eventually becomes zero, so its pointwise limit is zero. But every integral equals one: the mass becomes taller and narrower rather than disappearing.",
+          "The dominated convergence theorem excludes this failure if the functions converge almost everywhere and share an integrable dominating function. Pointwise convergence alone controls individual locations but not how total mass moves. When replacing a continuous model by increasingly concentrated approximations, check whether the limiting operation preserves the quantity you care about."
+        ]
       },
       {
         "id": "MATH-CURI-uniform",
@@ -402,7 +478,11 @@
           "math-t-0424"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "The functions fₙ(x)=xⁿ on [0,1] are continuous and converge pointwise to zero for x<1 and to one at x=1. Their limit is discontinuous. Each fixed point eventually settles, but the transition region near 1 becomes narrower and never disappears uniformly.",
+          "Uniform convergence means a single N works for all x once the error tolerance is chosen. It lets continuity pass to the limit because we can bound the difference between f and one continuous approximant everywhere at once. Pointwise convergence may be sufficient for some tasks, but it gives no global error guarantee on a whole interval."
+        ]
       },
       {
         "id": "MATH-CURI-complete",
@@ -417,7 +497,11 @@
           "math-t-0375"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A sequence of rational approximations to √2 becomes arbitrarily close to itself: for sufficiently late terms, all pairs differ by as little as we like. Yet its limit is not rational. The rational numbers contain a Cauchy sequence whose required limit lies outside their space.",
+          "Completeness says that every Cauchy sequence has a limit inside the metric space. Completing ℚ gives ℝ, and completing spaces of functions produces objects such as L² equivalence classes. This is not merely adding missing points; it can make iterative approximation and existence arguments valid in the representation in which we work."
+        ]
       },
       {
         "id": "MATH-CURI-fp",
@@ -433,7 +517,11 @@
           "math-t-0442"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "Suppose xₙ₊₁=cos xₙ starting in [0,1]. The map sends that interval into itself and its derivative has magnitude at most sin(1)<1 there. It brings any two inputs closer together by a uniform factor, so iterates cannot sustain two distinct fixed points.",
+          "On a complete metric space, a contraction that maps the space to itself has exactly one fixed point, and repeated application converges to it. The rate bound depends on the contraction factor. Iteration alone is not a guarantee: x↦2x has a fixed point but drives most initial values away. This distinction turns convergence from a hope into a checkable condition."
+        ]
       },
       {
         "id": "MATH-CURI-integrable",
@@ -449,7 +537,11 @@
           "math-t-0430"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "The indicator of the rationals on [0,1] equals one at rational points and zero at irrational points. Every interval contains both, so every ordinary Riemann upper sum is one and lower sum zero. Yet the rationals are countable and have Lebesgue measure zero.",
+          "Lebesgue integration measures sets on which function values occur, rather than requiring local oscillation to shrink on domain partitions. The indicator has integral zero in that theory. This is not a contradiction: the integration methods have different admissibility conditions. The broader representation is especially useful for limits of functions and probability distributions."
+        ]
       },
       {
         "id": "MATH-CURI-unbounded",
@@ -465,7 +557,11 @@
           "math-t-0530"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "Let P be the space of polynomials on [0,1] with the supremum norm, and define T(p)=p′. T is perfectly linear. But pₙ(x)=xⁿ/n has norm 1/n while its derivative x^(n−1) has norm one, so T does not take inputs approaching zero to outputs approaching zero.",
+          "A bounded linear operator satisfies ||Tx||≤C||x|| for one finite constant C, which is equivalent to continuity. The example shows why the chosen norm and operator domain are essential. Differentiation can be controlled by a norm that also measures derivatives; changing the metric changes the continuity claim."
+        ]
       },
       {
         "id": "MATH-CURI-holes",
@@ -480,7 +576,11 @@
           "math-t-0399"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "Imagine a loop on a circle. Its winding number cannot change under a continuous deformation within the circle: a loop that winds once cannot be shrunk to a point without leaving the space. This turns a visual idea into an invariant.",
+          "The fundamental group records loops up to deformation, with concatenation as its operation. A circle has fundamental group ℤ, while a disk is simply connected because its interior fills the hole. Homology records related but different information in higher dimensions. An invariant can distinguish shapes without coordinates or pictures."
+        ]
       },
       {
         "id": "MATH-CURI-compact",
@@ -496,7 +596,11 @@
           "math-t-0498"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "In ℝⁿ a closed bounded set is compact. But in an infinite-dimensional Hilbert space, the closed unit ball contains the orthonormal sequence e₁,e₂,…; distinct terms are distance √2 apart. No subsequence is Cauchy, let alone convergent.",
+          "Compactness in a metric space guarantees every sequence has a convergent subsequence within the space. Finite-dimensional boundedness supplies a finite covering property at any fixed resolution; infinite dimensions can contain endlessly many separated directions inside a bounded ball. The theorem depends on dimension, not just the words closed and bounded."
+        ]
       },
       {
         "id": "MATH-CURI-sphere",
@@ -511,7 +615,11 @@
           "math-t-0626"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "An inhabitant of a sphere can detect curvature without seeing it from outside. Draw a triangle from the north pole down two meridians to the equator and along a quarter of the equator. All three angles can be 90°, unlike a planar triangle.",
+          "Gaussian curvature is intrinsic: it can be determined from the metric measured on the surface. A cylinder bends in three-dimensional space but is locally intrinsically flat; a sphere cannot be flattened without distorting distances. This explains why map projection inevitably sacrifices some combination of lengths, areas or angles."
+        ]
       },
       {
         "id": "MATH-CURI-straight",
@@ -526,7 +634,11 @@
           "math-t-0620"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A geodesic is the curved-space counterpart of motion that is locally straight under the given metric. On a sphere, great-circle arcs are geodesics. A small circle of constant latitude other than the equator is not, even if a map makes it look horizontal.",
+          "Geodesics locally extremize length and satisfy equations determined by the metric; they need not remain globally shortest. A great circle continued beyond the antipodal point is still a geodesic but is no longer the shortest route between its endpoints. The geometry determines straightness, not the appearance in a coordinate chart."
+        ]
       },
       {
         "id": "MATH-CURI-holomorphic",
@@ -541,7 +653,11 @@
           "math-t-0556"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "For a real function, differentiability tests a limit from two directions along a line. In the complex plane the difference quotient must approach the same complex number from every direction. Writing f=u+iv, this forces relations uₓ=vᵧ and uᵧ=−vₓ where differentiable.",
+          "These Cauchy–Riemann relations are only a beginning: holomorphic functions on an open region are analytic there, admitting local power series, and their real and imaginary parts are harmonic. A tiny local condition controls much more global structure than ordinary real differentiability. The complex conjugation map is smooth as a real map but fails complex differentiability everywhere."
+        ]
       },
       {
         "id": "MATH-CURI-residue",
@@ -556,7 +672,11 @@
           "math-t-0563"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "The integral of 1/z around a circle enclosing zero is 2πi, while the integral of zᵏ is zero for every other integer exponent k. In a Laurent expansion, the coefficient of 1/z therefore isolates the contribution of a singularity.",
+          "For example, integrating 1/(1+x²) over the real line can be completed by a large semicircle in the upper half-plane. The arc contribution tends to zero, and the enclosed simple pole at i has residue 1/(2i), yielding π. The trick works because analytic structure relates a difficult integral along a path to a few local coefficients; the contour and decay assumptions matter."
+        ]
       },
       {
         "id": "MATH-CURI-prob-vs-data",
@@ -572,7 +692,11 @@
           "math-t-0690"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A probability model specifies how observations would be generated under assumptions, such as independent Bernoulli trials with parameter p. A dataset is one realized sample. The model assigns probabilities to possible data; it does not automatically say how likely the model itself is after observing that data.",
+          "If a coin lands heads eight times in ten, several values of p remain plausible. Compare the likelihood of the data under alternatives, consider how the sample was obtained, and check whether independence is reasonable. Model choice, parameter estimation and validation are separate problems."
+        ]
       },
       {
         "id": "MATH-CURI-independence",
@@ -587,7 +711,11 @@
           "math-t-0643"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "Drawing a red card from a deck changes the fraction of red cards remaining if you do not replace it. The conditional probability of a second red is 25/51 after a red first draw, rather than 26/52. The first observation changes the next sampling distribution.",
+          "Independence requires P(A∩B)=P(A)P(B), not merely that events happen on separate occasions. Sampling without replacement introduces dependence and reduces some sampling variances. For a tiny sample from a huge population, the independent model can be a useful approximation; for a large sampling fraction it can misrepresent uncertainty."
+        ]
       },
       {
         "id": "MATH-CURI-markov",
@@ -602,7 +730,11 @@
           "math-t-0681"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A two-state chain might remain in its current state with probability 0.9 and switch with probability 0.1. Starting in state A, the difference between its state distribution and the balanced distribution shrinks by a factor 0.8 each step. Memory of the starting state fades geometrically.",
+          "A finite irreducible, aperiodic Markov chain has a unique stationary distribution and converges to it. But a deterministic alternation between two states is irreducible and periodic: it has a stationary distribution while its actual distribution oscillates. Stationarity and convergence are different properties, and slow mixing can make asymptotic statements practically irrelevant."
+        ]
       },
       {
         "id": "MATH-CURI-estimate",
@@ -617,7 +749,11 @@
           "math-t-0705"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "An estimate is a random quantity because it depends on a random sample. A sample mean from independent identically distributed observations has variance σ²/n, so increasing sample size typically reduces its random error. But systematic sampling bias does not necessarily shrink with n.",
+          "Evaluate an estimator by bias, variance, uncertainty intervals and sensitivity to model assumptions. Repeated sampling or appropriate simulation can reveal its distribution; validation on new data tests some forms of generalization. A precise estimate of the wrong population is still wrong."
+        ]
       },
       {
         "id": "MATH-CURI-sufficient",
@@ -633,7 +769,11 @@
           "math-t-0703"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "For n independent Bernoulli observations with success probability p, the likelihood is p^s(1−p)^(n−s), where s is the number of successes. The order of successes and failures contributes no additional information about p under this model. The count is a sufficient statistic.",
+          "This is a strong form of compression: retain only what changes the likelihood for the parameter. If the probability changes over time, the order may suddenly matter. Sufficiency is a contract between a statistic, a model and a parameter, not a universal declaration that all discarded data are irrelevant."
+        ]
       },
       {
         "id": "MATH-CURI-pvalue",
@@ -649,7 +789,11 @@
           "math-t-0721"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A p-value is calculated under a specified null model: it measures the probability of a test statistic at least as incompatible with that model as the observed one, according to the chosen test. It is not the posterior probability that the null hypothesis is true.",
+          "Imagine testing 100 independent true null hypotheses at a 5% significance threshold. On average five may appear significant. The meaning of a low p-value changes when many tests are tried or the analysis is selected after looking at the data. Effect size, study design and uncertainty matter; a probability about a hypothesis needs additional modeling."
+        ]
       },
       {
         "id": "MATH-CURI-transplant",
@@ -664,7 +808,11 @@
           "math-t-0021"
         ],
         "question_type": "transfer",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "An inverse of a bijective function undoes a map on elements; a matrix inverse undoes a linear map; a group inverse undoes composition with a single element. They share a compositional identity but operate on different objects and require different conditions.",
+          "A left inverse need not be a right inverse in infinite settings. The unilateral shift on sequences is injective but not surjective; shifting back after shifting forward recovers the original, while shifting forward after shifting back can lose a coordinate. This exposes where an analogy transfers and where finite-dimensional assumptions were doing hidden work."
+        ]
       },
       {
         "id": "MATH-CURI-topo-algebra",
@@ -680,7 +828,11 @@
           "math-t-0370"
         ],
         "question_type": "transfer",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A quotient group identifies elements differing by a normal subgroup and defines multiplication on the resulting classes. A quotient topology starts with an equivalence relation and defines a topology on the classes: a set is open exactly when its preimage under the quotient map is open.",
+          "Both constructions deliberately forget distinctions and preserve a universal mapping property appropriate to their category. But arbitrary equivalence relations do not support group multiplication, and an algebraic quotient need not preserve a desired topological property. Identifying the two ends of an interval makes a circle; identifying elements modulo 12 makes a cyclic group. The shared operation is identification, not an identical theorem."
+        ]
       },
       {
         "id": "MATH-CURI-local-global",
@@ -696,13 +848,19 @@
           "math-t-0401"
         ],
         "question_type": "transfer",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "On a curved surface, curvature can be measured in arbitrarily small neighborhoods. Yet the Gauss–Bonnet theorem relates integrated Gaussian curvature, together with boundary terms when present, to the surface's Euler characteristic. For a closed oriented surface, the integral is 2πχ.",
+          "A sphere has χ=2, giving total curvature 4π regardless of its smooth deformation that preserves topology. A torus has χ=0: positive and negative curvature can cancel. This is remarkable because a local differential quantity constrains a global topological invariant. Local observations alone need not determine global structure, but some relationships force them to agree."
+        ]
       },
       {
         "id": "MATH-CURI-operator",
         "family_id": "transfer",
-        "question": "Which reusable operations cut across these fourteen books?",
-        "aliases": [],
+        "question": "Why can changing a problem's representation make it so much easier to solve?",
+        "aliases": [
+          "Which reusable operations cut across these fourteen books?"
+        ],
         "bridge_ids": [
           "TRANSFER"
         ],
@@ -711,7 +869,11 @@
           "math-t-0745"
         ],
         "question_type": "transfer",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "Many hard problems become simple after changing their representation. A recurrence can become matrix multiplication, a convolution can become multiplication after a Fourier transform, and counting configurations can become counting symmetry orbits. The transformation is useful when it preserves the quantity we care about while making the expensive operation cheap.",
+          "The important question is what the representation forgets or requires. Fourier diagonalization assumes an appropriate function space and boundary conditions; quotienting may discard distinctions that a later operation needs. A reusable mathematical strategy is to identify the invariant, choose the representation in which it becomes simple, and check whether the original problem can be recovered."
+        ]
       },
       {
         "id": "MATH-CURI-counterexample",
@@ -727,8 +889,12 @@
           "math-t-0786"
         ],
         "question_type": "verification",
-        "task_scope": "capability_family",
-        "success_criterion": "Given a proposed claim, identify its assumptions, construct a concrete counterexample to an unjustified generalization, and verify precisely which assumption or conclusion fails."
+        "task_scope": "conceptual",
+        "success_criterion": "Given a proposed claim, identify its assumptions, construct a concrete counterexample to an unjustified generalization, and verify precisely which assumption or conclusion fails.",
+        "answer": [
+          "A plausible theorem can fail because a hidden assumption was used during its derivation. To find that assumption, keep the conclusion false while weakening one condition at a time. The sequence xⁿ on [0,1] disproves preservation of continuity under pointwise limits; it does not disprove the corresponding uniform convergence theorem.",
+          "Counterexamples become more useful when they are discriminating rather than merely strange. A finite-dimensional theorem may fail in an infinite-dimensional unit ball because boundedness no longer guarantees finite coverings. Construct the smallest case that preserves the mechanism of failure, then use it to formulate a more accurate theorem."
+        ]
       },
       {
         "id": "MATH-CURI-normal-word",
@@ -745,7 +911,11 @@
           "math-t-0097"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A normal subgroup is invariant under conjugation, allowing multiplication of cosets to be well-defined. A normal operator commutes with its adjoint, giving important spectral structure. A normal probability distribution has a particular Gaussian density. The shared English word is not a shared mathematical definition.",
+          "Some historical or structural analogies exist, but transporting a theorem requires matching the objects and hypotheses, not matching their names. A glossary can reveal recurring ideas while the actual mathematical contract determines which reasoning is legitimate."
+        ]
       },
       {
         "id": "MATH-CAP-sets-operations",
@@ -1552,6 +1722,128 @@
         "worked_solution": [
           "Send two units S→A→T, three S→B→T and one S→A→B→T. Delivery is six; the cut before T has capacity 2+4=6, proving optimality. Increasing S→A cannot overcome that cut.",
           "Increasing A→T by one permits a seventh unit along S→A→T; the source cut then certifies the new optimum seven. In general, reachable vertices of the residual graph identify a minimum cut. Multiple minimum cuts can make a single upgrade ineffective."
+        ]
+      },
+      {
+        "id": "MATH-TACIT-network-observability",
+        "family_id": "structures",
+        "question": "Can I recover all the currents in a circuit from only a few measurements?",
+        "aliases": [],
+        "bridge_ids": [
+          "LINEAR"
+        ],
+        "term_ids": [
+          "math-t-0066",
+          "math-t-0064"
+        ],
+        "question_type": "design",
+        "task_scope": "specified_instance",
+        "applied_challenge": true,
+        "answer": [
+          "A three-branch network has unknown currents x,y,z. Measurements imply x+y=5 and y+z=7 amperes. You can make one further linear measurement. Determine what is identifiable now, and choose a measurement that uniquely recovers the currents."
+        ],
+        "worked_solution": [
+          "The equations give (x,y,z)=(5−t,t,7−t) with free parameter t. The invisible direction is (−1,1,−1), in the kernel of the measurement matrix. Any added measurement whose coefficient vector is orthogonal to this direction is redundant, even if its numerical value looks new.",
+          "Measuring x+2y+z gives 12 for every solution, so it cannot identify t. Measuring x+z gives 12−2t and resolves the ambiguity; if it equals 6 then t=3 and (x,y,z)=(2,3,4). Rank and null space reveal exactly which physical changes the measurements cannot distinguish.",
+          "With noisy data, an invertible system can still be poorly conditioned. Compare the smallest singular value for several possible measurement choices and propagate measurement error. The same reasoning applies to reconstructing hidden states, calibrating sensors and identifying parameters."
+        ]
+      },
+      {
+        "id": "MATH-TACIT-iterative-solver",
+        "family_id": "continuous",
+        "question": "Can I stop an iterative computation when its remaining error is small enough, without knowing the answer?",
+        "aliases": [],
+        "bridge_ids": [
+          "CONTINUOUS",
+          "PROOF"
+        ],
+        "term_ids": [
+          "math-t-0518",
+          "math-t-0442"
+        ],
+        "question_type": "design",
+        "task_scope": "specified_instance",
+        "applied_challenge": true,
+        "answer": [
+          "A controller computes a target by repeatedly applying g(x)=0.3x+0.7cos(x) on [0,1]. You need absolute error at most 10⁻⁴. Establish whether a fixed point is guaranteed, then derive a stopping rule that only uses consecutive iterates."
+        ],
+        "worked_solution": [
+          "The map sends [0,1] into itself: its output is positive and at most 0.3+0.7=1. Its derivative is 0.3−0.7sin(x), between about −0.289 and 0.3. Thus a valid contraction factor is q=0.3. Completeness of the interval gives a unique fixed point and convergence from every initial point there.",
+          "If xₙ=g(xₙ₋₁), the remaining error is bounded by q/(1−q)·|xₙ−xₙ₋₁|. The factor comes from summing the geometric bound on all future steps. Stop once the measured step is at most (1−q)/q·10⁻⁴ ≈ 2.33×10⁻⁴. A small step without a contraction or another certificate is not generally evidence of closeness.",
+          "If the controller is changed so the derivative bound exceeds one, the proof no longer applies even if several runs still converge. Analyze the local behavior or find a smaller invariant interval rather than silently reusing the old guarantee. Roundoff also needs to fit inside the error budget."
+        ]
+      },
+      {
+        "id": "MATH-TACIT-surface-mapping",
+        "family_id": "space",
+        "question": "Can I build a map of a curved surface without pretending its distances are flat?",
+        "aliases": [],
+        "bridge_ids": [
+          "SPACE"
+        ],
+        "term_ids": [
+          "math-t-0613",
+          "math-t-0626"
+        ],
+        "question_type": "design",
+        "task_scope": "specified_instance",
+        "applied_challenge": true,
+        "answer": [
+          "A small rover moves on a sphere of radius 10 m. Three waypoints are the north pole and two equator points separated by 90° longitude. Compute the shortest distances along the surface and the triangle's angular excess; explain why a flat distance-preserving map cannot represent this region."
+        ],
+        "worked_solution": [
+          "Each pair is separated by central angle π/2, so all three great-circle distances are 5π m, about 15.71 m. The two meridians meet orthogonally at the pole, and each meets the equator at a right angle. The angle sum is 3π/2, exceeding the planar value by π/2.",
+          "The spherical triangle area is R² times angular excess, so it is 50π m². A flat Euclidean triangle with the same three side lengths has 60° angles, not 90°. The discrepancy is intrinsic curvature, not a bad choice of drawing coordinates. A map can preserve selected properties, but not all of these lengths and angles on an open region.",
+          "Represent waypoint positions using unit vectors and compute geodesic distance as R·arccos(u·v), with numerical care near coincidence. For local navigation use an appropriate chart and quantify the distortion over its working region. This ideal sphere example explains what breaks when a planar planning model is extended too far."
+        ]
+      },
+      {
+        "id": "MATH-TACIT-detection-inference",
+        "family_id": "random",
+        "question": "Can I tell whether a defect detector's impressive accuracy makes its alarms useful?",
+        "aliases": [],
+        "bridge_ids": [
+          "RANDOM"
+        ],
+        "term_ids": [
+          "math-t-0708",
+          "math-t-0705"
+        ],
+        "question_type": "design",
+        "task_scope": "specified_instance",
+        "applied_challenge": true,
+        "answer": [
+          "A production line has 1% defective parts. A detector flags 95% of defects and falsely flags 2% of good parts. Estimate the proportion of alarms that indicate real defects. Then decide what would happen if the defect rate falls to 0.1%, and design an evaluation that can detect the change."
+        ],
+        "worked_solution": [
+          "For 10,000 parts at 1% prevalence, expect 95 true alarms and 198 false ones. Bayes' rule gives 95/(95+198)≈32.4% real defects among alarms. At 0.1%, expected counts become 9.5 and 199.8, so the fraction falls to about 4.5%. A test with fixed sensitivity and specificity can become much less useful when its deployment population changes.",
+          "Measure sensitivity and false-positive rate on labeled samples, then estimate actual prevalence from representative production data. Artificially balancing the evaluation set can help estimate sensitivity but cannot directly estimate deployment precision. Consider uncertainty in all three rates; rare defects need sufficient samples to obtain useful estimates.",
+          "Choose an intervention based on the cost of missed defects versus false inspection, not accuracy alone. A second independent test could improve posterior odds, but conditional dependence between detectors must be measured. This is a model-based design for evaluation, not a measured production result."
+        ]
+      },
+      {
+        "id": "MATH-TACIT-configuration-count",
+        "family_id": "structures",
+        "question": "How many genuinely different designs can I make if rotating the product does not change it?",
+        "aliases": [],
+        "bridge_ids": [
+          "STRUCTURE",
+          "DISCRETE"
+        ],
+        "term_ids": [
+          "math-t-0120",
+          "math-t-0121"
+        ],
+        "question_type": "design",
+        "task_scope": "specified_instance",
+        "applied_challenge": true,
+        "answer": [
+          "A circular indicator has six equally spaced slots, each red or blue, with exactly three red. Two patterns are equivalent if related by rotation; reflections remain distinct. Count the designs without enumerating all patterns, and explain why dividing 20 by six fails."
+        ],
+        "worked_solution": [
+          "There are binomial(6,3)=20 labeled patterns. For a rotation by k slots, the permutation consists of gcd(6,k) cycles of length 6/gcd(6,k). A fixed coloring must color each entire cycle alike. To have exactly three red slots, the cycle length must divide three.",
+          "Identity fixes 20. Rotations by one or five have a single length-six cycle and fix none. Rotations by two or four have two length-three cycles, so choosing one red fixes two patterns each. Rotation by three has three length-two cycles, incompatible with three red slots. Burnside's lemma gives (20+0+2+0+2+0)/6=4.",
+          "The naive division fails because periodic patterns have smaller orbits. To extend to more colors, count fixed assignments to cycles with the required multiplicities; to identify reflections too, include the dihedral group's reflection permutations. A short enumeration of all 64 binary patterns can independently check the result, while the cycle method scales to larger configurations."
         ]
       }
     ],
