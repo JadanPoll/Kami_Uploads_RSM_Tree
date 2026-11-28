@@ -2,7 +2,7 @@
   "id": "electronics-engineering",
   "kind": "canonical_research_corpus",
   "title": "Electronics engineering — circuits, signal integrity and power conversion",
-  "updated": "2026-11-22",
+  "updated": "2026-11-27",
   "status": "three-book-indexed; selected source passages inspected; practical hardware demonstrations not reproduced",
   "question": "How do we move from an electronic idea or schematic to a stable, measurable, safe, physically working system?",
   "purpose": "Unite everyday circuit curiosities with source-backed mechanism explanations, alternatives, and durable electronics book retrieval without repeated TOC indexing.",
@@ -7392,7 +7392,11 @@
           "elec-t-0080"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A MOSFET can use a voltage at its gate to alter the conductivity of a channel between source and drain. The small input signal does not supply the load's power; it controls how energy from a separate supply reaches the load. This is why a microcontroller pin can control a motor it cannot directly power.",
+          "Choose the transistor for the available gate voltage, load current and switching conditions, not just its threshold voltage. An inductive load also stores energy that needs somewhere to go when current is interrupted. The same switch can be electrically correct and still fail because of heating or transient voltage."
+        ]
       },
       {
         "id": "ELEC-CURI-amplifier",
@@ -7410,7 +7414,11 @@
           "elec-t-0018"
         ],
         "question_type": "design",
-        "task_scope": "open_goal"
+        "task_scope": "open_goal",
+        "answer": [
+          "A sensor may produce a few millivolts while an ADC needs a much larger signal. An amplifier can use negative feedback to establish a predictable gain: in the ideal noninverting circuit, G=1+Rf/Rg. The feedback makes the gain depend primarily on resistor ratios instead of the amplifier's enormous and variable open-loop gain.",
+          "But amplification also magnifies unwanted signals, and the circuit has finite input range, bandwidth, offset and output swing. A differential amplifier can reject voltage common to both sensor leads. Start with the signal's range and bandwidth, the noise you can tolerate and the ADC's constraints; a higher gain is not necessarily a better measurement."
+        ]
       },
       {
         "id": "ELEC-CURI-regulate",
@@ -7430,7 +7438,11 @@
           "elec-t-0466"
         ],
         "question_type": "design",
-        "task_scope": "open_goal"
+        "task_scope": "open_goal",
+        "answer": [
+          "A regulator compares a scaled version of its output to a reference. When a load pulls the output down, the error increases and the regulator delivers more energy. The feedback loop seeks a balance at which the sensed voltage matches the reference.",
+          "During a sudden load increase, the output capacitor initially supplies the missing current while the control loop responds. Its capacitance, series resistance and the regulator's bandwidth determine the transient. Regulation is therefore both a steady-state accuracy problem and a dynamic energy-delivery problem."
+        ]
       },
       {
         "id": "ELEC-CURI-convert",
@@ -7449,7 +7461,11 @@
           "elec-t-0444"
         ],
         "question_type": "design",
-        "task_scope": "open_goal"
+        "task_scope": "open_goal",
+        "answer": [
+          "A switching converter alternates between circuit configurations rather than dissipating the entire voltage difference in a pass transistor. An ideal buck converter alternately connects an inductor to the input and a lower-voltage path, so its average output is approximately D·Vin in continuous conduction. A boost converter stores energy in an inductor and then adds its voltage to the supply while releasing that energy to the output.",
+          "For an ideal continuous-conduction boost, Vout=Vin/(1−D). These relations come from the inductor needing zero net change in current over a steady cycle. Real converters have switching losses, current limits, ripple and control constraints; duty cycle is only one variable in a viable power design."
+        ]
       },
       {
         "id": "ELEC-CURI-supply",
@@ -7467,7 +7483,11 @@
           "elec-t-0388"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A chip can change its current demand much faster than a distant supply can respond through wires and PCB traces. Even a small inductance creates a voltage drop L·di/dt during rapid current changes. A nearby capacitor supplies some of that current through a short local loop.",
+          "Capacitance alone is not enough: mounting inductance, series resistance and the path through the ground plane determine how well the capacitor works at high frequency. A large capacitor farther away can supply slower changes, while smaller local capacitors and careful layout handle fast ones."
+        ]
       },
       {
         "id": "ELEC-CURI-analog-compute",
@@ -7509,7 +7529,11 @@
           "elec-t-0419"
         ],
         "question_type": "diagnosis",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A linear regulator converting 12 V to 5 V at 0.5 A dissipates roughly (12−5)·0.5=3.5 W. If the thermal resistance to ambient is 50 °C/W, the idealized temperature rise is 175 °C: the electrical specification can be satisfied while the thermal design is impossible.",
+          "Measure the actual input, output and load current, estimate losses, and compare the package and board's thermal path with its limits. A switch-mode converter may remove most of the voltage-drop loss, but it introduces switching and layout constraints. Thermal shutdown is protection, not a normal operating mode."
+        ]
       },
       {
         "id": "ELEC-CURI-noisy",
@@ -7527,7 +7551,11 @@
           "elec-t-0018"
         ],
         "question_type": "diagnosis",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "Connecting a sensor can create a new current path, change the amplifier's source impedance or bring in interference through a long cable. The amplifier's input voltage noise, current noise acting on source resistance, and pickup in the wiring then contribute differently.",
+          "Short the input locally with an appropriate impedance and compare it with the attached sensor. Change cable routing and inspect the frequency content. A peak at mains frequency suggests a different intervention than broad thermal noise or a narrow oscillation. Avoid treating all unwanted voltage as one noise source."
+        ]
       },
       {
         "id": "ELEC-CURI-oscillates",
@@ -7546,7 +7574,11 @@
           "elec-t-0120"
         ],
         "question_type": "diagnosis",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "Negative feedback subtracts an error at low frequency, but a real amplifier and load add phase lag. At some frequency the returned signal can be effectively in phase with the original disturbance; if loop gain is still sufficiently high, the disturbance grows rather than dies out.",
+          "The loop's gain and phase margins describe this tendency in a linearized model. A capacitive load, slow sensing path or poorly chosen compensation can change them. Observe the response to a small step and compare oscillation with output saturation and supply behavior; increasing gain can make an otherwise accurate circuit unstable."
+        ]
       },
       {
         "id": "ELEC-CURI-droops",
@@ -7567,7 +7599,11 @@
           "elec-t-0388"
         ],
         "question_type": "diagnosis",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "When a processor demands a step in current, an inductor cannot change current instantaneously. The local capacitance supplies the difference; ideally ΔV≈ΔI·Δt/C, with an additional immediate drop from series resistance. The power network must then replenish that energy.",
+          "For a 1 A step lasting 10 µs before the supply catches up, 100 µF would lose about 0.1 V from charge alone. Real distributed capacitance and path inductance alter the waveform. A slow voltage measurement may completely miss the transient that resets the processor."
+        ]
       },
       {
         "id": "ELEC-CURI-wrong-way",
@@ -7584,7 +7620,11 @@
           "elec-t-0406"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "In a continuous-conduction boost converter, increasing duty cycle initially keeps the switch on longer and delays energy delivery to the output. The inductor eventually builds more current, increasing the output, but at first the output capacitor supplies the load for longer.",
+          "This inverse initial response appears as a right-half-plane zero in the small-signal duty-to-output transfer function. It limits achievable feedback bandwidth: demanding a very fast output correction can cause instability. Buck and boost converters can have very different dynamics even when their steady-state voltage equations look similarly simple."
+        ]
       },
       {
         "id": "ELEC-CURI-light-load",
@@ -7601,7 +7641,11 @@
           "elec-t-0480"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A converter designed around continuous inductor current may reach zero current between switching cycles at light load. The topology then enters discontinuous conduction and its voltage relation depends on load and inductance as well as duty cycle.",
+          "Many controllers also skip pulses or enter burst modes to reduce switching loss. This can improve efficiency but introduce larger low-frequency ripple or audible noise. Measure both light-load consumption and output waveform; a different mode is not automatically a malfunction."
+        ]
       },
       {
         "id": "ELEC-CURI-transformer",
@@ -7619,7 +7663,11 @@
           "elec-t-0428"
         ],
         "question_type": "diagnosis",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "Magnetic flux changes in response to applied volt-seconds. In a simplified winding, ΔB≈VΔt/(NA), where N is turns and A is core area. Too much volt-second imbalance or too few turns can drive a core into saturation, causing a large magnetizing current.",
+          "Increasing switching frequency can reduce flux excursion for fixed voltage and duty, yet increase core losses, switching losses and AC winding resistance. Diagnose heating by distinguishing saturation, copper loss, core loss and semiconductor loss. Frequency does not have a universally monotonic effect on temperature."
+        ]
       },
       {
         "id": "ELEC-CURI-scope",
@@ -7637,7 +7685,11 @@
           "elec-t-0234"
         ],
         "question_type": "diagnosis",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "An oscilloscope probe adds an electrical load, often modeled as resistance in parallel with capacitance. At high frequency even small capacitance can draw appreciable current. A long ground lead adds inductance and can create an artificial ringing circuit.",
+          "Compare a short ground spring or appropriate differential probe against the original setup, staying within the probe's ratings. Observe whether the waveform changes when the probing method changes. The instrument is a component in the circuit during measurement, not an invisible observer."
+        ]
       },
       {
         "id": "ELEC-CURI-truth",
@@ -7655,7 +7707,11 @@
           "elec-t-0439"
         ],
         "question_type": "empirical_investigation",
-        "task_scope": "open_goal"
+        "task_scope": "open_goal",
+        "answer": [
+          "A switching circuit can produce real ringing, but a probe loop can also intercept its magnetic field. A long ground lead and probe capacitance may generate a resonance that resembles a problem on the board.",
+          "Use a controlled low-voltage setup: compare short and long probe-ground connections, probe a nearby reference point, and vary switching speed or load. If the ringing changes mainly with probe geometry, pickup is implicated; if it follows circuit conditions under independent measurement, the circuit is a stronger candidate. Neither observation alone proves the complete mechanism."
+        ]
       },
       {
         "id": "ELEC-CURI-adc",
@@ -7673,7 +7729,11 @@
           "elec-t-0197"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A 12-bit ADC can represent 4096 nominal levels, but resolution is not accuracy. Quantization, reference error, input noise, offset, nonlinearity and incomplete settling can make successive codes unreliable or systematically wrong.",
+          "For a 3.3 V range, one nominal step is about 0.806 mV. If input noise is several millivolts, extra bits may mostly describe noise. Averaging independent zero-mean noise can improve precision, but cannot remove systematic gain or reference error. Test a stable input and a known varying input to distinguish these."
+        ]
       },
       {
         "id": "ELEC-CURI-model",
@@ -7691,7 +7751,11 @@
           "elec-t-0244"
         ],
         "question_type": "verification",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "SPICE solves the circuit model you supply, including its component models and assumptions. A simulation using an ideal voltage source, zero-inductance wiring and an ideal switch may miss exactly the physical mechanism that causes a board to fail.",
+          "Ask which predictions matter and which parameters could reverse them. Add realistic source resistance, component tolerances, switch parasitics or thermal effects when relevant. Compare predicted and measured waveforms at accessible boundaries. A simulation is useful when it discriminates between designs or diagnoses, not merely when it runs."
+        ]
       },
       {
         "id": "ELEC-CURI-edge",
@@ -7731,7 +7795,11 @@
           "elec-t-0337"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A signal edge can travel as a wave along a cable or trace. When it encounters a different impedance, some energy reflects. For a load ZL on a line of impedance Z0, the reflection coefficient is (ZL−Z0)/(ZL+Z0). An open end reflects with coefficient +1; a matched load ideally does not reflect.",
+          "Multiple reflections can create overshoot or repeated threshold crossings. Termination and controlled impedance address that mechanism, but inductive probing can mimic it. Compare the observed delay with the line's propagation time; ringing unrelated to that delay may have another cause."
+        ]
       },
       {
         "id": "ELEC-CURI-ground",
@@ -7748,7 +7816,11 @@
           "elec-t-0364"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A high-frequency signal's return current tends to follow a low-impedance path near its trace. A slot in the reference plane can force it to detour, enlarging the current loop and increasing inductance and electromagnetic coupling.",
+          "The trace may still connect electrically from pin to pin, while its return path has been badly disrupted. This is why moving a trace across a ground split can cause emissions or signal distortion without changing the schematic. Route signals over a continuous reference or provide an intentional return transition."
+        ]
       },
       {
         "id": "ELEC-CURI-crosstalk",
@@ -7767,7 +7839,11 @@
           "elec-t-0353"
         ],
         "question_type": "diagnosis",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "Changing voltage on one conductor creates an electric field that couples through mutual capacitance; changing current creates a magnetic field that couples through mutual inductance. A nearby high-impedance victim can therefore see a transient even though there is no intentional electrical connection.",
+          "Coupling grows with edge rate and shared routing geometry. More spacing, shorter parallel runs, continuous reference planes and suitable termination can help. Compare victim behavior with the aggressor's transition timing; a glitch synchronized to that edge offers a more specific hypothesis than generic noise."
+        ]
       },
       {
         "id": "ELEC-CURI-clock",
@@ -7784,7 +7860,11 @@
           "elec-t-0271"
         ],
         "question_type": "diagnosis",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A clock is a physical signal whose edges arrive at different locations at different times. Different path lengths, buffers, thresholds and loading introduce skew and jitter. Two chips that share a nominal frequency may therefore disagree about exactly when data is valid.",
+          "A synchronous interface needs its data to meet setup and hold requirements at the receiver. Slowing the frequency may help setup but need not fix hold violations. Measure or constrain both clock and data paths; for independently timed domains use a protocol that handles uncertainty rather than assuming edges coincide."
+        ]
       },
       {
         "id": "ELEC-CURI-via",
@@ -7802,7 +7882,11 @@
           "elec-t-0028"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A via or connector changes the geometry of a signal and its return path. At sufficiently fast edge rates, that discontinuity introduces impedance changes, capacitance or inductance, and a via stub can resonate.",
+          "A physically small feature can matter when its electrical delay is comparable to a transition time or when it interrupts a concentrated return path. Use the actual stackup and edge bandwidth to judge importance. A low-frequency schematic cannot express these spatial properties."
+        ]
       },
       {
         "id": "ELEC-CURI-isolate",
@@ -7819,7 +7903,11 @@
           "elec-t-0481"
         ],
         "question_type": "design",
-        "task_scope": "open_goal"
+        "task_scope": "open_goal",
+        "answer": [
+          "Isolation prevents a direct conductive connection between two electrical domains while permitting energy or information to cross through a transformer, optical link or other rated barrier. It can break ground loops and, in safety-critical equipment, prevent hazardous potentials from reaching accessible circuits.",
+          "Functional isolation and certified safety isolation are different obligations. The latter depends on voltage, transient environment, insulation, creepage, clearance and applicable standards. Do not infer safety from the presence of a transformer alone; use a properly rated module or qualified design review for hazardous voltages."
+        ]
       },
       {
         "id": "ELEC-CURI-efficiency",
@@ -7838,7 +7926,11 @@
           "elec-t-0444"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "Every conversion cycle moves energy through switches, magnetic components and capacitors. Conduction losses often scale with current squared; switching losses arise while voltage and current overlap during transitions; gate charging, core losses and controller consumption add other costs.",
+          "A converter can become less efficient at heavy load because of resistive loss and at light load because fixed overhead dominates useful output. Comparing input and output power over load gives an efficiency curve, while thermal measurements help locate where the missing energy goes. One peak-efficiency figure hides the operating landscape."
+        ]
       },
       {
         "id": "ELEC-CURI-digital",
@@ -7855,7 +7947,11 @@
           "elec-t-0558"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A digital controller samples voltage or current, computes a control action and updates a PWM output. It can change algorithms, log behavior and implement nonlinear modes without redesigning analog compensation components.",
+          "But sampling, ADC conversion, computation and PWM updates introduce quantization and delay. A continuous-time controller copied directly into software may be unstable if those delays are significant. Define the timing contract and use a model appropriate to the sampled system; hardware protection may still be needed for faults too fast for the software."
+        ]
       },
       {
         "id": "ELEC-CURI-magnetic",
@@ -7873,7 +7969,11 @@
           "elec-t-0480"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "An inductor stores magnetic energy approximately ½LI². Handling large currents or volt-seconds requires enough magnetic material, winding area and thermal capacity. Digital logic can perform many switching operations in tiny transistors without storing comparable macroscopic energy.",
+          "Higher switching frequency can reduce the inductance or core size required for a given ripple, but increases other losses. The size of magnetics is a consequence of power, field strength, allowable temperature and frequency—not an indication that the design has simply failed to miniaturize."
+        ]
       },
       {
         "id": "ELEC-CURI-ac",
@@ -7892,7 +7992,11 @@
           "elec-t-0051"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A diode bridge selects the polarity of the input so current through the load has one direction, but its output is still pulsating. A reservoir capacitor charges near the input peaks and supplies the load between them. Approximate ripple depends on current, capacitance and the interval between charging pulses.",
+          "Charging pulses can produce large peak currents and poor power factor even when average output current is modest. Rectification, filtering, regulation and isolation are separate functions. For mains-powered systems use appropriately rated certified supplies rather than treating a simple bridge schematic as a safe complete design."
+        ]
       },
       {
         "id": "ELEC-CURI-choose",
@@ -7911,7 +8015,11 @@
           "elec-t-0286"
         ],
         "question_type": "design",
-        "task_scope": "open_goal"
+        "task_scope": "open_goal",
+        "answer": [
+          "An op-amp implements a relationship continuously in electrical signals; a microcontroller samples and computes in software; an FPGA can implement many concurrent precisely timed operations in logic. All three can realize some filters, but differ in latency, bandwidth, precision, power and ease of change.",
+          "For a slowly changing sensor, an analog anti-alias filter and microcontroller may suffice. A multi-channel high-rate acquisition system may need FPGA timing and parallel processing, while analog circuitry still protects and conditions its inputs. Choose the boundary between mechanisms, not a favorite device for the entire system."
+        ]
       },
       {
         "id": "ELEC-CURI-sensor",
@@ -7929,7 +8037,11 @@
           "elec-t-0313"
         ],
         "question_type": "design",
-        "task_scope": "open_goal"
+        "task_scope": "open_goal",
+        "answer": [
+          "A sensor's output must match the receiving computer's electrical and timing contract. A voltage may need scaling, amplification, filtering and protection before reaching an ADC; a digital sensor may need a compatible voltage level and bus protocol.",
+          "For an analog input, compare source impedance with the ADC's acquisition requirements. A sampling capacitor can draw brief current pulses and fail to settle even when the sensor's static voltage is correct. Test known input values across range and sample rate; a plausible displayed number is not evidence of accurate acquisition."
+        ]
       },
       {
         "id": "ELEC-CURI-board",
@@ -7948,7 +8060,11 @@
           "elec-t-0058"
         ],
         "question_type": "decomposition",
-        "task_scope": "open_goal"
+        "task_scope": "open_goal",
+        "answer": [
+          "A breadboard demonstrates connectivity, but its wires, contacts and parasitics are part of the circuit. A PCB makes geometry repeatable and allows intentional return paths, local decoupling, thermal spreading and stable connectors.",
+          "Begin by defining the actual power, signal and mechanical interfaces. Place components according to current loops and sensitive paths, then route and check electrical rules. On the first board, verify rails and current consumption before enabling expensive loads; compare real signals with the prototype. A PCB can improve repeatability while introducing a new layout-specific failure."
+        ]
       },
       {
         "id": "ELEC-CURI-safe",
@@ -7967,7 +8083,11 @@
           "elec-t-0611"
         ],
         "question_type": "design",
-        "task_scope": "open_goal"
+        "task_scope": "open_goal",
+        "answer": [
+          "The ground clip on many bench oscilloscopes is connected to protective earth. Attaching it to a point that is not at earth potential can create an unintended short, damage equipment or expose the operator to hazardous energy.",
+          "For live hazardous circuits, use qualified personnel and equipment explicitly rated for the voltage and measurement category; use suitable isolation or differential measurement where required. Never defeat protective earth to make a reading. Practice measurement diagnosis on a current-limited low-voltage circuit first."
+        ]
       },
       {
         "id": "ELEC-CURI-confidence",
@@ -7986,7 +8106,11 @@
           "elec-t-0625"
         ],
         "question_type": "verification",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A device works under a particular set of conditions, not universally. A power supply that starts with no load may fail at load transients; a communication interface that works with a short cable may fail with realistic wiring; a prototype may overheat only after several minutes.",
+          "Define the use envelope, then test the conditions most likely to reveal consequential failures: load, supply, temperature, timing, tolerances and recovery. Observe internal quantities where they distinguish causes. A passing simulation, datasheet calculation and bench run support different parts of the claim."
+        ]
       },
       {
         "id": "ELEC-CURI-compatibility",
@@ -8005,7 +8129,11 @@
           "elec-t-0585"
         ],
         "question_type": "diagnosis",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A datasheet describes a component under stated conditions. A part with adequate nominal voltage and current ratings may still fail because of transient energy, temperature, gate drive, package thermal path or a difference in pinout and control behavior.",
+          "A replacement part should satisfy the interface and operating envelope, not just the headline rating. Compare the parameters that govern the actual circuit: for a MOSFET, for example, resistance at the available gate voltage, safe operating area and switching charge may matter more than the advertised threshold."
+        ]
       },
       {
         "id": "ELEC-CAP-buck-calculation",
@@ -8070,6 +8198,83 @@
         "worked_solution": [
           "With ideal source and high-impedance load, magnitude is 1/sqrt(1+(2πfRC)²). Attenuation requires RC ≥ sqrt(99)/(2π·1000) ≈ 1.58 ms. Step error is exp(−t/RC), so 1% in 20 ms requires RC ≤ 20 ms/ln(100) ≈ 4.34 ms.",
           "Choose 3.3 kΩ and 1 µF: RC=3.3 ms, about 4.8% residual interference and 0.23% step error. At 5 ms the upper bound is 1.09 ms, so no first-order RC meets both requirements. Consider a notch or higher-order filter; check loading, ADC sampling and tolerances. This is Operation2Bminor's model, not a tested circuit."
+        ]
+      },
+      {
+        "id": "ELEC-TACIT-power-transient",
+        "family_id": "failures",
+        "question": "Can I stop a small processor board from resetting whenever its radio transmits?",
+        "aliases": [],
+        "bridge_ids": [
+          "MEASURE",
+          "BOARD",
+          "REGULATE"
+        ],
+        "term_ids": [
+          "elec-t-0568",
+          "elec-t-0386",
+          "elec-t-0388"
+        ],
+        "question_type": "design",
+        "task_scope": "specified_instance",
+        "applied_challenge": true,
+        "answer": [
+          "A 3.3 V board has a radio whose current increases by 0.4 A for a burst. The supply's response is slow enough that local capacitance must support the first 20 µs. The processor needs the rail to stay above 3.1 V. Estimate a viable local capacitance and design a test that distinguishes supply droop from a software reset."
+        ],
+        "worked_solution": [
+          "The allowed drop is 0.2 V. Ignoring ESR and inductance, C≥ΔIΔt/ΔV=40 µF. With 0.1 Ω effective series resistance, the initial resistive step is 40 mV, leaving 160 mV for charge loss; the bound becomes 50 µF. A nominal 68 µF part may be a candidate, but effective capacitance at bias and temperature and the path inductance must be checked.",
+          "Measure the rail at the processor with a short suitable probe connection and trigger on transmission or reset. Compare adding local capacitance, shortening the power path and reducing load. Log reset cause if the processor provides it. A distant power supply reading can remain nominal while the local rail dips.",
+          "Check regulator stability with the chosen output capacitor, and repeat with representative burst patterns and source impedance. The calculation is a first-order energy bound, not a hardware-verified fix."
+        ]
+      },
+      {
+        "id": "ELEC-TACIT-sensor-chain",
+        "family_id": "build",
+        "question": "Can I turn a millivolt sensor into a useful digital measurement without throwing away its information?",
+        "aliases": [],
+        "bridge_ids": [
+          "AMPLIFY"
+        ],
+        "term_ids": [
+          "elec-t-0118",
+          "elec-t-0138",
+          "elec-t-0018"
+        ],
+        "question_type": "design",
+        "task_scope": "specified_instance",
+        "applied_challenge": true,
+        "answer": [
+          "A slow differential sensor produces 0–20 mV over its intended range. A 12-bit 3.3 V ADC receives it. You want to distinguish changes of 0.1 mV at the sensor. Choose a gain and acquisition strategy, and identify what might invalidate the resolution calculation."
+        ],
+        "worked_solution": [
+          "Without amplification, a 0.1 mV change is only 0.124 ADC steps. A gain of 100 maps the range to 0–2 V and the desired change to 10 mV, about 12.4 nominal steps. Leave output headroom and choose an amplifier whose input common-mode range, offset, noise and output swing fit the supply and sensor.",
+          "A differential input can suppress shared interference; filter only outside the signal bandwidth, and ensure the ADC acquisition capacitor settles. An amplifier input offset of 0.2 mV already exceeds the desired change, so resolution alone is insufficient. Calibrate gain and zero using known inputs; distinguish accuracy, repeatability and drift.",
+          "Test a stable input, small known steps and the endpoints using independent reference measurements. Compare noise distributions with and without the sensor attached. A successful ADC-code demonstration does not establish the sensor's physical accuracy."
+        ]
+      },
+      {
+        "id": "ELEC-TACIT-buck-thermal",
+        "family_id": "build",
+        "question": "Can I power a 5 V digital device from 12 V without overheating the regulator?",
+        "aliases": [],
+        "bridge_ids": [
+          "CONVERT"
+        ],
+        "term_ids": [
+          "elec-t-0406",
+          "elec-t-0405",
+          "elec-t-0444"
+        ],
+        "question_type": "design",
+        "task_scope": "specified_instance",
+        "applied_challenge": true,
+        "answer": [
+          "The device needs 5 V at 0.8 A and has occasional load steps. Compare an ideal linear regulator and a buck converter with assumed 90% efficiency. For a 500 kHz ideal buck, choose an initial inductance to limit peak-to-peak current ripple to 0.24 A."
+        ],
+        "worked_solution": [
+          "Linear dissipation is (12−5)·0.8=5.6 W. The load uses 4 W; a 90%-efficient buck would dissipate about 0.44 W in total. Ideal duty D≈5/12, and ΔIL=(12−5)D/(Lf). Solving gives L≈24.3 µH; 27 µH is a starting candidate, not a final specification.",
+          "Check inductor saturation current above the nominal peak 0.8+ΔIL/2, capacitor ripple and regulator-specific stability requirements. Select a proven regulator reference design or module before inventing a switching topology. Layout the high-di/dt loops deliberately, then measure input/output power and temperature.",
+          "Use a current-limited low-voltage source and an electronic load to verify startup, step response and thermal behavior. The assumed efficiency and ideal ripple formula do not certify component ratings or loop stability."
         ]
       }
     ],
