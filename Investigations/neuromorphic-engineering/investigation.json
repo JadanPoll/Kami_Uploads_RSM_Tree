@@ -3,7 +3,7 @@
   "kind": "canonical_research_corpus",
   "title": "Neuromorphic engineering — analog circuits, silicon sensing and event-based systems",
   "status": "two-book-source-indexed; selective passages examined; engineering demonstrations not reproduced",
-  "updated": "2026-11-21",
+  "updated": "2026-11-27",
   "source_folder": "https://drive.google.com/drive/folders/1dF3VIEePbbg3LdDMDs3WTO2QEjaF-S0a",
   "question": "Which neural and physical mechanisms make alternative computation possible, and when can they earn their physical and systems cost?",
   "purpose": "An expandable, source-grounded, curiosity-first investigation; glossary breadth is independent of current question coverage.",
@@ -990,7 +990,11 @@
           "nmr-t-0102"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A transistor already embodies a mathematical relationship between voltages and currents. In weak inversion a MOS transistor's drain current is approximately exponential in its gate voltage under suitable conditions. Connect devices so their voltages add, and the exponential relationship can turn addition in voltage into multiplication of current ratios.",
+          "Kirchhoff's current law also adds currents at a node without issuing an instruction. The computation happens as the circuit settles. The price is that device mismatch, temperature, noise, finite voltage headroom and settling time become computational errors. An analog computer exploits physics as its representation instead of first translating everything into binary numbers."
+        ]
       },
       {
         "id": "NMR-CURI-why-small-current",
@@ -1007,7 +1011,11 @@
           "nmr-t-0087"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A capacitor changes voltage according to I=C·dV/dt. With a 1 pF capacitor and 1 pA of current, the voltage changes about 1 V per second. Tiny currents can therefore produce behavior on biological time scales using capacitances small enough to integrate on silicon.",
+          "But shrinking current does not make everything better. Leakage, mismatch and noise become more consequential, and a slow signal may take too long to settle. The design choice is a relationship between energy, time scale, dynamic range and reliability rather than a competition to use the fewest electrons."
+        ]
       },
       {
         "id": "NMR-CURI-copy-current",
@@ -1023,7 +1031,11 @@
           "nmr-t-0067"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A basic MOS current mirror passes a reference current through a diode-connected transistor, establishing a gate voltage. A second transistor shares that gate and source voltage, so under matching device conditions it conducts a related current. Changing the ratio of transistor dimensions can scale the current.",
+          "The copy is approximate: unequal drain voltages, channel-length modulation, threshold mismatch and insufficient voltage headroom change it. A mirror is a useful primitive because it can distribute a bias or duplicate a signal without digitizing it. Cascoding can improve current accuracy but consumes additional voltage headroom."
+        ]
       },
       {
         "id": "NMR-CURI-calculator-circuit",
@@ -1040,7 +1052,11 @@
           "nmr-t-0105"
         ],
         "question_type": "design",
-        "task_scope": "open_goal"
+        "task_scope": "open_goal",
+        "answer": [
+          "Currents can be summed simply by joining branches. Multiplication requires a nonlinear relationship or modulation: a translinear circuit uses exponential device laws so sums of junction voltages around a loop constrain products of currents.",
+          "For example, if matched exponential devices establish V₁+V₂=V₃+V₄, then ideally I₁I₂=I₃I₄. Holding I₄ fixed gives a scaled product of two input currents. Accuracy depends on whether the devices really follow the assumed law. A digital multiplier handles precision differently; an analog product trades exactness and programmability for a directly embodied operation."
+        ]
       },
       {
         "id": "NMR-CURI-analog-memory",
@@ -1058,7 +1074,11 @@
           "nmr-t-0077"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A capacitor stores charge Q=CV, so its voltage can represent a value. A switch can sample a signal onto it and then disconnect the input. That value persists for a time without continuously recomputing it.",
+          "Leakage causes drift, and disconnecting the switch can inject charge. Sampling also introduces thermal noise with idealized RMS voltage √(kT/C). A larger capacitor can improve this noise bound but costs area and takes more energy to charge. Unlike a regenerating digital bit, an isolated analog value does not automatically recover from small disturbances."
+        ]
       },
       {
         "id": "NMR-CURI-neurons-fire",
@@ -1076,7 +1096,11 @@
           "nmr-t-0024"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A simple silicon neuron integrates current onto a capacitor. Its voltage increases as input arrives and can decay through a leak path. When it reaches a threshold, a comparator generates a spike and a reset mechanism returns the state toward its baseline.",
+          "The leaky integrate-and-fire model compresses several physical processes into a useful input–state–output relationship. The membrane time constant determines how widely separated inputs can reinforce each other; the threshold and reset determine firing. Two weak pulses close together may trigger a spike even though either alone would not."
+        ]
       },
       {
         "id": "NMR-CURI-not-brain",
@@ -1093,7 +1117,11 @@
           "nmr-t-0103"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A neuron's shape is only one part of its behavior. The dynamics of its membrane, synaptic strengths, connection topology, learning rules and interaction with the environment all affect what a network can do.",
+          "Two networks with identical connectivity can learn or behave differently if their synapses change under different rules. Conversely, a highly simplified digital neuron can reproduce a relevant computation without copying its morphology. Decide which observable capability the biological analogy is supposed to explain before investing in fidelity."
+        ]
       },
       {
         "id": "NMR-CURI-send-spikes",
@@ -1110,7 +1138,11 @@
           "nmr-t-0197"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "Instead of dedicating a wire to every neuron, address-event representation sends an identifier when a neuron fires. An arbiter chooses among simultaneous requests and shares a communication channel. A receiver decodes the address to deliver the event to the intended destination.",
+          "This replaces spatial wiring with temporal multiplexing. It is efficient when activity is sparse enough, but contention introduces delay and finite throughput. A dense burst may overwhelm a system designed around average activity; the representation has a communication contract, not an unlimited capacity."
+        ]
       },
       {
         "id": "NMR-CURI-too-many",
@@ -1148,7 +1180,11 @@
           "nmr-t-0195"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A spike is not necessarily just a binary value. Its time relative to other spikes can carry information, and a receiving circuit can respond differently depending on the order or separation of arrivals. A short-time integration window distinguishes near-simultaneous activity from widely separated events.",
+          "If the transport delays an event, its arrival time may cease to represent its generation time. Source timestamps or timing-aware transport can preserve the distinction. A rate-coded system may tolerate some jitter that a coincidence detector cannot; the code determines which communication errors matter."
+        ]
       },
       {
         "id": "NMR-CURI-no-frames",
@@ -1187,7 +1223,11 @@
           "nmr-t-0257"
         ],
         "question_type": "diagnosis",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "An event pixel reports a change in brightness, not proof that an object moved. Lighting flicker, camera motion, sensor noise and threshold mismatch can all generate events in a nominally still scene. Even a stationary camera facing a flickering lamp can produce a large event stream.",
+          "Inspect spatial and temporal patterns: synchronized events across the whole image suggest illumination changes, while localized moving boundaries suggest motion. Refractory periods, threshold adjustment and event filters can suppress some noise, but may also remove weak real signals. The sensor reports a measurement, not its cause."
+        ]
       },
       {
         "id": "NMR-CURI-frame-vs-event",
@@ -1205,7 +1245,11 @@
           "nmr-t-0238"
         ],
         "question_type": "transfer",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A frame camera periodically captures an intensity image; an event camera reports asynchronous local changes. Fast-moving edges can be represented with fine timing and little redundant static data. But a stationary scene supplies few new events, making absolute intensity, texture and some recognition tasks harder to recover.",
+          "Compare the sensing representation against the task. Tracking a fast moving target may benefit from events, while reading a stationary printed label may favor a frame image. Hybrid sensors and algorithms can exploit complementary information. The relevant comparison includes sensor, transport, reconstruction and compute costs, not only the raw data rate."
+        ]
       },
       {
         "id": "NMR-CURI-cochlea",
@@ -1222,7 +1266,11 @@
           "nmr-t-0276"
         ],
         "question_type": "design",
-        "task_scope": "open_goal"
+        "task_scope": "open_goal",
+        "answer": [
+          "A bank of filters can divide a sound waveform into frequency bands. An analog cochlea can arrange coupled or parallel circuits with different time constants or resonant frequencies; each channel responds most strongly to part of the spectrum.",
+          "Unlike taking a Fourier transform over a fixed time window, a filter bank can continuously update channel activity as sound arrives. Narrower frequency selectivity generally costs temporal response. A later stage might detect envelopes or emit events when channel activity changes, producing a representation useful for sound recognition."
+        ]
       },
       {
         "id": "NMR-CURI-visual-motion",
@@ -1243,6 +1291,10 @@
         "task_scope": "open_goal",
         "target_ids": [
           "NMR-MOTION"
+        ],
+        "answer": [
+          "Suppose a bright edge passes pixel A and then pixel B. If a delayed event from A coincides with activity at B, that is evidence of motion from A toward B at a speed matching the delay. A reverse detector responds to the opposite order.",
+          "A bank of delays and neighboring detectors can represent direction and approximate velocity without constructing full images. However, motion parallel to a feature may be ambiguous, and illumination changes can activate many detectors. Local measurements need spatial integration and a representation of confidence."
         ]
       },
       {
@@ -1261,7 +1313,11 @@
           "nmr-t-0169"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A shared synaptic weight can contribute to more than one learned pattern. Updating the weights to fit a new task can change the network's response to earlier tasks, even if those earlier examples are never presented again. This is catastrophic interference.",
+          "Replay of older examples, separate parameter subsets, and constraints on important weights attack different causes. A physical analog synapse can also drift without new learning. To distinguish interference from retention failure, test old patterns during new training and during an equally long period without updates."
+        ]
       },
       {
         "id": "NMR-CURI-plasticity",
@@ -1278,7 +1334,11 @@
           "nmr-t-0157"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "An electronic synapse can store a weight as charge, conductance or a digital number. An update circuit can alter that state when presynaptic and postsynaptic events occur in a specified temporal relation. In a spike-timing-dependent rule, the order and interval of spikes can determine whether the weight increases or decreases.",
+          "This does not automatically produce useful learning: the local rule may reinforce correlations irrelevant to the task, and limited weight range can saturate. Measure how repeated controlled spike pairs change the stored value, then test whether those local updates compose into a network-level capability."
+        ]
       },
       {
         "id": "NMR-CURI-attractor",
@@ -1295,7 +1355,11 @@
           "nmr-t-0166"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A network can feed its current activity back into itself. If connections reinforce a particular pattern and suppress competing patterns, that state can remain stable after external input disappears. A brief cue may push the network into the basin of attraction of a stored pattern.",
+          "This is memory in the dynamics, rather than in a separately addressed register. Too much recurrent gain can cause runaway activity or oscillation; too little makes the pattern decay. Noise and overlapping stored patterns can move the system into a different attractor. The useful question is which initial states converge to which persistent states."
+        ]
       },
       {
         "id": "NMR-CURI-program-analog",
@@ -1313,7 +1377,11 @@
           "nmr-t-0101"
         ],
         "question_type": "transfer",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "Digital hardware can often reproduce an exact truth table across many chips. An analog neural circuit exposes parameters such as bias currents, thresholds and synaptic gains, and programming means configuring those parameters to obtain a desired dynamical behavior.",
+          "The same setting can produce different time constants or firing rates on different devices because of process variation. Calibration or feedback can map a desired behavior to per-device settings. The software abstraction is then a contract over observable behavior, not a claim that the underlying electrical states are identical."
+        ]
       },
       {
         "id": "NMR-CURI-bias",
@@ -1330,7 +1398,11 @@
           "nmr-t-0082"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A bias current can set the operating point of an analog transistor and thereby determine gain, time constant and dynamic range. In a subthreshold circuit a modest voltage or temperature change can cause a large current change, altering how quickly a neuron integrates or a filter responds.",
+          "A global bias is cheap to distribute, but different devices may need individual correction because they do not match perfectly. Measure the spread of firing rates or filter responses under the same command. Calibration should target the consequential behavior, not just an arbitrary current value."
+        ]
       },
       {
         "id": "NMR-CURI-movement",
@@ -1347,7 +1419,11 @@
           "nmr-t-0290"
         ],
         "question_type": "transfer",
-        "task_scope": "open_goal"
+        "task_scope": "open_goal",
+        "answer": [
+          "A walking robot has a rhythmic task: alternating legs must move in coordinated phases. Coupled oscillating circuits can generate such a pattern without a central program calculating every motor position. Sensory feedback can shift the rhythm when a foot contacts the ground early or late.",
+          "This resembles a central pattern generator. But rhythm generation is not balance, load-bearing mechanics or safe locomotion. A useful architecture combines a pattern generator with actuator control, contact sensing and recovery. Test how the rhythm changes under a disturbance rather than only whether it oscillates."
+        ]
       },
       {
         "id": "NMR-CURI-software",
@@ -1365,7 +1441,11 @@
           "nmr-t-0195"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A host can receive events as tuples such as (x,y,t,polarity), batch them into buffers and dispatch them to algorithms. Instead of iterating over every pixel every frame, it can update only structures affected by arriving events.",
+          "But allocating an object or issuing a system call for every event can dominate the computation. Binary packed records, bounded queues, vectorized batches and streaming processing reduce overhead. Batching changes latency; dropping events changes information. Preserve source timing and explicit overflow information so downstream software can distinguish silence from loss."
+        ]
       },
       {
         "id": "NMR-CURI-fpga",
@@ -1383,7 +1463,11 @@
           "nmr-t-0187"
         ],
         "question_type": "transfer",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "An FPGA can sit at the communication boundary between an event sensor and a host. It can timestamp arrivals, decode addresses, buffer bursts, filter regions and implement parallel accumulators with predictable cycle timing.",
+          "It is particularly useful when the host cannot service individual events at the required rate. But the FPGA cannot remove a sustained bandwidth mismatch without reducing the data or adding transport capacity. Choose whether preprocessing preserves the information required by the downstream task before discarding events."
+        ]
       },
       {
         "id": "NMR-CURI-scaling",
@@ -1402,7 +1486,11 @@
           "nmr-t-0329"
         ],
         "question_type": "decomposition",
-        "task_scope": "open_goal"
+        "task_scope": "open_goal",
+        "answer": [
+          "Combining chips requires more than connecting their neuron identifiers. A distributed network must route events to the right destinations, preserve relevant timing and keep traffic within link and queue capacity. A network that communicates heavily across partitions may spend more energy moving events than computing them.",
+          "Partition by connectivity and activity, not just equal neuron counts. A locally dense subnetwork may fit well on one chip while sparse cross-chip connections use a shared fabric. Measure burst distributions, synchronization error and end-to-end latency as the network grows. More silicon does not automatically yield proportional capability."
+        ]
       },
       {
         "id": "NMR-CURI-better",
@@ -1420,8 +1508,12 @@
           "nmr-t-0411"
         ],
         "question_type": "empirical_investigation",
-        "task_scope": "capability_family",
-        "success_criterion": "For a defined workload and quality threshold, compare energy, latency, throughput, accuracy and system overhead against an appropriate conventional baseline."
+        "task_scope": "conceptual",
+        "success_criterion": "For a defined workload and quality threshold, compare energy, latency, throughput, accuracy and system overhead against an appropriate conventional baseline.",
+        "answer": [
+          "Neuromorphic hardware can be attractive when computation is naturally sparse, temporal and local: a change triggers a small update rather than evaluating a dense array on every clock. Analog implementations may also exploit device physics for integration or filtering.",
+          "The advantage can disappear if converting frames into spikes, routing dense traffic, calibrating devices or decoding results costs more than the saved work. Compare complete systems at comparable task accuracy, latency and energy, including sensor and host. A chip-level energy number alone cannot establish application-level superiority."
+        ]
       },
       {
         "id": "NMR-CURI-real-proof",
@@ -1438,8 +1530,12 @@
           "nmr-t-0375"
         ],
         "question_type": "verification",
-        "task_scope": "capability_family",
-        "success_criterion": "Specify and verify an independent end-to-end reproduction under declared hardware, data and performance conditions, rather than accepting a curated demo."
+        "task_scope": "conceptual",
+        "success_criterion": "Specify and verify an independent end-to-end reproduction under declared hardware, data and performance conditions, rather than accepting a curated demo.",
+        "answer": [
+          "A demonstration establishes a capability only within its conditions. A sensor that tracks motion in one lighting setup may fail under flicker or camera motion; a neural circuit calibrated by its designer may be difficult for another lab to reproduce.",
+          "Preserve input traces, hardware configuration, bias settings, interfaces, outcome metrics and failure cases. Replaying a recorded event stream isolates the processing system, while a live sensor test includes the acquisition boundary. A third party should be able to distinguish which part of the claimed capability has actually been reconstructed."
+        ]
       },
       {
         "id": "NMR-CURI-what-can-build",
@@ -1459,7 +1555,11 @@
           "nmr-t-0295"
         ],
         "question_type": "decomposition",
-        "task_scope": "open_goal"
+        "task_scope": "open_goal",
+        "answer": [
+          "A useful small project is a fast-motion detector that uses a stream of events to estimate a moving edge's direction, or an event-driven counter that updates only when objects cross a selected boundary. These require event acquisition, time-aware representation, filtering and a measurable outcome.",
+          "Begin with recorded event data before buying specialized hardware. Compare an event-based detector with a frame-binned baseline and examine latency, false positives and processing cost. Then investigate whether an FPGA or analog front end removes a real bottleneck. The hardware choice should emerge from the task rather than precede it."
+        ]
       },
       {
         "id": "NMR-CURI-zero-events",
@@ -1477,7 +1577,11 @@
           "nmr-t-0212"
         ],
         "question_type": "diagnosis",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "Sparsity concerns the number of reported events, not necessarily the total work performed. A system may constantly poll an empty queue, maintain a time base, run bias circuits or repeatedly scan a dense state array despite receiving almost no data.",
+          "A genuinely event-driven design blocks or idles when no useful work is available and updates affected state only when necessary. Measure idle power and CPU time separately from event-processing energy. Also distinguish zero genuine events from a saturated or disconnected sensor that silently lost them."
+        ]
       },
       {
         "id": "NMR-CAP-current-mirror",
@@ -1540,6 +1644,79 @@
         "worked_solution": [
           "During the burst the excess is 100,000 events/s, adding 1,000 queued events. Afterward the net drain is 80,000 events/s, clearing in 12.5 ms. Average arrivals are only 38,000 events/s, hiding the peak. At eight bytes/event the ideal payload backlog is 8,000 bytes; real queues require margin for arbitration and burst variation.",
           "Replay measured illumination-change and moving-edge traces; record queue high-water marks, drops and timestamp lag. Compare spatial filtering and parallel receivers. The deterministic fluid model is not a measured sensor result."
+        ]
+      },
+      {
+        "id": "NMR-TACIT-motion-timing",
+        "family_id": "sensing",
+        "question": "Can I estimate the speed and direction of a moving edge without reconstructing a video?",
+        "aliases": [],
+        "bridge_ids": [
+          "VISUAL-MOTION"
+        ],
+        "term_ids": [
+          "nmr-t-0248",
+          "nmr-t-0249",
+          "nmr-t-0250"
+        ],
+        "question_type": "design",
+        "task_scope": "specified_instance",
+        "applied_challenge": true,
+        "answer": [
+          "An event stream reports a vertical bright edge crossing two adjacent columns separated by one pixel. At column A the event occurs at 10.0 ms; at B at 10.5 ms. Design a local motion estimator and explain how you would prevent lighting flicker from being interpreted as movement."
+        ],
+        "worked_solution": [
+          "The time difference is 0.5 ms over one pixel, suggesting +2000 pixels/s along the column direction. The opposite arrival order gives a negative estimate. This measures the projected image motion, not physical speed without camera geometry and depth.",
+          "Maintain recent timestamps per pixel and compare neighboring events of suitable polarity. Accept locally consistent time differences and reject simultaneous broad image changes or isolated noise. A delay-and-coincidence detector can approximate the same operation at a selected speed; a delay bank supports a range.",
+          "Replay synthetic edges at several speeds and recorded sensor traces containing global illumination changes. Compare error, detection delay and false positives against a frame-binned baseline. Preserve event generation timestamps separately from host arrival time."
+        ]
+      },
+      {
+        "id": "NMR-TACIT-retention",
+        "family_id": "physical",
+        "question": "Can I store a sensor measurement as charge long enough for a slow analog computation?",
+        "aliases": [],
+        "bridge_ids": [
+          "DYNAMICS"
+        ],
+        "term_ids": [
+          "nmr-t-0074",
+          "nmr-t-0077"
+        ],
+        "question_type": "design",
+        "task_scope": "specified_instance",
+        "applied_challenge": true,
+        "answer": [
+          "A 2 pF capacitor stores an analog voltage. It must drift by no more than 5 mV over 20 ms before readout. Assume a constant worst-case leakage current. Find the leakage limit, compare thermal sampling noise at 300 K and decide what to test on silicon."
+        ],
+        "worked_solution": [
+          "From ΔV=IΔt/C, I≤CΔV/Δt=0.5 pA. The idealized RMS sampling noise √(kT/C) is approximately 45 µV at 300 K, much smaller than 5 mV. The calculation suggests leakage and switch-induced charge errors may be more consequential than this thermal bound.",
+          "Increasing capacitance tenfold increases allowable leakage tenfold and reduces the sampling-noise voltage by √10, but costs area and acquisition energy. Alternatively refresh the value or store it digitally if long retention is required. Determine whether the analog representation is actually beneficial to the rest of the computation.",
+          "Measure retention versus stored voltage, time and temperature; repeat across devices and separate immediate sampling error from gradual drift. A constant-leakage calculation is an initial bound, not a measured semiconductor property."
+        ]
+      },
+      {
+        "id": "NMR-TACIT-event-system",
+        "family_id": "systems",
+        "question": "Can an event camera really make a battery-powered motion detector more efficient?",
+        "aliases": [],
+        "bridge_ids": [
+          "VALIDATE"
+        ],
+        "term_ids": [
+          "nmr-t-0413",
+          "nmr-t-0411"
+        ],
+        "question_type": "design",
+        "task_scope": "specified_instance",
+        "applied_challenge": true,
+        "answer": [
+          "Design a detector that reports fast motion but spends most of its life facing an empty corridor. Compare an event-driven processing path with a frame-based baseline. Suppose the event path has 20 mW idle overhead and costs 0.5 µJ per event; the baseline consumes 100 mW continuously. At what event rate does the simplified power advantage disappear?"
+        ],
+        "worked_solution": [
+          "The event path's average power is 20 mW+0.5 µJ·r. Setting it to 100 mW gives r=160,000 events/s. At 10,000 events/s it uses 25 mW in the model, while at 300,000 events/s it uses 170 mW. Sparse scenes can be favorable and busy ones unfavorable even on identical hardware.",
+          "Define comparable task quality first: detection latency, missed targets and false alarms. Global flicker can increase event rate without increasing useful detections. A filter or FPGA preprocessor may reduce downstream work, but its own energy and information loss belong in the total.",
+          "Replay a distribution of quiet, moving and flickering scenes. Measure wall-clock energy across the sensor, processing and communication boundaries and check detection quality. The numbers are illustrative; the experiment would determine whether the hypothesized advantage survives a representative workload."
         ]
       }
     ],
