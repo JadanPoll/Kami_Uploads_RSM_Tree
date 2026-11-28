@@ -8182,7 +8182,8 @@
         "aliases": [],
         "bridge_ids": [
           "PHYS",
-          "AMPLIFY"
+          "AMPLIFY",
+          "INTERFACE"
         ],
         "term_ids": [
           "elec-t-0148",
@@ -8198,6 +8199,12 @@
         "worked_solution": [
           "With ideal source and high-impedance load, magnitude is 1/sqrt(1+(2πfRC)²). Attenuation requires RC ≥ sqrt(99)/(2π·1000) ≈ 1.58 ms. Step error is exp(−t/RC), so 1% in 20 ms requires RC ≤ 20 ms/ln(100) ≈ 4.34 ms.",
           "Choose 3.3 kΩ and 1 µF: RC=3.3 ms, about 4.8% residual interference and 0.23% step error. At 5 ms the upper bound is 1.09 ms, so no first-order RC meets both requirements. Consider a notch or higher-order filter; check loading, ADC sampling and tolerances. This is Operation2Bminor's model, not a tested circuit."
+        ],
+        "target_ids": [
+          "ELEC-PHYS",
+          "ELEC-OPAMP",
+          "ELEC-NOISE",
+          "ELEC-ADC"
         ]
       },
       {
@@ -8208,7 +8215,8 @@
         "bridge_ids": [
           "MEASURE",
           "BOARD",
-          "REGULATE"
+          "REGULATE",
+          "CONTROL"
         ],
         "term_ids": [
           "elec-t-0568",
@@ -8225,6 +8233,12 @@
           "The allowed drop is 0.2 V. Ignoring ESR and inductance, C≥ΔIΔt/ΔV=40 µF. With 0.1 Ω effective series resistance, the initial resistive step is 40 mV, leaving 160 mV for charge loss; the bound becomes 50 µF. A nominal 68 µF part may be a candidate, but effective capacitance at bias and temperature and the path inductance must be checked.",
           "Measure the rail at the processor with a short suitable probe connection and trigger on transmission or reset. Compare adding local capacitance, shortening the power path and reducing load. Log reset cause if the processor provides it. A distant power supply reading can remain nominal while the local rail dips.",
           "Check regulator stability with the chosen output capacitor, and repeat with representative burst patterns and source impedance. The calculation is a first-order energy bound, not a hardware-verified fix."
+        ],
+        "target_ids": [
+          "ELEC-MEASURE",
+          "ELEC-PDN",
+          "ELEC-CONVERTER",
+          "ELEC-CTRL"
         ]
       },
       {
@@ -8233,7 +8247,8 @@
         "question": "Can I turn a millivolt sensor into a useful digital measurement without throwing away its information?",
         "aliases": [],
         "bridge_ids": [
-          "AMPLIFY"
+          "AMPLIFY",
+          "INTERFACE"
         ],
         "term_ids": [
           "elec-t-0118",
@@ -8250,6 +8265,12 @@
           "Without amplification, a 0.1 mV change is only 0.124 ADC steps. A gain of 100 maps the range to 0–2 V and the desired change to 10 mV, about 12.4 nominal steps. Leave output headroom and choose an amplifier whose input common-mode range, offset, noise and output swing fit the supply and sensor.",
           "A differential input can suppress shared interference; filter only outside the signal bandwidth, and ensure the ADC acquisition capacitor settles. An amplifier input offset of 0.2 mV already exceeds the desired change, so resolution alone is insufficient. Calibrate gain and zero using known inputs; distinguish accuracy, repeatability and drift.",
           "Test a stable input, small known steps and the endpoints using independent reference measurements. Compare noise distributions with and without the sensor attached. A successful ADC-code demonstration does not establish the sensor's physical accuracy."
+        ],
+        "target_ids": [
+          "ELEC-OPAMP",
+          "ELEC-NOISE",
+          "ELEC-ADC",
+          "ELEC-INTERFACE"
         ]
       },
       {
@@ -8258,7 +8279,11 @@
         "question": "Can I power a 5 V digital device from 12 V without overheating the regulator?",
         "aliases": [],
         "bridge_ids": [
-          "CONVERT"
+          "CONVERT",
+          "REGULATE",
+          "CONTROL",
+          "MAGNETICS",
+          "BOARD"
         ],
         "term_ids": [
           "elec-t-0406",
@@ -8275,6 +8300,14 @@
           "Linear dissipation is (12−5)·0.8=5.6 W. The load uses 4 W; a 90%-efficient buck would dissipate about 0.44 W in total. Ideal duty D≈5/12, and ΔIL=(12−5)D/(Lf). Solving gives L≈24.3 µH; 27 µH is a starting candidate, not a final specification.",
           "Check inductor saturation current above the nominal peak 0.8+ΔIL/2, capacitor ripple and regulator-specific stability requirements. Select a proven regulator reference design or module before inventing a switching topology. Layout the high-di/dt loops deliberately, then measure input/output power and temperature.",
           "Use a current-limited low-voltage source and an electronic load to verify startup, step response and thermal behavior. The assumed efficiency and ideal ripple formula do not certify component ratings or loop stability."
+        ],
+        "target_ids": [
+          "ELEC-CONVERTER",
+          "ELEC-LOSSES",
+          "ELEC-LINEAR",
+          "ELEC-MAGNETICS",
+          "ELEC-CTRL",
+          "ELEC-PCB"
         ]
       }
     ],
@@ -8305,7 +8338,6 @@
             "elec-t-0079",
             "elec-t-0071"
           ],
-          "why": "Identify the actual operating condition before blaming this mechanism. This chapter is an indexed reading lead, not an established explanation for this case.",
           "section_targets": [
             {
               "source_id": "ART-3",
@@ -8327,7 +8359,6 @@
             "elec-t-0018",
             "elec-t-0078"
           ],
-          "why": "Identify the actual operating condition before blaming this mechanism. This chapter is an indexed reading lead, not an established explanation for this case.",
           "section_targets": [
             {
               "source_id": "ART-3",
@@ -8364,7 +8395,6 @@
             "elec-t-0131",
             "elec-t-0120"
           ],
-          "why": "Identify the actual operating condition before blaming this mechanism. A selected source passage was examined.",
           "section_targets": [
             {
               "source_id": "ART-3",
@@ -8387,7 +8417,6 @@
             "elec-t-0128",
             "elec-t-0194"
           ],
-          "why": "Identify the actual operating condition before blaming this mechanism. This chapter is an indexed reading lead, not an established explanation for this case.",
           "section_targets": [
             {
               "source_id": "ART-3",
@@ -8424,7 +8453,6 @@
             "elec-t-0233",
             "elec-t-0395"
           ],
-          "why": "Identify the actual operating condition before blaming this mechanism. A selected source passage was examined.",
           "section_targets": [
             {
               "source_id": "HSDD",
@@ -8448,7 +8476,6 @@
             "elec-t-0386",
             "elec-t-0439"
           ],
-          "why": "Identify the actual operating condition before blaming this mechanism. A selected source passage was examined.",
           "section_targets": [
             {
               "source_id": "ART-3",
@@ -8483,7 +8510,6 @@
             "elec-t-0419",
             "elec-t-0046"
           ],
-          "why": "Identify the actual operating condition before blaming this mechanism. A selected source passage was examined.",
           "section_targets": [
             {
               "source_id": "ART-3",
@@ -8506,7 +8532,6 @@
             "elec-t-0444",
             "elec-t-0441"
           ],
-          "why": "Identify the actual operating condition before blaming this mechanism. This chapter is an indexed reading lead, not an established explanation for this case.",
           "section_targets": [
             {
               "source_id": "POWER-3",
@@ -8543,7 +8568,6 @@
             "elec-t-0406",
             "elec-t-0430"
           ],
-          "why": "Identify the actual operating condition before blaming this mechanism. A selected source passage was examined.",
           "section_targets": [
             {
               "source_id": "POWER-3",
@@ -8566,7 +8590,6 @@
             "elec-t-0480",
             "elec-t-0429"
           ],
-          "why": "Identify the actual operating condition before blaming this mechanism. This chapter is an indexed reading lead, not an established explanation for this case.",
           "section_targets": [
             {
               "source_id": "POWER-3",
@@ -8603,7 +8626,6 @@
             "elec-t-0128",
             "elec-t-0170"
           ],
-          "why": "Identify the actual operating condition before blaming this mechanism. This chapter is an indexed reading lead, not an established explanation for this case.",
           "section_targets": [
             {
               "source_id": "POWER-3",
@@ -8626,7 +8648,6 @@
             "elec-t-0556",
             "elec-t-0558"
           ],
-          "why": "Identify the actual operating condition before blaming this mechanism. This chapter is an indexed reading lead, not an established explanation for this case.",
           "section_targets": [
             {
               "source_id": "POWER-3",
@@ -8663,7 +8684,6 @@
             "elec-t-0492",
             "elec-t-0036"
           ],
-          "why": "Identify the actual operating condition before blaming this mechanism. This chapter is an indexed reading lead, not an established explanation for this case.",
           "section_targets": [
             {
               "source_id": "POWER-3",
@@ -8687,7 +8707,6 @@
             "elec-t-0481",
             "elec-t-0052"
           ],
-          "why": "Identify the actual operating condition before blaming this mechanism. This chapter is an indexed reading lead, not an established explanation for this case.",
           "section_targets": [
             {
               "source_id": "POWER-3",
@@ -8724,7 +8743,6 @@
             "elec-t-0329",
             "elec-t-0258"
           ],
-          "why": "Identify the actual operating condition before blaming this mechanism. A selected source passage was examined.",
           "section_targets": [
             {
               "source_id": "HSDD",
@@ -8747,7 +8765,6 @@
             "elec-t-0337",
             "elec-t-0335"
           ],
-          "why": "Identify the actual operating condition before blaming this mechanism. A selected source passage was examined.",
           "section_targets": [
             {
               "source_id": "HSDD",
@@ -8784,7 +8801,6 @@
             "elec-t-0352",
             "elec-t-0364"
           ],
-          "why": "Identify the actual operating condition before blaming this mechanism. A selected source passage was examined.",
           "section_targets": [
             {
               "source_id": "HSDD",
@@ -8807,7 +8823,6 @@
             "elec-t-0354",
             "elec-t-0028"
           ],
-          "why": "Identify the actual operating condition before blaming this mechanism. A selected source passage was examined.",
           "section_targets": [
             {
               "source_id": "HSDD",
@@ -8844,7 +8859,6 @@
             "elec-t-0263",
             "elec-t-0258"
           ],
-          "why": "Identify the actual operating condition before blaming this mechanism. This chapter is an indexed reading lead, not an established explanation for this case.",
           "section_targets": [
             {
               "source_id": "HSDD",
@@ -8868,7 +8882,6 @@
             "elec-t-0330",
             "elec-t-0352"
           ],
-          "why": "Identify the actual operating condition before blaming this mechanism. This chapter is an indexed reading lead, not an established explanation for this case.",
           "section_targets": [
             {
               "source_id": "HSDD",
@@ -8906,7 +8919,6 @@
             "elec-t-0298",
             "elec-t-0224"
           ],
-          "why": "Identify the actual operating condition before blaming this mechanism. This chapter is an indexed reading lead, not an established explanation for this case.",
           "section_targets": [
             {
               "source_id": "ART-3",
@@ -8930,7 +8942,6 @@
             "elec-t-0313",
             "elec-t-0283"
           ],
-          "why": "Identify the actual operating condition before blaming this mechanism. This chapter is an indexed reading lead, not an established explanation for this case.",
           "section_targets": [
             {
               "source_id": "ART-3",
@@ -8968,7 +8979,6 @@
             "elec-t-0388",
             "elec-t-0364"
           ],
-          "why": "Identify the actual operating condition before blaming this mechanism. A selected source passage was examined.",
           "section_targets": [
             {
               "source_id": "HSDD",
@@ -8992,7 +9002,6 @@
             "elec-t-0622",
             "elec-t-0611"
           ],
-          "why": "Identify the actual operating condition before blaming this mechanism. This chapter is an indexed reading lead, not an established explanation for this case.",
           "section_targets": [
             {
               "source_id": "ART-3",
@@ -9238,10 +9247,7 @@
         "elec-t-0400",
         "elec-t-0231"
       ],
-      "technical_distinctions": [],
-      "unresolved_questions": [
-        "The relevant book section is a navigation lead; an implementable design or measurement has not yet been established."
-      ]
+      "technical_distinctions": []
     },
     {
       "id": "ELEC-PHYS",
@@ -9269,10 +9275,7 @@
         "elec-t-0024",
         "elec-t-0059"
       ],
-      "technical_distinctions": [],
-      "unresolved_questions": [
-        "The relevant book section is a navigation lead; an implementable design or measurement has not yet been established."
-      ]
+      "technical_distinctions": []
     },
     {
       "id": "ELEC-TRANSISTOR",
@@ -9313,10 +9316,7 @@
         "elec-t-0102",
         "elec-t-0079"
       ],
-      "technical_distinctions": [],
-      "unresolved_questions": [
-        "The relevant book section is a navigation lead; an implementable design or measurement has not yet been established."
-      ]
+      "technical_distinctions": []
     },
     {
       "id": "ELEC-OPAMP",
@@ -9351,10 +9351,7 @@
         "elec-t-0128",
         "elec-t-0131"
       ],
-      "technical_distinctions": [],
-      "unresolved_questions": [
-        "The relevant book section is a navigation lead; an implementable design or measurement has not yet been established."
-      ]
+      "technical_distinctions": []
     },
     {
       "id": "ELEC-NOISE",
@@ -9387,9 +9384,6 @@
           "mechanism": "Source impedance converts current noise into voltage and must be considered with Johnson noise.",
           "discriminating_observation": "Vary source resistance/bandwidth and compare measured noise to device noise density and noise gain."
         }
-      ],
-      "unresolved_questions": [
-        "Which component tolerances, actual physical topology and operating conditions would invalidate this explanation?"
       ]
     },
     {
@@ -9430,9 +9424,6 @@
           "mechanism": "A long ground lead and loaded node create a measurement-dependent waveform.",
           "discriminating_observation": "Repeat with short local return, differential probe or alternate method without accidentally changing circuit conditions."
         }
-      ],
-      "unresolved_questions": [
-        "Which component tolerances, actual physical topology and operating conditions would invalidate this explanation?"
       ]
     },
     {
@@ -9465,9 +9456,6 @@
           "mechanism": "Linear dissipation follows voltage drop times current, while switching can reduce power loss at the cost of ripple and complexity.",
           "discriminating_observation": "Compute and measure total efficiency and output noise at the actual load."
         }
-      ],
-      "unresolved_questions": [
-        "Which component tolerances, actual physical topology and operating conditions would invalidate this explanation?"
       ]
     },
     {
@@ -9508,9 +9496,6 @@
           "mechanism": "Volt-second/charge balance establish periodic average behavior; real output retains switching harmonics.",
           "discriminating_observation": "Identify switching period and check the small-ripple approximation against measured current/voltage ripple."
         }
-      ],
-      "unresolved_questions": [
-        "Which component tolerances, actual physical topology and operating conditions would invalidate this explanation?"
       ]
     },
     {
@@ -9545,10 +9530,7 @@
         "elec-t-0402",
         "elec-t-0435"
       ],
-      "technical_distinctions": [],
-      "unresolved_questions": [
-        "The relevant book section is a navigation lead; an implementable design or measurement has not yet been established."
-      ]
+      "technical_distinctions": []
     },
     {
       "id": "ELEC-LOSSES",
@@ -9582,10 +9564,7 @@
         "elec-t-0102",
         "elec-t-0046"
       ],
-      "technical_distinctions": [],
-      "unresolved_questions": [
-        "The relevant book section is a navigation lead; an implementable design or measurement has not yet been established."
-      ]
+      "technical_distinctions": []
     },
     {
       "id": "ELEC-DCM",
@@ -9618,10 +9597,7 @@
         "elec-t-0429",
         "elec-t-0480"
       ],
-      "technical_distinctions": [],
-      "unresolved_questions": [
-        "The relevant book section is a navigation lead; an implementable design or measurement has not yet been established."
-      ]
+      "technical_distinctions": []
     },
     {
       "id": "ELEC-CTRL",
@@ -9668,9 +9644,6 @@
           "mechanism": "Correct equilibrium does not guarantee transient stability or acceptable load-step response.",
           "discriminating_observation": "Inject known perturbation or measure plant/loop response at specified operating points."
         }
-      ],
-      "unresolved_questions": [
-        "The relevant book section is a navigation lead; an implementable design or measurement has not yet been established."
       ]
     },
     {
@@ -9696,10 +9669,7 @@
         "elec-t-0406",
         "elec-t-0567"
       ],
-      "technical_distinctions": [],
-      "unresolved_questions": [
-        "The relevant book section is a navigation lead; an implementable design or measurement has not yet been established."
-      ]
+      "technical_distinctions": []
     },
     {
       "id": "ELEC-DIGCTRL",
@@ -9725,10 +9695,7 @@
         "elec-t-0556",
         "elec-t-0563"
       ],
-      "technical_distinctions": [],
-      "unresolved_questions": [
-        "The relevant book section is a navigation lead; an implementable design or measurement has not yet been established."
-      ]
+      "technical_distinctions": []
     },
     {
       "id": "ELEC-MAGNETICS",
@@ -9769,10 +9736,7 @@
         "elec-t-0484",
         "elec-t-0481"
       ],
-      "technical_distinctions": [],
-      "unresolved_questions": [
-        "The relevant book section is a navigation lead; an implementable design or measurement has not yet been established."
-      ]
+      "technical_distinctions": []
     },
     {
       "id": "ELEC-ISOLATION",
@@ -9806,10 +9770,7 @@
         "elec-t-0053",
         "elec-t-0050"
       ],
-      "technical_distinctions": [],
-      "unresolved_questions": [
-        "The relevant book section is a navigation lead; an implementable design or measurement has not yet been established."
-      ]
+      "technical_distinctions": []
     },
     {
       "id": "ELEC-RISE",
@@ -9841,9 +9802,6 @@
           "mechanism": "A 'slow' clock may generate subnanosecond transitions whose spatial edge length is short relative to PCB wiring.",
           "discriminating_observation": "Compare trace propagation delay with the edge rise time, not only the clock period."
         }
-      ],
-      "unresolved_questions": [
-        "Which component tolerances, actual physical topology and operating conditions would invalidate this explanation?"
       ]
     },
     {
@@ -9870,10 +9828,7 @@
         "elec-t-0329",
         "elec-t-0336"
       ],
-      "technical_distinctions": [],
-      "unresolved_questions": [
-        "The relevant book section is a navigation lead; an implementable design or measurement has not yet been established."
-      ]
+      "technical_distinctions": []
     },
     {
       "id": "ELEC-TERMINATION",
@@ -9905,9 +9860,6 @@
           "mechanism": "Source termination absorbs returning reflections; in an open-ended line the full-level arrival follows a different wave sequence.",
           "discriminating_observation": "Measure at both source and far end; don't conclude from one oscilloscope location."
         }
-      ],
-      "unresolved_questions": [
-        "Which component tolerances, actual physical topology and operating conditions would invalidate this explanation?"
       ]
     },
     {
@@ -9940,9 +9892,6 @@
           "mechanism": "A continuous ohmic connection can have a large loop inductance for a fast edge.",
           "discriminating_observation": "Inspect a trace crossing a plane discontinuity versus one over continuous reference."
         }
-      ],
-      "unresolved_questions": [
-        "Which component tolerances, actual physical topology and operating conditions would invalidate this explanation?"
       ]
     },
     {
@@ -9976,10 +9925,7 @@
         "elec-t-0025",
         "elec-t-0345"
       ],
-      "technical_distinctions": [],
-      "unresolved_questions": [
-        "The relevant book section is a navigation lead; an implementable design or measurement has not yet been established."
-      ]
+      "technical_distinctions": []
     },
     {
       "id": "ELEC-GROUNDBOUNCE",
@@ -10004,10 +9950,7 @@
         "elec-t-0028",
         "elec-t-0354"
       ],
-      "technical_distinctions": [],
-      "unresolved_questions": [
-        "Which component tolerances, actual physical topology and operating conditions would invalidate this explanation?"
-      ]
+      "technical_distinctions": []
     },
     {
       "id": "ELEC-CLOCK",
@@ -10041,10 +9984,7 @@
         "elec-t-0264",
         "elec-t-0272"
       ],
-      "technical_distinctions": [],
-      "unresolved_questions": [
-        "The relevant book section is a navigation lead; an implementable design or measurement has not yet been established."
-      ]
+      "technical_distinctions": []
     },
     {
       "id": "ELEC-PDN",
@@ -10083,9 +10023,6 @@
           "mechanism": "ESL/ESR and physical loop inductance can dominate the apparent bypass at a fast transient.",
           "discriminating_observation": "Measure or model rail impedance over relevant frequencies and with nearby chip current steps."
         }
-      ],
-      "unresolved_questions": [
-        "Which component tolerances, actual physical topology and operating conditions would invalidate this explanation?"
       ]
     },
     {
@@ -10119,10 +10056,7 @@
         "elec-t-0375",
         "elec-t-0352"
       ],
-      "technical_distinctions": [],
-      "unresolved_questions": [
-        "The relevant book section is a navigation lead; an implementable design or measurement has not yet been established."
-      ]
+      "technical_distinctions": []
     },
     {
       "id": "ELEC-ADC",
@@ -10149,10 +10083,7 @@
         "elec-t-0201",
         "elec-t-0224"
       ],
-      "technical_distinctions": [],
-      "unresolved_questions": [
-        "The relevant book section is a navigation lead; an implementable design or measurement has not yet been established."
-      ]
+      "technical_distinctions": []
     },
     {
       "id": "ELEC-INTERFACE",
@@ -10186,10 +10117,7 @@
         "elec-t-0313",
         "elec-t-0314"
       ],
-      "technical_distinctions": [],
-      "unresolved_questions": [
-        "The relevant book section is a navigation lead; an implementable design or measurement has not yet been established."
-      ]
+      "technical_distinctions": []
     },
     {
       "id": "ELEC-MCU",
@@ -10222,10 +10150,7 @@
         "elec-t-0326",
         "elec-t-0188"
       ],
-      "technical_distinctions": [],
-      "unresolved_questions": [
-        "The relevant book section is a navigation lead; an implementable design or measurement has not yet been established."
-      ]
+      "technical_distinctions": []
     },
     {
       "id": "ELEC-PCB",
@@ -10258,10 +10183,7 @@
         "elec-t-0058",
         "elec-t-0624"
       ],
-      "technical_distinctions": [],
-      "unresolved_questions": [
-        "The relevant book section is a navigation lead; an implementable design or measurement has not yet been established."
-      ]
+      "technical_distinctions": []
     },
     {
       "id": "ELEC-SAFETY",
@@ -10294,10 +10216,7 @@
         "elec-t-0605",
         "elec-t-0611"
       ],
-      "technical_distinctions": [],
-      "unresolved_questions": [
-        "The relevant book section is a navigation lead; an implementable design or measurement has not yet been established."
-      ]
+      "technical_distinctions": []
     },
     {
       "id": "ELEC-VERIFY",
@@ -10337,10 +10256,7 @@
         "elec-t-0568",
         "elec-t-0622"
       ],
-      "technical_distinctions": [],
-      "unresolved_questions": [
-        "The relevant book section is a navigation lead; an implementable design or measurement has not yet been established."
-      ]
+      "technical_distinctions": []
     }
   ],
   "relations": [
