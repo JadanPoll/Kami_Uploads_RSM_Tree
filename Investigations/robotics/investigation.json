@@ -4729,7 +4729,8 @@
         "aliases": [],
         "bridge_ids": [
           "ESTIMATION",
-          "MAPPING"
+          "MAPPING",
+          "DECIDE"
         ],
         "term_ids": [
           "robot-t-0235",
@@ -4744,6 +4745,12 @@
         "worked_solution": [
           "After seeing blue, Bayes' rule gives P(A|blue)=0.9. A second conditionally independent blue observation gives odds 81:1, or 81/82 ≈ 0.988; repeated frames are not necessarily independent. Acting now has expected wrong-turn cost 10. Another equally reliable independent observation has no expected improvement if ties are resolved arbitrarily: on disagreement the posterior becomes 0.5 and on agreement 81/82; the weighted error remains 0.1. Thus one such extra inspection alone is not worth its cost under these assumptions. A different sensor or a plan allowing several observations might be.",
           "Compare policies in simulation across both locations, noisy detections and ambiguous views; track wrong turns and time to decision. This is an illustrative decision model, not a tested robot."
+        ],
+        "target_ids": [
+          "ROB-BAYES",
+          "ROB-PARTICLES",
+          "ROB-LOCALIZE",
+          "ROB-BELIEF-DECISIONS"
         ]
       },
       {
@@ -4752,8 +4759,9 @@
         "question": "Can I make a robot plan through a doorway it can physically fit through but often hits?",
         "aliases": [],
         "bridge_ids": [
+          "GEOMETRY",
           "MOTION",
-          "GEOMETRY"
+          "ESTIMATION"
         ],
         "term_ids": [
           "robot-t-0301",
@@ -4769,6 +4777,13 @@
           "For a rectangle at yaw angle θ relative to the doorway normal, its lateral projection is w|cos θ|+L|sin θ|. A conservative centered passage requires that width plus 0.06 m of lateral error fit within 0.42 m, so the projection must be at most 0.36 m. At 0° it is 0.32 m; at 5° it is approximately 0.362 m, already slightly too wide. Under this bound the rover must approach almost straight.",
           "Plan a staging pose aligned with the door before crossing. Include swept geometry along the approach, not merely the final orientation; reduce speed to preserve stopping distance and use a local wall/door measurement if it reduces lateral uncertainty. A circular footprint bound may be too conservative to find a valid path at all.",
           "Test a geometry simulator with pose perturbations and then a slow bounded rig with soft obstacles. Record actual minimum clearance and failures, including shifted doorway estimates. The numerical bound assumes a rectangular footprint and a straight passage, not a certificate for arbitrary motion."
+        ],
+        "target_ids": [
+          "ROB-CONFIG",
+          "ROB-COLLISION",
+          "ROB-MOBILITY",
+          "ROB-TRAJECTORY",
+          "ROB-LOCALIZE"
         ]
       },
       {
@@ -4794,6 +4809,13 @@
           "To cancel 9 m/s east wind the air-relative west component must be 9 m/s. The north component is √(15²−9²)=12 m/s, so heading is about 36.9° west of north. Ground progress north is 12 m/s. A 17 m/s crosswind cannot be canceled at 15 m/s: no heading yields the requested course.",
           "At 15 m/s and 25° bank, the ideal coordinated level turn radius in the air mass is V²/(g tan φ)≈49 m. The ground path drifts with wind; treating that circle as a ground-relative geometric constraint is incorrect. Generate feasible approach paths using the wind estimate and keep attitude, airspeed and navigation loops distinct.",
           "Simulate gusts, biased wind estimates and a saturated bank command. Track cross-track error, minimum airspeed and margin to obstacles. Define contingency behavior when the desired path is infeasible. This is an illustrative guidance calculation, not a flight-ready design."
+        ],
+        "target_ids": [
+          "ROB-FLIGHT-FORCES",
+          "ROB-TRIM",
+          "ROB-FRAMES",
+          "ROB-CASCADE",
+          "ROB-GUIDANCE"
         ]
       },
       {
@@ -4803,7 +4825,8 @@
         "aliases": [],
         "bridge_ids": [
           "MOTION",
-          "CONTROL"
+          "CONTROL",
+          "ROBOT-DYNAMICS"
         ],
         "term_ids": [
           "robot-t-0096",
@@ -4819,6 +4842,12 @@
           "Payload gravity torque is 0.5·9.81·0.30≈1.47 N·m. Combined holding torque is 2.27 N·m, leaving only 0.53 N·m of continuous margin. The payload contributes inertia mr²=0.045 kg·m², so even ignoring arm inertia the margin permits at most about 11.8 rad/s² at the horizontal pose. Real allowable acceleration is lower.",
           "Compare slow holds at different angles against rapid moves at the same angles. Gravity compensation reduces feedback error but cannot create torque margin. A gear reduction, counterbalance, lighter payload or slower trajectory attacks the physical limitation differently; motor torque changes with speed and thermal conditions.",
           "Measure position error and motor current during bounded motions, increasing acceleration gradually. Check the actual torque-speed and thermal ratings and the arm's own inertia. A static hold does not demonstrate dynamic capability."
+        ],
+        "target_ids": [
+          "ROB-KIN",
+          "ROB-DYNAMICS",
+          "ROB-CONTROL",
+          "ROB-TRAJECTORY"
         ]
       }
     ],
