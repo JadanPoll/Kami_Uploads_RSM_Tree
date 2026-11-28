@@ -2534,6 +2534,7 @@
     "MATH-CAP-generating-functions",
     "MATH-CAP-graph-connectivity",
     "MATH-CAP-max-flow",
-    "MATH-TACIT-network-capacity"
+    "MATH-TACIT-network-capacity",
+    "MATH-TACIT-configuration-count"
   ]
 }
