@@ -89,8 +89,8 @@
         "question_type": "verification",
         "task_scope": "conceptual",
         "answer": [
-          "Suppose √2 were rational, a/b in lowest terms. From a²=2b², a must be even; substituting a=2k forces b even too, contradicting lowest terms. This proves an irrational real exists and identifies one. Other existence arguments can be less constructive: the intermediate value theorem guarantees a root between points where a continuous function changes sign without providing its exact expression.",
-          "A nonconstructive proof may establish that an object cannot fail to exist without giving an effective way to find it. The distinction matters for engineering: a proof that a solution exists, an algorithm that finds one, and an error bound for a finite computation are different achievements. A root-existence theorem can be combined with bisection when the sign information is computable."
+          "There exist irrational numbers a and b for which aᵇ is rational. Let c=(√2)^(√2). If c is rational, choose a=b=√2. If c is irrational, choose a=c and b=√2: then aᵇ=(√2)^2=2, which is rational. Either case proves existence without deciding which construction the argument supplies.",
+          "This is a proof by cases using the law of excluded middle. An independent theorem can resolve the cases, but the argument itself does not do so. Distinguish a proof of existence from a method that finds a witness and from an algorithm with a usable error or resource bound. The intermediate value theorem, for example, can be combined with bisection when sign information is computable; existence then becomes operationally useful."
         ]
       },
       {
@@ -1722,6 +1722,10 @@
         "worked_solution": [
           "Send two units S→A→T, three S→B→T and one S→A→B→T. Delivery is six; the cut before T has capacity 2+4=6, proving optimality. Increasing S→A cannot overcome that cut.",
           "Increasing A→T by one permits a seventh unit along S→A→T; the source cut then certifies the new optimum seven. In general, reachable vertices of the residual graph identify a minimum cut. Multiple minimum cuts can make a single upgrade ineffective."
+        ],
+        "target_ids": [
+          "MATH-GRAPH",
+          "MATH-FLOW"
         ]
       },
       {
@@ -1746,6 +1750,10 @@
           "The equations give (x,y,z)=(5−t,t,7−t) with free parameter t. The invisible direction is (−1,1,−1), in the kernel of the measurement matrix. Any added measurement whose coefficient vector is orthogonal to this direction is redundant, even if its numerical value looks new.",
           "Measuring x+2y+z gives 12 for every solution, so it cannot identify t. Measuring x+z gives 12−2t and resolves the ambiguity; if it equals 6 then t=3 and (x,y,z)=(2,3,4). Rank and null space reveal exactly which physical changes the measurements cannot distinguish.",
           "With noisy data, an invertible system can still be poorly conditioned. Compare the smallest singular value for several possible measurement choices and propagate measurement error. The same reasoning applies to reconstructing hidden states, calibrating sensors and identifying parameters."
+        ],
+        "target_ids": [
+          "MATH-VECTOR",
+          "MATH-SPECTRAL"
         ]
       },
       {
@@ -1771,6 +1779,10 @@
           "The map sends [0,1] into itself: its output is positive and at most 0.3+0.7=1. Its derivative is 0.3−0.7sin(x), between about −0.289 and 0.3. Thus a valid contraction factor is q=0.3. Completeness of the interval gives a unique fixed point and convergence from every initial point there.",
           "If xₙ=g(xₙ₋₁), the remaining error is bounded by q/(1−q)·|xₙ−xₙ₋₁|. The factor comes from summing the geometric bound on all future steps. Stop once the measured step is at most (1−q)/q·10⁻⁴ ≈ 2.33×10⁻⁴. A small step without a contraction or another certificate is not generally evidence of closeness.",
           "If the controller is changed so the derivative bound exceeds one, the proof no longer applies even if several runs still converge. Analyze the local behavior or find a smaller invariant interval rather than silently reusing the old guarantee. Roundoff also needs to fit inside the error budget."
+        ],
+        "target_ids": [
+          "MATH-COMPLETE",
+          "MATH-FIXED"
         ]
       },
       {
@@ -1795,6 +1807,10 @@
           "Each pair is separated by central angle π/2, so all three great-circle distances are 5π m, about 15.71 m. The two meridians meet orthogonally at the pole, and each meets the equator at a right angle. The angle sum is 3π/2, exceeding the planar value by π/2.",
           "The spherical triangle area is R² times angular excess, so it is 50π m². A flat Euclidean triangle with the same three side lengths has 60° angles, not 90°. The discrepancy is intrinsic curvature, not a bad choice of drawing coordinates. A map can preserve selected properties, but not all of these lengths and angles on an open region.",
           "Represent waypoint positions using unit vectors and compute geodesic distance as R·arccos(u·v), with numerical care near coincidence. For local navigation use an appropriate chart and quantify the distortion over its working region. This ideal sphere example explains what breaks when a planar planning model is extended too far."
+        ],
+        "target_ids": [
+          "MATH-CURVATURE",
+          "MATH-GEODESIC"
         ]
       },
       {
@@ -1819,6 +1835,12 @@
           "For 10,000 parts at 1% prevalence, expect 95 true alarms and 198 false ones. Bayes' rule gives 95/(95+198)≈32.4% real defects among alarms. At 0.1%, expected counts become 9.5 and 199.8, so the fraction falls to about 4.5%. A test with fixed sensitivity and specificity can become much less useful when its deployment population changes.",
           "Measure sensitivity and false-positive rate on labeled samples, then estimate actual prevalence from representative production data. Artificially balancing the evaluation set can help estimate sensitivity but cannot directly estimate deployment precision. Consider uncertainty in all three rates; rare defects need sufficient samples to obtain useful estimates.",
           "Choose an intervention based on the cost of missed defects versus false inspection, not accuracy alone. A second independent test could improve posterior odds, but conditional dependence between detectors must be measured. This is a model-based design for evaluation, not a measured production result."
+        ],
+        "target_ids": [
+          "MATH-PROB",
+          "MATH-STAT",
+          "MATH-ESTIMATE",
+          "MATH-TEST"
         ]
       },
       {
@@ -1844,6 +1866,10 @@
           "There are binomial(6,3)=20 labeled patterns. For a rotation by k slots, the permutation consists of gcd(6,k) cycles of length 6/gcd(6,k). A fixed coloring must color each entire cycle alike. To have exactly three red slots, the cycle length must divide three.",
           "Identity fixes 20. Rotations by one or five have a single length-six cycle and fix none. Rotations by two or four have two length-three cycles, so choosing one red fixes two patterns each. Rotation by three has three length-two cycles, incompatible with three red slots. Burnside's lemma gives (20+0+2+0+2+0)/6=4.",
           "The naive division fails because periodic patterns have smaller orbits. To extend to more colors, count fixed assignments to cycles with the required multiplicities; to identify reflections too, include the dihedral group's reflection permutations. A short enumeration of all 64 binary patterns can independently check the result, while the cycle method scales to larger configurations."
+        ],
+        "target_ids": [
+          "MATH-SYMMETRY",
+          "MATH-COUNT"
         ]
       }
     ],
