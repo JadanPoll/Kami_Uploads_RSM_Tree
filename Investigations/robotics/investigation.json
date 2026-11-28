@@ -2,7 +2,7 @@
   "id": "robotics",
   "kind": "canonical_research_corpus",
   "title": "Robotics — generative mechanisms, physical embodiments and integrated autonomy",
-  "updated": "2026-11-22",
+  "updated": "2026-11-27",
   "status": "three-book TOCs indexed; selected mechanism passages inspected; navigation routes assembled but not user-certified; no robot/flight hardware reproduced",
   "question": "Which reusable operations and assumptions generate different robotic capabilities, and how do we compose them into physically working systems?",
   "purpose": "Factor robotics independently of book chapter boundaries: traverse from ordinary curiosity or ambitious outcome to mechanisms, alternatives, source passages and discriminating demonstrations.",
@@ -3749,7 +3749,11 @@
           "robot-t-0293"
         ],
         "question_type": "decomposition",
-        "task_scope": "open_goal"
+        "task_scope": "open_goal",
+        "answer": [
+          "A robot exploring a home must do more than avoid whatever is directly in front of it. It needs a way to represent where it thinks it is, update that estimate from motion and observations, decide which free regions to visit, and turn a planned path into wheel commands. These capabilities form a feedback loop: movement changes what the sensors can see and therefore what the robot can know.",
+          "Start with a small rover that can drive a repeatable route and stop near obstacles. Compare wheel odometry against independent position observations, then introduce mapping and localization together. A map that looks beautiful is not useful if the robot cannot locate itself in it after a wheel slips. The interesting milestone is returning to a known point after navigating an unfamiliar route."
+        ]
       },
       {
         "id": "ROB-CURI-build-arm",
@@ -3771,7 +3775,11 @@
           "robot-t-0354"
         ],
         "question_type": "decomposition",
-        "task_scope": "open_goal"
+        "task_scope": "open_goal",
+        "answer": [
+          "Picking up an unfamiliar object is not merely an inverse-kinematics problem. The robot must identify possible contact surfaces, choose a grasp, find a collision-free way to approach it, and determine whether the object really remains held as it lifts. A perfectly positioned gripper can still push the object away or slip.",
+          "A depth camera can supply geometry without recognizing the object by name; a compliant gripper can tolerate shape and pose errors. Start with tabletop objects and a bounded workspace. Compare intended grasp position with actual contacts and whether the object survives lifting. Reliable manipulation emerges from composing perception, geometry, mechanics and feedback."
+        ]
       },
       {
         "id": "ROB-CURI-build-flight",
@@ -3792,7 +3800,11 @@
           "robot-t-0414"
         ],
         "question_type": "decomposition",
-        "task_scope": "open_goal"
+        "task_scope": "open_goal",
+        "answer": [
+          "A fixed-wing aircraft cannot hover to correct a bad plan. It needs enough airspeed to generate lift, sufficient control authority to stay stable, and a feasible path that respects turn radius and wind. Navigation can be divided into slower course and altitude decisions and faster stabilization of attitude and speed.",
+          "Build backward from a recoverable flight demonstration: a stable airframe and verified controls before autonomous navigation, followed by bounded waypoint tracking and loss-of-link behavior. A simulator can expose guidance and control mistakes, but the real airframe's trim, actuator limits and sensor errors must be measured before flight. A flight controller does not compensate for an airframe that cannot safely fly."
+        ]
       },
       {
         "id": "ROB-CURI-build-soft",
@@ -3811,7 +3823,11 @@
           "robot-t-0113"
         ],
         "question_type": "transfer",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A rigid robot arm can often be described with a small number of joint angles. A soft arm deforms throughout its body, so the shape is a field rather than a few exact joint coordinates. A piecewise constant-curvature model can approximate that shape using a few parameters; it works less well when contact or loading produces irregular bends.",
+          "The transferable ideas are feedback, state estimation, energy and task-space geometry. The representation and actuator model change: an inflated chamber can change curvature, a tendon pulls along a path, and elasticity stores energy. Measure the shape and force under different loads before assuming a commanded pressure uniquely determines the tip position."
+        ]
       },
       {
         "id": "ROB-CURI-build-kinect",
@@ -3833,7 +3849,11 @@
           "robot-t-0199"
         ],
         "question_type": "transfer",
-        "task_scope": "open_goal"
+        "task_scope": "open_goal",
+        "answer": [
+          "An ordinary camera records color as a function of image position; a depth camera also estimates distance for each valid pixel. With camera calibration, depth samples can be converted to 3D points and transformed into the robot's coordinate frame. A table, wall or graspable object becomes geometry the robot can act on.",
+          "Depth is not ground truth everywhere: reflective or transparent surfaces, occlusions and range limits produce missing or erroneous samples. A robot also needs the pose of the camera relative to its body and the timestamp of the measurement. Test reaching a known point from several camera and robot poses; errors that change with pose often expose calibration problems."
+        ]
       },
       {
         "id": "ROB-CURI-build-digital-twin",
@@ -3854,7 +3874,11 @@
           "robot-t-0432"
         ],
         "question_type": "design",
-        "task_scope": "open_goal"
+        "task_scope": "open_goal",
+        "answer": [
+          "A useful simulator is a substitute for some experiments, not a perfect duplicate of reality. A robot description captures joint geometry, mass and inertia, collision shapes and actuator limits; simulated sensors and controllers then communicate through the same interfaces intended for the device.",
+          "Begin with the smallest model that predicts the behavior at issue. A geometric simulator may be enough for reachability, but not for a grasp that depends on friction. Randomize uncertain masses, friction and delays and compare trajectories. When hardware arrives, use measured behavior to revise the model instead of treating simulation success as certification."
+        ]
       },
       {
         "id": "ROB-CURI-frames",
@@ -3872,7 +3896,11 @@
           "robot-t-0009"
         ],
         "question_type": "diagnosis",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "Imagine the camera says an object is 20 cm to its right, but the robot has turned 90 degrees since the image was taken. The coordinates are correct in the camera's frame yet wrong if interpreted as world coordinates. A rigid transform maps position using rotation and translation: p_world = R_world,camera p_camera + t_world,camera.",
+          "Transforms compose, and their order matters. Inverting a rigid transform gives Rᵀ and −Rᵀt, not just negating translation. Test with an independently known point and a deliberately rotated robot, not only by applying a transform and its own inverse: two mutually consistent wrong conventions can pass that round-trip check."
+        ]
       },
       {
         "id": "ROB-CURI-inverse",
@@ -3889,7 +3917,11 @@
           "robot-t-0036"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "Forward kinematics predicts the tool pose from joint angles. Inverse kinematics starts with a desired tool pose and seeks angles that produce it. Even a planar two-link arm may have two solutions, elbow up and elbow down; both reach the same point but occupy different space.",
+          "An iterative method can move the joints in the direction suggested by the Jacobian, recomputing the error after each step. Joint limits, collision and singularities can rule out mathematical solutions. The useful result is not just an angle vector but a feasible configuration and a feasible trajectory to it."
+        ]
       },
       {
         "id": "ROB-CURI-singularity",
@@ -3929,7 +3961,11 @@
           "robot-t-0074"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "An ordinary wheel rolls easily along its plane but resists sliding across it. In the ideal no-slip model, a car's instantaneous sideways velocity at its rear axle is zero. Yet it can reach a position beside itself by composing forward motion with turning and reversing.",
+          "This is a nonholonomic constraint: the allowed instantaneous directions are narrower than the set of positions eventually reachable. A planner that draws a straight sideways segment is wrong even if the destination is geometrically nearby. Omnidirectional wheels change the mechanical constraint and therefore the planning problem."
+        ]
       },
       {
         "id": "ROB-CURI-target",
@@ -3946,7 +3982,11 @@
           "robot-t-0067"
         ],
         "question_type": "verification",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A two-link planar arm with link lengths L₁ and L₂ can reach radii between |L₁−L₂| and L₁+L₂ in an unconstrained model. If the links are unequal, the center contains a hole the arm cannot reach even though it lies inside the outer circle.",
+          "Joint limits, orientation requirements and obstacles carve away additional regions. A point reachable with one gripper orientation may not be reachable with another. Workspace is a projection of configuration space; knowing that a point is reachable says little about whether the robot can move there safely from its current pose."
+        ]
       },
       {
         "id": "ROB-CURI-distance",
@@ -3964,7 +4004,11 @@
           "robot-t-0201"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A small nearby object and a proportionally larger distant object can produce the same image. Perspective projection loses absolute scale unless we supply information such as object size, camera motion, stereo baseline or measured depth.",
+          "With rectified stereo, depth is approximately fB/d, where f is focal length in pixels, B the baseline and d the image disparity. Faraway points have small disparity, so the same one-pixel error causes a much larger depth error. Geometry explains both why another viewpoint helps and why depth estimates deteriorate with distance."
+        ]
       },
       {
         "id": "ROB-CURI-imu",
@@ -3983,7 +4027,11 @@
           "robot-t-0204"
         ],
         "question_type": "diagnosis",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "An accelerometer measures specific force, and a gyroscope measures angular rate. Estimating position requires estimating orientation, removing gravity and integrating acceleration twice. A constant acceleration bias b alone creates position error ½bt²; a small tilt error can incorrectly project part of gravity into horizontal acceleration.",
+          "An IMU is excellent for short-time motion but needs external observations to constrain drift. Wheel odometry, vision, GPS and known stationary periods supply different corrections. A filter cannot create information that the measurements lack, so an unobservable bias can continue to grow despite apparently sophisticated estimation."
+        ]
       },
       {
         "id": "ROB-CURI-gps",
@@ -4004,7 +4052,11 @@
           "robot-t-0394"
         ],
         "question_type": "diagnosis",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "GPS position changes can estimate motion over the ground, whereas a gyroscope reports body angular rate. An aircraft can point into a crosswind while traveling along a different ground course. Its yaw, ground-track angle and air-relative velocity are not interchangeable.",
+          "Even without wind, a gyro bias accumulates into orientation error and GPS is noisy or delayed. Transform observations into a common frame at a common time before fusing them. A disagreement may reveal genuine sideslip or wind rather than a broken sensor."
+        ]
       },
       {
         "id": "ROB-CURI-confident-wrong",
@@ -4022,7 +4074,11 @@
           "robot-t-0221"
         ],
         "question_type": "diagnosis",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "An estimator's confidence is conditional on its model. If a Kalman filter assumes independent measurements when successive images repeat almost the same evidence, it can shrink its covariance much faster than the real uncertainty shrinks.",
+          "A robot may confidently localize in the wrong identical hallway because its model omitted the alternative hypothesis. Check errors against independent reference measurements and compare their distribution to the predicted uncertainty. A small covariance is not a certificate of accuracy; it describes what the assumed model believes."
+        ]
       },
       {
         "id": "ROB-CURI-two-halls",
@@ -4061,7 +4117,11 @@
           "robot-t-0236"
         ],
         "question_type": "design",
-        "task_scope": "open_goal"
+        "task_scope": "open_goal",
+        "answer": [
+          "A local pose tracker assumes the robot moved approximately as its motion model predicts. Picking it up breaks that assumption: every hypothesis near the old location may now be wrong. A particle filter that has concentrated all its samples in the old room cannot necessarily recover merely by reweighting them.",
+          "Global localization maintains or reintroduces hypotheses throughout the map. A small fraction of randomly proposed poses, or a deliberate relocalization mode after repeated inconsistent observations, can help recover. In a symmetric building the robot may still need to move to obtain discriminating evidence. Recovery must also change the control policy while localization is unreliable."
+        ]
       },
       {
         "id": "ROB-CURI-map-building",
@@ -4078,7 +4138,11 @@
           "robot-t-0262"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A range measurement supplies more information than the position of the reflected endpoint. Along a laser ray, the space before the return is evidence of free space; the endpoint is evidence of occupancy. An occupancy grid accumulates these observations cell by cell.",
+          "Using log odds makes repeated probabilistic updates additive under the model. But the rays must be placed using an estimated sensor pose. If the robot turns with a wrong heading estimate, straight walls can appear bent or doubled. Mapping and localization are coupled rather than independent stages."
+        ]
       },
       {
         "id": "ROB-CURI-loop",
@@ -4095,7 +4159,11 @@
           "robot-t-0268"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "Imagine walking around a building while accumulating a small error at each step. When you arrive back at the entrance, your estimated position is a meter away from where it started. Recognizing the entrance adds a new constraint between distant points in the trajectory.",
+          "A pose graph represents robot poses and relative-motion observations as nodes and edges. Optimization redistributes the inconsistency across the trajectory instead of simply snapping the latest pose to the start. Revisit detection therefore turns accumulated local error into a globally correctable geometric problem."
+        ]
       },
       {
         "id": "ROB-CURI-false-loop",
@@ -4113,7 +4181,11 @@
           "robot-t-0270"
         ],
         "question_type": "diagnosis",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A loop closure is a constraint with large leverage: it connects two parts of a trajectory that may otherwise be far apart. If similar-looking but different rooms are declared identical, optimization can deform many poses to satisfy a false observation.",
+          "Use geometric verification, robust loss functions and consistency with other constraints to reduce that risk. Compare the residuals and map geometry before and after adding the proposed loop. A low optimization residual is not enough if the entire graph has accommodated a wrong correspondence."
+        ]
       },
       {
         "id": "ROB-CURI-slam-factor",
@@ -4130,7 +4202,11 @@
           "robot-t-0279"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "In a SLAM problem the robot's trajectory and map are coupled, but a given trajectory makes some landmark estimates conditionally independent. This lets an algorithm factor a large joint estimation problem into a trajectory hypothesis and smaller conditional landmark problems.",
+          "FastSLAM exploits this structure using particles for paths and landmark filters conditional on each particle. Graph-based approaches instead preserve sparse constraints and solve for connected variables. The useful abstraction is to exploit conditional dependence, not assume that the map and path are actually unrelated."
+        ]
       },
       {
         "id": "ROB-CURI-path-v-speed",
@@ -4150,7 +4226,11 @@
           "robot-t-0008"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A geometric shortest path specifies where to go, not how rapidly the robot can traverse it. A sharp corner can demand an instantaneous change in velocity; a real actuator has finite acceleration and a vehicle may have a minimum turn radius.",
+          "Time parameterization adds speed and acceleration constraints to the path. A slightly longer smooth curve may be faster, safer and easier to track than a short sequence of corners. A collision-free path is also insufficient if stopping distance grows beyond the available free space."
+        ]
       },
       {
         "id": "ROB-CURI-rrt",
@@ -4168,7 +4248,11 @@
           "robot-t-0300"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A robot arm with six joints has a six-dimensional configuration space. A fine grid with just 100 choices per joint would have 10¹² cells. Sampling methods avoid enumerating the entire space by testing selected configurations and connecting feasible motions.",
+          "An RRT grows from existing configurations toward random samples, tending to reach unexplored regions. Collision checks determine whether proposed edges are valid; a goal bias can accelerate discovery. Finding one path is not the same as finding the best one, and narrow passages can be hard to sample. RRT* adds mechanisms aimed at asymptotically improving path cost."
+        ]
       },
       {
         "id": "ROB-CURI-doorway",
@@ -4186,7 +4270,11 @@
           "robot-t-0300"
         ],
         "question_type": "diagnosis",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "The robot's center is not its body. A rectangular robot may fit through a doorway when aligned yet hit the jamb while rotating. Planning must account for the shape swept by the robot throughout the motion, not only at path endpoints.",
+          "For a circular footprint, expanding obstacles by the robot's radius reduces the problem to moving a point through the remaining space. For a noncircular robot, orientation becomes part of configuration space. Inflate further for localization uncertainty when appropriate; a doorway that is physically wide enough may be operationally unsafe."
+        ]
       },
       {
         "id": "ROB-CURI-waypoints",
@@ -4205,7 +4293,11 @@
           "robot-t-0320"
         ],
         "question_type": "diagnosis",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A sequence of GPS positions does not specify a dynamically feasible transition between them. If a fixed-wing aircraft aims directly at each point, the desired course can change abruptly at a waypoint and demand a bank angle beyond its limits.",
+          "A guidance law can track a line or an arc with lookahead, or join poses with minimum-radius curves such as Dubins paths in a simplified still-air model. Wind and actuator limits can invalidate that geometry. The path generator should give the controller a trajectory it can track, rather than make the controller repair impossible commands."
+        ]
       },
       {
         "id": "ROB-CURI-wind",
@@ -4223,7 +4315,11 @@
           "robot-t-0140"
         ],
         "question_type": "design",
-        "task_scope": "open_goal"
+        "task_scope": "open_goal",
+        "answer": [
+          "An aircraft's ground velocity is the vector sum of air-relative velocity and wind. To travel north with wind from the west, it must aim somewhat west of north so that the eastward drift cancels. Heading and course are therefore distinct control targets.",
+          "For desired course, the crosswind component must be canceled by an available air-relative component. If crosswind magnitude exceeds airspeed, exact course is impossible in that model. Guidance should recognize this obstruction rather than keep demanding more bank or heading correction."
+        ]
       },
       {
         "id": "ROB-CURI-wobble",
@@ -4240,7 +4336,11 @@
           "robot-t-0124"
         ],
         "question_type": "diagnosis",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "Increasing feedback gain makes a controller respond more strongly to error, but real sensors and actuators add delay, inertia and limits. By the time a large correction takes effect, the robot may already have crossed its target. The next correction reverses it and can sustain oscillation.",
+          "A frequency-response or step-response experiment can expose delay, damping and saturation. Derivative action or velocity feedback can add damping; lowering gain may restore stability while reducing disturbance rejection. An oscillation near actuator saturation is not necessarily explained by a small-signal linear model."
+        ]
       },
       {
         "id": "ROB-CURI-force",
@@ -4258,7 +4358,11 @@
           "robot-t-0143"
         ],
         "question_type": "diagnosis",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A position controller tries to reduce position error by commanding force or torque. Against an immovable wall, the desired position remains beyond the contact surface, so the controller can keep increasing effort even though motion is impossible.",
+          "Impedance control instead specifies a relationship between motion error and force, making the robot behave like a virtual spring and damper. Force control can regulate measured contact directly. Contact transitions and sensor delays still matter; safe manipulation requires bounded effort independently of whether the position objective is achieved."
+        ]
       },
       {
         "id": "ROB-CURI-load",
@@ -4276,7 +4380,11 @@
           "robot-t-0109"
         ],
         "question_type": "diagnosis",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "The torque required for motion depends on mass distribution, acceleration and gravity. Adding a payload changes the inertia and gravity loads, so a controller tuned for an empty arm may become sluggish, saturate, or oscillate.",
+          "A model-based controller can compensate estimated gravity and acceleration demands before applying feedback to residual error. But it needs a realistic payload model and enough actuator margin. Compare tracking and current at several speeds and arm orientations: gravity error persists at rest, while inertia-related errors grow during acceleration."
+        ]
       },
       {
         "id": "ROB-CURI-outer",
@@ -4295,7 +4403,11 @@
           "robot-t-0149"
         ],
         "question_type": "diagnosis",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A roll controller can accurately track a bank-angle command while the navigation loop supplies the wrong bank angle or changes it too quickly. Roll stability is an inner-loop property; course tracking depends on the outer loop, wind, speed and guidance geometry.",
+          "Separate the interfaces: desired course produces a desired bank, the inner controller produces actuator commands, and the aircraft responds. Log each signal on the same time axis. A saturated bank command or incorrect ground-course measurement may explain the miss even when the attitude controller is excellent."
+        ]
       },
       {
         "id": "ROB-CURI-trim",
@@ -4314,7 +4426,11 @@
           "robot-t-0385"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "Steady flight requires forces and moments to balance. At a given airspeed the wing's lift depends on its angle of attack; drag and pitching moment also change. Throttle and elevator settings that balance the aircraft at one speed generally do not balance it at another.",
+          "Trim is an operating point, not a universal controller setting. Linearized models describe small departures around that point. A controller that behaves well near cruise may behave differently near stall or at a very different speed. Establish feasible trim conditions before tuning feedback around them."
+        ]
       },
       {
         "id": "ROB-CURI-speed",
@@ -4332,7 +4448,11 @@
           "robot-t-0396"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "GPS measures motion relative to the ground, but the wing generates lift from airflow relative to itself. With a strong tailwind, an aircraft can have large ground speed at low airspeed. Lift is approximately ½ρV_air²SC_L, and a wing stalls when its critical angle of attack is exceeded.",
+          "Ground speed is useful for navigation but cannot alone establish a stall margin. Airspeed and angle-of-attack estimates serve different purposes; load factor also changes required lift. A controller that maintains a GPS speed without considering wind can demand an unsafe air-relative operating point."
+        ]
       },
       {
         "id": "ROB-CURI-turn",
@@ -4350,7 +4470,11 @@
           "robot-t-0318"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "In a coordinated level turn, banking tilts the lift vector so part provides centripetal acceleration. Under a simplified still-air constant-speed model, R=V²/(g tan φ). Doubling airspeed quadruples turn radius for the same bank.",
+          "A steeper bank requires more total lift to maintain altitude: load factor is approximately 1/cos φ. That raises the required lift coefficient and stall speed. The minimum useful turn radius therefore depends on speed, lift margin, structural loads and actuator authority, not merely the maximum commanded bank angle."
+        ]
       },
       {
         "id": "ROB-CURI-landing",
@@ -4369,7 +4493,11 @@
           "robot-t-0201"
         ],
         "question_type": "design",
-        "task_scope": "open_goal"
+        "task_scope": "open_goal",
+        "answer": [
+          "A camera can identify a marked landing region, estimate its relative pose, and track how features move as the aircraft approaches. Optical flow can indicate approach rate, but the image alone may not supply absolute height without known geometry or another sensor.",
+          "Landing is a sequence of decisions: identify a feasible site, establish a stable approach, manage descent and speed, and reject the attempt if confidence or control margin becomes inadequate. Compare camera-based estimates against independent height and position measurements in simulation and bounded trials before relying on them."
+        ]
       },
       {
         "id": "ROB-CURI-look-first",
@@ -4386,7 +4514,11 @@
           "robot-t-0335"
         ],
         "question_type": "design",
-        "task_scope": "open_goal"
+        "task_scope": "open_goal",
+        "answer": [
+          "A shortest route through a corridor may pass a region where the robot cannot distinguish its location. An extra observation can reduce the chance of a wrong turn or collision enough to justify its cost. This makes sensing an action, not merely a passive input to planning.",
+          "Estimate how each candidate movement changes the distribution of possible observations and the downstream cost of acting with uncertainty. An information-gain measure such as entropy reduction is useful, but a tiny reduction in uncertainty about a dangerous branch may matter more than a large reduction about an irrelevant one."
+        ]
       },
       {
         "id": "ROB-CURI-explore",
@@ -4404,7 +4536,11 @@
           "robot-t-0326"
         ],
         "question_type": "design",
-        "task_scope": "open_goal"
+        "task_scope": "open_goal",
+        "answer": [
+          "In an occupancy map, a frontier is a boundary between known free space and unknown territory. Traveling to a reachable frontier can expose new regions. A simple strategy selects the nearest one, while a richer strategy weighs expected new observations, travel cost and the risk of losing localization.",
+          "A robot that greedily explores the largest unknown region may repeatedly traverse expensive corridors or miss a small room needed to connect its map. Maintain reachable alternatives and update their value after observations. Exploration is a joint problem of moving, learning and budgeting limited resources."
+        ]
       },
       {
         "id": "ROB-CURI-uncertain-choice",
@@ -4422,7 +4558,11 @@
           "robot-t-0209"
         ],
         "question_type": "design",
-        "task_scope": "open_goal"
+        "task_scope": "open_goal",
+        "answer": [
+          "Suppose a robot may be in either of two rooms. Turning left is safe in one and collides in the other. The most likely pose alone does not specify a safe action. Evaluate actions over the entire belief distribution and distinguish uncertainty from the consequences of being wrong.",
+          "A safe common action may gather evidence that separates the hypotheses. A belief-space planner can compare immediate progress against the value of observing first. The best action is conditional on the failure cost, not necessarily the one that maximizes confidence or follows the shortest path."
+        ]
       },
       {
         "id": "ROB-CURI-sim-perfect",
@@ -4440,7 +4580,11 @@
           "robot-t-0437"
         ],
         "question_type": "diagnosis",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "Simulation can omit a few milliseconds of transport delay, underestimate friction, give perfect state estimates or assume actuators respond instantly. A controller that relies on any of these assumptions may fail on the device even if the equations are correct in the simulator.",
+          "Replay recorded sensor and command traces through the simulated controller, then compare its output with the real system. Vary uncertain parameters rather than retune everything at once. The useful question is which omitted physical behavior changes the decision, not whether the simulator can be made visually realistic."
+        ]
       },
       {
         "id": "ROB-CURI-noisy-full",
@@ -4459,7 +4603,11 @@
           "robot-t-0446"
         ],
         "question_type": "diagnosis",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A perception module can output accurate poses at low speed while a controller tracks perfect poses in its own test. When connected, delayed or irregular measurements may arrive too late to stabilize motion. Coordinate conventions and units can also disagree despite each module passing its isolated tests.",
+          "Define the shared contract: frames, timestamps, uncertainty, rates, queue behavior and what happens when estimates are missing. Inject known delays or stale measurements at the interface and compare closed-loop behavior. The integration can fail because of timing and semantics even when both algorithms are individually correct."
+        ]
       },
       {
         "id": "ROB-CURI-test",
@@ -4478,7 +4626,11 @@
           "robot-t-0440"
         ],
         "question_type": "verification",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A useful demonstration should contain the actual capability and the conditions that could make it fail. For a home rover, show that it navigates to an unfamiliar room, avoids a new obstacle, returns to a known point and handles one localization failure without relying on a human silently correcting it.",
+          "Record the conditions, repeat across meaningful variations, and make failures inspectable. A beautiful video of one successful run gives weaker evidence than a modest repeatable task with pose error, collisions and recovery outcomes recorded. Choose demonstrations that retire the uncertainties blocking the next ambitious project."
+        ]
       },
       {
         "id": "ROB-CURI-recover",
@@ -4499,7 +4651,11 @@
           "robot-t-0525"
         ],
         "question_type": "design",
-        "task_scope": "open_goal"
+        "task_scope": "open_goal",
+        "answer": [
+          "Recovery is not just resetting an estimator. If localization is lost, old motion commands may become unsafe; if an actuator fails, the original trajectory may be physically impossible. First identify which capabilities remain reliable, then choose actions that are feasible under that degraded state.",
+          "A rover can slow down and actively relocalize in known free space. A fixed-wing aircraft may need to maintain a safe airspeed and follow a preplanned contingency rather than stop. Define recovery transitions and independent safety limits before the fault occurs, and exercise them in a controlled environment."
+        ]
       },
       {
         "id": "ROB-CAP-forward-kinematics",
@@ -4588,6 +4744,81 @@
         "worked_solution": [
           "After seeing blue, Bayes' rule gives P(A|blue)=0.9. A second conditionally independent blue observation gives odds 81:1, or 81/82 ≈ 0.988; repeated frames are not necessarily independent. Acting now has expected wrong-turn cost 10. Another equally reliable independent observation has no expected improvement if ties are resolved arbitrarily: on disagreement the posterior becomes 0.5 and on agreement 81/82; the weighted error remains 0.1. Thus one such extra inspection alone is not worth its cost under these assumptions. A different sensor or a plan allowing several observations might be.",
           "Compare policies in simulation across both locations, noisy detections and ambiguous views; track wrong turns and time to decision. This is an illustrative decision model, not a tested robot."
+        ]
+      },
+      {
+        "id": "ROB-TACIT-doorway-planner",
+        "family_id": "navigate",
+        "question": "Can I make a robot plan through a doorway it can physically fit through but often hits?",
+        "aliases": [],
+        "bridge_ids": [
+          "MOTION",
+          "GEOMETRY"
+        ],
+        "term_ids": [
+          "robot-t-0301",
+          "robot-t-0300"
+        ],
+        "question_type": "design",
+        "task_scope": "specified_instance",
+        "applied_challenge": true,
+        "answer": [
+          "A rectangular rover is 0.50 m long and 0.32 m wide. A doorway is 0.42 m wide. Its estimated lateral position can be wrong by ±0.03 m. The rover must pass without touching either jamb. Decide which approach orientations are admissible, and how to plan and verify the passage."
+        ],
+        "worked_solution": [
+          "For a rectangle at yaw angle θ relative to the doorway normal, its lateral projection is w|cos θ|+L|sin θ|. A conservative centered passage requires that width plus 0.06 m of lateral error fit within 0.42 m, so the projection must be at most 0.36 m. At 0° it is 0.32 m; at 5° it is approximately 0.362 m, already slightly too wide. Under this bound the rover must approach almost straight.",
+          "Plan a staging pose aligned with the door before crossing. Include swept geometry along the approach, not merely the final orientation; reduce speed to preserve stopping distance and use a local wall/door measurement if it reduces lateral uncertainty. A circular footprint bound may be too conservative to find a valid path at all.",
+          "Test a geometry simulator with pose perturbations and then a slow bounded rig with soft obstacles. Record actual minimum clearance and failures, including shifted doorway estimates. The numerical bound assumes a rectangular footprint and a straight passage, not a certificate for arbitrary motion."
+        ]
+      },
+      {
+        "id": "ROB-TACIT-crosswind",
+        "family_id": "navigate",
+        "question": "Can I design a fixed-wing return route that is still flyable when the wind changes?",
+        "aliases": [],
+        "bridge_ids": [
+          "FLIGHT",
+          "CONTROL"
+        ],
+        "term_ids": [
+          "robot-t-0397",
+          "robot-t-0140"
+        ],
+        "question_type": "design",
+        "task_scope": "specified_instance",
+        "applied_challenge": true,
+        "answer": [
+          "An aircraft maintains 15 m/s airspeed. Its desired ground course is north; wind blows east at 9 m/s. Maximum planned bank is 25°. Estimate a feasible heading and the still-air turn radius; determine what changes if crosswind reaches 17 m/s."
+        ],
+        "worked_solution": [
+          "To cancel 9 m/s east wind the air-relative west component must be 9 m/s. The north component is √(15²−9²)=12 m/s, so heading is about 36.9° west of north. Ground progress north is 12 m/s. A 17 m/s crosswind cannot be canceled at 15 m/s: no heading yields the requested course.",
+          "At 15 m/s and 25° bank, the ideal coordinated level turn radius in the air mass is V²/(g tan φ)≈49 m. The ground path drifts with wind; treating that circle as a ground-relative geometric constraint is incorrect. Generate feasible approach paths using the wind estimate and keep attitude, airspeed and navigation loops distinct.",
+          "Simulate gusts, biased wind estimates and a saturated bank command. Track cross-track error, minimum airspeed and margin to obstacles. Define contingency behavior when the desired path is infeasible. This is an illustrative guidance calculation, not a flight-ready design."
+        ]
+      },
+      {
+        "id": "ROB-TACIT-payload-arm",
+        "family_id": "control",
+        "question": "Why does my arm lift an object slowly but fail when I ask it to move quickly?",
+        "aliases": [],
+        "bridge_ids": [
+          "MOTION",
+          "CONTROL"
+        ],
+        "term_ids": [
+          "robot-t-0096",
+          "robot-t-0109"
+        ],
+        "question_type": "design",
+        "task_scope": "specified_instance",
+        "applied_challenge": true,
+        "answer": [
+          "A horizontal single-link arm holds a 0.5 kg object 0.30 m from the joint. The unloaded arm requires 0.8 N·m to hold itself there. The motor can provide 2.8 N·m continuously at the relevant speed. Ignore additional friction initially. Can it hold the payload, and what limits acceleration?"
+        ],
+        "worked_solution": [
+          "Payload gravity torque is 0.5·9.81·0.30≈1.47 N·m. Combined holding torque is 2.27 N·m, leaving only 0.53 N·m of continuous margin. The payload contributes inertia mr²=0.045 kg·m², so even ignoring arm inertia the margin permits at most about 11.8 rad/s² at the horizontal pose. Real allowable acceleration is lower.",
+          "Compare slow holds at different angles against rapid moves at the same angles. Gravity compensation reduces feedback error but cannot create torque margin. A gear reduction, counterbalance, lighter payload or slower trajectory attacks the physical limitation differently; motor torque changes with speed and thermal conditions.",
+          "Measure position error and motor current during bounded motions, increasing acceleration gradually. Check the actual torque-speed and thermal ratings and the arm's own inertia. A static hold does not demonstrate dynamic capability."
         ]
       }
     ],
