@@ -642,7 +642,7 @@
   ],
   "established_certificates": [],
   "next_question": "Investigate how two existing exceptional but different AI collaborations work (Carlini parallel compiler versus Mishra-Sharma coupled numerical solver), then relate their mechanisms to ordinary and independent workflows; acquire evidence before assigning percentile ranks.",
-  "updated": "2026-11-21",
+  "updated": "2026-11-27",
   "population_sampling": {
     "tier_labels": [
       "ordinary / population baseline",
@@ -1041,7 +1041,11 @@
           "hai-t-0052"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A language model can produce a sentence that looks exactly like an expert's answer even when the chain of evidence behind it is missing. Its training rewards prediction of plausible text; confident wording is a property of the output, not a calibrated measurement of whether a particular proposition is true.",
+          "Imagine asking for a paper that would support a very plausible claim. The title, authors and venue can all fit familiar patterns without corresponding to a real paper. Separate generating a candidate, retrieving a real source, checking the specific passage, and independently testing the claim. A citation can be real and still fail the third step."
+        ]
       },
       {
         "id": "HAI-CURI-failed-code",
@@ -1121,7 +1125,11 @@
           "hai-t-0084"
         ],
         "question_type": "diagnosis",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A chat's apparent memory is assembled from the text and other state made available at the time of a request. Earlier decisions can be absent, compressed into a summary, or present but overwhelmed by more recent instructions. This is different from a conventional database lookup in which a key retrieves an exact record.",
+          "For a software project, store decisions with their rationale, affected files, and acceptance conditions in the project itself. A new agent should be able to inspect the current implementation and recover why a behavior exists. An enormous transcript is less useful than a short decision record plus the actual artifact."
+        ]
       },
       {
         "id": "HAI-CURI-trust",
@@ -1160,8 +1168,12 @@
           "hai-t-0146"
         ],
         "question_type": "verification",
-        "task_scope": "capability_family",
-        "success_criterion": "Given a cited claim, resolve its primary source and check whether the cited passage or evidence actually supports the claim, reporting any mismatch."
+        "task_scope": "conceptual",
+        "success_criterion": "Given a cited claim, resolve its primary source and check whether the cited passage or evidence actually supports the claim, reporting any mismatch.",
+        "answer": [
+          "Take an AI claim that a paper shows a tool doubles productivity. First resolve the paper's title and authors to a real publication; then locate the result, sample, task and outcome metric. Twice as many generated lines is not twice as much completed work. A headline can preserve the number and change the proposition.",
+          "For code or proofs, go farther: replay the artifact against the actual specification. A proof checker verifies the formal statement and assumptions, not whether that statement means what the news article claims. Retrieval, entailment and reproduction are three different checks."
+        ]
       },
       {
         "id": "HAI-CURI-learn",
@@ -1198,8 +1210,12 @@
           "hai-t-0130"
         ],
         "question_type": "empirical_investigation",
-        "task_scope": "capability_family",
-        "success_criterion": "Compare performance on an unfamiliar, independently attempted transfer task before and after AI-assisted work; distinguish retained ability from answer access."
+        "task_scope": "conceptual",
+        "success_criterion": "Compare performance on an unfamiliar, independently attempted transfer task before and after AI-assisted work; distinguish retained ability from answer access.",
+        "answer": [
+          "A useful distinction is between recognizing a solution while reading it and selecting the machinery yourself when a different problem appears. If AI writes a UART receiver for you, you may understand each line and still be unable to diagnose why bytes fail only at a higher baud rate.",
+          "Try a new problem before seeing the answer. Ask the AI for an observation or counterexample rather than a solution; explain your current model, predict what a change will do, then test it. Finally try a related problem without the conversation. The transfer attempt reveals whether the capability belongs to you or to the assistance."
+        ]
       },
       {
         "id": "HAI-CURI-beginner",
@@ -1238,7 +1254,11 @@
           "hai-t-0101"
         ],
         "question_type": "decomposition",
-        "task_scope": "open_goal"
+        "task_scope": "open_goal",
+        "answer": [
+          "A restaurant owner may know exactly which inventory workflow wastes time without knowing how to implement a database. The saved pizza-shop case is useful because operational knowledge supplies requirements a generic coding prompt would miss. A small useful interface can be built by turning that knowledge into examples and observable acceptance conditions.",
+          "But the first successful demo is not the same as an independent ability to maintain software. Start with a workflow that can be tested on real but noncritical data, preserve the original records, and make errors recoverable. The user can judge the outcome even before learning the implementation; repeated changes are an opportunity to learn which technical distinctions actually matter."
+        ]
       },
       {
         "id": "HAI-CURI-maintain",
@@ -1276,8 +1296,12 @@
           "hai-t-0089"
         ],
         "question_type": "verification",
-        "task_scope": "capability_family",
-        "success_criterion": "Run representative end-to-end workflows after a fresh start and dependency/environment changes; document reproducible failures and remaining maintenance obligations."
+        "task_scope": "conceptual",
+        "success_criterion": "Run representative end-to-end workflows after a fresh start and dependency/environment changes; document reproducible failures and remaining maintenance obligations.",
+        "answer": [
+          "Imagine a tool that works today because it relies on an authenticated browser tab, an undocumented DOM selector and a particular API response. A month later any one can change. The code did not necessarily get worse; its assumptions stopped holding.",
+          "Record the dependencies that actually cross a boundary, make failure visible, and preserve a small repeatable real workflow. Can the user export data, recover after a restart, and distinguish authentication failure from a changed page? A maintainable tool is one whose inevitable failures can be localized and repaired, not merely one with many tests."
+        ]
       },
       {
         "id": "HAI-CURI-handoff",
@@ -1314,7 +1338,11 @@
           "hai-t-0084"
         ],
         "question_type": "design",
-        "task_scope": "open_goal"
+        "task_scope": "open_goal",
+        "answer": [
+          "A handoff should transfer the state of the project, not reproduce the emotional and chronological experience of developing it. A new collaborator needs the current goal, invariants, actual files, reproducible entry point and unresolved obstruction. The reason a previous approach failed is often more valuable than its entire conversation.",
+          "For example, record that a browser background request reaches the target tab but microphone activation waits until focus. Preserve the observation, the smallest reproducer, and the competing explanations. A new investigator can start at that boundary instead of rediscovering the whole messaging system."
+        ]
       },
       {
         "id": "HAI-CURI-human",
@@ -1353,7 +1381,12 @@
           "hai-t-0099"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "Choosing the right problem is a causal contribution, not a ceremonial role. Imagine asking AI to improve a compiler: it could produce thousands of changes without knowing which behavior is binding the project. A human who recognizes that the current tests hide a specific failure can transform the search landscape by inventing a better evaluator.",
+          "The saved cases illustrate different contributions: the reported pizza-shop tool depends on the owner's workflow knowledge; the compiler case uses controlled compilation to break a shared failure into smaller ones; the Alpöge account describes mathematical direction and analogy selection alongside model-generated steps, with independent verification unresolved. These are distinct sources of leverage: purpose, representation, domain judgment and evaluation.",
+          "To distinguish contribution from participation, compare what changes when one intervention is removed while holding the task and resources as constant as possible. A spectacular outcome alone does not establish that every human intervention was necessary, or that the model could have produced it independently."
+        ]
       },
       {
         "id": "HAI-CURI-approval",
@@ -1390,7 +1423,11 @@
           "hai-t-0099"
         ],
         "question_type": "design",
-        "task_scope": "open_goal"
+        "task_scope": "open_goal",
+        "answer": [
+          "Permission should be a function of consequences, not a fixed number of actions. An agent can explore a disposable branch, run read-only probes and compare designs without repeatedly asking. Changing a production database, deleting original material or making an irreversible external commitment is different even if the command is short.",
+          "A useful policy asks whether the action is reversible, whether its intended effect is independently checkable, and whether the unresolved choice is about the user's goal rather than implementation. Give the agent autonomy over cheap, recoverable experiments; escalate when an assumption changes the goal or the cost of being wrong becomes substantial."
+        ]
       },
       {
         "id": "HAI-CURI-many-agents",
@@ -1470,7 +1507,11 @@
           "hai-t-0084"
         ],
         "question_type": "diagnosis",
-        "task_scope": "open_goal"
+        "task_scope": "open_goal",
+        "answer": [
+          "When ten changes are made at once, a regression provides little information about which change caused it. Recover the last working behavior first, then reproduce one failing flow with the smallest observable boundary: a request, state transition, stored record or rendered result.",
+          "Git history can bisect a reproducible regression, but only if your success criterion matches what actually matters. An API responding 200 is not proof that the user sees the right result. Preserve useful independent changes, isolate the cause, and stop adding mechanisms until a discriminating observation justifies one."
+        ]
       },
       {
         "id": "HAI-CURI-speed",
@@ -1508,7 +1549,11 @@
           "hai-t-0065"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "An AI can accelerate writing a local function while slowing the whole project through review, speculative edits, waiting, context reconstruction and reconciliation. The repository's METR case documents a bounded early-2025 setting in which experienced developers took longer with AI available; that does not establish the same effect for every task or tool.",
+          "Measure time to a verified working outcome, including the human's review and recovery work. Compare tasks with a known implementation pattern against unfamiliar or tightly coupled ones. The important variable may be the quality of the feedback loop, rather than typing speed or model capability alone."
+        ]
       },
       {
         "id": "HAI-CURI-legend",
@@ -1546,7 +1591,11 @@
           "hai-t-0138"
         ],
         "question_type": "empirical_investigation",
-        "task_scope": "open_goal"
+        "task_scope": "open_goal",
+        "answer": [
+          "A surprising achievement becomes less mysterious if we reconstruct its causal sequence. What was the initial representation of the problem? What could be checked cheaply? Which failed attempts changed the search? Which interventions were essential rather than merely present?",
+          "The compiler fieldwork describes agents converging on a kernel compilation problem, then using controlled compilation with a known compiler to isolate smaller failures. That is a transferable mechanism: change the evaluator so it produces local, independently actionable information. It is not evidence that an arbitrary sixteen-agent team can solve any difficult task."
+        ]
       },
       {
         "id": "HAI-CURI-verify",
@@ -1585,8 +1634,12 @@
           "hai-t-0146"
         ],
         "question_type": "verification",
-        "task_scope": "capability_family",
-        "success_criterion": "Separate the stated result from the underlying evidence, examine independent replication or reproducing conditions, and report which parts are verified versus unestablished."
+        "task_scope": "conceptual",
+        "success_criterion": "Separate the stated result from the underlying evidence, examine independent replication or reproducing conditions, and report which parts are verified versus unestablished.",
+        "answer": [
+          "Split a spectacular claim into the artifact, the proposition and the comparison. Does the artifact run or replay? Does the success condition match the stated result? Is the baseline given comparable resources and assumptions? A formal derivation can be correct for the wrong statement, and an algorithm can improve an evaluator while failing its intended application.",
+          "The saved proof and algorithm-search cases make different verification obligations visible. A proof needs a matching statement and checked derivation; a performance claim needs reproducible workloads and measurement. An investigator should preserve what can actually be checked rather than inherit the original author's confidence."
+        ]
       },
       {
         "id": "HAI-CURI-cheaper",
@@ -1625,7 +1678,11 @@
           "hai-t-0138"
         ],
         "question_type": "transfer",
-        "task_scope": "open_goal"
+        "task_scope": "open_goal",
+        "answer": [
+          "A large result often contains a small generative mechanism that can be isolated. Instead of reproducing an entire compiler, implement a tiny language with arithmetic, branches and functions; use a reference interpreter to generate expected outputs and compare candidate compilers.",
+          "A useful reduction retains the relationship being investigated. If the claim concerns independent agents coordinating through tests, a single trivial function is not representative; retain several independently failing components and a shared integration boundary. Cheap reproduction is about reducing cost while preserving the causal question."
+        ]
       },
       {
         "id": "HAI-CURI-unequal",
@@ -1664,7 +1721,11 @@
           "hai-t-0126"
         ],
         "question_type": "empirical_investigation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "Two people using the same model may differ in what they notice, which problems they formulate, how they represent state, what tools they can access, and whether they can judge outputs. A user who knows how to construct a discriminating experiment can obtain a much better next observation from the same model.",
+          "Avoid explaining the difference by a single trait such as prompt skill. Compare users on the same task with recorded decisions and artifacts; change one support at a time, such as access to a reference implementation or an executable evaluator. The outcome may depend on a composition of human and system capabilities."
+        ]
       },
       {
         "id": "HAI-CURI-new-tests",
@@ -1703,7 +1764,11 @@
           "hai-t-0089"
         ],
         "question_type": "design",
-        "task_scope": "open_goal"
+        "task_scope": "open_goal",
+        "answer": [
+          "A test can do more than certify a finished artifact: it can make an otherwise opaque search navigable. If a compiler fails to build a large program, the failure may expose almost nothing. Replacing selected components with known-good versions can isolate one subset whose behavior is wrong.",
+          "AlphaEvolve's documented mechanism uses an executable evaluator to rank candidate programs and retain useful variants. A richer test can reshape what is searchable, but only for what the evaluator actually measures. If the evaluator rewards an accidental shortcut, improving its score can take us away from the original goal."
+        ]
       },
       {
         "id": "HAI-CURI-measure-populations",
@@ -1737,8 +1802,12 @@
           "hai-t-0130"
         ],
         "question_type": "empirical_investigation",
-        "task_scope": "capability_family",
-        "success_criterion": "Define a comparable task population, sampling frame and independently evaluated outcome; report uncertainty, selection bias, resource confounds and which quantiles can actually be estimated."
+        "task_scope": "conceptual",
+        "success_criterion": "Define a comparable task population, sampling frame and independently evaluated outcome; report uncertainty, selection bias, resource confounds and which quantiles can actually be estimated.",
+        "answer": [
+          "A usage taxonomy tells us what people ask about; it cannot by itself measure what they can accomplish. A user who completes one large project and a user who repeatedly fails at the same task might produce similar-looking conversations.",
+          "Define a cohort and a population of realistic tasks, measure outcomes and resources, and preserve failure modes rather than only success rates. Sample across difficulty and domains before assigning percentile labels. A percentile belongs to a specified population and measurement protocol, not to a universal ranking of humans."
+        ]
       },
       {
         "id": "HAI-TACIT-stale-search",
@@ -1771,6 +1840,120 @@
             "code": "let generation = 0;\nasync function search(query) {\n  const mine = ++generation;\n  const results = await lookup(query);\n  if (mine === generation) render(results);\n}\nfunction clearSearch() { ++generation; render([]); }"
           },
           "Force the first response to resolve after the second, and clear the input while a request is pending. Old results must not return. Error and loading indicators need the same guard. This isolates the mechanism but does not establish the whole app works."
+        ]
+      },
+      {
+        "id": "HAI-TACIT-recover-project",
+        "family_id": "learning-and-building",
+        "question": "Can I make an AI-built tool recoverable when the original chat and developer disappear?",
+        "aliases": [],
+        "bridge_ids": [
+          "HAI-BRG-continuity"
+        ],
+        "term_ids": [
+          "hai-t-0100",
+          "hai-t-0101",
+          "hai-t-0070",
+          "hai-t-0102",
+          "hai-t-0098",
+          "hai-t-0079",
+          "hai-t-0092",
+          "hai-t-0076",
+          "hai-t-0106",
+          "hai-t-0107",
+          "hai-t-0081",
+          "hai-t-0068",
+          "hai-t-0071",
+          "hai-t-0065",
+          "hai-t-0084"
+        ],
+        "question_type": "design",
+        "task_scope": "specified_instance",
+        "applied_challenge": true,
+        "answer": [
+          "A small inventory web app works on the original developer's machine. A new collaborator has the repository but not the chat. A dependency has changed, and the import workflow fails. Design a handoff that lets them reproduce, localize and repair the failure without guessing the intended behavior."
+        ],
+        "worked_solution": [
+          "Define a real acceptance flow first: import a representative CSV, show item quantities, modify a quantity, reload and verify the stored record. Save a small nonprivate fixture and the expected final state. Record install/run commands, versions, schema and the distinction between supported and observed behavior.",
+          "Make failure legible at boundaries: compare raw CSV → parsed rows → persisted record → rendered values. If the parser handles quoted commas incorrectly, a UI redesign is irrelevant. Add a fixture with quoted text, preserve the failed observation and repair the parser. Re-run the full import and reload, not just the parser test.",
+          "Give a new collaborator only the repository and these artifacts. Record whether they can reach the original failure and repair it without the old transcript. The experiment measures handoff recoverability, not the number of documentation pages. If they need the original developer to explain a decision, identify exactly which missing invariant or rationale blocked them."
+        ]
+      },
+      {
+        "id": "HAI-TACIT-search-evaluator",
+        "family_id": "outliers-and-frontiers",
+        "question": "Can I turn a vague 'make this faster' AI task into a search that actually finds useful improvements?",
+        "aliases": [],
+        "bridge_ids": [
+          "HAI-BRG-evaluation",
+          "HAI-BRG-demystify"
+        ],
+        "term_ids": [
+          "hai-t-0052",
+          "hai-t-0106",
+          "hai-t-0107",
+          "hai-t-0081",
+          "hai-t-0084",
+          "hai-t-0043",
+          "hai-t-0101",
+          "hai-t-0102",
+          "hai-t-0100",
+          "hai-t-0098",
+          "hai-t-0079",
+          "hai-t-0092",
+          "hai-t-0085",
+          "hai-t-0137",
+          "hai-t-0086",
+          "hai-t-0089"
+        ],
+        "question_type": "design",
+        "task_scope": "specified_instance",
+        "applied_challenge": true,
+        "answer": [
+          "A data-import tool takes 12 seconds on a representative file. An AI proposes caching, parallel parsing and replacing the parser. A faster run is useless if malformed records silently disappear. Design a cheap evaluation and a search strategy."
+        ],
+        "worked_solution": [
+          "Record a reference run and a canonical result: accepted rows, rejected rows with reasons, totals and stable IDs. Measure cold and warm runs separately. A cached result that ignores changes to the input must fail the correctness gate. Keep wall time and memory as separate measurements.",
+          "Profile before searching. If parsing takes 1 second and repeated database calls take 10, eliminating parse time can save at most 1 second. Batch writes first while preserving transactional semantics; compare representative inputs and a deliberately invalid record. Retain only candidates that meet the full output contract.",
+          "Give the AI the executable evaluator and a budget, log attempted variants and their observations. Compare this against unstructured prompting on the same goal and compute. This is a small proposed experiment, not a claimed speedup; a changing data distribution or device could reverse the choice."
+        ]
+      },
+      {
+        "id": "HAI-TACIT-delegation-policy",
+        "family_id": "agency-and-teams",
+        "question": "How can I let AI work independently on a project without letting a mistaken assumption destroy useful work?",
+        "aliases": [],
+        "bridge_ids": [
+          "HAI-BRG-agency"
+        ],
+        "term_ids": [
+          "hai-t-0044",
+          "hai-t-0062",
+          "hai-t-0135",
+          "hai-t-0040",
+          "hai-t-0041",
+          "hai-t-0064",
+          "hai-t-0176",
+          "hai-t-0106",
+          "hai-t-0107",
+          "hai-t-0081",
+          "hai-t-0084",
+          "hai-t-0043",
+          "hai-t-0068",
+          "hai-t-0071",
+          "hai-t-0146",
+          "hai-t-0099"
+        ],
+        "question_type": "design",
+        "task_scope": "specified_instance",
+        "applied_challenge": true,
+        "answer": [
+          "An agent may inspect a repository, create a prototype, migrate stored user data or publish a deployment. The user wants speed but cannot afford lost data. Construct an action policy and a demonstration that it actually protects the work."
+        ],
+        "worked_solution": [
+          "Separate reversible operations from irreversible or externally consequential ones. Use a branch or disposable fixture for experiments. Define the persistence invariant explicitly: existing saved records keep identity and content through migration. Export/backup before altering durable state and require approval before replacing the live dataset.",
+          "Have the agent demonstrate the migration on a representative copy, including a record with a missing optional field and a duplicate identity. Compare before/after identities and content, then exercise the real read/write flow. A successful schema parser is insufficient. The human decides whether a semantic change is acceptable; the agent can independently work out safe implementation details.",
+          "Inject a failed migration mid-operation and verify recovery. Escalate only when the next operation crosses the actual boundary or when the acceptance conditions conflict. Measure how often the policy interrupts inexpensive reversible work versus how many risky actions it catches."
         ]
       }
     ]
