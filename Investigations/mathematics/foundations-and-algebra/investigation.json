@@ -2150,6 +2150,7 @@
     "MATH-CAP-eigenspaces",
     "MATH-CAP-group-cosets",
     "MATH-CAP-orbit-stabilizer",
-    "MATH-CAP-polynomial-factor"
+    "MATH-CAP-polynomial-factor",
+    "MATH-TACIT-network-observability"
   ]
 }
