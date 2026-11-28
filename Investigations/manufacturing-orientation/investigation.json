@@ -5271,7 +5271,8 @@
         "question": "Can I make a printed sliding guide that still fits after making ten copies?",
         "aliases": [],
         "bridge_ids": [
-          "FIT"
+          "FIT",
+          "FLEX"
         ],
         "term_ids": [
           "mfg-t-0128",
@@ -5292,6 +5293,11 @@
         "worked_solution": [
           "If nominal clearance is c, worst-case variation is ±0.30 mm. The tightest fit requires c−0.30 ≥ 0.15, or c ≥ 0.45 mm; the loosest requires c+0.30 ≤ 0.6, or c ≤ 0.30 mm. No nominal clearance satisfies both.",
           "Reduce variation, finish mating surfaces, selectively assemble, or use a compliant preload to suppress play without demanding a tight dimensional fit. Preload introduces friction and wear. Print representative coupons in the same orientation and measure and assemble mismatched extremes. The bounds are illustrative, not measured printer tolerances."
+        ],
+        "target_ids": [
+          "MFG-TOLERANCE",
+          "MFG-FUNC-COMPLIANT",
+          "MFG-FFM-ORIENT"
         ]
       },
       {
@@ -5300,7 +5306,9 @@
         "question": "How should I make a small enclosure that might sell ten units or ten thousand?",
         "aliases": [],
         "bridge_ids": [
-          "QUANTITY"
+          "QUANTITY",
+          "OUTSOURCE",
+          "JOIN"
         ],
         "term_ids": [
           "mfg-t-0084",
@@ -5327,6 +5335,12 @@
           "The nominal cost crossover is N=18000/(12−2.5)≈1895 good units. This assumes the two routes produce equivalent functional parts and no additional redesign, lead time or inventory cost. Before committing tooling, inspect features that differ between the processes: draft, wall thickness, undercuts, shrinkage, insert placement and ejection.",
           "Prototype the interfaces that matter using printed parts: mounting alignment, lid clearance, access for screws and assembly sequence. A printed success establishes geometry but not molded strength or shrinkage. Request supplier feedback and a small trial or sample where appropriate; reserve tooling for a design and demand estimate stable enough to amortize it.",
           "If a replaceable insert lets a likely-changing feature vary cheaply, compare its tooling premium against the avoided retooling cost. The decision is about the value of flexibility as well as the nominal crossover."
+        ],
+        "target_ids": [
+          "MFG-PROC-LAYERS",
+          "MFG-PROC-INJECTION",
+          "MFG-JOINING",
+          "MFG-TOLERANCE"
         ]
       },
       {
@@ -5365,6 +5379,11 @@
           "The large direction-dependent displacement suggests backlash or direction-dependent elastic/friction effects; it does not prove the screw is the sole cause. Repeat with the motor disabled and a gentle reversing load at the carriage; measure screw rotation versus carriage displacement. Check coupling and bearing movement separately.",
           "Approaching every target from one direction may be a cheap mitigation if the application allows overshoot. If arbitrary approach direction matters, preload the nut or use feedback on the actual carriage. Feedback must have enough resolution and bandwidth; motor encoder feedback alone cannot observe motion lost downstream.",
           "Repeat a grid of positions from both directions under representative loads. Report maximum deviation and same-direction repeatability separately. The numerical observations are hypothetical, so the solution is a diagnosis and test plan, not a measured claim."
+        ],
+        "target_ids": [
+          "MFG-FUNC-DOF",
+          "MFG-TOLERANCE",
+          "MFG-FUNC-RIGID"
         ]
       },
       {
@@ -5373,7 +5392,8 @@
         "question": "Can I design a snap-fit battery cover that opens repeatedly without breaking?",
         "aliases": [],
         "bridge_ids": [
-          "FLEX"
+          "FLEX",
+          "SNAP"
         ],
         "term_ids": [
           "mfg-t-0026",
@@ -5402,6 +5422,11 @@
           "For small-deflection elastic cantilever bending with a tip force, root surface strain is approximately 3tδ/(2L²). The stated geometry gives about 0.625% strain. Halving length raises it to 2.5%; the same required tip motion is now far more demanding. A larger fillet can reduce the stress concentration but does not erase nominal bending strain.",
           "Choose geometry, material and print orientation so the dominant tensile stress is carried by continuous tracks where possible. Evaluate insertion/removal force, retention and creep; a longer softer latch may reduce retention unless its hook geometry or preload is changed. Compare allowable strain using material- and process-specific data rather than assuming an arbitrary failure threshold.",
           "Print several specimens and cycle them at the intended displacement, monitoring force and cracks at the root. The beam formula assumes linear small-deflection behavior and an ideal clamp; contact, large deflection, fatigue and printed anisotropy require physical checks."
+        ],
+        "target_ids": [
+          "MFG-FUNC-COMPLIANT",
+          "MFG-FAILURE-CYCLIC",
+          "MFG-FFM-ORIENT"
         ]
       }
     ],
