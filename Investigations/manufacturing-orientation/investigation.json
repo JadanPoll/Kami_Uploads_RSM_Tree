@@ -4394,7 +4394,11 @@
           "mfg-t-0133"
         ],
         "question_type": "diagnosis",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A paper clip that springs back has mostly deformed elastically. If you bend it far enough that it stays bent, the outer fibers have exceeded their elastic limit. Bending it back does not simply undo the microscopic rearrangements: repeated plastic strain accumulates damage, and tiny cracks can initiate and grow near the bend.",
+          "For a round wire of diameter d bent around a radius R measured to its centerline, the outer-fiber strain is roughly d/(2R) when d is small relative to R. Making the bend radius larger or spreading deformation along a longer length reduces peak strain. This is why a spring-shaped wire can survive many movements that would break a sharp kink."
+        ]
       },
       {
         "id": "MFG-CURI-printed-clip",
@@ -4428,7 +4432,11 @@
           "mfg-t-0068"
         ],
         "question_type": "diagnosis",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A filament-printed clip can fail even when its polymer would survive the same deformation in a molded part. The printed object is assembled from deposited tracks and interfaces between layers; a load pulling those interfaces apart can be very different from one carried along a continuous track.",
+          "Look at where the crack starts: a sharp root raises local stress, a layer boundary may offer a weak fracture path, and repeated bending can grow damage even if one bend succeeds. Printing the clip flat rather than upright may align continuous tracks with the tensile load. A larger fillet and longer compliant arm can reduce local strain without changing the required tip motion."
+        ]
       },
       {
         "id": "MFG-CURI-bend-strong",
@@ -4462,7 +4470,11 @@
           "mfg-t-0002"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "Stiffness measures how much a part deforms under a load; strength measures how much stress it can withstand before a specified failure. A long thin steel strip can be easy to bend and still tolerate a substantial load in tension. Geometry changes the stiffness without changing the material's strength.",
+          "For a rectangular cantilever, I=bt³/12 and tip stiffness is 3EI/L³. Doubling thickness makes it eight times stiffer, while doubling length makes it eight times more compliant. A tape measure adds curvature to a thin strip so it resists bending in one direction and coils readily in another. Clever geometry can provide very different behavior from the same material."
+        ]
       },
       {
         "id": "MFG-CURI-pinless-hinge",
@@ -4495,7 +4507,11 @@
           "mfg-t-0004"
         ],
         "question_type": "design",
-        "task_scope": "open_goal"
+        "task_scope": "open_goal",
+        "answer": [
+          "A thin region joining two thicker pieces can bend elastically instead of rotating on a pin. In a living hinge, motion is distributed through a flexible material region; in a metal flexure, beams can guide a platform through a small rotation or translation with no sliding surfaces.",
+          "The advantage is little backlash, friction or assembly. The cost is limited travel and stress: the hinge must accommodate strain every cycle. A carefully shaped compliant mechanism can move its effective pivot away from any physical joint. A small hinge in a plastic lid and a precision flexure stage are examples of the same design opportunity at different scales."
+        ]
       },
       {
         "id": "MFG-CURI-repeated-spring",
@@ -4531,7 +4547,11 @@
           "mfg-t-0004"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A part can survive a load once and fail after many repetitions at a stress below its static strength. Surface defects, notches and microstructural boundaries can initiate fatigue cracks; each cycle can extend a crack until the remaining material can no longer carry the load.",
+          "A useful design distinguishes the mean stress, alternating stress and local concentration. Smoothing a sharp transition or increasing the bend radius can improve life without changing nominal loading. An accelerated fatigue test is informative only when it reproduces the important failure mechanism; overheating a polymer to speed the test may introduce a different one."
+        ]
       },
       {
         "id": "MFG-CURI-cad-fit",
@@ -4596,7 +4616,11 @@
           "mfg-t-0109"
         ],
         "question_type": "diagnosis",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A hole in a sliced model is a path that deposited material must leave open. Extrusion width, excess material, shrinkage, layer resolution and corner motion can move the real boundary inward. Small holes have a large boundary-to-area ratio, so a fixed dimensional error consumes more of their useful opening.",
+          "Print a coupon with several nominal hole sizes and measure along two axes. If errors are nearly constant in diameter, a fixed compensation may work; if they scale with size or differ by direction, calibration, shrinkage or motion may matter. A clearance hole and a precision bearing seat need different remedies; drilling or reaming a printed pilot hole can be better than tuning the entire printer."
+        ]
       },
       {
         "id": "MFG-CURI-wobble",
@@ -4631,7 +4655,11 @@
           "mfg-t-0060"
         ],
         "question_type": "diagnosis",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "If a shaft rotates about an axis that does not pass through its center of mass, its unbalanced mass produces a rotating force proportional to m r ω². Doubling speed quadruples that force. Even a geometrically balanced rotor can wobble if bearings are loose, a coupling is misaligned or the structure has a natural frequency near the forcing frequency.",
+          "Run at several speeds and observe whether vibration follows rotation, grows sharply at one frequency, or changes when load direction changes. Balance, alignment, stiffness and damping attack different causes. Adding a stronger motor may make a resonance much worse."
+        ]
       },
       {
         "id": "MFG-CURI-return-drift",
@@ -4667,7 +4695,11 @@
           "mfg-t-0133"
         ],
         "question_type": "diagnosis",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A lead screw can reverse its motor direction without moving the carriage immediately: the nut must cross the clearance between opposing thread faces. This lost motion is backlash. Elastic deformation under load, friction, thermal expansion and step loss can produce other forms of position error.",
+          "Approach the same target from opposite directions and compare actual position using an independent indicator. A repeatable direction-dependent difference suggests backlash; a load-dependent error suggests compliance; cumulative missed steps suggest loss of drive synchronization. A preloaded nut reduces clearance, while feedback measures the actual output rather than merely trusting motor steps."
+        ]
       },
       {
         "id": "MFG-CURI-identical",
@@ -4700,7 +4732,11 @@
           "mfg-t-0109"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "Each manufacturing operation samples a distribution of outcomes. A tool wears, a mold changes temperature, material batches vary and fixtures locate parts imperfectly. Even if every part meets its individual drawing, an assembly may fail when their deviations combine.",
+          "For a process centered on a target, separate bias from scatter. Measuring ten consecutive parts and ten parts after a tool change can expose different variation. Inspecting final parts can reject failures, but a stable process that controls the causes of variation produces more useful parts with less inspection. Interchangeability is a contract about ranges, not a promise of identical geometry."
+        ]
       },
       {
         "id": "MFG-CURI-one-step",
@@ -4729,7 +4765,11 @@
           "mfg-t-0026"
         ],
         "question_type": "design",
-        "task_scope": "open_goal"
+        "task_scope": "open_goal",
+        "answer": [
+          "A ratchet and pawl convert reciprocating motion into one-way incremental advance: the driving pawl moves the wheel on the forward stroke and slips over teeth on return while a holding pawl prevents reversal. A Geneva drive instead converts continuous rotation into discrete steps with dwell intervals.",
+          "An electronically controlled stepper or servo can vary the indexing schedule, but position under load and holding torque must still be considered. If the steps must align exactly with a processing station, the important question is not just whether motion is intermittent, but what establishes and holds the final position."
+        ]
       },
       {
         "id": "MFG-CURI-heavy-load",
@@ -4751,7 +4791,11 @@
           "mfg-t-0040"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A lever trades displacement for force. If a person pushes 10 times farther from the pivot than the load acts, an ideal lever can multiply the input force by ten while moving the load only one tenth as far. A hydraulic cylinder makes a similar trade through different piston areas: equal pressure acts on unequal areas.",
+          "Neither creates energy. Raising a 1000 N load by 1 cm requires at least 10 J, regardless of mechanism. Friction, bending and seal leakage increase the input work. A screw jack can multiply force and sometimes hold position without continuous motor power, but self-locking is conditional on friction and thread geometry."
+        ]
       },
       {
         "id": "MFG-CURI-machine-pause",
@@ -4819,7 +4863,11 @@
           "mfg-t-0060"
         ],
         "question_type": "design",
-        "task_scope": "open_goal"
+        "task_scope": "open_goal",
+        "answer": [
+          "A mechanism guides motion by constraining unwanted degrees of freedom. Two separated bearings on a shaft prevent many transverse and angular motions while permitting rotation. A dovetail or linear rail constrains a carriage to translation; parallelogram flexures can approximate translation without sliding contact.",
+          "More constraints are not always better. Two independently mounted rails can bind if their axes are not parallel; a redundant constraint turns small alignment error into internal force. Exact constraint design deliberately controls which freedoms each contact removes, rather than relying on every surface to be perfect."
+        ]
       },
       {
         "id": "MFG-CURI-gears-power",
@@ -4842,7 +4890,11 @@
           "mfg-t-0040"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "Two gears transmit tangential force at their pitch circles. A small gear driving a larger one makes the larger shaft rotate more slowly while producing greater torque. In the ideal lossless case, torque times angular velocity is conserved: P=τω.",
+          "A 5:1 reduction can multiply torque by five and divide speed by five, before losses. Real gears also add inertia, tooth stress and backlash. Selecting a gear ratio means matching the motor's useful torque-speed region to the load's required motion; the largest ratio is not automatically the best."
+        ]
       },
       {
         "id": "MFG-CURI-hollow-shape",
@@ -4873,7 +4925,11 @@
           "mfg-t-0114"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A closed hollow object cannot always be produced by cutting material away from a solid block, because a tool must reach the internal surfaces. Casting can use a removable sand or soluble core; blow molding expands a heated tube or preform against a mold; two open shells can be joined after forming.",
+          "Additive manufacturing can create internal cavities directly, but uncured resin, loose powder or supports must still escape. Compare access for tooling, core removal, wall thickness control and inspection. The shape that seems easy in CAD may be difficult because of the sequence of physical operations needed to create it."
+        ]
       },
       {
         "id": "MFG-CURI-no-heat",
@@ -4893,7 +4949,11 @@
           "mfg-t-0094"
         ],
         "question_type": "design",
-        "task_scope": "open_goal"
+        "task_scope": "open_goal",
+        "answer": [
+          "A waterjet transfers momentum from a high-speed jet, often carrying abrasive particles, to erode material. It avoids the thermal cutting mechanism of a laser or plasma arc, so the edge need not pass through a large heat-affected zone. Mechanical milling and sawing offer other routes when tool access and forces are acceptable.",
+          "The trade changes from heat to jet taper, surface striations, cutting speed, fixturing and material behavior. A thin flexible sheet can deflect under a cutting force, even if it never gets hot. Choose the process based on the property that must survive the cut, not merely whether the tool is hot."
+        ]
       },
       {
         "id": "MFG-CURI-print-air",
@@ -4924,7 +4984,11 @@
           "mfg-t-0187"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A fresh extrusion is a soft strand whose shape depends on where it is anchored and how quickly it cools. A short bridge can span between two supports while under tension; an isolated extrusion has nothing to hold its position. An overhang is possible when each layer overlaps enough of the previous one.",
+          "Orienting the part can turn an impossible unsupported wall into a sequence of supported layers. Supports, soluble materials and bridging settings extend the possible geometry at the cost of removal, surface quality and time. Powder-bed processes can support some shapes with surrounding powder, but that does not eliminate all constraints on heat, distortion or powder removal."
+        ]
       },
       {
         "id": "MFG-CURI-sagging",
@@ -4951,7 +5015,11 @@
           "mfg-t-0187"
         ],
         "question_type": "diagnosis",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A filament bridge behaves more like a hot viscous strand than a rigid beam during deposition. Gravity pulls it downward while its ends are anchored; cooling and tension determine when its shape becomes stable. A longer span gives more opportunity to sag before solidifying.",
+          "Compare a series of bridges while varying cooling, speed and extrusion amount one at a time. More cooling may help the bridge but weaken bonding elsewhere; a slower pass can deposit more heat or give more cooling time depending on the process. If the span is critical, reorient the design or provide a sacrificial support rather than assuming settings alone can remove the geometric limitation."
+        ]
       },
       {
         "id": "MFG-CURI-tipping",
@@ -4979,7 +5047,11 @@
           "mfg-t-0187"
         ],
         "question_type": "diagnosis",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A tall narrow print is a lever attached to a small footprint. A small sideways nozzle force near its top generates a large moment at the bed. Cooling shrinkage can lift a corner and reduce the effective contact area, making collisions and tipping more likely.",
+          "Increase adhesion or footprint with a brim, reduce acceleration, improve first-layer consistency, or reorient the part. A taller print that fails only at certain moves suggests dynamic collision or oscillation rather than simply bad initial adhesion. Inspect the first visible displacement instead of only the final pile of filament."
+        ]
       },
       {
         "id": "MFG-CURI-one-or-many",
@@ -5009,7 +5081,11 @@
           "mfg-t-0080"
         ],
         "question_type": "design",
-        "task_scope": "open_goal"
+        "task_scope": "open_goal",
+        "answer": [
+          "A manufacturing method has setup costs and per-part costs. A 3D printer may produce the first part cheaply with almost no tooling, while injection molding requires an expensive mold but can make subsequent parts quickly. Compare total cost C(N)=setup+N·unit cost, not unit cost at an unspecified volume.",
+          "If tooling costs $10,000 and molded parts cost $1 each versus $8 printed, the simplistic crossover is about 1,429 parts. But tooling lead time, design changes, yield and inventory can shift the decision. The same design may need a prototype process, a bridge process and a production process as demand becomes clearer."
+        ]
       },
       {
         "id": "MFG-CURI-no-shop",
@@ -5040,7 +5116,11 @@
           "mfg-t-0114"
         ],
         "question_type": "decomposition",
-        "task_scope": "open_goal"
+        "task_scope": "open_goal",
+        "answer": [
+          "Owning machines is different from having access to manufacturing capability. A design can be factored into commodity parts, printed or laser-cut custom pieces, and features requiring an outside supplier. Fasteners, shafts, bearings and motors can remove much of the need to fabricate precision components yourself.",
+          "Start from interfaces: which dimensions actually control function, and which can be delegated to a supplier? Use local prototyping to discover the geometry and outside fabrication for the difficult material or tolerance. A design that uses standard bearings and a purchased shaft can be more capable than a completely custom assembly made on inadequate equipment."
+        ]
       },
       {
         "id": "MFG-CURI-factory-molds",
@@ -5074,7 +5154,11 @@
           "mfg-t-0080"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A mold is an investment in reusable geometry. Instead of individually cutting every part, a carefully made cavity and core constrain material into the desired shape over many cycles. Tooling must also provide filling, cooling, venting, release and predictable shrinkage; these functions explain why it is much more than a negative shape of the product.",
+          "A mold may contain expensive machined inserts, moving slides and temperature control. A small feature that creates an undercut can require a new moving mechanism. The design of the part and the design of the process therefore influence one another; a small shape change may remove an entire tooling operation."
+        ]
       },
       {
         "id": "MFG-CURI-change-design",
@@ -5104,7 +5188,11 @@
           "mfg-t-0080"
         ],
         "question_type": "explanation",
-        "task_scope": "conceptual"
+        "task_scope": "conceptual",
+        "answer": [
+          "A molded part is tied to a physical cavity. Removing plastic from the product may require adding steel to the mold, which can be much harder than cutting steel away. Changing a wall or boss can also affect filling, cooling, ejector locations and the way the part shrinks.",
+          "This asymmetry motivates replaceable inserts and delaying irreversible tooling decisions until fit and function are demonstrated. A printed prototype is cheap to revise but does not reproduce every production property. Choose tests that retire the uncertainty which would be expensive to discover after committing tooling."
+        ]
       },
       {
         "id": "MFG-CAP-tolerance-stack",
@@ -5171,7 +5259,11 @@
           "mfg-t-0141"
         ],
         "question_type": "design",
-        "task_scope": "open_goal"
+        "task_scope": "open_goal",
+        "answer": [
+          "A screw joint can clamp two parts and transmit shear through friction; a rivet creates a permanent mechanical connection; welding joins material through local melting or solid-state processes; adhesive spreads load across an area. These alternatives differ in how they transmit force and whether they can be disassembled.",
+          "A joint can fail in the fastener, the surrounding material, the bond interface or by fatigue as parts slip. A thin plastic boss may fail before a strong steel screw. Start from the load path, access for assembly, serviceability and environment; then compare the joint's failure modes rather than selecting a method by strength alone."
+        ]
       },
       {
         "id": "MFG-TACIT-sliding-guide",
@@ -5201,6 +5293,116 @@
           "If nominal clearance is c, worst-case variation is ±0.30 mm. The tightest fit requires c−0.30 ≥ 0.15, or c ≥ 0.45 mm; the loosest requires c+0.30 ≤ 0.6, or c ≤ 0.30 mm. No nominal clearance satisfies both.",
           "Reduce variation, finish mating surfaces, selectively assemble, or use a compliant preload to suppress play without demanding a tight dimensional fit. Preload introduces friction and wear. Print representative coupons in the same orientation and measure and assemble mismatched extremes. The bounds are illustrative, not measured printer tolerances."
         ]
+      },
+      {
+        "id": "MFG-TACIT-production-route",
+        "family_id": "reach",
+        "question": "How should I make a small enclosure that might sell ten units or ten thousand?",
+        "aliases": [],
+        "bridge_ids": [
+          "QUANTITY"
+        ],
+        "term_ids": [
+          "mfg-t-0084",
+          "mfg-t-0070",
+          "mfg-t-0102",
+          "mfg-t-0103",
+          "mfg-t-0118",
+          "mfg-t-0083",
+          "mfg-t-0187",
+          "mfg-t-0150",
+          "mfg-t-0164",
+          "mfg-t-0078",
+          "mfg-t-0152",
+          "mfg-t-0086",
+          "mfg-t-0080"
+        ],
+        "question_type": "design",
+        "task_scope": "specified_instance",
+        "applied_challenge": true,
+        "answer": [
+          "You need an enclosure with a removable lid, mounting holes and a protected internal cavity. Printing costs $12 per good unit; a proposed molding route costs $18,000 in tooling and $2.50 per good unit. The design is still changing. Decide which process to use now and what evidence would justify switching."
+        ],
+        "worked_solution": [
+          "The nominal cost crossover is N=18000/(12−2.5)≈1895 good units. This assumes the two routes produce equivalent functional parts and no additional redesign, lead time or inventory cost. Before committing tooling, inspect features that differ between the processes: draft, wall thickness, undercuts, shrinkage, insert placement and ejection.",
+          "Prototype the interfaces that matter using printed parts: mounting alignment, lid clearance, access for screws and assembly sequence. A printed success establishes geometry but not molded strength or shrinkage. Request supplier feedback and a small trial or sample where appropriate; reserve tooling for a design and demand estimate stable enough to amortize it.",
+          "If a replaceable insert lets a likely-changing feature vary cheaply, compare its tooling premium against the avoided retooling cost. The decision is about the value of flexibility as well as the nominal crossover."
+        ]
+      },
+      {
+        "id": "MFG-TACIT-repeatable-stage",
+        "family_id": "fit",
+        "question": "Can I make a low-cost positioning stage return to the same location from either direction?",
+        "aliases": [],
+        "bridge_ids": [
+          "WOBBLE"
+        ],
+        "term_ids": [
+          "mfg-t-0040",
+          "mfg-t-0060",
+          "mfg-t-0061",
+          "mfg-t-0062",
+          "mfg-t-0038",
+          "mfg-t-0039",
+          "mfg-t-0041",
+          "mfg-t-0011",
+          "mfg-t-0025",
+          "mfg-t-0026",
+          "mfg-t-0126",
+          "mfg-t-0131",
+          "mfg-t-0128",
+          "mfg-t-0129",
+          "mfg-t-0132",
+          "mfg-t-0133"
+        ],
+        "question_type": "design",
+        "task_scope": "specified_instance",
+        "applied_challenge": true,
+        "answer": [
+          "A screw-driven stage needs ±0.10 mm repeatability. A dial indicator shows a 0.32 mm difference when the same commanded position is approached from opposite directions, and an additional 0.05 mm variation over repeated same-direction approaches. Diagnose the likely binding limitation and design an economical intervention."
+        ],
+        "worked_solution": [
+          "The large direction-dependent displacement suggests backlash or direction-dependent elastic/friction effects; it does not prove the screw is the sole cause. Repeat with the motor disabled and a gentle reversing load at the carriage; measure screw rotation versus carriage displacement. Check coupling and bearing movement separately.",
+          "Approaching every target from one direction may be a cheap mitigation if the application allows overshoot. If arbitrary approach direction matters, preload the nut or use feedback on the actual carriage. Feedback must have enough resolution and bandwidth; motor encoder feedback alone cannot observe motion lost downstream.",
+          "Repeat a grid of positions from both directions under representative loads. Report maximum deviation and same-direction repeatability separately. The numerical observations are hypothetical, so the solution is a diagnosis and test plan, not a measured claim."
+        ]
+      },
+      {
+        "id": "MFG-TACIT-compliant-latch",
+        "family_id": "breakage",
+        "question": "Can I design a snap-fit battery cover that opens repeatedly without breaking?",
+        "aliases": [],
+        "bridge_ids": [
+          "FLEX"
+        ],
+        "term_ids": [
+          "mfg-t-0026",
+          "mfg-t-0040",
+          "mfg-t-0041",
+          "mfg-t-0044",
+          "mfg-t-0060",
+          "mfg-t-0013",
+          "mfg-t-0068",
+          "mfg-t-0001",
+          "mfg-t-0011",
+          "mfg-t-0012",
+          "mfg-t-0025",
+          "mfg-t-0133",
+          "mfg-t-0038",
+          "mfg-t-0039",
+          "mfg-t-0004"
+        ],
+        "question_type": "design",
+        "task_scope": "specified_instance",
+        "applied_challenge": true,
+        "answer": [
+          "A cover uses a rectangular cantilever latch 24 mm long and 1.2 mm thick, and must deflect 2 mm during removal. Compare a short stiff latch against a longer flexure. Decide what to prototype and how to distinguish one successful opening from repeatable service."
+        ],
+        "worked_solution": [
+          "For small-deflection elastic cantilever bending with a tip force, root surface strain is approximately 3tδ/(2L²). The stated geometry gives about 0.625% strain. Halving length raises it to 2.5%; the same required tip motion is now far more demanding. A larger fillet can reduce the stress concentration but does not erase nominal bending strain.",
+          "Choose geometry, material and print orientation so the dominant tensile stress is carried by continuous tracks where possible. Evaluate insertion/removal force, retention and creep; a longer softer latch may reduce retention unless its hook geometry or preload is changed. Compare allowable strain using material- and process-specific data rather than assuming an arbitrary failure threshold.",
+          "Print several specimens and cycle them at the intended displacement, monitoring force and cracks at the root. The beam formula assumes linear small-deflection behavior and an ideal clamp; contact, large deflection, fatigue and printed anisotropy require physical checks."
+        ]
       }
     ],
     "legacy_entry_ids": [
@@ -5217,5 +5419,6 @@
     ]
   },
   "glossary_path": "glossary.json",
-  "glossary_schema": "1.0"
+  "glossary_schema": "1.0",
+  "updated": "2026-11-27"
 }
