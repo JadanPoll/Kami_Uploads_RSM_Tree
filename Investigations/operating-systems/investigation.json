@@ -1811,6 +1811,10 @@
         "worked_solution": [
           "Create a temporary file in the same directory, write all bytes while checking short writes and errors, synchronize the file, then atomically rename over the original. On an appropriate local POSIX filesystem, synchronize the containing directory when durability of rename is required. Atomic rename does not alone guarantee power-loss recovery.",
           "Inject failures at each stage while writing distinctive complete versions; after recovery require a complete old or new version. Distinguish process-kill tests from storage fault injection or controlled power loss. Check actual filesystem and device guarantees; this protocol is not a universal certificate."
+        ],
+        "target_ids": [
+          "OS-05",
+          "OS-07"
         ]
       },
       {
@@ -1850,6 +1854,11 @@
           "Before disconnecting, record a boot identifier, host identifier, process ID plus process start time, and a random token held only in the process's memory. Save a different token to durable storage. Record time and connection state. A process ID alone is not sufficient because IDs can be reused.",
           "After reconnecting, compare these independent observations. Same boot and in-memory token indicate continuity of that process; same durable file but missing process token is consistent with profile persistence or reconstruction. A different boot identifier does not by itself prove a different physical host. Compare explicit viewer disconnect, session logoff and reboot as distinct operations.",
           "Use a disposable process, not unsaved important work. If access to boot or host identity is restricted, narrow the conclusion to what you can observe. A reappearing desktop screenshot is weak evidence because a profile manager can reconstruct it."
+        ],
+        "target_ids": [
+          "OS-02",
+          "OS-08",
+          "OS-05"
         ]
       },
       {
@@ -1883,6 +1892,10 @@
           "Define the contract before selecting locks: accepting a record transfers ownership to the queue, and shutdown closes admission atomically with respect to enqueue. Under one mutex, producers wait while the queue is full and admission is open; the writer waits while empty and admission is open. Condition-variable waits must recheck predicates.",
           "On shutdown set closed under the mutex and wake all waiters. Producers reject new records; the writer drains queued records before returning. Do not hold the queue mutex across slow I/O. If storage fails, preserve a failure result for accepted records rather than silently claiming completion. Durable persistence requires additional synchronization beyond successful writes.",
           "Test with a small queue, delayed writer, simultaneous producers and shutdown at each boundary. Tag jobs uniquely and compare accepted IDs against written and failed IDs; require no duplication and a bounded termination time. This tests the real ownership and lifecycle contract, not merely whether threads can be started."
+        ],
+        "target_ids": [
+          "OS-04",
+          "OS-02"
         ]
       },
       {
@@ -1922,6 +1935,12 @@
           "Place the freshness check on the controller, independent of the host event loop. Give each command a sequence number, define an expiration interval from the physical hazard and communication jitter, and invalidate stale commands after reconnect. A watchdog that merely checks whether the host process exists cannot establish useful control progress.",
           "For a restrained bench rig, define the timeout action and measure command-to-output latency; confirm that the independent controller reaches the specified safe state when updates stop. The safe action is plant-dependent: disabling a motor may be unsafe for suspended loads. Separate the actuator safety mechanism from ordinary application recovery.",
           "Inject dropped messages, a frozen host, repeated old packets and restart. Record the output and timeout timing. A successful test on an unloaded rig is not certification for a mobile vehicle, but establishes whether the protocol's failure response matches its intended contract."
+        ],
+        "target_ids": [
+          "OS-02",
+          "OS-04",
+          "OS-06",
+          "OS-08"
         ]
       }
     ]
